@@ -1,0 +1,63 @@
+{
+  "base_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "payload_address": "0x09000000",
+  "render_hook_address": "0x08005820",
+  "render_hook_original": "707fb07730680378",
+  "render_hook_symbol": "ChineseRenderHook",
+  "mode_jump_table": [
+    {"address": "0x080058F4", "original": "0x080059B2", "symbol": "SetJapaneseTextMode"},
+    {"address": "0x080058F8", "original": "0x080059B2", "symbol": "SetChineseTextMode"}
+  ],
+  "pointer_replacements": [
+    {"old": "0x085C8C70", "symbol": "ChsMainMenuNewGame", "expected": 4},
+    {"old": "0x085C8C7C", "symbol": "ChsMainMenuContinue", "expected": 3},
+    {"old": "0x085C8C87", "symbol": "ChsMainMenuOption", "expected": 4},
+    {"old": "0x085C8C91", "symbol": "ChsMainMenuMysteryGift", "expected": 1},
+    {"old": "0x085C8C9C", "symbol": "ChsMainMenuMysteryGift", "expected": 2},
+    {"old": "0x085C8CA7", "symbol": "ChsMainMenuMysteryEvents", "expected": 2},
+
+    {"old": "0x085CCCBD", "symbol": "ChsContinuePlayer", "expected": 1},
+    {"old": "0x085CCCC7", "symbol": "ChsContinueTime", "expected": 1},
+    {"old": "0x085CCCD4", "symbol": "ChsContinuePokedex", "expected": 1},
+    {"old": "0x085CCCE1", "symbol": "ChsContinueBadges", "expected": 1},
+
+    {"old": "0x08277095", "symbol": "ChsBirchWelcome", "expected": 1},
+    {"old": "0x085C8F88", "symbol": "ChsBirchThisIsPokemon", "expected": 1},
+    {"old": "0x08277102", "symbol": "ChsBirchMainSpeech", "expected": 1},
+    {"old": "0x082771F4", "symbol": "ChsBirchAndYouAre", "expected": 1},
+    {"old": "0x08277200", "symbol": "ChsBirchBoyOrGirl", "expected": 1},
+    {"old": "0x08277213", "symbol": "ChsBirchWhatsYourName", "expected": 1},
+    {"old": "0x08277224", "symbol": "ChsBirchSoItsPlayer", "expected": 1},
+    {"old": "0x0827722D", "symbol": "ChsBirchYourePlayer", "expected": 1},
+    {"old": "0x08277265", "symbol": "ChsBirchAreYouReady", "expected": 1},
+
+    {"old": "0x08537310", "symbol": "ChsOptionHeader", "expected": 1},
+    {"old": "0x0853736C", "symbol": "ChsOptionSlow", "expected": 1},
+    {"old": "0x08537376", "symbol": "ChsOptionMid", "expected": 1},
+    {"old": "0x08537380", "symbol": "ChsOptionFast", "expected": 1},
+    {"old": "0x0853738A", "symbol": "ChsOptionOn", "expected": 1},
+    {"old": "0x08537393", "symbol": "ChsOptionOff", "expected": 1},
+    {"old": "0x0853739D", "symbol": "ChsOptionShift", "expected": 1},
+    {"old": "0x085373A8", "symbol": "ChsOptionSet", "expected": 1},
+    {"old": "0x085373B3", "symbol": "ChsOptionMono", "expected": 1},
+    {"old": "0x085373BE", "symbol": "ChsOptionStereo", "expected": 1},
+    {"old": "0x085373C9", "symbol": "ChsOptionFrameType", "expected": 1},
+    {"old": "0x085373D3", "symbol": "ChsOptionFrameNumber", "expected": 1},
+    {"old": "0x085373DA", "symbol": "ChsOptionButtonNormal", "expected": 1},
+    {"old": "0x085373E5", "symbol": "ChsOptionButtonLR", "expected": 1},
+    {"old": "0x085373EE", "symbol": "ChsOptionButtonLEqualsA", "expected": 1}
+  ],
+  "pointer_writes": [
+    {"address": "0x082D29A8", "symbol": "ChsBirchBoy"},
+    {"address": "0x082D29B0", "symbol": "ChsBirchGirl"},
+
+    {"address": "0x08537350", "symbol": "ChsOptionTextSpeed"},
+    {"address": "0x08537354", "symbol": "ChsOptionBattleScene"},
+    {"address": "0x08537358", "symbol": "ChsOptionBattleStyle"},
+    {"address": "0x0853735C", "symbol": "ChsOptionSound"},
+    {"address": "0x08537360", "symbol": "ChsOptionButtonMode"},
+    {"address": "0x08537364", "symbol": "ChsOptionFrame"},
+    {"address": "0x08537368", "symbol": "ChsOptionCancel"}
+  ]
+}
+

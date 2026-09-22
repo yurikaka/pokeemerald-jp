@@ -11,18 +11,34 @@ OBJFILE := $(ASFILE:.s=.o)
 NAME := pokeemerald_jp
 ROM := $(NAME).gba
 ELF := $(NAME).elf
+CHS_ROM := $(NAME)_chs.gba
 TITLE := POKEMON EMER
 GAMECODE := BPEJ
 
-.PHONY: all compare clean
+PYTHON ?= python3
+PATCH_ARM_PREFIX ?= arm-none-eabi-
+PATCH_AS := $(PATCH_ARM_PREFIX)as
+PATCH_LD := $(PATCH_ARM_PREFIX)ld
+PATCH_OBJCOPY := $(PATCH_ARM_PREFIX)objcopy
+GBAGFX ?= tools/gbagfx/gbagfx
+PATCH_BUILD := build/patch
+PATCH_ELF := $(PATCH_BUILD)/payload.elf
+PATCH_BIN := $(PATCH_BUILD)/payload.bin
+
+.PHONY: all chs patch-payload compare clean
 
 all: $(ROM)
+
+chs: $(CHS_ROM)
+
+patch-payload: $(PATCH_BIN)
 
 compare: $(ROM)
 	$(SHA1SUM) rom_jp.sha1
 
 clean:
-	rm -f $(ROM) $(ELF) $(OBJFILE)
+	rm -f $(ROM) $(ELF) $(OBJFILE) $(CHS_ROM)
+	rm -rf $(PATCH_BUILD)
 
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
@@ -33,3 +49,37 @@ $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
 
 $(OBJFILE): %.o: %.s
 	$(AS) $(ASFLAGS) -o $@ $<
+
+$(PATCH_BUILD):
+	mkdir -p $@
+
+$(PATCH_BUILD)/texts.inc: patch/texts.json patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt patch/texts.json $@
+
+$(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/chinese_small.latfont: patch/fonts/chinese_small.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/latin_normal.latfont: patch/fonts/latin_normal.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/latin_small.latfont: patch/fonts/latin_small.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
+		$(PATCH_BUILD)/chinese_normal.latfont $(PATCH_BUILD)/chinese_small.latfont \
+		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont
+	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
+
+$(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld
+	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $<
+
+$(PATCH_BIN): $(PATCH_ELF)
+	$(PATCH_OBJCOPY) -O binary $< $@
+
+$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json patch/tools/apply_patch.py
+	$(PYTHON) patch/tools/apply_patch.py --rom $(ROM) --output $@ \
+		--payload-elf $(PATCH_ELF) --payload-bin $(PATCH_BIN) \
+		--manifest patch/manifest.json --nm $(PATCH_ARM_PREFIX)nm
