@@ -153,7 +153,7 @@ def main() -> None:
                 for match in matches:
                     jp_ref = match + radius
                     value = struct.unpack_from("<I", jp_rom, jp_ref)[0]
-                    if jp_ref < args.reference_end and ROM_BASE <= value < ROM_BASE + len(jp_rom):
+                    if ROM_BASE + jp_ref < args.reference_end and ROM_BASE <= value < args.reference_end:
                         valid.append((jp_ref, value))
                 if len(valid) == 1:
                     candidates = valid
@@ -198,7 +198,7 @@ def main() -> None:
                 if jp_ref >= args.reference_end or not 0 <= jp_offset <= len(jp_rom) - 4:
                     break
                 jp_text = struct.unpack_from("<I", jp_rom, jp_offset)[0]
-                if not ROM_BASE <= jp_text < ROM_BASE + len(jp_rom):
+                if not ROM_BASE <= jp_text < args.reference_end:
                     break
                 inferred.append(
                     {
@@ -237,7 +237,7 @@ def main() -> None:
             if jp_ref >= args.reference_end or not 0 <= jp_offset <= len(jp_rom) - 4:
                 break
             jp_text = struct.unpack_from("<I", jp_rom, jp_offset)[0]
-            if not ROM_BASE <= jp_text < ROM_BASE + len(jp_rom):
+            if not ROM_BASE <= jp_text < args.reference_end:
                 break
             inferred.append(
                 {
