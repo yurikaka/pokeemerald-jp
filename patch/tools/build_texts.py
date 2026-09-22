@@ -123,7 +123,11 @@ def encode_text(text: str, charmap: dict[str, bytes], styled: bool) -> bytes:
     return bytes(output)
 
 
-def convert_us_encoded_text(data: bytes, japanese_placeholders: set[int]) -> bytes:
+def convert_us_encoded_text(
+    data: bytes,
+    japanese_placeholders: set[int],
+    japanese_dynamic: bool,
+) -> bytes:
     """Convert the US Chinese encoding to the injected Japanese-ROM encoding."""
     if not data or data[-1] != 0xFF:
         raise ValueError("US encoded text must end with EOS")
@@ -156,6 +160,12 @@ def convert_us_encoded_text(data: bytes, japanese_placeholders: set[int]) -> byt
             output.extend(data[index:index + 2])
             if placeholder in japanese_placeholders:
                 output.extend(CONTROLS["ENG"])
+            index += 2
+            continue
+        if char == 0xF7 and japanese_dynamic:
+            output.extend(CONTROLS["JPN"])
+            output.extend(data[index:index + 2])
+            output.extend(CONTROLS["ENG"])
             index += 2
             continue
         if char in (0xF7, 0xF8, 0xF9):
@@ -201,6 +211,7 @@ def main() -> None:
             encoded = convert_us_encoded_text(
                 bytes.fromhex(definition["us_encoded_hex"]),
                 set(definition.get("japanese_placeholders", [])),
+                definition.get("japanese_dynamic", False),
             )
         else:
             encoded = encode_text(definition["text"], charmap, definition.get("styled", False))

@@ -20,6 +20,8 @@ def main() -> None:
     parser.add_argument("--source-commit", required=True)
     parser.add_argument("--category", required=True)
     parser.add_argument("--japanese-placeholder", action="append", type=lambda value: int(value, 0), default=[])
+    parser.add_argument("--wrap-all-placeholders", action="store_true")
+    parser.add_argument("--wrap-dynamic", action="store_true")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
@@ -44,12 +46,17 @@ def main() -> None:
             "source_symbol": source_symbol,
             "us_encoded_hex": changed["after_hex"],
         }
-        placeholders = [
-            value for value in args.japanese_placeholder
-            if bytes((0xFD, value)) in raw
-        ]
+        if args.wrap_all_placeholders:
+            placeholders = sorted({raw[index + 1] for index, value in enumerate(raw[:-1]) if value == 0xFD})
+        else:
+            placeholders = [
+                value for value in args.japanese_placeholder
+                if bytes((0xFD, value)) in raw
+            ]
         if placeholders:
             definition["japanese_placeholders"] = placeholders
+        if args.wrap_dynamic and 0xF7 in raw:
+            definition["japanese_dynamic"] = True
         texts.append(definition)
 
         for reference in mapped["references"]:

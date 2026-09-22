@@ -90,6 +90,27 @@ def pointer_occurrences(rom: bytes, address: int) -> list[int]:
         cursor = found + 1
 
 
+def step_strings(rom: bytes, address: int, count: int) -> int | None:
+    offset = address - ROM_BASE
+    if not 0 <= offset < len(rom):
+        return None
+    if count > 0:
+        for _ in range(count):
+            end = rom.find(b"\xFF", offset)
+            if end < 0:
+                return None
+            offset = end + 1
+    else:
+        for _ in range(-count):
+            if offset == 0 or rom[offset - 1] != 0xFF:
+                return None
+            previous_end = rom.rfind(b"\xFF", 0, offset - 1)
+            if previous_end < 0:
+                return None
+            offset = previous_end + 1
+    return ROM_BASE + offset
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--us-rom", type=Path, required=True)
@@ -193,12 +214,113 @@ def main() -> None:
                 still_unresolved.append(entry)
         unresolved = still_unresolved
 
+    # Some maps contain multiple script blocks with different regional
+    # offsets. Infer each remaining reference from the nearest audited
+    # reference in the same local block.
+    reference_anchors = []
+    for entry in mapped:
+        for reference in entry["references"]:
+            reference_anchors.append(
+                (int(reference["us_reference"], 0), int(reference["jp_reference"], 0))
+            )
+    local_unresolved = []
+    for entry in unresolved:
+        inferred = []
+        for us_offset in pointer_occurrences(us_rom, int(entry["us_text"], 0)):
+            us_ref = ROM_BASE + us_offset
+            if not reference_anchors:
+                break
+            anchor_us, anchor_jp = min(reference_anchors, key=lambda pair: abs(pair[0] - us_ref))
+            jp_ref = us_ref + anchor_jp - anchor_us
+            jp_offset = jp_ref - ROM_BASE
+            if not 0 <= jp_offset <= len(jp_rom) - 4:
+                break
+            jp_text = struct.unpack_from("<I", jp_rom, jp_offset)[0]
+            if not ROM_BASE <= jp_text < ROM_BASE + len(jp_rom):
+                break
+            inferred.append(
+                {
+                    "us_reference": f"0x{us_ref:08X}",
+                    "jp_reference": f"0x{jp_ref:08X}",
+                    "jp_text": f"0x{jp_text:08X}",
+                    "local_delta_inferred": True,
+                }
+            )
+        targets = {reference["jp_text"] for reference in inferred}
+        if inferred and len(inferred) == entry["us_reference_count"] and len(targets) == 1:
+            entry["references"] = inferred
+            mapped.append(entry)
+        else:
+            local_unresolved.append(entry)
+    unresolved = local_unresolved
+
+    # Text labels in a map's source are emitted consecutively. Use already
+    # audited targets as ordinal anchors for regional scripts whose command
+    # streams differ, then require the inferred JP pointer reference count to
+    # equal the US count.
+    ordered = sorted(mapped + unresolved, key=lambda entry: int(entry["us_text"], 0))
+    selected_addresses = [int(entry["us_text"], 0) for entry in ordered]
+    range_start = min(selected_addresses, default=0)
+    range_end = max(selected_addresses, default=0)
+    order_addresses = sorted(
+        {
+            address
+            for name, address in us_symbols.items()
+            if range_start <= address <= range_end and "Text" in name
+        }
+    )
+    order_index = {address: index for index, address in enumerate(order_addresses)}
+    anchors = {}
+    for entry in ordered:
+        targets = {int(ref["jp_text"], 0) for ref in entry["references"]}
+        if len(targets) == 1:
+            anchors[order_index[int(entry["us_text"], 0)]] = targets.pop()
+
+    ordinal_unresolved = []
+    for entry in ordered:
+        if entry not in unresolved:
+            continue
+        index = order_index[int(entry["us_text"], 0)]
+        if entry["us_reference_count"] == 0:
+            ordinal_unresolved.append(entry)
+            continue
+        inferred_targets = {
+            target
+            for anchor_index, anchor in anchors.items()
+            if (target := step_strings(jp_rom, anchor, index - anchor_index)) is not None
+        }
+        if len(inferred_targets) != 1:
+            ordinal_unresolved.append(entry)
+            continue
+        jp_text = inferred_targets.pop()
+        jp_refs = pointer_occurrences(jp_rom, jp_text)
+        us_refs = pointer_occurrences(us_rom, int(entry["us_text"], 0))
+        if len(jp_refs) != len(us_refs):
+            ordinal_unresolved.append(entry)
+            continue
+        entry["references"] = [
+            {
+                "us_reference": f"0x{ROM_BASE + us_ref:08X}",
+                "jp_reference": f"0x{ROM_BASE + jp_ref:08X}",
+                "jp_text": f"0x{jp_text:08X}",
+                "ordinal_inferred": True,
+            }
+            for us_ref, jp_ref in zip(us_refs, jp_refs)
+        ]
+        mapped.append(entry)
+    unresolved = ordinal_unresolved
+
+    unreferenced = [entry for entry in unresolved if entry["us_reference_count"] == 0]
+    unresolved = [entry for entry in unresolved if entry["us_reference_count"] != 0]
+
     result = {
         "inferred_reference_delta": None if inferred_delta is None else inferred_delta,
         "mapped_count": len(mapped),
         "unresolved_count": len(unresolved),
+        "unreferenced_count": len(unreferenced),
         "mapped": sorted(mapped, key=lambda entry: entry["symbol"]),
         "unresolved": unresolved,
+        "unreferenced": unreferenced,
     }
     rendered = json.dumps(result, indent=2) + "\n"
     if args.output:
