@@ -44,7 +44,7 @@ $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 
 $(ELF): %.elf: $(OBJFILE) ld_script_jp.txt
-	$(LD) -T ld_script_jp.txt -Map $*.map -o $@ $(OBJFILE) -L tools/agbcc/lib -lgcc -lc
+	$(LD) -T ld_script_jp.txt -Map $*.map -o $@ $(OBJFILE)
 	$(GBAFIX) -t"$(TITLE)" -c$(GAMECODE) -m01 --silent $@
 
 $(OBJFILE): %.o: %.s
