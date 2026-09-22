@@ -51,6 +51,7 @@ def main() -> None:
     parser.add_argument("--payload-elf", type=Path, required=True)
     parser.add_argument("--payload-bin", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--batch", type=Path, action="append", default=[])
     parser.add_argument("--nm", required=True)
     args = parser.parse_args()
 
@@ -110,6 +111,19 @@ def main() -> None:
 
     for entry in manifest["pointer_writes"]:
         write_word(rom, parse_int(entry["address"]), symbols[entry["symbol"]])
+
+    for batch_path in args.batch:
+        batch = json.loads(batch_path.read_text(encoding="utf-8"))
+        for entry in batch.get("reference_writes", []):
+            address = parse_int(entry["address"])
+            offset = rom_offset(address)
+            expected = parse_int(entry["original"])
+            actual = struct.unpack_from("<I", rom, offset)[0]
+            if actual != expected:
+                raise SystemExit(
+                    f"reference 0x{address:08X}: expected 0x{expected:08X}, got 0x{actual:08X}"
+                )
+            write_word(rom, address, symbols[entry["symbol"]])
 
     args.output.write_bytes(rom)
     print(f"wrote {args.output} ({len(rom)} bytes, SHA-1 {hashlib.sha1(rom).hexdigest()})")

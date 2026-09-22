@@ -24,6 +24,7 @@ GBAGFX ?= tools/gbagfx/gbagfx
 PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
+PATCH_BATCHES := $(wildcard patch/batches/*.json)
 
 .PHONY: all chs patch-payload compare clean
 
@@ -53,8 +54,8 @@ $(OBJFILE): %.o: %.s
 $(PATCH_BUILD):
 	mkdir -p $@
 
-$(PATCH_BUILD)/texts.inc: patch/texts.json patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
-	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt patch/texts.json $@
+$(PATCH_BUILD)/texts.inc: patch/texts.json $(PATCH_BATCHES) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $@ patch/texts.json $(PATCH_BATCHES)
 
 $(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
@@ -79,7 +80,8 @@ $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld
 $(PATCH_BIN): $(PATCH_ELF)
 	$(PATCH_OBJCOPY) -O binary $< $@
 
-$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json patch/tools/apply_patch.py
+$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json $(PATCH_BATCHES) patch/tools/apply_patch.py
 	$(PYTHON) patch/tools/apply_patch.py --rom $(ROM) --output $@ \
 		--payload-elf $(PATCH_ELF) --payload-bin $(PATCH_BIN) \
-		--manifest patch/manifest.json --nm $(PATCH_ARM_PREFIX)nm
+		--manifest patch/manifest.json --nm $(PATCH_ARM_PREFIX)nm \
+		$(foreach batch,$(PATCH_BATCHES),--batch $(batch))

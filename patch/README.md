@@ -9,6 +9,13 @@ The first porting batch covers:
 - Professor Birch's new-game introduction and gender menu;
 - the options menu.
 
+Later text ports are stored as independently auditable files under
+`patch/batches`. Each batch records the corresponding US localization commit,
+the original US text symbol, the exact Japanese pointer locations and their
+expected original values. US Chinese text bytes are converted to the Japanese
+patch encoding during the build. Placeholders containing Japanese save data,
+such as the player name, explicitly switch back to the Japanese renderer.
+
 `make chs` first produces the exact 16 MiB Japanese build, expands a copy to
 32 MiB, injects the Chinese renderer/fonts/text pool at `0x09000000`, and
 redirects only the audited references in `manifest.json`. The input ROM SHA-1
@@ -26,4 +33,3 @@ make chs \
   PATCH_ARM_PREFIX=/path/to/arm-none-eabi- \
   GBAGFX=/path/to/gbagfx
 ```
-
