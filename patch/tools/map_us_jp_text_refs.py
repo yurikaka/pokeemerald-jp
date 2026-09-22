@@ -119,6 +119,7 @@ def main() -> None:
     parser.add_argument("--symbols", type=Path, help="JSON report produced by analyze_us_text_commit.py")
     parser.add_argument("--symbol-pattern", default=".*")
     parser.add_argument("--nm", required=True)
+    parser.add_argument("--reference-end", type=lambda value: int(value, 0), default=0x08300000)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
@@ -152,7 +153,7 @@ def main() -> None:
                 for match in matches:
                     jp_ref = match + radius
                     value = struct.unpack_from("<I", jp_rom, jp_ref)[0]
-                    if ROM_BASE <= value < ROM_BASE + len(jp_rom):
+                    if jp_ref < args.reference_end and ROM_BASE <= value < ROM_BASE + len(jp_rom):
                         valid.append((jp_ref, value))
                 if len(valid) == 1:
                     candidates = valid
@@ -194,7 +195,7 @@ def main() -> None:
             for ref in pointer_occurrences(us_rom, int(entry["us_text"], 0)):
                 jp_ref = ROM_BASE + ref + inferred_delta
                 jp_offset = jp_ref - ROM_BASE
-                if not 0 <= jp_offset <= len(jp_rom) - 4:
+                if jp_ref >= args.reference_end or not 0 <= jp_offset <= len(jp_rom) - 4:
                     break
                 jp_text = struct.unpack_from("<I", jp_rom, jp_offset)[0]
                 if not ROM_BASE <= jp_text < ROM_BASE + len(jp_rom):
@@ -233,7 +234,7 @@ def main() -> None:
             anchor_us, anchor_jp = min(reference_anchors, key=lambda pair: abs(pair[0] - us_ref))
             jp_ref = us_ref + anchor_jp - anchor_us
             jp_offset = jp_ref - ROM_BASE
-            if not 0 <= jp_offset <= len(jp_rom) - 4:
+            if jp_ref >= args.reference_end or not 0 <= jp_offset <= len(jp_rom) - 4:
                 break
             jp_text = struct.unpack_from("<I", jp_rom, jp_offset)[0]
             if not ROM_BASE <= jp_text < ROM_BASE + len(jp_rom):
@@ -293,7 +294,10 @@ def main() -> None:
             ordinal_unresolved.append(entry)
             continue
         jp_text = inferred_targets.pop()
-        jp_refs = pointer_occurrences(jp_rom, jp_text)
+        jp_refs = [
+            ref for ref in pointer_occurrences(jp_rom, jp_text)
+            if ROM_BASE + ref < args.reference_end
+        ]
         us_refs = pointer_occurrences(us_rom, int(entry["us_text"], 0))
         if len(jp_refs) != len(us_refs):
             ordinal_unresolved.append(entry)
