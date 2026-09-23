@@ -5,81 +5,312 @@
   "render_hook_original": "707fb07730680378",
   "render_hook_symbol": "ChineseRenderHook",
   "code_patches": [
-    {"address": "0x080596E8", "original": "c900", "replacement": "0901"},
-    {"address": "0x0814E5E0", "original": "c900", "replacement": "0901"},
-    {"address": "0x0814EFA2", "original": "c000", "replacement": "0001"},
-    {"address": "0x0814F742", "original": "c900", "replacement": "0901"},
-    {"address": "0x08059806", "original": "81000918", "replacement": "0101c046"},
-    {"address": "0x0814F754", "original": "81000918", "replacement": "0101c046"}
+    {
+      "address": "0x080596E8",
+      "original": "c900",
+      "replacement": "0901"
+    },
+    {
+      "address": "0x0814E5E0",
+      "original": "c900",
+      "replacement": "0901"
+    },
+    {
+      "address": "0x0814EFA2",
+      "original": "c000",
+      "replacement": "0001"
+    },
+    {
+      "address": "0x0814F742",
+      "original": "c900",
+      "replacement": "0901"
+    },
+    {
+      "address": "0x08059806",
+      "original": "81000918",
+      "replacement": "0101c046"
+    },
+    {
+      "address": "0x0814F754",
+      "original": "81000918",
+      "replacement": "0101c046"
+    }
   ],
   "mode_jump_table": [
-    {"address": "0x080058F8", "original": "0x080059B2", "symbol": "SetJapaneseTextMode"},
-    {"address": "0x080058FC", "original": "0x080059B2", "symbol": "SetChineseTextMode"}
+    {
+      "address": "0x080058F8",
+      "original": "0x080059B2",
+      "symbol": "SetJapaneseTextMode"
+    },
+    {
+      "address": "0x080058FC",
+      "original": "0x080059B2",
+      "symbol": "SetChineseTextMode"
+    }
   ],
   "pointer_replacements": [
-    {"old": "0x085C8C70", "symbol": "ChsMainMenuNewGame", "expected": 4},
-    {"old": "0x085C8C7C", "symbol": "ChsMainMenuContinue", "expected": 3},
-    {"old": "0x085C8C87", "symbol": "ChsMainMenuOption", "expected": 4},
-    {"old": "0x085C8C91", "symbol": "ChsMainMenuMysteryGift", "expected": 1},
-    {"old": "0x085C8C9C", "symbol": "ChsMainMenuMysteryGift", "expected": 2},
-    {"old": "0x085C8CA7", "symbol": "ChsMainMenuMysteryEvents", "expected": 2},
-
-    {"old": "0x085CCCBD", "symbol": "ChsContinuePlayer", "expected": 1},
-    {"old": "0x085CCCC7", "symbol": "ChsContinueTime", "expected": 1},
-    {"old": "0x085CCCD4", "symbol": "ChsContinuePokedex", "expected": 1},
-    {"old": "0x085CCCE1", "symbol": "ChsContinueBadges", "expected": 1},
-
-    {"old": "0x08277095", "symbol": "ChsBirchWelcome", "expected": 1},
-    {"old": "0x085C8F88", "symbol": "ChsBirchThisIsPokemon", "expected": 1},
-    {"old": "0x08277102", "symbol": "ChsBirchMainSpeech", "expected": 1},
-    {"old": "0x082771F4", "symbol": "ChsBirchAndYouAre", "expected": 1},
-    {"old": "0x08277200", "symbol": "ChsBirchBoyOrGirl", "expected": 1},
-    {"old": "0x08277213", "symbol": "ChsBirchWhatsYourName", "expected": 1},
-    {"old": "0x08277224", "symbol": "ChsBirchSoItsPlayer", "expected": 1},
-    {"old": "0x0827722D", "symbol": "ChsBirchYourePlayer", "expected": 1},
-    {"old": "0x08277265", "symbol": "ChsBirchAreYouReady", "expected": 1},
-
-    {"old": "0x08537310", "symbol": "ChsOptionHeader", "expected": 1},
-    {"old": "0x0853736C", "symbol": "ChsOptionSlow", "expected": 1},
-    {"old": "0x08537376", "symbol": "ChsOptionMid", "expected": 1},
-    {"old": "0x08537380", "symbol": "ChsOptionFast", "expected": 1},
-    {"old": "0x0853738A", "symbol": "ChsOptionOn", "expected": 1},
-    {"old": "0x08537393", "symbol": "ChsOptionOff", "expected": 1},
-    {"old": "0x0853739D", "symbol": "ChsOptionShift", "expected": 1},
-    {"old": "0x085373A8", "symbol": "ChsOptionSet", "expected": 1},
-    {"old": "0x085373B3", "symbol": "ChsOptionMono", "expected": 1},
-    {"old": "0x085373BE", "symbol": "ChsOptionStereo", "expected": 1},
-    {"old": "0x085373C9", "symbol": "ChsOptionFrameType", "expected": 1},
-    {"old": "0x085373D3", "symbol": "ChsOptionFrameNumber", "expected": 1},
-    {"old": "0x085373DA", "symbol": "ChsOptionButtonNormal", "expected": 1},
-    {"old": "0x085373E5", "symbol": "ChsOptionButtonLR", "expected": 1},
-    {"old": "0x085373EE", "symbol": "ChsOptionButtonLEqualsA", "expected": 1}
+    {
+      "old": "0x082EACC4",
+      "symbol": "ChsMoveNames",
+      "expected": 56
+    },
+    {
+      "old": "0x082EBC88",
+      "symbol": "ChsTypeNames",
+      "expected": 7
+    },
+    {
+      "old": "0x085C8C70",
+      "symbol": "ChsMainMenuNewGame",
+      "expected": 4
+    },
+    {
+      "old": "0x085C8C7C",
+      "symbol": "ChsMainMenuContinue",
+      "expected": 3
+    },
+    {
+      "old": "0x085C8C87",
+      "symbol": "ChsMainMenuOption",
+      "expected": 4
+    },
+    {
+      "old": "0x085C8C91",
+      "symbol": "ChsMainMenuMysteryGift",
+      "expected": 1
+    },
+    {
+      "old": "0x085C8C9C",
+      "symbol": "ChsMainMenuMysteryGift",
+      "expected": 2
+    },
+    {
+      "old": "0x085C8CA7",
+      "symbol": "ChsMainMenuMysteryEvents",
+      "expected": 2
+    },
+    {
+      "old": "0x085CCCBD",
+      "symbol": "ChsContinuePlayer",
+      "expected": 1
+    },
+    {
+      "old": "0x085CCCC7",
+      "symbol": "ChsContinueTime",
+      "expected": 1
+    },
+    {
+      "old": "0x085CCCD4",
+      "symbol": "ChsContinuePokedex",
+      "expected": 1
+    },
+    {
+      "old": "0x085CCCE1",
+      "symbol": "ChsContinueBadges",
+      "expected": 1
+    },
+    {
+      "old": "0x08277095",
+      "symbol": "ChsBirchWelcome",
+      "expected": 1
+    },
+    {
+      "old": "0x085C8F88",
+      "symbol": "ChsBirchThisIsPokemon",
+      "expected": 1
+    },
+    {
+      "old": "0x08277102",
+      "symbol": "ChsBirchMainSpeech",
+      "expected": 1
+    },
+    {
+      "old": "0x082771F4",
+      "symbol": "ChsBirchAndYouAre",
+      "expected": 1
+    },
+    {
+      "old": "0x08277200",
+      "symbol": "ChsBirchBoyOrGirl",
+      "expected": 1
+    },
+    {
+      "old": "0x08277213",
+      "symbol": "ChsBirchWhatsYourName",
+      "expected": 1
+    },
+    {
+      "old": "0x08277224",
+      "symbol": "ChsBirchSoItsPlayer",
+      "expected": 1
+    },
+    {
+      "old": "0x0827722D",
+      "symbol": "ChsBirchYourePlayer",
+      "expected": 1
+    },
+    {
+      "old": "0x08277265",
+      "symbol": "ChsBirchAreYouReady",
+      "expected": 1
+    },
+    {
+      "old": "0x08537310",
+      "symbol": "ChsOptionHeader",
+      "expected": 1
+    },
+    {
+      "old": "0x0853736C",
+      "symbol": "ChsOptionSlow",
+      "expected": 1
+    },
+    {
+      "old": "0x08537376",
+      "symbol": "ChsOptionMid",
+      "expected": 1
+    },
+    {
+      "old": "0x08537380",
+      "symbol": "ChsOptionFast",
+      "expected": 1
+    },
+    {
+      "old": "0x0853738A",
+      "symbol": "ChsOptionOn",
+      "expected": 1
+    },
+    {
+      "old": "0x08537393",
+      "symbol": "ChsOptionOff",
+      "expected": 1
+    },
+    {
+      "old": "0x0853739D",
+      "symbol": "ChsOptionShift",
+      "expected": 1
+    },
+    {
+      "old": "0x085373A8",
+      "symbol": "ChsOptionSet",
+      "expected": 1
+    },
+    {
+      "old": "0x085373B3",
+      "symbol": "ChsOptionMono",
+      "expected": 1
+    },
+    {
+      "old": "0x085373BE",
+      "symbol": "ChsOptionStereo",
+      "expected": 1
+    },
+    {
+      "old": "0x085373C9",
+      "symbol": "ChsOptionFrameType",
+      "expected": 1
+    },
+    {
+      "old": "0x085373D3",
+      "symbol": "ChsOptionFrameNumber",
+      "expected": 1
+    },
+    {
+      "old": "0x085373DA",
+      "symbol": "ChsOptionButtonNormal",
+      "expected": 1
+    },
+    {
+      "old": "0x085373E5",
+      "symbol": "ChsOptionButtonLR",
+      "expected": 1
+    },
+    {
+      "old": "0x085373EE",
+      "symbol": "ChsOptionButtonLEqualsA",
+      "expected": 1
+    }
   ],
   "pointer_writes": [
-    {"address": "0x08059730", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
-    {"address": "0x0814E5F8", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
-    {"address": "0x0814EFAC", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
-    {"address": "0x0814F74C", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
-    {"address": "0x08059838", "original": "0x082EBC88", "symbol": "ChsTypeNames"},
-    {"address": "0x0814F75C", "original": "0x082EBC88", "symbol": "ChsTypeNames"},
-    {"address": "0x081AACBC", "original": "0x085C9742", "symbol": "ChsPocketNames"},
-    {"address": "0x081ABE18", "original": "0x085C9742", "symbol": "ChsPocketNames"},
-    {"address": "0x081ABEB0", "original": "0x085C9742", "symbol": "ChsPocketNames"},
-    {"address": "0x08008D58", "original": "0x085C8C28", "symbol": "ChsEmptyString"},
-    {"address": "0x08008D64", "original": "0x085C8C25", "symbol": "ChsEmptyString"},
-    {"address": "0x08008D7C", "original": "0x085C8C5A", "symbol": "ChsRivalBrendan"},
-    {"address": "0x08008D88", "original": "0x085C8C5E", "symbol": "ChsRivalMay"},
-    {"address": "0x08138BD8", "original": "0x085CB03C", "symbol": "ChsDaughter"},
-    {"address": "0x08138BEC", "original": "0x085CB038", "symbol": "ChsSon"},
-    {"address": "0x082D29A8", "symbol": "ChsBirchBoy"},
-    {"address": "0x082D29B0", "symbol": "ChsBirchGirl"},
-
-    {"address": "0x08537350", "symbol": "ChsOptionTextSpeed"},
-    {"address": "0x08537354", "symbol": "ChsOptionBattleScene"},
-    {"address": "0x08537358", "symbol": "ChsOptionBattleStyle"},
-    {"address": "0x0853735C", "symbol": "ChsOptionSound"},
-    {"address": "0x08537360", "symbol": "ChsOptionButtonMode"},
-    {"address": "0x08537364", "symbol": "ChsOptionFrame"},
-    {"address": "0x08537368", "symbol": "ChsOptionCancel"}
+    {
+      "address": "0x081AACBC",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNames"
+    },
+    {
+      "address": "0x081ABE18",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNames"
+    },
+    {
+      "address": "0x081ABEB0",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNames"
+    },
+    {
+      "address": "0x08008D58",
+      "original": "0x085C8C28",
+      "symbol": "ChsEmptyString"
+    },
+    {
+      "address": "0x08008D64",
+      "original": "0x085C8C25",
+      "symbol": "ChsEmptyString"
+    },
+    {
+      "address": "0x08008D7C",
+      "original": "0x085C8C5A",
+      "symbol": "ChsRivalBrendan"
+    },
+    {
+      "address": "0x08008D88",
+      "original": "0x085C8C5E",
+      "symbol": "ChsRivalMay"
+    },
+    {
+      "address": "0x08138BD8",
+      "original": "0x085CB03C",
+      "symbol": "ChsDaughter"
+    },
+    {
+      "address": "0x08138BEC",
+      "original": "0x085CB038",
+      "symbol": "ChsSon"
+    },
+    {
+      "address": "0x082D29A8",
+      "symbol": "ChsBirchBoy"
+    },
+    {
+      "address": "0x082D29B0",
+      "symbol": "ChsBirchGirl"
+    },
+    {
+      "address": "0x08537350",
+      "symbol": "ChsOptionTextSpeed"
+    },
+    {
+      "address": "0x08537354",
+      "symbol": "ChsOptionBattleScene"
+    },
+    {
+      "address": "0x08537358",
+      "symbol": "ChsOptionBattleStyle"
+    },
+    {
+      "address": "0x0853735C",
+      "symbol": "ChsOptionSound"
+    },
+    {
+      "address": "0x08537360",
+      "symbol": "ChsOptionButtonMode"
+    },
+    {
+      "address": "0x08537364",
+      "symbol": "ChsOptionFrame"
+    },
+    {
+      "address": "0x08537368",
+      "symbol": "ChsOptionCancel"
+    }
   ]
 }
