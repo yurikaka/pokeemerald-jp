@@ -97,6 +97,23 @@ def main() -> None:
     hook_target = symbols[manifest["render_hook_symbol"]] | 1
     rom[hook_offset:hook_offset + 8] = struct.pack("<HHI", 0x4800, 0x4700, hook_target)
 
+    for entry in manifest.get("function_hooks", []):
+        address = parse_int(entry["address"])
+        offset = rom_offset(address)
+        expected = bytes.fromhex(entry["original"])
+        if rom[offset:offset + len(expected)] != expected:
+            actual = rom[offset:offset + len(expected)].hex()
+            raise SystemExit(f"function hook 0x{address:08X}: expected {expected.hex()}, got {actual}")
+        # Function-entry trampoline that preserves r0-r3 (unlike the render
+        # hook, which clobbers r0): push a spare slot, park the target in it,
+        # and pop it straight into pc.
+        target = symbols[entry["symbol"]] | 1
+        rom[offset:offset + 16] = (
+            struct.pack("<HHHHH", 0xB401, 0xB401, 0x4801, 0x9001, 0xBD01)
+            + b"\x00\x00"
+            + struct.pack("<I", target)
+        )
+
     for entry in manifest["mode_jump_table"]:
         address = parse_int(entry["address"])
         offset = rom_offset(address)
