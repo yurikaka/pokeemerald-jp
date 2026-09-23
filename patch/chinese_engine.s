@@ -173,18 +173,91 @@ ChsItemIdGetDescription:
 .type ChsBagPrintPocketName, %function
 .thumb_func
 ChsBagPrintPocketName:
-    push {r4, lr}
-    cmp r1, #0
-    beq .Lprint_pocket_name
-    cmp r1, #8
-    beq .Lprint_pocket_name
+    push {r4-r7, lr}
+    sub sp, #4
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldr r0, =0x02021C7C
+    cmp r4, r0
+    bne .Lbag_pocket_direct
+
+    ldrb r6, [r4]
+    ldrb r7, [r4, #8]
+    lsls r0, r6, #8
+    orrs r0, r7
+    ldr r1, =0x0203CB20
+    ldr r1, [r1]
+    ldr r2, =0x00000C44
+    adds r1, r1, r2
+    ldr r2, [r1]
+    cmp r0, r2
+    beq .Lbag_pocket_copy_cached
+    str r0, [r1]
+    adds r0, r6, #0
+    movs r1, #0
+    bl ChsBagCachePocketName
+    adds r0, r7, #0
+    movs r1, #8
+    bl ChsBagCachePocketName
+    b .Lbag_pocket_copy_cached
+
+.Lbag_pocket_direct:
+    adds r4, r4, r5
+    ldrb r0, [r4]
+    bl ChsBagDrawPocketName
     b .Lbag_pocket_return
-.Lprint_pocket_name:
-    adds r0, r0, r1
-    ldrb r4, [r0]
-    subs r4, #0xF0
-    cmp r4, #4
-    bhi .Lbag_pocket_return
+
+.Lbag_pocket_copy_cached:
+    cmp r5, #8
+    bls .Lbag_pocket_offset_ok
+    movs r5, #8
+.Lbag_pocket_offset_ok:
+    movs r0, #2
+    movs r1, #7
+    ldr r3, =0x0800401D
+    bl .Lbag_pocket_call_r3
+    adds r6, r0, #0
+    ldr r4, =0x0203CB20
+    ldr r4, [r4]
+    ldr r0, =0x00000844
+    adds r4, r4, r0
+    lsls r5, r5, #5
+    adds r4, r4, r5
+    adds r0, r4, #0
+    adds r1, r6, #0
+    bl ChsBagCopyPocketTiles
+    ldr r0, =0x00000200
+    adds r4, r4, r0
+    movs r0, #0x80
+    lsls r0, r0, #1
+    adds r6, r6, r0
+    adds r0, r4, #0
+    adds r1, r6, #0
+    bl ChsBagCopyPocketTiles
+    movs r0, #2
+    movs r1, #2
+    ldr r3, =0x08003529
+    bl .Lbag_pocket_call_r3
+
+.Lbag_pocket_return:
+    add sp, #4
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.Lbag_pocket_call_r3:
+    bx r3
+.Lbag_pocket_call_r4:
+    bx r4
+
+.align 2
+.type ChsBagDrawPocketName, %function
+.thumb_func
+ChsBagDrawPocketName:
+    push {r4, lr}
+    subs r0, #0xF0
+    cmp r0, #4
+    bhi .Lbag_draw_return
+    adds r4, r0, #0
     sub sp, #24
     movs r0, #2
     movs r1, #0
@@ -209,14 +282,58 @@ ChsBagPrintPocketName:
     ldr r4, =0x081ADD95
     bl .Lbag_pocket_call_r4
     add sp, #24
-.Lbag_pocket_return:
+.Lbag_draw_return:
     pop {r4}
     pop {r0}
     bx r0
-.Lbag_pocket_call_r3:
-    bx r3
-.Lbag_pocket_call_r4:
-    bx r4
+
+.align 2
+.type ChsBagCachePocketName, %function
+.thumb_func
+ChsBagCachePocketName:
+    push {r4-r7, lr}
+    sub sp, #4
+    adds r5, r1, #0
+    bl ChsBagDrawPocketName
+    movs r0, #2
+    movs r1, #7
+    ldr r3, =0x0800401D
+    bl .Lbag_pocket_call_r3
+    adds r4, r0, #0
+    ldr r6, =0x0203CB20
+    ldr r6, [r6]
+    ldr r0, =0x00000844
+    adds r6, r6, r0
+    lsls r5, r5, #5
+    adds r6, r6, r5
+    adds r0, r4, #0
+    adds r1, r6, #0
+    bl ChsBagCopyPocketTiles
+    ldr r0, =0x00000100
+    adds r4, r4, r0
+    ldr r0, =0x00000200
+    adds r6, r6, r0
+    adds r0, r4, #0
+    adds r1, r6, #0
+    bl ChsBagCopyPocketTiles
+    add sp, #4
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+
+.align 2
+.type ChsBagCopyPocketTiles, %function
+.thumb_func
+ChsBagCopyPocketTiles:
+    push {r4-r7}
+    movs r2, #16
+.Lbag_copy_tiles_loop:
+    ldmia r0!, {r3-r6}
+    stmia r1!, {r3-r6}
+    subs r2, #1
+    bne .Lbag_copy_tiles_loop
+    pop {r4-r7}
+    bx lr
 
 .align 2
 .global ChsPocketNameIds
