@@ -24,6 +24,7 @@ GBAGFX ?= tools/gbagfx/gbagfx
 PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
+PATCH_GFX := patch/gfx/move_types.4bpp
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
 PATCH_TEXTS := patch/texts.json $(wildcard patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json) $(PATCH_BATCHES)
 
@@ -70,9 +71,13 @@ $(PATCH_BUILD)/latin_normal.latfont: patch/fonts/latin_normal.png | $(PATCH_BUIL
 $(PATCH_BUILD)/latin_small.latfont: patch/fonts/latin_small.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
+$(PATCH_BUILD)/move_types.lz: $(PATCH_GFX) | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
 $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/chinese_normal.latfont $(PATCH_BUILD)/chinese_small.latfont \
-		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont
+		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
+		$(PATCH_BUILD)/move_types.lz
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 
 $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld

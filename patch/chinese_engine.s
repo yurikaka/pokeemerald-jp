@@ -272,6 +272,11 @@ ChsEmptyString:
     .byte 0xFF
 
 .align 2
+.global ChsMoveTypesGfx
+ChsMoveTypesGfx:
+    .incbin "build/patch/move_types.lz"
+
+.align 2
 ChineseNormalFont:
     .incbin "build/patch/chinese_normal.latfont"
 .align 2
