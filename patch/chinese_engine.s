@@ -282,6 +282,11 @@ ChsPokedexAreaUnknownGfx:
     .incbin "build/patch/pokedex_area_unknown.lz"
 
 .align 2
+.global ChsStatusIconsGfx
+ChsStatusIconsGfx:
+    .incbin "build/patch/status_icons.lz"
+
+.align 2
 ChineseNormalFont:
     .incbin "build/patch/chinese_normal.latfont"
 .align 2

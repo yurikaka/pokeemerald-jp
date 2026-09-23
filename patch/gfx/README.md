@@ -13,3 +13,8 @@ the `CompressedSpriteSheet.data` pointer at `0x085ED40C`.
 `graphics/pokedex/area_unknown.png` in the same US localization commit. Its
 32 by 96 pixel layout and first 16-color palette match the Japanese asset, so
 the patch redirects only the graphics source at `0x0813D9E4`.
+
+`status_icons.4bpp` is generated from `graphics/interface/status_icons.png`.
+Its 32 by 64 pixel layout and palette match the Japanese asset. All two
+references to the shared Japanese compressed sprite sheet are redirected, so
+the party menu and summary screen use the same localized status icons.
