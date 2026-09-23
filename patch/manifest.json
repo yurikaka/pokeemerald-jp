@@ -329,6 +329,31 @@
       "address": "0x081D20C4",
       "original": "82001218",
       "replacement": "0201c046"
+    },
+    {
+      "address": "0x0814F0DA",
+      "original": "c000",
+      "replacement": "0001"
+    },
+    {
+      "address": "0x0814F85C",
+      "original": "c900",
+      "replacement": "0901"
+    },
+    {
+      "address": "0x081C28B4",
+      "original": "e400",
+      "replacement": "2401"
+    },
+    {
+      "address": "0x081C2908",
+      "original": "a10009198900091b",
+      "replacement": "6101c046c046c046"
+    },
+    {
+      "address": "0x081C2334",
+      "original": "0822",
+      "replacement": "0022"
     }
   ],
   "mode_jump_table": [
@@ -366,6 +391,22 @@
       "old": "0x085E7FFC",
       "symbol": "ChsMoveDescriptions",
       "expected": 2
+    },
+    {
+      "old": "0x082EBDC4",
+      "symbol": "ChsAbilityNames",
+      "expected": 4,
+      "exclude": [
+        "0x080001C0"
+      ]
+    },
+    {
+      "old": "0x082EC034",
+      "symbol": "ChsAbilityDescriptions",
+      "expected": 2,
+      "exclude": [
+        "0x080001C4"
+      ]
     },
     {
       "old": "0x085C8C70",
