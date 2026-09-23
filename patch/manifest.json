@@ -4,6 +4,12 @@
   "render_hook_address": "0x08005820",
   "render_hook_original": "707fb07730680378",
   "render_hook_symbol": "ChineseRenderHook",
+  "code_patches": [
+    {"address": "0x080596E8", "original": "c900", "replacement": "0901"},
+    {"address": "0x0814E5E0", "original": "c900", "replacement": "0901"},
+    {"address": "0x0814EFA2", "original": "c000", "replacement": "0001"},
+    {"address": "0x0814F742", "original": "c900", "replacement": "0901"}
+  ],
   "mode_jump_table": [
     {"address": "0x080058F8", "original": "0x080059B2", "symbol": "SetJapaneseTextMode"},
     {"address": "0x080058FC", "original": "0x080059B2", "symbol": "SetChineseTextMode"}
@@ -48,6 +54,10 @@
     {"old": "0x085373EE", "symbol": "ChsOptionButtonLEqualsA", "expected": 1}
   ],
   "pointer_writes": [
+    {"address": "0x08059730", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
+    {"address": "0x0814E5F8", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
+    {"address": "0x0814EFAC", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
+    {"address": "0x0814F74C", "original": "0x082EACC4", "symbol": "ChsMoveNames"},
     {"address": "0x082D29A8", "symbol": "ChsBirchBoy"},
     {"address": "0x082D29B0", "symbol": "ChsBirchGirl"},
 
