@@ -25,7 +25,7 @@ PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
-PATCH_TEXTS := patch/texts.json $(wildcard patch/move_names.json patch/type_names.json) $(PATCH_BATCHES)
+PATCH_TEXTS := patch/texts.json $(wildcard patch/move_names.json patch/type_names.json patch/pocket_names.json) $(PATCH_BATCHES)
 
 .PHONY: all chs patch-payload compare clean
 
