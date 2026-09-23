@@ -9,6 +9,16 @@
       "address": "0x081C1ED8",
       "original": "70b585b0099c0a9d0006000e1206120e",
       "symbol": "SummaryScreenPrintHook"
+    },
+    {
+      "address": "0x080D6C8C",
+      "original": "00b50004000cfff7efff011c0904090c",
+      "symbol": "ChsItemIdGetName"
+    },
+    {
+      "address": "0x080D6D40",
+      "original": "10b50004000c074cfff794ff0004000c",
+      "symbol": "ChsItemIdGetDescription"
     }
   ],
   "code_patches": [
@@ -638,6 +648,16 @@
   ],
   "pointer_writes": [
     {
+      "address": "0x081AB490",
+      "original": "0x085C96F8",
+      "symbol": "ChsBagReturnLocations"
+    },
+    {
+      "address": "0x081C4E60",
+      "original": "0x085C9728",
+      "symbol": "ChsPyramidBagReturnLocations"
+    },
+    {
       "address": "0x081BF88C",
       "original": "0x08D97DD0",
       "symbol": "ChsSummaryTitleTilesGfx"
@@ -691,21 +711,6 @@
       "address": "0x085ED40C",
       "original": "0x08D971CC",
       "symbol": "ChsMoveTypesGfx"
-    },
-    {
-      "address": "0x081AACBC",
-      "original": "0x085C9742",
-      "symbol": "ChsPocketNames"
-    },
-    {
-      "address": "0x081ABE18",
-      "original": "0x085C9742",
-      "symbol": "ChsPocketNames"
-    },
-    {
-      "address": "0x081ABEB0",
-      "original": "0x085C9742",
-      "symbol": "ChsPocketNames"
     },
     {
       "address": "0x08008D58",

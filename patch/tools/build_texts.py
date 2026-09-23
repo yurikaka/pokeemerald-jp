@@ -136,6 +136,11 @@ def encode_text(text: str, charmap: dict[str, bytes], styled: bool) -> bytes:
     return bytes(output)
 
 
+def encode_compact_chinese_text(text: str, charmap: dict[str, bytes]) -> bytes:
+    encoded = encode_text(text, charmap, False)
+    return bytes((0xF5,)) + encoded[len(CONTROLS["ENG"]):]
+
+
 def convert_us_encoded_text(
     data: bytes,
     japanese_placeholders: set[int],
@@ -363,7 +368,7 @@ def main() -> None:
     fixed_tables = []
     for texts_path in texts_paths:
         document = json.loads(texts_path.read_text(encoding="utf-8"))
-        if isinstance(document, dict) and document.get("kind") == "fixed_string_table":
+        if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue
         document_wrap = isinstance(document, dict) and "dialogue" in document.get("category", "").lower()
@@ -397,6 +402,16 @@ def main() -> None:
         if name in names:
             raise ValueError(f"duplicate text symbol: {name}")
         names.add(name)
+        if table["kind"] == "string_pointer_table":
+            labels = []
+            for index, entry in enumerate(table["strings"]):
+                label = f".L{name}_{index}"
+                labels.append(label)
+                encoded = encode_text(entry, charmap, False)
+                lines.extend((".align 2", f"{label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+            lines.extend((".align 2", f".global {name}", f"{name}:"))
+            lines.extend(f"    .4byte {label}" for label in labels)
+            continue
         stride = table["stride"]
         lines.extend((".align 2", f".global {name}", f"{name}:"))
         for index, entry in enumerate(table["strings"]):
@@ -407,7 +422,10 @@ def main() -> None:
                     entry.get("japanese_dynamic", False),
                 )
             else:
-                encoded = encode_text(entry, charmap, False)
+                if table.get("compact_chinese", False):
+                    encoded = encode_compact_chinese_text(entry, charmap)
+                else:
+                    encoded = encode_text(entry, charmap, False)
             if len(encoded) > stride:
                 raise ValueError(
                     f"{name}[{index}] exceeds its {stride}-byte stride: {entry!r}"

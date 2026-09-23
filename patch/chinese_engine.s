@@ -40,6 +40,17 @@ ChineseRenderHook:
     adds r5, #0x21
     strb r2, [r5]
 .Lnot_eos:
+    cmp r3, #0xF5
+    bne .Lnot_compact_chinese
+    movs r2, #0
+    adds r5, r6, #0
+    adds r5, #0x21
+    strb r2, [r5]
+    pop {r2-r7}
+    pop {r1}
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+.Lnot_compact_chinese:
 
     @ Chinese is active only after EXT_CTRL_CODE_ENG.  Original Japanese
     @ strings remain in Japanese mode and therefore keep their single-byte
@@ -120,6 +131,42 @@ SetChineseTextMode:
     strb r0, [r1]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+
+.align 2
+.global ChsItemIdGetName
+.type ChsItemIdGetName, %function
+.thumb_func
+ChsItemIdGetName:
+    push {lr}
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+    ldr r3, =0x080D6C75
+    bl .Litem_name_call
+    lsls r0, r0, #4
+    ldr r1, =ChsItemNames
+    adds r0, r0, r1
+    pop {r1}
+    bx r1
+.Litem_name_call:
+    bx r3
+
+.align 2
+.global ChsItemIdGetDescription
+.type ChsItemIdGetDescription, %function
+.thumb_func
+ChsItemIdGetDescription:
+    push {lr}
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+    ldr r3, =0x080D6C75
+    bl .Litem_description_call
+    lsls r0, r0, #2
+    ldr r1, =ChsItemDescriptions
+    ldr r0, [r1, r0]
+    pop {r1}
+    bx r1
+.Litem_description_call:
+    bx r3
 
 .align 2
 .global SummaryScreenPrintHook
