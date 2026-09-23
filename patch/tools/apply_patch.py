@@ -74,6 +74,20 @@ def main() -> None:
     rom.extend(b"\xFF" * (ROM_SIZE - len(rom)))
     rom[payload_offset:payload_offset + len(payload)] = payload
 
+    for entry in manifest.get("code_patches", []):
+        address = parse_int(entry["address"])
+        offset = rom_offset(address)
+        expected = bytes.fromhex(entry["original"])
+        replacement = bytes.fromhex(entry["replacement"])
+        if len(expected) != len(replacement):
+            raise SystemExit(f"code patch 0x{address:08X}: replacement size differs")
+        actual = rom[offset:offset + len(expected)]
+        if actual != expected:
+            raise SystemExit(
+                f"code patch 0x{address:08X}: expected {expected.hex()}, got {actual.hex()}"
+            )
+        rom[offset:offset + len(replacement)] = replacement
+
     hook_address = parse_int(manifest["render_hook_address"])
     hook_offset = rom_offset(hook_address)
     expected_hook = bytes.fromhex(manifest["render_hook_original"])
@@ -110,7 +124,15 @@ def main() -> None:
             rom[offset:offset + 4] = new_bytes
 
     for entry in manifest["pointer_writes"]:
-        write_word(rom, parse_int(entry["address"]), symbols[entry["symbol"]])
+        address = parse_int(entry["address"])
+        if "original" in entry:
+            actual = struct.unpack_from("<I", rom, rom_offset(address))[0]
+            expected = parse_int(entry["original"])
+            if actual != expected:
+                raise SystemExit(
+                    f"pointer 0x{address:08X}: expected 0x{expected:08X}, got 0x{actual:08X}"
+                )
+        write_word(rom, address, symbols[entry["symbol"]])
 
     for batch_path in args.batch:
         batch = json.loads(batch_path.read_text(encoding="utf-8"))

@@ -53,6 +53,19 @@ SYNTHETIC_PUNCTUATION = {
     "；", "。", "～", "、", "，", "！", "？", "：", "—", "“", "”", "…"
 }
 
+DIALOGUE_LINE_WIDTH = 168
+PLACEHOLDER_WIDTHS = {
+    0x01: 48,  # Player name: up to six Japanese glyphs.
+    0x02: 96,  # String variables may contain long item or place names.
+    0x03: 96,
+    0x04: 96,
+    0x05: 0,   # Japanese honorifics are replaced with an empty string.
+    0x06: 24,  # Rival name is two Chinese glyphs.
+}
+NO_LINE_START = "，。！？：；、”’）》】」』"
+NO_LINE_END = "“‘《（【「『"
+PREFERRED_LINE_END = "，。！？：；、"
+
 
 def read_charmap(path: Path) -> dict[str, bytes]:
     result: dict[str, bytes] = {}
@@ -148,7 +161,13 @@ def convert_us_encoded_text(
             except KeyError as exc:
                 raise ValueError(f"unknown extended control code: 0x{code:02X}") from exc
             end = index + 2 + arg_length
-            output.extend(data[index:end])
+            chunk = bytearray(data[index:end])
+            if code == 0x13:
+                # The Japanese engine turns CLEAR_TO into a no-op, but supports
+                # the otherwise-unused SHIFT_TEXT opcode with the same cursor
+                # positioning semantics.
+                chunk[1] = 0x0D
+            output.extend(chunk)
             index = end
             continue
         if char == 0xFD:
@@ -188,6 +207,151 @@ def convert_us_encoded_text(
     return bytes(output)
 
 
+def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
+    """Return one encoded token, its pixel width, and the next byte index."""
+    char = data[index]
+    if char == 0xFC:
+        if index + 1 >= len(data):
+            raise ValueError("truncated extended control code while wrapping")
+        code = data[index + 1]
+        try:
+            arg_length = EXT_CTRL_ARG_LENGTHS[code]
+        except KeyError as exc:
+            raise ValueError(f"unknown extended control code while wrapping: 0x{code:02X}") from exc
+        end = index + 2 + arg_length
+        return data[index:end], 0, end
+    if char == 0xFD:
+        if index + 1 >= len(data):
+            raise ValueError("truncated placeholder while wrapping")
+        end = index + 2
+        return data[index:end], PLACEHOLDER_WIDTHS.get(data[index + 1], 48), end
+    if char in (0xF7, 0xF8, 0xF9):
+        end = min(index + 2, len(data))
+        return data[index:end], 0, end
+    if char == 0x7F or 0x60 <= char <= 0x7D and char not in (0x65, 0x7A):
+        if index + 1 >= len(data):
+            raise ValueError("truncated Chinese glyph while wrapping")
+        end = index + 2
+        return data[index:end], 12, end
+    return data[index:index + 1], 8, index + 1
+
+
+def tokenize_line(data: bytes) -> list[tuple[bytes, int]]:
+    tokens = []
+    index = 0
+    while index < len(data):
+        token, width, index = text_token(data, index)
+        tokens.append((token, width))
+    return tokens
+
+
+def line_width(data: bytes) -> int:
+    return sum(width for _, width in tokenize_line(data))
+
+
+def encoded_chars(chars: str, charmap: dict[str, bytes]) -> set[bytes]:
+    return {encode_char(char, charmap) for char in chars if char in charmap}
+
+
+def visible_group_start(tokens: list[tuple[bytes, int]], visible_index: int) -> int:
+    """Keep renderer mode controls attached to the visible glyph they introduce."""
+    start = visible_index
+    while start > 0 and tokens[start - 1][1] == 0:
+        start -= 1
+    return start
+
+
+def wrap_tokens(
+    tokens: list[tuple[bytes, int]],
+    max_width: int,
+    no_line_start: set[bytes],
+    no_line_end: set[bytes],
+    preferred_line_end: set[bytes],
+) -> list[list[tuple[bytes, int]]]:
+    lines = []
+    remaining = tokens
+    while remaining:
+        width = 0
+        end = 0
+        preferred = 0
+        while end < len(remaining):
+            token, token_width = remaining[end]
+            if token_width and width and width + token_width > max_width:
+                break
+            width += token_width
+            end += 1
+            if token in preferred_line_end and width >= max_width * 3 // 5:
+                preferred = end
+        if end == len(remaining):
+            lines.append(remaining)
+            break
+
+        split = preferred or end
+        next_visible = next((token for token, token_width in remaining[split:] if token_width), b"")
+        if next_visible in no_line_start:
+            previous_visible = next(
+                (index for index in range(split - 1, -1, -1) if remaining[index][1]),
+                -1,
+            )
+            if previous_visible >= 0:
+                split = visible_group_start(remaining, previous_visible)
+        while split > 0:
+            previous_visible = next(
+                (index for index in range(split - 1, -1, -1) if remaining[index][1]),
+                -1,
+            )
+            if previous_visible < 0 or remaining[previous_visible][0] not in no_line_end:
+                break
+            split = visible_group_start(remaining, previous_visible)
+        if split == 0:
+            split = max(1, end)
+
+        lines.append(remaining[:split])
+        remaining = remaining[split:]
+    return lines
+
+
+def wrap_dialogue_page(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, bool]:
+    source_lines = re.split(b"[\\xFA\\xFE]", data)
+    if all(line_width(line) <= DIALOGUE_LINE_WIDTH for line in source_lines):
+        return data, False
+
+    flowing = data.replace(b"\xFA", b"").replace(b"\xFE", b"")
+    tokens = tokenize_line(flowing)
+    lines = wrap_tokens(
+        tokens,
+        DIALOGUE_LINE_WIDTH,
+        encoded_chars(NO_LINE_START, charmap),
+        encoded_chars(NO_LINE_END, charmap),
+        encoded_chars(PREFERRED_LINE_END, charmap),
+    )
+    output = bytearray()
+    for index, line in enumerate(lines):
+        if index:
+            output.append(0xFE if index == 1 else 0xFA)
+        for token, _ in line:
+            output.extend(token)
+    return bytes(output), True
+
+
+def wrap_dialogue(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, int]:
+    """Reflow overlong pages for the original 22-tile Japanese text window."""
+    output = bytearray()
+    changed_pages = 0
+    page_start = 0
+    for index, char in enumerate(data):
+        if char not in (0xFB, 0xFF):
+            continue
+        page, changed = wrap_dialogue_page(data[page_start:index], charmap)
+        output.extend(page)
+        output.append(char)
+        changed_pages += int(changed)
+        page_start = index + 1
+        if char == 0xFF:
+            break
+    return bytes(output), changed_pages
+
+
 def main() -> None:
     if len(sys.argv) < 4:
         raise SystemExit("usage: build_texts.py CHARMAP OUTPUT_INC TEXTS_JSON...")
@@ -196,13 +360,21 @@ def main() -> None:
     texts_paths = [Path(path) for path in sys.argv[3:]]
     charmap = read_charmap(charmap_path)
     definitions = []
+    fixed_tables = []
     for texts_path in texts_paths:
         document = json.loads(texts_path.read_text(encoding="utf-8"))
-        definitions.extend(document if isinstance(document, list) else document["texts"])
+        if isinstance(document, dict) and document.get("kind") == "fixed_string_table":
+            fixed_tables.append(document)
+            continue
+        document_wrap = isinstance(document, dict) and "dialogue" in document.get("category", "").lower()
+        for definition in document if isinstance(document, list) else document["texts"]:
+            definitions.append((definition, definition.get("auto_wrap", document_wrap)))
 
     lines = ["@ Generated by patch/tools/build_texts.py; do not edit.", ".align 2"]
     names = set()
-    for definition in definitions:
+    wrapped_strings = 0
+    wrapped_pages = 0
+    for definition, auto_wrap in definitions:
         name = definition["name"]
         if name in names:
             raise ValueError(f"duplicate text symbol: {name}")
@@ -215,8 +387,35 @@ def main() -> None:
             )
         else:
             encoded = encode_text(definition["text"], charmap, definition.get("styled", False))
+        if auto_wrap:
+            encoded, changed_pages = wrap_dialogue(encoded, charmap)
+            wrapped_strings += int(changed_pages > 0)
+            wrapped_pages += changed_pages
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+    for table in fixed_tables:
+        name = table["name"]
+        if name in names:
+            raise ValueError(f"duplicate text symbol: {name}")
+        names.add(name)
+        stride = table["stride"]
+        lines.extend((".align 2", f".global {name}", f"{name}:"))
+        for index, entry in enumerate(table["strings"]):
+            if isinstance(entry, dict):
+                encoded = convert_us_encoded_text(
+                    bytes.fromhex(entry["us_encoded_hex"]),
+                    set(entry.get("japanese_placeholders", [])),
+                    entry.get("japanese_dynamic", False),
+                )
+            else:
+                encoded = encode_text(entry, charmap, False)
+            if len(encoded) > stride:
+                raise ValueError(
+                    f"{name}[{index}] exceeds its {stride}-byte stride: {entry!r}"
+                )
+            encoded += bytes((0xFF,)) * (stride - len(encoded))
+            lines.append("    .byte " + ", ".join(f"0x{x:02X}" for x in encoded))
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"auto-wrapped {wrapped_pages} overlong pages in {wrapped_strings} dialogue strings")
 
 
 if __name__ == "__main__":

@@ -197,6 +197,10 @@ DecompressChineseGlyph:
 .align 2
 .include "build/patch/texts.inc"
 
+.global ChsEmptyString
+ChsEmptyString:
+    .byte 0xFF
+
 .align 2
 ChineseNormalFont:
     .incbin "build/patch/chinese_normal.latfont"

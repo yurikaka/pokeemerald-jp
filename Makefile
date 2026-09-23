@@ -25,6 +25,7 @@ PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
+PATCH_TEXTS := patch/texts.json $(wildcard patch/move_names.json patch/type_names.json) $(PATCH_BATCHES)
 
 .PHONY: all chs patch-payload compare clean
 
@@ -54,8 +55,8 @@ $(OBJFILE): %.o: %.s
 $(PATCH_BUILD):
 	mkdir -p $@
 
-$(PATCH_BUILD)/texts.inc: patch/texts.json $(PATCH_BATCHES) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
-	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $@ patch/texts.json $(PATCH_BATCHES)
+$(PATCH_BUILD)/texts.inc: $(PATCH_TEXTS) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $@ $(PATCH_TEXTS)
 
 $(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
