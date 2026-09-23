@@ -127,9 +127,8 @@ SetChineseTextMode:
 .thumb_func
 SummaryScreenPrintHook:
     @ Replaces SummaryScreen_PrintTextOnWindow (0x081C1ED8) wholesale.
-    @ Identical to the original except the font id is chosen per string:
-    @ the contest move page's Appeal/Jam labels only fit their 4-tile
-    @ window in the 10 px small font (3 glyphs x 10 px <= 32 px).
+    @ Identical to the original except the contest move page's Appeal/Jam
+    @ labels use the 10 px small font to fit their 4-tile window.
     push {r4, r5, r6, lr}
     sub sp, #20
     ldr r4, [sp, #36]
@@ -290,6 +289,46 @@ ChsStatusIconsGfx:
 .global ChsShopMoneyGfx
 ChsShopMoneyGfx:
     .incbin "build/patch/shop_money.lz"
+
+.align 2
+.global ChsSummaryTitleTilesGfx
+ChsSummaryTitleTilesGfx:
+    .incbin "build/patch/summary_titles.lz"
+
+.align 2
+.global ChsSummaryInfoTilemap
+ChsSummaryInfoTilemap:
+    .incbin "build/patch/summary_info.lz"
+
+.align 2
+.global ChsSummaryInfoEggTilemap
+ChsSummaryInfoEggTilemap:
+    .incbin "build/patch/summary_info_egg.lz"
+
+.align 2
+.global ChsSummarySkillsTilemap
+ChsSummarySkillsTilemap:
+    .incbin "build/patch/summary_skills.lz"
+
+.align 2
+.global ChsSummaryBattleTilemap
+ChsSummaryBattleTilemap:
+    .incbin "build/patch/summary_battle.lz"
+
+.align 2
+.global ChsSummaryContestTilemap
+ChsSummaryContestTilemap:
+    .incbin "build/patch/summary_contest.lz"
+
+.align 2
+.global ChsSummaryEffectBattleTilemap
+ChsSummaryEffectBattleTilemap:
+    .incbin "patch/gfx/summary_effect_battle.bin"
+
+.align 2
+.global ChsSummaryEffectContestTilemap
+ChsSummaryEffectContestTilemap:
+    .incbin "patch/gfx/summary_effect_contest.bin"
 
 .align 2
 ChineseNormalFont:

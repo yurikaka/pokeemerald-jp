@@ -25,7 +25,11 @@ PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_GFX := $(wildcard patch/gfx/*.4bpp)
+PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin
+PATCH_TILEMAPS := $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin))
 PATCH_GFX_LZ := $(patsubst patch/gfx/%.4bpp,$(PATCH_BUILD)/%.lz,$(PATCH_GFX))
+PATCH_TILEMAP_LZ := $(patsubst patch/gfx/%.bin,$(PATCH_BUILD)/%.lz,$(PATCH_TILEMAPS))
+PATCH_RESOURCES_LZ := $(PATCH_GFX_LZ) $(PATCH_TILEMAP_LZ)
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
 PATCH_TEXTS := patch/texts.json $(wildcard patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json) $(PATCH_BATCHES)
 
@@ -72,13 +76,16 @@ $(PATCH_BUILD)/latin_normal.latfont: patch/fonts/latin_normal.png | $(PATCH_BUIL
 $(PATCH_BUILD)/latin_small.latfont: patch/fonts/latin_small.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
-$(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
+$(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_TILEMAP_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.bin | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
 $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/chinese_normal.latfont $(PATCH_BUILD)/chinese_small.latfont \
 		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
-		$(PATCH_GFX_LZ)
+		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS)
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 
 $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld

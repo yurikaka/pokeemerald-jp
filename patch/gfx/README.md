@@ -22,3 +22,17 @@ the party menu and summary screen use the same localized status icons.
 `shop_money.4bpp` is generated from `graphics/shop/money.png`. Its 32 by 16
 pixel layout and palette match the Japanese asset, so the shop's sole sprite
 sheet graphics pointer at `0x08565FBC` is redirected.
+
+`summary_titles.4bpp` starts with the 217 Japanese summary-screen tiles, then
+appends composited Chinese title tiles. The Chinese title pixels come from the
+US localization atlas, while each tile's Japanese background and border pixels
+are preserved. The five `summary_*.bin` tilemaps use these appended tiles only
+for the static titles. This preserves the Japanese runtime tile IDs and page
+backgrounds while localizing the headings for information, egg information,
+skills, battle moves, and contest moves.
+
+`summary_effect_battle.bin` and `summary_effect_contest.bin` are the raw
+tilemaps used by the sliding move-detail windows. They use the same composited
+title tiles to replace the Japanese effect heading without changing the window
+backgrounds, and must remain uncompressed because the summary-screen code
+reads them directly.
