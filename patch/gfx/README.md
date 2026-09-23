@@ -18,3 +18,7 @@ the patch redirects only the graphics source at `0x0813D9E4`.
 Its 32 by 64 pixel layout and palette match the Japanese asset. All two
 references to the shared Japanese compressed sprite sheet are redirected, so
 the party menu and summary screen use the same localized status icons.
+
+`shop_money.4bpp` is generated from `graphics/shop/money.png`. Its 32 by 16
+pixel layout and palette match the Japanese asset, so the shop's sole sprite
+sheet graphics pointer at `0x08565FBC` is redirected.

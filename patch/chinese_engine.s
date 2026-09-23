@@ -287,6 +287,11 @@ ChsStatusIconsGfx:
     .incbin "build/patch/status_icons.lz"
 
 .align 2
+.global ChsShopMoneyGfx
+ChsShopMoneyGfx:
+    .incbin "build/patch/shop_money.lz"
+
+.align 2
 ChineseNormalFont:
     .incbin "build/patch/chinese_normal.latfont"
 .align 2
