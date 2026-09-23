@@ -277,6 +277,11 @@ ChsMoveTypesGfx:
     .incbin "build/patch/move_types.lz"
 
 .align 2
+.global ChsPokedexAreaUnknownGfx
+ChsPokedexAreaUnknownGfx:
+    .incbin "build/patch/pokedex_area_unknown.lz"
+
+.align 2
 ChineseNormalFont:
     .incbin "build/patch/chinese_normal.latfont"
 .align 2

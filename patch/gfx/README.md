@@ -8,3 +8,8 @@ each as a 32 by 16 pixel icon.
 The Japanese summary screen uses the same atlas size, tile order, palette, and
 sprite tag. The patch compresses this resource at build time and replaces only
 the `CompressedSpriteSheet.data` pointer at `0x085ED40C`.
+
+`pokedex_area_unknown.4bpp` is generated from
+`graphics/pokedex/area_unknown.png` in the same US localization commit. Its
+32 by 96 pixel layout and first 16-color palette match the Japanese asset, so
+the patch redirects only the graphics source at `0x0813D9E4`.
