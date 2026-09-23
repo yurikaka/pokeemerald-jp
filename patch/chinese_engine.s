@@ -169,6 +169,69 @@ ChsItemIdGetDescription:
     bx r3
 
 .align 2
+.global ChsBagPrintPocketName
+.type ChsBagPrintPocketName, %function
+.thumb_func
+ChsBagPrintPocketName:
+    push {r4, lr}
+    cmp r1, #0
+    beq .Lprint_pocket_name
+    cmp r1, #8
+    beq .Lprint_pocket_name
+    b .Lbag_pocket_return
+.Lprint_pocket_name:
+    adds r0, r0, r1
+    ldrb r4, [r0]
+    subs r4, #0xF0
+    cmp r4, #4
+    bhi .Lbag_pocket_return
+    sub sp, #24
+    movs r0, #2
+    movs r1, #0
+    ldr r3, =0x08003B19
+    bl .Lbag_pocket_call_r3
+    movs r0, #2
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r0, [sp, #8]
+    str r0, [sp, #12]
+    movs r0, #1
+    str r0, [sp, #16]
+    ldr r0, =ChsPocketNameXOffsets
+    ldrb r3, [r0, r4]
+    lsls r0, r4, #2
+    ldr r2, =ChsPocketNames
+    adds r2, r2, r0
+    ldr r2, [r2]
+    movs r0, #2
+    movs r1, #1
+    ldr r4, =0x081ADD95
+    bl .Lbag_pocket_call_r4
+    add sp, #24
+.Lbag_pocket_return:
+    pop {r4}
+    pop {r0}
+    bx r0
+.Lbag_pocket_call_r3:
+    bx r3
+.Lbag_pocket_call_r4:
+    bx r4
+
+.align 2
+.global ChsPocketNameIds
+ChsPocketNameIds:
+    .byte 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
+    .byte 0xF1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
+    .byte 0xF2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
+    .byte 0xF3, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
+    .byte 0xF4, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
+
+.align 2
+ChsPocketNameXOffsets:
+    .byte 12, 6, 2, 12, 8
+
+.align 2
 .global SummaryScreenPrintHook
 .type SummaryScreenPrintHook, %function
 .thumb_func

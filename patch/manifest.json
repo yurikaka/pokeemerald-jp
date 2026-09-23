@@ -19,6 +19,11 @@
       "address": "0x080D6D40",
       "original": "10b50004000c074cfff794ff0004000c",
       "symbol": "ChsItemIdGetDescription"
+    },
+    {
+      "address": "0x081AB4A0",
+      "original": "00b588b0021c0906090e521805a8111c",
+      "symbol": "ChsBagPrintPocketName"
     }
   ],
   "code_patches": [
@@ -647,6 +652,21 @@
     }
   ],
   "pointer_writes": [
+    {
+      "address": "0x081AACBC",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNameIds"
+    },
+    {
+      "address": "0x081ABE18",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNameIds"
+    },
+    {
+      "address": "0x081ABEB0",
+      "original": "0x085C9742",
+      "symbol": "ChsPocketNameIds"
+    },
     {
       "address": "0x081AB490",
       "original": "0x085C96F8",
