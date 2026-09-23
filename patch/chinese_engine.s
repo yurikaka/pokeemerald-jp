@@ -25,6 +25,20 @@ ChineseRenderHook:
 
     push {r2-r7, lr}
 
+    @ A string's EOS byte always returns the printer to Japanese mode.
+    @ Without this, an untranslated string printed after a Chinese one by
+    @ the same printer (such as a species name in the party screen or the
+    @ Pokédex) would inherit Chinese mode and have its 0x60-0x7D katakana
+    @ misread as Chinese high bytes.  r2 and r5 are stack-saved here, so
+    @ this stays transparent to the original render loop.
+    cmp r3, #0xFF
+    bne .Lnot_eos
+    movs r2, #1
+    adds r5, r6, #0
+    adds r5, #0x21
+    strb r2, [r5]
+.Lnot_eos:
+
     @ Chinese is active only after EXT_CTRL_CODE_ENG.  Original Japanese
     @ strings remain in Japanese mode and therefore keep their single-byte
     @ katakana interpretation.
