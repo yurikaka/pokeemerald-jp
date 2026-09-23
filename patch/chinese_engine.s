@@ -336,6 +336,168 @@ ChsBagCopyPocketTiles:
     bx lr
 
 .align 2
+.global ChsSaveInfoFormat
+.type ChsSaveInfoFormat, %function
+.thumb_func
+ChsSaveInfoFormat:
+    push {r4, r5, r6, r7, lr}
+    lsls r0, r0, #0x18
+    lsrs r3, r0, #0x18
+    lsls r2, r2, #0x18
+    lsrs r2, r2, #0x18
+    adds r5, r1, #0
+    movs r1, #0xFC
+    strb r1, [r5]
+    adds r5, #1
+    movs r0, #1
+    strb r0, [r5]
+    adds r5, #1
+    strb r2, [r5]
+    adds r5, #1
+    strb r1, [r5]
+    adds r5, #1
+    movs r0, #3
+    strb r0, [r5]
+    adds r5, #1
+    adds r2, #1
+    strb r2, [r5]
+    adds r5, #1
+    cmp r3, #4
+    bhi .Lsave_info_return
+    lsls r0, r3, #2
+    ldr r1, =.Lsave_info_jump_table
+    adds r0, r0, r1
+    ldr r0, [r0]
+    mov pc, r0
+
+.align 2
+.Lsave_info_jump_table:
+    .4byte .Lsave_info_player_name
+    .4byte .Lsave_info_pokedex
+    .4byte .Lsave_info_time
+    .4byte .Lsave_info_region_name
+    .4byte .Lsave_info_badges
+
+.Lsave_info_player_name:
+    ldr r0, =0x03005AF0
+    ldr r1, [r0]
+    adds r0, r5, #0
+    ldr r3, =0x080088B9
+    bl .Lsave_info_call_r3
+    b .Lsave_info_return
+
+.Lsave_info_pokedex:
+    ldr r3, =0x0809CD05
+    bl .Lsave_info_call_r3
+    cmp r0, #0
+    beq .Lsave_info_hoenn_dex
+    movs r0, #1
+    ldr r3, =0x080BFD4D
+    bl .Lsave_info_call_r3
+    b .Lsave_info_dex_count
+.Lsave_info_hoenn_dex:
+    movs r0, #1
+    ldr r3, =0x080BFD9D
+    bl .Lsave_info_call_r3
+.Lsave_info_dex_count:
+    adds r1, r0, #0
+    lsls r1, r1, #0x10
+    lsrs r1, r1, #0x10
+    adds r0, r5, #0
+    movs r2, #0
+    movs r3, #3
+    ldr r4, =0x080089D9
+    bl .Lsave_info_call_r4
+    adds r5, r0, #0
+    movs r0, #0xFC
+    strb r0, [r5]
+    movs r0, #0x16
+    strb r0, [r5, #1]
+    movs r0, #0x6F
+    strb r0, [r5, #2]
+    movs r0, #0x8C
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+    b .Lsave_info_return
+
+.Lsave_info_time:
+    ldr r4, =0x03005AF0
+    ldr r0, [r4]
+    ldrh r1, [r0, #0x0E]
+    adds r0, r5, #0
+    movs r2, #0
+    movs r3, #3
+    ldr r6, =0x080089D9
+    bl .Lsave_info_call_r6
+    adds r5, r0, #0
+    movs r0, #0xF0
+    strb r0, [r5]
+    adds r5, #1
+    ldr r0, [r4]
+    ldrb r1, [r0, #0x10]
+    adds r0, r5, #0
+    movs r2, #2
+    movs r3, #2
+    ldr r6, =0x080089D9
+    bl .Lsave_info_call_r6
+    b .Lsave_info_return
+
+.Lsave_info_region_name:
+    ldr r0, =0x02036FB8
+    ldrb r1, [r0, #0x14]
+    adds r0, r5, #0
+    ldr r3, =0x081245E9
+    bl .Lsave_info_call_r3
+    b .Lsave_info_return
+
+.Lsave_info_badges:
+    ldr r4, =0x00000867
+    movs r6, #0
+    adds r7, r5, #1
+.Lsave_info_badge_loop:
+    lsls r0, r4, #0x10
+    lsrs r0, r0, #0x10
+    ldr r3, =0x0809D069
+    bl .Lsave_info_call_r3
+    lsls r0, r0, #0x18
+    cmp r0, #0
+    beq .Lsave_info_badge_next
+    adds r6, #1
+.Lsave_info_badge_next:
+    adds r4, #1
+    ldr r0, =0x0000086E
+    cmp r4, r0
+    ble .Lsave_info_badge_loop
+    adds r0, r6, #0
+    subs r0, #0x5F
+    strb r0, [r5]
+    adds r5, r7, #0
+    movs r0, #0xFC
+    strb r0, [r5]
+    movs r0, #0x16
+    strb r0, [r5, #1]
+    movs r0, #0x63
+    strb r0, [r5, #2]
+    movs r0, #0x60
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+
+.Lsave_info_return:
+    pop {r4, r5, r6, r7}
+    pop {r0}
+    bx r0
+.Lsave_info_call_r3:
+    bx r3
+.Lsave_info_call_r4:
+    bx r4
+.Lsave_info_call_r6:
+    bx r6
+
+.ltorg
+
+.align 2
 .global ChsPocketNameIds
 ChsPocketNameIds:
     .byte 0xF0, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0xFF
