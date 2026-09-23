@@ -10,6 +10,8 @@
 .equ JP_RENDER_TEXT_COPY,       0x08005B33
 .equ JP_RENDER_TEXT_REPEAT,     0x080059B3
 .equ JP_CURRENT_GLYPH,          0x03003030
+.equ JP_ADD_TEXT_PRINTER_4,     0x08199B85
+.equ SUMMARY_TEXT_COLORS,       0x085ED17C
 
 .global ChineseRenderHook
 .type ChineseRenderHook, %function
@@ -118,6 +120,60 @@ SetChineseTextMode:
     strb r0, [r1]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+
+.align 2
+.global SummaryScreenPrintHook
+.type SummaryScreenPrintHook, %function
+.thumb_func
+SummaryScreenPrintHook:
+    @ Replaces SummaryScreen_PrintTextOnWindow (0x081C1ED8) wholesale.
+    @ Identical to the original except the font id is chosen per string:
+    @ the contest move page's Appeal/Jam labels only fit their 4-tile
+    @ window in the 10 px small font (3 glyphs x 10 px <= 32 px).
+    push {r4, r5, r6, lr}
+    sub sp, #20
+    ldr r4, [sp, #36]
+    ldr r5, [sp, #40]
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    lsls r2, r2, #24
+    lsrs r2, r2, #24
+    lsls r3, r3, #24
+    lsrs r3, r3, #24
+    lsls r4, r4, #24
+    lsrs r4, r4, #24
+    lsls r5, r5, #24
+    lsrs r5, r5, #24
+    movs r6, #0
+    str r6, [sp]
+    str r4, [sp, #4]
+    lsls r4, r5, #1
+    adds r4, r4, r5
+    ldr r5, =SUMMARY_TEXT_COLORS
+    adds r4, r4, r5
+    str r4, [sp, #8]
+    str r6, [sp, #12]
+    str r1, [sp, #16]
+    movs r6, #1
+    ldr r4, =Chs_gText_Appeal
+    cmp r1, r4
+    beq .Lssp_small_font
+    ldr r4, =Chs_gText_Jam
+    cmp r1, r4
+    bne .Lssp_font_ready
+.Lssp_small_font:
+    movs r6, #0
+.Lssp_font_ready:
+    movs r1, r6
+    ldr r4, =JP_ADD_TEXT_PRINTER_4
+    bl .Lssp_call_r4
+    add sp, #20
+    pop {r4, r5, r6}
+    pop {r0}
+    bx r0
+.align 2
+.Lssp_call_r4:
+    bx r4
 
 .align 2
 .type DecompressChineseGlyph, %function
