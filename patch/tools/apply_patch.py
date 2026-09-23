@@ -119,8 +119,11 @@ def main() -> None:
             raise SystemExit(
                 f"pointer 0x{old:08X}: expected {replacement['expected']} aligned references, found {len(offsets)}"
             )
+        excluded = {rom_offset(parse_int(address)) for address in replacement.get("exclude", [])}
         new_bytes = struct.pack("<I", symbols[replacement["symbol"]])
         for offset in offsets:
+            if offset in excluded:
+                continue
             rom[offset:offset + 4] = new_bytes
 
     for entry in manifest["pointer_writes"]:
