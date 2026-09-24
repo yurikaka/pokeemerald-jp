@@ -186,6 +186,27 @@ ChsItemIdGetName:
     bx r3
 
 .align 2
+.global ChsGetBerryNameByType
+.type ChsGetBerryNameByType, %function
+.thumb_func
+ChsGetBerryNameByType:
+    push {r4, lr}
+    adds r4, r1, #0
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    adds r0, #0x84
+    bl ChsItemIdGetName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088B9
+    bl .Lberry_name_copy
+    pop {r4}
+    pop {r1}
+    bx r1
+.Lberry_name_copy:
+    bx r3
+
+.align 2
 .global ChsItemIdGetDescription
 .type ChsItemIdGetDescription, %function
 .thumb_func
