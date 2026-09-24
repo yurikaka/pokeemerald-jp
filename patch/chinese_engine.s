@@ -1171,6 +1171,11 @@ ChsPokedexInterfacePal:
     .2byte 0x1400, 0x7FFF, 0x1FDD, 0x5C1F, 0x2746, 0x1203, 0x2E77, 0x0000
 
 .align 2
+.global ChsTrainerCardGfx
+ChsTrainerCardGfx:
+    .incbin "build/patch/trainer_card_tiles.lz"
+
+.align 2
 .global ChsStatusIconsGfx
 ChsStatusIconsGfx:
     .incbin "build/patch/status_icons.lz"

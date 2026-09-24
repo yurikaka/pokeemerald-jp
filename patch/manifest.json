@@ -468,6 +468,12 @@
       "original": "8022",
       "replacement": "8622",
       "comment": "DecompressAndLoadBgGfxUsingHeap size 0x2000 -> 0x2180 (extended pokedex tileset, description screen)"
+    },
+    {
+      "address": "0x080C3222",
+      "original": "0a22",
+      "replacement": "0d22",
+      "comment": "StringAppendN limit 10 -> 13 for FC16-encoded Chinese trainer card title"
     }
   ],
   "mode_jump_table": [
@@ -720,6 +726,11 @@
     {
       "old": "0x08537420",
       "symbol": "ChsPokedexInterfacePal",
+      "expected": 1
+    },
+    {
+      "old": "0x0854441C",
+      "symbol": "ChsTrainerCardGfx",
       "expected": 1
     }
   ],

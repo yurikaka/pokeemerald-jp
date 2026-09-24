@@ -37,6 +37,14 @@ localization commit. `build_pokedex_info_gfx.py` pastes these tiles over the
 shared tileset's ポケモンずかん title, which only the list tilemap
 `0x08537804` references.
 
+`trainer_card_tiles.4bpp` is the Japanese Hoenn trainer-card tileset
+(`0x0854441C`, 160 tiles) with the baked-in text replaced by the US Chinese
+`graphics/trainer_card/tiles.png` tiles: the トレーナーカード header band
+(tiles 0x80-0x8B/0x90-0x9B) becomes 训练家卡 and the リーグバッジ badge-box
+label (tiles 0x06-0x0B) becomes 联盟徽章. Both versions share the same tile
+IDs and palette roles, and the sole tileset reference at `0x080C2254` is
+redirected. The Kanto (FRLG-style) card tileset is untouched.
+
 `status_icons.4bpp` is generated from `graphics/interface/status_icons.png`.
 Its 32 by 64 pixel layout and palette match the Japanese asset. All two
 references to the shared Japanese compressed sprite sheet are redirected, so
