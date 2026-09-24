@@ -100,6 +100,7 @@ def encode_char(char: str, charmap: dict[str, bytes]) -> bytes:
 
 
 def encode_text(text: str, charmap: dict[str, bytes], styled: bool) -> bytes:
+    text = text.replace("\\n", "\n")
     output = bytearray()
     if styled:
         # DrawOptionMenuChoice changes bytes 2 and 5 for the selected color.
