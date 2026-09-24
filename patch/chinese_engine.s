@@ -1475,6 +1475,24 @@ ChsShopMoneyGfx:
     .incbin "build/patch/shop_money.lz"
 
 .align 2
+.global ChsEasyChatButtonWindowGfx
+ChsEasyChatButtonWindowGfx:
+    .incbin "build/patch/easy_chat_button_window.lz"
+
+.align 2
+.global ChsEasyChatModeGfx
+ChsEasyChatModeGfx:
+    .incbin "build/patch/easy_chat_mode.lz"
+
+.align 2
+.global ChsEasyChatModePal
+ChsEasyChatModePal:
+    .2byte 0x7FFF, 0x6F5B, 0x5AF6, 0x39CE
+    .2byte 0x0000, 0x0000, 0x0000, 0x0000
+    .2byte 0x0000, 0x0000, 0x0000, 0x0000
+    .2byte 0x0000, 0x0000, 0x0000, 0x0000
+
+.align 2
 .global ChsSummaryTitleTilesGfx
 ChsSummaryTitleTilesGfx:
     .incbin "build/patch/summary_titles.lz"
