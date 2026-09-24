@@ -249,17 +249,6 @@ ChsTrainerClassNameFromId:
     bx r1
 
 .align 2
-.global ChsBattleTrainerClassHook
-.type ChsBattleTrainerClassHook, %function
-.thumb_func
-ChsBattleTrainerClassHook:
-    ldrh r0, [r3]
-    bl ChsTrainerClassNameFromId
-    adds r4, r0, #0
-    ldr r0, =0x0814F5DD
-    bx r0
-
-.align 2
 .global ChsBattleTrainerNameHook
 .type ChsBattleTrainerNameHook, %function
 .thumb_func
