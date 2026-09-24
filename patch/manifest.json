@@ -29,6 +29,26 @@
       "address": "0x08199FDC",
       "original": "f0b50006030e1206120e0d1cfc212970",
       "symbol": "ChsSaveInfoFormat"
+    },
+    {
+      "address": "0x080C0150",
+      "original": "f0b582b00c1c0006060e1206120e9446",
+      "symbol": "ChsPokedexPrintCategory"
+    },
+    {
+      "address": "0x08134480",
+      "original": "f0b557464e464546e0b48cb00006060e",
+      "symbol": "ChsStarterPokemonLabel"
+    },
+    {
+      "address": "0x0819B99C",
+      "original": "30b586b02a4d2868c478052c4cd80520",
+      "symbol": "ChsFactorySelectPrintMonCategory"
+    },
+    {
+      "address": "0x0819EE50",
+      "original": "70b586b0074e3068c478251c08200021",
+      "symbol": "ChsFactorySwapPrintMonCategory"
     }
   ],
   "code_patches": [
@@ -431,6 +451,23 @@
       "address": "0x085ED094",
       "original": "0018000602074900",
       "replacement": "0015000902076002"
+    },
+    {
+      "address": "0x085C8FC0",
+      "original": "9f59737e",
+      "replacement": "00000000"
+    },
+    {
+      "address": "0x080BE296",
+      "original": "8022",
+      "replacement": "8622",
+      "comment": "DecompressAndLoadBgGfxUsingHeap size 0x2000 -> 0x2180 (extended pokedex tileset, info screen)"
+    },
+    {
+      "address": "0x080BF7CA",
+      "original": "8022",
+      "replacement": "8622",
+      "comment": "DecompressAndLoadBgGfxUsingHeap size 0x2000 -> 0x2180 (extended pokedex tileset, description screen)"
     }
   ],
   "mode_jump_table": [
@@ -659,6 +696,31 @@
       "old": "0x08D96F44",
       "symbol": "ChsStatusIconsGfx",
       "expected": 2
+    },
+    {
+      "old": "0x0854069C",
+      "symbol": "ChsPokedexEntries",
+      "expected": 9
+    },
+    {
+      "old": "0x08537E8C",
+      "symbol": "ChsPokedexInfoTilesGfx",
+      "expected": 5
+    },
+    {
+      "old": "0x08537A10",
+      "symbol": "ChsPokedexInfoTilemap",
+      "expected": 2
+    },
+    {
+      "old": "0x085388EC",
+      "symbol": "ChsPokedexInterfaceGfx",
+      "expected": 1
+    },
+    {
+      "old": "0x08537420",
+      "symbol": "ChsPokedexInterfacePal",
+      "expected": 1
     }
   ],
   "pointer_writes": [

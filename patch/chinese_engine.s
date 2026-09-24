@@ -497,6 +497,486 @@ ChsSaveInfoFormat:
 
 .ltorg
 
+.global ChsPokedexPrintCategory
+.type ChsPokedexPrintCategory, %function
+.thumb_func
+ChsPokedexPrintCategory:
+    @ Replaces sub_080C0150 (0x080C0150). When r1 points into the relocated
+    @ ChsPokedexEntries table, prints the Chinese category followed by the
+    @ 宝可梦 suffix left-aligned at (x, y); otherwise replays the original
+    @ kana renderer. The original "     ポケモン" string printed behind the
+    @ category is blanked by a code patch at 0x085C8FC0.
+    push {r4, r5, r6, r7, lr}
+    push {r1}
+    movs r4, r0
+    movs r5, r2
+    movs r6, r3
+    ldr r0, =ChsPokedexEntries
+    subs r0, r1, r0
+    blo .Lpokedex_category_fallback
+    ldr r1, =(387 * 28)
+    cmp r0, r1
+    bhs .Lpokedex_category_fallback
+    movs r1, #28
+    swi 0x06
+    cmp r1, #0
+    bne .Lpokedex_category_fallback
+    add sp, #4
+    lsls r0, r0, #2
+    ldr r1, =ChsPokedexEntriesCategoryTable
+    ldr r1, [r1, r0]
+    sub sp, #24
+    mov r2, sp
+.Lpokedex_category_copy:
+    ldrb r3, [r1]
+    cmp r3, #0xFF
+    beq .Lpokedex_category_suffix
+    strb r3, [r2]
+    adds r1, #1
+    adds r2, #1
+    b .Lpokedex_category_copy
+.Lpokedex_category_suffix:
+    ldr r1, =ChsPokedexEntriesCategorySuffix
+    adds r1, #2
+.Lpokedex_category_suffix_copy:
+    ldrb r3, [r1]
+    strb r3, [r2]
+    cmp r3, #0xFF
+    beq .Lpokedex_category_print
+    adds r1, #1
+    adds r2, #1
+    b .Lpokedex_category_suffix_copy
+.Lpokedex_category_print:
+    lsls r0, r4, #0x18
+    lsrs r0, r0, #0x18
+    mov r1, sp
+    movs r2, r5
+    movs r3, r6
+    ldr r4, =0x080BFFE1
+    bl .Lpokedex_category_call_r4
+    add sp, #24
+    pop {r4, r5, r6, r7}
+    pop {r0}
+    bx r0
+
+.Lpokedex_category_fallback:
+    pop {r1}
+    sub sp, #8
+    movs r3, r6
+    movs r0, r4
+    lsls r0, r0, #0x18
+    lsrs r6, r0, #0x18
+    movs r4, r1
+    movs r2, r5
+    lsls r2, r2, #0x18
+    lsrs r2, r2, #0x18
+    mov ip, r2
+    ldr r0, =0x080C0161
+    bx r0
+.Lpokedex_category_call_r4:
+    bx r4
+
+.ltorg
+
+.global ChsStarterPokemonLabel
+.type ChsStarterPokemonLabel, %function
+.thumb_func
+ChsStarterPokemonLabel:
+    @ Replaces CreateStarterPokemonLabel (0x08134480) wholesale.
+    @ Identical to the original except the category line is the Chinese
+    @ category + 宝可梦 suffix (longer than the original 5-kana field, so
+    @ the stack layout is widened) instead of inline kana + ポケモン.
+    @ Stack frame: sp+0x0C category (20), sp+0x20 name (12),
+    @              sp+0x2C window template (8), sp+0x34 template pointer.
+    push {r4, r5, r6, r7, lr}
+    mov r7, sl
+    mov r6, sb
+    mov r5, r8
+    push {r5, r6, r7}
+    sub sp, #0x38
+    lsls r0, r0, #0x18
+    lsrs r6, r0, #0x18
+    movs r0, r6
+    ldr r1, =0x08133E95
+    bl .Lstarter_call_r1
+    lsls r0, r0, #0x10
+    lsrs r7, r0, #0x10
+    movs r0, r7
+    ldr r1, =0x0806CF69
+    bl .Lstarter_call_r1
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    lsls r0, r0, #2
+    ldr r1, =ChsPokedexEntriesCategoryTable
+    ldr r2, [r1, r0]
+    movs r5, #0
+    add r1, sp, #0x20
+    mov sl, r1
+    mov r1, sp
+    adds r1, #0x2C
+    str r1, [sp, #0x34]
+.Lstarter_category_copy:
+    ldrb r0, [r2]
+    cmp r0, #0xFF
+    beq .Lstarter_category_suffix
+    mov r1, sp
+    adds r1, r1, r5
+    adds r1, #0x0C
+    strb r0, [r1]
+    adds r2, #1
+    adds r5, #1
+    b .Lstarter_category_copy
+.Lstarter_category_suffix:
+    ldr r2, =ChsPokedexEntriesCategorySuffix
+    adds r2, #2
+.Lstarter_suffix_copy:
+    ldrb r0, [r2]
+    cmp r0, #0xFF
+    beq .Lstarter_category_done
+    mov r1, sp
+    adds r1, r1, r5
+    adds r1, #0x0C
+    strb r0, [r1]
+    adds r2, #1
+    adds r5, #1
+    b .Lstarter_suffix_copy
+.Lstarter_category_done:
+    mov r1, sp
+    adds r1, r1, r5
+    adds r1, #0x0C
+    movs r0, #0xFF
+    strb r0, [r1]
+    movs r3, #0
+    movs r5, #0
+    lsls r4, r7, #1
+    ldr r0, =0x082EA31C
+    mov r8, r0
+    lsls r6, r6, #1
+    mov ip, r6
+    adds r0, r4, r7
+    lsls r0, r0, #1
+    add r0, r8
+    ldrb r0, [r0]
+    cmp r0, #0xFF
+    beq .Lstarter_name_done
+.Lstarter_name_loop:
+    mov r1, sl
+    adds r2, r1, r5
+    adds r1, r4, r7
+    lsls r1, r1, #1
+    adds r0, r3, r1
+    add r0, r8
+    ldrb r0, [r0]
+    strb r0, [r2]
+    adds r0, r3, #1
+    lsls r0, r0, #0x18
+    lsrs r3, r0, #0x18
+    adds r0, r5, #1
+    lsls r0, r0, #0x18
+    lsrs r5, r0, #0x18
+    adds r1, r3, r1
+    add r1, r8
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lstarter_name_done
+    cmp r3, #9
+    bls .Lstarter_name_loop
+.Lstarter_name_done:
+    mov r2, sl
+    adds r1, r2, r5
+    movs r0, #0xFF
+    strb r0, [r1]
+    ldr r2, =0x08590BF4
+    ldr r0, [r2]
+    ldr r1, [r2, #4]
+    str r0, [sp, #0x2C]
+    str r1, [sp, #0x30]
+    ldr r0, =0x08590C02
+    add r0, ip
+    mov sb, r0
+    ldrb r0, [r0]
+    lsls r0, r0, #8
+    ldr r1, =0xFFFF00FF
+    ldr r2, [sp, #0x2C]
+    ands r2, r1
+    orrs r2, r0
+    str r2, [sp, #0x2C]
+    ldr r1, =0x08590C03
+    add r1, ip
+    mov r8, r1
+    ldrb r1, [r1]
+    lsls r1, r1, #0x10
+    ldr r0, =0xFF00FFFF
+    ands r0, r2
+    orrs r0, r1
+    str r0, [sp, #0x2C]
+    ldr r0, [sp, #0x34]
+    ldr r1, =0x08003251
+    bl .Lstarter_call_r1
+    ldr r4, =0x030011F8
+    strh r0, [r4]
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    movs r1, #0
+    ldr r2, =0x08003B19
+    bl .Lstarter_call_r2
+    ldrb r0, [r4]
+    ldr r6, =0x08590C1C
+    str r6, [sp]
+    movs r5, #0
+    str r5, [sp, #4]
+    add r1, sp, #0x0C
+    str r1, [sp, #8]
+    movs r1, #1
+    movs r2, #0
+    movs r3, #2
+    ldr r7, =0x08199AFD
+    bl .Lstarter_call_r7
+    ldrb r0, [r4]
+    str r6, [sp]
+    str r5, [sp, #4]
+    mov r2, sl
+    str r2, [sp, #8]
+    movs r1, #1
+    movs r2, #0
+    movs r3, #0x12
+    ldr r7, =0x08199AFD
+    bl .Lstarter_call_r7
+    ldrb r0, [r4]
+    ldr r1, =0x0800365D
+    bl .Lstarter_call_r1
+    movs r0, #0
+    ldr r1, =0x08199655
+    bl .Lstarter_call_r1
+    mov r0, sb
+    ldrb r1, [r0]
+    lsls r0, r1, #0x1B
+    movs r2, #0xFC
+    lsls r2, r2, #0x18
+    adds r0, r0, r2
+    adds r1, #9
+    lsls r1, r1, #3
+    adds r1, #4
+    lsls r1, r1, #0x18
+    mov r2, r8
+    ldrb r4, [r2]
+    lsls r5, r4, #0x1B
+    lsrs r5, r5, #0x18
+    adds r4, #4
+    lsls r4, r4, #0x1B
+    lsrs r4, r4, #0x18
+    lsrs r1, r1, #8
+    orrs r1, r0
+    lsrs r1, r1, #0x10
+    movs r0, #0x40
+    ldr r2, =0x08001145
+    bl .Lstarter_call_r2
+    lsls r5, r5, #8
+    orrs r5, r4
+    movs r0, #0x44
+    movs r1, r5
+    ldr r2, =0x08001145
+    bl .Lstarter_call_r2
+    add sp, #0x38
+    pop {r3, r4, r5}
+    mov r8, r3
+    mov sb, r4
+    mov sl, r5
+    pop {r4, r5, r6, r7}
+    pop {r0}
+    bx r0
+.Lstarter_call_r1:
+    bx r1
+.Lstarter_call_r2:
+    bx r2
+.Lstarter_call_r7:
+    bx r7
+
+.ltorg
+
+@ r0 = dest, r1 = category string; copies category + 宝可梦 suffix,
+@ FF-terminated. Clobbers r2, r3.
+ChsAppendCategorySuffix:
+.Lcategory_append_copy:
+    ldrb r2, [r1]
+    cmp r2, #0xFF
+    beq .Lcategory_append_suffix
+    strb r2, [r0]
+    adds r0, #1
+    adds r1, #1
+    b .Lcategory_append_copy
+.Lcategory_append_suffix:
+    ldr r1, =ChsPokedexEntriesCategorySuffix
+    adds r1, #2
+.Lcategory_append_suffix_copy:
+    ldrb r2, [r1]
+    strb r2, [r0]
+    cmp r2, #0xFF
+    beq .Lcategory_append_done
+    adds r0, #1
+    adds r1, #1
+    b .Lcategory_append_suffix_copy
+.Lcategory_append_done:
+    bx lr
+
+.global ChsFactorySelectPrintMonCategory
+.type ChsFactorySelectPrintMonCategory, %function
+.thumb_func
+ChsFactorySelectPrintMonCategory:
+    @ Replaces Select_PrintMonCategory (0x0819B99C). Prints the Chinese
+    @ category + 宝可梦 left-aligned instead of the right-aligned kana.
+    push {r4, r5, lr}
+    sub sp, #0x20
+    ldr r5, =0x03001278
+    ldr r0, [r5]
+    ldrb r4, [r0, #3]
+    cmp r4, #5
+    bhi .Lselect_category_done
+    movs r0, #5
+    ldr r1, =0x0800365D
+    bl .Lselect_category_call_r1
+    movs r0, #5
+    movs r1, #0
+    ldr r2, =0x08003B19
+    bl .Lselect_category_call_r2
+    movs r0, #0x6C
+    muls r0, r4, r0
+    ldr r1, [r5]
+    adds r0, r0, r1
+    adds r0, #0x14
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lselect_category_call_r3
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    ldr r1, =0x0806CF69
+    bl .Lselect_category_call_r1
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    lsls r0, r0, #2
+    ldr r1, =ChsPokedexEntriesCategoryTable
+    ldr r1, [r1, r0]
+    add r0, sp, #0x0C
+    bl ChsAppendCategorySuffix
+    movs r0, #2
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r0, [sp, #8]
+    movs r0, #5
+    movs r1, #1
+    add r2, sp, #0x0C
+    movs r3, #0
+    ldr r4, =0x0800449D
+    bl .Lselect_category_call_r4
+    movs r0, #5
+    movs r1, #2
+    ldr r2, =0x08003529
+    bl .Lselect_category_call_r2
+.Lselect_category_done:
+    add sp, #0x20
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+.Lselect_category_call_r1:
+    bx r1
+.Lselect_category_call_r2:
+    bx r2
+.Lselect_category_call_r3:
+    bx r3
+.Lselect_category_call_r4:
+    bx r4
+
+.ltorg
+
+.global ChsFactorySwapPrintMonCategory
+.type ChsFactorySwapPrintMonCategory, %function
+.thumb_func
+ChsFactorySwapPrintMonCategory:
+    @ Replaces Swap_PrintMonCategory (0x0819EE50). Prints the Chinese
+    @ category + 宝可梦 left-aligned instead of the right-aligned kana.
+    push {r4, r5, r6, lr}
+    sub sp, #0x20
+    ldr r6, =0x03001280
+    ldr r0, [r6]
+    ldrb r4, [r0, #3]
+    movs r5, r4
+    movs r0, #8
+    movs r1, #0
+    ldr r2, =0x08003B19
+    bl .Lswap_category_call_r2
+    cmp r4, #2
+    bls .Lswap_category_have_mon
+    movs r0, #8
+    movs r1, #2
+    ldr r2, =0x08003529
+    bl .Lswap_category_call_r2
+    b .Lswap_category_done
+.Lswap_category_have_mon:
+    movs r0, #8
+    ldr r1, =0x0800365D
+    bl .Lswap_category_call_r1
+    ldr r0, [r6]
+    ldrb r0, [r0, #0x14]
+    cmp r0, #0
+    bne .Lswap_category_rented
+    movs r0, #0x64
+    muls r0, r4, r0
+    ldr r1, =0x02024190
+    b .Lswap_category_get_species
+.Lswap_category_rented:
+    movs r0, #0x64
+    muls r0, r5, r0
+    ldr r1, =0x020243E8
+.Lswap_category_get_species:
+    adds r0, r0, r1
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lswap_category_call_r3
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    ldr r1, =0x0806CF69
+    bl .Lswap_category_call_r1
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    lsls r0, r0, #2
+    ldr r1, =ChsPokedexEntriesCategoryTable
+    ldr r1, [r1, r0]
+    add r0, sp, #0x0C
+    bl ChsAppendCategorySuffix
+    movs r0, #2
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r0, [sp, #8]
+    movs r0, #8
+    movs r1, #1
+    add r2, sp, #0x0C
+    movs r3, #0
+    ldr r4, =0x0800449D
+    bl .Lswap_category_call_r4
+    movs r0, #8
+    movs r1, #2
+    ldr r2, =0x08003529
+    bl .Lswap_category_call_r2
+.Lswap_category_done:
+    add sp, #0x20
+    pop {r4, r5, r6}
+    pop {r0}
+    bx r0
+.Lswap_category_call_r1:
+    bx r1
+.Lswap_category_call_r2:
+    bx r2
+.Lswap_category_call_r3:
+    bx r3
+.Lswap_category_call_r4:
+    bx r4
+
+.ltorg
+
 .align 2
 .global ChsPocketNameIds
 ChsPocketNameIds:
@@ -668,6 +1148,27 @@ ChsMoveTypesGfx:
 .global ChsPokedexAreaUnknownGfx
 ChsPokedexAreaUnknownGfx:
     .incbin "build/patch/pokedex_area_unknown.lz"
+
+.align 2
+.global ChsPokedexInfoTilesGfx
+ChsPokedexInfoTilesGfx:
+    .incbin "build/patch/pokedex_info_tiles.lz"
+
+.align 2
+.global ChsPokedexInfoTilemap
+ChsPokedexInfoTilemap:
+    .incbin "build/patch/pokedex_info_tilemap.lz"
+
+.align 2
+.global ChsPokedexInterfaceGfx
+ChsPokedexInterfaceGfx:
+    .incbin "build/patch/pokedex_interface.lz"
+
+.align 2
+.global ChsPokedexInterfacePal
+ChsPokedexInterfacePal:
+    .2byte 0x020F, 0x7FFF, 0x1098, 0x5EF7, 0x5294, 0x398C, 0x20E5, 0x34E5
+    .2byte 0x1400, 0x7FFF, 0x1FDD, 0x5C1F, 0x2746, 0x1203, 0x2E77, 0x0000
 
 .align 2
 .global ChsStatusIconsGfx

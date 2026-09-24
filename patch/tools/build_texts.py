@@ -368,6 +368,9 @@ def main() -> None:
     fixed_tables = []
     for texts_path in texts_paths:
         document = json.loads(texts_path.read_text(encoding="utf-8"))
+        if isinstance(document, dict) and document.get("kind") == "pokedex_entries":
+            fixed_tables.append(document)
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue
@@ -398,6 +401,35 @@ def main() -> None:
             wrapped_pages += changed_pages
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
     for table in fixed_tables:
+        if table["kind"] == "pokedex_entries":
+            name = table["name"]
+            if name in names:
+                raise ValueError(f"duplicate text symbol: {name}")
+            names.add(name)
+            category_labels = []
+            for index, entry in enumerate(table["entries"]):
+                category_label = f".L{name}_category_{index}"
+                description_label = f".L{name}_description_{index}"
+                category_labels.append(category_label)
+                encoded = encode_text(entry["category"], charmap, False)
+                lines.extend((".align 2", f"{category_label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+                encoded = encode_text(entry["description"], charmap, False)
+                lines.extend((".align 2", f"{description_label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+            lines.extend((".align 2", f".global {name}", f"{name}:"))
+            for index, entry in enumerate(table["entries"]):
+                category_bytes = bytes.fromhex(entry["jp_category"])
+                stats_bytes = bytes.fromhex(entry["stats"])
+                tail_bytes = bytes.fromhex(entry["tail"])
+                if len(category_bytes) != 6 or len(stats_bytes) != 6 or len(tail_bytes) != 12:
+                    raise ValueError(f"{name}[{index}] has malformed binary fields")
+                lines.append("    .byte " + ", ".join(f"0x{x:02X}" for x in category_bytes + stats_bytes))
+                lines.append(f"    .4byte .L{name}_description_{index}")
+                lines.append("    .byte " + ", ".join(f"0x{x:02X}" for x in tail_bytes))
+            lines.extend((".align 2", f".global {name}CategoryTable", f"{name}CategoryTable:"))
+            lines.extend(f"    .4byte {label}" for label in category_labels)
+            encoded = encode_text("宝可梦", charmap, False)
+            lines.extend((".align 2", f".global {name}CategorySuffix", f"{name}CategorySuffix:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+            continue
         name = table["name"]
         if name in names:
             raise ValueError(f"duplicate text symbol: {name}")

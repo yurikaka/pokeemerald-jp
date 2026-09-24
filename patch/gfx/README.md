@@ -14,6 +14,29 @@ the `CompressedSpriteSheet.data` pointer at `0x085ED40C`.
 32 by 96 pixel layout and first 16-color palette match the Japanese asset, so
 the patch redirects only the graphics source at `0x0813D9E4`.
 
+`pokedex_interface.4bpp` is generated from `graphics/pokedex/interface.png`
+in the same US localization commit. The Japanese interface sprite sheet shares
+the US sheet's 256-tile layout and animation frames exactly, so the patch
+redirects the sprite sheet graphics pointer at `0x08539BBC` and the sprite
+palette pointer at `0x08539BCC` (the US palette differs from the Japanese one
+in the red/gray entries). This localizes the list-screen button labels, the
+seen/caught count headings, and the Hoenn/national mode labels. The Japanese
+tiles 8-15 (an unused ポケモンずかん title) have no referencing animation and
+are dropped.
+
+`pokedex_info_tiles.4bpp` and `pokedex_info_tilemap.bin` are the Japanese
+Pokédex info-screen background (tileset `0x08537E8C`, tilemap `0x08537A10`)
+with the baked-in たかさ/おもさ labels replaced by 身高/体重 blocks composited
+from `patch/fonts/chinese_normal.png` (12 tiles appended at IDs 0x100-0x10B;
+the charblock has free VRAM up to the map base). All five tileset references
+and both tilemap references are redirected.
+
+`pokedex_list_title.4bpp` is the 宝可梦图鉴 list-screen title (15 tiles, IDs
+0x10-0x1E) extracted from `graphics/pokedex/menu.png` in the same US
+localization commit. `build_pokedex_info_gfx.py` pastes these tiles over the
+shared tileset's ポケモンずかん title, which only the list tilemap
+`0x08537804` references.
+
 `status_icons.4bpp` is generated from `graphics/interface/status_icons.png`.
 Its 32 by 64 pixel layout and palette match the Japanese asset. All two
 references to the shared Japanese compressed sprite sheet are redirected, so
