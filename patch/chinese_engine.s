@@ -249,6 +249,27 @@ ChsTrainerClassNameFromId:
     bx r1
 
 .align 2
+.global ChsBattleTrainerClassNameHook
+.type ChsBattleTrainerClassNameHook, %function
+.thumb_func
+ChsBattleTrainerClassNameHook:
+    cmp r0, #11
+    bne .Lbattle_trainer_class_from_r0
+    adds r0, r1, #0
+.Lbattle_trainer_class_from_r0:
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    cmp r0, #65
+    bls .Lbattle_trainer_class_valid
+    movs r0, #0
+.Lbattle_trainer_class_valid:
+    lsls r0, r0, #2
+    ldr r1, =ChsTrainerClassNames
+    ldr r4, [r1, r0]
+    ldr r0, =0x0814F5DD
+    bx r0
+
+.align 2
 .global ChsBattleTrainerNameHook
 .type ChsBattleTrainerNameHook, %function
 .thumb_func
