@@ -133,6 +133,41 @@ SetChineseTextMode:
     bx r0
 
 .align 2
+.global ChsBattleExpNamePlaceholderHook
+.type ChsBattleExpNamePlaceholderHook, %function
+.thumb_func
+ChsBattleExpNamePlaceholderHook:
+    ldr r0, =Chs_sText_PkmnGainedEXP + 5
+    cmp r0, r9
+    bne .Lbattle_exp_name_original
+.Lbattle_exp_name_from_buffer:
+    ldr r1, =0x02022C0C
+    ldrb r0, [r1]
+    cmp r0, #0xFD
+    beq .Lbattle_exp_name_expand
+.Lbattle_exp_name_copy_raw:
+    ldr r1, =0x02022C0C
+    adds r4, r1, #0
+    b .Lbattle_exp_name_copy
+.Lbattle_exp_name_original:
+    ldr r1, =0x02022C0C
+    ldrb r0, [r1]
+    cmp r0, #0xFD
+    beq .Lbattle_exp_name_expand
+    b .Lbattle_exp_name_copy_raw
+.Lbattle_exp_name_expand:
+    ldr r4, =0x02021C40
+    adds r0, r1, #0
+    adds r1, r4, #0
+    ldr r3, =0x0814F665
+    bl .Lbattle_exp_name_expand_raw
+    b .Lbattle_exp_name_copy
+.Lbattle_exp_name_copy:
+    ldr r0, =0x0814F5DD
+    bx r0
+.Lbattle_exp_name_expand_raw:
+    bx r3
+
 .global ChsItemIdGetName
 .type ChsItemIdGetName, %function
 .thumb_func

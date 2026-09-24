@@ -145,12 +145,15 @@ def convert_us_encoded_text(
     data: bytes,
     japanese_placeholders: set[int],
     japanese_dynamic: bool,
+    initial_japanese: bool = False,
 ) -> bytes:
     """Convert the US Chinese encoding to the injected Japanese-ROM encoding."""
     if not data or data[-1] != 0xFF:
         raise ValueError("US encoded text must end with EOS")
 
     output = bytearray(CONTROLS["ENG"])
+    if initial_japanese:
+        output.extend(CONTROLS["JPN"])
     index = 0
     while index < len(data):
         char = data[index]
@@ -392,6 +395,7 @@ def main() -> None:
                 bytes.fromhex(definition["us_encoded_hex"]),
                 set(definition.get("japanese_placeholders", [])),
                 definition.get("japanese_dynamic", False),
+                definition.get("initial_japanese", False),
             )
         else:
             encoded = encode_text(definition["text"], charmap, definition.get("styled", False))
@@ -452,6 +456,7 @@ def main() -> None:
                     bytes.fromhex(entry["us_encoded_hex"]),
                     set(entry.get("japanese_placeholders", [])),
                     entry.get("japanese_dynamic", False),
+                    entry.get("initial_japanese", False),
                 )
             else:
                 if table.get("compact_chinese", False):
