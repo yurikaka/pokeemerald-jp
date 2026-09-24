@@ -445,6 +445,31 @@ def main() -> None:
             document["names"] = berry_names
             fixed_tables.append(document)
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_decoration_table":
+            header_path = (texts_path.parent / document["header_source"]).resolve()
+            description_path = (texts_path.parent / document["description_source"]).resolve()
+            header_source = header_path.read_text(encoding="utf-8")
+            description_source = description_path.read_text(encoding="utf-8")
+            description_names = re.findall(
+                r'\.description\s*=\s*(DecorDesc_\w+),', header_source
+            )
+            descriptions = dict(re.findall(
+                r'const u8 (DecorDesc_\w+)\[\] = _\("([^"]*)"\);',
+                description_source,
+            ))
+            if len(description_names) != document["count"]:
+                raise ValueError(
+                    f"{header_path} contains {len(description_names)} decoration descriptions, "
+                    f"expected {document['count']}"
+                )
+            missing = set(description_names) - descriptions.keys()
+            if missing:
+                raise ValueError(f"{description_path} is missing decoration descriptions: {sorted(missing)}")
+            document["descriptions"] = [
+                descriptions[name].replace("\\n", "\n") for name in description_names
+            ]
+            fixed_tables.append(document)
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue
@@ -476,6 +501,25 @@ def main() -> None:
             wrapped_pages += changed_pages
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
     for table in fixed_tables:
+        if table["kind"] == "us_decoration_table":
+            base_offset = int(table["base_offset"], 0)
+            stride = table["stride"]
+            description_offset = table["description_offset"]
+            for index, description in enumerate(table["descriptions"]):
+                label = f".L{table['name']}_description_{index}"
+                encoded = encode_text(description, charmap, False)
+                lines.extend((".align 2", f"{label}:", "    .byte " + ", ".join(f"0x{value:02X}" for value in encoded)))
+            lines.extend((".align 2", f".global {table['name']}", f"{table['name']}:"))
+            for index in range(table["count"]):
+                offset = base_offset + index * stride
+                label = f".L{table['name']}_description_{index}"
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset:X}, {description_offset}')
+                lines.append(f"    .4byte {label}")
+                suffix_offset = offset + description_offset + 4
+                suffix_size = stride - description_offset - 4
+                if suffix_size:
+                    lines.append(f'    .incbin "baserom_jp.gba", 0x{suffix_offset:X}, {suffix_size}')
+            continue
         if table["kind"] == "us_berry_info_table":
             base_offset = int(table["base_offset"], 0)
             description_names = table["description_names"]
