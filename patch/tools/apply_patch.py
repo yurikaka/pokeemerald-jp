@@ -152,7 +152,7 @@ def main() -> None:
                 raise SystemExit(
                     f"pointer 0x{address:08X}: expected 0x{expected:08X}, got 0x{actual:08X}"
                 )
-        write_word(rom, address, symbols[entry["symbol"]])
+        write_word(rom, address, symbols[entry["symbol"]] + parse_int(entry.get("offset", "0")))
 
     for batch_path in args.batch:
         batch = json.loads(batch_path.read_text(encoding="utf-8"))

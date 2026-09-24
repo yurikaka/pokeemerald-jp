@@ -45,6 +45,17 @@ label (tiles 0x06-0x0B) becomes 联盟徽章. Both versions share the same tile
 IDs and palette roles, and the sole tileset reference at `0x080C2254` is
 redirected. The Kanto (FRLG-style) card tileset is untouched.
 
+`pokedex_search_tiles.4bpp` is the Japanese Pokedex search-menu tileset
+(`0x0854385C`, 128 tiles) with the baked-in kana button tiles swapped for the
+already-localized tiles from the US Chinese repo's
+`graphics/pokedex/search_menu.png` by `build_pokedex_search_gfx.py`: the top
+tabs become 检索/转换/取消, the row labels become 模式/名字/颜色/属性/顺序,
+and the decide button becomes 确定. Both search tilemaps (`0x08543DE8`
+national, `0x08543F84` hoenn) are byte-identical to the US ones and the
+runtime palettes match, so the US tiles are copied verbatim; all other tiles
+keep their Japanese originals. The sole tileset reference at `0x080C094C` is
+redirected.
+
 `status_icons.4bpp` is generated from `graphics/interface/status_icons.png`.
 Its 32 by 64 pixel layout and palette match the Japanese asset. All two
 references to the shared Japanese compressed sprite sheet are redirected, so

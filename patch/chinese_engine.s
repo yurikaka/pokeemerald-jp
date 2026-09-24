@@ -1044,6 +1044,63 @@ SummaryScreenPrintHook:
     bx r4
 
 .align 2
+.global ChsSearchPrintHook
+.type ChsSearchPrintHook, %function
+.thumb_func
+ChsSearchPrintHook:
+    @ Replaces the Pokedex search-menu window print wrapper (0x080C07CC).
+    @ Identical to the original except the search-option value prints
+    @ (call sites 0x080C1790-0x080C1816) are drawn 1 pixel higher.
+    push {r4, r5, lr}
+    sub sp, #24
+    ldr r4, [sp, #32]
+    adds r5, r1, #0
+    adds r3, r2, #0
+    lsls r3, r3, #24
+    add r1, sp, #20
+    movs r2, #0
+    strb r2, [r1]
+    movs r2, #15
+    strb r2, [r1, #1]
+    movs r2, #2
+    strb r2, [r1, #2]
+    adds r2, r1, #0
+    movs r1, #0
+    str r1, [sp]
+    str r1, [sp, #4]
+    str r2, [sp, #8]
+    subs r1, #1
+    str r1, [sp, #12]
+    str r0, [sp, #16]
+    lsls r5, r5, #27
+    lsrs r5, r5, #24
+    lsrs r3, r3, #21
+    movs r2, #2
+    ldr r1, =0x080C1795
+    cmp r4, r1
+    blo .Lsearch_y_ready
+    ldr r1, =0x080C181D
+    cmp r4, r1
+    bhi .Lsearch_y_ready
+    movs r2, #1
+.Lsearch_y_ready:
+    adds r3, r3, r2
+    lsls r3, r3, #24
+    lsrs r3, r3, #24
+    movs r0, #0
+    movs r1, #1
+    adds r2, r5, #0
+    ldr r4, =JP_ADD_TEXT_PRINTER_4
+    bl .Lsearch_call_r4
+    add sp, #24
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+.align 2
+.Lsearch_call_r4:
+    bx r4
+
+.align 2
 .type DecompressChineseGlyph, %function
 .thumb_func
 DecompressChineseGlyph:
@@ -1174,6 +1231,11 @@ ChsPokedexInterfacePal:
 .global ChsTrainerCardGfx
 ChsTrainerCardGfx:
     .incbin "build/patch/trainer_card_tiles.lz"
+
+.align 2
+.global ChsPokedexSearchGfx
+ChsPokedexSearchGfx:
+    .incbin "build/patch/pokedex_search_tiles.lz"
 
 .align 2
 .global ChsStatusIconsGfx

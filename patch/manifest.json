@@ -49,6 +49,11 @@
       "address": "0x0819EE50",
       "original": "70b586b0074e3068c478251c08200021",
       "symbol": "ChsFactorySwapPrintMonCategory"
+    },
+    {
+      "address": "0x080C07CC",
+      "original": "30b586b00d1c131c1b0605a900240c70",
+      "symbol": "ChsSearchPrintHook"
     }
   ],
   "code_patches": [
@@ -732,6 +737,11 @@
       "old": "0x0854441C",
       "symbol": "ChsTrainerCardGfx",
       "expected": 1
+    },
+    {
+      "old": "0x0854385C",
+      "symbol": "ChsPokedexSearchGfx",
+      "expected": 1
     }
   ],
   "pointer_writes": [
@@ -880,6 +890,108 @@
     {
       "address": "0x08537368",
       "symbol": "ChsOptionCancel"
+    },
+    {
+      "address": "0x8544324",
+      "original": "0x82ebc88",
+      "symbol": "ChsTypeNames",
+      "offset": "0x0"
+    },
+    {
+      "address": "0x854432c",
+      "original": "0x82ebc8d",
+      "symbol": "ChsTypeNames",
+      "offset": "0x10"
+    },
+    {
+      "address": "0x8544334",
+      "original": "0x82ebc92",
+      "symbol": "ChsTypeNames",
+      "offset": "0x20"
+    },
+    {
+      "address": "0x854433c",
+      "original": "0x82ebc97",
+      "symbol": "ChsTypeNames",
+      "offset": "0x30"
+    },
+    {
+      "address": "0x8544344",
+      "original": "0x82ebc9c",
+      "symbol": "ChsTypeNames",
+      "offset": "0x40"
+    },
+    {
+      "address": "0x854434c",
+      "original": "0x82ebca1",
+      "symbol": "ChsTypeNames",
+      "offset": "0x50"
+    },
+    {
+      "address": "0x8544354",
+      "original": "0x82ebca6",
+      "symbol": "ChsTypeNames",
+      "offset": "0x60"
+    },
+    {
+      "address": "0x854435c",
+      "original": "0x82ebcab",
+      "symbol": "ChsTypeNames",
+      "offset": "0x70"
+    },
+    {
+      "address": "0x8544364",
+      "original": "0x82ebcb0",
+      "symbol": "ChsTypeNames",
+      "offset": "0x80"
+    },
+    {
+      "address": "0x854436c",
+      "original": "0x82ebcba",
+      "symbol": "ChsTypeNames",
+      "offset": "0xa0"
+    },
+    {
+      "address": "0x8544374",
+      "original": "0x82ebcbf",
+      "symbol": "ChsTypeNames",
+      "offset": "0xb0"
+    },
+    {
+      "address": "0x854437c",
+      "original": "0x82ebcc4",
+      "symbol": "ChsTypeNames",
+      "offset": "0xc0"
+    },
+    {
+      "address": "0x8544384",
+      "original": "0x82ebcc9",
+      "symbol": "ChsTypeNames",
+      "offset": "0xd0"
+    },
+    {
+      "address": "0x854438c",
+      "original": "0x82ebcce",
+      "symbol": "ChsTypeNames",
+      "offset": "0xe0"
+    },
+    {
+      "address": "0x8544394",
+      "original": "0x82ebcd3",
+      "symbol": "ChsTypeNames",
+      "offset": "0xf0"
+    },
+    {
+      "address": "0x854439c",
+      "original": "0x82ebcd8",
+      "symbol": "ChsTypeNames",
+      "offset": "0x100"
+    },
+    {
+      "address": "0x85443a4",
+      "original": "0x82ebcdd",
+      "symbol": "ChsTypeNames",
+      "offset": "0x110"
     }
   ]
 }
