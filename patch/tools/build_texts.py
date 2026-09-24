@@ -393,6 +393,25 @@ def main() -> None:
                 }
             )
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_trainer_class_name_table":
+            source_path = (texts_path.parent / document["source"]).resolve()
+            trainer_class_names = re.findall(
+                r'_\("([^"]*)"\)',
+                source_path.read_text(encoding="utf-8"),
+            )
+            if len(trainer_class_names) != document["count"]:
+                raise ValueError(
+                    f"{source_path} contains {len(trainer_class_names)} trainer class names, "
+                    f"expected {document['count']}"
+                )
+            fixed_tables.append(
+                {
+                    "kind": "string_pointer_table",
+                    "name": document["name"],
+                    "strings": trainer_class_names,
+                }
+            )
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue

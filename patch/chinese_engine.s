@@ -226,6 +226,40 @@ ChsTrainerNameFromId:
     bx r1
 
 .align 2
+.global ChsTrainerClassNameFromId
+.type ChsTrainerClassNameFromId, %function
+.thumb_func
+ChsTrainerClassNameFromId:
+    push {lr}
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+    ldr r1, =0x356
+    cmp r0, r1
+    bls .Ltrainer_class_id_valid
+    movs r0, #0
+.Ltrainer_class_id_valid:
+    lsls r0, r0, #5
+    ldr r1, =0x082E383C
+    adds r0, r0, r1
+    ldrb r0, [r0, #1]
+    lsls r0, r0, #2
+    ldr r1, =ChsTrainerClassNames
+    ldr r0, [r1, r0]
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsBattleTrainerClassHook
+.type ChsBattleTrainerClassHook, %function
+.thumb_func
+ChsBattleTrainerClassHook:
+    ldrh r0, [r3]
+    bl ChsTrainerClassNameFromId
+    adds r4, r0, #0
+    ldr r0, =0x0814F5DD
+    bx r0
+
+.align 2
 .global ChsBattleTrainerNameHook
 .type ChsBattleTrainerNameHook, %function
 .thumb_func
