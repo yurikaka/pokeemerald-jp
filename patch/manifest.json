@@ -84,9 +84,29 @@
       "address": "0x0814E8E8",
       "original": "02490878fd2815d1014c08e00c2c0202",
       "symbol": "ChsBattleExpNamePlaceholderHook"
+    },
+    {
+      "address": "0x08177FCC",
+      "original": "00b500f00bf800f03bf800f097f800f0",
+      "symbol": "ChsPrintAllBerryData"
     }
   ],
   "code_patches": [
+    {
+      "address": "0x081781AA",
+      "original": "0121",
+      "replacement": "0021"
+    },
+    {
+      "address": "0x081781DE",
+      "original": "0121",
+      "replacement": "0021"
+    },
+    {
+      "address": "0x08177F16",
+      "original": "032C",
+      "replacement": "042C"
+    },
     {
       "address": "0x081AAA30",
       "original": "44080000",
@@ -785,6 +805,46 @@
     }
   ],
   "pointer_writes": [
+    {
+      "address": "0x080E0C08",
+      "original": "0x08563134",
+      "symbol": "ChsBerryInfo"
+    },
+    {
+      "address": "0x08177FC8",
+      "original": "0x085C97BD",
+      "symbol": "ChsBerryTagTitle"
+    },
+    {
+      "address": "0x08177F2C",
+      "original": "0x085CD0A0",
+      "symbol": "ChsBerryTagWindowTemplates"
+    },
+    {
+      "address": "0x08177DD4",
+      "original": "0x08D9BD90",
+      "symbol": "ChsBerryTagTiles"
+    },
+    {
+      "address": "0x08178048",
+      "original": "0x085C97B5",
+      "symbol": "ChsBerryTagNumberName"
+    },
+    {
+      "address": "0x081780D4",
+      "original": "0x085C977D",
+      "symbol": "ChsBerryTagSize"
+    },
+    {
+      "address": "0x08178160",
+      "original": "0x085C9782",
+      "symbol": "ChsBerryTagFirmness"
+    },
+    {
+      "address": "0x08178164",
+      "original": "0x085CD0C8",
+      "symbol": "ChsBerryFirmness"
+    },
     {
       "address": "0x081AACBC",
       "original": "0x085C9742",

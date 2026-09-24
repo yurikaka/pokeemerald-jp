@@ -11,6 +11,9 @@
 .equ JP_RENDER_TEXT_REPEAT,     0x080059B3
 .equ JP_CURRENT_GLYPH,          0x03003030
 .equ JP_ADD_TEXT_PRINTER_4,     0x08199B85
+.equ JP_ADD_TEXT_PRINTER,       0x0800449D
+.equ JP_FILL_WINDOW_PIXEL_BUFFER, 0x08003B19
+.equ JP_LOAD_PALETTE,           0x080A1201
 .equ SUMMARY_TEXT_COLORS,       0x085ED17C
 
 .global ChineseRenderHook
@@ -278,6 +281,101 @@ ChsBattleTrainerNameHook:
     adds r4, r0, #0
     ldr r0, =0x0814F5DD
     bx r0
+
+.align 2
+.global ChsBerryFirmness
+ChsBerryFirmness:
+    .4byte ChsBerryFirmnessVerySoft
+    .4byte ChsBerryFirmnessSoft
+    .4byte ChsBerryFirmnessHard
+    .4byte ChsBerryFirmnessVeryHard
+    .4byte ChsBerryFirmnessSuperHard
+
+.ltorg
+
+.align 2
+.global ChsPrintAllBerryData
+.type ChsPrintAllBerryData, %function
+.thumb_func
+ChsPrintAllBerryData:
+    push {r4, lr}
+    ldr r4, =0x08177FE9
+    bl .Lberry_tag_call_r4
+    ldr r4, =0x0817804D
+    bl .Lberry_tag_call_r4
+    ldr r4, =0x08178109
+    bl .Lberry_tag_call_r4
+    ldr r4, =0x08178189
+    bl .Lberry_tag_call_r4
+    ldr r4, =0x081781BD
+    bl .Lberry_tag_call_r4
+    bl ChsPrintBerryFlavorLabels
+    pop {r4}
+    pop {r0}
+    bx r0
+
+.align 2
+.Lberry_tag_call_r4:
+    bx r4
+
+.align 2
+.type ChsPrintBerryFlavorLabels, %function
+.thumb_func
+ChsPrintBerryFlavorLabels:
+    push {r4, r5, lr}
+    sub sp, #12
+    movs r5, #4
+    str r5, [sp]
+    movs r5, #0
+    str r5, [sp, #4]
+    str r5, [sp, #8]
+    ldr r0, =ChsBerryTagFlavorPalette
+    movs r1, #0xE0
+    movs r2, #32
+    ldr r4, =JP_LOAD_PALETTE
+    bl .Lberry_tag_call_r4
+    movs r0, #4
+    movs r1, #0
+    ldr r4, =JP_FILL_WINDOW_PIXEL_BUFFER
+    bl .Lberry_tag_call_r4
+    ldr r4, =JP_ADD_TEXT_PRINTER
+
+    movs r0, #4
+    movs r1, #0
+    ldr r2, =ChsBerryFlavorSpicy
+    movs r3, #23
+    bl .Lberry_tag_call_r4
+
+    movs r0, #4
+    movs r1, #0
+    ldr r2, =ChsBerryFlavorDry
+    movs r3, #55
+    bl .Lberry_tag_call_r4
+
+    movs r0, #4
+    movs r1, #0
+    ldr r2, =ChsBerryFlavorSweet
+    movs r3, #87
+    bl .Lberry_tag_call_r4
+
+    movs r0, #4
+    movs r1, #0
+    ldr r2, =ChsBerryFlavorBitter
+    movs r3, #119
+    bl .Lberry_tag_call_r4
+
+    movs r0, #4
+    movs r1, #0
+    ldr r2, =ChsBerryFlavorSour
+    movs r3, #151
+    bl .Lberry_tag_call_r4
+
+    add sp, #12
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+
+.ltorg
 
 .align 2
 .global ChsItemIdGetDescription
@@ -1415,6 +1513,26 @@ ChsSummaryEffectBattleTilemap:
 .global ChsSummaryEffectContestTilemap
 ChsSummaryEffectContestTilemap:
     .incbin "patch/gfx/summary_effect_contest.bin"
+
+.align 2
+.global ChsBerryTagWindowTemplates
+ChsBerryTagWindowTemplates:
+    .byte 0x01, 0x0B, 0x04, 0x0A, 0x02, 0x0F, 0xF3, 0x00
+    .byte 0x01, 0x0B, 0x07, 0x0F, 0x04, 0x0F, 0x53, 0x00
+    .incbin "baserom_jp.gba", 0x5CD0B0, 16
+    .byte 0x01, 0x04, 0x0B, 0x16, 0x03, 0x0E, 0x07, 0x01
+    .incbin "baserom_jp.gba", 0x5CD0C0, 8
+
+.align 2
+ChsBerryTagFlavorPalette:
+    .2byte 0x73BB
+    .2byte 0x73BB
+    .incbin "baserom_jp.gba", 0x5CD07C, 28
+
+.align 2
+.global ChsBerryTagTiles
+ChsBerryTagTiles:
+    .incbin "build/patch/berry_tag_tiles.lz"
 
 .align 2
 ChineseNormalFont:

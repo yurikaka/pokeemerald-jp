@@ -24,14 +24,15 @@ GBAGFX ?= tools/gbagfx/gbagfx
 PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
-PATCH_GFX := $(wildcard patch/gfx/*.4bpp)
+PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp
+PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin
 PATCH_TILEMAPS := $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin))
 PATCH_GFX_LZ := $(patsubst patch/gfx/%.4bpp,$(PATCH_BUILD)/%.lz,$(PATCH_GFX))
 PATCH_TILEMAP_LZ := $(patsubst patch/gfx/%.bin,$(PATCH_BUILD)/%.lz,$(PATCH_TILEMAPS))
 PATCH_RESOURCES_LZ := $(PATCH_GFX_LZ) $(PATCH_TILEMAP_LZ)
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
-PATCH_TEXTS := patch/texts.json $(wildcard patch/bag_return_locations*.json patch/item_names.json patch/item_descriptions.json patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json patch/pokedex_entries.json patch/trainer_names.json patch/trainer_class_names.json) $(PATCH_BATCHES)
+PATCH_TEXTS := patch/texts.json $(wildcard patch/bag_return_locations*.json patch/item_names.json patch/item_descriptions.json patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json patch/berry_info.json patch/pokedex_entries.json patch/trainer_names.json patch/trainer_class_names.json) $(PATCH_BATCHES)
 
 .PHONY: all chs patch-payload compare clean
 
@@ -75,6 +76,9 @@ $(PATCH_BUILD)/latin_normal.latfont: patch/fonts/latin_normal.png | $(PATCH_BUIL
 
 $(PATCH_BUILD)/latin_small.latfont: patch/fonts/latin_small.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
+
+patch/gfx/berry_tag_tiles.4bpp: patch/tools/build_berry_tag_gfx.py baserom_jp.gba
+	$(PYTHON) patch/tools/build_berry_tag_gfx.py
 
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@

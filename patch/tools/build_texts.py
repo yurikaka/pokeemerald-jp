@@ -412,6 +412,39 @@ def main() -> None:
                 }
             )
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_berry_info_table":
+            source_path = (texts_path.parent / document["source"]).resolve()
+            source = source_path.read_text(encoding="utf-8")
+            description_names = document["description_names"]
+            description_parts = []
+            for part in (1, 2):
+                strings = re.findall(
+                    rf'static const u8 sBerryDescriptionPart{part}_\w+\[\] = _\("([^"]*)"\);',
+                    source,
+                )
+                if len(strings) != document["count"]:
+                    raise ValueError(
+                        f"{source_path} contains {len(strings)} berry description part {part} strings, "
+                        f"expected {document['count']}"
+                    )
+                description_parts.append(strings)
+            for name, strings in zip(description_names, description_parts):
+                fixed_tables.append(
+                    {
+                        "kind": "string_pointer_table",
+                        "name": name,
+                        "strings": strings,
+                    }
+                )
+            berry_names = re.findall(r'\.name\s*=\s*_\("([^"]*)"\)', source)
+            if len(berry_names) != document["count"]:
+                raise ValueError(
+                    f"{source_path} contains {len(berry_names)} berry names, "
+                    f"expected {document['count']}"
+                )
+            document["names"] = berry_names
+            fixed_tables.append(document)
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue
@@ -443,6 +476,22 @@ def main() -> None:
             wrapped_pages += changed_pages
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
     for table in fixed_tables:
+        if table["kind"] == "us_berry_info_table":
+            base_offset = int(table["base_offset"], 0)
+            description_names = table["description_names"]
+            lines.extend((".align 2", f".global {table['name']}", f"{table['name']}:"))
+            lines.append(f'    .incbin "baserom_jp.gba", 0x{base_offset:X}, 28')
+            for index in range(table["count"]):
+                offset = base_offset + (index + 1) * 28
+                encoded_name = encode_text(table["names"][index], charmap, False)[len(CONTROLS["ENG"]):]
+                if len(encoded_name) != 7:
+                    raise ValueError(f"{table['name']}[{index}] name must occupy 7 bytes")
+                lines.append("    .byte " + ", ".join(f"0x{value:02X}" for value in encoded_name))
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset + 7:X}, 5')
+                lines.append(f"    .4byte .L{description_names[0]}_{index}")
+                lines.append(f"    .4byte .L{description_names[1]}_{index}")
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset + 20:X}, 8')
+            continue
         if table["kind"] == "pokedex_entries":
             name = table["name"]
             if name in names:
