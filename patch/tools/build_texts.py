@@ -374,6 +374,25 @@ def main() -> None:
         if isinstance(document, dict) and document.get("kind") == "pokedex_entries":
             fixed_tables.append(document)
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_trainer_name_table":
+            source_path = (texts_path.parent / document["source"]).resolve()
+            trainer_names = re.findall(
+                r'\.trainerName\s*=\s*_\("([^"]*)"\)',
+                source_path.read_text(encoding="utf-8"),
+            )
+            if len(trainer_names) != document["count"]:
+                raise ValueError(
+                    f"{source_path} contains {len(trainer_names)} trainer names, "
+                    f"expected {document['count']}"
+                )
+            fixed_tables.append(
+                {
+                    "kind": "string_pointer_table",
+                    "name": document["name"],
+                    "strings": trainer_names,
+                }
+            )
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue

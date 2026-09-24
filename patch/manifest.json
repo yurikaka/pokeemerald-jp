@@ -16,6 +16,16 @@
       "symbol": "ChsItemIdGetName"
     },
     {
+      "address": "0x0806EB38",
+      "original": "00b50004010c0448814200d900214801",
+      "symbol": "ChsTrainerNameFromId"
+    },
+    {
+      "address": "0x0814F514",
+      "original": "4001024944185fe06c88030240382e08",
+      "symbol": "ChsBattleTrainerNameHook"
+    },
+    {
       "address": "0x080E0F84",
       "original": "10b50c1c0006000efff71cfe011c201c",
       "symbol": "ChsGetBerryNameByType"
@@ -504,6 +514,16 @@
     }
   ],
   "pointer_replacements": [
+    {
+      "old": "0x085AB009",
+      "symbol": "ChsBattleOpponentPrefix",
+      "expected": 8
+    },
+    {
+      "old": "0x085AB00F",
+      "symbol": "ChsBattleLinkOpponentPrefix",
+      "expected": 8
+    },
     {
       "old": "0x082EACC4",
       "symbol": "ChsMoveNames",
