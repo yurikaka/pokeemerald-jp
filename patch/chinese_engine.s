@@ -136,18 +136,58 @@ SetChineseTextMode:
     bx r0
 
 .align 2
+.global ChsBattleMoveNamePlaceholderHook
+.type ChsBattleMoveNamePlaceholderHook, %function
+.thumb_func
+ChsBattleMoveNamePlaceholderHook:
+    ldr r0, =Chs_sText_AttackerUsedX + 18
+    cmp r0, r9
+    bne .Lbattle_move_name_raw
+    ldr r0, =0x0203A874
+    ldr r0, [r0]
+    ldrh r0, [r0]
+    ldr r1, =0x0162
+    cmp r0, r1
+    bhi .Lbattle_move_name_raw
+    lsls r0, r0, #4
+    ldr r1, =ChsMoveNames
+    adds r4, r0, r1
+    b .Lbattle_move_name_copy
+.Lbattle_move_name_raw:
+    ldr r1, =0x02022C1C
+    ldrb r0, [r1]
+    cmp r0, #0xFD
+    bne .Lbattle_move_name_copy_raw
+    ldr r4, =0x02021C54
+    adds r0, r1, #0
+    adds r1, r4, #0
+    ldr r3, =0x0814F665
+    bl .Lbattle_move_name_expand
+    b .Lbattle_move_name_copy
+.Lbattle_move_name_copy_raw:
+    adds r4, r1, #0
+.Lbattle_move_name_copy:
+    ldr r0, =0x0814F5DD
+    bx r0
+.Lbattle_move_name_expand:
+    bx r3
+
+.align 2
 .global ChsBattleExpNamePlaceholderHook
 .type ChsBattleExpNamePlaceholderHook, %function
 .thumb_func
 ChsBattleExpNamePlaceholderHook:
-    ldr r0, =Chs_sText_PkmnGainedEXP + 5
+    ldr r0, =Chs_sText_PkmnGainedEXP + 4
+    cmp r0, r9
+    beq .Lbattle_exp_name_from_buffer
+    adds r0, #1
     cmp r0, r9
     bne .Lbattle_exp_name_original
 .Lbattle_exp_name_from_buffer:
     ldr r1, =0x02022C0C
     ldrb r0, [r1]
     cmp r0, #0xFD
-    beq .Lbattle_exp_name_expand
+    beq .Lbattle_exp_name_expand_trim
 .Lbattle_exp_name_copy_raw:
     ldr r1, =0x02022C0C
     adds r4, r1, #0
@@ -158,6 +198,10 @@ ChsBattleExpNamePlaceholderHook:
     cmp r0, #0xFD
     beq .Lbattle_exp_name_expand
     b .Lbattle_exp_name_copy_raw
+.Lbattle_exp_name_expand_trim:
+    movs r0, #0xFF
+    strb r0, [r1, #4]
+    b .Lbattle_exp_name_expand
 .Lbattle_exp_name_expand:
     ldr r4, =0x02021C40
     adds r0, r1, #0
@@ -170,6 +214,8 @@ ChsBattleExpNamePlaceholderHook:
     bx r0
 .Lbattle_exp_name_expand_raw:
     bx r3
+
+.ltorg
 
 .global ChsItemIdGetName
 .type ChsItemIdGetName, %function

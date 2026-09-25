@@ -1,0 +1,65 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "battle protection and stat-drop messages",
+  "texts": [
+    {
+      "name": "Chs_sText_PkmnProtectedItself",
+      "source_symbol": "sText_PkmnProtectedItself",
+      "us_encoded_hex": "fd10fe0fe6046d058410a10c1d053110d0089e110c05a53cff",
+      "japanese_placeholders": [
+        16
+      ]
+    },
+    {
+      "name": "Chs_sText_StatFell",
+      "source_symbol": "sText_StatFell",
+      "us_encoded_hex": "07070314089e3cff"
+    },
+    {
+      "name": "Chs_sText_AttackersStatFell",
+      "source_symbol": "sText_AttackersStatFell",
+      "us_encoded_hex": "fd0f030bfefd00fd01ff",
+      "japanese_placeholders": [
+        15,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Chs_sText_DefendersStatFell",
+      "source_symbol": "sText_DefendersStatFell",
+      "us_encoded_hex": "fd10030bfefd00fd01ff",
+      "japanese_placeholders": [
+        16,
+        0,
+        1
+      ]
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x085AB40C",
+      "original": "0x085A9737",
+      "symbol": "Chs_sText_PkmnProtectedItself",
+      "source_symbol": "sText_PkmnProtectedItself"
+    },
+    {
+      "address": "0x085AB6FC",
+      "original": "0x085AA883",
+      "symbol": "Chs_sText_StatFell",
+      "source_symbol": "sText_StatFell"
+    },
+    {
+      "address": "0x085AB708",
+      "original": "0x085AA8AE",
+      "symbol": "Chs_sText_AttackersStatFell",
+      "source_symbol": "sText_AttackersStatFell"
+    },
+    {
+      "address": "0x085AB70C",
+      "original": "0x085AA8B9",
+      "symbol": "Chs_sText_DefendersStatFell",
+      "source_symbol": "sText_DefendersStatFell"
+    }
+  ]
+}

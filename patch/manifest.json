@@ -89,6 +89,11 @@
       "address": "0x08177FCC",
       "original": "00b500f00bf800f03bf800f097f800f0",
       "symbol": "ChsPrintAllBerryData"
+    },
+    {
+      "address": "0x0814E8FC",
+      "original": "05490878fd280bd1044c081c211c00f0",
+      "symbol": "ChsBattleMoveNamePlaceholderHook"
     }
   ],
   "code_patches": [
@@ -101,6 +106,16 @@
       "address": "0x081781DE",
       "original": "0121",
       "replacement": "0021"
+    },
+    {
+      "address": "0x081D218A",
+      "original": "fc00e21bd200",
+      "replacement": "ba01c046c046"
+    },
+    {
+      "address": "0x081C370A",
+      "original": "e100091bc900",
+      "replacement": "a101c046c046"
     },
     {
       "address": "0x08177F16",
@@ -813,6 +828,21 @@
     }
   ],
   "pointer_writes": [
+    {
+      "address": "0x0814F7E8",
+      "original": "0x085AB08C",
+      "symbol": "ChsBattleStatNames"
+    },
+    {
+      "address": "0x081D2DA8",
+      "original": "0x085FA9CC",
+      "symbol": "ChsLevelUpStatNames"
+    },
+    {
+      "address": "0x081D2EB4",
+      "original": "0x085FA9CC",
+      "symbol": "ChsLevelUpStatNames"
+    },
     {
       "address": "0x080E0C08",
       "original": "0x08563134",

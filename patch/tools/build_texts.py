@@ -471,6 +471,22 @@ def main() -> None:
             ]
             fixed_tables.append(document)
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_region_map_table":
+            source_path = (texts_path.parent / document["source"]).resolve()
+            map_sections = json.loads(source_path.read_text(encoding="utf-8"))["map_sections"]
+            if len(map_sections) != document["count"]:
+                raise ValueError(
+                    f"{source_path} contains {len(map_sections)} map sections, "
+                    f"expected {document['count']}"
+                )
+            if any("name" not in section for section in map_sections):
+                raise ValueError(f"{source_path} contains a map section without a name")
+            document["strings"] = [
+                section["name"].replace("{AQUA}", "海洋")
+                for section in map_sections
+            ]
+            fixed_tables.append(document)
+            continue
         if isinstance(document, dict) and document.get("kind") in ("fixed_string_table", "string_pointer_table"):
             fixed_tables.append(document)
             continue
@@ -502,6 +518,25 @@ def main() -> None:
             wrapped_pages += changed_pages
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
     for table in fixed_tables:
+        if table["kind"] == "us_region_map_table":
+            base_offset = int(table["base_offset"], 0)
+            stride = table["stride"]
+            name_offset = table["name_offset"]
+            for index, map_name in enumerate(table["strings"]):
+                label = f".L{table['name']}_{index}"
+                encoded = encode_text(map_name, charmap, False)
+                lines.extend((".align 2", f"{label}:", "    .byte " + ", ".join(f"0x{value:02X}" for value in encoded)))
+            lines.extend((".align 2", f".global {table['name']}", f"{table['name']}:"))
+            for index in range(table["count"]):
+                offset = base_offset + index * stride
+                label = f".L{table['name']}_{index}"
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset:X}, {name_offset}')
+                lines.append(f"    .4byte {label}")
+                suffix_offset = offset + name_offset + 4
+                suffix_size = stride - name_offset - 4
+                if suffix_size:
+                    lines.append(f'    .incbin "baserom_jp.gba", 0x{suffix_offset:X}, {suffix_size}')
+            continue
         if table["kind"] == "us_decoration_table":
             base_offset = int(table["base_offset"], 0)
             stride = table["stride"]
