@@ -1555,6 +1555,16 @@ ChsEasyChatModePal:
     .2byte 0x0000, 0x0000, 0x0000, 0x0000
 
 .align 2
+.global ChsNamingScreenBackButtonGfx
+ChsNamingScreenBackButtonGfx:
+    .incbin "build/patch/naming_screen_back_button.4bpp"
+
+.align 2
+.global ChsNamingScreenOkButtonGfx
+ChsNamingScreenOkButtonGfx:
+    .incbin "build/patch/naming_screen_ok_button.4bpp"
+
+.align 2
 .global ChsSummaryTitleTilesGfx
 ChsSummaryTitleTilesGfx:
     .incbin "build/patch/summary_titles.lz"

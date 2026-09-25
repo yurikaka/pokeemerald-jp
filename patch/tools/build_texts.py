@@ -152,9 +152,8 @@ def convert_us_encoded_text(
     if not data or data[-1] != 0xFF:
         raise ValueError("US encoded text must end with EOS")
 
-    output = bytearray(CONTROLS["ENG"])
-    if initial_japanese:
-        output.extend(CONTROLS["JPN"])
+    mode_is_japanese = initial_japanese
+    output = bytearray(CONTROLS["JPN"] if mode_is_japanese else CONTROLS["ENG"])
     index = 0
     while index < len(data):
         char = data[index]
@@ -177,6 +176,10 @@ def convert_us_encoded_text(
                 # positioning semantics.
                 chunk[1] = 0x0D
             output.extend(chunk)
+            if code == 0x15:
+                mode_is_japanese = True
+            elif code == 0x16:
+                mode_is_japanese = False
             index = end
             continue
         if char == 0xFD:
@@ -184,16 +187,20 @@ def convert_us_encoded_text(
                 raise ValueError("truncated placeholder")
             placeholder = data[index + 1]
             if placeholder in japanese_placeholders:
-                output.extend(CONTROLS["JPN"])
+                if not mode_is_japanese:
+                    output.extend(CONTROLS["JPN"])
             output.extend(data[index:index + 2])
             if placeholder in japanese_placeholders:
                 output.extend(CONTROLS["ENG"])
+                mode_is_japanese = False
             index += 2
             continue
         if char == 0xF7 and japanese_dynamic:
-            output.extend(CONTROLS["JPN"])
+            if not mode_is_japanese:
+                output.extend(CONTROLS["JPN"])
             output.extend(data[index:index + 2])
             output.extend(CONTROLS["ENG"])
+            mode_is_japanese = False
             index += 2
             continue
         if char in (0xF7, 0xF8, 0xF9):
