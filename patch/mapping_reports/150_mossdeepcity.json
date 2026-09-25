@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "batch": "150_mossdeepcity.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MossdeepCity_Text_CitySign",
+      "address": "0x081E15F7",
+      "original": "0x081E1BB2",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_FeelReliefOnLand",
+      "address": "0x081E15B7",
+      "original": "0x081E19B8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_GymSign",
+      "address": "0x081E15EE",
+      "original": "0x081E1B87",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_ItsAWhiteRock",
+      "address": "0x081E15E5",
+      "original": "0x081E1B7D",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_LifeNeedsSeaToLive",
+      "address": "0x081E15CA",
+      "original": "0x081E1A2A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_MossdeepTargetedByMagma",
+      "address": "0x081E15AD",
+      "original": "0x081E193A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+      "address": "0x081E15D3",
+      "original": "0x081E19FB",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_ScottSomethingWrongWithTown",
+      "address": "0x081E1758",
+      "original": "0x081E1BF8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SootopolisNewGymLeader",
+      "address": "0x081E174D",
+      "original": "0x081E1C8D",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+      "address": "0x081E1598",
+      "original": "0x081E1917",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SpaceCenterReceivedLetter",
+      "address": "0x081E158E",
+      "original": "0x081E18C3",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SpaceCenterSign",
+      "address": "0x081E1600",
+      "original": "0x081E1BD5",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SpecialSpaceCenterRock",
+      "address": "0x081E15DC",
+      "original": "0x081E1AEE",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_StevensHouseOverThere",
+      "address": "0x081E1739",
+      "original": "0x081E1831",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_SurfExhilarating",
+      "address": "0x081E16E3",
+      "original": "0x081E1A9E",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_WailmerWatching",
+      "address": "0x081E15C1",
+      "original": "0x081E1865",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+      "address": "0x081E1702",
+      "original": "0x081E17BC",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_WhatToDoWithWeirdRock",
+      "address": "0x081E1743",
+      "original": "0x081E1845",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_Text_YouCanKeepIt",
+      "address": "0x081E1715",
+      "original": "0x081E17FC",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MossdeepCity_Text_CitySign",
+    "MossdeepCity_Text_FeelReliefOnLand",
+    "MossdeepCity_Text_GymSign",
+    "MossdeepCity_Text_ItsAWhiteRock",
+    "MossdeepCity_Text_LifeNeedsSeaToLive",
+    "MossdeepCity_Text_MossdeepTargetedByMagma",
+    "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+    "MossdeepCity_Text_ScottSomethingWrongWithTown",
+    "MossdeepCity_Text_SootopolisNewGymLeader",
+    "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+    "MossdeepCity_Text_SpaceCenterReceivedLetter",
+    "MossdeepCity_Text_SpaceCenterSign",
+    "MossdeepCity_Text_SpecialSpaceCenterRock",
+    "MossdeepCity_Text_StevensHouseOverThere",
+    "MossdeepCity_Text_SurfExhilarating",
+    "MossdeepCity_Text_WailmerWatching",
+    "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+    "MossdeepCity_Text_WhatToDoWithWeirdRock",
+    "MossdeepCity_Text_YouCanKeepIt"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MossdeepCity_Text_CitySign|MossdeepCity_Text_FeelReliefOnLand|MossdeepCity_Text_GymSign|MossdeepCity_Text_ItsAWhiteRock|MossdeepCity_Text_LifeNeedsSeaToLive|MossdeepCity_Text_MossdeepTargetedByMagma|MossdeepCity_Text_NiceIfWorldCoveredByFlowers|MossdeepCity_Text_ScottSomethingWrongWithTown|MossdeepCity_Text_SootopolisNewGymLeader|MossdeepCity_Text_SpaceCenterLaunchingRockets|MossdeepCity_Text_SpaceCenterReceivedLetter|MossdeepCity_Text_SpaceCenterSign|MossdeepCity_Text_SpecialSpaceCenterRock|MossdeepCity_Text_StevensHouseOverThere|MossdeepCity_Text_SurfExhilarating|MossdeepCity_Text_WailmerWatching|MossdeepCity_Text_WantKingsRockStevenGaveMe|MossdeepCity_Text_WhatToDoWithWeirdRock|MossdeepCity_Text_YouCanKeepIt)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -4985,
+    "mapped_count": 19,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MossdeepCity_Text_CitySign",
+        "us_text": "0x081E2FC9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2970",
+            "jp_reference": "0x081E15F7",
+            "jp_text": "0x081E1BB2",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_FeelReliefOnLand",
+        "us_text": "0x081E2D54",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2930",
+            "jp_reference": "0x081E15B7",
+            "jp_text": "0x081E19B8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_GymSign",
+        "us_text": "0x081E2F99",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2967",
+            "jp_reference": "0x081E15EE",
+            "jp_text": "0x081E1B87",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_ItsAWhiteRock",
+        "us_text": "0x081E2F87",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E295E",
+            "jp_reference": "0x081E15E5",
+            "jp_text": "0x081E1B7D",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_LifeNeedsSeaToLive",
+        "us_text": "0x081E2DF2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2943",
+            "jp_reference": "0x081E15CA",
+            "jp_text": "0x081E1A2A",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_MossdeepTargetedByMagma",
+        "us_text": "0x081E2CBA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2926",
+            "jp_reference": "0x081E15AD",
+            "jp_text": "0x081E193A",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+        "us_text": "0x081E2DB5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E294C",
+            "jp_reference": "0x081E15D3",
+            "jp_text": "0x081E19FB",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_ScottSomethingWrongWithTown",
+        "us_text": "0x081E3013",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2AD1",
+            "jp_reference": "0x081E1758",
+            "jp_text": "0x081E1BF8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SootopolisNewGymLeader",
+        "us_text": "0x081E30D6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2AC6",
+            "jp_reference": "0x081E174D",
+            "jp_text": "0x081E1C8D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+        "us_text": "0x081E2C95",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2911",
+            "jp_reference": "0x081E1598",
+            "jp_text": "0x081E1917",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SpaceCenterReceivedLetter",
+        "us_text": "0x081E2C4C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2907",
+            "jp_reference": "0x081E158E",
+            "jp_text": "0x081E18C3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SpaceCenterSign",
+        "us_text": "0x081E2FF0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2979",
+            "jp_reference": "0x081E1600",
+            "jp_text": "0x081E1BD5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SpecialSpaceCenterRock",
+        "us_text": "0x081E2EF0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2955",
+            "jp_reference": "0x081E15DC",
+            "jp_text": "0x081E1AEE",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_StevensHouseOverThere",
+        "us_text": "0x081E2BB8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2AB2",
+            "jp_reference": "0x081E1739",
+            "jp_text": "0x081E1831",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_SurfExhilarating",
+        "us_text": "0x081E2E9A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2A5C",
+            "jp_reference": "0x081E16E3",
+            "jp_text": "0x081E1A9E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_WailmerWatching",
+        "us_text": "0x081E2BFB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E293A",
+            "jp_reference": "0x081E15C1",
+            "jp_text": "0x081E1865",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+        "us_text": "0x081E2B35",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2A7B",
+            "jp_reference": "0x081E1702",
+            "jp_text": "0x081E17BC",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_WhatToDoWithWeirdRock",
+        "us_text": "0x081E2BCA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2ABC",
+            "jp_reference": "0x081E1743",
+            "jp_text": "0x081E1845",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_Text_YouCanKeepIt",
+        "us_text": "0x081E2B83",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E2A8E",
+            "jp_reference": "0x081E1715",
+            "jp_text": "0x081E17FC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 19,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

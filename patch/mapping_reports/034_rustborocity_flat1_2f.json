@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "batch": "034_rustborocity_flat1_2f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase",
+      "address": "0x082037E6",
+      "original": "0x0820398A",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard",
+      "address": "0x08203876",
+      "original": "0x08203886",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase",
+      "address": "0x082037C6",
+      "original": "0x082038E4",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll",
+      "address": "0x0820387F",
+      "original": "0x08203BB9",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_LetsGiveItATry",
+      "address": "0x0820385A",
+      "original": "0x08203A2F",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_LetsGiveItATry2",
+      "address": "0x08203831",
+      "original": "0x082039FB",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_OhIsThatRight",
+      "address": "0x08203806",
+      "original": "0x082039D3",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_OhShesLaughing",
+      "address": "0x0820383E",
+      "original": "0x08203A10",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_OhYouDontKnowAny",
+      "address": "0x08203810",
+      "original": "0x08203ABC",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll",
+      "address": "0x08203867",
+      "original": "0x08203A44",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2",
+      "address": "0x08203827",
+      "original": "0x08203A9D",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper",
+      "address": "0x08203850",
+      "original": "0x08203B01",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase",
+      "address": "0x0820381A",
+      "original": "0x08203A63",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion",
+      "address": "0x082037D9",
+      "original": "0x082039B9",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion",
+      "address": "0x082037F9",
+      "original": "0x082039B9",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase",
+    "RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard",
+    "RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase",
+    "RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll",
+    "RustboroCity_Flat1_2F_Text_LetsGiveItATry",
+    "RustboroCity_Flat1_2F_Text_LetsGiveItATry2",
+    "RustboroCity_Flat1_2F_Text_OhIsThatRight",
+    "RustboroCity_Flat1_2F_Text_OhShesLaughing",
+    "RustboroCity_Flat1_2F_Text_OhYouDontKnowAny",
+    "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll",
+    "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2",
+    "RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper",
+    "RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase",
+    "RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase|RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard|RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase|RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll|RustboroCity_Flat1_2F_Text_LetsGiveItATry|RustboroCity_Flat1_2F_Text_LetsGiveItATry2|RustboroCity_Flat1_2F_Text_OhIsThatRight|RustboroCity_Flat1_2F_Text_OhShesLaughing|RustboroCity_Flat1_2F_Text_OhYouDontKnowAny|RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll|RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2|RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper|RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase|RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -13513,
+    "mapped_count": 14,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase",
+        "us_text": "0x08206E77",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CAF",
+            "jp_reference": "0x082037E6",
+            "jp_text": "0x0820398A",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard",
+        "us_text": "0x08206D4F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D3F",
+            "jp_reference": "0x08203876",
+            "jp_text": "0x08203886",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13513
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase",
+        "us_text": "0x08206DAF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206C8F",
+            "jp_reference": "0x082037C6",
+            "jp_text": "0x082038E4",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13513
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll",
+        "us_text": "0x0820714F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D48",
+            "jp_reference": "0x0820387F",
+            "jp_text": "0x08203BB9",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13513
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_LetsGiveItATry",
+        "us_text": "0x08206F3C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D23",
+            "jp_reference": "0x0820385A",
+            "jp_text": "0x08203A2F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_LetsGiveItATry2",
+        "us_text": "0x08206EFA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CFA",
+            "jp_reference": "0x08203831",
+            "jp_text": "0x082039FB",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_OhIsThatRight",
+        "us_text": "0x08206ECF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CCF",
+            "jp_reference": "0x08203806",
+            "jp_text": "0x082039D3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_OhShesLaughing",
+        "us_text": "0x08206F0F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D07",
+            "jp_reference": "0x0820383E",
+            "jp_text": "0x08203A10",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_OhYouDontKnowAny",
+        "us_text": "0x08206FF9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CD9",
+            "jp_reference": "0x08203810",
+            "jp_text": "0x08203ABC",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll",
+        "us_text": "0x08206F51",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D30",
+            "jp_reference": "0x08203867",
+            "jp_text": "0x08203A44",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2",
+        "us_text": "0x08206FCC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CF0",
+            "jp_reference": "0x08203827",
+            "jp_text": "0x08203A9D",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper",
+        "us_text": "0x0820705F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206D19",
+            "jp_reference": "0x08203850",
+            "jp_text": "0x08203B01",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase",
+        "us_text": "0x08206F7E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08206CE3",
+            "jp_reference": "0x0820381A",
+            "jp_text": "0x08203A63",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion",
+        "us_text": "0x08206EAD",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x08206CA2",
+            "jp_reference": "0x082037D9",
+            "jp_text": "0x082039B9",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x08206CC2",
+            "jp_reference": "0x082037F9",
+            "jp_text": "0x082039B9",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 15,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

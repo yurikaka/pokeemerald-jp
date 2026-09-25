@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "049_slateportcity_sternsshipyard_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs",
+      "address": "0x081FAB9B",
+      "original": "0x081FAD7D",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran",
+      "address": "0x081FABCE",
+      "original": "0x081FAD21",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern",
+      "address": "0x081FABAF",
+      "original": "0x081FACDE",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock",
+      "address": "0x081FABEA",
+      "original": "0x081FAE4A",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_FerryIsReady",
+      "address": "0x081FAB87",
+      "original": "0x081FADD8",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily",
+      "address": "0x081FABE1",
+      "original": "0x081FAF7A",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern",
+      "address": "0x081FAB62",
+      "original": "0x081FAC36",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing",
+      "address": "0x081FABD8",
+      "original": "0x081FAF20",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs",
+    "SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran",
+    "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern",
+    "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock",
+    "SlateportCity_SternsShipyard_1F_Text_FerryIsReady",
+    "SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily",
+    "SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern",
+    "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs|SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran|SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern|SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock|SlateportCity_SternsShipyard_1F_Text_FerryIsReady|SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily|SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern|SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -11165,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs",
+        "us_text": "0x081FD948",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD738",
+            "jp_reference": "0x081FAB9B",
+            "jp_text": "0x081FAD7D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran",
+        "us_text": "0x081FD8E0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD76B",
+            "jp_reference": "0x081FABCE",
+            "jp_text": "0x081FAD21",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern",
+        "us_text": "0x081FD89C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD74C",
+            "jp_reference": "0x081FABAF",
+            "jp_text": "0x081FACDE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock",
+        "us_text": "0x081FDA0C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD787",
+            "jp_reference": "0x081FABEA",
+            "jp_text": "0x081FAE4A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -11165
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_FerryIsReady",
+        "us_text": "0x081FD99B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD724",
+            "jp_reference": "0x081FAB87",
+            "jp_text": "0x081FADD8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily",
+        "us_text": "0x081FDB3D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD77E",
+            "jp_reference": "0x081FABE1",
+            "jp_text": "0x081FAF7A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -11165
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern",
+        "us_text": "0x081FD7EF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD6FF",
+            "jp_reference": "0x081FAB62",
+            "jp_text": "0x081FAC36",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing",
+        "us_text": "0x081FDAD9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD775",
+            "jp_reference": "0x081FABD8",
+            "jp_text": "0x081FAF20",
+            "mapping_method": "regional_delta",
+            "reference_delta": -11165
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

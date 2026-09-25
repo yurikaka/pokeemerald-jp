@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "batch": "009_oldale_town.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "OldaleTown_Text_BrendanLetsGoBack",
+      "address": "0x081E49EE",
+      "original": "0x081E4C11",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_DiscoveredFootprints",
+      "address": "0x081E490C",
+      "original": "0x081E4B8B",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_FinishedSketchingFootprints",
+      "address": "0x081E4948",
+      "original": "0x081E4BBC",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_IWorkAtPokemonMart",
+      "address": "0x081E47F9",
+      "original": "0x081E4A8A",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_MayLetsGoBack",
+      "address": "0x081E49E0",
+      "original": "0x081E4BF3",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_PotionExplanation",
+      "address": "0x081E488D",
+      "original": "0x081E4B0F",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_PotionExplanation",
+      "address": "0x081E489B",
+      "original": "0x081E4B0F",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_SavingMyProgress",
+      "address": "0x081E47D5",
+      "original": "0x081E4A6E",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_ThisIsAPokemonMart",
+      "address": "0x081E486E",
+      "original": "0x081E4AB3",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_TownSign",
+      "address": "0x081E47CC",
+      "original": "0x081E4C38",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Text_WaitDontComeInHere",
+      "address": "0x081E4933",
+      "original": "0x081E4B44",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "OldaleTown_Text_BrendanLetsGoBack",
+    "OldaleTown_Text_DiscoveredFootprints",
+    "OldaleTown_Text_FinishedSketchingFootprints",
+    "OldaleTown_Text_IWorkAtPokemonMart",
+    "OldaleTown_Text_MayLetsGoBack",
+    "OldaleTown_Text_PotionExplanation",
+    "OldaleTown_Text_SavingMyProgress",
+    "OldaleTown_Text_ThisIsAPokemonMart",
+    "OldaleTown_Text_TownSign",
+    "OldaleTown_Text_WaitDontComeInHere"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:OldaleTown_Text_BrendanLetsGoBack|OldaleTown_Text_DiscoveredFootprints|OldaleTown_Text_FinishedSketchingFootprints|OldaleTown_Text_IWorkAtPokemonMart|OldaleTown_Text_MayLetsGoBack|OldaleTown_Text_PotionExplanation|OldaleTown_Text_SavingMyProgress|OldaleTown_Text_ThisIsAPokemonMart|OldaleTown_Text_TownSign|OldaleTown_Text_WaitDontComeInHere)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -5830,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "OldaleTown_Text_BrendanLetsGoBack",
+        "us_text": "0x081E631E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E60B4",
+            "jp_reference": "0x081E49EE",
+            "jp_text": "0x081E4C11",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_DiscoveredFootprints",
+        "us_text": "0x081E628D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5FD2",
+            "jp_reference": "0x081E490C",
+            "jp_text": "0x081E4B8B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_FinishedSketchingFootprints",
+        "us_text": "0x081E62C6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E600E",
+            "jp_reference": "0x081E4948",
+            "jp_text": "0x081E4BBC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_IWorkAtPokemonMart",
+        "us_text": "0x081E6154",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5EBF",
+            "jp_reference": "0x081E47F9",
+            "jp_text": "0x081E4A8A",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_MayLetsGoBack",
+        "us_text": "0x081E62FD",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E60A6",
+            "jp_reference": "0x081E49E0",
+            "jp_text": "0x081E4BF3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_PotionExplanation",
+        "us_text": "0x081E61F0",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081E5F53",
+            "jp_reference": "0x081E488D",
+            "jp_text": "0x081E4B0F",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x081E5F61",
+            "jp_reference": "0x081E489B",
+            "jp_text": "0x081E4B0F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_SavingMyProgress",
+        "us_text": "0x081E6134",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5E9B",
+            "jp_reference": "0x081E47D5",
+            "jp_text": "0x081E4A6E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_ThisIsAPokemonMart",
+        "us_text": "0x081E6178",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5F34",
+            "jp_reference": "0x081E486E",
+            "jp_text": "0x081E4AB3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_TownSign",
+        "us_text": "0x081E634D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5E92",
+            "jp_reference": "0x081E47CC",
+            "jp_text": "0x081E4C38",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Text_WaitDontComeInHere",
+        "us_text": "0x081E622F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E5FF9",
+            "jp_reference": "0x081E4933",
+            "jp_text": "0x081E4B44",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 11,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

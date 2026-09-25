@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "batch": "154_mossdeepcity_house3.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MossdeepCity_House3_Text_DontYouLikeToFish",
+      "address": "0x0820C746",
+      "original": "0x0820C7E7",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_House3_Text_GoAfterSeafloorPokemon",
+      "address": "0x0820C73C",
+      "original": "0x0820C7F9",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_House3_Text_SuperRodIsSuper",
+      "address": "0x0820C71B",
+      "original": "0x0820C7A1",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_House3_Text_TryDroppingRodInWater",
+      "address": "0x0820C732",
+      "original": "0x0820C7C5",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_House3_Text_YouWantSuperRod",
+      "address": "0x0820C708",
+      "original": "0x0820C74E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MossdeepCity_House3_Text_DontYouLikeToFish",
+    "MossdeepCity_House3_Text_GoAfterSeafloorPokemon",
+    "MossdeepCity_House3_Text_SuperRodIsSuper",
+    "MossdeepCity_House3_Text_TryDroppingRodInWater",
+    "MossdeepCity_House3_Text_YouWantSuperRod"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MossdeepCity_House3_Text_DontYouLikeToFish|MossdeepCity_House3_Text_GoAfterSeafloorPokemon|MossdeepCity_House3_Text_SuperRodIsSuper|MossdeepCity_House3_Text_TryDroppingRodInWater|MossdeepCity_House3_Text_YouWantSuperRod)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -16748,
+    "mapped_count": 5,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MossdeepCity_House3_Text_DontYouLikeToFish",
+        "us_text": "0x08210969",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082108B2",
+            "jp_reference": "0x0820C746",
+            "jp_text": "0x0820C7E7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -16748
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_House3_Text_GoAfterSeafloorPokemon",
+        "us_text": "0x0821097D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082108A8",
+            "jp_reference": "0x0820C73C",
+            "jp_text": "0x0820C7F9",
+            "mapping_method": "regional_delta",
+            "reference_delta": -16748
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_House3_Text_SuperRodIsSuper",
+        "us_text": "0x08210923",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210887",
+            "jp_reference": "0x0820C71B",
+            "jp_text": "0x0820C7A1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_House3_Text_TryDroppingRodInWater",
+        "us_text": "0x08210947",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821089E",
+            "jp_reference": "0x0820C732",
+            "jp_text": "0x0820C7C5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_House3_Text_YouWantSuperRod",
+        "us_text": "0x082108BA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210874",
+            "jp_reference": "0x0820C708",
+            "jp_text": "0x0820C74E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -16748
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 5,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "075_verdanturftown_friendshipratershouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou",
+      "address": "0x081F75F8",
+      "original": "0x081F7641",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou",
+      "address": "0x081F75BC",
+      "original": "0x081F773C",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou",
+      "address": "0x081F75DA",
+      "original": "0x081F76B4",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot",
+      "address": "0x081F75E4",
+      "original": "0x081F7693",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_Pikachu",
+      "address": "0x081F760A",
+      "original": "0x081F7772",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou",
+      "address": "0x081F755B",
+      "original": "0x081F7613",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy",
+      "address": "0x081F75EE",
+      "original": "0x081F7675",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_FriendshipRatersHouse_Text_VeryWary",
+      "address": "0x081F75C6",
+      "original": "0x081F7705",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou",
+    "VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou",
+    "VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou",
+    "VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot",
+    "VerdanturfTown_FriendshipRatersHouse_Text_Pikachu",
+    "VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou",
+    "VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy",
+    "VerdanturfTown_FriendshipRatersHouse_Text_VeryWary"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou|VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou|VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou|VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot|VerdanturfTown_FriendshipRatersHouse_Text_Pikachu|VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou|VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy|VerdanturfTown_FriendshipRatersHouse_Text_VeryWary)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -10264,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou",
+        "us_text": "0x081F9E6A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9E10",
+            "jp_reference": "0x081F75F8",
+            "jp_text": "0x081F7641",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10264
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou",
+        "us_text": "0x081F9F65",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9DD4",
+            "jp_reference": "0x081F75BC",
+            "jp_text": "0x081F773C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou",
+        "us_text": "0x081F9EDB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9DF2",
+            "jp_reference": "0x081F75DA",
+            "jp_text": "0x081F76B4",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot",
+        "us_text": "0x081F9EB7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9DFC",
+            "jp_reference": "0x081F75E4",
+            "jp_text": "0x081F7693",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_Pikachu",
+        "us_text": "0x081F9F9A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9E22",
+            "jp_reference": "0x081F760A",
+            "jp_text": "0x081F7772",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10264
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou",
+        "us_text": "0x081F9E2B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9D73",
+            "jp_reference": "0x081F755B",
+            "jp_text": "0x081F7613",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10264
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy",
+        "us_text": "0x081F9E99",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9E06",
+            "jp_reference": "0x081F75EE",
+            "jp_text": "0x081F7675",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_FriendshipRatersHouse_Text_VeryWary",
+        "us_text": "0x081F9F35",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9DDE",
+            "jp_reference": "0x081F75C6",
+            "jp_text": "0x081F7705",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

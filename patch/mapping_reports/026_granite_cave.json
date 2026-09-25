@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "batch": "026_granite_cave.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "GraniteCave_1F_Text_ExplainFlash",
+      "address": "0x08213F06",
+      "original": "0x08213FAE",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_1F_Text_ExplainFlash",
+      "address": "0x08213F10",
+      "original": "0x08213FAE",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+      "address": "0x08213EEF",
+      "original": "0x08213F18",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "GraniteCave_1F_Text_ExplainFlash",
+    "GraniteCave_1F_Text_GetsDarkAheadHereYouGo"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:GraniteCave_1F_Text_ExplainFlash|GraniteCave_1F_Text_GetsDarkAheadHereYouGo)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18941,
+    "mapped_count": 2,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "GraniteCave_1F_Text_ExplainFlash",
+        "us_text": "0x082189CD",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x08218903",
+            "jp_reference": "0x08213F06",
+            "jp_text": "0x08213FAE",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18941
+          },
+          {
+            "us_reference": "0x0821890D",
+            "jp_reference": "0x08213F10",
+            "jp_text": "0x08213FAE",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18941
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+        "us_text": "0x08218915",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082188EC",
+            "jp_reference": "0x08213EEF",
+            "jp_text": "0x08213F18",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 3,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

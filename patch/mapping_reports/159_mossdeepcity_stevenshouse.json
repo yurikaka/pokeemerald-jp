@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "159_mossdeepcity_stevenshouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+      "address": "0x0820C99D",
+      "original": "0x0820CC3F",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_ExplainDive",
+      "address": "0x0820C8A4",
+      "original": "0x0820CA36",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas",
+      "address": "0x0820C8EF",
+      "original": "0x0820CB5D",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+      "address": "0x0820C9B0",
+      "original": "0x0820CB77",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_ObtainedBeldum",
+      "address": "0x0820C988",
+      "original": "0x0820CB39",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum",
+      "address": "0x0820C8D6",
+      "original": "0x0820CAF7",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis",
+      "address": "0x0820C9A6",
+      "original": "0x0820CAAF",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive",
+      "address": "0x0820C88A",
+      "original": "0x0820C9C8",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+    "MossdeepCity_StevensHouse_Text_ExplainDive",
+    "MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas",
+    "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+    "MossdeepCity_StevensHouse_Text_ObtainedBeldum",
+    "MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum",
+    "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis",
+    "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MossdeepCity_StevensHouse_Text_CollectionOfRareRocks|MossdeepCity_StevensHouse_Text_ExplainDive|MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas|MossdeepCity_StevensHouse_Text_LetterFromSteven|MossdeepCity_StevensHouse_Text_ObtainedBeldum|MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum|MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis|MossdeepCity_StevensHouse_Text_YouveEarnedHMDive)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -16778,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_CollectionOfRareRocks",
+        "us_text": "0x08210DF5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210B27",
+            "jp_reference": "0x0820C99D",
+            "jp_text": "0x0820CC3F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_ExplainDive",
+        "us_text": "0x08210BD6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210A2E",
+            "jp_reference": "0x0820C8A4",
+            "jp_text": "0x0820CA36",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas",
+        "us_text": "0x08210D1E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210A79",
+            "jp_reference": "0x0820C8EF",
+            "jp_text": "0x0820CB5D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+        "us_text": "0x08210D35",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210B3A",
+            "jp_reference": "0x0820C9B0",
+            "jp_text": "0x0820CB77",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_ObtainedBeldum",
+        "us_text": "0x08210CF8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210B12",
+            "jp_reference": "0x0820C988",
+            "jp_text": "0x0820CB39",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum",
+        "us_text": "0x08210CC5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210A60",
+            "jp_reference": "0x0820C8D6",
+            "jp_text": "0x0820CAF7",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis",
+        "us_text": "0x08210C78",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210B30",
+            "jp_reference": "0x0820C9A6",
+            "jp_text": "0x0820CAAF",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_StevensHouse_Text_YouveEarnedHMDive",
+        "us_text": "0x08210B52",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08210A14",
+            "jp_reference": "0x0820C88A",
+            "jp_text": "0x0820C9C8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

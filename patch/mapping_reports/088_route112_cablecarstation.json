@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "batch": "088_route112_cablecarstation.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route112_CableCarStation_Text_CableCarReadyGetOn",
+      "address": "0x08211F67",
+      "original": "0x08211FD1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route112_CableCarStation_Text_RideAnotherTime",
+      "address": "0x08211FB5",
+      "original": "0x08212005",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route112_CableCarStation_Text_StepThisWay",
+      "address": "0x08211F86",
+      "original": "0x08211FF8",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route112_CableCarStation_Text_CableCarReadyGetOn",
+    "Route112_CableCarStation_Text_RideAnotherTime",
+    "Route112_CableCarStation_Text_StepThisWay"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route112_CableCarStation_Text_CableCarReadyGetOn|Route112_CableCarStation_Text_RideAnotherTime|Route112_CableCarStation_Text_StepThisWay)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18322,
+    "mapped_count": 3,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route112_CableCarStation_Text_CableCarReadyGetOn",
+        "us_text": "0x08216763",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082166F9",
+            "jp_reference": "0x08211F67",
+            "jp_text": "0x08211FD1",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "Route112_CableCarStation_Text_RideAnotherTime",
+        "us_text": "0x08216789",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216747",
+            "jp_reference": "0x08211FB5",
+            "jp_text": "0x08212005",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18322
+          }
+        ]
+      },
+      {
+        "symbol": "Route112_CableCarStation_Text_StepThisWay",
+        "us_text": "0x08216781",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216718",
+            "jp_reference": "0x08211F86",
+            "jp_text": "0x08211FF8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 3,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

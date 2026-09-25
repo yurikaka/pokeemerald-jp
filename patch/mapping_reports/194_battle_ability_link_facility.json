@@ -1,0 +1,798 @@
+{
+  "schema_version": 1,
+  "batch": "194_battle_ability_link_facility.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_PkmnTransferredLanettesPC",
+      "address": "0x085AB98C",
+      "original": "0x08243E2A",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PkmnTransferredLanettesPCBoxFull",
+      "address": "0x085AB994",
+      "original": "0x08243E80",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PkmnTransferredSomeonesPC",
+      "address": "0x085AB988",
+      "original": "0x08243E08",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PkmnTransferredSomeonesPCBoxFull",
+      "address": "0x085AB990",
+      "original": "0x08243E4C",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_AttackerCantEscape",
+      "address": "0x085AB940",
+      "original": "0x085A9818",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_BoxIsFull",
+      "address": "0x085AB90C",
+      "original": "0x085AB26A",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_ButNoEffect",
+      "address": "0x085AB950",
+      "original": "0x085AA50B",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_DefeatedOpponentByReferee",
+      "address": "0x085AB974",
+      "original": "0x085ABFE2",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_ForfeitedMatch",
+      "address": "0x085AB984",
+      "original": "0x085AC087",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_GlintAppearsInEye",
+      "address": "0x085AB964",
+      "original": "0x085ABE6C",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_LostToOpponentByReferee",
+      "address": "0x085AB978",
+      "original": "0x085ABFFA",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnAlreadyHasBurn",
+      "address": "0x085AB91C",
+      "original": "0x085A9922",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnAvoidedAttack",
+      "address": "0x085AB910",
+      "original": "0x085A977A",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnBeganGrowlingDeeply",
+      "address": "0x085AB96C",
+      "original": "0x085ABE93",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnEagerForMore",
+      "address": "0x085AB970",
+      "original": "0x085ABEA5",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnGettingIntoPosition",
+      "address": "0x085AB968",
+      "original": "0x085ABE7F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnIncapableOfPower",
+      "address": "0x085AB960",
+      "original": "0x085ABE50",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnObtainedX",
+      "address": "0x085AB944",
+      "original": "0x085AA2C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnObtainedX2",
+      "address": "0x085AB948",
+      "original": "0x085AA2D1",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnObtainedXYObtainedZ",
+      "address": "0x085AB94C",
+      "original": "0x085AA2E1",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnRaisedDefALittle",
+      "address": "0x085AB92C",
+      "original": "0x085A9B65",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnRaisedSpDefALittle",
+      "address": "0x085AB930",
+      "original": "0x085A9B34",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsItemNormalizedStatus",
+      "address": "0x085AB904",
+      "original": "0x085AB31D",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXBlocksY2",
+      "address": "0x085AB924",
+      "original": "0x085AA70F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXCuredItsYProblem",
+      "address": "0x085AB93C",
+      "original": "0x085AA84B",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXHadNoEffectOnY",
+      "address": "0x085AB954",
+      "original": "0x085AA85D",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXMadeItIneffective",
+      "address": "0x085AB914",
+      "original": "0x085AA811",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXPreventsFlinching",
+      "address": "0x085AB918",
+      "original": "0x085AA826",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXPreventsYsZ",
+      "address": "0x085AB938",
+      "original": "0x085AA835",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnsXWoreOff",
+      "address": "0x085AB928",
+      "original": "0x085A9D8E",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PreventedFromWorking",
+      "address": "0x085AB900",
+      "original": "0x085AA7F9",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_QuestionForfeitMatch",
+      "address": "0x085AB980",
+      "original": "0x085AC070",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_StatsWontDecrease2",
+      "address": "0x085AB920",
+      "original": "0x085AA8D9",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TheWallShattered",
+      "address": "0x085AB934",
+      "original": "0x085AA501",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TiedOpponentByReferee",
+      "address": "0x085AB97C",
+      "original": "0x085AC012",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_Trainer1UsedItem",
+      "address": "0x085AB908",
+      "original": "0x085AB103",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_Trainer1WinText",
+      "address": "0x085AB998",
+      "original": "0x085AC098",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_Trainer2LoseText",
+      "address": "0x085AB95C",
+      "original": "0x085ABE4D",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_Trainer2WinText",
+      "address": "0x085AB99C",
+      "original": "0x085AC09B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "gText_PkmnTransferredLanettesPC",
+    "gText_PkmnTransferredLanettesPCBoxFull",
+    "gText_PkmnTransferredSomeonesPC",
+    "gText_PkmnTransferredSomeonesPCBoxFull",
+    "sText_AttackerCantEscape",
+    "sText_BoxIsFull",
+    "sText_ButNoEffect",
+    "sText_DefeatedOpponentByReferee",
+    "sText_ForfeitedMatch",
+    "sText_GlintAppearsInEye",
+    "sText_LostToOpponentByReferee",
+    "sText_PkmnAlreadyHasBurn",
+    "sText_PkmnAvoidedAttack",
+    "sText_PkmnBeganGrowlingDeeply",
+    "sText_PkmnEagerForMore",
+    "sText_PkmnGettingIntoPosition",
+    "sText_PkmnIncapableOfPower",
+    "sText_PkmnObtainedX",
+    "sText_PkmnObtainedX2",
+    "sText_PkmnObtainedXYObtainedZ",
+    "sText_PkmnRaisedDefALittle",
+    "sText_PkmnRaisedSpDefALittle",
+    "sText_PkmnsItemNormalizedStatus",
+    "sText_PkmnsXBlocksY2",
+    "sText_PkmnsXCuredItsYProblem",
+    "sText_PkmnsXHadNoEffectOnY",
+    "sText_PkmnsXMadeItIneffective",
+    "sText_PkmnsXPreventsFlinching",
+    "sText_PkmnsXPreventsYsZ",
+    "sText_PkmnsXWoreOff",
+    "sText_PreventedFromWorking",
+    "sText_QuestionForfeitMatch",
+    "sText_StatsWontDecrease2",
+    "sText_TheWallShattered",
+    "sText_TiedOpponentByReferee",
+    "sText_Trainer1UsedItem",
+    "sText_Trainer1WinText",
+    "sText_Trainer2LoseText",
+    "sText_Trainer2WinText"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:gText_PkmnTransferredLanettesPC|gText_PkmnTransferredLanettesPCBoxFull|gText_PkmnTransferredSomeonesPC|gText_PkmnTransferredSomeonesPCBoxFull|sText_AttackerCantEscape|sText_BoxIsFull|sText_ButNoEffect|sText_DefeatedOpponentByReferee|sText_ForfeitedMatch|sText_GlintAppearsInEye|sText_LostToOpponentByReferee|sText_PkmnAlreadyHasBurn|sText_PkmnAvoidedAttack|sText_PkmnBeganGrowlingDeeply|sText_PkmnEagerForMore|sText_PkmnGettingIntoPosition|sText_PkmnIncapableOfPower|sText_PkmnObtainedX|sText_PkmnObtainedX2|sText_PkmnObtainedXYObtainedZ|sText_PkmnRaisedDefALittle|sText_PkmnRaisedSpDefALittle|sText_PkmnsItemNormalizedStatus|sText_PkmnsXBlocksY2|sText_PkmnsXCuredItsYProblem|sText_PkmnsXHadNoEffectOnY|sText_PkmnsXMadeItIneffective|sText_PkmnsXPreventsFlinching|sText_PkmnsXPreventsYsZ|sText_PkmnsXWoreOff|sText_PreventedFromWorking|sText_QuestionForfeitMatch|sText_StatsWontDecrease2|sText_TheWallShattered|sText_TiedOpponentByReferee|sText_Trainer1UsedItem|sText_Trainer1WinText|sText_Trainer2LoseText|sText_Trainer2WinText)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 39,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "gText_PkmnTransferredSomeonesPC",
+        "us_text": "0x0824C710",
+        "us_reference_count": 3,
+        "references": []
+      },
+      {
+        "symbol": "gText_PkmnTransferredLanettesPC",
+        "us_text": "0x0824C73C",
+        "us_reference_count": 3,
+        "references": []
+      },
+      {
+        "symbol": "gText_PkmnTransferredSomeonesPCBoxFull",
+        "us_text": "0x0824C779",
+        "us_reference_count": 3,
+        "references": []
+      },
+      {
+        "symbol": "gText_PkmnTransferredLanettesPCBoxFull",
+        "us_text": "0x0824C7AB",
+        "us_reference_count": 3,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnAvoidedAttack",
+        "us_text": "0x08664EC9",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_AttackerCantEscape",
+        "us_text": "0x08664F84",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnAlreadyHasBurn",
+        "us_text": "0x086650CB",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnRaisedSpDefALittle",
+        "us_text": "0x086653AE",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnRaisedDefALittle",
+        "us_text": "0x086653E7",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXWoreOff",
+        "us_text": "0x086656A2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnObtainedX",
+        "us_text": "0x08665D77",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnObtainedX2",
+        "us_text": "0x08665D87",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnObtainedXYObtainedZ",
+        "us_text": "0x08665D97",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TheWallShattered",
+        "us_text": "0x0866608B",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_ButNoEffect",
+        "us_text": "0x0866609F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXBlocksY2",
+        "us_text": "0x08666345",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PreventedFromWorking",
+        "us_text": "0x0866648B",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXMadeItIneffective",
+        "us_text": "0x086664B3",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXPreventsFlinching",
+        "us_text": "0x086664D0",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXPreventsYsZ",
+        "us_text": "0x086664EC",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXCuredItsYProblem",
+        "us_text": "0x08666513",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsXHadNoEffectOnY",
+        "us_text": "0x08666531",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_StatsWontDecrease2",
+        "us_text": "0x086665DA",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_Trainer1UsedItem",
+        "us_text": "0x08666FAB",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_BoxIsFull",
+        "us_text": "0x08667180",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnsItemNormalizedStatus",
+        "us_text": "0x08667277",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_Trainer2LoseText",
+        "us_text": "0x08667EA8",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnIncapableOfPower",
+        "us_text": "0x08667EAB",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_GlintAppearsInEye",
+        "us_text": "0x08667ED4",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnGettingIntoPosition",
+        "us_text": "0x08667EF2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnBeganGrowlingDeeply",
+        "us_text": "0x08667F0F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnEagerForMore",
+        "us_text": "0x08667F29",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_DefeatedOpponentByReferee",
+        "us_text": "0x0866813D",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_LostToOpponentByReferee",
+        "us_text": "0x08668172",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TiedOpponentByReferee",
+        "us_text": "0x086681A6",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_QuestionForfeitMatch",
+        "us_text": "0x08668224",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_ForfeitedMatch",
+        "us_text": "0x08668256",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_Trainer1WinText",
+        "us_text": "0x0866826E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_Trainer2WinText",
+        "us_text": "0x08668271",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "gText_PkmnTransferredLanettesPC",
+        "address": "0x085AB98C",
+        "original": "0x08243E2A",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_PkmnTransferredLanettesPCBoxFull",
+        "address": "0x085AB994",
+        "original": "0x08243E80",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_PkmnTransferredSomeonesPC",
+        "address": "0x085AB988",
+        "original": "0x08243E08",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_PkmnTransferredSomeonesPCBoxFull",
+        "address": "0x085AB990",
+        "original": "0x08243E4C",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_AttackerCantEscape",
+        "address": "0x085AB940",
+        "original": "0x085A9818",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_BoxIsFull",
+        "address": "0x085AB90C",
+        "original": "0x085AB26A",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_ButNoEffect",
+        "address": "0x085AB950",
+        "original": "0x085AA50B",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_DefeatedOpponentByReferee",
+        "address": "0x085AB974",
+        "original": "0x085ABFE2",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_ForfeitedMatch",
+        "address": "0x085AB984",
+        "original": "0x085AC087",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_GlintAppearsInEye",
+        "address": "0x085AB964",
+        "original": "0x085ABE6C",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_LostToOpponentByReferee",
+        "address": "0x085AB978",
+        "original": "0x085ABFFA",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnAlreadyHasBurn",
+        "address": "0x085AB91C",
+        "original": "0x085A9922",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnAvoidedAttack",
+        "address": "0x085AB910",
+        "original": "0x085A977A",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnBeganGrowlingDeeply",
+        "address": "0x085AB96C",
+        "original": "0x085ABE93",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnEagerForMore",
+        "address": "0x085AB970",
+        "original": "0x085ABEA5",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnGettingIntoPosition",
+        "address": "0x085AB968",
+        "original": "0x085ABE7F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnIncapableOfPower",
+        "address": "0x085AB960",
+        "original": "0x085ABE50",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnObtainedX",
+        "address": "0x085AB944",
+        "original": "0x085AA2C1",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnObtainedX2",
+        "address": "0x085AB948",
+        "original": "0x085AA2D1",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnObtainedXYObtainedZ",
+        "address": "0x085AB94C",
+        "original": "0x085AA2E1",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnRaisedDefALittle",
+        "address": "0x085AB92C",
+        "original": "0x085A9B65",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnRaisedSpDefALittle",
+        "address": "0x085AB930",
+        "original": "0x085A9B34",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsItemNormalizedStatus",
+        "address": "0x085AB904",
+        "original": "0x085AB31D",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXBlocksY2",
+        "address": "0x085AB924",
+        "original": "0x085AA70F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXCuredItsYProblem",
+        "address": "0x085AB93C",
+        "original": "0x085AA84B",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXHadNoEffectOnY",
+        "address": "0x085AB954",
+        "original": "0x085AA85D",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXMadeItIneffective",
+        "address": "0x085AB914",
+        "original": "0x085AA811",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXPreventsFlinching",
+        "address": "0x085AB918",
+        "original": "0x085AA826",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXPreventsYsZ",
+        "address": "0x085AB938",
+        "original": "0x085AA835",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnsXWoreOff",
+        "address": "0x085AB928",
+        "original": "0x085A9D8E",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PreventedFromWorking",
+        "address": "0x085AB900",
+        "original": "0x085AA7F9",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_QuestionForfeitMatch",
+        "address": "0x085AB980",
+        "original": "0x085AC070",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_StatsWontDecrease2",
+        "address": "0x085AB920",
+        "original": "0x085AA8D9",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TheWallShattered",
+        "address": "0x085AB934",
+        "original": "0x085AA501",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TiedOpponentByReferee",
+        "address": "0x085AB97C",
+        "original": "0x085AC012",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_Trainer1UsedItem",
+        "address": "0x085AB908",
+        "original": "0x085AB103",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_Trainer1WinText",
+        "address": "0x085AB998",
+        "original": "0x085AC098",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_Trainer2LoseText",
+        "address": "0x085AB95C",
+        "original": "0x085ABE4D",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_Trainer2WinText",
+        "address": "0x085AB99C",
+        "original": "0x085AC09B",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

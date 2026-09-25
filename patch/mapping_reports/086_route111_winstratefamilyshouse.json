@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "batch": "086_route111_winstratefamilyshouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_GrandsonStrong",
+      "address": "0x08211B77",
+      "original": "0x08211CE6",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort",
+      "address": "0x08211B88",
+      "original": "0x08211D95",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace",
+      "address": "0x08211B1C",
+      "original": "0x08211C09",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou",
+      "address": "0x08211AFE",
+      "original": "0x08211BA1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles",
+      "address": "0x08211B44",
+      "original": "0x08211C70",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers",
+      "address": "0x08211B59",
+      "original": "0x08211C95",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route111_WinstrateFamilysHouse_Text_GrandsonStrong",
+    "Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort",
+    "Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace",
+    "Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou",
+    "Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles",
+    "Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route111_WinstrateFamilysHouse_Text_GrandsonStrong|Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort|Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace|Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou|Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles|Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18308,
+    "mapped_count": 6,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_GrandsonStrong",
+        "us_text": "0x08216480",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082162FB",
+            "jp_reference": "0x08211B77",
+            "jp_text": "0x08211CE6",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort",
+        "us_text": "0x08216521",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821630C",
+            "jp_reference": "0x08211B88",
+            "jp_text": "0x08211D95",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace",
+        "us_text": "0x082163A0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082162A0",
+            "jp_reference": "0x08211B1C",
+            "jp_text": "0x08211C09",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_MySonIsStrongerThanYou",
+        "us_text": "0x08216325",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216282",
+            "jp_reference": "0x08211AFE",
+            "jp_text": "0x08211BA1",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles",
+        "us_text": "0x08216411",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082162C8",
+            "jp_reference": "0x08211B44",
+            "jp_text": "0x08211C70",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_WinstrateFamilysHouse_Text_StrongerFamilyMembers",
+        "us_text": "0x08216435",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082162DD",
+            "jp_reference": "0x08211B59",
+            "jp_text": "0x08211C95",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 6,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "batch": "127_lilycovecity_covelilymotel_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner",
+      "address": "0x08205572",
+      "original": "0x08205812",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV",
+      "address": "0x082055A9",
+      "original": "0x08205699",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot",
+      "address": "0x08205512",
+      "original": "0x082055D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+      "address": "0x0820554B",
+      "original": "0x0820571C",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar",
+      "address": "0x08205560",
+      "original": "0x082057A5",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem",
+      "address": "0x08205539",
+      "original": "0x082056BC",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua",
+      "address": "0x08205524",
+      "original": "0x08205647",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner",
+    "LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV",
+    "LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot",
+    "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+    "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar",
+    "LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem",
+    "LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner|LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV|LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot|LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted|LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar|LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem|LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -14539,
+    "mapped_count": 7,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner",
+        "us_text": "0x082090D6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208E3D",
+            "jp_reference": "0x08205572",
+            "jp_text": "0x08205812",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV",
+        "us_text": "0x08208F66",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208E74",
+            "jp_reference": "0x082055A9",
+            "jp_text": "0x08205699",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot",
+        "us_text": "0x08208EA3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208DDD",
+            "jp_reference": "0x08205512",
+            "jp_text": "0x082055D8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14539
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+        "us_text": "0x08208FED",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208E16",
+            "jp_reference": "0x0820554B",
+            "jp_text": "0x0820571C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar",
+        "us_text": "0x0820907D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208E2B",
+            "jp_reference": "0x08205560",
+            "jp_text": "0x082057A5",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem",
+        "us_text": "0x08208F81",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208E04",
+            "jp_reference": "0x08205539",
+            "jp_text": "0x082056BC",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua",
+        "us_text": "0x08208F1E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208DEF",
+            "jp_reference": "0x08205524",
+            "jp_text": "0x08205647",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14539
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 7,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

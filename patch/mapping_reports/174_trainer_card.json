@@ -1,0 +1,447 @@
+{
+  "schema_version": 1,
+  "batch": "174_trainer_card.json",
+  "source_commit": "8dbfd7c4e",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_BattlePtsWon",
+      "address": "0x080C3A64",
+      "original": "0x085CC3EA",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_BattleTower",
+      "address": "0x080C39EC",
+      "original": "0x085CC403",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_BerryCrush",
+      "address": "0x080C3640",
+      "original": "0x085CC39E",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_HallOfFameDebut",
+      "address": "0x080C3398",
+      "original": "0x085CC35A",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_LinkBattles",
+      "address": "0x085467C4",
+      "original": "0x085CC367",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_LinkBattles",
+      "address": "0x085467CC",
+      "original": "0x085CC367",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_LinkCableBattles",
+      "address": "0x085467C8",
+      "original": "0x085CC370",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_NumBP",
+      "address": "0x080C3958",
+      "original": "0x085CC3F8",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_NumPokeblocks",
+      "address": "0x080C375C",
+      "original": "0x085CC3CF",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PokeblocksWithFriends",
+      "address": "0x080C37E0",
+      "original": "0x085CC3BF",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PokemonTrades",
+      "address": "0x080C3550",
+      "original": "0x085CC383",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardMoney",
+      "address": "0x080C2DAC",
+      "original": "0x085CC329",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardMoney",
+      "address": "0x080C2E18",
+      "original": "0x085CC329",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardPokedex",
+      "address": "0x080C2EE8",
+      "original": "0x085CC331",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardPokedex",
+      "address": "0x080C2F54",
+      "original": "0x085CC331",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardTime",
+      "address": "0x080C300C",
+      "original": "0x085CC341",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TrainerCardTime",
+      "address": "0x080C30E4",
+      "original": "0x085CC341",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_UnionTradesAndBattles",
+      "address": "0x080C3704",
+      "original": "0x085CC390",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_Var1sTrainerCard",
+      "address": "0x080C3238",
+      "original": "0x085CC350",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WaitingTrainerFinishReading",
+      "address": "0x080C208C",
+      "original": "0x085CC3A7",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WinsStraight",
+      "address": "0x080C3920",
+      "original": "0x085CC418",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WonContestsWFriends",
+      "address": "0x080C38A8",
+      "original": "0x085CC3D9",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "gText_BattlePtsWon",
+    "gText_BattleTower",
+    "gText_BerryCrush",
+    "gText_HallOfFameDebut",
+    "gText_LinkBattles",
+    "gText_LinkCableBattles",
+    "gText_NumBP",
+    "gText_NumPokeblocks",
+    "gText_PokeblocksWithFriends",
+    "gText_PokemonTrades",
+    "gText_TrainerCardMoney",
+    "gText_TrainerCardPokedex",
+    "gText_TrainerCardTime",
+    "gText_UnionTradesAndBattles",
+    "gText_Var1sTrainerCard",
+    "gText_WaitingTrainerFinishReading",
+    "gText_WinsStraight",
+    "gText_WonContestsWFriends"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "5d436a8339b9cf10df83509cd6408aaa654731d7",
+      "us_elf_sha1": "92237dbe22960d7d124f2f76b50583866500efc9",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:gText_BattlePtsWon|gText_BattleTower|gText_BerryCrush|gText_HallOfFameDebut|gText_LinkBattles|gText_LinkCableBattles|gText_NumBP|gText_NumPokeblocks|gText_PokeblocksWithFriends|gText_PokemonTrades|gText_TrainerCardMoney|gText_TrainerCardPokedex|gText_TrainerCardTime|gText_UnionTradesAndBattles|gText_Var1sTrainerCard|gText_WaitingTrainerFinishReading|gText_WinsStraight|gText_WonContestsWFriends)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 18,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "gText_TrainerCardMoney",
+        "us_text": "0x0867DF72",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "gText_TrainerCardPokedex",
+        "us_text": "0x0867DF7B",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "gText_TrainerCardTime",
+        "us_text": "0x0867DF8E",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "gText_Var1sTrainerCard",
+        "us_text": "0x0867DF9F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_HallOfFameDebut",
+        "us_text": "0x0867DFAC",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_LinkBattles",
+        "us_text": "0x0867DFBB",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "gText_LinkCableBattles",
+        "us_text": "0x0867DFC4",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_PokemonTrades",
+        "us_text": "0x0867DFF5",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_UnionTradesAndBattles",
+        "us_text": "0x0867E000",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_BerryCrush",
+        "us_text": "0x0867E014",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_WaitingTrainerFinishReading",
+        "us_text": "0x0867E01D",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_PokeblocksWithFriends",
+        "us_text": "0x0867E046",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_NumPokeblocks",
+        "us_text": "0x0867E059",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_WonContestsWFriends",
+        "us_text": "0x0867E062",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_BattlePtsWon",
+        "us_text": "0x0867E078",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_NumBP",
+        "us_text": "0x0867E085",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_BattleTower",
+        "us_text": "0x0867E090",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_WinsStraight",
+        "us_text": "0x0867E097",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "gText_BattlePtsWon",
+        "address": "0x080C3A64",
+        "original": "0x085CC3EA",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_BattleTower",
+        "address": "0x080C39EC",
+        "original": "0x085CC403",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_BerryCrush",
+        "address": "0x080C3640",
+        "original": "0x085CC39E",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_HallOfFameDebut",
+        "address": "0x080C3398",
+        "original": "0x085CC35A",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_LinkBattles",
+        "address": "0x085467C4",
+        "original": "0x085CC367",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_LinkBattles",
+        "address": "0x085467CC",
+        "original": "0x085CC367",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_LinkCableBattles",
+        "address": "0x085467C8",
+        "original": "0x085CC370",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_NumBP",
+        "address": "0x080C3958",
+        "original": "0x085CC3F8",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_NumPokeblocks",
+        "address": "0x080C375C",
+        "original": "0x085CC3CF",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_PokeblocksWithFriends",
+        "address": "0x080C37E0",
+        "original": "0x085CC3BF",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_PokemonTrades",
+        "address": "0x080C3550",
+        "original": "0x085CC383",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardMoney",
+        "address": "0x080C2DAC",
+        "original": "0x085CC329",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardMoney",
+        "address": "0x080C2E18",
+        "original": "0x085CC329",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardPokedex",
+        "address": "0x080C2EE8",
+        "original": "0x085CC331",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardPokedex",
+        "address": "0x080C2F54",
+        "original": "0x085CC331",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardTime",
+        "address": "0x080C300C",
+        "original": "0x085CC341",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_TrainerCardTime",
+        "address": "0x080C30E4",
+        "original": "0x085CC341",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_UnionTradesAndBattles",
+        "address": "0x080C3704",
+        "original": "0x085CC390",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_Var1sTrainerCard",
+        "address": "0x080C3238",
+        "original": "0x085CC350",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_WaitingTrainerFinishReading",
+        "address": "0x080C208C",
+        "original": "0x085CC3A7",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_WinsStraight",
+        "address": "0x080C3920",
+        "original": "0x085CC418",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_WonContestsWFriends",
+        "address": "0x080C38A8",
+        "original": "0x085CC3D9",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "batch": "143_mtpyre_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MtPyre_1F_Text_ComeToPayRespects",
+      "address": "0x08216155",
+      "original": "0x082161E1",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_1F_Text_ExplainCleanseTag",
+      "address": "0x0821614B",
+      "original": "0x082161A6",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_1F_Text_RestingPlaceOfZigzagoon",
+      "address": "0x0821615E",
+      "original": "0x08216207",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_1F_Text_TakeThisForYourOwnGood",
+      "address": "0x08216127",
+      "original": "0x08216165",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MtPyre_1F_Text_ComeToPayRespects",
+    "MtPyre_1F_Text_ExplainCleanseTag",
+    "MtPyre_1F_Text_RestingPlaceOfZigzagoon",
+    "MtPyre_1F_Text_TakeThisForYourOwnGood"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MtPyre_1F_Text_ComeToPayRespects|MtPyre_1F_Text_ExplainCleanseTag|MtPyre_1F_Text_RestingPlaceOfZigzagoon|MtPyre_1F_Text_TakeThisForYourOwnGood)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20074,
+    "mapped_count": 4,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MtPyre_1F_Text_ComeToPayRespects",
+        "us_text": "0x0821B055",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821AFBF",
+            "jp_reference": "0x08216155",
+            "jp_text": "0x082161E1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20074
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_1F_Text_ExplainCleanseTag",
+        "us_text": "0x0821B01C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821AFB5",
+            "jp_reference": "0x0821614B",
+            "jp_text": "0x082161A6",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20074
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_1F_Text_RestingPlaceOfZigzagoon",
+        "us_text": "0x0821B090",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821AFC8",
+            "jp_reference": "0x0821615E",
+            "jp_text": "0x08216207",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20074
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_1F_Text_TakeThisForYourOwnGood",
+        "us_text": "0x0821AFCF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821AF91",
+            "jp_reference": "0x08216127",
+            "jp_text": "0x08216165",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 4,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

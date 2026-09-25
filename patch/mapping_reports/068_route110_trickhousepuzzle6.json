@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "068_route110_trickhousepuzzle6.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_BennyDefeat",
+      "address": "0x0823FD5B",
+      "original": "0x0823FE3D",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_BennyIntro",
+      "address": "0x0823FD57",
+      "original": "0x0823FE1C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_BennyPostBattle",
+      "address": "0x0823FD61",
+      "original": "0x0823FE47",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SebastianDefeat",
+      "address": "0x0823FD72",
+      "original": "0x0823FE7E",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SebastianIntro",
+      "address": "0x0823FD6E",
+      "original": "0x0823FE65",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SebastianPostBattle",
+      "address": "0x0823FD78",
+      "original": "0x0823FE97",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SophiaDefeat",
+      "address": "0x0823FD44",
+      "original": "0x0823FDE5",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SophiaIntro",
+      "address": "0x0823FD40",
+      "original": "0x0823FDC1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_SophiaPostBattle",
+      "address": "0x0823FD4A",
+      "original": "0x0823FDF6",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened",
+      "address": "0x0823D134",
+      "original": "0x0823FD7F",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route110_TrickHousePuzzle6_Text_BennyDefeat",
+    "Route110_TrickHousePuzzle6_Text_BennyIntro",
+    "Route110_TrickHousePuzzle6_Text_BennyPostBattle",
+    "Route110_TrickHousePuzzle6_Text_SebastianDefeat",
+    "Route110_TrickHousePuzzle6_Text_SebastianIntro",
+    "Route110_TrickHousePuzzle6_Text_SebastianPostBattle",
+    "Route110_TrickHousePuzzle6_Text_SophiaDefeat",
+    "Route110_TrickHousePuzzle6_Text_SophiaIntro",
+    "Route110_TrickHousePuzzle6_Text_SophiaPostBattle",
+    "Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route110_TrickHousePuzzle6_Text_BennyDefeat|Route110_TrickHousePuzzle6_Text_BennyIntro|Route110_TrickHousePuzzle6_Text_BennyPostBattle|Route110_TrickHousePuzzle6_Text_SebastianDefeat|Route110_TrickHousePuzzle6_Text_SebastianIntro|Route110_TrickHousePuzzle6_Text_SebastianPostBattle|Route110_TrickHousePuzzle6_Text_SophiaDefeat|Route110_TrickHousePuzzle6_Text_SophiaIntro|Route110_TrickHousePuzzle6_Text_SophiaPostBattle|Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33765,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_BennyDefeat",
+        "us_text": "0x0824824C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248140",
+            "jp_reference": "0x0823FD5B",
+            "jp_text": "0x0823FE3D",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_BennyIntro",
+        "us_text": "0x08248224",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824813C",
+            "jp_reference": "0x0823FD57",
+            "jp_text": "0x0823FE1C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_BennyPostBattle",
+        "us_text": "0x0824825F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248146",
+            "jp_reference": "0x0823FD61",
+            "jp_text": "0x0823FE47",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SebastianDefeat",
+        "us_text": "0x0824829E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248157",
+            "jp_reference": "0x0823FD72",
+            "jp_text": "0x0823FE7E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33765
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SebastianIntro",
+        "us_text": "0x08248282",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248153",
+            "jp_reference": "0x0823FD6E",
+            "jp_text": "0x0823FE65",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33765
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SebastianPostBattle",
+        "us_text": "0x082482C8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824815D",
+            "jp_reference": "0x0823FD78",
+            "jp_text": "0x0823FE97",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33765
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SophiaDefeat",
+        "us_text": "0x082481D2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248129",
+            "jp_reference": "0x0823FD44",
+            "jp_text": "0x0823FDE5",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SophiaIntro",
+        "us_text": "0x082481AA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248125",
+            "jp_reference": "0x0823FD40",
+            "jp_text": "0x0823FDC1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_SophiaPostBattle",
+        "us_text": "0x082481EC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824812F",
+            "jp_reference": "0x0823FD4A",
+            "jp_text": "0x0823FDF6",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened",
+        "us_text": "0x08248164",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082452BD",
+            "jp_reference": "0x0823D134",
+            "jp_text": "0x0823FD7F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,969 @@
+{
+  "schema_version": 1,
+  "batch": "191_battle_moves_abilities_results.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_DefendersStatRose",
+      "address": "0x085AB704",
+      "original": "0x085AA894",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_StatRose",
+      "address": "0x085AB6F4",
+      "original": "0x085AA877",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_123Poof",
+      "address": "0x085AB718",
+      "original": "0x085AA906",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_AndEllipsis",
+      "address": "0x085AB71C",
+      "original": "0x085AA92B",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_AttackersStatRose",
+      "address": "0x085AB700",
+      "original": "0x085AA889",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_GotAwaySafely",
+      "address": "0x085AB728",
+      "original": "0x085AA970",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnAbsorbedNutrients",
+      "address": "0x085AB67C",
+      "original": "0x085AA340",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnAnchoredItself",
+      "address": "0x085AB680",
+      "original": "0x085AA355",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnAnchorsItselfWith",
+      "address": "0x085AB6DC",
+      "original": "0x085AA684",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnCantUseMoveSealed",
+      "address": "0x085AB694",
+      "original": "0x085AA587",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnCantUseMoveTaunt",
+      "address": "0x085AB660",
+      "original": "0x085AA56E",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnCantUseMoveTorment",
+      "address": "0x085AB654",
+      "original": "0x085AA547",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnChangedTypeWith",
+      "address": "0x085AB6C4",
+      "original": "0x085AA611",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnCopiedFoe",
+      "address": "0x085AB66C",
+      "original": "0x085AA301",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnCutsAttackWith",
+      "address": "0x085AB6E0",
+      "original": "0x085AA695",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnFellForTaunt",
+      "address": "0x085AB65C",
+      "original": "0x085AA27A",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnKnockedOff",
+      "address": "0x085AB688",
+      "original": "0x085AA37A",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnLostPPGrudge",
+      "address": "0x085AB69C",
+      "original": "0x085AA3D6",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnMadeItRain",
+      "address": "0x085AB6B0",
+      "original": "0x085AA59C",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnMadeWish",
+      "address": "0x085AB670",
+      "original": "0x085AA314",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnMoveBounced",
+      "address": "0x085AB6A4",
+      "original": "0x085AA403",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPlantedRoots",
+      "address": "0x085AB678",
+      "original": "0x085AA334",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsConfusionWith",
+      "address": "0x085AB6D4",
+      "original": "0x085AA65A",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsParalysisWith",
+      "address": "0x085AB6C8",
+      "original": "0x085AA625",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsPoisoningWith",
+      "address": "0x085AB6D0",
+      "original": "0x085AA648",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsRomanceWith",
+      "address": "0x085AB6CC",
+      "original": "0x085AA634",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsStatLossWith",
+      "address": "0x085AB6E4",
+      "original": "0x085AA6B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnPreventsUsage",
+      "address": "0x085AB6BC",
+      "original": "0x085AA5D4",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnProtectedBy",
+      "address": "0x085AB6B8",
+      "original": "0x085AA5C4",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnRaisedFirePowerWith",
+      "address": "0x085AB6D8",
+      "original": "0x085AA66B",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnRaisedSpeed",
+      "address": "0x085AB6B4",
+      "original": "0x085AA5B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnReadyToHelp",
+      "address": "0x085AB664",
+      "original": "0x085AA28F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnRestoredHPUsing",
+      "address": "0x085AB6C0",
+      "original": "0x085AA5EA",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnSealedOpponentMove",
+      "address": "0x085AB690",
+      "original": "0x085AA3A6",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnShroudedItself",
+      "address": "0x085AB6A0",
+      "original": "0x085AA3F4",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnSnatchedMove",
+      "address": "0x085AB6AC",
+      "original": "0x085AA434",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnSubjectedToTorment",
+      "address": "0x085AB650",
+      "original": "0x085AA251",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnSwappedAbilities",
+      "address": "0x085AB68C",
+      "original": "0x085AA38F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnSwitchedItems",
+      "address": "0x085AB668",
+      "original": "0x085AA2AB",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnTighteningFocus",
+      "address": "0x085AB658",
+      "original": "0x085AA263",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnTraced",
+      "address": "0x085AB6EC",
+      "original": "0x085AA6D9",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnWaitsForTarget",
+      "address": "0x085AB6A8",
+      "original": "0x085AA41D",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnWantsGrudge",
+      "address": "0x085AB698",
+      "original": "0x085AA3BB",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnWasMadeDrowsy",
+      "address": "0x085AB684",
+      "original": "0x085AA367",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnWishCameTrue",
+      "address": "0x085AB674",
+      "original": "0x085AA323",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_StatHarshly",
+      "address": "0x085AB6F8",
+      "original": "0x085AA87D",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_StatSharply",
+      "address": "0x085AB6F0",
+      "original": "0x085AA871",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_WildPkmnFled",
+      "address": "0x085AB72C",
+      "original": "0x085AA9B2",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "gText_DefendersStatRose",
+    "gText_StatRose",
+    "sText_123Poof",
+    "sText_AndEllipsis",
+    "sText_AttackersStatRose",
+    "sText_GotAwaySafely",
+    "sText_PkmnAbsorbedNutrients",
+    "sText_PkmnAnchoredItself",
+    "sText_PkmnAnchorsItselfWith",
+    "sText_PkmnCantUseMoveSealed",
+    "sText_PkmnCantUseMoveTaunt",
+    "sText_PkmnCantUseMoveTorment",
+    "sText_PkmnChangedTypeWith",
+    "sText_PkmnCopiedFoe",
+    "sText_PkmnCutsAttackWith",
+    "sText_PkmnFellForTaunt",
+    "sText_PkmnKnockedOff",
+    "sText_PkmnLostPPGrudge",
+    "sText_PkmnMadeItRain",
+    "sText_PkmnMadeWish",
+    "sText_PkmnMoveBounced",
+    "sText_PkmnPlantedRoots",
+    "sText_PkmnPreventsConfusionWith",
+    "sText_PkmnPreventsParalysisWith",
+    "sText_PkmnPreventsPoisoningWith",
+    "sText_PkmnPreventsRomanceWith",
+    "sText_PkmnPreventsStatLossWith",
+    "sText_PkmnPreventsUsage",
+    "sText_PkmnProtectedBy",
+    "sText_PkmnRaisedFirePowerWith",
+    "sText_PkmnRaisedSpeed",
+    "sText_PkmnReadyToHelp",
+    "sText_PkmnRestoredHPUsing",
+    "sText_PkmnSealedOpponentMove",
+    "sText_PkmnShroudedItself",
+    "sText_PkmnSnatchedMove",
+    "sText_PkmnSubjectedToTorment",
+    "sText_PkmnSwappedAbilities",
+    "sText_PkmnSwitchedItems",
+    "sText_PkmnTighteningFocus",
+    "sText_PkmnTraced",
+    "sText_PkmnWaitsForTarget",
+    "sText_PkmnWantsGrudge",
+    "sText_PkmnWasMadeDrowsy",
+    "sText_PkmnWishCameTrue",
+    "sText_StatHarshly",
+    "sText_StatSharply",
+    "sText_WildPkmnFled"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:gText_DefendersStatRose|gText_StatRose|sText_123Poof|sText_AndEllipsis|sText_AttackersStatRose|sText_GotAwaySafely|sText_PkmnAbsorbedNutrients|sText_PkmnAnchoredItself|sText_PkmnAnchorsItselfWith|sText_PkmnCantUseMoveSealed|sText_PkmnCantUseMoveTaunt|sText_PkmnCantUseMoveTorment|sText_PkmnChangedTypeWith|sText_PkmnCopiedFoe|sText_PkmnCutsAttackWith|sText_PkmnFellForTaunt|sText_PkmnKnockedOff|sText_PkmnLostPPGrudge|sText_PkmnMadeItRain|sText_PkmnMadeWish|sText_PkmnMoveBounced|sText_PkmnPlantedRoots|sText_PkmnPreventsConfusionWith|sText_PkmnPreventsParalysisWith|sText_PkmnPreventsPoisoningWith|sText_PkmnPreventsRomanceWith|sText_PkmnPreventsStatLossWith|sText_PkmnPreventsUsage|sText_PkmnProtectedBy|sText_PkmnRaisedFirePowerWith|sText_PkmnRaisedSpeed|sText_PkmnReadyToHelp|sText_PkmnRestoredHPUsing|sText_PkmnSealedOpponentMove|sText_PkmnShroudedItself|sText_PkmnSnatchedMove|sText_PkmnSubjectedToTorment|sText_PkmnSwappedAbilities|sText_PkmnSwitchedItems|sText_PkmnTighteningFocus|sText_PkmnTraced|sText_PkmnWaitsForTarget|sText_PkmnWantsGrudge|sText_PkmnWasMadeDrowsy|sText_PkmnWishCameTrue|sText_StatHarshly|sText_StatSharply|sText_WildPkmnFled)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 48,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "sText_PkmnSubjectedToTorment",
+        "us_text": "0x08665CEA",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnTighteningFocus",
+        "us_text": "0x08665D07",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnFellForTaunt",
+        "us_text": "0x08665D23",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnReadyToHelp",
+        "us_text": "0x08665D3A",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnSwitchedItems",
+        "us_text": "0x08665D52",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnCopiedFoe",
+        "us_text": "0x08665DB7",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnMadeWish",
+        "us_text": "0x08665DCA",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnWishCameTrue",
+        "us_text": "0x08665DDA",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPlantedRoots",
+        "us_text": "0x08665DEF",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnAbsorbedNutrients",
+        "us_text": "0x08665E05",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnAnchoredItself",
+        "us_text": "0x08665E2B",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnWasMadeDrowsy",
+        "us_text": "0x08665E4E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnKnockedOff",
+        "us_text": "0x08665E61",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnSwappedAbilities",
+        "us_text": "0x08665E79",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnSealedOpponentMove",
+        "us_text": "0x08665EA1",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnWantsGrudge",
+        "us_text": "0x08665EC3",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnLostPPGrudge",
+        "us_text": "0x08665EEB",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnShroudedItself",
+        "us_text": "0x08665F16",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnMoveBounced",
+        "us_text": "0x08665F30",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnWaitsForTarget",
+        "us_text": "0x08665F58",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnSnatchedMove",
+        "us_text": "0x08665F7E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnCantUseMoveTorment",
+        "us_text": "0x086660E2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnCantUseMoveTaunt",
+        "us_text": "0x0866611B",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnCantUseMoveSealed",
+        "us_text": "0x0866613D",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnMadeItRain",
+        "us_text": "0x0866615A",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnRaisedSpeed",
+        "us_text": "0x08666170",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnProtectedBy",
+        "us_text": "0x0866618A",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsUsage",
+        "us_text": "0x086661A2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnRestoredHPUsing",
+        "us_text": "0x086661C5",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnChangedTypeWith",
+        "us_text": "0x086661FB",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsParalysisWith",
+        "us_text": "0x08666218",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsRomanceWith",
+        "us_text": "0x08666234",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsPoisoningWith",
+        "us_text": "0x0866624E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsConfusionWith",
+        "us_text": "0x0866626A",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnRaisedFirePowerWith",
+        "us_text": "0x08666286",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnAnchorsItselfWith",
+        "us_text": "0x086662A5",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnCutsAttackWith",
+        "us_text": "0x086662C0",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnPreventsStatLossWith",
+        "us_text": "0x086662DA",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnTraced",
+        "us_text": "0x08666307",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_StatSharply",
+        "us_text": "0x0866654E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_StatRose",
+        "us_text": "0x08666557",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "sText_StatHarshly",
+        "us_text": "0x0866655F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_AttackersStatRose",
+        "us_text": "0x0866656E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "gText_DefendersStatRose",
+        "us_text": "0x08666579",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "sText_123Poof",
+        "us_text": "0x0866661C",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_AndEllipsis",
+        "us_text": "0x08666648",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_GotAwaySafely",
+        "us_text": "0x0866669F",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "sText_WildPkmnFled",
+        "us_text": "0x086666E2",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "gText_DefendersStatRose",
+        "address": "0x085AB704",
+        "original": "0x085AA894",
+        "count": 1
+      },
+      {
+        "source_symbol": "gText_StatRose",
+        "address": "0x085AB6F4",
+        "original": "0x085AA877",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_123Poof",
+        "address": "0x085AB718",
+        "original": "0x085AA906",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_AndEllipsis",
+        "address": "0x085AB71C",
+        "original": "0x085AA92B",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_AttackersStatRose",
+        "address": "0x085AB700",
+        "original": "0x085AA889",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_GotAwaySafely",
+        "address": "0x085AB728",
+        "original": "0x085AA970",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnAbsorbedNutrients",
+        "address": "0x085AB67C",
+        "original": "0x085AA340",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnAnchoredItself",
+        "address": "0x085AB680",
+        "original": "0x085AA355",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnAnchorsItselfWith",
+        "address": "0x085AB6DC",
+        "original": "0x085AA684",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnCantUseMoveSealed",
+        "address": "0x085AB694",
+        "original": "0x085AA587",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnCantUseMoveTaunt",
+        "address": "0x085AB660",
+        "original": "0x085AA56E",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnCantUseMoveTorment",
+        "address": "0x085AB654",
+        "original": "0x085AA547",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnChangedTypeWith",
+        "address": "0x085AB6C4",
+        "original": "0x085AA611",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnCopiedFoe",
+        "address": "0x085AB66C",
+        "original": "0x085AA301",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnCutsAttackWith",
+        "address": "0x085AB6E0",
+        "original": "0x085AA695",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnFellForTaunt",
+        "address": "0x085AB65C",
+        "original": "0x085AA27A",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnKnockedOff",
+        "address": "0x085AB688",
+        "original": "0x085AA37A",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnLostPPGrudge",
+        "address": "0x085AB69C",
+        "original": "0x085AA3D6",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnMadeItRain",
+        "address": "0x085AB6B0",
+        "original": "0x085AA59C",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnMadeWish",
+        "address": "0x085AB670",
+        "original": "0x085AA314",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnMoveBounced",
+        "address": "0x085AB6A4",
+        "original": "0x085AA403",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPlantedRoots",
+        "address": "0x085AB678",
+        "original": "0x085AA334",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsConfusionWith",
+        "address": "0x085AB6D4",
+        "original": "0x085AA65A",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsParalysisWith",
+        "address": "0x085AB6C8",
+        "original": "0x085AA625",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsPoisoningWith",
+        "address": "0x085AB6D0",
+        "original": "0x085AA648",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsRomanceWith",
+        "address": "0x085AB6CC",
+        "original": "0x085AA634",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsStatLossWith",
+        "address": "0x085AB6E4",
+        "original": "0x085AA6B0",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnPreventsUsage",
+        "address": "0x085AB6BC",
+        "original": "0x085AA5D4",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnProtectedBy",
+        "address": "0x085AB6B8",
+        "original": "0x085AA5C4",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnRaisedFirePowerWith",
+        "address": "0x085AB6D8",
+        "original": "0x085AA66B",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnRaisedSpeed",
+        "address": "0x085AB6B4",
+        "original": "0x085AA5B0",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnReadyToHelp",
+        "address": "0x085AB664",
+        "original": "0x085AA28F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnRestoredHPUsing",
+        "address": "0x085AB6C0",
+        "original": "0x085AA5EA",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnSealedOpponentMove",
+        "address": "0x085AB690",
+        "original": "0x085AA3A6",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnShroudedItself",
+        "address": "0x085AB6A0",
+        "original": "0x085AA3F4",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnSnatchedMove",
+        "address": "0x085AB6AC",
+        "original": "0x085AA434",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnSubjectedToTorment",
+        "address": "0x085AB650",
+        "original": "0x085AA251",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnSwappedAbilities",
+        "address": "0x085AB68C",
+        "original": "0x085AA38F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnSwitchedItems",
+        "address": "0x085AB668",
+        "original": "0x085AA2AB",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnTighteningFocus",
+        "address": "0x085AB658",
+        "original": "0x085AA263",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnTraced",
+        "address": "0x085AB6EC",
+        "original": "0x085AA6D9",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnWaitsForTarget",
+        "address": "0x085AB6A8",
+        "original": "0x085AA41D",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnWantsGrudge",
+        "address": "0x085AB698",
+        "original": "0x085AA3BB",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnWasMadeDrowsy",
+        "address": "0x085AB684",
+        "original": "0x085AA367",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnWishCameTrue",
+        "address": "0x085AB674",
+        "original": "0x085AA323",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_StatHarshly",
+        "address": "0x085AB6F8",
+        "original": "0x085AA87D",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_StatSharply",
+        "address": "0x085AB6F0",
+        "original": "0x085AA871",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_WildPkmnFled",
+        "address": "0x085AB72C",
+        "original": "0x085AA9B2",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

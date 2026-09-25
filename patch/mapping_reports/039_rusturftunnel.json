@@ -1,0 +1,392 @@
+{
+  "schema_version": 1,
+  "batch": "039_rusturftunnel.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock",
+      "address": "0x0821362C",
+      "original": "0x08213CF3",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_ComeAndGetSome",
+      "address": "0x0821384F",
+      "original": "0x08213991",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_ExplainStrength",
+      "address": "0x082136CD",
+      "original": "0x08213C7B",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_GruntDefeat",
+      "address": "0x0821389F",
+      "original": "0x08213A18",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_GruntIntro",
+      "address": "0x08213893",
+      "original": "0x082139B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_GruntTakePackage",
+      "address": "0x082138A5",
+      "original": "0x08213A32",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_MikeDefeat",
+      "address": "0x08213984",
+      "original": "0x08213D8C",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_MikeIntro",
+      "address": "0x08213980",
+      "original": "0x08213D51",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_MikePostBattle",
+      "address": "0x0821398A",
+      "original": "0x08213D9D",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_Peeko",
+      "address": "0x08213882",
+      "original": "0x082139A1",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_PeekoGladToSeeYouSafe",
+      "address": "0x082138EF",
+      "original": "0x08213A8C",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_ThankYouLetsGoHomePeeko",
+      "address": "0x08213900",
+      "original": "0x08213A9E",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_ToGetToVerdanturf",
+      "address": "0x08213664",
+      "original": "0x08213C05",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_WandaReunion",
+      "address": "0x082136F7",
+      "original": "0x08213CB3",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_WhyCantTheyKeepDigging",
+      "address": "0x0821364F",
+      "original": "0x08213B76",
+      "count": 1
+    },
+    {
+      "source_symbol": "RusturfTunnel_Text_YouShatteredBoulderTakeHM",
+      "address": "0x082136A0",
+      "original": "0x08213C3E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock",
+    "RusturfTunnel_Text_ComeAndGetSome",
+    "RusturfTunnel_Text_ExplainStrength",
+    "RusturfTunnel_Text_GruntDefeat",
+    "RusturfTunnel_Text_GruntIntro",
+    "RusturfTunnel_Text_GruntTakePackage",
+    "RusturfTunnel_Text_MikeDefeat",
+    "RusturfTunnel_Text_MikeIntro",
+    "RusturfTunnel_Text_MikePostBattle",
+    "RusturfTunnel_Text_Peeko",
+    "RusturfTunnel_Text_PeekoGladToSeeYouSafe",
+    "RusturfTunnel_Text_ThankYouLetsGoHomePeeko",
+    "RusturfTunnel_Text_ToGetToVerdanturf",
+    "RusturfTunnel_Text_WandaReunion",
+    "RusturfTunnel_Text_WhyCantTheyKeepDigging",
+    "RusturfTunnel_Text_YouShatteredBoulderTakeHM"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:RusturfTunnel_Text_BoyfriendOnOtherSideOfRock|RusturfTunnel_Text_ComeAndGetSome|RusturfTunnel_Text_ExplainStrength|RusturfTunnel_Text_GruntDefeat|RusturfTunnel_Text_GruntIntro|RusturfTunnel_Text_GruntTakePackage|RusturfTunnel_Text_MikeDefeat|RusturfTunnel_Text_MikeIntro|RusturfTunnel_Text_MikePostBattle|RusturfTunnel_Text_Peeko|RusturfTunnel_Text_PeekoGladToSeeYouSafe|RusturfTunnel_Text_ThankYouLetsGoHomePeeko|RusturfTunnel_Text_ToGetToVerdanturf|RusturfTunnel_Text_WandaReunion|RusturfTunnel_Text_WhyCantTheyKeepDigging|RusturfTunnel_Text_YouShatteredBoulderTakeHM)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18806,
+    "mapped_count": 16,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "RusturfTunnel_Text_BoyfriendOnOtherSideOfRock",
+        "us_text": "0x082186CF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217FA2",
+            "jp_reference": "0x0821362C",
+            "jp_text": "0x08213CF3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_ComeAndGetSome",
+        "us_text": "0x08218307",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082181C5",
+            "jp_reference": "0x0821384F",
+            "jp_text": "0x08213991",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_ExplainStrength",
+        "us_text": "0x0821863D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218043",
+            "jp_reference": "0x082136CD",
+            "jp_text": "0x08213C7B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_GruntDefeat",
+        "us_text": "0x082183A9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218215",
+            "jp_reference": "0x0821389F",
+            "jp_text": "0x08213A18",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_GruntIntro",
+        "us_text": "0x08218333",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218209",
+            "jp_reference": "0x08213893",
+            "jp_text": "0x082139B0",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_GruntTakePackage",
+        "us_text": "0x082183CB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821821B",
+            "jp_reference": "0x082138A5",
+            "jp_text": "0x08213A32",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_MikeDefeat",
+        "us_text": "0x08218786",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082182FA",
+            "jp_reference": "0x08213984",
+            "jp_text": "0x08213D8C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18806
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_MikeIntro",
+        "us_text": "0x0821872E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082182F6",
+            "jp_reference": "0x08213980",
+            "jp_text": "0x08213D51",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_MikePostBattle",
+        "us_text": "0x082187A0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218300",
+            "jp_reference": "0x0821398A",
+            "jp_text": "0x08213D9D",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18806
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_Peeko",
+        "us_text": "0x08218324",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082181F8",
+            "jp_reference": "0x08213882",
+            "jp_text": "0x082139A1",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_PeekoGladToSeeYouSafe",
+        "us_text": "0x08218429",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218265",
+            "jp_reference": "0x082138EF",
+            "jp_text": "0x08213A8C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_ThankYouLetsGoHomePeeko",
+        "us_text": "0x08218445",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218276",
+            "jp_reference": "0x08213900",
+            "jp_text": "0x08213A9E",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_ToGetToVerdanturf",
+        "us_text": "0x082185B6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217FDA",
+            "jp_reference": "0x08213664",
+            "jp_text": "0x08213C05",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_WandaReunion",
+        "us_text": "0x0821868A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821806D",
+            "jp_reference": "0x082136F7",
+            "jp_text": "0x08213CB3",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_WhyCantTheyKeepDigging",
+        "us_text": "0x08218516",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217FC5",
+            "jp_reference": "0x0821364F",
+            "jp_text": "0x08213B76",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RusturfTunnel_Text_YouShatteredBoulderTakeHM",
+        "us_text": "0x082185F7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218016",
+            "jp_reference": "0x082136A0",
+            "jp_text": "0x08213C3E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 16,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

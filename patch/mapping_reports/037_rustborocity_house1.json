@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "batch": "037_rustborocity_house1.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "RustboroCity_House1_Text_AllSortsOfPlaces",
+      "address": "0x08203C6B",
+      "original": "0x08203D38",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_House1_Text_AnyPokemonCanBeCute",
+      "address": "0x08203C61",
+      "original": "0x08203D17",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_House1_Text_DoesntLookLikeMonToMe",
+      "address": "0x08203C57",
+      "original": "0x08203CDF",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_House1_Text_IllTradeIfYouWant",
+      "address": "0x08203BEA",
+      "original": "0x08203C72",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_House1_Text_PleaseBeGoodToMyPokemon",
+      "address": "0x08203C3C",
+      "original": "0x08203CCC",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_House1_Text_YouDontWantToThatsOkay",
+      "address": "0x08203C49",
+      "original": "0x08203CF7",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "RustboroCity_House1_Text_AllSortsOfPlaces",
+    "RustboroCity_House1_Text_AnyPokemonCanBeCute",
+    "RustboroCity_House1_Text_DoesntLookLikeMonToMe",
+    "RustboroCity_House1_Text_IllTradeIfYouWant",
+    "RustboroCity_House1_Text_PleaseBeGoodToMyPokemon",
+    "RustboroCity_House1_Text_YouDontWantToThatsOkay"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:RustboroCity_House1_Text_AllSortsOfPlaces|RustboroCity_House1_Text_AnyPokemonCanBeCute|RustboroCity_House1_Text_DoesntLookLikeMonToMe|RustboroCity_House1_Text_IllTradeIfYouWant|RustboroCity_House1_Text_PleaseBeGoodToMyPokemon|RustboroCity_House1_Text_YouDontWantToThatsOkay)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -13721,
+    "mapped_count": 6,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "RustboroCity_House1_Text_AllSortsOfPlaces",
+        "us_text": "0x08207310",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08207204",
+            "jp_reference": "0x08203C6B",
+            "jp_text": "0x08203D38",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13721
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_House1_Text_AnyPokemonCanBeCute",
+        "us_text": "0x082072DC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082071FA",
+            "jp_reference": "0x08203C61",
+            "jp_text": "0x08203D17",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13721
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_House1_Text_DoesntLookLikeMonToMe",
+        "us_text": "0x0820728F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082071F0",
+            "jp_reference": "0x08203C57",
+            "jp_text": "0x08203CDF",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13721
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_House1_Text_IllTradeIfYouWant",
+        "us_text": "0x0820720B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08207183",
+            "jp_reference": "0x08203BEA",
+            "jp_text": "0x08203C72",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13721
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_House1_Text_PleaseBeGoodToMyPokemon",
+        "us_text": "0x08207272",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082071D5",
+            "jp_reference": "0x08203C3C",
+            "jp_text": "0x08203CCC",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13721
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_House1_Text_YouDontWantToThatsOkay",
+        "us_text": "0x082072A5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082071E2",
+            "jp_reference": "0x08203C49",
+            "jp_text": "0x08203CF7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 6,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

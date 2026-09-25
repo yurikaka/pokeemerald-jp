@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "batch": "129_lilycovecity_departmentstorerooftop.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale",
+      "address": "0x0820AED0",
+      "original": "0x0820B0EA",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty",
+      "address": "0x0820AEDA",
+      "original": "0x0820B120",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown",
+      "address": "0x0820AFE5",
+      "original": "0x0820B14A",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink",
+      "address": "0x0820AF24",
+      "original": "0x0820B180",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown",
+      "address": "0x0820B023",
+      "original": "0x0820B159",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown",
+      "address": "0x0820B061",
+      "original": "0x0820B159",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney",
+      "address": "0x0820B090",
+      "original": "0x0820B175",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales",
+      "address": "0x0820AEC6",
+      "original": "0x0820B0AF",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike",
+      "address": "0x0820AEE3",
+      "original": "0x0820B12E",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike",
+      "address": "0x0820B083",
+      "original": "0x0820B12E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale",
+    "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty",
+    "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown",
+    "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink",
+    "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown",
+    "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney",
+    "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales",
+    "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale|LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty|LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown|LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink|LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown|LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney|LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales|LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -16096,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_BeenWaitingForClearOutSale",
+        "us_text": "0x0820EFCD",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EDB0",
+            "jp_reference": "0x0820AED0",
+            "jp_text": "0x0820B0EA",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty",
+        "us_text": "0x0820F01D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EDBA",
+            "jp_reference": "0x0820AEDA",
+            "jp_text": "0x0820B120",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown",
+        "us_text": "0x0820F04D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EEC5",
+            "jp_reference": "0x0820AFE5",
+            "jp_text": "0x0820B14A",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink",
+        "us_text": "0x0820F08A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EE04",
+            "jp_reference": "0x0820AF24",
+            "jp_text": "0x0820B180",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_ExtraCanOfDrinkDroppedDown",
+        "us_text": "0x0820F063",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820EF03",
+            "jp_reference": "0x0820B023",
+            "jp_text": "0x0820B159",
+            "mapping_method": "context",
+            "context_radius": 32
+          },
+          {
+            "us_reference": "0x0820EF41",
+            "jp_reference": "0x0820B061",
+            "jp_text": "0x0820B159",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_NotEnoughMoney",
+        "us_text": "0x0820F081",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EF70",
+            "jp_reference": "0x0820B090",
+            "jp_text": "0x0820B175",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_SetDatesForClearOutSales",
+        "us_text": "0x0820EF8F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820EDA6",
+            "jp_reference": "0x0820AEC6",
+            "jp_text": "0x0820B0AF",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike",
+        "us_text": "0x0820F02D",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820EDC3",
+            "jp_reference": "0x0820AEE3",
+            "jp_text": "0x0820B12E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -16096
+          },
+          {
+            "us_reference": "0x0820EF63",
+            "jp_reference": "0x0820B083",
+            "jp_text": "0x0820B12E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -16096
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

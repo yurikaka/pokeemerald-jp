@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "batch": "006_rivals_house_2f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanGettingReady",
+      "address": "0x081F0D3B",
+      "original": "0x081F108B",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex",
+      "address": "0x081F0D86",
+      "original": "0x081F117C",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanWhereShouldIGoNext",
+      "address": "0x081F0D98",
+      "original": "0x081F11E3",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanWhoAreYou",
+      "address": "0x081F00CC",
+      "original": "0x081F0F62",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanWhoAreYou",
+      "address": "0x081F00FB",
+      "original": "0x081F0F62",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanWhoAreYou",
+      "address": "0x081F012A",
+      "original": "0x081F0F62",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_BrendanWhoAreYou",
+      "address": "0x081F0159",
+      "original": "0x081F0F62",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+      "address": "0x081F003E",
+      "original": "0x081F10B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+      "address": "0x081F0B8E",
+      "original": "0x081F10B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayGettingReady",
+      "address": "0x081F0D31",
+      "original": "0x081F0F40",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayJustCheckingMyPokedex",
+      "address": "0x081F0D74",
+      "original": "0x081F10CD",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayWhereShouldIGoNext",
+      "address": "0x081F0D8F",
+      "original": "0x081F1142",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayWhoAreYou",
+      "address": "0x081F0C1C",
+      "original": "0x081F0DE8",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayWhoAreYou",
+      "address": "0x081F0C4B",
+      "original": "0x081F0DE8",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayWhoAreYou",
+      "address": "0x081F0C7A",
+      "original": "0x081F0DE8",
+      "count": 1
+    },
+    {
+      "source_symbol": "RivalsHouse_2F_Text_MayWhoAreYou",
+      "address": "0x081F0CA2",
+      "original": "0x081F0DE8",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "RivalsHouse_2F_Text_BrendanGettingReady",
+    "RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex",
+    "RivalsHouse_2F_Text_BrendanWhereShouldIGoNext",
+    "RivalsHouse_2F_Text_BrendanWhoAreYou",
+    "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+    "RivalsHouse_2F_Text_MayGettingReady",
+    "RivalsHouse_2F_Text_MayJustCheckingMyPokedex",
+    "RivalsHouse_2F_Text_MayWhereShouldIGoNext",
+    "RivalsHouse_2F_Text_MayWhoAreYou"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:RivalsHouse_2F_Text_BrendanGettingReady|RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex|RivalsHouse_2F_Text_BrendanWhereShouldIGoNext|RivalsHouse_2F_Text_BrendanWhoAreYou|RivalsHouse_2F_Text_ItsRivalsPokeBall|RivalsHouse_2F_Text_MayGettingReady|RivalsHouse_2F_Text_MayJustCheckingMyPokedex|RivalsHouse_2F_Text_MayWhereShouldIGoNext|RivalsHouse_2F_Text_MayWhoAreYou)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -8026,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "RivalsHouse_2F_Text_BrendanGettingReady",
+        "us_text": "0x081F2FDB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2C95",
+            "jp_reference": "0x081F0D3B",
+            "jp_text": "0x081F108B",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex",
+        "us_text": "0x081F30EF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2CE0",
+            "jp_reference": "0x081F0D86",
+            "jp_text": "0x081F117C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_BrendanWhereShouldIGoNext",
+        "us_text": "0x081F3171",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2CF2",
+            "jp_reference": "0x081F0D98",
+            "jp_text": "0x081F11E3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_BrendanWhoAreYou",
+        "us_text": "0x081F2EBD",
+        "us_reference_count": 4,
+        "references": [
+          {
+            "us_reference": "0x081F200A",
+            "jp_reference": "0x081F00CC",
+            "jp_text": "0x081F0F62",
+            "mapping_method": "context",
+            "context_radius": 48
+          },
+          {
+            "us_reference": "0x081F2039",
+            "jp_reference": "0x081F00FB",
+            "jp_text": "0x081F0F62",
+            "mapping_method": "context",
+            "context_radius": 64
+          },
+          {
+            "us_reference": "0x081F2068",
+            "jp_reference": "0x081F012A",
+            "jp_text": "0x081F0F62",
+            "mapping_method": "context",
+            "context_radius": 64
+          },
+          {
+            "us_reference": "0x081F2097",
+            "jp_reference": "0x081F0159",
+            "jp_text": "0x081F0F62",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_ItsRivalsPokeBall",
+        "us_text": "0x081F300C",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081F1F7C",
+            "jp_reference": "0x081F003E",
+            "jp_text": "0x081F10B0",
+            "mapping_method": "context",
+            "context_radius": 24
+          },
+          {
+            "us_reference": "0x081F2AE8",
+            "jp_reference": "0x081F0B8E",
+            "jp_text": "0x081F10B0",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_MayGettingReady",
+        "us_text": "0x081F2E8C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2C8B",
+            "jp_reference": "0x081F0D31",
+            "jp_text": "0x081F0F40",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_MayJustCheckingMyPokedex",
+        "us_text": "0x081F3028",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2CCE",
+            "jp_reference": "0x081F0D74",
+            "jp_text": "0x081F10CD",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_MayWhereShouldIGoNext",
+        "us_text": "0x081F30A2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F2CE9",
+            "jp_reference": "0x081F0D8F",
+            "jp_text": "0x081F1142",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "RivalsHouse_2F_Text_MayWhoAreYou",
+        "us_text": "0x081F2D42",
+        "us_reference_count": 4,
+        "references": [
+          {
+            "us_reference": "0x081F2B76",
+            "jp_reference": "0x081F0C1C",
+            "jp_text": "0x081F0DE8",
+            "mapping_method": "context",
+            "context_radius": 48
+          },
+          {
+            "us_reference": "0x081F2BA5",
+            "jp_reference": "0x081F0C4B",
+            "jp_text": "0x081F0DE8",
+            "mapping_method": "context",
+            "context_radius": 64
+          },
+          {
+            "us_reference": "0x081F2BD4",
+            "jp_reference": "0x081F0C7A",
+            "jp_text": "0x081F0DE8",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x081F2BFC",
+            "jp_reference": "0x081F0CA2",
+            "jp_text": "0x081F0DE8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 16,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

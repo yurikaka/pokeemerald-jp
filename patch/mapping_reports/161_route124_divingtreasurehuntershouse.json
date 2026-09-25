@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "batch": "161_route124_divingtreasurehuntershouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_BagFull",
+      "address": "0x0824216C",
+      "original": "0x082422CA",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind",
+      "address": "0x08242176",
+      "original": "0x082422E9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_Greeting",
+      "address": "0x08241C66",
+      "original": "0x08242193",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards",
+      "address": "0x08241C77",
+      "original": "0x082421D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_ItsADeal",
+      "address": "0x0824213B",
+      "original": "0x082422A1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard",
+      "address": "0x0824218C",
+      "original": "0x08242307",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou",
+      "address": "0x08241CF9",
+      "original": "0x08242236",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse",
+      "address": "0x08242153",
+      "original": "0x082422BC",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade",
+      "address": "0x08241D06",
+      "original": "0x0824227C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards",
+      "address": "0x08242180",
+      "original": "0x082421FC",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone",
+      "address": "0x082420F1",
+      "original": "0x0824228C",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route124_DivingTreasureHuntersHouse_Text_BagFull",
+    "Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind",
+    "Route124_DivingTreasureHuntersHouse_Text_Greeting",
+    "Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards",
+    "Route124_DivingTreasureHuntersHouse_Text_ItsADeal",
+    "Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard",
+    "Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou",
+    "Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse",
+    "Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade",
+    "Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards",
+    "Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route124_DivingTreasureHuntersHouse_Text_BagFull|Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind|Route124_DivingTreasureHuntersHouse_Text_Greeting|Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards|Route124_DivingTreasureHuntersHouse_Text_ItsADeal|Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard|Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou|Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse|Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade|Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards|Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -34386,
+    "mapped_count": 11,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_BagFull",
+        "us_text": "0x0824A913",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A7BE",
+            "jp_reference": "0x0824216C",
+            "jp_text": "0x082422CA",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_ComeBackIfYouChangeMind",
+        "us_text": "0x0824A93D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A7C8",
+            "jp_reference": "0x08242176",
+            "jp_text": "0x082422E9",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_Greeting",
+        "us_text": "0x0824A7E5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A2B8",
+            "jp_reference": "0x08241C66",
+            "jp_text": "0x08242193",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_HaveYouSeenAnyShards",
+        "us_text": "0x0824A81C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A2C9",
+            "jp_reference": "0x08241C77",
+            "jp_text": "0x082421D8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_ItsADeal",
+        "us_text": "0x0824A8F1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A78D",
+            "jp_reference": "0x0824213B",
+            "jp_text": "0x082422A1",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard",
+        "us_text": "0x0824A965",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A7DE",
+            "jp_reference": "0x0824218C",
+            "jp_text": "0x08242307",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34386
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_ThatsAShardIllTradeYou",
+        "us_text": "0x0824A884",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A34B",
+            "jp_reference": "0x08241CF9",
+            "jp_text": "0x08242236",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_TradeSomethingElse",
+        "us_text": "0x0824A903",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A7A5",
+            "jp_reference": "0x08242153",
+            "jp_text": "0x082422BC",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_WhatDoYouWantToTrade",
+        "us_text": "0x0824A8CE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A358",
+            "jp_reference": "0x08241D06",
+            "jp_text": "0x0824227C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards",
+        "us_text": "0x0824A83C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A7D2",
+            "jp_reference": "0x08242180",
+            "jp_text": "0x082421FC",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34386
+          }
+        ]
+      },
+      {
+        "symbol": "Route124_DivingTreasureHuntersHouse_Text_YoullTradeShardForStone",
+        "us_text": "0x0824A8DA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824A743",
+            "jp_reference": "0x082420F1",
+            "jp_text": "0x0824228C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 11,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

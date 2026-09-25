@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "batch": "149_route123_berrymastershouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_Ah",
+      "address": "0x08241056",
+      "original": "0x08263C99",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_DoneForToday",
+      "address": "0x08241015",
+      "original": "0x08263B94",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_GoodSayingTakeThis",
+      "address": "0x082410AB",
+      "original": "0x08263C33",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_HeardAGoodSayingLately",
+      "address": "0x0824102B",
+      "original": "0x08263BBC",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+      "address": "0x082410E2",
+      "original": "0x08263C07",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+      "address": "0x08241113",
+      "original": "0x08263C07",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+      "address": "0x08241144",
+      "original": "0x08263C07",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+      "address": "0x08241175",
+      "original": "0x08263C07",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+      "address": "0x082411A6",
+      "original": "0x08263C07",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife",
+      "address": "0x0824105E",
+      "original": "0x08263C63",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife",
+      "address": "0x082411CE",
+      "original": "0x08263C63",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife",
+      "address": "0x082411DB",
+      "original": "0x08263C63",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop",
+      "address": "0x0824100B",
+      "original": "0x08263B5B",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother",
+      "address": "0x08240FDF",
+      "original": "0x08263B47",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route123_BerryMastersHouse_Text_YoureDeservingOfBerry",
+      "address": "0x08240FB0",
+      "original": "0x08263AE4",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route123_BerryMastersHouse_Text_Ah",
+    "Route123_BerryMastersHouse_Text_DoneForToday",
+    "Route123_BerryMastersHouse_Text_GoodSayingTakeThis",
+    "Route123_BerryMastersHouse_Text_HeardAGoodSayingLately",
+    "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+    "Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife",
+    "Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop",
+    "Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother",
+    "Route123_BerryMastersHouse_Text_YoureDeservingOfBerry"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route123_BerryMastersHouse_Text_Ah|Route123_BerryMastersHouse_Text_DoneForToday|Route123_BerryMastersHouse_Text_GoodSayingTakeThis|Route123_BerryMastersHouse_Text_HeardAGoodSayingLately|Route123_BerryMastersHouse_Text_InspirationalTakeThis|Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife|Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop|Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother|Route123_BerryMastersHouse_Text_YoureDeservingOfBerry)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -34217,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_Ah",
+        "us_text": "0x08271179",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082495FF",
+            "jp_reference": "0x08241056",
+            "jp_text": "0x08263C99",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_DoneForToday",
+        "us_text": "0x0827104D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082495BE",
+            "jp_reference": "0x08241015",
+            "jp_text": "0x08263B94",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_GoodSayingTakeThis",
+        "us_text": "0x0827110B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249654",
+            "jp_reference": "0x082410AB",
+            "jp_text": "0x08263C33",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_HeardAGoodSayingLately",
+        "us_text": "0x08271077",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082495D4",
+            "jp_reference": "0x0824102B",
+            "jp_text": "0x08263BBC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_InspirationalTakeThis",
+        "us_text": "0x082710E2",
+        "us_reference_count": 5,
+        "references": [
+          {
+            "us_reference": "0x0824968B",
+            "jp_reference": "0x082410E2",
+            "jp_text": "0x08263C07",
+            "mapping_method": "context",
+            "context_radius": 64
+          },
+          {
+            "us_reference": "0x082496BC",
+            "jp_reference": "0x08241113",
+            "jp_text": "0x08263C07",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x082496ED",
+            "jp_reference": "0x08241144",
+            "jp_text": "0x08263C07",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824971E",
+            "jp_reference": "0x08241175",
+            "jp_text": "0x08263C07",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824974F",
+            "jp_reference": "0x082411A6",
+            "jp_text": "0x08263C07",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_JoyNeverGoesOutOfMyLife",
+        "us_text": "0x08271134",
+        "us_reference_count": 3,
+        "references": [
+          {
+            "us_reference": "0x08249607",
+            "jp_reference": "0x0824105E",
+            "jp_text": "0x08263C63",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x08249777",
+            "jp_reference": "0x082411CE",
+            "jp_text": "0x08263C63",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x08249784",
+            "jp_reference": "0x082411DB",
+            "jp_text": "0x08263C63",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_VisitPrettyPetalFlowerShop",
+        "us_text": "0x08271012",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082495B4",
+            "jp_reference": "0x0824100B",
+            "jp_text": "0x08263B5B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_WhyBeStingyTakeAnother",
+        "us_text": "0x08270FFC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249588",
+            "jp_reference": "0x08240FDF",
+            "jp_text": "0x08263B47",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route123_BerryMastersHouse_Text_YoureDeservingOfBerry",
+        "us_text": "0x08270F8F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249559",
+            "jp_reference": "0x08240FB0",
+            "jp_text": "0x08263AE4",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 15,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

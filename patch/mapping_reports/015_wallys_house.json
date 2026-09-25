@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "015_wallys_house.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_PleaseExcuseUs",
+      "address": "0x081F8136",
+      "original": "0x081F82AE",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces",
+      "address": "0x081F814D",
+      "original": "0x081F83BA",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally",
+      "address": "0x081F8179",
+      "original": "0x081F81C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon",
+      "address": "0x081F8186",
+      "original": "0x081F83E2",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling",
+      "address": "0x081F81B9",
+      "original": "0x081F849F",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_WallyWasReallyHappy",
+      "address": "0x081F81AF",
+      "original": "0x081F8465",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing",
+      "address": "0x081F819A",
+      "original": "0x081F829E",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity",
+      "address": "0x081F8190",
+      "original": "0x081F8400",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "PetalburgCity_WallysHouse_Text_PleaseExcuseUs",
+    "PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces",
+    "PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally",
+    "PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon",
+    "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling",
+    "PetalburgCity_WallysHouse_Text_WallyWasReallyHappy",
+    "PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing",
+    "PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:PetalburgCity_WallysHouse_Text_PleaseExcuseUs|PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces|PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally|PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon|PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling|PetalburgCity_WallysHouse_Text_WallyWasReallyHappy|PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing|PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -10461,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_PleaseExcuseUs",
+        "us_text": "0x081FAB77",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA13",
+            "jp_reference": "0x081F8136",
+            "jp_text": "0x081F82AE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces",
+        "us_text": "0x081FAC86",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA2A",
+            "jp_reference": "0x081F814D",
+            "jp_text": "0x081F83BA",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally",
+        "us_text": "0x081FAA9E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA56",
+            "jp_reference": "0x081F8179",
+            "jp_text": "0x081F81C1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon",
+        "us_text": "0x081FACB2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA63",
+            "jp_reference": "0x081F8186",
+            "jp_text": "0x081F83E2",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling",
+        "us_text": "0x081FAD87",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA96",
+            "jp_reference": "0x081F81B9",
+            "jp_text": "0x081F849F",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10461
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_WallyWasReallyHappy",
+        "us_text": "0x081FAD33",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA8C",
+            "jp_reference": "0x081F81AF",
+            "jp_text": "0x081F8465",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10461
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing",
+        "us_text": "0x081FAB5F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA77",
+            "jp_reference": "0x081F819A",
+            "jp_text": "0x081F829E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity",
+        "us_text": "0x081FACD6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FAA6D",
+            "jp_reference": "0x081F8190",
+            "jp_text": "0x081F8400",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

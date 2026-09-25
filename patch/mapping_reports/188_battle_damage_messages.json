@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "batch": "188_battle_damage_messages.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "sText_ItHurtConfusion",
+      "address": "0x085AB744",
+      "original": "0x085AAABD",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHitWithRecoil",
+      "address": "0x085AB53C",
+      "original": "0x085A9D46",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHurtBy",
+      "address": "0x085AB524",
+      "original": "0x085A9CD5",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHurtByBurn",
+      "address": "0x085AB46C",
+      "original": "0x085A990C",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHurtByPoison",
+      "address": "0x085AB454",
+      "original": "0x085A98A2",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHurtBySpikes",
+      "address": "0x085AB600",
+      "original": "0x085AA0C9",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnHurtsWith",
+      "address": "0x085AB6E8",
+      "original": "0x085AA6C6",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "sText_ItHurtConfusion",
+    "sText_PkmnHitWithRecoil",
+    "sText_PkmnHurtBy",
+    "sText_PkmnHurtByBurn",
+    "sText_PkmnHurtByPoison",
+    "sText_PkmnHurtBySpikes",
+    "sText_PkmnHurtsWith"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:sText_ItHurtConfusion|sText_PkmnHitWithRecoil|sText_PkmnHurtBy|sText_PkmnHurtByBurn|sText_PkmnHurtByPoison|sText_PkmnHurtBySpikes|sText_PkmnHurtsWith)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 7,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "sText_PkmnHurtByPoison",
+        "us_text": "0x08665032",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnHurtByBurn",
+        "us_text": "0x086650B3",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnHurtBy",
+        "us_text": "0x086655C1",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnHitWithRecoil",
+        "us_text": "0x0866563F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnHurtBySpikes",
+        "us_text": "0x08665B06",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnHurtsWith",
+        "us_text": "0x086662F6",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_ItHurtConfusion",
+        "us_text": "0x086667FE",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "sText_ItHurtConfusion",
+        "address": "0x085AB744",
+        "original": "0x085AAABD",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHitWithRecoil",
+        "address": "0x085AB53C",
+        "original": "0x085A9D46",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHurtBy",
+        "address": "0x085AB524",
+        "original": "0x085A9CD5",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHurtByBurn",
+        "address": "0x085AB46C",
+        "original": "0x085A990C",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHurtByPoison",
+        "address": "0x085AB454",
+        "original": "0x085A98A2",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHurtBySpikes",
+        "address": "0x085AB600",
+        "original": "0x085AA0C9",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnHurtsWith",
+        "address": "0x085AB6E8",
+        "original": "0x085AA6C6",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

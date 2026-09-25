@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "batch": "187_battle_protection_and_stat_changes.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "sText_AttackersStatFell",
+      "address": "0x085AB708",
+      "original": "0x085AA8AE",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_DefendersStatFell",
+      "address": "0x085AB70C",
+      "original": "0x085AA8B9",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnProtectedItself",
+      "address": "0x085AB40C",
+      "original": "0x085A9737",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_StatFell",
+      "address": "0x085AB6FC",
+      "original": "0x085AA883",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "sText_AttackersStatFell",
+    "sText_DefendersStatFell",
+    "sText_PkmnProtectedItself",
+    "sText_StatFell"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:sText_AttackersStatFell|sText_DefendersStatFell|sText_PkmnProtectedItself|sText_StatFell)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 4,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "sText_PkmnProtectedItself",
+        "us_text": "0x08664E75",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_StatFell",
+        "us_text": "0x08666568",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_AttackersStatFell",
+        "us_text": "0x086665A4",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_DefendersStatFell",
+        "us_text": "0x086665AF",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "sText_AttackersStatFell",
+        "address": "0x085AB708",
+        "original": "0x085AA8AE",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_DefendersStatFell",
+        "address": "0x085AB70C",
+        "original": "0x085AA8B9",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnProtectedItself",
+        "address": "0x085AB40C",
+        "original": "0x085A9737",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_StatFell",
+        "address": "0x085AB6FC",
+        "original": "0x085AA883",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

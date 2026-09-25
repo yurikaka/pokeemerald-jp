@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "batch": "102_route114_fossilmaniacstunnel.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
+      "address": "0x08212323",
+      "original": "0x082123BF",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_FossilManiacsTunnel_Text_FossilsAreWonderful",
+      "address": "0x0821232D",
+      "original": "0x0821244C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
+      "address": "0x08212319",
+      "original": "0x08212335",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_FossilManiacsTunnel_Text_NotSafeThatWay",
+      "address": "0x082122DF",
+      "original": "0x08212467",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
+    "Route114_FossilManiacsTunnel_Text_FossilsAreWonderful",
+    "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
+    "Route114_FossilManiacsTunnel_Text_NotSafeThatWay"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils|Route114_FossilManiacsTunnel_Text_FossilsAreWonderful|Route114_FossilManiacsTunnel_Text_LookInDesertForFossils|Route114_FossilManiacsTunnel_Text_NotSafeThatWay)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18268,
+    "mapped_count": 4,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils",
+        "us_text": "0x08216B29",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216A7F",
+            "jp_reference": "0x08212323",
+            "jp_text": "0x082123BF",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18268
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_FossilManiacsTunnel_Text_FossilsAreWonderful",
+        "us_text": "0x08216BBE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216A89",
+            "jp_reference": "0x0821232D",
+            "jp_text": "0x0821244C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18268
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_FossilManiacsTunnel_Text_LookInDesertForFossils",
+        "us_text": "0x08216A91",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216A75",
+            "jp_reference": "0x08212319",
+            "jp_text": "0x08212335",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_FossilManiacsTunnel_Text_NotSafeThatWay",
+        "us_text": "0x08216BE2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216A3B",
+            "jp_reference": "0x082122DF",
+            "jp_text": "0x08212467",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 4,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

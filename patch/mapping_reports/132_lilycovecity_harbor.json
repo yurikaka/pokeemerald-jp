@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "batch": "132_lilycovecity_harbor.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_BattleFrontierItIs",
+      "address": "0x08209647",
+      "original": "0x08209C9B",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_BattleFrontierItIs",
+      "address": "0x08209A73",
+      "original": "0x08209C9B",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_FerryUnavailable",
+      "address": "0x08209A23",
+      "original": "0x08209BC5",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+      "address": "0x08209568",
+      "original": "0x08209C52",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+      "address": "0x08209A34",
+      "original": "0x08209C52",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_MayISeeYourTicket",
+      "address": "0x08209561",
+      "original": "0x08209BF3",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_MayISeeYourTicket",
+      "address": "0x08209A2D",
+      "original": "0x08209BF3",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_NoTicket",
+      "address": "0x08209A41",
+      "original": "0x08209C16",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_PleaseBoard",
+      "address": "0x08209AA2",
+      "original": "0x08209CAA",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SailAnotherTime",
+      "address": "0x082099BA",
+      "original": "0x08209C81",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SailAnotherTime",
+      "address": "0x08209AFC",
+      "original": "0x08209C81",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SailorFerryAvailable",
+      "address": "0x08209B22",
+      "original": "0x08209D18",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SailorFerryUnavailable",
+      "address": "0x08209B18",
+      "original": "0x08209CCE",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SlateportItIs",
+      "address": "0x0820961F",
+      "original": "0x08209C8F",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_SlateportItIs",
+      "address": "0x08209A4B",
+      "original": "0x08209C8F",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo",
+      "address": "0x08209A95",
+      "original": "0x08209CBE",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_Harbor_Text_BattleFrontierItIs",
+    "LilycoveCity_Harbor_Text_FerryUnavailable",
+    "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+    "LilycoveCity_Harbor_Text_MayISeeYourTicket",
+    "LilycoveCity_Harbor_Text_NoTicket",
+    "LilycoveCity_Harbor_Text_PleaseBoard",
+    "LilycoveCity_Harbor_Text_SailAnotherTime",
+    "LilycoveCity_Harbor_Text_SailorFerryAvailable",
+    "LilycoveCity_Harbor_Text_SailorFerryUnavailable",
+    "LilycoveCity_Harbor_Text_SlateportItIs",
+    "LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_Harbor_Text_BattleFrontierItIs|LilycoveCity_Harbor_Text_FerryUnavailable|LilycoveCity_Harbor_Text_FlashTicketWhereTo|LilycoveCity_Harbor_Text_MayISeeYourTicket|LilycoveCity_Harbor_Text_NoTicket|LilycoveCity_Harbor_Text_PleaseBoard|LilycoveCity_Harbor_Text_SailAnotherTime|LilycoveCity_Harbor_Text_SailorFerryAvailable|LilycoveCity_Harbor_Text_SailorFerryUnavailable|LilycoveCity_Harbor_Text_SlateportItIs|LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -15789,
+    "mapped_count": 11,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LilycoveCity_Harbor_Text_BattleFrontierItIs",
+        "us_text": "0x0820DA43",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820D3F4",
+            "jp_reference": "0x08209647",
+            "jp_text": "0x08209C9B",
+            "mapping_method": "context",
+            "context_radius": 32
+          },
+          {
+            "us_reference": "0x0820D820",
+            "jp_reference": "0x08209A73",
+            "jp_text": "0x08209C9B",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_FerryUnavailable",
+        "us_text": "0x0820D972",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D7D0",
+            "jp_reference": "0x08209A23",
+            "jp_text": "0x08209BC5",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+        "us_text": "0x0820D9FA",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820D315",
+            "jp_reference": "0x08209568",
+            "jp_text": "0x08209C52",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15789
+          },
+          {
+            "us_reference": "0x0820D7E1",
+            "jp_reference": "0x08209A34",
+            "jp_text": "0x08209C52",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15789
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_MayISeeYourTicket",
+        "us_text": "0x0820D9A3",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820D30E",
+            "jp_reference": "0x08209561",
+            "jp_text": "0x08209BF3",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0820D7DA",
+            "jp_reference": "0x08209A2D",
+            "jp_text": "0x08209BF3",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_NoTicket",
+        "us_text": "0x0820D9CA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D7EE",
+            "jp_reference": "0x08209A41",
+            "jp_text": "0x08209C16",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_PleaseBoard",
+        "us_text": "0x0820DA59",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D84F",
+            "jp_reference": "0x08209AA2",
+            "jp_text": "0x08209CAA",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_SailAnotherTime",
+        "us_text": "0x0820DA23",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820D767",
+            "jp_reference": "0x082099BA",
+            "jp_text": "0x08209C81",
+            "mapping_method": "context",
+            "context_radius": 24
+          },
+          {
+            "us_reference": "0x0820D8A9",
+            "jp_reference": "0x08209AFC",
+            "jp_text": "0x08209C81",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_SailorFerryAvailable",
+        "us_text": "0x0820DAC7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D8CF",
+            "jp_reference": "0x08209B22",
+            "jp_text": "0x08209D18",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_SailorFerryUnavailable",
+        "us_text": "0x0820DA79",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D8C5",
+            "jp_reference": "0x08209B18",
+            "jp_text": "0x08209CCE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_SlateportItIs",
+        "us_text": "0x0820DA31",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820D3CC",
+            "jp_reference": "0x0820961F",
+            "jp_text": "0x08209C8F",
+            "mapping_method": "context",
+            "context_radius": 24
+          },
+          {
+            "us_reference": "0x0820D7F8",
+            "jp_reference": "0x08209A4B",
+            "jp_text": "0x08209C8F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo",
+        "us_text": "0x0820DA69",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820D842",
+            "jp_reference": "0x08209A95",
+            "jp_text": "0x08209CBE",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 16,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

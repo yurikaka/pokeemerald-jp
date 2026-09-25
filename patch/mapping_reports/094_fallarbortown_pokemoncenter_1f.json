@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "batch": "094_fallarbortown_pokemoncenter_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown",
+      "address": "0x081F5C72",
+      "original": "0x081F5DD8",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_PokemonCenter_1F_Text_LanetteGreeting",
+      "address": "0x081F5C86",
+      "original": "0x081F5CEC",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees",
+      "address": "0x081F5C7B",
+      "original": "0x081F5E18",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown",
+    "FallarborTown_PokemonCenter_1F_Text_LanetteGreeting",
+    "FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown|FallarborTown_PokemonCenter_1F_Text_LanetteGreeting|FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -9716,
+    "mapped_count": 3,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown",
+        "us_text": "0x081F83F1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8266",
+            "jp_reference": "0x081F5C72",
+            "jp_text": "0x081F5DD8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_PokemonCenter_1F_Text_LanetteGreeting",
+        "us_text": "0x081F82E0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F827A",
+            "jp_reference": "0x081F5C86",
+            "jp_text": "0x081F5CEC",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees",
+        "us_text": "0x081F843D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F826F",
+            "jp_reference": "0x081F5C7B",
+            "jp_text": "0x081F5E18",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 3,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

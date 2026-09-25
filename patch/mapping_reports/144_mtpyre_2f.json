@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "batch": "144_mtpyre_2f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MtPyre_2F_Text_DezDefeat",
+      "address": "0x08216299",
+      "original": "0x082164CB",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_DezIntro",
+      "address": "0x08216295",
+      "original": "0x08216479",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_DezNotEnoughMons",
+      "address": "0x0821629D",
+      "original": "0x082164F9",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_DezPostBattle",
+      "address": "0x082162A3",
+      "original": "0x082164D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LeahDefeat",
+      "address": "0x082162B4",
+      "original": "0x08216562",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LeahIntro",
+      "address": "0x082162B0",
+      "original": "0x08216542",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LeahPostBattle",
+      "address": "0x082162BA",
+      "original": "0x0821656E",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LukeDefeat",
+      "address": "0x0821627E",
+      "original": "0x082163F7",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LukeNotEnoughMons",
+      "address": "0x08216282",
+      "original": "0x08216432",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_LukePostBattle",
+      "address": "0x08216288",
+      "original": "0x08216400",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_MarkDefeat",
+      "address": "0x08216267",
+      "original": "0x08216362",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_MarkIntro",
+      "address": "0x08216263",
+      "original": "0x0821633A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_MarkPostBattle",
+      "address": "0x0821626D",
+      "original": "0x08216379",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_MemoriesOfSkitty",
+      "address": "0x0821624D",
+      "original": "0x082162D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_TumbledFromFloorAbove",
+      "address": "0x08216256",
+      "original": "0x08216301",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_ZanderDefeat",
+      "address": "0x082162CB",
+      "original": "0x082165B7",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_ZanderIntro",
+      "address": "0x082162C7",
+      "original": "0x082165A3",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_2F_Text_ZanderPostBattle",
+      "address": "0x082162D1",
+      "original": "0x082165C3",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MtPyre_2F_Text_DezDefeat",
+    "MtPyre_2F_Text_DezIntro",
+    "MtPyre_2F_Text_DezNotEnoughMons",
+    "MtPyre_2F_Text_DezPostBattle",
+    "MtPyre_2F_Text_LeahDefeat",
+    "MtPyre_2F_Text_LeahIntro",
+    "MtPyre_2F_Text_LeahPostBattle",
+    "MtPyre_2F_Text_LukeDefeat",
+    "MtPyre_2F_Text_LukeNotEnoughMons",
+    "MtPyre_2F_Text_LukePostBattle",
+    "MtPyre_2F_Text_MarkDefeat",
+    "MtPyre_2F_Text_MarkIntro",
+    "MtPyre_2F_Text_MarkPostBattle",
+    "MtPyre_2F_Text_MemoriesOfSkitty",
+    "MtPyre_2F_Text_TumbledFromFloorAbove",
+    "MtPyre_2F_Text_ZanderDefeat",
+    "MtPyre_2F_Text_ZanderIntro",
+    "MtPyre_2F_Text_ZanderPostBattle"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MtPyre_2F_Text_DezDefeat|MtPyre_2F_Text_DezIntro|MtPyre_2F_Text_DezNotEnoughMons|MtPyre_2F_Text_DezPostBattle|MtPyre_2F_Text_LeahDefeat|MtPyre_2F_Text_LeahIntro|MtPyre_2F_Text_LeahPostBattle|MtPyre_2F_Text_LukeDefeat|MtPyre_2F_Text_LukeNotEnoughMons|MtPyre_2F_Text_LukePostBattle|MtPyre_2F_Text_MarkDefeat|MtPyre_2F_Text_MarkIntro|MtPyre_2F_Text_MarkPostBattle|MtPyre_2F_Text_MemoriesOfSkitty|MtPyre_2F_Text_TumbledFromFloorAbove|MtPyre_2F_Text_ZanderDefeat|MtPyre_2F_Text_ZanderIntro|MtPyre_2F_Text_ZanderPostBattle)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20103,
+    "mapped_count": 18,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MtPyre_2F_Text_DezDefeat",
+        "us_text": "0x0821B3AC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B120",
+            "jp_reference": "0x08216299",
+            "jp_text": "0x082164CB",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_DezIntro",
+        "us_text": "0x0821B33D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B11C",
+            "jp_reference": "0x08216295",
+            "jp_text": "0x08216479",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_DezNotEnoughMons",
+        "us_text": "0x0821B3E9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B124",
+            "jp_reference": "0x0821629D",
+            "jp_text": "0x082164F9",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_DezPostBattle",
+        "us_text": "0x0821B3C2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B12A",
+            "jp_reference": "0x082162A3",
+            "jp_text": "0x082164D8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LeahDefeat",
+        "us_text": "0x0821B45B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B13B",
+            "jp_reference": "0x082162B4",
+            "jp_text": "0x08216562",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LeahIntro",
+        "us_text": "0x0821B438",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B137",
+            "jp_reference": "0x082162B0",
+            "jp_text": "0x08216542",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LeahPostBattle",
+        "us_text": "0x0821B470",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B141",
+            "jp_reference": "0x082162BA",
+            "jp_text": "0x0821656E",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LukeDefeat",
+        "us_text": "0x0821B2A3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B105",
+            "jp_reference": "0x0821627E",
+            "jp_text": "0x082163F7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LukeNotEnoughMons",
+        "us_text": "0x0821B2F4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B109",
+            "jp_reference": "0x08216282",
+            "jp_text": "0x08216432",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_LukePostBattle",
+        "us_text": "0x0821B2AC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B10F",
+            "jp_reference": "0x08216288",
+            "jp_text": "0x08216400",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20103
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_MarkDefeat",
+        "us_text": "0x0821B202",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B0EE",
+            "jp_reference": "0x08216267",
+            "jp_text": "0x08216362",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20103
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_MarkIntro",
+        "us_text": "0x0821B1C8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B0EA",
+            "jp_reference": "0x08216263",
+            "jp_text": "0x0821633A",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_MarkPostBattle",
+        "us_text": "0x0821B21B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B0F4",
+            "jp_reference": "0x0821626D",
+            "jp_text": "0x08216379",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_MemoriesOfSkitty",
+        "us_text": "0x0821B15F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B0D4",
+            "jp_reference": "0x0821624D",
+            "jp_text": "0x082162D8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_TumbledFromFloorAbove",
+        "us_text": "0x0821B194",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B0DD",
+            "jp_reference": "0x08216256",
+            "jp_text": "0x08216301",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_ZanderDefeat",
+        "us_text": "0x0821B4D4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B152",
+            "jp_reference": "0x082162CB",
+            "jp_text": "0x082165B7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20103
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_ZanderIntro",
+        "us_text": "0x0821B4BD",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B14E",
+            "jp_reference": "0x082162C7",
+            "jp_text": "0x082165A3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20103
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_2F_Text_ZanderPostBattle",
+        "us_text": "0x0821B4E2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B158",
+            "jp_reference": "0x082162D1",
+            "jp_text": "0x082165C3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20103
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 18,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

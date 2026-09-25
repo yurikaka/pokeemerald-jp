@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "batch": "107_fortreecity_house1.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+      "address": "0x08204267",
+      "original": "0x08204334",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_MonYouTakeCare",
+      "address": "0x08204242",
+      "original": "0x082042E3",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_ThisIsntAMon",
+      "address": "0x0820425D",
+      "original": "0x08204305",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_TradingMemoriesWithOthers",
+      "address": "0x08204271",
+      "original": "0x0820435F",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_YouWillTradeWontYou",
+      "address": "0x082041EC",
+      "original": "0x0820428B",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_YouWontTradeMe",
+      "address": "0x0820424F",
+      "original": "0x08204314",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House1_Text_Zigzagoon",
+      "address": "0x08204282",
+      "original": "0x08204392",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+    "FortreeCity_House1_Text_MonYouTakeCare",
+    "FortreeCity_House1_Text_ThisIsntAMon",
+    "FortreeCity_House1_Text_TradingMemoriesWithOthers",
+    "FortreeCity_House1_Text_YouWillTradeWontYou",
+    "FortreeCity_House1_Text_YouWontTradeMe",
+    "FortreeCity_House1_Text_Zigzagoon"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FortreeCity_House1_Text_GoingToMakeVolbeatStrong|FortreeCity_House1_Text_MonYouTakeCare|FortreeCity_House1_Text_ThisIsntAMon|FortreeCity_House1_Text_TradingMemoriesWithOthers|FortreeCity_House1_Text_YouWillTradeWontYou|FortreeCity_House1_Text_YouWontTradeMe|FortreeCity_House1_Text_Zigzagoon)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -13868,
+    "mapped_count": 7,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+        "us_text": "0x082079A5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08207893",
+            "jp_reference": "0x08204267",
+            "jp_text": "0x08204334",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_MonYouTakeCare",
+        "us_text": "0x08207942",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820786E",
+            "jp_reference": "0x08204242",
+            "jp_text": "0x082042E3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13868
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_ThisIsntAMon",
+        "us_text": "0x08207963",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08207889",
+            "jp_reference": "0x0820425D",
+            "jp_text": "0x08204305",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_TradingMemoriesWithOthers",
+        "us_text": "0x082079DF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820789D",
+            "jp_reference": "0x08204271",
+            "jp_text": "0x0820435F",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13868
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_YouWillTradeWontYou",
+        "us_text": "0x082078B7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08207818",
+            "jp_reference": "0x082041EC",
+            "jp_text": "0x0820428B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13868
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_YouWontTradeMe",
+        "us_text": "0x08207978",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820787B",
+            "jp_reference": "0x0820424F",
+            "jp_text": "0x08204314",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House1_Text_Zigzagoon",
+        "us_text": "0x08207A11",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082078AE",
+            "jp_reference": "0x08204282",
+            "jp_text": "0x08204392",
+            "mapping_method": "regional_delta",
+            "reference_delta": -13868
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 7,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

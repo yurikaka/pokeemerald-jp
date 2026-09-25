@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "070_route110_trickhousepuzzle8.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_KeiraDefeat",
+      "address": "0x0824049A",
+      "original": "0x08240573",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_KeiraIntro",
+      "address": "0x08240496",
+      "original": "0x08240557",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_KeiraPostBattle",
+      "address": "0x082404A0",
+      "original": "0x08240586",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_LeroyDefeat",
+      "address": "0x082404B1",
+      "original": "0x082405C7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_LeroyIntro",
+      "address": "0x082404AD",
+      "original": "0x082405A5",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_LeroyPostBattle",
+      "address": "0x082404B7",
+      "original": "0x082405DC",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_VincentDefeat",
+      "address": "0x08240483",
+      "original": "0x0824051E",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_VincentIntro",
+      "address": "0x0824047F",
+      "original": "0x08240502",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_VincentPostBattle",
+      "address": "0x08240489",
+      "original": "0x08240533",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened",
+      "address": "0x0823D186",
+      "original": "0x082404BE",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route110_TrickHousePuzzle8_Text_KeiraDefeat",
+    "Route110_TrickHousePuzzle8_Text_KeiraIntro",
+    "Route110_TrickHousePuzzle8_Text_KeiraPostBattle",
+    "Route110_TrickHousePuzzle8_Text_LeroyDefeat",
+    "Route110_TrickHousePuzzle8_Text_LeroyIntro",
+    "Route110_TrickHousePuzzle8_Text_LeroyPostBattle",
+    "Route110_TrickHousePuzzle8_Text_VincentDefeat",
+    "Route110_TrickHousePuzzle8_Text_VincentIntro",
+    "Route110_TrickHousePuzzle8_Text_VincentPostBattle",
+    "Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route110_TrickHousePuzzle8_Text_KeiraDefeat|Route110_TrickHousePuzzle8_Text_KeiraIntro|Route110_TrickHousePuzzle8_Text_KeiraPostBattle|Route110_TrickHousePuzzle8_Text_LeroyDefeat|Route110_TrickHousePuzzle8_Text_LeroyIntro|Route110_TrickHousePuzzle8_Text_LeroyPostBattle|Route110_TrickHousePuzzle8_Text_VincentDefeat|Route110_TrickHousePuzzle8_Text_VincentIntro|Route110_TrickHousePuzzle8_Text_VincentPostBattle|Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33992,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_KeiraDefeat",
+        "us_text": "0x08248A3F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248962",
+            "jp_reference": "0x0824049A",
+            "jp_text": "0x08240573",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_KeiraIntro",
+        "us_text": "0x08248A21",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824895E",
+            "jp_reference": "0x08240496",
+            "jp_text": "0x08240557",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_KeiraPostBattle",
+        "us_text": "0x08248A55",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248968",
+            "jp_reference": "0x082404A0",
+            "jp_text": "0x08240586",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_LeroyDefeat",
+        "us_text": "0x08248A98",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248979",
+            "jp_reference": "0x082404B1",
+            "jp_text": "0x082405C7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33992
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_LeroyIntro",
+        "us_text": "0x08248A7B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248975",
+            "jp_reference": "0x082404AD",
+            "jp_text": "0x082405A5",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33992
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_LeroyPostBattle",
+        "us_text": "0x08248AB5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824897F",
+            "jp_reference": "0x082404B7",
+            "jp_text": "0x082405DC",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33992
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_VincentDefeat",
+        "us_text": "0x082489E2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824894B",
+            "jp_reference": "0x08240483",
+            "jp_text": "0x0824051E",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_VincentIntro",
+        "us_text": "0x082489C6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248947",
+            "jp_reference": "0x0824047F",
+            "jp_text": "0x08240502",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_VincentPostBattle",
+        "us_text": "0x082489FB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08248951",
+            "jp_reference": "0x08240489",
+            "jp_text": "0x08240533",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened",
+        "us_text": "0x08248986",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824530F",
+            "jp_reference": "0x0823D186",
+            "jp_text": "0x082404BE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "095_meteorfalls_1f_1r.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_ArchieFarewell",
+      "address": "0x08212CB1",
+      "original": "0x08212F67",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_ArchieSeenYouBefore",
+      "address": "0x08212C73",
+      "original": "0x08212E68",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo",
+      "address": "0x08212C9F",
+      "original": "0x08212F38",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua",
+      "address": "0x08212C42",
+      "original": "0x08212DF2",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma",
+      "address": "0x08212C8D",
+      "original": "0x08212F20",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma",
+      "address": "0x08212BD8",
+      "original": "0x08212D96",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_HoldItRightThereMagma",
+      "address": "0x08212BEB",
+      "original": "0x08212DC3",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_MeetProfCozmo",
+      "address": "0x08212D5F",
+      "original": "0x08212F92",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney",
+      "address": "0x08212D69",
+      "original": "0x0821303C",
+      "count": 1
+    },
+    {
+      "source_symbol": "MeteorFalls_1F_1R_Text_WithThisMeteorite",
+      "address": "0x08212BA7",
+      "original": "0x08212D71",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MeteorFalls_1F_1R_Text_ArchieFarewell",
+    "MeteorFalls_1F_1R_Text_ArchieSeenYouBefore",
+    "MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo",
+    "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua",
+    "MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma",
+    "MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma",
+    "MeteorFalls_1F_1R_Text_HoldItRightThereMagma",
+    "MeteorFalls_1F_1R_Text_MeetProfCozmo",
+    "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney",
+    "MeteorFalls_1F_1R_Text_WithThisMeteorite"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MeteorFalls_1F_1R_Text_ArchieFarewell|MeteorFalls_1F_1R_Text_ArchieSeenYouBefore|MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo|MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua|MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma|MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma|MeteorFalls_1F_1R_Text_HoldItRightThereMagma|MeteorFalls_1F_1R_Text_MeetProfCozmo|MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney|MeteorFalls_1F_1R_Text_WithThisMeteorite)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18505,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_ArchieFarewell",
+        "us_text": "0x082177FC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082174FA",
+            "jp_reference": "0x08212CB1",
+            "jp_text": "0x08212F67",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_ArchieSeenYouBefore",
+        "us_text": "0x082176D4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082174BC",
+            "jp_reference": "0x08212C73",
+            "jp_text": "0x08212E68",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo",
+        "us_text": "0x082177C0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082174E8",
+            "jp_reference": "0x08212C9F",
+            "jp_text": "0x08212F38",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua",
+        "us_text": "0x08217658",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821748B",
+            "jp_reference": "0x08212C42",
+            "jp_text": "0x08212DF2",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma",
+        "us_text": "0x082177A3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082174D6",
+            "jp_reference": "0x08212C8D",
+            "jp_text": "0x08212F20",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma",
+        "us_text": "0x082175E1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217421",
+            "jp_reference": "0x08212BD8",
+            "jp_text": "0x08212D96",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_HoldItRightThereMagma",
+        "us_text": "0x0821761B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217434",
+            "jp_reference": "0x08212BEB",
+            "jp_text": "0x08212DC3",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_MeetProfCozmo",
+        "us_text": "0x08217827",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082175A8",
+            "jp_reference": "0x08212D5F",
+            "jp_text": "0x08212F92",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18505
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney",
+        "us_text": "0x08217900",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082175B2",
+            "jp_reference": "0x08212D69",
+            "jp_text": "0x0821303C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18505
+          }
+        ]
+      },
+      {
+        "symbol": "MeteorFalls_1F_1R_Text_WithThisMeteorite",
+        "us_text": "0x082175BA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082173F0",
+            "jp_reference": "0x08212BA7",
+            "jp_text": "0x08212D71",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

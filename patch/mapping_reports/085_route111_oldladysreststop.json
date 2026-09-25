@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "batch": "085_route111_oldladysreststop.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route111_OldLadysRestStop_Text_DontNeedToBeShy",
+      "address": "0x08211E47",
+      "original": "0x08211EE0",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_OldLadysRestStop_Text_RestUpHere",
+      "address": "0x08211DFB",
+      "original": "0x08211E4F",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest",
+      "address": "0x08211E28",
+      "original": "0x08211EA6",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route111_OldLadysRestStop_Text_TakeYourTimeRestUp",
+      "address": "0x08211E1A",
+      "original": "0x08211E90",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route111_OldLadysRestStop_Text_DontNeedToBeShy",
+    "Route111_OldLadysRestStop_Text_RestUpHere",
+    "Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest",
+    "Route111_OldLadysRestStop_Text_TakeYourTimeRestUp"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route111_OldLadysRestStop_Text_DontNeedToBeShy|Route111_OldLadysRestStop_Text_RestUpHere|Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest|Route111_OldLadysRestStop_Text_TakeYourTimeRestUp)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18301,
+    "mapped_count": 4,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route111_OldLadysRestStop_Text_DontNeedToBeShy",
+        "us_text": "0x08216688",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082165C4",
+            "jp_reference": "0x08211E47",
+            "jp_text": "0x08211EE0",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18301
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_OldLadysRestStop_Text_RestUpHere",
+        "us_text": "0x082165CC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216578",
+            "jp_reference": "0x08211DFB",
+            "jp_text": "0x08211E4F",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18301
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest",
+        "us_text": "0x0821663A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082165A5",
+            "jp_reference": "0x08211E28",
+            "jp_text": "0x08211EA6",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route111_OldLadysRestStop_Text_TakeYourTimeRestUp",
+        "us_text": "0x08216621",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216597",
+            "jp_reference": "0x08211E1A",
+            "jp_text": "0x08211E90",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 4,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

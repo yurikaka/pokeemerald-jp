@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "batch": "021_route106.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route106_Text_DouglasDefeated",
+      "address": "0x081E83DE",
+      "original": "0x0825A754",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_DouglasIntro",
+      "address": "0x081E83DA",
+      "original": "0x0825A72C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_DouglasPostBattle",
+      "address": "0x081E83E4",
+      "original": "0x0825A75E",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotDefeated",
+      "address": "0x081E840C",
+      "original": "0x0825A5F1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotIntro",
+      "address": "0x081E8408",
+      "original": "0x0825A5D9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotPostBattle",
+      "address": "0x081E8426",
+      "original": "0x0825A60D",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotRegister",
+      "address": "0x081E8436",
+      "original": "0x0825A631",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotRematchDefeated",
+      "address": "0x081E8457",
+      "original": "0x0825A679",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotRematchIntro",
+      "address": "0x081E8453",
+      "original": "0x0825A657",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_ElliotRematchPostBattle",
+      "address": "0x081E845D",
+      "original": "0x0825A68A",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_KylaDefeated",
+      "address": "0x081E83F5",
+      "original": "0x0825A797",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_KylaIntro",
+      "address": "0x081E83F1",
+      "original": "0x0825A775",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_KylaPostBattle",
+      "address": "0x081E83FB",
+      "original": "0x0825A7AB",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_NedDefeated",
+      "address": "0x081E846E",
+      "original": "0x0825A6F8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_NedIntro",
+      "address": "0x081E846A",
+      "original": "0x0825A6B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_NedPostBattle",
+      "address": "0x081E8474",
+      "original": "0x0825A714",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route106_Text_TrainerTips",
+      "address": "0x081E83CD",
+      "original": "0x081E847B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route106_Text_DouglasDefeated",
+    "Route106_Text_DouglasIntro",
+    "Route106_Text_DouglasPostBattle",
+    "Route106_Text_ElliotDefeated",
+    "Route106_Text_ElliotIntro",
+    "Route106_Text_ElliotPostBattle",
+    "Route106_Text_ElliotRegister",
+    "Route106_Text_ElliotRematchDefeated",
+    "Route106_Text_ElliotRematchIntro",
+    "Route106_Text_ElliotRematchPostBattle",
+    "Route106_Text_KylaDefeated",
+    "Route106_Text_KylaIntro",
+    "Route106_Text_KylaPostBattle",
+    "Route106_Text_NedDefeated",
+    "Route106_Text_NedIntro",
+    "Route106_Text_NedPostBattle",
+    "Route106_Text_TrainerTips"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route106_Text_DouglasDefeated|Route106_Text_DouglasIntro|Route106_Text_DouglasPostBattle|Route106_Text_ElliotDefeated|Route106_Text_ElliotIntro|Route106_Text_ElliotPostBattle|Route106_Text_ElliotRegister|Route106_Text_ElliotRematchDefeated|Route106_Text_ElliotRematchIntro|Route106_Text_ElliotRematchPostBattle|Route106_Text_KylaDefeated|Route106_Text_KylaIntro|Route106_Text_KylaPostBattle|Route106_Text_NedDefeated|Route106_Text_NedIntro|Route106_Text_NedPostBattle|Route106_Text_TrainerTips)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -6829,
+    "mapped_count": 17,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route106_Text_DouglasDefeated",
+        "us_text": "0x082658F6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9E8B",
+            "jp_reference": "0x081E83DE",
+            "jp_text": "0x0825A754",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_DouglasIntro",
+        "us_text": "0x082658C3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9E87",
+            "jp_reference": "0x081E83DA",
+            "jp_text": "0x0825A72C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_DouglasPostBattle",
+        "us_text": "0x08265900",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9E91",
+            "jp_reference": "0x081E83E4",
+            "jp_text": "0x0825A75E",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotDefeated",
+        "us_text": "0x08265739",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9EB9",
+            "jp_reference": "0x081E840C",
+            "jp_text": "0x0825A5F1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotIntro",
+        "us_text": "0x08265714",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9EB5",
+            "jp_reference": "0x081E8408",
+            "jp_text": "0x0825A5D9",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotPostBattle",
+        "us_text": "0x0826575B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9ED3",
+            "jp_reference": "0x081E8426",
+            "jp_text": "0x0825A60D",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotRegister",
+        "us_text": "0x0826578B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9EE3",
+            "jp_reference": "0x081E8436",
+            "jp_text": "0x0825A631",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotRematchDefeated",
+        "us_text": "0x082657EF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F04",
+            "jp_reference": "0x081E8457",
+            "jp_text": "0x0825A679",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotRematchIntro",
+        "us_text": "0x082657C1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F00",
+            "jp_reference": "0x081E8453",
+            "jp_text": "0x0825A657",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_ElliotRematchPostBattle",
+        "us_text": "0x08265801",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F0A",
+            "jp_reference": "0x081E845D",
+            "jp_text": "0x0825A68A",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_KylaDefeated",
+        "us_text": "0x08265945",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9EA2",
+            "jp_reference": "0x081E83F5",
+            "jp_text": "0x0825A797",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_KylaIntro",
+        "us_text": "0x08265919",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9E9E",
+            "jp_reference": "0x081E83F1",
+            "jp_text": "0x0825A775",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_KylaPostBattle",
+        "us_text": "0x08265957",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9EA8",
+            "jp_reference": "0x081E83FB",
+            "jp_text": "0x0825A7AB",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_NedDefeated",
+        "us_text": "0x0826587C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F1B",
+            "jp_reference": "0x081E846E",
+            "jp_text": "0x0825A6F8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_NedIntro",
+        "us_text": "0x08265828",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F17",
+            "jp_reference": "0x081E846A",
+            "jp_text": "0x0825A6B0",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_NedPostBattle",
+        "us_text": "0x0826589F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9F21",
+            "jp_reference": "0x081E8474",
+            "jp_text": "0x0825A714",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      },
+      {
+        "symbol": "Route106_Text_TrainerTips",
+        "us_text": "0x081E9F28",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E9E7A",
+            "jp_reference": "0x081E83CD",
+            "jp_text": "0x081E847B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6829
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 17,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

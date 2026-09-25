@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "batch": "018_mr_brineys_house.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_DeclineDeliverySail",
+      "address": "0x082116D7",
+      "original": "0x0821181B",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford",
+      "address": "0x08211659",
+      "original": "0x08211749",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford",
+      "address": "0x082116BE",
+      "original": "0x082118C7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford",
+      "address": "0x082116A5",
+      "original": "0x0821185C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_Peeko",
+      "address": "0x08211729",
+      "original": "0x082119A3",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_SetSailForDewford",
+      "address": "0x082116EB",
+      "original": "0x082117FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail",
+      "address": "0x082116E1",
+      "original": "0x0821195C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_WaitUpPeeko",
+      "address": "0x08211651",
+      "original": "0x08211732",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route104_MrBrineysHouse_Text_WhereAreWeBound",
+      "address": "0x08211671",
+      "original": "0x0821192C",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route104_MrBrineysHouse_Text_DeclineDeliverySail",
+    "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford",
+    "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford",
+    "Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford",
+    "Route104_MrBrineysHouse_Text_Peeko",
+    "Route104_MrBrineysHouse_Text_SetSailForDewford",
+    "Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail",
+    "Route104_MrBrineysHouse_Text_WaitUpPeeko",
+    "Route104_MrBrineysHouse_Text_WhereAreWeBound"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route104_MrBrineysHouse_Text_DeclineDeliverySail|Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford|Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford|Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford|Route104_MrBrineysHouse_Text_Peeko|Route104_MrBrineysHouse_Text_SetSailForDewford|Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail|Route104_MrBrineysHouse_Text_WaitUpPeeko|Route104_MrBrineysHouse_Text_WhereAreWeBound)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18285,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_DeclineDeliverySail",
+        "us_text": "0x08215FB2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E44",
+            "jp_reference": "0x082116D7",
+            "jp_text": "0x0821181B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford",
+        "us_text": "0x08215EBC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215DC6",
+            "jp_reference": "0x08211659",
+            "jp_text": "0x08211749",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_NeedToDeliverPackageSailToDewford",
+        "us_text": "0x08216057",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E2B",
+            "jp_reference": "0x082116BE",
+            "jp_text": "0x082118C7",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_NeedToMakeDeliveriesSailToDewford",
+        "us_text": "0x08215FDF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E12",
+            "jp_reference": "0x082116A5",
+            "jp_text": "0x0821185C",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_Peeko",
+        "us_text": "0x0821612C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E96",
+            "jp_reference": "0x08211729",
+            "jp_text": "0x082119A3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18285
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_SetSailForDewford",
+        "us_text": "0x08215F81",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E58",
+            "jp_reference": "0x082116EB",
+            "jp_text": "0x082117FE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail",
+        "us_text": "0x082160F9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215E4E",
+            "jp_reference": "0x082116E1",
+            "jp_text": "0x0821195C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_WaitUpPeeko",
+        "us_text": "0x08215E9F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215DBE",
+            "jp_reference": "0x08211651",
+            "jp_text": "0x08211732",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route104_MrBrineysHouse_Text_WhereAreWeBound",
+        "us_text": "0x082160C2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08215DDE",
+            "jp_reference": "0x08211671",
+            "jp_text": "0x0821192C",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 9,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

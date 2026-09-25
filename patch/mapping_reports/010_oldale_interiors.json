@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "batch": "010_oldale_interiors.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+      "address": "0x081F28D6",
+      "original": "0x081F28DD",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_House2_Text_PokemonLevelUp",
+      "address": "0x081F294C",
+      "original": "0x081F295C",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon",
+      "address": "0x081F2955",
+      "original": "0x081F297B",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Mart_Text_ImGoingToBuyPokeBalls",
+      "address": "0x081F2B6D",
+      "original": "0x081F2B9E",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Mart_Text_PokeBallsAreSoldOut",
+      "address": "0x081F2B63",
+      "original": "0x081F2B7E",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_Mart_Text_RestoreHPWithPotion",
+      "address": "0x081F2B77",
+      "original": "0x081F2BC5",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat",
+      "address": "0x081F29CF",
+      "original": "0x081F2A31",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub",
+      "address": "0x081F29ED",
+      "original": "0x081F2AA9",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC",
+      "address": "0x081F29C6",
+      "original": "0x081F29F5",
+      "count": 1
+    },
+    {
+      "source_symbol": "OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable",
+      "address": "0x081F29E3",
+      "original": "0x081F2A73",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+    "OldaleTown_House2_Text_PokemonLevelUp",
+    "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon",
+    "OldaleTown_Mart_Text_ImGoingToBuyPokeBalls",
+    "OldaleTown_Mart_Text_PokeBallsAreSoldOut",
+    "OldaleTown_Mart_Text_RestoreHPWithPotion",
+    "OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat",
+    "OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub",
+    "OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC",
+    "OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:OldaleTown_House1_Text_LeftPokemonGoesOutFirst|OldaleTown_House2_Text_PokemonLevelUp|OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon|OldaleTown_Mart_Text_ImGoingToBuyPokeBalls|OldaleTown_Mart_Text_PokeBallsAreSoldOut|OldaleTown_Mart_Text_RestoreHPWithPotion|OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat|OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub|OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC|OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -8583,
+    "mapped_count": 8,
+    "unresolved_count": 2,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon",
+        "us_text": "0x081F4B01",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4AD8",
+            "jp_reference": "0x081F2955",
+            "jp_text": "0x081F297B",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Mart_Text_ImGoingToBuyPokeBalls",
+        "us_text": "0x081F4D3F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4D15",
+            "jp_reference": "0x081F2B6D",
+            "jp_text": "0x081F2B9E",
+            "mapping_method": "nearest_local_anchor",
+            "anchor_us_reference": "0x081F4D0B",
+            "anchor_jp_reference": "0x081F2B63"
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Mart_Text_PokeBallsAreSoldOut",
+        "us_text": "0x081F4D26",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4D0B",
+            "jp_reference": "0x081F2B63",
+            "jp_text": "0x081F2B7E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_Mart_Text_RestoreHPWithPotion",
+        "us_text": "0x081F4D69",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4D1F",
+            "jp_reference": "0x081F2B77",
+            "jp_text": "0x081F2BC5",
+            "mapping_method": "nearest_local_anchor",
+            "anchor_us_reference": "0x081F4D0B",
+            "anchor_jp_reference": "0x081F2B63"
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_PokemonCenter_1F_Text_PokemonCentersAreGreat",
+        "us_text": "0x081F4BC5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4B56",
+            "jp_reference": "0x081F29CF",
+            "jp_text": "0x081F2A31",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub",
+        "us_text": "0x081F4C4D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4B74",
+            "jp_reference": "0x081F29ED",
+            "jp_text": "0x081F2AA9",
+            "mapping_method": "regional_delta",
+            "reference_delta": -8583
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_PokemonCenter_1F_Text_TrainersCanUsePC",
+        "us_text": "0x081F4B7C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4B4D",
+            "jp_reference": "0x081F29C6",
+            "jp_text": "0x081F29F5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "OldaleTown_PokemonCenter_1F_Text_WirelessClubNotAvailable",
+        "us_text": "0x081F4C11",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F4B6A",
+            "jp_reference": "0x081F29E3",
+            "jp_text": "0x081F2A73",
+            "mapping_method": "regional_delta",
+            "reference_delta": -8583
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      {
+        "symbol": "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+        "us_text": "0x081F4A50",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "OldaleTown_House2_Text_PokemonLevelUp",
+        "us_text": "0x081F4ADF",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [
+      {
+        "source_symbol": "OldaleTown_House1_Text_LeftPokemonGoesOutFirst",
+        "address": "0x081F28D6",
+        "original": "0x081F28DD",
+        "count": 1
+      },
+      {
+        "source_symbol": "OldaleTown_House2_Text_PokemonLevelUp",
+        "address": "0x081F294C",
+        "original": "0x081F295C",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

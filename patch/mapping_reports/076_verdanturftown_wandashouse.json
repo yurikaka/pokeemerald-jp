@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "batch": "076_verdanturftown_wandashouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay",
+      "address": "0x081F715C",
+      "original": "0x081F742C",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven",
+      "address": "0x081F71B4",
+      "original": "0x081F7450",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging",
+      "address": "0x081F71BE",
+      "original": "0x081F74B7",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+      "address": "0x081F7179",
+      "original": "0x081F73E3",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+      "address": "0x081F718D",
+      "original": "0x081F73E3",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally",
+      "address": "0x081F71C8",
+      "original": "0x081F74ED",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_MeetWanda",
+      "address": "0x081F7183",
+      "original": "0x081F7378",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_StrongerSpeech",
+      "address": "0x081F7113",
+      "original": "0x081F71DA",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort",
+      "address": "0x081F7120",
+      "original": "0x081F7267",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar",
+      "address": "0x081F7152",
+      "original": "0x081F733A",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_WallySlippedOff",
+      "address": "0x081F7148",
+      "original": "0x081F731F",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande",
+      "address": "0x081F71D2",
+      "original": "0x081F7524",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_WandasHouse_Text_WallysNextDoor",
+      "address": "0x081F713E",
+      "original": "0x081F729B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay",
+    "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven",
+    "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging",
+    "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+    "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally",
+    "VerdanturfTown_WandasHouse_Text_MeetWanda",
+    "VerdanturfTown_WandasHouse_Text_StrongerSpeech",
+    "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort",
+    "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar",
+    "VerdanturfTown_WandasHouse_Text_WallySlippedOff",
+    "VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande",
+    "VerdanturfTown_WandasHouse_Text_WallysNextDoor"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay|VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven|VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging|VerdanturfTown_WandasHouse_Text_DontWorryAboutWally|VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally|VerdanturfTown_WandasHouse_Text_MeetWanda|VerdanturfTown_WandasHouse_Text_StrongerSpeech|VerdanturfTown_WandasHouse_Text_StrongerSpeechShort|VerdanturfTown_WandasHouse_Text_WallyGoneThatFar|VerdanturfTown_WandasHouse_Text_WallySlippedOff|VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande|VerdanturfTown_WandasHouse_Text_WallysNextDoor)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -10138,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_CanSeeGirlfriendEveryDay",
+        "us_text": "0x081F9C25",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98F6",
+            "jp_reference": "0x081F715C",
+            "jp_text": "0x081F742C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendDriven",
+        "us_text": "0x081F9C63",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F994E",
+            "jp_reference": "0x081F71B4",
+            "jp_text": "0x081F7450",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_DaughtersBoyfriendWasDigging",
+        "us_text": "0x081F9CCD",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9958",
+            "jp_reference": "0x081F71BE",
+            "jp_text": "0x081F74B7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10138
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_DontWorryAboutWally",
+        "us_text": "0x081F9BE2",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081F9913",
+            "jp_reference": "0x081F7179",
+            "jp_text": "0x081F73E3",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x081F9927",
+            "jp_reference": "0x081F718D",
+            "jp_text": "0x081F73E3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_IfAnythingHappenedToWally",
+        "us_text": "0x081F9CFF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F9962",
+            "jp_reference": "0x081F71C8",
+            "jp_text": "0x081F74ED",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10138
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_MeetWanda",
+        "us_text": "0x081F9B6F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F991D",
+            "jp_reference": "0x081F7183",
+            "jp_text": "0x081F7378",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_StrongerSpeech",
+        "us_text": "0x081F9974",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98AD",
+            "jp_reference": "0x081F7113",
+            "jp_text": "0x081F71DA",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_StrongerSpeechShort",
+        "us_text": "0x081F9A22",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98BA",
+            "jp_reference": "0x081F7120",
+            "jp_text": "0x081F7267",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_WallyGoneThatFar",
+        "us_text": "0x081F9B17",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98EC",
+            "jp_reference": "0x081F7152",
+            "jp_text": "0x081F733A",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_WallySlippedOff",
+        "us_text": "0x081F9AF9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98E2",
+            "jp_reference": "0x081F7148",
+            "jp_text": "0x081F731F",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_WallyWasInEverGrande",
+        "us_text": "0x081F9D37",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F996C",
+            "jp_reference": "0x081F71D2",
+            "jp_text": "0x081F7524",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10138
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_WandasHouse_Text_WallysNextDoor",
+        "us_text": "0x081F9A64",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F98D8",
+            "jp_reference": "0x081F713E",
+            "jp_text": "0x081F729B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 13,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

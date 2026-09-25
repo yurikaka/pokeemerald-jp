@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "batch": "112_route119_weatherinstitute_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs",
+      "address": "0x0824121D",
+      "original": "0x08241380",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt1Defeat",
+      "address": "0x08241290",
+      "original": "0x082412E9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt1Intro",
+      "address": "0x0824128C",
+      "original": "0x082412B4",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt1PostBattle",
+      "address": "0x08241296",
+      "original": "0x082412F8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt4Defeat",
+      "address": "0x082412A7",
+      "original": "0x0824134A",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt4Intro",
+      "address": "0x082412A3",
+      "original": "0x08241330",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle",
+      "address": "0x082412AD",
+      "original": "0x08241358",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather",
+      "address": "0x08241254",
+      "original": "0x0824142D",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_ProfStudyingRain",
+      "address": "0x08241264",
+      "original": "0x082413CC",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_TakeRestInBed",
+      "address": "0x08241278",
+      "original": "0x082414D3",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo",
+      "address": "0x0824126E",
+      "original": "0x08241490",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route119_WeatherInstitute_1F_Text_WowYoureStrong",
+      "address": "0x08241213",
+      "original": "0x082413A3",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs",
+    "Route119_WeatherInstitute_1F_Text_Grunt1Defeat",
+    "Route119_WeatherInstitute_1F_Text_Grunt1Intro",
+    "Route119_WeatherInstitute_1F_Text_Grunt1PostBattle",
+    "Route119_WeatherInstitute_1F_Text_Grunt4Defeat",
+    "Route119_WeatherInstitute_1F_Text_Grunt4Intro",
+    "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle",
+    "Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather",
+    "Route119_WeatherInstitute_1F_Text_ProfStudyingRain",
+    "Route119_WeatherInstitute_1F_Text_TakeRestInBed",
+    "Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo",
+    "Route119_WeatherInstitute_1F_Text_WowYoureStrong"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs|Route119_WeatherInstitute_1F_Text_Grunt1Defeat|Route119_WeatherInstitute_1F_Text_Grunt1Intro|Route119_WeatherInstitute_1F_Text_Grunt1PostBattle|Route119_WeatherInstitute_1F_Text_Grunt4Defeat|Route119_WeatherInstitute_1F_Text_Grunt4Intro|Route119_WeatherInstitute_1F_Text_Grunt4PostBattle|Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather|Route119_WeatherInstitute_1F_Text_ProfStudyingRain|Route119_WeatherInstitute_1F_Text_TakeRestInBed|Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo|Route119_WeatherInstitute_1F_Text_WowYoureStrong)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -34217,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_EveryoneWentUpstairs",
+        "us_text": "0x0824993D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082497C6",
+            "jp_reference": "0x0824121D",
+            "jp_text": "0x08241380",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt1Defeat",
+        "us_text": "0x08249895",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249839",
+            "jp_reference": "0x08241290",
+            "jp_text": "0x082412E9",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt1Intro",
+        "us_text": "0x0824985D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249835",
+            "jp_reference": "0x0824128C",
+            "jp_text": "0x082412B4",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt1PostBattle",
+        "us_text": "0x082498AB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824983F",
+            "jp_reference": "0x08241296",
+            "jp_text": "0x082412F8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt4Defeat",
+        "us_text": "0x082498F9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249850",
+            "jp_reference": "0x082412A7",
+            "jp_text": "0x0824134A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34217
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt4Intro",
+        "us_text": "0x082498E1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824984C",
+            "jp_reference": "0x082412A3",
+            "jp_text": "0x08241330",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34217
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_Grunt4PostBattle",
+        "us_text": "0x08249906",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249856",
+            "jp_reference": "0x082412AD",
+            "jp_text": "0x08241358",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34217
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_NoticingAbnormalWeather",
+        "us_text": "0x082499F7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082497FD",
+            "jp_reference": "0x08241254",
+            "jp_text": "0x0824142D",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_ProfStudyingRain",
+        "us_text": "0x08249986",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824980D",
+            "jp_reference": "0x08241264",
+            "jp_text": "0x082413CC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_TakeRestInBed",
+        "us_text": "0x08249A97",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249821",
+            "jp_reference": "0x08241278",
+            "jp_text": "0x082414D3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_WhatWereAquasUpTo",
+        "us_text": "0x08249A5C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08249817",
+            "jp_reference": "0x0824126E",
+            "jp_text": "0x08241490",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route119_WeatherInstitute_1F_Text_WowYoureStrong",
+        "us_text": "0x0824995A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082497BC",
+            "jp_reference": "0x08241213",
+            "jp_text": "0x082413A3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -34217
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 12,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

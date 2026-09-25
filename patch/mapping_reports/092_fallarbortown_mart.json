@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "batch": "092_fallarbortown_mart.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FallarborTown_Mart_Text_DecidingSkittyEvolve",
+      "address": "0x081F50CE",
+      "original": "0x081F50F1",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_Mart_Text_SellNuggetIFound",
+      "address": "0x081F50D7",
+      "original": "0x081F5152",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_Mart_Text_Skitty",
+      "address": "0x081F50E8",
+      "original": "0x081F5148",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FallarborTown_Mart_Text_DecidingSkittyEvolve",
+    "FallarborTown_Mart_Text_SellNuggetIFound",
+    "FallarborTown_Mart_Text_Skitty"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FallarborTown_Mart_Text_DecidingSkittyEvolve|FallarborTown_Mart_Text_SellNuggetIFound|FallarborTown_Mart_Text_Skitty)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -9456,
+    "mapped_count": 3,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FallarborTown_Mart_Text_DecidingSkittyEvolve",
+        "us_text": "0x081F75E1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F75BE",
+            "jp_reference": "0x081F50CE",
+            "jp_text": "0x081F50F1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_Mart_Text_SellNuggetIFound",
+        "us_text": "0x081F7673",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F75C7",
+            "jp_reference": "0x081F50D7",
+            "jp_text": "0x081F5152",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9456
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_Mart_Text_Skitty",
+        "us_text": "0x081F7664",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F75D8",
+            "jp_reference": "0x081F50E8",
+            "jp_text": "0x081F5148",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9456
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 3,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

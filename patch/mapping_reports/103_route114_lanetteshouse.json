@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "batch": "103_route114_lanetteshouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_ClosedTheNotebook",
+      "address": "0x08212528",
+      "original": "0x08212763",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_EmailFromBill",
+      "address": "0x08212550",
+      "original": "0x08212770",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_EverythingClutteredKeepThis",
+      "address": "0x082124EB",
+      "original": "0x08212557",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_OrganizeYourBoxes",
+      "address": "0x0821250A",
+      "original": "0x082125B8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_ResearchNotesPage1",
+      "address": "0x08212515",
+      "original": "0x0821260C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_ResearchNotesPage2",
+      "address": "0x08212532",
+      "original": "0x08212680",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route114_LanettesHouse_Text_ResearchNotesPage3",
+      "address": "0x08212547",
+      "original": "0x082126E6",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route114_LanettesHouse_Text_ClosedTheNotebook",
+    "Route114_LanettesHouse_Text_EmailFromBill",
+    "Route114_LanettesHouse_Text_EverythingClutteredKeepThis",
+    "Route114_LanettesHouse_Text_OrganizeYourBoxes",
+    "Route114_LanettesHouse_Text_ResearchNotesPage1",
+    "Route114_LanettesHouse_Text_ResearchNotesPage2",
+    "Route114_LanettesHouse_Text_ResearchNotesPage3"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route114_LanettesHouse_Text_ClosedTheNotebook|Route114_LanettesHouse_Text_EmailFromBill|Route114_LanettesHouse_Text_EverythingClutteredKeepThis|Route114_LanettesHouse_Text_OrganizeYourBoxes|Route114_LanettesHouse_Text_ResearchNotesPage1|Route114_LanettesHouse_Text_ResearchNotesPage2|Route114_LanettesHouse_Text_ResearchNotesPage3)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18328,
+    "mapped_count": 7,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route114_LanettesHouse_Text_ClosedTheNotebook",
+        "us_text": "0x08216F2B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CC0",
+            "jp_reference": "0x08212528",
+            "jp_text": "0x08212763",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_EmailFromBill",
+        "us_text": "0x08216F3B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CE8",
+            "jp_reference": "0x08212550",
+            "jp_text": "0x08212770",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18328
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_EverythingClutteredKeepThis",
+        "us_text": "0x08216CEF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216C83",
+            "jp_reference": "0x082124EB",
+            "jp_text": "0x08212557",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_OrganizeYourBoxes",
+        "us_text": "0x08216D65",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CA2",
+            "jp_reference": "0x0821250A",
+            "jp_text": "0x082125B8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_ResearchNotesPage1",
+        "us_text": "0x08216DB4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CAD",
+            "jp_reference": "0x08212515",
+            "jp_text": "0x0821260C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_ResearchNotesPage2",
+        "us_text": "0x08216E2A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CCA",
+            "jp_reference": "0x08212532",
+            "jp_text": "0x08212680",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route114_LanettesHouse_Text_ResearchNotesPage3",
+        "us_text": "0x08216E95",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08216CDF",
+            "jp_reference": "0x08212547",
+            "jp_text": "0x082126E6",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18328
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 7,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

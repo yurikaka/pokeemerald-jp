@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "batch": "195_naming_screen.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_BoxName",
+      "address": "0x08565CCC",
+      "original": "0x08565874",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_MoveOkBack",
+      "address": "0x080E4748",
+      "original": "0x085658A0",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PkmnsNickname",
+      "address": "0x08565CD8",
+      "original": "0x08565881",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_TellHimTheWords",
+      "address": "0x08565CE4",
+      "original": "0x0856588F",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_YourName",
+      "address": "0x08565CC0",
+      "original": "0x08565868",
+      "count": 1
+    }
+  ],
+  "status": "manual",
+  "reason": "The US and Japanese NamingScreenTemplate records have different surrounding layouts, so exact-context matching cannot identify their title fields. The title fields were matched manually by corresponding template ordinal and title member; the Japanese nickname template is shared by both caught-Pokémon and nickname screens. The banner and button graphics were matched manually from the naming-screen implementation. The Japanese page-switch labels remain unmodified."
+}

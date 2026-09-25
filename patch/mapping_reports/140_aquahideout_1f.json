@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "batch": "140_aquahideout_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "AquaHideout_1F_Text_BossIsInSlateportCity",
+      "address": "0x08217992",
+      "original": "0x08217BF9",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_BossIsOnRoute122",
+      "address": "0x0821797E",
+      "original": "0x08217B19",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_BossWentToJackASubmarine",
+      "address": "0x08217960",
+      "original": "0x08217A9D",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_Grunt1Defeat",
+      "address": "0x082179A4",
+      "original": "0x08217C84",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_Grunt1Intro",
+      "address": "0x082179A0",
+      "original": "0x08217C6D",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_Grunt1PostBattle",
+      "address": "0x082179AE",
+      "original": "0x08217C92",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_Grunt1PostBattle",
+      "address": "0x082179B7",
+      "original": "0x08217C92",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_OurBossIsSnatchingSomething",
+      "address": "0x0821794C",
+      "original": "0x082179BF",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_TeamMagmaAtMtChimney",
+      "address": "0x08217988",
+      "original": "0x08217B99",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_1F_Text_WhereMightMagmaHideoutBe",
+      "address": "0x08217956",
+      "original": "0x08217A3C",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "AquaHideout_1F_Text_BossIsInSlateportCity",
+    "AquaHideout_1F_Text_BossIsOnRoute122",
+    "AquaHideout_1F_Text_BossWentToJackASubmarine",
+    "AquaHideout_1F_Text_Grunt1Defeat",
+    "AquaHideout_1F_Text_Grunt1Intro",
+    "AquaHideout_1F_Text_Grunt1PostBattle",
+    "AquaHideout_1F_Text_OurBossIsSnatchingSomething",
+    "AquaHideout_1F_Text_TeamMagmaAtMtChimney",
+    "AquaHideout_1F_Text_WhereMightMagmaHideoutBe"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:AquaHideout_1F_Text_BossIsInSlateportCity|AquaHideout_1F_Text_BossIsOnRoute122|AquaHideout_1F_Text_BossWentToJackASubmarine|AquaHideout_1F_Text_Grunt1Defeat|AquaHideout_1F_Text_Grunt1Intro|AquaHideout_1F_Text_Grunt1PostBattle|AquaHideout_1F_Text_OurBossIsSnatchingSomething|AquaHideout_1F_Text_TeamMagmaAtMtChimney|AquaHideout_1F_Text_WhereMightMagmaHideoutBe)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20824,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "AquaHideout_1F_Text_BossIsInSlateportCity",
+        "us_text": "0x0821CD67",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAEA",
+            "jp_reference": "0x08217992",
+            "jp_text": "0x08217BF9",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_BossIsOnRoute122",
+        "us_text": "0x0821CC7A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAD6",
+            "jp_reference": "0x0821797E",
+            "jp_text": "0x08217B19",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_BossWentToJackASubmarine",
+        "us_text": "0x0821CC04",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAB8",
+            "jp_reference": "0x08217960",
+            "jp_text": "0x08217A9D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_Grunt1Defeat",
+        "us_text": "0x0821CDF7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAFC",
+            "jp_reference": "0x082179A4",
+            "jp_text": "0x08217C84",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20824
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_Grunt1Intro",
+        "us_text": "0x0821CDDF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAF8",
+            "jp_reference": "0x082179A0",
+            "jp_text": "0x08217C6D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_Grunt1PostBattle",
+        "us_text": "0x0821CE0A",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0821CB06",
+            "jp_reference": "0x082179AE",
+            "jp_text": "0x08217C92",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20824
+          },
+          {
+            "us_reference": "0x0821CB0F",
+            "jp_reference": "0x082179B7",
+            "jp_text": "0x08217C92",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20824
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_OurBossIsSnatchingSomething",
+        "us_text": "0x0821CB17",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAA4",
+            "jp_reference": "0x0821794C",
+            "jp_text": "0x082179BF",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_TeamMagmaAtMtChimney",
+        "us_text": "0x0821CCFF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAE0",
+            "jp_reference": "0x08217988",
+            "jp_text": "0x08217B99",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_1F_Text_WhereMightMagmaHideoutBe",
+        "us_text": "0x0821CB97",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CAAE",
+            "jp_reference": "0x08217956",
+            "jp_text": "0x08217A3C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20824
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

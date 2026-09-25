@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "batch": "055_mauvillecity_house2.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MauvilleCity_House2_Text_BuyHarborMailAtSlateport",
+      "address": "0x08200C68",
+      "original": "0x08200CEC",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_House2_Text_IllTradeYouCoinCase",
+      "address": "0x08200CB8",
+      "original": "0x08200D5A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_House2_Text_ThatsDisappointing",
+      "address": "0x08200CE4",
+      "original": "0x08200D9C",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_House2_Text_TradeHarborMailForCoinCase",
+      "address": "0x08200C99",
+      "original": "0x08200D35",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_House2_Text_UseCoinCaseAtGameCorner",
+      "address": "0x08200CDA",
+      "original": "0x08200D72",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MauvilleCity_House2_Text_BuyHarborMailAtSlateport",
+    "MauvilleCity_House2_Text_IllTradeYouCoinCase",
+    "MauvilleCity_House2_Text_ThatsDisappointing",
+    "MauvilleCity_House2_Text_TradeHarborMailForCoinCase",
+    "MauvilleCity_House2_Text_UseCoinCaseAtGameCorner"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MauvilleCity_House2_Text_BuyHarborMailAtSlateport|MauvilleCity_House2_Text_IllTradeYouCoinCase|MauvilleCity_House2_Text_ThatsDisappointing|MauvilleCity_House2_Text_TradeHarborMailForCoinCase|MauvilleCity_House2_Text_UseCoinCaseAtGameCorner)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -12468,
+    "mapped_count": 4,
+    "unresolved_count": 1,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MauvilleCity_House2_Text_BuyHarborMailAtSlateport",
+        "us_text": "0x08203DA0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08203D1C",
+            "jp_reference": "0x08200C68",
+            "jp_text": "0x08200CEC",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12468
+          }
+        ]
+      },
+      {
+        "symbol": "MauvilleCity_House2_Text_IllTradeYouCoinCase",
+        "us_text": "0x08203E21",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08203D6C",
+            "jp_reference": "0x08200CB8",
+            "jp_text": "0x08200D5A",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MauvilleCity_House2_Text_TradeHarborMailForCoinCase",
+        "us_text": "0x08203DFA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08203D4D",
+            "jp_reference": "0x08200C99",
+            "jp_text": "0x08200D35",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MauvilleCity_House2_Text_UseCoinCaseAtGameCorner",
+        "us_text": "0x08203E47",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08203D8E",
+            "jp_reference": "0x08200CDA",
+            "jp_text": "0x08200D72",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12468
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      {
+        "symbol": "MauvilleCity_House2_Text_ThatsDisappointing",
+        "us_text": "0x08203E64",
+        "us_reference_count": 2,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 4,
+    "expected_only": [
+      {
+        "source_symbol": "MauvilleCity_House2_Text_ThatsDisappointing",
+        "address": "0x08200CE4",
+        "original": "0x08200D9C",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

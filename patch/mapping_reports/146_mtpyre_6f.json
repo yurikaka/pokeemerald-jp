@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "146_mtpyre_6f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MtPyre_6F_Text_CedricDefeat",
+      "address": "0x082169F3",
+      "original": "0x08216B06",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_CedricIntro",
+      "address": "0x082169EF",
+      "original": "0x08216AE8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_CedricPostBattle",
+      "address": "0x082169F9",
+      "original": "0x08216B14",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValerieDefeat",
+      "address": "0x08216991",
+      "original": "0x08216A1E",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValerieIntro",
+      "address": "0x0821698D",
+      "original": "0x08216A00",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValeriePostBattle",
+      "address": "0x082169AB",
+      "original": "0x08216A2B",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValeriePostRematch",
+      "address": "0x082169E2",
+      "original": "0x08216AC0",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValerieRegister",
+      "address": "0x082169BB",
+      "original": "0x08216A52",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValerieRematchDefeat",
+      "address": "0x082169DC",
+      "original": "0x08216AB4",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_6F_Text_ValerieRematchIntro",
+      "address": "0x082169D8",
+      "original": "0x08216A9E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MtPyre_6F_Text_CedricDefeat",
+    "MtPyre_6F_Text_CedricIntro",
+    "MtPyre_6F_Text_CedricPostBattle",
+    "MtPyre_6F_Text_ValerieDefeat",
+    "MtPyre_6F_Text_ValerieIntro",
+    "MtPyre_6F_Text_ValeriePostBattle",
+    "MtPyre_6F_Text_ValeriePostRematch",
+    "MtPyre_6F_Text_ValerieRegister",
+    "MtPyre_6F_Text_ValerieRematchDefeat",
+    "MtPyre_6F_Text_ValerieRematchIntro"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MtPyre_6F_Text_CedricDefeat|MtPyre_6F_Text_CedricIntro|MtPyre_6F_Text_CedricPostBattle|MtPyre_6F_Text_ValerieDefeat|MtPyre_6F_Text_ValerieIntro|MtPyre_6F_Text_ValeriePostBattle|MtPyre_6F_Text_ValeriePostRematch|MtPyre_6F_Text_ValerieRegister|MtPyre_6F_Text_ValerieRematchDefeat|MtPyre_6F_Text_ValerieRematchIntro)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20467,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MtPyre_6F_Text_CedricDefeat",
+        "us_text": "0x0821BB1A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9E6",
+            "jp_reference": "0x082169F3",
+            "jp_text": "0x08216B06",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_CedricIntro",
+        "us_text": "0x0821BAFB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9E2",
+            "jp_reference": "0x082169EF",
+            "jp_text": "0x08216AE8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_CedricPostBattle",
+        "us_text": "0x0821BB2A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9EC",
+            "jp_reference": "0x082169F9",
+            "jp_text": "0x08216B14",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValerieDefeat",
+        "us_text": "0x0821BA21",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B984",
+            "jp_reference": "0x08216991",
+            "jp_text": "0x08216A1E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValerieIntro",
+        "us_text": "0x0821B9F3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B980",
+            "jp_reference": "0x0821698D",
+            "jp_text": "0x08216A00",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValeriePostBattle",
+        "us_text": "0x0821BA32",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B99E",
+            "jp_reference": "0x082169AB",
+            "jp_text": "0x08216A2B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValeriePostRematch",
+        "us_text": "0x0821BAD3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9D5",
+            "jp_reference": "0x082169E2",
+            "jp_text": "0x08216AC0",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValerieRegister",
+        "us_text": "0x0821BA5E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9AE",
+            "jp_reference": "0x082169BB",
+            "jp_text": "0x08216A52",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValerieRematchDefeat",
+        "us_text": "0x0821BABC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9CF",
+            "jp_reference": "0x082169DC",
+            "jp_text": "0x08216AB4",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20467
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_6F_Text_ValerieRematchIntro",
+        "us_text": "0x0821BAA8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B9CB",
+            "jp_reference": "0x082169D8",
+            "jp_text": "0x08216A9E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

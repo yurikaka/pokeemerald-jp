@@ -72,6 +72,7 @@ def main() -> None:
     document = {
         "source_commit": args.source_commit,
         "category": args.category,
+        "mapping_report": mapping,
         "texts": texts,
         "reference_writes": reference_writes,
     }

@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "batch": "014_petalburg_interiors.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "PetalburgCity_House1_Text_GoOnAdventure",
+      "address": "0x081FA649",
+      "original": "0x081FA67F",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_House1_Text_TravelingIsWonderful",
+      "address": "0x081FA640",
+      "original": "0x081FA650",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_House2_Text_BattledNormanOnce",
+      "address": "0x081FA72C",
+      "original": "0x081FA775",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_House2_Text_NormanBecameGymLeader",
+      "address": "0x081FA723",
+      "original": "0x081FA733",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Mart_Text_RepelIsUseful",
+      "address": "0x081FAA61",
+      "original": "0x081FAAAB",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou",
+      "address": "0x081FAA6A",
+      "original": "0x081FAADF",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+      "address": "0x081FAA58",
+      "original": "0x081FAA71",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon",
+      "address": "0x081FA805",
+      "original": "0x081FA8BC",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType",
+      "address": "0x081FA854",
+      "original": "0x081FA984",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP",
+      "address": "0x081FA7FA",
+      "original": "0x081FA894",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem",
+      "address": "0x081FA7F1",
+      "original": "0x081FA85B",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType",
+      "address": "0x081FA84B",
+      "original": "0x081FA946",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType",
+      "address": "0x081FA842",
+      "original": "0x081FA907",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "PetalburgCity_House1_Text_GoOnAdventure",
+    "PetalburgCity_House1_Text_TravelingIsWonderful",
+    "PetalburgCity_House2_Text_BattledNormanOnce",
+    "PetalburgCity_House2_Text_NormanBecameGymLeader",
+    "PetalburgCity_Mart_Text_RepelIsUseful",
+    "PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou",
+    "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+    "PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon",
+    "PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType",
+    "PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP",
+    "PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem",
+    "PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType",
+    "PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:PetalburgCity_House1_Text_GoOnAdventure|PetalburgCity_House1_Text_TravelingIsWonderful|PetalburgCity_House2_Text_BattledNormanOnce|PetalburgCity_House2_Text_NormanBecameGymLeader|PetalburgCity_Mart_Text_RepelIsUseful|PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou|PetalburgCity_Mart_Text_WeakWillGrowStronger|PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon|PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType|PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP|PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem|PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType|PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -10995,
+    "mapped_count": 10,
+    "unresolved_count": 3,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "PetalburgCity_House1_Text_GoOnAdventure",
+        "us_text": "0x081FD18A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD158",
+            "jp_reference": "0x081FA649",
+            "jp_text": "0x081FA67F",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_House2_Text_BattledNormanOnce",
+        "us_text": "0x081FD277",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD232",
+            "jp_reference": "0x081FA72C",
+            "jp_text": "0x081FA775",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Mart_Text_RepelIsUseful",
+        "us_text": "0x081FD62D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD5D1",
+            "jp_reference": "0x081FAA61",
+            "jp_text": "0x081FAAAB",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou",
+        "us_text": "0x081FD66F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD5DA",
+            "jp_reference": "0x081FAA6A",
+            "jp_text": "0x081FAADF",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon",
+        "us_text": "0x081FD3B8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD2F8",
+            "jp_reference": "0x081FA805",
+            "jp_text": "0x081FA8BC",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10995
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType",
+        "us_text": "0x081FD4DB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD347",
+            "jp_reference": "0x081FA854",
+            "jp_text": "0x081FA984",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10995
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP",
+        "us_text": "0x081FD38E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD2ED",
+            "jp_reference": "0x081FA7FA",
+            "jp_text": "0x081FA894",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem",
+        "us_text": "0x081FD34E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD2E4",
+            "jp_reference": "0x081FA7F1",
+            "jp_text": "0x081FA85B",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType",
+        "us_text": "0x081FD483",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD33E",
+            "jp_reference": "0x081FA84B",
+            "jp_text": "0x081FA946",
+            "mapping_method": "regional_delta",
+            "reference_delta": -10995
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType",
+        "us_text": "0x081FD429",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081FD335",
+            "jp_reference": "0x081FA842",
+            "jp_text": "0x081FA907",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      {
+        "symbol": "PetalburgCity_House1_Text_TravelingIsWonderful",
+        "us_text": "0x081FD15F",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "PetalburgCity_House2_Text_NormanBecameGymLeader",
+        "us_text": "0x081FD239",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+        "us_text": "0x081FD5E1",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [
+      {
+        "source_symbol": "PetalburgCity_House1_Text_TravelingIsWonderful",
+        "address": "0x081FA640",
+        "original": "0x081FA650",
+        "count": 1
+      },
+      {
+        "source_symbol": "PetalburgCity_House2_Text_NormanBecameGymLeader",
+        "address": "0x081FA723",
+        "original": "0x081FA733",
+        "count": 1
+      },
+      {
+        "source_symbol": "PetalburgCity_Mart_Text_WeakWillGrowStronger",
+        "address": "0x081FAA58",
+        "original": "0x081FAA71",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

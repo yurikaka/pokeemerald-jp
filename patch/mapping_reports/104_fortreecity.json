@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "batch": "104_fortreecity.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FortreeCity_Text_BugPokemonComeThroughWindow",
+      "address": "0x081DFE3C",
+      "original": "0x081E0049",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_CitySign",
+      "address": "0x081DFE4E",
+      "original": "0x081E0126",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_EveryoneHealthyAndLively",
+      "address": "0x081DFE33",
+      "original": "0x081DFFEA",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_GymSign",
+      "address": "0x081DFE57",
+      "original": "0x081E0148",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_PokemonThatEvolveWhenTraded",
+      "address": "0x081DFE45",
+      "original": "0x081E008B",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_SawGiganticPokemonInSky",
+      "address": "0x081DFE02",
+      "original": "0x081DFEC0",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_SomethingBlockingGym",
+      "address": "0x081DFE16",
+      "original": "0x081DFF3B",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_SomethingUnseeable",
+      "address": "0x081DFE72",
+      "original": "0x081E00B0",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_ThisTimeIllBeatWinona",
+      "address": "0x081DFE20",
+      "original": "0x081DFF7D",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_TreesGrowByDrinkingRainwater",
+      "address": "0x081DFE2A",
+      "original": "0x081DFFA2",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_UnseeableUseDevonScope",
+      "address": "0x081DFE7C",
+      "original": "0x081E00C0",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_Text_UsedDevonScopePokemonFled",
+      "address": "0x081DFE91",
+      "original": "0x081E00E1",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FortreeCity_Text_BugPokemonComeThroughWindow",
+    "FortreeCity_Text_CitySign",
+    "FortreeCity_Text_EveryoneHealthyAndLively",
+    "FortreeCity_Text_GymSign",
+    "FortreeCity_Text_PokemonThatEvolveWhenTraded",
+    "FortreeCity_Text_SawGiganticPokemonInSky",
+    "FortreeCity_Text_SomethingBlockingGym",
+    "FortreeCity_Text_SomethingUnseeable",
+    "FortreeCity_Text_ThisTimeIllBeatWinona",
+    "FortreeCity_Text_TreesGrowByDrinkingRainwater",
+    "FortreeCity_Text_UnseeableUseDevonScope",
+    "FortreeCity_Text_UsedDevonScopePokemonFled"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FortreeCity_Text_BugPokemonComeThroughWindow|FortreeCity_Text_CitySign|FortreeCity_Text_EveryoneHealthyAndLively|FortreeCity_Text_GymSign|FortreeCity_Text_PokemonThatEvolveWhenTraded|FortreeCity_Text_SawGiganticPokemonInSky|FortreeCity_Text_SomethingBlockingGym|FortreeCity_Text_SomethingUnseeable|FortreeCity_Text_ThisTimeIllBeatWinona|FortreeCity_Text_TreesGrowByDrinkingRainwater|FortreeCity_Text_UnseeableUseDevonScope|FortreeCity_Text_UsedDevonScopePokemonFled)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -4318,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FortreeCity_Text_BugPokemonComeThroughWindow",
+        "us_text": "0x081E1164",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F1A",
+            "jp_reference": "0x081DFE3C",
+            "jp_text": "0x081E0049",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_CitySign",
+        "us_text": "0x081E125B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F2C",
+            "jp_reference": "0x081DFE4E",
+            "jp_text": "0x081E0126",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_EveryoneHealthyAndLively",
+        "us_text": "0x081E10FA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F11",
+            "jp_reference": "0x081DFE33",
+            "jp_text": "0x081DFFEA",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_GymSign",
+        "us_text": "0x081E1281",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F35",
+            "jp_reference": "0x081DFE57",
+            "jp_text": "0x081E0148",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_PokemonThatEvolveWhenTraded",
+        "us_text": "0x081E11AC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F23",
+            "jp_reference": "0x081DFE45",
+            "jp_text": "0x081E008B",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_SawGiganticPokemonInSky",
+        "us_text": "0x081E0F9E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0EE0",
+            "jp_reference": "0x081DFE02",
+            "jp_text": "0x081DFEC0",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_SomethingBlockingGym",
+        "us_text": "0x081E102C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0EF4",
+            "jp_reference": "0x081DFE16",
+            "jp_text": "0x081DFF3B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_SomethingUnseeable",
+        "us_text": "0x081E11CE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F50",
+            "jp_reference": "0x081DFE72",
+            "jp_text": "0x081E00B0",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_ThisTimeIllBeatWinona",
+        "us_text": "0x081E1070",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0EFE",
+            "jp_reference": "0x081DFE20",
+            "jp_text": "0x081DFF7D",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_TreesGrowByDrinkingRainwater",
+        "us_text": "0x081E10AE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F08",
+            "jp_reference": "0x081DFE2A",
+            "jp_text": "0x081DFFA2",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_UnseeableUseDevonScope",
+        "us_text": "0x081E11EA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F5A",
+            "jp_reference": "0x081DFE7C",
+            "jp_text": "0x081E00C0",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_Text_UsedDevonScopePokemonFled",
+        "us_text": "0x081E121A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E0F6F",
+            "jp_reference": "0x081DFE91",
+            "jp_text": "0x081E00E1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 12,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

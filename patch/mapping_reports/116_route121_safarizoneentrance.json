@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "batch": "116_route121_safarizoneentrance.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_ComeInAndEnjoy",
+      "address": "0x08212A30",
+      "original": "0x0826259C",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_FirstTimeInfo",
+      "address": "0x08212A3A",
+      "original": "0x082625B1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls",
+      "address": "0x08212AAF",
+      "original": "0x08262691",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_NotEnoughMoney",
+      "address": "0x08212B24",
+      "original": "0x08262672",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_PCIsFull",
+      "address": "0x08212B07",
+      "original": "0x082626F6",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_PlayAnotherTime",
+      "address": "0x08212A66",
+      "original": "0x08262659",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself",
+      "address": "0x08212AC0",
+      "original": "0x082626BA",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_Received30SafariBalls",
+      "address": "0x08212AB9",
+      "original": "0x082626A2",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_ThatWillBe500Please",
+      "address": "0x08212A9D",
+      "original": "0x0826267F",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_TrainerTip",
+      "address": "0x08212B4D",
+      "original": "0x082629C5",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_WelcomeFirstTime",
+      "address": "0x08212A1D",
+      "original": "0x0826257A",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_WelcomeToSafariZone",
+      "address": "0x08212A12",
+      "original": "0x082624E7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay",
+      "address": "0x08212A53",
+      "original": "0x08262621",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase",
+      "address": "0x08212B16",
+      "original": "0x0826270E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route121_SafariZoneEntrance_Text_ComeInAndEnjoy",
+    "Route121_SafariZoneEntrance_Text_FirstTimeInfo",
+    "Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls",
+    "Route121_SafariZoneEntrance_Text_NotEnoughMoney",
+    "Route121_SafariZoneEntrance_Text_PCIsFull",
+    "Route121_SafariZoneEntrance_Text_PlayAnotherTime",
+    "Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself",
+    "Route121_SafariZoneEntrance_Text_Received30SafariBalls",
+    "Route121_SafariZoneEntrance_Text_ThatWillBe500Please",
+    "Route121_SafariZoneEntrance_Text_TrainerTip",
+    "Route121_SafariZoneEntrance_Text_WelcomeFirstTime",
+    "Route121_SafariZoneEntrance_Text_WelcomeToSafariZone",
+    "Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay",
+    "Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route121_SafariZoneEntrance_Text_ComeInAndEnjoy|Route121_SafariZoneEntrance_Text_FirstTimeInfo|Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls|Route121_SafariZoneEntrance_Text_NotEnoughMoney|Route121_SafariZoneEntrance_Text_PCIsFull|Route121_SafariZoneEntrance_Text_PlayAnotherTime|Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself|Route121_SafariZoneEntrance_Text_Received30SafariBalls|Route121_SafariZoneEntrance_Text_ThatWillBe500Please|Route121_SafariZoneEntrance_Text_TrainerTip|Route121_SafariZoneEntrance_Text_WelcomeFirstTime|Route121_SafariZoneEntrance_Text_WelcomeToSafariZone|Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay|Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18505,
+    "mapped_count": 14,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_ComeInAndEnjoy",
+        "us_text": "0x0826F64A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217279",
+            "jp_reference": "0x08212A30",
+            "jp_text": "0x0826259C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_FirstTimeInfo",
+        "us_text": "0x0826F664",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217283",
+            "jp_reference": "0x08212A3A",
+            "jp_text": "0x082625B1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls",
+        "us_text": "0x0826F75E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082172F8",
+            "jp_reference": "0x08212AAF",
+            "jp_text": "0x08262691",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_NotEnoughMoney",
+        "us_text": "0x0826F73B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821736D",
+            "jp_reference": "0x08212B24",
+            "jp_text": "0x08262672",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_PCIsFull",
+        "us_text": "0x0826F7D1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217350",
+            "jp_reference": "0x08212B07",
+            "jp_text": "0x082626F6",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18505
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_PlayAnotherTime",
+        "us_text": "0x0826F727",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082172AF",
+            "jp_reference": "0x08212A66",
+            "jp_text": "0x08262659",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself",
+        "us_text": "0x0826F781",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217309",
+            "jp_reference": "0x08212AC0",
+            "jp_text": "0x082626BA",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_Received30SafariBalls",
+        "us_text": "0x0826F76C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217302",
+            "jp_reference": "0x08212AB9",
+            "jp_text": "0x082626A2",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_ThatWillBe500Please",
+        "us_text": "0x0826F74F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082172E6",
+            "jp_reference": "0x08212A9D",
+            "jp_text": "0x0826267F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_TrainerTip",
+        "us_text": "0x0826FB2F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217396",
+            "jp_reference": "0x08212B4D",
+            "jp_text": "0x082629C5",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_WelcomeFirstTime",
+        "us_text": "0x0826F622",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08217266",
+            "jp_reference": "0x08212A1D",
+            "jp_text": "0x0826257A",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_WelcomeToSafariZone",
+        "us_text": "0x0826F547",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821725B",
+            "jp_reference": "0x08212A12",
+            "jp_text": "0x082624E7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay",
+        "us_text": "0x0826F6E1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821729C",
+            "jp_reference": "0x08212A53",
+            "jp_text": "0x08262621",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase",
+        "us_text": "0x0826F7EB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821735F",
+            "jp_reference": "0x08212B16",
+            "jp_text": "0x0826270E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 14,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

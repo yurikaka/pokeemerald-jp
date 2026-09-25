@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "batch": "128_lilycovecity_covelilymotel_2f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy",
+      "address": "0x08205921",
+      "original": "0x08205BA3",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis",
+      "address": "0x082058C5",
+      "original": "0x08205978",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute",
+      "address": "0x082058E9",
+      "original": "0x08205A27",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist",
+      "address": "0x082058E0",
+      "original": "0x08205A08",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer",
+      "address": "0x082058D7",
+      "original": "0x082059DF",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy",
+      "address": "0x082058FB",
+      "original": "0x08205AA6",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart",
+      "address": "0x082058F2",
+      "original": "0x08205A85",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex",
+      "address": "0x082058B0",
+      "original": "0x08205929",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles",
+      "address": "0x0820590F",
+      "original": "0x08205AE0",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy",
+    "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis",
+    "LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute",
+    "LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist",
+    "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer",
+    "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy",
+    "LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart",
+    "LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex",
+    "LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy|LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis|LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute|LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist|LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer|LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy|LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart|LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex|LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -14568,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy",
+        "us_text": "0x08209545",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08209209",
+            "jp_reference": "0x08205921",
+            "jp_text": "0x08205BA3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14568
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis",
+        "us_text": "0x08209278",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091AD",
+            "jp_reference": "0x082058C5",
+            "jp_text": "0x08205978",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14568
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute",
+        "us_text": "0x08209350",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091D1",
+            "jp_reference": "0x082058E9",
+            "jp_text": "0x08205A27",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist",
+        "us_text": "0x08209326",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091C8",
+            "jp_reference": "0x082058E0",
+            "jp_text": "0x08205A08",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14568
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer",
+        "us_text": "0x082092E8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091BF",
+            "jp_reference": "0x082058D7",
+            "jp_text": "0x082059DF",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14568
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy",
+        "us_text": "0x082093FC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091E3",
+            "jp_reference": "0x082058FB",
+            "jp_text": "0x08205AA6",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart",
+        "us_text": "0x082093D2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091DA",
+            "jp_reference": "0x082058F2",
+            "jp_text": "0x08205A85",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex",
+        "us_text": "0x08209211",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08209198",
+            "jp_reference": "0x082058B0",
+            "jp_text": "0x08205929",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles",
+        "us_text": "0x08209441",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082091F7",
+            "jp_reference": "0x0820590F",
+            "jp_text": "0x08205AE0",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14568
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 9,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

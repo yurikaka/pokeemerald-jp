@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "batch": "091_fallarbortown_cozmoshouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_CozmoIsSoHappy",
+      "address": "0x081F5F4C",
+      "original": "0x081F6138",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls",
+      "address": "0x081F5F38",
+      "original": "0x081F60E3",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_CrushedWithDisappointment",
+      "address": "0x081F5F10",
+      "original": "0x081F6085",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt",
+      "address": "0x081F5EFB",
+      "original": "0x081F5FBC",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow",
+      "address": "0x081F5E96",
+      "original": "0x081F5F54",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow",
+      "address": "0x081F5EF3",
+      "original": "0x081F5F54",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_PleaseUseThisTM",
+      "address": "0x081F5EBD",
+      "original": "0x081F6035",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch",
+      "address": "0x081F5EE9",
+      "original": "0x081F605B",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch",
+      "address": "0x081F5F1A",
+      "original": "0x081F605B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FallarborTown_CozmosHouse_Text_CozmoIsSoHappy",
+    "FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls",
+    "FallarborTown_CozmosHouse_Text_CrushedWithDisappointment",
+    "FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt",
+    "FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow",
+    "FallarborTown_CozmosHouse_Text_PleaseUseThisTM",
+    "FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FallarborTown_CozmosHouse_Text_CozmoIsSoHappy|FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls|FallarborTown_CozmosHouse_Text_CrushedWithDisappointment|FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt|FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow|FallarborTown_CozmosHouse_Text_PleaseUseThisTM|FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -9776,
+    "mapped_count": 7,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_CozmoIsSoHappy",
+        "us_text": "0x081F87AB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F857C",
+            "jp_reference": "0x081F5F4C",
+            "jp_text": "0x081F6138",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9776
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_CozmoWentToMeteorFalls",
+        "us_text": "0x081F8743",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8568",
+            "jp_reference": "0x081F5F38",
+            "jp_text": "0x081F60E3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_CrushedWithDisappointment",
+        "us_text": "0x081F86CE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8540",
+            "jp_reference": "0x081F5F10",
+            "jp_text": "0x081F6085",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_IsThatMeteoriteMayIHaveIt",
+        "us_text": "0x081F85DE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F852B",
+            "jp_reference": "0x081F5EFB",
+            "jp_text": "0x081F5FBC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_MeteoriteWillNeverBeMineNow",
+        "us_text": "0x081F8584",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081F84C6",
+            "jp_reference": "0x081F5E96",
+            "jp_text": "0x081F5F54",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x081F8523",
+            "jp_reference": "0x081F5EF3",
+            "jp_text": "0x081F5F54",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_PleaseUseThisTM",
+        "us_text": "0x081F8654",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F84ED",
+            "jp_reference": "0x081F5EBD",
+            "jp_text": "0x081F6035",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_CozmosHouse_Text_ReallyGoingToHelpMyResearch",
+        "us_text": "0x081F868A",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081F8519",
+            "jp_reference": "0x081F5EE9",
+            "jp_text": "0x081F605B",
+            "mapping_method": "context",
+            "context_radius": 32
+          },
+          {
+            "us_reference": "0x081F854A",
+            "jp_reference": "0x081F5F1A",
+            "jp_text": "0x081F605B",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 9,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

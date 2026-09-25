@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "batch": "083_mtchimney_cablecarstation.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MtChimney_CableCarStation_Text_CableCarReadyGetOn",
+      "address": "0x08212074",
+      "original": "0x082120DE",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtChimney_CableCarStation_Text_RideAnotherTime",
+      "address": "0x082120C2",
+      "original": "0x08212112",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtChimney_CableCarStation_Text_StepThisWay",
+      "address": "0x08212093",
+      "original": "0x08212105",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MtChimney_CableCarStation_Text_CableCarReadyGetOn",
+    "MtChimney_CableCarStation_Text_RideAnotherTime",
+    "MtChimney_CableCarStation_Text_StepThisWay"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MtChimney_CableCarStation_Text_CableCarReadyGetOn|MtChimney_CableCarStation_Text_RideAnotherTime|MtChimney_CableCarStation_Text_StepThisWay)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18296,
+    "mapped_count": 3,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MtChimney_CableCarStation_Text_CableCarReadyGetOn",
+        "us_text": "0x08216856",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082167EC",
+            "jp_reference": "0x08212074",
+            "jp_text": "0x082120DE",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "MtChimney_CableCarStation_Text_RideAnotherTime",
+        "us_text": "0x0821687C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821683A",
+            "jp_reference": "0x082120C2",
+            "jp_text": "0x08212112",
+            "mapping_method": "regional_delta",
+            "reference_delta": -18296
+          }
+        ]
+      },
+      {
+        "symbol": "MtChimney_CableCarStation_Text_StepThisWay",
+        "us_text": "0x08216874",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821680B",
+            "jp_reference": "0x08212093",
+            "jp_text": "0x08212105",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 3,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

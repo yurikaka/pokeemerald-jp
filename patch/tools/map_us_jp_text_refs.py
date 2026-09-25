@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+import hashlib
 import json
 import re
 import struct
@@ -14,6 +15,21 @@ from pathlib import Path
 
 ROM_BASE = 0x08000000
 ROM_LIMIT = 0x0A000000
+
+REPORT_SCHEMA_VERSION = 1
+MAPPING_POLICY = {
+    "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [16, 24, 32, 48, 64],
+    },
+    "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py",
+    },
+    "fallback_order": ["regional_delta", "nearest_local_anchor", "ordinal_text_position"],
+}
 
 
 def load_symbols(nm: str, elf: Path) -> dict[str, int]:
@@ -165,6 +181,8 @@ def main() -> None:
                         "us_reference": f"0x{ROM_BASE + ref:08X}",
                         "jp_reference": f"0x{ROM_BASE + jp_ref:08X}",
                         "jp_text": f"0x{jp_text:08X}",
+                        "mapping_method": "context",
+                        "context_radius": radius,
                     }
                 )
         entry = {
@@ -205,7 +223,8 @@ def main() -> None:
                         "us_reference": f"0x{ROM_BASE + ref:08X}",
                         "jp_reference": f"0x{jp_ref:08X}",
                         "jp_text": f"0x{jp_text:08X}",
-                        "inferred": True,
+                        "mapping_method": "regional_delta",
+                        "reference_delta": inferred_delta,
                     }
                 )
             if inferred and len(inferred) == entry["us_reference_count"]:
@@ -244,7 +263,9 @@ def main() -> None:
                     "us_reference": f"0x{us_ref:08X}",
                     "jp_reference": f"0x{jp_ref:08X}",
                     "jp_text": f"0x{jp_text:08X}",
-                    "local_delta_inferred": True,
+                    "mapping_method": "nearest_local_anchor",
+                    "anchor_us_reference": f"0x{anchor_us:08X}",
+                    "anchor_jp_reference": f"0x{anchor_jp:08X}",
                 }
             )
         targets = {reference["jp_text"] for reference in inferred}
@@ -307,7 +328,7 @@ def main() -> None:
                 "us_reference": f"0x{ROM_BASE + us_ref:08X}",
                 "jp_reference": f"0x{ROM_BASE + jp_ref:08X}",
                 "jp_text": f"0x{jp_text:08X}",
-                "ordinal_inferred": True,
+                "mapping_method": "ordinal_text_position",
             }
             for us_ref, jp_ref in zip(us_refs, jp_refs)
         ]
@@ -318,6 +339,15 @@ def main() -> None:
     unresolved = [entry for entry in unresolved if entry["us_reference_count"] != 0]
 
     result = {
+        "schema_version": REPORT_SCHEMA_VERSION,
+        "inputs": {
+            "us_rom_sha1": hashlib.sha1(us_rom).hexdigest(),
+            "us_elf_sha1": hashlib.sha1(args.us_elf.read_bytes()).hexdigest(),
+            "jp_rom_sha1": hashlib.sha1(jp_rom).hexdigest(),
+            "reference_end": f"0x{args.reference_end:08X}",
+            "symbol_pattern": args.symbol_pattern,
+        },
+        "mapping_policy": MAPPING_POLICY,
         "inferred_reference_delta": None if inferred_delta is None else inferred_delta,
         "mapped_count": len(mapped),
         "unresolved_count": len(unresolved),

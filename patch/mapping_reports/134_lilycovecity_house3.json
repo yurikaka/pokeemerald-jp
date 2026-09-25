@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "134_lilycovecity_house3.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_House3_Text_ExplainPokeblocks",
+      "address": "0x0820A08B",
+      "original": "0x0820A278",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_GoingToEnterContest",
+      "address": "0x0820A1BA",
+      "original": "0x0820A4F2",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_GoingToWinMultiBattles",
+      "address": "0x0820A19C",
+      "original": "0x0820A495",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_HappyToHaveQuadruplets",
+      "address": "0x0820A0B7",
+      "original": "0x0820A44F",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks",
+      "address": "0x0820A078",
+      "original": "0x0820A1C2",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_LikeMixingAtRecordCorner",
+      "address": "0x0820A1A6",
+      "original": "0x0820A4B2",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender",
+      "address": "0x0820A1B0",
+      "original": "0x0820A4D3",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House3_Text_OhAreYouSure",
+      "address": "0x0820A0A0",
+      "original": "0x0820A24F",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_House3_Text_ExplainPokeblocks",
+    "LilycoveCity_House3_Text_GoingToEnterContest",
+    "LilycoveCity_House3_Text_GoingToWinMultiBattles",
+    "LilycoveCity_House3_Text_HappyToHaveQuadruplets",
+    "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks",
+    "LilycoveCity_House3_Text_LikeMixingAtRecordCorner",
+    "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender",
+    "LilycoveCity_House3_Text_OhAreYouSure"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_House3_Text_ExplainPokeblocks|LilycoveCity_House3_Text_GoingToEnterContest|LilycoveCity_House3_Text_GoingToWinMultiBattles|LilycoveCity_House3_Text_HappyToHaveQuadruplets|LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks|LilycoveCity_House3_Text_LikeMixingAtRecordCorner|LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender|LilycoveCity_House3_Text_OhAreYouSure)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -15842,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LilycoveCity_House3_Text_ExplainPokeblocks",
+        "us_text": "0x0820E08A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DE6D",
+            "jp_reference": "0x0820A08B",
+            "jp_text": "0x0820A278",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_GoingToEnterContest",
+        "us_text": "0x0820E398",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DF9C",
+            "jp_reference": "0x0820A1BA",
+            "jp_text": "0x0820A4F2",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15842
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_GoingToWinMultiBattles",
+        "us_text": "0x0820E31A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DF7E",
+            "jp_reference": "0x0820A19C",
+            "jp_text": "0x0820A495",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_HappyToHaveQuadruplets",
+        "us_text": "0x0820E2CE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DE99",
+            "jp_reference": "0x0820A0B7",
+            "jp_text": "0x0820A44F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks",
+        "us_text": "0x0820DFA4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DE5A",
+            "jp_reference": "0x0820A078",
+            "jp_text": "0x0820A1C2",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15842
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_LikeMixingAtRecordCorner",
+        "us_text": "0x0820E33C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DF88",
+            "jp_reference": "0x0820A1A6",
+            "jp_text": "0x0820A4B2",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15842
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender",
+        "us_text": "0x0820E371",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DF92",
+            "jp_reference": "0x0820A1B0",
+            "jp_text": "0x0820A4D3",
+            "mapping_method": "regional_delta",
+            "reference_delta": -15842
+          }
+        ]
+      },
+      {
+        "symbol": "LilycoveCity_House3_Text_OhAreYouSure",
+        "us_text": "0x0820E05F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820DE82",
+            "jp_reference": "0x0820A0A0",
+            "jp_text": "0x0820A24F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

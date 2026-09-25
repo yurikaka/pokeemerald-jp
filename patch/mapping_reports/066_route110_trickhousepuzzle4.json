@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "066_route110_trickhousepuzzle4.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_CoraDefeat",
+      "address": "0x0823EB6A",
+      "original": "0x0823EC12",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_CoraIntro",
+      "address": "0x0823EB66",
+      "original": "0x0823EBE9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_CoraPostBattle",
+      "address": "0x0823EB70",
+      "original": "0x0823EC32",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_PaulaDefeat",
+      "address": "0x0823EB98",
+      "original": "0x0823ECC4",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_PaulaIntro",
+      "address": "0x0823EB94",
+      "original": "0x0823ECA7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_PaulaPostBattle",
+      "address": "0x0823EB9E",
+      "original": "0x0823ECC9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened",
+      "address": "0x0823D0E2",
+      "original": "0x0823EBA5",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_YujiDefeat",
+      "address": "0x0823EB81",
+      "original": "0x0823EC73",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_YujiIntro",
+      "address": "0x0823EB7D",
+      "original": "0x0823EC55",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle4_Text_YujiPostBattle",
+      "address": "0x0823EB87",
+      "original": "0x0823EC88",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route110_TrickHousePuzzle4_Text_CoraDefeat",
+    "Route110_TrickHousePuzzle4_Text_CoraIntro",
+    "Route110_TrickHousePuzzle4_Text_CoraPostBattle",
+    "Route110_TrickHousePuzzle4_Text_PaulaDefeat",
+    "Route110_TrickHousePuzzle4_Text_PaulaIntro",
+    "Route110_TrickHousePuzzle4_Text_PaulaPostBattle",
+    "Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened",
+    "Route110_TrickHousePuzzle4_Text_YujiDefeat",
+    "Route110_TrickHousePuzzle4_Text_YujiIntro",
+    "Route110_TrickHousePuzzle4_Text_YujiPostBattle"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route110_TrickHousePuzzle4_Text_CoraDefeat|Route110_TrickHousePuzzle4_Text_CoraIntro|Route110_TrickHousePuzzle4_Text_CoraPostBattle|Route110_TrickHousePuzzle4_Text_PaulaDefeat|Route110_TrickHousePuzzle4_Text_PaulaIntro|Route110_TrickHousePuzzle4_Text_PaulaPostBattle|Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened|Route110_TrickHousePuzzle4_Text_YujiDefeat|Route110_TrickHousePuzzle4_Text_YujiIntro|Route110_TrickHousePuzzle4_Text_YujiPostBattle)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33701,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_CoraDefeat",
+        "us_text": "0x08246FAC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F0F",
+            "jp_reference": "0x0823EB6A",
+            "jp_text": "0x0823EC12",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_CoraIntro",
+        "us_text": "0x08246F8A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F0B",
+            "jp_reference": "0x0823EB66",
+            "jp_text": "0x0823EBE9",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_CoraPostBattle",
+        "us_text": "0x08246FCA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F15",
+            "jp_reference": "0x0823EB70",
+            "jp_text": "0x0823EC32",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_PaulaDefeat",
+        "us_text": "0x08247099",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F3D",
+            "jp_reference": "0x0823EB98",
+            "jp_text": "0x0823ECC4",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33701
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_PaulaIntro",
+        "us_text": "0x08247079",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F39",
+            "jp_reference": "0x0823EB94",
+            "jp_text": "0x0823ECA7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33701
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_PaulaPostBattle",
+        "us_text": "0x0824709F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F43",
+            "jp_reference": "0x0823EB9E",
+            "jp_text": "0x0823ECC9",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33701
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened",
+        "us_text": "0x08246F4A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824526B",
+            "jp_reference": "0x0823D0E2",
+            "jp_text": "0x0823EBA5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_YujiDefeat",
+        "us_text": "0x0824702B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F26",
+            "jp_reference": "0x0823EB81",
+            "jp_text": "0x0823EC73",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_YujiIntro",
+        "us_text": "0x08247000",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F22",
+            "jp_reference": "0x0823EB7D",
+            "jp_text": "0x0823EC55",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle4_Text_YujiPostBattle",
+        "us_text": "0x08247050",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246F2C",
+            "jp_reference": "0x0823EB87",
+            "jp_text": "0x0823EC88",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

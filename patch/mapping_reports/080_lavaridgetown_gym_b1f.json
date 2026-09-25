@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "batch": "080_lavaridgetown_gym_b1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_EliDefeat",
+      "address": "0x081F452E",
+      "original": "0x081F491E",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_EliIntro",
+      "address": "0x081F452A",
+      "original": "0x081F4901",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_EliPostBattle",
+      "address": "0x081F4538",
+      "original": "0x081F4939",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JaceDefeat",
+      "address": "0x081F44F8",
+      "original": "0x081F485D",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JaceIntro",
+      "address": "0x081F44F4",
+      "original": "0x081F4841",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JacePostBattle",
+      "address": "0x081F4502",
+      "original": "0x081F4877",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JeffDefeat",
+      "address": "0x081F4513",
+      "original": "0x081F48C8",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JeffIntro",
+      "address": "0x081F450F",
+      "original": "0x081F48A0",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_JeffPostBattle",
+      "address": "0x081F451D",
+      "original": "0x081F48CF",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_KeeganDefeat",
+      "address": "0x081F44A7",
+      "original": "0x081F4732",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_KeeganIntro",
+      "address": "0x081F44A3",
+      "original": "0x081F46E7",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle",
+      "address": "0x081F44B1",
+      "original": "0x081F4745",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LavaridgeTown_Gym_B1F_Text_EliDefeat",
+    "LavaridgeTown_Gym_B1F_Text_EliIntro",
+    "LavaridgeTown_Gym_B1F_Text_EliPostBattle",
+    "LavaridgeTown_Gym_B1F_Text_JaceDefeat",
+    "LavaridgeTown_Gym_B1F_Text_JaceIntro",
+    "LavaridgeTown_Gym_B1F_Text_JacePostBattle",
+    "LavaridgeTown_Gym_B1F_Text_JeffDefeat",
+    "LavaridgeTown_Gym_B1F_Text_JeffIntro",
+    "LavaridgeTown_Gym_B1F_Text_JeffPostBattle",
+    "LavaridgeTown_Gym_B1F_Text_KeeganDefeat",
+    "LavaridgeTown_Gym_B1F_Text_KeeganIntro",
+    "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LavaridgeTown_Gym_B1F_Text_EliDefeat|LavaridgeTown_Gym_B1F_Text_EliIntro|LavaridgeTown_Gym_B1F_Text_EliPostBattle|LavaridgeTown_Gym_B1F_Text_JaceDefeat|LavaridgeTown_Gym_B1F_Text_JaceIntro|LavaridgeTown_Gym_B1F_Text_JacePostBattle|LavaridgeTown_Gym_B1F_Text_JeffDefeat|LavaridgeTown_Gym_B1F_Text_JeffIntro|LavaridgeTown_Gym_B1F_Text_JeffPostBattle|LavaridgeTown_Gym_B1F_Text_KeeganDefeat|LavaridgeTown_Gym_B1F_Text_KeeganIntro|LavaridgeTown_Gym_B1F_Text_KeeganPostBattle)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -9094,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_EliDefeat",
+        "us_text": "0x081F6D27",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F68B4",
+            "jp_reference": "0x081F452E",
+            "jp_text": "0x081F491E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_EliIntro",
+        "us_text": "0x081F6D0D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F68B0",
+            "jp_reference": "0x081F452A",
+            "jp_text": "0x081F4901",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_EliPostBattle",
+        "us_text": "0x081F6D43",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F68BE",
+            "jp_reference": "0x081F4538",
+            "jp_text": "0x081F4939",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JaceDefeat",
+        "us_text": "0x081F6C1E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F687E",
+            "jp_reference": "0x081F44F8",
+            "jp_text": "0x081F485D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JaceIntro",
+        "us_text": "0x081F6C02",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F687A",
+            "jp_reference": "0x081F44F4",
+            "jp_text": "0x081F4841",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JacePostBattle",
+        "us_text": "0x081F6C43",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F6888",
+            "jp_reference": "0x081F4502",
+            "jp_text": "0x081F4877",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JeffDefeat",
+        "us_text": "0x081F6CAC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F6899",
+            "jp_reference": "0x081F4513",
+            "jp_text": "0x081F48C8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JeffIntro",
+        "us_text": "0x081F6C78",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F6895",
+            "jp_reference": "0x081F450F",
+            "jp_text": "0x081F48A0",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_JeffPostBattle",
+        "us_text": "0x081F6CBC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F68A3",
+            "jp_reference": "0x081F451D",
+            "jp_text": "0x081F48CF",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_KeeganDefeat",
+        "us_text": "0x081F6AF0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F682D",
+            "jp_reference": "0x081F44A7",
+            "jp_text": "0x081F4732",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_KeeganIntro",
+        "us_text": "0x081F6A8F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F6829",
+            "jp_reference": "0x081F44A3",
+            "jp_text": "0x081F46E7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "LavaridgeTown_Gym_B1F_Text_KeeganPostBattle",
+        "us_text": "0x081F6AFD",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F6837",
+            "jp_reference": "0x081F44B1",
+            "jp_text": "0x081F4745",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 12,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

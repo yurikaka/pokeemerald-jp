@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "batch": "141_aquahideout_b1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt2Defeat",
+      "address": "0x08217D98",
+      "original": "0x08217E2B",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt2Intro",
+      "address": "0x08217D94",
+      "original": "0x08217E0C",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt2PostBattle",
+      "address": "0x08217DA2",
+      "original": "0x08217E39",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt2PostBattle",
+      "address": "0x08217DB1",
+      "original": "0x08217E39",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt3Defeat",
+      "address": "0x08217DC3",
+      "original": "0x08217EAD",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+      "address": "0x08217DBF",
+      "original": "0x08217E76",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt3PostBattle",
+      "address": "0x08217DCD",
+      "original": "0x08217EBB",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt3PostBattle",
+      "address": "0x08217DD6",
+      "original": "0x08217EBB",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt5Defeat",
+      "address": "0x08217DE8",
+      "original": "0x08217F0C",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt5Intro",
+      "address": "0x08217DE4",
+      "original": "0x08217EE8",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt5PostBattle",
+      "address": "0x08217DEE",
+      "original": "0x08217F16",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt7Defeat",
+      "address": "0x08217DFF",
+      "original": "0x08217F6E",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt7Intro",
+      "address": "0x08217DFB",
+      "original": "0x08217F3A",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B1F_Text_Grunt7PostBattle",
+      "address": "0x08217E05",
+      "original": "0x08217F7B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "AquaHideout_B1F_Text_Grunt2Defeat",
+    "AquaHideout_B1F_Text_Grunt2Intro",
+    "AquaHideout_B1F_Text_Grunt2PostBattle",
+    "AquaHideout_B1F_Text_Grunt3Defeat",
+    "AquaHideout_B1F_Text_Grunt3Intro",
+    "AquaHideout_B1F_Text_Grunt3PostBattle",
+    "AquaHideout_B1F_Text_Grunt5Defeat",
+    "AquaHideout_B1F_Text_Grunt5Intro",
+    "AquaHideout_B1F_Text_Grunt5PostBattle",
+    "AquaHideout_B1F_Text_Grunt7Defeat",
+    "AquaHideout_B1F_Text_Grunt7Intro",
+    "AquaHideout_B1F_Text_Grunt7PostBattle"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:AquaHideout_B1F_Text_Grunt2Defeat|AquaHideout_B1F_Text_Grunt2Intro|AquaHideout_B1F_Text_Grunt2PostBattle|AquaHideout_B1F_Text_Grunt3Defeat|AquaHideout_B1F_Text_Grunt3Intro|AquaHideout_B1F_Text_Grunt3PostBattle|AquaHideout_B1F_Text_Grunt5Defeat|AquaHideout_B1F_Text_Grunt5Intro|AquaHideout_B1F_Text_Grunt5PostBattle|AquaHideout_B1F_Text_Grunt7Defeat|AquaHideout_B1F_Text_Grunt7Intro|AquaHideout_B1F_Text_Grunt7PostBattle)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20865,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt2Defeat",
+        "us_text": "0x0821CFB5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF19",
+            "jp_reference": "0x08217D98",
+            "jp_text": "0x08217E2B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt2Intro",
+        "us_text": "0x0821CF8D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF15",
+            "jp_reference": "0x08217D94",
+            "jp_text": "0x08217E0C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt2PostBattle",
+        "us_text": "0x0821CFC4",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0821CF23",
+            "jp_reference": "0x08217DA2",
+            "jp_text": "0x08217E39",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          },
+          {
+            "us_reference": "0x0821CF32",
+            "jp_reference": "0x08217DB1",
+            "jp_text": "0x08217E39",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt3Defeat",
+        "us_text": "0x0821D044",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF44",
+            "jp_reference": "0x08217DC3",
+            "jp_text": "0x08217EAD",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+        "us_text": "0x0821D00A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF40",
+            "jp_reference": "0x08217DBF",
+            "jp_text": "0x08217E76",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt3PostBattle",
+        "us_text": "0x0821D054",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0821CF4E",
+            "jp_reference": "0x08217DCD",
+            "jp_text": "0x08217EBB",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0821CF57",
+            "jp_reference": "0x08217DD6",
+            "jp_text": "0x08217EBB",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt5Defeat",
+        "us_text": "0x0821D0AE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF69",
+            "jp_reference": "0x08217DE8",
+            "jp_text": "0x08217F0C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt5Intro",
+        "us_text": "0x0821D080",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF65",
+            "jp_reference": "0x08217DE4",
+            "jp_text": "0x08217EE8",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt5PostBattle",
+        "us_text": "0x0821D0C3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF6F",
+            "jp_reference": "0x08217DEE",
+            "jp_text": "0x08217F16",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt7Defeat",
+        "us_text": "0x0821D128",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF80",
+            "jp_reference": "0x08217DFF",
+            "jp_text": "0x08217F6E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt7Intro",
+        "us_text": "0x0821D0EF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF7C",
+            "jp_reference": "0x08217DFB",
+            "jp_text": "0x08217F3A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B1F_Text_Grunt7PostBattle",
+        "us_text": "0x0821D139",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821CF86",
+            "jp_reference": "0x08217E05",
+            "jp_text": "0x08217F7B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20865
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 14,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

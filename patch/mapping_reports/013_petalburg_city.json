@@ -1,0 +1,321 @@
+{
+  "schema_version": 1,
+  "batch": "013_petalburg_city.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "PetalburgCity_Text_AreYouATrainer",
+      "address": "0x081DBC41",
+      "original": "0x081DBF2C",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_AreYouRookieTrainer",
+      "address": "0x081DBA39",
+      "original": "0x081DBD98",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_AreYouRookieTrainer",
+      "address": "0x081DBD4C",
+      "original": "0x081DBD98",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_CitySign",
+      "address": "0x081DB99D",
+      "original": "0x081DBF05",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_FullPartyExplanation",
+      "address": "0x081DB9A6",
+      "original": "0x081DBE8E",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_GymSign",
+      "address": "0x081DB994",
+      "original": "0x081DBEDC",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_ImLookingForTalentedTrainers",
+      "address": "0x081DBC6D",
+      "original": "0x081DBF97",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_ThisIsGymSign",
+      "address": "0x081DBA87",
+      "original": "0x081DBE11",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_ThisIsPetalburgGym",
+      "address": "0x081DBA6E",
+      "original": "0x081DBDFD",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_WallyHouseSign",
+      "address": "0x081DB9AF",
+      "original": "0x081DBF22",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_WaterReflection",
+      "address": "0x081DB906",
+      "original": "0x081DBE37",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_WellMaybeNot",
+      "address": "0x081DBC57",
+      "original": "0x081DBF4C",
+      "count": 1
+    },
+    {
+      "source_symbol": "PetalburgCity_Text_WhereIsWally",
+      "address": "0x081DB91B",
+      "original": "0x081DBD53",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "PetalburgCity_Text_AreYouATrainer",
+    "PetalburgCity_Text_AreYouRookieTrainer",
+    "PetalburgCity_Text_CitySign",
+    "PetalburgCity_Text_FullPartyExplanation",
+    "PetalburgCity_Text_GymSign",
+    "PetalburgCity_Text_ImLookingForTalentedTrainers",
+    "PetalburgCity_Text_ThisIsGymSign",
+    "PetalburgCity_Text_ThisIsPetalburgGym",
+    "PetalburgCity_Text_WallyHouseSign",
+    "PetalburgCity_Text_WaterReflection",
+    "PetalburgCity_Text_WellMaybeNot",
+    "PetalburgCity_Text_WhereIsWally"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:PetalburgCity_Text_AreYouATrainer|PetalburgCity_Text_AreYouRookieTrainer|PetalburgCity_Text_CitySign|PetalburgCity_Text_FullPartyExplanation|PetalburgCity_Text_GymSign|PetalburgCity_Text_ImLookingForTalentedTrainers|PetalburgCity_Text_ThisIsGymSign|PetalburgCity_Text_ThisIsPetalburgGym|PetalburgCity_Text_WallyHouseSign|PetalburgCity_Text_WaterReflection|PetalburgCity_Text_WellMaybeNot|PetalburgCity_Text_WhereIsWally)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -3388,
+    "mapped_count": 12,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "PetalburgCity_Text_AreYouATrainer",
+        "us_text": "0x081DCC7F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC97D",
+            "jp_reference": "0x081DBC41",
+            "jp_text": "0x081DBF2C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_AreYouRookieTrainer",
+        "us_text": "0x081DCABD",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x081DC775",
+            "jp_reference": "0x081DBA39",
+            "jp_text": "0x081DBD98",
+            "mapping_method": "regional_delta",
+            "reference_delta": -3388
+          },
+          {
+            "us_reference": "0x081DCA88",
+            "jp_reference": "0x081DBD4C",
+            "jp_text": "0x081DBD98",
+            "mapping_method": "regional_delta",
+            "reference_delta": -3388
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_CitySign",
+        "us_text": "0x081DCC52",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC6D9",
+            "jp_reference": "0x081DB99D",
+            "jp_text": "0x081DBF05",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_FullPartyExplanation",
+        "us_text": "0x081DCBDA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC6E2",
+            "jp_reference": "0x081DB9A6",
+            "jp_text": "0x081DBE8E",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_GymSign",
+        "us_text": "0x081DCC21",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC6D0",
+            "jp_reference": "0x081DB994",
+            "jp_text": "0x081DBEDC",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_ImLookingForTalentedTrainers",
+        "us_text": "0x081DCCFA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC9A9",
+            "jp_reference": "0x081DBC6D",
+            "jp_text": "0x081DBF97",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_ThisIsGymSign",
+        "us_text": "0x081DCB42",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC7C3",
+            "jp_reference": "0x081DBA87",
+            "jp_text": "0x081DBE11",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_ThisIsPetalburgGym",
+        "us_text": "0x081DCB25",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC7AA",
+            "jp_reference": "0x081DBA6E",
+            "jp_text": "0x081DBDFD",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_WallyHouseSign",
+        "us_text": "0x081DCC76",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC6EB",
+            "jp_reference": "0x081DB9AF",
+            "jp_text": "0x081DBF22",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_WaterReflection",
+        "us_text": "0x081DCB69",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC642",
+            "jp_reference": "0x081DB906",
+            "jp_text": "0x081DBE37",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_WellMaybeNot",
+        "us_text": "0x081DCCA7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC993",
+            "jp_reference": "0x081DBC57",
+            "jp_text": "0x081DBF4C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "PetalburgCity_Text_WhereIsWally",
+        "us_text": "0x081DCA8F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081DC657",
+            "jp_reference": "0x081DB91B",
+            "jp_text": "0x081DBD53",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 13,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

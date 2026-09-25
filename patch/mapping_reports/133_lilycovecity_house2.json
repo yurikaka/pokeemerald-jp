@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch": "133_lilycovecity_house2.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "LilycoveCity_House2_Text_NotAwakeYetHaveThis",
+      "address": "0x08209FEA",
+      "original": "0x0820A01E",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House2_Text_SleepIsEssential",
+      "address": "0x0820A00C",
+      "original": "0x0820A03E",
+      "count": 1
+    },
+    {
+      "source_symbol": "LilycoveCity_House2_Text_SleepIsEssential",
+      "address": "0x0820A016",
+      "original": "0x0820A03E",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "LilycoveCity_House2_Text_NotAwakeYetHaveThis",
+    "LilycoveCity_House2_Text_SleepIsEssential"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:LilycoveCity_House2_Text_NotAwakeYetHaveThis|LilycoveCity_House2_Text_SleepIsEssential)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 2,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "LilycoveCity_House2_Text_NotAwakeYetHaveThis",
+        "us_text": "0x0820DDF2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "LilycoveCity_House2_Text_SleepIsEssential",
+        "us_text": "0x0820DE1C",
+        "us_reference_count": 2,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "LilycoveCity_House2_Text_NotAwakeYetHaveThis",
+        "address": "0x08209FEA",
+        "original": "0x0820A01E",
+        "count": 1
+      },
+      {
+        "source_symbol": "LilycoveCity_House2_Text_SleepIsEssential",
+        "address": "0x0820A00C",
+        "original": "0x0820A03E",
+        "count": 1
+      },
+      {
+        "source_symbol": "LilycoveCity_House2_Text_SleepIsEssential",
+        "address": "0x0820A016",
+        "original": "0x0820A03E",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

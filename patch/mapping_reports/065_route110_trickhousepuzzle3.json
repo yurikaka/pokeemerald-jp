@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "065_route110_trickhousepuzzle3.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_AlanDefeat",
+      "address": "0x0823E9F8",
+      "original": "0x0823EAF8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_AlanIntro",
+      "address": "0x0823E9F4",
+      "original": "0x0823EAD8",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_AlanPostBattle",
+      "address": "0x0823E9FE",
+      "original": "0x0823EB14",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_JustinDefeat",
+      "address": "0x0823E9CA",
+      "original": "0x0823EA63",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_JustinIntro",
+      "address": "0x0823E9C6",
+      "original": "0x0823EA48",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_JustinPostBattle",
+      "address": "0x0823E9D0",
+      "original": "0x0823EA82",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_MarthaDefeat",
+      "address": "0x0823E9E1",
+      "original": "0x0823EAB5",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_MarthaIntro",
+      "address": "0x0823E9DD",
+      "original": "0x0823EA97",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_MarthaPostBattle",
+      "address": "0x0823E9E7",
+      "original": "0x0823EABF",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened",
+      "address": "0x0823D0B9",
+      "original": "0x0823EA05",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route110_TrickHousePuzzle3_Text_AlanDefeat",
+    "Route110_TrickHousePuzzle3_Text_AlanIntro",
+    "Route110_TrickHousePuzzle3_Text_AlanPostBattle",
+    "Route110_TrickHousePuzzle3_Text_JustinDefeat",
+    "Route110_TrickHousePuzzle3_Text_JustinIntro",
+    "Route110_TrickHousePuzzle3_Text_JustinPostBattle",
+    "Route110_TrickHousePuzzle3_Text_MarthaDefeat",
+    "Route110_TrickHousePuzzle3_Text_MarthaIntro",
+    "Route110_TrickHousePuzzle3_Text_MarthaPostBattle",
+    "Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route110_TrickHousePuzzle3_Text_AlanDefeat|Route110_TrickHousePuzzle3_Text_AlanIntro|Route110_TrickHousePuzzle3_Text_AlanPostBattle|Route110_TrickHousePuzzle3_Text_JustinDefeat|Route110_TrickHousePuzzle3_Text_JustinIntro|Route110_TrickHousePuzzle3_Text_JustinPostBattle|Route110_TrickHousePuzzle3_Text_MarthaDefeat|Route110_TrickHousePuzzle3_Text_MarthaIntro|Route110_TrickHousePuzzle3_Text_MarthaPostBattle|Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33620,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_AlanDefeat",
+        "us_text": "0x08246E95",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D4C",
+            "jp_reference": "0x0823E9F8",
+            "jp_text": "0x0823EAF8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33620
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_AlanIntro",
+        "us_text": "0x08246E63",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D48",
+            "jp_reference": "0x0823E9F4",
+            "jp_text": "0x0823EAD8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33620
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_AlanPostBattle",
+        "us_text": "0x08246EAB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D52",
+            "jp_reference": "0x0823E9FE",
+            "jp_text": "0x0823EB14",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33620
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_JustinDefeat",
+        "us_text": "0x08246DB5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D1E",
+            "jp_reference": "0x0823E9CA",
+            "jp_text": "0x0823EA63",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_JustinIntro",
+        "us_text": "0x08246D9D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D1A",
+            "jp_reference": "0x0823E9C6",
+            "jp_text": "0x0823EA48",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_JustinPostBattle",
+        "us_text": "0x08246DE4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D24",
+            "jp_reference": "0x0823E9D0",
+            "jp_text": "0x0823EA82",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_MarthaDefeat",
+        "us_text": "0x08246E33",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D35",
+            "jp_reference": "0x0823E9E1",
+            "jp_text": "0x0823EAB5",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_MarthaIntro",
+        "us_text": "0x08246E08",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D31",
+            "jp_reference": "0x0823E9DD",
+            "jp_text": "0x0823EA97",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_MarthaPostBattle",
+        "us_text": "0x08246E41",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246D3B",
+            "jp_reference": "0x0823E9E7",
+            "jp_text": "0x0823EABF",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened",
+        "us_text": "0x08246D59",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08245242",
+            "jp_reference": "0x0823D0B9",
+            "jp_text": "0x0823EA05",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

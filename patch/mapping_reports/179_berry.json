@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "batch": "179_berry.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "BerryTree_Text_BerryGrowthStage1",
+      "address": "0x08244DDD",
+      "original": "0x08244F3D",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_BerryGrowthStage2",
+      "address": "0x08244DEA",
+      "original": "0x08244F4D",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_BerryGrowthStage3",
+      "address": "0x08244DF7",
+      "original": "0x08244F5A",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_BerryGrowthStage4",
+      "address": "0x08244E09",
+      "original": "0x08244F6E",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_BerryLeftUnpicked",
+      "address": "0x08244E95",
+      "original": "0x08245011",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_BerryPocketFull",
+      "address": "0x08244E8C",
+      "original": "0x08244FEF",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_CareAdverbGood",
+      "address": "0x08244E2C",
+      "original": "0x08244F8D",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_CareAdverbGreat",
+      "address": "0x08244E33",
+      "original": "0x08244F7F",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_CareAdverbPoor",
+      "address": "0x08244E3A",
+      "original": "0x08244F88",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_ExclamationPoint",
+      "address": "0x08244D7B",
+      "original": "0x08245069",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_ItsSoftLoamySoil",
+      "address": "0x08244D96",
+      "original": "0x08244F02",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_PickedTheBerry",
+      "address": "0x08244E78",
+      "original": "0x08244FAF",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_PlantIsDelighted",
+      "address": "0x08244EEA",
+      "original": "0x08245058",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_PlantedOneBerry",
+      "address": "0x08244EFB",
+      "original": "0x08244F24",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_PutAwayBerry",
+      "address": "0x08244E83",
+      "original": "0x08244FC2",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_WantToPick",
+      "address": "0x08244E47",
+      "original": "0x08244F92",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_WantToPlant",
+      "address": "0x08244DA0",
+      "original": "0x08244F0D",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_WantToWater",
+      "address": "0x08244EBA",
+      "original": "0x08245027",
+      "count": 1
+    },
+    {
+      "source_symbol": "BerryTree_Text_WateredTheBerry",
+      "address": "0x08244EDD",
+      "original": "0x08245047",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "BerryTree_Text_BerryGrowthStage1",
+    "BerryTree_Text_BerryGrowthStage2",
+    "BerryTree_Text_BerryGrowthStage3",
+    "BerryTree_Text_BerryGrowthStage4",
+    "BerryTree_Text_BerryLeftUnpicked",
+    "BerryTree_Text_BerryPocketFull",
+    "BerryTree_Text_CareAdverbGood",
+    "BerryTree_Text_CareAdverbGreat",
+    "BerryTree_Text_CareAdverbPoor",
+    "BerryTree_Text_ExclamationPoint",
+    "BerryTree_Text_ItsSoftLoamySoil",
+    "BerryTree_Text_PickedTheBerry",
+    "BerryTree_Text_PlantIsDelighted",
+    "BerryTree_Text_PlantedOneBerry",
+    "BerryTree_Text_PutAwayBerry",
+    "BerryTree_Text_WantToPick",
+    "BerryTree_Text_WantToPlant",
+    "BerryTree_Text_WantToWater",
+    "BerryTree_Text_WateredTheBerry"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:BerryTree_Text_BerryGrowthStage1|BerryTree_Text_BerryGrowthStage2|BerryTree_Text_BerryGrowthStage3|BerryTree_Text_BerryGrowthStage4|BerryTree_Text_BerryLeftUnpicked|BerryTree_Text_BerryPocketFull|BerryTree_Text_CareAdverbGood|BerryTree_Text_CareAdverbGreat|BerryTree_Text_CareAdverbPoor|BerryTree_Text_ExclamationPoint|BerryTree_Text_ItsSoftLoamySoil|BerryTree_Text_PickedTheBerry|BerryTree_Text_PlantIsDelighted|BerryTree_Text_PlantedOneBerry|BerryTree_Text_PutAwayBerry|BerryTree_Text_WantToPick|BerryTree_Text_WantToPlant|BerryTree_Text_WantToWater|BerryTree_Text_WateredTheBerry)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -35149,
+    "mapped_count": 19,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "BerryTree_Text_BerryGrowthStage1",
+        "us_text": "0x0824D8B6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D72D",
+            "jp_reference": "0x08244DDD",
+            "jp_text": "0x08244F3D",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_BerryGrowthStage2",
+        "us_text": "0x0824D8D2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D73D",
+            "jp_reference": "0x08244DEA",
+            "jp_text": "0x08244F4D",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_BerryGrowthStage3",
+        "us_text": "0x0824D8EE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D74D",
+            "jp_reference": "0x08244DF7",
+            "jp_text": "0x08244F5A",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_BerryGrowthStage4",
+        "us_text": "0x0824D912",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D762",
+            "jp_reference": "0x08244E09",
+            "jp_text": "0x08244F6E",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_BerryLeftUnpicked",
+        "us_text": "0x0824D9D1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D7F1",
+            "jp_reference": "0x08244E95",
+            "jp_text": "0x08245011",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_BerryPocketFull",
+        "us_text": "0x0824D9A7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D7E8",
+            "jp_reference": "0x08244E8C",
+            "jp_text": "0x08244FEF",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_CareAdverbGood",
+        "us_text": "0x0824D940",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D785",
+            "jp_reference": "0x08244E2C",
+            "jp_text": "0x08244F8D",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_CareAdverbGreat",
+        "us_text": "0x0824D92E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D78C",
+            "jp_reference": "0x08244E33",
+            "jp_text": "0x08244F7F",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_CareAdverbPoor",
+        "us_text": "0x0824D939",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D793",
+            "jp_reference": "0x08244E3A",
+            "jp_text": "0x08244F88",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_ExclamationPoint",
+        "us_text": "0x0824DA19",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D6C8",
+            "jp_reference": "0x08244D7B",
+            "jp_text": "0x08245069",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35149
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_ItsSoftLoamySoil",
+        "us_text": "0x0824D867",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D6E3",
+            "jp_reference": "0x08244D96",
+            "jp_text": "0x08244F02",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35149
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_PickedTheBerry",
+        "us_text": "0x0824D964",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D7D4",
+            "jp_reference": "0x08244E78",
+            "jp_text": "0x08244FAF",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_PlantIsDelighted",
+        "us_text": "0x0824DA09",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D84C",
+            "jp_reference": "0x08244EEA",
+            "jp_text": "0x08245058",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_PlantedOneBerry",
+        "us_text": "0x0824D89B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D860",
+            "jp_reference": "0x08244EFB",
+            "jp_text": "0x08244F24",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_PutAwayBerry",
+        "us_text": "0x0824D974",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D7DF",
+            "jp_reference": "0x08244E83",
+            "jp_text": "0x08244FC2",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_WantToPick",
+        "us_text": "0x0824D947",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D7A3",
+            "jp_reference": "0x08244E47",
+            "jp_text": "0x08244F92",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_WantToPlant",
+        "us_text": "0x0824D877",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D6ED",
+            "jp_reference": "0x08244DA0",
+            "jp_text": "0x08244F0D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_WantToWater",
+        "us_text": "0x0824D9E0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D819",
+            "jp_reference": "0x08244EBA",
+            "jp_text": "0x08245027",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      },
+      {
+        "symbol": "BerryTree_Text_WateredTheBerry",
+        "us_text": "0x0824D9FB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824D83F",
+            "jp_reference": "0x08244EDD",
+            "jp_text": "0x08245047",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 19,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

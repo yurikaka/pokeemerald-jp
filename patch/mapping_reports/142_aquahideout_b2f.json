@@ -1,0 +1,355 @@
+{
+  "schema_version": 1,
+  "batch": "142_aquahideout_b2f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt4Defeat",
+      "address": "0x08218064",
+      "original": "0x08218205",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt4Intro",
+      "address": "0x08218060",
+      "original": "0x082181E1",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt4PostBattle",
+      "address": "0x0821806E",
+      "original": "0x08218218",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt4PostBattle",
+      "address": "0x08218077",
+      "original": "0x08218218",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt6Defeat",
+      "address": "0x08218089",
+      "original": "0x0821827F",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt6Intro",
+      "address": "0x08218085",
+      "original": "0x0821822F",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt6PostBattle",
+      "address": "0x0821808F",
+      "original": "0x08218297",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt8Defeat",
+      "address": "0x082180A0",
+      "original": "0x0821830C",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt8Intro",
+      "address": "0x0821809C",
+      "original": "0x082182D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_Grunt8PostBattle",
+      "address": "0x082180A6",
+      "original": "0x0821832A",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_MattDefeat",
+      "address": "0x08217FE3",
+      "original": "0x0821811D",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_MattIntro",
+      "address": "0x08217FDF",
+      "original": "0x082180AD",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_MattPostBattle",
+      "address": "0x08217FED",
+      "original": "0x08218165",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_MattPostBattle",
+      "address": "0x08218042",
+      "original": "0x08218165",
+      "count": 1
+    },
+    {
+      "source_symbol": "AquaHideout_B2F_Text_OurBossGotThroughHisPreparations",
+      "address": "0x08218018",
+      "original": "0x0821812F",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "AquaHideout_B2F_Text_Grunt4Defeat",
+    "AquaHideout_B2F_Text_Grunt4Intro",
+    "AquaHideout_B2F_Text_Grunt4PostBattle",
+    "AquaHideout_B2F_Text_Grunt6Defeat",
+    "AquaHideout_B2F_Text_Grunt6Intro",
+    "AquaHideout_B2F_Text_Grunt6PostBattle",
+    "AquaHideout_B2F_Text_Grunt8Defeat",
+    "AquaHideout_B2F_Text_Grunt8Intro",
+    "AquaHideout_B2F_Text_Grunt8PostBattle",
+    "AquaHideout_B2F_Text_MattDefeat",
+    "AquaHideout_B2F_Text_MattIntro",
+    "AquaHideout_B2F_Text_MattPostBattle",
+    "AquaHideout_B2F_Text_OurBossGotThroughHisPreparations"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:AquaHideout_B2F_Text_Grunt4Defeat|AquaHideout_B2F_Text_Grunt4Intro|AquaHideout_B2F_Text_Grunt4PostBattle|AquaHideout_B2F_Text_Grunt6Defeat|AquaHideout_B2F_Text_Grunt6Intro|AquaHideout_B2F_Text_Grunt6PostBattle|AquaHideout_B2F_Text_Grunt8Defeat|AquaHideout_B2F_Text_Grunt8Intro|AquaHideout_B2F_Text_Grunt8PostBattle|AquaHideout_B2F_Text_MattDefeat|AquaHideout_B2F_Text_MattIntro|AquaHideout_B2F_Text_MattPostBattle|AquaHideout_B2F_Text_OurBossGotThroughHisPreparations)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20941,
+    "mapped_count": 13,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt4Defeat",
+        "us_text": "0x0821D3E7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D231",
+            "jp_reference": "0x08218064",
+            "jp_text": "0x08218205",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt4Intro",
+        "us_text": "0x0821D3C0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D22D",
+            "jp_reference": "0x08218060",
+            "jp_text": "0x082181E1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt4PostBattle",
+        "us_text": "0x0821D401",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0821D23B",
+            "jp_reference": "0x0821806E",
+            "jp_text": "0x08218218",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0821D244",
+            "jp_reference": "0x08218077",
+            "jp_text": "0x08218218",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt6Defeat",
+        "us_text": "0x0821D47F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D256",
+            "jp_reference": "0x08218089",
+            "jp_text": "0x0821827F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt6Intro",
+        "us_text": "0x0821D418",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D252",
+            "jp_reference": "0x08218085",
+            "jp_text": "0x0821822F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt6PostBattle",
+        "us_text": "0x0821D49B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D25C",
+            "jp_reference": "0x0821808F",
+            "jp_text": "0x08218297",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt8Defeat",
+        "us_text": "0x0821D514",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D26D",
+            "jp_reference": "0x082180A0",
+            "jp_text": "0x0821830C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt8Intro",
+        "us_text": "0x0821D4DB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D269",
+            "jp_reference": "0x0821809C",
+            "jp_text": "0x082182D8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20941
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_Grunt8PostBattle",
+        "us_text": "0x0821D534",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D273",
+            "jp_reference": "0x082180A6",
+            "jp_text": "0x0821832A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20941
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_MattDefeat",
+        "us_text": "0x0821D2FC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D1B0",
+            "jp_reference": "0x08217FE3",
+            "jp_text": "0x0821811D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_MattIntro",
+        "us_text": "0x0821D27A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D1AC",
+            "jp_reference": "0x08217FDF",
+            "jp_text": "0x082180AD",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_MattPostBattle",
+        "us_text": "0x0821D346",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0821D1BA",
+            "jp_reference": "0x08217FED",
+            "jp_text": "0x08218165",
+            "mapping_method": "context",
+            "context_radius": 24
+          },
+          {
+            "us_reference": "0x0821D20F",
+            "jp_reference": "0x08218042",
+            "jp_text": "0x08218165",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "AquaHideout_B2F_Text_OurBossGotThroughHisPreparations",
+        "us_text": "0x0821D314",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821D1E5",
+            "jp_reference": "0x08218018",
+            "jp_text": "0x0821812F",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 15,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "batch": "109_fortreecity_house4.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FortreeCity_House4_Text_AskedWingullToRunErrand",
+      "address": "0x082051F2",
+      "original": "0x082052A3",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House4_Text_BringsWorldCloserTogether",
+      "address": "0x082051A5",
+      "original": "0x08205255",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull",
+      "address": "0x08205234",
+      "original": "0x08205317",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House4_Text_GoBirdPokemon",
+      "address": "0x082051CA",
+      "original": "0x08205293",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb",
+      "address": "0x08205206",
+      "original": "0x082052BF",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House4_Text_Wingull",
+      "address": "0x0820524C",
+      "original": "0x08205338",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FortreeCity_House4_Text_AskedWingullToRunErrand",
+    "FortreeCity_House4_Text_BringsWorldCloserTogether",
+    "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull",
+    "FortreeCity_House4_Text_GoBirdPokemon",
+    "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb",
+    "FortreeCity_House4_Text_Wingull"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FortreeCity_House4_Text_AskedWingullToRunErrand|FortreeCity_House4_Text_BringsWorldCloserTogether|FortreeCity_House4_Text_FriendsFarAwayThanksToWingull|FortreeCity_House4_Text_GoBirdPokemon|FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb|FortreeCity_House4_Text_Wingull)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -14443,
+    "mapped_count": 6,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FortreeCity_House4_Text_AskedWingullToRunErrand",
+        "us_text": "0x08208B21",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208A5D",
+            "jp_reference": "0x082051F2",
+            "jp_text": "0x082052A3",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House4_Text_BringsWorldCloserTogether",
+        "us_text": "0x08208AC0",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208A10",
+            "jp_reference": "0x082051A5",
+            "jp_text": "0x08205255",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14443
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House4_Text_FriendsFarAwayThanksToWingull",
+        "us_text": "0x08208BB2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208A9F",
+            "jp_reference": "0x08205234",
+            "jp_text": "0x08205317",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House4_Text_GoBirdPokemon",
+        "us_text": "0x08208B08",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208A35",
+            "jp_reference": "0x082051CA",
+            "jp_text": "0x08205293",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb",
+        "us_text": "0x08208B3A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208A71",
+            "jp_reference": "0x08205206",
+            "jp_text": "0x082052BF",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House4_Text_Wingull",
+        "us_text": "0x08208BE8",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208AB7",
+            "jp_reference": "0x0820524C",
+            "jp_text": "0x08205338",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14443
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 6,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

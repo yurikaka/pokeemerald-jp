@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "073_verdanturftown.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "VerdanturfTown_Text_AirCleanHere",
+      "address": "0x081E609D",
+      "original": "0x081E619C",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_BattleTentSign",
+      "address": "0x081E60E0",
+      "original": "0x081E632E",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_EasyToGetToRustboroNow",
+      "address": "0x081E60C4",
+      "original": "0x081E62B6",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_GuyTryingToBustThroughCave",
+      "address": "0x081E60BA",
+      "original": "0x081E623D",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_MakeBattleTentDebut",
+      "address": "0x081E60A6",
+      "original": "0x081E61FD",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_ManDugTunnelForLove",
+      "address": "0x081E6089",
+      "original": "0x081E616F",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_ManTryingToDigTunnel",
+      "address": "0x081E6075",
+      "original": "0x081E60F0",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_RusturfTunnelSign",
+      "address": "0x081E60E9",
+      "original": "0x081E6350",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_TownSign",
+      "address": "0x081E60CE",
+      "original": "0x081E6305",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_Text_WandasHouse",
+      "address": "0x081E60D7",
+      "original": "0x081E6324",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "VerdanturfTown_Text_AirCleanHere",
+    "VerdanturfTown_Text_BattleTentSign",
+    "VerdanturfTown_Text_EasyToGetToRustboroNow",
+    "VerdanturfTown_Text_GuyTryingToBustThroughCave",
+    "VerdanturfTown_Text_MakeBattleTentDebut",
+    "VerdanturfTown_Text_ManDugTunnelForLove",
+    "VerdanturfTown_Text_ManTryingToDigTunnel",
+    "VerdanturfTown_Text_RusturfTunnelSign",
+    "VerdanturfTown_Text_TownSign",
+    "VerdanturfTown_Text_WandasHouse"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:VerdanturfTown_Text_AirCleanHere|VerdanturfTown_Text_BattleTentSign|VerdanturfTown_Text_EasyToGetToRustboroNow|VerdanturfTown_Text_GuyTryingToBustThroughCave|VerdanturfTown_Text_MakeBattleTentDebut|VerdanturfTown_Text_ManDugTunnelForLove|VerdanturfTown_Text_ManTryingToDigTunnel|VerdanturfTown_Text_RusturfTunnelSign|VerdanturfTown_Text_TownSign|VerdanturfTown_Text_WandasHouse)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -6469,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "VerdanturfTown_Text_AirCleanHere",
+        "us_text": "0x081E7AEC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E79E2",
+            "jp_reference": "0x081E609D",
+            "jp_text": "0x081E619C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_BattleTentSign",
+        "us_text": "0x081E7C8E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E7A25",
+            "jp_reference": "0x081E60E0",
+            "jp_text": "0x081E632E",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6469
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_EasyToGetToRustboroNow",
+        "us_text": "0x081E7C05",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E7A09",
+            "jp_reference": "0x081E60C4",
+            "jp_text": "0x081E62B6",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_GuyTryingToBustThroughCave",
+        "us_text": "0x081E7B8A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E79FF",
+            "jp_reference": "0x081E60BA",
+            "jp_text": "0x081E623D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_MakeBattleTentDebut",
+        "us_text": "0x081E7B56",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E79EB",
+            "jp_reference": "0x081E60A6",
+            "jp_text": "0x081E61FD",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_ManDugTunnelForLove",
+        "us_text": "0x081E7AB3",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E79CE",
+            "jp_reference": "0x081E6089",
+            "jp_text": "0x081E616F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_ManTryingToDigTunnel",
+        "us_text": "0x081E7A35",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E79BA",
+            "jp_reference": "0x081E6075",
+            "jp_text": "0x081E60F0",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_RusturfTunnelSign",
+        "us_text": "0x081E7CB6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E7A2E",
+            "jp_reference": "0x081E60E9",
+            "jp_text": "0x081E6350",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6469
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_TownSign",
+        "us_text": "0x081E7C5D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E7A13",
+            "jp_reference": "0x081E60CE",
+            "jp_text": "0x081E6305",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6469
+          }
+        ]
+      },
+      {
+        "symbol": "VerdanturfTown_Text_WandasHouse",
+        "us_text": "0x081E7C85",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081E7A1C",
+            "jp_reference": "0x081E60D7",
+            "jp_text": "0x081E6324",
+            "mapping_method": "regional_delta",
+            "reference_delta": -6469
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

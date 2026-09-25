@@ -17,9 +17,18 @@ layouts such as the battle action menu.
 Later text ports are stored as independently auditable files under
 `patch/batches`. Each batch records the corresponding US localization commit,
 the original US text symbol, the exact Japanese pointer locations and their
-expected original values. US Chinese text bytes are converted to the Japanese
-patch encoding during the build. Placeholders containing Japanese save data,
-such as the player name, explicitly switch back to the Japanese renderer.
+expected original values. New batches also embed the complete mapping report:
+input hashes, matching policy, and the mapping method used for every pointer.
+Context matching compares control codes as raw bytes; it does not normalize
+US and Japanese control-code differences. US Chinese text bytes are converted
+to the Japanese patch encoding during the build, including the `CLEAR_TO` to
+`SHIFT_TEXT` rewrite. Placeholders containing Japanese save data, such as the
+player name, explicitly switch back to the Japanese renderer.
+
+`patch/tools/generate_mapping_reports.py` reconstructs reports for existing
+batches from historical US ROM/ELF builds. It writes reports separately under
+`patch/mapping_reports` and compares them with the committed reference writes;
+it never rewrites those references automatically.
 
 `make chs` first produces the exact 16 MiB Japanese build, expands a copy to
 32 MiB, injects the Chinese renderer/fonts/text pool at `0x09000000`, and

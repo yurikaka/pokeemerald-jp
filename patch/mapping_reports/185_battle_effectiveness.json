@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "batch": "185_battle_effectiveness.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "sText_CriticalHit",
+      "address": "0x085AB710",
+      "original": "0x085AA8EE",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_ItDoesntAffect",
+      "address": "0x085AB418",
+      "original": "0x085A9788",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_NotVeryEffective",
+      "address": "0x085AB720",
+      "original": "0x085AA954",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_OneHitKO",
+      "address": "0x085AB714",
+      "original": "0x085AA8FB",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_SuperEffective",
+      "address": "0x085AB724",
+      "original": "0x085AA964",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "sText_CriticalHit",
+    "sText_ItDoesntAffect",
+    "sText_NotVeryEffective",
+    "sText_OneHitKO",
+    "sText_SuperEffective"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:sText_CriticalHit|sText_ItDoesntAffect|sText_NotVeryEffective|sText_OneHitKO|sText_SuperEffective)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 5,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "sText_ItDoesntAffect",
+        "us_text": "0x08664EE0",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_CriticalHit",
+        "us_text": "0x086665F9",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_OneHitKO",
+        "us_text": "0x08666609",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_NotVeryEffective",
+        "us_text": "0x08666670",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_SuperEffective",
+        "us_text": "0x08666689",
+        "us_reference_count": 1,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "sText_CriticalHit",
+        "address": "0x085AB710",
+        "original": "0x085AA8EE",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_ItDoesntAffect",
+        "address": "0x085AB418",
+        "original": "0x085A9788",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_NotVeryEffective",
+        "address": "0x085AB720",
+        "original": "0x085AA954",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_OneHitKO",
+        "address": "0x085AB714",
+        "original": "0x085AA8FB",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_SuperEffective",
+        "address": "0x085AB724",
+        "original": "0x085AA964",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

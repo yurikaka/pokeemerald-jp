@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "batch": "064_route110_trickhousepuzzle2.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaDefeat",
+      "address": "0x0823E189",
+      "original": "0x0823E29B",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaIntro",
+      "address": "0x0823E185",
+      "original": "0x0823E277",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle",
+      "address": "0x0823E18F",
+      "original": "0x0823E2B7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_PaulDefeat",
+      "address": "0x0823E172",
+      "original": "0x0823E240",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_PaulIntro",
+      "address": "0x0823E16E",
+      "original": "0x0823E226",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_PaulPostBattle",
+      "address": "0x0823E178",
+      "original": "0x0823E255",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_TedDefeat",
+      "address": "0x0823E15B",
+      "original": "0x0823E1F1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_TedIntro",
+      "address": "0x0823E157",
+      "original": "0x0823E1D9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_TedPostBattle",
+      "address": "0x0823E161",
+      "original": "0x0823E209",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened",
+      "address": "0x0823D090",
+      "original": "0x0823E196",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route110_TrickHousePuzzle2_Text_GeorgiaDefeat",
+    "Route110_TrickHousePuzzle2_Text_GeorgiaIntro",
+    "Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle",
+    "Route110_TrickHousePuzzle2_Text_PaulDefeat",
+    "Route110_TrickHousePuzzle2_Text_PaulIntro",
+    "Route110_TrickHousePuzzle2_Text_PaulPostBattle",
+    "Route110_TrickHousePuzzle2_Text_TedDefeat",
+    "Route110_TrickHousePuzzle2_Text_TedIntro",
+    "Route110_TrickHousePuzzle2_Text_TedPostBattle",
+    "Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route110_TrickHousePuzzle2_Text_GeorgiaDefeat|Route110_TrickHousePuzzle2_Text_GeorgiaIntro|Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle|Route110_TrickHousePuzzle2_Text_PaulDefeat|Route110_TrickHousePuzzle2_Text_PaulIntro|Route110_TrickHousePuzzle2_Text_PaulPostBattle|Route110_TrickHousePuzzle2_Text_TedDefeat|Route110_TrickHousePuzzle2_Text_TedIntro|Route110_TrickHousePuzzle2_Text_TedPostBattle|Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33582,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaDefeat",
+        "us_text": "0x082465E5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082464B7",
+            "jp_reference": "0x0823E189",
+            "jp_text": "0x0823E29B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33582
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaIntro",
+        "us_text": "0x082465AC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082464B3",
+            "jp_reference": "0x0823E185",
+            "jp_text": "0x0823E277",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33582
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_GeorgiaPostBattle",
+        "us_text": "0x082465FB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082464BD",
+            "jp_reference": "0x0823E18F",
+            "jp_text": "0x0823E2B7",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33582
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_PaulDefeat",
+        "us_text": "0x0824656F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082464A0",
+            "jp_reference": "0x0823E172",
+            "jp_text": "0x0823E240",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_PaulIntro",
+        "us_text": "0x08246553",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824649C",
+            "jp_reference": "0x0823E16E",
+            "jp_text": "0x0823E226",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_PaulPostBattle",
+        "us_text": "0x08246583",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082464A6",
+            "jp_reference": "0x0823E178",
+            "jp_text": "0x0823E255",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_TedDefeat",
+        "us_text": "0x0824651E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246489",
+            "jp_reference": "0x0823E15B",
+            "jp_text": "0x0823E1F1",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_TedIntro",
+        "us_text": "0x08246508",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08246485",
+            "jp_reference": "0x0823E157",
+            "jp_text": "0x0823E1D9",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_TedPostBattle",
+        "us_text": "0x08246536",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824648F",
+            "jp_reference": "0x0823E161",
+            "jp_text": "0x0823E209",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened",
+        "us_text": "0x082464C4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08245219",
+            "jp_reference": "0x0823D090",
+            "jp_text": "0x0823E196",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

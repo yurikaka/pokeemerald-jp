@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "batch": "151_mossdeepcity_gamecorner_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_AllGoodToGo",
+      "address": "0x08247AEE",
+      "original": "0x082483A1",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_ComeAgain",
+      "address": "0x08246FDD",
+      "original": "0x08247D9F",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+      "address": "0x08247916",
+      "original": "0x082481AB",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo",
+      "address": "0x0824795E",
+      "original": "0x08248292",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon",
+      "address": "0x082479DD",
+      "original": "0x0824838C",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon",
+      "address": "0x08247A29",
+      "original": "0x0824838C",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_PlayWhichGame",
+      "address": "0x0824798C",
+      "original": "0x08248378",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo",
+      "address": "0x08247954",
+      "original": "0x082481D0",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+      "address": "0x08247968",
+      "original": "0x08248314",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait",
+      "address": "0x08247973",
+      "original": "0x08248330",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MossdeepCity_GameCorner_1F_Text_AllGoodToGo",
+    "MossdeepCity_GameCorner_1F_Text_ComeAgain",
+    "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+    "MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo",
+    "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon",
+    "MossdeepCity_GameCorner_1F_Text_PlayWhichGame",
+    "MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo",
+    "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+    "MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MossdeepCity_GameCorner_1F_Text_AllGoodToGo|MossdeepCity_GameCorner_1F_Text_ComeAgain|MossdeepCity_GameCorner_1F_Text_DescribeWhichGame|MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo|MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon|MossdeepCity_GameCorner_1F_Text_PlayWhichGame|MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo|MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay|MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -35981,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_AllGoodToGo",
+        "us_text": "0x0825112E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0825077B",
+            "jp_reference": "0x08247AEE",
+            "jp_text": "0x082483A1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_ComeAgain",
+        "us_text": "0x082510D2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824FC6A",
+            "jp_reference": "0x08246FDD",
+            "jp_text": "0x08247D9F",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+        "us_text": "0x08250F18",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082505A3",
+            "jp_reference": "0x08247916",
+            "jp_text": "0x082481AB",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo",
+        "us_text": "0x08251006",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082505EB",
+            "jp_reference": "0x0824795E",
+            "jp_text": "0x08248292",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon",
+        "us_text": "0x08251119",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0825066A",
+            "jp_reference": "0x082479DD",
+            "jp_text": "0x0824838C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          },
+          {
+            "us_reference": "0x082506B6",
+            "jp_reference": "0x08247A29",
+            "jp_text": "0x0824838C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_PlayWhichGame",
+        "us_text": "0x08251105",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08250619",
+            "jp_reference": "0x0824798C",
+            "jp_text": "0x08248378",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo",
+        "us_text": "0x08250F4A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082505E1",
+            "jp_reference": "0x08247954",
+            "jp_text": "0x082481D0",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+        "us_text": "0x0825107A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082505F5",
+            "jp_reference": "0x08247968",
+            "jp_text": "0x08248314",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      },
+      {
+        "symbol": "MossdeepCity_GameCorner_1F_Text_WelcomeCanYouWait",
+        "us_text": "0x0825109E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08250600",
+            "jp_reference": "0x08247973",
+            "jp_text": "0x08248330",
+            "mapping_method": "regional_delta",
+            "reference_delta": -35981
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 10,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

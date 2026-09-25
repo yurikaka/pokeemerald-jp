@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "batch": "031_rustborocity_devoncorp_1f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+      "address": "0x082010B1",
+      "original": "0x08201249",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter",
+      "address": "0x0820109D",
+      "original": "0x08201222",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_ProductDisplay",
+      "address": "0x082010FF",
+      "original": "0x08201357",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright",
+      "address": "0x0820106C",
+      "original": "0x082011A8",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay",
+      "address": "0x082010F6",
+      "original": "0x08201284",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered",
+      "address": "0x08201076",
+      "original": "0x08201208",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_StaffGotRobbed",
+      "address": "0x082010EC",
+      "original": "0x08201146",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct",
+      "address": "0x08201062",
+      "original": "0x08201162",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp",
+      "address": "0x082010D8",
+      "original": "0x08201106",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp",
+      "address": "0x082010E2",
+      "original": "0x08201106",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere",
+      "address": "0x082010A7",
+      "original": "0x0820126B",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+    "RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter",
+    "RustboroCity_DevonCorp_1F_Text_ProductDisplay",
+    "RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright",
+    "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay",
+    "RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered",
+    "RustboroCity_DevonCorp_1F_Text_StaffGotRobbed",
+    "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct",
+    "RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp",
+    "RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed|RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter|RustboroCity_DevonCorp_1F_Text_ProductDisplay|RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright|RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay|RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered|RustboroCity_DevonCorp_1F_Text_StaffGotRobbed|RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct|RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp|RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -12599,
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+        "us_text": "0x08204383",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082041E8",
+            "jp_reference": "0x082010B1",
+            "jp_text": "0x08201249",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter",
+        "us_text": "0x08204369",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082041D4",
+            "jp_reference": "0x0820109D",
+            "jp_text": "0x08201222",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_ProductDisplay",
+        "us_text": "0x082044A6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08204236",
+            "jp_reference": "0x082010FF",
+            "jp_text": "0x08201357",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12599
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright",
+        "us_text": "0x082042F2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082041A3",
+            "jp_reference": "0x0820106C",
+            "jp_text": "0x082011A8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12599
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay",
+        "us_text": "0x082043B9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0820422D",
+            "jp_reference": "0x082010F6",
+            "jp_text": "0x08201284",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12599
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered",
+        "us_text": "0x08204348",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082041AD",
+            "jp_reference": "0x08201076",
+            "jp_text": "0x08201208",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_StaffGotRobbed",
+        "us_text": "0x0820427C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08204223",
+            "jp_reference": "0x082010EC",
+            "jp_text": "0x08201146",
+            "mapping_method": "regional_delta",
+            "reference_delta": -12599
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct",
+        "us_text": "0x082042A7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08204199",
+            "jp_reference": "0x08201062",
+            "jp_text": "0x08201162",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp",
+        "us_text": "0x0820423D",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0820420F",
+            "jp_reference": "0x082010D8",
+            "jp_text": "0x08201106",
+            "mapping_method": "context",
+            "context_radius": 32
+          },
+          {
+            "us_reference": "0x08204219",
+            "jp_reference": "0x082010E2",
+            "jp_text": "0x08201106",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere",
+        "us_text": "0x082043A1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082041DE",
+            "jp_reference": "0x082010A7",
+            "jp_text": "0x0820126B",
+            "mapping_method": "context",
+            "context_radius": 64
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 11,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "batch": "121_safarizone_south.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "SafariZone_South_Text_AreaOffLimits1",
+      "address": "0x0821EB52",
+      "original": "0x08262AEF",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_AreaOffLimits2",
+      "address": "0x0821EB64",
+      "original": "0x08262B4E",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_Boy",
+      "address": "0x0821EA8C",
+      "original": "0x0826283A",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_EnjoyTheRestOfYourAdventure",
+      "address": "0x0821EAC5",
+      "original": "0x082627BD",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+      "address": "0x0821EADC",
+      "original": "0x082627D2",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_GoodLuck",
+      "address": "0x0821EAD2",
+      "original": "0x0826280D",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_Man",
+      "address": "0x0821EA95",
+      "original": "0x08262869",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_StillHaveTimeExit",
+      "address": "0x0821EAB2",
+      "original": "0x0826279C",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_South_Text_Youngster",
+      "address": "0x0821EA9E",
+      "original": "0x08262987",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "SafariZone_South_Text_AreaOffLimits1",
+    "SafariZone_South_Text_AreaOffLimits2",
+    "SafariZone_South_Text_Boy",
+    "SafariZone_South_Text_EnjoyTheRestOfYourAdventure",
+    "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+    "SafariZone_South_Text_GoodLuck",
+    "SafariZone_South_Text_Man",
+    "SafariZone_South_Text_StillHaveTimeExit",
+    "SafariZone_South_Text_Youngster"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:SafariZone_South_Text_AreaOffLimits1|SafariZone_South_Text_AreaOffLimits2|SafariZone_South_Text_Boy|SafariZone_South_Text_EnjoyTheRestOfYourAdventure|SafariZone_South_Text_ExitEarlyThankYouForPlaying|SafariZone_South_Text_GoodLuck|SafariZone_South_Text_Man|SafariZone_South_Text_StillHaveTimeExit|SafariZone_South_Text_Youngster)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -22791,
+    "mapped_count": 9,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "SafariZone_South_Text_AreaOffLimits1",
+        "us_text": "0x0826FCB7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08224459",
+            "jp_reference": "0x0821EB52",
+            "jp_text": "0x08262AEF",
+            "mapping_method": "regional_delta",
+            "reference_delta": -22791
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_AreaOffLimits2",
+        "us_text": "0x0826FD00",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0822446B",
+            "jp_reference": "0x0821EB64",
+            "jp_text": "0x08262B4E",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_Boy",
+        "us_text": "0x0826F927",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08224393",
+            "jp_reference": "0x0821EA8C",
+            "jp_text": "0x0826283A",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_EnjoyTheRestOfYourAdventure",
+        "us_text": "0x0826F89F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082243CC",
+            "jp_reference": "0x0821EAC5",
+            "jp_text": "0x082627BD",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_ExitEarlyThankYouForPlaying",
+        "us_text": "0x0826F8C1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082243E3",
+            "jp_reference": "0x0821EADC",
+            "jp_text": "0x082627D2",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_GoodLuck",
+        "us_text": "0x0826F8FF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082243D9",
+            "jp_reference": "0x0821EAD2",
+            "jp_text": "0x0826280D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_Man",
+        "us_text": "0x0826F96B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0822439C",
+            "jp_reference": "0x0821EA95",
+            "jp_text": "0x08262869",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_StillHaveTimeExit",
+        "us_text": "0x0826F87B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082243B9",
+            "jp_reference": "0x0821EAB2",
+            "jp_text": "0x0826279C",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_South_Text_Youngster",
+        "us_text": "0x0826FAD2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082243A5",
+            "jp_reference": "0x0821EA9E",
+            "jp_text": "0x08262987",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 9,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

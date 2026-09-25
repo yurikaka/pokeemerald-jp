@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "093_fallarbortown_moverelearnershouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg",
+      "address": "0x081F6219",
+      "original": "0x081F634D",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale",
+      "address": "0x081F6227",
+      "original": "0x081F632B",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon",
+      "address": "0x081F620B",
+      "original": "0x081F62E9",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale",
+      "address": "0x081F61F8",
+      "original": "0x081F6310",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor",
+      "address": "0x081F616C",
+      "original": "0x081F622F",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove",
+      "address": "0x081F61E1",
+      "original": "0x081F62DB",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove",
+      "address": "0x081F618D",
+      "original": "0x081F62A4",
+      "count": 1
+    },
+    {
+      "source_symbol": "FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon",
+      "address": "0x081F61AB",
+      "original": "0x081F62CB",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg",
+    "FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale",
+    "FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon",
+    "FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale",
+    "FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor",
+    "FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove",
+    "FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove",
+    "FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg|FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale|FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon|FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale|FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor|FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove|FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove|FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -9862,
+    "mapped_count": 8,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg",
+        "us_text": "0x081F8A28",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F889F",
+            "jp_reference": "0x081F6219",
+            "jp_text": "0x081F634D",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9862
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_ComeBackWithHeartScale",
+        "us_text": "0x081F89F6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F88AD",
+            "jp_reference": "0x081F6227",
+            "jp_text": "0x081F632B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9862
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon",
+        "us_text": "0x081F89AA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8891",
+            "jp_reference": "0x081F620B",
+            "jp_text": "0x081F62E9",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale",
+        "us_text": "0x081F89D2",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F887E",
+            "jp_reference": "0x081F61F8",
+            "jp_text": "0x081F6310",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9862
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_ImTheMoveTutor",
+        "us_text": "0x081F88B5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F87F2",
+            "jp_reference": "0x081F616C",
+            "jp_text": "0x081F622F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove",
+        "us_text": "0x081F899A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8867",
+            "jp_reference": "0x081F61E1",
+            "jp_text": "0x081F62DB",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9862
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_ThatsAHeartScaleWantMeToTeachMove",
+        "us_text": "0x081F895A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8813",
+            "jp_reference": "0x081F618D",
+            "jp_text": "0x081F62A4",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon",
+        "us_text": "0x081F8988",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x081F8831",
+            "jp_reference": "0x081F61AB",
+            "jp_text": "0x081F62CB",
+            "mapping_method": "regional_delta",
+            "reference_delta": -9862
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 8,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

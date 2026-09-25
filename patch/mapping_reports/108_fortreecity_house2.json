@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "batch": "108_fortreecity_house2.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "FortreeCity_House2_Text_CoinInWhichHand",
+      "address": "0x08204EB2",
+      "original": "0x08204F7F",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_CorrectTryAgainWhichHand",
+      "address": "0x08204ECF",
+      "original": "0x08204FD5",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_CorrectTryAgainWhichHand2",
+      "address": "0x08204EEC",
+      "original": "0x08205013",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_ExplainHiddenPower",
+      "address": "0x08204F2B",
+      "original": "0x0820509A",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_ExplainHiddenPower",
+      "address": "0x08204F41",
+      "original": "0x0820509A",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_HiddenPowersArousedByNature",
+      "address": "0x08204F35",
+      "original": "0x08204F53",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_YouGuessedWrong",
+      "address": "0x08204F4B",
+      "original": "0x082050C0",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_House2_Text_YourHiddenPowerHasAwoken",
+      "address": "0x08204F09",
+      "original": "0x08205051",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "FortreeCity_House2_Text_CoinInWhichHand",
+    "FortreeCity_House2_Text_CorrectTryAgainWhichHand",
+    "FortreeCity_House2_Text_CorrectTryAgainWhichHand2",
+    "FortreeCity_House2_Text_ExplainHiddenPower",
+    "FortreeCity_House2_Text_HiddenPowersArousedByNature",
+    "FortreeCity_House2_Text_YouGuessedWrong",
+    "FortreeCity_House2_Text_YourHiddenPowerHasAwoken"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:FortreeCity_House2_Text_CoinInWhichHand|FortreeCity_House2_Text_CorrectTryAgainWhichHand|FortreeCity_House2_Text_CorrectTryAgainWhichHand2|FortreeCity_House2_Text_ExplainHiddenPower|FortreeCity_House2_Text_HiddenPowersArousedByNature|FortreeCity_House2_Text_YouGuessedWrong|FortreeCity_House2_Text_YourHiddenPowerHasAwoken)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -14364,
+    "mapped_count": 6,
+    "unresolved_count": 1,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "FortreeCity_House2_Text_CoinInWhichHand",
+        "us_text": "0x082087A4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082086CE",
+            "jp_reference": "0x08204EB2",
+            "jp_text": "0x08204F7F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House2_Text_CorrectTryAgainWhichHand",
+        "us_text": "0x0820880B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082086EB",
+            "jp_reference": "0x08204ECF",
+            "jp_text": "0x08204FD5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House2_Text_CorrectTryAgainWhichHand2",
+        "us_text": "0x08208849",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208708",
+            "jp_reference": "0x08204EEC",
+            "jp_text": "0x08205013",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House2_Text_ExplainHiddenPower",
+        "us_text": "0x082088CD",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x08208747",
+            "jp_reference": "0x08204F2B",
+            "jp_text": "0x0820509A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14364
+          },
+          {
+            "us_reference": "0x0820875D",
+            "jp_reference": "0x08204F41",
+            "jp_text": "0x0820509A",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14364
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House2_Text_HiddenPowersArousedByNature",
+        "us_text": "0x0820876F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208751",
+            "jp_reference": "0x08204F35",
+            "jp_text": "0x08204F53",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "FortreeCity_House2_Text_YouGuessedWrong",
+        "us_text": "0x082088FE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08208767",
+            "jp_reference": "0x08204F4B",
+            "jp_text": "0x082050C0",
+            "mapping_method": "regional_delta",
+            "reference_delta": -14364
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      {
+        "symbol": "FortreeCity_House2_Text_YourHiddenPowerHasAwoken",
+        "us_text": "0x08208887",
+        "us_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x08208725",
+            "jp_reference": "0x08204F09",
+            "jp_text": "0x08205051",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 7,
+    "expected_only": [
+      {
+        "source_symbol": "FortreeCity_House2_Text_YourHiddenPowerHasAwoken",
+        "address": "0x08204F09",
+        "original": "0x08205051",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

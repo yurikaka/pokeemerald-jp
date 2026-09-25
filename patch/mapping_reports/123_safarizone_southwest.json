@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "batch": "123_safarizone_southwest.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "SafariZone_Southwest_Text_RestHouseSign",
+      "address": "0x0821EA32",
+      "original": "0x082629FC",
+      "count": 1
+    },
+    {
+      "source_symbol": "SafariZone_Southwest_Text_Woman",
+      "address": "0x0821EA29",
+      "original": "0x082628AB",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "SafariZone_Southwest_Text_RestHouseSign",
+    "SafariZone_Southwest_Text_Woman"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:SafariZone_Southwest_Text_RestHouseSign|SafariZone_Southwest_Text_Woman)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -22791,
+    "mapped_count": 2,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "SafariZone_Southwest_Text_RestHouseSign",
+        "us_text": "0x0826FB73",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08224339",
+            "jp_reference": "0x0821EA32",
+            "jp_text": "0x082629FC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "SafariZone_Southwest_Text_Woman",
+        "us_text": "0x0826F9C4",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08224330",
+            "jp_reference": "0x0821EA29",
+            "jp_text": "0x082628AB",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 2,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

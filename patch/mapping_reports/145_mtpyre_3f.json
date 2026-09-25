@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "batch": "145_mtpyre_3f.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "MtPyre_3F_Text_GabrielleDefeat",
+      "address": "0x0821662A",
+      "original": "0x08216762",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabrielleIntro",
+      "address": "0x08216626",
+      "original": "0x08216753",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabriellePostBattle",
+      "address": "0x08216644",
+      "original": "0x0821677B",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabriellePostRematch",
+      "address": "0x0821667B",
+      "original": "0x0821682B",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabrielleRegister",
+      "address": "0x08216654",
+      "original": "0x082167D1",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabrielleRematchDefeat",
+      "address": "0x08216675",
+      "original": "0x08216815",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_GabrielleRematchIntro",
+      "address": "0x08216671",
+      "original": "0x082167F8",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_KaylaDefeat",
+      "address": "0x08216613",
+      "original": "0x08216715",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_KaylaIntro",
+      "address": "0x0821660F",
+      "original": "0x082166EA",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_KaylaPostBattle",
+      "address": "0x08216619",
+      "original": "0x08216723",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_WilliamDefeat",
+      "address": "0x082165FC",
+      "original": "0x082166BB",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_WilliamIntro",
+      "address": "0x082165F8",
+      "original": "0x08216682",
+      "count": 1
+    },
+    {
+      "source_symbol": "MtPyre_3F_Text_WilliamPostBattle",
+      "address": "0x08216602",
+      "original": "0x082166C5",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "MtPyre_3F_Text_GabrielleDefeat",
+    "MtPyre_3F_Text_GabrielleIntro",
+    "MtPyre_3F_Text_GabriellePostBattle",
+    "MtPyre_3F_Text_GabriellePostRematch",
+    "MtPyre_3F_Text_GabrielleRegister",
+    "MtPyre_3F_Text_GabrielleRematchDefeat",
+    "MtPyre_3F_Text_GabrielleRematchIntro",
+    "MtPyre_3F_Text_KaylaDefeat",
+    "MtPyre_3F_Text_KaylaIntro",
+    "MtPyre_3F_Text_KaylaPostBattle",
+    "MtPyre_3F_Text_WilliamDefeat",
+    "MtPyre_3F_Text_WilliamIntro",
+    "MtPyre_3F_Text_WilliamPostBattle"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:MtPyre_3F_Text_GabrielleDefeat|MtPyre_3F_Text_GabrielleIntro|MtPyre_3F_Text_GabriellePostBattle|MtPyre_3F_Text_GabriellePostRematch|MtPyre_3F_Text_GabrielleRegister|MtPyre_3F_Text_GabrielleRematchDefeat|MtPyre_3F_Text_GabrielleRematchIntro|MtPyre_3F_Text_KaylaDefeat|MtPyre_3F_Text_KaylaIntro|MtPyre_3F_Text_KaylaPostBattle|MtPyre_3F_Text_WilliamDefeat|MtPyre_3F_Text_WilliamIntro|MtPyre_3F_Text_WilliamPostBattle)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -20268,
+    "mapped_count": 13,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "MtPyre_3F_Text_GabrielleDefeat",
+        "us_text": "0x0821B6B7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B556",
+            "jp_reference": "0x0821662A",
+            "jp_text": "0x08216762",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabrielleIntro",
+        "us_text": "0x0821B6A7",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B552",
+            "jp_reference": "0x08216626",
+            "jp_text": "0x08216753",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabriellePostBattle",
+        "us_text": "0x0821B6D9",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B570",
+            "jp_reference": "0x08216644",
+            "jp_text": "0x0821677B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabriellePostRematch",
+        "us_text": "0x0821B7DC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B5A7",
+            "jp_reference": "0x0821667B",
+            "jp_text": "0x0821682B",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabrielleRegister",
+        "us_text": "0x0821B757",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B580",
+            "jp_reference": "0x08216654",
+            "jp_text": "0x082167D1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabrielleRematchDefeat",
+        "us_text": "0x0821B7BA",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B5A1",
+            "jp_reference": "0x08216675",
+            "jp_text": "0x08216815",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_GabrielleRematchIntro",
+        "us_text": "0x0821B791",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B59D",
+            "jp_reference": "0x08216671",
+            "jp_text": "0x082167F8",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_KaylaDefeat",
+        "us_text": "0x0821B65A",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B53F",
+            "jp_reference": "0x08216613",
+            "jp_text": "0x08216715",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_KaylaIntro",
+        "us_text": "0x0821B626",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B53B",
+            "jp_reference": "0x0821660F",
+            "jp_text": "0x082166EA",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_KaylaPostBattle",
+        "us_text": "0x0821B66F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B545",
+            "jp_reference": "0x08216619",
+            "jp_text": "0x08216723",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_WilliamDefeat",
+        "us_text": "0x0821B5EE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B528",
+            "jp_reference": "0x082165FC",
+            "jp_text": "0x082166BB",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_WilliamIntro",
+        "us_text": "0x0821B5AE",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B524",
+            "jp_reference": "0x082165F8",
+            "jp_text": "0x08216682",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      },
+      {
+        "symbol": "MtPyre_3F_Text_WilliamPostBattle",
+        "us_text": "0x0821B603",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0821B52E",
+            "jp_reference": "0x08216602",
+            "jp_text": "0x082166C5",
+            "mapping_method": "regional_delta",
+            "reference_delta": -20268
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 13,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

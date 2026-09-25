@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "batch": "027_stevens_room.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister",
+      "address": "0x08214060",
+      "original": "0x082141A7",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+      "address": "0x0821402C",
+      "original": "0x08214107",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_IveGotToHurryAlong",
+      "address": "0x0821407F",
+      "original": "0x08214249",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_OhBagIsFull",
+      "address": "0x082140EB",
+      "original": "0x0821425D",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_RegisteredSteven",
+      "address": "0x0821406F",
+      "original": "0x08214235",
+      "count": 1
+    },
+    {
+      "source_symbol": "GraniteCave_StevensRoom_Text_ThankYouTakeThis",
+      "address": "0x08214041",
+      "original": "0x08214146",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister",
+    "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+    "GraniteCave_StevensRoom_Text_IveGotToHurryAlong",
+    "GraniteCave_StevensRoom_Text_OhBagIsFull",
+    "GraniteCave_StevensRoom_Text_RegisteredSteven",
+    "GraniteCave_StevensRoom_Text_ThankYouTakeThis"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister|GraniteCave_StevensRoom_Text_ImStevenLetterForMe|GraniteCave_StevensRoom_Text_IveGotToHurryAlong|GraniteCave_StevensRoom_Text_OhBagIsFull|GraniteCave_StevensRoom_Text_RegisteredSteven|GraniteCave_StevensRoom_Text_ThankYouTakeThis)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -18984,
+    "mapped_count": 6,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_CouldBecomeChampionLetsRegister",
+        "us_text": "0x08218BE5",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218A88",
+            "jp_reference": "0x08214060",
+            "jp_text": "0x082141A7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+        "us_text": "0x08218B2F",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218A54",
+            "jp_reference": "0x0821402C",
+            "jp_text": "0x08214107",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_IveGotToHurryAlong",
+        "us_text": "0x08218CA1",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218AA7",
+            "jp_reference": "0x0821407F",
+            "jp_text": "0x08214249",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_OhBagIsFull",
+        "us_text": "0x08218CB6",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218B13",
+            "jp_reference": "0x082140EB",
+            "jp_text": "0x0821425D",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_RegisteredSteven",
+        "us_text": "0x08218C86",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218A97",
+            "jp_reference": "0x0821406F",
+            "jp_text": "0x08214235",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "GraniteCave_StevensRoom_Text_ThankYouTakeThis",
+        "us_text": "0x08218B79",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08218A69",
+            "jp_reference": "0x08214041",
+            "jp_text": "0x08214146",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 6,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

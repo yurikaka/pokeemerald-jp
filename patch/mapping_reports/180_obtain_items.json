@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "batch": "180_obtain_items.json",
+  "source_commit": "8dbfd7c4e",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_ObtainedTheItem",
+      "address": "0x0823C03B",
+      "original": "0x0824393C",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_ObtainedTheItem",
+      "address": "0x08242C2E",
+      "original": "0x0824393C",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_ObtainedTheItem",
+      "address": "0x08242D35",
+      "original": "0x0824393C",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x0820AFFA",
+      "original": "0x08243953",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x0820B038",
+      "original": "0x08243953",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x0820B076",
+      "original": "0x08243953",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x08242C35",
+      "original": "0x08243953",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x08242D13",
+      "original": "0x08243953",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_PutItemInPocket",
+      "address": "0x08242DC5",
+      "original": "0x08243953",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "gText_ObtainedTheItem",
+    "gText_PutItemInPocket"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "5d436a8339b9cf10df83509cd6408aaa654731d7",
+      "us_elf_sha1": "92237dbe22960d7d124f2f76b50583866500efc9",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:gText_ObtainedTheItem|gText_PutItemInPocket)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -32039,
+    "mapped_count": 2,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "gText_ObtainedTheItem",
+        "us_text": "0x0824BBE4",
+        "us_reference_count": 3,
+        "references": [
+          {
+            "us_reference": "0x08243D62",
+            "jp_reference": "0x0823C03B",
+            "jp_text": "0x0824393C",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824AECF",
+            "jp_reference": "0x08242C2E",
+            "jp_text": "0x0824393C",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824AFDC",
+            "jp_reference": "0x08242D35",
+            "jp_text": "0x0824393C",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "gText_PutItemInPocket",
+        "us_text": "0x0824BBFD",
+        "us_reference_count": 6,
+        "references": [
+          {
+            "us_reference": "0x0820F032",
+            "jp_reference": "0x0820AFFA",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          },
+          {
+            "us_reference": "0x0820F070",
+            "jp_reference": "0x0820B038",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          },
+          {
+            "us_reference": "0x0820F0AE",
+            "jp_reference": "0x0820B076",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          },
+          {
+            "us_reference": "0x0824AED6",
+            "jp_reference": "0x08242C35",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          },
+          {
+            "us_reference": "0x0824AFB8",
+            "jp_reference": "0x08242D13",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          },
+          {
+            "us_reference": "0x0824B072",
+            "jp_reference": "0x08242DC5",
+            "jp_text": "0x08243953",
+            "mapping_method": "ordinal_text_position"
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 9,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

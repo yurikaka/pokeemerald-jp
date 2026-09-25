@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "batch": "178_battle_victory.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "sText_AttackerFainted",
+      "address": "0x085AB41C",
+      "original": "0x085A979C",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_DidNotLearnMove",
+      "address": "0x085AB400",
+      "original": "0x085A96FC",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnForgotMove",
+      "address": "0x085AB3F8",
+      "original": "0x085A96C3",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnGainedEXP",
+      "address": "0x085AB3E0",
+      "original": "0x085A962B",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnGrewToLv",
+      "address": "0x085AB3E4",
+      "original": "0x085A9649",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PkmnLearnedMove",
+      "address": "0x085AB3E8",
+      "original": "0x085A965E",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PlayerDefeatedLinkTrainer",
+      "address": "0x0814E754",
+      "original": "0x085AA9C6",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+      "address": "0x0814E71C",
+      "original": "0x085AAD22",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+      "address": "0x085AB8B0",
+      "original": "0x085AAD22",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PlayerGotMoney",
+      "address": "0x085AB424",
+      "original": "0x085A97B2",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_PlayerPickedUpMoney",
+      "address": "0x085AB598",
+      "original": "0x085A9EE5",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_StopLearningMove",
+      "address": "0x085AB3FC",
+      "original": "0x085A96DE",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TargetFainted",
+      "address": "0x085AB420",
+      "original": "0x085A97A7",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TryToLearnMove1",
+      "address": "0x085AB3EC",
+      "original": "0x085A966F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TryToLearnMove2",
+      "address": "0x085AB3F0",
+      "original": "0x085A9688",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TryToLearnMove3",
+      "address": "0x085AB3F4",
+      "original": "0x085A96A8",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TwoInGameTrainersDefeated",
+      "address": "0x0814E6D4",
+      "original": "0x085ABE2F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TwoInGameTrainersDefeated",
+      "address": "0x085AB958",
+      "original": "0x085ABE2F",
+      "count": 1
+    },
+    {
+      "source_symbol": "sText_TwoLinkTrainersDefeated",
+      "address": "0x0814E6D0",
+      "original": "0x085AA9D6",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "sText_AttackerFainted",
+    "sText_DidNotLearnMove",
+    "sText_PkmnForgotMove",
+    "sText_PkmnGainedEXP",
+    "sText_PkmnGrewToLv",
+    "sText_PkmnLearnedMove",
+    "sText_PlayerDefeatedLinkTrainer",
+    "sText_PlayerDefeatedLinkTrainerTrainer1",
+    "sText_PlayerGotMoney",
+    "sText_PlayerPickedUpMoney",
+    "sText_StopLearningMove",
+    "sText_TargetFainted",
+    "sText_TryToLearnMove1",
+    "sText_TryToLearnMove2",
+    "sText_TryToLearnMove3",
+    "sText_TwoInGameTrainersDefeated",
+    "sText_TwoLinkTrainersDefeated"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:sText_AttackerFainted|sText_DidNotLearnMove|sText_PkmnForgotMove|sText_PkmnGainedEXP|sText_PkmnGrewToLv|sText_PkmnLearnedMove|sText_PlayerDefeatedLinkTrainer|sText_PlayerDefeatedLinkTrainerTrainer1|sText_PlayerGotMoney|sText_PlayerPickedUpMoney|sText_StopLearningMove|sText_TargetFainted|sText_TryToLearnMove1|sText_TryToLearnMove2|sText_TryToLearnMove3|sText_TwoInGameTrainersDefeated|sText_TwoLinkTrainersDefeated)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": null,
+    "mapped_count": 0,
+    "unresolved_count": 17,
+    "unreferenced_count": 0,
+    "mapped": [],
+    "unresolved": [
+      {
+        "symbol": "sText_PkmnGainedEXP",
+        "us_text": "0x08664D5B",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnGrewToLv",
+        "us_text": "0x08664D84",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnLearnedMove",
+        "us_text": "0x08664D9A",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TryToLearnMove1",
+        "us_text": "0x08664DAC",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TryToLearnMove2",
+        "us_text": "0x08664DC7",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TryToLearnMove3",
+        "us_text": "0x08664DF2",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PkmnForgotMove",
+        "us_text": "0x08664E15",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_StopLearningMove",
+        "us_text": "0x08664E24",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_DidNotLearnMove",
+        "us_text": "0x08664E39",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_AttackerFainted",
+        "us_text": "0x08664EF6",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TargetFainted",
+        "us_text": "0x08664F03",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PlayerGotMoney",
+        "us_text": "0x08664F10",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PlayerPickedUpMoney",
+        "us_text": "0x0866588E",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PlayerDefeatedLinkTrainer",
+        "us_text": "0x086666F4",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_TwoLinkTrainersDefeated",
+        "us_text": "0x086666FF",
+        "us_reference_count": 1,
+        "references": []
+      },
+      {
+        "symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+        "us_text": "0x08666BAE",
+        "us_reference_count": 2,
+        "references": []
+      },
+      {
+        "symbol": "sText_TwoInGameTrainersDefeated",
+        "us_text": "0x08667E93",
+        "us_reference_count": 2,
+        "references": []
+      }
+    ],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 0,
+    "expected_only": [
+      {
+        "source_symbol": "sText_AttackerFainted",
+        "address": "0x085AB41C",
+        "original": "0x085A979C",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_DidNotLearnMove",
+        "address": "0x085AB400",
+        "original": "0x085A96FC",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnForgotMove",
+        "address": "0x085AB3F8",
+        "original": "0x085A96C3",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnGainedEXP",
+        "address": "0x085AB3E0",
+        "original": "0x085A962B",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnGrewToLv",
+        "address": "0x085AB3E4",
+        "original": "0x085A9649",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PkmnLearnedMove",
+        "address": "0x085AB3E8",
+        "original": "0x085A965E",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PlayerDefeatedLinkTrainer",
+        "address": "0x0814E754",
+        "original": "0x085AA9C6",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+        "address": "0x0814E71C",
+        "original": "0x085AAD22",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+        "address": "0x085AB8B0",
+        "original": "0x085AAD22",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PlayerGotMoney",
+        "address": "0x085AB424",
+        "original": "0x085A97B2",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_PlayerPickedUpMoney",
+        "address": "0x085AB598",
+        "original": "0x085A9EE5",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_StopLearningMove",
+        "address": "0x085AB3FC",
+        "original": "0x085A96DE",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TargetFainted",
+        "address": "0x085AB420",
+        "original": "0x085A97A7",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TryToLearnMove1",
+        "address": "0x085AB3EC",
+        "original": "0x085A966F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TryToLearnMove2",
+        "address": "0x085AB3F0",
+        "original": "0x085A9688",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TryToLearnMove3",
+        "address": "0x085AB3F4",
+        "original": "0x085A96A8",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TwoInGameTrainersDefeated",
+        "address": "0x0814E6D4",
+        "original": "0x085ABE2F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TwoInGameTrainersDefeated",
+        "address": "0x085AB958",
+        "original": "0x085ABE2F",
+        "count": 1
+      },
+      {
+        "source_symbol": "sText_TwoLinkTrainersDefeated",
+        "address": "0x0814E6D0",
+        "original": "0x085AA9D6",
+        "count": 1
+      }
+    ],
+    "mapped_only": []
+  }
+}

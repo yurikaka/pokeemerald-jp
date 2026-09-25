@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "batch": "041_route109_seashorehouse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_BagFull",
+      "address": "0x0823C467",
+      "original": "0x0823C66D",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_DwayneDefeated",
+      "address": "0x0823C4FB",
+      "original": "0x0823C707",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_DwayneIntro",
+      "address": "0x0823C4F7",
+      "original": "0x0823C6D7",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_DwaynePostBattle",
+      "address": "0x0823C505",
+      "original": "0x0823C72D",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_HereYouGo",
+      "address": "0x0823C4B6",
+      "original": "0x0823C6BB",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_JohannaDefeated",
+      "address": "0x0823C516",
+      "original": "0x0823C798",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_JohannaIntro",
+      "address": "0x0823C512",
+      "original": "0x0823C75F",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_JohannaPostBattle",
+      "address": "0x0823C520",
+      "original": "0x0823C7A2",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_NotEnoughMoney",
+      "address": "0x0823C4D9",
+      "original": "0x0823C6C0",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_SeashoreHouseIntro",
+      "address": "0x0823C42C",
+      "original": "0x0823C564",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_ShowMeSomeHotMatches",
+      "address": "0x0823C439",
+      "original": "0x0823C5D9",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_SimonDefeated",
+      "address": "0x0823C531",
+      "original": "0x0823C7E1",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_SimonIntro",
+      "address": "0x0823C52D",
+      "original": "0x0823C7C0",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_SimonPostBattle",
+      "address": "0x0823C53B",
+      "original": "0x0823C7EF",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles",
+      "address": "0x0823C443",
+      "original": "0x0823C60A",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_ThatsTooBad",
+      "address": "0x0823C488",
+      "original": "0x0823C6CA",
+      "count": 1
+    },
+    {
+      "source_symbol": "Route109_SeashoreHouse_Text_WantToBuySodaPop",
+      "address": "0x0823C475",
+      "original": "0x0823C68F",
+      "count": 1
+    }
+  ],
+  "status": "generated",
+  "requested_source_symbols": [
+    "Route109_SeashoreHouse_Text_BagFull",
+    "Route109_SeashoreHouse_Text_DwayneDefeated",
+    "Route109_SeashoreHouse_Text_DwayneIntro",
+    "Route109_SeashoreHouse_Text_DwaynePostBattle",
+    "Route109_SeashoreHouse_Text_HereYouGo",
+    "Route109_SeashoreHouse_Text_JohannaDefeated",
+    "Route109_SeashoreHouse_Text_JohannaIntro",
+    "Route109_SeashoreHouse_Text_JohannaPostBattle",
+    "Route109_SeashoreHouse_Text_NotEnoughMoney",
+    "Route109_SeashoreHouse_Text_SeashoreHouseIntro",
+    "Route109_SeashoreHouse_Text_ShowMeSomeHotMatches",
+    "Route109_SeashoreHouse_Text_SimonDefeated",
+    "Route109_SeashoreHouse_Text_SimonIntro",
+    "Route109_SeashoreHouse_Text_SimonPostBattle",
+    "Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles",
+    "Route109_SeashoreHouse_Text_ThatsTooBad",
+    "Route109_SeashoreHouse_Text_WantToBuySodaPop"
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "inputs": {
+      "us_rom_sha1": "ca9a495f8425f58da198a4a86207c2af25531b41",
+      "us_elf_sha1": "013498e2e6cd9d2e5a6031b55d6c492b80b3da88",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+      "reference_end": "0x08300000",
+      "symbol_pattern": "^(?:Route109_SeashoreHouse_Text_BagFull|Route109_SeashoreHouse_Text_DwayneDefeated|Route109_SeashoreHouse_Text_DwayneIntro|Route109_SeashoreHouse_Text_DwaynePostBattle|Route109_SeashoreHouse_Text_HereYouGo|Route109_SeashoreHouse_Text_JohannaDefeated|Route109_SeashoreHouse_Text_JohannaIntro|Route109_SeashoreHouse_Text_JohannaPostBattle|Route109_SeashoreHouse_Text_NotEnoughMoney|Route109_SeashoreHouse_Text_SeashoreHouseIntro|Route109_SeashoreHouse_Text_ShowMeSomeHotMatches|Route109_SeashoreHouse_Text_SimonDefeated|Route109_SeashoreHouse_Text_SimonIntro|Route109_SeashoreHouse_Text_SimonPostBattle|Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles|Route109_SeashoreHouse_Text_ThatsTooBad|Route109_SeashoreHouse_Text_WantToBuySodaPop)$"
+    },
+    "mapping_policy": {
+      "context": {
+        "unmasked_bytes": "exact",
+        "rom_pointer_words": "masked",
+        "search_radii": [
+          16,
+          24,
+          32,
+          48,
+          64
+        ]
+      },
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "exact_raw_bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "fallback_order": [
+        "regional_delta",
+        "nearest_local_anchor",
+        "ordinal_text_position"
+      ]
+    },
+    "inferred_reference_delta": -33043,
+    "mapped_count": 17,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "Route109_SeashoreHouse_Text_BagFull",
+        "us_text": "0x082447AF",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824457A",
+            "jp_reference": "0x0823C467",
+            "jp_text": "0x0823C66D",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_DwayneDefeated",
+        "us_text": "0x0824486D",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824460E",
+            "jp_reference": "0x0823C4FB",
+            "jp_text": "0x0823C707",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_DwayneIntro",
+        "us_text": "0x08244830",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824460A",
+            "jp_reference": "0x0823C4F7",
+            "jp_text": "0x0823C6D7",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_DwaynePostBattle",
+        "us_text": "0x0824488C",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244618",
+            "jp_reference": "0x0823C505",
+            "jp_text": "0x0823C72D",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_HereYouGo",
+        "us_text": "0x08244814",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082445C9",
+            "jp_reference": "0x0823C4B6",
+            "jp_text": "0x0823C6BB",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_JohannaDefeated",
+        "us_text": "0x08244908",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244629",
+            "jp_reference": "0x0823C516",
+            "jp_text": "0x0823C798",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_JohannaIntro",
+        "us_text": "0x082448BB",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244625",
+            "jp_reference": "0x0823C512",
+            "jp_text": "0x0823C75F",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_JohannaPostBattle",
+        "us_text": "0x0824490E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244633",
+            "jp_reference": "0x0823C520",
+            "jp_text": "0x0823C7A2",
+            "mapping_method": "context",
+            "context_radius": 48
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_NotEnoughMoney",
+        "us_text": "0x08244818",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x082445EC",
+            "jp_reference": "0x0823C4D9",
+            "jp_text": "0x0823C6C0",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_SeashoreHouseIntro",
+        "us_text": "0x08244677",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824453F",
+            "jp_reference": "0x0823C42C",
+            "jp_text": "0x0823C564",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_ShowMeSomeHotMatches",
+        "us_text": "0x0824470E",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824454C",
+            "jp_reference": "0x0823C439",
+            "jp_text": "0x0823C5D9",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_SimonDefeated",
+        "us_text": "0x08244955",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244644",
+            "jp_reference": "0x0823C531",
+            "jp_text": "0x0823C7E1",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_SimonIntro",
+        "us_text": "0x0824492B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244640",
+            "jp_reference": "0x0823C52D",
+            "jp_text": "0x0823C7C0",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_SimonPostBattle",
+        "us_text": "0x0824496B",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824464E",
+            "jp_reference": "0x0823C53B",
+            "jp_text": "0x0823C7EF",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_TakeTheseSodaPopBottles",
+        "us_text": "0x08244743",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244556",
+            "jp_reference": "0x0823C443",
+            "jp_text": "0x0823C60A",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_ThatsTooBad",
+        "us_text": "0x08244820",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824459B",
+            "jp_reference": "0x0823C488",
+            "jp_text": "0x0823C6CA",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "Route109_SeashoreHouse_Text_WantToBuySodaPop",
+        "us_text": "0x082447DC",
+        "us_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x08244588",
+            "jp_reference": "0x0823C475",
+            "jp_text": "0x0823C68F",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 17,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}
