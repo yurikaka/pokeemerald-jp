@@ -1475,6 +1475,41 @@ ChsMoveTypesGfx:
     .incbin "build/patch/move_types.lz"
 
 .align 2
+.global ChsMenuInfoIcons
+ChsMenuInfoIcons:
+    .byte 12, 12, 0x00, 0
+    .byte 32, 12, 0x20, 0
+    .byte 32, 12, 0x64, 0
+    .byte 32, 12, 0x60, 0
+    .byte 32, 12, 0x80, 0
+    .byte 32, 12, 0x48, 0
+    .byte 32, 12, 0x44, 0
+    .byte 32, 12, 0x6C, 0
+    .byte 32, 12, 0x68, 0
+    .byte 32, 12, 0x88, 0
+    .byte 32, 12, 0xA4, 0
+    .byte 32, 12, 0x24, 0
+    .byte 32, 12, 0x28, 0
+    .byte 32, 12, 0x2C, 0
+    .byte 32, 12, 0x40, 0
+    .byte 32, 12, 0x84, 0
+    .byte 32, 12, 0x4C, 0
+    .byte 32, 12, 0xA0, 0
+    .byte 32, 12, 0x8C, 0
+    .byte 42, 12, 0xA8, 0
+    .byte 42, 12, 0xC0, 0
+    .byte 42, 12, 0xC8, 0
+    .byte 42, 12, 0xE0, 0
+    .byte 42, 12, 0xE8, 0
+    .byte 8, 8, 0xAE, 0
+    .byte 8, 8, 0xAF, 0
+
+.align 2
+.global ChsMenuInfoTilesGfx
+ChsMenuInfoTilesGfx:
+    .incbin "patch/gfx/menu_info_tiles.4bpp"
+
+.align 2
 .global ChsPokedexAreaUnknownGfx
 ChsPokedexAreaUnknownGfx:
     .incbin "build/patch/pokedex_area_unknown.lz"
