@@ -95,7 +95,13 @@ def main() -> None:
         actual = rom[hook_offset:hook_offset + len(expected_hook)].hex()
         raise SystemExit(f"render hook bytes changed: expected {expected_hook.hex()}, got {actual}")
     hook_target = symbols[manifest["render_hook_symbol"]] | 1
-    rom[hook_offset:hook_offset + 8] = struct.pack("<HHI", 0x4800, 0x4700, hook_target)
+    if hook_address & 2:
+        hook_code = struct.pack("<HHHI", 0x4B01, 0x4718, 0, hook_target)
+    else:
+        hook_code = struct.pack("<HHI", 0x4800, 0x4700, hook_target)
+    if len(expected_hook) != len(hook_code):
+        raise SystemExit(f"render hook 0x{hook_address:08X}: expected {len(hook_code)} original bytes")
+    rom[hook_offset:hook_offset + len(hook_code)] = hook_code
 
     for entry in manifest.get("function_hooks", []):
         address = parse_int(entry["address"])

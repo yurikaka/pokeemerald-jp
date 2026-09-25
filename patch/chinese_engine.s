@@ -15,13 +15,14 @@
 .equ JP_FILL_WINDOW_PIXEL_BUFFER, 0x08003B19
 .equ JP_LOAD_PALETTE,           0x080A1201
 .equ SUMMARY_TEXT_COLORS,       0x085ED17C
+.equ TEXT_MODE_OFFSET,         0x17
+.equ TEXT_MODE_JAPANESE,       0
+.equ TEXT_MODE_CHINESE,        1
 
 .global ChineseRenderHook
 .type ChineseRenderHook, %function
 .thumb_func
 ChineseRenderHook:
-    @ Replay the four instructions replaced at 0x08005820.
-    ldrb r0, [r6, #0x1D]
     strb r0, [r6, #0x1E]
     ldr r0, [r6]
     ldrb r3, [r0]
@@ -30,39 +31,23 @@ ChineseRenderHook:
 
     push {r2-r7, lr}
 
-    @ A string's EOS byte always returns the printer to Japanese mode.
-    @ Without this, an untranslated string printed after a Chinese one by
-    @ the same printer (such as a species name in the party screen or the
-    @ Pokédex) would inherit Chinese mode and have its 0x60-0x7D katakana
-    @ misread as Chinese high bytes.  r2 and r5 are stack-saved here, so
-    @ this stays transparent to the original render loop.
     cmp r3, #0xFF
     bne .Lnot_eos
-    movs r2, #1
-    adds r5, r6, #0
-    adds r5, #0x21
-    strb r2, [r5]
+    movs r2, #TEXT_MODE_JAPANESE
+    strb r2, [r6, #TEXT_MODE_OFFSET]
 .Lnot_eos:
     cmp r3, #0xF5
     bne .Lnot_compact_chinese
-    movs r2, #0
-    adds r5, r6, #0
-    adds r5, #0x21
-    strb r2, [r5]
+    movs r2, #TEXT_MODE_CHINESE
+    strb r2, [r6, #TEXT_MODE_OFFSET]
     pop {r2-r7}
     pop {r1}
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
 .Lnot_compact_chinese:
-
-    @ Chinese is active only after EXT_CTRL_CODE_ENG.  Original Japanese
-    @ strings remain in Japanese mode and therefore keep their single-byte
-    @ katakana interpretation.
-    adds r2, r6, #0
-    adds r2, #0x21
-    ldrb r2, [r2]
-    cmp r2, #0
-    bne .Lnot_chinese
+    ldrb r2, [r6, #TEXT_MODE_OFFSET]
+    cmp r2, #TEXT_MODE_JAPANESE
+    beq .Lnot_chinese
 
     @ 0x60-0x7D encode the translated Chinese high-byte ranges.  0x65 and
     @ 0x7A correspond to the two holes in the US Chinese encoding.
@@ -116,10 +101,8 @@ ChineseRenderHook:
 .type SetJapaneseTextMode, %function
 .thumb_func
 SetJapaneseTextMode:
-    movs r0, #1
-    adds r1, r6, #0
-    adds r1, #0x21
-    strb r0, [r1]
+    movs r0, #TEXT_MODE_JAPANESE
+    strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
 
@@ -128,10 +111,8 @@ SetJapaneseTextMode:
 .type SetChineseTextMode, %function
 .thumb_func
 SetChineseTextMode:
-    movs r0, #0
-    adds r1, r6, #0
-    adds r1, #0x21
-    strb r0, [r1]
+    movs r0, #TEXT_MODE_CHINESE
+    strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
 
