@@ -63,6 +63,21 @@
       "us_encoded_hex": "04f50bad015b015bff"
     },
     {
+      "name": "Chs_gText_BootedUpTM",
+      "source_symbol": "gText_BootedUpTM",
+      "us_encoded_hex": "0aaf0354089e10430c020e900dd40ab23cff"
+    },
+    {
+      "name": "Chs_gText_BootedUpHM",
+      "source_symbol": "gText_BootedUpHM",
+      "us_encoded_hex": "0aaf0354089e0970028b10430c020e900dd40ab23cff"
+    },
+    {
+      "name": "Chs_gText_TMHMContainedVar1",
+      "source_symbol": "gText_TMHMContainedVar1",
+      "us_encoded_hex": "10430c020e900dd40ab2030b09d00b5d0c0cfe fd02 3c fb 0ef10b43016307d709660e90056efe fd02092a3dff"
+    },
+    {
       "name": "Chs_gText_Var1IsSelected",
       "source_symbol": "gText_Var1IsSelected",
       "us_encoded_hex": "0ef10379fd02fe112e0bee094c3dff",
@@ -190,6 +205,24 @@
     }
   ],
   "reference_writes": [
+    {
+      "address": "0x080FE7C0",
+      "original": "0x085C960E",
+      "symbol": "Chs_gText_BootedUpHM",
+      "source_symbol": "gText_BootedUpHM"
+    },
+    {
+      "address": "0x080FE7DC",
+      "original": "0x085C9600",
+      "symbol": "Chs_gText_BootedUpTM",
+      "source_symbol": "gText_BootedUpTM"
+    },
+    {
+      "address": "0x080FE86C",
+      "original": "0x085C961D",
+      "symbol": "Chs_gText_TMHMContainedVar1",
+      "source_symbol": "gText_TMHMContainedVar1"
+    },
     {
       "address": "0x085920B4",
       "original": "0x085C93A3",
