@@ -24,12 +24,19 @@
 .equ TEXT_MODE_OFFSET,         0x17
 .equ TEXT_MODE_JAPANESE,       0
 .equ TEXT_MODE_CHINESE,        1
+.equ TEXT_MODE_COMPACT_SPECIES, 2
+.equ TEXT_SPECIES_ID_LO_OFFSET, 0x18
+.equ TEXT_SPECIES_ID_HI_OFFSET, 0x19
+.equ TEXT_SPECIES_CHAR_OFFSET,  0x1A
 
 .global ChineseRenderHook
 .type ChineseRenderHook, %function
 .thumb_func
 ChineseRenderHook:
     strb r0, [r6, #0x1E]
+    ldrb r1, [r6, #TEXT_MODE_OFFSET]
+    cmp r1, #TEXT_MODE_COMPACT_SPECIES
+    beq .Lcompact_species_entry
     ldr r0, [r6]
 .Lredirect_direct_species_name:
     ldr r1, =JP_SPECIES_NAMES
@@ -76,10 +83,15 @@ ChineseRenderHook:
     ldr r4, =(412)
     cmp r2, r4
     bhs .Lset_compact_chinese_mode
-    lsls r2, r2, #2
-    ldr r4, =ChsSpeciesNames
-    ldr r0, [r4, r2]
+    strb r2, [r6, #TEXT_SPECIES_ID_LO_OFFSET]
+    lsrs r4, r2, #8
+    strb r4, [r6, #TEXT_SPECIES_ID_HI_OFFSET]
+    movs r4, #1
+    strb r4, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    adds r0, #3
     str r0, [r6]
+    movs r2, #TEXT_MODE_COMPACT_SPECIES
+    strb r2, [r6, #TEXT_MODE_OFFSET]
     pop {r2-r7}
     pop {r1}
     ldr r0, =JP_RENDER_TEXT_REPEAT
@@ -143,6 +155,43 @@ ChineseRenderHook:
     ldr r0, =JP_RENDER_TEXT_NORMAL
     bx r0
 
+.Lcompact_species_entry:
+    push {r2-r7, lr}
+.Lrender_compact_species:
+    ldrb r2, [r6, #TEXT_SPECIES_ID_LO_OFFSET]
+    ldrb r3, [r6, #TEXT_SPECIES_ID_HI_OFFSET]
+    lsls r3, r3, #8
+    orrs r2, r3
+    lsls r2, r2, #2
+    ldr r5, =ChsSpeciesNames
+    ldr r5, [r5, r2]
+    ldrb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    adds r5, r5, r2
+    ldrb r3, [r5]
+    cmp r3, #0xFF
+    beq .Lcompact_species_done
+    ldrb r2, [r5, #1]
+    ldrb r5, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    adds r5, #2
+    strb r5, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    cmp r3, #0x7F
+    beq .Lcompact_species_punctuation
+    subs r3, #0x5F
+    lsls r3, r3, #8
+    orrs r3, r2
+    b .Lload_glyph
+.Lcompact_species_punctuation:
+    lsls r3, r3, #8
+    orrs r3, r2
+    b .Lload_glyph
+.Lcompact_species_done:
+    movs r2, #TEXT_MODE_JAPANESE
+    strb r2, [r6, #TEXT_MODE_OFFSET]
+    pop {r2-r7}
+    pop {r1}
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+
 .align 2
 .global SetJapaneseTextMode
 .type SetJapaneseTextMode, %function
@@ -162,6 +211,79 @@ SetChineseTextMode:
     strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+
+.align 2
+.global ChsNamingScreenSpeciesTitle
+.type ChsNamingScreenSpeciesTitle, %function
+.thumb_func
+ChsNamingScreenSpeciesTitle:
+    push {r4, r5, lr}
+    sub sp, #0x2C
+    ldr r5, =0x02039C34
+    ldr r0, [r5]
+    ldr r1, =0x00001E34
+    adds r0, r0, r1
+    ldrh r0, [r0]
+    lsls r0, r0, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r1, [r1, r0]
+    add r4, sp, #0x0C
+.Lnaming_copy_species:
+    ldrb r2, [r1]
+    cmp r2, #0xFF
+    beq .Lnaming_append_suffix
+    strb r2, [r4]
+    adds r1, #1
+    adds r4, #1
+    b .Lnaming_copy_species
+.Lnaming_append_suffix:
+    movs r2, #0xFC
+    strb r2, [r4]
+    movs r2, #0x15
+    strb r2, [r4, #1]
+    adds r4, #2
+    ldr r0, [r5]
+    ldr r1, =0x00001E28
+    adds r0, r0, r1
+    ldr r1, [r0, #8]
+    adds r0, r4, #0
+    movs r2, #0x0F
+    ldr r3, =0x080088F1
+    bl .Lnaming_call_r3
+    ldr r0, [r5]
+    ldr r4, =0x00001E14
+    adds r0, r0, r4
+    ldrb r0, [r0]
+    movs r1, #0x11
+    ldr r3, =0x08003B19
+    bl .Lnaming_call_r3
+    ldr r0, [r5]
+    adds r0, r0, r4
+    ldrb r0, [r0]
+    movs r1, #1
+    str r1, [sp]
+    movs r1, #0
+    str r1, [sp, #4]
+    str r1, [sp, #8]
+    movs r1, #1
+    add r2, sp, #0x0C
+    movs r3, #9
+    ldr r4, =JP_ADD_TEXT_PRINTER
+    bl .Lnaming_call_r4
+    ldr r0, [r5]
+    ldr r1, =0x00001E14
+    adds r0, r0, r1
+    ldrb r0, [r0]
+    ldr r3, =0x0800365D
+    bl .Lnaming_call_r3
+    add sp, #0x2C
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+.Lnaming_call_r3:
+    bx r3
+.Lnaming_call_r4:
+    bx r4
 
 .align 2
 .global ChsPokedexListName
@@ -1747,6 +1869,15 @@ DecompressChineseGlyph:
 .section .rodata
 .align 2
 .include "build/patch/texts.inc"
+
+.align 2
+.global ChsSpeciesNameTokens
+ChsSpeciesNameTokens:
+.set chs_species_token_index, 0
+.rept 412
+    .byte 0xF5, 0xF2, (chs_species_token_index & 0xFF), (chs_species_token_index >> 8), 0xFF, 0xFF
+    .set chs_species_token_index, chs_species_token_index + 1
+.endr
 
 .global ChsEmptyString
 ChsEmptyString:
