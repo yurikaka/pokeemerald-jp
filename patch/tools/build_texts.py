@@ -382,6 +382,29 @@ def main() -> None:
         if isinstance(document, dict) and document.get("kind") == "pokedex_entries":
             fixed_tables.append(document)
             continue
+        if isinstance(document, dict) and document.get("kind") == "us_species_name_table":
+            source_path = (texts_path.parent / document["source"]).resolve()
+            source = source_path.read_text(encoding="utf-8")
+            marker = "const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {"
+            try:
+                chinese_table = source.split(marker, 1)[1]
+            except IndexError as exc:
+                raise ValueError(f"{source_path} is missing the Chinese species-name table") from exc
+            species_names = re.findall(r'\[SPECIES_\w+\]\s*=\s*_\("([^"]*)"\)', chinese_table)
+            if len(species_names) != document["count"]:
+                raise ValueError(
+                    f"{source_path} contains {len(species_names)} Chinese species names, "
+                    f"expected {document['count']}"
+                )
+            fixed_tables.append(
+                {
+                    "kind": "string_pointer_table",
+                    "name": document["name"],
+                    "strings": species_names,
+                    "compact_chinese": True,
+                }
+            )
+            continue
         if isinstance(document, dict) and document.get("kind") == "us_trainer_name_table":
             source_path = (texts_path.parent / document["source"]).resolve()
             trainer_names = re.findall(
@@ -617,7 +640,9 @@ def main() -> None:
             for index, entry in enumerate(table["strings"]):
                 label = f".L{name}_{index}"
                 labels.append(label)
-                encoded = encode_text(entry, charmap, False)
+                encoded = (encode_compact_chinese_text(entry, charmap)
+                           if table.get("compact_chinese", False)
+                           else encode_text(entry, charmap, False))
                 lines.extend((".align 2", f"{label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
             lines.extend((".align 2", f".global {name}", f"{name}:"))
             lines.extend(f"    .4byte {label}" for label in labels)

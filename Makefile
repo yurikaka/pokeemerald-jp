@@ -35,7 +35,7 @@ PATCH_TILEMAP_LZ := $(patsubst patch/gfx/%.bin,$(PATCH_BUILD)/%.lz,$(PATCH_TILEM
 PATCH_RESOURCES_LZ := $(PATCH_GFX_LZ) $(PATCH_TILEMAP_LZ)
 PATCH_NAMING_GFX := $(addprefix $(PATCH_BUILD)/naming_screen_,$(addsuffix .4bpp,back_button ok_button))
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
-PATCH_TEXTS := patch/texts.json $(wildcard patch/bag_return_locations*.json patch/item_names.json patch/item_descriptions.json patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json patch/berry_info.json patch/battle_stat_names.json patch/level_up_stat_names.json patch/decoration_info.json patch/pokedex_entries.json patch/region_map_names.json patch/trainer_names.json patch/trainer_class_names.json) $(PATCH_BATCHES)
+PATCH_TEXTS := patch/texts.json $(wildcard patch/bag_return_locations*.json patch/item_names.json patch/item_descriptions.json patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json patch/berry_info.json patch/battle_stat_names.json patch/level_up_stat_names.json patch/decoration_info.json patch/pokedex_entries.json patch/region_map_names.json patch/species_names.json patch/trainer_names.json patch/trainer_class_names.json) $(PATCH_BATCHES)
 
 .PHONY: all chs patch-payload compare clean
 

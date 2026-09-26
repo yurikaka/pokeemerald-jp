@@ -14,6 +14,12 @@
 .equ JP_ADD_TEXT_PRINTER,       0x0800449D
 .equ JP_FILL_WINDOW_PIXEL_BUFFER, 0x08003B19
 .equ JP_LOAD_PALETTE,           0x080A1201
+.equ JP_SPECIES_NAMES,          0x082EA31C
+.equ JP_SPECIES_NAME_BYTES,     (412 * 6)
+.equ JP_GET_MON_GENDER,         0x08069AF5
+.equ JP_NATIONAL_DEX_TO_SPECIES, 0x0806CED1
+.equ JP_POKEDEX_PRINT_TEXT,     0x080BFFE1
+.equ JP_SUMMARY_PRINT_TEXT,     0x081C1ED9
 .equ SUMMARY_TEXT_COLORS,       0x085ED17C
 .equ TEXT_MODE_OFFSET,         0x17
 .equ TEXT_MODE_JAPANESE,       0
@@ -25,6 +31,28 @@
 ChineseRenderHook:
     strb r0, [r6, #0x1E]
     ldr r0, [r6]
+.Lredirect_direct_species_name:
+    ldr r1, =JP_SPECIES_NAMES
+    cmp r0, r1
+    blo .Lread_current_character
+    subs r2, r0, r1
+    ldr r1, =JP_SPECIES_NAME_BYTES
+    cmp r2, r1
+    bhs .Lread_current_character
+    movs r1, #0
+.Lspecies_name_index:
+    cmp r2, #6
+    blo .Lspecies_name_aligned
+    subs r2, #6
+    adds r1, #1
+    b .Lspecies_name_index
+.Lspecies_name_aligned:
+    cmp r2, #0
+    bne .Lread_current_character
+    lsls r1, r1, #2
+    ldr r2, =ChsSpeciesNames
+    ldr r0, [r2, r1]
+.Lread_current_character:
     ldrb r3, [r0]
     adds r0, #1
     str r0, [r6]
@@ -38,6 +66,25 @@ ChineseRenderHook:
 .Lnot_eos:
     cmp r3, #0xF5
     bne .Lnot_compact_chinese
+    ldrb r2, [r0]
+    cmp r2, #0xF2
+    bne .Lset_compact_chinese_mode
+    ldrb r2, [r0, #1]
+    ldrb r4, [r0, #2]
+    lsls r4, r4, #8
+    orrs r2, r4
+    ldr r4, =(412)
+    cmp r2, r4
+    bhs .Lset_compact_chinese_mode
+    lsls r2, r2, #2
+    ldr r4, =ChsSpeciesNames
+    ldr r0, [r4, r2]
+    str r0, [r6]
+    pop {r2-r7}
+    pop {r1}
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+.Lset_compact_chinese_mode:
     movs r2, #TEXT_MODE_CHINESE
     strb r2, [r6, #TEXT_MODE_OFFSET]
     pop {r2-r7}
@@ -115,6 +162,261 @@ SetChineseTextMode:
     strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+
+.align 2
+.global ChsPokedexListName
+.type ChsPokedexListName, %function
+.thumb_func
+ChsPokedexListName:
+    push {r4-r7, lr}
+    mov r7, r8
+    push {r7}
+    sub sp, #0x10
+    lsls r0, r0, #0x10
+    lsrs r5, r0, #0x10
+    lsls r1, r1, #0x18
+    lsrs r1, r1, #0x18
+    mov r8, r1
+    lsls r2, r2, #0x18
+    lsrs r7, r2, #0x18
+    adds r0, r5, #0
+    ldr r3, =JP_NATIONAL_DEX_TO_SPECIES
+    bl .Lpokedex_list_species_call
+    cmp r0, #0
+    beq .Lpokedex_list_unknown
+    mov r2, sp
+    adds r2, #4
+    movs r3, #0xF5
+    strb r3, [r2]
+    movs r3, #0xF2
+    strb r3, [r2, #1]
+    strb r0, [r2, #2]
+    lsrs r3, r0, #8
+    strb r3, [r2, #3]
+    movs r3, #0xFF
+    strb r3, [r2, #4]
+    movs r4, #4
+    b .Lpokedex_list_print
+.Lpokedex_list_unknown:
+    movs r4, #0
+    mov r2, sp
+    adds r2, #4
+    movs r3, #0xAE
+.Lpokedex_list_blank:
+    strb r3, [r2, r4]
+    adds r4, #1
+    cmp r4, #5
+    blo .Lpokedex_list_blank
+    movs r3, #0xFF
+    strb r3, [r2, #5]
+    movs r4, #0
+.Lpokedex_list_print:
+    str r7, [sp]
+    movs r0, #0
+    movs r1, #1
+    add r2, sp, #4
+    mov r3, r8
+    ldr r5, =ChsPokedexPrintMonDexNumAndName + 1
+    bl .Lpokedex_list_print_call
+    adds r0, r4, #0
+    add sp, #0x10
+    pop {r3}
+    mov r8, r3
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lpokedex_list_species_call:
+    bx r3
+.Lpokedex_list_print_call:
+    bx r5
+
+.align 2
+.type ChsPokedexPrintMonDexNumAndName, %function
+.thumb_func
+ChsPokedexPrintMonDexNumAndName:
+    push {r4, r5, r6, lr}
+    mov r6, r8
+    push {r6}
+    sub sp, #0x18
+    mov r8, r3
+    ldr r3, [sp, #0x2C]
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    lsls r1, r1, #0x18
+    lsrs r1, r1, #0x18
+    lsls r3, r3, #0x18
+    add r4, sp, #0x14
+    movs r6, #0
+    strb r6, [r4]
+    adds r5, r4, #0
+    movs r4, #0x0F
+    strb r4, [r5, #1]
+    movs r4, #3
+    strb r4, [r5, #2]
+    mov r4, r8
+    lsls r4, r4, #0x1B
+    lsrs r4, r4, #0x18
+    subs r4, #6
+    mov r8, r4
+    lsrs r3, r3, #0x15
+    adds r3, #2
+    lsls r3, r3, #0x18
+    lsrs r3, r3, #0x18
+    str r6, [sp]
+    str r6, [sp, #4]
+    str r5, [sp, #8]
+    movs r4, #1
+    rsbs r4, r4, #0
+    str r4, [sp, #0xC]
+    str r2, [sp, #0x10]
+    mov r2, r8
+    ldr r4, =JP_ADD_TEXT_PRINTER_4
+    bl .Lpokedex_list_add_text
+    add sp, #0x18
+    pop {r3}
+    mov r8, r3
+    pop {r4, r5, r6}
+    pop {r0}
+    bx r0
+.Lpokedex_list_add_text:
+    bx r4
+
+.align 2
+.global ChsPokedexName
+.type ChsPokedexName, %function
+.thumb_func
+ChsPokedexName:
+    push {r4-r7, lr}
+    mov r4, r8
+    mov r5, sb
+    push {r4, r5}
+    sub sp, #0xC
+    adds r4, r0, #0
+    adds r5, r1, #0
+    adds r6, r2, #0
+    adds r7, r3, #0
+    adds r0, r5, #0
+    ldr r3, =JP_NATIONAL_DEX_TO_SPECIES
+    bl .Lpokedex_name_species_call
+    cmp r0, #0
+    beq .Lpokedex_name_unknown
+    mov r1, sp
+    movs r2, #0xF5
+    strb r2, [r1]
+    movs r2, #0xF2
+    strb r2, [r1, #1]
+    strb r0, [r1, #2]
+    lsrs r2, r0, #8
+    strb r2, [r1, #3]
+    movs r2, #0xFF
+    strb r2, [r1, #4]
+    lsls r0, r0, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r0, [r1, r0]
+    adds r0, #1
+    movs r5, #0
+.Lpokedex_name_length:
+    ldrb r1, [r0]
+    cmp r1, #0xFF
+    beq .Lpokedex_name_print
+    adds r0, #2
+    adds r5, #1
+    b .Lpokedex_name_length
+.Lpokedex_name_unknown:
+    movs r5, #0
+    mov r1, sp
+    movs r2, #0xAE
+.Lpokedex_name_dashes:
+    strb r2, [r1, r5]
+    adds r5, #1
+    cmp r5, #5
+    blo .Lpokedex_name_dashes
+    movs r2, #0xFF
+    strb r2, [r1, #5]
+.Lpokedex_name_print:
+    ldr r0, =JP_POKEDEX_PRINT_TEXT
+    mov ip, r0
+    adds r0, r4, #0
+    mov r1, sp
+    adds r2, r6, #0
+    adds r3, r7, #0
+    bl .Lpokedex_name_print_call
+    adds r0, r5, #0
+    add sp, #0xC
+    pop {r3, r4}
+    mov r8, r3
+    mov sb, r4
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lpokedex_name_species_call:
+    bx r3
+.Lpokedex_name_print_call:
+    bx ip
+
+.align 2
+.global ChsSummaryPrintGenderSymbol
+.type ChsSummaryPrintGenderSymbol, %function
+.thumb_func
+ChsSummaryPrintGenderSymbol:
+    push {r4, r5, lr}
+    sub sp, #8
+    adds r4, r0, #0
+    lsls r5, r1, #0x10
+    lsrs r5, r5, #0x10
+    cmp r5, #0x20
+    beq .Lsummary_gender_done
+    cmp r5, #0x1D
+    beq .Lsummary_gender_done
+    adds r0, r4, #0
+    ldr r3, =JP_GET_MON_GENDER
+    bl .Lsummary_gender_call
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    cmp r0, #0
+    beq .Lsummary_gender_male
+    cmp r0, #0xFE
+    bne .Lsummary_gender_done
+    ldr r1, =0x085C940C
+    movs r3, #4
+    b .Lsummary_gender_print
+.Lsummary_gender_male:
+    ldr r1, =0x085C940A
+    movs r3, #3
+.Lsummary_gender_print:
+    movs r0, #0
+    str r0, [sp]
+    str r3, [sp, #4]
+    lsls r0, r5, #2
+    ldr r2, =ChsSpeciesNames
+    ldr r0, [r2, r0]
+    adds r0, #1
+    movs r2, #6
+.Lsummary_gender_width:
+    ldrb r3, [r0]
+    cmp r3, #0xFF
+    beq .Lsummary_gender_position
+    adds r0, #2
+    adds r2, #12
+    b .Lsummary_gender_width
+.Lsummary_gender_position:
+    cmp r2, #56
+    bls .Lsummary_gender_position_ready
+    movs r2, #56
+.Lsummary_gender_position_ready:
+    movs r0, #0x13
+    movs r3, #1
+    ldr r4, =JP_SUMMARY_PRINT_TEXT
+    bl .Lsummary_gender_print_call
+.Lsummary_gender_done:
+    add sp, #8
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+.Lsummary_gender_call:
+    bx r3
+.Lsummary_gender_print_call:
+    bx r4
 
 .align 2
 .global ChsBattleMoveNamePlaceholderHook

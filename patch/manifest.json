@@ -6,9 +6,24 @@
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
     {
+      "address": "0x080BC978",
+      "original": "f0b5474680b484b00004050c0906090e",
+      "symbol": "ChsPokedexListName"
+    },
+    {
+      "address": "0x080C00A0",
+      "original": "f0b54f464646c0b483b00006000e8146",
+      "symbol": "ChsPokedexName"
+    },
+    {
       "address": "0x081C1ED8",
       "original": "70b585b0099c0a9d0006000e1206120e",
       "symbol": "SummaryScreenPrintHook"
+    },
+    {
+      "address": "0x081C2120",
+      "original": "30b582b0051c0904090c20292fd01d29",
+      "symbol": "ChsSummaryPrintGenderSymbol"
     },
     {
       "address": "0x080D6C8C",
@@ -589,6 +604,56 @@
       "original": "0a22",
       "replacement": "0d22",
       "comment": "StringAppendN limit 10 -> 13 for FC16-encoded Chinese trainer card title"
+    },
+    {
+      "address": "0x080BF1EA",
+      "original": "0921",
+      "replacement": "0a21"
+    },
+    {
+      "address": "0x080BF1F6",
+      "original": "0b21",
+      "replacement": "0c21"
+    },
+    {
+      "address": "0x080BF200",
+      "original": "1021",
+      "replacement": "1121"
+    },
+    {
+      "address": "0x085ED0FF",
+      "original": "09",
+      "replacement": "07"
+    },
+    {
+      "address": "0x085ED10A",
+      "original": "4f01",
+      "replacement": "4b01"
+    },
+    {
+      "address": "0x085ED105",
+      "original": "04",
+      "replacement": "02"
+    },
+    {
+      "address": "0x085ED107",
+      "original": "06",
+      "replacement": "08"
+    },
+    {
+      "address": "0x081C20AA",
+      "original": "0022",
+      "replacement": "0422"
+    },
+    {
+      "address": "0x081C20AC",
+      "original": "0223",
+      "replacement": "0123"
+    },
+    {
+      "address": "0x081C4236",
+      "original": "1021",
+      "replacement": "0c21"
     }
   ],
   "mode_jump_table": [
