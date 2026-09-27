@@ -21,6 +21,14 @@
 .equ JP_POKEDEX_PRINT_TEXT,     0x080BFFE1
 .equ JP_SUMMARY_PRINT_TEXT,     0x081C1ED9
 .equ SUMMARY_TEXT_COLORS,       0x085ED17C
+.equ JP_ADD_WINDOW,             0x08003251
+.equ JP_REMOVE_WINDOW,          0x08003445
+.equ JP_FILL_WINDOW_PIXEL_BUFFER, 0x08003B19
+.equ JP_GET_WINDOW_ATTRIBUTE,   0x0800401D
+.equ JP_ADD_TEXT_PRINTER_PARAM4, 0x08199B85
+.equ JP_GET_BATTLER_SIDE,       0x080A62F9
+.equ JP_IS_DOUBLE_BATTLE,       0x080A63E9
+.equ JP_CPU_SET,                0x082959BD
 .equ TEXT_MODE_OFFSET,         0x17
 .equ TEXT_MODE_JAPANESE,       0
 .equ TEXT_MODE_CHINESE,        1
@@ -192,6 +200,8 @@ ChineseRenderHook:
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
 
+.ltorg
+
 .align 2
 .global SetJapaneseTextMode
 .type SetJapaneseTextMode, %function
@@ -284,6 +294,493 @@ ChsNamingScreenSpeciesTitle:
     bx r3
 .Lnaming_call_r4:
     bx r4
+
+.ltorg
+
+.align 2
+.global ChsCopyMonNickname
+.type ChsCopyMonNickname, %function
+.thumb_func
+ChsCopyMonNickname:
+    push {r4-r6, lr}
+    sub sp, #0x0C
+    adds r4, r0, #0
+    adds r5, r1, #0
+    movs r1, #2
+    mov r2, sp
+    ldr r3, =0x0806A059
+    bl .Lnick_call_r3
+    mov r0, sp
+    ldr r3, =0x0800885D
+    bl .Lnick_call_r3
+    adds r0, r4, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lnick_call_r3
+    lsls r6, r0, #0x10
+    lsrs r6, r6, #0x10
+    ldr r1, =(412)
+    cmp r6, r1
+    bhs .Lnick_copy_original
+    lsls r0, r6, #1
+    adds r0, r0, r6
+    lsls r0, r0, #1
+    ldr r1, =JP_SPECIES_NAMES
+    adds r1, r1, r0
+    mov r0, sp
+    ldr r3, =0x0800895D
+    bl .Lnick_call_r3
+    cmp r0, #0
+    bne .Lnick_copy_original
+    movs r0, #0xF5
+    strb r0, [r5]
+    movs r0, #0xF2
+    strb r0, [r5, #1]
+    strb r6, [r5, #2]
+    lsrs r0, r6, #8
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+    adds r0, r5, #4
+    b .Lnick_done
+.Lnick_copy_original:
+    adds r0, r5, #0
+    mov r1, sp
+    ldr r3, =0x080088B9
+    bl .Lnick_call_r3
+.Lnick_done:
+    add sp, #0x0C
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+.Lnick_call_r3:
+    bx r3
+
+.align 2
+.global ChsCopyBoxMonNickname
+.type ChsCopyBoxMonNickname, %function
+.thumb_func
+ChsCopyBoxMonNickname:
+    push {r4-r6, lr}
+    sub sp, #0x0C
+    adds r4, r0, #0
+    adds r5, r1, #0
+    movs r1, #2
+    mov r2, sp
+    ldr r3, =0x0806A1B5
+    bl .Lbox_nick_call_r3
+    mov r0, sp
+    ldr r3, =0x0800885D
+    bl .Lbox_nick_call_r3
+    adds r0, r4, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A1B5
+    bl .Lbox_nick_call_r3
+    lsls r6, r0, #0x10
+    lsrs r6, r6, #0x10
+    ldr r1, =(412)
+    cmp r6, r1
+    bhs .Lbox_nick_copy_original
+    lsls r0, r6, #1
+    adds r0, r0, r6
+    lsls r0, r0, #1
+    ldr r1, =JP_SPECIES_NAMES
+    adds r1, r1, r0
+    mov r0, sp
+    ldr r3, =0x0800895D
+    bl .Lbox_nick_call_r3
+    cmp r0, #0
+    bne .Lbox_nick_copy_original
+    movs r0, #0xF5
+    strb r0, [r5]
+    movs r0, #0xF2
+    strb r0, [r5, #1]
+    strb r6, [r5, #2]
+    lsrs r0, r6, #8
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+    adds r0, r5, #4
+    b .Lbox_nick_done
+.Lbox_nick_copy_original:
+    adds r0, r5, #0
+    mov r1, sp
+    ldr r3, =0x080088B9
+    bl .Lbox_nick_call_r3
+.Lbox_nick_done:
+    add sp, #0x0C
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+.Lbox_nick_call_r3:
+    bx r3
+
+.align 2
+.global ChsGetBoxMonNickname
+.type ChsGetBoxMonNickname, %function
+.thumb_func
+ChsGetBoxMonNickname:
+    b ChsCopyMonNickname
+
+.align 2
+.global ChsGetMonNicknameFromBox
+.type ChsGetMonNicknameFromBox, %function
+.thumb_func
+ChsGetMonNicknameFromBox:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lbox_nickname_data_callers
+    movs r2, #4
+.Lbox_nickname_data_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lbox_nickname_data_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lbox_nickname_data_caller_loop
+    pop {r0-r3}
+    b ChsCopyBoxMonNickname
+.Lbox_nickname_data_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b ChsCopyBoxMonNickname
+
+.align 2
+.global ChsGetBoxMonNickAt
+.type ChsGetBoxMonNickAt, %function
+.thumb_func
+ChsGetBoxMonNickAt:
+    push {r4, r5, lr}
+    adds r5, r2, #0
+    lsls r0, r0, #0x18
+    lsrs r3, r0, #0x18
+    lsls r1, r1, #0x18
+    lsrs r4, r1, #0x18
+    cmp r3, #0x0D
+    bhi .Lbox_nick_at_invalid
+    cmp r4, #0x1D
+    bhi .Lbox_nick_at_invalid
+    ldr r2, =0x03005AF4
+    lsls r0, r3, #2
+    adds r0, r0, r3
+    lsls r1, r0, #4
+    subs r1, r1, r0
+    lsls r1, r1, #5
+    adds r1, #4
+    ldr r0, [r2]
+    adds r0, r0, r1
+    lsls r1, r4, #2
+    adds r1, r1, r4
+    lsls r1, r1, #4
+    adds r0, r0, r1
+    adds r1, r5, #0
+    bl ChsCopyBoxMonNickname
+    b .Lbox_nick_at_done
+.Lbox_nick_at_invalid:
+    movs r0, #0xFF
+    strb r0, [r5]
+.Lbox_nick_at_done:
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+
+.align 2
+.global ChsGetMonNickname
+.type ChsGetMonNickname, %function
+.thumb_func
+ChsGetMonNickname:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lmon_nickname_data_callers
+    movs r2, #12
+.Lmon_nickname_data_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lmon_nickname_data_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lmon_nickname_data_caller_loop
+    pop {r0-r3}
+    b ChsCopyMonNickname
+.Lmon_nickname_data_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b ChsCopyMonNickname
+
+.align 2
+.Lbox_nickname_data_callers:
+    .word 0x080CE60B, 0x081CFA6B, 0x081CFE03, 0x081775F5
+.Lmon_nickname_data_callers:
+    .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
+    .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
+    .word 0x081CEFDF, 0x081CF00F, 0x08166B77, 0x081775A7
+
+.align 2
+.global ChsFaintFromFieldPoison
+.type ChsFaintFromFieldPoison, %function
+.thumb_func
+ChsFaintFromFieldPoison:
+    push {r4, r5, lr}
+    sub sp, #4
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    movs r1, #0x64
+    adds r4, r0, #0
+    muls r4, r1, r4
+    ldr r0, =0x02024190
+    adds r4, r4, r0
+    movs r0, #0
+    str r0, [sp]
+    adds r0, r4, #0
+    movs r1, #7
+    ldr r3, =0x0806A2F1
+    bl .Lpoison_call_r3
+    adds r0, r4, #0
+    movs r1, #0x37
+    mov r2, sp
+    ldr r3, =0x0806A141
+    bl .Lpoison_call_r3
+    adds r0, r4, #0
+    ldr r1, =0x02021C40
+    bl ChsCopyMonNickname
+    add sp, #4
+    pop {r4, r5}
+    pop {r0}
+    bx r0
+.Lpoison_call_r3:
+    bx r3
+
+.align 2
+.global ChsScrCmdBufferPartyMonNick
+.type ChsScrCmdBufferPartyMonNick, %function
+.thumb_func
+ChsScrCmdBufferPartyMonNick:
+    push {r4, r5, lr}
+    ldr r1, [r0, #8]
+    ldrb r4, [r1]
+    adds r1, #1
+    str r1, [r0, #8]
+    ldr r3, =0x0809A81D
+    bl .Lscript_nick_call_r3
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    ldr r3, =0x0806E569
+    bl .Lscript_nick_call_r3
+    lsls r0, r0, #0x10
+    lsrs r0, r0, #0x10
+    movs r1, #0x64
+    muls r0, r1, r0
+    ldr r1, =0x02024190
+    adds r5, r0, r1
+    ldr r1, =0x084E8918
+    lsls r4, r4, #2
+    adds r4, r4, r1
+    ldr r1, [r4]
+    adds r0, r5, #0
+    bl ChsCopyMonNickname
+    movs r0, #0
+    pop {r4, r5}
+    pop {r1}
+    bx r1
+.Lscript_nick_call_r3:
+    bx r3
+
+.align 2
+.global ChsUpdateNickInHealthbox
+.type ChsUpdateNickInHealthbox, %function
+.thumb_func
+ChsUpdateNickInHealthbox:
+    push {r4-r7, lr}
+    sub sp, #0x18
+    lsls r0, r0, #0x18
+    lsrs r4, r0, #0x18
+    adds r5, r1, #0
+    ldr r0, =0x02022AE0
+    ldr r1, =0x085CC4EA
+    ldr r3, =0x080088B9
+    bl .Lhealthbox_call_r3
+    adds r0, r5, #0
+    mov r1, sp
+    bl ChsCopyMonNickname
+    ldr r0, =0x02022AE0
+    mov r1, sp
+    ldr r3, =0x080088D9
+    bl .Lhealthbox_call_r3
+    adds r6, r0, #0
+    adds r0, r5, #0
+    ldr r3, =JP_GET_MON_GENDER
+    bl .Lhealthbox_call_r3
+    lsls r7, r0, #0x18
+    lsrs r7, r7, #0x18
+    adds r0, r5, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lhealthbox_call_r3
+    cmp r0, #0x1D
+    beq .Lhealthbox_nidoran
+    cmp r0, #0x20
+    bne .Lhealthbox_gender
+.Lhealthbox_nidoran:
+    mov r0, sp
+    ldrb r0, [r0]
+    cmp r0, #0xF5
+    bne .Lhealthbox_gender
+    movs r7, #100
+.Lhealthbox_gender:
+    cmp r7, #0
+    beq .Lhealthbox_male
+    cmp r7, #0xFE
+    beq .Lhealthbox_female
+    ldr r1, =0x085CC4FA
+    b .Lhealthbox_append_gender
+.Lhealthbox_male:
+    ldr r1, =0x085CC4F0
+    b .Lhealthbox_append_gender
+.Lhealthbox_female:
+    ldr r1, =0x085CC4F5
+.Lhealthbox_append_gender:
+    adds r0, r6, #0
+    ldr r3, =0x080088B9
+    bl .Lhealthbox_call_r3
+    ldr r0, =.Lhealthbox_window_template
+    ldr r3, =JP_ADD_WINDOW
+    bl .Lhealthbox_call_r3
+    lsls r6, r0, #0x18
+    lsrs r6, r6, #0x18
+    adds r0, r6, #0
+    movs r1, #0x22
+    ldr r3, =JP_FILL_WINDOW_PIXEL_BUFFER
+    bl .Lhealthbox_call_r3
+    add r1, sp, #0x14
+    movs r0, #2
+    strb r0, [r1]
+    movs r0, #1
+    strb r0, [r1, #1]
+    movs r0, #3
+    strb r0, [r1, #2]
+    movs r0, #0
+    str r0, [sp]
+    str r0, [sp, #4]
+    str r1, [sp, #8]
+    mvns r0, r0
+    str r0, [sp, #0xC]
+    ldr r0, =0x02022AE0
+    str r0, [sp, #0x10]
+    adds r0, r6, #0
+    movs r1, #1
+    movs r2, #0
+    ldr r3, =JP_ADD_TEXT_PRINTER_PARAM4
+    mov r12, r3
+    movs r3, #3
+    bl .Lhealthbox_call_r12
+    adds r0, r6, #0
+    movs r1, #7
+    ldr r3, =JP_GET_WINDOW_ATTRIBUTE
+    bl .Lhealthbox_call_r3
+    adds r5, r0, #0
+    ldr r0, =0x020205AC
+    lsls r1, r4, #4
+    adds r1, r1, r4
+    lsls r1, r1, #2
+    adds r1, r1, r0
+    ldrh r0, [r1, #4]
+    lsls r0, r0, #0x16
+    lsrs r7, r0, #0x11
+    ldrh r0, [r1, #0x3A]
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    ldr r3, =JP_GET_BATTLER_SIDE
+    bl .Lhealthbox_call_r3
+    cmp r0, #0
+    bne .Lhealthbox_enemy
+    ldr r0, =0x06010040
+    adds r0, r0, r7
+    adds r1, r5, #0
+    movs r2, #6
+    bl ChsTextIntoHealthboxObject
+    ldr r3, =JP_IS_DOUBLE_BATTLE
+    bl .Lhealthbox_call_r3
+    cmp r0, #0
+    bne .Lhealthbox_player_double
+    ldr r0, =0x06010800
+    b .Lhealthbox_player_copy_tail
+.Lhealthbox_player_double:
+    ldr r0, =0x06010400
+.Lhealthbox_player_copy_tail:
+    adds r0, r0, r7
+    adds r1, r5, #0
+    adds r1, #0xC0
+    movs r2, #1
+    bl ChsTextIntoHealthboxObject
+    b .Lhealthbox_remove_window
+.Lhealthbox_enemy:
+    ldr r0, =0x06010020
+    adds r0, r0, r7
+    adds r1, r5, #0
+    movs r2, #7
+    bl ChsTextIntoHealthboxObject
+.Lhealthbox_remove_window:
+    adds r0, r6, #0
+    ldr r3, =JP_REMOVE_WINDOW
+    bl .Lhealthbox_call_r3
+    add sp, #0x18
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.Lhealthbox_call_r3:
+    bx r3
+.Lhealthbox_call_r12:
+    bx r12
+
+.align 2
+.type ChsTextIntoHealthboxObject, %function
+.thumb_func
+ChsTextIntoHealthboxObject:
+    push {r4-r6, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    adds r6, r2, #0
+    movs r0, #0x80
+    lsls r0, r0, #1
+    adds r0, r5, r0
+    movs r1, #0x80
+    lsls r1, r1, #1
+    adds r1, r4, r1
+    lsls r2, r6, #3
+    ldr r3, =0x04000000
+    orrs r2, r3
+    ldr r3, =JP_CPU_SET
+    bl .Lhealthbox_copy_call_r3
+    cmp r6, #0
+    beq .Lhealthbox_copy_done
+.Lhealthbox_copy_column:
+    adds r0, r5, #0
+    adds r0, #0x14
+    adds r1, r4, #0
+    adds r1, #0x14
+    ldr r2, =0x04000003
+    ldr r3, =JP_CPU_SET
+    bl .Lhealthbox_copy_call_r3
+    adds r4, #0x20
+    adds r5, #0x20
+    subs r6, #1
+    bne .Lhealthbox_copy_column
+.Lhealthbox_copy_done:
+    pop {r4-r6}
+    pop {r0}
+    bx r0
+.Lhealthbox_copy_call_r3:
+    bx r3
+
+.align 2
+.Lhealthbox_window_template:
+    .byte 0, 0, 0, 8, 2, 0
+    .hword 0
+
+.ltorg
 
 .align 2
 .global ChsPokedexListName
@@ -582,6 +1079,24 @@ ChsBattleMoveNamePlaceholderHook:
 .type ChsBattleExpNamePlaceholderHook, %function
 .thumb_func
 ChsBattleExpNamePlaceholderHook:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lbattle_nickname_callers
+    movs r2, #28
+.Lbattle_nickname_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lbattle_nickname_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lbattle_nickname_caller_loop
+    pop {r0-r3}
+    b .Lbattle_exp_name_original_entry
+.Lbattle_nickname_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b ChsCopyMonNickname
+.Lbattle_exp_name_original_entry:
     ldr r0, =Chs_sText_PkmnGainedEXP + 4
     cmp r0, r9
     beq .Lbattle_exp_name_from_buffer
@@ -619,6 +1134,16 @@ ChsBattleExpNamePlaceholderHook:
     bx r0
 .Lbattle_exp_name_expand_raw:
     bx r3
+
+.align 2
+.Lbattle_nickname_callers:
+    .word 0x0814E965, 0x0814E999, 0x0814E9CD, 0x0814EA01
+    .word 0x0814EA39, 0x0814EA79, 0x0814EAB9, 0x0814EAF9
+    .word 0x0814EB81, 0x0814EBB7, 0x0814EC03, 0x0814EC3D
+    .word 0x0814ECA7, 0x0814ECDB, 0x0814ED43, 0x0814ED77
+    .word 0x0814EDDF, 0x0814EE13, 0x0814EE7B, 0x0814EEAF
+    .word 0x0814EF17, 0x0814EF4B, 0x0814F3A7, 0x0814F3D9
+    .word 0x0814F77F, 0x0814F7C1, 0x0814F81F, 0x0814F837
 
 .ltorg
 
