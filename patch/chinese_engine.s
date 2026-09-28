@@ -27,6 +27,7 @@
 .equ JP_FILL_WINDOW_PIXEL_BUFFER, 0x08003B19
 .equ JP_GET_WINDOW_ATTRIBUTE,   0x0800401D
 .equ JP_ADD_TEXT_PRINTER_PARAM4, 0x08199B85
+.equ JP_ADD_TEXT_PRINTER_PARAM3, 0x08199AFD
 .equ JP_GET_BATTLER_SIDE,       0x080A62F9
 .equ JP_IS_DOUBLE_BATTLE,       0x080A63E9
 .equ JP_CPU_SET,                0x082959BD
@@ -39,6 +40,60 @@
 .equ TEXT_SPECIES_ID_LO_OFFSET, 0x18
 .equ TEXT_SPECIES_ID_HI_OFFSET, 0x19
 .equ TEXT_SPECIES_CHAR_OFFSET,  0x1A
+
+.align 2
+.global ChsDisplayPartyPokemonBarDetail
+.type ChsDisplayPartyPokemonBarDetail, %function
+.thumb_func
+ChsDisplayPartyPokemonBarDetail:
+    push {r4-r7, lr}
+    sub sp, #0x2C
+    lsls r4, r0, #24
+    lsrs r4, r4, #24
+    adds r5, r1, #0
+    lsls r6, r2, #24
+    lsrs r6, r6, #24
+    adds r7, r3, #0
+    ldrb r0, [r5]
+    cmp r0, #0xF5
+    bne .Lparty_name_ready
+    ldrb r0, [r5, #1]
+    cmp r0, #0xF2
+    bne .Lparty_name_ready
+    ldrb r0, [r5, #2]
+    ldrb r1, [r5, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    ldr r1, =412
+    cmp r0, r1
+    bhs .Lparty_name_ready
+    add r1, sp, #0x0C
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+    cmp r0, #0
+    beq .Lparty_name_ready
+    add r5, sp, #0x0C
+.Lparty_name_ready:
+    lsls r0, r6, #1
+    adds r0, r0, r6
+    ldr r1, =0x085E10B4
+    adds r0, r0, r1
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r5, [sp, #8]
+    adds r0, r4, #0
+    movs r1, #0
+    ldrb r2, [r7]
+    ldrb r3, [r7, #1]
+    ldr r4, =JP_ADD_TEXT_PRINTER_PARAM3
+    bl .Lparty_name_call_r4
+    add sp, #0x2C
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.Lparty_name_call_r4:
+    bx r4
 
 .align 2
 .global ChsPrintMonTrainerMemo
