@@ -6,6 +6,16 @@
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
     {
+      "address": "0x080DA710",
+      "original": "10b5041c2406240e0906090ea001064a",
+      "symbol": "ChsPrintContestantNicknameWithColor"
+    },
+    {
+      "address": "0x080F9E50",
+      "original": "30b581b00006000e6421041c4c430d48",
+      "symbol": "ChsFaintFromFieldPoison"
+    },
+    {
       "address": "0x0806F4B0",
       "original": "10b585b00c1c02216a46faf7cdfd201c",
       "symbol": "ChsGetBoxMonNickname"
@@ -146,7 +156,61 @@
       "symbol": "ChsBattleMoveNamePlaceholderHook"
     }
   ],
+  "veneer_hooks": [
+    {
+      "address": "0x080DA720",
+      "original": "8018fff79fff0548",
+      "symbol": "ChsCopyContestNicknameForDisplay"
+    },
+    {
+      "address": "0x080DA728",
+      "original": "24182078044903f0",
+      "symbol": "ChsCopyContestWinnerNicknameForDisplay"
+    }
+  ],
   "code_patches": [
+    { "address": "0x080D86FA", "original": "30f7ddf8", "replacement": "02f011f8" },
+    { "address": "0x080D8ED8", "original": "2ff7eefc", "replacement": "01f022fc" },
+    { "address": "0x080D8FE0", "original": "2ff76afc", "replacement": "01f09efb" },
+    { "address": "0x080D9120", "original": "2ff7cafb", "replacement": "01f0fefa" },
+    { "address": "0x080D92D6", "original": "2ff7effa", "replacement": "01f023fa" },
+    { "address": "0x080D95E4", "original": "2ff768f9", "replacement": "01f09cf8" },
+    { "address": "0x080D95EE", "original": "2ff763f9", "replacement": "01f097f8" },
+    { "address": "0x080D96DE", "original": "2ff7ebf8", "replacement": "01f01ff8" },
+    { "address": "0x080D9834", "original": "2ff740f8", "replacement": "00f074ff" },
+    { "address": "0x080D9BF6", "original": "2ef75ffe", "replacement": "00f093fd" },
+    { "address": "0x080DCBD4", "original": "2bf770fe", "replacement": "fdf7a4fd" },
+    { "address": "0x080F629E", "original": "12f70bfb", "replacement": "e4f73ffa" },
+    { "address": "0x080F6BAC", "original": "11f784fe", "replacement": "e3f7b8fd" },
+    { "address": "0x080F8B26", "original": "0ff7c7fe", "replacement": "e1f7fbfd" },
+    { "address": "0x080F8C3C", "original": "0ff73cfe", "replacement": "e1f770fd" },
+    { "address": "0x080F9306", "original": "0ff7d7fa", "replacement": "e1f70bfa" },
+    { "address": "0x081301A0", "original": "d8f68afb", "replacement": "aaf7c2fa" },
+    { "address": "0x081301F8", "original": "d8f65efb", "replacement": "aaf796fa" },
+    { "address": "0x08078138", "original": "f1f78eff", "replacement": "f7f7baf9" },
+    { "address": "0x08078160", "original": "f1f77aff", "replacement": "f7f7a6f9" },
+    { "address": "0x080794A4", "original": "f0f7d8fd", "replacement": "f6f704f8" },
+    { "address": "0x080796D6", "original": "f0f7bffc", "replacement": "f5f7ebfe" },
+    { "address": "0x0807B55A", "original": "eef77dfd", "replacement": "f3f7a9ff" },
+    { "address": "0x0807B572", "original": "eef771fd", "replacement": "f3f79dff" },
+    { "address": "0x0807B5D0", "original": "eef742fd", "replacement": "f3f76eff" },
+    { "address": "0x0807E1E6", "original": "ebf737ff", "replacement": "f1f763f9" },
+    { "address": "0x080F0A4C", "original": "79f704fb", "replacement": "c0f0e2fe" },
+    { "address": "0x080F1FB4", "original": "16f738fc", "replacement": "bff02efc" },
+    { "address": "0x080F26D8", "original": "16f7a6f8", "replacement": "bff09cf8" },
+    { "address": "0x080F276C", "original": "16f75cf8", "replacement": "bff052f8" },
+    { "address": "0x080F28D8", "original": "15f7a6ff", "replacement": "bef09cff" },
+    { "address": "0x080F2998", "original": "15f746ff", "replacement": "bef03cff" },
+    { "address": "0x080F2A2C", "original": "15f7fcfe", "replacement": "bef0f2fe" },
+    { "address": "0x080F2AA0", "original": "15f7c2fe", "replacement": "bef0b8fe" },
+    { "address": "0x080F2AE6", "original": "15f79ffe", "replacement": "bef095fe" },
+    { "address": "0x080F2B16", "original": "15f787fe", "replacement": "bef07dfe" },
+    { "address": "0x080F30EA", "original": "15f79dfb", "replacement": "bef093fb" },
+    { "address": "0x08174996", "original": "91f609fa", "replacement": "3cf03dff" },
+    { "address": "0x081749D8", "original": "91f6e8f9", "replacement": "3cf01cff" },
+    { "address": "0x081B0A20", "original": "57f61cff", "replacement": "00f0f8fe" },
+    { "address": "0x081CCDDE", "original": "3bf63dfd", "replacement": "e4f719fd" },
+    { "address": "0x081D2342", "original": "36f68bfa", "replacement": "dff767fa" },
     { "address": "0x081775A2", "original": "f2f659fd", "replacement": "3af037f9" },
     { "address": "0x081775F0", "original": "f2f6e0fd", "replacement": "f7f66eff" },
     { "address": "0x0813DC6E", "original": "2cf7f3f9", "replacement": "73f0d1fd" },

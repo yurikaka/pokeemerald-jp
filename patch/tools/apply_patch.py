@@ -120,6 +120,18 @@ def main() -> None:
             + struct.pack("<I", target)
         )
 
+    for entry in manifest.get("veneer_hooks", []):
+        address = parse_int(entry["address"])
+        offset = rom_offset(address)
+        expected = bytes.fromhex(entry["original"])
+        if len(expected) != 8:
+            raise SystemExit(f"veneer hook 0x{address:08X}: expected bytes must be 8 bytes")
+        if rom[offset:offset + len(expected)] != expected:
+            actual = rom[offset:offset + len(expected)].hex()
+            raise SystemExit(f"veneer hook 0x{address:08X}: expected {expected.hex()}, got {actual}")
+        target = symbols[entry["symbol"]] | 1
+        rom[offset:offset + 8] = struct.pack("<HHI", 0x4B00, 0x4718, target)
+
     for entry in manifest["mode_jump_table"]:
         address = parse_int(entry["address"])
         offset = rom_offset(address)

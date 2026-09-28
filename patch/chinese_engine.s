@@ -422,30 +422,19 @@ ChsCopyBoxMonNickname:
 .type ChsGetBoxMonNickname, %function
 .thumb_func
 ChsGetBoxMonNickname:
-    b ChsCopyMonNickname
+    b ChsTradeNicknameNearRouter
+    nop
 
 .align 2
 .global ChsGetMonNicknameFromBox
 .type ChsGetMonNicknameFromBox, %function
 .thumb_func
 ChsGetMonNicknameFromBox:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lbox_nickname_data_callers
-    movs r2, #4
-.Lbox_nickname_data_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lbox_nickname_data_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lbox_nickname_data_caller_loop
-    pop {r0-r3}
-    b ChsCopyBoxMonNickname
-.Lbox_nickname_data_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
-    b ChsCopyBoxMonNickname
+    ldr r3, .Lbox_nickname_router_target
+    bx r3
+    .space 24
+.Lbox_nickname_router_target:
+    .word ChsBoxNicknameDisplayRouter + 1
 
 .align 2
 .global ChsGetBoxMonNickAt
@@ -491,31 +480,16 @@ ChsGetBoxMonNickAt:
 .type ChsGetMonNickname, %function
 .thumb_func
 ChsGetMonNickname:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lmon_nickname_data_callers
-    movs r2, #12
-.Lmon_nickname_data_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lmon_nickname_data_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lmon_nickname_data_caller_loop
-    pop {r0-r3}
-    b ChsCopyMonNickname
-.Lmon_nickname_data_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
-    b ChsCopyMonNickname
-
-.align 2
-.Lbox_nickname_data_callers:
-    .word 0x080CE60B, 0x081CFA6B, 0x081CFE03, 0x081775F5
-.Lmon_nickname_data_callers:
-    .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
-    .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
-    .word 0x081CEFDF, 0x081CF00F, 0x08166B77, 0x081775A7
+    ldr r3, .Lnickname_router_target
+    bx r3
+ChsTradeNicknameNearRouter:
+    ldr r3, .Ltrade_router_target
+    bx r3
+    .space 80
+.Lnickname_router_target:
+    .word ChsNicknameDisplayRouter + 1
+.Ltrade_router_target:
+    .word ChsTradeNicknameRouter + 1
 
 .align 2
 .global ChsFaintFromFieldPoison
@@ -535,16 +509,16 @@ ChsFaintFromFieldPoison:
     str r0, [sp]
     adds r0, r4, #0
     movs r1, #7
-    ldr r3, =0x0806A2F1
+    ldr r3, =0x0806D3CD
     bl .Lpoison_call_r3
     adds r0, r4, #0
     movs r1, #0x37
     mov r2, sp
-    ldr r3, =0x0806A141
+    ldr r3, =0x0806A775
     bl .Lpoison_call_r3
     adds r0, r4, #0
     ldr r1, =0x02021C40
-    bl ChsCopyMonNickname
+    bl ChsCopyFieldPoisonNickname
     add sp, #4
     pop {r4, r5}
     pop {r0}
@@ -2177,6 +2151,494 @@ ChsFactorySwapPrintMonCategory:
     bx r3
 .Lswap_category_call_r4:
     bx r4
+
+.ltorg
+
+.align 2
+.type ChsTradeNicknameRouter, %function
+.thumb_func
+ChsTradeNicknameRouter:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lparty_nickname_storage_callers
+    movs r2, #2
+.Lparty_nickname_storage_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lparty_nickname_storage_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lparty_nickname_storage_caller_loop
+    ldr r1, =.Ltrade_nickname_data_callers
+    movs r2, #8
+.Ltrade_nickname_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Ltrade_nickname_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Ltrade_nickname_caller_loop
+    pop {r0-r3}
+    b .Lnickname_tail_copy_mon
+.Ltrade_nickname_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b .Lnickname_tail_copy_mon
+.Lparty_nickname_storage_found:
+    pop {r0-r3}
+    b ChsCopyMonNicknameOriginal
+
+.ltorg
+
+.align 2
+.type ChsBoxNicknameDisplayRouter, %function
+.thumb_func
+ChsBoxNicknameDisplayRouter:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lbox_nickname_storage_caller
+    ldr r1, [r1]
+    cmp r0, r1
+    beq .Lbox_nickname_storage_found
+    ldr r1, =.Lbox_nickname_data_callers
+    movs r2, #4
+.Lbox_nickname_data_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lbox_nickname_data_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lbox_nickname_data_caller_loop
+    pop {r0-r3}
+    b .Lnickname_tail_copy_box
+.Lbox_nickname_data_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b .Lnickname_tail_copy_box
+.Lbox_nickname_storage_found:
+    pop {r0-r3}
+    b ChsCopyBoxMonNicknameOriginal
+.Lnickname_tail_copy_box:
+    ldr r3, =ChsCopyBoxMonNickname + 1
+    bx r3
+
+.align 2
+.type ChsNicknameDisplayRouter, %function
+.thumb_func
+ChsNicknameDisplayRouter:
+    push {r0-r3}
+    mov r0, lr
+    ldr r1, =.Lnickname_tv_r4_species2_callers
+    movs r2, #2
+.Lnickname_tv_r4_species2_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_tv_r4_species2_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_tv_r4_species2_loop
+    ldr r1, =.Lnickname_tv_r5_species2_callers
+    movs r2, #3
+.Lnickname_tv_r5_species2_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_tv_r5_species2_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_tv_r5_species2_loop
+    ldr r1, =.Lnickname_tv_r5_species16_callers
+    movs r2, #5
+.Lnickname_tv_r5_species16_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_tv_r5_species16_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_tv_r5_species16_loop
+    ldr r1, =.Lnickname_direct_data_callers
+    movs r2, #1
+.Lnickname_direct_data_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_direct_data_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_direct_data_loop
+    ldr r1, =.Lnickname_partner_string_caller
+    ldr r1, [r1]
+    cmp r0, r1
+    beq .Lnickname_partner_string_found
+    ldr r1, =.Lnickname_condition_string_callers
+    movs r2, #2
+.Lnickname_condition_string_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_condition_string_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_condition_string_loop
+    ldr r1, =.Lnickname_hof_width_callers
+    movs r2, #2
+.Lnickname_hof_width_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_hof_width_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_hof_width_loop
+    ldr r1, =.Lmon_nickname_data_callers
+    movs r2, #12
+.Lnickname_original_caller_loop:
+    ldr r3, [r1]
+    cmp r0, r3
+    beq .Lnickname_original_caller_found
+    adds r1, #4
+    subs r2, #1
+    bne .Lnickname_original_caller_loop
+    pop {r0-r3}
+    b .Lnickname_tail_copy_mon
+.Lnickname_original_caller_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b .Lnickname_tail_copy_mon
+.Lnickname_tv_r4_species2_found:
+    pop {r0-r3}
+    ldrh r2, [r4, #2]
+    b ChsCopyStoredNicknameForSpecies
+.Lnickname_tv_r5_species2_found:
+    pop {r0-r3}
+    ldrh r2, [r5, #2]
+    b ChsCopyStoredNicknameForSpecies
+.Lnickname_tv_r5_species16_found:
+    pop {r0-r3}
+    ldrh r2, [r5, #0x10]
+    b ChsCopyStoredNicknameForSpecies
+.Lnickname_direct_data_found:
+    pop {r0-r3}
+    adds r1, r2, #0
+    b .Lnickname_tail_copy_mon
+.Lnickname_partner_string_found:
+    pop {r0-r3}
+    bl ChsTruncateNickname
+    ldrh r0, [r7]
+    adds r1, r4, #0
+    b ChsConvertNicknameForSpecies
+.Lnickname_condition_string_found:
+    pop {r0-r3}
+    bl ChsTruncateNickname
+    adds r0, r4, #0
+    adds r1, r6, #0
+    bl ChsResolveBoxOrPartyMon
+    adds r4, r0, #0
+    cmp r2, #0
+    beq .Lnickname_condition_party
+    adds r0, r4, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A1B5
+    bl .Lnickname_router_call_r3
+    b .Lnickname_condition_convert
+.Lnickname_condition_party:
+    adds r0, r4, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lnickname_router_call_r3
+.Lnickname_condition_convert:
+    adds r1, r5, #0
+    b ChsConvertNicknameForSpecies
+.Lnickname_hof_width_found:
+    pop {r0-r3}
+    push {r0-r2}
+    ldrh r0, [r7, #8]
+    movs r3, #0x80
+    lsls r3, r3, #2
+    subs r3, #1
+    ands r0, r3
+    bl ChsConvertNicknameForSpecies
+    pop {r0-r2}
+    ldr r3, =0x08005DAD
+    bx r3
+.Lnickname_router_call_r3:
+    bx r3
+.Lnickname_tail_copy_mon:
+    ldr r3, =ChsCopyMonNickname + 1
+    bx r3
+
+.align 2
+.type ChsTruncateNickname, %function
+.thumb_func
+ChsTruncateNickname:
+    movs r1, #0
+.Ltruncate_nickname_loop:
+    ldrb r2, [r0, r1]
+    cmp r2, #0xFF
+    beq .Ltruncate_nickname_done
+    adds r1, #1
+    cmp r1, #5
+    blo .Ltruncate_nickname_loop
+    movs r2, #0xFF
+    strb r2, [r0, #5]
+.Ltruncate_nickname_done:
+    bx lr
+
+.align 2
+.type ChsResolveBoxOrPartyMon, %function
+.thumb_func
+ChsResolveBoxOrPartyMon:
+    cmp r0, #14
+    bne .Lresolve_box_mon
+    movs r2, #0x64
+    muls r1, r2, r1
+    ldr r0, =0x02024190
+    adds r0, r0, r1
+    movs r2, #0
+    bx lr
+.Lresolve_box_mon:
+    ldr r3, =0x080D1935
+    push {lr}
+    bl .Lresolve_box_call_r3
+    movs r2, #1
+    pop {r1}
+    bx r1
+.Lresolve_box_call_r3:
+    bx r3
+
+.align 2
+.Lbox_nickname_data_callers:
+    .word 0x080CE60B, 0x081CFA6B, 0x081CFE03, 0x081775F5
+.Lparty_nickname_storage_callers:
+    .word 0x0806F5E3, 0x08071765
+.Lbox_nickname_storage_caller:
+    .word 0x08070FBB
+.Lmon_nickname_data_callers:
+    .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
+    .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
+    .word 0x081CEFDF, 0x081CF00F, 0x08166B77, 0x081775A7
+.Ltrade_nickname_data_callers:
+    .word 0x0807813D, 0x08078165, 0x080794A9, 0x080796DB
+    .word 0x0807B55F, 0x0807B577, 0x0807B5D5, 0x0807E1EB
+.Lnickname_direct_data_callers:
+    .word 0x080F0A51
+.Lnickname_partner_string_caller:
+    .word 0x081B0A25
+.Lnickname_condition_string_callers:
+    .word 0x081CCDE3, 0x081D2347
+.Lnickname_hof_width_callers:
+    .word 0x0817499B, 0x081749DD
+.Lnickname_tv_r4_species2_callers:
+    .word 0x080F1FB9, 0x080F30EF
+.Lnickname_tv_r5_species2_callers:
+    .word 0x080F26DD, 0x080F2771, 0x080F28DD
+.Lnickname_tv_r5_species16_callers:
+    .word 0x080F299D, 0x080F2A31, 0x080F2AA5, 0x080F2AEB
+    .word 0x080F2B1B
+.align 2
+.type ChsCopyStoredNicknameForSpecies, %function
+.thumb_func
+ChsCopyStoredNicknameForSpecies:
+    push {r4-r6, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    adds r6, r2, #0
+    ldr r3, =0x08008829
+    bl .Lcopy_stored_nickname_call_r3
+    adds r0, r6, #0
+    adds r1, r4, #0
+    bl ChsConvertNicknameForSpecies
+    adds r0, r4, #0
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+.Lcopy_stored_nickname_call_r3:
+    bx r3
+
+.align 2
+.type ChsCopyMonNicknameOriginal, %function
+.thumb_func
+ChsCopyMonNicknameOriginal:
+    push {r4, lr}
+    sub sp, #0x14
+    adds r4, r1, #0
+    movs r1, #2
+    mov r2, sp
+    ldr r3, =0x0806A059
+    bl .Lcopy_original_nickname_call_r3
+    adds r0, r4, #0
+    mov r1, sp
+    ldr r3, =0x08008829
+    bl .Lcopy_original_nickname_call_r3
+    add sp, #0x14
+    pop {r4}
+    pop {r1}
+    bx r1
+
+.align 2
+.type ChsCopyBoxMonNicknameOriginal, %function
+.thumb_func
+ChsCopyBoxMonNicknameOriginal:
+    push {r4, lr}
+    sub sp, #0x14
+    adds r4, r1, #0
+    movs r1, #2
+    mov r2, sp
+    ldr r3, =0x0806A1B5
+    bl .Lcopy_original_nickname_call_r3
+    adds r0, r4, #0
+    mov r1, sp
+    ldr r3, =0x08008829
+    bl .Lcopy_original_nickname_call_r3
+    add sp, #0x14
+    pop {r4}
+    pop {r1}
+    bx r1
+.Lcopy_original_nickname_call_r3:
+    bx r3
+
+.align 2
+.type ChsConvertNicknameForSpecies, %function
+.thumb_func
+ChsConvertNicknameForSpecies:
+    push {r4-r6, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldr r0, =(412)
+    cmp r4, r0
+    bhs .Lconvert_nickname_done
+    lsls r0, r4, #1
+    adds r0, r0, r4
+    lsls r0, r0, #1
+    ldr r6, =JP_SPECIES_NAMES
+    adds r6, r6, r0
+    movs r2, #0
+.Lconvert_nickname_compare:
+    ldrb r0, [r5, r2]
+    ldrb r1, [r6, r2]
+    cmp r0, r1
+    bne .Lconvert_nickname_done
+    cmp r0, #0xFF
+    beq .Lconvert_nickname_write
+    adds r2, #1
+    cmp r2, #6
+    blo .Lconvert_nickname_compare
+    b .Lconvert_nickname_done
+.Lconvert_nickname_write:
+    movs r0, #0xF5
+    strb r0, [r5]
+    movs r0, #0xF2
+    strb r0, [r5, #1]
+    strb r4, [r5, #2]
+    lsrs r0, r4, #8
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+.Lconvert_nickname_done:
+    adds r0, r5, #0
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+
+.align 2
+.type ChsCopyFieldPoisonNickname, %function
+.thumb_func
+ChsCopyFieldPoisonNickname:
+    push {r4-r6, lr}
+    sub sp, #0x0C
+    adds r4, r0, #0
+    adds r5, r1, #0
+    movs r1, #2
+    mov r2, sp
+    ldr r3, =0x0806A059
+    bl .Lfield_nickname_call_r3
+    mov r0, sp
+    ldr r3, =0x0800885D
+    bl .Lfield_nickname_call_r3
+    adds r0, r5, #0
+    mov r1, sp
+    ldr r3, =0x080088B9
+    bl .Lfield_nickname_call_r3
+    adds r0, r4, #0
+    movs r1, #0x0B
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lfield_nickname_call_r3
+    adds r1, r5, #0
+    bl ChsConvertNicknameForSpecies
+    add sp, #0x0C
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+.Lfield_nickname_call_r3:
+    bx r3
+
+.align 2
+.global ChsCopyContestNicknameForDisplay
+.type ChsCopyContestNicknameForDisplay, %function
+.thumb_func
+ChsCopyContestNicknameForDisplay:
+    subs r3, r1, #2
+    ldrh r2, [r3]
+    b ChsCopyNicknameStringForSpecies
+
+.align 2
+.global ChsPrintContestantNicknameWithColor
+.type ChsPrintContestantNicknameWithColor, %function
+.thumb_func
+ChsPrintContestantNicknameWithColor:
+    push {r4, r5, lr}
+    sub sp, #0x14
+    lsls r0, r0, #0x18
+    lsrs r4, r0, #0x18
+    lsls r1, r1, #0x18
+    lsrs r5, r1, #0x18
+    lsls r1, r4, #6
+    ldr r2, =0x02039AA2
+    adds r1, r1, r2
+    mov r0, sp
+    bl ChsCopyContestNicknameForDisplay
+    mov r0, sp
+    adds r1, r5, #0
+    ldr r3, =0x080DA665
+    bl .Lcontest_nickname_call_r3
+    ldr r0, =0x02039BC6
+    adds r0, r4, r0
+    ldrb r0, [r0]
+    ldr r1, =0x02022AE0
+    ldr r3, =0x080DE2D5
+    bl .Lcontest_nickname_call_r3
+    add sp, #0x14
+    pop {r4, r5}
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsCopyContestWinnerNicknameForDisplay
+.type ChsCopyContestWinnerNicknameForDisplay, %function
+.thumb_func
+ChsCopyContestWinnerNicknameForDisplay:
+    subs r3, r1, #3
+    ldrh r2, [r3]
+    b ChsCopyNicknameStringForSpecies
+.Lcontest_nickname_call_r3:
+    bx r3
+
+.align 2
+.type ChsCopyNicknameStringForSpecies, %function
+.thumb_func
+ChsCopyNicknameStringForSpecies:
+    push {r4-r6, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    adds r6, r2, #0
+    ldr r3, =0x080088B9
+    bl .Lcontest_nickname_call_r3
+    adds r0, r6, #0
+    adds r1, r4, #0
+    bl ChsConvertNicknameForSpecies
+    adds r0, r4, #0
+    pop {r4-r6}
+    pop {r1}
+    bx r1
 
 .ltorg
 
