@@ -33,9 +33,154 @@
 .equ TEXT_MODE_JAPANESE,       0
 .equ TEXT_MODE_CHINESE,        1
 .equ TEXT_MODE_COMPACT_SPECIES, 2
+.equ TEXT_MODE_MUZAIPIXEL,     3
+.equ TEXT_MODE_MUZAIPIXEL_JAPANESE, 4
 .equ TEXT_SPECIES_ID_LO_OFFSET, 0x18
 .equ TEXT_SPECIES_ID_HI_OFFSET, 0x19
 .equ TEXT_SPECIES_CHAR_OFFSET,  0x1A
+
+.align 2
+.global ChsPrintMonTrainerMemo
+.type ChsPrintMonTrainerMemo, %function
+.thumb_func
+ChsPrintMonTrainerMemo:
+    push {lr}
+    bl ChsUseMuzaiIfLong
+    pop {r0}
+    push {r0}
+    sub sp, #8
+    ldr r0, =0x085ED114
+    movs r1, #3
+    ldr r3, =0x081C2621
+    bl .Ltrainer_memo_call_r3
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    ldr r3, =0x081C2A5D
+    bx r3
+.Ltrainer_memo_call_r3:
+    bx r3
+
+.align 2
+.type ChsUseMuzaiIfLong, %function
+.thumb_func
+ChsUseMuzaiIfLong:
+    push {r4-r7, lr}
+    ldr r4, =0x02021C7C
+    adds r5, r4, #0
+    movs r7, #0
+.Lmemo_scan:
+    ldrb r0, [r5]
+    cmp r0, #0xFE
+    beq .Lmemo_line_end
+    cmp r0, #0xFF
+    beq .Lmemo_line_end
+    cmp r0, #0xFC
+    beq .Lmemo_control
+    cmp r0, #0xF5
+    beq .Lmemo_skip_one
+    cmp r0, #0xF7
+    beq .Lmemo_skip_two
+    cmp r0, #0xF8
+    beq .Lmemo_skip_two
+    cmp r0, #0xF9
+    beq .Lmemo_symbol
+    cmp r0, #0x7F
+    beq .Lmemo_chinese_pair
+    cmp r0, #0x60
+    blo .Lmemo_single
+    cmp r0, #0x7D
+    bhi .Lmemo_single
+    cmp r0, #0x65
+    beq .Lmemo_single
+    cmp r0, #0x7A
+    beq .Lmemo_single
+.Lmemo_chinese_pair:
+    ldrb r0, [r5, #1]
+    cmp r0, #0xF6
+    bhi .Lmemo_single
+    adds r5, #2
+    adds r7, #12
+    b .Lmemo_scan
+.Lmemo_single:
+    adds r5, #1
+    adds r7, #8
+    b .Lmemo_scan
+.Lmemo_skip_one:
+    adds r5, #1
+    b .Lmemo_scan
+.Lmemo_skip_two:
+    adds r5, #2
+    b .Lmemo_scan
+.Lmemo_symbol:
+    adds r5, #2
+    adds r7, #8
+    b .Lmemo_scan
+.Lmemo_control:
+    ldrb r0, [r5, #1]
+    cmp r0, #4
+    beq .Lmemo_control_three_args
+    cmp r0, #1
+    beq .Lmemo_control_one_arg
+    cmp r0, #2
+    beq .Lmemo_control_one_arg
+    cmp r0, #3
+    beq .Lmemo_control_one_arg
+    cmp r0, #5
+    beq .Lmemo_control_one_arg
+    adds r5, #2
+    b .Lmemo_scan
+.Lmemo_control_one_arg:
+    adds r5, #3
+    b .Lmemo_scan
+.Lmemo_control_three_args:
+    adds r5, #5
+    b .Lmemo_scan
+.Lmemo_line_end:
+    cmp r7, #156
+    bls .Lmemo_done
+    adds r6, r5, #0
+.Lmemo_find_eos:
+    ldrb r0, [r5]
+    cmp r0, #0xFF
+    beq .Lmemo_check_capacity
+    adds r5, #1
+    b .Lmemo_find_eos
+.Lmemo_check_capacity:
+    subs r0, r5, r4
+    ldr r1, =0x3E3
+    cmp r0, r1
+    bhi .Lmemo_done
+    adds r1, r5, #0
+.Lmemo_shift_restore:
+    ldrb r0, [r1]
+    strb r0, [r1, #2]
+    cmp r1, r6
+    beq .Lmemo_write_restore
+    subs r1, #1
+    b .Lmemo_shift_restore
+.Lmemo_write_restore:
+    movs r0, #0xF5
+    strb r0, [r6]
+    movs r0, #0xF4
+    strb r0, [r6, #1]
+    adds r5, #2
+    adds r1, r5, #0
+.Lmemo_shift_start:
+    ldrb r0, [r1]
+    strb r0, [r1, #2]
+    cmp r1, r4
+    beq .Lmemo_write_start
+    subs r1, #1
+    b .Lmemo_shift_start
+.Lmemo_write_start:
+    movs r0, #0xF5
+    strb r0, [r4]
+    movs r0, #0xF3
+    strb r0, [r4, #1]
+.Lmemo_done:
+    pop {r4-r7}
+    pop {r0}
+    bx r0
 
 .global ChineseRenderHook
 .type ChineseRenderHook, %function
@@ -82,6 +227,10 @@ ChineseRenderHook:
     cmp r3, #0xF5
     bne .Lnot_compact_chinese
     ldrb r2, [r0]
+    cmp r2, #0xF3
+    beq .Lset_muzaipixel_mode
+    cmp r2, #0xF4
+    beq .Lrestore_normal_chinese_mode
     cmp r2, #0xF2
     bne .Lset_compact_chinese_mode
     ldrb r2, [r0, #1]
@@ -111,9 +260,24 @@ ChineseRenderHook:
     pop {r1}
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+.Lset_muzaipixel_mode:
+    movs r2, #TEXT_MODE_MUZAIPIXEL
+    b .Lset_muzaipixel_state
+.Lrestore_normal_chinese_mode:
+    movs r2, #TEXT_MODE_CHINESE
+.Lset_muzaipixel_state:
+    strb r2, [r6, #TEXT_MODE_OFFSET]
+    adds r0, #1
+    str r0, [r6]
+    pop {r2-r7}
+    pop {r1}
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
 .Lnot_compact_chinese:
     ldrb r2, [r6, #TEXT_MODE_OFFSET]
     cmp r2, #TEXT_MODE_JAPANESE
+    beq .Lnot_chinese
+    cmp r2, #TEXT_MODE_MUZAIPIXEL_JAPANESE
     beq .Lnot_chinese
 
     @ 0x60-0x7D encode the translated Chinese high-byte ranges.  0x65 and
@@ -151,6 +315,11 @@ ChineseRenderHook:
 .Lload_glyph:
     adds r0, r3, #0
     ldrb r1, [r4]
+    ldrb r2, [r6, #TEXT_MODE_OFFSET]
+    cmp r2, #TEXT_MODE_MUZAIPIXEL
+    bne .Lload_selected_font
+    movs r1, #0xFF
+.Lload_selected_font:
     bl DecompressChineseGlyph
     pop {r2-r7}
     pop {r1}
@@ -158,6 +327,16 @@ ChineseRenderHook:
     bx r0
 
 .Lnot_chinese:
+    ldrb r1, [r6, #TEXT_MODE_OFFSET]
+    cmp r1, #TEXT_MODE_MUZAIPIXEL
+    bne .Lrender_original_glyph
+    cmp r3, #0xF0
+    bhs .Lrender_original_glyph
+    movs r2, #0x7F
+    lsls r2, r2, #8
+    orrs r3, r2
+    b .Lload_glyph
+.Lrender_original_glyph:
     pop {r2-r7}
     pop {r1}
     ldr r0, =JP_RENDER_TEXT_NORMAL
@@ -207,7 +386,17 @@ ChineseRenderHook:
 .type SetJapaneseTextMode, %function
 .thumb_func
 SetJapaneseTextMode:
+    ldrb r0, [r6, #TEXT_MODE_OFFSET]
+    cmp r0, #TEXT_MODE_MUZAIPIXEL
+    beq .Lmuzaipixel_japanese
+    cmp r0, #TEXT_MODE_MUZAIPIXEL_JAPANESE
+    beq .Lmuzaipixel_japanese
     movs r0, #TEXT_MODE_JAPANESE
+    strb r0, [r6, #TEXT_MODE_OFFSET]
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+.Lmuzaipixel_japanese:
+    movs r0, #TEXT_MODE_MUZAIPIXEL_JAPANESE
     strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
@@ -217,7 +406,17 @@ SetJapaneseTextMode:
 .type SetChineseTextMode, %function
 .thumb_func
 SetChineseTextMode:
+    ldrb r0, [r6, #TEXT_MODE_OFFSET]
+    cmp r0, #TEXT_MODE_MUZAIPIXEL
+    beq .Lmuzaipixel_chinese
+    cmp r0, #TEXT_MODE_MUZAIPIXEL_JAPANESE
+    beq .Lmuzaipixel_chinese
     movs r0, #TEXT_MODE_CHINESE
+    strb r0, [r6, #TEXT_MODE_OFFSET]
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+.Lmuzaipixel_chinese:
+    movs r0, #TEXT_MODE_MUZAIPIXEL
     strb r0, [r6, #TEXT_MODE_OFFSET]
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
@@ -2773,6 +2972,8 @@ DecompressChineseGlyph:
     adds r4, r0, #0
     ldr r5, =JP_CURRENT_GLYPH
 
+    cmp r1, #0xFF
+    beq .Lmuzaipixel_font
     cmp r1, #0
     beq .Lsmall_font
     ldr r6, =ChineseNormalFont
@@ -2784,6 +2985,12 @@ DecompressChineseGlyph:
     ldr r6, =ChineseSmallFont
     movs r0, #10
     movs r1, #13
+    b .Lset_dimensions
+
+.Lmuzaipixel_font:
+    ldr r6, =MuzaipixelChineseFont
+    movs r0, #8
+    movs r1, #12
 
 .Lset_dimensions:
     adds r7, r5, #0
@@ -2800,6 +3007,14 @@ DecompressChineseGlyph:
     lsrs r3, r3, #24
     ldr r6, =LatinNormalFont
     ldrb r0, [r7]
+    cmp r0, #8
+    bne .Lnot_muzaipixel_latin
+    ldr r6, =MuzaipixelLatinFont
+    ldr r0, =MuzaipixelLatinWidths
+    ldrb r0, [r0, r3]
+    strb r0, [r7]
+    b .Lhave_index
+.Lnot_muzaipixel_latin:
     cmp r0, #10
     bne .Lhave_index
     ldr r6, =LatinSmallFont
@@ -3055,6 +3270,15 @@ ChineseNormalFont:
 .align 2
 ChineseSmallFont:
     .incbin "build/patch/chinese_small.latfont"
+.align 2
+MuzaipixelChineseFont:
+    .incbin "build/patch/muzaipixel_chinese.latfont"
+.align 2
+MuzaipixelLatinFont:
+    .incbin "build/patch/muzaipixel_latin.latfont"
+.align 2
+MuzaipixelLatinWidths:
+    .incbin "patch/fonts/muzaipixel_latin_widths.bin"
 .align 2
 LatinNormalFont:
     .incbin "build/patch/latin_normal.latfont"

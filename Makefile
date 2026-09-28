@@ -74,6 +74,12 @@ $(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_
 $(PATCH_BUILD)/chinese_small.latfont: patch/fonts/chinese_small.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
+$(PATCH_BUILD)/muzaipixel_chinese.latfont: patch/fonts/muzaipixel_chinese.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/muzaipixel_latin.latfont: patch/fonts/muzaipixel_latin.png | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
 $(PATCH_BUILD)/latin_normal.latfont: patch/fonts/latin_normal.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
@@ -103,6 +109,8 @@ $(PATCH_BUILD)/naming_screen_%.4bpp: ../pokeemerald_us_chs/graphics/naming_scree
 
 $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/chinese_normal.latfont $(PATCH_BUILD)/chinese_small.latfont \
+		$(PATCH_BUILD)/muzaipixel_chinese.latfont $(PATCH_BUILD)/muzaipixel_latin.latfont \
+		patch/fonts/muzaipixel_latin_widths.bin \
 		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
 		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX)
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
