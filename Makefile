@@ -26,7 +26,7 @@ PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_MENU_INFO_US_GFX := $(PATCH_BUILD)/menu_info_us.4bpp
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp
-PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp
+PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin
 PATCH_TILEMAPS := $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin))
@@ -88,6 +88,9 @@ $(PATCH_MENU_INFO_US_GFX): ../pokeemerald_us_chs/graphics/interface/menu_info.pn
 
 patch/gfx/menu_info_tiles.4bpp: patch/tools/build_menu_info_gfx.py baserom_jp.gba $(PATCH_MENU_INFO_US_GFX)
 	$(PYTHON) patch/tools/build_menu_info_gfx.py $(PATCH_MENU_INFO_US_GFX)
+
+patch/gfx/battle_status_tiles.4bpp: patch/tools/build_battle_status_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/interface/status_icons.png
+	$(PYTHON) patch/tools/build_battle_status_gfx.py
 
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@

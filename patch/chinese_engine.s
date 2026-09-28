@@ -2952,6 +2952,11 @@ ChsStatusIconsGfx:
     .incbin "build/patch/status_icons.lz"
 
 .align 2
+.global ChsBattleStatusGfx
+ChsBattleStatusGfx:
+    .incbin "patch/gfx/battle_status_tiles.4bpp"
+
+.align 2
 .global ChsShopMoneyGfx
 ChsShopMoneyGfx:
     .incbin "build/patch/shop_money.lz"

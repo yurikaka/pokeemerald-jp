@@ -61,6 +61,12 @@ Its 32 by 64 pixel layout and palette match the Japanese asset. All two
 references to the shared Japanese compressed sprite sheet are redirected, so
 the party menu and summary screen use the same localized status icons.
 
+`battle_status_tiles.4bpp` retains the Japanese battle healthbox graphics table
+and replaces only the five status labels in each of its four battler variants.
+The glyph masks come from the US Chinese `status_icons.png`; the Japanese
+healthbox backgrounds and palette indices remain unchanged. The sole table
+reference in `GetHealthboxElementGfxPtr` at `0x080722C0` is redirected.
+
 `shop_money.4bpp` is generated from `graphics/shop/money.png`. Its 32 by 16
 pixel layout and palette match the Japanese asset, so the shop's sole sprite
 sheet graphics pointer at `0x08565FBC` is redirected.
