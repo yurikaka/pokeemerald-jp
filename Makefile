@@ -112,6 +112,8 @@ $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/muzaipixel_chinese.latfont $(PATCH_BUILD)/muzaipixel_latin.latfont \
 		patch/fonts/muzaipixel_latin_widths.bin \
 		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
+		patch/gfx/title_logo.8bpp.lz patch/gfx/title_logo.bin.lz \
+		patch/gfx/title_palette.gbapal patch/gfx/title_emerald.8bpp.lz \
 		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX)
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 

@@ -3541,6 +3541,26 @@ DecompressChineseGlyph:
 .include "build/patch/texts.inc"
 
 .align 2
+.global ChsTitleLogoGfx
+ChsTitleLogoGfx:
+    .incbin "patch/gfx/title_logo.8bpp.lz"
+
+.align 2
+.global ChsTitleLogoTilemap
+ChsTitleLogoTilemap:
+    .incbin "patch/gfx/title_logo.bin.lz"
+
+.align 2
+.global ChsTitlePalette
+ChsTitlePalette:
+    .incbin "patch/gfx/title_palette.gbapal"
+
+.align 2
+.global ChsTitleEmeraldGfx
+ChsTitleEmeraldGfx:
+    .incbin "patch/gfx/title_emerald.8bpp.lz"
+
+.align 2
 .global ChsSpeciesNameTokens
 ChsSpeciesNameTokens:
 .set chs_species_token_index, 0
