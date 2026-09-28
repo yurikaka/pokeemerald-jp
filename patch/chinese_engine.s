@@ -2876,6 +2876,17 @@ SummaryScreenPrintHook:
     lsrs r4, r4, #24
     lsls r5, r5, #24
     lsrs r5, r5, #24
+    ldr r6, =0x0203CBE8
+    ldr r6, [r6]
+    adds r6, #0xA6
+    cmp r1, r6
+    bne .Lssp_ot_ready
+    cmp r2, #4
+    bne .Lssp_ot_ready
+    push {r0-r3}
+    bl ChsCopyOtSlashTail
+    pop {r0-r3}
+.Lssp_ot_ready:
     movs r6, #0
     str r6, [sp]
     str r4, [sp, #4]
@@ -2905,6 +2916,45 @@ SummaryScreenPrintHook:
     bx r0
 .align 2
 .Lssp_call_r4:
+    bx r4
+
+.align 2
+.type ChsCopyOtSlashTail, %function
+.thumb_func
+ChsCopyOtSlashTail:
+    push {r4, lr}
+    adds r4, r0, #0
+    movs r0, #7
+    movs r1, #7
+    ldr r3, =JP_GET_WINDOW_ATTRIBUTE
+    bl .Lot_call_r3
+    cmp r0, #0
+    beq .Lot_done
+    sub sp, #24
+    adds r1, r0, #0
+    adds r0, r4, #0
+    movs r2, #48
+    movs r3, #0
+    movs r4, #56
+    str r4, [sp]
+    movs r4, #16
+    str r4, [sp, #4]
+    str r3, [sp, #8]
+    str r3, [sp, #12]
+    movs r4, #4
+    str r4, [sp, #16]
+    movs r4, #16
+    str r4, [sp, #20]
+    ldr r4, =0x080038AD
+    bl .Lot_call_r4
+    add sp, #24
+.Lot_done:
+    pop {r4}
+    pop {r0}
+    bx r0
+.Lot_call_r3:
+    bx r3
+.Lot_call_r4:
     bx r4
 
 .align 2
