@@ -20,6 +20,7 @@
 .equ JP_NATIONAL_DEX_TO_SPECIES, 0x0806CED1
 .equ JP_POKEDEX_PRINT_TEXT,     0x080BFFE1
 .equ JP_SUMMARY_PRINT_TEXT,     0x081C1ED9
+.equ JP_GET_STRING_WIDTH,       0x08005DAD
 .equ SUMMARY_TEXT_COLORS,       0x085ED17C
 .equ JP_ADD_WINDOW,             0x08003251
 .equ JP_REMOVE_WINDOW,          0x08003445
@@ -189,7 +190,9 @@ ChineseRenderHook:
     strb r0, [r6, #0x1E]
     ldrb r1, [r6, #TEXT_MODE_OFFSET]
     cmp r1, #TEXT_MODE_COMPACT_SPECIES
-    beq .Lcompact_species_entry
+    bne .Lnot_compact_species_entry
+    b .Lcompact_species_entry
+.Lnot_compact_species_entry:
     ldr r0, [r6]
 .Lredirect_direct_species_name:
     ldr r1, =JP_SPECIES_NAMES
@@ -212,6 +215,38 @@ ChineseRenderHook:
     lsls r1, r1, #2
     ldr r2, =ChsSpeciesNames
     ldr r0, [r2, r1]
+    ldrb r2, [r6, #4]
+    cmp r2, #0x13
+    bne .Lread_current_character
+    adds r2, r0, #1
+    movs r1, #0
+.Lsummary_species_glyph_count:
+    ldrb r3, [r2]
+    cmp r3, #0xFF
+    beq .Lsummary_species_glyph_counted
+    cmp r3, #0x7F
+    beq .Lsummary_species_glyph_pair
+    cmp r3, #0x60
+    blo .Lsummary_species_glyph_single
+    cmp r3, #0x7D
+    bhi .Lsummary_species_glyph_single
+    cmp r3, #0x65
+    beq .Lsummary_species_glyph_single
+    cmp r3, #0x7A
+    beq .Lsummary_species_glyph_single
+.Lsummary_species_glyph_pair:
+    adds r2, #2
+    b .Lsummary_species_glyph_next
+.Lsummary_species_glyph_single:
+    adds r2, #1
+.Lsummary_species_glyph_next:
+    adds r1, #1
+    b .Lsummary_species_glyph_count
+.Lsummary_species_glyph_counted:
+    cmp r1, #4
+    blo .Lread_current_character
+    movs r2, #TEXT_MODE_MUZAIPIXEL_JAPANESE
+    strb r2, [r6, #TEXT_MODE_OFFSET]
 .Lread_current_character:
     ldrb r3, [r0]
     adds r0, #1
@@ -254,7 +289,14 @@ ChineseRenderHook:
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
 .Lset_compact_chinese_mode:
+    ldrb r2, [r6, #TEXT_MODE_OFFSET]
+    cmp r2, #TEXT_MODE_MUZAIPIXEL_JAPANESE
+    bne .Lset_normal_chinese_mode
+    movs r2, #TEXT_MODE_MUZAIPIXEL
+    b .Lstore_compact_chinese_mode
+.Lset_normal_chinese_mode:
     movs r2, #TEXT_MODE_CHINESE
+.Lstore_compact_chinese_mode:
     strb r2, [r6, #TEXT_MODE_OFFSET]
     pop {r2-r7}
     pop {r1}
@@ -1179,23 +1221,7 @@ ChsSummaryPrintGenderSymbol:
     movs r0, #0
     str r0, [sp]
     str r3, [sp, #4]
-    lsls r0, r5, #2
-    ldr r2, =ChsSpeciesNames
-    ldr r0, [r2, r0]
-    adds r0, #1
-    movs r2, #6
-.Lsummary_gender_width:
-    ldrb r3, [r0]
-    cmp r3, #0xFF
-    beq .Lsummary_gender_position
-    adds r0, #2
-    adds r2, #12
-    b .Lsummary_gender_width
-.Lsummary_gender_position:
-    cmp r2, #56
-    bls .Lsummary_gender_position_ready
-    movs r2, #56
-.Lsummary_gender_position_ready:
+    movs r2, #54
     movs r0, #0x13
     movs r3, #1
     ldr r4, =JP_SUMMARY_PRINT_TEXT
@@ -2887,6 +2913,34 @@ SummaryScreenPrintHook:
     bl ChsCopyOtSlashTail
     pop {r0-r3}
 .Lssp_ot_ready:
+    cmp r0, #0x12
+    bne .Lssp_nickname_ready
+    cmp r3, #2
+    bne .Lssp_nickname_ready
+    cmp r2, #0x18
+    beq .Lssp_nickname_x_ready
+    cmp r2, #0x20
+    bne .Lssp_nickname_ready
+.Lssp_nickname_x_ready:
+    push {r0-r3}
+    bl ChsPrepareSummaryNickname
+    ldr r1, [sp, #4]
+    ldr r2, [sp, #8]
+    bl ChsSummaryNicknameX
+    str r0, [sp, #8]
+    pop {r0-r3}
+.Lssp_nickname_ready:
+    cmp r0, #0x13
+    bne .Lssp_species_ready
+    cmp r2, #4
+    bne .Lssp_species_ready
+    cmp r3, #1
+    bne .Lssp_species_ready
+    push {r0-r3}
+    bl ChsSummarySpeciesNameX
+    str r0, [sp, #8]
+    pop {r0-r3}
+.Lssp_species_ready:
     movs r6, #0
     str r6, [sp]
     str r4, [sp, #4]
@@ -2917,6 +2971,315 @@ SummaryScreenPrintHook:
 .align 2
 .Lssp_call_r4:
     bx r4
+
+.align 2
+.type ChsSummarySpeciesNameX, %function
+.thumb_func
+ChsSummarySpeciesNameX:
+    push {r4-r7, lr}
+    ldr r4, =0x0203CBE8
+    ldr r4, [r4]
+    adds r0, r4, #0
+    adds r0, #0x70
+    ldrh r5, [r0]
+    ldr r0, =412
+    cmp r5, r0
+    bhs .Lsummary_species_x_zero
+    lsls r0, r5, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r1, [r1, r0]
+    adds r1, #1
+    movs r6, #0
+    movs r7, #0
+.Lsummary_species_width:
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lsummary_species_width_done
+    cmp r0, #0x7F
+    beq .Lsummary_species_width_pair
+    cmp r0, #0x60
+    blo .Lsummary_species_width_single
+    cmp r0, #0x7D
+    bhi .Lsummary_species_width_single
+    cmp r0, #0x65
+    beq .Lsummary_species_width_single
+    cmp r0, #0x7A
+    beq .Lsummary_species_width_single
+.Lsummary_species_width_pair:
+    adds r1, #2
+    adds r6, #12
+    b .Lsummary_species_width_next
+.Lsummary_species_width_single:
+    adds r1, #1
+    adds r6, #8
+.Lsummary_species_width_next:
+    adds r7, #1
+    b .Lsummary_species_width
+.Lsummary_species_width_done:
+    cmp r7, #4
+    blo .Lsummary_species_check_gender
+    lsls r6, r7, #3
+.Lsummary_species_check_gender:
+    movs r7, #62
+    cmp r5, #0x20
+    beq .Lsummary_species_align
+    cmp r5, #0x1D
+    beq .Lsummary_species_align
+    adds r0, r4, #0
+    adds r0, #0x0C
+    ldr r3, =JP_GET_MON_GENDER
+    bl .Lsummary_species_gender_call
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    cmp r0, #0
+    beq .Lsummary_species_has_gender
+    cmp r0, #0xFE
+    bne .Lsummary_species_align
+.Lsummary_species_has_gender:
+    movs r7, #54
+.Lsummary_species_align:
+    cmp r6, r7
+    bhi .Lsummary_species_x_zero
+    subs r7, r7, r6
+    adds r0, r7, #0
+    b .Lsummary_species_x_done
+.Lsummary_species_x_zero:
+    movs r0, #0
+.Lsummary_species_x_done:
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lsummary_species_gender_call:
+    bx r3
+
+.align 2
+.type ChsSummaryNicknameX, %function
+.thumb_func
+ChsSummaryNicknameX:
+    push {r4-r7, lr}
+    adds r4, r1, #0
+    adds r5, r2, #0
+    ldrb r0, [r4]
+    cmp r0, #0xF5
+    bne .Lsummary_nickname_japanese_width
+    ldrb r0, [r4, #1]
+    cmp r0, #0xF2
+    beq .Lsummary_nickname_species_width
+    cmp r0, #0xF3
+    beq .Lsummary_nickname_narrow_width
+    b .Lsummary_nickname_japanese_width
+.Lsummary_nickname_species_width:
+    ldrb r0, [r4, #2]
+    ldrb r1, [r4, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    ldr r1, =412
+    cmp r0, r1
+    bhs .Lsummary_nickname_x_original
+    lsls r0, r0, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r4, [r1, r0]
+    adds r4, #1
+    movs r7, #12
+    b .Lsummary_nickname_measure
+.Lsummary_nickname_narrow_width:
+    adds r4, #2
+    movs r7, #8
+.Lsummary_nickname_measure:
+    movs r6, #0
+.Lsummary_nickname_measure_next:
+    ldrb r0, [r4]
+    cmp r0, #0xFF
+    beq .Lsummary_nickname_x_from_width
+    cmp r0, #0xF5
+    beq .Lsummary_nickname_x_from_width
+    cmp r0, #0x7F
+    beq .Lsummary_nickname_measure_pair
+    cmp r0, #0x60
+    blo .Lsummary_nickname_measure_single
+    cmp r0, #0x7D
+    bhi .Lsummary_nickname_measure_single
+    cmp r0, #0x65
+    beq .Lsummary_nickname_measure_single
+    cmp r0, #0x7A
+    beq .Lsummary_nickname_measure_single
+.Lsummary_nickname_measure_pair:
+    adds r4, #2
+    adds r6, r6, r7
+    b .Lsummary_nickname_measure_next
+.Lsummary_nickname_measure_single:
+    adds r4, #1
+    adds r6, #8
+    b .Lsummary_nickname_measure_next
+.Lsummary_nickname_japanese_width:
+    movs r0, #1
+    adds r1, r4, #0
+    movs r2, #0
+    subs r2, #1
+    ldr r3, =JP_GET_STRING_WIDTH
+    bl .Lsummary_nickname_width_call
+    adds r6, r0, #0
+    movs r7, #1
+    b .Lsummary_nickname_x_from_width
+.Lsummary_nickname_width_call:
+    bx r3
+.Lsummary_nickname_x_from_width:
+    movs r0, #70
+    cmp r6, r0
+    bhs .Lsummary_nickname_x_original
+    subs r0, r0, r6
+    cmp r7, #1
+    bne .Lsummary_nickname_x_done
+    cmp r0, r5
+    bhs .Lsummary_nickname_x_done
+.Lsummary_nickname_x_original:
+    adds r0, r5, #0
+.Lsummary_nickname_x_done:
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+
+.align 2
+.type ChsPrepareSummaryNickname, %function
+.thumb_func
+ChsPrepareSummaryNickname:
+    push {r4-r7, lr}
+    adds r4, r1, #0
+    ldrb r0, [r4]
+    cmp r0, #0xF5
+    bne .Lsummary_nickname_plain
+    ldrb r0, [r4, #1]
+    cmp r0, #0xF2
+    bne .Lsummary_nickname_plain
+    ldrb r0, [r4, #2]
+    ldrb r1, [r4, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    ldr r1, =412
+    cmp r0, r1
+    bhs .Lsummary_nickname_done
+    adds r1, r4, #0
+    movs r2, #4
+    bl ChsWriteNarrowSpeciesName
+    b .Lsummary_nickname_done
+.Lsummary_nickname_plain:
+    adds r5, r4, #0
+    movs r6, #0
+    movs r7, #0
+.Lsummary_nickname_plain_count:
+    ldrb r0, [r5]
+    cmp r0, #0xFF
+    beq .Lsummary_nickname_plain_counted
+    cmp r0, #0x60
+    blo .Lsummary_nickname_done
+    cmp r0, #0x7D
+    bhi .Lsummary_nickname_done
+    cmp r0, #0x65
+    beq .Lsummary_nickname_done
+    cmp r0, #0x7A
+    beq .Lsummary_nickname_done
+    ldrb r0, [r5, #1]
+    cmp r0, #0xF6
+    bhi .Lsummary_nickname_done
+    adds r5, #2
+    adds r6, #2
+    adds r7, #1
+    b .Lsummary_nickname_plain_count
+.Lsummary_nickname_plain_counted:
+    cmp r7, #4
+    blo .Lsummary_nickname_done
+    cmp r7, #5
+    bhi .Lsummary_nickname_done
+    adds r1, r6, #0
+.Lsummary_nickname_shift:
+    cmp r1, #0
+    beq .Lsummary_nickname_shifted
+    subs r1, #1
+    ldrb r0, [r4, r1]
+    adds r2, r1, #2
+    strb r0, [r4, r2]
+    b .Lsummary_nickname_shift
+.Lsummary_nickname_shifted:
+    movs r0, #0xF5
+    strb r0, [r4]
+    strb r0, [r5, #2]
+    movs r0, #0xF3
+    strb r0, [r4, #1]
+    movs r0, #0xF4
+    strb r0, [r5, #3]
+    movs r0, #0xFF
+    strb r0, [r5, #4]
+.Lsummary_nickname_done:
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+
+.align 2
+.type ChsWriteNarrowSpeciesName, %function
+.thumb_func
+ChsWriteNarrowSpeciesName:
+    push {r4-r7, lr}
+    adds r4, r1, #0
+    adds r7, r2, #0
+    lsls r0, r0, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r5, [r1, r0]
+    adds r5, #1
+    adds r6, r5, #0
+    movs r2, #0
+.Lsummary_species_count:
+    ldrb r0, [r6]
+    cmp r0, #0xFF
+    beq .Lsummary_species_counted
+    cmp r0, #0x7F
+    beq .Lsummary_species_pair
+    cmp r0, #0x60
+    blo .Lsummary_species_single
+    cmp r0, #0x7D
+    bhi .Lsummary_species_single
+    cmp r0, #0x65
+    beq .Lsummary_species_single
+    cmp r0, #0x7A
+    beq .Lsummary_species_single
+.Lsummary_species_pair:
+    adds r6, #2
+    b .Lsummary_species_next
+.Lsummary_species_single:
+    adds r6, #1
+.Lsummary_species_next:
+    adds r2, #1
+    b .Lsummary_species_count
+.Lsummary_species_counted:
+    cmp r2, r7
+    blo .Lsummary_species_skip
+    movs r0, #0xF5
+    strb r0, [r4]
+    movs r0, #0xF3
+    strb r0, [r4, #1]
+    adds r4, #2
+.Lsummary_species_copy:
+    ldrb r0, [r5]
+    cmp r0, #0xFF
+    beq .Lsummary_species_copied
+    strb r0, [r4]
+    adds r4, #1
+    adds r5, #1
+    b .Lsummary_species_copy
+.Lsummary_species_copied:
+    movs r0, #0xF5
+    strb r0, [r4]
+    movs r0, #0xF4
+    strb r0, [r4, #1]
+    movs r0, #0xFF
+    strb r0, [r4, #2]
+    movs r0, #1
+    b .Lsummary_species_done
+.Lsummary_species_skip:
+    movs r0, #0
+.Lsummary_species_done:
+    pop {r4-r7}
+    pop {r1}
+    bx r1
 
 .align 2
 .type ChsCopyOtSlashTail, %function
@@ -3040,7 +3403,7 @@ DecompressChineseGlyph:
 .Lmuzaipixel_font:
     ldr r6, =MuzaipixelChineseFont
     movs r0, #8
-    movs r1, #12
+    movs r1, #13
 
 .Lset_dimensions:
     adds r7, r5, #0

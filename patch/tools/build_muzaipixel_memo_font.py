@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build 8x12 trainer-memo glyph atlases from MuzaiPixel MZPXorig.ttf."""
+"""Build 8x12 memo and summary-name glyph atlases from MuzaiPixel MZPXorig.ttf."""
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 from fontTools.ttLib import TTFont
@@ -32,9 +33,21 @@ def draw_glyph(atlas: Image.Image, font: ImageFont.FreeTypeFont, char: str, inde
     if mask.size[0] > 8 or bounds[3] > 12:
         raise ValueError(f"glyph exceeds 8x12 cell: {char}")
     column, row = index % 16, index // 16
-    left, top = column * 16 + bounds[0], row * 16 + bounds[1] + 1
+    left, top = bounds[0], bounds[1] + 1
     glyph = Image.frombytes("L", mask.size, bytes(mask)).point(lambda value: 1 if value else 0)
-    atlas.paste(glyph, (left, top))
+    tile = Image.new("P", (16, 16), 0)
+    for pixel_y in range(mask.size[1]):
+        for pixel_x in range(mask.size[0]):
+            if glyph.getpixel((pixel_x, pixel_y)):
+                for offset_x, offset_y in ((1, 0), (0, 1), (1, 1)):
+                    shadow_x, shadow_y = left + pixel_x + offset_x, top + pixel_y + offset_y
+                    if 0 <= shadow_x < 16 and 0 <= shadow_y < 16:
+                        tile.putpixel((shadow_x, shadow_y), 2)
+    for pixel_y in range(mask.size[1]):
+        for pixel_x in range(mask.size[0]):
+            if glyph.getpixel((pixel_x, pixel_y)):
+                tile.putpixel((left + pixel_x, top + pixel_y), 1)
+    atlas.paste(tile, (column * 16, row * 16))
 
 
 def main() -> None:
@@ -48,10 +61,14 @@ def main() -> None:
         if entry["name"].startswith(("ChsNatureName", "ChsMapsecName")):
             chars.update(entry["text"])
 
+    species_names = (ROOT / "../pokeemerald_us_chs/src/data/text/species_names.h").read_text(encoding="utf-8")
+    species_names = species_names.split("const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {", 1)[1]
+    chars.update("".join(re.findall(r'\[SPECIES_\w+\]\s*=\s*_\("([^"]*)"\)', species_names)))
+
     cmap = TTFont(args.font).getBestCmap()
     missing = sorted(char for char in chars if ord(char) not in cmap)
     if missing:
-        raise ValueError(f"MuzaiPixel lacks memo characters: {''.join(missing)}")
+        raise ValueError(f"MuzaiPixel lacks required characters: {''.join(missing)}")
 
     charmap = read_charmap(ROOT / "patch/charmap_chs.txt")
     font = ImageFont.truetype(args.font, 12)

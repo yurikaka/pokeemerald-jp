@@ -7,7 +7,8 @@ The source TTF SHA-256 is
 The derived font assets are distributed under the SIL Open Font License 1.1;
 see `muzaipixel_LICENSE.md`.
 
-Only characters used by the trainer memo's localized nature and map-section
-names are included. The original memo font remains in use when the first line
-is at most 156 pixels wide. Wider first lines use this 8x12 font, then restore
-the original font before the existing newline.
+The atlas includes characters used by the trainer memo's localized nature and
+map-section names, plus localized species names for long summary-screen
+nicknames. The original memo font remains in use when the first line is at most
+156 pixels wide. Wider first lines use this 8x12 font, then restore the original
+font before the existing newline.
