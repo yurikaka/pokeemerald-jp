@@ -7,10 +7,10 @@
     "src/data/text/region_texts8.h",
     "src/data/text/region_texts52.h"
   ],
-  "status": "partial; emulator_not_tested",
-  "mapping_policy": "Wokann's Berry Blender code retains original pointer literals that name the region_texts8/52 labels. Every listed original string was matched against the JP ROM and each pointer was checked. US bytes are read from the compiled US symbol. sText_WasMade is not mapped: its Japanese source label and ROM target were not located safely.",
-  "mapped_count": 16,
-  "unresolved_count": 1,
+  "status": "mapped; emulator_not_tested",
+  "mapping_policy": "Wokann's Berry Blender code retains original pointer literals that name the region_texts8/52 labels. Every listed original string was matched against the JP ROM and each pointer was checked. US bytes are read from the compiled US symbol. sText_WasMade is verified as gUnknown_830F849: Blender_PrintMadePokeblockString appends it after the Pokeblock name and before the flavor fields.",
+  "mapped_count": 17,
+  "unresolved_count": 0,
   "mapped": [
     {
       "source_symbol": "sText_BerryBlenderStart",
@@ -70,6 +70,14 @@
       ]
     },
     {
+      "source_symbol": "sText_WasMade",
+      "original": "0x0830F849",
+      "references": [
+        "0x0808333C"
+      ],
+      "mapping_method": "Wokann Blender_PrintMadePokeblockString literal pointer"
+    },
+    {
       "source_symbol": "sText_Time",
       "original": "0x0830F830",
       "references": [
@@ -127,10 +135,5 @@
       ]
     }
   ],
-  "unresolved": [
-    {
-      "source_symbol": "sText_WasMade",
-      "reason": "Japanese text target not safely identified"
-    }
-  ]
+  "unresolved": []
 }
