@@ -1060,7 +1060,7 @@ ChsPokedexListName:
     push {r4-r7, lr}
     mov r7, r8
     push {r7}
-    sub sp, #0x10
+    sub sp, #0x18
     lsls r0, r0, #0x10
     lsrs r5, r0, #0x10
     lsls r1, r1, #0x18
@@ -1085,6 +1085,9 @@ ChsPokedexListName:
     movs r3, #0xFF
     strb r3, [r2, #4]
     movs r4, #4
+    adds r1, r2, #0
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
     b .Lpokedex_list_print
 .Lpokedex_list_unknown:
     movs r4, #0
@@ -1108,7 +1111,7 @@ ChsPokedexListName:
     ldr r5, =ChsPokedexPrintMonDexNumAndName + 1
     bl .Lpokedex_list_print_call
     adds r0, r4, #0
-    add sp, #0x10
+    add sp, #0x18
     pop {r3}
     mov r8, r3
     pop {r4-r7}
@@ -1225,6 +1228,13 @@ ChsPokedexName:
 .Lpokedex_name_print:
     ldr r0, =JP_POKEDEX_PRINT_TEXT
     mov ip, r0
+    cmp r5, #5
+    bne .Lpokedex_name_print_ready
+    cmp r6, #0x11
+    bne .Lpokedex_name_print_ready
+    ldr r0, =ChsPokedexPrintNameShifted + 1
+    mov ip, r0
+.Lpokedex_name_print_ready:
     adds r0, r4, #0
     mov r1, sp
     adds r2, r6, #0
@@ -1242,6 +1252,45 @@ ChsPokedexName:
     bx r3
 .Lpokedex_name_print_call:
     bx ip
+
+.align 2
+.type ChsPokedexPrintNameShifted, %function
+.thumb_func
+ChsPokedexPrintNameShifted:
+    push {r4-r6, lr}
+    sub sp, #0x18
+    lsls r0, r0, #0x18
+    lsrs r0, r0, #0x18
+    lsls r3, r3, #0x18
+    movs r6, #0
+    add r5, sp, #0x14
+    strb r6, [r5]
+    movs r4, #0x0F
+    strb r4, [r5, #1]
+    movs r4, #3
+    strb r4, [r5, #2]
+    lsls r2, r2, #0x1B
+    lsrs r2, r2, #0x18
+    subs r2, #4
+    lsrs r3, r3, #0x15
+    adds r3, #2
+    lsls r3, r3, #0x18
+    lsrs r3, r3, #0x18
+    str r6, [sp]
+    str r6, [sp, #4]
+    str r5, [sp, #8]
+    subs r4, #4
+    str r4, [sp, #0xC]
+    str r1, [sp, #0x10]
+    movs r1, #1
+    ldr r4, =JP_ADD_TEXT_PRINTER_4
+    bl .Lpokedex_name_shifted_call
+    add sp, #0x18
+    pop {r4-r6}
+    pop {r0}
+    bx r0
+.Lpokedex_name_shifted_call:
+    bx r4
 
 .align 2
 .global ChsSummaryPrintGenderSymbol
