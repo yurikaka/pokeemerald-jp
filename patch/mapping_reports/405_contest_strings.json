@@ -6,8 +6,18 @@
     "sources": [
       "data/text/contest_strings.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
-    "label_limit": null
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -18,11 +28,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Player name, honorific, and rival placeholders are auto-wrapped in Japanese mode; other placeholders require review."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 4,
-  "unresolved_count": 141,
-  "reference_count": 4,
+  "mapped_count": 97,
+  "unresolved_count": 48,
+  "reference_count": 103,
   "mapped": [
     {
       "source_symbol": "gText_Contest_Shyness",
@@ -70,6 +80,1128 @@
       "japanese_text_address": "0x0824C0E6",
       "japanese_references": [
         "0x080DCCB8"
+      ]
+    },
+    {
+      "source_symbol": "gContestMoveTypeCoolText",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 237,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E48",
+      "japanese_text_address": "0x0824B2FB",
+      "japanese_references": [
+        "0x08560CAC"
+      ]
+    },
+    {
+      "source_symbol": "gContestMoveTypeBeautyText",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 240,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E4D",
+      "japanese_text_address": "0x0824B301",
+      "japanese_references": [
+        "0x08560CB0"
+      ]
+    },
+    {
+      "source_symbol": "gContestMoveTypeCuteText",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 243,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E52",
+      "japanese_text_address": "0x0824B307",
+      "japanese_references": [
+        "0x08560CB4"
+      ]
+    },
+    {
+      "source_symbol": "gContestMoveTypeSmartText",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 246,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E57",
+      "japanese_text_address": "0x0824B30C",
+      "japanese_references": [
+        "0x08560CB8"
+      ]
+    },
+    {
+      "source_symbol": "gContestMoveTypeToughText",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 249,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E5C",
+      "japanese_text_address": "0x0824B311",
+      "japanese_references": [
+        "0x08560CBC"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealNumWhichMoveWillBePlayed",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 252,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E61",
+      "japanese_text_address": "0x0824B317",
+      "japanese_references": [
+        "0x080D7BF4",
+        "0x080D7F04"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealNumButItCantParticipate",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 256,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253E83",
+      "japanese_text_address": "0x0824B32D",
+      "japanese_references": [
+        "0x080D7C28",
+        "0x080D7F40"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonAppealedWithMove",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 260,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253EA1",
+      "japanese_text_address": "0x0824B346",
+      "japanese_references": [
+        "0x080D8774"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonWasWatchingOthers",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 263,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253EB6",
+      "japanese_text_address": "0x0824B354",
+      "japanese_references": [
+        "0x080D9868"
+      ]
+    },
+    {
+      "source_symbol": "gText_AllOutOfAppealTime",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 267,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08253ED9",
+      "japanese_text_address": "0x0824B36F",
+      "japanese_references": [
+        "0x080D9E98"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonFailedToStandOutAtAll",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 317,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254075",
+      "japanese_text_address": "0x0824B470",
+      "japanese_references": [
+        "0x08560CF4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonDidntStandOutVeryMuch",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 321,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825408D",
+      "japanese_text_address": "0x0824B484",
+      "japanese_references": [
+        "0x08560CF8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCaughtALittleAttention",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 325,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082540A1",
+      "japanese_text_address": "0x0824B498",
+      "japanese_references": [
+        "0x08560CFC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonAttractedALotOfAttention",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 329,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082540BA",
+      "japanese_text_address": "0x0824B4A9",
+      "japanese_references": [
+        "0x08560D00"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCommandedTotalAttention",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 333,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082540D1",
+      "japanese_text_address": "0x0824B4B9",
+      "japanese_references": [
+        "0x08560D04"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonHasntMadeItsAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 337,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082540EA",
+      "japanese_text_address": "0x0824B4CB",
+      "japanese_references": [
+        "0x08560D08"
+      ]
+    },
+    {
+      "source_symbol": "gText_StoodOutAsMuchAsMon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 426,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082543FC",
+      "japanese_text_address": "0x0824B6C8",
+      "japanese_references": [
+        "0x08560D5C"
+      ]
+    },
+    {
+      "source_symbol": "gText_BecameMoreConsciousOfOtherMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 440,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254472",
+      "japanese_text_address": "0x0824B70C",
+      "japanese_references": [
+        "0x08560D74"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCantMakeAnAppealAfterThis",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 444,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082544A1",
+      "japanese_text_address": "0x0824B733",
+      "japanese_references": [
+        "0x08560D78"
+      ]
+    },
+    {
+      "source_symbol": "gText_SettledDownJustLittleBit",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 448,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082544CA",
+      "japanese_text_address": "0x0824B757",
+      "japanese_references": [
+        "0x08560D7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_BecameObliviousToOtherMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 452,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082544ED",
+      "japanese_text_address": "0x0824B777",
+      "japanese_references": [
+        "0x08560D80"
+      ]
+    },
+    {
+      "source_symbol": "gText_BecameLessAwareOfOtherMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 456,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254518",
+      "japanese_text_address": "0x0824B79F",
+      "japanese_references": [
+        "0x08560D84"
+      ]
+    },
+    {
+      "source_symbol": "gText_StoppedCaringAboutOtherMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 460,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254543",
+      "japanese_text_address": "0x0824B7C6",
+      "japanese_references": [
+        "0x08560D88"
+      ]
+    },
+    {
+      "source_symbol": "gText_TriedToStartleOtherMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 464,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825456C",
+      "japanese_text_address": "0x0824B7EF",
+      "japanese_references": [
+        "0x08560D8C"
+      ]
+    },
+    {
+      "source_symbol": "gText_TriedToDazzleOthers",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 468,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825458F",
+      "japanese_text_address": "0x0824B814",
+      "japanese_references": [
+        "0x08560D90"
+      ]
+    },
+    {
+      "source_symbol": "gText_JudgeLookedAwayFromMon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 472,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082545B8",
+      "japanese_text_address": "0x0824B834",
+      "japanese_references": [
+        "0x08560D94"
+      ]
+    },
+    {
+      "source_symbol": "gText_TriedToUnnerveNextMon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 476,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082545DF",
+      "japanese_text_address": "0x0824B85A",
+      "japanese_references": [
+        "0x08560D98"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonBecameNervous",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 480,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825460C",
+      "japanese_text_address": "0x0824B886",
+      "japanese_references": [
+        "0x08560D9C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealTriedToUnnerveWaitingMons",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 484,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254627",
+      "japanese_text_address": "0x0824B8A4",
+      "japanese_references": [
+        "0x08560DA0"
+      ]
+    },
+    {
+      "source_symbol": "gText_TauntedMonsDoingWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 488,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254656",
+      "japanese_text_address": "0x0824B8D0",
+      "japanese_references": [
+        "0x08560DA4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonRegainedItsForm",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 492,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825467D",
+      "japanese_text_address": "0x0824B8F4",
+      "japanese_references": [
+        "0x08560DA8"
+      ]
+    },
+    {
+      "source_symbol": "gText_TriedToJamMonDoingWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 496,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082546A4",
+      "japanese_text_address": "0x0824B919",
+      "japanese_references": [
+        "0x08560DAC"
+      ]
+    },
+    {
+      "source_symbol": "gText_StandoutMonHustledEvenMore",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 500,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082546D5",
+      "japanese_text_address": "0x0824B942",
+      "japanese_references": [
+        "0x08560DB0"
+      ]
+    },
+    {
+      "source_symbol": "gText_LargelyUnnoticedMonWorkedHard",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 504,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254704",
+      "japanese_text_address": "0x0824B964",
+      "japanese_references": [
+        "0x08560DB4"
+      ]
+    },
+    {
+      "source_symbol": "gText_WorkedAsMuchAsMonBefore",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 508,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254735",
+      "japanese_text_address": "0x0824B986",
+      "japanese_references": [
+        "0x08560DB8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealDidNotGoWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 512,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825476C",
+      "japanese_text_address": "0x0824B9AD",
+      "japanese_references": [
+        "0x08560DBC"
+      ]
+    },
+    {
+      "source_symbol": "gText_WorkedAsMuchAsPrecedingMon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 516,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825478F",
+      "japanese_text_address": "0x0824B9D1",
+      "japanese_references": [
+        "0x08560DC0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealDidNotGoWell2",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 520,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082547BC",
+      "japanese_text_address": "0x0824B9F5",
+      "japanese_references": [
+        "0x08560DC4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealDidNotGoWell3",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 524,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082547DF",
+      "japanese_text_address": "0x0824BA19",
+      "japanese_references": [
+        "0x08560DC8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentSlightlyWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 528,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254802",
+      "japanese_text_address": "0x0824BA3D",
+      "japanese_references": [
+        "0x08560DCC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentPrettyWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 532,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254825",
+      "japanese_text_address": "0x0824BA60",
+      "japanese_references": [
+        "0x08560DD0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentExcellently",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 536,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254844",
+      "japanese_text_address": "0x0824BA84",
+      "japanese_references": [
+        "0x08560DD4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWasDud",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 540,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254867",
+      "japanese_text_address": "0x0824BAA7",
+      "japanese_references": [
+        "0x08560DD8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealDidNotWorkVeryWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 544,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254888",
+      "japanese_text_address": "0x0824BACB",
+      "japanese_references": [
+        "0x08560DDC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentSlightlyWell2",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 548,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082548AB",
+      "japanese_text_address": "0x0824BAF1",
+      "japanese_references": [
+        "0x08560DE0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentPrettyWell2",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 552,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082548CE",
+      "japanese_text_address": "0x0824BB14",
+      "japanese_references": [
+        "0x08560DE4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentVeryWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 556,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082548ED",
+      "japanese_text_address": "0x0824BB38",
+      "japanese_references": [
+        "0x08560DE8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsAppealWentExcellently2",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 560,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825490C",
+      "japanese_text_address": "0x0824BB5B",
+      "japanese_references": [
+        "0x08560DEC"
+      ]
+    },
+    {
+      "source_symbol": "gText_SameTypeAsOneBeforeGood",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 564,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825492F",
+      "japanese_text_address": "0x0824BB7E",
+      "japanese_references": [
+        "0x08560DF0"
+      ]
+    },
+    {
+      "source_symbol": "gText_NotSameTypeAsOneBeforeGood",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 568,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254962",
+      "japanese_text_address": "0x0824BBA4",
+      "japanese_references": [
+        "0x08560DF4"
+      ]
+    },
+    {
+      "source_symbol": "gText_StoodOutMuchMoreThanMonBefore",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 572,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254995",
+      "japanese_text_address": "0x0824BBCA",
+      "japanese_references": [
+        "0x08560DF8"
+      ]
+    },
+    {
+      "source_symbol": "gText_DidntDoAsWellAsMonBefore",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 576,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082549BE",
+      "japanese_text_address": "0x0824BBEB",
+      "japanese_references": [
+        "0x08560DFC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsConditionRoseAboveUsual",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 580,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082549EB",
+      "japanese_text_address": "0x0824BC0E",
+      "japanese_references": [
+        "0x08560E00"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsHotStatusMadeGreatAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 584,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254A10",
+      "japanese_text_address": "0x0824BC30",
+      "japanese_references": [
+        "0x08560E04"
+      ]
+    },
+    {
+      "source_symbol": "gText_MovedUpInLineForNextAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 588,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254A38",
+      "japanese_text_address": "0x0824BC5B",
+      "japanese_references": [
+        "0x08560E08"
+      ]
+    },
+    {
+      "source_symbol": "gText_MovedBackInLineForNextAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 592,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254A71",
+      "japanese_text_address": "0x0824BC82",
+      "japanese_references": [
+        "0x08560E0C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ScrambledUpOrderForNextTurn",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 596,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254AAA",
+      "japanese_text_address": "0x0824BCAA",
+      "japanese_references": [
+        "0x08560E10"
+      ]
+    },
+    {
+      "source_symbol": "gText_JudgeLookedAtMonExpectantly",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 600,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254AD9",
+      "japanese_text_address": "0x0824BCCF",
+      "japanese_references": [
+        "0x080D9020",
+        "0x08560E14"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealComboWentOverWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 604,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254AFC",
+      "japanese_text_address": "0x0824BCF2",
+      "japanese_references": [
+        "0x080D8F94",
+        "0x08560E18"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealComboWentOverVeryWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 608,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254B2D",
+      "japanese_text_address": "0x0824BD18",
+      "japanese_references": [
+        "0x080D8FA8",
+        "0x08560E1C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AppealComboWentOverExcellently",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 612,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254B5A",
+      "japanese_text_address": "0x0824BD3E",
+      "japanese_references": [
+        "0x080D8FCC",
+        "0x08560E20"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonManagedToAvertGaze",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 616,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254B89",
+      "japanese_text_address": "0x0824BD66",
+      "japanese_references": [
+        "0x08560E24"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonManagedToAvoidSeeingIt",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 620,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254BAA",
+      "japanese_text_address": "0x0824BD84",
+      "japanese_references": [
+        "0x08560E28"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonIsntFazedByThatSortOfThing",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 624,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254BCB",
+      "japanese_text_address": "0x0824BDA2",
+      "japanese_references": [
+        "0x08560E2C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonBecameALittleDistracted",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 628,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254BF4",
+      "japanese_text_address": "0x0824BDC1",
+      "japanese_references": [
+        "0x08560E30"
+      ]
+    },
+    {
+      "source_symbol": "gText_TriedToStartleOtherPokemon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 632,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254C17",
+      "japanese_text_address": "0x0824BDE4",
+      "japanese_references": [
+        "0x08560E34"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonLookedDownOutOfDistraction",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 636,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254C3A",
+      "japanese_text_address": "0x0824BE09",
+      "japanese_references": [
+        "0x08560E38"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonTurnedBackOutOfDistraction",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 640,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254C5B",
+      "japanese_text_address": "0x0824BE2F",
+      "japanese_references": [
+        "0x08560E3C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCouldntHelpUtteringCry",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 644,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254C7C",
+      "japanese_text_address": "0x0824BE54",
+      "japanese_references": [
+        "0x08560E40"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCouldntHelpLeapingUp",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 648,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254C9D",
+      "japanese_text_address": "0x0824BE77",
+      "japanese_references": [
+        "0x08560E44"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonTrippedOutOfDistraction",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 652,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254CBE",
+      "japanese_text_address": "0x0824BE99",
+      "japanese_references": [
+        "0x08560E48"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonWasTooNervousToMove",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 656,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254CE9",
+      "japanese_text_address": "0x0824BEC1",
+      "japanese_references": [
+        "0x080D9730"
+      ]
+    },
+    {
+      "source_symbol": "gText_ButItMessedUp2",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 660,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254D14",
+      "japanese_text_address": "0x0824BEE7",
+      "japanese_references": [
+        "0x08560E4C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ButItFailedToMakeTargetNervous",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 663,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254D2C",
+      "japanese_text_address": "0x0824BF03",
+      "japanese_references": [
+        "0x08560E50"
+      ]
+    },
+    {
+      "source_symbol": "gText_ButItFailedToMakeAnyoneNervous",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 667,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254D55",
+      "japanese_text_address": "0x0824BF22",
+      "japanese_references": [
+        "0x08560E54"
+      ]
+    },
+    {
+      "source_symbol": "gText_ButItWasIgnored",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 671,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254D7E",
+      "japanese_text_address": "0x0824BF42",
+      "japanese_references": [
+        "0x08560E58"
+      ]
+    },
+    {
+      "source_symbol": "gText_CouldntImproveItsCondition",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 674,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254D99",
+      "japanese_text_address": "0x0824BF5E",
+      "japanese_references": [
+        "0x08560E5C"
+      ]
+    },
+    {
+      "source_symbol": "gText_BadConditionResultedInWeakAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 678,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254DC3",
+      "japanese_text_address": "0x0824BF7C",
+      "japanese_references": [
+        "0x08560E60"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonWasUnaffected",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 682,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254DF1",
+      "japanese_text_address": "0x0824BFA5",
+      "japanese_references": [
+        "0x08560E64"
+      ]
+    },
+    {
+      "source_symbol": "gText_RepeatedAppeal",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 686,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254E0E",
+      "japanese_text_address": "0x0824BFBE",
+      "japanese_references": [
+        "0x080D915C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonCantAppealNextTurn",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 702,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254EB6",
+      "japanese_text_address": "0x0824C04A",
+      "japanese_references": [
+        "0x080D8F0C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AttractedCrowdsAttention",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 706,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254EDD",
+      "japanese_text_address": "0x0824C071",
+      "japanese_references": [
+        "0x08560E68"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsMoveIsIgnored",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 714,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F23",
+      "japanese_text_address": "0x0824C0B1",
+      "japanese_references": [
+        "0x080D968C"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Anxiety",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 721,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F4E",
+      "japanese_text_address": "0x0824C0D7",
+      "japanese_references": [
+        "0x080DCC54"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Coolness",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 733,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F72",
+      "japanese_text_address": "0x0824C0EB",
+      "japanese_references": [
+        "0x08560E6C"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Beauty",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 736,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F77",
+      "japanese_text_address": "0x0824C0F1",
+      "japanese_references": [
+        "0x08560E70"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Cuteness",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 739,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F7C",
+      "japanese_text_address": "0x0824C0F7",
+      "japanese_references": [
+        "0x08560E74"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Smartness",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 742,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F81",
+      "japanese_text_address": "0x0824C0FC",
+      "japanese_references": [
+        "0x08560E78"
+      ]
+    },
+    {
+      "source_symbol": "gText_Contest_Toughness",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 745,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254F86",
+      "japanese_text_address": "0x0824C101",
+      "japanese_references": [
+        "0x08560E7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsXWentOverGreat",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 690,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254E38",
+      "japanese_text_address": "0x0824BFE6",
+      "japanese_references": [
+        "0x080D9360"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsXDidntGoOverWell",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 694,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254E65",
+      "japanese_text_address": "0x0824C008",
+      "japanese_references": [
+        "0x080D933C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MonsXGotTheCrowdGoing",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 698,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254E8D",
+      "japanese_text_address": "0x0824C029",
+      "japanese_references": [
+        "0x080D9394"
+      ]
+    },
+    {
+      "source_symbol": "gText_CrowdContinuesToWatchMon",
+      "source": "data/text/contest_strings.inc",
+      "wokann_source": "data/text/contest_strings.inc",
+      "wokann_label_line": 710,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08254EFE",
+      "japanese_text_address": "0x0824C091",
+      "japanese_references": [
+        "0x080D964C"
       ]
     }
   ],
@@ -127,12 +1259,12 @@
     {
       "symbol": "gText_StartleAppealedBeforeUser",
       "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
+      "reason": "reference_already_patched"
     },
     {
       "symbol": "gText_StartleAllAppealed",
       "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
+      "reason": "reference_already_patched"
     },
     {
       "symbol": "gText_BadlyStartleFrontMon",
@@ -147,12 +1279,12 @@
     {
       "symbol": "gText_StartleAppealedBeforeUser2",
       "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
+      "reason": "reference_already_patched"
     },
     {
       "symbol": "gText_StartleAllAppealed2",
       "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
+      "reason": "reference_already_patched"
     },
     {
       "symbol": "gText_ShiftJudgesAttentionFromOthers",
@@ -313,503 +1445,11 @@
       "symbol": "gText_TemporarilyStopCrowdExcited",
       "source": "data/text/contest_strings.inc",
       "reason": "reference_already_patched"
-    },
-    {
-      "symbol": "gContestMoveTypeCoolText",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestMoveTypeBeautyText",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestMoveTypeCuteText",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestMoveTypeSmartText",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestMoveTypeToughText",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_AppealNumWhichMoveWillBePlayed",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_AppealNumButItCantParticipate",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonAppealedWithMove",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_MonWasWatchingOthers",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AllOutOfAppealTime",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonFailedToStandOutAtAll",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonDidntStandOutVeryMuch",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonCaughtALittleAttention",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonAttractedALotOfAttention",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonCommandedTotalAttention",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_MonHasntMadeItsAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_StoodOutAsMuchAsMon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_BecameMoreConsciousOfOtherMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonCantMakeAnAppealAfterThis",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_SettledDownJustLittleBit",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_BecameObliviousToOtherMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_BecameLessAwareOfOtherMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_StoppedCaringAboutOtherMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TriedToStartleOtherMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TriedToDazzleOthers",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_JudgeLookedAwayFromMon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TriedToUnnerveNextMon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonBecameNervous",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AppealTriedToUnnerveWaitingMons",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TauntedMonsDoingWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonRegainedItsForm",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TriedToJamMonDoingWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_StandoutMonHustledEvenMore",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_LargelyUnnoticedMonWorkedHard",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_WorkedAsMuchAsMonBefore",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealDidNotGoWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_WorkedAsMuchAsPrecedingMon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealDidNotGoWell2",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealDidNotGoWell3",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentSlightlyWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentPrettyWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentExcellently",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWasDud",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealDidNotWorkVeryWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentSlightlyWell2",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentPrettyWell2",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentVeryWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsAppealWentExcellently2",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_SameTypeAsOneBeforeGood",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_NotSameTypeAsOneBeforeGood",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_StoodOutMuchMoreThanMonBefore",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_DidntDoAsWellAsMonBefore",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsConditionRoseAboveUsual",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsHotStatusMadeGreatAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MovedUpInLineForNextAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MovedBackInLineForNextAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_ScrambledUpOrderForNextTurn",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_JudgeLookedAtMonExpectantly",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AppealComboWentOverWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AppealComboWentOverVeryWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AppealComboWentOverExcellently",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonManagedToAvertGaze",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonManagedToAvoidSeeingIt",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonIsntFazedByThatSortOfThing",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonBecameALittleDistracted",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_TriedToStartleOtherPokemon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonLookedDownOutOfDistraction",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonTurnedBackOutOfDistraction",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonCouldntHelpUtteringCry",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonCouldntHelpLeapingUp",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonTrippedOutOfDistraction",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonWasTooNervousToMove",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_ButItMessedUp2",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_ButItFailedToMakeTargetNervous",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_ButItFailedToMakeAnyoneNervous",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_ButItWasIgnored",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_CouldntImproveItsCondition",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_BadConditionResultedInWeakAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonWasUnaffected",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_RepeatedAppeal",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsXWentOverGreat",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsXDidntGoOverWell",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsXGotTheCrowdGoing",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonCantAppealNextTurn",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_AttractedCrowdsAttention",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_CrowdContinuesToWatchMon",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_MonsMoveIsIgnored",
-      "source": "data/text/contest_strings.inc",
-      "reason": "unsupported_japanese_encoding"
-    },
-    {
-      "symbol": "gText_Contest_Anxiety",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_Contest_Coolness",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_Contest_Beauty",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_Contest_Cuteness",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_Contest_Smartness",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gText_Contest_Toughness",
-      "source": "data/text/contest_strings.inc",
-      "reason": "ambiguous_japanese_text"
     }
-  ]
+  ],
+  "dynamic_placeholder_audit": {
+    "contest_display_buffers": "New contest display text wraps placeholder IDs 2, 3, and 4 in Japanese mode; contestant names and moves remain runtime Japanese data.",
+    "shared_references": "The remaining 48 labels resolve only to Japanese pointer words already redirected by earlier batches; no additional unpatched pointer is present.",
+    "persistence": "This batch changes display pointers only and does not modify contest, save, or link data."
+  }
 }
-

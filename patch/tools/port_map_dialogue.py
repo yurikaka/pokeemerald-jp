@@ -73,7 +73,7 @@ def encode_japanese(body: str, charmap: dict[str, bytes]) -> bytes | None:
             control = text[index + 1 : end] if end >= 0 else ""
             if control.startswith("PAUSE "):
                 try:
-                    duration = int(control[6:])
+                    duration = int(control[6:], 0)
                 except ValueError:
                     return None
                 if not 0 <= duration <= 255:
