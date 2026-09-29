@@ -6,13 +6,16 @@
     "sources": [
       "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
       5,
       6
-    ]
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -23,11 +26,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 9,
-  "unresolved_count": 2,
-  "reference_count": 13,
+  "mapped_count": 10,
+  "unresolved_count": 1,
+  "reference_count": 14,
   "mapped": [
     {
       "source_symbol": "SootopolisCity_MysteryEventsHouse_1F_Text_OnlyAmusementWatchingBattles",
@@ -131,6 +134,18 @@
       "japanese_references": [
         "0x0820FE1C"
       ]
+    },
+    {
+      "source_symbol": "SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer",
+      "source": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
+      "wokann_label_line": 178,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082145E2",
+      "japanese_text_address": "0x0820FFC6",
+      "japanese_references": [
+        "0x0820FE6D"
+      ]
     }
   ],
   "unresolved": [
@@ -138,14 +153,6 @@
       "symbol": "SootopolisCity_MysteryEventsHouse_1F_Text_DoorAppearsToBeLocked",
       "source": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
       "reason": "no_japanese_pointer"
-    },
-    {
-      "symbol": "SootopolisCity_MysteryEventsHouse_1F_Text_ChallengeVisitingTrainer",
-      "source": "data/maps/SootopolisCity_MysteryEventsHouse_1F/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
     }
   ]
 }

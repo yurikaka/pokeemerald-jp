@@ -741,6 +741,107 @@
       "name": "Chs_gText_MoveRelearnerAccuracy",
       "source_symbol": "gText_MoveRelearnerAccuracy",
       "us_encoded_hex": "099410a1baff"
+    },
+    {
+      "name": "Chs_gText_Coins",
+      "source_symbol": "gText_Coins",
+      "us_encoded_hex": "fd02094e02da018fff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_gText_DecorationWillBeDiscarded",
+      "source_symbol": "gText_DecorationWillBeDiscarded",
+      "us_encoded_hex": "0ef10b53033bfd02092a3dff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_gText_FacilityDouble",
+      "source_symbol": "gText_FacilityDouble",
+      "us_encoded_hex": "fd020c4e02d2ff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_gText_PlayersPC",
+      "source_symbol": "gText_PlayersPC",
+      "us_encoded_hex": "fd01030b032e09caff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_gText_MoveRelearnerGiveUp",
+      "source_symbol": "gText_MoveRelearnerGiveUp",
+      "us_encoded_hex": "0ef103c80ab50b43fd020e900dd4fe0e4d10430c02092a3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_gText_ContestantsMonWon",
+      "source_symbol": "gText_ContestantsMonWon",
+      "us_encoded_hex": "fd02030bfd03057e0be0089e3cff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_gText_TeachWhichMoveToPkmn",
+      "source_symbol": "gText_TeachWhichMoveToPkmn",
+      "us_encoded_hex": "0ef10b43fd020e900dd409ba0460fefd0409ce3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "Chs_gText_MoveRelearnerTeachMoveConfirm",
+      "source_symbol": "gText_MoveRelearnerTeachMoveConfirm",
+      "us_encoded_hex": "0ef10e900dd4fd03092a3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        3
+      ]
+    },
+    {
+      "name": "Chs_gText_MoveRelearnerPkmnTryingToLearnMove",
+      "source_symbol": "gText_MoveRelearnerPkmnTryingToLearnMove",
+      "us_encoded_hex": "fd020e180ef10e900dd4fefd03b0b0fb0d70089e0e900dd4fd033bfe0ef10d6405b20a9f0c9e030b10430c02092a3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
+      "source_symbol": "gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
+      "us_encoded_hex": "fd020d6405b2089efd043cfb01bd0aeb0e90056e089efd033cff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Chs_gText_PlayersBattleResults",
+      "source_symbol": "gText_PlayersBattleResults",
+      "us_encoded_hex": "fd01030b03791030024b0593ff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_gText_TotalRecordWLD",
+      "source_symbol": "gText_TotalRecordWLD",
+      "us_encoded_hex": "111410300593000be03efd020004243efd03000a783efd04ff",
+      "auto_wrap": false
     }
   ],
   "reference_writes": [
@@ -1985,11 +2086,95 @@
       "original": "0x085F7C6E",
       "symbol": "Chs_gText_MoveRelearnerAccuracy",
       "source_symbol": "gText_MoveRelearnerAccuracy"
+    },
+    {
+      "address": "0x08145C64",
+      "original": "0x085C9443",
+      "symbol": "Chs_gText_Coins",
+      "source_symbol": "gText_Coins"
+    },
+    {
+      "address": "0x0812A438",
+      "original": "0x085CA812",
+      "symbol": "Chs_gText_DecorationWillBeDiscarded",
+      "source_symbol": "gText_DecorationWillBeDiscarded"
+    },
+    {
+      "address": "0x085DD4B0",
+      "original": "0x085CC464",
+      "symbol": "Chs_gText_FacilityDouble",
+      "source_symbol": "gText_FacilityDouble"
+    },
+    {
+      "address": "0x080E18BC",
+      "original": "0x085CACFE",
+      "symbol": "Chs_gText_PlayersPC",
+      "source_symbol": "gText_PlayersPC"
+    },
+    {
+      "address": "0x080E1A08",
+      "original": "0x085CACFE",
+      "symbol": "Chs_gText_PlayersPC",
+      "source_symbol": "gText_PlayersPC"
+    },
+    {
+      "address": "0x08160F2C",
+      "original": "0x085ADAAF",
+      "symbol": "Chs_gText_MoveRelearnerGiveUp",
+      "source_symbol": "gText_MoveRelearnerGiveUp"
+    },
+    {
+      "address": "0x080F6BFC",
+      "original": "0x085CC4C6",
+      "symbol": "Chs_gText_ContestantsMonWon",
+      "source_symbol": "gText_ContestantsMonWon"
+    },
+    {
+      "address": "0x08160E6C",
+      "original": "0x085AD9A0",
+      "symbol": "Chs_gText_TeachWhichMoveToPkmn",
+      "source_symbol": "gText_TeachWhichMoveToPkmn"
+    },
+    {
+      "address": "0x08160FCC",
+      "original": "0x085AD9A0",
+      "symbol": "Chs_gText_TeachWhichMoveToPkmn",
+      "source_symbol": "gText_TeachWhichMoveToPkmn"
+    },
+    {
+      "address": "0x08160F70",
+      "original": "0x085AD9B2",
+      "symbol": "Chs_gText_MoveRelearnerTeachMoveConfirm",
+      "source_symbol": "gText_MoveRelearnerTeachMoveConfirm"
+    },
+    {
+      "address": "0x081609FC",
+      "original": "0x085AD9D4",
+      "symbol": "Chs_gText_MoveRelearnerPkmnTryingToLearnMove",
+      "source_symbol": "gText_MoveRelearnerPkmnTryingToLearnMove"
+    },
+    {
+      "address": "0x08160D58",
+      "original": "0x085ADA67",
+      "symbol": "Chs_gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
+      "source_symbol": "gText_MoveRelearnerPkmnForgotMoveAndLearnedNew"
+    },
+    {
+      "address": "0x0813C56C",
+      "original": "0x085937E0",
+      "symbol": "Chs_gText_PlayersBattleResults",
+      "source_symbol": "gText_PlayersBattleResults"
+    },
+    {
+      "address": "0x0813C37C",
+      "original": "0x085937EF",
+      "symbol": "Chs_gText_TotalRecordWLD",
+      "source_symbol": "gText_TotalRecordWLD"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/411_strings_c_direct.json",
-    "mapped_count": 148,
-    "unresolved_count": 791
+    "mapped_count": 160,
+    "unresolved_count": 779
   }
 }

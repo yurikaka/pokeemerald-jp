@@ -58,6 +58,11 @@ def main() -> None:
     parser.add_argument("--symbol-offset", type=int, default=0)
     parser.add_argument("--symbol-limit", type=int)
     parser.add_argument("--auto-wrap", action="store_true")
+    parser.add_argument("--symbol", action="append", default=[])
+    parser.add_argument("--japanese-placeholder", action="append", type=int, default=[])
+    parser.add_argument("--chinese-placeholder", action="append", type=int, default=[])
+    parser.add_argument("--japanese-dynamic", action="store_true")
+    parser.add_argument("--update", action="store_true")
     args = parser.parse_args()
 
     warnings.filterwarnings("ignore", category=SyntaxWarning)
@@ -103,6 +108,9 @@ def main() -> None:
     unresolved = []
     statuses = Counter()
     selected_symbols = [symbol for symbol in us_definitions if symbol in changed_symbols]
+    if args.symbol:
+        requested_symbols = set(args.symbol)
+        selected_symbols = [symbol for symbol in selected_symbols if symbol in requested_symbols]
     selected_symbols = selected_symbols[
         args.symbol_offset : None if args.symbol_limit is None else args.symbol_offset + args.symbol_limit
     ]
@@ -156,11 +164,18 @@ def main() -> None:
                                 for index, value in enumerate(encoded_us[:-1])
                                 if value == 0xFD
                             }
-                            if placeholders or 0xF7 in encoded_us:
+                            allowed_placeholders = set(args.japanese_placeholder) | set(args.chinese_placeholder)
+                            if (0xF7 in encoded_us and not args.japanese_dynamic) or not placeholders.issubset(allowed_placeholders):
                                 reason = "dynamic_placeholder_needs_review"
                             else:
                                 name = "Chs_" + symbol
-                                texts.append({"name": name, "source_symbol": symbol, "us_encoded_hex": encoded_us.hex(), "auto_wrap": args.auto_wrap})
+                                definition = {"name": name, "source_symbol": symbol, "us_encoded_hex": encoded_us.hex(), "auto_wrap": args.auto_wrap}
+                                japanese_placeholders = placeholders & set(args.japanese_placeholder)
+                                if japanese_placeholders:
+                                    definition["japanese_placeholders"] = sorted(japanese_placeholders)
+                                if args.japanese_dynamic:
+                                    definition["japanese_dynamic"] = True
+                                texts.append(definition)
                                 addresses = []
                                 for reference in jp_references:
                                     address = f"0x{reference:08X}"
@@ -190,19 +205,38 @@ def main() -> None:
         "batch": batch_name,
         "source_commit": args.source_commit,
         "source": args.source,
-        "selection": {"symbol_offset": args.symbol_offset, "symbol_limit": args.symbol_limit, "auto_wrap": args.auto_wrap},
+        "selection": {"symbol_offset": args.symbol_offset, "symbol_limit": args.symbol_limit, "symbols": args.symbol, "japanese_placeholders": args.japanese_placeholder, "chinese_placeholders": args.chinese_placeholder, "japanese_dynamic": args.japanese_dynamic, "auto_wrap": args.auto_wrap},
         "inputs": {
             "us_rom_sha1": hashlib.sha1(us_rom).hexdigest(),
             "us_elf_sha1": hashlib.sha1(us_elf_path.read_bytes()).hexdigest(),
             "jp_rom_sha1": hashlib.sha1(jp_rom).hexdigest(),
             "wokann_commit": subprocess.check_output(["git", "-C", str(WOKANN_ROOT), "rev-parse", "HEAD"], text=True).strip(),
         },
-        "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have word-aligned pointers; no dynamic placeholders; preexisting patch references excluded.",
+        "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have word-aligned pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
         "summary": dict(sorted(statuses.items())),
         "mapped": mapped,
         "unresolved": unresolved,
     }
-    print(json.dumps({"batch": batch, "report": report}, ensure_ascii=False))
+    if args.update:
+        batch_path = ROOT / "patch/batches" / batch_name
+        report_path = ROOT / "patch/mapping_reports" / batch_name
+        existing_batch = json.loads(batch_path.read_text(encoding="utf-8"))
+        existing_report = json.loads(report_path.read_text(encoding="utf-8"))
+        batch["texts"] = existing_batch["texts"] + texts
+        batch["reference_writes"] = existing_batch["reference_writes"] + references
+        report["mapped"] = existing_report.get("mapped", []) + mapped
+        if args.symbol:
+            selected = set(args.symbol)
+            report["unresolved"] = [entry for entry in existing_report.get("unresolved", []) if entry.get("source_symbol") not in selected] + unresolved
+        else:
+            report["unresolved"] = existing_report.get("unresolved", []) + unresolved
+        batch["mapping_report"] = {"report_file": "patch/mapping_reports/" + batch_name, "mapped_count": len(report["mapped"]), "unresolved_count": len(report["unresolved"])}
+        report["summary"] = dict(sorted(Counter(entry["reason"] for entry in report["unresolved"]).items()))
+        report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        batch_path.write_text(json.dumps(batch, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(json.dumps({"batch": batch_name, "added_texts": len(texts), "added_references": len(references), "unresolved": len(unresolved)}, ensure_ascii=False))
+    else:
+        print(json.dumps({"batch": batch, "report": report}, ensure_ascii=False))
 
 
 if __name__ == "__main__":

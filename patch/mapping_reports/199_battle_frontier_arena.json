@@ -9,19 +9,18 @@
       "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc"
     ],
     "symbols": [
-      "BattleFrontier_BattleArenaBattleRoom_Text_OpponentStepForward",
-      "BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsOpponent"
+      "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
+      "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen"
     ],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
       5,
       6
     ],
-    "chinese_placeholders": [
-      2
-    ]
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -34,9 +33,29 @@
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
     "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 61,
-  "unresolved_count": 5,
-  "reference_count": 79,
+  "dynamic_placeholder_audit": {
+    "BattleFrontier_BattleArenaBattleRoom_Text_PlayerStepForward": {
+      "1": "Japanese player name stored in save data"
+    },
+    "BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsPlayer": {
+      "1": "Japanese player name stored in save data"
+    },
+    "BattleFrontier_BattleArenaBattleRoom_Text_OpponentStepForward": {
+      "2": "Compact-Chinese Battle Frontier trainer-name field via BufferArenaOpponentName -> GetFrontierTrainerName"
+    },
+    "BattleFrontier_BattleArenaBattleRoom_Text_WinnerIsOpponent": {
+      "2": "Compact-Chinese Battle Frontier trainer-name field via BufferArenaOpponentName -> GetFrontierTrainerName"
+    },
+    "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen": {
+      "2": "Japanese-mode banned species names and grammar assembled by CheckPartyIneligibility"
+    },
+    "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50": {
+      "2": "Japanese-mode banned species names and grammar assembled by CheckPartyIneligibility"
+    }
+  },
+  "mapped_count": 63,
+  "unresolved_count": 3,
+  "reference_count": 81,
   "mapped": [
     {
       "source_symbol": "BattleFrontier_BattleArenaBattleRoom_Text_PlayerStepForward",
@@ -733,25 +752,33 @@
         "0x081F59F9",
         "0x082302BF"
       ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen",
+      "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+      "wokann_label_line": 403,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082366D6",
+      "japanese_text_address": "0x0822F951",
+      "japanese_references": [
+        "0x0822F569"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
+      "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
+      "wokann_label_line": 416,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08236756",
+      "japanese_text_address": "0x0822F9F8",
+      "japanese_references": [
+        "0x0822F55C"
+      ]
     }
   ],
   "unresolved": [
-    {
-      "symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen",
-      "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
-      "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
     {
       "symbol": "BattleFrontier_BattleArenaLobby_Text_PresentYouWithPrize",
       "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",

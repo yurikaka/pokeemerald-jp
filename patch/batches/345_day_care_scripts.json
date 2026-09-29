@@ -19,6 +19,33 @@
       "name": "Chs_Text_EggHatchHuh",
       "source_symbol": "Text_EggHatchHuh",
       "us_encoded_hex": "0a13b0b03dff"
+    },
+    {
+      "name": "Chs_Route117_Text_YourMonIsDoingFine",
+      "source_symbol": "Route117_Text_YourMonIsDoingFine",
+      "us_encoded_hex": "01003b0c0c09d90ea63c050b04490e5605e6030409d937fe09d9030bfd0210e30cad050b04e937ff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_Route117_Text_FriendlyWithOtherTrainersMon",
+      "source_symbol": "Route117_Text_FriendlyWithOtherTrainersMon",
+      "us_encoded_hex": "0c5601a00f0b0ce23b04a00f8809d9030bfd023bfe07c20aab08290c9f04f3fafd03030bfd0404a00dd9050b04e937fb0d98054607c203040c9f0c1a0304fe089e0f0b03e50e5005e937ff",
+      "japanese_placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Chs_Route117_Text_YourMonsAreDoingFine",
+      "source_symbol": "Route117_Text_YourMonsAreDoingFine",
+      "us_encoded_hex": "01003b0c0c09d90ea63c09d9030bfd0204f3fefd0310e30cad0361050b04e937ff",
+      "japanese_placeholders": [
+        2,
+        3
+      ]
     }
   ],
   "reference_writes": [
@@ -39,11 +66,29 @@
       "original": "0x08257E82",
       "symbol": "Chs_Text_EggHatchHuh",
       "source_symbol": "Text_EggHatchHuh"
+    },
+    {
+      "address": "0x0825779F",
+      "original": "0x08257B57",
+      "symbol": "Chs_Route117_Text_YourMonIsDoingFine",
+      "source_symbol": "Route117_Text_YourMonIsDoingFine"
+    },
+    {
+      "address": "0x08257793",
+      "original": "0x08257BD3",
+      "symbol": "Chs_Route117_Text_FriendlyWithOtherTrainersMon",
+      "source_symbol": "Route117_Text_FriendlyWithOtherTrainersMon"
+    },
+    {
+      "address": "0x082577B6",
+      "original": "0x08257C39",
+      "symbol": "Chs_Route117_Text_YourMonsAreDoingFine",
+      "source_symbol": "Route117_Text_YourMonsAreDoingFine"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/345_day_care_scripts.json",
-    "mapped_count": 3,
-    "unresolved_count": 5
+    "mapped_count": 6,
+    "unresolved_count": 2
   }
 }

@@ -55,6 +55,33 @@
       "source_symbol": "sText_EnteringChat",
       "us_encoded_hex": "10700fe6074a0b6b08970cedb0b0fc083cff",
       "auto_wrap": true
+    },
+    {
+      "name": "Chs_sText_ModeWithTheseMembersWillBeCanceled",
+      "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled",
+      "us_encoded_hex": "0f9902ef0ac9024b0fbd030bfd0209990c02fe059f05f410a1108a37fc083cff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_CommunicatingWithPlayer",
+      "source_symbol": "sText_CommunicatingWithPlayer",
+      "us_encoded_hex": "10700fe60f99fd02087f0725b0b0fc080fadfc080fadfc080fadfefc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_PlayerHasContactedYou",
+      "source_symbol": "sText_PlayerHasContactedYou",
+      "us_encoded_hex": "0c1a0304089e0829110cfd02030b087d09213cfc083cff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
     }
   ],
   "reference_writes": [
@@ -141,11 +168,29 @@
       "original": "0x082C1174",
       "symbol": "Chs_sText_EnteringChat",
       "source_symbol": "sText_EnteringChat"
+    },
+    {
+      "address": "0x080129D0",
+      "original": "0x082C09A8",
+      "symbol": "Chs_sText_ModeWithTheseMembersWillBeCanceled",
+      "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled"
+    },
+    {
+      "address": "0x082C0CDC",
+      "original": "0x082C0C04",
+      "symbol": "Chs_sText_CommunicatingWithPlayer",
+      "source_symbol": "sText_CommunicatingWithPlayer"
+    },
+    {
+      "address": "0x082C0DBC",
+      "original": "0x082C0DA4",
+      "symbol": "Chs_sText_PlayerHasContactedYou",
+      "source_symbol": "sText_PlayerHasContactedYou"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/425_union_room_pause.json",
-    "mapped_count": 9,
-    "unresolved_count": 101
+    "mapped_count": 12,
+    "unresolved_count": 98
   }
 }

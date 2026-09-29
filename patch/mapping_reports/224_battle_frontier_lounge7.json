@@ -6,12 +6,17 @@
     "sources": [
       "data/maps/BattleFrontier_Lounge7/scripts.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
       5,
       6
+    ],
+    "chinese_placeholders": [
+      3
     ]
   },
   "inputs": {
@@ -23,11 +28,14 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 31,
-  "unresolved_count": 1,
-  "reference_count": 35,
+  "dynamic_placeholder_audit": {
+    "BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints": {"2": "Japanese gMoveNames value buffered by BufferBattleFrontierTutorMoveName", "3": "Decimal battle-point count"}
+  },
+  "mapped_count": 32,
+  "unresolved_count": 0,
+  "reference_count": 36,
   "mapped": [
     {
       "source_symbol": "BattleFrontier_Lounge7_Text_LeftTutorIntro",
@@ -393,17 +401,19 @@
       "japanese_references": [
         "0x08592CD4"
       ]
-    }
-  ],
-  "unresolved": [
+    },
     {
-      "symbol": "BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints",
+      "source_symbol": "BattleFrontier_Lounge7_Text_MoveWillBeXBattlePoints",
       "source": "data/maps/BattleFrontier_Lounge7/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
+      "wokann_source": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+      "wokann_label_line": 310,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08241668",
+      "japanese_text_address": "0x08239D3D",
+      "japanese_references": [
+        "0x08239B77"
       ]
     }
-  ]
+  ],
+  "unresolved": []
 }

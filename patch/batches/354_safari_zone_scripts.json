@@ -21,6 +21,22 @@
       "name": "Chs_SafariZone_Text_PlacePokeblockOnFeeder",
       "source_symbol": "SafariZone_Text_PlacePokeblockOnFeeder",
       "us_encoded_hex": "0ef10fe6016307d703c008000d7f0bef0ab20864fe03c81094016307d703c00800092a3dff"
+    },
+    {
+      "name": "Chs_SafariZone_Text_PokeblockStillHere",
+      "source_symbol": "SafariZone_Text_PokeblockStillHere",
+      "us_encoded_hex": "107f0ac903c8074a0b25030bfd02fe05460fe60864097e37ff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_SafariZone_Text_PokeblockWasPlaced",
+      "source_symbol": "SafariZone_Text_PokeblockWasPlaced",
+      "us_encoded_hex": "0130fd0203c8074a089efe016307d703c008000d7f0bef0ab2086437ff",
+      "japanese_placeholders": [
+        2
+      ]
     }
   ],
   "reference_writes": [
@@ -47,11 +63,23 @@
       "original": "0x082624B7",
       "symbol": "Chs_SafariZone_Text_PlacePokeblockOnFeeder",
       "source_symbol": "SafariZone_Text_PlacePokeblockOnFeeder"
+    },
+    {
+      "address": "0x0826244A",
+      "original": "0x082624CD",
+      "symbol": "Chs_SafariZone_Text_PokeblockStillHere",
+      "source_symbol": "SafariZone_Text_PokeblockStillHere"
+    },
+    {
+      "address": "0x08262441",
+      "original": "0x082624DC",
+      "symbol": "Chs_SafariZone_Text_PokeblockWasPlaced",
+      "source_symbol": "SafariZone_Text_PokeblockWasPlaced"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/354_safari_zone_scripts.json",
-    "mapped_count": 4,
-    "unresolved_count": 2
+    "mapped_count": 6,
+    "unresolved_count": 0
   }
 }

@@ -99,6 +99,60 @@
       "japanese_placeholders": [
         1
       ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_GettingStartedParticipantsAsFollows",
+      "source_symbol": "ContestHall_Text_GettingStartedParticipantsAsFollows",
+      "us_encoded_hex": "10c802580b4b3e02d305bd04e93cfefd03030bfafd04059f05f407b80c013cfb01e905be01850b7c030b0e9e088a05bd04f3fe016307d709660f7e3f3fff",
+      "japanese_placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_GettingStartedParticipantsAsFollowsLink",
+      "source_symbol": "ContestHall_Text_GettingStartedParticipantsAsFollowsLink",
+      "us_encoded_hex": "10c802580b4b3e02d305bd04e93cfea509930d4e05bd030b087f0725fafd03059f05f407b80c013cfb01e905be01850b7c030b0e9e088a05bd04f3fe016307d709660f7e3f3fff",
+      "japanese_placeholders": [
+        3
+      ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_EntryXTrainersMon",
+      "source_symbol": "ContestHall_Text_EntryXTrainersMon",
+      "us_encoded_hex": "10c802580b4b3e01e90b7c019d04ebfd0304eb3cfefd02030bfd043cff",
+      "japanese_placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_CongratsTrainerXandMon",
+      "source_symbol": "ContestHall_Text_CongratsTrainerXandMon",
+      "us_encoded_hex": "10c802580b4b3efd0304eb3cfbfd0404f3fd023bfe046f0dd609d9095f3cff",
+      "japanese_placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_PutRibbonOnMon",
+      "source_symbol": "ContestHall_Text_PutRibbonOnMon",
+      "us_encoded_hex": "fd010462fd02fe02d70bad089e070310353cff",
+      "japanese_placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Chs_ContestHall_Text_GettingStartedWireless",
+      "source_symbol": "ContestHall_Text_GettingStartedWireless",
+      "us_encoded_hex": "10c802580b4b3e02d305bd04e93cfea509930d4e05bd030b087f0725fafd03059f05f407b80c013cff",
+      "japanese_placeholders": [
+        3
+      ]
     }
   ],
   "reference_writes": [
@@ -275,11 +329,59 @@
       "original": "0x0824A45E",
       "symbol": "Chs_ContestHall_Text_ReceivedRibbon",
       "source_symbol": "ContestHall_Text_ReceivedRibbon"
+    },
+    {
+      "address": "0x08248EEE",
+      "original": "0x0824A17F",
+      "symbol": "Chs_ContestHall_Text_GettingStartedParticipantsAsFollows",
+      "source_symbol": "ContestHall_Text_GettingStartedParticipantsAsFollows"
+    },
+    {
+      "address": "0x08248F07",
+      "original": "0x0824A1CD",
+      "symbol": "Chs_ContestHall_Text_GettingStartedParticipantsAsFollowsLink",
+      "source_symbol": "ContestHall_Text_GettingStartedParticipantsAsFollowsLink"
+    },
+    {
+      "address": "0x08249052",
+      "original": "0x0824A223",
+      "symbol": "Chs_ContestHall_Text_EntryXTrainersMon",
+      "source_symbol": "ContestHall_Text_EntryXTrainersMon"
+    },
+    {
+      "address": "0x08249059",
+      "original": "0x0824A223",
+      "symbol": "Chs_ContestHall_Text_EntryXTrainersMon",
+      "source_symbol": "ContestHall_Text_EntryXTrainersMon"
+    },
+    {
+      "address": "0x0824983C",
+      "original": "0x0824A3D6",
+      "symbol": "Chs_ContestHall_Text_CongratsTrainerXandMon",
+      "source_symbol": "ContestHall_Text_CongratsTrainerXandMon"
+    },
+    {
+      "address": "0x08249844",
+      "original": "0x0824A3D6",
+      "symbol": "Chs_ContestHall_Text_CongratsTrainerXandMon",
+      "source_symbol": "ContestHall_Text_CongratsTrainerXandMon"
+    },
+    {
+      "address": "0x08249B30",
+      "original": "0x0824A46D",
+      "symbol": "Chs_ContestHall_Text_PutRibbonOnMon",
+      "source_symbol": "ContestHall_Text_PutRibbonOnMon"
+    },
+    {
+      "address": "0x08248F0E",
+      "original": "0x0824AB80",
+      "symbol": "Chs_ContestHall_Text_GettingStartedWireless",
+      "source_symbol": "ContestHall_Text_GettingStartedWireless"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/344_contest_hall_scripts.json",
-    "mapped_count": 19,
-    "unresolved_count": 14
+    "mapped_count": 25,
+    "unresolved_count": 8
   }
 }

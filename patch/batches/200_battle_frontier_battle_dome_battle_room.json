@@ -230,6 +230,24 @@
       "name": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker",
       "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker",
       "us_encoded_hex": "01de0a2d112e0278089efe11260522030b07a6034d3cfb04a207ac0c0cb0b0fe0ced01003cfa04a207ac0c0c0d98095f030b078e02ee022e05a1078e0e523f3ffa0beb09c53cfb046f0dd609d93c05460f7e3b0e460e463cfe0d98095f030b078e02ee022e05a1078e0e523b0beb09c53cff"
+    },
+    {
+      "name": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer",
+      "us_encoded_hex": "fd023cfbfd0100d0cd00fd033cfb01850b7c07b80c013cff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner",
+      "us_encoded_hex": "fd03057e0be03cfe046f0dd63cff"
+    },
+    {
+      "name": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer",
+      "us_encoded_hex": "01de0a2d112e0278089efe112610a60a2d07a63cfb04a207ac0c0cb0b0fe0ced01003cfa04a207ac0c0cfd023cfa10d20507fd023cff"
     }
   ],
   "reference_writes": [
@@ -484,11 +502,29 @@
       "original": "0x08229CE6",
       "symbol": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker",
       "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker"
+    },
+    {
+      "address": "0x08228918",
+      "original": "0x0822950D",
+      "symbol": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer"
+    },
+    {
+      "address": "0x08228A4B",
+      "original": "0x08229547",
+      "symbol": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner"
+    },
+    {
+      "address": "0x08228A5F",
+      "original": "0x08229608",
+      "symbol": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer",
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/200_battle_frontier_battle_dome_battle_room.json",
-    "mapped_count": 41,
-    "unresolved_count": 5
+    "mapped_count": 44,
+    "unresolved_count": 2
   }
 }

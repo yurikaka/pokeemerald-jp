@@ -1,5 +1,5 @@
 {
-  "source_commit": "08c6fdcc7",
+  "source_commit": "fe570a7e5",
   "category": "dialogue: data/scripts/roulette.inc",
   "texts": [
     {
@@ -51,6 +51,16 @@
       "name": "Chs_Roulette_Text_CoinCaseIsFull",
       "source_symbol": "Roulette_Text_CoinCaseIsFull",
       "us_encoded_hex": "02da018f04f60934089e3cfe0b0d0b250377054807030a723cff"
+    },
+    {
+      "name": "Chs_Roulette_Text_PlayMinimumWagerIsX",
+      "source_symbol": "Roulette_Text_PlayMinimumWagerIsX",
+      "us_encoded_hex": "105508640c0c017309040d70fd020173030b09100a290ca937fe0ef10fe6105508640d4e09100a29092a3dff"
+    },
+    {
+      "name": "Chs_Roulette_Text_YouveWonXCoins",
+      "source_symbol": "Roulette_Text_YouveWonXCoins",
+      "us_encoded_hex": "046f0dd610a107033cfe057e030a089efd02094e0f60018f3cff"
     }
   ],
   "reference_writes": [
@@ -119,12 +129,29 @@
       "original": "0x08262DD5",
       "symbol": "Chs_Roulette_Text_CoinCaseIsFull",
       "source_symbol": "Roulette_Text_CoinCaseIsFull"
+    },
+    {
+      "address": "0x08142B44",
+      "original": "0x08262CF3",
+      "symbol": "Chs_Roulette_Text_PlayMinimumWagerIsX",
+      "source_symbol": "Roulette_Text_PlayMinimumWagerIsX"
+    },
+    {
+      "address": "0x08142C34",
+      "original": "0x08262CF3",
+      "symbol": "Chs_Roulette_Text_PlayMinimumWagerIsX",
+      "source_symbol": "Roulette_Text_PlayMinimumWagerIsX"
+    },
+    {
+      "address": "0x08141B7C",
+      "original": "0x08262D79",
+      "symbol": "Chs_Roulette_Text_YouveWonXCoins",
+      "source_symbol": "Roulette_Text_YouveWonXCoins"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/401_roulette.json",
-    "mapped_count": 10,
-    "unresolved_count": 3
+    "mapped_count": 12,
+    "unresolved_count": 1
   }
 }
-

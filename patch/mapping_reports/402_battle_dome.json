@@ -1,13 +1,29 @@
 {
   "schema_version": 1,
   "batch": "402_battle_dome.json",
-  "source_commit": "08c6fdcc7",
+  "source_commit": "fe570a7e5",
   "selection": {
     "sources": [
       "data/text/battle_dome.inc"
     ],
+    "symbols": [
+      "BattleDome_Text_TrainerBecameChamp",
+      "BattleDome_Text_TrainerWonByDefault",
+      "BattleDome_Text_TrainerWonNoMoves",
+      "BattleDome_Text_TrainerWonOutrightByDefault",
+      "BattleDome_Text_TrainerWonOutrightNoMoves",
+      "BattleDome_Text_TrainerWonUsingMove"
+    ],
     "label_offset": 0,
-    "label_limit": null
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -18,11 +34,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Player name, honorific, and rival placeholders are auto-wrapped in Japanese mode; other placeholders require review."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 108,
-  "unresolved_count": 6,
-  "reference_count": 108,
+  "mapped_count": 114,
+  "unresolved_count": 0,
+  "reference_count": 114,
   "mapped": [
     {
       "source_symbol": "BattleDome_Text_Potential1",
@@ -1319,58 +1335,79 @@
       "japanese_references": [
         "0x085D5E04"
       ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerWonUsingMove",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 280,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282BA5",
+      "japanese_text_address": "0x08274166",
+      "japanese_references": [
+        "0x085D5E0C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerBecameChamp",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 283,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282BB3",
+      "japanese_text_address": "0x08274177",
+      "japanese_references": [
+        "0x085D5E10"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerWonByDefault",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 286,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282BBF",
+      "japanese_text_address": "0x08274188",
+      "japanese_references": [
+        "0x085D5E14"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightByDefault",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 289,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282BD3",
+      "japanese_text_address": "0x0827419D",
+      "japanese_references": [
+        "0x085D5E18"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerWonNoMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 292,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282BEB",
+      "japanese_text_address": "0x082741B2",
+      "japanese_references": [
+        "0x085D5E1C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightNoMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 295,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282C05",
+      "japanese_text_address": "0x082741C6",
+      "japanese_references": [
+        "0x085D5E20"
+      ]
     }
   ],
-  "unresolved": [
-    {
-      "symbol": "BattleDome_Text_TrainerWonUsingMove",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "BattleDome_Text_TrainerBecameChamp",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "BattleDome_Text_TrainerWonByDefault",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "BattleDome_Text_TrainerWonOutrightByDefault",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "BattleDome_Text_TrainerWonNoMoves",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "BattleDome_Text_TrainerWonOutrightNoMoves",
-      "source": "data/text/battle_dome.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    }
-  ]
+  "unresolved": []
 }
-

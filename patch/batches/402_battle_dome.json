@@ -1,5 +1,5 @@
 {
-  "source_commit": "08c6fdcc7",
+  "source_commit": "fe570a7e5",
   "category": "dialogue: data/text/battle_dome.inc",
   "texts": [
     {
@@ -541,6 +541,55 @@
       "name": "Chs_BattleDome_Text_FinalMatch",
       "source_symbol": "BattleDome_Text_FinalMatch",
       "us_encoded_hex": "07a60b7cff"
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerWonUsingMove",
+      "source_symbol": "BattleDome_Text_TrainerWonUsingMove",
+      "us_encoded_hex": "fd020bf50f71fd03057e0be03cff",
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerBecameChamp",
+      "source_symbol": "BattleDome_Text_TrainerBecameChamp",
+      "us_encoded_hex": "fd02024b0d7004a207ac3cff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerWonByDefault",
+      "source_symbol": "BattleDome_Text_TrainerWonByDefault",
+      "us_encoded_hex": "fd020f4203790c1b0ab50b28039d057e0be03cff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerWonOutrightByDefault",
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightByDefault",
+      "us_encoded_hex": "fd020f4203790c1b023b031e0ab50b28039d057e0be03cff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerWonNoMoves",
+      "source_symbol": "BattleDome_Text_TrainerWonNoMoves",
+      "us_encoded_hex": "fd020d7a0bf50f710b4e04f410430c02077d057e0be0089e3cff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_BattleDome_Text_TrainerWonOutrightNoMoves",
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightNoMoves",
+      "us_encoded_hex": "fd020d7a0bf50f710b4e04f410430c020d520be003790c1b3cff",
+      "japanese_placeholders": [
+        2
+      ]
     }
   ],
   "reference_writes": [
@@ -1191,12 +1240,47 @@
       "original": "0x082742A2",
       "symbol": "Chs_BattleDome_Text_FinalMatch",
       "source_symbol": "BattleDome_Text_FinalMatch"
+    },
+    {
+      "address": "0x085D5E0C",
+      "original": "0x08274166",
+      "symbol": "Chs_BattleDome_Text_TrainerWonUsingMove",
+      "source_symbol": "BattleDome_Text_TrainerWonUsingMove"
+    },
+    {
+      "address": "0x085D5E10",
+      "original": "0x08274177",
+      "symbol": "Chs_BattleDome_Text_TrainerBecameChamp",
+      "source_symbol": "BattleDome_Text_TrainerBecameChamp"
+    },
+    {
+      "address": "0x085D5E14",
+      "original": "0x08274188",
+      "symbol": "Chs_BattleDome_Text_TrainerWonByDefault",
+      "source_symbol": "BattleDome_Text_TrainerWonByDefault"
+    },
+    {
+      "address": "0x085D5E18",
+      "original": "0x0827419D",
+      "symbol": "Chs_BattleDome_Text_TrainerWonOutrightByDefault",
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightByDefault"
+    },
+    {
+      "address": "0x085D5E1C",
+      "original": "0x082741B2",
+      "symbol": "Chs_BattleDome_Text_TrainerWonNoMoves",
+      "source_symbol": "BattleDome_Text_TrainerWonNoMoves"
+    },
+    {
+      "address": "0x085D5E20",
+      "original": "0x082741C6",
+      "symbol": "Chs_BattleDome_Text_TrainerWonOutrightNoMoves",
+      "source_symbol": "BattleDome_Text_TrainerWonOutrightNoMoves"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/402_battle_dome.json",
-    "mapped_count": 108,
-    "unresolved_count": 6
+    "mapped_count": 114,
+    "unresolved_count": 0
   }
 }
-

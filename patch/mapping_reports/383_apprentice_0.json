@@ -6,13 +6,18 @@
     "sources": [
       "data/text/apprentice.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
+      3,
+      4,
       5,
       6
-    ]
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -23,11 +28,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 56,
-  "unresolved_count": 197,
-  "reference_count": 56,
+  "mapped_count": 253,
+  "unresolved_count": 0,
+  "reference_count": 253,
   "mapped": [
     {
       "source_symbol": "gText_ApprenticeRejectTeaching0",
@@ -700,1797 +705,2371 @@
       "japanese_references": [
         "0x085DC954"
       ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A8EC",
+      "japanese_text_address": "0x0826CD7D",
+      "japanese_references": [
+        "0x085DC95C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 4,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A921",
+      "japanese_text_address": "0x0826CD9F",
+      "japanese_references": [
+        "0x085DC960"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 7,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A93F",
+      "japanese_text_address": "0x0826CDBC",
+      "japanese_references": [
+        "0x085DC964"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 10,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A963",
+      "japanese_text_address": "0x0826CDD6",
+      "japanese_references": [
+        "0x085DC968"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 13,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A996",
+      "japanese_text_address": "0x0826CDF9",
+      "japanese_references": [
+        "0x085DC96C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 16,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A9BC",
+      "japanese_text_address": "0x0826CE16",
+      "japanese_references": [
+        "0x085DC970"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A9E4",
+      "japanese_text_address": "0x0826CE39",
+      "japanese_references": [
+        "0x085DC974"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 22,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AA06",
+      "japanese_text_address": "0x0826CE56",
+      "japanese_references": [
+        "0x085DC978"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 25,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AA2C",
+      "japanese_text_address": "0x0826CE7B",
+      "japanese_references": [
+        "0x085DC97C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 28,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AA4F",
+      "japanese_text_address": "0x0826CE9D",
+      "japanese_references": [
+        "0x085DC980"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 31,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AA74",
+      "japanese_text_address": "0x0826CEBE",
+      "japanese_references": [
+        "0x085DC984"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 34,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AAA1",
+      "japanese_text_address": "0x0826CEE3",
+      "japanese_references": [
+        "0x085DC988"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 37,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AACC",
+      "japanese_text_address": "0x0826CF05",
+      "japanese_references": [
+        "0x085DC98C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 40,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AAF6",
+      "japanese_text_address": "0x0826CF24",
+      "japanese_references": [
+        "0x085DC990"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 43,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AB20",
+      "japanese_text_address": "0x0826CF43",
+      "japanese_references": [
+        "0x085DC994"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeChallenge15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 46,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AB41",
+      "japanese_text_address": "0x0826CF63",
+      "japanese_references": [
+        "0x085DC998"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 49,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AB65",
+      "japanese_text_address": "0x0826CF80",
+      "japanese_references": [
+        "0x085DC51C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 75,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827ACFE",
+      "japanese_text_address": "0x0826D0EA",
+      "japanese_references": [
+        "0x085DC528"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 83,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AD65",
+      "japanese_text_address": "0x0826D14B",
+      "japanese_references": [
+        "0x085DC52C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 101,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AE64",
+      "japanese_text_address": "0x0826D232",
+      "japanese_references": [
+        "0x085DC538"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 106,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AEAD",
+      "japanese_text_address": "0x0826D26C",
+      "japanese_references": [
+        "0x085DC53C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 127,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827AFD9",
+      "japanese_text_address": "0x0826D390",
+      "japanese_references": [
+        "0x085DC548"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 131,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B014",
+      "japanese_text_address": "0x0826D3C6",
+      "japanese_references": [
+        "0x085DC54C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 172,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B302",
+      "japanese_text_address": "0x0826D63D",
+      "japanese_references": [
+        "0x085DC558"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 179,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B373",
+      "japanese_text_address": "0x0826D6A0",
+      "japanese_references": [
+        "0x085DC55C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 200,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B4BC",
+      "japanese_text_address": "0x0826D7B9",
+      "japanese_references": [
+        "0x085DC568"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 207,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B526",
+      "japanese_text_address": "0x0826D807",
+      "japanese_references": [
+        "0x085DC56C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 234,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B711",
+      "japanese_text_address": "0x0826D983",
+      "japanese_references": [
+        "0x085DC578"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 239,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B762",
+      "japanese_text_address": "0x0826D9C7",
+      "japanese_references": [
+        "0x085DC57C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 266,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B906",
+      "japanese_text_address": "0x0826DB2B",
+      "japanese_references": [
+        "0x085DC588"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 273,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827B966",
+      "japanese_text_address": "0x0826DB75",
+      "japanese_references": [
+        "0x085DC58C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 302,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BAEF",
+      "japanese_text_address": "0x0826DD08",
+      "japanese_references": [
+        "0x085DC598"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 308,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BB39",
+      "japanese_text_address": "0x0826DD47",
+      "japanese_references": [
+        "0x085DC59C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 336,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BCBB",
+      "japanese_text_address": "0x0826DED1",
+      "japanese_references": [
+        "0x085DC5A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 342,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BD07",
+      "japanese_text_address": "0x0826DF14",
+      "japanese_references": [
+        "0x085DC5AC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 364,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BE61",
+      "japanese_text_address": "0x0826E03F",
+      "japanese_references": [
+        "0x085DC5B8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 370,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827BEB7",
+      "japanese_text_address": "0x0826E081",
+      "japanese_references": [
+        "0x085DC5BC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 399,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C078",
+      "japanese_text_address": "0x0826E207",
+      "japanese_references": [
+        "0x085DC5C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 432,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C2B3",
+      "japanese_text_address": "0x0826E3C1",
+      "japanese_references": [
+        "0x085DC5D8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 437,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C2F9",
+      "japanese_text_address": "0x0826E3F7",
+      "japanese_references": [
+        "0x085DC5DC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 461,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C4C4",
+      "japanese_text_address": "0x0826E561",
+      "japanese_references": [
+        "0x085DC5E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 467,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C521",
+      "japanese_text_address": "0x0826E598",
+      "japanese_references": [
+        "0x085DC5EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 492,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C69D",
+      "japanese_text_address": "0x0826E6D5",
+      "japanese_references": [
+        "0x085DC5F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 497,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C6EA",
+      "japanese_text_address": "0x0826E717",
+      "japanese_references": [
+        "0x085DC5FC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePleaseTeach15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 532,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827C8FF",
+      "japanese_text_address": "0x0826E8D6",
+      "japanese_references": [
+        "0x085DC60C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeLevelModeThanks15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 555,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CA93",
+      "japanese_text_address": "0x0826EA29",
+      "japanese_references": [
+        "0x085DC618"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 562,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CB03",
+      "japanese_text_address": "0x0826EA7B",
+      "japanese_references": [
+        "0x085DC69C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 571,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CB69",
+      "japanese_text_address": "0x0826EAF4",
+      "japanese_references": [
+        "0x085DC6A0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 578,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CBCC",
+      "japanese_text_address": "0x0826EB41",
+      "japanese_references": [
+        "0x085DC6A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 583,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CC20",
+      "japanese_text_address": "0x0826EB7B",
+      "japanese_references": [
+        "0x085DC6AC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 589,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CC81",
+      "japanese_text_address": "0x0826EBBF",
+      "japanese_references": [
+        "0x085DC6B0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 598,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CCF4",
+      "japanese_text_address": "0x0826EC33",
+      "japanese_references": [
+        "0x085DC6B4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 604,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CD38",
+      "japanese_text_address": "0x0826EC6A",
+      "japanese_references": [
+        "0x085DC6BC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 614,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CDCE",
+      "japanese_text_address": "0x0826ECD9",
+      "japanese_references": [
+        "0x085DC6C4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 619,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CE0A",
+      "japanese_text_address": "0x0826ED1E",
+      "japanese_references": [
+        "0x085DC6C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 625,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CE3F",
+      "japanese_text_address": "0x0826ED4A",
+      "japanese_references": [
+        "0x085DC6D0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 630,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CE6C",
+      "japanese_text_address": "0x0826ED71",
+      "japanese_references": [
+        "0x085DC6D4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 637,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CECF",
+      "japanese_text_address": "0x0826EDBA",
+      "japanese_references": [
+        "0x085DC6D8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 656,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827CFBF",
+      "japanese_text_address": "0x0826EEB1",
+      "japanese_references": [
+        "0x085DC6E4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 661,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D004",
+      "japanese_text_address": "0x0826EEE3",
+      "japanese_references": [
+        "0x085DC6E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 669,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D063",
+      "japanese_text_address": "0x0826EF47",
+      "japanese_references": [
+        "0x085DC6EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 679,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D106",
+      "japanese_text_address": "0x0826EFD1",
+      "japanese_references": [
+        "0x085DC6F0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 688,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D194",
+      "japanese_text_address": "0x0826F031",
+      "japanese_references": [
+        "0x085DC6F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 695,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D1FD",
+      "japanese_text_address": "0x0826F079",
+      "japanese_references": [
+        "0x085DC6FC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 701,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D24E",
+      "japanese_text_address": "0x0826F0BA",
+      "japanese_references": [
+        "0x085DC700"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 713,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D2DF",
+      "japanese_text_address": "0x0826F15E",
+      "japanese_references": [
+        "0x085DC704"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 721,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D347",
+      "japanese_text_address": "0x0826F1B7",
+      "japanese_references": [
+        "0x085DC70C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 727,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D39E",
+      "japanese_text_address": "0x0826F200",
+      "japanese_references": [
+        "0x085DC710"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 733,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D3F6",
+      "japanese_text_address": "0x0826F23B",
+      "japanese_references": [
+        "0x085DC714"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 741,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D45D",
+      "japanese_text_address": "0x0826F2A8",
+      "japanese_references": [
+        "0x085DC718"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 749,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D4C5",
+      "japanese_text_address": "0x0826F2F6",
+      "japanese_references": [
+        "0x085DC720"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 756,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D51F",
+      "japanese_text_address": "0x0826F33D",
+      "japanese_references": [
+        "0x085DC724"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 763,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D57D",
+      "japanese_text_address": "0x0826F388",
+      "japanese_references": [
+        "0x085DC728"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 783,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D6A1",
+      "japanese_text_address": "0x0826F48D",
+      "japanese_references": [
+        "0x085DC734"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 794,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D725",
+      "japanese_text_address": "0x0826F50B",
+      "japanese_references": [
+        "0x085DC73C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 810,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D7F2",
+      "japanese_text_address": "0x0826F5D1",
+      "japanese_references": [
+        "0x085DC748"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 817,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D858",
+      "japanese_text_address": "0x0826F62C",
+      "japanese_references": [
+        "0x085DC74C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 824,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D8A5",
+      "japanese_text_address": "0x0826F687",
+      "japanese_references": [
+        "0x085DC750"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 832,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D90B",
+      "japanese_text_address": "0x0826F6F7",
+      "japanese_references": [
+        "0x085DC754"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 841,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D96D",
+      "japanese_text_address": "0x0826F756",
+      "japanese_references": [
+        "0x085DC75C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 847,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827D9B0",
+      "japanese_text_address": "0x0826F797",
+      "japanese_references": [
+        "0x085DC760"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 853,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DA04",
+      "japanese_text_address": "0x0826F7DD",
+      "japanese_references": [
+        "0x085DC764"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 875,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DB4A",
+      "japanese_text_address": "0x0826F90A",
+      "japanese_references": [
+        "0x085DC770"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 883,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DBB6",
+      "japanese_text_address": "0x0826F967",
+      "japanese_references": [
+        "0x085DC774"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 889,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DC06",
+      "japanese_text_address": "0x0826F9B0",
+      "japanese_references": [
+        "0x085DC778"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 897,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DC8F",
+      "japanese_text_address": "0x0826FA19",
+      "japanese_references": [
+        "0x085DC77C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 905,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DD00",
+      "japanese_text_address": "0x0826FA70",
+      "japanese_references": [
+        "0x085DC784"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 910,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DD4C",
+      "japanese_text_address": "0x0826FAA7",
+      "japanese_references": [
+        "0x085DC788"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 916,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DDB3",
+      "japanese_text_address": "0x0826FAF3",
+      "japanese_references": [
+        "0x085DC78C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 927,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DE7F",
+      "japanese_text_address": "0x0826FB96",
+      "japanese_references": [
+        "0x085DC790"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 936,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DF04",
+      "japanese_text_address": "0x0826FBF5",
+      "japanese_references": [
+        "0x085DC798"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 942,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DF5D",
+      "japanese_text_address": "0x0826FC31",
+      "japanese_references": [
+        "0x085DC79C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 949,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827DFC5",
+      "japanese_text_address": "0x0826FC83",
+      "japanese_references": [
+        "0x085DC7A0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 959,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E05F",
+      "japanese_text_address": "0x0826FD1C",
+      "japanese_references": [
+        "0x085DC7A4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 967,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E0D0",
+      "japanese_text_address": "0x0826FD78",
+      "japanese_references": [
+        "0x085DC7AC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 972,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E12F",
+      "japanese_text_address": "0x0826FDBB",
+      "japanese_references": [
+        "0x085DC7B0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 979,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E19F",
+      "japanese_text_address": "0x0826FE0A",
+      "japanese_references": [
+        "0x085DC7B4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 989,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E244",
+      "japanese_text_address": "0x0826FE90",
+      "japanese_references": [
+        "0x085DC7B8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 999,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E2D1",
+      "japanese_text_address": "0x0826FEFA",
+      "japanese_references": [
+        "0x085DC7C0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1006,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E336",
+      "japanese_text_address": "0x0826FF41",
+      "japanese_references": [
+        "0x085DC7C4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhatHeldItem15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1013,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E3A7",
+      "japanese_text_address": "0x0826FF99",
+      "japanese_references": [
+        "0x085DC7C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksHeldItem15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1031,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E4A8",
+      "japanese_text_address": "0x08270077",
+      "japanese_references": [
+        "0x085DC7D4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1038,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E50D",
+      "japanese_text_address": "0x082700C9",
+      "japanese_references": [
+        "0x085DC7D8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1055,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E616",
+      "japanese_text_address": "0x082701A6",
+      "japanese_references": [
+        "0x085DC860"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1069,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E6BD",
+      "japanese_text_address": "0x08270249",
+      "japanese_references": [
+        "0x085DC868"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1081,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E742",
+      "japanese_text_address": "0x082702D8",
+      "japanese_references": [
+        "0x085DC870"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1097,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E80B",
+      "japanese_text_address": "0x082703A1",
+      "japanese_references": [
+        "0x085DC878"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1112,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E8FB",
+      "japanese_text_address": "0x0827046A",
+      "japanese_references": [
+        "0x085DC880"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1128,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827E9E4",
+      "japanese_text_address": "0x08270530",
+      "japanese_references": [
+        "0x085DC888"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1143,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827EABE",
+      "japanese_text_address": "0x082705FF",
+      "japanese_references": [
+        "0x085DC890"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1159,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827EBAD",
+      "japanese_text_address": "0x082706C6",
+      "japanese_references": [
+        "0x085DC898"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1176,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827EC98",
+      "japanese_text_address": "0x08270791",
+      "japanese_references": [
+        "0x085DC8A0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1193,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827EDCB",
+      "japanese_text_address": "0x0827087B",
+      "japanese_references": [
+        "0x085DC8A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1210,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827EECD",
+      "japanese_text_address": "0x0827096A",
+      "japanese_references": [
+        "0x085DC8B0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1238,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F0A2",
+      "japanese_text_address": "0x08270ADB",
+      "japanese_references": [
+        "0x085DC8C0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1256,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F1BD",
+      "japanese_text_address": "0x08270BBD",
+      "japanese_references": [
+        "0x085DC8C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1272,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F2C5",
+      "japanese_text_address": "0x08270C83",
+      "japanese_references": [
+        "0x085DC8D0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1289,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F3EC",
+      "japanese_text_address": "0x08270D5D",
+      "japanese_references": [
+        "0x085DC8D8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1296,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F451",
+      "japanese_text_address": "0x08270DAB",
+      "japanese_references": [
+        "0x085DC61C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1307,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F4DA",
+      "japanese_text_address": "0x08270E34",
+      "japanese_references": [
+        "0x085DC620"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1313,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F533",
+      "japanese_text_address": "0x08270E81",
+      "japanese_references": [
+        "0x085DC624"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1322,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F596",
+      "japanese_text_address": "0x08270EEF",
+      "japanese_references": [
+        "0x085DC628"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1327,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F5C6",
+      "japanese_text_address": "0x08270F12",
+      "japanese_references": [
+        "0x085DC62C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1334,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F611",
+      "japanese_text_address": "0x08270F68",
+      "japanese_references": [
+        "0x085DC630"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1340,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F647",
+      "japanese_text_address": "0x08270F98",
+      "japanese_references": [
+        "0x085DC634"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1353,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F6FB",
+      "japanese_text_address": "0x08271053",
+      "japanese_references": [
+        "0x085DC638"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1360,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F742",
+      "japanese_text_address": "0x082710A8",
+      "japanese_references": [
+        "0x085DC63C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1368,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F7AE",
+      "japanese_text_address": "0x08271104",
+      "japanese_references": [
+        "0x085DC640"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1374,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F801",
+      "japanese_text_address": "0x08271142",
+      "japanese_references": [
+        "0x085DC644"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1385,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F894",
+      "japanese_text_address": "0x082711D5",
+      "japanese_references": [
+        "0x085DC648"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1391,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F8E5",
+      "japanese_text_address": "0x08271223",
+      "japanese_references": [
+        "0x085DC64C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1401,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F96F",
+      "japanese_text_address": "0x082712AB",
+      "japanese_references": [
+        "0x085DC650"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1408,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827F9C2",
+      "japanese_text_address": "0x082712F5",
+      "japanese_references": [
+        "0x085DC654"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1420,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FA68",
+      "japanese_text_address": "0x08271399",
+      "japanese_references": [
+        "0x085DC658"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1426,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FAA5",
+      "japanese_text_address": "0x082713D8",
+      "japanese_references": [
+        "0x085DC65C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1436,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FB1D",
+      "japanese_text_address": "0x08271466",
+      "japanese_references": [
+        "0x085DC660"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1442,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FB5D",
+      "japanese_text_address": "0x082714B0",
+      "japanese_references": [
+        "0x085DC664"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1451,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FBCC",
+      "japanese_text_address": "0x08271522",
+      "japanese_references": [
+        "0x085DC668"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1457,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FC1E",
+      "japanese_text_address": "0x08271564",
+      "japanese_references": [
+        "0x085DC66C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1468,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FCBF",
+      "japanese_text_address": "0x0827160D",
+      "japanese_references": [
+        "0x085DC670"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1476,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FD21",
+      "japanese_text_address": "0x0827166A",
+      "japanese_references": [
+        "0x085DC674"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1485,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FDB1",
+      "japanese_text_address": "0x082716E5",
+      "japanese_references": [
+        "0x085DC678"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1490,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FDF2",
+      "japanese_text_address": "0x0827171C",
+      "japanese_references": [
+        "0x085DC67C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1500,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FE9D",
+      "japanese_text_address": "0x082717B1",
+      "japanese_references": [
+        "0x085DC680"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1506,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FEF0",
+      "japanese_text_address": "0x082717ED",
+      "japanese_references": [
+        "0x085DC684"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1516,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FF7E",
+      "japanese_text_address": "0x0827186B",
+      "japanese_references": [
+        "0x085DC688"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1521,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827FFBA",
+      "japanese_text_address": "0x082718A6",
+      "japanese_references": [
+        "0x085DC68C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1531,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280047",
+      "japanese_text_address": "0x08271925",
+      "japanese_references": [
+        "0x085DC690"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMon15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1538,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082800A5",
+      "japanese_text_address": "0x08271971",
+      "japanese_references": [
+        "0x085DC694"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonThanks15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1548,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280131",
+      "japanese_text_address": "0x082719F1",
+      "japanese_references": [
+        "0x085DC698"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1555,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828019A",
+      "japanese_text_address": "0x08271A44",
+      "japanese_references": [
+        "0x085DC7DC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1566,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828021F",
+      "japanese_text_address": "0x08271AC2",
+      "japanese_references": [
+        "0x085DC7E0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1575,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280275",
+      "japanese_text_address": "0x08271B21",
+      "japanese_references": [
+        "0x085DC7E4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1583,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082802D5",
+      "japanese_text_address": "0x08271B7B",
+      "japanese_references": [
+        "0x085DC7E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1588,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280320",
+      "japanese_text_address": "0x08271BB7",
+      "japanese_references": [
+        "0x085DC7EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1596,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828037A",
+      "japanese_text_address": "0x08271C1A",
+      "japanese_references": [
+        "0x085DC7F0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1602,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082803B6",
+      "japanese_text_address": "0x08271C47",
+      "japanese_references": [
+        "0x085DC7F4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1616,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280473",
+      "japanese_text_address": "0x08271D0A",
+      "japanese_references": [
+        "0x085DC7F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1622,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082804AC",
+      "japanese_text_address": "0x08271D4A",
+      "japanese_references": [
+        "0x085DC7FC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1631,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280527",
+      "japanese_text_address": "0x08271DB5",
+      "japanese_references": [
+        "0x085DC800"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1637,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828057F",
+      "japanese_text_address": "0x08271DF3",
+      "japanese_references": [
+        "0x085DC804"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1657,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082806A0",
+      "japanese_text_address": "0x08271EF4",
+      "japanese_references": [
+        "0x085DC80C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1666,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280702",
+      "japanese_text_address": "0x08271F58",
+      "japanese_references": [
+        "0x085DC810"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1673,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280758",
+      "japanese_text_address": "0x08271FA2",
+      "japanese_references": [
+        "0x085DC814"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1682,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082807CA",
+      "japanese_text_address": "0x08272012",
+      "japanese_references": [
+        "0x085DC818"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1688,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280803",
+      "japanese_text_address": "0x08272052",
+      "japanese_references": [
+        "0x085DC81C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1698,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828088C",
+      "japanese_text_address": "0x082720CC",
+      "japanese_references": [
+        "0x085DC820"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1704,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082808CC",
+      "japanese_text_address": "0x08272110",
+      "japanese_references": [
+        "0x085DC824"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1713,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828094E",
+      "japanese_text_address": "0x08272181",
+      "japanese_references": [
+        "0x085DC828"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1719,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828098D",
+      "japanese_text_address": "0x082721C3",
+      "japanese_references": [
+        "0x085DC82C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1730,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280A41",
+      "japanese_text_address": "0x08272263",
+      "japanese_references": [
+        "0x085DC830"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1738,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280AA1",
+      "japanese_text_address": "0x082722C0",
+      "japanese_references": [
+        "0x085DC834"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1747,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280B43",
+      "japanese_text_address": "0x0827232D",
+      "japanese_references": [
+        "0x085DC838"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1752,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280B87",
+      "japanese_text_address": "0x08272364",
+      "japanese_references": [
+        "0x085DC83C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1763,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280C3C",
+      "japanese_text_address": "0x08272404",
+      "japanese_references": [
+        "0x085DC840"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1769,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280C91",
+      "japanese_text_address": "0x08272442",
+      "japanese_references": [
+        "0x085DC844"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1778,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280D35",
+      "japanese_text_address": "0x082724C0",
+      "japanese_references": [
+        "0x085DC848"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1783,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280DCC",
+      "japanese_text_address": "0x082724FC",
+      "japanese_references": [
+        "0x085DC84C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1795,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280E58",
+      "japanese_text_address": "0x0827258E",
+      "japanese_references": [
+        "0x085DC850"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMove15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1802,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280EDB",
+      "japanese_text_address": "0x082725D7",
+      "japanese_references": [
+        "0x085DC854"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMoveThanks15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1814,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08280FA0",
+      "japanese_text_address": "0x08272674",
+      "japanese_references": [
+        "0x085DC858"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1836,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828114F",
+      "japanese_text_address": "0x08272793",
+      "japanese_references": [
+        "0x085DC8E0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1856,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0828124D",
+      "japanese_text_address": "0x0827288C",
+      "japanese_references": [
+        "0x085DC8E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1873,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281353",
+      "japanese_text_address": "0x08272967",
+      "japanese_references": [
+        "0x085DC8F0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1896,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281473",
+      "japanese_text_address": "0x08272A8C",
+      "japanese_references": [
+        "0x085DC8F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks4",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1921,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082815FD",
+      "japanese_text_address": "0x08272BE4",
+      "japanese_references": [
+        "0x085DC900"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1948,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281783",
+      "japanese_text_address": "0x08272D35",
+      "japanese_references": [
+        "0x085DC908"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1967,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082818BB",
+      "japanese_text_address": "0x08272E2E",
+      "japanese_references": [
+        "0x085DC910"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1992,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281A41",
+      "japanese_text_address": "0x08272F7B",
+      "japanese_references": [
+        "0x085DC918"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2016,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281BAE",
+      "japanese_text_address": "0x082730AD",
+      "japanese_references": [
+        "0x085DC920"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2040,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281D0B",
+      "japanese_text_address": "0x082731FF",
+      "japanese_references": [
+        "0x085DC928"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2060,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281E30",
+      "japanese_text_address": "0x082732FC",
+      "japanese_references": [
+        "0x085DC930"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2083,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08281FAE",
+      "japanese_text_address": "0x08273436",
+      "japanese_references": [
+        "0x085DC938"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2103,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282136",
+      "japanese_text_address": "0x0827353F",
+      "japanese_references": [
+        "0x085DC940"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2129,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082822C1",
+      "japanese_text_address": "0x08273692",
+      "japanese_references": [
+        "0x085DC948"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks14",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2150,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282400",
+      "japanese_text_address": "0x082737A0",
+      "japanese_references": [
+        "0x085DC950"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWinSpeechThanks15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 2171,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08282557",
+      "japanese_text_address": "0x0827389D",
+      "japanese_references": [
+        "0x085DC958"
+      ]
     }
   ],
-  "unresolved": [
-    {
-      "symbol": "gText_ApprenticeChallenge0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeChallenge15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticePleaseTeach15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeLevelModeThanks15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeHoldNothing14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhatHeldItem15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeThanksHeldItem15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeItemAlreadyRecommended15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonFirstThanks15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMon15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMonThanks15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWhichMove15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeMoveThanks15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks0",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks1",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks2",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks3",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks4",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks5",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks6",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks7",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks8",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks9",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks10",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks11",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks12",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks13",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks14",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2,
-        5
-      ]
-    },
-    {
-      "symbol": "gText_ApprenticeWinSpeechThanks15",
-      "source": "data/text/apprentice.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    }
-  ]
+  "unresolved": []
 }

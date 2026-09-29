@@ -325,6 +325,80 @@
       "source_symbol": "sText_ItsGoldCard",
       "us_encoded_hex": "0c0c0553074207b63cff",
       "auto_wrap": true
+    },
+    {
+      "name": "Chs_sText_XCheckedTradingBoard",
+      "source_symbol": "sText_XCheckedTradingBoard",
+      "us_encoded_hex": "fd020b370b4f089efe070d054804730450014437fbff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_CancelRegistrationOfMon",
+      "source_symbol": "sText_CancelRegistrationOfMon",
+      "us_encoded_hex": "0ef10b210e2809f0030e05b2030bfe030f05a1fd03030bfd02092a3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_sText_AskTrainerToMakeTrade",
+      "source_symbol": "sText_AskTrainerToMakeTrade",
+      "us_encoded_hex": "0ef104f3fd02fe074a0e5b070d0548092a3dff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_DontHaveTypeTrainerWants",
+      "source_symbol": "sText_DontHaveTypeTrainerWants",
+      "us_encoded_hex": "09f009530f7efd020e180ef1030bfefd0308550e58030b016307d7096637fbff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_sText_DontHaveEggTrainerWants",
+      "source_symbol": "sText_DontHaveEggTrainerWants",
+      "us_encoded_hex": "09f009530f7efefd020e180ef1030b02ee37fbff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_PlayerCantTradeForYourMon",
+      "source_symbol": "sText_PlayerCantTradeForYourMon",
+      "us_encoded_hex": "fd0209b50ac90da403abfe070d054809f0030b016307d7096637fbff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_CantTradeForPartnersMon",
+      "source_symbol": "sText_CantTradeForPartnersMon",
+      "us_encoded_hex": "09f009b50ac90da403ab070d0548fefd02030b016307d7096637fbff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_sText_AwaitingPlayersResponse",
+      "source_symbol": "sText_AwaitingPlayersResponse",
+      "us_encoded_hex": "10700fe6030f02ddfd02030b0565041eb0b0ff",
+      "auto_wrap": false,
+      "japanese_placeholders": [
+        2
+      ]
     }
   ],
   "reference_writes": [
@@ -663,11 +737,65 @@
       "original": "0x082C1EFC",
       "symbol": "Chs_sText_ItsGoldCard",
       "source_symbol": "sText_ItsGoldCard"
+    },
+    {
+      "address": "0x08016138",
+      "original": "0x082C1688",
+      "symbol": "Chs_sText_XCheckedTradingBoard",
+      "source_symbol": "sText_XCheckedTradingBoard"
+    },
+    {
+      "address": "0x08015F68",
+      "original": "0x082C1844",
+      "symbol": "Chs_sText_CancelRegistrationOfMon",
+      "source_symbol": "sText_CancelRegistrationOfMon"
+    },
+    {
+      "address": "0x080161D4",
+      "original": "0x082C18CC",
+      "symbol": "Chs_sText_AskTrainerToMakeTrade",
+      "source_symbol": "sText_AskTrainerToMakeTrade"
+    },
+    {
+      "address": "0x0801620C",
+      "original": "0x082C1918",
+      "symbol": "Chs_sText_DontHaveTypeTrainerWants",
+      "source_symbol": "sText_DontHaveTypeTrainerWants"
+    },
+    {
+      "address": "0x08016248",
+      "original": "0x082C1938",
+      "symbol": "Chs_sText_DontHaveEggTrainerWants",
+      "source_symbol": "sText_DontHaveEggTrainerWants"
+    },
+    {
+      "address": "0x082C1990",
+      "original": "0x082C1954",
+      "symbol": "Chs_sText_PlayerCantTradeForYourMon",
+      "source_symbol": "sText_PlayerCantTradeForYourMon"
+    },
+    {
+      "address": "0x082C1994",
+      "original": "0x082C1974",
+      "symbol": "Chs_sText_CantTradeForPartnersMon",
+      "source_symbol": "sText_CantTradeForPartnersMon"
+    },
+    {
+      "address": "0x08012C4C",
+      "original": "0x082C1C80",
+      "symbol": "Chs_sText_AwaitingPlayersResponse",
+      "source_symbol": "sText_AwaitingPlayersResponse"
+    },
+    {
+      "address": "0x08014CA4",
+      "original": "0x082C1C80",
+      "symbol": "Chs_sText_AwaitingPlayersResponse",
+      "source_symbol": "sText_AwaitingPlayersResponse"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/420_union_room_1.json",
-    "mapped_count": 54,
-    "unresolved_count": 46
+    "mapped_count": 62,
+    "unresolved_count": 38
   }
 }

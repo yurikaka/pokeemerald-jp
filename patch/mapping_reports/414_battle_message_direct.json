@@ -6,6 +6,34 @@
   "selection": {
     "symbol_offset": 0,
     "symbol_limit": null,
+    "symbols": [
+      "gText_PkmnsXPreventsSwitching",
+      "sText_PlayerLostAgainstLinkTrainer",
+      "sText_PlayerLostToTwo",
+      "sText_PlayerBattledToDrawLinkTrainer",
+      "sText_PlayerBattledToDrawVsTwo",
+      "sText_DoItPkmn",
+      "sText_GoForItPkmn",
+      "sText_YourFoesWeakGetEmPkmn",
+      "sText_PkmnThatsEnough",
+      "sText_PkmnComeBack",
+      "sText_PkmnOkComeBack",
+      "sText_PkmnGoodComeBack",
+      "sText_Trainer1WithdrewPkmn",
+      "sText_LinkTrainer1WithdrewPkmn",
+      "gText_WhatWillPkmnDo2"
+    ],
+    "japanese_placeholders": [
+      0,
+      23,
+      28,
+      29,
+      32,
+      33,
+      35
+    ],
+    "chinese_placeholders": [],
+    "japanese_dynamic": false,
     "auto_wrap": false
   },
   "inputs": {
@@ -14,13 +42,14 @@
     "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
     "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
   },
-  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
+  "dynamic_placeholder_audit": {
+    "battle_buffers": "B_BUFF, trainer, and link-trainer controls are Japanese-mode names or fields; each is wrapped locally and no battle data is changed."
+  },
   "summary": {
     "already_in_batch": 38,
     "already_patched_reference": 2,
     "ambiguous_or_unreferenced_japanese_text": 3,
-    "dynamic_placeholder_needs_review": 15,
-    "mapped": 11,
     "missing_or_ambiguous_wokann_symbol": 36,
     "source_changed_after_commit": 1,
     "unsupported_source_encoding": 10
@@ -125,6 +154,141 @@
         "0x0814F078",
         "0x0814F8E0"
       ]
+    },
+    {
+      "source_symbol": "gText_PkmnsXPreventsSwitching",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865DBE8",
+      "japanese_text_address": "0x085AA7DF",
+      "japanese_references": [
+        "0x0806E4C4"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerLostAgainstLinkTrainer",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865DDFE",
+      "japanese_text_address": "0x085AA9EA",
+      "japanese_references": [
+        "0x0814E75C"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerLostToTwo",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865DE0B",
+      "japanese_text_address": "0x085AA9FA",
+      "japanese_references": [
+        "0x0814E6DC"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerBattledToDrawLinkTrainer",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865DE1C",
+      "japanese_text_address": "0x085AAA0E",
+      "japanese_references": [
+        "0x0814E764"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerBattledToDrawVsTwo",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865DE2D",
+      "japanese_text_address": "0x085AAA20",
+      "japanese_references": [
+        "0x0814E6E4"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoItPkmn",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E324",
+      "japanese_text_address": "0x085AAF61",
+      "japanese_references": [
+        "0x0814E518"
+      ]
+    },
+    {
+      "source_symbol": "sText_GoForItPkmn",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E331",
+      "japanese_text_address": "0x085AAF6C",
+      "japanese_references": [
+        "0x0814E52C"
+      ]
+    },
+    {
+      "source_symbol": "sText_YourFoesWeakGetEmPkmn",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E33A",
+      "japanese_text_address": "0x085AAF76",
+      "japanese_references": [
+        "0x0814E528"
+      ]
+    },
+    {
+      "source_symbol": "sText_PkmnThatsEnough",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E368",
+      "japanese_text_address": "0x085AAFA6",
+      "japanese_references": [
+        "0x0814E460"
+      ]
+    },
+    {
+      "source_symbol": "sText_PkmnComeBack",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E377",
+      "japanese_text_address": "0x085AAFB4",
+      "japanese_references": [
+        "0x0814E47C"
+      ]
+    },
+    {
+      "source_symbol": "sText_PkmnOkComeBack",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E381",
+      "japanese_text_address": "0x085AAFBC",
+      "japanese_references": [
+        "0x0814E490"
+      ]
+    },
+    {
+      "source_symbol": "sText_PkmnGoodComeBack",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E390",
+      "japanese_text_address": "0x085AAFC9",
+      "japanese_references": [
+        "0x0814E48C"
+      ]
+    },
+    {
+      "source_symbol": "sText_Trainer1WithdrewPkmn",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3A3",
+      "japanese_text_address": "0x085AAFD8",
+      "japanese_references": [
+        "0x0814E4D4"
+      ]
+    },
+    {
+      "source_symbol": "sText_LinkTrainer1WithdrewPkmn",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3B2",
+      "japanese_text_address": "0x085AAFEB",
+      "japanese_references": [
+        "0x0814E4C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatWillPkmnDo2",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865EF13",
+      "japanese_text_address": "0x085ABB4D",
+      "japanese_references": [
+        "0x08159A30"
+      ]
     }
   ],
   "unresolved": [
@@ -135,10 +299,6 @@
     {
       "source_symbol": "gText_PkmnGettingPumped",
       "reason": "already_in_batch"
-    },
-    {
-      "source_symbol": "gText_PkmnsXPreventsSwitching",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_StatRose",
@@ -159,22 +319,6 @@
     {
       "source_symbol": "sText_TwoLinkTrainersDefeated",
       "reason": "already_in_batch"
-    },
-    {
-      "source_symbol": "sText_PlayerLostAgainstLinkTrainer",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerLostToTwo",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerBattledToDrawLinkTrainer",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerBattledToDrawVsTwo",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_WildFled",
@@ -261,42 +405,6 @@
       "reason": "already_in_batch"
     },
     {
-      "source_symbol": "sText_DoItPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_GoForItPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_YourFoesWeakGetEmPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PkmnThatsEnough",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PkmnComeBack",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PkmnOkComeBack",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PkmnGoodComeBack",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_Trainer1WithdrewPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_LinkTrainer1WithdrewPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_LinkTrainer2WithdrewPkmn",
       "reason": "source_changed_after_commit"
     },
@@ -335,10 +443,6 @@
     {
       "source_symbol": "gText_WhatWillPkmnDo",
       "reason": "already_in_batch"
-    },
-    {
-      "source_symbol": "gText_WhatWillPkmnDo2",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_WhatWillWallyDo",

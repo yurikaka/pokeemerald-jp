@@ -216,6 +216,33 @@
       "name": "Chs_BerryBlender_Text_DontHaveAnyBerriesNoneToSpare",
       "source_symbol": "BerryBlender_Text_DontHaveAnyBerriesNoneToSpare",
       "us_encoded_hex": "01040ea63dfe09d90bcb0bad09530f7e0c3c04c3092a3dfb0ef10c0c0d980f7e0bdf0de6030b3bfe0f0b034d084b0f3203d909d90f0b07d3b0b0fb07d70dcb07430ced0d980f02095303850f8e030b37fe0bf10fe601d604e90f320c5f010037ff"
+    },
+    {
+      "name": "Chs_BerryBlender_Text_Player1Arrived",
+      "source_symbol": "BerryBlender_Text_Player1Arrived",
+      "us_encoded_hex": "fd020304089e37ff",
+      "japanese_placeholders": [
+        2
+      ]
+    },
+    {
+      "name": "Chs_BerryBlender_Text_Player1And2Arrived",
+      "source_symbol": "BerryBlender_Text_Player1And2Arrived",
+      "us_encoded_hex": "fd0204f3fd030304089e37ff",
+      "japanese_placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "Chs_BerryBlender_Text_AllPlayersArrived",
+      "source_symbol": "BerryBlender_Text_AllPlayersArrived",
+      "us_encoded_hex": "fd023afd0304f3fefd040304089e37ff",
+      "japanese_placeholders": [
+        2,
+        3,
+        4
+      ]
     }
   ],
   "reference_writes": [
@@ -482,11 +509,29 @@
       "original": "0x08258D2D",
       "symbol": "Chs_BerryBlender_Text_DontHaveAnyBerriesNoneToSpare",
       "source_symbol": "BerryBlender_Text_DontHaveAnyBerriesNoneToSpare"
+    },
+    {
+      "address": "0x0825924F",
+      "original": "0x08258BFA",
+      "symbol": "Chs_BerryBlender_Text_Player1Arrived",
+      "source_symbol": "BerryBlender_Text_Player1Arrived"
+    },
+    {
+      "address": "0x0825925D",
+      "original": "0x08258C05",
+      "symbol": "Chs_BerryBlender_Text_Player1And2Arrived",
+      "source_symbol": "BerryBlender_Text_Player1And2Arrived"
+    },
+    {
+      "address": "0x0825926B",
+      "original": "0x08258C16",
+      "symbol": "Chs_BerryBlender_Text_AllPlayersArrived",
+      "source_symbol": "BerryBlender_Text_AllPlayersArrived"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/341_berry_blender_scripts.json",
-    "mapped_count": 43,
-    "unresolved_count": 4
+    "mapped_count": 46,
+    "unresolved_count": 1
   }
 }

@@ -4,9 +4,25 @@
   "source_commit": "fe570a7e5",
   "source": "src/data/union_room.h",
   "selection": {
-    "symbol_offset": 110,
-    "symbol_limit": 110,
-    "auto_wrap": true
+    "symbol_offset": 0,
+    "symbol_limit": null,
+    "symbols": [
+      "sText_XCheckedTradingBoard",
+      "sText_CancelRegistrationOfMon",
+      "sText_AskTrainerToMakeTrade",
+      "sText_DontHaveTypeTrainerWants",
+      "sText_DontHaveEggTrainerWants",
+      "sText_PlayerCantTradeForYourMon",
+      "sText_CantTradeForPartnersMon",
+      "sText_AwaitingPlayersResponse"
+    ],
+    "japanese_placeholders": [
+      2,
+      3,
+      4
+    ],
+    "chinese_placeholders": [],
+    "auto_wrap": false
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -14,11 +30,12 @@
     "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
     "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
   },
-  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
+  "dynamic_placeholder_audit": {
+    "trading_board": "RFU player names and the JP species/type tables are Japanese-mode; the trade record itself is not rewritten."
+  },
   "summary": {
     "ambiguous_or_unreferenced_japanese_text": 22,
-    "dynamic_placeholder_needs_review": 8,
-    "mapped": 54,
     "missing_or_ambiguous_wokann_symbol": 12,
     "unsupported_source_encoding": 4
   },
@@ -510,13 +527,82 @@
       "japanese_references": [
         "0x082C1F18"
       ]
+    },
+    {
+      "source_symbol": "sText_XCheckedTradingBoard",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389824",
+      "japanese_text_address": "0x082C1688",
+      "japanese_references": [
+        "0x08016138"
+      ]
+    },
+    {
+      "source_symbol": "sText_CancelRegistrationOfMon",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A38",
+      "japanese_text_address": "0x082C1844",
+      "japanese_references": [
+        "0x08015F68"
+      ]
+    },
+    {
+      "source_symbol": "sText_AskTrainerToMakeTrade",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389AC4",
+      "japanese_text_address": "0x082C18CC",
+      "japanese_references": [
+        "0x080161D4"
+      ]
+    },
+    {
+      "source_symbol": "sText_DontHaveTypeTrainerWants",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389B08",
+      "japanese_text_address": "0x082C1918",
+      "japanese_references": [
+        "0x0801620C"
+      ]
+    },
+    {
+      "source_symbol": "sText_DontHaveEggTrainerWants",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B28",
+      "japanese_text_address": "0x082C1938",
+      "japanese_references": [
+        "0x08016248"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerCantTradeForYourMon",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B3C",
+      "japanese_text_address": "0x082C1954",
+      "japanese_references": [
+        "0x082C1990"
+      ]
+    },
+    {
+      "source_symbol": "sText_CantTradeForPartnersMon",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B58",
+      "japanese_text_address": "0x082C1974",
+      "japanese_references": [
+        "0x082C1994"
+      ]
+    },
+    {
+      "source_symbol": "sText_AwaitingPlayersResponse",
+      "wokann_source": "src/data/union_room8h.h",
+      "us_text_address": "0x08389E54",
+      "japanese_text_address": "0x082C1C80",
+      "japanese_references": [
+        "0x08012C4C",
+        "0x08014CA4"
+      ]
     }
   ],
   "unresolved": [
-    {
-      "source_symbol": "sText_XCheckedTradingBoard",
-      "reason": "dynamic_placeholder_needs_review"
-    },
     {
       "source_symbol": "sText_ThankYouForRegistering",
       "reason": "missing_or_ambiguous_wokann_symbol"
@@ -524,10 +610,6 @@
     {
       "source_symbol": "sText_NobodyHasRegistered",
       "reason": "missing_or_ambiguous_wokann_symbol"
-    },
-    {
-      "source_symbol": "sText_CancelRegistrationOfMon",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_TradeTrainersWillBeListed",
@@ -538,10 +620,6 @@
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "sText_AskTrainerToMakeTrade",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_AwaitingResponseFromTrainer2",
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
@@ -550,32 +628,12 @@
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "sText_DontHaveTypeTrainerWants",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_DontHaveEggTrainerWants",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerCantTradeForYourMon",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_CantTradeForPartnersMon",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_ChooseTrainer",
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
       "source_symbol": "sText_MustHaveTwoMonsForDoubleBattle",
       "reason": "missing_or_ambiguous_wokann_symbol"
-    },
-    {
-      "source_symbol": "sText_AwaitingPlayersResponse",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_PlayerHasBeenAskedToRegisterYouPleaseWait",

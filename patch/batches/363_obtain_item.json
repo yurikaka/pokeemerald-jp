@@ -11,6 +11,37 @@
       "name": "Chs_gText_TooBadBagIsFull",
       "source_symbol": "gText_TooBadBagIsFull",
       "us_encoded_hex": "0cac0f1504dc089e3cfe015b015b0934089eb0b0ff"
+    },
+    {
+      "name": "Chs_gText_PlayerFoundOneItem",
+      "source_symbol": "gText_PlayerFoundOneItem",
+      "us_encoded_hex": "fd01fe10450304089efd033cff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_gText_PlayerPutItemInBag",
+      "source_symbol": "gText_PlayerPutItemInBag",
+      "us_encoded_hex": "fd010130fd03fe03c80b6b089e015b015b086437ff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_gText_ObtainedTheDecor",
+      "source_symbol": "gText_ObtainedTheDecor",
+      "us_encoded_hex": "057e030a089efd033cff"
+    },
+    {
+      "name": "Chs_gText_NoRoomLeftForAnother",
+      "source_symbol": "gText_NoRoomLeftForAnother",
+      "us_encoded_hex": "0cac0f1504dc089e3cfd03030bfe0c4208920f2109343b095303ab0fe50e3a02d8089e3cff"
+    },
+    {
+      "name": "Chs_gText_TheDecorWasTransferredToThePC",
+      "source_symbol": "gText_TheDecorWasTransferredToThePC",
+      "us_encoded_hex": "fd03fe028b0c700304032e09ca0864089e37ff"
     }
   ],
   "reference_writes": [
@@ -73,11 +104,65 @@
       "original": "0x08243977",
       "symbol": "Chs_gText_TooBadBagIsFull",
       "source_symbol": "gText_TooBadBagIsFull"
+    },
+    {
+      "address": "0x08242D2E",
+      "original": "0x08243969",
+      "symbol": "Chs_gText_PlayerFoundOneItem",
+      "source_symbol": "gText_PlayerFoundOneItem"
+    },
+    {
+      "address": "0x08242DAE",
+      "original": "0x08243969",
+      "symbol": "Chs_gText_PlayerFoundOneItem",
+      "source_symbol": "gText_PlayerFoundOneItem"
+    },
+    {
+      "address": "0x08242DD5",
+      "original": "0x08243969",
+      "symbol": "Chs_gText_PlayerFoundOneItem",
+      "source_symbol": "gText_PlayerFoundOneItem"
+    },
+    {
+      "address": "0x08242D1C",
+      "original": "0x0824398A",
+      "symbol": "Chs_gText_PlayerPutItemInBag",
+      "source_symbol": "gText_PlayerPutItemInBag"
+    },
+    {
+      "address": "0x08242C7C",
+      "original": "0x0824399D",
+      "symbol": "Chs_gText_ObtainedTheDecor",
+      "source_symbol": "gText_ObtainedTheDecor"
+    },
+    {
+      "address": "0x0820F728",
+      "original": "0x082439A8",
+      "symbol": "Chs_gText_NoRoomLeftForAnother",
+      "source_symbol": "gText_NoRoomLeftForAnother"
+    },
+    {
+      "address": "0x082430F5",
+      "original": "0x082439A8",
+      "symbol": "Chs_gText_NoRoomLeftForAnother",
+      "source_symbol": "gText_NoRoomLeftForAnother"
+    },
+    {
+      "address": "0x082430FF",
+      "original": "0x082439A8",
+      "symbol": "Chs_gText_NoRoomLeftForAnother",
+      "source_symbol": "gText_NoRoomLeftForAnother"
+    },
+    {
+      "address": "0x08242C83",
+      "original": "0x082439C3",
+      "symbol": "Chs_gText_TheDecorWasTransferredToThePC",
+      "source_symbol": "gText_TheDecorWasTransferredToThePC"
     }
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/363_obtain_item.json",
-    "mapped_count": 2,
-    "unresolved_count": 5
+    "mapped_count": 7,
+    "unresolved_count": 0
   }
 }

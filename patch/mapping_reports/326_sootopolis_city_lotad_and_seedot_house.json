@@ -6,12 +6,21 @@
     "sources": [
       "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc"
     ],
+    "symbols": [
+      "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad",
+      "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad",
+      "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot",
+      "SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot"
+    ],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
       5,
       6
+    ],
+    "chinese_placeholders": [
+      3
     ]
   },
   "inputs": {
@@ -23,11 +32,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 8,
-  "unresolved_count": 8,
-  "reference_count": 8,
+  "mapped_count": 14,
+  "unresolved_count": 2,
+  "reference_count": 14,
   "mapped": [
     {
       "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot",
@@ -116,68 +125,90 @@
       "japanese_references": [
         "0x0820F93C"
       ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 151,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08214125",
+      "japanese_text_address": "0x0820FB44",
+      "japanese_references": [
+        "0x0820F98A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 200,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08214328",
+      "japanese_text_address": "0x0820FD23",
+      "japanese_references": [
+        "0x0820F998"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 121,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08214023",
+      "japanese_text_address": "0x0820FA50",
+      "japanese_references": [
+        "0x0820F8C9"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 137,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0821409D",
+      "japanese_text_address": "0x0820FAC8",
+      "japanese_references": [
+        "0x0820F8BF"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 170,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08214223",
+      "japanese_text_address": "0x0820FC30",
+      "japanese_references": [
+        "0x0820F95A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad",
+      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
+      "wokann_label_line": 186,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0821429D",
+      "japanese_text_address": "0x0820FCA7",
+      "japanese_references": [
+        "0x0820F950"
+      ]
     }
   ],
   "unresolved": [
-    {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
     {
       "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion1",
       "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
       "reason": "no_japanese_pointer"
     },
     {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerSeedot",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3,
-        4
-      ]
-    },
-    {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
       "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_ReceivedPotion2",
       "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
       "reason": "no_japanese_pointer"
-    },
-    {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory",
-      "source": "data/maps/SootopolisCity_LotadAndSeedotHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3,
-        4
-      ]
     }
   ]
 }

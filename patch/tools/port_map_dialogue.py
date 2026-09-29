@@ -299,8 +299,9 @@ def main() -> None:
 
             text_name = "Chs_" + symbol
             definition = {"name": text_name, "source_symbol": symbol, "us_encoded_hex": encoded_us.hex()}
-            if placeholders:
-                definition["japanese_placeholders"] = placeholders
+            japanese_runtime_placeholders = sorted(set(placeholders) & japanese_placeholders)
+            if japanese_runtime_placeholders:
+                definition["japanese_placeholders"] = japanese_runtime_placeholders
             texts.append(definition)
             target = next(iter(targets))
             jp_references = []

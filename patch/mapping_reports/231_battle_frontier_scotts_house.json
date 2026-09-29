@@ -6,12 +6,16 @@
     "sources": [
       "data/maps/BattleFrontier_ScottsHouse/scripts.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
       5,
       6
+    ],
+    "chinese_placeholders": [
+      2
     ]
   },
   "inputs": {
@@ -23,11 +27,14 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 14,
-  "unresolved_count": 1,
-  "reference_count": 14,
+  "dynamic_placeholder_audit": {
+    "BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints": {"1": "Japanese player name stored in save data", "2": "Decimal battle-point count"}
+  },
+  "mapped_count": 15,
+  "unresolved_count": 0,
+  "reference_count": 15,
   "mapped": [
     {
       "source_symbol": "BattleFrontier_ScottsHouse_Text_HowMuchEffortItTookToMakeReal",
@@ -182,17 +189,19 @@
       "japanese_references": [
         "0x08238818"
       ]
-    }
-  ],
-  "unresolved": [
+    },
     {
-      "symbol": "BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints",
+      "source_symbol": "BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints",
       "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        2
+      "wokann_source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "wokann_label_line": 237,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08240206",
+      "japanese_text_address": "0x08238AE7",
+      "japanese_references": [
+        "0x08238973"
       ]
     }
-  ]
+  ],
+  "unresolved": []
 }

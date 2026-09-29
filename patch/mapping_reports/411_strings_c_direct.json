@@ -3,19 +3,38 @@
   "batch": "411_strings_c_direct.json",
   "source_commit": "fe570a7e5",
   "source": "src/strings.c",
+  "selection": {
+    "symbol_offset": 0,
+    "symbol_limit": null,
+    "symbols": [
+      "gText_TotalRecordWLD"
+    ],
+    "japanese_placeholders": [],
+    "chinese_placeholders": [
+      2,
+      3,
+      4
+    ],
+    "japanese_dynamic": false,
+    "auto_wrap": false
+  },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
     "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
     "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
     "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
   },
-  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
+  "dynamic_placeholder_audit": {
+    "gText_PlayersPC": "PLAYER is save data and remains Japanese-mode.",
+    "move_relearner": "Species, nickname, and move-name buffers use Japanese mode; compact-Chinese nickname fields retain their in-band F5 switch.",
+    "gText_ContestantsMonWon": "Contest trainer and Pokémon display buffers use Japanese mode without changing contest data.",
+    "numeric_fields": "Coins, facility labels, and battle-record counts remain in the default Chinese mode."
+  },
   "summary": {
     "already_in_batch": 224,
     "already_patched_reference": 4,
     "ambiguous_or_unreferenced_japanese_text": 72,
-    "dynamic_placeholder_needs_review": 12,
-    "mapped": 148,
     "missing_or_ambiguous_wokann_symbol": 466,
     "unsupported_source_encoding": 13
   },
@@ -1410,6 +1429,116 @@
       "japanese_references": [
         "0x081D1FC8"
       ]
+    },
+    {
+      "source_symbol": "gText_Coins",
+      "wokann_source": "src/data/text/region_texts66.h",
+      "us_text_address": "0x0867ADB9",
+      "japanese_text_address": "0x085C9443",
+      "japanese_references": [
+        "0x08145C64"
+      ]
+    },
+    {
+      "source_symbol": "gText_DecorationWillBeDiscarded",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C30E",
+      "japanese_text_address": "0x085CA812",
+      "japanese_references": [
+        "0x0812A438"
+      ]
+    },
+    {
+      "source_symbol": "gText_FacilityDouble",
+      "wokann_source": "src/data/text/region_texts102.h",
+      "us_text_address": "0x0867E0F0",
+      "japanese_text_address": "0x085CC464",
+      "japanese_references": [
+        "0x085DD4B0"
+      ]
+    },
+    {
+      "source_symbol": "gText_PlayersPC",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8BA",
+      "japanese_text_address": "0x085CACFE",
+      "japanese_references": [
+        "0x080E18BC",
+        "0x080E1A08"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerGiveUp",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FD78",
+      "japanese_text_address": "0x085ADAAF",
+      "japanese_references": [
+        "0x08160F2C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ContestantsMonWon",
+      "wokann_source": "src/data/text/region_texts108.h",
+      "us_text_address": "0x0867E153",
+      "japanese_text_address": "0x085CC4C6",
+      "japanese_references": [
+        "0x080F6BFC"
+      ]
+    },
+    {
+      "source_symbol": "gText_TeachWhichMoveToPkmn",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FCBD",
+      "japanese_text_address": "0x085AD9A0",
+      "japanese_references": [
+        "0x08160E6C",
+        "0x08160FCC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerTeachMoveConfirm",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FCD2",
+      "japanese_text_address": "0x085AD9B2",
+      "japanese_references": [
+        "0x08160F70"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPkmnTryingToLearnMove",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FCEB",
+      "japanese_text_address": "0x085AD9D4",
+      "japanese_references": [
+        "0x081609FC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FD50",
+      "japanese_text_address": "0x085ADA67",
+      "japanese_references": [
+        "0x08160D58"
+      ]
+    },
+    {
+      "source_symbol": "gText_PlayersBattleResults",
+      "wokann_source": "src/data/text/region_texts32.h",
+      "us_text_address": "0x0867FB31",
+      "japanese_text_address": "0x085937E0",
+      "japanese_references": [
+        "0x0813C56C"
+      ]
+    },
+    {
+      "source_symbol": "gText_TotalRecordWLD",
+      "wokann_source": "src/data/text/region_texts32.h",
+      "us_text_address": "0x0867FB3E",
+      "japanese_text_address": "0x085937EF",
+      "japanese_references": [
+        "0x0813C37C"
+      ]
     }
   ],
   "unresolved": [
@@ -1644,10 +1773,6 @@
     {
       "source_symbol": "gText_Berry2",
       "reason": "missing_or_ambiguous_wokann_symbol"
-    },
-    {
-      "source_symbol": "gText_Coins",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_CloseBag",
@@ -2510,10 +2635,6 @@
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "gText_DecorationWillBeDiscarded",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "gText_NoItems",
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
@@ -2656,10 +2777,6 @@
     {
       "source_symbol": "gText_Master",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "gText_PlayersPC",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_HallOfFame",
@@ -3170,20 +3287,12 @@
       "reason": "ambiguous_or_unreferenced_japanese_text"
     },
     {
-      "source_symbol": "gText_FacilityDouble",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "gText_FacilityMulti",
       "reason": "ambiguous_or_unreferenced_japanese_text"
     },
     {
       "source_symbol": "gText_FacilityLink",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "gText_ContestantsMonWon",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_CommunicationStandby",
@@ -4366,14 +4475,6 @@
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "gText_PlayersBattleResults",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "gText_TotalRecordWLD",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "gText_WinLoseDraw",
       "reason": "unsupported_source_encoding"
     },
@@ -4390,20 +4491,8 @@
       "reason": "ambiguous_or_unreferenced_japanese_text"
     },
     {
-      "source_symbol": "gText_TeachWhichMoveToPkmn",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "gText_MoveRelearnerTeachMoveConfirm",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "gText_MoveRelearnerPkmnLearnedMove",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "gText_MoveRelearnerPkmnTryingToLearnMove",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_MoveRelearnerStopTryingToTeachMove",
@@ -4414,16 +4503,8 @@
       "reason": "unsupported_source_encoding"
     },
     {
-      "source_symbol": "gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "gText_MoveRelearnedPkmnDidNotLearnMove",
       "reason": "missing_or_ambiguous_wokann_symbol"
-    },
-    {
-      "source_symbol": "gText_MoveRelearnerGiveUp",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "gText_MoveRelearnerBattleMoves",

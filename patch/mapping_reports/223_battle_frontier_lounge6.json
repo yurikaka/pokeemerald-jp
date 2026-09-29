@@ -6,13 +6,17 @@
     "sources": [
       "data/maps/BattleFrontier_Lounge6/scripts.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
+      3,
       5,
       6
-    ]
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -23,11 +27,16 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 2,
-  "unresolved_count": 3,
-  "reference_count": 2,
+  "dynamic_placeholder_audit": {
+    "BattleFrontier_Lounge6_Text_WouldYouLikeToTrade": {"2,3": "Japanese gSpeciesNames values buffered by GetInGameTradeSpeciesInfo"},
+    "BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt": {"3": "Japanese offered-species name retained in STR_VAR_2"},
+    "BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon": {"2": "Japanese species name buffered by bufferspeciesname"}
+  },
+  "mapped_count": 5,
+  "unresolved_count": 0,
+  "reference_count": 5,
   "mapped": [
     {
       "source_symbol": "BattleFrontier_Lounge6_Text_WellThatsFineToo",
@@ -50,33 +59,43 @@
       "japanese_references": [
         "0x0823964C"
       ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge6_Text_WouldYouLikeToTrade",
+      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_label_line": 46,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08240F37",
+      "japanese_text_address": "0x08239654",
+      "japanese_references": [
+        "0x082395D5"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt",
+      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_label_line": 56,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08240FA2",
+      "japanese_text_address": "0x082396CA",
+      "japanese_references": [
+        "0x08239627"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon",
+      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
+      "wokann_label_line": 63,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08240FE7",
+      "japanese_text_address": "0x08239706",
+      "japanese_references": [
+        "0x08239642"
+      ]
     }
   ],
-  "unresolved": [
-    {
-      "symbol": "BattleFrontier_Lounge6_Text_WouldYouLikeToTrade",
-      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
-    },
-    {
-      "symbol": "BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt",
-      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon",
-      "source": "data/maps/BattleFrontier_Lounge6/scripts.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    }
-  ]
+  "unresolved": []
 }

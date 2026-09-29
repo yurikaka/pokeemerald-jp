@@ -5,8 +5,19 @@
   "source": "src/data/union_room.h",
   "selection": {
     "symbol_offset": 0,
-    "symbol_limit": 110,
-    "auto_wrap": true
+    "symbol_limit": null,
+    "symbols": [
+      "sText_ModeWithTheseMembersWillBeCanceled",
+      "sText_CommunicatingWithPlayer",
+      "sText_PlayerHasContactedYou"
+    ],
+    "japanese_placeholders": [
+      2,
+      3
+    ],
+    "chinese_placeholders": [],
+    "japanese_dynamic": false,
+    "auto_wrap": false
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -14,13 +25,16 @@
     "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
     "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
   },
-  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
+  "dynamic_placeholder_audit": {
+    "covered_by_419": "The 20 shared Union Room dynamic strings are already redirected by batch 419; do not add duplicate pointer writes here.",
+    "local_entries": "Mode, communication, and contact messages use Japanese-mode runtime fields and are redirected in this batch."
+  },
   "summary": {
     "already_in_batch": 68,
     "already_patched_reference": 1,
     "ambiguous_or_unreferenced_japanese_text": 3,
-    "dynamic_placeholder_needs_review": 23,
-    "mapped": 9,
+    "dynamic_placeholder_needs_review": 20,
     "missing_or_ambiguous_wokann_symbol": 4,
     "unsupported_source_encoding": 1,
     "us_binary_source_mismatch": 1
@@ -110,6 +124,33 @@
       "japanese_references": [
         "0x082C118C",
         "0x082C1198"
+      ]
+    },
+    {
+      "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388A00",
+      "japanese_text_address": "0x082C09A8",
+      "japanese_references": [
+        "0x080129D0"
+      ]
+    },
+    {
+      "source_symbol": "sText_CommunicatingWithPlayer",
+      "wokann_source": "src/data/union_room5.h",
+      "us_text_address": "0x08388C64",
+      "japanese_text_address": "0x082C0C04",
+      "japanese_references": [
+        "0x082C0CDC"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerHasContactedYou",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388E30",
+      "japanese_text_address": "0x082C0DA4",
+      "japanese_references": [
+        "0x082C0DBC"
       ]
     }
   ],
@@ -207,10 +248,6 @@
       "reason": "already_in_batch"
     },
     {
-      "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_MemberNoLongerAvailable",
       "reason": "already_in_batch"
     },
@@ -275,10 +312,6 @@
       "reason": "dynamic_placeholder_needs_review"
     },
     {
-      "source_symbol": "sText_CommunicatingWithPlayer",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_PleaseWaitAWhile",
       "reason": "us_binary_source_mismatch"
     },
@@ -313,10 +346,6 @@
     {
       "source_symbol": "sText_DoSomethingAgainFemale",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "sText_PlayerHasContactedYou",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_AwaitingResponseFromTrainer",

@@ -6,12 +6,16 @@
     "sources": [
       "data/text/obtain_item.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
       5,
       6
+    ],
+    "chinese_placeholders": [
+      3
     ]
   },
   "inputs": {
@@ -23,11 +27,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 2,
-  "unresolved_count": 5,
-  "reference_count": 10,
+  "mapped_count": 7,
+  "unresolved_count": 0,
+  "reference_count": 19,
   "mapped": [
     {
       "source_symbol": "gText_TheBagIsFull",
@@ -58,50 +62,71 @@
         "0x082430E2",
         "0x082430EC"
       ]
+    },
+    {
+      "source_symbol": "gText_PlayerFoundOneItem",
+      "source": "data/text/obtain_item.inc",
+      "wokann_source": "data/text/obtain_item.inc",
+      "wokann_label_line": 11,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0824BC14",
+      "japanese_text_address": "0x08243969",
+      "japanese_references": [
+        "0x08242D2E",
+        "0x08242DAE",
+        "0x08242DD5"
+      ]
+    },
+    {
+      "source_symbol": "gText_PlayerPutItemInBag",
+      "source": "data/text/obtain_item.inc",
+      "wokann_source": "data/text/obtain_item.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0824BC36",
+      "japanese_text_address": "0x0824398A",
+      "japanese_references": [
+        "0x08242D1C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ObtainedTheDecor",
+      "source": "data/text/obtain_item.inc",
+      "wokann_source": "data/text/obtain_item.inc",
+      "wokann_label_line": 23,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0824BC4B",
+      "japanese_text_address": "0x0824399D",
+      "japanese_references": [
+        "0x08242C7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_NoRoomLeftForAnother",
+      "source": "data/text/obtain_item.inc",
+      "wokann_source": "data/text/obtain_item.inc",
+      "wokann_label_line": 26,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0824BC55",
+      "japanese_text_address": "0x082439A8",
+      "japanese_references": [
+        "0x0820F728",
+        "0x082430F5",
+        "0x082430FF"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheDecorWasTransferredToThePC",
+      "source": "data/text/obtain_item.inc",
+      "wokann_source": "data/text/obtain_item.inc",
+      "wokann_label_line": 30,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0824BC7A",
+      "japanese_text_address": "0x082439C3",
+      "japanese_references": [
+        "0x08242C83"
+      ]
     }
   ],
-  "unresolved": [
-    {
-      "symbol": "gText_PlayerFoundOneItem",
-      "source": "data/text/obtain_item.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_PlayerPutItemInBag",
-      "source": "data/text/obtain_item.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        1,
-        3
-      ]
-    },
-    {
-      "symbol": "gText_ObtainedTheDecor",
-      "source": "data/text/obtain_item.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "gText_NoRoomLeftForAnother",
-      "source": "data/text/obtain_item.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    },
-    {
-      "symbol": "gText_TheDecorWasTransferredToThePC",
-      "source": "data/text/obtain_item.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        3
-      ]
-    }
-  ]
+  "unresolved": []
 }

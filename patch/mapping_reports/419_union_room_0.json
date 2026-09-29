@@ -5,8 +5,19 @@
   "source": "src/data/union_room.h",
   "selection": {
     "symbol_offset": 0,
-    "symbol_limit": 110,
-    "auto_wrap": true
+    "symbol_limit": null,
+    "symbols": [
+      "sText_HiDoSomethingAgainFemale",
+      "sText_PlayerJoinChatMale",
+      "sText_PlayerJoinChatFemale"
+    ],
+    "japanese_placeholders": [
+      1,
+      2
+    ],
+    "chinese_placeholders": [],
+    "japanese_dynamic": false,
+    "auto_wrap": false
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -14,12 +25,13 @@
     "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
     "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
   },
-  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; only explicitly verified Japanese-mode dynamic placeholders are wrapped; preexisting patch references excluded.",
+  "dynamic_placeholder_audit": {
+    "runtime_fields": "Save and RFU/link player names, JP species/type names, and activity labels are Japanese-mode. The wrapper only changes rendering mode around individual placeholders."
+  },
   "summary": {
     "already_patched_reference": 1,
     "ambiguous_or_unreferenced_japanese_text": 3,
-    "dynamic_placeholder_needs_review": 20,
-    "mapped": 68,
     "missing_or_ambiguous_wokann_symbol": 4,
     "unsupported_source_encoding": 14
   },
@@ -658,6 +670,190 @@
       "japanese_references": [
         "0x082C1578"
       ]
+    },
+    {
+      "source_symbol": "sText_AwaitingLinkPressStart",
+      "wokann_source": "src/data/union_room.h",
+      "us_text_address": "0x083886AC",
+      "japanese_text_address": "0x082C06B8",
+      "japanese_references": [
+        "0x08012518"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouForXAccept",
+      "wokann_source": "src/data/union_room2.h",
+      "us_text_address": "0x083888E0",
+      "japanese_text_address": "0x082C08C4",
+      "japanese_references": [
+        "0x08012B54"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouShareX",
+      "wokann_source": "src/data/union_room2.h",
+      "us_text_address": "0x08388900",
+      "japanese_text_address": "0x082C08DC",
+      "japanese_references": [
+        "0x08012B64"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouAddToMembers",
+      "wokann_source": "src/data/union_room2.h",
+      "us_text_address": "0x08388920",
+      "japanese_text_address": "0x082C08F8",
+      "japanese_references": [
+        "0x08012B74",
+        "0x0813B3C9"
+      ]
+    },
+    {
+      "source_symbol": "sText_AreTheseMembersOK",
+      "wokann_source": "src/data/union_room2.h",
+      "us_text_address": "0x08388948",
+      "japanese_text_address": "0x082C0914",
+      "japanese_references": [
+        "0x080128A8"
+      ]
+    },
+    {
+      "source_symbol": "sText_AnOKWasSentToPlayer",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388988",
+      "japanese_text_address": "0x082C0948",
+      "japanese_references": [
+        "0x08012800",
+        "0x08014868"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerSentBackOK",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388A50",
+      "japanese_text_address": "0x082C09F8",
+      "japanese_references": [
+        "0x08012CF8",
+        "0x08014D08"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerOKdRegistration",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388A68",
+      "japanese_text_address": "0x082C0A10",
+      "japanese_references": [
+        "0x08012D08"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerRepliedNo",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388A90",
+      "japanese_text_address": "0x082C0A30",
+      "japanese_references": [
+        "0x082C0A9C"
+      ]
+    },
+    {
+      "source_symbol": "sText_AwaitingOtherMembers",
+      "wokann_source": "src/data/union_room3.h",
+      "us_text_address": "0x08388AAC",
+      "japanese_text_address": "0x082C0A4C",
+      "japanese_references": [
+        "0x08013434"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerRepliedNo2",
+      "wokann_source": "src/data/union_room4.h",
+      "us_text_address": "0x08388B54",
+      "japanese_text_address": "0x082C0B00",
+      "japanese_references": [
+        "0x082C0B34"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoYouWantXMode",
+      "wokann_source": "src/data/union_room5.h",
+      "us_text_address": "0x08388B94",
+      "japanese_text_address": "0x082C0B44",
+      "japanese_references": [
+        "0x082C0B5C"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoYouWantXMode2",
+      "wokann_source": "src/data/union_room5.h",
+      "us_text_address": "0x08388BAC",
+      "japanese_text_address": "0x082C0B50",
+      "japanese_references": [
+        "0x082C0B60"
+      ]
+    },
+    {
+      "source_symbol": "sText_AwaitingPlayersResponseAboutTrade",
+      "wokann_source": "src/data/union_room5.h",
+      "us_text_address": "0x08388BE4",
+      "japanese_text_address": "0x082C0B80",
+      "japanese_references": [
+        "0x08015728"
+      ]
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingAgainMale",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388D6C",
+      "japanese_text_address": "0x082C0D04",
+      "japanese_references": [
+        "0x082C0D44"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoSomethingAgainMale",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388DD8",
+      "japanese_text_address": "0x082C0D60",
+      "japanese_references": [
+        "0x082C0D88",
+        "0x082C0D8C"
+      ]
+    },
+    {
+      "source_symbol": "sText_AwaitingResponseFromPlayer",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388E68",
+      "japanese_text_address": "0x082C0DD4",
+      "japanese_references": [
+        "0x082C0DE8"
+      ]
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingAgainFemale",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388D90",
+      "japanese_text_address": "0x082C0D20",
+      "japanese_references": [
+        "0x082C0D48"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerJoinChatMale",
+      "wokann_source": "src/data/union_room7.h",
+      "us_text_address": "0x08388FF4",
+      "japanese_text_address": "0x082C0F78",
+      "japanese_references": [
+        "0x082C0FD4"
+      ]
+    },
+    {
+      "source_symbol": "sText_PlayerJoinChatFemale",
+      "wokann_source": "src/data/union_room7.h",
+      "us_text_address": "0x08389044",
+      "japanese_text_address": "0x082C0FA4",
+      "japanese_references": [
+        "0x082C0FDC"
+      ]
     }
   ],
   "unresolved": [
@@ -670,76 +866,20 @@
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "sText_AwaitingLinkPressStart",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_4PlayersNeeded",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "sText_PlayerContactedYouForXAccept",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerContactedYouShareX",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerContactedYouAddToMembers",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_AreTheseMembersOK",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_CancelModeWithTheseMembers",
       "reason": "missing_or_ambiguous_wokann_symbol"
     },
     {
-      "source_symbol": "sText_AnOKWasSentToPlayer",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled",
       "reason": "unsupported_source_encoding"
     },
     {
-      "source_symbol": "sText_PlayerSentBackOK",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerOKdRegistration",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerRepliedNo",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_AwaitingOtherMembers",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerRepliedNo2",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_DoYouWantXMode",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_DoYouWantXMode2",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_CommunicatingPleaseWait",
       "reason": "ambiguous_or_unreferenced_japanese_text"
-    },
-    {
-      "source_symbol": "sText_AwaitingPlayersResponseAboutTrade",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_Communicating",
@@ -754,18 +894,6 @@
       "reason": "unsupported_source_encoding"
     },
     {
-      "source_symbol": "sText_HiDoSomethingAgainMale",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_HiDoSomethingAgainFemale",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_DoSomethingAgainMale",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_DoSomethingAgainFemale",
       "reason": "ambiguous_or_unreferenced_japanese_text"
     },
@@ -778,20 +906,8 @@
       "reason": "unsupported_source_encoding"
     },
     {
-      "source_symbol": "sText_AwaitingResponseFromPlayer",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
       "source_symbol": "sText_OfferToTradeMon",
       "reason": "unsupported_source_encoding"
-    },
-    {
-      "source_symbol": "sText_PlayerJoinChatMale",
-      "reason": "dynamic_placeholder_needs_review"
-    },
-    {
-      "source_symbol": "sText_PlayerJoinChatFemale",
-      "reason": "dynamic_placeholder_needs_review"
     },
     {
       "source_symbol": "sText_TrainerAppearsBusy",

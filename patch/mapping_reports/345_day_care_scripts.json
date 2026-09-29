@@ -6,13 +6,18 @@
     "sources": [
       "data/scripts/day_care.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
     "label_limit": null,
     "japanese_placeholders": [
       1,
+      2,
+      3,
+      4,
       5,
       6
-    ]
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -23,11 +28,11 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 3,
-  "unresolved_count": 5,
-  "reference_count": 3,
+  "mapped_count": 6,
+  "unresolved_count": 2,
+  "reference_count": 6,
   "mapped": [
     {
       "source_symbol": "Route117_Text_YouHaveNoRoomForIt",
@@ -61,40 +66,49 @@
       "japanese_references": [
         "0x08257A8C"
       ]
+    },
+    {
+      "source_symbol": "Route117_Text_YourMonIsDoingFine",
+      "source": "data/scripts/day_care.inc",
+      "wokann_source": "data/scripts/day_care.inc",
+      "wokann_label_line": 288,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082619DD",
+      "japanese_text_address": "0x08257B57",
+      "japanese_references": [
+        "0x0825779F"
+      ]
+    },
+    {
+      "source_symbol": "Route117_Text_FriendlyWithOtherTrainersMon",
+      "source": "data/scripts/day_care.inc",
+      "wokann_source": "data/scripts/day_care.inc",
+      "wokann_label_line": 307,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08261A70",
+      "japanese_text_address": "0x08257BD3",
+      "japanese_references": [
+        "0x08257793"
+      ]
+    },
+    {
+      "source_symbol": "Route117_Text_YourMonsAreDoingFine",
+      "source": "data/scripts/day_care.inc",
+      "wokann_source": "data/scripts/day_care.inc",
+      "wokann_label_line": 319,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08261AE5",
+      "japanese_text_address": "0x08257C39",
+      "japanese_references": [
+        "0x082577B6"
+      ]
     }
   ],
   "unresolved": [
     {
-      "symbol": "Route117_Text_YourMonIsDoingFine",
-      "source": "data/scripts/day_care.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
-      ]
-    },
-    {
-      "symbol": "Route117_Text_FriendlyWithOtherTrainersMon",
-      "source": "data/scripts/day_care.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3,
-        4
-      ]
-    },
-    {
       "symbol": "Route117_Text_SeeWifeIfYouWantToPickUpMon",
       "source": "data/scripts/day_care.inc",
       "reason": "no_japanese_pointer"
-    },
-    {
-      "symbol": "Route117_Text_YourMonsAreDoingFine",
-      "source": "data/scripts/day_care.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3
-      ]
     },
     {
       "symbol": "Route117_PokemonDayCare_Text_TakeBackWhichMon",
