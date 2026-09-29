@@ -1,0 +1,3481 @@
+{
+  "schema_version": 1,
+  "batch": "219_battle_frontier_battle_tower_multi_partner_room.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 136,
+  "unresolved_count": 208,
+  "reference_count": 139,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 281,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08229500",
+      "japanese_text_address": "0x08223739",
+      "japanese_references": [
+        "0x08223548"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_QuitLookingForPartner",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 285,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08229525",
+      "japanese_text_address": "0x0822375E",
+      "japanese_references": [
+        "0x08223560"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PleaseFindPartner2",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 291,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822955E",
+      "japanese_text_address": "0x08223797",
+      "japanese_references": [
+        "0x08223578"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ThankYouForChoosingPartner",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 296,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229588",
+      "japanese_text_address": "0x082237C1",
+      "japanese_references": [
+        "0x0822359A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 365,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822977B",
+      "japanese_text_address": "0x082239B9",
+      "japanese_references": [
+        "0x085BBF28"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 373,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082297D3",
+      "japanese_text_address": "0x08223A13",
+      "japanese_references": [
+        "0x085BBF2C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 391,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229869",
+      "japanese_text_address": "0x08223A94",
+      "japanese_references": [
+        "0x085BBF3C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 396,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229888",
+      "japanese_text_address": "0x08223AB8",
+      "japanese_references": [
+        "0x085BBF40"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 416,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229912",
+      "japanese_text_address": "0x08223B43",
+      "japanese_references": [
+        "0x085BBF50"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 420,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229926",
+      "japanese_text_address": "0x08223B64",
+      "japanese_references": [
+        "0x085BBF54"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 441,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229A0E",
+      "japanese_text_address": "0x08223C2A",
+      "japanese_references": [
+        "0x085BBF64"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 448,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229A75",
+      "japanese_text_address": "0x08223C81",
+      "japanese_references": [
+        "0x085BBF68"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 466,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229AF8",
+      "japanese_text_address": "0x08223D05",
+      "japanese_references": [
+        "0x085BBF78"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 471,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229B39",
+      "japanese_text_address": "0x08223D39",
+      "japanese_references": [
+        "0x085BBF7C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 490,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229C22",
+      "japanese_text_address": "0x08223DE4",
+      "japanese_references": [
+        "0x085BBF8C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 494,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229C58",
+      "japanese_text_address": "0x08223E0B",
+      "japanese_references": [
+        "0x085BBF90"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 514,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229D45",
+      "japanese_text_address": "0x08223EBB",
+      "japanese_references": [
+        "0x085BBFA0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 518,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229D6C",
+      "japanese_text_address": "0x08223EE1",
+      "japanese_references": [
+        "0x085BBFA4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 537,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229E0A",
+      "japanese_text_address": "0x08223F73",
+      "japanese_references": [
+        "0x085BBFB4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 543,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229E48",
+      "japanese_text_address": "0x08223FB5",
+      "japanese_references": [
+        "0x085BBFB8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 564,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229EE9",
+      "japanese_text_address": "0x08224064",
+      "japanese_references": [
+        "0x085BBFC8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 569,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229F1C",
+      "japanese_text_address": "0x08224099",
+      "japanese_references": [
+        "0x085BBFCC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 588,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229FC5",
+      "japanese_text_address": "0x08224138",
+      "japanese_references": [
+        "0x085BBFDC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 592,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08229FE2",
+      "japanese_text_address": "0x0822415B",
+      "japanese_references": [
+        "0x085BBFE0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 616,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A0E1",
+      "japanese_text_address": "0x0822424A",
+      "japanese_references": [
+        "0x085BBFF0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 622,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A12E",
+      "japanese_text_address": "0x08224287",
+      "japanese_references": [
+        "0x085BBFF4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 643,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A258",
+      "japanese_text_address": "0x0822434C",
+      "japanese_references": [
+        "0x085BC004"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 648,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A27F",
+      "japanese_text_address": "0x0822437C",
+      "japanese_references": [
+        "0x085BC008"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 670,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A36A",
+      "japanese_text_address": "0x08224441",
+      "japanese_references": [
+        "0x085BC018",
+        "0x08B6A699",
+        "0x08B7F496",
+        "0x08D17D1A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 675,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A3AF",
+      "japanese_text_address": "0x08224476",
+      "japanese_references": [
+        "0x085BC01C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 698,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A4AF",
+      "japanese_text_address": "0x08224558",
+      "japanese_references": [
+        "0x085BC02C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 704,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A4DE",
+      "japanese_text_address": "0x08224586",
+      "japanese_references": [
+        "0x085BC030"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 724,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A58D",
+      "japanese_text_address": "0x08224631",
+      "japanese_references": [
+        "0x085BC040"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 729,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A5C1",
+      "japanese_text_address": "0x0822465F",
+      "japanese_references": [
+        "0x085BC044"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 749,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A68B",
+      "japanese_text_address": "0x0822470E",
+      "japanese_references": [
+        "0x085BC054"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 755,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A6E4",
+      "japanese_text_address": "0x0822475A",
+      "japanese_references": [
+        "0x085BC058"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 773,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A75E",
+      "japanese_text_address": "0x082247D0",
+      "japanese_references": [
+        "0x085BC068"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 777,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A772",
+      "japanese_text_address": "0x082247E9",
+      "japanese_references": [
+        "0x085BC06C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 796,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A7F1",
+      "japanese_text_address": "0x08224860",
+      "japanese_references": [
+        "0x085BC07C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 800,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A808",
+      "japanese_text_address": "0x08224879",
+      "japanese_references": [
+        "0x085BC080"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 819,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A88C",
+      "japanese_text_address": "0x082248EE",
+      "japanese_references": [
+        "0x085BC090"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 824,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A8A2",
+      "japanese_text_address": "0x0822490E",
+      "japanese_references": [
+        "0x085BC094"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 843,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A91F",
+      "japanese_text_address": "0x0822497E",
+      "japanese_references": [
+        "0x085BC0A4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 847,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A937",
+      "japanese_text_address": "0x08224995",
+      "japanese_references": [
+        "0x085BC0A8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 867,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A9CA",
+      "japanese_text_address": "0x08224A01",
+      "japanese_references": [
+        "0x085BC0B8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 872,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822A9ED",
+      "japanese_text_address": "0x08224A20",
+      "japanese_references": [
+        "0x085BC0BC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 892,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AA79",
+      "japanese_text_address": "0x08224AA1",
+      "japanese_references": [
+        "0x085BC0CC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 897,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AAA3",
+      "japanese_text_address": "0x08224AC6",
+      "japanese_references": [
+        "0x085BC0D0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 915,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AB1A",
+      "japanese_text_address": "0x08224B38",
+      "japanese_references": [
+        "0x085BC0E0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 919,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AB37",
+      "japanese_text_address": "0x08224B51",
+      "japanese_references": [
+        "0x085BC0E4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 938,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822ABAE",
+      "japanese_text_address": "0x08224BC1",
+      "japanese_references": [
+        "0x085BC0F4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 943,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822ABCD",
+      "japanese_text_address": "0x08224BE4",
+      "japanese_references": [
+        "0x085BC0F8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 963,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AC5F",
+      "japanese_text_address": "0x08224C5E",
+      "japanese_references": [
+        "0x085BC108"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 968,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AC77",
+      "japanese_text_address": "0x08224C83",
+      "japanese_references": [
+        "0x085BC10C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 988,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AD19",
+      "japanese_text_address": "0x08224CFD",
+      "japanese_references": [
+        "0x085BC11C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 993,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AD44",
+      "japanese_text_address": "0x08224D1F",
+      "japanese_references": [
+        "0x085BC120"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1013,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822ADCF",
+      "japanese_text_address": "0x08224D9E",
+      "japanese_references": [
+        "0x085BC130"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1018,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822ADE5",
+      "japanese_text_address": "0x08224DBC",
+      "japanese_references": [
+        "0x085BC134"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1039,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AE6E",
+      "japanese_text_address": "0x08224E2D",
+      "japanese_references": [
+        "0x085BC144"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1044,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AE82",
+      "japanese_text_address": "0x08224E53",
+      "japanese_references": [
+        "0x085BC148"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1063,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AEF3",
+      "japanese_text_address": "0x08224ED2",
+      "japanese_references": [
+        "0x085BC158"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1067,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AF03",
+      "japanese_text_address": "0x08224EF3",
+      "japanese_references": [
+        "0x085BC15C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1087,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AF76",
+      "japanese_text_address": "0x08224F62",
+      "japanese_references": [
+        "0x085BC16C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1092,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822AF9E",
+      "japanese_text_address": "0x08224F87",
+      "japanese_references": [
+        "0x085BC170"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1111,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B01F",
+      "japanese_text_address": "0x08224FF9",
+      "japanese_references": [
+        "0x085BC180"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1116,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B046",
+      "japanese_text_address": "0x0822501D",
+      "japanese_references": [
+        "0x085BC184"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1135,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B0E0",
+      "japanese_text_address": "0x08225092",
+      "japanese_references": [
+        "0x085BC194"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1140,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B0FE",
+      "japanese_text_address": "0x082250B1",
+      "japanese_references": [
+        "0x085BC198"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1158,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B17A",
+      "japanese_text_address": "0x08225117",
+      "japanese_references": [
+        "0x085BC1A8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1163,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B192",
+      "japanese_text_address": "0x0822513B",
+      "japanese_references": [
+        "0x085BC1AC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1181,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B216",
+      "japanese_text_address": "0x082251B1",
+      "japanese_references": [
+        "0x085BC1BC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1186,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B234",
+      "japanese_text_address": "0x082251D2",
+      "japanese_references": [
+        "0x085BC1C0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1204,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B2A7",
+      "japanese_text_address": "0x08225243",
+      "japanese_references": [
+        "0x085BC1D0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1209,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B2CB",
+      "japanese_text_address": "0x08225266",
+      "japanese_references": [
+        "0x085BC1D4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1228,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B373",
+      "japanese_text_address": "0x082252E5",
+      "japanese_references": [
+        "0x085BC1E4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1233,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B38E",
+      "japanese_text_address": "0x08225303",
+      "japanese_references": [
+        "0x085BC1E8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1252,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B426",
+      "japanese_text_address": "0x0822538B",
+      "japanese_references": [
+        "0x085BC1F8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1257,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B449",
+      "japanese_text_address": "0x082253AF",
+      "japanese_references": [
+        "0x085BC1FC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1276,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B4E5",
+      "japanese_text_address": "0x0822542E",
+      "japanese_references": [
+        "0x085BC20C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1280,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B4FD",
+      "japanese_text_address": "0x08225450",
+      "japanese_references": [
+        "0x085BC210"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1298,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B585",
+      "japanese_text_address": "0x082254BE",
+      "japanese_references": [
+        "0x085BC220"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1303,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B5AF",
+      "japanese_text_address": "0x082254E3",
+      "japanese_references": [
+        "0x085BC224"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1321,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B649",
+      "japanese_text_address": "0x0822555E",
+      "japanese_references": [
+        "0x085BC234"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1325,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B668",
+      "japanese_text_address": "0x08225579",
+      "japanese_references": [
+        "0x085BC238"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1342,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B6E9",
+      "japanese_text_address": "0x082255E8",
+      "japanese_references": [
+        "0x085BC248"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1346,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B717",
+      "japanese_text_address": "0x0822560D",
+      "japanese_references": [
+        "0x085BC24C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1363,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B798",
+      "japanese_text_address": "0x08225673",
+      "japanese_references": [
+        "0x085BC25C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1367,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B7B7",
+      "japanese_text_address": "0x0822568C",
+      "japanese_references": [
+        "0x085BC260"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1384,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B835",
+      "japanese_text_address": "0x082256F5",
+      "japanese_references": [
+        "0x085BC270"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1388,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B843",
+      "japanese_text_address": "0x0822570C",
+      "japanese_references": [
+        "0x085BC274"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1407,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B8C3",
+      "japanese_text_address": "0x08225786",
+      "japanese_references": [
+        "0x085BC284"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1412,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B8FF",
+      "japanese_text_address": "0x082257AD",
+      "japanese_references": [
+        "0x085BC288"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1429,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B999",
+      "japanese_text_address": "0x08225821",
+      "japanese_references": [
+        "0x085BC298"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1434,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822B9C1",
+      "japanese_text_address": "0x08225842",
+      "japanese_references": [
+        "0x085BC29C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1452,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BA6A",
+      "japanese_text_address": "0x082258B4",
+      "japanese_references": [
+        "0x085BC2AC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1456,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BA92",
+      "japanese_text_address": "0x082258CF",
+      "japanese_references": [
+        "0x085BC2B0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1474,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BB2A",
+      "japanese_text_address": "0x08225941",
+      "japanese_references": [
+        "0x085BC2C0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1479,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BB5F",
+      "japanese_text_address": "0x08225961",
+      "japanese_references": [
+        "0x085BC2C4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1496,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BC08",
+      "japanese_text_address": "0x082259D9",
+      "japanese_references": [
+        "0x085BC2D4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1500,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BC28",
+      "japanese_text_address": "0x082259F3",
+      "japanese_references": [
+        "0x085BC2D8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1517,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BCC2",
+      "japanese_text_address": "0x08225A66",
+      "japanese_references": [
+        "0x085BC2E8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1521,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BCE6",
+      "japanese_text_address": "0x08225A84",
+      "japanese_references": [
+        "0x085BC2EC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1539,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BD8F",
+      "japanese_text_address": "0x08225AFF",
+      "japanese_references": [
+        "0x085BC2FC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1543,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BDB8",
+      "japanese_text_address": "0x08225B1C",
+      "japanese_references": [
+        "0x085BC300"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1560,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BE55",
+      "japanese_text_address": "0x08225B90",
+      "japanese_references": [
+        "0x085BC310"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1564,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BE77",
+      "japanese_text_address": "0x08225BAC",
+      "japanese_references": [
+        "0x085BC314"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1581,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BF0D",
+      "japanese_text_address": "0x08225C18",
+      "japanese_references": [
+        "0x085BC324"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1585,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BF29",
+      "japanese_text_address": "0x08225C32",
+      "japanese_references": [
+        "0x085BC328"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1602,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BFB0",
+      "japanese_text_address": "0x08225CA9",
+      "japanese_references": [
+        "0x085BC338"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1606,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822BFD2",
+      "japanese_text_address": "0x08225CC4",
+      "japanese_references": [
+        "0x085BC33C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1623,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C076",
+      "japanese_text_address": "0x08225D39",
+      "japanese_references": [
+        "0x085BC34C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1627,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C092",
+      "japanese_text_address": "0x08225D54",
+      "japanese_references": [
+        "0x085BC350"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1644,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C123",
+      "japanese_text_address": "0x08225DC9",
+      "japanese_references": [
+        "0x085BC360"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1648,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C13B",
+      "japanese_text_address": "0x08225DE6",
+      "japanese_references": [
+        "0x085BC364"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1665,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C1C7",
+      "japanese_text_address": "0x08225E50",
+      "japanese_references": [
+        "0x085BC374"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1669,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C1DB",
+      "japanese_text_address": "0x08225E6B",
+      "japanese_references": [
+        "0x085BC378"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1686,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C26E",
+      "japanese_text_address": "0x08225EDD",
+      "japanese_references": [
+        "0x085BC388"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1690,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C287",
+      "japanese_text_address": "0x08225EFE",
+      "japanese_references": [
+        "0x085BC38C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1707,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C2FE",
+      "japanese_text_address": "0x08225F67",
+      "japanese_references": [
+        "0x085BC39C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1711,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C31A",
+      "japanese_text_address": "0x08225F82",
+      "japanese_references": [
+        "0x085BC3A0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1728,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C3A8",
+      "japanese_text_address": "0x08225FEA",
+      "japanese_references": [
+        "0x085BC3B0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1732,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C3C6",
+      "japanese_text_address": "0x08226006",
+      "japanese_references": [
+        "0x085BC3B4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1749,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C440",
+      "japanese_text_address": "0x08226079",
+      "japanese_references": [
+        "0x085BC3C4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1753,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C45B",
+      "japanese_text_address": "0x0822609A",
+      "japanese_references": [
+        "0x085BC3C8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1770,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C4F6",
+      "japanese_text_address": "0x0822610A",
+      "japanese_references": [
+        "0x085BC3D8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1774,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C512",
+      "japanese_text_address": "0x08226125",
+      "japanese_references": [
+        "0x085BC3DC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1792,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C5B0",
+      "japanese_text_address": "0x082261A6",
+      "japanese_references": [
+        "0x085BC3EC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1797,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C5CB",
+      "japanese_text_address": "0x082261CE",
+      "japanese_references": [
+        "0x085BC3F0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1814,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C658",
+      "japanese_text_address": "0x08226240",
+      "japanese_references": [
+        "0x085BC400"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1818,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C670",
+      "japanese_text_address": "0x0822625D",
+      "japanese_references": [
+        "0x085BC404"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1835,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C715",
+      "japanese_text_address": "0x082262C6",
+      "japanese_references": [
+        "0x085BC414"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1839,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C736",
+      "japanese_text_address": "0x082262E1",
+      "japanese_references": [
+        "0x085BC418"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1856,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C7E5",
+      "japanese_text_address": "0x0822634C",
+      "japanese_references": [
+        "0x085BC428"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1860,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C807",
+      "japanese_text_address": "0x08226367",
+      "japanese_references": [
+        "0x085BC42C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMAccept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1877,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C8A1",
+      "japanese_text_address": "0x082263CB",
+      "japanese_references": [
+        "0x085BC43C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMReject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "wokann_label_line": 1881,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0822C8B9",
+      "japanese_text_address": "0x082263E6",
+      "japanese_references": [
+        "0x085BC440"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice1Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice2Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice2Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice2Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice2Accept",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_UnusedApprentice2Reject",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice1Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice2Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice3Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice4Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice5Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice6Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice7Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice8Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice9Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice11Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice12Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice13Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice14Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice15Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Intro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice16Mon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HikerMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BeautyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_FishermanMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LadyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugCatcherMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RichBoyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BlackBeltMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RunningTriathleteMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BattleGirlMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CyclingTriathleteMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_TuberMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GuitaristMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_GentlemanMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_DragonTamerMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BirdKeeperMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_NinjaBoyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ParasolLadyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_BugManiacMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CollectorMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_RuinManiacMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CoolTrainerFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokemaniacMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_KindlerMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_CamperMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PicnickerMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PsychicFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SchoolKidFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnBreederFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PokefanFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteFMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMIntro",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon1",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmerMMon2Ask",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "043_slateportcity_battletentlobby.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Slateport area dialogue: SlateportCity_BattleTentLobby",
+  "summary": {
+    "verified_text_label": 24
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081FB0EE",
+      "jp_original_text": "0x082755EC",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_AwardYouThisPrize",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_AwardYouThisPrize",
+      "base_rom_value": "0x082755EC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9726,
+          "symbol": "SlateportCity_BattleTentLobby_Text_AwardYouThisPrize"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 294
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB38C",
+      "jp_original_text": "0x081FB54A",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons",
+      "base_rom_value": "0x081FB54A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 301,
+          "symbol": "SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 301,
+          "symbol": "SlateportCity_BattleTentLobby_Text_BattleEvenWithoutToughMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 301
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB176",
+      "jp_original_text": "0x08275634",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_BeenWaitingForYou",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_BeenWaitingForYou",
+      "base_rom_value": "0x08275634",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9728,
+          "symbol": "SlateportCity_BattleTentLobby_Text_BeenWaitingForYou"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 304
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB34D",
+      "jp_original_text": "0x081FB451",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe",
+      "base_rom_value": "0x081FB451",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 279,
+          "symbol": "SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 279,
+          "symbol": "SlateportCity_BattleTentLobby_Text_CouldntFindMonForMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 279
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB088",
+      "jp_original_text": "0x08275660",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting",
+      "base_rom_value": "0x08275660",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9729,
+          "symbol": "SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 309
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB40B",
+      "jp_original_text": "0x082756F3",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainBasicRules",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainBasicRules",
+      "base_rom_value": "0x082756F3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9730,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainBasicRules"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 334
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB443",
+      "jp_original_text": "0x0827589C",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainMonRules",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainMonRules",
+      "base_rom_value": "0x0827589C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9734,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainMonRules"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 368
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB30C",
+      "jp_original_text": "0x0827534A",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainSlateportTent",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainSlateportTent",
+      "base_rom_value": "0x0827534A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9720,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainSlateportTent"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 230
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB435",
+      "jp_original_text": "0x08275803",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapNotes",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainSwapNotes",
+      "base_rom_value": "0x08275803",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9733,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapNotes"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 357
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB427",
+      "jp_original_text": "0x082757A8",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules",
+      "base_rom_value": "0x082757A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9732,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 349
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB419",
+      "jp_original_text": "0x08275757",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules",
+      "base_rom_value": "0x08275757",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9731,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 342
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB36F",
+      "jp_original_text": "0x081FB4C1",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainTorment",
+      "base_rom_value": "0x081FB4C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB379",
+      "jp_original_text": "0x081FB4C1",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ExplainTorment",
+      "base_rom_value": "0x081FB4C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ExplainTorment"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 288
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB383",
+      "jp_original_text": "0x081FB516",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons",
+      "base_rom_value": "0x081FB516",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 295,
+          "symbol": "SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 295,
+          "symbol": "SlateportCity_BattleTentLobby_Text_IllTryUsingBugMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 295
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB166",
+      "jp_original_text": "0x0827549D",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit",
+      "base_rom_value": "0x0827549D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9721,
+          "symbol": "SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 252
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB333",
+      "jp_original_text": "0x0827549D",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit",
+      "base_rom_value": "0x0827549D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9721,
+          "symbol": "SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 252
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB395",
+      "jp_original_text": "0x081FB570",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection",
+      "base_rom_value": "0x081FB570",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 305,
+          "symbol": "SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection"
+        },
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 305,
+          "symbol": "SlateportCity_BattleTentLobby_Text_NiceIfMoreSelection"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_BattleTentLobby/scripts.inc",
+          "line": 305
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB12F",
+      "jp_original_text": "0x08275607",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom",
+      "base_rom_value": "0x08275607",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9727,
+          "symbol": "SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 298
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB13C",
+      "jp_original_text": "0x08275524",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults",
+      "base_rom_value": "0x08275524",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9724,
+          "symbol": "SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 272
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB227",
+      "jp_original_text": "0x082754D7",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge",
+      "base_rom_value": "0x082754D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9722,
+          "symbol": "SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 260
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB2B1",
+      "jp_original_text": "0x08275515",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_StepThisWay",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_StepThisWay",
+      "base_rom_value": "0x08275515",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9723,
+          "symbol": "SlateportCity_BattleTentLobby_Text_StepThisWay"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 269
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB1CE",
+      "jp_original_text": "0x08275335",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_TakeChallenge",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_TakeChallenge",
+      "base_rom_value": "0x08275335",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9719,
+          "symbol": "SlateportCity_BattleTentLobby_Text_TakeChallenge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 226
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB1C7",
+      "jp_original_text": "0x08275307",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent",
+      "base_rom_value": "0x08275307",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9718,
+          "symbol": "SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 220
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FB0BC",
+      "jp_original_text": "0x08275596",
+      "batch_source_symbol": "SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons",
+      "patch_symbol": "Chs_SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons",
+      "base_rom_value": "0x08275596",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 9725,
+          "symbol": "SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/battle_tent.inc",
+          "line": 286
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

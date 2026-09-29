@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "batch": "396_pokemon_news.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/pokemon_news.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only the player-name placeholder is auto-wrapped in Japanese mode; other placeholders require review."
+  },
+  "mapped_count": 0,
+  "unresolved_count": 12,
+  "reference_count": 0,
+  "mapped": [],
+  "unresolved": [
+    {
+      "symbol": "gPokeNewsTextSlateport_Upcoming",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextSlateport_Ongoing",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextSlateport_Ending",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextGameCorner_Upcoming",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextGameCorner_Ongoing",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextGameCorner_Ending",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextLilycove_Upcoming",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextLilycove_Ongoing",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextLilycove_Ending",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextBlendMaster_Upcoming",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextBlendMaster_Ongoing",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    },
+    {
+      "symbol": "gPokeNewsTextBlendMaster_Ending",
+      "source": "data/text/pokemon_news.inc",
+      "reason": "missing_wokann_source"
+    }
+  ]
+}
+

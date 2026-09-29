@@ -1,0 +1,1439 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "196_pokemon_centers.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Pokemon Center dialogue and recovery",
+  "summary": {
+    "verified_source_definition": 19,
+    "verified_text_label": 32
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0823B165",
+      "jp_original_text": "0x0823B1F8",
+      "batch_source_symbol": "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge",
+      "patch_symbol": "Chs_BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge",
+      "base_rom_value": "0x0823B1F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B153",
+      "jp_original_text": "0x0823B17F",
+      "batch_source_symbol": "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon",
+      "patch_symbol": "Chs_BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon",
+      "base_rom_value": "0x0823B17F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+          "line": 39
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B15C",
+      "jp_original_text": "0x0823B1C4",
+      "batch_source_symbol": "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena",
+      "patch_symbol": "Chs_BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena",
+      "base_rom_value": "0x0823B1C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+          "line": 46
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B176",
+      "jp_original_text": "0x0823B216",
+      "batch_source_symbol": "BattleFrontier_PokemonCenter_1F_Text_Skitty",
+      "patch_symbol": "Chs_BattleFrontier_PokemonCenter_1F_Text_Skitty",
+      "base_rom_value": "0x0823B216",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_PokemonCenter_1F/scripts.inc",
+          "line": 55
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081F2CFC",
+      "jp_original_text": "0x081F2D2B",
+      "batch_source_symbol": "DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM",
+      "patch_symbol": "Chs_DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM",
+      "base_rom_value": "0x081F2D2B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM"
+        },
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 32
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F2CF3",
+      "jp_original_text": "0x081F2D03",
+      "batch_source_symbol": "DewfordTown_PokemonCenter_1F_Text_StoneCavern",
+      "patch_symbol": "Chs_DewfordTown_PokemonCenter_1F_Text_StoneCavern",
+      "base_rom_value": "0x081F2D03",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "DewfordTown_PokemonCenter_1F_Text_StoneCavern"
+        },
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "DewfordTown_PokemonCenter_1F_Text_StoneCavern"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/DewfordTown_PokemonCenter_1F/scripts.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821143A",
+      "jp_original_text": "0x082114D6",
+      "batch_source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon",
+      "patch_symbol": "Chs_EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon",
+      "base_rom_value": "0x082114D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 83,
+          "symbol": "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 83
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08211431",
+      "jp_original_text": "0x082114A2",
+      "batch_source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+      "patch_symbol": "Chs_EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+      "base_rom_value": "0x082114A2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 77,
+          "symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 77
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08211445",
+      "jp_original_text": "0x08211531",
+      "batch_source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou",
+      "patch_symbol": "Chs_EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou",
+      "base_rom_value": "0x08211531",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 91,
+          "symbol": "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "line": 91
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204C8E",
+      "jp_original_text": "0x08204D21",
+      "batch_source_symbol": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
+      "patch_symbol": "Chs_FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
+      "base_rom_value": "0x08204D21",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 44,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav"
+        },
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 44,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 44
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204C7C",
+      "jp_original_text": "0x08204C95",
+      "batch_source_symbol": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
+      "patch_symbol": "Chs_FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
+      "base_rom_value": "0x08204C95",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 31,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone"
+        },
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 31,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 31
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204C85",
+      "jp_original_text": "0x08204CCE",
+      "batch_source_symbol": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
+      "patch_symbol": "Chs_FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
+      "base_rom_value": "0x08204CCE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat"
+        },
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_PokemonCenter_1F/scripts.inc",
+          "line": 37
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F4FA9",
+      "jp_original_text": "0x081F4FF9",
+      "batch_source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate",
+      "patch_symbol": "Chs_LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate",
+      "base_rom_value": "0x081F4FF9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate"
+        },
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 37
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F4FB2",
+      "jp_original_text": "0x081F4FC2",
+      "batch_source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether",
+      "patch_symbol": "Chs_LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether",
+      "base_rom_value": "0x081F4FC2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether"
+        },
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 32
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F4FBB",
+      "jp_original_text": "0x081F502B",
+      "batch_source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo",
+      "patch_symbol": "Chs_LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo",
+      "base_rom_value": "0x081F502B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 42,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo"
+        },
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 42,
+          "symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LavaridgeTown_PokemonCenter_1F/scripts.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200E01",
+      "jp_original_text": "0x08200E1A",
+      "batch_source_symbol": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings",
+      "patch_symbol": "Chs_MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings",
+      "base_rom_value": "0x08200E1A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings"
+        },
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 37,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 37
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200E0A",
+      "jp_original_text": "0x08200E54",
+      "batch_source_symbol": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner",
+      "patch_symbol": "Chs_MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner",
+      "base_rom_value": "0x08200E54",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 43,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner"
+        },
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 43,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 43
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200E13",
+      "jp_original_text": "0x08200E8A",
+      "batch_source_symbol": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun",
+      "patch_symbol": "Chs_MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun",
+      "base_rom_value": "0x08200E8A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 48,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun"
+        },
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 48,
+          "symbol": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_1F/scripts.inc",
+          "line": 48
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200EF8",
+      "jp_original_text": "0x08200EFF",
+      "batch_source_symbol": "MauvilleCity_PokemonCenter_2F_Text_Youngster",
+      "patch_symbol": "Chs_MauvilleCity_PokemonCenter_2F_Text_Youngster",
+      "base_rom_value": "0x08200EFF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+          "line": 27,
+          "symbol": "MauvilleCity_PokemonCenter_2F_Text_Youngster"
+        },
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+          "line": 27,
+          "symbol": "MauvilleCity_PokemonCenter_2F_Text_Youngster"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_PokemonCenter_2F/scripts.inc",
+          "line": 27
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820C4DA",
+      "jp_original_text": "0x0820C517",
+      "batch_source_symbol": "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves",
+      "patch_symbol": "Chs_MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves",
+      "base_rom_value": "0x0820C517",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+          "line": 32
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820C4D1",
+      "jp_original_text": "0x0820C4E1",
+      "batch_source_symbol": "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable",
+      "patch_symbol": "Chs_MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable",
+      "base_rom_value": "0x0820C4E1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+          "line": 27,
+          "symbol": "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_1F/scripts.inc",
+          "line": 27
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820C573",
+      "jp_original_text": "0x0820C57A",
+      "batch_source_symbol": "MossdeepCity_PokemonCenter_2F_Text_Woman5",
+      "patch_symbol": "Chs_MossdeepCity_PokemonCenter_2F_Text_Woman5",
+      "base_rom_value": "0x0820C57A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+          "line": 25,
+          "symbol": "MossdeepCity_PokemonCenter_2F_Text_Woman5"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_PokemonCenter_2F/scripts.inc",
+          "line": 25
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F785B",
+      "jp_original_text": "0x081F78C3",
+      "batch_source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats",
+      "patch_symbol": "Chs_PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats",
+      "base_rom_value": "0x081F78C3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 41,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats"
+        },
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 41,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 41
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F7852",
+      "jp_original_text": "0x081F7887",
+      "batch_source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola",
+      "patch_symbol": "Chs_PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola",
+      "base_rom_value": "0x081F7887",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 35,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola"
+        },
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 35,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F7849",
+      "jp_original_text": "0x081F7862",
+      "batch_source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard",
+      "patch_symbol": "Chs_PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard",
+      "base_rom_value": "0x081F7862",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 31,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard"
+        },
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 31,
+          "symbol": "PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown_PokemonCenter_1F/scripts.inc",
+          "line": 31
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082034E9",
+      "jp_original_text": "0x08203580",
+      "batch_source_symbol": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor",
+      "patch_symbol": "Chs_RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor",
+      "base_rom_value": "0x08203580",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 44,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor"
+        },
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 44,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 44
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082034E0",
+      "jp_original_text": "0x0820353E",
+      "batch_source_symbol": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon",
+      "patch_symbol": "Chs_RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon",
+      "base_rom_value": "0x0820353E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 38,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon"
+        },
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 38,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 38
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082034D7",
+      "jp_original_text": "0x082034F0",
+      "batch_source_symbol": "RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities",
+      "patch_symbol": "Chs_RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities",
+      "base_rom_value": "0x082034F0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities"
+        },
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 32,
+          "symbol": "RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_PokemonCenter_1F/scripts.inc",
+          "line": 32
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FE82D",
+      "jp_original_text": "0x081FE83D",
+      "batch_source_symbol": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon",
+      "patch_symbol": "Chs_SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon",
+      "base_rom_value": "0x081FE83D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon"
+        },
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FE836",
+      "jp_original_text": "0x081FE89A",
+      "batch_source_symbol": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend",
+      "patch_symbol": "Chs_SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend",
+      "base_rom_value": "0x081FE89A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 36,
+          "symbol": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend"
+        },
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 36,
+          "symbol": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_PokemonCenter_1F/scripts.inc",
+          "line": 36
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820F03E",
+      "jp_original_text": "0x0820F117",
+      "batch_source_symbol": "SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon",
+      "patch_symbol": "Chs_SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon",
+      "base_rom_value": "0x0820F117",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 63,
+          "symbol": "SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 63
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820F034",
+      "jp_original_text": "0x0820F15E",
+      "batch_source_symbol": "SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends",
+      "patch_symbol": "Chs_SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends",
+      "base_rom_value": "0x0820F15E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 70,
+          "symbol": "SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 70
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820F00A",
+      "jp_original_text": "0x0820F0D5",
+      "batch_source_symbol": "SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge",
+      "patch_symbol": "Chs_SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge",
+      "base_rom_value": "0x0820F0D5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 57,
+          "symbol": "SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820F014",
+      "jp_original_text": "0x0820F046",
+      "batch_source_symbol": "SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn",
+      "patch_symbol": "Chs_SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn",
+      "base_rom_value": "0x0820F046",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 47,
+          "symbol": "SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+          "line": 47
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F7045",
+      "jp_original_text": "0x081F7055",
+      "batch_source_symbol": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon",
+      "patch_symbol": "Chs_VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon",
+      "base_rom_value": "0x081F7055",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon"
+        },
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 28,
+          "symbol": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F704E",
+      "jp_original_text": "0x081F70A5",
+      "batch_source_symbol": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent",
+      "patch_symbol": "Chs_VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent",
+      "base_rom_value": "0x081F70A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 35,
+          "symbol": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent"
+        },
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 35,
+          "symbol": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VerdanturfTown_PokemonCenter_1F/scripts.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08242A22",
+      "jp_original_text": "0x08243786",
+      "batch_source_symbol": "gText_IllTakeYourPkmn",
+      "patch_symbol": "Chs_gText_IllTakeYourPkmn",
+      "base_rom_value": "0x08243786",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242A28",
+      "jp_original_text": "0x082438D8",
+      "batch_source_symbol": "gText_IllTakeYourPkmn2",
+      "patch_symbol": "Chs_gText_IllTakeYourPkmn2",
+      "base_rom_value": "0x082438D8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 45
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242B2F",
+      "jp_original_text": "0x08243814",
+      "batch_source_symbol": "gText_NoticesGoldCard",
+      "patch_symbol": "Chs_gText_NoticesGoldCard",
+      "base_rom_value": "0x08243814",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242A88",
+      "jp_original_text": "0x08243798",
+      "batch_source_symbol": "gText_RestoredPkmnToFullHealth",
+      "patch_symbol": "Chs_gText_RestoredPkmnToFullHealth",
+      "base_rom_value": "0x08243798",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242ABE",
+      "jp_original_text": "0x08243798",
+      "batch_source_symbol": "gText_RestoredPkmnToFullHealth",
+      "patch_symbol": "Chs_gText_RestoredPkmnToFullHealth",
+      "base_rom_value": "0x08243798",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242A9E",
+      "jp_original_text": "0x082438EC",
+      "batch_source_symbol": "gText_ThankYouForWaiting",
+      "patch_symbol": "Chs_gText_ThankYouForWaiting",
+      "base_rom_value": "0x082438EC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 48
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082429EF",
+      "jp_original_text": "0x082437C1",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain",
+      "base_rom_value": "0x082437C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 17
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242A98",
+      "jp_original_text": "0x082437C1",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain",
+      "base_rom_value": "0x082437C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 17
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242AD8",
+      "jp_original_text": "0x082437C1",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain",
+      "base_rom_value": "0x082437C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 17
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242AAE",
+      "jp_original_text": "0x082438FE",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain2",
+      "base_rom_value": "0x082438FE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242B41",
+      "jp_original_text": "0x082438FE",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain2",
+      "base_rom_value": "0x082438FE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242B5A",
+      "jp_original_text": "0x082438FE",
+      "batch_source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "patch_symbol": "Chs_gText_WeHopeToSeeYouAgain2",
+      "base_rom_value": "0x082438FE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242B10",
+      "jp_original_text": "0x082437D5",
+      "batch_source_symbol": "gText_WelcomeCutShort",
+      "patch_symbol": "Chs_gText_WelcomeCutShort",
+      "base_rom_value": "0x082437D5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 21
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082429D1",
+      "jp_original_text": "0x0824373C",
+      "batch_source_symbol": "gText_WouldYouLikeToRestYourPkmn",
+      "patch_symbol": "Chs_gText_WouldYouLikeToRestYourPkmn",
+      "base_rom_value": "0x0824373C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08242B48",
+      "jp_original_text": "0x082438B9",
+      "batch_source_symbol": "gText_YouWantTheUsual",
+      "patch_symbol": "Chs_gText_YouWantTheUsual",
+      "base_rom_value": "0x082438B9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "line": 41
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

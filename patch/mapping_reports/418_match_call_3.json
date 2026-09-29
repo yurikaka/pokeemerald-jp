@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "batch": "418_match_call_3.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/text/match_call_messages.h",
+  "selection": {
+    "symbol_offset": 300,
+    "symbol_limit": 100,
+    "auto_wrap": true
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "mapped": 12
+  },
+  "mapped": [
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Glacia_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B10BF",
+      "japanese_text_address": "0x085F3901",
+      "japanese_references": [
+        "0x085F3E64"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Glacia_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B10CF",
+      "japanese_text_address": "0x085F3910",
+      "japanese_references": [
+        "0x085F3E68"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Glacia_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B10DD",
+      "japanese_text_address": "0x085F391F",
+      "japanese_references": [
+        "0x085F3E6C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Glacia_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B10F0",
+      "japanese_text_address": "0x085F392E",
+      "japanese_references": [
+        "0x085F3E70"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Drake_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1102",
+      "japanese_text_address": "0x085F393E",
+      "japanese_references": [
+        "0x085F3E74"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Drake_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1116",
+      "japanese_text_address": "0x085F394E",
+      "japanese_references": [
+        "0x085F3E78"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Drake_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1124",
+      "japanese_text_address": "0x085F395E",
+      "japanese_references": [
+        "0x085F3E7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallEliteFour_Drake_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1139",
+      "japanese_text_address": "0x085F396C",
+      "japanese_references": [
+        "0x085F3E80"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallChampion_Wallace_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B114D",
+      "japanese_text_address": "0x085F397B",
+      "japanese_references": [
+        "0x085F3E84"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallChampion_Wallace_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1157",
+      "japanese_text_address": "0x085F398A",
+      "japanese_references": [
+        "0x085F3E88"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallChampion_Wallace_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B116B",
+      "japanese_text_address": "0x085F3998",
+      "japanese_references": [
+        "0x085F3E8C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallChampion_Wallace_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B1178",
+      "japanese_text_address": "0x085F39A4",
+      "japanese_references": [
+        "0x085F3E90"
+      ]
+    }
+  ],
+  "unresolved": []
+}

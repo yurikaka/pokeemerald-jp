@@ -1,0 +1,45 @@
+{
+  "source_commit": "32221cdd3",
+  "status": "source_and_rom_audited; emulator_not_tested",
+  "us_changed_files": [
+    "data/text/birch_speech.inc",
+    "src/strings.c"
+  ],
+  "source_symbol_counts": {
+    "birch_speech_labels": 9,
+    "strings_c_changed_symbols": 22,
+    "referenced_and_mapped": 30,
+    "unreferenced_in_jp_rom": 1
+  },
+  "mapped_in": [
+    "patch/manifest.json",
+    "patch/texts.json",
+    "patch/batches/171_pokedex.json"
+  ],
+  "exceptions": [
+    {
+      "symbol": "gText_Birch_Pokemon",
+      "jp_text_address": "0x082770EB",
+      "status": "unreferenced in baserom_jp.gba",
+      "evidence": "Wokann data/text/birch_speech.inc defines the label, but neither Wokann source nor the JP ROM contains a reference to it; the displayed introduction uses gText_ThisIsAPokemon instead."
+    },
+    {
+      "symbol": "gText_5MarksPokemon",
+      "jp_text_address": "0x085C8FA2",
+      "jp_pointer_address": "0x080BE484",
+      "status": "already mapped in patch/batches/171_pokedex.json"
+    },
+    {
+      "symbol": "gText_ThisIsAPokemon",
+      "jp_text_address": "0x085C8F88",
+      "jp_pointer_address": "0x08030760",
+      "status": "mapped; PAUSE 96 restored in this audit",
+      "evidence": "Wokann src/data/text/region_texts76.h and baserom_jp.gba both include FC 08 60 before the paragraph break."
+    }
+  ],
+  "validation": {
+    "make_chs": "passed",
+    "make_compare": "passed",
+    "in_game": "not tested"
+  }
+}

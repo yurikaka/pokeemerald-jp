@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "299_rustboro_city_house3.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: RustboroCity_House3",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820411A",
+      "jp_original_text": "0x0820413D",
+      "batch_source_symbol": "RustboroCity_House3_Text_IGivePerfectlySuitedNicknames",
+      "patch_symbol": "Chs_RustboroCity_House3_Text_IGivePerfectlySuitedNicknames",
+      "base_rom_value": "0x0820413D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 23,
+          "symbol": "RustboroCity_House3_Text_IGivePerfectlySuitedNicknames"
+        },
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 23,
+          "symbol": "RustboroCity_House3_Text_IGivePerfectlySuitedNicknames"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 23
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204123",
+      "jp_original_text": "0x0820416F",
+      "batch_source_symbol": "RustboroCity_House3_Text_NamingPikachuPekachu",
+      "patch_symbol": "Chs_RustboroCity_House3_Text_NamingPikachuPekachu",
+      "base_rom_value": "0x0820416F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 28,
+          "symbol": "RustboroCity_House3_Text_NamingPikachuPekachu"
+        },
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 28,
+          "symbol": "RustboroCity_House3_Text_NamingPikachuPekachu"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204134",
+      "jp_original_text": "0x082041BF",
+      "batch_source_symbol": "RustboroCity_House3_Text_Pekachu",
+      "patch_symbol": "Chs_RustboroCity_House3_Text_Pekachu",
+      "base_rom_value": "0x082041BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 35,
+          "symbol": "RustboroCity_House3_Text_Pekachu"
+        },
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 35,
+          "symbol": "RustboroCity_House3_Text_Pekachu"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

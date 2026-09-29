@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_commit": "fe570a7e5",
+  "source_file": "src/data/battle_frontier/battle_tent.h",
+  "wokann_files": [
+    "include/battle_tower.h",
+    "src/battle_tower.c",
+    "src/data/battle_frontier/battle_tent.h"
+  ],
+  "status": "source_and_rom_audited; emulator_not_tested",
+  "mapping_policy": "Each Wokann Battle Tent trainer table uses BattleFrontierTrainer (0x34 bytes), whose trainerName is the 8-byte field at offset 4. Pointers embedded in Wokann battle_tower.c identify all three baserom tables. port_battle_tent_names.py checks every original Wokann Japanese field against baserom_jp.gba before emitting a compact-Chinese replacement that remains within the same field.",
+  "tables": [
+    {
+      "symbol": "gSlateportBattleTentTrainers",
+      "rom_address": "0x085BC958",
+      "code_reference": "0x08165BA8",
+      "entries": 30
+    },
+    {
+      "symbol": "gVerdanturfBattleTentTrainers",
+      "rom_address": "0x085BD554",
+      "code_reference": "0x08165BC8",
+      "entries": 30
+    },
+    {
+      "symbol": "gFallarborBattleTentTrainers",
+      "rom_address": "0x085BDFC8",
+      "code_reference": "0x08165BE8",
+      "entries": 30
+    }
+  ],
+  "record_layout": {
+    "record_size": "0x34",
+    "name_offset": "0x04",
+    "name_field_size": 8
+  },
+  "coverage": {
+    "mapped_entries": 90,
+    "unresolved_entries": 0,
+    "first_name_address": "0x085BC95C",
+    "last_name_address": "0x085BE5B0"
+  }
+}

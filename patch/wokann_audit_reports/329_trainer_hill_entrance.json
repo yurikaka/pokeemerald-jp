@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "329_trainer_hill_entrance.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: TrainerHill_Entrance",
+  "summary": {
+    "verified_source_definition": 21
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0823B8EC",
+      "jp_original_text": "0x0823BA7C",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_WelcomeToTrainerHill",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_WelcomeToTrainerHill",
+      "base_rom_value": "0x0823BA7C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 265
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B9B3",
+      "jp_original_text": "0x0823BAB9",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_SaveGameBeforeEnter",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_SaveGameBeforeEnter",
+      "base_rom_value": "0x0823BAB9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 271
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B927",
+      "jp_original_text": "0x0823BB16",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_TrainersInEveryRoom",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_TrainersInEveryRoom",
+      "base_rom_value": "0x0823BB16",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 282
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B92E",
+      "jp_original_text": "0x0823BB51",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_LikeToChallengeTrainers",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_LikeToChallengeTrainers",
+      "base_rom_value": "0x0823BB51",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 288
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B987",
+      "jp_original_text": "0x0823BB67",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_TimeProgessGetSetGo",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_TimeProgessGetSetGo",
+      "base_rom_value": "0x0823BB67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 292
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B99E",
+      "jp_original_text": "0x0823BB9E",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_PleaseVisitUsAgain",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_PleaseVisitUsAgain",
+      "base_rom_value": "0x0823BB9E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 299
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B878",
+      "jp_original_text": "0x0823BBAB",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_TooBadTremendousEffort",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_TooBadTremendousEffort",
+      "base_rom_value": "0x0823BBAB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 302
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B8CD",
+      "jp_original_text": "0x0823BBDA",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_HopeYouGiveItYourBest",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_HopeYouGiveItYourBest",
+      "base_rom_value": "0x0823BBDA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 308
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B88D",
+      "jp_original_text": "0x0823BBE6",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+      "base_rom_value": "0x0823BBE6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 311
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823B96C",
+      "jp_original_text": "0x0823BC28",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_ExplainTrainerHill",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_ExplainTrainerHill",
+      "base_rom_value": "0x0823BC28",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 321
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823BFFB",
+      "jp_original_text": "0x0823BD13",
+      "batch_source_symbol": "TrainerHill_Roof_Text_YouFinallyCameBravo",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_YouFinallyCameBravo",
+      "base_rom_value": "0x0823BD13",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 341
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C031",
+      "jp_original_text": "0x0823BDB3",
+      "batch_source_symbol": "TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+      "base_rom_value": "0x0823BDB3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 357
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C048",
+      "jp_original_text": "0x0823BDB3",
+      "batch_source_symbol": "TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+      "base_rom_value": "0x0823BDB3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 357
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C058",
+      "jp_original_text": "0x0823BDCF",
+      "batch_source_symbol": "TrainerHill_Roof_Text_FullUpBeBackLaterForThis",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_FullUpBeBackLaterForThis",
+      "base_rom_value": "0x0823BDCF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 361
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C093",
+      "jp_original_text": "0x0823BDE9",
+      "batch_source_symbol": "TrainerHill_Roof_Text_GotHereMarvelouslyQuickly",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_GotHereMarvelouslyQuickly",
+      "base_rom_value": "0x0823BDE9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 365
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C0A1",
+      "jp_original_text": "0x0823BE51",
+      "batch_source_symbol": "TrainerHill_Roof_Text_YouWerentVeryQuick",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_YouWerentVeryQuick",
+      "base_rom_value": "0x0823BE51",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 373
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C0AF",
+      "jp_original_text": "0x0823BE69",
+      "batch_source_symbol": "TrainerHill_Roof_Text_ArriveZippierNextTime",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_ArriveZippierNextTime",
+      "base_rom_value": "0x0823BE69",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 377
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C0B9",
+      "jp_original_text": "0x0823BE69",
+      "batch_source_symbol": "TrainerHill_Roof_Text_ArriveZippierNextTime",
+      "patch_symbol": "Chs_TrainerHill_Roof_Text_ArriveZippierNextTime",
+      "base_rom_value": "0x0823BE69",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 377
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823BA01",
+      "jp_original_text": "0x0823BEFA",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead",
+      "base_rom_value": "0x0823BEFA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 393
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823BA0A",
+      "jp_original_text": "0x0823BF2E",
+      "batch_source_symbol": "TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop",
+      "patch_symbol": "Chs_TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop",
+      "base_rom_value": "0x0823BF2E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 399
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823C39B",
+      "jp_original_text": "0x0823BF72",
+      "batch_source_symbol": "TrainerHill_Elevator_Text_ReturnToReception",
+      "patch_symbol": "Chs_TrainerHill_Elevator_Text_ReturnToReception",
+      "base_rom_value": "0x0823BF72",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/TrainerHill_Entrance/scripts.inc",
+          "line": 406
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "232_cave_of_origin_b1_f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: CaveOfOrigin_B1F",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08219183",
+      "jp_original_text": "0x0821935C",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin",
+      "base_rom_value": "0x0821935C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 93,
+          "symbol": "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 93,
+          "symbol": "CaveOfOrigin_B1F_Text_ButWereInCaveOfOrigin"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 93
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219199",
+      "jp_original_text": "0x0821941A",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_CantYouRememberSomehow",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_CantYouRememberSomehow",
+      "base_rom_value": "0x0821941A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 109,
+          "symbol": "CaveOfOrigin_B1F_Text_CantYouRememberSomehow"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 109,
+          "symbol": "CaveOfOrigin_B1F_Text_CantYouRememberSomehow"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 109
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

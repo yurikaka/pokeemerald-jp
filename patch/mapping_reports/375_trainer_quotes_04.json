@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "batch": "375_trainer_quotes_04.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/trainers.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 23,
+  "unresolved_count": 0,
+  "reference_count": 23,
+  "mapped": [
+    {
+      "source_symbol": "Route115_Text_TimothyIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1954,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268007",
+      "japanese_text_address": "0x0825D0DE",
+      "japanese_references": [
+        "0x081EB878"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1959,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268033",
+      "japanese_text_address": "0x0825D103",
+      "japanese_references": [
+        "0x081EB87C"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1962,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268045",
+      "japanese_text_address": "0x0825D116",
+      "japanese_references": [
+        "0x081EB896"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyRegister",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1967,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268082",
+      "japanese_text_address": "0x0825D13E",
+      "japanese_references": [
+        "0x081EB8A6"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyRematchIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1972,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082680C1",
+      "japanese_text_address": "0x0825D168",
+      "japanese_references": [
+        "0x081EB8C3"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyRematchDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1977,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082680FD",
+      "japanese_text_address": "0x0825D18D",
+      "japanese_references": [
+        "0x081EB8C7"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_TimothyPostRematch",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1980,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826810D",
+      "japanese_text_address": "0x0825D19D",
+      "japanese_references": [
+        "0x081EB8CD"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KoichiIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1985,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826813C",
+      "japanese_text_address": "0x0825D1C2",
+      "japanese_references": [
+        "0x081EB8DA"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KoichiDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1990,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268156",
+      "japanese_text_address": "0x0825D1E0",
+      "japanese_references": [
+        "0x081EB8DE"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KoichiPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1993,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826815E",
+      "japanese_text_address": "0x0825D1E8",
+      "japanese_references": [
+        "0x081EB8E4"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 1998,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268192",
+      "japanese_text_address": "0x0825D219",
+      "japanese_references": [
+        "0x081EB8F1"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2002,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082681B5",
+      "japanese_text_address": "0x0825D237",
+      "japanese_references": [
+        "0x081EB8F5"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2006,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082681CF",
+      "japanese_text_address": "0x0825D24A",
+      "japanese_references": [
+        "0x081EB90F"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobRegister",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2011,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268219",
+      "japanese_text_address": "0x0825D27C",
+      "japanese_references": [
+        "0x081EB91F"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobRematchIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2015,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268246",
+      "japanese_text_address": "0x0825D29B",
+      "japanese_references": [
+        "0x081EB93C"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobRematchDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2020,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268284",
+      "japanese_text_address": "0x0825D2CF",
+      "japanese_references": [
+        "0x081EB940"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_NobPostRematch",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2024,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268298",
+      "japanese_text_address": "0x0825D2DF",
+      "japanese_references": [
+        "0x081EB946"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2028,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082682C2",
+      "japanese_text_address": "0x0825D302",
+      "japanese_references": [
+        "0x081EB953"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2033,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082682EA",
+      "japanese_text_address": "0x0825D331",
+      "japanese_references": [
+        "0x081EB957"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2036,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082682FA",
+      "japanese_text_address": "0x0825D341",
+      "japanese_references": [
+        "0x081EB971"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyRegister",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2041,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268336",
+      "japanese_text_address": "0x0825D36F",
+      "japanese_references": [
+        "0x081EB981"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyRematchIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2046,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268371",
+      "japanese_text_address": "0x0825D39F",
+      "japanese_references": [
+        "0x081EB99E"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_CyndyRematchDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2049,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268386",
+      "japanese_text_address": "0x0825D3B1",
+      "japanese_references": [
+        "0x081EB9A2"
+      ]
+    }
+  ],
+  "unresolved": []
+}

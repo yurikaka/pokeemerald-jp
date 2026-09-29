@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "source_commit": "fe570a7e5",
+  "status": "partial; requires dedicated display or graphics work",
+  "entries": [
+    {
+      "source_file": "src/berry_fix_program.c",
+      "status": "unresolved",
+      "reason": "The Japanese version loads six pre-rendered full-screen graphic sets through src/berry_fix_graphics.c; it has no equivalent text-string table. Porting the US C strings requires a separate graphics/text rendering replacement, not an address-based text override."
+    },
+    {
+      "source_file": "src/data/contest_opponents.h",
+      "status": "intentionally_unmodified",
+      "reason": "Wokann defines gContestOpponents as ContestPokemon records. The nickname and trainerName fields are copied into gContestMons and transmitted verbatim by contest link code. Replacing them inline with renderer mode bytes would alter exchanged contest data. A display-only conversion must be designed separately."
+    },
+    {
+      "source_file": "src/data/decoration/header.h",
+      "status": "unresolved",
+      "reason": "The US commit expands Decoration.name from the Japanese fixed 11-byte inline field to 16 bytes. Many Chinese names do not fit the Japanese record layout, so an inline replacement would overwrite adjacent decoration data. A name-display redirect is required."
+    },
+    {
+      "source_file": "src/data/easy_chat/easy_chat_group_events.h",
+      "status": "intentionally_kept_english",
+      "reason": "Easy Chat word data is intentionally retained in its existing English form, consistent with the later US Easy Chat defaults commit and prior project decision."
+    },
+    {
+      "source_file": "src/data/easy_chat/easy_chat_group_feelings.h",
+      "status": "intentionally_kept_english",
+      "reason": "Easy Chat word data is intentionally retained in its existing English form, consistent with the later US Easy Chat defaults commit and prior project decision."
+    },
+    {
+      "source_file": "src/text_input_strings.c",
+      "status": "intentionally_kept_original",
+      "reason": "The sole change is the Easy Chat keyboard label 'others'. The project keeps this keyboard's ABC/original behavior, so no override is applied."
+    },
+    {
+      "source_file": "src/landmark.c",
+      "status": "unresolved",
+      "reason": "LandmarkName_MagmaHideout has no pointer to its original Japanese bytes in baserom_jp.gba. It is not safe to infer a target address from the US location."
+    },
+    {
+      "source_file": "src/data/pokemon/pokedex_text.h",
+      "status": "already_covered",
+      "reason": "The four changed Pokédex descriptions are covered by patch/batches/171_pokedex.json and were cross-checked before this audit."
+    },
+    {
+      "source_file": "scripts/import-expansion-c-text.py, scripts/import-expansion-keyed-text.py, scripts/import-expansion-text.py, translation_*_report.json",
+      "status": "no_runtime_rom_change",
+      "reason": "These are import tooling and generated provenance reports, not runtime JP-ROM resources."
+    }
+  ]
+}

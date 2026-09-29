@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "054_mauvillecity_house1.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mauville and Route 110 dialogue: MauvilleCity_House1",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081FFD9F",
+      "jp_original_text": "0x081FFE53",
+      "batch_source_symbol": "MauvilleCity_House1_Text_ExplainRockSmash",
+      "patch_symbol": "Chs_MauvilleCity_House1_Text_ExplainRockSmash",
+      "base_rom_value": "0x081FFE53",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 36,
+          "symbol": "MauvilleCity_House1_Text_ExplainRockSmash"
+        },
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 36,
+          "symbol": "MauvilleCity_House1_Text_ExplainRockSmash"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 36
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFD85",
+      "jp_original_text": "0x081FFDB1",
+      "batch_source_symbol": "MauvilleCity_House1_Text_ImRockSmashDudeTakeThis",
+      "patch_symbol": "Chs_MauvilleCity_House1_Text_ImRockSmashDudeTakeThis",
+      "base_rom_value": "0x081FFDB1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 22,
+          "symbol": "MauvilleCity_House1_Text_ImRockSmashDudeTakeThis"
+        },
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 22,
+          "symbol": "MauvilleCity_House1_Text_ImRockSmashDudeTakeThis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 22
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFDA9",
+      "jp_original_text": "0x081FFEB7",
+      "batch_source_symbol": "MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock",
+      "patch_symbol": "Chs_MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock",
+      "base_rom_value": "0x081FFEB7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 45,
+          "symbol": "MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock"
+        },
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 45,
+          "symbol": "MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_House1/scripts.inc",
+          "line": 45
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

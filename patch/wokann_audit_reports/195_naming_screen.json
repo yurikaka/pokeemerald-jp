@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "195_naming_screen.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "naming screen prompts",
+  "summary": {
+    "needs_review": 6,
+    "verified_fragment": 1
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08565CC0",
+      "jp_original_text": "0x08565868",
+      "batch_source_symbol": "gText_YourName",
+      "patch_symbol": "Chs_gText_YourName",
+      "base_rom_value": "0x08565868",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08565CCC",
+      "jp_original_text": "0x08565874",
+      "batch_source_symbol": "gText_BoxName",
+      "patch_symbol": "Chs_gText_BoxName",
+      "base_rom_value": "0x08565874",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08565CD8",
+      "jp_original_text": "0x08565881",
+      "batch_source_symbol": "gText_PkmnsNickname",
+      "patch_symbol": "Chs_gText_PkmnsNickname",
+      "base_rom_value": "0x08565881",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08565CE4",
+      "jp_original_text": "0x0856588F",
+      "batch_source_symbol": "gText_TellHimTheWords",
+      "patch_symbol": "Chs_gText_TellHimTheWords",
+      "base_rom_value": "0x0856588F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x080E4748",
+      "jp_original_text": "0x085658A0",
+      "batch_source_symbol": "gText_MoveOkBack",
+      "patch_symbol": "Chs_gText_MoveOkBack",
+      "base_rom_value": "0x085658A0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/naming_screen.c",
+          "line": 5256,
+          "referenced_symbol": "gText_NamingScreenInstructions",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_NamingScreenInstructions"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080E46E4",
+        "symbol": "sub_080E46E4_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x08565EE0",
+      "jp_original_text": "0x08564698",
+      "batch_source_symbol": null,
+      "patch_symbol": "ChsNamingScreenBackButtonGfx",
+      "base_rom_value": "0x08564698",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08565EE8",
+      "jp_original_text": "0x08564898",
+      "batch_source_symbol": null,
+      "patch_symbol": "ChsNamingScreenOkButtonGfx",
+      "base_rom_value": "0x08564898",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "schema_version": 1,
+  "batch": "200_battle_frontier_battle_dome_battle_room.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 41,
+  "unresolved_count": 5,
+  "reference_count": 42,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerHasEnteredDome",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 925,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FA3B",
+      "japanese_text_address": "0x082294FC",
+      "japanese_references": [
+        "0x082288B8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsWinner",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 935,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FA65",
+      "japanese_text_address": "0x0822952F",
+      "japanese_references": [
+        "0x08228B51"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 943,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FA81",
+      "japanese_text_address": "0x0822955F",
+      "japanese_references": [
+        "0x08228B17"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 948,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FAA6",
+      "japanese_text_address": "0x0822958C",
+      "japanese_references": [
+        "0x08228B24"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 953,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FACB",
+      "japanese_text_address": "0x082295B8",
+      "japanese_references": [
+        "0x08228985"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerPlayer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 968,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FB74",
+      "japanese_text_address": "0x0822964E",
+      "japanese_references": [
+        "0x08228B5A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_BrightNewHope",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 976,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FBAA",
+      "japanese_text_address": "0x08229694",
+      "japanese_references": [
+        "0x08228BE7"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RisingStar",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 980,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FBB9",
+      "japanese_text_address": "0x082296A5",
+      "japanese_references": [
+        "0x08228BEE"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 984,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FBC6",
+      "japanese_text_address": "0x082296B5",
+      "japanese_references": [
+        "0x08228BF5"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CanAchieveChampionFirstTry",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 989,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FBE4",
+      "japanese_text_address": "0x082296D6",
+      "japanese_references": [
+        "0x08228BFC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CanLossBeAvenged",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 994,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FC0C",
+      "japanese_text_address": "0x082296F9",
+      "japanese_references": [
+        "0x08228C3A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_OnFireForChampionship",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 998,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FC2E",
+      "japanese_text_address": "0x0822970A",
+      "japanese_references": [
+        "0x08228C41"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WinHereAdvancesToFinal",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1003,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FC52",
+      "japanese_text_address": "0x08229724",
+      "japanese_references": [
+        "0x08228C48"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillLongHeldDreamComeTrue",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1008,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FC7A",
+      "japanese_text_address": "0x08229742",
+      "japanese_references": [
+        "0x08228C4F"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TheInvincibleChampion",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1012,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FC9C",
+      "japanese_text_address": "0x08229756",
+      "japanese_references": [
+        "0x08228CC9"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CanAnyoneHopeToBeatTrainer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1016,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FCA9",
+      "japanese_text_address": "0x08229764",
+      "japanese_references": [
+        "0x08228CD0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_DoBattlesExistSolelyForTrainer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1021,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FCC3",
+      "japanese_text_address": "0x08229787",
+      "japanese_references": [
+        "0x08228CD7"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1026,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FCEB",
+      "japanese_text_address": "0x082297A7",
+      "japanese_references": [
+        "0x08228CDE"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1030,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD01",
+      "japanese_text_address": "0x082297B7",
+      "japanese_references": [
+        "0x08228D2E"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1035,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD15",
+      "japanese_text_address": "0x082297CD",
+      "japanese_references": [
+        "0x08228D35"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1039,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD29",
+      "japanese_text_address": "0x082297E0",
+      "japanese_references": [
+        "0x08228D3C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillFormerChampRegainGlory",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1044,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD47",
+      "japanese_text_address": "0x08229803",
+      "japanese_references": [
+        "0x08228D43"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1048,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD65",
+      "japanese_text_address": "0x0822981A",
+      "japanese_references": [
+        "0x08228CE6"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_MakeWayForDomeAceTucker",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1051,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FD7F",
+      "japanese_text_address": "0x0822982B",
+      "japanese_references": [
+        "0x08228D8A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_SpectatorTuckerChant",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1059,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FDE6",
+      "japanese_text_address": "0x0822988B",
+      "japanese_references": [
+        "0x08228DE4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerSilverIntro",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1063,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FE06",
+      "japanese_text_address": "0x082298B4",
+      "japanese_references": [
+        "0x08228E32"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_LetsSeeYourStrategy",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1077,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FEBE",
+      "japanese_text_address": "0x08229973",
+      "japanese_references": [
+        "0x08228E47"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_IncredibleVictorIsPlayer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1080,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FED5",
+      "japanese_text_address": "0x08229988",
+      "japanese_references": [
+        "0x08228E7A",
+        "0x08228F34"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WinnerIsTucker",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1085,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FF00",
+      "japanese_text_address": "0x082299B0",
+      "japanese_references": [
+        "0x08228FAE"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1090,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FF37",
+      "japanese_text_address": "0x082299DB",
+      "japanese_references": [
+        "0x08228EAD"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1094,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FF60",
+      "japanese_text_address": "0x082299FF",
+      "japanese_references": [
+        "0x08228EB7"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1098,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FF7F",
+      "japanese_text_address": "0x08229A1C",
+      "japanese_references": [
+        "0x08228EC7"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CanWinStreakBeStretched",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1103,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FFB3",
+      "japanese_text_address": "0x08229A4A",
+      "japanese_references": [
+        "0x08228CEF"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_LegendHasReturnedDomeAceTucker",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1107,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822FFE5",
+      "japanese_text_address": "0x08229A6B",
+      "japanese_references": [
+        "0x08228D97"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TuckerGoldIntro",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1115,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08230070",
+      "japanese_text_address": "0x08229AD4",
+      "japanese_references": [
+        "0x08228EEC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_UnleashAllPowerIPossess",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1126,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08230167",
+      "japanese_text_address": "0x08229B82",
+      "japanese_references": [
+        "0x08228F01"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1130,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08230196",
+      "japanese_text_address": "0x08229BA1",
+      "japanese_references": [
+        "0x08228F67"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1136,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823021B",
+      "japanese_text_address": "0x08229BEE",
+      "japanese_references": [
+        "0x08228F71"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1140,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08230236",
+      "japanese_text_address": "0x08229C07",
+      "japanese_references": [
+        "0x08228F81"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTucker",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1159,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082302FD",
+      "japanese_text_address": "0x08229CB7",
+      "japanese_references": [
+        "0x08228F8E"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTucker",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "wokann_label_line": 1165,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823032D",
+      "japanese_text_address": "0x08229CE6",
+      "japanese_references": [
+        "0x08228A66"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerVersusTrainer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_TrainerIsWinner",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_RefereesDecidedWinnerTrainer",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLv50Champ2",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_PlayerIsLvOpenChamp2",
+      "source": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "reason": "no_japanese_pointer"
+    }
+  ]
+}

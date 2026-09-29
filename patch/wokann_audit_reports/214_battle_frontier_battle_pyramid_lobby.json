@@ -1,0 +1,1224 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "214_battle_frontier_battle_pyramid_lobby.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: BattleFrontier_BattlePyramidLobby",
+  "summary": {
+    "verified_source_definition": 55
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0822BE89",
+      "jp_original_text": "0x0822C4F8",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid",
+      "base_rom_value": "0x0822C4F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 522
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BE90",
+      "jp_original_text": "0x0822C53F",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge",
+      "base_rom_value": "0x0822C53F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 527
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C031",
+      "jp_original_text": "0x0822C571",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExplainBattlePyramid",
+      "base_rom_value": "0x0822C571",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 535
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BECC",
+      "jp_original_text": "0x0822C6BD",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_WhichLevelMode",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_WhichLevelMode",
+      "base_rom_value": "0x0822C6BD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 557
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BF18",
+      "jp_original_text": "0x0822C6EA",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_SelectThreeMons",
+      "base_rom_value": "0x0822C6EA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 562
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BF40",
+      "jp_original_text": "0x0822C83E",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_OkayToSaveBeforeChallenge",
+      "base_rom_value": "0x0822C83E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 589
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BFFA",
+      "jp_original_text": "0x0822C866",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ShowYouIntoPyramid",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ShowYouIntoPyramid",
+      "base_rom_value": "0x0822C866",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 593
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C330",
+      "jp_original_text": "0x0822C882",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_WeWillHoldBagForSafekeeping",
+      "base_rom_value": "0x0822C882",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 597
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C350",
+      "jp_original_text": "0x0822C8A8",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_PleaseTakePreviousBattleBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_PleaseTakePreviousBattleBag",
+      "base_rom_value": "0x0822C8A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 601
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C35D",
+      "jp_original_text": "0x0822C8CF",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_PleaseTakeThisBattleBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_PleaseTakeThisBattleBag",
+      "base_rom_value": "0x0822C8CF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 605
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C364",
+      "jp_original_text": "0x0822C8EA",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExchangedBagForBattleBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExchangedBagForBattleBag",
+      "base_rom_value": "0x0822C8EA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 609
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C36F",
+      "jp_original_text": "0x0822C907",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_StepOnFloorPanel",
+      "base_rom_value": "0x0822C907",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 613
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BD31",
+      "jp_original_text": "0x0822C956",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_DidntSaveBeforeQuittingTakeBag",
+      "base_rom_value": "0x0822C956",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 620
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BD8E",
+      "jp_original_text": "0x0822C9CE",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_YouveConqueredPyramid",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_YouveConqueredPyramid",
+      "base_rom_value": "0x0822C9CE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 631
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C3A4",
+      "jp_original_text": "0x0822C9F4",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_MonHoldingItemCannotTake",
+      "base_rom_value": "0x0822C9F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 636
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C3C9",
+      "jp_original_text": "0x0822CA3F",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HeldItemsMovedToBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HeldItemsMovedToBag",
+      "base_rom_value": "0x0822CA3F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 644
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C3BC",
+      "jp_original_text": "0x0822CA67",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_BagCannotHoldPickItemsToKeep",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_BagCannotHoldPickItemsToKeep",
+      "base_rom_value": "0x0822CA67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 649
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C438",
+      "jp_original_text": "0x0822CA9D",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_LeastOneMonHoldingItem",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_LeastOneMonHoldingItem",
+      "base_rom_value": "0x0822CA9D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 655
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C40C",
+      "jp_original_text": "0x0822CAB5",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "base_rom_value": "0x0822CAB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C41C",
+      "jp_original_text": "0x0822CAB5",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "base_rom_value": "0x0822CAB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C43F",
+      "jp_original_text": "0x0822CAB5",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_PickItemsToKeep",
+      "base_rom_value": "0x0822CAB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BDC9",
+      "jp_original_text": "0x0822CAEE",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_UsedBattleBagWillBeKept",
+      "base_rom_value": "0x0822CAEE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 667
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BE31",
+      "jp_original_text": "0x0822CBBD",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_DisappointingHereIsBag",
+      "base_rom_value": "0x0822CBBD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 692
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C0A2",
+      "jp_original_text": "0x0822CC44",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_TellYouWhatMisfortunesAwait",
+      "base_rom_value": "0x0822CC44",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 708
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C0F1",
+      "jp_original_text": "0x0822CC6D",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_Aah",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_Aah",
+      "base_rom_value": "0x0822CC6D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 713
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C12F",
+      "jp_original_text": "0x0822CC6D",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_Aah",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_Aah",
+      "base_rom_value": "0x0822CC6D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 713
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C257",
+      "jp_original_text": "0x0822CCA1",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintParalysis",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintParalysis",
+      "base_rom_value": "0x0822CCA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 718
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C260",
+      "jp_original_text": "0x0822CCDC",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintPoison",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintPoison",
+      "base_rom_value": "0x0822CCDC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 724
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C269",
+      "jp_original_text": "0x0822CD0D",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintBurn",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintBurn",
+      "base_rom_value": "0x0822CD0D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 730
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C272",
+      "jp_original_text": "0x0822CD44",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintPPWaste",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintPPWaste",
+      "base_rom_value": "0x0822CD44",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 736
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C27B",
+      "jp_original_text": "0x0822CD9A",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintLevitate",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintLevitate",
+      "base_rom_value": "0x0822CD9A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 744
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C284",
+      "jp_original_text": "0x0822CDE1",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility",
+      "base_rom_value": "0x0822CDE1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 751
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C28D",
+      "jp_original_text": "0x0822CE26",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintIce",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintIce",
+      "base_rom_value": "0x0822CE26",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 758
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C296",
+      "jp_original_text": "0x0822CE63",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintExplosion",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintExplosion",
+      "base_rom_value": "0x0822CE63",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 765
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C29F",
+      "jp_original_text": "0x0822CEA5",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintPsychic",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintPsychic",
+      "base_rom_value": "0x0822CEA5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 772
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2A8",
+      "jp_original_text": "0x0822CEE4",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintRock",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintRock",
+      "base_rom_value": "0x0822CEE4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 779
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2B1",
+      "jp_original_text": "0x0822CF1F",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintFighting",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintFighting",
+      "base_rom_value": "0x0822CF1F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 786
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2BA",
+      "jp_original_text": "0x0822CF5E",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintWeather",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintWeather",
+      "base_rom_value": "0x0822CF5E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 793
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2C3",
+      "jp_original_text": "0x0822CFC1",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintBug",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintBug",
+      "base_rom_value": "0x0822CFC1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 802
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2D5",
+      "jp_original_text": "0x0822D03C",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintWater",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintWater",
+      "base_rom_value": "0x0822D03C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 816
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2DE",
+      "jp_original_text": "0x0822D077",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintGhost",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintGhost",
+      "base_rom_value": "0x0822D077",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 823
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2E7",
+      "jp_original_text": "0x0822D0B6",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintSteel",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintSteel",
+      "base_rom_value": "0x0822D0B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 830
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2F0",
+      "jp_original_text": "0x0822D0F5",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintFlyingDragon",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintFlyingDragon",
+      "base_rom_value": "0x0822D0F5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 837
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C2F9",
+      "jp_original_text": "0x0822D132",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintStoneEvolve",
+      "base_rom_value": "0x0822D132",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 844
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C302",
+      "jp_original_text": "0x0822D187",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_HintNormal",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_HintNormal",
+      "base_rom_value": "0x0822D187",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 852
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C0AF",
+      "jp_original_text": "0x0822D1C7",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_BelieveMyFortunesOrNot",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_BelieveMyFortunesOrNot",
+      "base_rom_value": "0x0822D1C7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 859
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C44C",
+      "jp_original_text": "0x0822D202",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_TrainersNoticeRunning",
+      "base_rom_value": "0x0822D202",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 865
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C455",
+      "jp_original_text": "0x0822D276",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_LostLotOfItems",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_LostLotOfItems",
+      "base_rom_value": "0x0822D276",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 875
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BD9B",
+      "jp_original_text": "0x0822D2B7",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_YouveDefeatedPyramidKing",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_YouveDefeatedPyramidKing",
+      "base_rom_value": "0x0822D2B7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 881
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822BDD4",
+      "jp_original_text": "0x0822D2EA",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_GiveYouTheseBattlePoints",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_GiveYouTheseBattlePoints",
+      "base_rom_value": "0x0822D2EA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 887
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C45F",
+      "jp_original_text": "0x0822D31A",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_RulesAreListed",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_RulesAreListed",
+      "base_rom_value": "0x0822D31A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 892
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C4C0",
+      "jp_original_text": "0x0822D343",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExplainMonRules",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExplainMonRules",
+      "base_rom_value": "0x0822D343",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 899
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C4CE",
+      "jp_original_text": "0x0822D398",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExplainTrainerRules",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExplainTrainerRules",
+      "base_rom_value": "0x0822D398",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 906
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C4DC",
+      "jp_original_text": "0x0822D3FE",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExplainMazeRules",
+      "base_rom_value": "0x0822D3FE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 915
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822C4EA",
+      "jp_original_text": "0x0822D46E",
+      "batch_source_symbol": "BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules",
+      "patch_symbol": "Chs_BattleFrontier_BattlePyramidLobby_Text_ExplainBagRules",
+      "base_rom_value": "0x0822D46E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+          "line": 924
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

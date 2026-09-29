@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "batch": "376_trainer_quotes_05.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/trainers.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 19,
+  "unresolved_count": 0,
+  "reference_count": 19,
+  "mapped": [
+    {
+      "source_symbol": "Route115_Text_CyndyPostRematch",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2053,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082683A3",
+      "japanese_text_address": "0x0825D3C6",
+      "japanese_references": [
+        "0x081EB9A8"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HectorIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2057,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082683DB",
+      "japanese_text_address": "0x0825D3ED",
+      "japanese_references": [
+        "0x081EB9B5"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HectorDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2061,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082683FB",
+      "japanese_text_address": "0x0825D413",
+      "japanese_references": [
+        "0x081EB9B9"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HectorPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2065,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268414",
+      "japanese_text_address": "0x0825D429",
+      "japanese_references": [
+        "0x081EB9BF"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KyraIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2069,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826843C",
+      "japanese_text_address": "0x0825D454",
+      "japanese_references": [
+        "0x081EB9CC"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KyraDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2073,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268462",
+      "japanese_text_address": "0x0825D478",
+      "japanese_references": [
+        "0x081EB9D0"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_KyraPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2076,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826846A",
+      "japanese_text_address": "0x0825D480",
+      "japanese_references": [
+        "0x081EB9D6"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_JaidenIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2081,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826849F",
+      "japanese_text_address": "0x0825D4B3",
+      "japanese_references": [
+        "0x081EB9E3"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_JaidenDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2085,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082684BD",
+      "japanese_text_address": "0x0825D4CB",
+      "japanese_references": [
+        "0x081EB9E7"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_JaidenPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2088,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082684CC",
+      "japanese_text_address": "0x0825D4D6",
+      "japanese_references": [
+        "0x081EB9ED"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HeleneIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2092,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082684EF",
+      "japanese_text_address": "0x0825D4F2",
+      "japanese_references": [
+        "0x081EBA11"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HeleneDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2096,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268507",
+      "japanese_text_address": "0x0825D513",
+      "japanese_references": [
+        "0x081EBA15"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_HelenePostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2099,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268513",
+      "japanese_text_address": "0x0825D51C",
+      "japanese_references": [
+        "0x081EBA1B"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_AlixIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2105,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826854B",
+      "japanese_text_address": "0x0825D550",
+      "japanese_references": [
+        "0x081EB9FA"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_AlixDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2108,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268567",
+      "japanese_text_address": "0x0825D564",
+      "japanese_references": [
+        "0x081EB9FE"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_AlixPostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2111,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268575",
+      "japanese_text_address": "0x0825D56F",
+      "japanese_references": [
+        "0x081EBA04"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_MarleneIntro",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2115,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08268598",
+      "japanese_text_address": "0x0825D588",
+      "japanese_references": [
+        "0x081EBA28"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_MarleneDefeat",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2119,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082685B7",
+      "japanese_text_address": "0x0825D5A9",
+      "japanese_references": [
+        "0x081EBA2C"
+      ]
+    },
+    {
+      "source_symbol": "Route115_Text_MarlenePostBattle",
+      "source": "data/text/trainers.inc",
+      "wokann_label_line": 2122,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082685C5",
+      "japanese_text_address": "0x0825D5B8",
+      "japanese_references": [
+        "0x081EBA32"
+      ]
+    }
+  ],
+  "unresolved": []
+}

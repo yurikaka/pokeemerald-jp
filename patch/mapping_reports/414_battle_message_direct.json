@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "batch": "414_battle_message_direct.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/battle_message.c",
+  "selection": {
+    "symbol_offset": 0,
+    "symbol_limit": null,
+    "auto_wrap": false
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "already_in_batch": 38,
+    "already_patched_reference": 2,
+    "ambiguous_or_unreferenced_japanese_text": 3,
+    "dynamic_placeholder_needs_review": 15,
+    "mapped": 11,
+    "missing_or_ambiguous_wokann_symbol": 36,
+    "source_changed_after_commit": 1,
+    "unsupported_source_encoding": 10
+  },
+  "mapped": [
+    {
+      "source_symbol": "sText_FoePkmnPrefix2",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3DA",
+      "japanese_text_address": "0x085AB016",
+      "japanese_references": [
+        "0x0814F458"
+      ]
+    },
+    {
+      "source_symbol": "sText_AllyPkmnPrefix",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3DF",
+      "japanese_text_address": "0x085AB01B",
+      "japanese_references": [
+        "0x0814F45C"
+      ]
+    },
+    {
+      "source_symbol": "sText_FoePkmnPrefix3",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3E4",
+      "japanese_text_address": "0x085AB020",
+      "japanese_references": [
+        "0x0814F42C"
+      ]
+    },
+    {
+      "source_symbol": "sText_AllyPkmnPrefix2",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3E9",
+      "japanese_text_address": "0x085AB025",
+      "japanese_references": [
+        "0x0814F430"
+      ]
+    },
+    {
+      "source_symbol": "sText_FoePkmnPrefix4",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3EE",
+      "japanese_text_address": "0x085AB02A",
+      "japanese_references": [
+        "0x0814F484"
+      ]
+    },
+    {
+      "source_symbol": "sText_AllyPkmnPrefix3",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E3F3",
+      "japanese_text_address": "0x085AB02F",
+      "japanese_references": [
+        "0x0814F488"
+      ]
+    },
+    {
+      "source_symbol": "sText_Accuracy",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E42A",
+      "japanese_text_address": "0x085AB07C",
+      "japanese_references": [
+        "0x085AB0A4"
+      ]
+    },
+    {
+      "source_symbol": "sText_Evasiveness",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E431",
+      "japanese_text_address": "0x085AB084",
+      "japanese_references": [
+        "0x085AB0A8"
+      ]
+    },
+    {
+      "source_symbol": "sText_Someones",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E5DA",
+      "japanese_text_address": "0x085AB225",
+      "japanese_references": [
+        "0x0814F400"
+      ]
+    },
+    {
+      "source_symbol": "sText_Lanettes",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E5E1",
+      "japanese_text_address": "0x085AB22A",
+      "japanese_references": [
+        "0x0814F404"
+      ]
+    },
+    {
+      "source_symbol": "sText_EnigmaBerry",
+      "wokann_source": "src/battle_message.c",
+      "us_text_address": "0x0865E647",
+      "japanese_text_address": "0x085AB288",
+      "japanese_references": [
+        "0x0814F078",
+        "0x0814F8E0"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "gText_PkmnShroudedInMist",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnGettingPumped",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnsXPreventsSwitching",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_StatRose",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DefendersStatRose",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_GotAwaySafely",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerDefeatedLinkTrainer",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TwoLinkTrainersDefeated",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerLostAgainstLinkTrainer",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerLostToTwo",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerBattledToDrawLinkTrainer",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerBattledToDrawVsTwo",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_WildFled",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_TwoWildFled",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_PlayerDefeatedLinkTrainerTrainer1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_OpponentMon1Appeared",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_WildPkmnAppeared",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LegendaryPkmnAppeared",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WildPkmnAppearedPause",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TwoWildPkmnAppeared",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Trainer1WantsToBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerWantsToBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TwoLinkTrainersWantToBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Trainer1SentOutPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Trainer1SentOutTwoPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Trainer1SentOutPkmn2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerSentOutPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerSentOutTwoPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerSentOutPkmn2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerMultiSentOutPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_GoPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_GoTwoPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_GoPkmn2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_DoItPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_GoForItPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_YourFoesWeakGetEmPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PkmnThatsEnough",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PkmnComeBack",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PkmnOkComeBack",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PkmnGoodComeBack",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_Trainer1WithdrewPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_LinkTrainer1WithdrewPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_LinkTrainer2WithdrewPkmn",
+      "reason": "source_changed_after_commit"
+    },
+    {
+      "source_symbol": "sText_WildPkmnPrefix",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "sText_FoePkmnPrefix",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "sText_AttackerUsedX",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Speed",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_BerrySuffix",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_PkmnIsEvolving",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CongratsPkmnEvolved",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnStoppedEvolving",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WhatWillPkmnDo",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WhatWillPkmnDo2",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_WhatWillWallyDo",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_LinkStandby",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_BattleMenu",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SafariZoneMenu",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_MoveInterfaceType",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MoveInterfacePPType",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhichMoveToForget4",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_BattleYesNoChoice",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BattleSwitchWhich",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Attack",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_Defense",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SafariBalls",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_SafariBallLeft",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_Sleep",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Poison",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Burn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Paralysis",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Ice",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Confusion",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Love",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SpaceAndSpace",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Are",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Are2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BadEgg",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleWallyName",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Win",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_Loss",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_Draw",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_SpaceIs",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_ApostropheS",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleTourney",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TheGreatNewHope",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WillChampionshipDreamComeTrue",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AFormerChampion",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThePreviousChampion",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TheUnbeatenChampion",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Mind",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Skill",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Body",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Judgment",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_TwoTrainersSentPkmn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_Trainer2SentOutPkmn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_TwoTrainersWantToBattle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_InGamePartnerSentOutZGoN",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_TwoInGameTrainersDefeated",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_Trainer1Fled",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_PlayerLostAgainstTrainer1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_PlayerBattledToDrawTrainer1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordBattleToPass",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleRecordedOnPass",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_LinkTrainerWantsToBattlePause",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TwoLinkTrainersWantToBattlePause",
+      "reason": "already_in_batch"
+    }
+  ]
+}

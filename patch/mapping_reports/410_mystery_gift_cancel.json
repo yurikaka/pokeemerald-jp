@@ -1,0 +1,12 @@
+{
+  "source_commit": "fe570a7e5",
+  "source_file": "src/mystery_gift_scripts.c",
+  "wokann_file": "src/data/union_room8t.h",
+  "status": "mapped; emulator_not_tested",
+  "mapping_policy": "Wokann marks the original Japanese cancel-read text at 0x082C4B54 as sMeventServerCancelReadText. baserom_jp.gba contains exactly one pointer to it, at 0x082C4D7C. US mystery_gift_scripts.c uses its same-purpose sText_CanceledReadingCard in SVR_LOAD_MSG. The Chinese wording is copied from US commit fe570a7e5.",
+  "mapped_count": 1,
+  "unresolved_count": 0,
+  "mappings": [
+    {"source_symbol": "sText_CanceledReadingCard", "japanese_symbol": "sMeventServerCancelReadText", "original": "0x082C4B54", "reference": "0x082C4D7C"}
+  ]
+}

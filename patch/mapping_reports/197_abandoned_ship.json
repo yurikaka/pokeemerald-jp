@@ -1,0 +1,700 @@
+{
+  "schema_version": 1,
+  "batch": "197_abandoned_ship.json",
+  "source_commit": "fe570a7e5",
+  "status": "generated",
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source_symbols": "Read translated map labels from US source, exact EOS-terminated bytes from the US ROM at ELF symbol addresses.",
+    "japanese_references": "Use matching Wokann dev text-label address comments and verify each reference is an exact pointer word in the unpatched JP ROM.",
+    "control_codes": "Preserve encoded US control bytes; wrap the two player-name placeholders in Japanese mode."
+  },
+  "mapped_count": 56,
+  "unresolved_count": 0,
+  "reference_count": 61,
+  "mapped": [
+    {
+      "source_symbol": "AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner",
+      "us_text_address": "0x082209CA",
+      "us_encoded_hex": "0d9802da01aa17af09b404a50226fe037910550c75028c074a0e5b033e020d3bfb0c9e05460b430d9810450f0b04600cbe02060ab23bfe02e909b50ac90d70108a054609530f7e10450304b0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+      "wokann_label_line": 27,
+      "japanese_text_address": "0x0821B270",
+      "japanese_references": [
+        "0x0821B254"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner",
+      "us_text_address": "0x08220A18",
+      "us_encoded_hex": "0a133c09bd077d0c0c0cbe02060ab23cfb0d0710f43b09d909d201d609d20ce70d9801300c9ffe0c70046217af09b404a502263dfb0d9805460ef1037910550c75028cfe05b70e83074a0e5b0f0b0e34033e020d37ff",
+      "wokann_source": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+      "wokann_label_line": 34,
+      "japanese_text_address": "0x0821B2C2",
+      "japanese_references": [
+        "0x0821B25E"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus",
+      "us_text_address": "0x08220A6E",
+      "us_encoded_hex": "10550c75028c07220ded0b4b103904eb37fe0c9f0c6905240f7e0e3409e00d1f089e37ff",
+      "wokann_source": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+      "wokann_label_line": 41,
+      "japanese_text_address": "0x0821B30A",
+      "japanese_references": [
+        "0x0821B268"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_1F_Text_CharlieIntro",
+      "us_text_address": "0x08220059",
+      "us_encoded_hex": "02d810f40f7c0f6c0b260bad028cfe0f7e0bee094c04e90e31030b3dff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+      "wokann_label_line": 15,
+      "japanese_text_address": "0x0821A99D",
+      "japanese_references": [
+        "0x0821A98C"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_1F_Text_CharlieDefeat",
+      "us_text_address": "0x08220076",
+      "us_encoded_hex": "01003b09d90f5c089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+      "wokann_label_line": 19,
+      "japanese_text_address": "0x0821A9B7",
+      "japanese_references": [
+        "0x0821A990"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_1F_Text_CharliePostBattle",
+      "us_text_address": "0x08220081",
+      "us_encoded_hex": "10d410f40f7c0f6c0b26030b0bed0521fe0c0c050b09c70b53075b08bc0b14030b3cff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+      "wokann_label_line": 22,
+      "japanese_text_address": "0x0821A9C1",
+      "japanese_references": [
+        "0x0821A996"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_1F_Text_IsntItFunHere",
+      "us_text_address": "0x082200A4",
+      "us_encoded_hex": "105508640d0e04e90d4e030b01283dfe0d980f0b082910550864077d0e5603df3cff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_1F/scripts.inc",
+      "wokann_label_line": 26,
+      "japanese_text_address": "0x0821A9DE",
+      "japanese_references": [
+        "0x0821A97F"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_DuncanIntro",
+      "us_text_address": "0x0822036F",
+      "us_encoded_hex": "0aaf04e3030b0bed05213b0d98095f0c510c1bfe036102d810f4110c05a5030b016307d7096637fa037910300f0b0223100a094c0ee23dff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 58,
+      "japanese_text_address": "0x0821AC96",
+      "japanese_references": [
+        "0x0821AC85"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_DuncanDefeat",
+      "us_text_address": "0x082203A7",
+      "us_encoded_hex": "01040ea63b0d98017805840243089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 63,
+      "japanese_text_address": "0x0821ACC7",
+      "japanese_references": [
+        "0x0821AC89"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+      "us_text_address": "0x082203B8",
+      "us_encoded_hex": "0d98095f030b028c0e030fe604530acc089e37fb0b6704c30f7e056e0aca0c51030b016307d70966030b053d3bfe057f0e7809d2014e0bad0bee094c093eb0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 66,
+      "japanese_text_address": "0x0821ACD0",
+      "japanese_references": [
+        "0x0821AC8F"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_YayItsAShip",
+      "us_text_address": "0x082203F9",
+      "us_encoded_hex": "0ef53cfe0c0c028c01003cff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 72,
+      "japanese_text_address": "0x0821AD11",
+      "japanese_references": [
+        "0x0821AC2D"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_DoorIsLocked",
+      "us_text_address": "0x08220405",
+      "us_encoded_hex": "095d0c9b0bad089e37fb095d0bad0e3f10f4b101f107f0b237ff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 76,
+      "japanese_text_address": "0x0821AD1E",
+      "japanese_references": [
+        "0x0821AC6D"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Corridors_B1F_Text_InsertedStorageKey",
+      "us_text_address": "0x0822041F",
+      "us_encoded_hex": "fd0102090b6b089efe01f107f0030b0fcb025937fb02090b6b030b0fcb0259050b080307b610d0089e3bfe01d604c5095d017802d207b8089e37ff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 80,
+      "japanese_text_address": "0x0821AD3C",
+      "japanese_references": [
+        "0x0821AC50"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Text_TheDoorIsOpen",
+      "us_text_address": "0x0822045A",
+      "us_encoded_hex": "095d07b8089e37ff",
+      "wokann_source": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "wokann_label_line": 86,
+      "japanese_text_address": "0x0821AD6C",
+      "japanese_references": [
+        "0x0821AC77",
+        "0x0821B4F3"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorCorridors_Text_Rm1DoorIsLocked",
+      "us_text_address": "0x08220C5C",
+      "us_encoded_hex": "095d0c9b0bad089e37fb095d0bad0e3f10f4b1a204eb03c2b237ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "wokann_label_line": 136,
+      "japanese_text_address": "0x0821B4FB",
+      "japanese_references": [
+        "0x0821B4CB"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorCorridors_Text_Rm2DoorIsLocked",
+      "us_text_address": "0x08220C77",
+      "us_encoded_hex": "095d0c9b0bad089e37fb095d0bad0e3f10f4b1a304eb03c2b237ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "wokann_label_line": 140,
+      "japanese_text_address": "0x0821B51A",
+      "japanese_references": [
+        "0x0821B4D5"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorCorridors_Text_Rm4DoorIsLocked",
+      "us_text_address": "0x08220C92",
+      "us_encoded_hex": "095d0c9b0bad089e37fb095d0bad0e3f10f4b1a504eb03c2b237ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "wokann_label_line": 144,
+      "japanese_text_address": "0x0821B539",
+      "japanese_references": [
+        "0x0821B4DF"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorCorridors_Text_Rm6DoorIsLocked",
+      "us_text_address": "0x08220CAD",
+      "us_encoded_hex": "095d0c9b0bad089e37fb095d0bad0e3f10f4b1a704eb03c2b237ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "wokann_label_line": 148,
+      "japanese_text_address": "0x0821B558",
+      "japanese_references": [
+        "0x0821B4E9"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorCorridors_Text_InsertedKey",
+      "us_text_address": "0x08220CC8",
+      "us_encoded_hex": "fd0102090b6b089e0fcb025937fb02090b6b030b0fcb0259050b080307b610d0089e3bfe01d604c5095d017802d207b8089e37ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorCorridors/scripts.inc",
+      "wokann_label_line": 152,
+      "japanese_text_address": "0x0821B577",
+      "japanese_references": [
+        "0x0821B409",
+        "0x0821B440",
+        "0x0821B477",
+        "0x0821B4AE"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_HiddenFloorRooms_Text_BrightShinyTrash",
+      "us_text_address": "0x08220EB1",
+      "us_encoded_hex": "074204aa0b9f0b9f3cfe07d70dcb108c0c0c0e3408210585b0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_HiddenFloorRooms/scripts.inc",
+      "wokann_label_line": 109,
+      "japanese_text_address": "0x0821B758",
+      "japanese_references": [
+        "0x0821B750"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanIntro",
+      "us_text_address": "0x082205ED",
+      "us_encoded_hex": "0d8a3e0fe60e990163030b0d2610a13bfe0d98095f03a50e03089e0f0b0d810e9e088a05bd3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 54,
+      "japanese_text_address": "0x0821AF11",
+      "japanese_references": [
+        "0x0821AE21"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanDefeat",
+      "us_text_address": "0x08220614",
+      "us_encoded_hex": "0d8a3e059f0bf50d98095f087d0c1bfe0f02095309d202d204c50c9eb0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 58,
+      "japanese_text_address": "0x0821AF2D",
+      "japanese_references": [
+        "0x0821AE25"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanPostBattle",
+      "us_text_address": "0x08220633",
+      "us_encoded_hex": "0d8a3e0d98095f0bee094c016301f30f02095310450304b0b0fe0c0c01d60c0c0f21075d01780d421117089e3dff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 62,
+      "japanese_text_address": "0x0821AF4B",
+      "japanese_references": [
+        "0x0821AE43"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons",
+      "us_text_address": "0x08220661",
+      "us_encoded_hex": "0d8a3e09d9087fa3108c016307d70966036109530f7e3bfe10550ee207dd034d0f5c01d6089e0d98095f37ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 66,
+      "japanese_text_address": "0x0821AF73",
+      "japanese_references": [
+        "0x0821AE29"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraIntro",
+      "us_text_address": "0x0822068D",
+      "us_encoded_hex": "0de83e0a133dfe0d98095f0f0b10820fe60e9901633bfa073304c30b34104503040f0b0d810e9e088a05bd3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 70,
+      "japanese_text_address": "0x0821AF99",
+      "japanese_references": [
+        "0x0821AE85"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraDefeat",
+      "us_text_address": "0x082206BA",
+      "us_encoded_hex": "0de83e0a133b0cac0ad8089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 74,
+      "japanese_text_address": "0x0821AFC0",
+      "japanese_references": [
+        "0x0821AE89"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraPostBattle",
+      "us_text_address": "0x082206C8",
+      "us_encoded_hex": "0de83e016301f3076f07690fe609ba08643dfb0d9803610f21075d0e1804e9fe0d42030401630f240522092c0bee094c089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 77,
+      "japanese_text_address": "0x0821AFCA",
+      "japanese_references": [
+        "0x0821AEA7"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons",
+      "us_text_address": "0x082206FC",
+      "us_encoded_hex": "0de83e0a133b09d909530f7ea3108c016307d709663dfe09bd0f2405220fe5103001283cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 81,
+      "japanese_text_address": "0x0821AFEF",
+      "japanese_references": [
+        "0x0821AE8D"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraRegister",
+      "us_text_address": "0x08220721",
+      "us_encoded_hex": "0de83e0a133b09d901300d980b47057d089e3cfe0d980ef1030e05b209d93cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 85,
+      "japanese_text_address": "0x0821B015",
+      "japanese_references": [
+        "0x0821AE4D",
+        "0x0821AEB1"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanRematchIntro",
+      "us_text_address": "0x08220741",
+      "us_encoded_hex": "0d8a3e0d98095f0f0b1082fe0fe60e991045016301f337fb0d98095f030b016307d709660f0201a10ad8089e3bfe046209d9102c0c030f0b0de601283dff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 89,
+      "japanese_text_address": "0x0821B038",
+      "japanese_references": [
+        "0x0821AE6A"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanRematchDefeat",
+      "us_text_address": "0x0822077F",
+      "us_encoded_hex": "0d8a3e09d905460c0c09bd094c0ad83cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 94,
+      "japanese_text_address": "0x0821B06E",
+      "japanese_references": [
+        "0x0821AE6E"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanPostRematch",
+      "us_text_address": "0x08220790",
+      "us_encoded_hex": "0d8a3e0d98095f095310450304016301f33bfe05460c29089e016307d7096603791030b0b0fb0d980ef1056505bdb0b001d604c50ef10c0c0d981059030b0c58027808293bfe0ca007dd034d056e0bd80ab3030bb0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 97,
+      "japanese_text_address": "0x0821B07E",
+      "japanese_references": [
+        "0x0821AE78"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons",
+      "us_text_address": "0x082207E7",
+      "us_encoded_hex": "0d8a3e09d9087fa3108c016307d70966036109530f7e3bfe10550ee209d90c0c0f5c01d6089e0d98095f030b37ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 103,
+      "japanese_text_address": "0x0821B0C2",
+      "japanese_references": [
+        "0x0821AE72"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraRematchIntro",
+      "us_text_address": "0x08220815",
+      "us_encoded_hex": "0de83e0a133d0d98095f0f8405e6097e089e3cfb09d904f30d98095f0f0b0ee23b05460fe60e991045fe016301f33b037901d603793dfb01d60b67082902230379103001283bfe0c29030b0b4b03c80ab50e99016337ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 107,
+      "japanese_text_address": "0x0821B0E8",
+      "japanese_references": [
+        "0x0821AECE"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraRematchDefeat",
+      "us_text_address": "0x0822086C",
+      "us_encoded_hex": "0de83e0a133b0d98095f0f840c29089eb0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 114,
+      "japanese_text_address": "0x0821B13A",
+      "japanese_references": [
+        "0x0821AED2"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraPostRematch",
+      "us_text_address": "0x0822087F",
+      "us_encoded_hex": "0de83e01d60130016307d70966088a030a0ad80f0b0e343bfe01d610450304016301f33bfa0d98095f07a801d605650b253cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 117,
+      "japanese_text_address": "0x0821B149",
+      "japanese_references": [
+        "0x0821AEDC"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons",
+      "us_text_address": "0x082208B2",
+      "us_encoded_hex": "0de83e0a133b09d909530f7ea3108c016307d709663dfe09bd108c04e90f2405220fe51030089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 121,
+      "japanese_text_address": "0x0821B16F",
+      "japanese_references": [
+        "0x0821AED6"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_JaniIntro",
+      "us_text_address": "0x082208DB",
+      "us_encoded_hex": "0d9801d60ba102260f7c0f6c3bfe02e90d980ba10226037910303cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 125,
+      "japanese_text_address": "0x0821B195",
+      "japanese_references": [
+        "0x0821AEE9"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_JaniDefeat",
+      "us_text_address": "0x082208F7",
+      "us_encoded_hex": "01040ea63bfe01d603790d1f010037ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 129,
+      "japanese_text_address": "0x0821B1AD",
+      "japanese_references": [
+        "0x0821AEED"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_JaniPostBattle",
+      "us_text_address": "0x08220907",
+      "us_encoded_hex": "026207170fe610550c75028c0bad1117fe054610590f7e0e3409c70c2137ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 132,
+      "japanese_text_address": "0x0821B1B8",
+      "japanese_references": [
+        "0x0821AEF3"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_GarrisonIntro",
+      "us_text_address": "0x08220926",
+      "us_encoded_hex": "087908920f990ce60d03b0b0fe1055077d0c0c0e9e088a05bd030b016301f33cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 136,
+      "japanese_text_address": "0x0821B1D8",
+      "japanese_references": [
+        "0x0821AF00"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_GarrisonDefeat",
+      "us_text_address": "0x08220947",
+      "us_encoded_hex": "01003b09530e18030409d90546fe10590f7e08900de6110b37ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 140,
+      "japanese_text_address": "0x0821B1F2",
+      "japanese_references": [
+        "0x0821AF04"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_1F_Text_GarrisonPostBattle",
+      "us_text_address": "0x08220961",
+      "us_encoded_hex": "0d980fe609a90460028c01f010a13bfe07c203040f7e0bee094c03500dbd0fe60b9f04aa37ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_1F/scripts.inc",
+      "wokann_label_line": 144,
+      "japanese_text_address": "0x0821B20B",
+      "japanese_references": [
+        "0x0821AF0A"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms2_B1F_Text_PerfectPlaceToGoExploring",
+      "us_text_address": "0x082204AD",
+      "us_encoded_hex": "1055086407a803790c0c11260153030b0cbe0e02031f3cfe0cac0f7e0f320c5f089e3cfb0d98043c02d20369028c0badfe0f7e016301f337ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms2_B1F/scripts.inc",
+      "wokann_label_line": 10,
+      "japanese_text_address": "0x0821ADD1",
+      "japanese_references": [
+        "0x0821ADCA"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_TakingALookAround",
+      "us_text_address": "0x08220149",
+      "us_encoded_hex": "105510a7028c050b04d705e63bfe0d98030a0245058701e904a30f0b0de637fb1461b0b0fe0c69052405460f7e0a9f0c9f028c01f0b0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 36,
+      "japanese_text_address": "0x0821AA80",
+      "japanese_references": [
+        "0x0821AA00"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaIntro",
+      "us_text_address": "0x08220181",
+      "us_encoded_hex": "09d9076f07690c0c0d700bee094c0829fe105508643d07dd034d0c0c04e90aa101283cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 42,
+      "japanese_text_address": "0x0821AAB8",
+      "japanese_references": [
+        "0x0821AA24"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaDefeat",
+      "us_text_address": "0x082201A5",
+      "us_encoded_hex": "01d6074804e90aa13b0546050b0ad8b0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 46,
+      "japanese_text_address": "0x0821AAD3",
+      "japanese_references": [
+        "0x0821AA28"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaPostBattle",
+      "us_text_address": "0x082201B7",
+      "us_encoded_hex": "045e0197030b09bd04600b4bb0b0fb0c9e0c580c9e108c0c0c082904a304aa3bfe07d70d9807a5030a01d60379075237ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 50,
+      "japanese_text_address": "0x0821AAE9",
+      "japanese_references": [
+        "0x0821AA42"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaRegister",
+      "us_text_address": "0x082201E8",
+      "us_encoded_hex": "09d910590c0c0cac0ad8089e3cfe0d98030e05b20de609d9030b0e500dc6112f05b809e401283cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 55,
+      "japanese_text_address": "0x0821AB1A",
+      "japanese_references": [
+        "0x0821AA52"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaRematchIntro",
+      "us_text_address": "0x08220210",
+      "us_encoded_hex": "09d9076f07690d700bee094c05650304fe105508643d07dd034d0c0c04e90aa101283cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 59,
+      "japanese_text_address": "0x0821AB3F",
+      "japanese_references": [
+        "0x0821AA6F"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaRematchDefeat",
+      "us_text_address": "0x08220234",
+      "us_encoded_hex": "09d90f020cac0ad8089e01283dff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 63,
+      "japanese_text_address": "0x0821AB62",
+      "japanese_references": [
+        "0x0821AA73"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_ThaliaPostRematch",
+      "us_text_address": "0x08220242",
+      "us_encoded_hex": "0d98043c07dd034d09bd04600b4b0f7e0bee094c0aae0d243cfe0c9e030b0e5b0d700cac07d70f19089e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 66,
+      "japanese_text_address": "0x0821AB6F",
+      "japanese_references": [
+        "0x0821AA79"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_DemetriusIntro",
+      "us_text_address": "0x0822026E",
+      "us_encoded_hex": "0d4301003cfe017803a50e03089e3cb0b001003dff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 71,
+      "japanese_text_address": "0x0821AB98",
+      "japanese_references": [
+        "0x0821AA0D"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_DemetriusDefeat",
+      "us_text_address": "0x08220283",
+      "us_encoded_hex": "05233b09d901d60c0c0d98092237ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 75,
+      "japanese_text_address": "0x0821ABAC",
+      "japanese_references": [
+        "0x0821AA11"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_1F_Text_DemetriusPostBattle",
+      "us_text_address": "0x08220292",
+      "us_encoded_hex": "0d980b470d9809220bd80ab3089e3b0c9c0f24077d0a39089e0278082937fe07d701d60ef104500c8201ad0b4b0d980fe61055039e3cff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_1F/scripts.inc",
+      "wokann_label_line": 79,
+      "japanese_text_address": "0x0821ABC0",
+      "japanese_references": [
+        "0x0821AA17"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    },
+    {
+      "source_symbol": "AbandonedShip_Rooms_B1F_Text_GettingQueasy",
+      "us_text_address": "0x0822047A",
+      "us_encoded_hex": "01000100b0b0fb0d980f0b0bad1055028c077d0e180d2ab0b0fb0c870b3b028c0546095307b8b0b0ff",
+      "wokann_source": "data/maps/AbandonedShip_Rooms_B1F/scripts.inc",
+      "wokann_label_line": 15,
+      "japanese_text_address": "0x0821AD90",
+      "japanese_references": [
+        "0x0821AD89"
+      ],
+      "mapping_method": "Wokann exact text label address, verified against every JP ROM pointer word"
+    }
+  ]
+}
+

@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "179_berry.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "berry tree planting, watering, and picking",
+  "summary": {
+    "verified_source_definition": 19
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08244DDD",
+      "jp_original_text": "0x08244F3D",
+      "batch_source_symbol": "BerryTree_Text_BerryGrowthStage1",
+      "patch_symbol": "Chs_BerryTree_Text_BerryGrowthStage1",
+      "base_rom_value": "0x08244F3D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 186
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244DEA",
+      "jp_original_text": "0x08244F4D",
+      "batch_source_symbol": "BerryTree_Text_BerryGrowthStage2",
+      "patch_symbol": "Chs_BerryTree_Text_BerryGrowthStage2",
+      "base_rom_value": "0x08244F4D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 189
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244DF7",
+      "jp_original_text": "0x08244F5A",
+      "batch_source_symbol": "BerryTree_Text_BerryGrowthStage3",
+      "patch_symbol": "Chs_BerryTree_Text_BerryGrowthStage3",
+      "base_rom_value": "0x08244F5A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 192
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E09",
+      "jp_original_text": "0x08244F6E",
+      "batch_source_symbol": "BerryTree_Text_BerryGrowthStage4",
+      "patch_symbol": "Chs_BerryTree_Text_BerryGrowthStage4",
+      "base_rom_value": "0x08244F6E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 195
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E95",
+      "jp_original_text": "0x08245011",
+      "batch_source_symbol": "BerryTree_Text_BerryLeftUnpicked",
+      "patch_symbol": "Chs_BerryTree_Text_BerryLeftUnpicked",
+      "base_rom_value": "0x08245011",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 223
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E8C",
+      "jp_original_text": "0x08244FEF",
+      "batch_source_symbol": "BerryTree_Text_BerryPocketFull",
+      "patch_symbol": "Chs_BerryTree_Text_BerryPocketFull",
+      "base_rom_value": "0x08244FEF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 219
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E2C",
+      "jp_original_text": "0x08244F8D",
+      "batch_source_symbol": "BerryTree_Text_CareAdverbGood",
+      "patch_symbol": "Chs_BerryTree_Text_CareAdverbGood",
+      "base_rom_value": "0x08244F8D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 204
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E33",
+      "jp_original_text": "0x08244F7F",
+      "batch_source_symbol": "BerryTree_Text_CareAdverbGreat",
+      "patch_symbol": "Chs_BerryTree_Text_CareAdverbGreat",
+      "base_rom_value": "0x08244F7F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 198
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E3A",
+      "jp_original_text": "0x08244F88",
+      "batch_source_symbol": "BerryTree_Text_CareAdverbPoor",
+      "patch_symbol": "Chs_BerryTree_Text_CareAdverbPoor",
+      "base_rom_value": "0x08244F88",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 201
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244D7B",
+      "jp_original_text": "0x08245069",
+      "batch_source_symbol": "BerryTree_Text_ExclamationPoint",
+      "patch_symbol": "Chs_BerryTree_Text_ExclamationPoint",
+      "base_rom_value": "0x08245069",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 237
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244D96",
+      "jp_original_text": "0x08244F02",
+      "batch_source_symbol": "BerryTree_Text_ItsSoftLoamySoil",
+      "patch_symbol": "Chs_BerryTree_Text_ItsSoftLoamySoil",
+      "base_rom_value": "0x08244F02",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 175
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E78",
+      "jp_original_text": "0x08244FAF",
+      "batch_source_symbol": "BerryTree_Text_PickedTheBerry",
+      "patch_symbol": "Chs_BerryTree_Text_PickedTheBerry",
+      "base_rom_value": "0x08244FAF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 211
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244EEA",
+      "jp_original_text": "0x08245058",
+      "batch_source_symbol": "BerryTree_Text_PlantIsDelighted",
+      "patch_symbol": "Chs_BerryTree_Text_PlantIsDelighted",
+      "base_rom_value": "0x08245058",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 234
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244EFB",
+      "jp_original_text": "0x08244F24",
+      "batch_source_symbol": "BerryTree_Text_PlantedOneBerry",
+      "patch_symbol": "Chs_BerryTree_Text_PlantedOneBerry",
+      "base_rom_value": "0x08244F24",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 182
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E83",
+      "jp_original_text": "0x08244FC2",
+      "batch_source_symbol": "BerryTree_Text_PutAwayBerry",
+      "patch_symbol": "Chs_BerryTree_Text_PutAwayBerry",
+      "base_rom_value": "0x08244FC2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 214
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244E47",
+      "jp_original_text": "0x08244F92",
+      "batch_source_symbol": "BerryTree_Text_WantToPick",
+      "patch_symbol": "Chs_BerryTree_Text_WantToPick",
+      "base_rom_value": "0x08244F92",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 207
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244DA0",
+      "jp_original_text": "0x08244F0D",
+      "batch_source_symbol": "BerryTree_Text_WantToPlant",
+      "patch_symbol": "Chs_BerryTree_Text_WantToPlant",
+      "base_rom_value": "0x08244F0D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244EBA",
+      "jp_original_text": "0x08245027",
+      "batch_source_symbol": "BerryTree_Text_WantToWater",
+      "patch_symbol": "Chs_BerryTree_Text_WantToWater",
+      "base_rom_value": "0x08245027",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 227
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08244EDD",
+      "jp_original_text": "0x08245047",
+      "batch_source_symbol": "BerryTree_Text_WateredTheBerry",
+      "patch_symbol": "Chs_BerryTree_Text_WateredTheBerry",
+      "base_rom_value": "0x08245047",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/berry_tree.inc",
+          "line": 231
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

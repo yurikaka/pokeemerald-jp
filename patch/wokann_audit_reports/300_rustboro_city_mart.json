@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "300_rustboro_city_mart.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: RustboroCity_Mart",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08203652",
+      "jp_original_text": "0x0820366B",
+      "batch_source_symbol": "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish",
+      "patch_symbol": "Chs_RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish",
+      "base_rom_value": "0x0820366B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 68,
+          "symbol": "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish"
+        },
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 68,
+          "symbol": "RustboroCity_Mart_Text_BuyingHealsInCaseOfShroomish"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 68
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820365B",
+      "jp_original_text": "0x0820369D",
+      "batch_source_symbol": "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead",
+      "patch_symbol": "Chs_RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead",
+      "base_rom_value": "0x0820369D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 73,
+          "symbol": "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead"
+        },
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 73,
+          "symbol": "RustboroCity_Mart_Text_ShouldBuySuperPotionsInstead"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 73
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08203664",
+      "jp_original_text": "0x082036D4",
+      "batch_source_symbol": "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase",
+      "patch_symbol": "Chs_RustboroCity_Mart_Text_GettingEscapeRopeJustInCase",
+      "base_rom_value": "0x082036D4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 78,
+          "symbol": "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase"
+        },
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 78,
+          "symbol": "RustboroCity_Mart_Text_GettingEscapeRopeJustInCase"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Mart/scripts.inc",
+          "line": 78
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

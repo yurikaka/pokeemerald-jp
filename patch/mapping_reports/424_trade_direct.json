@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "batch": "424_trade_direct.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/trade.h",
+  "selection": {
+    "symbol_offset": 0,
+    "symbol_limit": null,
+    "auto_wrap": false
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "ambiguous_or_unreferenced_japanese_text": 5,
+    "mapped": 4,
+    "missing_or_ambiguous_wokann_symbol": 1,
+    "unsupported_source_encoding": 4
+  },
+  "mapped": [
+    {
+      "source_symbol": "sText_IsThisTradeOkay",
+      "wokann_source": "src/data/trade.h",
+      "us_text_address": "0x083C8CE8",
+      "japanese_text_address": "0x08300AB1",
+      "japanese_references": [
+        "0x080781BC"
+      ]
+    },
+    {
+      "source_symbol": "sText_CancelTrade",
+      "wokann_source": "src/data/trade.h",
+      "us_text_address": "0x083C8D19",
+      "japanese_text_address": "0x08300AE0",
+      "japanese_references": [
+        "0x08300B0C"
+      ]
+    },
+    {
+      "source_symbol": "sText_Summary2",
+      "wokann_source": "src/data/trade.h",
+      "us_text_address": "0x083C8D3A",
+      "japanese_text_address": "0x08300B14",
+      "japanese_references": [
+        "0x08300B28"
+      ]
+    },
+    {
+      "source_symbol": "sText_YourFriendWantsToTrade",
+      "wokann_source": "src/data/trade.h",
+      "us_text_address": "0x083C8DD4",
+      "japanese_text_address": "0x08300BBE",
+      "japanese_references": [
+        "0x08300BF0"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "sText_SpaceMove",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_Cancel",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_ChooseAPkmn",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Summary",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Trade",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Trade2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_CommunicationStandby",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_TheTradeHasBeenCanceled",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_OnlyPkmnForBattle",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_WaitingForYourFriend",
+      "reason": "unsupported_source_encoding"
+    }
+  ]
+}

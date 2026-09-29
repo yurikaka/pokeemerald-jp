@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "batch": "359_cable_club.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/cable_club.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 61,
+  "unresolved_count": 21,
+  "reference_count": 94,
+  "mapped": [
+    {
+      "source_symbol": "CableClub_Text_WelcomeWhichCableClubService",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250259",
+      "japanese_text_address": "0x08247B80",
+      "japanese_references": [
+        "0x08246B0F"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_WhichService",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 6,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825028D",
+      "japanese_text_address": "0x08247BA4",
+      "japanese_references": [
+        "0x08246B1F"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_TradeUsingLinkCable",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 9,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082502A6",
+      "japanese_text_address": "0x08247BB3",
+      "japanese_references": [
+        "0x0856463C",
+        "0x08564680"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_BattleUsingLinkCable",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 13,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082502CA",
+      "japanese_text_address": "0x08247BD5",
+      "japanese_references": [
+        "0x08564640",
+        "0x08564684"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_RecordCornerUsingLinkCable",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 17,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082502EE",
+      "japanese_text_address": "0x08247BF7",
+      "japanese_references": [
+        "0x08564644"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 25,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825031E",
+      "japanese_text_address": "0x08247C1E",
+      "japanese_references": [
+        "0x08246C44",
+        "0x08247593"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NeedTwoMonsToTrade",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 29,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250347",
+      "japanese_text_address": "0x08247C3E",
+      "japanese_references": [
+        "0x08246EBC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ConfirmLinkWhenPlayersReady",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 41,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082503A8",
+      "japanese_text_address": "0x08247C97",
+      "japanese_references": [
+        "0x080B1FC0",
+        "0x080B2148"
+      ]
+    },
+    {
+      "source_symbol": "gText_AwaitingLinkup",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 49,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082503FB",
+      "japanese_text_address": "0x08247CDA",
+      "japanese_references": [
+        "0x080B1FE0"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_PleaseEnter",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 58,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250434",
+      "japanese_text_address": "0x08247D16",
+      "japanese_references": [
+        "0x08246CC7",
+        "0x08246E40",
+        "0x08246F43"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_DirectYouToYourRoom",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 61,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825043A",
+      "japanese_text_address": "0x08247D23",
+      "japanese_references": [
+        "0x0824781A"
+      ]
+    },
+    {
+      "source_symbol": "Text_SomeoneIsNotReadyToLink",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 65,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250452",
+      "japanese_text_address": "0x08247D35",
+      "japanese_references": [
+        "0x08246FC3",
+        "0x082592AB"
+      ]
+    },
+    {
+      "source_symbol": "Text_LinkErrorPleaseReset",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 71,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250485",
+      "japanese_text_address": "0x08247D67",
+      "japanese_references": [
+        "0x082071B4",
+        "0x08246FB6",
+        "0x082592D2"
+      ]
+    },
+    {
+      "source_symbol": "Text_PlayersMadeDifferentSelections",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 75,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082504AB",
+      "japanese_text_address": "0x08247D84",
+      "japanese_references": [
+        "0x08220378",
+        "0x08246FD0",
+        "0x082592B8"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_IncorrectNumberOfParticipants",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 82,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082504D4",
+      "japanese_text_address": "0x08247DAF",
+      "japanese_references": [
+        "0x0822039F",
+        "0x08246FFF"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NeedFourPlayers",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 94,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825051E",
+      "japanese_text_address": "0x08247E02",
+      "japanese_references": [
+        "0x08246D72"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_PleaseConfirmNumberAndRestart",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 98,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825053A",
+      "japanese_text_address": "0x08247E27",
+      "japanese_references": [
+        "0x08246DA5"
+      ]
+    },
+    {
+      "source_symbol": "Text_TerminateLinkConfirmation",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 102,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250555",
+      "japanese_text_address": "0x08247E4B",
+      "japanese_references": [
+        "0x082471D0"
+      ]
+    },
+    {
+      "source_symbol": "Text_TerminateLinkPleaseWait",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 106,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250578",
+      "japanese_text_address": "0x08247E69",
+      "japanese_references": [
+        "0x082471E9"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_TooBusyToNotice",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 110,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082505A5",
+      "japanese_text_address": "0x08247E87",
+      "japanese_references": [
+        "0x0824717D"
+      ]
+    },
+    {
+      "source_symbol": "BattleColosseum_2P_Text_TakePlaceStartBattle",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 122,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250609",
+      "japanese_text_address": "0x08247ECC",
+      "japanese_references": [
+        "0x0824718A"
+      ]
+    },
+    {
+      "source_symbol": "TradeCenter_Text_TakeSeatStartTrade",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 126,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825061F",
+      "japanese_text_address": "0x08247EEA",
+      "japanese_references": [
+        "0x0824719A"
+      ]
+    },
+    {
+      "source_symbol": "RecordCorner_Text_ThanksForComing",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 130,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250635",
+      "japanese_text_address": "0x08247F08",
+      "japanese_references": [
+        "0x082471C3"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_TrainerCardDataOverwritten",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 133,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825063F",
+      "japanese_text_address": "0x08247F1A",
+      "japanese_references": [
+        "0x08246AAD"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_HopeToSeeYouAgain",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 137,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250656",
+      "japanese_text_address": "0x08247F31",
+      "japanese_references": [
+        "0x08246AB6"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NotSetUpForFarAwayRegion",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 140,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250664",
+      "japanese_text_address": "0x08247F3C",
+      "japanese_references": [
+        "0x08246F9C"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_OtherTrainerNotReady",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 147,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082506A2",
+      "japanese_text_address": "0x08247F78",
+      "japanese_references": [
+        "0x08246FA9"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_YouHaveAMonThatCantBeTaken",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 151,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082506B8",
+      "japanese_text_address": "0x08247F8B",
+      "japanese_references": [
+        "0x0824700C"
+      ]
+    },
+    {
+      "source_symbol": "RecordCorner_Text_TakeSeatAndWait",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 155,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082506D1",
+      "japanese_text_address": "0x08247FA2",
+      "japanese_references": [
+        "0x082471B4"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_AdapterNotConnected",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 163,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250758",
+      "japanese_text_address": "0x08247FCD",
+      "japanese_references": [
+        "0x08247895"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ParticipantsStepUpToCounter",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 167,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250771",
+      "japanese_text_address": "0x08247FE3",
+      "japanese_references": [
+        "0x0824788B"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_YouMayTradeHere",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 179,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250792",
+      "japanese_text_address": "0x08248014",
+      "japanese_references": [
+        "0x0856464C",
+        "0x0856465C",
+        "0x0856466C",
+        "0x0856468C"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_YouMayBattleHere",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 183,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082507B7",
+      "japanese_text_address": "0x0824802D",
+      "japanese_references": [
+        "0x08564650",
+        "0x08564660",
+        "0x08564670",
+        "0x08564690"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_CanMakeBerryPowder",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 187,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082507D4",
+      "japanese_text_address": "0x08248046",
+      "japanese_references": [
+        "0x08564664",
+        "0x08564678"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_CanMixRecords",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 191,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082507F9",
+      "japanese_text_address": "0x08248066",
+      "japanese_references": [
+        "0x08564654",
+        "0x08564674"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_CancelSelectedItem",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 200,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825083F",
+      "japanese_text_address": "0x0824809D",
+      "japanese_references": [
+        "0x08564648",
+        "0x08564658",
+        "0x08564668",
+        "0x0856467C",
+        "0x08564688",
+        "0x08564694"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NeedBerryForBerryCrush",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 211,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250873",
+      "japanese_text_address": "0x082480C1",
+      "japanese_references": [
+        "0x08247604"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_NeedTwoMonsForUnionRoom",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 215,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250896",
+      "japanese_text_address": "0x082480DF",
+      "japanese_references": [
+        "0x0824732D"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_UnionRoomAdapterNotConnected",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 225,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082508E6",
+      "japanese_text_address": "0x08248137",
+      "japanese_references": [
+        "0x08247349"
+      ]
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_AdapterNotConnected",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 286,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250B26",
+      "japanese_text_address": "0x0824835E",
+      "japanese_references": [
+        "0x08247B29"
+      ]
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 307,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250BA6",
+      "japanese_text_address": "0x082483D0",
+      "japanese_references": [
+        "0x08247B33"
+      ]
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 313,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250BF3",
+      "japanese_text_address": "0x08248406",
+      "japanese_references": [
+        "0x08247B62"
+      ]
+    },
+    {
+      "source_symbol": "MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 322,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250C74",
+      "japanese_text_address": "0x08248462",
+      "japanese_references": [
+        "0x08247B6B"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_WelcomeWhichDirectCornerRoom",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 332,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250CA8",
+      "japanese_text_address": "0x082484A8",
+      "japanese_references": [
+        "0x082473B4"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_TradePokemon",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 339,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250D05",
+      "japanese_text_address": "0x082484F4",
+      "japanese_references": [
+        "0x082474EE"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_PlayWhichBattleMode",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 342,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250D15",
+      "japanese_text_address": "0x08248500",
+      "japanese_references": [
+        "0x08246BBE",
+        "0x0824751B"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_AccessRecordCorner",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 345,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250D29",
+      "japanese_text_address": "0x08248511",
+      "japanese_references": [
+        "0x082475BA"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_UseBerryCrush",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 348,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250D39",
+      "japanese_text_address": "0x08248521",
+      "japanese_references": [
+        "0x082475D8"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ExplainBattleModes",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 351,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250D4F",
+      "japanese_text_address": "0x08248531",
+      "japanese_references": [
+        "0x08246C12",
+        "0x082475AC"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ChooseGroupLeaderOfTwo",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 364,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250E51",
+      "japanese_text_address": "0x082485D7",
+      "japanese_references": [
+        "0x08220435",
+        "0x08247669"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ChooseGroupLeaderOfFour",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 370,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250E88",
+      "japanese_text_address": "0x08248611",
+      "japanese_references": [
+        "0x082476F6"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_WelcomeUnionRoomEnter",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 382,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250EF6",
+      "japanese_text_address": "0x08248690",
+      "japanese_references": [
+        "0x08247230"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_UnionRoomInfo",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 389,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08250F6A",
+      "japanese_text_address": "0x082486D6",
+      "japanese_references": [
+        "0x08247273"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_EnjoyUnionRoom",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 402,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825104B",
+      "japanese_text_address": "0x0824877D",
+      "japanese_references": [
+        "0x082472A0"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_FirstTimeRightThisWay",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 406,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08251070",
+      "japanese_text_address": "0x08248797",
+      "japanese_references": [
+        "0x08246AE8"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ExplainWirelessClubFirstTime",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 416,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082510F5",
+      "japanese_text_address": "0x082487F6",
+      "japanese_references": [
+        "0x08246AFE"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_AskAboutLinking",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 440,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08251242",
+      "japanese_text_address": "0x08248916",
+      "japanese_references": [
+        "0x0824735E"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ExplainWirelessClub",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 446,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08251287",
+      "japanese_text_address": "0x08248951",
+      "japanese_references": [
+        "0x08247371"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_HopeYouEnjoyWirelessSystem",
+      "source": "data/text/cable_club.inc",
+      "wokann_label_line": 477,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082513F3",
+      "japanese_text_address": "0x08248AD9",
+      "japanese_references": [
+        "0x0824737B"
+      ]
+    },
+    {
+      "source_symbol": "gText_PleaseWaitForLink",
+      "source": "data/text/cable_club.inc",
+      "wokann_source": "data/text/cable_club.inc",
+      "wokann_label_line": 37,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0825038D",
+      "japanese_text_address": "0x08247C79",
+      "japanese_references": [
+        "0x080B2EC4",
+        "0x0822030C",
+        "0x08246C6C",
+        "0x08246DD3",
+        "0x08246EEC"
+      ]
+    },
+    {
+      "source_symbol": "CableClub_Text_ChooseGroupLeader",
+      "source": "data/text/cable_club.inc",
+      "wokann_source": "data/text/cable_club.inc",
+      "wokann_label_line": 376,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08250EBF",
+      "japanese_text_address": "0x08248651",
+      "japanese_references": [
+        "0x08247783",
+        "0x08247A61"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "CableClub_Text_CloseThisMenu",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_CantTradeEnigmaBerry",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ConfirmStartLinkWithXPlayers",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_OkayToSaveProgress",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_PleaseVisitAgain",
+      "source": "data/text/cable_club.inc",
+      "reason": "reference_already_patched"
+    },
+    {
+      "symbol": "CableClub_Text_CantSingleBattleWithXPlayers",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_CantDoubleBattleWithXPlayers",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_GotToLookAtTrainerCard",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_GotToLookAtColoredTrainerCard",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "RecordCorner_Text_PlayerSentOverOneX",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_CantMixWithJapaneseGame",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_text_label"
+    },
+    {
+      "symbol": "CableClub_Text_Hello",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_PleaseWait",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_GuideToVariousServices",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_WhichBattleMode",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_ReturnsToPreviousStep",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_NoEnigmaBerryInUnionRoom",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "CableClub_Text_OhExcuseMe",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "CableClub_Text_PlayerIsWaiting",
+      "source": "data/text/cable_club.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MossdeepCity_GameCorner_1F_Text_LeavingDoComeAgain",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "MossdeepCity_GameCorner_1F_Text_RetryPlease",
+      "source": "data/text/cable_club.inc",
+      "reason": "no_japanese_pointer"
+    }
+  ]
+}

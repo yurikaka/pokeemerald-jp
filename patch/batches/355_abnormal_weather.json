@@ -1,0 +1,35 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/text/abnormal_weather.inc",
+  "texts": [
+    {
+      "name": "Chs_gText_AbnormalWeatherEnded_Rain",
+      "source_symbol": "gText_AbnormalWeatherEnded_Rain",
+      "us_encoded_hex": "0b050a4502d30f980c690524fe0d0b089eb0b0ff"
+    },
+    {
+      "name": "Chs_gText_AbnormalWeatherEnded_Sun",
+      "source_symbol": "gText_AbnormalWeatherEnded_Sun",
+      "us_encoded_hex": "0ad808a5030b0edd04aa0c690524fe0a780762089eb0b0ff"
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x0824477D",
+      "original": "0x082440BC",
+      "symbol": "Chs_gText_AbnormalWeatherEnded_Rain",
+      "source_symbol": "gText_AbnormalWeatherEnded_Rain"
+    },
+    {
+      "address": "0x0824478B",
+      "original": "0x082440CD",
+      "symbol": "Chs_gText_AbnormalWeatherEnded_Sun",
+      "source_symbol": "gText_AbnormalWeatherEnded_Sun"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/355_abnormal_weather.json",
+    "mapped_count": 2,
+    "unresolved_count": 0
+  }
+}

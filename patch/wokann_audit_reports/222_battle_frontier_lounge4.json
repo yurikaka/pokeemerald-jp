@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "222_battle_frontier_lounge4.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: BattleFrontier_Lounge4",
+  "summary": {
+    "verified_source_definition": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0823857D",
+      "jp_original_text": "0x08238596",
+      "batch_source_symbol": "BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring",
+      "patch_symbol": "Chs_BattleFrontier_Lounge4_Text_WonderIfInterviewsAiring",
+      "base_rom_value": "0x08238596",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+          "line": 15
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08238586",
+      "jp_original_text": "0x082385B8",
+      "batch_source_symbol": "BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere",
+      "patch_symbol": "Chs_BattleFrontier_Lounge4_Text_IfIOpenedRestaurantHere",
+      "base_rom_value": "0x082385B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+          "line": 19
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0823858F",
+      "jp_original_text": "0x082385D7",
+      "batch_source_symbol": "BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles",
+      "patch_symbol": "Chs_BattleFrontier_Lounge4_Text_NeedBreatherAfterBattles",
+      "base_rom_value": "0x082385D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge4/scripts.inc",
+          "line": 23
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

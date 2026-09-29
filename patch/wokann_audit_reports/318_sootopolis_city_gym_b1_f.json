@@ -1,0 +1,854 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "318_sootopolis_city_gym_b1_f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: SootopolisCity_Gym_B1F",
+  "summary": {
+    "verified_text_label": 30
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820EACD",
+      "jp_original_text": "0x0820EBAD",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AndreaIntro",
+      "base_rom_value": "0x0820EBAD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 55,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AndreaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 55
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAD1",
+      "jp_original_text": "0x0820EBD7",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AndreaDefeat",
+      "base_rom_value": "0x0820EBD7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 59,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AndreaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 59
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAD7",
+      "jp_original_text": "0x0820EBE4",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AndreaPostBattle",
+      "base_rom_value": "0x0820EBE4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 62,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AndreaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 62
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAE4",
+      "jp_original_text": "0x0820EC01",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_CrissyIntro",
+      "base_rom_value": "0x0820EC01",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 66,
+          "symbol": "SootopolisCity_Gym_B1F_Text_CrissyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 66
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAE8",
+      "jp_original_text": "0x0820EC2B",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_CrissyDefeat",
+      "base_rom_value": "0x0820EC2B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 71,
+          "symbol": "SootopolisCity_Gym_B1F_Text_CrissyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 71
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAEE",
+      "jp_original_text": "0x0820EC47",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_CrissyPostBattle",
+      "base_rom_value": "0x0820EC47",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 75,
+          "symbol": "SootopolisCity_Gym_B1F_Text_CrissyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 75
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB9C",
+      "jp_original_text": "0x0820EC6E",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_DaphneIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_DaphneIntro",
+      "base_rom_value": "0x0820EC6E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 79,
+          "symbol": "SootopolisCity_Gym_B1F_Text_DaphneIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 79
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EBA0",
+      "jp_original_text": "0x0820ECA7",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_DaphneDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_DaphneDefeat",
+      "base_rom_value": "0x0820ECA7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 84,
+          "symbol": "SootopolisCity_Gym_B1F_Text_DaphneDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 84
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EBA6",
+      "jp_original_text": "0x0820ECC1",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_DaphnePostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_DaphnePostBattle",
+      "base_rom_value": "0x0820ECC1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 88,
+          "symbol": "SootopolisCity_Gym_B1F_Text_DaphnePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB12",
+      "jp_original_text": "0x0820ECF5",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_ConnieIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_ConnieIntro",
+      "base_rom_value": "0x0820ECF5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 94,
+          "symbol": "SootopolisCity_Gym_B1F_Text_ConnieIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 94
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB16",
+      "jp_original_text": "0x0820ED1B",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_ConnieDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_ConnieDefeat",
+      "base_rom_value": "0x0820ED1B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 98,
+          "symbol": "SootopolisCity_Gym_B1F_Text_ConnieDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 98
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB1C",
+      "jp_original_text": "0x0820ED25",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_ConniePostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_ConniePostBattle",
+      "base_rom_value": "0x0820ED25",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 102,
+          "symbol": "SootopolisCity_Gym_B1F_Text_ConniePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 102
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB29",
+      "jp_original_text": "0x0820ED5F",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BridgetIntro",
+      "base_rom_value": "0x0820ED5F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 108,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BridgetIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 108
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB2D",
+      "jp_original_text": "0x0820ED8D",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BridgetDefeat",
+      "base_rom_value": "0x0820ED8D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 113,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BridgetDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 113
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB33",
+      "jp_original_text": "0x0820ED9C",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BridgetPostBattle",
+      "base_rom_value": "0x0820ED9C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 116,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BridgetPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 116
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB40",
+      "jp_original_text": "0x0820EDE1",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_OliviaIntro",
+      "base_rom_value": "0x0820EDE1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 122,
+          "symbol": "SootopolisCity_Gym_B1F_Text_OliviaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 122
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB44",
+      "jp_original_text": "0x0820EE11",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_OliviaDefeat",
+      "base_rom_value": "0x0820EE11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 127,
+          "symbol": "SootopolisCity_Gym_B1F_Text_OliviaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 127
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB4A",
+      "jp_original_text": "0x0820EE1C",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_OliviaPostBattle",
+      "base_rom_value": "0x0820EE1C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 130,
+          "symbol": "SootopolisCity_Gym_B1F_Text_OliviaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 130
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB57",
+      "jp_original_text": "0x0820EE44",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_TiffanyIntro",
+      "base_rom_value": "0x0820EE44",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 134,
+          "symbol": "SootopolisCity_Gym_B1F_Text_TiffanyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB5B",
+      "jp_original_text": "0x0820EE74",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_TiffanyDefeat",
+      "base_rom_value": "0x0820EE74",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 139,
+          "symbol": "SootopolisCity_Gym_B1F_Text_TiffanyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 139
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB61",
+      "jp_original_text": "0x0820EE7C",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_TiffanyPostBattle",
+      "base_rom_value": "0x0820EE7C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 142,
+          "symbol": "SootopolisCity_Gym_B1F_Text_TiffanyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 142
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB6E",
+      "jp_original_text": "0x0820EEA4",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BethanyIntro",
+      "base_rom_value": "0x0820EEA4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 147,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BethanyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 147
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB72",
+      "jp_original_text": "0x0820EEC9",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BethanyDefeat",
+      "base_rom_value": "0x0820EEC9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 151,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BethanyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 151
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB78",
+      "jp_original_text": "0x0820EECD",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BethanyPostBattle",
+      "base_rom_value": "0x0820EECD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 154,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BethanyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 154
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB85",
+      "jp_original_text": "0x0820EEE8",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AnnikaIntro",
+      "base_rom_value": "0x0820EEE8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 158,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AnnikaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 158
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB89",
+      "jp_original_text": "0x0820EF0E",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AnnikaDefeat",
+      "base_rom_value": "0x0820EF0E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 162,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AnnikaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 162
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB8F",
+      "jp_original_text": "0x0820EF29",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_AnnikaPostBattle",
+      "base_rom_value": "0x0820EF29",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 166,
+          "symbol": "SootopolisCity_Gym_B1F_Text_AnnikaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 166
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAFB",
+      "jp_original_text": "0x0820EF83",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaIntro",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BriannaIntro",
+      "base_rom_value": "0x0820EF83",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 173,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BriannaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 173
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EAFF",
+      "jp_original_text": "0x0820EF9B",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaDefeat",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BriannaDefeat",
+      "base_rom_value": "0x0820EF9B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 177,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BriannaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 177
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820EB05",
+      "jp_original_text": "0x0820EFB2",
+      "batch_source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaPostBattle",
+      "patch_symbol": "Chs_SootopolisCity_Gym_B1F_Text_BriannaPostBattle",
+      "base_rom_value": "0x0820EFB2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 181,
+          "symbol": "SootopolisCity_Gym_B1F_Text_BriannaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+          "line": 181
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

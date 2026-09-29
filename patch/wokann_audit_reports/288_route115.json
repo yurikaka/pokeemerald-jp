@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "288_route115.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: Route115",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081EB859",
+      "jp_original_text": "0x081EBA39",
+      "batch_source_symbol": "Route115_Text_NeverKnowWhenCavePokemonWillAppear",
+      "patch_symbol": "Chs_Route115_Text_NeverKnowWhenCavePokemonWillAppear",
+      "base_rom_value": "0x081EBA39",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 133,
+          "symbol": "Route115_Text_NeverKnowWhenCavePokemonWillAppear"
+        },
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 133,
+          "symbol": "Route115_Text_NeverKnowWhenCavePokemonWillAppear"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 133
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EB862",
+      "jp_original_text": "0x081EBA7E",
+      "batch_source_symbol": "Route115_Text_RouteSignRustboro",
+      "patch_symbol": "Chs_Route115_Text_RouteSignRustboro",
+      "base_rom_value": "0x081EBA7E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 139,
+          "symbol": "Route115_Text_RouteSignRustboro"
+        },
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 139,
+          "symbol": "Route115_Text_RouteSignRustboro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 139
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EB86B",
+      "jp_original_text": "0x081EBA98",
+      "batch_source_symbol": "Route115_Text_MeteorFallsSign",
+      "patch_symbol": "Chs_Route115_Text_MeteorFallsSign",
+      "base_rom_value": "0x081EBA98",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 143,
+          "symbol": "Route115_Text_MeteorFallsSign"
+        },
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 143,
+          "symbol": "Route115_Text_MeteorFallsSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/Route115/scripts.inc",
+          "line": 143
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

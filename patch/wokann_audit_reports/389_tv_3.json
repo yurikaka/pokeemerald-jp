@@ -1,0 +1,1840 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "389_tv_3.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/text/tv.inc",
+  "summary": {
+    "verified_source_definition": 83
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x085690B8",
+      "jp_original_text": "0x08251F83",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedSandOrnament",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedSandOrnament",
+      "base_rom_value": "0x08251F83",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 173
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690BC",
+      "jp_original_text": "0x08251FB6",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedDesk",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedDesk",
+      "base_rom_value": "0x08251FB6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 179
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690C0",
+      "jp_original_text": "0x08251FF9",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedBrick",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedBrick",
+      "base_rom_value": "0x08251FF9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 187
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690C4",
+      "jp_original_text": "0x08252030",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedSolidBoard",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedSolidBoard",
+      "base_rom_value": "0x08252030",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 192
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690C8",
+      "jp_original_text": "0x08252069",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedFence",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedFence",
+      "base_rom_value": "0x08252069",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 197
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690CC",
+      "jp_original_text": "0x08252096",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedGlitterMat",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedGlitterMat",
+      "base_rom_value": "0x08252096",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 202
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690D0",
+      "jp_original_text": "0x082520C8",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedTire",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedTire",
+      "base_rom_value": "0x082520C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 207
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690D8",
+      "jp_original_text": "0x08252137",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_BrokeDoor",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_BrokeDoor",
+      "base_rom_value": "0x08252137",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 219
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690DC",
+      "jp_original_text": "0x08252155",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedDoll",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedDoll",
+      "base_rom_value": "0x08252155",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 223
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690E0",
+      "jp_original_text": "0x08252177",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedSlide",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedSlide",
+      "base_rom_value": "0x08252177",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 227
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690E4",
+      "jp_original_text": "0x082521A5",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedSlideButDidntGoDown",
+      "base_rom_value": "0x082521A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 233
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690E8",
+      "jp_original_text": "0x082521E8",
+      "batch_source_symbol": "TVSecretBaseSecrets_Text_UsedJumpMat",
+      "patch_symbol": "Chs_TVSecretBaseSecrets_Text_UsedJumpMat",
+      "base_rom_value": "0x082521E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/secret_base_secrets.inc",
+          "line": 240
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690EC",
+      "jp_original_text": "0x08252232",
+      "batch_source_symbol": "gTVSafariFanClubText00",
+      "patch_symbol": "Chs_gTVSafariFanClubText00",
+      "base_rom_value": "0x08252232",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/safari_fan_club.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085690F8",
+      "jp_original_text": "0x08252323",
+      "batch_source_symbol": "gTVSafariFanClubText03",
+      "patch_symbol": "Chs_gTVSafariFanClubText03",
+      "base_rom_value": "0x08252323",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/safari_fan_club.inc",
+          "line": 21
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856910C",
+      "jp_original_text": "0x0825245F",
+      "batch_source_symbol": "gTVSafariFanClubText08",
+      "patch_symbol": "Chs_gTVSafariFanClubText08",
+      "base_rom_value": "0x0825245F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/safari_fan_club.inc",
+          "line": 53
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08569114",
+      "jp_original_text": "0x082524D7",
+      "batch_source_symbol": "gTVSafariFanClubText10",
+      "patch_symbol": "Chs_gTVSafariFanClubText10",
+      "base_rom_value": "0x082524D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/safari_fan_club.inc",
+          "line": 65
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08568D98",
+      "jp_original_text": "0x08252ADD",
+      "batch_source_symbol": "ContestLiveUpdates_Text_NeverExciting",
+      "patch_symbol": "Chs_ContestLiveUpdates_Text_NeverExciting",
+      "base_rom_value": "0x08252ADD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_live_updates.inc",
+          "line": 159
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08568DAC",
+      "jp_original_text": "0x08252CAB",
+      "batch_source_symbol": "gTVPokemonBattleUpdateText00",
+      "patch_symbol": "Chs_gTVPokemonBattleUpdateText00",
+      "base_rom_value": "0x08252CAB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/pokemon_battle_update.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082541F4",
+      "jp_original_text": "0x08252E99",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyPreFirstBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyPreFirstBattle",
+      "base_rom_value": "0x08252E99",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254234",
+      "jp_original_text": "0x08252ED4",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyIntro",
+      "base_rom_value": "0x08252ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254274",
+      "jp_original_text": "0x08252ED4",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyIntro",
+      "base_rom_value": "0x08252ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542B4",
+      "jp_original_text": "0x08252ED4",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyIntro",
+      "base_rom_value": "0x08252ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542F4",
+      "jp_original_text": "0x08252ED4",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyIntro",
+      "base_rom_value": "0x08252ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254334",
+      "jp_original_text": "0x08252ED4",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyIntro",
+      "base_rom_value": "0x08252ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082541F8",
+      "jp_original_text": "0x08252F11",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeatFirstTime",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeatFirstTime",
+      "base_rom_value": "0x08252F11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082543A0",
+      "jp_original_text": "0x08252F36",
+      "batch_source_symbol": "GabbyAndTy_Text_WhoAreYouInterview",
+      "patch_symbol": "Chs_GabbyAndTy_Text_WhoAreYouInterview",
+      "base_rom_value": "0x08252F36",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 16
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254489",
+      "jp_original_text": "0x08253007",
+      "batch_source_symbol": "GabbyAndTy_Text_YouStompedUsInterviewAgain",
+      "patch_symbol": "Chs_GabbyAndTy_Text_YouStompedUsInterviewAgain",
+      "base_rom_value": "0x08253007",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 34
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254497",
+      "jp_original_text": "0x08253048",
+      "batch_source_symbol": "GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain",
+      "patch_symbol": "Chs_GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain",
+      "base_rom_value": "0x08253048",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082544A5",
+      "jp_original_text": "0x082530A4",
+      "batch_source_symbol": "GabbyAndTy_Text_CleverItemSkillsInterviewAgain",
+      "patch_symbol": "Chs_GabbyAndTy_Text_CleverItemSkillsInterviewAgain",
+      "base_rom_value": "0x082530A4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 48
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082544B3",
+      "jp_original_text": "0x082530EB",
+      "batch_source_symbol": "GabbyAndTy_Text_WeLookedRespectableInterviewAgain",
+      "patch_symbol": "Chs_GabbyAndTy_Text_WeLookedRespectableInterviewAgain",
+      "base_rom_value": "0x082530EB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 55
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825447B",
+      "jp_original_text": "0x0825312E",
+      "batch_source_symbol": "GabbyAndTy_Text_InterviewAgain",
+      "patch_symbol": "Chs_GabbyAndTy_Text_InterviewAgain",
+      "base_rom_value": "0x0825312E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 61
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082544CC",
+      "jp_original_text": "0x08253148",
+      "batch_source_symbol": "GabbyAndTy_Text_DescribeYourFeelings",
+      "patch_symbol": "Chs_GabbyAndTy_Text_DescribeYourFeelings",
+      "base_rom_value": "0x08253148",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 65
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082544EB",
+      "jp_original_text": "0x08253179",
+      "batch_source_symbol": "GabbyAndTy_Text_PerfectWellBeSeeingYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_PerfectWellBeSeeingYou",
+      "base_rom_value": "0x08253179",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 72
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082544FB",
+      "jp_original_text": "0x082531EC",
+      "batch_source_symbol": "GabbyAndTy_Text_DontGiveUpKeepingEyeOut",
+      "patch_symbol": "Chs_GabbyAndTy_Text_DontGiveUpKeepingEyeOut",
+      "base_rom_value": "0x082531EC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 83
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254206",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254246",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254286",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542C6",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254306",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254346",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254508",
+      "jp_original_text": "0x08253218",
+      "batch_source_symbol": "GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "patch_symbol": "Chs_GabbyAndTy_Text_KeepingAnEyeOutForYou",
+      "base_rom_value": "0x08253218",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 88
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082541FC",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825423C",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825427C",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542BC",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542FC",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825433C",
+      "jp_original_text": "0x0825322F",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyNotEnoughMons",
+      "base_rom_value": "0x0825322F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825446D",
+      "jp_original_text": "0x08253257",
+      "batch_source_symbol": "GabbyAndTy_Text_GiveUsAnInterviewThisTime",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GiveUsAnInterviewThisTime",
+      "base_rom_value": "0x08253257",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 96
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254238",
+      "jp_original_text": "0x082532C0",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeat",
+      "base_rom_value": "0x082532C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 106
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254278",
+      "jp_original_text": "0x082532C0",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeat",
+      "base_rom_value": "0x082532C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 106
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542B8",
+      "jp_original_text": "0x082532C0",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeat",
+      "base_rom_value": "0x082532C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 106
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542F8",
+      "jp_original_text": "0x082532C0",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeat",
+      "base_rom_value": "0x082532C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 106
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254338",
+      "jp_original_text": "0x082532C0",
+      "batch_source_symbol": "GabbyAndTy_Text_GabbyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_GabbyDefeat",
+      "base_rom_value": "0x082532C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 106
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254214",
+      "jp_original_text": "0x082532E3",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPreFirstBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPreFirstBattle",
+      "base_rom_value": "0x082532E3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 110
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254254",
+      "jp_original_text": "0x08253312",
+      "batch_source_symbol": "GabbyAndTy_Text_TyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyIntro",
+      "base_rom_value": "0x08253312",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254294",
+      "jp_original_text": "0x08253312",
+      "batch_source_symbol": "GabbyAndTy_Text_TyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyIntro",
+      "base_rom_value": "0x08253312",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542D4",
+      "jp_original_text": "0x08253312",
+      "batch_source_symbol": "GabbyAndTy_Text_TyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyIntro",
+      "base_rom_value": "0x08253312",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254314",
+      "jp_original_text": "0x08253312",
+      "batch_source_symbol": "GabbyAndTy_Text_TyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyIntro",
+      "base_rom_value": "0x08253312",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254354",
+      "jp_original_text": "0x08253312",
+      "batch_source_symbol": "GabbyAndTy_Text_TyIntro",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyIntro",
+      "base_rom_value": "0x08253312",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254226",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254266",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542A6",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542E6",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254326",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254366",
+      "jp_original_text": "0x0825333E",
+      "batch_source_symbol": "GabbyAndTy_Text_TyPostBattle",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyPostBattle",
+      "base_rom_value": "0x0825333E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825421C",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825425C",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825429C",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542DC",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825431C",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0825435C",
+      "jp_original_text": "0x0825335D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyNotEnoughMons",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyNotEnoughMons",
+      "base_rom_value": "0x0825335D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254218",
+      "jp_original_text": "0x0825339D",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeatFirstTime",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeatFirstTime",
+      "base_rom_value": "0x0825339D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 130
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254258",
+      "jp_original_text": "0x082533BF",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeat",
+      "base_rom_value": "0x082533BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254298",
+      "jp_original_text": "0x082533BF",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeat",
+      "base_rom_value": "0x082533BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082542D8",
+      "jp_original_text": "0x082533BF",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeat",
+      "base_rom_value": "0x082533BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254318",
+      "jp_original_text": "0x082533BF",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeat",
+      "base_rom_value": "0x082533BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08254358",
+      "jp_original_text": "0x082533BF",
+      "batch_source_symbol": "GabbyAndTy_Text_TyDefeat",
+      "patch_symbol": "Chs_GabbyAndTy_Text_TyDefeat",
+      "base_rom_value": "0x082533BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/gabby_and_ty.inc",
+          "line": 134
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856911C",
+      "jp_original_text": "0x08253465",
+      "batch_source_symbol": "gTVInSearchOfTrainersText01",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText01",
+      "base_rom_value": "0x08253465",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 11
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08569120",
+      "jp_original_text": "0x082534BA",
+      "batch_source_symbol": "gTVInSearchOfTrainersText02",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText02",
+      "base_rom_value": "0x082534BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 19
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08569128",
+      "jp_original_text": "0x082535D3",
+      "batch_source_symbol": "gTVInSearchOfTrainersText04",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText04",
+      "base_rom_value": "0x082535D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 44
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856912C",
+      "jp_original_text": "0x0825365E",
+      "batch_source_symbol": "gTVInSearchOfTrainersText05",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText05",
+      "base_rom_value": "0x0825365E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 55
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08569130",
+      "jp_original_text": "0x082536D3",
+      "batch_source_symbol": "gTVInSearchOfTrainersText06",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText06",
+      "base_rom_value": "0x082536D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 65
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08569134",
+      "jp_original_text": "0x08253714",
+      "batch_source_symbol": "gTVInSearchOfTrainersText07",
+      "patch_symbol": "Chs_gTVInSearchOfTrainersText07",
+      "base_rom_value": "0x08253714",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/in_search_of_trainers.inc",
+          "line": 71
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

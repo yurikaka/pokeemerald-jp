@@ -1,0 +1,522 @@
+{
+  "schema_version": 1,
+  "batch": "425_union_room_pause.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/union_room.h",
+  "selection": {
+    "symbol_offset": 0,
+    "symbol_limit": 110,
+    "auto_wrap": true
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "already_in_batch": 68,
+    "already_patched_reference": 1,
+    "ambiguous_or_unreferenced_japanese_text": 3,
+    "dynamic_placeholder_needs_review": 23,
+    "mapped": 9,
+    "missing_or_ambiguous_wokann_symbol": 4,
+    "unsupported_source_encoding": 1,
+    "us_binary_source_mismatch": 1
+  },
+  "mapped": [
+    {
+      "source_symbol": "sText_Communicating",
+      "wokann_source": "src/data/union_room5.h",
+      "us_text_address": "0x08388BFC",
+      "japanese_text_address": "0x082C0B9C",
+      "japanese_references": [
+        "0x082C0CD8"
+      ]
+    },
+    {
+      "source_symbol": "sText_SomebodyHasContactedYou",
+      "wokann_source": "src/data/union_room6.h",
+      "us_text_address": "0x08388E14",
+      "japanese_text_address": "0x082C0D90",
+      "japanese_references": [
+        "0x082C0DB8"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoneWaitingBattleMale",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x083891A0",
+      "japanese_text_address": "0x082C10DC",
+      "japanese_references": [
+        "0x082C11A0"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoneWaitingChatMale",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x083891C0",
+      "japanese_text_address": "0x082C10F8",
+      "japanese_references": [
+        "0x082C11A4"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoneWaitingBattleFemale",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x083891E0",
+      "japanese_text_address": "0x082C1114",
+      "japanese_references": [
+        "0x082C11AC"
+      ]
+    },
+    {
+      "source_symbol": "sText_DoneWaitingChatFemale",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x08389200",
+      "japanese_text_address": "0x082C112C",
+      "japanese_references": [
+        "0x082C11B0"
+      ]
+    },
+    {
+      "source_symbol": "sText_TradeWillBeStarted",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x08389220",
+      "japanese_text_address": "0x082C114C",
+      "japanese_references": [
+        "0x082C1190",
+        "0x082C119C",
+        "0x082C11A8",
+        "0x082C11B4"
+      ]
+    },
+    {
+      "source_symbol": "sText_BattleWillBeStarted",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x08389234",
+      "japanese_text_address": "0x082C1160",
+      "japanese_references": [
+        "0x082C1188",
+        "0x082C1194"
+      ]
+    },
+    {
+      "source_symbol": "sText_EnteringChat",
+      "wokann_source": "src/data/union_room8b.h",
+      "us_text_address": "0x08389248",
+      "japanese_text_address": "0x082C1174",
+      "japanese_references": [
+        "0x082C118C",
+        "0x082C1198"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "sText_PleaseStartOver",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WirelessSearchCanceled",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_AwaitingCommunucation2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_AwaitingCommunication",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_AwaitingLinkPressStart",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_1PlayerNeeded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_2PlayersNeeded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_3PlayersNeeded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_4PlayersNeeded",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_2PlayerMode",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_3PlayerMode",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_4PlayerMode",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_5PlayerMode",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_BButtonCancel",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouForXAccept",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouShareX",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerContactedYouAddToMembers",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_AreTheseMembersOK",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_CancelModeWithTheseMembers",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_AnOKWasSentToPlayer",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_OtherTrainerUnavailableNow",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_CantTransmitTrainerTooFar",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TrainersNotReadyYet",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ModeWithTheseMembersWillBeCanceled",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_MemberNoLongerAvailable",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TrainerAppearsUnavailable",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerSentBackOK",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerOKdRegistration",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerRepliedNo",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_AwaitingOtherMembers",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_QuitBeingMember",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_StoppedBeingMember",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WirelessLinkEstablished",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WirelessLinkDropped",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LinkWithFriendDropped",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerRepliedNo2",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_DoYouWantXMode",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_DoYouWantXMode2",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_CommunicatingPleaseWait",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_AwaitingPlayersResponseAboutTrade",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_CommunicatingWithPlayer",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PleaseWaitAWhile",
+      "reason": "us_binary_source_mismatch"
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingAgainMale",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_HiDoSomethingAgainFemale",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_DoSomethingMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_DoSomethingFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_DoSomethingAgainMale",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_DoSomethingAgainFemale",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_PlayerHasContactedYou",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_AwaitingResponseFromTrainer",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_AwaitingResponseFromPlayer",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_ShowTrainerCard",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_BattleChallenge",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ChatInvitation",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_OfferToTradeMon",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_OfferToTradeEgg",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ChatDropped",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_OfferDeclined1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_OfferDeclined2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ChatEnded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_JoinChatMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerJoinChatMale",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_JoinChatFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_PlayerJoinChatFemale",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_TrainerAppearsBusy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_WaitForBattleMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WaitForChatMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ShowTrainerCardMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WaitForBattleFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WaitForChatFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ShowTrainerCardFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_WaitForChatMale2",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "sText_BattleDeclinedMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_BattleDeclinedFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ShowTrainerCardDeclinedMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ShowTrainerCardDeclinedFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_IfYouWantToDoSomethingMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_IfYouWantToDoSomethingFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_TrainerBattleBusy",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_NeedTwoMonsOfLevel30OrLower1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_NeedTwoMonsOfLevel30OrLower2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_DeclineChatMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "stext_DeclineChatFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ChatDeclinedMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ChatDeclinedFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_YoureToughMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_UsedGoodMoveMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_BattleSurpriseMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_SwitchedMonsMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_YoureToughFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_UsedGoodMoveFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_BattleSurpriseFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_SwitchedMonsFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LearnedSomethingMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ThatsFunnyMale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_RandomChatMale1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_RandomChatMale2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_LearnedSomethingFemale",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "sText_ThatsFunnyFemale",
+      "reason": "already_in_batch"
+    }
+  ]
+}

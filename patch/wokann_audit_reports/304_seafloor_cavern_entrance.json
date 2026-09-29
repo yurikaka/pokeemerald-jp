@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "304_seafloor_cavern_entrance.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: SeafloorCavern_Entrance",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x082184BA",
+      "jp_original_text": "0x08218524",
+      "batch_source_symbol": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep",
+      "patch_symbol": "Chs_SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep",
+      "base_rom_value": "0x08218524",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+          "line": 60,
+          "symbol": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+          "line": 60
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082184F0",
+      "jp_original_text": "0x082185E0",
+      "batch_source_symbol": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort",
+      "patch_symbol": "Chs_SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort",
+      "base_rom_value": "0x082185E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+          "line": 74,
+          "symbol": "SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SeafloorCavern_Entrance/scripts.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "source_commit": "fe570a7e5",
+  "source_file": "src/mystery_event_msg.c",
+  "wokann_file": "src/mystery_event_msg.c",
+  "status": "partial",
+  "mapping_policy": "Encode each Wokann source string with the JP charmap and require one exact ROM occurrence and one original pointer. Copy Chinese text exactly from the US commit; render dynamic values in Japanese mode because Wokann mystery_event_script.c copies Enigma Berry names from save data or gText_EggNickname/gText_Pokemon into gStringVar1/2.",
+  "mapped_count": 10,
+  "unresolved_count": 1,
+  "mapped": [
+    {"symbol": "gText_MysteryEventBerry", "original": "0x085FCAF8", "reference": "0x08153A8C"},
+    {"symbol": "gText_MysteryEventBerryTransform", "original": "0x085FCB19", "reference": "0x08153AA8"},
+    {"symbol": "gText_MysteryEventBerryObtained", "original": "0x085FCB2C", "reference": "0x08153AD0"},
+    {"symbol": "gText_MysteryEventSpecialRibbon", "original": "0x085FCB3D", "reference": "0x08153B1C"},
+    {"symbol": "gText_MysteryEventNationalDex", "original": "0x085FCB59", "reference": "0x08153BA8"},
+    {"symbol": "gText_MysteryEventRareWord", "original": "0x085FCB70", "reference": "0x08153BD4"},
+    {"symbol": "gText_MysteryEventSentOver", "original": "0x085FCB83", "reference": "0x08153D0C"},
+    {"symbol": "gText_MysteryEventFullParty", "original": "0x085FCB90", "reference": "0x08153C84"},
+    {"symbol": "gText_MysteryEventNewTrainer", "original": "0x085FCBAA", "reference": "0x08153D54"},
+    {"symbol": "gText_MysteryEventCantBeUsed", "original": "0x085FCBDE", "reference": "0x08153758"}
+  ],
+  "unresolved": [
+    {"symbol": "gText_MysteryEventNewAdversaryInBattleTower", "reason": "no pointer to original text in JP ROM"}
+  ]
+}

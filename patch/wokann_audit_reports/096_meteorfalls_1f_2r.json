@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "096_meteorfalls_1f_2r.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Fallarbor and Meteor Falls dialogue: MeteorFalls_1F_2R",
+  "summary": {
+    "verified_text_label": 25
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0821314A",
+      "jp_original_text": "0x082133EB",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayDefeat",
+      "base_rom_value": "0x082133EB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 128,
+          "symbol": "MeteorFalls_1F_2R_Text_JayDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 128
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213146",
+      "jp_original_text": "0x082133BB",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayIntro",
+      "base_rom_value": "0x082133BB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 123,
+          "symbol": "MeteorFalls_1F_2R_Text_JayIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 123
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821314E",
+      "jp_original_text": "0x08213430",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayNotEnoughMons",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayNotEnoughMons",
+      "base_rom_value": "0x08213430",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 137,
+          "symbol": "MeteorFalls_1F_2R_Text_JayNotEnoughMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 137
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213168",
+      "jp_original_text": "0x082133FF",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayPostBattle",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayPostBattle",
+      "base_rom_value": "0x082133FF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 132,
+          "symbol": "MeteorFalls_1F_2R_Text_JayPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 132
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821319D",
+      "jp_original_text": "0x08213569",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayPostRematch",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayPostRematch",
+      "base_rom_value": "0x08213569",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 172,
+          "symbol": "MeteorFalls_1F_2R_Text_JayPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 172
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213193",
+      "jp_original_text": "0x08213555",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayRematchDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayRematchDefeat",
+      "base_rom_value": "0x08213555",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 168,
+          "symbol": "MeteorFalls_1F_2R_Text_JayRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 168
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821318F",
+      "jp_original_text": "0x08213524",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayRematchIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayRematchIntro",
+      "base_rom_value": "0x08213524",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 163,
+          "symbol": "MeteorFalls_1F_2R_Text_JayRematchIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 163
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213197",
+      "jp_original_text": "0x082135B1",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons",
+      "base_rom_value": "0x082135B1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 178,
+          "symbol": "MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130E6",
+      "jp_original_text": "0x0821330B",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnDefeat",
+      "base_rom_value": "0x0821330B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 103,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 103
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130E2",
+      "jp_original_text": "0x082132D8",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnIntro",
+      "base_rom_value": "0x082132D8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 98,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 98
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130EA",
+      "jp_original_text": "0x08213350",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnNotEnoughMons",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnNotEnoughMons",
+      "base_rom_value": "0x08213350",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 112,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnNotEnoughMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 112
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213104",
+      "jp_original_text": "0x0821331D",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnPostBattle",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnPostBattle",
+      "base_rom_value": "0x0821331D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 107,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 107
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213139",
+      "jp_original_text": "0x082134B6",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnPostRematch",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnPostRematch",
+      "base_rom_value": "0x082134B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 152,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 152
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821310E",
+      "jp_original_text": "0x0821338C",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnRegister",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnRegister",
+      "base_rom_value": "0x0821338C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 118,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnRegister"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 118
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213172",
+      "jp_original_text": "0x0821338C",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnRegister",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnRegister",
+      "base_rom_value": "0x0821338C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 118,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnRegister"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 118
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821312F",
+      "jp_original_text": "0x082134A4",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnRematchDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnRematchDefeat",
+      "base_rom_value": "0x082134A4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 148,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 148
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821312B",
+      "jp_original_text": "0x0821346D",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnRematchIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnRematchIntro",
+      "base_rom_value": "0x0821346D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 143,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnRematchIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 143
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213133",
+      "jp_original_text": "0x082134E8",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons",
+      "base_rom_value": "0x082134E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 157,
+          "symbol": "MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 157
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213084",
+      "jp_original_text": "0x082131E8",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasDefeat",
+      "base_rom_value": "0x082131E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 70,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 70
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213080",
+      "jp_original_text": "0x082131A4",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasIntro",
+      "base_rom_value": "0x082131A4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 64,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 64
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821309E",
+      "jp_original_text": "0x082131FA",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasPostBattle",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasPostBattle",
+      "base_rom_value": "0x082131FA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 74,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130D5",
+      "jp_original_text": "0x082132A5",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasPostRematch",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasPostRematch",
+      "base_rom_value": "0x082132A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 93,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 93
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130AE",
+      "jp_original_text": "0x0821322E",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasRegister",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasRegister",
+      "base_rom_value": "0x0821322E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 79,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasRegister"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 79
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130CF",
+      "jp_original_text": "0x08213293",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasRematchDefeat",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasRematchDefeat",
+      "base_rom_value": "0x08213293",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 89,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 89
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082130CB",
+      "jp_original_text": "0x08213252",
+      "batch_source_symbol": "MeteorFalls_1F_2R_Text_NicolasRematchIntro",
+      "patch_symbol": "Chs_MeteorFalls_1F_2R_Text_NicolasRematchIntro",
+      "base_rom_value": "0x08213252",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 83,
+          "symbol": "MeteorFalls_1F_2R_Text_NicolasRematchIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MeteorFalls_1F_2R/scripts.inc",
+          "line": 83
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "batch": "301_sstidal_corridor.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/SSTidalCorridor/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 14,
+  "unresolved_count": 0,
+  "reference_count": 18,
+  "mapped": [
+    {
+      "source_symbol": "SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 271,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223ADC",
+      "japanese_text_address": "0x0821E201",
+      "japanese_references": [
+        "0x0821DE84",
+        "0x0821DEAC"
+      ]
+    },
+    {
+      "source_symbol": "SSTidal_Text_HopeYouEnjoyVoyage",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 275,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223B29",
+      "japanese_text_address": "0x0821E227",
+      "japanese_references": [
+        "0x0821DE97",
+        "0x0821DEEC"
+      ]
+    },
+    {
+      "source_symbol": "SSTidal_Text_MadeLandInSlateport",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 279,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223B4C",
+      "japanese_text_address": "0x0821E248",
+      "japanese_references": [
+        "0x0821DF02",
+        "0x0821DF17"
+      ]
+    },
+    {
+      "source_symbol": "SSTidal_Text_MadeLandInLilycove",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 283,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223B6E",
+      "japanese_text_address": "0x0821E269",
+      "japanese_references": [
+        "0x0821DEC0"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_CanRestInCabin2",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 287,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223B90",
+      "japanese_text_address": "0x0821E28A",
+      "japanese_references": [
+        "0x0821DFAA"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_WeveArrived",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 295,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223C02",
+      "japanese_text_address": "0x0821E2E5",
+      "japanese_references": [
+        "0x0821DFB7",
+        "0x0821DFD6"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_VisitOtherCabins",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 298,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223C0C",
+      "japanese_text_address": "0x0821E2F0",
+      "japanese_references": [
+        "0x0821E02C"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_EnjoyYourCruise",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 303,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223C47",
+      "japanese_text_address": "0x0821E324",
+      "japanese_references": [
+        "0x0821E036"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 306,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223C51",
+      "japanese_text_address": "0x0821E336",
+      "japanese_references": [
+        "0x0821E00D"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_Peeko",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 318,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223D0C",
+      "japanese_text_address": "0x0821E3B8",
+      "japanese_references": [
+        "0x0821DF63"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_Cabin1",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 321,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223D1C",
+      "japanese_text_address": "0x0821E3C9",
+      "japanese_references": [
+        "0x0821DF6E"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_Cabin2",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 324,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223D24",
+      "japanese_text_address": "0x0821E3CF",
+      "japanese_references": [
+        "0x0821DF77"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_Cabin3",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 327,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223D2C",
+      "japanese_text_address": "0x0821E3D5",
+      "japanese_references": [
+        "0x0821DF80"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_Cabin4",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 330,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223D34",
+      "japanese_text_address": "0x0821E3DB",
+      "japanese_references": [
+        "0x0821DF89"
+      ]
+    }
+  ],
+  "unresolved": []
+}

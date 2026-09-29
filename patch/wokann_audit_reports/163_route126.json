@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "163_route126.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mossdeep and eastern sea dialogue: Route126",
+  "summary": {
+    "verified_text_label": 28
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081EEB14",
+      "jp_original_text": "0x08260B85",
+      "batch_source_symbol": "Route126_Text_BarryDefeat",
+      "patch_symbol": "Chs_Route126_Text_BarryDefeat",
+      "base_rom_value": "0x08260B85",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3842,
+          "symbol": "Route126_Text_BarryDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3842,
+          "symbol": "Route126_Text_BarryDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3842
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB10",
+      "jp_original_text": "0x08260B67",
+      "batch_source_symbol": "Route126_Text_BarryIntro",
+      "patch_symbol": "Chs_Route126_Text_BarryIntro",
+      "base_rom_value": "0x08260B67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3839,
+          "symbol": "Route126_Text_BarryIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3839,
+          "symbol": "Route126_Text_BarryIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3839
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB1A",
+      "jp_original_text": "0x08260B8E",
+      "batch_source_symbol": "Route126_Text_BarryPostBattle",
+      "patch_symbol": "Chs_Route126_Text_BarryPostBattle",
+      "base_rom_value": "0x08260B8E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3845,
+          "symbol": "Route126_Text_BarryPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3845,
+          "symbol": "Route126_Text_BarryPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3845
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB59",
+      "jp_original_text": "0x08260C57",
+      "batch_source_symbol": "Route126_Text_BrendaDefeat",
+      "patch_symbol": "Chs_Route126_Text_BrendaDefeat",
+      "base_rom_value": "0x08260C57",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3876,
+          "symbol": "Route126_Text_BrendaDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3876,
+          "symbol": "Route126_Text_BrendaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3876
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB55",
+      "jp_original_text": "0x08260C40",
+      "batch_source_symbol": "Route126_Text_BrendaIntro",
+      "patch_symbol": "Chs_Route126_Text_BrendaIntro",
+      "base_rom_value": "0x08260C40",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3872,
+          "symbol": "Route126_Text_BrendaIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3872,
+          "symbol": "Route126_Text_BrendaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3872
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB5F",
+      "jp_original_text": "0x08260C5E",
+      "batch_source_symbol": "Route126_Text_BrendaPostBattle",
+      "patch_symbol": "Chs_Route126_Text_BrendaPostBattle",
+      "base_rom_value": "0x08260C5E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3879,
+          "symbol": "Route126_Text_BrendaPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3879,
+          "symbol": "Route126_Text_BrendaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3879
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB2B",
+      "jp_original_text": "0x08260BCC",
+      "batch_source_symbol": "Route126_Text_DeanDefeat",
+      "patch_symbol": "Chs_Route126_Text_DeanDefeat",
+      "base_rom_value": "0x08260BCC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3853,
+          "symbol": "Route126_Text_DeanDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3853,
+          "symbol": "Route126_Text_DeanDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3853
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB27",
+      "jp_original_text": "0x08260BAD",
+      "batch_source_symbol": "Route126_Text_DeanIntro",
+      "patch_symbol": "Chs_Route126_Text_DeanIntro",
+      "base_rom_value": "0x08260BAD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3849,
+          "symbol": "Route126_Text_DeanIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3849,
+          "symbol": "Route126_Text_DeanIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3849
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB31",
+      "jp_original_text": "0x08260BD4",
+      "batch_source_symbol": "Route126_Text_DeanPostBattle",
+      "patch_symbol": "Chs_Route126_Text_DeanPostBattle",
+      "base_rom_value": "0x08260BD4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3856,
+          "symbol": "Route126_Text_DeanPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3856,
+          "symbol": "Route126_Text_DeanPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3856
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB87",
+      "jp_original_text": "0x08260DED",
+      "batch_source_symbol": "Route126_Text_IsobelDefeat",
+      "patch_symbol": "Chs_Route126_Text_IsobelDefeat",
+      "base_rom_value": "0x08260DED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3930,
+          "symbol": "Route126_Text_IsobelDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3930,
+          "symbol": "Route126_Text_IsobelDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3930
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB83",
+      "jp_original_text": "0x08260DD2",
+      "batch_source_symbol": "Route126_Text_IsobelIntro",
+      "patch_symbol": "Chs_Route126_Text_IsobelIntro",
+      "base_rom_value": "0x08260DD2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3926,
+          "symbol": "Route126_Text_IsobelIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3926,
+          "symbol": "Route126_Text_IsobelIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3926
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB8D",
+      "jp_original_text": "0x08260DFE",
+      "batch_source_symbol": "Route126_Text_IsobelPostBattle",
+      "patch_symbol": "Chs_Route126_Text_IsobelPostBattle",
+      "base_rom_value": "0x08260DFE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3934,
+          "symbol": "Route126_Text_IsobelPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3934,
+          "symbol": "Route126_Text_IsobelPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3934
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB70",
+      "jp_original_text": "0x08260D8C",
+      "batch_source_symbol": "Route126_Text_LeonardoDefeat",
+      "patch_symbol": "Chs_Route126_Text_LeonardoDefeat",
+      "base_rom_value": "0x08260D8C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3917,
+          "symbol": "Route126_Text_LeonardoDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3917,
+          "symbol": "Route126_Text_LeonardoDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3917
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB6C",
+      "jp_original_text": "0x08260D55",
+      "batch_source_symbol": "Route126_Text_LeonardoIntro",
+      "patch_symbol": "Chs_Route126_Text_LeonardoIntro",
+      "base_rom_value": "0x08260D55",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3912,
+          "symbol": "Route126_Text_LeonardoIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3912,
+          "symbol": "Route126_Text_LeonardoIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3912
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB76",
+      "jp_original_text": "0x08260D9F",
+      "batch_source_symbol": "Route126_Text_LeonardoPostBattle",
+      "patch_symbol": "Chs_Route126_Text_LeonardoPostBattle",
+      "base_rom_value": "0x08260D9F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3920,
+          "symbol": "Route126_Text_LeonardoPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3920,
+          "symbol": "Route126_Text_LeonardoPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3920
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB42",
+      "jp_original_text": "0x08260C03",
+      "batch_source_symbol": "Route126_Text_NikkiDefeat",
+      "patch_symbol": "Chs_Route126_Text_NikkiDefeat",
+      "base_rom_value": "0x08260C03",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3864,
+          "symbol": "Route126_Text_NikkiDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3864,
+          "symbol": "Route126_Text_NikkiDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3864
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB3E",
+      "jp_original_text": "0x08260BF2",
+      "batch_source_symbol": "Route126_Text_NikkiIntro",
+      "patch_symbol": "Chs_Route126_Text_NikkiIntro",
+      "base_rom_value": "0x08260BF2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3860,
+          "symbol": "Route126_Text_NikkiIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3860,
+          "symbol": "Route126_Text_NikkiIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3860
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB48",
+      "jp_original_text": "0x08260C1C",
+      "batch_source_symbol": "Route126_Text_NikkiPostBattle",
+      "patch_symbol": "Chs_Route126_Text_NikkiPostBattle",
+      "base_rom_value": "0x08260C1C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3868,
+          "symbol": "Route126_Text_NikkiPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3868,
+          "symbol": "Route126_Text_NikkiPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3868
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBB5",
+      "jp_original_text": "0x08260C98",
+      "batch_source_symbol": "Route126_Text_PabloDefeat",
+      "patch_symbol": "Chs_Route126_Text_PabloDefeat",
+      "base_rom_value": "0x08260C98",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3887,
+          "symbol": "Route126_Text_PabloDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3887,
+          "symbol": "Route126_Text_PabloDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3887
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBB1",
+      "jp_original_text": "0x08260C7B",
+      "batch_source_symbol": "Route126_Text_PabloIntro",
+      "patch_symbol": "Chs_Route126_Text_PabloIntro",
+      "base_rom_value": "0x08260C7B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3883,
+          "symbol": "Route126_Text_PabloIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3883,
+          "symbol": "Route126_Text_PabloIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3883
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBCF",
+      "jp_original_text": "0x08260CAB",
+      "batch_source_symbol": "Route126_Text_PabloPostBattle",
+      "patch_symbol": "Chs_Route126_Text_PabloPostBattle",
+      "base_rom_value": "0x08260CAB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3891,
+          "symbol": "Route126_Text_PabloPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3891,
+          "symbol": "Route126_Text_PabloPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3891
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEC06",
+      "jp_original_text": "0x08260D29",
+      "batch_source_symbol": "Route126_Text_PabloPostRematch",
+      "patch_symbol": "Chs_Route126_Text_PabloPostRematch",
+      "base_rom_value": "0x08260D29",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3907,
+          "symbol": "Route126_Text_PabloPostRematch"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3907,
+          "symbol": "Route126_Text_PabloPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3907
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBDF",
+      "jp_original_text": "0x08260CD2",
+      "batch_source_symbol": "Route126_Text_PabloRegister",
+      "patch_symbol": "Chs_Route126_Text_PabloRegister",
+      "base_rom_value": "0x08260CD2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3895,
+          "symbol": "Route126_Text_PabloRegister"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3895,
+          "symbol": "Route126_Text_PabloRegister"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3895
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEC00",
+      "jp_original_text": "0x08260D12",
+      "batch_source_symbol": "Route126_Text_PabloRematchDefeat",
+      "patch_symbol": "Chs_Route126_Text_PabloRematchDefeat",
+      "base_rom_value": "0x08260D12",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3903,
+          "symbol": "Route126_Text_PabloRematchDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3903,
+          "symbol": "Route126_Text_PabloRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3903
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBFC",
+      "jp_original_text": "0x08260CF1",
+      "batch_source_symbol": "Route126_Text_PabloRematchIntro",
+      "patch_symbol": "Chs_Route126_Text_PabloRematchIntro",
+      "base_rom_value": "0x08260CF1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3899,
+          "symbol": "Route126_Text_PabloRematchIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3899,
+          "symbol": "Route126_Text_PabloRematchIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3899
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB9E",
+      "jp_original_text": "0x08260E31",
+      "batch_source_symbol": "Route126_Text_SiennaDefeat",
+      "patch_symbol": "Chs_Route126_Text_SiennaDefeat",
+      "base_rom_value": "0x08260E31",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3941,
+          "symbol": "Route126_Text_SiennaDefeat"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3941,
+          "symbol": "Route126_Text_SiennaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3941
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEB9A",
+      "jp_original_text": "0x08260E20",
+      "batch_source_symbol": "Route126_Text_SiennaIntro",
+      "patch_symbol": "Chs_Route126_Text_SiennaIntro",
+      "base_rom_value": "0x08260E20",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3938,
+          "symbol": "Route126_Text_SiennaIntro"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3938,
+          "symbol": "Route126_Text_SiennaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3938
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081EEBA4",
+      "jp_original_text": "0x08260E3C",
+      "batch_source_symbol": "Route126_Text_SiennaPostBattle",
+      "patch_symbol": "Chs_Route126_Text_SiennaPostBattle",
+      "base_rom_value": "0x08260E3C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3944,
+          "symbol": "Route126_Text_SiennaPostBattle"
+        },
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3944,
+          "symbol": "Route126_Text_SiennaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/trainers.inc",
+          "line": 3944
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

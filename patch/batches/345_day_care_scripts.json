@@ -1,0 +1,49 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/scripts/day_care.inc",
+  "texts": [
+    {
+      "name": "Chs_Route117_Text_YouHaveNoRoomForIt",
+      "source_symbol": "Route117_Text_YouHaveNoRoomForIt",
+      "us_encoded_hex": "09d909530f7e031f03c003c80c9f089eb0b0fe0b0d106e0862016307d7096605220fe50829012837ff"
+    },
+    {
+      "name": "Chs_Route117_Text_ReceivedEgg",
+      "source_symbol": "Route117_Text_ReceivedEgg",
+      "us_encoded_hex": "fd0102b30a3d0fab0ef60ef6fe09bd0864030a0304089e02ee37ff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_Text_EggHatchHuh",
+      "source_symbol": "Text_EggHatchHuh",
+      "us_encoded_hex": "0a13b0b03dff"
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x0825775E",
+      "original": "0x08257B85",
+      "symbol": "Chs_Route117_Text_YouHaveNoRoomForIt",
+      "source_symbol": "Route117_Text_YouHaveNoRoomForIt"
+    },
+    {
+      "address": "0x08257767",
+      "original": "0x08257BAB",
+      "symbol": "Chs_Route117_Text_ReceivedEgg",
+      "source_symbol": "Route117_Text_ReceivedEgg"
+    },
+    {
+      "address": "0x08257A8C",
+      "original": "0x08257E82",
+      "symbol": "Chs_Text_EggHatchHuh",
+      "source_symbol": "Text_EggHatchHuh"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/345_day_care_scripts.json",
+    "mapped_count": 3,
+    "unresolved_count": 5
+  }
+}

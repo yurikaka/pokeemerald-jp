@@ -1,0 +1,450 @@
+{
+  "schema_version": 1,
+  "batch": "228_battle_frontier_outside_west.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/BattleFrontier_OutsideWest/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 37,
+  "unresolved_count": 0,
+  "reference_count": 38,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_BattleDomeSign",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 301,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224916",
+      "japanese_text_address": "0x0821EEB7",
+      "japanese_references": [
+        "0x0821ECA4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_BattleFactorySign",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 305,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822493F",
+      "japanese_text_address": "0x0821EED6",
+      "japanese_references": [
+        "0x0821ECAD"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_BattlePikeSign",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 309,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224960",
+      "japanese_text_address": "0x0821EEF6",
+      "japanese_references": [
+        "0x0821ECB6"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_ThisIsBattleTower",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 313,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822497E",
+      "japanese_text_address": "0x0821EF10",
+      "japanese_references": [
+        "0x0821ECBF"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_BestOutOfAllMyFriends",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 350,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224A89",
+      "japanese_text_address": "0x0821F01B",
+      "japanese_references": [
+        "0x0821ECD1"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_CantFindBattleTower",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 355,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224ABA",
+      "japanese_text_address": "0x0821F046",
+      "japanese_references": [
+        "0x0821ECC8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 360,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224B00",
+      "japanese_text_address": "0x0821F07B",
+      "japanese_references": [
+        "0x0821ECDB"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 365,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224B3D",
+      "japanese_text_address": "0x0821F0A7",
+      "japanese_references": [
+        "0x0821ECEF"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 373,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224BAF",
+      "japanese_text_address": "0x0821F110",
+      "japanese_references": [
+        "0x0821ED10"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 378,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224BDE",
+      "japanese_text_address": "0x0821F146",
+      "japanese_references": [
+        "0x0821ED22"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 385,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224C31",
+      "japanese_text_address": "0x0821F18F",
+      "japanese_references": [
+        "0x0821ED72"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 391,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224C8B",
+      "japanese_text_address": "0x0821F1DE",
+      "japanese_references": [
+        "0x0821ED89"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_LetsPlayRockPaperScissors",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 397,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224CE0",
+      "japanese_text_address": "0x0821F223",
+      "japanese_references": [
+        "0x0821EDF9"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_WonIllTakePikeChallenge",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 402,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224CFF",
+      "japanese_text_address": "0x0821F24A",
+      "japanese_references": [
+        "0x0821EE15"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_LostIllPutOffPikeChallenge",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 406,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224D1A",
+      "japanese_text_address": "0x0821F26C",
+      "japanese_references": [
+        "0x0821EE1F"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_ChooseFishingOverBattling",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 411,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224D61",
+      "japanese_text_address": "0x0821F29C",
+      "japanese_references": [
+        "0x0821EE29"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_KeepBattlingUntilIGetSymbol",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 418,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224DBA",
+      "japanese_text_address": "0x0821F2E3",
+      "japanese_references": [
+        "0x0821EE44"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_YoureOffToChallengeDome",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 422,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224DF2",
+      "japanese_text_address": "0x0821F30D",
+      "japanese_references": [
+        "0x0821EE3B"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 428,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224E40",
+      "japanese_text_address": "0x0821F34A",
+      "japanese_references": [
+        "0x0821EE32"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_WontLetGentlemenBeatMe",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 432,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224E70",
+      "japanese_text_address": "0x0821F371",
+      "japanese_references": [
+        "0x0821EE4D"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_NothingHereNotLongAgo",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 437,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224EAC",
+      "japanese_text_address": "0x0821F3AB",
+      "japanese_references": [
+        "0x0821EE56"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_FinallyArrivedAtFrontier",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 443,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224EFB",
+      "japanese_text_address": "0x0821F3F2",
+      "japanese_references": [
+        "0x0821EE5F"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_SquareFilledWithToughPeople",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 448,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224F39",
+      "japanese_text_address": "0x0821F428",
+      "japanese_references": [
+        "0x0821EE68"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_MetOlderGirlAtPike",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 454,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224F74",
+      "japanese_text_address": "0x0821F44F",
+      "japanese_references": [
+        "0x0821EE71"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_LastTimeOurEyesMet",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 465,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08224FF6",
+      "japanese_text_address": "0x0821F4C2",
+      "japanese_references": [
+        "0x0821EE7B"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_DomeAceLookedBecauseOfMyCheering",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 472,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08225056",
+      "japanese_text_address": "0x0821F509",
+      "japanese_references": [
+        "0x0821EE86"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_DomeAceIsMine",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 479,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082250B6",
+      "japanese_text_address": "0x0821F550",
+      "japanese_references": [
+        "0x0821EE90"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 487,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822512A",
+      "japanese_text_address": "0x0821F5B0",
+      "japanese_references": [
+        "0x0821EE9B"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 498,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08225241",
+      "japanese_text_address": "0x0821F657",
+      "japanese_references": [
+        "0x0821EEB0"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_MayISeeYourTicket",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 318,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082249B7",
+      "japanese_text_address": "0x0821EF43",
+      "japanese_references": [
+        "0x0821EBB4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 322,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082249DE",
+      "japanese_text_address": "0x0821EF66",
+      "japanese_references": [
+        "0x0821EC10"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 329,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A0E",
+      "japanese_text_address": "0x0821EFA2",
+      "japanese_references": [
+        "0x0821EBCB"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_SlateportItIs",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 335,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A37",
+      "japanese_text_address": "0x0821EFD1",
+      "japanese_references": [
+        "0x0821EC1A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_LilycoveItIs",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 338,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A49",
+      "japanese_text_address": "0x0821EFDD",
+      "japanese_references": [
+        "0x0821EC45"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 341,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A5B",
+      "japanese_text_address": "0x0821EFE9",
+      "japanese_references": [
+        "0x0821EC9A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_PleaseBoardFerry",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 344,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A69",
+      "japanese_text_address": "0x0821EFF7",
+      "japanese_references": [
+        "0x0821EC2D",
+        "0x0821EC58"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo",
+      "source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_OutsideWest/scripts.inc",
+      "wokann_label_line": 347,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08224A79",
+      "japanese_text_address": "0x0821F00B",
+      "japanese_references": [
+        "0x0821EC6F"
+      ]
+    }
+  ],
+  "unresolved": []
+}

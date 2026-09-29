@@ -1,0 +1,2124 @@
+{
+  "schema_version": 1,
+  "batch": "384_apprentice_1.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/apprentice.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 25,
+  "unresolved_count": 197,
+  "reference_count": 25,
+  "mapped": [
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem5",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 717,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D312",
+      "japanese_text_address": "0x0826F187",
+      "japanese_references": [
+        "0x085DC708"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 744,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D47F",
+      "japanese_text_address": "0x0826F2C4",
+      "japanese_references": [
+        "0x085DC71C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 774,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D633",
+      "japanese_text_address": "0x0826F42A",
+      "japanese_references": [
+        "0x085DC72C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 777,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D658",
+      "japanese_text_address": "0x0826F44B",
+      "japanese_references": [
+        "0x085DC730"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeItemAlreadyRecommended7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 789,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D6DC",
+      "japanese_text_address": "0x0826F4CA",
+      "japanese_references": [
+        "0x085DC738"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 802,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D780",
+      "japanese_text_address": "0x0826F56C",
+      "japanese_references": [
+        "0x085DC740"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 805,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D7B1",
+      "japanese_text_address": "0x0826F593",
+      "japanese_references": [
+        "0x085DC744"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem9",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 836,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827D931",
+      "japanese_text_address": "0x0826F720",
+      "japanese_references": [
+        "0x085DC758"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 865,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827DAB9",
+      "japanese_text_address": "0x0826F890",
+      "japanese_references": [
+        "0x085DC768"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem10",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 868,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827DAD9",
+      "japanese_text_address": "0x0826F8AD",
+      "japanese_references": [
+        "0x085DC76C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 900,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827DCAF",
+      "japanese_text_address": "0x0826FA39",
+      "japanese_references": [
+        "0x085DC780"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 930,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827DEA7",
+      "japanese_text_address": "0x0826FBB9",
+      "japanese_references": [
+        "0x085DC794"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem13",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 963,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E08F",
+      "japanese_text_address": "0x0826FD47",
+      "japanese_references": [
+        "0x085DC7A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeHoldNothing15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1024,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E45A",
+      "japanese_text_address": "0x08270035",
+      "japanese_references": [
+        "0x085DC7CC"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeThanksNoHeldItem15",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1027,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E474",
+      "japanese_text_address": "0x08270050",
+      "japanese_references": [
+        "0x085DC7D0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst0",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1046,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E575",
+      "japanese_text_address": "0x08270127",
+      "japanese_references": [
+        "0x085DC85C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst1",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1061,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E676",
+      "japanese_text_address": "0x082701EC",
+      "japanese_references": [
+        "0x085DC864"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst2",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1073,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E6E9",
+      "japanese_text_address": "0x0827026B",
+      "japanese_references": [
+        "0x085DC86C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst3",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1085,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827E763",
+      "japanese_text_address": "0x082702F0",
+      "japanese_references": [
+        "0x085DC874"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst6",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1134,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827EA38",
+      "japanese_text_address": "0x08270579",
+      "japanese_references": [
+        "0x085DC88C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst7",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1150,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827EB19",
+      "japanese_text_address": "0x08270646",
+      "japanese_references": [
+        "0x085DC894"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst8",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1165,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827EBF2",
+      "japanese_text_address": "0x08270703",
+      "japanese_references": [
+        "0x085DC89C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1218,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827EF3A",
+      "japanese_text_address": "0x082709C8",
+      "japanese_references": [
+        "0x085DC8B4"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeMonFirstThanks11",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1226,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827EFBE",
+      "japanese_text_address": "0x08270A35",
+      "japanese_references": [
+        "0x085DC8B8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticeWhichMonFirst12",
+      "source": "data/text/apprentice.inc",
+      "wokann_source": "data/text/apprentice.inc",
+      "wokann_label_line": 1231,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827F014",
+      "japanese_text_address": "0x08270A6B",
+      "japanese_references": [
+        "0x085DC8BC"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "gText_ApprenticeChallenge0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeChallenge15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticePleaseTeach15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeLevelModeThanks15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeHoldNothing14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhatHeldItem15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeThanksHeldItem15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeItemAlreadyRecommended15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonFirstThanks15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMon15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMonThanks15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWhichMove15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeMoveThanks15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks0",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks1",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks2",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks3",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks4",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks5",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks6",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks7",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks8",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks9",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks10",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks11",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks12",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks13",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks14",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "gText_ApprenticeWinSpeechThanks15",
+      "source": "data/text/apprentice.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    }
+  ]
+}

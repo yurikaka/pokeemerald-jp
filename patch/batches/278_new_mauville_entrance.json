@@ -1,0 +1,49 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/maps/NewMauville_Entrance/scripts.inc",
+  "texts": [
+    {
+      "name": "Chs_NewMauville_Entrance_Text_DoorIsLocked",
+      "source_symbol": "NewMauville_Entrance_Text_DoorIsLocked",
+      "us_encoded_hex": "095d0c9b10d0089e37ff"
+    },
+    {
+      "name": "Chs_NewMauville_Entrance_Text_UseBasementKey",
+      "source_symbol": "NewMauville_Entrance_Text_UseBasementKey",
+      "us_encoded_hex": "0bf50f71031f0de60fcb0259092a3dff"
+    },
+    {
+      "name": "Chs_NewMauville_Entrance_Text_UsedBasementKey",
+      "source_symbol": "NewMauville_Entrance_Text_UsedBasementKey",
+      "us_encoded_hex": "fd010bf50f71089e031f0de60fcb025937fb095d02d207b8089e3cff",
+      "japanese_placeholders": [
+        1
+      ]
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x0821A385",
+      "original": "0x0821A3FB",
+      "symbol": "Chs_NewMauville_Entrance_Text_DoorIsLocked",
+      "source_symbol": "NewMauville_Entrance_Text_DoorIsLocked"
+    },
+    {
+      "address": "0x0821A39D",
+      "original": "0x0821A407",
+      "symbol": "Chs_NewMauville_Entrance_Text_UseBasementKey",
+      "source_symbol": "NewMauville_Entrance_Text_UseBasementKey"
+    },
+    {
+      "address": "0x0821A3B0",
+      "original": "0x0821A416",
+      "symbol": "Chs_NewMauville_Entrance_Text_UsedBasementKey",
+      "source_symbol": "NewMauville_Entrance_Text_UsedBasementKey"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/278_new_mauville_entrance.json",
+    "mapped_count": 3,
+    "unresolved_count": 0
+  }
+}

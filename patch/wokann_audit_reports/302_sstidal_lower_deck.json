@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "302_sstidal_lower_deck.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: SSTidalLowerDeck",
+  "summary": {
+    "verified_source_definition": 4
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0821E3E8",
+      "jp_original_text": "0x0821E410",
+      "batch_source_symbol": "SSTidalLowerDeck_Text_PhillipIntro",
+      "patch_symbol": "Chs_SSTidalLowerDeck_Text_PhillipIntro",
+      "base_rom_value": "0x0821E410",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalLowerDeck/scripts.inc",
+          "line": 13
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E3EC",
+      "jp_original_text": "0x0821E43E",
+      "batch_source_symbol": "SSTidalLowerDeck_Text_PhillipDefeat",
+      "patch_symbol": "Chs_SSTidalLowerDeck_Text_PhillipDefeat",
+      "base_rom_value": "0x0821E43E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalLowerDeck/scripts.inc",
+          "line": 18
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E3FF",
+      "jp_original_text": "0x0821E47F",
+      "batch_source_symbol": "SSTidalLowerDeck_Text_LeonardIntro",
+      "patch_symbol": "Chs_SSTidalLowerDeck_Text_LeonardIntro",
+      "base_rom_value": "0x0821E47F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalLowerDeck/scripts.inc",
+          "line": 26
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E403",
+      "jp_original_text": "0x0821E4A8",
+      "batch_source_symbol": "SSTidalLowerDeck_Text_LeonardDefeat",
+      "patch_symbol": "Chs_SSTidalLowerDeck_Text_LeonardDefeat",
+      "base_rom_value": "0x0821E4A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalLowerDeck/scripts.inc",
+          "line": 31
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

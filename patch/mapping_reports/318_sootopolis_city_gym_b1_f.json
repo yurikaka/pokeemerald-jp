@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "batch": "318_sootopolis_city_gym_b1_f.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/SootopolisCity_Gym_B1F/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 30,
+  "unresolved_count": 0,
+  "reference_count": 30,
+  "mapped": [
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 56,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082130AB",
+      "japanese_text_address": "0x0820EBAD",
+      "japanese_references": [
+        "0x0820EACD"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 60,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082130D6",
+      "japanese_text_address": "0x0820EBD7",
+      "japanese_references": [
+        "0x0820EAD1"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AndreaPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 63,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082130E6",
+      "japanese_text_address": "0x0820EBE4",
+      "japanese_references": [
+        "0x0820EAD7"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 67,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213107",
+      "japanese_text_address": "0x0820EC01",
+      "japanese_references": [
+        "0x0820EAE4"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 72,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821313B",
+      "japanese_text_address": "0x0820EC2B",
+      "japanese_references": [
+        "0x0820EAE8"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_CrissyPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 76,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821315B",
+      "japanese_text_address": "0x0820EC47",
+      "japanese_references": [
+        "0x0820EAEE"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_DaphneIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 80,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213180",
+      "japanese_text_address": "0x0820EC6E",
+      "japanese_references": [
+        "0x0820EB9C"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_DaphneDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 85,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082131C0",
+      "japanese_text_address": "0x0820ECA7",
+      "japanese_references": [
+        "0x0820EBA0"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_DaphnePostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 89,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082131D8",
+      "japanese_text_address": "0x0820ECC1",
+      "japanese_references": [
+        "0x0820EBA6"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_ConnieIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 95,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213206",
+      "japanese_text_address": "0x0820ECF5",
+      "japanese_references": [
+        "0x0820EB12"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_ConnieDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 99,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821321F",
+      "japanese_text_address": "0x0820ED1B",
+      "japanese_references": [
+        "0x0820EB16"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_ConniePostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 103,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821322B",
+      "japanese_text_address": "0x0820ED25",
+      "japanese_references": [
+        "0x0820EB1C"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 109,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821326B",
+      "japanese_text_address": "0x0820ED5F",
+      "japanese_references": [
+        "0x0820EB29"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 114,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821329B",
+      "japanese_text_address": "0x0820ED8D",
+      "japanese_references": [
+        "0x0820EB2D"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BridgetPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 117,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082132A9",
+      "japanese_text_address": "0x0820ED9C",
+      "japanese_references": [
+        "0x0820EB33"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 123,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213301",
+      "japanese_text_address": "0x0820EDE1",
+      "japanese_references": [
+        "0x0820EB40"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 128,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213330",
+      "japanese_text_address": "0x0820EE11",
+      "japanese_references": [
+        "0x0820EB44"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_OliviaPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 131,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821333D",
+      "japanese_text_address": "0x0820EE1C",
+      "japanese_references": [
+        "0x0820EB4A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 135,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213363",
+      "japanese_text_address": "0x0820EE44",
+      "japanese_references": [
+        "0x0820EB57"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 140,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082133AD",
+      "japanese_text_address": "0x0820EE74",
+      "japanese_references": [
+        "0x0820EB5B"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_TiffanyPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 143,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082133B8",
+      "japanese_text_address": "0x0820EE7C",
+      "japanese_references": [
+        "0x0820EB61"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 148,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082133E1",
+      "japanese_text_address": "0x0820EEA4",
+      "japanese_references": [
+        "0x0820EB6E"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 152,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213415",
+      "japanese_text_address": "0x0820EEC9",
+      "japanese_references": [
+        "0x0820EB72"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BethanyPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 155,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213419",
+      "japanese_text_address": "0x0820EECD",
+      "japanese_references": [
+        "0x0820EB78"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 159,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213446",
+      "japanese_text_address": "0x0820EEE8",
+      "japanese_references": [
+        "0x0820EB85"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 163,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213467",
+      "japanese_text_address": "0x0820EF0E",
+      "japanese_references": [
+        "0x0820EB89"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_AnnikaPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 167,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213487",
+      "japanese_text_address": "0x0820EF29",
+      "japanese_references": [
+        "0x0820EB8F"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaIntro",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 174,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082134DB",
+      "japanese_text_address": "0x0820EF83",
+      "japanese_references": [
+        "0x0820EAFB"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaDefeat",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 178,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082134F8",
+      "japanese_text_address": "0x0820EF9B",
+      "japanese_references": [
+        "0x0820EAFF"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_B1F_Text_BriannaPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_B1F/scripts.inc",
+      "wokann_label_line": 182,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821350F",
+      "japanese_text_address": "0x0820EFB2",
+      "japanese_references": [
+        "0x0820EB05"
+      ]
+    }
+  ],
+  "unresolved": []
+}

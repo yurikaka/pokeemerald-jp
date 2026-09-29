@@ -1,0 +1,749 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "174_trainer_card.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "8dbfd7c4e",
+  "category": "trainer card text",
+  "summary": {
+    "verified_direct_symbol": 18,
+    "verified_fragment": 3,
+    "verified_source_definition": 4
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x080C2DAC",
+      "jp_original_text": "0x085CC329",
+      "batch_source_symbol": "gText_TrainerCardMoney",
+      "patch_symbol": "Chs_gText_TrainerCardMoney",
+      "base_rom_value": "0x085CC329",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2189,
+          "referenced_symbol": "gText_TrainerCardMoney",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardMoney"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2D14",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 9
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C2E18",
+      "jp_original_text": "0x085CC329",
+      "batch_source_symbol": "gText_TrainerCardMoney",
+      "patch_symbol": "Chs_gText_TrainerCardMoney",
+      "base_rom_value": "0x085CC329",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2238,
+          "referenced_symbol": "gText_TrainerCardMoney",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardMoney"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2D14",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 9
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C2EE8",
+      "jp_original_text": "0x085CC331",
+      "batch_source_symbol": "gText_TrainerCardPokedex",
+      "patch_symbol": "Chs_gText_TrainerCardPokedex",
+      "base_rom_value": "0x085CC331",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2343,
+          "referenced_symbol": "gText_TrainerCardPokedex",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardPokedex"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2E40",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 11
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C2F54",
+      "jp_original_text": "0x085CC331",
+      "batch_source_symbol": "gText_TrainerCardPokedex",
+      "patch_symbol": "Chs_gText_TrainerCardPokedex",
+      "base_rom_value": "0x085CC331",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2392,
+          "referenced_symbol": "gText_TrainerCardPokedex",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardPokedex"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2E40",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 11
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C300C",
+      "jp_original_text": "0x085CC341",
+      "batch_source_symbol": "gText_TrainerCardTime",
+      "patch_symbol": "Chs_gText_TrainerCardTime",
+      "base_rom_value": "0x085CC341",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2486,
+          "referenced_symbol": "gText_TrainerCardTime",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardTime"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2F5C",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 15
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C30E4",
+      "jp_original_text": "0x085CC341",
+      "batch_source_symbol": "gText_TrainerCardTime",
+      "patch_symbol": "Chs_gText_TrainerCardTime",
+      "base_rom_value": "0x085CC341",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2587,
+          "referenced_symbol": "gText_TrainerCardTime",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardTime"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2F5C",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 15
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3238",
+      "jp_original_text": "0x085CC350",
+      "batch_source_symbol": "gText_Var1sTrainerCard",
+      "patch_symbol": "Chs_gText_Var1sTrainerCard",
+      "base_rom_value": "0x085CC350",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2750,
+          "referenced_symbol": "gText_Var1sTrainerCard",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Var1sTrainerCard"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C31FC",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 18
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3398",
+      "jp_original_text": "0x085CC35A",
+      "batch_source_symbol": "gText_HallOfFameDebut",
+      "patch_symbol": "Chs_gText_HallOfFameDebut",
+      "base_rom_value": "0x085CC35A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2928,
+          "referenced_symbol": "gText_HallOfFameDebut",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_HallOfFameDebut"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C3330",
+        "symbol": "PrintWinsLossesStringOnCard"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 19
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x085467C4",
+      "jp_original_text": "0x085CC367",
+      "batch_source_symbol": "gText_LinkBattles",
+      "patch_symbol": "Chs_gText_LinkBattles",
+      "base_rom_value": "0x085CC367",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 20
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085467CC",
+      "jp_original_text": "0x085CC367",
+      "batch_source_symbol": "gText_LinkBattles",
+      "patch_symbol": "Chs_gText_LinkBattles",
+      "base_rom_value": "0x085CC367",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 20
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085467C8",
+      "jp_original_text": "0x085CC370",
+      "batch_source_symbol": "gText_LinkCableBattles",
+      "patch_symbol": "Chs_gText_LinkCableBattles",
+      "base_rom_value": "0x085CC370",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts101.h",
+          "line": 21
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080C3550",
+      "jp_original_text": "0x085CC383",
+      "batch_source_symbol": "gText_PokemonTrades",
+      "patch_symbol": "Chs_gText_PokemonTrades",
+      "base_rom_value": "0x085CC383",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3151,
+          "referenced_symbol": "gText_PokemonTrades",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_PokemonTrades"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C34E4",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3704",
+      "jp_original_text": "0x085CC390",
+      "batch_source_symbol": "gText_UnionTradesAndBattles",
+      "patch_symbol": "Chs_gText_UnionTradesAndBattles",
+      "base_rom_value": "0x085CC390",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3375,
+          "referenced_symbol": "gText_UnionTradesAndBattles",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_UnionTradesAndBattles"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C3684",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 3
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3640",
+      "jp_original_text": "0x085CC39E",
+      "batch_source_symbol": "gText_BerryCrush",
+      "patch_symbol": "Chs_gText_BerryCrush",
+      "base_rom_value": "0x085CC39E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3273,
+          "referenced_symbol": "gText_BerryCrush",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_BerryCrush"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C35C0",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 4
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C208C",
+      "jp_original_text": "0x085CC3A7",
+      "batch_source_symbol": "gText_WaitingTrainerFinishReading",
+      "patch_symbol": "Chs_gText_WaitingTrainerFinishReading",
+      "base_rom_value": "0x085CC3A7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 479,
+          "referenced_symbol": "gText_WaitingTrainerFinishReading",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_WaitingTrainerFinishReading"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C1D8C",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 5
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C37E0",
+      "jp_original_text": "0x085CC3BF",
+      "batch_source_symbol": "gText_PokeblocksWithFriends",
+      "patch_symbol": "Chs_gText_PokeblocksWithFriends",
+      "base_rom_value": "0x085CC3BF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3485,
+          "referenced_symbol": "gText_PokeblocksWithFriends",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_PokeblocksWithFriends"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C3760",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C375C",
+      "jp_original_text": "0x085CC3CF",
+      "batch_source_symbol": "gText_NumPokeblocks",
+      "patch_symbol": "Chs_gText_NumPokeblocks",
+      "base_rom_value": "0x085CC3CF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3419,
+          "referenced_symbol": "gText_NumPokeblocks",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_NumPokeblocks"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C3710",
+        "symbol": "PrintPokeblocksNumOnCard"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 9
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C38A8",
+      "jp_original_text": "0x085CC3D9",
+      "batch_source_symbol": "gText_WonContestsWFriends",
+      "patch_symbol": "Chs_gText_WonContestsWFriends",
+      "base_rom_value": "0x085CC3D9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3588,
+          "referenced_symbol": "gText_WonContestsWFriends",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_WonContestsWFriends"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C3828",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 10
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3A64",
+      "jp_original_text": "0x085CC3EA",
+      "batch_source_symbol": "gText_BattlePtsWon",
+      "patch_symbol": "Chs_gText_BattlePtsWon",
+      "base_rom_value": "0x085CC3EA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3798,
+          "referenced_symbol": "gText_BattlePtsWon",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_BattlePtsWon"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C395C",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 11
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C3958",
+      "jp_original_text": "0x085CC3F8",
+      "batch_source_symbol": "gText_NumBP",
+      "patch_symbol": "Chs_gText_NumBP",
+      "base_rom_value": "0x085CC3F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3671,
+          "referenced_symbol": "gText_NumBP",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_NumBP"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C38B4",
+        "symbol": "PrintBattleFacilityNumsOnCard"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 12
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C39EC",
+      "jp_original_text": "0x085CC403",
+      "batch_source_symbol": "gText_BattleTower",
+      "patch_symbol": "Chs_gText_BattleTower",
+      "base_rom_value": "0x085CC403",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3746,
+          "referenced_symbol": "gJPText_BattleTowerWinsStraightHeader",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gJPText_BattleTowerWinsStraightHeader"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C395C",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 18
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080C3920",
+      "jp_original_text": "0x085CC418",
+      "batch_source_symbol": "gText_WinsStraight",
+      "patch_symbol": "Chs_gText_WinsStraight",
+      "base_rom_value": "0x085CC418",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 3646,
+          "referenced_symbol": "gText_WinsStraight",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_WinsStraight"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C38B4",
+        "symbol": "PrintBattleFacilityNumsOnCard"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "line": 16
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080C2C48",
+      "jp_original_text": "0x085CC31F",
+      "batch_source_symbol": null,
+      "patch_symbol": "Chs_gText_TrainerCardNameLabel",
+      "base_rom_value": "0x085CC31F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2021,
+          "referenced_symbol": "gText_TrainerCardName",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_TrainerCardName"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2BA4",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x080C2EEC",
+      "jp_original_text": "0x085CC339",
+      "batch_source_symbol": null,
+      "patch_symbol": "Chs_gText_TrainerCardPokedexSuffix",
+      "base_rom_value": "0x085CC339",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2344,
+          "referenced_symbol": "gText_EmptyString6",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_EmptyString6"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2E40",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x080C2F58",
+      "jp_original_text": "0x085CC339",
+      "batch_source_symbol": null,
+      "patch_symbol": "Chs_gText_TrainerCardPokedexSuffix",
+      "base_rom_value": "0x085CC339",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/trainer_card.c",
+          "line": 2393,
+          "referenced_symbol": "gText_EmptyString6",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_EmptyString6"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080C2E40",
+        "symbol": "trainer_card.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "batch": "325_sootopolis_city_house7.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/SootopolisCity_House7/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 2,
+  "unresolved_count": 0,
+  "reference_count": 2,
+  "mapped": [
+    {
+      "source_symbol": "SootopolisCity_House7_Text_CityFromEruptedVolcano",
+      "source": "data/maps/SootopolisCity_House7/scripts.inc",
+      "wokann_label_line": 14,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213D94",
+      "japanese_text_address": "0x0820F7CD",
+      "japanese_references": [
+        "0x0820F7BD"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_House7_Text_CaveMadeToKeepSomething",
+      "source": "data/maps/SootopolisCity_House7/scripts.inc",
+      "wokann_label_line": 20,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08213DE7",
+      "japanese_text_address": "0x0820F819",
+      "japanese_references": [
+        "0x0820F7C6"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,33 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "mystery event messages",
+  "texts": [
+    {"name": "ChsMysteryEventBerry", "source_symbol": "gText_MysteryEventBerry", "text": "获得了{JPN}{STR_VAR_2}{ENG}！\n爸爸在橙华市道馆拿着它。"},
+    {"name": "ChsMysteryEventBerryTransform", "source_symbol": "gText_MysteryEventBerryTransform", "text": "{JPN}{STR_VAR_1}{ENG}变成了\n一颗{JPN}{STR_VAR_2}{ENG}。"},
+    {"name": "ChsMysteryEventBerryObtained", "source_symbol": "gText_MysteryEventBerryObtained", "text": "{JPN}{STR_VAR_1}{ENG}已经被\n获取过了。"},
+    {"name": "ChsMysteryEventSpecialRibbon", "source_symbol": "gText_MysteryEventSpecialRibbon", "text": "你的同行宝可梦被授予了\n特殊奖章。"},
+    {"name": "ChsMysteryEventNationalDex", "source_symbol": "gText_MysteryEventNationalDex", "text": "图鉴已升级\n为全国模式。"},
+    {"name": "ChsMysteryEventRareWord", "source_symbol": "gText_MysteryEventRareWord", "text": "已添加稀有词汇。"},
+    {"name": "ChsMysteryEventSentOver", "source_symbol": "gText_MysteryEventSentOver", "text": "{JPN}{STR_VAR_1}{ENG}已被接收！"},
+    {"name": "ChsMysteryEventFullParty", "source_symbol": "gText_MysteryEventFullParty", "text": "你的同行宝可梦已满。\n{JPN}{STR_VAR_1}{ENG}未能被接收。"},
+    {"name": "ChsMysteryEventNewTrainer", "source_symbol": "gText_MysteryEventNewTrainer", "text": "新的训练家已抵达\n丰缘地区。"},
+    {"name": "ChsMysteryEventCantBeUsed", "source_symbol": "gText_MysteryEventCantBeUsed", "text": "该数据无法在\n当前版本中使用。"}
+  ],
+  "reference_writes": [
+    {"address": "0x08153A8C", "original": "0x085FCAF8", "symbol": "ChsMysteryEventBerry", "source_symbol": "gText_MysteryEventBerry"},
+    {"address": "0x08153AA8", "original": "0x085FCB19", "symbol": "ChsMysteryEventBerryTransform", "source_symbol": "gText_MysteryEventBerryTransform"},
+    {"address": "0x08153AD0", "original": "0x085FCB2C", "symbol": "ChsMysteryEventBerryObtained", "source_symbol": "gText_MysteryEventBerryObtained"},
+    {"address": "0x08153B1C", "original": "0x085FCB3D", "symbol": "ChsMysteryEventSpecialRibbon", "source_symbol": "gText_MysteryEventSpecialRibbon"},
+    {"address": "0x08153BA8", "original": "0x085FCB59", "symbol": "ChsMysteryEventNationalDex", "source_symbol": "gText_MysteryEventNationalDex"},
+    {"address": "0x08153BD4", "original": "0x085FCB70", "symbol": "ChsMysteryEventRareWord", "source_symbol": "gText_MysteryEventRareWord"},
+    {"address": "0x08153D0C", "original": "0x085FCB83", "symbol": "ChsMysteryEventSentOver", "source_symbol": "gText_MysteryEventSentOver"},
+    {"address": "0x08153C84", "original": "0x085FCB90", "symbol": "ChsMysteryEventFullParty", "source_symbol": "gText_MysteryEventFullParty"},
+    {"address": "0x08153D54", "original": "0x085FCBAA", "symbol": "ChsMysteryEventNewTrainer", "source_symbol": "gText_MysteryEventNewTrainer"},
+    {"address": "0x08153758", "original": "0x085FCBDE", "symbol": "ChsMysteryEventCantBeUsed", "source_symbol": "gText_MysteryEventCantBeUsed"}
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/409_mystery_event_messages.json",
+    "mapped_count": 10,
+    "unresolved_count": 1
+  }
+}

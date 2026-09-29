@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "batch": "282_pacifidlog_town_house2.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/PacifidlogTown_House2/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 10,
+  "unresolved_count": 1,
+  "reference_count": 12,
+  "mapped": [
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_ChairmansYoungerBrotherOnVacation",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 95,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA4D1",
+      "japanese_text_address": "0x081F7B35",
+      "japanese_references": [
+        "0x081F7A71"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_AhYourPokemon",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 103,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA52E",
+      "japanese_text_address": "0x081F7B93",
+      "japanese_references": [
+        "0x081F7A68",
+        "0x081F7A79"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_AdoringPokemonTakeThis",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 107,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA53F",
+      "japanese_text_address": "0x081F7BA2",
+      "japanese_references": [
+        "0x081F7A86"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_PutInSomeMoreEffort",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 112,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA590",
+      "japanese_text_address": "0x081F7BD5",
+      "japanese_references": [
+        "0x081F7AB5"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_ViciousPokemonTakeThis",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 118,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA5CE",
+      "japanese_text_address": "0x081F7C0F",
+      "japanese_references": [
+        "0x081F7ABF"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_ExplainReturnFrustration",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 123,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA608",
+      "japanese_text_address": "0x081F7C43",
+      "japanese_references": [
+        "0x081F7AAB",
+        "0x081F7AE4"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_Rurii",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 136,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA6BE",
+      "japanese_text_address": "0x081F7CE4",
+      "japanese_references": [
+        "0x081F7B09"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_VeryFriendlyWithTrainer",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 139,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA6CD",
+      "japanese_text_address": "0x081F7CEC",
+      "japanese_references": [
+        "0x081F7B12"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_Rururi",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 142,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA6E8",
+      "japanese_text_address": "0x081F7CFC",
+      "japanese_references": [
+        "0x081F7B24"
+      ]
+    },
+    {
+      "source_symbol": "PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "wokann_label_line": 145,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081FA6F7",
+      "japanese_text_address": "0x081F7D07",
+      "japanese_references": [
+        "0x081F7B2D"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "PacifidlogTown_House2_Text_GetGoodTMInXDays",
+      "source": "data/maps/PacifidlogTown_House2/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    }
+  ]
+}

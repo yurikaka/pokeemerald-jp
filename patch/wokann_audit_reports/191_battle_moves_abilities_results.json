@@ -1,0 +1,1070 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "191_battle_moves_abilities_results.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "battle move, ability, and result messages",
+  "summary": {
+    "verified_source_definition": 48
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x085AB650",
+      "jp_original_text": "0x085AA251",
+      "batch_source_symbol": "sText_PkmnSubjectedToTorment",
+      "patch_symbol": "Chs_sText_PkmnSubjectedToTorment",
+      "base_rom_value": "0x085AA251",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 925
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB654",
+      "jp_original_text": "0x085AA547",
+      "batch_source_symbol": "sText_PkmnCantUseMoveTorment",
+      "patch_symbol": "Chs_sText_PkmnCantUseMoveTorment",
+      "base_rom_value": "0x085AA547",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1063
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB658",
+      "jp_original_text": "0x085AA263",
+      "batch_source_symbol": "sText_PkmnTighteningFocus",
+      "patch_symbol": "Chs_sText_PkmnTighteningFocus",
+      "base_rom_value": "0x085AA263",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 929
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB65C",
+      "jp_original_text": "0x085AA27A",
+      "batch_source_symbol": "sText_PkmnFellForTaunt",
+      "patch_symbol": "Chs_sText_PkmnFellForTaunt",
+      "base_rom_value": "0x085AA27A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 933
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB660",
+      "jp_original_text": "0x085AA56E",
+      "batch_source_symbol": "sText_PkmnCantUseMoveTaunt",
+      "patch_symbol": "Chs_sText_PkmnCantUseMoveTaunt",
+      "base_rom_value": "0x085AA56E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1067
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB664",
+      "jp_original_text": "0x085AA28F",
+      "batch_source_symbol": "sText_PkmnReadyToHelp",
+      "patch_symbol": "Chs_sText_PkmnReadyToHelp",
+      "base_rom_value": "0x085AA28F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 937
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB668",
+      "jp_original_text": "0x085AA2AB",
+      "batch_source_symbol": "sText_PkmnSwitchedItems",
+      "patch_symbol": "Chs_sText_PkmnSwitchedItems",
+      "base_rom_value": "0x085AA2AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 941
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB66C",
+      "jp_original_text": "0x085AA301",
+      "batch_source_symbol": "sText_PkmnCopiedFoe",
+      "patch_symbol": "Chs_sText_PkmnCopiedFoe",
+      "base_rom_value": "0x085AA301",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 959
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB670",
+      "jp_original_text": "0x085AA314",
+      "batch_source_symbol": "sText_PkmnMadeWish",
+      "patch_symbol": "Chs_sText_PkmnMadeWish",
+      "base_rom_value": "0x085AA314",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 963
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB674",
+      "jp_original_text": "0x085AA323",
+      "batch_source_symbol": "sText_PkmnWishCameTrue",
+      "patch_symbol": "Chs_sText_PkmnWishCameTrue",
+      "base_rom_value": "0x085AA323",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 967
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB678",
+      "jp_original_text": "0x085AA334",
+      "batch_source_symbol": "sText_PkmnPlantedRoots",
+      "patch_symbol": "Chs_sText_PkmnPlantedRoots",
+      "base_rom_value": "0x085AA334",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 971
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB67C",
+      "jp_original_text": "0x085AA340",
+      "batch_source_symbol": "sText_PkmnAbsorbedNutrients",
+      "patch_symbol": "Chs_sText_PkmnAbsorbedNutrients",
+      "base_rom_value": "0x085AA340",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 973
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB680",
+      "jp_original_text": "0x085AA355",
+      "batch_source_symbol": "sText_PkmnAnchoredItself",
+      "patch_symbol": "Chs_sText_PkmnAnchoredItself",
+      "base_rom_value": "0x085AA355",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 977
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB684",
+      "jp_original_text": "0x085AA367",
+      "batch_source_symbol": "sText_PkmnWasMadeDrowsy",
+      "patch_symbol": "Chs_sText_PkmnWasMadeDrowsy",
+      "base_rom_value": "0x085AA367",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 981
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB688",
+      "jp_original_text": "0x085AA37A",
+      "batch_source_symbol": "sText_PkmnKnockedOff",
+      "patch_symbol": "Chs_sText_PkmnKnockedOff",
+      "base_rom_value": "0x085AA37A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 985
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB68C",
+      "jp_original_text": "0x085AA38F",
+      "batch_source_symbol": "sText_PkmnSwappedAbilities",
+      "patch_symbol": "Chs_sText_PkmnSwappedAbilities",
+      "base_rom_value": "0x085AA38F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 989
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB690",
+      "jp_original_text": "0x085AA3A6",
+      "batch_source_symbol": "sText_PkmnSealedOpponentMove",
+      "patch_symbol": "Chs_sText_PkmnSealedOpponentMove",
+      "base_rom_value": "0x085AA3A6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 993
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB694",
+      "jp_original_text": "0x085AA587",
+      "batch_source_symbol": "sText_PkmnCantUseMoveSealed",
+      "patch_symbol": "Chs_sText_PkmnCantUseMoveSealed",
+      "base_rom_value": "0x085AA587",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1071
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB698",
+      "jp_original_text": "0x085AA3BB",
+      "batch_source_symbol": "sText_PkmnWantsGrudge",
+      "patch_symbol": "Chs_sText_PkmnWantsGrudge",
+      "base_rom_value": "0x085AA3BB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 997
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB69C",
+      "jp_original_text": "0x085AA3D6",
+      "batch_source_symbol": "sText_PkmnLostPPGrudge",
+      "patch_symbol": "Chs_sText_PkmnLostPPGrudge",
+      "base_rom_value": "0x085AA3D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1001
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6A0",
+      "jp_original_text": "0x085AA3F4",
+      "batch_source_symbol": "sText_PkmnShroudedItself",
+      "patch_symbol": "Chs_sText_PkmnShroudedItself",
+      "base_rom_value": "0x085AA3F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1005
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6A4",
+      "jp_original_text": "0x085AA403",
+      "batch_source_symbol": "sText_PkmnMoveBounced",
+      "patch_symbol": "Chs_sText_PkmnMoveBounced",
+      "base_rom_value": "0x085AA403",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1009
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6A8",
+      "jp_original_text": "0x085AA41D",
+      "batch_source_symbol": "sText_PkmnWaitsForTarget",
+      "patch_symbol": "Chs_sText_PkmnWaitsForTarget",
+      "base_rom_value": "0x085AA41D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1013
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6AC",
+      "jp_original_text": "0x085AA434",
+      "batch_source_symbol": "sText_PkmnSnatchedMove",
+      "patch_symbol": "Chs_sText_PkmnSnatchedMove",
+      "base_rom_value": "0x085AA434",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1017
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6B0",
+      "jp_original_text": "0x085AA59C",
+      "batch_source_symbol": "sText_PkmnMadeItRain",
+      "patch_symbol": "Chs_sText_PkmnMadeItRain",
+      "base_rom_value": "0x085AA59C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1075
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6B4",
+      "jp_original_text": "0x085AA5B0",
+      "batch_source_symbol": "sText_PkmnRaisedSpeed",
+      "patch_symbol": "Chs_sText_PkmnRaisedSpeed",
+      "base_rom_value": "0x085AA5B0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1079
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6B8",
+      "jp_original_text": "0x085AA5C4",
+      "batch_source_symbol": "sText_PkmnProtectedBy",
+      "patch_symbol": "Chs_sText_PkmnProtectedBy",
+      "base_rom_value": "0x085AA5C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1083
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6BC",
+      "jp_original_text": "0x085AA5D4",
+      "batch_source_symbol": "sText_PkmnPreventsUsage",
+      "patch_symbol": "Chs_sText_PkmnPreventsUsage",
+      "base_rom_value": "0x085AA5D4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1087
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6C0",
+      "jp_original_text": "0x085AA5EA",
+      "batch_source_symbol": "sText_PkmnRestoredHPUsing",
+      "patch_symbol": "Chs_sText_PkmnRestoredHPUsing",
+      "base_rom_value": "0x085AA5EA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1091
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6C4",
+      "jp_original_text": "0x085AA611",
+      "batch_source_symbol": "sText_PkmnChangedTypeWith",
+      "patch_symbol": "Chs_sText_PkmnChangedTypeWith",
+      "base_rom_value": "0x085AA611",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1099
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6C8",
+      "jp_original_text": "0x085AA625",
+      "batch_source_symbol": "sText_PkmnPreventsParalysisWith",
+      "patch_symbol": "Chs_sText_PkmnPreventsParalysisWith",
+      "base_rom_value": "0x085AA625",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1103
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6CC",
+      "jp_original_text": "0x085AA634",
+      "batch_source_symbol": "sText_PkmnPreventsRomanceWith",
+      "patch_symbol": "Chs_sText_PkmnPreventsRomanceWith",
+      "base_rom_value": "0x085AA634",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1107
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6D0",
+      "jp_original_text": "0x085AA648",
+      "batch_source_symbol": "sText_PkmnPreventsPoisoningWith",
+      "patch_symbol": "Chs_sText_PkmnPreventsPoisoningWith",
+      "base_rom_value": "0x085AA648",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1111
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6D4",
+      "jp_original_text": "0x085AA65A",
+      "batch_source_symbol": "sText_PkmnPreventsConfusionWith",
+      "patch_symbol": "Chs_sText_PkmnPreventsConfusionWith",
+      "base_rom_value": "0x085AA65A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1115
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6D8",
+      "jp_original_text": "0x085AA66B",
+      "batch_source_symbol": "sText_PkmnRaisedFirePowerWith",
+      "patch_symbol": "Chs_sText_PkmnRaisedFirePowerWith",
+      "base_rom_value": "0x085AA66B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1119
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6DC",
+      "jp_original_text": "0x085AA684",
+      "batch_source_symbol": "sText_PkmnAnchorsItselfWith",
+      "patch_symbol": "Chs_sText_PkmnAnchorsItselfWith",
+      "base_rom_value": "0x085AA684",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1123
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6E0",
+      "jp_original_text": "0x085AA695",
+      "batch_source_symbol": "sText_PkmnCutsAttackWith",
+      "patch_symbol": "Chs_sText_PkmnCutsAttackWith",
+      "base_rom_value": "0x085AA695",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1127
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6E4",
+      "jp_original_text": "0x085AA6B0",
+      "batch_source_symbol": "sText_PkmnPreventsStatLossWith",
+      "patch_symbol": "Chs_sText_PkmnPreventsStatLossWith",
+      "base_rom_value": "0x085AA6B0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1131
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6EC",
+      "jp_original_text": "0x085AA6D9",
+      "batch_source_symbol": "sText_PkmnTraced",
+      "patch_symbol": "Chs_sText_PkmnTraced",
+      "base_rom_value": "0x085AA6D9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1139
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6F0",
+      "jp_original_text": "0x085AA871",
+      "batch_source_symbol": "sText_StatSharply",
+      "patch_symbol": "Chs_sText_StatSharply",
+      "base_rom_value": "0x085AA871",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1221
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6F4",
+      "jp_original_text": "0x085AA877",
+      "batch_source_symbol": "gText_StatRose",
+      "patch_symbol": "Chs_gText_StatRose",
+      "base_rom_value": "0x085AA877",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1223
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB6F8",
+      "jp_original_text": "0x085AA87D",
+      "batch_source_symbol": "sText_StatHarshly",
+      "patch_symbol": "Chs_sText_StatHarshly",
+      "base_rom_value": "0x085AA87D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1225
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB700",
+      "jp_original_text": "0x085AA889",
+      "batch_source_symbol": "sText_AttackersStatRose",
+      "patch_symbol": "Chs_sText_AttackersStatRose",
+      "base_rom_value": "0x085AA889",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1229
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB704",
+      "jp_original_text": "0x085AA894",
+      "batch_source_symbol": "gText_DefendersStatRose",
+      "patch_symbol": "Chs_gText_DefendersStatRose",
+      "base_rom_value": "0x085AA894",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1233
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB718",
+      "jp_original_text": "0x085AA906",
+      "batch_source_symbol": "sText_123Poof",
+      "patch_symbol": "Chs_sText_123Poof",
+      "base_rom_value": "0x085AA906",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1261
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB71C",
+      "jp_original_text": "0x085AA92B",
+      "batch_source_symbol": "sText_AndEllipsis",
+      "patch_symbol": "Chs_sText_AndEllipsis",
+      "base_rom_value": "0x085AA92B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1263
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB728",
+      "jp_original_text": "0x085AA970",
+      "batch_source_symbol": "sText_GotAwaySafely",
+      "patch_symbol": "Chs_sText_GotAwaySafely",
+      "base_rom_value": "0x085AA970",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1273
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085AB72C",
+      "jp_original_text": "0x085AA9B2",
+      "batch_source_symbol": "sText_WildPkmnFled",
+      "patch_symbol": "Chs_sText_WildPkmnFled",
+      "base_rom_value": "0x085AA9B2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/battle_message.c",
+          "line": 1283
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

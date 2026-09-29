@@ -1,0 +1,61 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "C text: src/data/trade.h",
+  "texts": [
+    {
+      "name": "Chs_sText_IsThisTradeOkay",
+      "source_symbol": "sText_IsThisTradeOkay",
+      "us_encoded_hex": "0b37034d074a0e5b070d0548092a3dff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_sText_CancelTrade",
+      "source_symbol": "sText_CancelTrade",
+      "us_encoded_hex": "0ef107330c3d016307d70966070d0548092a3dff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_sText_Summary2",
+      "source_symbol": "sText_Summary2",
+      "us_encoded_hex": "020d07c209d20879ff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_sText_YourFriendWantsToTrade",
+      "source_symbol": "sText_YourFriendWantsToTrade",
+      "us_encoded_hex": "037903c00e180ef1fe070d0548016307d7096637ff",
+      "auto_wrap": false
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x080781BC",
+      "original": "0x08300AB1",
+      "symbol": "Chs_sText_IsThisTradeOkay",
+      "source_symbol": "sText_IsThisTradeOkay"
+    },
+    {
+      "address": "0x08300B0C",
+      "original": "0x08300AE0",
+      "symbol": "Chs_sText_CancelTrade",
+      "source_symbol": "sText_CancelTrade"
+    },
+    {
+      "address": "0x08300B28",
+      "original": "0x08300B14",
+      "symbol": "Chs_sText_Summary2",
+      "source_symbol": "sText_Summary2"
+    },
+    {
+      "address": "0x08300BF0",
+      "original": "0x08300BBE",
+      "symbol": "Chs_sText_YourFriendWantsToTrade",
+      "source_symbol": "sText_YourFriendWantsToTrade"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/424_trade_direct.json",
+    "mapped_count": 4,
+    "unresolved_count": 10
+  }
+}

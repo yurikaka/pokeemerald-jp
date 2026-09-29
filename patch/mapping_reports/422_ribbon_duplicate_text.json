@@ -1,0 +1,75 @@
+{
+  "source_commit": "fe570a7e5",
+  "source_file": "src/data/text/ribbon_descriptions.h",
+  "wokann_file": "src/data/text/ribbon_descriptions.h",
+  "status": "mapped; emulator_not_tested",
+  "mapping_policy": "The Japanese contest-name strings also occur in other ROM tables. Choose the occurrences in the contiguous gRibbonDescriptionPointers text block and verify the 25-entry pointer-table order against Wokann; Winning and Victory have identical Japanese and Chinese second lines but distinct table entries. Every listed pointer and encoded JP string was checked in baserom_jp.gba.",
+  "mapped_count": 7,
+  "reference_count": 22,
+  "mappings": [
+    {
+      "source_symbol": "gRibbonDescriptionPart1_CoolContest",
+      "original": "0x085F5E76",
+      "references": [
+        "0x085F5F68",
+        "0x085F5F70",
+        "0x085F5F78",
+        "0x085F5F80"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_BeautyContest",
+      "original": "0x085F5E81",
+      "references": [
+        "0x085F5F88",
+        "0x085F5F90",
+        "0x085F5F98",
+        "0x085F5FA0"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_CuteContest",
+      "original": "0x085F5E8C",
+      "references": [
+        "0x085F5FA8",
+        "0x085F5FB0",
+        "0x085F5FB8",
+        "0x085F5FC0"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_SmartContest",
+      "original": "0x085F5E96",
+      "references": [
+        "0x085F5FC8",
+        "0x085F5FD0",
+        "0x085F5FD8",
+        "0x085F5FE0"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_ToughContest",
+      "original": "0x085F5EA0",
+      "references": [
+        "0x085F5FE8",
+        "0x085F5FF0",
+        "0x085F5FF8",
+        "0x085F6000"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Winning",
+      "original": "0x085F5EF5",
+      "references": [
+        "0x085F600C"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Victory",
+      "original": "0x085F5F13",
+      "references": [
+        "0x085F6014"
+      ]
+    }
+  ]
+}

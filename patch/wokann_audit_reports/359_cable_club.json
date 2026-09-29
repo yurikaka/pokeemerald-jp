@@ -1,0 +1,1947 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "359_cable_club.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/text/cable_club.inc",
+  "summary": {
+    "verified_source_definition": 84,
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08246B0F",
+      "jp_original_text": "0x08247B80",
+      "batch_source_symbol": "CableClub_Text_WelcomeWhichCableClubService",
+      "patch_symbol": "Chs_CableClub_Text_WelcomeWhichCableClubService",
+      "base_rom_value": "0x08247B80",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246B1F",
+      "jp_original_text": "0x08247BA4",
+      "batch_source_symbol": "CableClub_Text_WhichService",
+      "patch_symbol": "Chs_CableClub_Text_WhichService",
+      "base_rom_value": "0x08247BA4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 5
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856463C",
+      "jp_original_text": "0x08247BB3",
+      "batch_source_symbol": "CableClub_Text_TradeUsingLinkCable",
+      "patch_symbol": "Chs_CableClub_Text_TradeUsingLinkCable",
+      "base_rom_value": "0x08247BB3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564680",
+      "jp_original_text": "0x08247BB3",
+      "batch_source_symbol": "CableClub_Text_TradeUsingLinkCable",
+      "patch_symbol": "Chs_CableClub_Text_TradeUsingLinkCable",
+      "base_rom_value": "0x08247BB3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564640",
+      "jp_original_text": "0x08247BD5",
+      "batch_source_symbol": "CableClub_Text_BattleUsingLinkCable",
+      "patch_symbol": "Chs_CableClub_Text_BattleUsingLinkCable",
+      "base_rom_value": "0x08247BD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564684",
+      "jp_original_text": "0x08247BD5",
+      "batch_source_symbol": "CableClub_Text_BattleUsingLinkCable",
+      "patch_symbol": "Chs_CableClub_Text_BattleUsingLinkCable",
+      "base_rom_value": "0x08247BD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564644",
+      "jp_original_text": "0x08247BF7",
+      "batch_source_symbol": "CableClub_Text_RecordCornerUsingLinkCable",
+      "patch_symbol": "Chs_CableClub_Text_RecordCornerUsingLinkCable",
+      "base_rom_value": "0x08247BF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 16
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246C44",
+      "jp_original_text": "0x08247C1E",
+      "batch_source_symbol": "CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "patch_symbol": "Chs_CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "base_rom_value": "0x08247C1E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 24
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247593",
+      "jp_original_text": "0x08247C1E",
+      "batch_source_symbol": "CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "patch_symbol": "Chs_CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "base_rom_value": "0x08247C1E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 24
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246EBC",
+      "jp_original_text": "0x08247C3E",
+      "batch_source_symbol": "CableClub_Text_NeedTwoMonsToTrade",
+      "patch_symbol": "Chs_CableClub_Text_NeedTwoMonsToTrade",
+      "base_rom_value": "0x08247C3E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080B1FC0",
+      "jp_original_text": "0x08247C97",
+      "batch_source_symbol": "gText_ConfirmLinkWhenPlayersReady",
+      "patch_symbol": "Chs_gText_ConfirmLinkWhenPlayersReady",
+      "base_rom_value": "0x08247C97",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x080B1F64",
+        "symbol": "Task_LinkupAwaitConnection"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080B2148",
+      "jp_original_text": "0x08247C97",
+      "batch_source_symbol": "gText_ConfirmLinkWhenPlayersReady",
+      "patch_symbol": "Chs_gText_ConfirmLinkWhenPlayersReady",
+      "base_rom_value": "0x08247C97",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x080B20E0",
+        "symbol": "Task_LinkupTryConfirmation"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080B1FE0",
+      "jp_original_text": "0x08247CDA",
+      "batch_source_symbol": "gText_AwaitingLinkup",
+      "patch_symbol": "Chs_gText_AwaitingLinkup",
+      "base_rom_value": "0x08247CDA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x080B1F64",
+        "symbol": "Task_LinkupAwaitConnection"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 48
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246CC7",
+      "jp_original_text": "0x08247D16",
+      "batch_source_symbol": "CableClub_Text_PleaseEnter",
+      "patch_symbol": "Chs_CableClub_Text_PleaseEnter",
+      "base_rom_value": "0x08247D16",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246E40",
+      "jp_original_text": "0x08247D16",
+      "batch_source_symbol": "CableClub_Text_PleaseEnter",
+      "patch_symbol": "Chs_CableClub_Text_PleaseEnter",
+      "base_rom_value": "0x08247D16",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246F43",
+      "jp_original_text": "0x08247D16",
+      "batch_source_symbol": "CableClub_Text_PleaseEnter",
+      "patch_symbol": "Chs_CableClub_Text_PleaseEnter",
+      "base_rom_value": "0x08247D16",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824781A",
+      "jp_original_text": "0x08247D23",
+      "batch_source_symbol": "CableClub_Text_DirectYouToYourRoom",
+      "patch_symbol": "Chs_CableClub_Text_DirectYouToYourRoom",
+      "base_rom_value": "0x08247D23",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 60
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246FC3",
+      "jp_original_text": "0x08247D35",
+      "batch_source_symbol": "Text_SomeoneIsNotReadyToLink",
+      "patch_symbol": "Chs_Text_SomeoneIsNotReadyToLink",
+      "base_rom_value": "0x08247D35",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 64
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082592AB",
+      "jp_original_text": "0x08247D35",
+      "batch_source_symbol": "Text_SomeoneIsNotReadyToLink",
+      "patch_symbol": "Chs_Text_SomeoneIsNotReadyToLink",
+      "base_rom_value": "0x08247D35",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 64
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082071B4",
+      "jp_original_text": "0x08247D67",
+      "batch_source_symbol": "Text_LinkErrorPleaseReset",
+      "patch_symbol": "Chs_Text_LinkErrorPleaseReset",
+      "base_rom_value": "0x08247D67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12239,
+          "symbol": "Text_LinkErrorPleaseReset"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 70
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08246FB6",
+      "jp_original_text": "0x08247D67",
+      "batch_source_symbol": "Text_LinkErrorPleaseReset",
+      "patch_symbol": "Chs_Text_LinkErrorPleaseReset",
+      "base_rom_value": "0x08247D67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12239,
+          "symbol": "Text_LinkErrorPleaseReset"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 70
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082592D2",
+      "jp_original_text": "0x08247D67",
+      "batch_source_symbol": "Text_LinkErrorPleaseReset",
+      "patch_symbol": "Chs_Text_LinkErrorPleaseReset",
+      "base_rom_value": "0x08247D67",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12239,
+          "symbol": "Text_LinkErrorPleaseReset"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 70
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08220378",
+      "jp_original_text": "0x08247D84",
+      "batch_source_symbol": "Text_PlayersMadeDifferentSelections",
+      "patch_symbol": "Chs_Text_PlayersMadeDifferentSelections",
+      "base_rom_value": "0x08247D84",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246FD0",
+      "jp_original_text": "0x08247D84",
+      "batch_source_symbol": "Text_PlayersMadeDifferentSelections",
+      "patch_symbol": "Chs_Text_PlayersMadeDifferentSelections",
+      "base_rom_value": "0x08247D84",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082592B8",
+      "jp_original_text": "0x08247D84",
+      "batch_source_symbol": "Text_PlayersMadeDifferentSelections",
+      "patch_symbol": "Chs_Text_PlayersMadeDifferentSelections",
+      "base_rom_value": "0x08247D84",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0822039F",
+      "jp_original_text": "0x08247DAF",
+      "batch_source_symbol": "CableClub_Text_IncorrectNumberOfParticipants",
+      "patch_symbol": "Chs_CableClub_Text_IncorrectNumberOfParticipants",
+      "base_rom_value": "0x08247DAF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 81
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246FFF",
+      "jp_original_text": "0x08247DAF",
+      "batch_source_symbol": "CableClub_Text_IncorrectNumberOfParticipants",
+      "patch_symbol": "Chs_CableClub_Text_IncorrectNumberOfParticipants",
+      "base_rom_value": "0x08247DAF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 81
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246D72",
+      "jp_original_text": "0x08247E02",
+      "batch_source_symbol": "CableClub_Text_NeedFourPlayers",
+      "patch_symbol": "Chs_CableClub_Text_NeedFourPlayers",
+      "base_rom_value": "0x08247E02",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 93
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246DA5",
+      "jp_original_text": "0x08247E27",
+      "batch_source_symbol": "CableClub_Text_PleaseConfirmNumberAndRestart",
+      "patch_symbol": "Chs_CableClub_Text_PleaseConfirmNumberAndRestart",
+      "base_rom_value": "0x08247E27",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 97
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082471D0",
+      "jp_original_text": "0x08247E4B",
+      "batch_source_symbol": "Text_TerminateLinkConfirmation",
+      "patch_symbol": "Chs_Text_TerminateLinkConfirmation",
+      "base_rom_value": "0x08247E4B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 101
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082471E9",
+      "jp_original_text": "0x08247E69",
+      "batch_source_symbol": "Text_TerminateLinkPleaseWait",
+      "patch_symbol": "Chs_Text_TerminateLinkPleaseWait",
+      "base_rom_value": "0x08247E69",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 105
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824717D",
+      "jp_original_text": "0x08247E87",
+      "batch_source_symbol": "CableClub_Text_TooBusyToNotice",
+      "patch_symbol": "Chs_CableClub_Text_TooBusyToNotice",
+      "base_rom_value": "0x08247E87",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 109
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824718A",
+      "jp_original_text": "0x08247ECC",
+      "batch_source_symbol": "BattleColosseum_2P_Text_TakePlaceStartBattle",
+      "patch_symbol": "Chs_BattleColosseum_2P_Text_TakePlaceStartBattle",
+      "base_rom_value": "0x08247ECC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 121
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824719A",
+      "jp_original_text": "0x08247EEA",
+      "batch_source_symbol": "TradeCenter_Text_TakeSeatStartTrade",
+      "patch_symbol": "Chs_TradeCenter_Text_TakeSeatStartTrade",
+      "base_rom_value": "0x08247EEA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 125
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082471C3",
+      "jp_original_text": "0x08247F08",
+      "batch_source_symbol": "RecordCorner_Text_ThanksForComing",
+      "patch_symbol": "Chs_RecordCorner_Text_ThanksForComing",
+      "base_rom_value": "0x08247F08",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 129
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246AAD",
+      "jp_original_text": "0x08247F1A",
+      "batch_source_symbol": "CableClub_Text_TrainerCardDataOverwritten",
+      "patch_symbol": "Chs_CableClub_Text_TrainerCardDataOverwritten",
+      "base_rom_value": "0x08247F1A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 132
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246AB6",
+      "jp_original_text": "0x08247F31",
+      "batch_source_symbol": "CableClub_Text_HopeToSeeYouAgain",
+      "patch_symbol": "Chs_CableClub_Text_HopeToSeeYouAgain",
+      "base_rom_value": "0x08247F31",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 136
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246F9C",
+      "jp_original_text": "0x08247F3C",
+      "batch_source_symbol": "CableClub_Text_NotSetUpForFarAwayRegion",
+      "patch_symbol": "Chs_CableClub_Text_NotSetUpForFarAwayRegion",
+      "base_rom_value": "0x08247F3C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 139
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246FA9",
+      "jp_original_text": "0x08247F78",
+      "batch_source_symbol": "CableClub_Text_OtherTrainerNotReady",
+      "patch_symbol": "Chs_CableClub_Text_OtherTrainerNotReady",
+      "base_rom_value": "0x08247F78",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 146
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824700C",
+      "jp_original_text": "0x08247F8B",
+      "batch_source_symbol": "CableClub_Text_YouHaveAMonThatCantBeTaken",
+      "patch_symbol": "Chs_CableClub_Text_YouHaveAMonThatCantBeTaken",
+      "base_rom_value": "0x08247F8B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 150
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082471B4",
+      "jp_original_text": "0x08247FA2",
+      "batch_source_symbol": "RecordCorner_Text_TakeSeatAndWait",
+      "patch_symbol": "Chs_RecordCorner_Text_TakeSeatAndWait",
+      "base_rom_value": "0x08247FA2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 154
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247895",
+      "jp_original_text": "0x08247FCD",
+      "batch_source_symbol": "CableClub_Text_AdapterNotConnected",
+      "patch_symbol": "Chs_CableClub_Text_AdapterNotConnected",
+      "base_rom_value": "0x08247FCD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 162
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824788B",
+      "jp_original_text": "0x08247FE3",
+      "batch_source_symbol": "CableClub_Text_ParticipantsStepUpToCounter",
+      "patch_symbol": "Chs_CableClub_Text_ParticipantsStepUpToCounter",
+      "base_rom_value": "0x08247FE3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 166
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856464C",
+      "jp_original_text": "0x08248014",
+      "batch_source_symbol": "CableClub_Text_YouMayTradeHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayTradeHere",
+      "base_rom_value": "0x08248014",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856465C",
+      "jp_original_text": "0x08248014",
+      "batch_source_symbol": "CableClub_Text_YouMayTradeHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayTradeHere",
+      "base_rom_value": "0x08248014",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856466C",
+      "jp_original_text": "0x08248014",
+      "batch_source_symbol": "CableClub_Text_YouMayTradeHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayTradeHere",
+      "base_rom_value": "0x08248014",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856468C",
+      "jp_original_text": "0x08248014",
+      "batch_source_symbol": "CableClub_Text_YouMayTradeHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayTradeHere",
+      "base_rom_value": "0x08248014",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 178
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564650",
+      "jp_original_text": "0x0824802D",
+      "batch_source_symbol": "CableClub_Text_YouMayBattleHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayBattleHere",
+      "base_rom_value": "0x0824802D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 182
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564660",
+      "jp_original_text": "0x0824802D",
+      "batch_source_symbol": "CableClub_Text_YouMayBattleHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayBattleHere",
+      "base_rom_value": "0x0824802D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 182
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564670",
+      "jp_original_text": "0x0824802D",
+      "batch_source_symbol": "CableClub_Text_YouMayBattleHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayBattleHere",
+      "base_rom_value": "0x0824802D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 182
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564690",
+      "jp_original_text": "0x0824802D",
+      "batch_source_symbol": "CableClub_Text_YouMayBattleHere",
+      "patch_symbol": "Chs_CableClub_Text_YouMayBattleHere",
+      "base_rom_value": "0x0824802D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 182
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564664",
+      "jp_original_text": "0x08248046",
+      "batch_source_symbol": "CableClub_Text_CanMakeBerryPowder",
+      "patch_symbol": "Chs_CableClub_Text_CanMakeBerryPowder",
+      "base_rom_value": "0x08248046",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 186
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564678",
+      "jp_original_text": "0x08248046",
+      "batch_source_symbol": "CableClub_Text_CanMakeBerryPowder",
+      "patch_symbol": "Chs_CableClub_Text_CanMakeBerryPowder",
+      "base_rom_value": "0x08248046",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 186
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564654",
+      "jp_original_text": "0x08248066",
+      "batch_source_symbol": "CableClub_Text_CanMixRecords",
+      "patch_symbol": "Chs_CableClub_Text_CanMixRecords",
+      "base_rom_value": "0x08248066",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 190
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564674",
+      "jp_original_text": "0x08248066",
+      "batch_source_symbol": "CableClub_Text_CanMixRecords",
+      "patch_symbol": "Chs_CableClub_Text_CanMixRecords",
+      "base_rom_value": "0x08248066",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 190
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564648",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564658",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564668",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0856467C",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564688",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08564694",
+      "jp_original_text": "0x0824809D",
+      "batch_source_symbol": "CableClub_Text_CancelSelectedItem",
+      "patch_symbol": "Chs_CableClub_Text_CancelSelectedItem",
+      "base_rom_value": "0x0824809D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 199
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247604",
+      "jp_original_text": "0x082480C1",
+      "batch_source_symbol": "CableClub_Text_NeedBerryForBerryCrush",
+      "patch_symbol": "Chs_CableClub_Text_NeedBerryForBerryCrush",
+      "base_rom_value": "0x082480C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 210
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824732D",
+      "jp_original_text": "0x082480DF",
+      "batch_source_symbol": "CableClub_Text_NeedTwoMonsForUnionRoom",
+      "patch_symbol": "Chs_CableClub_Text_NeedTwoMonsForUnionRoom",
+      "base_rom_value": "0x082480DF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 214
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247349",
+      "jp_original_text": "0x08248137",
+      "batch_source_symbol": "CableClub_Text_UnionRoomAdapterNotConnected",
+      "patch_symbol": "Chs_CableClub_Text_UnionRoomAdapterNotConnected",
+      "base_rom_value": "0x08248137",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 224
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247B29",
+      "jp_original_text": "0x0824835E",
+      "batch_source_symbol": "MossdeepCity_GameCorner_1F_Text_AdapterNotConnected",
+      "patch_symbol": "Chs_MossdeepCity_GameCorner_1F_Text_AdapterNotConnected",
+      "base_rom_value": "0x0824835E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 285
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247B33",
+      "jp_original_text": "0x082483D0",
+      "batch_source_symbol": "MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon",
+      "patch_symbol": "Chs_MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon",
+      "base_rom_value": "0x082483D0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 306
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247B62",
+      "jp_original_text": "0x08248406",
+      "batch_source_symbol": "MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed",
+      "patch_symbol": "Chs_MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed",
+      "base_rom_value": "0x08248406",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 312
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247B6B",
+      "jp_original_text": "0x08248462",
+      "batch_source_symbol": "MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed",
+      "patch_symbol": "Chs_MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed",
+      "base_rom_value": "0x08248462",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 321
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082473B4",
+      "jp_original_text": "0x082484A8",
+      "batch_source_symbol": "CableClub_Text_WelcomeWhichDirectCornerRoom",
+      "patch_symbol": "Chs_CableClub_Text_WelcomeWhichDirectCornerRoom",
+      "base_rom_value": "0x082484A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 331
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082474EE",
+      "jp_original_text": "0x082484F4",
+      "batch_source_symbol": "CableClub_Text_TradePokemon",
+      "patch_symbol": "Chs_CableClub_Text_TradePokemon",
+      "base_rom_value": "0x082484F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 338
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246BBE",
+      "jp_original_text": "0x08248500",
+      "batch_source_symbol": "CableClub_Text_PlayWhichBattleMode",
+      "patch_symbol": "Chs_CableClub_Text_PlayWhichBattleMode",
+      "base_rom_value": "0x08248500",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 341
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824751B",
+      "jp_original_text": "0x08248500",
+      "batch_source_symbol": "CableClub_Text_PlayWhichBattleMode",
+      "patch_symbol": "Chs_CableClub_Text_PlayWhichBattleMode",
+      "base_rom_value": "0x08248500",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 341
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082475BA",
+      "jp_original_text": "0x08248511",
+      "batch_source_symbol": "CableClub_Text_AccessRecordCorner",
+      "patch_symbol": "Chs_CableClub_Text_AccessRecordCorner",
+      "base_rom_value": "0x08248511",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 344
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082475D8",
+      "jp_original_text": "0x08248521",
+      "batch_source_symbol": "CableClub_Text_UseBerryCrush",
+      "patch_symbol": "Chs_CableClub_Text_UseBerryCrush",
+      "base_rom_value": "0x08248521",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 347
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246C12",
+      "jp_original_text": "0x08248531",
+      "batch_source_symbol": "CableClub_Text_ExplainBattleModes",
+      "patch_symbol": "Chs_CableClub_Text_ExplainBattleModes",
+      "base_rom_value": "0x08248531",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 350
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082475AC",
+      "jp_original_text": "0x08248531",
+      "batch_source_symbol": "CableClub_Text_ExplainBattleModes",
+      "patch_symbol": "Chs_CableClub_Text_ExplainBattleModes",
+      "base_rom_value": "0x08248531",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 350
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08220435",
+      "jp_original_text": "0x082485D7",
+      "batch_source_symbol": "CableClub_Text_ChooseGroupLeaderOfTwo",
+      "patch_symbol": "Chs_CableClub_Text_ChooseGroupLeaderOfTwo",
+      "base_rom_value": "0x082485D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 363
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247669",
+      "jp_original_text": "0x082485D7",
+      "batch_source_symbol": "CableClub_Text_ChooseGroupLeaderOfTwo",
+      "patch_symbol": "Chs_CableClub_Text_ChooseGroupLeaderOfTwo",
+      "base_rom_value": "0x082485D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 363
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082476F6",
+      "jp_original_text": "0x08248611",
+      "batch_source_symbol": "CableClub_Text_ChooseGroupLeaderOfFour",
+      "patch_symbol": "Chs_CableClub_Text_ChooseGroupLeaderOfFour",
+      "base_rom_value": "0x08248611",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 369
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247230",
+      "jp_original_text": "0x08248690",
+      "batch_source_symbol": "CableClub_Text_WelcomeUnionRoomEnter",
+      "patch_symbol": "Chs_CableClub_Text_WelcomeUnionRoomEnter",
+      "base_rom_value": "0x08248690",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 381
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247273",
+      "jp_original_text": "0x082486D6",
+      "batch_source_symbol": "CableClub_Text_UnionRoomInfo",
+      "patch_symbol": "Chs_CableClub_Text_UnionRoomInfo",
+      "base_rom_value": "0x082486D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 388
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082472A0",
+      "jp_original_text": "0x0824877D",
+      "batch_source_symbol": "CableClub_Text_EnjoyUnionRoom",
+      "patch_symbol": "Chs_CableClub_Text_EnjoyUnionRoom",
+      "base_rom_value": "0x0824877D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 401
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246AE8",
+      "jp_original_text": "0x08248797",
+      "batch_source_symbol": "CableClub_Text_FirstTimeRightThisWay",
+      "patch_symbol": "Chs_CableClub_Text_FirstTimeRightThisWay",
+      "base_rom_value": "0x08248797",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 405
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08246AFE",
+      "jp_original_text": "0x082487F6",
+      "batch_source_symbol": "CableClub_Text_ExplainWirelessClubFirstTime",
+      "patch_symbol": "Chs_CableClub_Text_ExplainWirelessClubFirstTime",
+      "base_rom_value": "0x082487F6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 415
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824735E",
+      "jp_original_text": "0x08248916",
+      "batch_source_symbol": "CableClub_Text_AskAboutLinking",
+      "patch_symbol": "Chs_CableClub_Text_AskAboutLinking",
+      "base_rom_value": "0x08248916",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 439
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08247371",
+      "jp_original_text": "0x08248951",
+      "batch_source_symbol": "CableClub_Text_ExplainWirelessClub",
+      "patch_symbol": "Chs_CableClub_Text_ExplainWirelessClub",
+      "base_rom_value": "0x08248951",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 445
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0824737B",
+      "jp_original_text": "0x08248AD9",
+      "batch_source_symbol": "CableClub_Text_HopeYouEnjoyWirelessSystem",
+      "patch_symbol": "Chs_CableClub_Text_HopeYouEnjoyWirelessSystem",
+      "base_rom_value": "0x08248AD9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/cable_club.inc",
+          "line": 476
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

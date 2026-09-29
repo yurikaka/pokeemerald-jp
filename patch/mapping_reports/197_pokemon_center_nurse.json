@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "batch": "197_pokemon_center_nurse.json",
+  "source_commit": "fe570a7e5",
+  "expected_reference_writes": [
+    {
+      "source_symbol": "gText_IllTakeYourPkmn",
+      "address": "0x08242A22",
+      "original": "0x08243786",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_IllTakeYourPkmn2",
+      "address": "0x08242A28",
+      "original": "0x082438D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_NoticesGoldCard",
+      "address": "0x08242B2F",
+      "original": "0x08243814",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_RestoredPkmnToFullHealth",
+      "address": "0x08242A88",
+      "original": "0x08243798",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_RestoredPkmnToFullHealth",
+      "address": "0x08242ABE",
+      "original": "0x08243798",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_ThankYouForWaiting",
+      "address": "0x08242A9E",
+      "original": "0x082438EC",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x082429EF",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x08242A98",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x08242AD8",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242AAE",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242B41",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242B5A",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WelcomeCutShort",
+      "address": "0x08242B10",
+      "original": "0x082437D5",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WouldYouLikeToRestYourPkmn",
+      "address": "0x082429D1",
+      "original": "0x0824373C",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_YouWantTheUsual",
+      "address": "0x08242B48",
+      "original": "0x082438B9",
+      "count": 1
+    }
+  ],
+  "mapping_report": {
+    "schema_version": 1,
+    "batch": "197_pokemon_center_nurse.json",
+    "source_commit": "fe570a7e5",
+    "inputs": {
+      "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+      "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+      "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2"
+    },
+    "mapping_policy": {
+      "us_text": "Localized bytes are read from the matching US ELF symbol in pokeemerald.gba.",
+      "control_codes": {
+        "normalization": "none",
+        "comparison": "raw bytes",
+        "conversion_stage": "patch/tools/build_texts.py"
+      },
+      "japanese_references": {
+        "source": "Wokann/pokeemerald-jp dev: data/scripts/pkmn_center_nurse.inc and data/text/pkmn_center_nurse.inc. Source-level nurse flow message references were counted per symbol and compared with US/Japanese ROM pointer occurrences.",
+        "matching": "Use exact-context matches where available and regional-delta fallback for remaining references in the shared nurse script block; every JP pointer word was checked to equal the reported original text address."
+      }
+    },
+    "mapped_count": 10,
+    "unresolved_count": 0,
+    "unreferenced_count": 0,
+    "mapped": [
+      {
+        "symbol": "gText_IllTakeYourPkmn",
+        "us_text": "0x0824BA30",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824ACC1",
+            "jp_reference": "0x08242A22",
+            "jp_text": "0x08243786",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "gText_IllTakeYourPkmn2",
+        "us_text": "0x0824BB7B",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824ACC7",
+            "jp_reference": "0x08242A28",
+            "jp_text": "0x082438D8",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      },
+      {
+        "symbol": "gText_NoticesGoldCard",
+        "us_text": "0x0824BAC7",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824ADCE",
+            "jp_reference": "0x08242B2F",
+            "jp_text": "0x08243814",
+            "mapping_method": "context",
+            "context_radius": 32
+          }
+        ]
+      },
+      {
+        "symbol": "gText_RestoredPkmnToFullHealth",
+        "us_text": "0x0824BA41",
+        "us_reference_count": 2,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 2,
+        "references": [
+          {
+            "us_reference": "0x0824AD27",
+            "jp_reference": "0x08242A88",
+            "jp_text": "0x08243798",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          },
+          {
+            "us_reference": "0x0824AD5D",
+            "jp_reference": "0x08242ABE",
+            "jp_text": "0x08243798",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          }
+        ]
+      },
+      {
+        "symbol": "gText_ThankYouForWaiting",
+        "us_text": "0x0824BB89",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824AD3D",
+            "jp_reference": "0x08242A9E",
+            "jp_text": "0x082438EC",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "gText_WeHopeToSeeYouAgain",
+        "us_text": "0x0824BA70",
+        "us_reference_count": 3,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 3,
+        "references": [
+          {
+            "us_reference": "0x0824AC8E",
+            "jp_reference": "0x082429EF",
+            "jp_text": "0x082437C1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          },
+          {
+            "us_reference": "0x0824AD37",
+            "jp_reference": "0x08242A98",
+            "jp_text": "0x082437C1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          },
+          {
+            "us_reference": "0x0824AD77",
+            "jp_reference": "0x08242AD8",
+            "jp_text": "0x082437C1",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          }
+        ]
+      },
+      {
+        "symbol": "gText_WeHopeToSeeYouAgain2",
+        "us_text": "0x0824BB95",
+        "us_reference_count": 3,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 3,
+        "references": [
+          {
+            "us_reference": "0x0824AD4D",
+            "jp_reference": "0x08242AAE",
+            "jp_text": "0x082438FE",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824ADE0",
+            "jp_reference": "0x08242B41",
+            "jp_text": "0x082438FE",
+            "mapping_method": "context",
+            "context_radius": 16
+          },
+          {
+            "us_reference": "0x0824ADF9",
+            "jp_reference": "0x08242B5A",
+            "jp_text": "0x082438FE",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "gText_WelcomeCutShort",
+        "us_text": "0x0824BA7E",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824ADAF",
+            "jp_reference": "0x08242B10",
+            "jp_text": "0x082437D5",
+            "mapping_method": "context",
+            "context_radius": 16
+          }
+        ]
+      },
+      {
+        "symbol": "gText_WouldYouLikeToRestYourPkmn",
+        "us_text": "0x0824B9DF",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824AC70",
+            "jp_reference": "0x082429D1",
+            "jp_text": "0x0824373C",
+            "mapping_method": "regional_delta",
+            "reference_delta": -33439
+          }
+        ]
+      },
+      {
+        "symbol": "gText_YouWantTheUsual",
+        "us_text": "0x0824BB63",
+        "us_reference_count": 1,
+        "wokann_source": "data/scripts/pkmn_center_nurse.inc",
+        "wokann_text_source": "data/text/pkmn_center_nurse.inc",
+        "wokann_script_reference_count": 1,
+        "references": [
+          {
+            "us_reference": "0x0824ADE7",
+            "jp_reference": "0x08242B48",
+            "jp_text": "0x082438B9",
+            "mapping_method": "context",
+            "context_radius": 24
+          }
+        ]
+      }
+    ],
+    "unresolved": [],
+    "unreferenced": []
+  },
+  "comparison": {
+    "matching_reference_count": 15,
+    "expected_only": [],
+    "mapped_only": []
+  }
+}

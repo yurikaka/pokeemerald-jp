@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source_commit": "fe570a7e5",
+  "source_file": "src/data/battle_frontier/battle_frontier_trainers.h",
+  "wokann_files": [
+    "include/battle_tower.h",
+    "src/data/battle_frontier/battle_frontier_trainers.h"
+  ],
+  "status": "source_and_rom_audited; emulator_not_tested",
+  "mapping_policy": "Wokann defines gBattleFrontierTrainers as fixed 0x34-byte BattleFrontierTrainer records. trainerName is an 8-byte field at offset 4. The verified ROM table starts at 0x085B4A10; every original field matches baserom_jp.gba. Each replacement is compact Chinese (F5 + up to three two-byte glyphs + FF padding), so it remains within the original 8-byte field and changes display-only data.",
+  "table": {
+    "symbol": "gBattleFrontierTrainers",
+    "rom_address": "0x085B4A10",
+    "record_size": "0x34",
+    "name_offset": "0x04",
+    "name_field_size": 8,
+    "entry_count": 300,
+    "code_references": [
+      "0x08165A84",
+      "0x08165C18",
+      "0x081A80E8"
+    ]
+  },
+  "coverage": {
+    "mapped_entries": 300,
+    "unresolved_entries": 0,
+    "first_name_address": "0x085B4A14",
+    "last_name_address": "0x085B86D0"
+  }
+}

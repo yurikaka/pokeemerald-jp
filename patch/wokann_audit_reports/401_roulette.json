@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "401_roulette.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "08c6fdcc7",
+  "category": "dialogue: data/scripts/roulette.inc",
+  "summary": {
+    "verified_direct_symbol": 11
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08142C8C",
+      "jp_original_text": "0x08262D18",
+      "batch_source_symbol": "Roulette_Text_NotEnoughCoins",
+      "patch_symbol": "Chs_Roulette_Text_NotEnoughCoins",
+      "base_rom_value": "0x08262D18",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 5328,
+          "referenced_symbol": "Roulette_Text_NotEnoughCoins",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_NotEnoughCoins"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08142B50",
+        "symbol": "Task_Roulette_0"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 28,
+          "symbol": "Roulette_Text_NotEnoughCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 28
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08142BE8",
+      "jp_original_text": "0x08262D23",
+      "batch_source_symbol": "Roulette_Text_SpecialRateTable",
+      "patch_symbol": "Chs_Roulette_Text_SpecialRateTable",
+      "base_rom_value": "0x08262D23",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 5257,
+          "referenced_symbol": "Roulette_Text_SpecialRateTable",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_SpecialRateTable"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08142B50",
+        "symbol": "Task_Roulette_0"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 31,
+          "symbol": "Roulette_Text_SpecialRateTable"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 31
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x0814080C",
+      "jp_original_text": "0x08262D3F",
+      "batch_source_symbol": "Roulette_Text_ControlsInstruction",
+      "patch_symbol": "Chs_Roulette_Text_ControlsInstruction",
+      "base_rom_value": "0x08262D3F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 598,
+          "referenced_symbol": "Roulette_Text_ControlsInstruction",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_ControlsInstruction"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08140694",
+        "symbol": "roulette.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 35,
+          "symbol": "Roulette_Text_ControlsInstruction"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x081419EC",
+      "jp_original_text": "0x08262D66",
+      "batch_source_symbol": "Roulette_Text_ItsAHit",
+      "patch_symbol": "Chs_Roulette_Text_ItsAHit",
+      "base_rom_value": "0x08262D66",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 2927,
+          "referenced_symbol": "Roulette_Text_ItsAHit",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_ItsAHit"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141964",
+        "symbol": "sub_08141964_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 39,
+          "symbol": "Roulette_Text_ItsAHit"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 39
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x081419B0",
+      "jp_original_text": "0x08262D6C",
+      "batch_source_symbol": "Roulette_Text_Jackpot",
+      "patch_symbol": "Chs_Roulette_Text_Jackpot",
+      "base_rom_value": "0x08262D6C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 2900,
+          "referenced_symbol": "Roulette_Text_Jackpot",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_Jackpot"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141964",
+        "symbol": "sub_08141964_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 42,
+          "symbol": "Roulette_Text_Jackpot"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08141A40",
+      "jp_original_text": "0x08262D74",
+      "batch_source_symbol": "Roulette_Text_NothingDoing",
+      "patch_symbol": "Chs_Roulette_Text_NothingDoing",
+      "base_rom_value": "0x08262D74",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 2965,
+          "referenced_symbol": "Roulette_Text_NothingDoing",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_NothingDoing"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141964",
+        "symbol": "sub_08141964_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 45,
+          "symbol": "Roulette_Text_NothingDoing"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 45
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08141DCC",
+      "jp_original_text": "0x08262D96",
+      "batch_source_symbol": "Roulette_Text_NoCoinsLeft",
+      "patch_symbol": "Chs_Roulette_Text_NoCoinsLeft",
+      "base_rom_value": "0x08262D96",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 3408,
+          "referenced_symbol": "Roulette_Text_NoCoinsLeft",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_NoCoinsLeft"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141C20",
+        "symbol": "sub_08141C20_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 52,
+          "symbol": "Roulette_Text_NoCoinsLeft"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 52
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08140A28",
+      "jp_original_text": "0x08262DA3",
+      "batch_source_symbol": "Roulette_Text_KeepPlaying",
+      "patch_symbol": "Chs_Roulette_Text_KeepPlaying",
+      "base_rom_value": "0x08262DA3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 857,
+          "referenced_symbol": "Roulette_Text_KeepPlaying",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_KeepPlaying"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081409DC",
+        "symbol": "sub_081409DC_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 55,
+          "symbol": "Roulette_Text_KeepPlaying"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 55
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08141D18",
+      "jp_original_text": "0x08262DB0",
+      "batch_source_symbol": "Roulette_Text_BoardWillBeCleared",
+      "patch_symbol": "Chs_Roulette_Text_BoardWillBeCleared",
+      "base_rom_value": "0x08262DB0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 3330,
+          "referenced_symbol": "Roulette_Text_BoardWillBeCleared",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_BoardWillBeCleared"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141C20",
+        "symbol": "sub_08141C20_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 58,
+          "symbol": "Roulette_Text_BoardWillBeCleared"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 58
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08141D6C",
+      "jp_original_text": "0x08262DD5",
+      "batch_source_symbol": "Roulette_Text_CoinCaseIsFull",
+      "patch_symbol": "Chs_Roulette_Text_CoinCaseIsFull",
+      "base_rom_value": "0x08262DD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 3366,
+          "referenced_symbol": "Roulette_Text_CoinCaseIsFull",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_CoinCaseIsFull"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141C20",
+        "symbol": "sub_08141C20_jp"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 66,
+          "symbol": "Roulette_Text_CoinCaseIsFull"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 66
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x08141E90",
+      "jp_original_text": "0x08262DD5",
+      "batch_source_symbol": "Roulette_Text_CoinCaseIsFull",
+      "patch_symbol": "Chs_Roulette_Text_CoinCaseIsFull",
+      "base_rom_value": "0x08262DD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/roulette.c",
+          "line": 3500,
+          "referenced_symbol": "Roulette_Text_CoinCaseIsFull",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "Roulette_Text_CoinCaseIsFull"
+      ],
+      "wokann_function_owner": {
+        "start": "0x08141DD4",
+        "symbol": "dp01t_12_3_battle_menu"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 66,
+          "symbol": "Roulette_Text_CoinCaseIsFull"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/roulette.inc",
+          "line": 66
+        }
+      ],
+      "status": "verified_direct_symbol"
+    }
+  ]
+}

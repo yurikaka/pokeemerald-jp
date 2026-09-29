@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "176_save_screen.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "8dbfd7c4e",
+  "category": "save screen: info window labels and battle pyramid rest prompt",
+  "summary": {
+    "verified_direct_symbol": 4,
+    "verified_source_definition": 1
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x080A010C",
+      "jp_original_text": "0x084E8CB0",
+      "batch_source_symbol": "gText_SavingPlayer",
+      "patch_symbol": "Chs_gText_SavingPlayer",
+      "base_rom_value": "0x084E8CB0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/start_menu.c",
+          "line": 2880,
+          "referenced_symbol": "gText_SavingPlayer",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_SavingPlayer"
+      ],
+      "wokann_function_owner": {
+        "start": "0x0809FF8C",
+        "symbol": "start_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts24.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080A0110",
+      "jp_original_text": "0x084E8CB7",
+      "batch_source_symbol": "gText_SavingBadges",
+      "patch_symbol": "Chs_gText_SavingBadges",
+      "base_rom_value": "0x084E8CB7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/start_menu.c",
+          "line": 2881,
+          "referenced_symbol": "gText_SavingBadges",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_SavingBadges"
+      ],
+      "wokann_function_owner": {
+        "start": "0x0809FF8C",
+        "symbol": "start_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts24.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080A0114",
+      "jp_original_text": "0x084E8CC0",
+      "batch_source_symbol": "gText_SavingPokedex",
+      "patch_symbol": "Chs_gText_SavingPokedex",
+      "base_rom_value": "0x084E8CC0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/start_menu.c",
+          "line": 2882,
+          "referenced_symbol": "gText_SavingPokedex",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_SavingPokedex"
+      ],
+      "wokann_function_owner": {
+        "start": "0x0809FF8C",
+        "symbol": "start_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts24.h",
+          "line": 4
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x080A0118",
+      "jp_original_text": "0x084E8CC8",
+      "batch_source_symbol": "gText_SavingTime",
+      "patch_symbol": "Chs_gText_SavingTime",
+      "base_rom_value": "0x084E8CC8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/start_menu.c",
+          "line": 2883,
+          "referenced_symbol": "gText_SavingTime",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_SavingTime"
+      ],
+      "wokann_function_owner": {
+        "start": "0x0809FF8C",
+        "symbol": "start_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts24.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x0809F9A4",
+      "jp_original_text": "0x0822D762",
+      "batch_source_symbol": "gText_BattlePyramidConfirmRest",
+      "patch_symbol": "Chs_gText_BattlePyramidConfirmRest",
+      "base_rom_value": "0x0822D762",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/start_menu.c",
+          "line": 1850,
+          "referenced_symbol": null,
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0809F978",
+        "symbol": "SaveConfirmSaveCallback"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "line": 130
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

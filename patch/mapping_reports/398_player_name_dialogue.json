@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "batch": "398_player_name_dialogue.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "data/maps/SSTidalCorridor/scripts.inc",
+      "data/maps/SkyPillar_Outside/scripts.inc",
+      "data/maps/SootopolisCity/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 23,
+  "unresolved_count": 1,
+  "reference_count": 23,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame",
+      "source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "wokann_label_line": 325,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0824211F",
+      "japanese_text_address": "0x0823A6B4",
+      "japanese_references": [
+        "0x0823A2AA"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
+      "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "wokann_label_line": 212,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082400AF",
+      "japanese_text_address": "0x082389B5",
+      "japanese_references": [
+        "0x082388BB"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing",
+      "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "wokann_source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "wokann_label_line": 228,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082401A3",
+      "japanese_text_address": "0x08238A81",
+      "japanese_references": [
+        "0x08238905"
+      ]
+    },
+    {
+      "source_symbol": "CaveOfOrigin_B1F_Text_WallaceStory",
+      "source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_label_line": 64,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821E683",
+      "japanese_text_address": "0x082191C4",
+      "japanese_references": [
+        "0x08219103"
+      ]
+    },
+    {
+      "source_symbol": "CaveOfOrigin_B1F_Text_WhereIsRayquaza",
+      "source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_label_line": 88,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821E824",
+      "japanese_text_address": "0x0821931C",
+      "japanese_references": [
+        "0x0821913C"
+      ]
+    },
+    {
+      "source_symbol": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat",
+      "source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_label_line": 101,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821E8C1",
+      "japanese_text_address": "0x082193B0",
+      "japanese_references": [
+        "0x0821918E"
+      ]
+    },
+    {
+      "source_symbol": "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar",
+      "source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_source": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "wokann_label_line": 116,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821E976",
+      "japanese_text_address": "0x08219456",
+      "japanese_references": [
+        "0x082191A5"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_IntroSpeech",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 224,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082152DC",
+      "japanese_text_address": "0x08210B2D",
+      "japanese_references": [
+        "0x0821092C"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_Defeat",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 249,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821545C",
+      "japanese_text_address": "0x08210C82",
+      "japanese_references": [
+        "0x08210938"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayAdvice",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 272,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082155B4",
+      "japanese_text_address": "0x08210D9B",
+      "japanese_references": [
+        "0x082109A9"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 277,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082155D9",
+      "japanese_text_address": "0x08210DC2",
+      "japanese_references": [
+        "0x082109D0"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 293,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821564B",
+      "japanese_text_address": "0x08210E3F",
+      "japanese_references": [
+        "0x08210A2B"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 313,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821576D",
+      "japanese_text_address": "0x08210F33",
+      "japanese_references": [
+        "0x08210A57"
+      ]
+    },
+    {
+      "source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayCongratulations",
+      "source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_source": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+      "wokann_label_line": 327,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08215800",
+      "japanese_text_address": "0x08210FD2",
+      "japanese_references": [
+        "0x08210ACE"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_ScottBattleFrontierInvite",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 252,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082239C3",
+      "japanese_text_address": "0x0821E106",
+      "japanese_references": [
+        "0x0821E0A7"
+      ]
+    },
+    {
+      "source_symbol": "SSTidalCorridor_Text_BrineyWelcomeAboard",
+      "source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_source": "data/maps/SSTidalCorridor/scripts.inc",
+      "wokann_label_line": 310,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08223C68",
+      "japanese_text_address": "0x0821E350",
+      "japanese_references": [
+        "0x0821DF52"
+      ]
+    },
+    {
+      "source_symbol": "SkyPillar_Outside_Text_OpenedDoorToSkyPillar",
+      "source": "data/maps/SkyPillar_Outside/scripts.inc",
+      "wokann_source": "data/maps/SkyPillar_Outside/scripts.inc",
+      "wokann_label_line": 145,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082214AE",
+      "japanese_text_address": "0x0821BD56",
+      "japanese_references": [
+        "0x0821BC60"
+      ]
+    },
+    {
+      "source_symbol": "SkyPillar_Outside_Text_GotToGoBackForSootopolis",
+      "source": "data/maps/SkyPillar_Outside/scripts.inc",
+      "wokann_source": "data/maps/SkyPillar_Outside/scripts.inc",
+      "wokann_label_line": 162,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0822155E",
+      "japanese_text_address": "0x0821BDF8",
+      "japanese_references": [
+        "0x0821BCFA"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1601,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4C1C",
+      "japanese_text_address": "0x081E350F",
+      "japanese_references": [
+        "0x081E2868"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_DoesThisMakeYourFearPokemon",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1617,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4CFA",
+      "japanese_text_address": "0x081E35DC",
+      "japanese_references": [
+        "0x081E2887"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_HaventYouScaledSkyPillar",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1653,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4E9F",
+      "japanese_text_address": "0x081E376F",
+      "japanese_references": [
+        "0x081E2B74"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_AquaMagmaDidntMeanHarm",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1660,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4EF5",
+      "japanese_text_address": "0x081E37B8",
+      "japanese_references": [
+        "0x081E2B01"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_ThankYouForHelpAcceptThis",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1667,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4F52",
+      "japanese_text_address": "0x081E380B",
+      "japanese_references": [
+        "0x081E2B0B"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "BattleFrontier_ScottsHouse_Text_ObtainedXBattlePoints",
+      "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    }
+  ]
+}

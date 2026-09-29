@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "340_move_tutors.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/text/move_tutors.inc",
+  "summary": {
+    "verified_source_definition": 42
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08276C4B",
+      "jp_original_text": "0x08275F5D",
+      "batch_source_symbol": "MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce",
+      "patch_symbol": "Chs_MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce",
+      "base_rom_value": "0x08275F5D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0827683F",
+      "jp_original_text": "0x08275F81",
+      "batch_source_symbol": "MoveTutor_Text_SwaggerTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_SwaggerTeach",
+      "base_rom_value": "0x08275F81",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 4
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276888",
+      "jp_original_text": "0x08275FFE",
+      "batch_source_symbol": "MoveTutor_Text_SwaggerDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_SwaggerDeclined",
+      "base_rom_value": "0x08275FFE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 14
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08746E47",
+      "jp_original_text": "0x08275FFE",
+      "batch_source_symbol": "MoveTutor_Text_SwaggerDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_SwaggerDeclined",
+      "base_rom_value": "0x08275FFE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 14
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276862",
+      "jp_original_text": "0x08276010",
+      "batch_source_symbol": "MoveTutor_Text_SwaggerWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_SwaggerWhichMon",
+      "base_rom_value": "0x08276010",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 18
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276892",
+      "jp_original_text": "0x08276026",
+      "batch_source_symbol": "MoveTutor_Text_SwaggerTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_SwaggerTaught",
+      "base_rom_value": "0x08276026",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 22
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082768A7",
+      "jp_original_text": "0x08276048",
+      "batch_source_symbol": "MoveTutor_Text_RolloutTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_RolloutTeach",
+      "base_rom_value": "0x08276048",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 26
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082768F0",
+      "jp_original_text": "0x082760B8",
+      "batch_source_symbol": "MoveTutor_Text_RolloutDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_RolloutDeclined",
+      "base_rom_value": "0x082760B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 34
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082768CA",
+      "jp_original_text": "0x082760CB",
+      "batch_source_symbol": "MoveTutor_Text_RolloutWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_RolloutWhichMon",
+      "base_rom_value": "0x082760CB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 38
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082768FA",
+      "jp_original_text": "0x082760E8",
+      "batch_source_symbol": "MoveTutor_Text_RolloutTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_RolloutTaught",
+      "base_rom_value": "0x082760E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0827690F",
+      "jp_original_text": "0x08276101",
+      "batch_source_symbol": "MoveTutor_Text_FuryCutterTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_FuryCutterTeach",
+      "base_rom_value": "0x08276101",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 46
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276958",
+      "jp_original_text": "0x08276159",
+      "batch_source_symbol": "MoveTutor_Text_FuryCutterDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_FuryCutterDeclined",
+      "base_rom_value": "0x08276159",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 54
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276932",
+      "jp_original_text": "0x08276163",
+      "batch_source_symbol": "MoveTutor_Text_FuryCutterWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_FuryCutterWhichMon",
+      "base_rom_value": "0x08276163",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276962",
+      "jp_original_text": "0x0827617E",
+      "batch_source_symbol": "MoveTutor_Text_FuryCutterTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_FuryCutterTaught",
+      "base_rom_value": "0x0827617E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 61
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276977",
+      "jp_original_text": "0x0827619E",
+      "batch_source_symbol": "MoveTutor_MimicTeach",
+      "patch_symbol": "Chs_MoveTutor_MimicTeach",
+      "base_rom_value": "0x0827619E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 65
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082769C0",
+      "jp_original_text": "0x0827620A",
+      "batch_source_symbol": "MoveTutor_MimicDeclined",
+      "patch_symbol": "Chs_MoveTutor_MimicDeclined",
+      "base_rom_value": "0x0827620A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 74
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0827699A",
+      "jp_original_text": "0x08276226",
+      "batch_source_symbol": "MoveTutor_Text_MimicWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_MimicWhichMon",
+      "base_rom_value": "0x08276226",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 78
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082769CA",
+      "jp_original_text": "0x08276248",
+      "batch_source_symbol": "MoveTutor_Text_MimicTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_MimicTaught",
+      "base_rom_value": "0x08276248",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 82
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082769DF",
+      "jp_original_text": "0x08276272",
+      "batch_source_symbol": "MoveTutor_Text_MetronomeTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_MetronomeTeach",
+      "base_rom_value": "0x08276272",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 87
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A28",
+      "jp_original_text": "0x082762EE",
+      "batch_source_symbol": "MoveTutor_Text_MetronomeDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_MetronomeDeclined",
+      "base_rom_value": "0x082762EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 97
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A02",
+      "jp_original_text": "0x08276302",
+      "batch_source_symbol": "MoveTutor_Text_MetronomeWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_MetronomeWhichMon",
+      "base_rom_value": "0x08276302",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 101
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A32",
+      "jp_original_text": "0x0827631B",
+      "batch_source_symbol": "MoveTutor_Text_MetronomeTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_MetronomeTaught",
+      "base_rom_value": "0x0827631B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 105
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A47",
+      "jp_original_text": "0x0827634D",
+      "batch_source_symbol": "MoveTutor_Text_SleepTalkTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_SleepTalkTeach",
+      "base_rom_value": "0x0827634D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 110
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A90",
+      "jp_original_text": "0x082763BB",
+      "batch_source_symbol": "MoveTutor_Text_SleepTalkDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_SleepTalkDeclined",
+      "base_rom_value": "0x082763BB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 119
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A6A",
+      "jp_original_text": "0x082763DB",
+      "batch_source_symbol": "MoveTutor_Text_SleepTalkWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_SleepTalkWhichMon",
+      "base_rom_value": "0x082763DB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 123
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276A9A",
+      "jp_original_text": "0x08276404",
+      "batch_source_symbol": "MoveTutor_Text_SleepTalkTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_SleepTalkTaught",
+      "base_rom_value": "0x08276404",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 127
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276AAF",
+      "jp_original_text": "0x08276436",
+      "batch_source_symbol": "MoveTutor_Text_SubstituteTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_SubstituteTeach",
+      "base_rom_value": "0x08276436",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 132
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276AF8",
+      "jp_original_text": "0x082764BA",
+      "batch_source_symbol": "MoveTutor_Text_SubstituteDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_SubstituteDeclined",
+      "base_rom_value": "0x082764BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 143
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276AD2",
+      "jp_original_text": "0x082764E1",
+      "batch_source_symbol": "MoveTutor_Text_SubstituteWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_SubstituteWhichMon",
+      "base_rom_value": "0x082764E1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 148
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B02",
+      "jp_original_text": "0x082764F8",
+      "batch_source_symbol": "MoveTutor_Text_SubstituteTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_SubstituteTaught",
+      "base_rom_value": "0x082764F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 152
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B17",
+      "jp_original_text": "0x08276534",
+      "batch_source_symbol": "MoveTutor_Text_DynamicPunchTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_DynamicPunchTeach",
+      "base_rom_value": "0x08276534",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 158
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B60",
+      "jp_original_text": "0x082765D1",
+      "batch_source_symbol": "MoveTutor_Text_DynamicPunchDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_DynamicPunchDeclined",
+      "base_rom_value": "0x082765D1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 172
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B3A",
+      "jp_original_text": "0x082765F3",
+      "batch_source_symbol": "MoveTutor_Text_DynamicPunchWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_DynamicPunchWhichMon",
+      "base_rom_value": "0x082765F3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 177
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B6A",
+      "jp_original_text": "0x08276618",
+      "batch_source_symbol": "MoveTutor_Text_DynamicPunchTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_DynamicPunchTaught",
+      "base_rom_value": "0x08276618",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 181
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276B7F",
+      "jp_original_text": "0x0827663B",
+      "batch_source_symbol": "MoveTutor_Text_DoubleEdgeTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_DoubleEdgeTeach",
+      "base_rom_value": "0x0827663B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 185
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276BC8",
+      "jp_original_text": "0x082766C4",
+      "batch_source_symbol": "MoveTutor_Text_DoubleEdgeDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_DoubleEdgeDeclined",
+      "base_rom_value": "0x082766C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 197
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276BA2",
+      "jp_original_text": "0x082766DC",
+      "batch_source_symbol": "MoveTutor_Text_DoubleEdgeWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_DoubleEdgeWhichMon",
+      "base_rom_value": "0x082766DC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 201
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276BD2",
+      "jp_original_text": "0x082766F4",
+      "batch_source_symbol": "MoveTutor_Text_DoubleEdgeTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_DoubleEdgeTaught",
+      "base_rom_value": "0x082766F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 205
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276BE7",
+      "jp_original_text": "0x0827671B",
+      "batch_source_symbol": "MoveTutor_Text_ExplosionTeach",
+      "patch_symbol": "Chs_MoveTutor_Text_ExplosionTeach",
+      "base_rom_value": "0x0827671B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 210
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276C30",
+      "jp_original_text": "0x08276797",
+      "batch_source_symbol": "MoveTutor_Text_ExplosionDeclined",
+      "patch_symbol": "Chs_MoveTutor_Text_ExplosionDeclined",
+      "base_rom_value": "0x08276797",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 219
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276C0A",
+      "jp_original_text": "0x082767B0",
+      "batch_source_symbol": "MoveTutor_Text_ExplosionWhichMon",
+      "patch_symbol": "Chs_MoveTutor_Text_ExplosionWhichMon",
+      "base_rom_value": "0x082767B0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 223
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08276C3A",
+      "jp_original_text": "0x082767D7",
+      "batch_source_symbol": "MoveTutor_Text_ExplosionTaught",
+      "patch_symbol": "Chs_MoveTutor_Text_ExplosionTaught",
+      "base_rom_value": "0x082767D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "line": 227
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

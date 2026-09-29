@@ -1,0 +1,1376 @@
+{
+  "schema_version": 1,
+  "batch": "402_battle_dome.json",
+  "source_commit": "08c6fdcc7",
+  "selection": {
+    "sources": [
+      "data/text/battle_dome.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Player name, honorific, and rival placeholders are auto-wrapped in Japanese mode; other placeholders require review."
+  },
+  "mapped_count": 108,
+  "unresolved_count": 6,
+  "reference_count": 108,
+  "mapped": [
+    {
+      "source_symbol": "BattleDome_Text_Potential1",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828264B",
+      "japanese_text_address": "0x08273952",
+      "japanese_references": [
+        "0x085D5C4C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential2",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 4,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282667",
+      "japanese_text_address": "0x0827396A",
+      "japanese_references": [
+        "0x085D5C50"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential3",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 7,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282673",
+      "japanese_text_address": "0x08273983",
+      "japanese_references": [
+        "0x085D5C54"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential4",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 10,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828267F",
+      "japanese_text_address": "0x0827399B",
+      "japanese_references": [
+        "0x085D5C58"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential5",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 13,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282689",
+      "japanese_text_address": "0x082739B2",
+      "japanese_references": [
+        "0x085D5C5C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential6",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 16,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282695",
+      "japanese_text_address": "0x082739C9",
+      "japanese_references": [
+        "0x085D5C60"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential7",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826A3",
+      "japanese_text_address": "0x082739DF",
+      "japanese_references": [
+        "0x085D5C64"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential8",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 22,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826B3",
+      "japanese_text_address": "0x082739F8",
+      "japanese_references": [
+        "0x085D5C68"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential9",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 25,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826C9",
+      "japanese_text_address": "0x08273A0D",
+      "japanese_references": [
+        "0x085D5C6C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential10",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 28,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826D5",
+      "japanese_text_address": "0x08273A25",
+      "japanese_references": [
+        "0x085D5C70"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential11",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 31,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826E5",
+      "japanese_text_address": "0x08273A3D",
+      "japanese_references": [
+        "0x085D5C74"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential12",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 34,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826F1",
+      "japanese_text_address": "0x08273A55",
+      "japanese_references": [
+        "0x085D5C78"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential13",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 37,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082826FD",
+      "japanese_text_address": "0x08273A6C",
+      "japanese_references": [
+        "0x085D5C7C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential14",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 40,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282707",
+      "japanese_text_address": "0x08273A84",
+      "japanese_references": [
+        "0x085D5C80"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential15",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 43,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282713",
+      "japanese_text_address": "0x08273A9D",
+      "japanese_references": [
+        "0x085D5C84"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Potential16",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 46,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828271F",
+      "japanese_text_address": "0x08273AB3",
+      "japanese_references": [
+        "0x085D5C88"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_PotentialDomeAceTucker",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 49,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828272B",
+      "japanese_text_address": "0x08273AC9",
+      "japanese_references": [
+        "0x085D5C8C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleRiskDisaster",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 52,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828273B",
+      "japanese_text_address": "0x08273ADD",
+      "japanese_references": [
+        "0x085D5C90"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleEndureLongBattles",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 55,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282749",
+      "japanese_text_address": "0x08273AF6",
+      "japanese_references": [
+        "0x085D5C94"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleVariesTactics",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 58,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282757",
+      "japanese_text_address": "0x08273B0D",
+      "japanese_references": [
+        "0x085D5C98"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleToughWinningPattern",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 61,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282761",
+      "japanese_text_address": "0x08273B26",
+      "japanese_references": [
+        "0x085D5C9C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesVeryRareMove",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 64,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828276B",
+      "japanese_text_address": "0x08273B3E",
+      "japanese_references": [
+        "0x085D5CA0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesStartlingMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 67,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828277D",
+      "japanese_text_address": "0x08273B56",
+      "japanese_references": [
+        "0x085D5CA4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleConstantlyWatchesHP",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 70,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828278F",
+      "japanese_text_address": "0x08273B6E",
+      "japanese_references": [
+        "0x085D5CA8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleStoresAndLoosesPower",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 73,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827A1",
+      "japanese_text_address": "0x08273B87",
+      "japanese_references": [
+        "0x085D5CAC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleEnfeeblesFoes",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 76,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827AF",
+      "japanese_text_address": "0x08273BA0",
+      "japanese_references": [
+        "0x085D5CB0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StylePrefersLuckTactics",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 79,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827BD",
+      "japanese_text_address": "0x08273BB5",
+      "japanese_references": [
+        "0x085D5CB4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleRegalAtmosphere",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 82,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827CB",
+      "japanese_text_address": "0x08273BCB",
+      "japanese_references": [
+        "0x085D5CB8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StylePowerfulLowPPMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 85,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827D5",
+      "japanese_text_address": "0x08273BE3",
+      "japanese_references": [
+        "0x085D5CBC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleEnfeebleThenAttack",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 88,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082827F1",
+      "japanese_text_address": "0x08273BFA",
+      "japanese_references": [
+        "0x085D5CC0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleBattlesWhileEnduring",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 91,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282807",
+      "japanese_text_address": "0x08273C12",
+      "japanese_references": [
+        "0x085D5CC4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUpsetsFoesEmotionally",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 94,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282817",
+      "japanese_text_address": "0x08273C29",
+      "japanese_references": [
+        "0x085D5CC8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleStrongAndStraightforward",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 97,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282829",
+      "japanese_text_address": "0x08273C40",
+      "japanese_references": [
+        "0x085D5CCC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleAggressivelyStrongMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 100,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282841",
+      "japanese_text_address": "0x08273C56",
+      "japanese_references": [
+        "0x085D5CD0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleCleverlyDodgesAttacks",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 103,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282853",
+      "japanese_text_address": "0x08273C6E",
+      "japanese_references": [
+        "0x085D5CD4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesUpsettingMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 106,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282865",
+      "japanese_text_address": "0x08273C85",
+      "japanese_references": [
+        "0x085D5CD8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesPopularMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 109,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282873",
+      "japanese_text_address": "0x08273C9A",
+      "japanese_references": [
+        "0x085D5CDC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleHasPowerfulComboMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 112,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282881",
+      "japanese_text_address": "0x08273CB0",
+      "japanese_references": [
+        "0x085D5CE0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesHighProbabilityMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 115,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282891",
+      "japanese_text_address": "0x08273CC7",
+      "japanese_references": [
+        "0x085D5CE4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleAggressivelySpectacularMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 118,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828A1",
+      "japanese_text_address": "0x08273CDE",
+      "japanese_references": [
+        "0x085D5CE8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleEmphasizesOffenseOverDefense",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 121,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828B3",
+      "japanese_text_address": "0x08273CF5",
+      "japanese_references": [
+        "0x085D5CEC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleEmphasizesDefenseOverOffense",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 124,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828BD",
+      "japanese_text_address": "0x08273D0D",
+      "japanese_references": [
+        "0x085D5CF0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleAttacksQuicklyStrongMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 127,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828C7",
+      "japanese_text_address": "0x08273D21",
+      "japanese_references": [
+        "0x085D5CF4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesAddedEffectMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 130,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828D9",
+      "japanese_text_address": "0x08273D38",
+      "japanese_references": [
+        "0x085D5CF8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleUsesBalancedMixOfMoves",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 133,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082828F5",
+      "japanese_text_address": "0x08273D4F",
+      "japanese_references": [
+        "0x085D5CFC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleSampleMessage1",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 136,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282909",
+      "japanese_text_address": "0x08273D67",
+      "japanese_references": [
+        "0x085D5D00"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleSampleMessage2",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 139,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282918",
+      "japanese_text_address": "0x08273D74",
+      "japanese_references": [
+        "0x085D5D04"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleSampleMessage3",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 142,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282927",
+      "japanese_text_address": "0x08273D81",
+      "japanese_references": [
+        "0x085D5D08"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_StyleSampleMessage4",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 145,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282936",
+      "japanese_text_address": "0x08273D8E",
+      "japanese_references": [
+        "0x085D5D0C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHPAndAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 148,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282945",
+      "japanese_text_address": "0x08273D9B",
+      "japanese_references": [
+        "0x085D5D10"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHPAndDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 151,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282953",
+      "japanese_text_address": "0x08273DB1",
+      "japanese_references": [
+        "0x085D5D14"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHPAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 154,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282961",
+      "japanese_text_address": "0x08273DC7",
+      "japanese_references": [
+        "0x085D5D18"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHPAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 157,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828296F",
+      "japanese_text_address": "0x08273DDD",
+      "japanese_references": [
+        "0x085D5D1C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHPAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 160,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828297D",
+      "japanese_text_address": "0x08273DF3",
+      "japanese_references": [
+        "0x085D5D20"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesAtkAndDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 163,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828298B",
+      "japanese_text_address": "0x08273E09",
+      "japanese_references": [
+        "0x085D5D24"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesAtkAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 166,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828299B",
+      "japanese_text_address": "0x08273E21",
+      "japanese_references": [
+        "0x085D5D28"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesAtkAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 169,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829AB",
+      "japanese_text_address": "0x08273E39",
+      "japanese_references": [
+        "0x085D5D2C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesAtkAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 172,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829BB",
+      "japanese_text_address": "0x08273E51",
+      "japanese_references": [
+        "0x085D5D30"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesDefAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 175,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829CB",
+      "japanese_text_address": "0x08273E69",
+      "japanese_references": [
+        "0x085D5D34"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesDefAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 178,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829DB",
+      "japanese_text_address": "0x08273E81",
+      "japanese_references": [
+        "0x085D5D38"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesDefAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 181,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829EB",
+      "japanese_text_address": "0x08273E99",
+      "japanese_references": [
+        "0x085D5D3C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpeedAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 184,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082829FB",
+      "japanese_text_address": "0x08273EB1",
+      "japanese_references": [
+        "0x085D5D40"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpeedAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 187,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A0B",
+      "japanese_text_address": "0x08273EC9",
+      "japanese_references": [
+        "0x085D5D44"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpAtkAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 190,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A1B",
+      "japanese_text_address": "0x08273EE1",
+      "japanese_references": [
+        "0x085D5D48"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesHP",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 193,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A2B",
+      "japanese_text_address": "0x08273EF9",
+      "japanese_references": [
+        "0x085D5D4C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 196,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A33",
+      "japanese_text_address": "0x08273F09",
+      "japanese_references": [
+        "0x085D5D50"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 199,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A3D",
+      "japanese_text_address": "0x08273F1B",
+      "japanese_references": [
+        "0x085D5D54"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 202,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A47",
+      "japanese_text_address": "0x08273F2D",
+      "japanese_references": [
+        "0x085D5D58"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 205,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A51",
+      "japanese_text_address": "0x08273F3F",
+      "japanese_references": [
+        "0x085D5D5C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_EmphasizesSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 208,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A5B",
+      "japanese_text_address": "0x08273F51",
+      "japanese_references": [
+        "0x085D5D60"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHPAndAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 211,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A65",
+      "japanese_text_address": "0x08273F63",
+      "japanese_references": [
+        "0x085D5D64"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHPAndDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 214,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A73",
+      "japanese_text_address": "0x08273F7A",
+      "japanese_references": [
+        "0x085D5D68"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHPAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 217,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A81",
+      "japanese_text_address": "0x08273F91",
+      "japanese_references": [
+        "0x085D5D6C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHPAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 220,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A8F",
+      "japanese_text_address": "0x08273FA8",
+      "japanese_references": [
+        "0x085D5D70"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHPAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 223,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282A9D",
+      "japanese_text_address": "0x08273FBF",
+      "japanese_references": [
+        "0x085D5D74"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsAtkAndDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 226,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282AAB",
+      "japanese_text_address": "0x08273FD6",
+      "japanese_references": [
+        "0x085D5D78"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsAtkAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 229,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282ABB",
+      "japanese_text_address": "0x08273FEF",
+      "japanese_references": [
+        "0x085D5D7C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsAtkAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 232,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282ACB",
+      "japanese_text_address": "0x08274008",
+      "japanese_references": [
+        "0x085D5D80"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsAtkAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 235,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282ADB",
+      "japanese_text_address": "0x08274021",
+      "japanese_references": [
+        "0x085D5D84"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsDefAndSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 238,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282AEB",
+      "japanese_text_address": "0x0827403A",
+      "japanese_references": [
+        "0x085D5D88"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsDefAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 241,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282AFB",
+      "japanese_text_address": "0x08274053",
+      "japanese_references": [
+        "0x085D5D8C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsDefAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 244,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B0B",
+      "japanese_text_address": "0x0827406C",
+      "japanese_references": [
+        "0x085D5D90"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpeedAndSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 247,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B1B",
+      "japanese_text_address": "0x08274085",
+      "japanese_references": [
+        "0x085D5D94"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpeedAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 250,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B2B",
+      "japanese_text_address": "0x0827409E",
+      "japanese_references": [
+        "0x085D5D98"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpAtkAndSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 253,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B3B",
+      "japanese_text_address": "0x082740B7",
+      "japanese_references": [
+        "0x085D5D9C"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsHP",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 256,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B4B",
+      "japanese_text_address": "0x082740D0",
+      "japanese_references": [
+        "0x085D5DA0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 259,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B53",
+      "japanese_text_address": "0x082740E2",
+      "japanese_references": [
+        "0x085D5DA4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 262,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B5D",
+      "japanese_text_address": "0x082740F6",
+      "japanese_references": [
+        "0x085D5DA8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpeed",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 265,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B67",
+      "japanese_text_address": "0x0827410A",
+      "japanese_references": [
+        "0x085D5DAC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpAtk",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 268,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B71",
+      "japanese_text_address": "0x0827411E",
+      "japanese_references": [
+        "0x085D5DB0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_NeglectsSpDef",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 271,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B7B",
+      "japanese_text_address": "0x08274132",
+      "japanese_references": [
+        "0x085D5DB4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_RaisesMonsWellBalanced",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 274,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B85",
+      "japanese_text_address": "0x08274146",
+      "japanese_references": [
+        "0x085D5DB8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_LetTheBattleBegin",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 277,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282B9D",
+      "japanese_text_address": "0x0827415B",
+      "japanese_references": [
+        "0x085D5E08"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match1",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 298,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C1F",
+      "japanese_text_address": "0x082741DA",
+      "japanese_references": [
+        "0x085D5DCC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match2",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 301,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C2B",
+      "japanese_text_address": "0x082741E8",
+      "japanese_references": [
+        "0x085D5DD0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match3",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 304,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C37",
+      "japanese_text_address": "0x082741F6",
+      "japanese_references": [
+        "0x085D5DD4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match4",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 307,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C43",
+      "japanese_text_address": "0x08274204",
+      "japanese_references": [
+        "0x085D5DD8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match5",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 310,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C4F",
+      "japanese_text_address": "0x08274212",
+      "japanese_references": [
+        "0x085D5DDC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match6",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 313,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C5B",
+      "japanese_text_address": "0x08274220",
+      "japanese_references": [
+        "0x085D5DE0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match7",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 316,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C67",
+      "japanese_text_address": "0x0827422E",
+      "japanese_references": [
+        "0x085D5DE4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round1Match8",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 319,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C73",
+      "japanese_text_address": "0x0827423C",
+      "japanese_references": [
+        "0x085D5DE8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round2Match1",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 322,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C7F",
+      "japanese_text_address": "0x0827424A",
+      "japanese_references": [
+        "0x085D5DEC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round2Match2",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 325,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C8B",
+      "japanese_text_address": "0x08274258",
+      "japanese_references": [
+        "0x085D5DF0"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round2Match3",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 328,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282C97",
+      "japanese_text_address": "0x08274266",
+      "japanese_references": [
+        "0x085D5DF4"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_Round2Match4",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 331,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282CA3",
+      "japanese_text_address": "0x08274274",
+      "japanese_references": [
+        "0x085D5DF8"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_SemifinalMatch1",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 334,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282CAF",
+      "japanese_text_address": "0x08274282",
+      "japanese_references": [
+        "0x085D5DFC"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_SemifinalMatch2",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 337,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282CBC",
+      "japanese_text_address": "0x08274292",
+      "japanese_references": [
+        "0x085D5E00"
+      ]
+    },
+    {
+      "source_symbol": "BattleDome_Text_FinalMatch",
+      "source": "data/text/battle_dome.inc",
+      "wokann_source": "data/text/battle_dome.inc",
+      "wokann_label_line": 340,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08282CC9",
+      "japanese_text_address": "0x082742A2",
+      "japanese_references": [
+        "0x085D5E04"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "BattleDome_Text_TrainerWonUsingMove",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BattleDome_Text_TrainerBecameChamp",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleDome_Text_TrainerWonByDefault",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleDome_Text_TrainerWonOutrightByDefault",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleDome_Text_TrainerWonNoMoves",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BattleDome_Text_TrainerWonOutrightNoMoves",
+      "source": "data/text/battle_dome.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    }
+  ]
+}
+

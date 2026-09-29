@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "026_granite_cave.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: Granite Cave",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08213F06",
+      "jp_original_text": "0x08213FAE",
+      "batch_source_symbol": "GraniteCave_1F_Text_ExplainFlash",
+      "patch_symbol": "Chs_GraniteCave_1F_Text_ExplainFlash",
+      "base_rom_value": "0x08213FAE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 33,
+          "symbol": "GraniteCave_1F_Text_ExplainFlash"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 33
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213F10",
+      "jp_original_text": "0x08213FAE",
+      "batch_source_symbol": "GraniteCave_1F_Text_ExplainFlash",
+      "patch_symbol": "Chs_GraniteCave_1F_Text_ExplainFlash",
+      "base_rom_value": "0x08213FAE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 33,
+          "symbol": "GraniteCave_1F_Text_ExplainFlash"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 33
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08213EEF",
+      "jp_original_text": "0x08213F18",
+      "batch_source_symbol": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+      "patch_symbol": "Chs_GraniteCave_1F_Text_GetsDarkAheadHereYouGo",
+      "base_rom_value": "0x08213F18",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 21,
+          "symbol": "GraniteCave_1F_Text_GetsDarkAheadHereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/GraniteCave_1F/scripts.inc",
+          "line": 21
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

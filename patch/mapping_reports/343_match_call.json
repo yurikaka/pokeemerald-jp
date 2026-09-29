@@ -1,0 +1,3405 @@
+{
+  "schema_version": 1,
+  "batch": "343_match_call.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/match_call.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 114,
+  "unresolved_count": 203,
+  "reference_count": 114,
+  "mapped": [
+    {
+      "source_symbol": "MatchCall_PersonalizedText27",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 900,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08274450",
+      "japanese_text_address": "0x08267467",
+      "japanese_references": [
+        "0x085D713C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_PersonalizedText58",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 1265,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08275763",
+      "japanese_text_address": "0x082684D5",
+      "japanese_references": [
+        "0x085D7234"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Mom1",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 1977,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277560",
+      "japanese_text_address": "0x08269D8F",
+      "japanese_references": [
+        "0x085F7508"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Mom2",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 1986,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082775C9",
+      "japanese_text_address": "0x08269DF1",
+      "japanese_references": [
+        "0x085F7510"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Mom3",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 1996,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827766B",
+      "japanese_text_address": "0x08269E62",
+      "japanese_references": [
+        "0x085F7518"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Roxanne_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2002,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082776AA",
+      "japanese_text_address": "0x08269EA8",
+      "japanese_references": [
+        "0x085F775C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Roxanne_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2011,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277729",
+      "japanese_text_address": "0x08269F24",
+      "japanese_references": [
+        "0x085F7764"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Roxanne_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2019,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082777A4",
+      "japanese_text_address": "0x08269F8E",
+      "japanese_references": [
+        "0x085F776C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Roxanne_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2025,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082777DC",
+      "japanese_text_address": "0x08269FC2",
+      "japanese_references": [
+        "0x085F7774"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wattson_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2062,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082779D4",
+      "japanese_text_address": "0x0826A176",
+      "japanese_references": [
+        "0x085F77D4"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wattson_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2071,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277A3F",
+      "japanese_text_address": "0x0826A1EB",
+      "japanese_references": [
+        "0x085F77DC"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wattson_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2082,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277AC9",
+      "japanese_text_address": "0x0826A280",
+      "japanese_references": [
+        "0x085F77E4"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wattson_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2088,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277B10",
+      "japanese_text_address": "0x0826A2C0",
+      "japanese_references": [
+        "0x085F77EC"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Flannery_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2093,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277B44",
+      "japanese_text_address": "0x0826A2EF",
+      "japanese_references": [
+        "0x085F7810"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Flannery_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2103,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277BC7",
+      "japanese_text_address": "0x0826A377",
+      "japanese_references": [
+        "0x085F7818"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Flannery_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2113,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277C61",
+      "japanese_text_address": "0x0826A3FC",
+      "japanese_references": [
+        "0x085F7820"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Flannery_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2119,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277CAA",
+      "japanese_text_address": "0x0826A43E",
+      "japanese_references": [
+        "0x085F7828"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Winona_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2124,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277CDB",
+      "japanese_text_address": "0x0826A46B",
+      "japanese_references": [
+        "0x085F784C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Winona_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2131,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277D3D",
+      "japanese_text_address": "0x0826A4C7",
+      "japanese_references": [
+        "0x085F7854"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Winona_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2138,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277DA2",
+      "japanese_text_address": "0x0826A527",
+      "japanese_references": [
+        "0x085F785C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Winona_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2143,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277DD7",
+      "japanese_text_address": "0x0826A557",
+      "japanese_references": [
+        "0x085F7864"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_TateLiza_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2150,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277E29",
+      "japanese_text_address": "0x0826A5A4",
+      "japanese_references": [
+        "0x085F7888"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_TateLiza_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2160,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277EDD",
+      "japanese_text_address": "0x0826A633",
+      "japanese_references": [
+        "0x085F7890"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_TateLiza_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2170,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277F8E",
+      "japanese_text_address": "0x0826A6BD",
+      "japanese_references": [
+        "0x085F7898"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_TateLiza_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2178,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08277FF3",
+      "japanese_text_address": "0x0826A716",
+      "japanese_references": [
+        "0x085F78A0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Sidney",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2217,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082781EB",
+      "japanese_text_address": "0x0826A8E9",
+      "japanese_references": [
+        "0x085F7900"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Phoebe",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2224,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827823F",
+      "japanese_text_address": "0x0826A93A",
+      "japanese_references": [
+        "0x085F7924"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Glacia",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2230,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278290",
+      "japanese_text_address": "0x0826A979",
+      "japanese_references": [
+        "0x085F7948"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Drake",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2238,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082782EE",
+      "japanese_text_address": "0x0826A9D4",
+      "japanese_references": [
+        "0x085F796C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_BrendanRayquazaCall",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2278,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278524",
+      "japanese_text_address": "0x0826ABC8",
+      "japanese_references": [
+        "0x0820DAC5"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan1",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2412,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278BF3",
+      "japanese_text_address": "0x0826B1D9",
+      "japanese_references": [
+        "0x085F7618"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan2",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2420,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278C5C",
+      "japanese_text_address": "0x0826B236",
+      "japanese_references": [
+        "0x085F7620"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan3",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2429,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278CE2",
+      "japanese_text_address": "0x0826B2A4",
+      "japanese_references": [
+        "0x085F7628"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan4",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2441,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278D7A",
+      "japanese_text_address": "0x0826B329",
+      "japanese_references": [
+        "0x085F7630"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan5",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2448,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278DCC",
+      "japanese_text_address": "0x0826B36F",
+      "japanese_references": [
+        "0x085F7638"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan6",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2458,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278E41",
+      "japanese_text_address": "0x0826B3DC",
+      "japanese_references": [
+        "0x085F7640"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan7",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2466,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278E95",
+      "japanese_text_address": "0x0826B433",
+      "japanese_references": [
+        "0x085F7648"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan8",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2474,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278EF3",
+      "japanese_text_address": "0x0826B48A",
+      "japanese_references": [
+        "0x085F7650"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan9",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2481,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278F51",
+      "japanese_text_address": "0x0826B4DC",
+      "japanese_references": [
+        "0x085F7658"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan10",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2489,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08278FC3",
+      "japanese_text_address": "0x0826B541",
+      "japanese_references": [
+        "0x085F7660"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan11",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2495,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279004",
+      "japanese_text_address": "0x0826B585",
+      "japanese_references": [
+        "0x085F7668"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan12",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2504,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827908C",
+      "japanese_text_address": "0x0826B600",
+      "japanese_references": [
+        "0x085F7670"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan13",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2512,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279110",
+      "japanese_text_address": "0x0826B666",
+      "japanese_references": [
+        "0x085F7678"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan14",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2522,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827918C",
+      "japanese_text_address": "0x0826B6E9",
+      "japanese_references": [
+        "0x085F7680"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brendan15",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2528,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082791D1",
+      "japanese_text_address": "0x0826B721",
+      "japanese_references": [
+        "0x085F7688"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally1",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2536,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827922D",
+      "japanese_text_address": "0x0826B773",
+      "japanese_references": [
+        "0x085F76A8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally2",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2543,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827927B",
+      "japanese_text_address": "0x0826B7BF",
+      "japanese_references": [
+        "0x085F76B0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally3",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2549,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082792AF",
+      "japanese_text_address": "0x0826B7FF",
+      "japanese_references": [
+        "0x085F76B8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally4",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2557,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279314",
+      "japanese_text_address": "0x0826B85D",
+      "japanese_references": [
+        "0x085F76C0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally5",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2566,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827938B",
+      "japanese_text_address": "0x0826B8D1",
+      "japanese_references": [
+        "0x085F76C8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally6",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2575,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279412",
+      "japanese_text_address": "0x0826B942",
+      "japanese_references": [
+        "0x085F76D0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wally7",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2581,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279446",
+      "japanese_text_address": "0x0826B978",
+      "japanese_references": [
+        "0x085F76D8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott2",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2599,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279528",
+      "japanese_text_address": "0x0826BA50",
+      "japanese_references": [
+        "0x085F7714"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott7",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2647,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082797BB",
+      "japanese_text_address": "0x0826BCB9",
+      "japanese_references": [
+        "0x085F773C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman1",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2653,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082797F1",
+      "japanese_text_address": "0x0826BCF0",
+      "japanese_references": [
+        "0x085F7498"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman2",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2660,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279840",
+      "japanese_text_address": "0x0826BD3E",
+      "japanese_references": [
+        "0x085F74A0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman3",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2669,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082798BA",
+      "japanese_text_address": "0x0826BDA8",
+      "japanese_references": [
+        "0x085F74A8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman4",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2676,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279925",
+      "japanese_text_address": "0x0826BDEC",
+      "japanese_references": [
+        "0x085F74B0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman5",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2684,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279970",
+      "japanese_text_address": "0x0826BE3E",
+      "japanese_references": [
+        "0x085F74B8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2691,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082799BD",
+      "japanese_text_address": "0x0826BE92",
+      "japanese_references": [
+        "0x085F74C0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2697,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082799FE",
+      "japanese_text_address": "0x0826BED3",
+      "japanese_references": [
+        "0x085F74C8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2704,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279A3D",
+      "japanese_text_address": "0x0826BF0E",
+      "japanese_references": [
+        "0x085F74D0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Norman_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2712,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279A85",
+      "japanese_text_address": "0x0826BF6C",
+      "japanese_references": [
+        "0x085F74D8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven6",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2754,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08279C74",
+      "japanese_text_address": "0x0826C151",
+      "japanese_references": [
+        "0x085F7560"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone6",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2837,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827A092",
+      "japanese_text_address": "0x0826C547",
+      "japanese_references": [
+        "0x085F7450"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone7",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2845,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827A0F8",
+      "japanese_text_address": "0x0826C5A4",
+      "japanese_references": [
+        "0x085F7458"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone8",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2854,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827A16C",
+      "japanese_text_address": "0x0826C616",
+      "japanese_references": [
+        "0x085F7460"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone9",
+      "source": "data/text/match_call.inc",
+      "wokann_label_line": 2860,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827A1AB",
+      "japanese_text_address": "0x0826C64D",
+      "japanese_references": [
+        "0x085F7468"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_PersonalizedText60",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 1294,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08275952",
+      "japanese_text_address": "0x08268667",
+      "japanese_references": [
+        "0x085D7244"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brawly_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2030,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827781D",
+      "japanese_text_address": "0x08269FE9",
+      "japanese_references": [
+        "0x085F7798"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brawly_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2041,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082778CE",
+      "japanese_text_address": "0x0826A07E",
+      "japanese_references": [
+        "0x085F77A0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brawly_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2052,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08277971",
+      "japanese_text_address": "0x0826A11E",
+      "japanese_references": [
+        "0x085F77A8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Brawly_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2058,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082779AF",
+      "japanese_text_address": "0x0826A156",
+      "japanese_references": [
+        "0x085F77B0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Juan_Preparing",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2184,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278048",
+      "japanese_text_address": "0x0826A75D",
+      "japanese_references": [
+        "0x085F78C4"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Juan_PreparingPostGame",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2194,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082780C5",
+      "japanese_text_address": "0x0826A7CD",
+      "japanese_references": [
+        "0x085F78CC"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Juan_RematchReady",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2202,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827812F",
+      "japanese_text_address": "0x0826A82E",
+      "japanese_references": [
+        "0x085F78D4"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Juan_PostRematch",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2209,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827817A",
+      "japanese_text_address": "0x0826A87D",
+      "japanese_references": [
+        "0x085F78DC"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Wallace",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2249,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278386",
+      "japanese_text_address": "0x0826AA64",
+      "japanese_references": [
+        "0x085F7990"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MayRayquazaCall",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2263,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827846C",
+      "japanese_text_address": "0x0826AB1B",
+      "japanese_references": [
+        "0x0820DABE"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May1",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2291,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082785CF",
+      "japanese_text_address": "0x0826AC61",
+      "japanese_references": [
+        "0x085F7588"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May2",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2299,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278636",
+      "japanese_text_address": "0x0826ACBD",
+      "japanese_references": [
+        "0x085F7590"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May3",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2308,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082786CC",
+      "japanese_text_address": "0x0826AD30",
+      "japanese_references": [
+        "0x085F7598"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May4",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2320,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278771",
+      "japanese_text_address": "0x0826ADB8",
+      "japanese_references": [
+        "0x085F75A0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May5",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2326,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082787AD",
+      "japanese_text_address": "0x0826ADF2",
+      "japanese_references": [
+        "0x085F75A8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May6",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2334,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278807",
+      "japanese_text_address": "0x0826AE48",
+      "japanese_references": [
+        "0x085F75B0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May7",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2342,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278863",
+      "japanese_text_address": "0x0826AEA2",
+      "japanese_references": [
+        "0x085F75B8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May8",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2350,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082788B0",
+      "japanese_text_address": "0x0826AEFF",
+      "japanese_references": [
+        "0x085F75C0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May9",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2357,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827890F",
+      "japanese_text_address": "0x0826AF50",
+      "japanese_references": [
+        "0x085F75C8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May10",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2365,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827897A",
+      "japanese_text_address": "0x0826AFB3",
+      "japanese_references": [
+        "0x085F75D0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May11",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2371,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082789C1",
+      "japanese_text_address": "0x0826AFF8",
+      "japanese_references": [
+        "0x085F75D8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May12",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2380,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278A3C",
+      "japanese_text_address": "0x0826B066",
+      "japanese_references": [
+        "0x085F75E0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May13",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2388,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278AC1",
+      "japanese_text_address": "0x0826B0CD",
+      "japanese_references": [
+        "0x085F75E8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May14",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2398,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278B3F",
+      "japanese_text_address": "0x0826B149",
+      "japanese_references": [
+        "0x085F75F0"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_May15",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2404,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08278B91",
+      "japanese_text_address": "0x0826B184",
+      "japanese_references": [
+        "0x085F75F8"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott1",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2589,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082794A8",
+      "japanese_text_address": "0x0826B9D0",
+      "japanese_references": [
+        "0x085F770C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott3",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2608,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827959A",
+      "japanese_text_address": "0x0826BAC4",
+      "japanese_references": [
+        "0x085F771C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott4",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2617,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279606",
+      "japanese_text_address": "0x0826BB36",
+      "japanese_references": [
+        "0x085F7724"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott5",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2626,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827966B",
+      "japanese_text_address": "0x0826BBA2",
+      "japanese_references": [
+        "0x085F772C"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Scott6",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2634,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082796DA",
+      "japanese_text_address": "0x0826BBFE",
+      "japanese_references": [
+        "0x085F7734"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven1",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2716,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279AAD",
+      "japanese_text_address": "0x0826BF8E",
+      "japanese_references": [
+        "0x085F7538"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven2",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2726,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279B26",
+      "japanese_text_address": "0x0826C00A",
+      "japanese_references": [
+        "0x085F7540"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven3",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2733,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279B69",
+      "japanese_text_address": "0x0826C05E",
+      "japanese_references": [
+        "0x085F7548"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven4",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2742,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279BF3",
+      "japanese_text_address": "0x0826C0D6",
+      "japanese_references": [
+        "0x085F7550"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven5",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2748,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279C37",
+      "japanese_text_address": "0x0826C118",
+      "japanese_references": [
+        "0x085F7558"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_Steven7",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2759,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279C93",
+      "japanese_text_address": "0x0826C174",
+      "japanese_references": [
+        "0x085F7568"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_BirchRegisterCall",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2766,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279CD5",
+      "japanese_text_address": "0x0826C1AF",
+      "japanese_references": [
+        "0x081F186F"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_RegisteredBirch",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2777,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279D6A",
+      "japanese_text_address": "0x0826C23E",
+      "japanese_references": [
+        "0x081F187E"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone1",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2786,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279DD1",
+      "japanese_text_address": "0x0826C287",
+      "japanese_references": [
+        "0x085F7428"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone2",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2800,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279E9A",
+      "japanese_text_address": "0x0826C35D",
+      "japanese_references": [
+        "0x085F7430"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone3",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2812,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279F43",
+      "japanese_text_address": "0x0826C400",
+      "japanese_references": [
+        "0x085F7438"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone4",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2820,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08279FB1",
+      "japanese_text_address": "0x0826C465",
+      "japanese_references": [
+        "0x085F7440"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone5",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2831,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A048",
+      "japanese_text_address": "0x0826C4FB",
+      "japanese_references": [
+        "0x085F7448"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone10",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2866,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A1F6",
+      "japanese_text_address": "0x0826C687",
+      "japanese_references": [
+        "0x085F7470"
+      ]
+    },
+    {
+      "source_symbol": "MatchCall_Text_MrStone11",
+      "source": "data/text/match_call.inc",
+      "wokann_source": "data/text/match_call.inc",
+      "wokann_label_line": 2876,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0827A276",
+      "japanese_text_address": "0x0826C707",
+      "japanese_references": [
+        "0x085F7478"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "MatchCall_WildBattleText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_WildBattleText15",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_NegativeBattleText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PositiveBattleText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_SameRouteBattleRequestText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_DifferentRouteBattleRequestText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText15",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText16",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText17",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText18",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText19",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText20",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText21",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText22",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText23",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText24",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText25",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText26",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText28",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText29",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText30",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText31",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText32",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText33",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText34",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText35",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText36",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText37",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText38",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText39",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText40",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText41",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText42",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText43",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText44",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText45",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText46",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText47",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText48",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText49",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText50",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText51",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText52",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText53",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText54",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText55",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText56",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText57",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText59",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText61",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText62",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText63",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_PersonalizedText64",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierStreakText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleFrontierRecordStreakText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattleDomeText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePikeText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText1",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText2",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText3",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText4",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText5",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText6",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText7",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText8",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText9",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText10",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText11",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText12",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText13",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_BattlePyramidText14",
+      "source": "data/text/match_call.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "symbol": "MatchCall_Text_UnusedProfBirch",
+      "source": "data/text/match_call.inc",
+      "reason": "no_japanese_pointer"
+    }
+  ]
+}

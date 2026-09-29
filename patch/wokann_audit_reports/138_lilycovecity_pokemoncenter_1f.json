@@ -1,0 +1,1221 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "138_lilycovecity_pokemoncenter_1f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Lilycove City dialogue: LilycoveCity_PokemonCenter_1F",
+  "summary": {
+    "verified_source_definition": 51,
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0826489B",
+      "jp_original_text": "0x0826509A",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_AskingForOnePokeblock",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_AskingForOnePokeblock",
+      "base_rom_value": "0x0826509A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 715
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082649B8",
+      "jp_original_text": "0x08265035",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_DontHaveAPokeblockCase",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_DontHaveAPokeblockCase",
+      "base_rom_value": "0x08265035",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 707
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082082AE",
+      "jp_original_text": "0x08208337",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels",
+      "base_rom_value": "0x08208337",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 63,
+          "symbol": "LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 63
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082082A4",
+      "jp_original_text": "0x082082FD",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels",
+      "base_rom_value": "0x082082FD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 58,
+          "symbol": "LilycoveCity_PokemonCenter_1F_Text_HeardAboutRottenScoundrels"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 58
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0826461C",
+      "jp_original_text": "0x08264D7A",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_HowBoringBye",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_HowBoringBye",
+      "base_rom_value": "0x08264D7A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 619
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08208290",
+      "jp_original_text": "0x082082B6",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon",
+      "base_rom_value": "0x082082B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 51,
+          "symbol": "LilycoveCity_PokemonCenter_1F_Text_HowManyKindsOfPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonCenter_1F/scripts.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082648E1",
+      "jp_original_text": "0x082650C6",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ICantHaveOnePokeblock",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ICantHaveOnePokeblock",
+      "base_rom_value": "0x082650C6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 720
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082646E8",
+      "jp_original_text": "0x08264E41",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IGetToKeepPrize",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IGetToKeepPrize",
+      "base_rom_value": "0x08264E41",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 649
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082644FF",
+      "jp_original_text": "0x08264BC5",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IWillCherishThis",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IWillCherishThis",
+      "base_rom_value": "0x08264BC5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 569
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826450C",
+      "jp_original_text": "0x08264C02",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IWillTreasureThis",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IWillTreasureThis",
+      "base_rom_value": "0x08264C02",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 576
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264524",
+      "jp_original_text": "0x08264C5A",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IllGiveYouThisInReturn",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IllGiveYouThisInReturn",
+      "base_rom_value": "0x08264C5A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 586
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826482A",
+      "jp_original_text": "0x08264F8C",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IllLookForAChallenger",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IllLookForAChallenger",
+      "base_rom_value": "0x08264F8C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 688
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082644D6",
+      "jp_original_text": "0x08264B85",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IllTryToCherishIt",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IllTryToCherishIt",
+      "base_rom_value": "0x08264B85",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 562
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264900",
+      "jp_original_text": "0x082650E0",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IllUseYourPokeblock",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IllUseYourPokeblock",
+      "base_rom_value": "0x082650E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 726
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264836",
+      "jp_original_text": "0x08264FC8",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ImTheContestLady",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ImTheContestLady",
+      "base_rom_value": "0x08264FC8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 694
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082643A1",
+      "jp_original_text": "0x08264A71",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ImTheFavorLady",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ImTheFavorLady",
+      "base_rom_value": "0x08264A71",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 522
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264560",
+      "jp_original_text": "0x08264CBD",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ImTheQuizLady",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ImTheQuizLady",
+      "base_rom_value": "0x08264CBD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 596
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826445E",
+      "jp_original_text": "0x08264B63",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_IsThatSoGoodbye",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_IsThatSoGoodbye",
+      "base_rom_value": "0x08264B63",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 555
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264A55",
+      "jp_original_text": "0x082651B8",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_Kecleon",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_Kecleon",
+      "base_rom_value": "0x082651B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 753
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264763",
+      "jp_original_text": "0x08264E73",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_MakeYourOwnQuiz",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_MakeYourOwnQuiz",
+      "base_rom_value": "0x08264E73",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 655
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264785",
+      "jp_original_text": "0x08264E8E",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_MaybeNextTime",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_MaybeNextTime",
+      "base_rom_value": "0x08264E8E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264883",
+      "jp_original_text": "0x08264FF8",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_MyFriendDisplaysQuality",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_MyFriendDisplaysQuality",
+      "base_rom_value": "0x08264FF8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 701
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826497A",
+      "jp_original_text": "0x082650FD",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_NoChangeThanks",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_NoChangeThanks",
+      "base_rom_value": "0x082650FD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 730
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264498",
+      "jp_original_text": "0x08264B77",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_NotWillingToShare",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_NotWillingToShare",
+      "base_rom_value": "0x08264B77",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 559
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082643DD",
+      "jp_original_text": "0x08264A82",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ObsessedWithThing",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ObsessedWithThing",
+      "base_rom_value": "0x08264A82",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 525
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826478F",
+      "jp_original_text": "0x08264EA2",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_PickYourPrize",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_PickYourPrize",
+      "base_rom_value": "0x08264EA2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 663
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264A68",
+      "jp_original_text": "0x082651CF",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_Pikachu",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_Pikachu",
+      "base_rom_value": "0x082651CF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 759
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264423",
+      "jp_original_text": "0x08264AAE",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeBadThing",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeBadThing",
+      "base_rom_value": "0x08264AAE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 533
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264431",
+      "jp_original_text": "0x08264AED",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeGreatThing",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_PlayerGaveMeGreatThing",
+      "base_rom_value": "0x08264AED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 541
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264A42",
+      "jp_original_text": "0x082651C3",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_Poochyena",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_Poochyena",
+      "base_rom_value": "0x082651C3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 756
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082647B9",
+      "jp_original_text": "0x08264F11",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_QuitChoosingPrize",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_QuitChoosingPrize",
+      "base_rom_value": "0x08264F11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 672
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264802",
+      "jp_original_text": "0x08264F65",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizQuestion",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_QuitWritingQuizQuestion",
+      "base_rom_value": "0x08264F65",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 682
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082649AB",
+      "jp_original_text": "0x08265168",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ReadyToEnterContests",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ReadyToEnterContests",
+      "base_rom_value": "0x08265168",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 743
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826498B",
+      "jp_original_text": "0x0826512D",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ReallyImprovedThanks",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ReallyImprovedThanks",
+      "base_rom_value": "0x0826512D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 737
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264A2F",
+      "jp_original_text": "0x082651D7",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_Skitty",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_Skitty",
+      "base_rom_value": "0x082651D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 762
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082645FD",
+      "jp_original_text": "0x08264D3A",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_TakeQuizChallenge",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_TakeQuizChallenge",
+      "base_rom_value": "0x08264D3A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 610
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264689",
+      "jp_original_text": "0x08264D97",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_TakeTheQuizAnotherTime",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_TakeTheQuizAnotherTime",
+      "base_rom_value": "0x08264D97",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 625
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264876",
+      "jp_original_text": "0x08264FE6",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ThankForPokeblock",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ThankForPokeblock",
+      "base_rom_value": "0x08264FE6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 698
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082643D0",
+      "jp_original_text": "0x08264A9D",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_ThankYouForLastTime",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_ThankYouForLastTime",
+      "base_rom_value": "0x08264A9D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 529
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082645DC",
+      "jp_original_text": "0x08264D11",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WaitingForChallenger",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WaitingForChallenger",
+      "base_rom_value": "0x08264D11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 606
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082645EA",
+      "jp_original_text": "0x08264D11",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WaitingForChallenger",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WaitingForChallenger",
+      "base_rom_value": "0x08264D11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 606
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082645D2",
+      "jp_original_text": "0x08264CD7",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WaitingToTakeYourQuiz",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WaitingToTakeYourQuiz",
+      "base_rom_value": "0x08264CD7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 600
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082648BA",
+      "jp_original_text": "0x082650D6",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WhatACheapskate",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WhatACheapskate",
+      "base_rom_value": "0x082650D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 723
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264468",
+      "jp_original_text": "0x08264B50",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WhatWillYouGiveMe",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WhatWillYouGiveMe",
+      "base_rom_value": "0x08264B50",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 552
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826443F",
+      "jp_original_text": "0x08264B1E",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WillYouShareThing",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WillYouShareThing",
+      "base_rom_value": "0x08264B1E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 547
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082647D8",
+      "jp_original_text": "0x08264F37",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WriteYourQuiz",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WriteYourQuiz",
+      "base_rom_value": "0x08264F37",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 677
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082646E0",
+      "jp_original_text": "0x08264E27",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_WrongTheCorrectAnswerIs",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_WrongTheCorrectAnswerIs",
+      "base_rom_value": "0x08264E27",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 645
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826454F",
+      "jp_original_text": "0x08264C91",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YouDontHaveSpaceForIt",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YouDontHaveSpaceForIt",
+      "base_rom_value": "0x08264C91",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 591
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082646C3",
+      "jp_original_text": "0x08264DA6",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YouGotItRight",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YouGotItRight",
+      "base_rom_value": "0x08264DA6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 628
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264712",
+      "jp_original_text": "0x08264DC7",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YouGotItRightYouveWonPersonsPrize",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YouGotItRightYouveWonPersonsPrize",
+      "base_rom_value": "0x08264DC7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 632
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264720",
+      "jp_original_text": "0x08264DC7",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YouGotItRightYouveWonPersonsPrize",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YouGotItRightYouveWonPersonsPrize",
+      "base_rom_value": "0x08264DC7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 632
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264756",
+      "jp_original_text": "0x08264DFB",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YourBagIsFilledUp",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YourBagIsFilledUp",
+      "base_rom_value": "0x08264DFB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 641
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0826466A",
+      "jp_original_text": "0x08264D88",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_YoureGoingToQuit",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_YoureGoingToQuit",
+      "base_rom_value": "0x08264D88",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 622
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08264A1C",
+      "jp_original_text": "0x082651AF",
+      "batch_source_symbol": "LilycoveCity_PokemonCenter_1F_Text_Zigzagoon",
+      "patch_symbol": "Chs_LilycoveCity_PokemonCenter_1F_Text_Zigzagoon",
+      "base_rom_value": "0x082651AF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/lilycove_lady.inc",
+          "line": 750
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

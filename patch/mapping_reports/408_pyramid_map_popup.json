@@ -1,0 +1,17 @@
+{
+  "source_commit": "fe570a7e5",
+  "source_file": "src/map_name_popup.c",
+  "wokann_file": "src/map_name_popup.c",
+  "status": "mapped; emulator_not_tested",
+  "mapping_policy": "The eight Wokann sText_Pyramid* strings were encoded with the Japanese charmap. Each encoded string was found at the listed original address in baserom_jp.gba; each address has exactly one ROM pointer, in the ordered sBattlePyramid_MapHeaderStrings array. The US Chinese text is copied exactly from commit fe570a7e5.",
+  "mappings": [
+    {"symbol": "sText_PyramidFloor1", "original": "0x0855A028", "reference": "0x0855A074"},
+    {"symbol": "sText_PyramidFloor2", "original": "0x0855A032", "reference": "0x0855A078"},
+    {"symbol": "sText_PyramidFloor3", "original": "0x0855A03C", "reference": "0x0855A07C"},
+    {"symbol": "sText_PyramidFloor4", "original": "0x0855A046", "reference": "0x0855A080"},
+    {"symbol": "sText_PyramidFloor5", "original": "0x0855A050", "reference": "0x0855A084"},
+    {"symbol": "sText_PyramidFloor6", "original": "0x0855A05A", "reference": "0x0855A088"},
+    {"symbol": "sText_PyramidFloor7", "original": "0x0855A064", "reference": "0x0855A08C"},
+    {"symbol": "sText_Pyramid", "original": "0x0855A06E", "reference": "0x0855A090"}
+  ]
+}

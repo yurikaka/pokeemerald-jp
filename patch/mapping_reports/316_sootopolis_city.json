@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "batch": "316_sootopolis_city.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/SootopolisCity/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 44,
+  "unresolved_count": 0,
+  "reference_count": 44,
+  "mapped": [
+    {
+      "source_symbol": "SootopolisCity_Text_GymSign",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1382,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E41B7",
+      "japanese_text_address": "0x081E2C09",
+      "japanese_references": [
+        "0x081E27E7"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_CitySign",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1387,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E41E9",
+      "japanese_text_address": "0x081E2C31",
+      "japanese_references": [
+        "0x081E27F0"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_DoorIsClosed",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1391,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E420D",
+      "japanese_text_address": "0x081E2C4D",
+      "japanese_references": [
+        "0x081E27F9"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_PhysicallyFitLivingHere",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1393,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E421B",
+      "japanese_text_address": "0x081E2C5C",
+      "japanese_references": [
+        "0x081E27DD"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GiantPokemonSuddenlyAppeared",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1399,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4268",
+      "japanese_text_address": "0x081E2C9A",
+      "japanese_references": [
+        "0x081E27B4"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_WhatIsThatGreenPokemon",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1407,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E42D7",
+      "japanese_text_address": "0x081E2D00",
+      "japanese_references": [
+        "0x081E27C9"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_WhereDidLegendariesGo",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1411,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4300",
+      "japanese_text_address": "0x081E2D1F",
+      "japanese_references": [
+        "0x081E27D3"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_TwoPokemonArentAngry",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1417,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4342",
+      "japanese_text_address": "0x081E2D60",
+      "japanese_references": [
+        "0x081E2A0F"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_FlyingMonStoppedRampage",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1423,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E438E",
+      "japanese_text_address": "0x081E2DAA",
+      "japanese_references": [
+        "0x081E2A24"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_WonderWhatWorldIsLike",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1428,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E43C6",
+      "japanese_text_address": "0x081E2DD3",
+      "japanese_references": [
+        "0x081E276B"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_ThisIsWicked",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1434,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4403",
+      "japanese_text_address": "0x081E2E17",
+      "japanese_references": [
+        "0x081E2756"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_ThatWasWicked",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1437,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4413",
+      "japanese_text_address": "0x081E2E24",
+      "japanese_references": [
+        "0x081E2775"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GoRedAndBlueMon",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1440,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4425",
+      "japanese_text_address": "0x081E2E35",
+      "japanese_references": [
+        "0x081E2A3B"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_DoYouKnowMonNames",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1444,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4449",
+      "japanese_text_address": "0x081E2E55",
+      "japanese_references": [
+        "0x081E2A4E"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GreenOneSettlesThings",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1449,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E447A",
+      "japanese_text_address": "0x081E2E7F",
+      "japanese_references": [
+        "0x081E2A6D"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SeeingLegendWithOwnEyes",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1455,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E44D1",
+      "japanese_text_address": "0x081E2EC0",
+      "japanese_references": [
+        "0x081E2AC3"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SawLegendWithOwnEyes",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1463,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4552",
+      "japanese_text_address": "0x081E2F2C",
+      "japanese_references": [
+        "0x081E2AD8"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_BigPokemonFighting",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1471,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E45D3",
+      "japanese_text_address": "0x081E2F96",
+      "japanese_references": [
+        "0x081E2597"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_PrettyMonCameFromSky",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1476,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4619",
+      "japanese_text_address": "0x081E2FBE",
+      "japanese_references": [
+        "0x081E25AC"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SootopolisWillBeWrecked",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1480,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4637",
+      "japanese_text_address": "0x081E2FD7",
+      "japanese_references": [
+        "0x081E2A8D"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SootopolisDidntGetWrecked",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1483,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4650",
+      "japanese_text_address": "0x081E2FEB",
+      "japanese_references": [
+        "0x081E2AA2"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_NoOrdinaryTourist",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1486,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4662",
+      "japanese_text_address": "0x081E2FFF",
+      "japanese_references": [
+        "0x081E26C0"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_CityRegainedCalm",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1493,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E46C1",
+      "japanese_text_address": "0x081E304B",
+      "japanese_references": [
+        "0x081E26CA"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_CaveOfOriginPleaseLeave",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1496,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E46D4",
+      "japanese_text_address": "0x081E305D",
+      "japanese_references": [
+        "0x081E254C"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_LeadSuperiorTrainerToCave",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1504,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4721",
+      "japanese_text_address": "0x081E30B4",
+      "japanese_references": [
+        "0x081E2556"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_AwakenedPokemonClash",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1512,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E478E",
+      "japanese_text_address": "0x081E311F",
+      "japanese_references": [
+        "0x081E256A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_CaveOfOriginSleepsToo",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1517,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E47CF",
+      "japanese_text_address": "0x081E3148",
+      "japanese_references": [
+        "0x081E2560"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SootopolisSkyBeautiful",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1522,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4801",
+      "japanese_text_address": "0x081E317C",
+      "japanese_references": [
+        "0x081E26F7"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GiganticPokemonFight",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1532,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E488B",
+      "japanese_text_address": "0x081E31E2",
+      "japanese_references": [
+        "0x081E2701"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_FearedWorstWhenPokemonFlewDown",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1537,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E48BD",
+      "japanese_text_address": "0x081E3217",
+      "japanese_references": [
+        "0x081E2720"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_NightSkyFavoriteScenery",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1542,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E48EB",
+      "japanese_text_address": "0x081E324C",
+      "japanese_references": [
+        "0x081E2716"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_WeatherWentWild",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1549,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4944",
+      "japanese_text_address": "0x081E32A3",
+      "japanese_references": [
+        "0x081E2694"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_YouBroughtFlyingMon",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1559,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E49D6",
+      "japanese_text_address": "0x081E3326",
+      "japanese_references": [
+        "0x081E26A9"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GroudonPleaseStop",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1565,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4A0A",
+      "japanese_text_address": "0x081E335D",
+      "japanese_references": [
+        "0x081E2B9A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_AfterAllOurScheming",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1573,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4A79",
+      "japanese_text_address": "0x081E33BA",
+      "japanese_references": [
+        "0x081E2BA5"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_KyogreCalmDown",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1583,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4B1A",
+      "japanese_text_address": "0x081E343A",
+      "japanese_references": [
+        "0x081E2BC7"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_TryingMeaninglessToPokemon",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1591,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4B7E",
+      "japanese_text_address": "0x081E3495",
+      "japanese_references": [
+        "0x081E2BD2"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_HereWereAreHelpWallace",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1626,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4D7B",
+      "japanese_text_address": "0x081E3656",
+      "japanese_references": [
+        "0x081E28BF"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_KnowWhatsNeededToHelpHim",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1633,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4DC7",
+      "japanese_text_address": "0x081E369B",
+      "japanese_references": [
+        "0x081E284A"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_NeverBeenToSkyPillar",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1637,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4DEA",
+      "japanese_text_address": "0x081E36BF",
+      "japanese_references": [
+        "0x081E285E"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_SoThatsRayquaza",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1642,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4E16",
+      "japanese_text_address": "0x081E36F0",
+      "japanese_references": [
+        "0x081E2840"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_MaxieArchieLeft",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1647,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4E59",
+      "japanese_text_address": "0x081E3726",
+      "japanese_references": [
+        "0x081E2854"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_ExplainWaterfallGoToGym",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1679,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E4FD3",
+      "japanese_text_address": "0x081E38A0",
+      "japanese_references": [
+        "0x081E2B22"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_DazzledByMentor",
+      "source": "data/maps/SootopolisCity/scripts.inc",
+      "wokann_label_line": 1691,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x081E509D",
+      "japanese_text_address": "0x081E3943",
+      "japanese_references": [
+        "0x081E2B7E"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "280_pacifidlog_town.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: PacifidlogTown",
+  "summary": {
+    "verified_source_definition": 4
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081E639E",
+      "jp_original_text": "0x081E63B7",
+      "batch_source_symbol": "PacifidlogTown_Text_FastRunningCurrent",
+      "patch_symbol": "Chs_PacifidlogTown_Text_FastRunningCurrent",
+      "base_rom_value": "0x081E63B7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown/scripts.inc",
+          "line": 31
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081E6395",
+      "jp_original_text": "0x081E63F7",
+      "batch_source_symbol": "PacifidlogTown_Text_NeatHousesOnWater",
+      "patch_symbol": "Chs_PacifidlogTown_Text_NeatHousesOnWater",
+      "base_rom_value": "0x081E63F7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown/scripts.inc",
+          "line": 37
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081E63A7",
+      "jp_original_text": "0x081E6429",
+      "batch_source_symbol": "PacifidlogTown_Text_SkyPillarTooScary",
+      "patch_symbol": "Chs_PacifidlogTown_Text_SkyPillarTooScary",
+      "base_rom_value": "0x081E6429",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown/scripts.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081E63B0",
+      "jp_original_text": "0x081E6499",
+      "batch_source_symbol": "PacifidlogTown_Text_TownSign",
+      "patch_symbol": "Chs_PacifidlogTown_Text_TownSign",
+      "base_rom_value": "0x081E6499",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PacifidlogTown/scripts.inc",
+          "line": 52
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

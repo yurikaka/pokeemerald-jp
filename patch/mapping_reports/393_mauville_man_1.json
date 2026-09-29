@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "batch": "393_mauville_man_1.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/scripts/mauville_man.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 24,
+  "unresolved_count": 37,
+  "reference_count": 24,
+  "mapped": [
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 639,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FAC4",
+      "japanese_text_address": "0x08255DD4",
+      "japanese_references": [
+        "0x0857AE04"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_TimesRainedTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 650,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FB18",
+      "japanese_text_address": "0x08255E31",
+      "japanese_references": [
+        "0x0857AE10"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_TimesRainedAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 653,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FB29",
+      "japanese_text_address": "0x08255E40",
+      "japanese_references": [
+        "0x0857AE14"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 664,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FB6D",
+      "japanese_text_address": "0x08255E9E",
+      "japanese_references": [
+        "0x0857AE20"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 667,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FB7E",
+      "japanese_text_address": "0x08255EB1",
+      "japanese_references": [
+        "0x0857AE24"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 678,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FBE2",
+      "japanese_text_address": "0x08255F0B",
+      "japanese_references": [
+        "0x0857AE30"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 681,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FBED",
+      "japanese_text_address": "0x08255F20",
+      "japanese_references": [
+        "0x0857AE34"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 692,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FC39",
+      "japanese_text_address": "0x08255F7C",
+      "japanese_references": [
+        "0x0857AE40"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 695,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FC48",
+      "japanese_text_address": "0x08255F90",
+      "japanese_references": [
+        "0x0857AE44"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_TVWatchedTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 706,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FC9F",
+      "japanese_text_address": "0x08255FED",
+      "japanese_references": [
+        "0x0857AE50"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_TVWatchedAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 709,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FCA6",
+      "japanese_text_address": "0x08255FFE",
+      "japanese_references": [
+        "0x0857AE54"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedClockTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 720,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FCED",
+      "japanese_text_address": "0x08256049",
+      "japanese_references": [
+        "0x0857AE60"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedClockAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 723,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FCF8",
+      "japanese_text_address": "0x0825605A",
+      "japanese_references": [
+        "0x0857AE64"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_WonLotteryTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 734,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FD46",
+      "japanese_text_address": "0x082560AF",
+      "japanese_references": [
+        "0x0857AE70"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_WonLotteryAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 737,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FD4F",
+      "japanese_text_address": "0x082560C5",
+      "japanese_references": [
+        "0x0857AE74"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 748,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FDB1",
+      "japanese_text_address": "0x0825612C",
+      "japanese_references": [
+        "0x0857AE80"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedDaycareAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 751,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FDC6",
+      "japanese_text_address": "0x0825613F",
+      "japanese_references": [
+        "0x0857AE84"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_RodeCableCarTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 762,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FE2E",
+      "japanese_text_address": "0x082561A4",
+      "japanese_references": [
+        "0x0857AE90"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_RodeCableCarAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 765,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FE35",
+      "japanese_text_address": "0x082561B6",
+      "japanese_references": [
+        "0x0857AE94"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_HotSpringsTitle",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 776,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FE89",
+      "japanese_text_address": "0x08256211",
+      "japanese_references": [
+        "0x0857AEA0"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_HotSpringsAction",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 779,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FE94",
+      "japanese_text_address": "0x08256224",
+      "japanese_references": [
+        "0x0857AEA4"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_GiddyFeelingTheBlues",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 861,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825FFF9",
+      "japanese_text_address": "0x0825638A",
+      "japanese_references": [
+        "0x0825644A"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_AlsoIWasThinking",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 865,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08260017",
+      "japanese_text_address": "0x08256397",
+      "japanese_references": [
+        "0x0825641B"
+      ]
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_WeShouldChatAgain",
+      "source": "data/scripts/mauville_man.inc",
+      "wokann_source": "data/scripts/mauville_man.inc",
+      "wokann_label_line": 868,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08260026",
+      "japanese_text_address": "0x082563A5",
+      "japanese_references": [
+        "0x08256454"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_HearAnotherLegendaryTale",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_SavedGameStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_TrendsStartedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_BerriesPlantedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_BikeTradesStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_InterviewsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_PokemonCaughtStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_FishingPokemonCaughtStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_EggsHatchedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_PokemonEvolvedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedPokemonCenterStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_RestedAtHomeStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_SafariGamesStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedCutStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedRockSmashStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_MovedBasesStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedSplashStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedStruggleStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_SlotJackpotsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_RouletteWinsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_BattleTowerChallengesStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_MadePokeblocksStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_EnteredContestsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_WonContestsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_TimesShoppedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedItemFinderStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_TimesRainedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_TVWatchedStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedClockStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_WonLotteryStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_RodeCableCarStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_HotSpringsStory",
+      "source": "data/scripts/mauville_man.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    }
+  ]
+}

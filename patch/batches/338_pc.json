@@ -1,0 +1,91 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/text/pc.inc",
+  "texts": [
+    {
+      "name": "Chs_gText_WhichPCShouldBeAccessed",
+      "source_symbol": "gText_WhichPCShouldBeAccessed",
+      "us_encoded_hex": "0ef1087f072509ba0ca9032e09ca3dff"
+    },
+    {
+      "name": "Chs_gText_AccessedSomeonesPC",
+      "source_symbol": "gText_AccessedSomeonesPC",
+      "us_encoded_hex": "087f07250bad089e09a90b4b030b032e09ca3cff"
+    },
+    {
+      "name": "Chs_gText_StorageSystemOpened",
+      "source_symbol": "gText_StorageSystemOpened",
+      "us_encoded_hex": "033e0278089e016307d7096605af03c80dd90d1b3cff"
+    },
+    {
+      "name": "Chs_gText_AccessedPlayersPC",
+      "source_symbol": "gText_AccessedPlayersPC",
+      "us_encoded_hex": "087f07250bad089efd01030b032e09ca3cff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_gText_AccessedLanettesPC",
+      "source_symbol": "gText_AccessedLanettesPC",
+      "us_encoded_hex": "087f07250bad089e10590f770958030b032e09ca3cff"
+    },
+    {
+      "name": "Chs_Text_BootUpPC",
+      "source_symbol": "Text_BootUpPC",
+      "us_encoded_hex": "fd01030e08ed089e032e09ca37ff",
+      "japanese_placeholders": [
+        1
+      ]
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x080E1A3C",
+      "original": "0x082436CD",
+      "symbol": "Chs_gText_WhichPCShouldBeAccessed",
+      "source_symbol": "gText_WhichPCShouldBeAccessed"
+    },
+    {
+      "address": "0x08242E39",
+      "original": "0x082436CD",
+      "symbol": "Chs_gText_WhichPCShouldBeAccessed",
+      "source_symbol": "gText_WhichPCShouldBeAccessed"
+    },
+    {
+      "address": "0x08242EC3",
+      "original": "0x082436EA",
+      "symbol": "Chs_gText_AccessedSomeonesPC",
+      "source_symbol": "gText_AccessedSomeonesPC"
+    },
+    {
+      "address": "0x08242EB1",
+      "original": "0x082436FE",
+      "symbol": "Chs_gText_StorageSystemOpened",
+      "source_symbol": "gText_StorageSystemOpened"
+    },
+    {
+      "address": "0x08242E8A",
+      "original": "0x08243716",
+      "symbol": "Chs_gText_AccessedPlayersPC",
+      "source_symbol": "gText_AccessedPlayersPC"
+    },
+    {
+      "address": "0x08242ECC",
+      "original": "0x08243728",
+      "symbol": "Chs_gText_AccessedLanettesPC",
+      "source_symbol": "gText_AccessedLanettesPC"
+    },
+    {
+      "address": "0x08242E2C",
+      "original": "0x082436B8",
+      "symbol": "Chs_Text_BootUpPC",
+      "source_symbol": "Text_BootUpPC"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/338_pc.json",
+    "mapped_count": 6,
+    "unresolved_count": 0
+  }
+}

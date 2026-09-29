@@ -1,0 +1,637 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "398_player_name_dialogue.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/maps/BattleFrontier_ReceptionGate/scripts.inc, data/maps/BattleFrontier_ScottsHouse/scripts.inc, data/maps/CaveOfOrigin_B1F/scripts.inc, data/maps/EverGrandeCity_ChampionsRoom/scripts.inc, data/maps/SSTidalCorridor/scripts.inc, data/maps/SkyPillar_Outside/scripts.inc, data/maps/SootopolisCity/scripts.inc",
+  "summary": {
+    "verified_source_definition": 7,
+    "verified_text_label": 16
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0823A2AA",
+      "jp_original_text": "0x0823A6B4",
+      "batch_source_symbol": "BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame",
+      "patch_symbol": "Chs_BattleFrontier_ReceptionGate_Text_IfItIsntPlayerYouCame",
+      "base_rom_value": "0x0823A6B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "line": 324
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082388BB",
+      "jp_original_text": "0x082389B5",
+      "batch_source_symbol": "BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
+      "patch_symbol": "Chs_BattleFrontier_ScottsHouse_Text_WelcomeToBattleFrontier",
+      "base_rom_value": "0x082389B5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+          "line": 211
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08238905",
+      "jp_original_text": "0x08238A81",
+      "batch_source_symbol": "BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing",
+      "patch_symbol": "Chs_BattleFrontier_ScottsHouse_Text_HaveThisAsMementoOfOurPathsCrossing",
+      "base_rom_value": "0x08238A81",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+          "line": 227
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08219103",
+      "jp_original_text": "0x082191C4",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_WallaceStory",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_WallaceStory",
+      "base_rom_value": "0x082191C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 63,
+          "symbol": "CaveOfOrigin_B1F_Text_WallaceStory"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 63,
+          "symbol": "CaveOfOrigin_B1F_Text_WallaceStory"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 63
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821913C",
+      "jp_original_text": "0x0821931C",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_WhereIsRayquaza",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_WhereIsRayquaza",
+      "base_rom_value": "0x0821931C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 87,
+          "symbol": "CaveOfOrigin_B1F_Text_WhereIsRayquaza"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 87,
+          "symbol": "CaveOfOrigin_B1F_Text_WhereIsRayquaza"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 87
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821918E",
+      "jp_original_text": "0x082193B0",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat",
+      "base_rom_value": "0x082193B0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 100,
+          "symbol": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 100,
+          "symbol": "CaveOfOrigin_B1F_Text_OldLadyDidntMentionThat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 100
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082191A5",
+      "jp_original_text": "0x08219456",
+      "batch_source_symbol": "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar",
+      "patch_symbol": "Chs_CaveOfOrigin_B1F_Text_WellHeadToSkyPillar",
+      "base_rom_value": "0x08219456",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 115,
+          "symbol": "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar"
+        },
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 115,
+          "symbol": "CaveOfOrigin_B1F_Text_WellHeadToSkyPillar"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+          "line": 115
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821092C",
+      "jp_original_text": "0x08210B2D",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_IntroSpeech",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_IntroSpeech",
+      "base_rom_value": "0x08210B2D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 223,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_IntroSpeech"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 223
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08210938",
+      "jp_original_text": "0x08210C82",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_Defeat",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_Defeat",
+      "base_rom_value": "0x08210C82",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 248,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_Defeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 248
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082109A9",
+      "jp_original_text": "0x08210D9B",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayAdvice",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_MayAdvice",
+      "base_rom_value": "0x08210D9B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 271,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_MayAdvice"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 271
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082109D0",
+      "jp_original_text": "0x08210DC2",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver",
+      "base_rom_value": "0x08210DC2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 276,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 276
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08210A2B",
+      "jp_original_text": "0x08210E3F",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex",
+      "base_rom_value": "0x08210E3F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 292,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 292
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08210A57",
+      "jp_original_text": "0x08210F33",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe",
+      "base_rom_value": "0x08210F33",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 312,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 312
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08210ACE",
+      "jp_original_text": "0x08210FD2",
+      "batch_source_symbol": "EverGrandeCity_ChampionsRoom_Text_MayCongratulations",
+      "patch_symbol": "Chs_EverGrandeCity_ChampionsRoom_Text_MayCongratulations",
+      "base_rom_value": "0x08210FD2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 326,
+          "symbol": "EverGrandeCity_ChampionsRoom_Text_MayCongratulations"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+          "line": 326
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821E0A7",
+      "jp_original_text": "0x0821E106",
+      "batch_source_symbol": "SSTidalCorridor_Text_ScottBattleFrontierInvite",
+      "patch_symbol": "Chs_SSTidalCorridor_Text_ScottBattleFrontierInvite",
+      "base_rom_value": "0x0821E106",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalCorridor/scripts.inc",
+          "line": 251
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821DF52",
+      "jp_original_text": "0x0821E350",
+      "batch_source_symbol": "SSTidalCorridor_Text_BrineyWelcomeAboard",
+      "patch_symbol": "Chs_SSTidalCorridor_Text_BrineyWelcomeAboard",
+      "base_rom_value": "0x0821E350",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalCorridor/scripts.inc",
+          "line": 309
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821BC60",
+      "jp_original_text": "0x0821BD56",
+      "batch_source_symbol": "SkyPillar_Outside_Text_OpenedDoorToSkyPillar",
+      "patch_symbol": "Chs_SkyPillar_Outside_Text_OpenedDoorToSkyPillar",
+      "base_rom_value": "0x0821BD56",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SkyPillar_Outside/scripts.inc",
+          "line": 144
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821BCFA",
+      "jp_original_text": "0x0821BDF8",
+      "batch_source_symbol": "SkyPillar_Outside_Text_GotToGoBackForSootopolis",
+      "patch_symbol": "Chs_SkyPillar_Outside_Text_GotToGoBackForSootopolis",
+      "base_rom_value": "0x0821BDF8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SkyPillar_Outside/scripts.inc",
+          "line": 161
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081E2868",
+      "jp_original_text": "0x081E350F",
+      "batch_source_symbol": "SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+      "patch_symbol": "Chs_SootopolisCity_Text_InvolvedWithCrisisComeWithMe",
+      "base_rom_value": "0x081E350F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1600,
+          "symbol": "SootopolisCity_Text_InvolvedWithCrisisComeWithMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1600
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E2887",
+      "jp_original_text": "0x081E35DC",
+      "batch_source_symbol": "SootopolisCity_Text_DoesThisMakeYourFearPokemon",
+      "patch_symbol": "Chs_SootopolisCity_Text_DoesThisMakeYourFearPokemon",
+      "base_rom_value": "0x081E35DC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1616,
+          "symbol": "SootopolisCity_Text_DoesThisMakeYourFearPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1616
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E2B74",
+      "jp_original_text": "0x081E376F",
+      "batch_source_symbol": "SootopolisCity_Text_HaventYouScaledSkyPillar",
+      "patch_symbol": "Chs_SootopolisCity_Text_HaventYouScaledSkyPillar",
+      "base_rom_value": "0x081E376F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1652,
+          "symbol": "SootopolisCity_Text_HaventYouScaledSkyPillar"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1652
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E2B01",
+      "jp_original_text": "0x081E37B8",
+      "batch_source_symbol": "SootopolisCity_Text_AquaMagmaDidntMeanHarm",
+      "patch_symbol": "Chs_SootopolisCity_Text_AquaMagmaDidntMeanHarm",
+      "base_rom_value": "0x081E37B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1659,
+          "symbol": "SootopolisCity_Text_AquaMagmaDidntMeanHarm"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1659
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E2B0B",
+      "jp_original_text": "0x081E380B",
+      "batch_source_symbol": "SootopolisCity_Text_ThankYouForHelpAcceptThis",
+      "patch_symbol": "Chs_SootopolisCity_Text_ThankYouForHelpAcceptThis",
+      "base_rom_value": "0x081E380B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1666,
+          "symbol": "SootopolisCity_Text_ThankYouForHelpAcceptThis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SootopolisCity/scripts.inc",
+          "line": 1666
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

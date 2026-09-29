@@ -1,0 +1,2241 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "126_lilycovecity_contestlobby.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Lilycove City dialogue: LilycoveCity_ContestLobby",
+  "summary": {
+    "verified_source_definition": 24,
+    "verified_text_label": 56
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08248D76",
+      "jp_original_text": "0x0824A05C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway",
+      "base_rom_value": "0x0824A05C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1457
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08248B81",
+      "jp_original_text": "0x0824A165",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ComeBackForPrizeLater",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ComeBackForPrizeLater",
+      "base_rom_value": "0x0824A165",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1483
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206D8E",
+      "jp_original_text": "0x0824A10A",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ComeThroughHere",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ComeThroughHere",
+      "base_rom_value": "0x0824A10A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12241,
+          "symbol": "LilycoveCity_ContestLobby_Text_ComeThroughHere"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1473
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820736F",
+      "jp_original_text": "0x0824A10A",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ComeThroughHere",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ComeThroughHere",
+      "base_rom_value": "0x0824A10A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12241,
+          "symbol": "LilycoveCity_ContestLobby_Text_ComeThroughHere"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1473
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248D52",
+      "jp_original_text": "0x0824A0A6",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ConfirmContestMon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ConfirmContestMon",
+      "base_rom_value": "0x0824A0A6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1463
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0820730A",
+      "jp_original_text": "0x0824A6E8",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ContestBeginShortly",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ContestBeginShortly",
+      "base_rom_value": "0x0824A6E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12250,
+          "symbol": "LilycoveCity_ContestLobby_Text_ContestBeginShortly"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1648
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206DDC",
+      "jp_original_text": "0x082076BA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+      "base_rom_value": "0x082076BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1049,
+          "symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1049,
+          "symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1049
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248B1B",
+      "jp_original_text": "0x08249C72",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ContestReception",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ContestReception",
+      "base_rom_value": "0x08249C72",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1371
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08253EB5",
+      "jp_original_text": "0x0824C5FA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_DescribeContest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_DescribeContest",
+      "base_rom_value": "0x0824C5FA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 9
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08248D9A",
+      "jp_original_text": "0x0824A016",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EggCannotTakePart",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EggCannotTakePart",
+      "base_rom_value": "0x0824A016",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1449
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082070B0",
+      "jp_original_text": "0x0824A790",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EggCannotTakePart2",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EggCannotTakePart2",
+      "base_rom_value": "0x0824A790",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12256,
+          "symbol": "LilycoveCity_ContestLobby_Text_EggCannotTakePart2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1671
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248B8A",
+      "jp_original_text": "0x08249CC4",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterContest1",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterContest1",
+      "base_rom_value": "0x08249CC4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1382
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206EDA",
+      "jp_original_text": "0x0824A744",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterContest3",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterContest3",
+      "base_rom_value": "0x0824A744",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12253,
+          "symbol": "LilycoveCity_ContestLobby_Text_EnterContest3"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1660
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248D11",
+      "jp_original_text": "0x08249FB5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterWhichContest1",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterWhichContest1",
+      "base_rom_value": "0x08249FB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1437
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206F9D",
+      "jp_original_text": "0x0824A755",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterWhichContest3",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterWhichContest3",
+      "base_rom_value": "0x0824A755",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12254,
+          "symbol": "LilycoveCity_ContestLobby_Text_EnterWhichContest3"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1664
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248C44",
+      "jp_original_text": "0x08249FC9",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterWhichPokemon1",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterWhichPokemon1",
+      "base_rom_value": "0x08249FC9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1440
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0820704E",
+      "jp_original_text": "0x0824A7AE",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterWhichPokemon3",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterWhichPokemon3",
+      "base_rom_value": "0x0824A7AE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12257,
+          "symbol": "LilycoveCity_ContestLobby_Text_EnterWhichPokemon3"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1675
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248C92",
+      "jp_original_text": "0x08249FA3",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_EnterWhichRank",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_EnterWhichRank",
+      "base_rom_value": "0x08249FA3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1434
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08248C2C",
+      "jp_original_text": "0x08249E8F",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainContestRanks",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainContestRanks",
+      "base_rom_value": "0x08249E8F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1417
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08248C1E",
+      "jp_original_text": "0x08249E1F",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainContestTypes",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainContestTypes",
+      "base_rom_value": "0x08249E1F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1408
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08248C10",
+      "jp_original_text": "0x08249CF5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainContests",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainContests",
+      "base_rom_value": "0x08249CF5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1389
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08207025",
+      "jp_original_text": "0x0824A9B5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainEMode",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainEMode",
+      "base_rom_value": "0x0824A9B5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12261,
+          "symbol": "LilycoveCity_ContestLobby_Text_ExplainEMode"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1714
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207033",
+      "jp_original_text": "0x0824AA8A",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainGMode",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainGMode",
+      "base_rom_value": "0x0824AA8A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12262,
+          "symbol": "LilycoveCity_ContestLobby_Text_ExplainGMode"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1729
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207017",
+      "jp_original_text": "0x0824A86C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ExplainLinkContest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ExplainLinkContest",
+      "base_rom_value": "0x0824A86C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12260,
+          "symbol": "LilycoveCity_ContestLobby_Text_ExplainLinkContest"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1693
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082069B9",
+      "jp_original_text": "0x0820760A",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+      "base_rom_value": "0x0820760A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028,
+          "symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028,
+          "symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206B89",
+      "jp_original_text": "0x0820760A",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs",
+      "base_rom_value": "0x0820760A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028,
+          "symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028,
+          "symbol": "LilycoveCity_ContestLobby_Text_FineThatsTheWayItIs"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1028
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820696C",
+      "jp_original_text": "0x08207519",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+      "base_rom_value": "0x08207519",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998,
+          "symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998,
+          "symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206B3C",
+      "jp_original_text": "0x08207519",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum",
+      "base_rom_value": "0x08207519",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998,
+          "symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998,
+          "symbol": "LilycoveCity_ContestLobby_Text_IllTakePaintingToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 998
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08253E96",
+      "jp_original_text": "0x0824C585",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_InterviewRequest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_InterviewRequest",
+      "base_rom_value": "0x0824C585",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082073BE",
+      "jp_original_text": "0x082073D0",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase",
+      "base_rom_value": "0x082073D0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 967,
+          "symbol": "LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 967,
+          "symbol": "LilycoveCity_ContestLobby_Text_LadyGaveMePokeblockCase"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 967
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206DEE",
+      "jp_original_text": "0x0820771C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_LavishedCareOnMon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_LavishedCareOnMon",
+      "base_rom_value": "0x0820771C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1060,
+          "symbol": "LilycoveCity_ContestLobby_Text_LavishedCareOnMon"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1060,
+          "symbol": "LilycoveCity_ContestLobby_Text_LavishedCareOnMon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1060
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206ECD",
+      "jp_original_text": "0x0824A6FB",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_LinkContestReception",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_LinkContestReception",
+      "base_rom_value": "0x0824A6FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12251,
+          "symbol": "LilycoveCity_ContestLobby_Text_LinkContestReception"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1651
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08253F3B",
+      "jp_original_text": "0x0824C737",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_LookingForwardToNextContest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_LookingForwardToNextContest",
+      "base_rom_value": "0x0824C737",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206DF7",
+      "jp_original_text": "0x0820775B",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily",
+      "base_rom_value": "0x0820775B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1066,
+          "symbol": "LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1066,
+          "symbol": "LilycoveCity_ContestLobby_Text_MadePokeblocksWithFamily"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1066
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082073C8",
+      "jp_original_text": "0x082073F8",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries",
+      "base_rom_value": "0x082073F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 972,
+          "symbol": "LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 972,
+          "symbol": "LilycoveCity_ContestLobby_Text_MakePokeblocksDifferentBerries"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 972
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206DCA",
+      "jp_original_text": "0x08207640",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MasterRankHereICome",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MasterRankHereICome",
+      "base_rom_value": "0x08207640",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1035,
+          "symbol": "LilycoveCity_ContestLobby_Text_MasterRankHereICome"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1035,
+          "symbol": "LilycoveCity_ContestLobby_Text_MasterRankHereICome"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1035
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082070BE",
+      "jp_original_text": "0x0824A769",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MonInNoCondition2",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MonInNoCondition2",
+      "base_rom_value": "0x0824A769",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12255,
+          "symbol": "LilycoveCity_ContestLobby_Text_MonInNoCondition2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1667
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248DA9",
+      "jp_original_text": "0x0824A034",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MonInNoConditionForContest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MonInNoConditionForContest",
+      "base_rom_value": "0x0824A034",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1453
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082070A2",
+      "jp_original_text": "0x08249FDD",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank",
+      "base_rom_value": "0x08249FDD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12240,
+          "symbol": "LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1443
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248D43",
+      "jp_original_text": "0x08249FDD",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank",
+      "base_rom_value": "0x08249FDD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12240,
+          "symbol": "LilycoveCity_ContestLobby_Text_MonNotQualifiedForRank"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1443
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082071C1",
+      "jp_original_text": "0x0824AB11",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_NoWirelessAdapterInGMode",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_NoWirelessAdapterInGMode",
+      "base_rom_value": "0x0824AB11",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12263,
+          "symbol": "LilycoveCity_ContestLobby_Text_NoWirelessAdapterInGMode"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1740
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248B3B",
+      "jp_original_text": "0x08249C39",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp",
+      "base_rom_value": "0x08249C39",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1365
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206A18",
+      "jp_original_text": "0x082075CA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_OkaySeeYou",
+      "base_rom_value": "0x082075CA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019,
+          "symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019,
+          "symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206BEB",
+      "jp_original_text": "0x082075CA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_OkaySeeYou",
+      "base_rom_value": "0x082075CA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019,
+          "symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019,
+          "symbol": "LilycoveCity_ContestLobby_Text_OkaySeeYou"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1019
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207044",
+      "jp_original_text": "0x0824A52D",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ParticipateAnotherTime",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ParticipateAnotherTime",
+      "base_rom_value": "0x0824A52D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12243,
+          "symbol": "LilycoveCity_ContestLobby_Text_ParticipateAnotherTime"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1588
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248C3A",
+      "jp_original_text": "0x0824A52D",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ParticipateAnotherTime",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ParticipateAnotherTime",
+      "base_rom_value": "0x0824A52D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12243,
+          "symbol": "LilycoveCity_ContestLobby_Text_ParticipateAnotherTime"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1588
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082071A3",
+      "jp_original_text": "0x0824A801",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PlayerAt4PCounterUseGMode",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PlayerAt4PCounterUseGMode",
+      "base_rom_value": "0x0824A801",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12259,
+          "symbol": "LilycoveCity_ContestLobby_Text_PlayerAt4PCounterUseGMode"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1684
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207187",
+      "jp_original_text": "0x0824A629",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PlayersChoseDifferentContest",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PlayersChoseDifferentContest",
+      "base_rom_value": "0x0824A629",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12246,
+          "symbol": "LilycoveCity_ContestLobby_Text_PlayersChoseDifferentContest"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1622
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207195",
+      "jp_original_text": "0x0824A646",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice",
+      "base_rom_value": "0x0824A646",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12247,
+          "symbol": "LilycoveCity_ContestLobby_Text_PlayersMadeDifferentChoice"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1626
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08207267",
+      "jp_original_text": "0x0824A7C2",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader",
+      "base_rom_value": "0x0824A7C2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12258,
+          "symbol": "LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1678
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08259329",
+      "jp_original_text": "0x0824A7C2",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader",
+      "base_rom_value": "0x0824A7C2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12258,
+          "symbol": "LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1678
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08253EEA",
+      "jp_original_text": "0x0824C713",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe",
+      "base_rom_value": "0x0824C713",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082070EC",
+      "jp_original_text": "0x0824A65D",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel",
+      "base_rom_value": "0x0824A65D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12248,
+          "symbol": "LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1629
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248B44",
+      "jp_original_text": "0x0824A126",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize",
+      "base_rom_value": "0x0824A126",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1477
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206F18",
+      "jp_original_text": "0x0824A50F",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ProgressWillBeSaved",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ProgressWillBeSaved",
+      "base_rom_value": "0x0824A50F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12242,
+          "symbol": "LilycoveCity_ContestLobby_Text_ProgressWillBeSaved"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1584
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206A10",
+      "jp_original_text": "0x082075B4",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon",
+      "base_rom_value": "0x082075B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015,
+          "symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015,
+          "symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206BE3",
+      "jp_original_text": "0x082075B4",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon",
+      "base_rom_value": "0x082075B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015,
+          "symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015,
+          "symbol": "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1015
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206A07",
+      "jp_original_text": "0x082075A5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ReceivedARibbon",
+      "base_rom_value": "0x082075A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012,
+          "symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012,
+          "symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206BDA",
+      "jp_original_text": "0x082075A5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ReceivedARibbon",
+      "base_rom_value": "0x082075A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012,
+          "symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012,
+          "symbol": "LilycoveCity_ContestLobby_Text_ReceivedARibbon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1012
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248B24",
+      "jp_original_text": "0x08249BD6",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase",
+      "base_rom_value": "0x08249BD6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1356
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0820694C",
+      "jp_original_text": "0x082074A1",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+      "base_rom_value": "0x082074A1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988,
+          "symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988,
+          "symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206B1D",
+      "jp_original_text": "0x082074A1",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum",
+      "base_rom_value": "0x082074A1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988,
+          "symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988,
+          "symbol": "LilycoveCity_ContestLobby_Text_ShouldITakePaintingToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 988
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082069A6",
+      "jp_original_text": "0x082075D1",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+      "base_rom_value": "0x082075D1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206B76",
+      "jp_original_text": "0x082075D1",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum",
+      "base_rom_value": "0x082075D1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeHomeButIdLikeToTakeToMuseum"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1022
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082069FC",
+      "jp_original_text": "0x0820757C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_TakeMementoOfPainting",
+      "base_rom_value": "0x0820757C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206BCF",
+      "jp_original_text": "0x0820757C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_TakeMementoOfPainting",
+      "base_rom_value": "0x0820757C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007,
+          "symbol": "LilycoveCity_ContestLobby_Text_TakeMementoOfPainting"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1007
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08253F25",
+      "jp_original_text": "0x0824C697",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ThatsAllForInterview",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ThatsAllForInterview",
+      "base_rom_value": "0x0824C697",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 24
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206DE5",
+      "jp_original_text": "0x082076E6",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_ToughContestIsExtreme",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_ToughContestIsExtreme",
+      "base_rom_value": "0x082076E6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1054,
+          "symbol": "LilycoveCity_ContestLobby_Text_ToughContestIsExtreme"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1054,
+          "symbol": "LilycoveCity_ContestLobby_Text_ToughContestIsExtreme"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1054
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082071CB",
+      "jp_original_text": "0x0824A619",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_TransmissionError",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_TransmissionError",
+      "base_rom_value": "0x0824A619",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12245,
+          "symbol": "LilycoveCity_ContestLobby_Text_TransmissionError"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1619
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820714F",
+      "jp_original_text": "0x0824A60C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_Transmitting",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_Transmitting",
+      "base_rom_value": "0x0824A60C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12244,
+          "symbol": "LilycoveCity_ContestLobby_Text_Transmitting"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1616
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082072FE",
+      "jp_original_text": "0x0824A60C",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_Transmitting",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_Transmitting",
+      "base_rom_value": "0x0824A60C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12244,
+          "symbol": "LilycoveCity_ContestLobby_Text_Transmitting"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1616
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08253EFC",
+      "jp_original_text": "0x0824C635",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX",
+      "base_rom_value": "0x0824C635",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "line": 15
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206F3A",
+      "jp_original_text": "0x0824AB68",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_WhichContestMode",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_WhichContestMode",
+      "base_rom_value": "0x0824AB68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12264,
+          "symbol": "LilycoveCity_ContestLobby_Text_WhichContestMode"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1748
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248BC7",
+      "jp_original_text": "0x08249CE5",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_WhichTopic1",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_WhichTopic1",
+      "base_rom_value": "0x08249CE5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1386
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x08206FCE",
+      "jp_original_text": "0x0824A734",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_WhichTopic2",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_WhichTopic2",
+      "base_rom_value": "0x0824A734",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12252,
+          "symbol": "LilycoveCity_ContestLobby_Text_WhichTopic2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1657
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206DD3",
+      "jp_original_text": "0x08207692",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere",
+      "base_rom_value": "0x08207692",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1044,
+          "symbol": "LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1044,
+          "symbol": "LilycoveCity_ContestLobby_Text_WholeVarietyOfPokemonHere"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 1044
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08248DB8",
+      "jp_original_text": "0x0824A0BA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4",
+      "base_rom_value": "0x0824A0BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1466
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x082071E4",
+      "jp_original_text": "0x0824A6AA",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX",
+      "base_rom_value": "0x0824A6AA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 12249,
+          "symbol": "LilycoveCity_ContestLobby_Text_YourMonIsEntryNumX"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/contest_hall.inc",
+          "line": 1642
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820693E",
+      "jp_original_text": "0x08207435",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+      "base_rom_value": "0x08207435",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978,
+          "symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978,
+          "symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08206B10",
+      "jp_original_text": "0x08207435",
+      "batch_source_symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+      "patch_symbol": "Chs_LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint",
+      "base_rom_value": "0x08207435",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978,
+          "symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint"
+        },
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978,
+          "symbol": "LilycoveCity_ContestLobby_Text_YourPokemonSpurredMeToPaint"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "line": 978
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

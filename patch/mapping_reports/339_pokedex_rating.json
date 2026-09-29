@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "batch": "339_pokedex_rating.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/pokedex_rating.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 23,
+  "unresolved_count": 2,
+  "reference_count": 45,
+  "mapped": [
+    {
+      "source_symbol": "gBirchDexRatingText_Cancel",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 6,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F377",
+      "japanese_text_address": "0x08262E1D",
+      "japanese_references": [
+        "0x082431F4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan10",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 15,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F3D2",
+      "japanese_text_address": "0x08262E5F",
+      "japanese_references": [
+        "0x08137C70",
+        "0x085D7AB0"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan20",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F3F4",
+      "japanese_text_address": "0x08262E81",
+      "japanese_references": [
+        "0x08137B1C",
+        "0x085D7AB4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan30",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 23,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F42B",
+      "japanese_text_address": "0x08262EA6",
+      "japanese_references": [
+        "0x08137B28",
+        "0x085D7AB8"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan40",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 27,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F45C",
+      "japanese_text_address": "0x08262ECF",
+      "japanese_references": [
+        "0x08137B34",
+        "0x085D7ABC"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan50",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 31,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F498",
+      "japanese_text_address": "0x08262EF5",
+      "japanese_references": [
+        "0x08137B40",
+        "0x085D7AC0"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan60",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 35,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F4B2",
+      "japanese_text_address": "0x08262F18",
+      "japanese_references": [
+        "0x08137B4C",
+        "0x085D7AC4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan70",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 39,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F4D4",
+      "japanese_text_address": "0x08262F3F",
+      "japanese_references": [
+        "0x08137B58",
+        "0x085D7AC8"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan80",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 43,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F500",
+      "japanese_text_address": "0x08262F61",
+      "japanese_references": [
+        "0x08137B64",
+        "0x085D7ACC"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan90",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 47,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F527",
+      "japanese_text_address": "0x08262F8A",
+      "japanese_references": [
+        "0x08137B70",
+        "0x085D7AD0"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan100",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 51,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F550",
+      "japanese_text_address": "0x08262FAD",
+      "japanese_references": [
+        "0x08137B7C",
+        "0x085D7AD4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan110",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 56,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F589",
+      "japanese_text_address": "0x08262FE1",
+      "japanese_references": [
+        "0x08137B88",
+        "0x085D7AD8"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan120",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 60,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F5AC",
+      "japanese_text_address": "0x0826300C",
+      "japanese_references": [
+        "0x08137B94",
+        "0x085D7ADC"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan130",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 64,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F5CB",
+      "japanese_text_address": "0x08263032",
+      "japanese_references": [
+        "0x08137BA0",
+        "0x085D7AE0"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan140",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 68,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F5F2",
+      "japanese_text_address": "0x08263050",
+      "japanese_references": [
+        "0x08137BAC",
+        "0x085D7AE4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan150",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 72,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F629",
+      "japanese_text_address": "0x08263072",
+      "japanese_references": [
+        "0x08137BB8",
+        "0x085D7AE8"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan160",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 76,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F64C",
+      "japanese_text_address": "0x08263095",
+      "japanese_references": [
+        "0x08137BC4",
+        "0x085D7AEC"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan170",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 81,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F683",
+      "japanese_text_address": "0x082630C7",
+      "japanese_references": [
+        "0x08137BD0",
+        "0x085D7AF0"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan180",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 86,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F6C0",
+      "japanese_text_address": "0x082630F0",
+      "japanese_references": [
+        "0x08137BDC",
+        "0x085D7AF4"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan190",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 90,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F6FA",
+      "japanese_text_address": "0x0826310C",
+      "japanese_references": [
+        "0x08137BE8",
+        "0x085D7AF8"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_LessThan200",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 94,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F730",
+      "japanese_text_address": "0x0826312D",
+      "japanese_references": [
+        "0x08137C64",
+        "0x085D7AFC"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_DexCompleted",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 98,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826F760",
+      "japanese_text_address": "0x0826314F",
+      "japanese_references": [
+        "0x08137C7C",
+        "0x085D7B00"
+      ]
+    },
+    {
+      "source_symbol": "gBirchDexRatingText_AreYouCurious",
+      "source": "data/text/pokedex_rating.inc",
+      "wokann_source": "data/text/pokedex_rating.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x0826F33E",
+      "japanese_text_address": "0x08262DF5",
+      "japanese_references": [
+        "0x08196D68",
+        "0x082431DA"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "gBirchDexRatingText_SoYouveSeenAndCaught",
+      "source": "data/text/pokedex_rating.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gBirchDexRatingText_OnANationwideBasis",
+      "source": "data/text/pokedex_rating.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    }
+  ]
+}

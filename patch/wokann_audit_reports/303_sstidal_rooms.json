@@ -1,0 +1,586 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "303_sstidal_rooms.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: SSTidalRooms",
+  "summary": {
+    "verified_source_definition": 26
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0821E546",
+      "jp_original_text": "0x0821E5FB",
+      "batch_source_symbol": "SSTidalRooms_Text_ColtonIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ColtonIntro",
+      "base_rom_value": "0x0821E5FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 68
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E54A",
+      "jp_original_text": "0x0821E628",
+      "batch_source_symbol": "SSTidalRooms_Text_ColtonDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ColtonDefeat",
+      "base_rom_value": "0x0821E628",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 73
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E550",
+      "jp_original_text": "0x0821E637",
+      "batch_source_symbol": "SSTidalRooms_Text_ColtonPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ColtonPostBattle",
+      "base_rom_value": "0x0821E637",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 76
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E55D",
+      "jp_original_text": "0x0821E65F",
+      "batch_source_symbol": "SSTidalRooms_Text_MicahIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_MicahIntro",
+      "base_rom_value": "0x0821E65F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 81
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E561",
+      "jp_original_text": "0x0821E671",
+      "batch_source_symbol": "SSTidalRooms_Text_MicahDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_MicahDefeat",
+      "base_rom_value": "0x0821E671",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 84
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E567",
+      "jp_original_text": "0x0821E67E",
+      "batch_source_symbol": "SSTidalRooms_Text_MicahPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_MicahPostBattle",
+      "base_rom_value": "0x0821E67E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 87
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E574",
+      "jp_original_text": "0x0821E6B2",
+      "batch_source_symbol": "SSTidalRooms_Text_ThomasIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ThomasIntro",
+      "base_rom_value": "0x0821E6B2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 92
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E578",
+      "jp_original_text": "0x0821E6C4",
+      "batch_source_symbol": "SSTidalRooms_Text_ThomasDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ThomasDefeat",
+      "base_rom_value": "0x0821E6C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 96
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E57E",
+      "jp_original_text": "0x0821E6D3",
+      "batch_source_symbol": "SSTidalRooms_Text_ThomasPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ThomasPostBattle",
+      "base_rom_value": "0x0821E6D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 100
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E58B",
+      "jp_original_text": "0x0821E6F4",
+      "batch_source_symbol": "SSTidalRooms_Text_JedIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_JedIntro",
+      "base_rom_value": "0x0821E6F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 104
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E58F",
+      "jp_original_text": "0x0821E71A",
+      "batch_source_symbol": "SSTidalRooms_Text_JedDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_JedDefeat",
+      "base_rom_value": "0x0821E71A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 108
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E599",
+      "jp_original_text": "0x0821E722",
+      "batch_source_symbol": "SSTidalRooms_Text_JedPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_JedPostBattle",
+      "base_rom_value": "0x0821E722",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 111
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E593",
+      "jp_original_text": "0x0821E75A",
+      "batch_source_symbol": "SSTidalRooms_Text_JedNotEnoughMons",
+      "patch_symbol": "Chs_SSTidalRooms_Text_JedNotEnoughMons",
+      "base_rom_value": "0x0821E75A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 116
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5A6",
+      "jp_original_text": "0x0821E776",
+      "batch_source_symbol": "SSTidalRooms_Text_LeaIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_LeaIntro",
+      "base_rom_value": "0x0821E776",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 120
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5AA",
+      "jp_original_text": "0x0821E79C",
+      "batch_source_symbol": "SSTidalRooms_Text_LeaDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_LeaDefeat",
+      "base_rom_value": "0x0821E79C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 124
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5B4",
+      "jp_original_text": "0x0821E7A3",
+      "batch_source_symbol": "SSTidalRooms_Text_LeaPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_LeaPostBattle",
+      "base_rom_value": "0x0821E7A3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 127
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5AE",
+      "jp_original_text": "0x0821E7D3",
+      "batch_source_symbol": "SSTidalRooms_Text_LeaNotEnoughMons",
+      "patch_symbol": "Chs_SSTidalRooms_Text_LeaNotEnoughMons",
+      "base_rom_value": "0x0821E7D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 132
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5C1",
+      "jp_original_text": "0x0821E7F6",
+      "batch_source_symbol": "SSTidalRooms_Text_GarretIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_GarretIntro",
+      "base_rom_value": "0x0821E7F6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 136
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5C5",
+      "jp_original_text": "0x0821E82B",
+      "batch_source_symbol": "SSTidalRooms_Text_GarretDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_GarretDefeat",
+      "base_rom_value": "0x0821E82B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 141
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5CB",
+      "jp_original_text": "0x0821E834",
+      "batch_source_symbol": "SSTidalRooms_Text_GarretPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_GarretPostBattle",
+      "base_rom_value": "0x0821E834",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 144
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5D8",
+      "jp_original_text": "0x0821E86B",
+      "batch_source_symbol": "SSTidalRooms_Text_NaomiIntro",
+      "patch_symbol": "Chs_SSTidalRooms_Text_NaomiIntro",
+      "base_rom_value": "0x0821E86B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 149
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5DC",
+      "jp_original_text": "0x0821E894",
+      "batch_source_symbol": "SSTidalRooms_Text_NaomiDefeat",
+      "patch_symbol": "Chs_SSTidalRooms_Text_NaomiDefeat",
+      "base_rom_value": "0x0821E894",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 154
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E5E2",
+      "jp_original_text": "0x0821E8A3",
+      "batch_source_symbol": "SSTidalRooms_Text_NaomiPostBattle",
+      "patch_symbol": "Chs_SSTidalRooms_Text_NaomiPostBattle",
+      "base_rom_value": "0x0821E8A3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 157
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E4F6",
+      "jp_original_text": "0x0821E8E3",
+      "batch_source_symbol": "SSTidalRooms_Text_NotSuspiciousTakeThis",
+      "patch_symbol": "Chs_SSTidalRooms_Text_NotSuspiciousTakeThis",
+      "base_rom_value": "0x0821E8E3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 163
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E518",
+      "jp_original_text": "0x0821E935",
+      "batch_source_symbol": "SSTidalRooms_Text_ExplainSnatch",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ExplainSnatch",
+      "base_rom_value": "0x0821E935",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 170
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821E522",
+      "jp_original_text": "0x0821E935",
+      "batch_source_symbol": "SSTidalRooms_Text_ExplainSnatch",
+      "patch_symbol": "Chs_SSTidalRooms_Text_ExplainSnatch",
+      "base_rom_value": "0x0821E935",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SSTidalRooms/scripts.inc",
+          "line": 170
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

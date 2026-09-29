@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "batch": "317_sootopolis_city_gym_1_f.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/SootopolisCity_Gym_1F/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 16,
+  "unresolved_count": 0,
+  "reference_count": 17,
+  "mapped": [
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_GymGuideAdvice",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 183,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212888",
+      "japanese_text_address": "0x0820E46B",
+      "japanese_references": [
+        "0x0820E425"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_GymGuidePostVictory",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 194,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0821293B",
+      "japanese_text_address": "0x0820E50B",
+      "japanese_references": [
+        "0x0820E42F"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanIntro",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 202,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082129A7",
+      "japanese_text_address": "0x0820E56E",
+      "japanese_references": [
+        "0x0820E322"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanDefeat",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 219,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212AA1",
+      "japanese_text_address": "0x0820E65F",
+      "japanese_references": [
+        "0x0820E326"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_ReceivedRainBadge",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 234,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212B7A",
+      "japanese_text_address": "0x0820E729",
+      "japanese_references": [
+        "0x0820E35B"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 238,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212B97",
+      "japanese_text_address": "0x0820E741",
+      "japanese_references": [
+        "0x0820E367"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_ExplainWaterPulse",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 248,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212C19",
+      "japanese_text_address": "0x0820E7C1",
+      "japanese_references": [
+        "0x0820E3C5",
+        "0x0820E3E8"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_RegisteredJuan",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 255,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212C74",
+      "japanese_text_address": "0x0820E80C",
+      "japanese_references": [
+        "0x0820E39C"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanPostBattle",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 259,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212C97",
+      "japanese_text_address": "0x0820E827",
+      "japanese_references": [
+        "0x0820E352"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_GoGetFortreeBadge",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 268,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212D2E",
+      "japanese_text_address": "0x0820E892",
+      "japanese_references": [
+        "0x0820E3F5"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_GymStatue",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 275,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212D82",
+      "japanese_text_address": "0x0820E8E5",
+      "japanese_references": [
+        "0x0820E463"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_GymStatueCertified",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 278,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212D93",
+      "japanese_text_address": "0x0820E8F2",
+      "japanese_references": [
+        "0x0820E459"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanPreRematch",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 283,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212DB9",
+      "japanese_text_address": "0x0820E912",
+      "japanese_references": [
+        "0x0820E403"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanRematchDefeat",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 292,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212E45",
+      "japanese_text_address": "0x0820E97B",
+      "japanese_references": [
+        "0x0820E407"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanPostRematch",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 296,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212E6A",
+      "japanese_text_address": "0x0820E99E",
+      "japanese_references": [
+        "0x0820E411"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons",
+      "source": "data/maps/SootopolisCity_Gym_1F/scripts.inc",
+      "wokann_label_line": 305,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08212EFC",
+      "japanese_text_address": "0x0820EA1D",
+      "japanese_references": [
+        "0x0820E40B"
+      ]
+    }
+  ],
+  "unresolved": []
+}

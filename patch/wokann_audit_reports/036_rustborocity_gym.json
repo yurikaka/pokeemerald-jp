@@ -1,0 +1,839 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "036_rustborocity_gym.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Rustboro area dialogue: RustboroCity_Gym",
+  "summary": {
+    "verified_text_label": 25
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08202355",
+      "jp_original_text": "0x082028BA",
+      "batch_source_symbol": "RustboroCity_Gym_Text_ExplainRockTomb",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_ExplainRockTomb",
+      "base_rom_value": "0x082028BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 212,
+          "symbol": "RustboroCity_Gym_Text_ExplainRockTomb"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 212,
+          "symbol": "RustboroCity_Gym_Text_ExplainRockTomb"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 212
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023CA",
+      "jp_original_text": "0x08202432",
+      "batch_source_symbol": "RustboroCity_Gym_Text_GymGuideAdvice",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_GymGuideAdvice",
+      "base_rom_value": "0x08202432",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 107,
+          "symbol": "RustboroCity_Gym_Text_GymGuideAdvice"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 107,
+          "symbol": "RustboroCity_Gym_Text_GymGuideAdvice"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 107
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023D4",
+      "jp_original_text": "0x08202581",
+      "batch_source_symbol": "RustboroCity_Gym_Text_GymGuidePostVictory",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_GymGuidePostVictory",
+      "base_rom_value": "0x08202581",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 130,
+          "symbol": "RustboroCity_Gym_Text_GymGuidePostVictory"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 130,
+          "symbol": "RustboroCity_Gym_Text_GymGuidePostVictory"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 130
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202408",
+      "jp_original_text": "0x082029AB",
+      "batch_source_symbol": "RustboroCity_Gym_Text_GymStatue",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_GymStatue",
+      "base_rom_value": "0x082029AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 232,
+          "symbol": "RustboroCity_Gym_Text_GymStatue"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 232,
+          "symbol": "RustboroCity_Gym_Text_GymStatue"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 232
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023FE",
+      "jp_original_text": "0x082029BA",
+      "batch_source_symbol": "RustboroCity_Gym_Text_GymStatueCertified",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_GymStatueCertified",
+      "base_rom_value": "0x082029BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 235,
+          "symbol": "RustboroCity_Gym_Text_GymStatueCertified"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 235,
+          "symbol": "RustboroCity_Gym_Text_GymStatueCertified"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 235
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202382",
+      "jp_original_text": "0x08202636",
+      "batch_source_symbol": "RustboroCity_Gym_Text_JoshDefeat",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_JoshDefeat",
+      "base_rom_value": "0x08202636",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 146,
+          "symbol": "RustboroCity_Gym_Text_JoshDefeat"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 146,
+          "symbol": "RustboroCity_Gym_Text_JoshDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 146
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820237E",
+      "jp_original_text": "0x08202612",
+      "batch_source_symbol": "RustboroCity_Gym_Text_JoshIntro",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_JoshIntro",
+      "base_rom_value": "0x08202612",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 142,
+          "symbol": "RustboroCity_Gym_Text_JoshIntro"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 142,
+          "symbol": "RustboroCity_Gym_Text_JoshIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 142
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202388",
+      "jp_original_text": "0x08202647",
+      "batch_source_symbol": "RustboroCity_Gym_Text_JoshPostBattle",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_JoshPostBattle",
+      "base_rom_value": "0x08202647",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 149,
+          "symbol": "RustboroCity_Gym_Text_JoshPostBattle"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 149,
+          "symbol": "RustboroCity_Gym_Text_JoshPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 149
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023B0",
+      "jp_original_text": "0x082026DB",
+      "batch_source_symbol": "RustboroCity_Gym_Text_MarcDefeat",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_MarcDefeat",
+      "base_rom_value": "0x082026DB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 168,
+          "symbol": "RustboroCity_Gym_Text_MarcDefeat"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 168,
+          "symbol": "RustboroCity_Gym_Text_MarcDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 168
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023AC",
+      "jp_original_text": "0x082026C0",
+      "batch_source_symbol": "RustboroCity_Gym_Text_MarcIntro",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_MarcIntro",
+      "base_rom_value": "0x082026C0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 164,
+          "symbol": "RustboroCity_Gym_Text_MarcIntro"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 164,
+          "symbol": "RustboroCity_Gym_Text_MarcIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 164
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082023B6",
+      "jp_original_text": "0x082026F4",
+      "batch_source_symbol": "RustboroCity_Gym_Text_MarcPostBattle",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_MarcPostBattle",
+      "base_rom_value": "0x082026F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 172,
+          "symbol": "RustboroCity_Gym_Text_MarcPostBattle"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 172,
+          "symbol": "RustboroCity_Gym_Text_MarcPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 172
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082022FC",
+      "jp_original_text": "0x08202830",
+      "batch_source_symbol": "RustboroCity_Gym_Text_ReceivedStoneBadge",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_ReceivedStoneBadge",
+      "base_rom_value": "0x08202830",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 198,
+          "symbol": "RustboroCity_Gym_Text_ReceivedStoneBadge"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 198,
+          "symbol": "RustboroCity_Gym_Text_ReceivedStoneBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 198
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820241F",
+      "jp_original_text": "0x08202AB0",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RegisteredRoxanne",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RegisteredRoxanne",
+      "base_rom_value": "0x08202AB0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 256,
+          "symbol": "RustboroCity_Gym_Text_RegisteredRoxanne"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 256,
+          "symbol": "RustboroCity_Gym_Text_RegisteredRoxanne"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 256
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082022D0",
+      "jp_original_text": "0x082027A3",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxanneDefeat",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxanneDefeat",
+      "base_rom_value": "0x082027A3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 187,
+          "symbol": "RustboroCity_Gym_Text_RoxanneDefeat"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 187,
+          "symbol": "RustboroCity_Gym_Text_RoxanneDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 187
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082022CC",
+      "jp_original_text": "0x08202722",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxanneIntro",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxanneIntro",
+      "base_rom_value": "0x08202722",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 177,
+          "symbol": "RustboroCity_Gym_Text_RoxanneIntro"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 177,
+          "symbol": "RustboroCity_Gym_Text_RoxanneIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 177
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082022F3",
+      "jp_original_text": "0x0820295A",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxannePostBattle",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxannePostBattle",
+      "base_rom_value": "0x0820295A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 224,
+          "symbol": "RustboroCity_Gym_Text_RoxannePostBattle"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 224,
+          "symbol": "RustboroCity_Gym_Text_RoxannePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 224
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202371",
+      "jp_original_text": "0x08202B41",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxannePostRematch",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxannePostRematch",
+      "base_rom_value": "0x08202B41",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 272,
+          "symbol": "RustboroCity_Gym_Text_RoxannePostRematch"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 272,
+          "symbol": "RustboroCity_Gym_Text_RoxannePostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 272
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202363",
+      "jp_original_text": "0x08202ACB",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxannePreRematch",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxannePreRematch",
+      "base_rom_value": "0x08202ACB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 260,
+          "symbol": "RustboroCity_Gym_Text_RoxannePreRematch"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 260,
+          "symbol": "RustboroCity_Gym_Text_RoxannePreRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 260
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202412",
+      "jp_original_text": "0x082029DC",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxanneRegisterCall",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxanneRegisterCall",
+      "base_rom_value": "0x082029DC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 240,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRegisterCall"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 240,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRegisterCall"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 240
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202367",
+      "jp_original_text": "0x08202B2A",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxanneRematchDefeat",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxanneRematchDefeat",
+      "base_rom_value": "0x08202B2A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 268,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRematchDefeat"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 268,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 268
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820236B",
+      "jp_original_text": "0x08202B8B",
+      "batch_source_symbol": "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons",
+      "base_rom_value": "0x08202B8B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 278,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 278,
+          "symbol": "RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 278
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202308",
+      "jp_original_text": "0x08202849",
+      "batch_source_symbol": "RustboroCity_Gym_Text_StoneBadgeInfoTakeThis",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_StoneBadgeInfoTakeThis",
+      "base_rom_value": "0x08202849",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 202,
+          "symbol": "RustboroCity_Gym_Text_StoneBadgeInfoTakeThis"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 202,
+          "symbol": "RustboroCity_Gym_Text_StoneBadgeInfoTakeThis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 202
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202399",
+      "jp_original_text": "0x0820268E",
+      "batch_source_symbol": "RustboroCity_Gym_Text_TommyDefeat",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_TommyDefeat",
+      "base_rom_value": "0x0820268E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 157,
+          "symbol": "RustboroCity_Gym_Text_TommyDefeat"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 157,
+          "symbol": "RustboroCity_Gym_Text_TommyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 157
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08202395",
+      "jp_original_text": "0x08202665",
+      "batch_source_symbol": "RustboroCity_Gym_Text_TommyIntro",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_TommyIntro",
+      "base_rom_value": "0x08202665",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 153,
+          "symbol": "RustboroCity_Gym_Text_TommyIntro"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 153,
+          "symbol": "RustboroCity_Gym_Text_TommyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 153
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820239F",
+      "jp_original_text": "0x0820269A",
+      "batch_source_symbol": "RustboroCity_Gym_Text_TommyPostBattle",
+      "patch_symbol": "Chs_RustboroCity_Gym_Text_TommyPostBattle",
+      "base_rom_value": "0x0820269A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 160,
+          "symbol": "RustboroCity_Gym_Text_TommyPostBattle"
+        },
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 160,
+          "symbol": "RustboroCity_Gym_Text_TommyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/RustboroCity_Gym/scripts.inc",
+          "line": 160
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

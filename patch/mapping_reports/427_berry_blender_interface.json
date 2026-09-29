@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "source_commit": "fe570a7e5",
+  "source_file": "src/berry_blender.c",
+  "wokann_files": [
+    "src/berry_blender.c",
+    "src/data/text/region_texts8.h",
+    "src/data/text/region_texts52.h"
+  ],
+  "status": "partial; emulator_not_tested",
+  "mapping_policy": "Wokann's Berry Blender code retains original pointer literals that name the region_texts8/52 labels. Every listed original string was matched against the JP ROM and each pointer was checked. US bytes are read from the compiled US symbol. sText_WasMade is not mapped: its Japanese source label and ROM target were not located safely.",
+  "mapped_count": 16,
+  "unresolved_count": 1,
+  "mapped": [
+    {
+      "source_symbol": "sText_BerryBlenderStart",
+      "original": "0x0830F6AE",
+      "references": [
+        "0x0807F6C4"
+      ]
+    },
+    {
+      "source_symbol": "sText_CommunicationStandby",
+      "original": "0x0830F78E",
+      "references": [
+        "0x0807FBFC",
+        "0x08081F10"
+      ]
+    },
+    {
+      "source_symbol": "sText_WouldLikeToBlendAnotherBerry",
+      "original": "0x0830F79B",
+      "references": [
+        "0x08081CFC"
+      ]
+    },
+    {
+      "source_symbol": "sText_RunOutOfBerriesForBlending",
+      "original": "0x0830F7B2",
+      "references": [
+        "0x08082418"
+      ]
+    },
+    {
+      "source_symbol": "sText_YourPokeblockCaseIsFull",
+      "original": "0x0830F7D8",
+      "references": [
+        "0x080823EC"
+      ]
+    },
+    {
+      "source_symbol": "sText_HasNoBerriesToPut",
+      "original": "0x0830F7ED",
+      "references": [
+        "0x0808216C"
+      ]
+    },
+    {
+      "source_symbol": "sText_ApostropheSPokeblockCaseIsFull",
+      "original": "0x0830F808",
+      "references": [
+        "0x08082134"
+      ]
+    },
+    {
+      "source_symbol": "sText_BlendingResults",
+      "original": "0x0830F81F",
+      "references": [
+        "0x08083154"
+      ]
+    },
+    {
+      "source_symbol": "sText_Time",
+      "original": "0x0830F830",
+      "references": [
+        "0x08083178"
+      ]
+    },
+    {
+      "source_symbol": "sText_Min",
+      "original": "0x0830F834",
+      "references": [
+        "0x0808317C"
+      ]
+    },
+    {
+      "source_symbol": "sText_Sec",
+      "original": "0x0830F837",
+      "references": [
+        "0x08083180"
+      ]
+    },
+    {
+      "source_symbol": "sText_MaximumSpeed",
+      "original": "0x0830F83B",
+      "references": [
+        "0x08083170"
+      ]
+    },
+    {
+      "source_symbol": "sText_RPM",
+      "original": "0x0830F843",
+      "references": [
+        "0x08083174",
+        "0x080838C0"
+      ]
+    },
+    {
+      "source_symbol": "sText_Ranking",
+      "original": "0x0830F84D",
+      "references": [
+        "0x0808374C"
+      ]
+    },
+    {
+      "source_symbol": "sText_TheLevelIs",
+      "original": "0x0830F853",
+      "references": [
+        "0x08083340"
+      ]
+    },
+    {
+      "source_symbol": "sText_TheFeelIs",
+      "original": "0x0830F857",
+      "references": [
+        "0x08083344"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "sText_WasMade",
+      "reason": "Japanese text target not safely identified"
+    }
+  ]
+}

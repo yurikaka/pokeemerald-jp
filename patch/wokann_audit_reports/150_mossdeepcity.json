@@ -1,0 +1,546 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "150_mossdeepcity.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mossdeep and eastern sea dialogue: MossdeepCity",
+  "summary": {
+    "verified_text_label": 19
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081E15F7",
+      "jp_original_text": "0x081E1BB2",
+      "batch_source_symbol": "MossdeepCity_Text_CitySign",
+      "patch_symbol": "Chs_MossdeepCity_Text_CitySign",
+      "base_rom_value": "0x081E1BB2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 401,
+          "symbol": "MossdeepCity_Text_CitySign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 401
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15B7",
+      "jp_original_text": "0x081E19B8",
+      "batch_source_symbol": "MossdeepCity_Text_FeelReliefOnLand",
+      "patch_symbol": "Chs_MossdeepCity_Text_FeelReliefOnLand",
+      "base_rom_value": "0x081E19B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 354,
+          "symbol": "MossdeepCity_Text_FeelReliefOnLand"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 354
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15EE",
+      "jp_original_text": "0x081E1B87",
+      "batch_source_symbol": "MossdeepCity_Text_GymSign",
+      "patch_symbol": "Chs_MossdeepCity_Text_GymSign",
+      "base_rom_value": "0x081E1B87",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 396,
+          "symbol": "MossdeepCity_Text_GymSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 396
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15E5",
+      "jp_original_text": "0x081E1B7D",
+      "batch_source_symbol": "MossdeepCity_Text_ItsAWhiteRock",
+      "patch_symbol": "Chs_MossdeepCity_Text_ItsAWhiteRock",
+      "base_rom_value": "0x081E1B7D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 393,
+          "symbol": "MossdeepCity_Text_ItsAWhiteRock"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 393
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15CA",
+      "jp_original_text": "0x081E1A2A",
+      "batch_source_symbol": "MossdeepCity_Text_LifeNeedsSeaToLive",
+      "patch_symbol": "Chs_MossdeepCity_Text_LifeNeedsSeaToLive",
+      "base_rom_value": "0x081E1A2A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 365,
+          "symbol": "MossdeepCity_Text_LifeNeedsSeaToLive"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 365
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15AD",
+      "jp_original_text": "0x081E193A",
+      "batch_source_symbol": "MossdeepCity_Text_MossdeepTargetedByMagma",
+      "patch_symbol": "Chs_MossdeepCity_Text_MossdeepTargetedByMagma",
+      "base_rom_value": "0x081E193A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 345,
+          "symbol": "MossdeepCity_Text_MossdeepTargetedByMagma"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 345
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15D3",
+      "jp_original_text": "0x081E19FB",
+      "batch_source_symbol": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+      "patch_symbol": "Chs_MossdeepCity_Text_NiceIfWorldCoveredByFlowers",
+      "base_rom_value": "0x081E19FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 360,
+          "symbol": "MossdeepCity_Text_NiceIfWorldCoveredByFlowers"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 360
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1758",
+      "jp_original_text": "0x081E1BF8",
+      "batch_source_symbol": "MossdeepCity_Text_ScottSomethingWrongWithTown",
+      "patch_symbol": "Chs_MossdeepCity_Text_ScottSomethingWrongWithTown",
+      "base_rom_value": "0x081E1BF8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 409,
+          "symbol": "MossdeepCity_Text_ScottSomethingWrongWithTown"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 409
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E174D",
+      "jp_original_text": "0x081E1C8D",
+      "batch_source_symbol": "MossdeepCity_Text_SootopolisNewGymLeader",
+      "patch_symbol": "Chs_MossdeepCity_Text_SootopolisNewGymLeader",
+      "base_rom_value": "0x081E1C8D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 420,
+          "symbol": "MossdeepCity_Text_SootopolisNewGymLeader"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 420
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1598",
+      "jp_original_text": "0x081E1917",
+      "batch_source_symbol": "MossdeepCity_Text_SpaceCenterLaunchingRockets",
+      "patch_symbol": "Chs_MossdeepCity_Text_SpaceCenterLaunchingRockets",
+      "base_rom_value": "0x081E1917",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 341,
+          "symbol": "MossdeepCity_Text_SpaceCenterLaunchingRockets"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 341
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E158E",
+      "jp_original_text": "0x081E18C3",
+      "batch_source_symbol": "MossdeepCity_Text_SpaceCenterReceivedLetter",
+      "patch_symbol": "Chs_MossdeepCity_Text_SpaceCenterReceivedLetter",
+      "base_rom_value": "0x081E18C3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 334,
+          "symbol": "MossdeepCity_Text_SpaceCenterReceivedLetter"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 334
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1600",
+      "jp_original_text": "0x081E1BD5",
+      "batch_source_symbol": "MossdeepCity_Text_SpaceCenterSign",
+      "patch_symbol": "Chs_MossdeepCity_Text_SpaceCenterSign",
+      "base_rom_value": "0x081E1BD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 405,
+          "symbol": "MossdeepCity_Text_SpaceCenterSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 405
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15DC",
+      "jp_original_text": "0x081E1AEE",
+      "batch_source_symbol": "MossdeepCity_Text_SpecialSpaceCenterRock",
+      "patch_symbol": "Chs_MossdeepCity_Text_SpecialSpaceCenterRock",
+      "base_rom_value": "0x081E1AEE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 381,
+          "symbol": "MossdeepCity_Text_SpecialSpaceCenterRock"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 381
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1739",
+      "jp_original_text": "0x081E1831",
+      "batch_source_symbol": "MossdeepCity_Text_StevensHouseOverThere",
+      "patch_symbol": "Chs_MossdeepCity_Text_StevensHouseOverThere",
+      "base_rom_value": "0x081E1831",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 319,
+          "symbol": "MossdeepCity_Text_StevensHouseOverThere"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 319
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E16E3",
+      "jp_original_text": "0x081E1A9E",
+      "batch_source_symbol": "MossdeepCity_Text_SurfExhilarating",
+      "patch_symbol": "Chs_MossdeepCity_Text_SurfExhilarating",
+      "base_rom_value": "0x081E1A9E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 374,
+          "symbol": "MossdeepCity_Text_SurfExhilarating"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 374
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E15C1",
+      "jp_original_text": "0x081E1865",
+      "batch_source_symbol": "MossdeepCity_Text_WailmerWatching",
+      "patch_symbol": "Chs_MossdeepCity_Text_WailmerWatching",
+      "base_rom_value": "0x081E1865",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 326,
+          "symbol": "MossdeepCity_Text_WailmerWatching"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 326
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1702",
+      "jp_original_text": "0x081E17BC",
+      "batch_source_symbol": "MossdeepCity_Text_WantKingsRockStevenGaveMe",
+      "patch_symbol": "Chs_MossdeepCity_Text_WantKingsRockStevenGaveMe",
+      "base_rom_value": "0x081E17BC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 307,
+          "symbol": "MossdeepCity_Text_WantKingsRockStevenGaveMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 307
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1743",
+      "jp_original_text": "0x081E1845",
+      "batch_source_symbol": "MossdeepCity_Text_WhatToDoWithWeirdRock",
+      "patch_symbol": "Chs_MossdeepCity_Text_WhatToDoWithWeirdRock",
+      "base_rom_value": "0x081E1845",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 322,
+          "symbol": "MossdeepCity_Text_WhatToDoWithWeirdRock"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 322
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081E1715",
+      "jp_original_text": "0x081E17FC",
+      "batch_source_symbol": "MossdeepCity_Text_YouCanKeepIt",
+      "patch_symbol": "Chs_MossdeepCity_Text_YouCanKeepIt",
+      "base_rom_value": "0x081E17FC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 313,
+          "symbol": "MossdeepCity_Text_YouCanKeepIt"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity/scripts.inc",
+          "line": 313
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

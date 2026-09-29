@@ -1,0 +1,1498 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "152_mossdeepcity_gym.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mossdeep and eastern sea dialogue: MossdeepCity_Gym",
+  "summary": {
+    "verified_text_label": 53
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820B69E",
+      "jp_original_text": "0x0820BA26",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_BlakeDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_BlakeDefeat",
+      "base_rom_value": "0x0820BA26",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 412,
+          "symbol": "MossdeepCity_Gym_Text_BlakeDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 412
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B69A",
+      "jp_original_text": "0x0820B9CC",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_BlakeIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_BlakeIntro",
+      "base_rom_value": "0x0820B9CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 403,
+          "symbol": "MossdeepCity_Gym_Text_BlakeIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 403
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6A4",
+      "jp_original_text": "0x0820BA3C",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_BlakePostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_BlakePostBattle",
+      "base_rom_value": "0x0820BA3C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 416,
+          "symbol": "MossdeepCity_Gym_Text_BlakePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 416
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B73F",
+      "jp_original_text": "0x0820BD53",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_CliffordDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_CliffordDefeat",
+      "base_rom_value": "0x0820BD53",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 507,
+          "symbol": "MossdeepCity_Gym_Text_CliffordDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 507
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B73B",
+      "jp_original_text": "0x0820BD31",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_CliffordIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_CliffordIntro",
+      "base_rom_value": "0x0820BD31",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 503,
+          "symbol": "MossdeepCity_Gym_Text_CliffordIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 503
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B745",
+      "jp_original_text": "0x0820BD63",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_CliffordPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_CliffordPostBattle",
+      "base_rom_value": "0x0820BD63",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 510,
+          "symbol": "MossdeepCity_Gym_Text_CliffordPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 510
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4B9",
+      "jp_original_text": "0x0820BFE8",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_ExplainCalmMind",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_ExplainCalmMind",
+      "base_rom_value": "0x0820BFE8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 571,
+          "symbol": "MossdeepCity_Gym_Text_ExplainCalmMind"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 571
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4DD",
+      "jp_original_text": "0x0820BFE8",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_ExplainCalmMind",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_ExplainCalmMind",
+      "base_rom_value": "0x0820BFE8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 571,
+          "symbol": "MossdeepCity_Gym_Text_ExplainCalmMind"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 571
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B447",
+      "jp_original_text": "0x0820BF7D",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis",
+      "base_rom_value": "0x0820BF7D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 563,
+          "symbol": "MossdeepCity_Gym_Text_ExplainMindBadgeTakeThis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 563
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B787",
+      "jp_original_text": "0x0820B83E",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_GymGuideAdvice",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_GymGuideAdvice",
+      "base_rom_value": "0x0820B83E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 362,
+          "symbol": "MossdeepCity_Gym_Text_GymGuideAdvice"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 362
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B791",
+      "jp_original_text": "0x0820B8E9",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_GymGuidePostVictory",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_GymGuidePostVictory",
+      "base_rom_value": "0x0820B8E9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 375,
+          "symbol": "MossdeepCity_Gym_Text_GymGuidePostVictory"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 375
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B7C8",
+      "jp_original_text": "0x0820C153",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_GymStatue",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_GymStatue",
+      "base_rom_value": "0x0820C153",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 600,
+          "symbol": "MossdeepCity_Gym_Text_GymStatue"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 600
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B7BE",
+      "jp_original_text": "0x0820C162",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_GymStatueCertified",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_GymStatueCertified",
+      "base_rom_value": "0x0820C162",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 603,
+          "symbol": "MossdeepCity_Gym_Text_GymStatueCertified"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 603
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6B5",
+      "jp_original_text": "0x0820BADB",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_HannahDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_HannahDefeat",
+      "base_rom_value": "0x0820BADB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 431,
+          "symbol": "MossdeepCity_Gym_Text_HannahDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 431
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6B1",
+      "jp_original_text": "0x0820BA9A",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_HannahIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_HannahIntro",
+      "base_rom_value": "0x0820BA9A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 425,
+          "symbol": "MossdeepCity_Gym_Text_HannahIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 425
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6BB",
+      "jp_original_text": "0x0820BAEB",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_HannahPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_HannahPostBattle",
+      "base_rom_value": "0x0820BAEB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 434,
+          "symbol": "MossdeepCity_Gym_Text_HannahPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 434
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B76D",
+      "jp_original_text": "0x0820BD0A",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_KathleenDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_KathleenDefeat",
+      "base_rom_value": "0x0820BD0A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 496,
+          "symbol": "MossdeepCity_Gym_Text_KathleenDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 496
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B769",
+      "jp_original_text": "0x0820BCF5",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_KathleenIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_KathleenIntro",
+      "base_rom_value": "0x0820BCF5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 493,
+          "symbol": "MossdeepCity_Gym_Text_KathleenIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 493
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B773",
+      "jp_original_text": "0x0820BD13",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_KathleenPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_KathleenPostBattle",
+      "base_rom_value": "0x0820BD13",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 499,
+          "symbol": "MossdeepCity_Gym_Text_KathleenPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 499
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B728",
+      "jp_original_text": "0x0820BDA2",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MaceyDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MaceyDefeat",
+      "base_rom_value": "0x0820BDA2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 518,
+          "symbol": "MossdeepCity_Gym_Text_MaceyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 518
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B724",
+      "jp_original_text": "0x0820BD89",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MaceyIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MaceyIntro",
+      "base_rom_value": "0x0820BD89",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 514,
+          "symbol": "MossdeepCity_Gym_Text_MaceyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 514
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B72E",
+      "jp_original_text": "0x0820BDB5",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MaceyPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MaceyPostBattle",
+      "base_rom_value": "0x0820BDB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 521,
+          "symbol": "MossdeepCity_Gym_Text_MaceyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 521
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6E3",
+      "jp_original_text": "0x0820BBE5",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MauraDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MauraDefeat",
+      "base_rom_value": "0x0820BBE5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 459,
+          "symbol": "MossdeepCity_Gym_Text_MauraDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 459
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6DF",
+      "jp_original_text": "0x0820BBAB",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MauraIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MauraIntro",
+      "base_rom_value": "0x0820BBAB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 454,
+          "symbol": "MossdeepCity_Gym_Text_MauraIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 454
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6E9",
+      "jp_original_text": "0x0820BBF6",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_MauraPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_MauraPostBattle",
+      "base_rom_value": "0x0820BBF6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 462,
+          "symbol": "MossdeepCity_Gym_Text_MauraPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 462
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B711",
+      "jp_original_text": "0x0820BCB9",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NateDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NateDefeat",
+      "base_rom_value": "0x0820BCB9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 485,
+          "symbol": "MossdeepCity_Gym_Text_NateDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 485
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B70D",
+      "jp_original_text": "0x0820BC91",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NateIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NateIntro",
+      "base_rom_value": "0x0820BC91",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 480,
+          "symbol": "MossdeepCity_Gym_Text_NateIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 480
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B717",
+      "jp_original_text": "0x0820BCD5",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NatePostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NatePostBattle",
+      "base_rom_value": "0x0820BCD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 489,
+          "symbol": "MossdeepCity_Gym_Text_NatePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 489
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B756",
+      "jp_original_text": "0x0820BE12",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NicholasDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NicholasDefeat",
+      "base_rom_value": "0x0820BE12",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 531,
+          "symbol": "MossdeepCity_Gym_Text_NicholasDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 531
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B752",
+      "jp_original_text": "0x0820BDE8",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NicholasIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NicholasIntro",
+      "base_rom_value": "0x0820BDE8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 526,
+          "symbol": "MossdeepCity_Gym_Text_NicholasIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 526
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B75C",
+      "jp_original_text": "0x0820BE1B",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_NicholasPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_NicholasPostBattle",
+      "base_rom_value": "0x0820BE1B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 534,
+          "symbol": "MossdeepCity_Gym_Text_NicholasPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 534
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B670",
+      "jp_original_text": "0x0820B92B",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_PrestonDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_PrestonDefeat",
+      "base_rom_value": "0x0820B92B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 383,
+          "symbol": "MossdeepCity_Gym_Text_PrestonDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 383
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B66C",
+      "jp_original_text": "0x0820B905",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_PrestonIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_PrestonIntro",
+      "base_rom_value": "0x0820B905",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 379,
+          "symbol": "MossdeepCity_Gym_Text_PrestonIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 379
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B676",
+      "jp_original_text": "0x0820B941",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_PrestonPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_PrestonPostBattle",
+      "base_rom_value": "0x0820B941",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 387,
+          "symbol": "MossdeepCity_Gym_Text_PrestonPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 387
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B43B",
+      "jp_original_text": "0x0820BF61",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_ReceivedMindBadge",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_ReceivedMindBadge",
+      "base_rom_value": "0x0820BF61",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 559,
+          "symbol": "MossdeepCity_Gym_Text_ReceivedMindBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 559
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B490",
+      "jp_original_text": "0x0820C058",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_RegisteredTateAndLiza",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_RegisteredTateAndLiza",
+      "base_rom_value": "0x0820C058",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 580,
+          "symbol": "MossdeepCity_Gym_Text_RegisteredTateAndLiza"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 580
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6CC",
+      "jp_original_text": "0x0820BB5E",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SamanthaDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SamanthaDefeat",
+      "base_rom_value": "0x0820BB5E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 445,
+          "symbol": "MossdeepCity_Gym_Text_SamanthaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 445
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6C8",
+      "jp_original_text": "0x0820BB29",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SamanthaIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SamanthaIntro",
+      "base_rom_value": "0x0820BB29",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 439,
+          "symbol": "MossdeepCity_Gym_Text_SamanthaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 439
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6D2",
+      "jp_original_text": "0x0820BB68",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SamanthaPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SamanthaPostBattle",
+      "base_rom_value": "0x0820BB68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 448,
+          "symbol": "MossdeepCity_Gym_Text_SamanthaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 448
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6FA",
+      "jp_original_text": "0x0820BC60",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SylviaDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SylviaDefeat",
+      "base_rom_value": "0x0820BC60",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 472,
+          "symbol": "MossdeepCity_Gym_Text_SylviaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 472
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B6F6",
+      "jp_original_text": "0x0820BC40",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SylviaIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SylviaIntro",
+      "base_rom_value": "0x0820BC40",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 468,
+          "symbol": "MossdeepCity_Gym_Text_SylviaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 468
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B700",
+      "jp_original_text": "0x0820BC71",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_SylviaPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_SylviaPostBattle",
+      "base_rom_value": "0x0820BC71",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 476,
+          "symbol": "MossdeepCity_Gym_Text_SylviaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 476
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B40B",
+      "jp_original_text": "0x0820BF1C",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaDefeat",
+      "base_rom_value": "0x0820BF1C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 553,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 553
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B407",
+      "jp_original_text": "0x0820BE42",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaIntro",
+      "base_rom_value": "0x0820BE42",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 539,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 539
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B40F",
+      "jp_original_text": "0x0820C0D6",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons",
+      "base_rom_value": "0x0820C0D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 591,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 591
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B432",
+      "jp_original_text": "0x0820C075",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaPostBattle",
+      "base_rom_value": "0x0820C075",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 584,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 584
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4FB",
+      "jp_original_text": "0x0820C23E",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaPostRematch",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaPostRematch",
+      "base_rom_value": "0x0820C23E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 624,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 624
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4ED",
+      "jp_original_text": "0x0820C186",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaPreRematch",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaPreRematch",
+      "base_rom_value": "0x0820C186",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 608,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaPreRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 608
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4F1",
+      "jp_original_text": "0x0820C21E",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaRematchDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaRematchDefeat",
+      "base_rom_value": "0x0820C21E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 620,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 620
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B4F5",
+      "jp_original_text": "0x0820C283",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons",
+      "base_rom_value": "0x0820C283",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 630,
+          "symbol": "MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 630
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B687",
+      "jp_original_text": "0x0820B971",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_VirgilDefeat",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_VirgilDefeat",
+      "base_rom_value": "0x0820B971",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 394,
+          "symbol": "MossdeepCity_Gym_Text_VirgilDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 394
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B683",
+      "jp_original_text": "0x0820B95C",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_VirgilIntro",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_VirgilIntro",
+      "base_rom_value": "0x0820B95C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 391,
+          "symbol": "MossdeepCity_Gym_Text_VirgilIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 391
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820B68D",
+      "jp_original_text": "0x0820B984",
+      "batch_source_symbol": "MossdeepCity_Gym_Text_VirgilPostBattle",
+      "patch_symbol": "Chs_MossdeepCity_Gym_Text_VirgilPostBattle",
+      "base_rom_value": "0x0820B984",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 397,
+          "symbol": "MossdeepCity_Gym_Text_VirgilPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "line": 397
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

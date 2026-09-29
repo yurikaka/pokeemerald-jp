@@ -1,0 +1,2271 @@
+{
+  "schema_version": 1,
+  "batch": "386_tv_0.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/tv.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 20,
+  "unresolved_count": 256,
+  "reference_count": 20,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_InterviewRequest",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082559CC",
+      "japanese_text_address": "0x0824C9D9",
+      "japanese_references": [
+        "0x08253FD3"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_HowDidBattleTowerTurnOut",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 9,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255A2E",
+      "japanese_text_address": "0x0824CA3E",
+      "japanese_references": [
+        "0x08253FF1"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 18,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255A87",
+      "japanese_text_address": "0x0824CA8E",
+      "japanese_references": [
+        "0x08254048"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 24,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255ABF",
+      "japanese_text_address": "0x0824CABA",
+      "japanese_references": [
+        "0x08254052"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 30,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255B09",
+      "japanese_text_address": "0x0824CAE9",
+      "japanese_references": [
+        "0x0825405B"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 35,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255B40",
+      "japanese_text_address": "0x0824CB1C",
+      "japanese_references": [
+        "0x08254018"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 41,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255B88",
+      "japanese_text_address": "0x0824CB57",
+      "japanese_references": [
+        "0x0825406F"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_SilentType",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 47,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255BCB",
+      "japanese_text_address": "0x0824CB89",
+      "japanese_references": [
+        "0x0825408A"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 54,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255C10",
+      "japanese_text_address": "0x0824CBCC",
+      "japanese_references": [
+        "0x08254094"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_Satisfied",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 98,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255E72",
+      "japanese_text_address": "0x0824CDB0",
+      "japanese_references": [
+        "0x08568D00"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_Unsatisfied",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 107,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08255EFC",
+      "japanese_text_address": "0x0824CE1D",
+      "japanese_references": [
+        "0x08568D04"
+      ]
+    },
+    {
+      "source_symbol": "gTVFanClubText01",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/pokemon_fan_club.inc",
+      "wokann_label_line": 181,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08256944",
+      "japanese_text_address": "0x0824D6C9",
+      "japanese_references": [
+        "0x08568C00"
+      ]
+    },
+    {
+      "source_symbol": "gTVFanClubText02",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/pokemon_fan_club.inc",
+      "wokann_label_line": 185,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08256956",
+      "japanese_text_address": "0x0824D6E1",
+      "japanese_references": [
+        "0x08568C04"
+      ]
+    },
+    {
+      "source_symbol": "gTVFanClubText03",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/pokemon_fan_club.inc",
+      "wokann_label_line": 188,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0825696B",
+      "japanese_text_address": "0x0824D6F0",
+      "japanese_references": [
+        "0x08568C08"
+      ]
+    },
+    {
+      "source_symbol": "gTV3CheersForPokeblocksText05",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/three_cheers_for_pokeblocks.inc",
+      "wokann_label_line": 30,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08257124",
+      "japanese_text_address": "0x0824DDF0",
+      "japanese_references": [
+        "0x08568CE8"
+      ]
+    },
+    {
+      "source_symbol": "gTVNameRaterText01",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/name_rater.inc",
+      "wokann_label_line": 16,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08257632",
+      "japanese_text_address": "0x0824E220",
+      "japanese_references": [
+        "0x08568DE8"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_None1",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 116,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08255FA6",
+      "japanese_text_address": "0x0824CE86",
+      "japanese_references": [
+        "0x08568D08"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_None2",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 119,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08255FA9",
+      "japanese_text_address": "0x0824CE89",
+      "japanese_references": [
+        "0x08568D0C"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_None3",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 122,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08255FAC",
+      "japanese_text_address": "0x0824CE8C",
+      "japanese_references": [
+        "0x08568D10"
+      ]
+    },
+    {
+      "source_symbol": "BravoTrainerBattleTower_Text_None4",
+      "source": "data/text/tv.inc",
+      "wokann_source": "data/text/tv/battle_tower_broadcast.inc",
+      "wokann_label_line": 125,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08255FAF",
+      "japanese_text_address": "0x0824CE8F",
+      "japanese_references": [
+        "0x08568D14"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "gTVBravoTrainerText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBravoTrainerText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVBravoTrainerText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVBravoTrainerText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVBravoTrainerText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVBravoTrainerText05",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVBravoTrainerText06",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVBravoTrainerText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBravoTrainerText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_NewRecord",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_Lost",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_Won",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_LostFinal",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_ResponseSatisfied",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_ResponseUnsatisfied",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "BravoTrainerBattleTower_Text_Outro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVFanClubOpinionsText00",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubOpinionsText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubOpinionsText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubOpinionsText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubOpinionsText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVFanClubText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubText05",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubText06",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFanClubText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVRecentHappeningsText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVRecentHappeningsText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVRecentHappeningsText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVRecentHappeningsText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVRecentHappeningsText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVRecentHappeningsText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVMassOutbreakText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTV3CheersForPokeblocksText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTV3CheersForPokeblocksText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTV3CheersForPokeblocksText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTV3CheersForPokeblocksText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTV3CheersForPokeblocksText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "LilycoveCity_PokemonTrainerFanClub_HopeYouCatchTVSpecial",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText00",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubSpecialText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVNameRaterText00",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVNameRaterText09",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText10",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText11",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText13",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText14",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText15",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText16",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText17",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVNameRaterText18",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVPokemonAnglerText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonAnglerText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodayFailedText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText06",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText08",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText09",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVPokemonTodaySuccessfulText10",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "SmartShopper_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_ClerkNormal",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_RandomComment1",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_RandomComment2",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_RandomComment3",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_RandomComment4",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_SecondItem",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_ThirdItem",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_OutroNormal",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_IsVIP",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_ClerkMax",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "SmartShopper_Text_OutroMax",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVWorldOfMastersText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVWorldOfMastersText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVWorldOfMastersText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText09",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText10",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVTodaysRivalTrainerText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_MaleTaughtMePhrase",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_FemaleTaughtMePhrase",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_PhraseWasHopeless",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "TrendWatcher_Text_MaleTellMeBigger",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_FemaleTellMeBigger",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TrendWatcher_Text_Outro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVHoennTreasureInvestigatorsText00",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVHoennTreasureInvestigatorsText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVHoennTreasureInvestigatorsText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFindThatGamerText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVFindThatGamerText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFindThatGamerText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVFindThatGamerText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText12",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText09",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText10",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVBreakingNewsText11",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText05",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText06",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText09",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText10",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText11",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText12",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVSecretBaseVisitText13",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVPokemonLotteryWinnerFlashReportText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText04",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText05",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVThePokemonBattleSeminarText06",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVTrainerFanClubText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVTrainerFanClubText11",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonsLow",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonsMid",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonsHigh",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonIntro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonChampion",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonCool",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonBeauty",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonCute",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonSmart",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonTough",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonWinning",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonVictory",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonArtist",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSpotTheCuties_Text_RibbonEffort",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText09",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText10",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText11",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText12",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText13",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText14",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText15",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText17",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVPokemonNewsBattleFrontierText18",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText01",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText02",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVWhatsNo1InHoennTodayText08",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_WhatWillPlayerDoNext1",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_WhatWillPlayerDoNext2",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_TookXStepsBeforeLeaving",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_BaseFailedToInterestPlayer",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_PlayerEnjoyedBase",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_PlayerHugeFanOfBase",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_Outro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_StoppedMoving1",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_UsedBag",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_BattledWon",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_BattledLost",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_DeclinedBattle",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_BattledDraw",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TVSecretBaseSecrets_Text_UsedStand",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "gTVSafariFanClubText09",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WonBothRounds",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_BetterRound2",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_EqualRounds",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_BetterRound1",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_GotNervous",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_StartledFoes",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_UsedCombo",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_ExcitingAppeal",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WasCool",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WasBeautiful",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WasCute",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WasSmart",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_WasTough",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VeryExcitingAppeal",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VeryCool",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VeryBeautiful",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VeryCute",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VerySmart",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_VeryTough",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_TookBreak",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_GotStartled",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_MoveWonderful",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_TalkAboutAnotherMon",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_FailedToAppeal",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_LastInBothRounds",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_NotExcitingEnough",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_LostAfterWinningRound1",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_LostBySmallMargin",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_RepeatedAppeals",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_ValiantEffortButLost",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLiveUpdates_Text_Outro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText01",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText02",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText03",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText04",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText05",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText06",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "gTVPokemonBattleUpdateText07",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "GabbyAndTy_Text_QuoteFromLastInterview",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVInSearchOfTrainersText00",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        1,
+        2
+      ]
+    },
+    {
+      "symbol": "gTVInSearchOfTrainersText03",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "gTVInSearchOfTrainersText08",
+      "source": "data/text/tv.inc",
+      "reason": "wokann_object_symbol_mismatch"
+    },
+    {
+      "symbol": "ContestLadyShow_Text_Intro",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "ContestLadyShow_Text_Won",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLadyShow_Text_Lost",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "ContestLadyShow_Text_LostBadly",
+      "source": "data/text/tv.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        3
+      ]
+    }
+  ]
+}

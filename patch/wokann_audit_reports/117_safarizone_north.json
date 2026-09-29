@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "117_safarizone_north.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Route 120 and Safari Zone dialogue: SafariZone_North",
+  "summary": {
+    "verified_source_definition": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0821EA16",
+      "jp_original_text": "0x08262922",
+      "batch_source_symbol": "SafariZone_North_Text_Fisherman",
+      "patch_symbol": "Chs_SafariZone_North_Text_Fisherman",
+      "base_rom_value": "0x08262922",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/safari_zone.inc",
+          "line": 204
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0821EA1F",
+      "jp_original_text": "0x0826295B",
+      "batch_source_symbol": "SafariZone_North_Text_Man",
+      "patch_symbol": "Chs_SafariZone_North_Text_Man",
+      "base_rom_value": "0x0826295B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/scripts/safari_zone.inc",
+          "line": 210
+        }
+      ],
+      "status": "verified_source_definition"
+    }
+  ]
+}

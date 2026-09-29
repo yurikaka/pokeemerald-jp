@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "batch": "340_move_tutors.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/move_tutors.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 41,
+  "unresolved_count": 0,
+  "reference_count": 42,
+  "mapped": [
+    {
+      "source_symbol": "MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284C46",
+      "japanese_text_address": "0x08275F5D",
+      "japanese_references": [
+        "0x08276C4B"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SwaggerTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 5,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284C67",
+      "japanese_text_address": "0x08275F81",
+      "japanese_references": [
+        "0x0827683F"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SwaggerDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 15,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284D03",
+      "japanese_text_address": "0x08275FFE",
+      "japanese_references": [
+        "0x08276888",
+        "0x08746E47"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SwaggerWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284D20",
+      "japanese_text_address": "0x08276010",
+      "japanese_references": [
+        "0x08276862"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SwaggerTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 23,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284D42",
+      "japanese_text_address": "0x08276026",
+      "japanese_references": [
+        "0x08276892"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_RolloutTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 27,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284D6B",
+      "japanese_text_address": "0x08276048",
+      "japanese_references": [
+        "0x082768A7"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_RolloutDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 35,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284DFA",
+      "japanese_text_address": "0x082760B8",
+      "japanese_references": [
+        "0x082768F0"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_RolloutWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 39,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284E16",
+      "japanese_text_address": "0x082760CB",
+      "japanese_references": [
+        "0x082768CA"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_RolloutTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 43,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284E41",
+      "japanese_text_address": "0x082760E8",
+      "japanese_references": [
+        "0x082768FA"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_FuryCutterTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 47,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284E6C",
+      "japanese_text_address": "0x08276101",
+      "japanese_references": [
+        "0x0827690F"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_FuryCutterDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 55,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284EE5",
+      "japanese_text_address": "0x08276159",
+      "japanese_references": [
+        "0x08276958"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_FuryCutterWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 58,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284EF1",
+      "japanese_text_address": "0x08276163",
+      "japanese_references": [
+        "0x08276932"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_FuryCutterTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 62,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284F0D",
+      "japanese_text_address": "0x0827617E",
+      "japanese_references": [
+        "0x08276962"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_MimicTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 66,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284F30",
+      "japanese_text_address": "0x0827619E",
+      "japanese_references": [
+        "0x08276977"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_MimicDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 75,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284FA6",
+      "japanese_text_address": "0x0827620A",
+      "japanese_references": [
+        "0x082769C0"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MimicWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 79,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284FC4",
+      "japanese_text_address": "0x08276226",
+      "japanese_references": [
+        "0x0827699A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MimicTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 83,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08284FF4",
+      "japanese_text_address": "0x08276248",
+      "japanese_references": [
+        "0x082769CA"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MetronomeTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 88,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285029",
+      "japanese_text_address": "0x08276272",
+      "japanese_references": [
+        "0x082769DF"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MetronomeDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 98,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082850D5",
+      "japanese_text_address": "0x082762EE",
+      "japanese_references": [
+        "0x08276A28"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MetronomeWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 102,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082850F3",
+      "japanese_text_address": "0x08276302",
+      "japanese_references": [
+        "0x08276A02"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_MetronomeTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 106,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285116",
+      "japanese_text_address": "0x0827631B",
+      "japanese_references": [
+        "0x08276A32"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SleepTalkTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 111,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828515D",
+      "japanese_text_address": "0x0827634D",
+      "japanese_references": [
+        "0x08276A47"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SleepTalkDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 120,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082851CB",
+      "japanese_text_address": "0x082763BB",
+      "japanese_references": [
+        "0x08276A90"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SleepTalkWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 124,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082851F2",
+      "japanese_text_address": "0x082763DB",
+      "japanese_references": [
+        "0x08276A6A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SleepTalkTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 128,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828521D",
+      "japanese_text_address": "0x08276404",
+      "japanese_references": [
+        "0x08276A9A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SubstituteTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 133,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285265",
+      "japanese_text_address": "0x08276436",
+      "japanese_references": [
+        "0x08276AAF"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SubstituteDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 144,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285315",
+      "japanese_text_address": "0x082764BA",
+      "japanese_references": [
+        "0x08276AF8"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SubstituteWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 149,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285347",
+      "japanese_text_address": "0x082764E1",
+      "japanese_references": [
+        "0x08276AD2"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_SubstituteTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 153,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285369",
+      "japanese_text_address": "0x082764F8",
+      "japanese_references": [
+        "0x08276B02"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DynamicPunchTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 159,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082853A2",
+      "japanese_text_address": "0x08276534",
+      "japanese_references": [
+        "0x08276B17"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DynamicPunchDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 173,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828546C",
+      "japanese_text_address": "0x082765D1",
+      "japanese_references": [
+        "0x08276B60"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DynamicPunchWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 178,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828548B",
+      "japanese_text_address": "0x082765F3",
+      "japanese_references": [
+        "0x08276B3A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DynamicPunchTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 182,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082854BB",
+      "japanese_text_address": "0x08276618",
+      "japanese_references": [
+        "0x08276B6A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DoubleEdgeTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 186,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082854E0",
+      "japanese_text_address": "0x0827663B",
+      "japanese_references": [
+        "0x08276B7F"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DoubleEdgeDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 198,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0828559C",
+      "japanese_text_address": "0x082766C4",
+      "japanese_references": [
+        "0x08276BC8"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DoubleEdgeWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 202,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082855B0",
+      "japanese_text_address": "0x082766DC",
+      "japanese_references": [
+        "0x08276BA2"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_DoubleEdgeTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 206,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082855D6",
+      "japanese_text_address": "0x082766F4",
+      "japanese_references": [
+        "0x08276BD2"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_ExplosionTeach",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 211,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082855F6",
+      "japanese_text_address": "0x0827671B",
+      "japanese_references": [
+        "0x08276BE7"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_ExplosionDeclined",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 220,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08285699",
+      "japanese_text_address": "0x08276797",
+      "japanese_references": [
+        "0x08276C30"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_ExplosionWhichMon",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 224,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082856B9",
+      "japanese_text_address": "0x082767B0",
+      "japanese_references": [
+        "0x08276C0A"
+      ]
+    },
+    {
+      "source_symbol": "MoveTutor_Text_ExplosionTaught",
+      "source": "data/text/move_tutors.inc",
+      "wokann_label_line": 228,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082856DC",
+      "japanese_text_address": "0x082767D7",
+      "japanese_references": [
+        "0x08276C3A"
+      ]
+    }
+  ],
+  "unresolved": []
+}

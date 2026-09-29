@@ -1,0 +1,49 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/maps/NewMauville_Inside/scripts.inc",
+  "texts": [
+    {
+      "name": "Chs_NewMauville_Inside_Text_GeneratorRadiatingHeat",
+      "source_symbol": "NewMauville_Inside_Text_GeneratorRadiatingHeat",
+      "us_encoded_hex": "0fe6050b0fc2030b031f03c0077d09d2043a07a50304fe03a5032e05870b8003a50278030b0b48089237fb07c2082901950e7604390746fe04a0033b0c9f37ff"
+    },
+    {
+      "name": "Chs_NewMauville_Inside_Text_GeneratorQuietedDown",
+      "source_symbol": "NewMauville_Inside_Text_GeneratorQuietedDown",
+      "us_encoded_hex": "03a5032e05870d0b108a089e37ff"
+    },
+    {
+      "name": "Chs_NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped",
+      "source_symbol": "NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped",
+      "us_encoded_hex": "fd010ca50bad089e07b804a037fb1472b0b0fbb0b000b0b000b0b000b0b0feb0b000b0b000b0b000b0b0fb03a5032e05870c690524fe0d0b108a089eb0b0ff",
+      "japanese_placeholders": [
+        1
+      ]
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x0821A7F8",
+      "original": "0x0821A8F1",
+      "symbol": "Chs_NewMauville_Inside_Text_GeneratorRadiatingHeat",
+      "source_symbol": "NewMauville_Inside_Text_GeneratorRadiatingHeat"
+    },
+    {
+      "address": "0x0821A802",
+      "original": "0x0821A923",
+      "symbol": "Chs_NewMauville_Inside_Text_GeneratorQuietedDown",
+      "source_symbol": "NewMauville_Inside_Text_GeneratorQuietedDown"
+    },
+    {
+      "address": "0x0821A783",
+      "original": "0x0821A935",
+      "symbol": "Chs_NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped",
+      "source_symbol": "NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/279_new_mauville_inside.json",
+    "mapped_count": 3,
+    "unresolved_count": 0
+  }
+}

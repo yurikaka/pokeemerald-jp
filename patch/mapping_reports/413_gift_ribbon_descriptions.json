@@ -1,0 +1,501 @@
+{
+  "schema_version": 1,
+  "batch": "413_gift_ribbon_descriptions.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/text/gift_ribbon_descriptions.h",
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "ambiguous_or_unreferenced_japanese_text": 1,
+    "mapped": 45
+  },
+  "mapped": [
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2003RegionalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BA4",
+      "japanese_text_address": "0x085F6028",
+      "japanese_references": [
+        "0x085F628C",
+        "0x085F62A4",
+        "0x085F62BC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_Champion",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BB3",
+      "japanese_text_address": "0x085F6038",
+      "japanese_references": [
+        "0x085F6290",
+        "0x085F6298",
+        "0x085F62A0",
+        "0x085F62D8",
+        "0x085F62E0",
+        "0x085F62E8",
+        "0x085F6320",
+        "0x085F6328",
+        "0x085F6330",
+        "0x085F6368",
+        "0x085F6388",
+        "0x085F63A8"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2003NationalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BC1",
+      "japanese_text_address": "0x085F6045",
+      "japanese_references": [
+        "0x085F6294",
+        "0x085F62AC",
+        "0x085F62C4"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2003GlobalCup",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BD0",
+      "japanese_text_address": "0x085F6056",
+      "japanese_references": [
+        "0x085F629C",
+        "0x085F62B4",
+        "0x085F62CC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_RunnerUp",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BDF",
+      "japanese_text_address": "0x085F6065",
+      "japanese_references": [
+        "0x085F62A8",
+        "0x085F62B0",
+        "0x085F62B8",
+        "0x085F62F0",
+        "0x085F62F8",
+        "0x085F6300",
+        "0x085F6338",
+        "0x085F6340",
+        "0x085F6348",
+        "0x085F6370",
+        "0x085F6390",
+        "0x085F63B0"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_Semifinalist",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BED",
+      "japanese_text_address": "0x085F6075",
+      "japanese_references": [
+        "0x085F62C0",
+        "0x085F62C8",
+        "0x085F62D0",
+        "0x085F6308",
+        "0x085F6310",
+        "0x085F6318",
+        "0x085F6350",
+        "0x085F6358",
+        "0x085F6360",
+        "0x085F6378",
+        "0x085F6398",
+        "0x085F63B8"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2004RegionalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2BFD",
+      "japanese_text_address": "0x085F6081",
+      "japanese_references": [
+        "0x085F62D4",
+        "0x085F62EC",
+        "0x085F6304"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2004NationalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C0C",
+      "japanese_text_address": "0x085F6091",
+      "japanese_references": [
+        "0x085F62DC",
+        "0x085F62F4",
+        "0x085F630C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2004GlobalCup",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C1B",
+      "japanese_text_address": "0x085F60A2",
+      "japanese_references": [
+        "0x085F62E4",
+        "0x085F62FC",
+        "0x085F6314"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2005RegionalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C2B",
+      "japanese_text_address": "0x085F60B1",
+      "japanese_references": [
+        "0x085F631C",
+        "0x085F6334",
+        "0x085F634C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2005NationalTourney",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C3A",
+      "japanese_text_address": "0x085F60C1",
+      "japanese_references": [
+        "0x085F6324",
+        "0x085F633C",
+        "0x085F6354"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_2005GlobalCup",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C49",
+      "japanese_text_address": "0x085F60D2",
+      "japanese_references": [
+        "0x085F632C",
+        "0x085F6344",
+        "0x085F635C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonBattleCup",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C58",
+      "japanese_text_address": "0x085F60E1",
+      "japanese_references": [
+        "0x085F6364",
+        "0x085F636C",
+        "0x085F6374",
+        "0x085F637C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_Participation",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C65",
+      "japanese_text_address": "0x085F60EE",
+      "japanese_references": [
+        "0x085F6380",
+        "0x085F63A0",
+        "0x085F63C0"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_AdvanceCup",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C80",
+      "japanese_text_address": "0x085F6102",
+      "japanese_references": [
+        "0x085F63A4",
+        "0x085F63AC",
+        "0x085F63B4",
+        "0x085F63BC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonTournament",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C8A",
+      "japanese_text_address": "0x085F610C",
+      "japanese_references": [
+        "0x085F63C4"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_Participation2",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2C97",
+      "japanese_text_address": "0x085F6118",
+      "japanese_references": [
+        "0x085F63C8",
+        "0x085F63D0",
+        "0x085F63D8"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonEvent",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CA5",
+      "japanese_text_address": "0x085F6125",
+      "japanese_references": [
+        "0x085F63CC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonFestival",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CB0",
+      "japanese_text_address": "0x085F6131",
+      "japanese_references": [
+        "0x085F63D4"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_DifficultyClearing",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CBB",
+      "japanese_text_address": "0x085F613D",
+      "japanese_references": [
+        "0x085F63DC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_Commemorative",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CCC",
+      "japanese_text_address": "0x085F6149",
+      "japanese_references": [
+        "0x085F63E0",
+        "0x085F63F0",
+        "0x085F63F8",
+        "0x085F6400",
+        "0x085F6408",
+        "0x085F6410",
+        "0x085F6418",
+        "0x085F6420",
+        "0x085F6428",
+        "0x085F6430",
+        "0x085F6438"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_ClearingAllChallenges",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CD6",
+      "japanese_text_address": "0x085F6150",
+      "japanese_references": [
+        "0x085F63E4"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_ClearingAllChallenges",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CE7",
+      "japanese_text_address": "0x085F615B",
+      "japanese_references": [
+        "0x085F63E8"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_100StraightWin",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2CF7",
+      "japanese_text_address": "0x085F6168",
+      "japanese_references": [
+        "0x085F63EC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_DarknessTower",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D05",
+      "japanese_text_address": "0x085F6175",
+      "japanese_references": [
+        "0x085F63F4"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_RedTower",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D18",
+      "japanese_text_address": "0x085F6181",
+      "japanese_references": [
+        "0x085F63FC"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_BlackironTower",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D2B",
+      "japanese_text_address": "0x085F618D",
+      "japanese_references": [
+        "0x085F6404"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_FinalTower",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D3E",
+      "japanese_text_address": "0x085F6199",
+      "japanese_references": [
+        "0x085F640C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_LegendMaking",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D51",
+      "japanese_text_address": "0x085F61A4",
+      "japanese_references": [
+        "0x085F6414"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonCenterTokyo",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D64",
+      "japanese_text_address": "0x085F61AF",
+      "japanese_references": [
+        "0x085F641C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonCenterOsaka",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D73",
+      "japanese_text_address": "0x085F61BD",
+      "japanese_references": [
+        "0x085F6424"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonCenterNagoya",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D82",
+      "japanese_text_address": "0x085F61CA",
+      "japanese_references": [
+        "0x085F642C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonCenterNY",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2D93",
+      "japanese_text_address": "0x085F61D6",
+      "japanese_references": [
+        "0x085F6434"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_SummerHolidays",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DA2",
+      "japanese_text_address": "0x085F61E5",
+      "japanese_references": [
+        "0x085F643C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_WinterHolidays",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DB4",
+      "japanese_text_address": "0x085F61F3",
+      "japanese_references": [
+        "0x085F6444"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_SpringHolidays",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DC5",
+      "japanese_text_address": "0x085F6200",
+      "japanese_references": [
+        "0x085F644C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_Evergreen",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DD6",
+      "japanese_text_address": "0x085F620D",
+      "japanese_references": [
+        "0x085F6454"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_SpecialHoliday",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DE3",
+      "japanese_text_address": "0x085F621A",
+      "japanese_references": [
+        "0x085F645C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_HardWorker",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2DF4",
+      "japanese_text_address": "0x085F6226",
+      "japanese_references": [
+        "0x085F6464"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_LotsOfFriends",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E05",
+      "japanese_text_address": "0x085F6235",
+      "japanese_references": [
+        "0x085F646C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_FullOfEnergy",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E16",
+      "japanese_text_address": "0x085F6246",
+      "japanese_references": [
+        "0x085F6474"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_LovedPokemon",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E27",
+      "japanese_text_address": "0x085F6256",
+      "japanese_references": [
+        "0x085F647C"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_LovedPokemon",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E3A",
+      "japanese_text_address": "0x085F6262",
+      "japanese_references": [
+        "0x085F6480"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_LoveForPokemon",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E44",
+      "japanese_text_address": "0x085F6270",
+      "japanese_references": [
+        "0x085F6484"
+      ]
+    },
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart2_LoveForPokemon",
+      "wokann_source": "src/data/text/gift_ribbon_descriptions.h",
+      "us_text_address": "0x086B2E57",
+      "japanese_text_address": "0x085F6280",
+      "japanese_references": [
+        "0x085F6488"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "gGiftRibbonDescriptionPart1_PokemonLeague",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    }
+  ]
+}

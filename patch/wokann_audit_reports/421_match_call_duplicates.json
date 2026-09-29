@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "421_match_call_duplicates.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Match Call duplicate Japanese messages",
+  "summary": {
+    "needs_review": 4
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x085F3B24",
+      "jp_original_text": "0x085F2DDC",
+      "batch_source_symbol": "gText_MatchCallBugManiac_Jeffrey_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallBugManiac_Jeffrey_Strategy",
+      "base_rom_value": "0x085F2DDC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3BD8",
+      "jp_original_text": "0x085F304E",
+      "batch_source_symbol": "gText_MatchCallYoungster_Calvin_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallYoungster_Calvin_Pokemon",
+      "base_rom_value": "0x085F304E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D54",
+      "jp_original_text": "0x085F355D",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Jackson_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Strategy",
+      "base_rom_value": "0x085F355D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D58",
+      "jp_original_text": "0x085F356D",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Jackson_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Pokemon",
+      "base_rom_value": "0x085F356D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    }
+  ]
+}

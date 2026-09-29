@@ -1,0 +1,608 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "337_victory_road_b2_f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: VictoryRoad_B2F",
+  "summary": {
+    "verified_text_label": 18
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08219BA7",
+      "jp_original_text": "0x08219C2B",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_VitoIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_VitoIntro",
+      "base_rom_value": "0x08219C2B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 35,
+          "symbol": "VictoryRoad_B2F_Text_VitoIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 35,
+          "symbol": "VictoryRoad_B2F_Text_VitoIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 35
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BAB",
+      "jp_original_text": "0x08219C55",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_VitoDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_VitoDefeat",
+      "base_rom_value": "0x08219C55",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 40,
+          "symbol": "VictoryRoad_B2F_Text_VitoDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 40,
+          "symbol": "VictoryRoad_B2F_Text_VitoDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BB1",
+      "jp_original_text": "0x08219C75",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_VitoPostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_VitoPostBattle",
+      "base_rom_value": "0x08219C75",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 44,
+          "symbol": "VictoryRoad_B2F_Text_VitoPostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 44,
+          "symbol": "VictoryRoad_B2F_Text_VitoPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 44
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BBE",
+      "jp_original_text": "0x08219CBE",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_OwenIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_OwenIntro",
+      "base_rom_value": "0x08219CBE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 50,
+          "symbol": "VictoryRoad_B2F_Text_OwenIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 50,
+          "symbol": "VictoryRoad_B2F_Text_OwenIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 50
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BC2",
+      "jp_original_text": "0x08219CE1",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_OwenDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_OwenDefeat",
+      "base_rom_value": "0x08219CE1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 54,
+          "symbol": "VictoryRoad_B2F_Text_OwenDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 54,
+          "symbol": "VictoryRoad_B2F_Text_OwenDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 54
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BC8",
+      "jp_original_text": "0x08219CEB",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_OwenPostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_OwenPostBattle",
+      "base_rom_value": "0x08219CEB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 57,
+          "symbol": "VictoryRoad_B2F_Text_OwenPostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 57,
+          "symbol": "VictoryRoad_B2F_Text_OwenPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 57
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BD5",
+      "jp_original_text": "0x08219D19",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_CarolineIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_CarolineIntro",
+      "base_rom_value": "0x08219D19",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 62,
+          "symbol": "VictoryRoad_B2F_Text_CarolineIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 62,
+          "symbol": "VictoryRoad_B2F_Text_CarolineIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 62
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BD9",
+      "jp_original_text": "0x08219D29",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_CarolineDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_CarolineDefeat",
+      "base_rom_value": "0x08219D29",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 65,
+          "symbol": "VictoryRoad_B2F_Text_CarolineDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 65,
+          "symbol": "VictoryRoad_B2F_Text_CarolineDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 65
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BDF",
+      "jp_original_text": "0x08219D37",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_CarolinePostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_CarolinePostBattle",
+      "base_rom_value": "0x08219D37",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 68,
+          "symbol": "VictoryRoad_B2F_Text_CarolinePostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 68,
+          "symbol": "VictoryRoad_B2F_Text_CarolinePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 68
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BEC",
+      "jp_original_text": "0x08219D68",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_JulieIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_JulieIntro",
+      "base_rom_value": "0x08219D68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 73,
+          "symbol": "VictoryRoad_B2F_Text_JulieIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 73,
+          "symbol": "VictoryRoad_B2F_Text_JulieIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 73
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BF0",
+      "jp_original_text": "0x08219D98",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_JulieDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_JulieDefeat",
+      "base_rom_value": "0x08219D98",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 78,
+          "symbol": "VictoryRoad_B2F_Text_JulieDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 78,
+          "symbol": "VictoryRoad_B2F_Text_JulieDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 78
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219BF6",
+      "jp_original_text": "0x08219DA6",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_JuliePostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_JuliePostBattle",
+      "base_rom_value": "0x08219DA6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 81,
+          "symbol": "VictoryRoad_B2F_Text_JuliePostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 81,
+          "symbol": "VictoryRoad_B2F_Text_JuliePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 81
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C03",
+      "jp_original_text": "0x08219DCF",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_FelixIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_FelixIntro",
+      "base_rom_value": "0x08219DCF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 85,
+          "symbol": "VictoryRoad_B2F_Text_FelixIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 85,
+          "symbol": "VictoryRoad_B2F_Text_FelixIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 85
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C07",
+      "jp_original_text": "0x08219DED",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_FelixDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_FelixDefeat",
+      "base_rom_value": "0x08219DED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 89,
+          "symbol": "VictoryRoad_B2F_Text_FelixDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 89,
+          "symbol": "VictoryRoad_B2F_Text_FelixDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 89
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C0D",
+      "jp_original_text": "0x08219DF6",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_FelixPostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_FelixPostBattle",
+      "base_rom_value": "0x08219DF6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 93,
+          "symbol": "VictoryRoad_B2F_Text_FelixPostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 93,
+          "symbol": "VictoryRoad_B2F_Text_FelixPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 93
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C1A",
+      "jp_original_text": "0x08219E31",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_DianneIntro",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_DianneIntro",
+      "base_rom_value": "0x08219E31",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 98,
+          "symbol": "VictoryRoad_B2F_Text_DianneIntro"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 98,
+          "symbol": "VictoryRoad_B2F_Text_DianneIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 98
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C1E",
+      "jp_original_text": "0x08219E56",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_DianneDefeat",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_DianneDefeat",
+      "base_rom_value": "0x08219E56",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 102,
+          "symbol": "VictoryRoad_B2F_Text_DianneDefeat"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 102,
+          "symbol": "VictoryRoad_B2F_Text_DianneDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 102
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08219C24",
+      "jp_original_text": "0x08219E68",
+      "batch_source_symbol": "VictoryRoad_B2F_Text_DiannePostBattle",
+      "patch_symbol": "Chs_VictoryRoad_B2F_Text_DiannePostBattle",
+      "base_rom_value": "0x08219E68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 105,
+          "symbol": "VictoryRoad_B2F_Text_DiannePostBattle"
+        },
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 105,
+          "symbol": "VictoryRoad_B2F_Text_DiannePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/VictoryRoad_B2F/scripts.inc",
+          "line": 105
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

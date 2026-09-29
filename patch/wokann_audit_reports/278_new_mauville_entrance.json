@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "278_new_mauville_entrance.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: NewMauville_Entrance",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0821A385",
+      "jp_original_text": "0x0821A3FB",
+      "batch_source_symbol": "NewMauville_Entrance_Text_DoorIsLocked",
+      "patch_symbol": "Chs_NewMauville_Entrance_Text_DoorIsLocked",
+      "base_rom_value": "0x0821A3FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 50,
+          "symbol": "NewMauville_Entrance_Text_DoorIsLocked"
+        },
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 50,
+          "symbol": "NewMauville_Entrance_Text_DoorIsLocked"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 50
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821A39D",
+      "jp_original_text": "0x0821A407",
+      "batch_source_symbol": "NewMauville_Entrance_Text_UseBasementKey",
+      "patch_symbol": "Chs_NewMauville_Entrance_Text_UseBasementKey",
+      "base_rom_value": "0x0821A407",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 53,
+          "symbol": "NewMauville_Entrance_Text_UseBasementKey"
+        },
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 53,
+          "symbol": "NewMauville_Entrance_Text_UseBasementKey"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 53
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0821A3B0",
+      "jp_original_text": "0x0821A416",
+      "batch_source_symbol": "NewMauville_Entrance_Text_UsedBasementKey",
+      "patch_symbol": "Chs_NewMauville_Entrance_Text_UsedBasementKey",
+      "base_rom_value": "0x0821A416",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 56,
+          "symbol": "NewMauville_Entrance_Text_UsedBasementKey"
+        },
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 56,
+          "symbol": "NewMauville_Entrance_Text_UsedBasementKey"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/NewMauville_Entrance/scripts.inc",
+          "line": 56
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

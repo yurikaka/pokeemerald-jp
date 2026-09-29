@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "315_slateport_city_sterns_shipyard_2_f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: SlateportCity_SternsShipyard_2F",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081FAFA5",
+      "jp_original_text": "0x081FAFB5",
+      "batch_source_symbol": "SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding",
+      "patch_symbol": "Chs_SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding",
+      "base_rom_value": "0x081FAFB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 13,
+          "symbol": "SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding"
+        },
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 13,
+          "symbol": "SlateportCity_SternsShipyard_2F_Text_ShipDesignMoreLikeBuilding"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 13
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FAFAE",
+      "jp_original_text": "0x081FAFED",
+      "batch_source_symbol": "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy",
+      "patch_symbol": "Chs_SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy",
+      "base_rom_value": "0x081FAFED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 18,
+          "symbol": "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy"
+        },
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 18,
+          "symbol": "SlateportCity_SternsShipyard_2F_Text_FloatsBecauseBuoyancy"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc",
+          "line": 18
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

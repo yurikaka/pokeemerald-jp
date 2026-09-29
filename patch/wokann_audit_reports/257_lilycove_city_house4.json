@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "257_lilycove_city_house4.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: LilycoveCity_House4",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820A51D",
+      "jp_original_text": "0x0820A52D",
+      "batch_source_symbol": "LilycoveCity_House4_Text_MysteriesAtBottomOfSea",
+      "patch_symbol": "Chs_LilycoveCity_House4_Text_MysteriesAtBottomOfSea",
+      "base_rom_value": "0x0820A52D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 13,
+          "symbol": "LilycoveCity_House4_Text_MysteriesAtBottomOfSea"
+        },
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 13,
+          "symbol": "LilycoveCity_House4_Text_MysteriesAtBottomOfSea"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 13
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820A526",
+      "jp_original_text": "0x0820A56C",
+      "batch_source_symbol": "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis",
+      "patch_symbol": "Chs_LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis",
+      "base_rom_value": "0x0820A56C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 19,
+          "symbol": "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis"
+        },
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 19,
+          "symbol": "LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LilycoveCity_House4/scripts.inc",
+          "line": 19
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

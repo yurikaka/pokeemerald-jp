@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "403_contest_link.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "08c6fdcc7",
+  "category": "dialogue: data/text/contest_link.inc",
+  "summary": {
+    "verified_direct_symbol": 1,
+    "verified_source_definition": 1
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08577C04",
+      "jp_original_text": "0x085779A0",
+      "batch_source_symbol": "gTest_MissedTurn",
+      "patch_symbol": "Chs_gTest_MissedTurn",
+      "base_rom_value": "0x085779A0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/contest_link.inc",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080DB6F0",
+      "jp_original_text": "0x0824C140",
+      "batch_source_symbol": "gText_LinkStandby4",
+      "patch_symbol": "Chs_gText_LinkStandby4",
+      "base_rom_value": "0x0824C140",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/contest.c",
+          "line": 9889,
+          "referenced_symbol": "gText_LinkStandby4",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_LinkStandby4"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080DB6CC",
+        "symbol": "ContestPrintLinkStandby"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/contest_link.inc",
+          "line": 5
+        }
+      ],
+      "status": "verified_direct_symbol"
+    }
+  ]
+}

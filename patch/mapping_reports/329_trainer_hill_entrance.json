@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "batch": "329_trainer_hill_entrance.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/TrainerHill_Entrance/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 20,
+  "unresolved_count": 7,
+  "reference_count": 22,
+  "mapped": [
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_WelcomeToTrainerHill",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 266,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243622",
+      "japanese_text_address": "0x0823BA7C",
+      "japanese_references": [
+        "0x0823B8EC"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_SaveGameBeforeEnter",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 272,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243661",
+      "japanese_text_address": "0x0823BAB9",
+      "japanese_references": [
+        "0x0823B9B3"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_TrainersInEveryRoom",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 283,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082436BA",
+      "japanese_text_address": "0x0823BB16",
+      "japanese_references": [
+        "0x0823B927"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_LikeToChallengeTrainers",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 289,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082436F6",
+      "japanese_text_address": "0x0823BB51",
+      "japanese_references": [
+        "0x0823B92E"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_TimeProgessGetSetGo",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 293,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243711",
+      "japanese_text_address": "0x0823BB67",
+      "japanese_references": [
+        "0x0823B987"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_PleaseVisitUsAgain",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 300,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243741",
+      "japanese_text_address": "0x0823BB9E",
+      "japanese_references": [
+        "0x0823B99E"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_TooBadTremendousEffort",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 303,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0824374F",
+      "japanese_text_address": "0x0823BBAB",
+      "japanese_references": [
+        "0x0823B878"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_HopeYouGiveItYourBest",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 309,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243784",
+      "japanese_text_address": "0x0823BBDA",
+      "japanese_references": [
+        "0x0823B8CD"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 312,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243796",
+      "japanese_text_address": "0x0823BBE6",
+      "japanese_references": [
+        "0x0823B88D"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_ExplainTrainerHill",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 322,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243810",
+      "japanese_text_address": "0x0823BC28",
+      "japanese_references": [
+        "0x0823B96C"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_YouFinallyCameBravo",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 342,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243905",
+      "japanese_text_address": "0x0823BD13",
+      "japanese_references": [
+        "0x0823BFFB"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_HaveTheMostMarvelousGift",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 358,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082439BE",
+      "japanese_text_address": "0x0823BDB3",
+      "japanese_references": [
+        "0x0823C031",
+        "0x0823C048"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_FullUpBeBackLaterForThis",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 362,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082439EA",
+      "japanese_text_address": "0x0823BDCF",
+      "japanese_references": [
+        "0x0823C058"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_GotHereMarvelouslyQuickly",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 366,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243A16",
+      "japanese_text_address": "0x0823BDE9",
+      "japanese_references": [
+        "0x0823C093"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_YouWerentVeryQuick",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 374,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243A97",
+      "japanese_text_address": "0x0823BE51",
+      "japanese_references": [
+        "0x0823C0A1"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Roof_Text_ArriveZippierNextTime",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 378,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243AB3",
+      "japanese_text_address": "0x0823BE69",
+      "japanese_references": [
+        "0x0823C0AF",
+        "0x0823C0B9"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 394,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243B66",
+      "japanese_text_address": "0x0823BEFA",
+      "japanese_references": [
+        "0x0823BA01"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_FriendsTryingToReachTimeBoardTop",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 400,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243C15",
+      "japanese_text_address": "0x0823BF2E",
+      "japanese_references": [
+        "0x0823BA0A"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Elevator_Text_ReturnToReception",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 407,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08243C97",
+      "japanese_text_address": "0x0823BF72",
+      "japanese_references": [
+        "0x0823C39B"
+      ]
+    },
+    {
+      "source_symbol": "TrainerHill_Entrance_Text_ThankYouForPlaying",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "wokann_label_line": 319,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x08243808",
+      "japanese_text_address": "0x0823BC1D",
+      "japanese_references": [
+        "0x0823B8DA"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "TrainerHill_Entrance_Text_StillGettingReady",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "no_japanese_text_label"
+    },
+    {
+      "symbol": "TrainerHill_Entrance_Text_TrainersUpToFloorX",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2
+      ]
+    },
+    {
+      "symbol": "TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "no_japanese_pointer"
+    },
+    {
+      "symbol": "TrainerHill_Entrance_Text_ChallengeTime",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "placeholder_review_required",
+      "placeholders": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "symbol": "TrainerHill_Entrance_Text_CantWaitToTestTheWaters",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "no_japanese_text_label"
+    },
+    {
+      "symbol": "TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen",
+      "source": "data/maps/TrainerHill_Entrance/scripts.inc",
+      "reason": "no_japanese_text_label"
+    }
+  ]
+}

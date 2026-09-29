@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "batch": "221_battle_frontier_lounge1.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/maps/BattleFrontier_Lounge1/scripts.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 20,
+  "unresolved_count": 1,
+  "reference_count": 20,
+  "mapped": [
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_PokemonBreederIntro",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 154,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823C8DC",
+      "japanese_text_address": "0x08235736",
+      "japanese_references": [
+        "0x08235586"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_AverageAbility",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 165,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823C98B",
+      "japanese_text_address": "0x082357D6",
+      "japanese_references": [
+        "0x08235658"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BetterThanAverageAbility",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 171,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823C9B5",
+      "japanese_text_address": "0x08235805",
+      "japanese_references": [
+        "0x08235666"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_ImpressiveAbility",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 177,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823C9DF",
+      "japanese_text_address": "0x08235836",
+      "japanese_references": [
+        "0x08235674"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_OutstandingAbility",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 183,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CA09",
+      "japanese_text_address": "0x08235867",
+      "japanese_references": [
+        "0x08235682"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectHP",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 188,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CA31",
+      "japanese_text_address": "0x0823588F",
+      "japanese_references": [
+        "0x08235690"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectAtk",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 192,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CA56",
+      "japanese_text_address": "0x082358AB",
+      "japanese_references": [
+        "0x0823569E"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectDef",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 196,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CA7B",
+      "japanese_text_address": "0x082358C9",
+      "japanese_references": [
+        "0x082356AC"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectSpAtk",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 200,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CAA0",
+      "japanese_text_address": "0x082358E7",
+      "japanese_references": [
+        "0x082356C8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectSpDef",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 204,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CAC5",
+      "japanese_text_address": "0x08235905",
+      "japanese_references": [
+        "0x082356D6"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_BestAspectSpeed",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 208,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CAEA",
+      "japanese_text_address": "0x08235923",
+      "japanese_references": [
+        "0x082356BA"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_StatRelativelyGood",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 212,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CB0F",
+      "japanese_text_address": "0x08235941",
+      "japanese_references": [
+        "0x082356E4"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_StatImpressive",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 216,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CB37",
+      "japanese_text_address": "0x0823596A",
+      "japanese_references": [
+        "0x082356F2"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_StatOutstanding",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 220,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CB5F",
+      "japanese_text_address": "0x0823598F",
+      "japanese_references": [
+        "0x08235700"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_StatFlawless",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 224,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CB87",
+      "japanese_text_address": "0x082359B4",
+      "japanese_references": [
+        "0x0823570E"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_NoTimeForMyAdvice",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 228,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CBAD",
+      "japanese_text_address": "0x082359DA",
+      "japanese_references": [
+        "0x0823571C"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_LetsLookAtYourPokemon",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 240,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CC13",
+      "japanese_text_address": "0x08235A40",
+      "japanese_references": [
+        "0x0823558F"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_EvenICantTell",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 246,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CC54",
+      "japanese_text_address": "0x08235A77",
+      "japanese_references": [
+        "0x082355D8"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_SaidMyMonIsOutstanding",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 251,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CCA4",
+      "japanese_text_address": "0x08235AB2",
+      "japanese_references": [
+        "0x08235726"
+      ]
+    },
+    {
+      "source_symbol": "BattleFrontier_Lounge1_Text_DidntDoAnythingSpecialRaisingIt",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "wokann_label_line": 255,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0823CCD4",
+      "japanese_text_address": "0x08235AD6",
+      "japanese_references": [
+        "0x0823572F"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "symbol": "BattleFrontier_Lounge1_Text_HaveBusinessNeedsTending",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "reason": "no_japanese_pointer"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/maps/Route120/scripts.inc",
+  "texts": [
+    {
+      "name": "Chs_Kecleon_Text_SomethingUnseeable",
+      "source_symbol": "Kecleon_Text_SomethingUnseeable",
+      "us_encoded_hex": "0f7e0bee094c07c201d605e6030b03500dbd02f00fe608e80bad37ff"
+    },
+    {
+      "name": "Chs_Kecleon_Text_WantToUseDevonScope",
+      "source_symbol": "Kecleon_Text_WantToUseDevonScope",
+      "us_encoded_hex": "0f7e0bee094c07c201d605e6030b03500dbd02f00fe608e80bad37fb0ef10bf50f71030a0d8a105f02060765092a3dff"
+    },
+    {
+      "name": "Chs_Kecleon_Text_UseDevonScopeMonAttacked",
+      "source_symbol": "Kecleon_Text_UseDevonScopeMonAttacked",
+      "us_encoded_hex": "fd010bf50f71089e030a0d8a105f0206076537fb07c201d605e6030b016307d70966fe0d520b2b0e030e59089e3cfb0c21075a030b016307d70966046d058404c50829089e3cff",
+      "japanese_placeholders": [
+        1
+      ]
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x081EDC36",
+      "original": "0x081EE029",
+      "symbol": "Chs_Kecleon_Text_SomethingUnseeable",
+      "source_symbol": "Kecleon_Text_SomethingUnseeable"
+    },
+    {
+      "address": "0x082433CB",
+      "original": "0x081EE029",
+      "symbol": "Chs_Kecleon_Text_SomethingUnseeable",
+      "source_symbol": "Kecleon_Text_SomethingUnseeable"
+    },
+    {
+      "address": "0x082433D5",
+      "original": "0x081EE039",
+      "symbol": "Chs_Kecleon_Text_WantToUseDevonScope",
+      "source_symbol": "Kecleon_Text_WantToUseDevonScope"
+    },
+    {
+      "address": "0x082433EA",
+      "original": "0x081EE05A",
+      "symbol": "Chs_Kecleon_Text_UseDevonScopeMonAttacked",
+      "source_symbol": "Kecleon_Text_UseDevonScopeMonAttacked"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/292_route120.json",
+    "mapped_count": 3,
+    "unresolved_count": 0
+  }
+}

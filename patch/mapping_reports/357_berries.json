@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "batch": "357_berries.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/berries.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 15,
+  "unresolved_count": 0,
+  "reference_count": 18,
+  "mapped": [
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_ThisIsPrettyPetalFlowerShop",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 134,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270473",
+      "japanese_text_address": "0x08263C9E",
+      "japanese_references": [
+        "0x082119E8"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_FlowersBringHappiness",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 162,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082705F7",
+      "japanese_text_address": "0x08263DCA",
+      "japanese_references": [
+        "0x08211A45"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_YouCanHaveThis",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 166,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827060D",
+      "japanese_text_address": "0x08263DE8",
+      "japanese_references": [
+        "0x08211A8B"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_WailmerPailExplanation",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 173,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270665",
+      "japanese_text_address": "0x08263E32",
+      "japanese_references": [
+        "0x08211A81",
+        "0x08211A9F"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_ImGrowingFlowers",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 183,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x0827070F",
+      "japanese_text_address": "0x08263EA4",
+      "japanese_references": [
+        "0x08211AB8"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 188,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270753",
+      "japanese_text_address": "0x08263ED1",
+      "japanese_references": [
+        "0x08211AE2",
+        "0x08211AEC"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_NameIsKiriHaveOneOfThese",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 196,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082707D7",
+      "japanese_text_address": "0x08263F33",
+      "japanese_references": [
+        "0x081E25C4"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_GiveYouThisBerryToo",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 206,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270858",
+      "japanese_text_address": "0x08263FB4",
+      "japanese_references": [
+        "0x081E25F3"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_WhatKindOfWishInYourName",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 210,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270880",
+      "japanese_text_address": "0x08263FD5",
+      "japanese_references": [
+        "0x081E262C",
+        "0x081E264D"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_LikeSeasonBornIn",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 214,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082708A3",
+      "japanese_text_address": "0x08263FF1",
+      "japanese_references": [
+        "0x081E2657"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_ThenILoveAutumn",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 219,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x082708DE",
+      "japanese_text_address": "0x08264025",
+      "japanese_references": [
+        "0x081E2674"
+      ]
+    },
+    {
+      "source_symbol": "SootopolisCity_Text_OhDoesntMatter",
+      "source": "data/text/berries.inc",
+      "wokann_label_line": 224,
+      "mapping_method": "exact_wokann_japanese_bytes",
+      "us_text_address": "0x08270917",
+      "japanese_text_address": "0x0826404E",
+      "japanese_references": [
+        "0x081E266A"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_LearnAboutBerries",
+      "source": "data/text/berries.inc",
+      "wokann_source": "data/text/berries.inc",
+      "wokann_label_line": 139,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082704A3",
+      "japanese_text_address": "0x08263CC6",
+      "japanese_references": [
+        "0x08211A1C"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_IntroLearnAboutBerries",
+      "source": "data/text/berries.inc",
+      "wokann_source": "data/text/berries.inc",
+      "wokann_label_line": 142,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082704C1",
+      "japanese_text_address": "0x08263CD9",
+      "japanese_references": [
+        "0x082119FC"
+      ]
+    },
+    {
+      "source_symbol": "Route104_PrettyPetalFlowerShop_Text_BerriesExplanation",
+      "source": "data/text/berries.inc",
+      "wokann_source": "data/text/berries.inc",
+      "wokann_label_line": 148,
+      "mapping_method": "wokann_event_scripts_object_symbol",
+      "us_text_address": "0x082704F9",
+      "japanese_text_address": "0x08263D0D",
+      "japanese_references": [
+        "0x08211A3C"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "247_fortree_city_mart.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: FortreeCity_Mart",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08204DF2",
+      "jp_original_text": "0x08204E0B",
+      "batch_source_symbol": "FortreeCity_Mart_Text_SuperRepelBetter",
+      "patch_symbol": "Chs_FortreeCity_Mart_Text_SuperRepelBetter",
+      "base_rom_value": "0x08204E0B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 41,
+          "symbol": "FortreeCity_Mart_Text_SuperRepelBetter"
+        },
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 41,
+          "symbol": "FortreeCity_Mart_Text_SuperRepelBetter"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 41
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204DFB",
+      "jp_original_text": "0x08204E45",
+      "batch_source_symbol": "FortreeCity_Mart_Text_StockUpOnItems",
+      "patch_symbol": "Chs_FortreeCity_Mart_Text_StockUpOnItems",
+      "base_rom_value": "0x08204E45",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 47,
+          "symbol": "FortreeCity_Mart_Text_StockUpOnItems"
+        },
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 47,
+          "symbol": "FortreeCity_Mart_Text_StockUpOnItems"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 47
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08204E04",
+      "jp_original_text": "0x08204E70",
+      "batch_source_symbol": "FortreeCity_Mart_Text_RareCandyMakesMonGrow",
+      "patch_symbol": "Chs_FortreeCity_Mart_Text_RareCandyMakesMonGrow",
+      "base_rom_value": "0x08204E70",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 51,
+          "symbol": "FortreeCity_Mart_Text_RareCandyMakesMonGrow"
+        },
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 51,
+          "symbol": "FortreeCity_Mart_Text_RareCandyMakesMonGrow"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/FortreeCity_Mart/scripts.inc",
+          "line": 51
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

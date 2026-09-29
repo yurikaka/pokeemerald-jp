@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "273_mossdeep_city_mart.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: MossdeepCity_Mart",
+  "summary": {
+    "verified_text_label": 3
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820C5E4",
+      "jp_original_text": "0x0820C5FD",
+      "batch_source_symbol": "MossdeepCity_Mart_Text_ReviveIsFantastic",
+      "patch_symbol": "Chs_MossdeepCity_Mart_Text_ReviveIsFantastic",
+      "base_rom_value": "0x0820C5FD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 40,
+          "symbol": "MossdeepCity_Mart_Text_ReviveIsFantastic"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 40
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820C5ED",
+      "jp_original_text": "0x0820C647",
+      "batch_source_symbol": "MossdeepCity_Mart_Text_MaxRepelLastsLongest",
+      "patch_symbol": "Chs_MossdeepCity_Mart_Text_MaxRepelLastsLongest",
+      "base_rom_value": "0x0820C647",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 47,
+          "symbol": "MossdeepCity_Mart_Text_MaxRepelLastsLongest"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 47
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820C5F6",
+      "jp_original_text": "0x0820C681",
+      "batch_source_symbol": "MossdeepCity_Mart_Text_NetAndDiveBallsRare",
+      "patch_symbol": "Chs_MossdeepCity_Mart_Text_NetAndDiveBallsRare",
+      "base_rom_value": "0x0820C681",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 53,
+          "symbol": "MossdeepCity_Mart_Text_NetAndDiveBallsRare"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_Mart/scripts.inc",
+          "line": 53
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

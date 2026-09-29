@@ -1,0 +1,1532 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "052_mauvillecity_gamecorner.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mauville and Route 110 dialogue: MauvilleCity_GameCorner",
+  "summary": {
+    "verified_text_label": 46
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x08200787",
+      "jp_original_text": "0x08200C41",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase",
+      "base_rom_value": "0x08200C41",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 772,
+          "symbol": "MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 772,
+          "symbol": "MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 772
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200544",
+      "jp_original_text": "0x0820098D",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_CantWinJackpot",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_CantWinJackpot",
+      "base_rom_value": "0x0820098D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 711,
+          "symbol": "MauvilleCity_GameCorner_Text_CantWinJackpot"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 711,
+          "symbol": "MauvilleCity_GameCorner_Text_CantWinJackpot"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 711
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200012",
+      "jp_original_text": "0x08200833",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_CoinCaseIsFull",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_CoinCaseIsFull",
+      "base_rom_value": "0x08200833",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 651,
+          "symbol": "MauvilleCity_GameCorner_Text_CoinCaseIsFull"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 651,
+          "symbol": "MauvilleCity_GameCorner_Text_CoinCaseIsFull"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 651
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200456",
+      "jp_original_text": "0x08200AAF",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay",
+      "base_rom_value": "0x08200AAF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 741,
+          "symbol": "MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 741,
+          "symbol": "MauvilleCity_GameCorner_Text_CoinsAreNeededToPlay"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 741
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082005E9",
+      "jp_original_text": "0x08200B52",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_DifficultToStopOn7",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_DifficultToStopOn7",
+      "base_rom_value": "0x08200B52",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 756,
+          "symbol": "MauvilleCity_GameCorner_Text_DifficultToStopOn7"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 756,
+          "symbol": "MauvilleCity_GameCorner_Text_DifficultToStopOn7"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 756
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820053A",
+      "jp_original_text": "0x0820097B",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_DontBeNegative",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_DontBeNegative",
+      "base_rom_value": "0x0820097B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 708,
+          "symbol": "MauvilleCity_GameCorner_Text_DontBeNegative"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 708,
+          "symbol": "MauvilleCity_GameCorner_Text_DontBeNegative"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 708
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFFF2",
+      "jp_original_text": "0x08200820",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_DontHaveEnoughMoney",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_DontHaveEnoughMoney",
+      "base_rom_value": "0x08200820",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 647,
+          "symbol": "MauvilleCity_GameCorner_Text_DontHaveEnoughMoney"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 647,
+          "symbol": "MauvilleCity_GameCorner_Text_DontHaveEnoughMoney"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 647
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200002",
+      "jp_original_text": "0x08200848",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_DontNeedCoinsThen",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_DontNeedCoinsThen",
+      "base_rom_value": "0x08200848",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 655,
+          "symbol": "MauvilleCity_GameCorner_Text_DontNeedCoinsThen"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 655,
+          "symbol": "MauvilleCity_GameCorner_Text_DontNeedCoinsThen"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 655
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082005BC",
+      "jp_original_text": "0x08200A93",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime",
+      "base_rom_value": "0x08200A93",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 737,
+          "symbol": "MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 737,
+          "symbol": "MauvilleCity_GameCorner_Text_EasyToLoseTrackOfTime"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 737
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200024",
+      "jp_original_text": "0x08200864",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes",
+      "base_rom_value": "0x08200864",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659,
+          "symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659,
+          "symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082001D2",
+      "jp_original_text": "0x08200864",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes",
+      "base_rom_value": "0x08200864",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659,
+          "symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659,
+          "symbol": "MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 659
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200473",
+      "jp_original_text": "0x08200932",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne",
+      "base_rom_value": "0x08200932",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 696,
+          "symbol": "MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 696,
+          "symbol": "MauvilleCity_GameCorner_Text_GotTwoOfSameDollWantOne"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 696
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820033A",
+      "jp_original_text": "0x0820091A",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo",
+      "base_rom_value": "0x0820091A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200374",
+      "jp_original_text": "0x0820091A",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo",
+      "base_rom_value": "0x0820091A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082003AE",
+      "jp_original_text": "0x0820091A",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo",
+      "base_rom_value": "0x0820091A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082003E8",
+      "jp_original_text": "0x0820091A",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo",
+      "base_rom_value": "0x0820091A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200422",
+      "jp_original_text": "0x0820091A",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo",
+      "base_rom_value": "0x0820091A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 690
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082004BF",
+      "jp_original_text": "0x0820095F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo2",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo2",
+      "base_rom_value": "0x0820095F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082004E9",
+      "jp_original_text": "0x0820095F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo2",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo2",
+      "base_rom_value": "0x0820095F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200513",
+      "jp_original_text": "0x0820095F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HereYouGo2",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HereYouGo2",
+      "base_rom_value": "0x0820095F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701,
+          "symbol": "MauvilleCity_GameCorner_Text_HereYouGo2"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 701
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082005F9",
+      "jp_original_text": "0x08200BA3",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo",
+      "base_rom_value": "0x08200BA3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 762,
+          "symbol": "MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 762,
+          "symbol": "MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 762
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820058B",
+      "jp_original_text": "0x082009E9",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins",
+      "base_rom_value": "0x082009E9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 721,
+          "symbol": "MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 721,
+          "symbol": "MauvilleCity_GameCorner_Text_LuckOnlyLastSoLongTakeCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 721
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820059C",
+      "jp_original_text": "0x08200A10",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone",
+      "base_rom_value": "0x08200A10",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 725,
+          "symbol": "MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 725,
+          "symbol": "MauvilleCity_GameCorner_Text_MauvilleSomethingForEveryone"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 725
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFFE8",
+      "jp_original_text": "0x082007AA",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins",
+      "base_rom_value": "0x082007AA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 633,
+          "symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 633,
+          "symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseForCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 633
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200560",
+      "jp_original_text": "0x082009AB",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor",
+      "base_rom_value": "0x082009AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 715,
+          "symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 715,
+          "symbol": "MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 715
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082001AA",
+      "jp_original_text": "0x082008D3",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_NotEnoughCoins",
+      "base_rom_value": "0x082008D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675,
+          "symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675,
+          "symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200430",
+      "jp_original_text": "0x082008D3",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_NotEnoughCoins",
+      "base_rom_value": "0x082008D3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675,
+          "symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675,
+          "symbol": "MauvilleCity_GameCorner_Text_NotEnoughCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 675
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082001C3",
+      "jp_original_text": "0x082008F5",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_OhIsThatSo",
+      "base_rom_value": "0x082008F5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682,
+          "symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682,
+          "symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200449",
+      "jp_original_text": "0x082008F5",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_OhIsThatSo",
+      "base_rom_value": "0x082008F5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682,
+          "symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682,
+          "symbol": "MauvilleCity_GameCorner_Text_OhIsThatSo"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 682
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820045F",
+      "jp_original_text": "0x08200ACC",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_RouletteOnlyLuck",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_RouletteOnlyLuck",
+      "base_rom_value": "0x08200ACC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 745,
+          "symbol": "MauvilleCity_GameCorner_Text_RouletteOnlyLuck"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 745,
+          "symbol": "MauvilleCity_GameCorner_Text_RouletteOnlyLuck"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 745
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082005AC",
+      "jp_original_text": "0x08200A52",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates",
+      "base_rom_value": "0x08200A52",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 731,
+          "symbol": "MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 731,
+          "symbol": "MauvilleCity_GameCorner_Text_RouletteTablesDifferentRates"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 731
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200128",
+      "jp_original_text": "0x082008B1",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "base_rom_value": "0x082008B1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200162",
+      "jp_original_text": "0x082008B1",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "base_rom_value": "0x082008B1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820019C",
+      "jp_original_text": "0x082008B1",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_SendToYourHomePC",
+      "base_rom_value": "0x082008B1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671,
+          "symbol": "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 671
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082002BE",
+      "jp_original_text": "0x082008A2",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX",
+      "base_rom_value": "0x082008A2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 667,
+          "symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 667,
+          "symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 667
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082000C2",
+      "jp_original_text": "0x0820090F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsX",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_SoYourChoiceIsX",
+      "base_rom_value": "0x0820090F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 686,
+          "symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsX"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 686,
+          "symbol": "MauvilleCity_GameCorner_Text_SoYourChoiceIsX"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 686
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFF96",
+      "jp_original_text": "0x08200803",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins",
+      "base_rom_value": "0x08200803",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643,
+          "symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643,
+          "symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFFD8",
+      "jp_original_text": "0x08200803",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins",
+      "base_rom_value": "0x08200803",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643,
+          "symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643,
+          "symbol": "MauvilleCity_GameCorner_Text_ThankYouHereAreYourCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 643
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFEEC",
+      "jp_original_text": "0x0820078F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner",
+      "base_rom_value": "0x0820078F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 629,
+          "symbol": "MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 629,
+          "symbol": "MauvilleCity_GameCorner_Text_ThisIsMauvilleGameCorner"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 629
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082005CC",
+      "jp_original_text": "0x08200B0F",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed",
+      "base_rom_value": "0x08200B0F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 751,
+          "symbol": "MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 751,
+          "symbol": "MauvilleCity_GameCorner_Text_UpTo3CoinsCanBeUsed"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 751
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081FFF03",
+      "jp_original_text": "0x082007D5",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_WereYouLookingForCoins",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_WereYouLookingForCoins",
+      "base_rom_value": "0x082007D5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 638,
+          "symbol": "MauvilleCity_GameCorner_Text_WereYouLookingForCoins"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 638,
+          "symbol": "MauvilleCity_GameCorner_Text_WereYouLookingForCoins"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 638
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x0820003D",
+      "jp_original_text": "0x08200897",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_WhichPrize",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_WhichPrize",
+      "base_rom_value": "0x08200897",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200050",
+      "jp_original_text": "0x08200897",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_WhichPrize",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_WhichPrize",
+      "base_rom_value": "0x08200897",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082001EB",
+      "jp_original_text": "0x08200897",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_WhichPrize",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_WhichPrize",
+      "base_rom_value": "0x08200897",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082001FE",
+      "jp_original_text": "0x08200897",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_WhichPrize",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_WhichPrize",
+      "base_rom_value": "0x08200897",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664,
+          "symbol": "MauvilleCity_GameCorner_Text_WhichPrize"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 664
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x08200530",
+      "jp_original_text": "0x08200967",
+      "batch_source_symbol": "MauvilleCity_GameCorner_Text_YouWantItButNotNow",
+      "patch_symbol": "Chs_MauvilleCity_GameCorner_Text_YouWantItButNotNow",
+      "base_rom_value": "0x08200967",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 704,
+          "symbol": "MauvilleCity_GameCorner_Text_YouWantItButNotNow"
+        },
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 704,
+          "symbol": "MauvilleCity_GameCorner_Text_YouWantItButNotNow"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity_GameCorner/scripts.inc",
+          "line": 704
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

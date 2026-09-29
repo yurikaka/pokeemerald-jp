@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "251_lavaridge_town_mart.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: LavaridgeTown_Mart",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081F4EFC",
+      "jp_original_text": "0x081F4F0C",
+      "batch_source_symbol": "LavaridgeTown_Mart_Text_XSpeedFirstStrike",
+      "patch_symbol": "Chs_LavaridgeTown_Mart_Text_XSpeedFirstStrike",
+      "base_rom_value": "0x081F4F0C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 36,
+          "symbol": "LavaridgeTown_Mart_Text_XSpeedFirstStrike"
+        },
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 36,
+          "symbol": "LavaridgeTown_Mart_Text_XSpeedFirstStrike"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 36
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F4F05",
+      "jp_original_text": "0x081F4F50",
+      "batch_source_symbol": "LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney",
+      "patch_symbol": "Chs_LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney",
+      "base_rom_value": "0x081F4F50",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 42,
+          "symbol": "LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney"
+        },
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 42,
+          "symbol": "LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/LavaridgeTown_Mart/scripts.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

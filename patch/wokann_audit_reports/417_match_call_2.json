@@ -1,0 +1,1680 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "417_match_call_2.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "C text: src/data/text/match_call_messages.h",
+  "summary": {
+    "needs_review": 98
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x085F3CD4",
+      "jp_original_text": "0x085F339D",
+      "batch_source_symbol": "gText_MatchCallTwins_AmyAndLiv_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallTwins_AmyAndLiv_Strategy",
+      "base_rom_value": "0x085F339D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CD8",
+      "jp_original_text": "0x085F33AA",
+      "batch_source_symbol": "gText_MatchCallTwins_AmyAndLiv_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallTwins_AmyAndLiv_Pokemon",
+      "base_rom_value": "0x085F33AA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CDC",
+      "jp_original_text": "0x085F33B8",
+      "batch_source_symbol": "gText_MatchCallTwins_AmyAndLiv_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallTwins_AmyAndLiv_Intro1",
+      "base_rom_value": "0x085F33B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CE0",
+      "jp_original_text": "0x085F33C8",
+      "batch_source_symbol": "gText_MatchCallTwins_AmyAndLiv_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallTwins_AmyAndLiv_Intro2",
+      "base_rom_value": "0x085F33C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CE4",
+      "jp_original_text": "0x085F33D8",
+      "batch_source_symbol": "gText_MatchCallSailor_Ernest_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Ernest_Strategy",
+      "base_rom_value": "0x085F33D8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CE8",
+      "jp_original_text": "0x085F33E4",
+      "batch_source_symbol": "gText_MatchCallSailor_Ernest_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Ernest_Pokemon",
+      "base_rom_value": "0x085F33E4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CEC",
+      "jp_original_text": "0x085F33F0",
+      "batch_source_symbol": "gText_MatchCallSailor_Ernest_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Ernest_Intro1",
+      "base_rom_value": "0x085F33F0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CF0",
+      "jp_original_text": "0x085F3400",
+      "batch_source_symbol": "gText_MatchCallSailor_Ernest_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Ernest_Intro2",
+      "base_rom_value": "0x085F3400",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CF4",
+      "jp_original_text": "0x085F340D",
+      "batch_source_symbol": "gText_MatchCallSailor_Cory_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Cory_Strategy",
+      "base_rom_value": "0x085F340D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CF8",
+      "jp_original_text": "0x085F3418",
+      "batch_source_symbol": "gText_MatchCallSailor_Cory_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Cory_Pokemon",
+      "base_rom_value": "0x085F3418",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3CFC",
+      "jp_original_text": "0x085F3426",
+      "batch_source_symbol": "gText_MatchCallSailor_Cory_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Cory_Intro1",
+      "base_rom_value": "0x085F3426",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D00",
+      "jp_original_text": "0x085F3435",
+      "batch_source_symbol": "gText_MatchCallSailor_Cory_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallSailor_Cory_Intro2",
+      "base_rom_value": "0x085F3435",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D04",
+      "jp_original_text": "0x085F3445",
+      "batch_source_symbol": "gText_MatchCallCollector_Edwin_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallCollector_Edwin_Strategy",
+      "base_rom_value": "0x085F3445",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D08",
+      "jp_original_text": "0x085F3455",
+      "batch_source_symbol": "gText_MatchCallCollector_Edwin_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallCollector_Edwin_Pokemon",
+      "base_rom_value": "0x085F3455",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D0C",
+      "jp_original_text": "0x085F3465",
+      "batch_source_symbol": "gText_MatchCallCollector_Edwin_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallCollector_Edwin_Intro1",
+      "base_rom_value": "0x085F3465",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D10",
+      "jp_original_text": "0x085F3473",
+      "batch_source_symbol": "gText_MatchCallCollector_Edwin_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallCollector_Edwin_Intro2",
+      "base_rom_value": "0x085F3473",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D14",
+      "jp_original_text": "0x085F3481",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Lydia_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Lydia_Strategy",
+      "base_rom_value": "0x085F3481",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D18",
+      "jp_original_text": "0x085F348D",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Lydia_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Lydia_Pokemon",
+      "base_rom_value": "0x085F348D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D1C",
+      "jp_original_text": "0x085F349C",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Lydia_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Lydia_Intro1",
+      "base_rom_value": "0x085F349C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D20",
+      "jp_original_text": "0x085F34AB",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Lydia_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Lydia_Intro2",
+      "base_rom_value": "0x085F34AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D24",
+      "jp_original_text": "0x085F34B8",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Isaac_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Isaac_Strategy",
+      "base_rom_value": "0x085F34B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D28",
+      "jp_original_text": "0x085F34C3",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Isaac_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Isaac_Pokemon",
+      "base_rom_value": "0x085F34C3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D2C",
+      "jp_original_text": "0x085F34CD",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Isaac_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Isaac_Intro1",
+      "base_rom_value": "0x085F34CD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D30",
+      "jp_original_text": "0x085F34DD",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Isaac_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Isaac_Intro2",
+      "base_rom_value": "0x085F34DD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D34",
+      "jp_original_text": "0x085F34EB",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Gabrielle_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Gabrielle_Strategy",
+      "base_rom_value": "0x085F34EB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D38",
+      "jp_original_text": "0x085F34FB",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Gabrielle_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Gabrielle_Pokemon",
+      "base_rom_value": "0x085F34FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D3C",
+      "jp_original_text": "0x085F350A",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Gabrielle_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Gabrielle_Intro1",
+      "base_rom_value": "0x085F350A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D40",
+      "jp_original_text": "0x085F3515",
+      "batch_source_symbol": "gText_MatchCallPkmnBreeder_Gabrielle_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnBreeder_Gabrielle_Intro2",
+      "base_rom_value": "0x085F3515",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D44",
+      "jp_original_text": "0x085F3524",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Catherine_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Catherine_Strategy",
+      "base_rom_value": "0x085F3524",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D48",
+      "jp_original_text": "0x085F3534",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Catherine_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Catherine_Pokemon",
+      "base_rom_value": "0x085F3534",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D4C",
+      "jp_original_text": "0x085F3541",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Catherine_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Catherine_Intro1",
+      "base_rom_value": "0x085F3541",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D50",
+      "jp_original_text": "0x085F354D",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Catherine_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Catherine_Intro2",
+      "base_rom_value": "0x085F354D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D5C",
+      "jp_original_text": "0x085F357C",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Jackson_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Intro1",
+      "base_rom_value": "0x085F357C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D60",
+      "jp_original_text": "0x085F358A",
+      "batch_source_symbol": "gText_MatchCallPkmnRanger_Jackson_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Intro2",
+      "base_rom_value": "0x085F358A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D64",
+      "jp_original_text": "0x085F3597",
+      "batch_source_symbol": "gText_MatchCallLass_Haley_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallLass_Haley_Strategy",
+      "base_rom_value": "0x085F3597",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D68",
+      "jp_original_text": "0x085F35A4",
+      "batch_source_symbol": "gText_MatchCallLass_Haley_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallLass_Haley_Pokemon",
+      "base_rom_value": "0x085F35A4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D6C",
+      "jp_original_text": "0x085F35B4",
+      "batch_source_symbol": "gText_MatchCallLass_Haley_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallLass_Haley_Intro1",
+      "base_rom_value": "0x085F35B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D70",
+      "jp_original_text": "0x085F35C4",
+      "batch_source_symbol": "gText_MatchCallLass_Haley_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallLass_Haley_Intro2",
+      "base_rom_value": "0x085F35C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D74",
+      "jp_original_text": "0x085F35D0",
+      "batch_source_symbol": "gText_MatchCallBugCatcher_James_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallBugCatcher_James_Strategy",
+      "base_rom_value": "0x085F35D0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D78",
+      "jp_original_text": "0x085F35DC",
+      "batch_source_symbol": "gText_MatchCallBugCatcher_James_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallBugCatcher_James_Pokemon",
+      "base_rom_value": "0x085F35DC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D7C",
+      "jp_original_text": "0x085F35E9",
+      "batch_source_symbol": "gText_MatchCallBugCatcher_James_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallBugCatcher_James_Intro1",
+      "base_rom_value": "0x085F35E9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D80",
+      "jp_original_text": "0x085F35F9",
+      "batch_source_symbol": "gText_MatchCallBugCatcher_James_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallBugCatcher_James_Intro2",
+      "base_rom_value": "0x085F35F9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D84",
+      "jp_original_text": "0x085F3606",
+      "batch_source_symbol": "gText_MatchCallHiker_Trent_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Trent_Strategy",
+      "base_rom_value": "0x085F3606",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D88",
+      "jp_original_text": "0x085F3611",
+      "batch_source_symbol": "gText_MatchCallHiker_Trent_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Trent_Pokemon",
+      "base_rom_value": "0x085F3611",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D8C",
+      "jp_original_text": "0x085F3620",
+      "batch_source_symbol": "gText_MatchCallHiker_Trent_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Trent_Intro1",
+      "base_rom_value": "0x085F3620",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D90",
+      "jp_original_text": "0x085F362E",
+      "batch_source_symbol": "gText_MatchCallHiker_Trent_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Trent_Intro2",
+      "base_rom_value": "0x085F362E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D94",
+      "jp_original_text": "0x085F363C",
+      "batch_source_symbol": "gText_MatchCallHiker_Sawyer_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Sawyer_Strategy",
+      "base_rom_value": "0x085F363C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D98",
+      "jp_original_text": "0x085F3647",
+      "batch_source_symbol": "gText_MatchCallHiker_Sawyer_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Sawyer_Pokemon",
+      "base_rom_value": "0x085F3647",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3D9C",
+      "jp_original_text": "0x085F3652",
+      "batch_source_symbol": "gText_MatchCallHiker_Sawyer_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Sawyer_Intro1",
+      "base_rom_value": "0x085F3652",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DA0",
+      "jp_original_text": "0x085F365E",
+      "batch_source_symbol": "gText_MatchCallHiker_Sawyer_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallHiker_Sawyer_Intro2",
+      "base_rom_value": "0x085F365E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DA4",
+      "jp_original_text": "0x085F366A",
+      "batch_source_symbol": "gText_MatchCallYoungCouple_LoisAndHal_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallYoungCouple_LoisAndHal_Strategy",
+      "base_rom_value": "0x085F366A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DA8",
+      "jp_original_text": "0x085F3674",
+      "batch_source_symbol": "gText_MatchCallYoungCouple_LoisAndHal_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallYoungCouple_LoisAndHal_Pokemon",
+      "base_rom_value": "0x085F3674",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DAC",
+      "jp_original_text": "0x085F367F",
+      "batch_source_symbol": "gText_MatchCallYoungCouple_LoisAndHal_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallYoungCouple_LoisAndHal_Intro1",
+      "base_rom_value": "0x085F367F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DB0",
+      "jp_original_text": "0x085F368B",
+      "batch_source_symbol": "gText_MatchCallYoungCouple_LoisAndHal_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallYoungCouple_LoisAndHal_Intro2",
+      "base_rom_value": "0x085F368B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DB4",
+      "jp_original_text": "0x085F3697",
+      "batch_source_symbol": "gText_MatchCallPkmnTrainer_Wally_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPkmnTrainer_Wally_Strategy",
+      "base_rom_value": "0x085F3697",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DB8",
+      "jp_original_text": "0x085F36A7",
+      "batch_source_symbol": "gText_MatchCallPkmnTrainer_Wally_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPkmnTrainer_Wally_Pokemon",
+      "base_rom_value": "0x085F36A7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DBC",
+      "jp_original_text": "0x085F36B7",
+      "batch_source_symbol": "gText_MatchCallPkmnTrainer_Wally_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPkmnTrainer_Wally_Intro1",
+      "base_rom_value": "0x085F36B7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DC0",
+      "jp_original_text": "0x085F36C1",
+      "batch_source_symbol": "gText_MatchCallPkmnTrainer_Wally_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPkmnTrainer_Wally_Intro2",
+      "base_rom_value": "0x085F36C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DC4",
+      "jp_original_text": "0x085F36D1",
+      "batch_source_symbol": "gText_MatchCallRockinWhiz_Roxanne_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallRockinWhiz_Roxanne_Strategy",
+      "base_rom_value": "0x085F36D1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DC8",
+      "jp_original_text": "0x085F36E1",
+      "batch_source_symbol": "gText_MatchCallRockinWhiz_Roxanne_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallRockinWhiz_Roxanne_Pokemon",
+      "base_rom_value": "0x085F36E1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DCC",
+      "jp_original_text": "0x085F36F0",
+      "batch_source_symbol": "gText_MatchCallRockinWhiz_Roxanne_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallRockinWhiz_Roxanne_Intro1",
+      "base_rom_value": "0x085F36F0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DD0",
+      "jp_original_text": "0x085F36FF",
+      "batch_source_symbol": "gText_MatchCallRockinWhiz_Roxanne_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallRockinWhiz_Roxanne_Intro2",
+      "base_rom_value": "0x085F36FF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DD4",
+      "jp_original_text": "0x085F370B",
+      "batch_source_symbol": "gText_MatchCallTheBigHit_Brawly_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallTheBigHit_Brawly_Strategy",
+      "base_rom_value": "0x085F370B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DD8",
+      "jp_original_text": "0x085F371A",
+      "batch_source_symbol": "gText_MatchCallTheBigHit_Brawly_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallTheBigHit_Brawly_Pokemon",
+      "base_rom_value": "0x085F371A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DDC",
+      "jp_original_text": "0x085F3729",
+      "batch_source_symbol": "gText_MatchCallTheBigHit_Brawly_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallTheBigHit_Brawly_Intro1",
+      "base_rom_value": "0x085F3729",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DE0",
+      "jp_original_text": "0x085F3737",
+      "batch_source_symbol": "gText_MatchCallTheBigHit_Brawly_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallTheBigHit_Brawly_Intro2",
+      "base_rom_value": "0x085F3737",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DE4",
+      "jp_original_text": "0x085F3743",
+      "batch_source_symbol": "gText_MatchCallSwellShock_Wattson_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallSwellShock_Wattson_Strategy",
+      "base_rom_value": "0x085F3743",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DE8",
+      "jp_original_text": "0x085F3750",
+      "batch_source_symbol": "gText_MatchCallSwellShock_Wattson_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallSwellShock_Wattson_Pokemon",
+      "base_rom_value": "0x085F3750",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DEC",
+      "jp_original_text": "0x085F375F",
+      "batch_source_symbol": "gText_MatchCallSwellShock_Wattson_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallSwellShock_Wattson_Intro1",
+      "base_rom_value": "0x085F375F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DF0",
+      "jp_original_text": "0x085F376C",
+      "batch_source_symbol": "gText_MatchCallSwellShock_Wattson_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallSwellShock_Wattson_Intro2",
+      "base_rom_value": "0x085F376C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DF4",
+      "jp_original_text": "0x085F3778",
+      "batch_source_symbol": "gText_MatchCallPassionBurn_Flannery_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallPassionBurn_Flannery_Strategy",
+      "base_rom_value": "0x085F3778",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DF8",
+      "jp_original_text": "0x085F3781",
+      "batch_source_symbol": "gText_MatchCallPassionBurn_Flannery_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallPassionBurn_Flannery_Pokemon",
+      "base_rom_value": "0x085F3781",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3DFC",
+      "jp_original_text": "0x085F3791",
+      "batch_source_symbol": "gText_MatchCallPassionBurn_Flannery_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallPassionBurn_Flannery_Intro1",
+      "base_rom_value": "0x085F3791",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E00",
+      "jp_original_text": "0x085F379C",
+      "batch_source_symbol": "gText_MatchCallPassionBurn_Flannery_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallPassionBurn_Flannery_Intro2",
+      "base_rom_value": "0x085F379C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E04",
+      "jp_original_text": "0x085F37A8",
+      "batch_source_symbol": "gText_MatchCallReliableOne_Dad_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallReliableOne_Dad_Strategy",
+      "base_rom_value": "0x085F37A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E08",
+      "jp_original_text": "0x085F37B6",
+      "batch_source_symbol": "gText_MatchCallReliableOne_Dad_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallReliableOne_Dad_Pokemon",
+      "base_rom_value": "0x085F37B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E0C",
+      "jp_original_text": "0x085F37C4",
+      "batch_source_symbol": "gText_MatchCallReliableOne_Dad_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallReliableOne_Dad_Intro1",
+      "base_rom_value": "0x085F37C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E10",
+      "jp_original_text": "0x085F37D2",
+      "batch_source_symbol": "gText_MatchCallReliableOne_Dad_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallReliableOne_Dad_Intro2",
+      "base_rom_value": "0x085F37D2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E14",
+      "jp_original_text": "0x085F37DF",
+      "batch_source_symbol": "gText_MatchCallSkyTamer_Winona_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallSkyTamer_Winona_Strategy",
+      "base_rom_value": "0x085F37DF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E18",
+      "jp_original_text": "0x085F37EF",
+      "batch_source_symbol": "gText_MatchCallSkyTamer_Winona_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallSkyTamer_Winona_Pokemon",
+      "base_rom_value": "0x085F37EF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E1C",
+      "jp_original_text": "0x085F37FC",
+      "batch_source_symbol": "gText_MatchCallSkyTamer_Winona_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallSkyTamer_Winona_Intro1",
+      "base_rom_value": "0x085F37FC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E20",
+      "jp_original_text": "0x085F380B",
+      "batch_source_symbol": "gText_MatchCallSkyTamer_Winona_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallSkyTamer_Winona_Intro2",
+      "base_rom_value": "0x085F380B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E24",
+      "jp_original_text": "0x085F3817",
+      "batch_source_symbol": "gText_MatchCallMysticDuo_TateAndLiza_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallMysticDuo_TateAndLiza_Strategy",
+      "base_rom_value": "0x085F3817",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E28",
+      "jp_original_text": "0x085F3824",
+      "batch_source_symbol": "gText_MatchCallMysticDuo_TateAndLiza_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallMysticDuo_TateAndLiza_Pokemon",
+      "base_rom_value": "0x085F3824",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E2C",
+      "jp_original_text": "0x085F3834",
+      "batch_source_symbol": "gText_MatchCallMysticDuo_TateAndLiza_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallMysticDuo_TateAndLiza_Intro1",
+      "base_rom_value": "0x085F3834",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E30",
+      "jp_original_text": "0x085F3842",
+      "batch_source_symbol": "gText_MatchCallMysticDuo_TateAndLiza_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallMysticDuo_TateAndLiza_Intro2",
+      "base_rom_value": "0x085F3842",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E34",
+      "jp_original_text": "0x085F3852",
+      "batch_source_symbol": "gText_MatchCallDandyCharm_Juan_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallDandyCharm_Juan_Strategy",
+      "base_rom_value": "0x085F3852",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E38",
+      "jp_original_text": "0x085F3860",
+      "batch_source_symbol": "gText_MatchCallDandyCharm_Juan_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallDandyCharm_Juan_Pokemon",
+      "base_rom_value": "0x085F3860",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E3C",
+      "jp_original_text": "0x085F386F",
+      "batch_source_symbol": "gText_MatchCallDandyCharm_Juan_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallDandyCharm_Juan_Intro1",
+      "base_rom_value": "0x085F386F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E40",
+      "jp_original_text": "0x085F387F",
+      "batch_source_symbol": "gText_MatchCallDandyCharm_Juan_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallDandyCharm_Juan_Intro2",
+      "base_rom_value": "0x085F387F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E44",
+      "jp_original_text": "0x085F388F",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Sidney_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Sidney_Strategy",
+      "base_rom_value": "0x085F388F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E48",
+      "jp_original_text": "0x085F389E",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Sidney_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Sidney_Pokemon",
+      "base_rom_value": "0x085F389E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E4C",
+      "jp_original_text": "0x085F38A7",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Sidney_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Sidney_Intro1",
+      "base_rom_value": "0x085F38A7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E50",
+      "jp_original_text": "0x085F38B6",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Sidney_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Sidney_Intro2",
+      "base_rom_value": "0x085F38B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E54",
+      "jp_original_text": "0x085F38C6",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Phoebe_Strategy",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Phoebe_Strategy",
+      "base_rom_value": "0x085F38C6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E58",
+      "jp_original_text": "0x085F38D6",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Phoebe_Pokemon",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Phoebe_Pokemon",
+      "base_rom_value": "0x085F38D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E5C",
+      "jp_original_text": "0x085F38E3",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Phoebe_Intro1",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Phoebe_Intro1",
+      "base_rom_value": "0x085F38E3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085F3E60",
+      "jp_original_text": "0x085F38F2",
+      "batch_source_symbol": "gText_MatchCallEliteFour_Phoebe_Intro2",
+      "patch_symbol": "Chs_gText_MatchCallEliteFour_Phoebe_Intro2",
+      "base_rom_value": "0x085F38F2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    }
+  ]
+}

@@ -1,0 +1,5980 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "172_party.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "8dbfd7c4e",
+  "category": "party menu and summary screen text",
+  "summary": {
+    "needs_review": 206,
+    "verified_direct_symbol": 1,
+    "verified_fragment": 42,
+    "verified_source_definition": 59
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081C37D0",
+      "jp_original_text": "0x085C93C4",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 9391,
+          "referenced_symbol": "gText_Cancel",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Cancel"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C377C",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_direct_symbol"
+    },
+    {
+      "jp_reference": "0x081C2ECC",
+      "jp_original_text": "0x085C93ED",
+      "batch_source_symbol": "gText_None",
+      "patch_symbol": "Chs_gText_SummaryNone",
+      "base_rom_value": "0x085C93ED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8260,
+          "referenced_symbol": "gUnknown_85C93ED",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85C93ED"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2E70",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2F24",
+      "jp_original_text": "0x085C93ED",
+      "batch_source_symbol": "gText_None",
+      "patch_symbol": "Chs_gText_SummaryNone",
+      "base_rom_value": "0x085C93ED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8307,
+          "referenced_symbol": "gUnknown_85C93ED",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85C93ED"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2F08",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C31A0",
+      "jp_original_text": "0x085CA38B",
+      "batch_source_symbol": "gText_After",
+      "patch_symbol": "ChsEmptyString",
+      "base_rom_value": "0x085CA38B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8610,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x23"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C311C",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x085E13AC",
+      "jp_original_text": "0x085CA036",
+      "batch_source_symbol": "gText_ChoosePokemon",
+      "patch_symbol": "Chs_gText_ChoosePokemon",
+      "base_rom_value": "0x085CA036",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13B0",
+      "jp_original_text": "0x085CA159",
+      "batch_source_symbol": "gText_ChoosePokemonCancel",
+      "patch_symbol": "Chs_gText_ChoosePokemonCancel",
+      "base_rom_value": "0x085CA159",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13B4",
+      "jp_original_text": "0x085CA169",
+      "batch_source_symbol": "gText_ChoosePokemonConfirm",
+      "patch_symbol": "Chs_gText_ChoosePokemonConfirm",
+      "base_rom_value": "0x085CA169",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13B8",
+      "jp_original_text": "0x085CA046",
+      "batch_source_symbol": "gText_MoveToWhere",
+      "patch_symbol": "Chs_gText_MoveToWhere",
+      "base_rom_value": "0x085CA046",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13BC",
+      "jp_original_text": "0x085CA053",
+      "batch_source_symbol": "gText_TeachWhichPokemon",
+      "patch_symbol": "Chs_gText_TeachWhichPokemon",
+      "base_rom_value": "0x085CA053",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13C0",
+      "jp_original_text": "0x085CA063",
+      "batch_source_symbol": "gText_UseOnWhichPokemon",
+      "patch_symbol": "Chs_gText_UseOnWhichPokemon",
+      "base_rom_value": "0x085CA063",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13C4",
+      "jp_original_text": "0x085CA073",
+      "batch_source_symbol": "gText_GiveToWhichPokemon",
+      "patch_symbol": "Chs_gText_GiveToWhichPokemon",
+      "base_rom_value": "0x085CA073",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13C8",
+      "jp_original_text": "0x085CA08D",
+      "batch_source_symbol": "gText_NothingToCut",
+      "patch_symbol": "Chs_gText_NothingToCut",
+      "base_rom_value": "0x085CA08D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13CC",
+      "jp_original_text": "0x085CA09B",
+      "batch_source_symbol": "gText_CantSurfHere",
+      "patch_symbol": "Chs_gText_CantSurfHere",
+      "base_rom_value": "0x085CA09B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13D0",
+      "jp_original_text": "0x085CA0A6",
+      "batch_source_symbol": "gText_AlreadySurfing",
+      "patch_symbol": "Chs_gText_AlreadySurfing",
+      "base_rom_value": "0x085CA0A6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13D4",
+      "jp_original_text": "0x085CA13D",
+      "batch_source_symbol": "gText_CurrentIsTooFast",
+      "patch_symbol": "Chs_gText_CurrentIsTooFast",
+      "base_rom_value": "0x085CA13D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13D8",
+      "jp_original_text": "0x085CA179",
+      "batch_source_symbol": "gText_EnjoyCycling",
+      "patch_symbol": "Chs_gText_EnjoyCycling",
+      "base_rom_value": "0x085CA179",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13DC",
+      "jp_original_text": "0x085CA188",
+      "batch_source_symbol": "gText_InUseAlready_PM",
+      "patch_symbol": "Chs_gText_InUseAlready_PM",
+      "base_rom_value": "0x085CA188",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13E0",
+      "jp_original_text": "0x085CA0B5",
+      "batch_source_symbol": "gText_CantUseHere",
+      "patch_symbol": "Chs_gText_CantUseHere",
+      "base_rom_value": "0x085CA0B5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13E4",
+      "jp_original_text": "0x085CA0E4",
+      "batch_source_symbol": "gText_NoPokemonForBattle",
+      "patch_symbol": "Chs_gText_NoPokemonForBattle",
+      "base_rom_value": "0x085CA0E4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13E8",
+      "jp_original_text": "0x085CA0F2",
+      "batch_source_symbol": "gText_ChoosePokemon2",
+      "patch_symbol": "Chs_gText_ChoosePokemon2",
+      "base_rom_value": "0x085CA0F2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13EC",
+      "jp_original_text": "0x085CA102",
+      "batch_source_symbol": "gText_NotEnoughHp",
+      "patch_symbol": "Chs_gText_NotEnoughHp",
+      "base_rom_value": "0x085CA102",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13F0",
+      "jp_original_text": "0x085CA111",
+      "batch_source_symbol": "gText_PokemonAreNeeded",
+      "patch_symbol": "Chs_gText_PokemonAreNeeded",
+      "base_rom_value": "0x085CA111",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13F4",
+      "jp_original_text": "0x085CA11F",
+      "batch_source_symbol": "gText_PokemonCantBeSame",
+      "patch_symbol": "Chs_gText_PokemonCantBeSame",
+      "base_rom_value": "0x085CA11F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E13F8",
+      "jp_original_text": "0x085CA12E",
+      "batch_source_symbol": "gText_NoIdenticalHoldItems",
+      "patch_symbol": "Chs_gText_NoIdenticalHoldItems",
+      "base_rom_value": "0x085CA12E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1400",
+      "jp_original_text": "0x085CA083",
+      "batch_source_symbol": "gText_DoWhatWithPokemon",
+      "patch_symbol": "Chs_gText_DoWhatWithPokemon",
+      "base_rom_value": "0x085CA083",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1404",
+      "jp_original_text": "0x085CA0C1",
+      "batch_source_symbol": "gText_RestoreWhichMove",
+      "patch_symbol": "Chs_gText_RestoreWhichMove",
+      "base_rom_value": "0x085CA0C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1408",
+      "jp_original_text": "0x085CA0CD",
+      "batch_source_symbol": "gText_BoostPP",
+      "patch_symbol": "Chs_gText_BoostPP",
+      "base_rom_value": "0x085CA0CD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E140C",
+      "jp_original_text": "0x085CA0D6",
+      "batch_source_symbol": "gText_DoWhatWithItem",
+      "patch_symbol": "Chs_gText_DoWhatWithItem",
+      "base_rom_value": "0x085CA0D6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1410",
+      "jp_original_text": "0x085CA14C",
+      "batch_source_symbol": "gText_DoWhatWithMail",
+      "patch_symbol": "Chs_gText_DoWhatWithMail",
+      "base_rom_value": "0x085CA14C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1414",
+      "jp_original_text": "0x085CA195",
+      "batch_source_symbol": "gText_AlreadyHoldingOne",
+      "patch_symbol": "Chs_gText_AlreadyHoldingOne",
+      "base_rom_value": "0x085CA195",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1418",
+      "jp_original_text": "0x085CA1A4",
+      "batch_source_symbol": "gText_NoUse",
+      "patch_symbol": "Chs_gText_NoUse",
+      "base_rom_value": "0x085CA1A4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E141C",
+      "jp_original_text": "0x085CA1AB",
+      "batch_source_symbol": "gText_Able",
+      "patch_symbol": "Chs_gText_Able",
+      "base_rom_value": "0x085CA1AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1420",
+      "jp_original_text": "0x085CA1B2",
+      "batch_source_symbol": "gText_First_PM",
+      "patch_symbol": "Chs_gText_First_PM",
+      "base_rom_value": "0x085CA1B2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1424",
+      "jp_original_text": "0x085CA1B8",
+      "batch_source_symbol": "gText_Second_PM",
+      "patch_symbol": "Chs_gText_Second_PM",
+      "base_rom_value": "0x085CA1B8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1428",
+      "jp_original_text": "0x085CA1BD",
+      "batch_source_symbol": "gText_Third_PM",
+      "patch_symbol": "Chs_gText_Third_PM",
+      "base_rom_value": "0x085CA1BD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E142C",
+      "jp_original_text": "0x085CA1F5",
+      "batch_source_symbol": "gText_Fourth",
+      "patch_symbol": "Chs_gText_Fourth",
+      "base_rom_value": "0x085CA1F5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1430",
+      "jp_original_text": "0x085CA1C3",
+      "batch_source_symbol": "gText_Able2",
+      "patch_symbol": "Chs_gText_Able2",
+      "base_rom_value": "0x085CA1C3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1434",
+      "jp_original_text": "0x085CA1C9",
+      "batch_source_symbol": "gText_NotAble",
+      "patch_symbol": "Chs_gText_NotAble",
+      "base_rom_value": "0x085CA1C9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1438",
+      "jp_original_text": "0x085CA1D0",
+      "batch_source_symbol": "gText_Able3",
+      "patch_symbol": "Chs_gText_Able3",
+      "base_rom_value": "0x085CA1D0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E143C",
+      "jp_original_text": "0x085CA1D8",
+      "batch_source_symbol": "gText_NotAble2",
+      "patch_symbol": "Chs_gText_NotAble2",
+      "base_rom_value": "0x085CA1D8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1440",
+      "jp_original_text": "0x085CA1E0",
+      "batch_source_symbol": "gText_Learned",
+      "patch_symbol": "Chs_gText_Learned",
+      "base_rom_value": "0x085CA1E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1444",
+      "jp_original_text": "0x085CA1E8",
+      "batch_source_symbol": "gText_Have",
+      "patch_symbol": "Chs_gText_Have",
+      "base_rom_value": "0x085CA1E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1448",
+      "jp_original_text": "0x085CA1EE",
+      "batch_source_symbol": "gText_DontHave",
+      "patch_symbol": "Chs_gText_DontHave",
+      "base_rom_value": "0x085CA1EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14C0",
+      "jp_original_text": "0x085C9AB5",
+      "batch_source_symbol": "gText_Summary5",
+      "patch_symbol": "Chs_gText_Summary5",
+      "base_rom_value": "0x085C9AB5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14C8",
+      "jp_original_text": "0x085C9AAF",
+      "batch_source_symbol": "gText_Switch2",
+      "patch_symbol": "Chs_gText_Switch2",
+      "base_rom_value": "0x085C9AAF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14D8",
+      "jp_original_text": "0x085C93D7",
+      "batch_source_symbol": "gText_Item",
+      "patch_symbol": "Chs_gText_Item",
+      "base_rom_value": "0x085C93D7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14E8",
+      "jp_original_text": "0x085C93E0",
+      "batch_source_symbol": "gText_Take",
+      "patch_symbol": "Chs_gText_Take",
+      "base_rom_value": "0x085C93E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14F0",
+      "jp_original_text": "0x085C93DC",
+      "batch_source_symbol": "gText_Mail",
+      "patch_symbol": "Chs_gText_Mail",
+      "base_rom_value": "0x085C93DC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14F8",
+      "jp_original_text": "0x085C9AD0",
+      "batch_source_symbol": "gText_Take2",
+      "patch_symbol": "Chs_gText_Take2",
+      "base_rom_value": "0x085C9AD0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1500",
+      "jp_original_text": "0x085C9AD8",
+      "batch_source_symbol": "gText_Read2",
+      "patch_symbol": "Chs_gText_Read2",
+      "base_rom_value": "0x085C9AD8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1510",
+      "jp_original_text": "0x085C9AA1",
+      "batch_source_symbol": "gText_Shift",
+      "patch_symbol": "Chs_gText_Shift",
+      "base_rom_value": "0x085C9AA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1518",
+      "jp_original_text": "0x085C9AA7",
+      "batch_source_symbol": "gText_SendOut",
+      "patch_symbol": "Chs_gText_SendOut",
+      "base_rom_value": "0x085C9AA7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1520",
+      "jp_original_text": "0x085C9AC3",
+      "batch_source_symbol": "gText_Enter",
+      "patch_symbol": "Chs_gText_Enter",
+      "base_rom_value": "0x085C9AC3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1528",
+      "jp_original_text": "0x085C9AC9",
+      "batch_source_symbol": "gText_NoEntry",
+      "patch_symbol": "Chs_gText_NoEntry",
+      "base_rom_value": "0x085C9AC9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1530",
+      "jp_original_text": "0x085C93E5",
+      "batch_source_symbol": "gText_Store",
+      "patch_symbol": "Chs_gText_Store",
+      "base_rom_value": "0x085C93E5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x082C216C",
+      "jp_original_text": "0x085CA368",
+      "batch_source_symbol": "gText_Register",
+      "patch_symbol": "Chs_gText_Register",
+      "base_rom_value": "0x085CA368",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/data_b2d.s",
+          "line": 237
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085E1538",
+      "jp_original_text": "0x085CA368",
+      "batch_source_symbol": "gText_Register",
+      "patch_symbol": "Chs_gText_Register",
+      "base_rom_value": "0x085CA368",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/data_b2d.s",
+          "line": 237
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085E1540",
+      "jp_original_text": "0x085C9AE0",
+      "batch_source_symbol": "gText_Trade4",
+      "patch_symbol": "Chs_gText_Trade4",
+      "base_rom_value": "0x085C9AE0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1548",
+      "jp_original_text": "0x085C9AE0",
+      "batch_source_symbol": "gText_Trade4",
+      "patch_symbol": "Chs_gText_Trade4",
+      "base_rom_value": "0x085C9AE0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16C4",
+      "jp_original_text": "0x085CA338",
+      "batch_source_symbol": "gText_NotPkmnOtherTrainerWants",
+      "patch_symbol": "Chs_gText_NotPkmnOtherTrainerWants",
+      "base_rom_value": "0x085CA338",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16C8",
+      "jp_original_text": "0x085CA358",
+      "batch_source_symbol": "gText_ThatIsntAnEgg",
+      "patch_symbol": "Chs_gText_ThatIsntAnEgg",
+      "base_rom_value": "0x085CA358",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4E0C",
+      "jp_original_text": "0x085CA2B4",
+      "batch_source_symbol": "gText_PkmnCantBeTradedNow",
+      "patch_symbol": "Chs_gText_PkmnCantBeTradedNow",
+      "base_rom_value": "0x085CA2B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4D68",
+        "symbol": "CursorCb_Register"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4FF0",
+      "jp_original_text": "0x085CA2B4",
+      "batch_source_symbol": "gText_PkmnCantBeTradedNow",
+      "patch_symbol": "Chs_gText_PkmnCantBeTradedNow",
+      "base_rom_value": "0x085CA2B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4F84",
+        "symbol": "CursorCb_Trade2"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08300BF4",
+      "jp_original_text": "0x085CA2B4",
+      "batch_source_symbol": "gText_PkmnCantBeTradedNow",
+      "patch_symbol": "Chs_gText_PkmnCantBeTradedNow",
+      "base_rom_value": "0x085CA2B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16CC",
+      "jp_original_text": "0x085CA2B4",
+      "batch_source_symbol": "gText_PkmnCantBeTradedNow",
+      "patch_symbol": "Chs_gText_PkmnCantBeTradedNow",
+      "base_rom_value": "0x085CA2B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16D0",
+      "jp_original_text": "0x085CA2B4",
+      "batch_source_symbol": "gText_PkmnCantBeTradedNow",
+      "patch_symbol": "Chs_gText_PkmnCantBeTradedNow",
+      "base_rom_value": "0x085CA2B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08300BFC",
+      "jp_original_text": "0x085CA2E0",
+      "batch_source_symbol": "gText_OtherTrainersPkmnCantBeTraded",
+      "patch_symbol": "Chs_gText_OtherTrainersPkmnCantBeTraded",
+      "base_rom_value": "0x085CA2E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16D4",
+      "jp_original_text": "0x085CA2E0",
+      "batch_source_symbol": "gText_OtherTrainersPkmnCantBeTraded",
+      "patch_symbol": "Chs_gText_OtherTrainersPkmnCantBeTraded",
+      "base_rom_value": "0x085CA2E0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4E60",
+      "jp_original_text": "0x085CA2CC",
+      "batch_source_symbol": "gText_EggCantBeTradedNow",
+      "patch_symbol": "Chs_gText_EggCantBeTradedNow",
+      "base_rom_value": "0x085CA2CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4D68",
+        "symbol": "CursorCb_Register"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B5004",
+      "jp_original_text": "0x085CA2CC",
+      "batch_source_symbol": "gText_EggCantBeTradedNow",
+      "patch_symbol": "Chs_gText_EggCantBeTradedNow",
+      "base_rom_value": "0x085CA2CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4F84",
+        "symbol": "CursorCb_Trade2"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08300BF8",
+      "jp_original_text": "0x085CA2CC",
+      "batch_source_symbol": "gText_EggCantBeTradedNow",
+      "patch_symbol": "Chs_gText_EggCantBeTradedNow",
+      "base_rom_value": "0x085CA2CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16D8",
+      "jp_original_text": "0x085CA2CC",
+      "batch_source_symbol": "gText_EggCantBeTradedNow",
+      "patch_symbol": "Chs_gText_EggCantBeTradedNow",
+      "base_rom_value": "0x085CA2CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16DC",
+      "jp_original_text": "0x085CA2FC",
+      "batch_source_symbol": "gText_OtherTrainerCantAcceptPkmn",
+      "patch_symbol": "Chs_gText_OtherTrainerCantAcceptPkmn",
+      "base_rom_value": "0x085CA2FC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16E0",
+      "jp_original_text": "0x085CA31C",
+      "batch_source_symbol": "gText_CantTradeWithTrainer",
+      "patch_symbol": "Chs_gText_CantTradeWithTrainer",
+      "base_rom_value": "0x085CA31C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E16E4",
+      "jp_original_text": "0x085CA31C",
+      "batch_source_symbol": "gText_CantTradeWithTrainer",
+      "patch_symbol": "Chs_gText_CantTradeWithTrainer",
+      "base_rom_value": "0x085CA31C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4FDC",
+      "jp_original_text": "0x085CA294",
+      "batch_source_symbol": "gText_OnlyPkmnForBattle",
+      "patch_symbol": "Chs_gText_OnlyPkmnForBattle",
+      "base_rom_value": "0x085CA294",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4F84",
+        "symbol": "CursorCb_Trade2"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08300BE8",
+      "jp_original_text": "0x085CA294",
+      "batch_source_symbol": "gText_OnlyPkmnForBattle",
+      "patch_symbol": "Chs_gText_OnlyPkmnForBattle",
+      "base_rom_value": "0x085CA294",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08133B98",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x08133AAC",
+        "symbol": "trader.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B21FC",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B20F8",
+        "symbol": "party_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081D14AC",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081D13F4",
+        "symbol": "menu_specialized.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x082FC064",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085636C8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085636E0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563700",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563730",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563750",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563768",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563788",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085637C8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085637D8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563818",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563830",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085639B8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085639D8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085639F8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563A20",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563A60",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563A80",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563AB0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563AC8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563AF0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B08",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B28",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B58",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B68",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B78",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563B90",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563BA0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563BB8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563BD0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563BF0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C00",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C18",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C30",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C50",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C68",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563C88",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563CA8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563CD0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563D58",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563D98",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563DB8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563DE0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563DF8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563E10",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563E28",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563E50",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563E68",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563E88",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563EA0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F00",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F18",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F30",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F48",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F68",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563F80",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563FC0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08563FE0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564008",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564030",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564050",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564080",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085640B0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085640D8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085640F8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085641D8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564208",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564210",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08564638",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085920C4",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x0859274C",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085927A8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592834",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592860",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085928A4",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085928F0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592938",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592970",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085929B4",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085929F4",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592A24",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592A64",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592BF4",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592C0C",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592C28",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592C50",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592CAC",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x08592CD8",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085C0C00",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085DF80C",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E14D0",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085E1508",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x085EF740",
+      "jp_original_text": "0x085C93C8",
+      "batch_source_symbol": "gText_Cancel",
+      "patch_symbol": "Chs_gText_Cancel",
+      "base_rom_value": "0x085C93C8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x080FED60",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/item_use.c",
+          "line": 2994,
+          "referenced_symbol": "gUnknown_85C97BD",
+          "referenced_offset": "0x33A"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85C97BD"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080FED08",
+        "symbol": "ItemUseInBattle_StatIncrease"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x080FED74",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/item_use.c",
+          "line": 3003,
+          "referenced_symbol": "gUnknown_85C97BD",
+          "referenced_offset": "0x33A"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85C97BD"
+      ],
+      "wokann_function_owner": {
+        "start": "0x080FED08",
+        "symbol": "ItemUseInBattle_StatIncrease"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B616C",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B62C0",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6228",
+        "symbol": "ItemUseCB_Medicine"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6510",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6468",
+        "symbol": "ItemUseCB_ReduceEV"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B68F0",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B68B4",
+        "symbol": "party_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7158",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B70B0",
+        "symbol": "ItemUseCB_RareCandy"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7868",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B77F0",
+        "symbol": "Task_SacredAshLoop"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7974",
+      "jp_original_text": "0x085C9AF7",
+      "batch_source_symbol": "gText_WontHaveEffect",
+      "patch_symbol": "Chs_gText_WontHaveEffect",
+      "base_rom_value": "0x085C9AF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B7918",
+        "symbol": "sub_081B7918_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B8904",
+      "jp_original_text": "0x085C9B1A",
+      "batch_source_symbol": "gText_PkmnCantSwitchOut",
+      "patch_symbol": "Chs_gText_PkmnCantSwitchOut",
+      "base_rom_value": "0x085C9B1A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 12
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B88BC",
+      "jp_original_text": "0x085C9B2D",
+      "batch_source_symbol": "gText_PkmnAlreadyInBattle",
+      "patch_symbol": "Chs_gText_PkmnAlreadyInBattle",
+      "base_rom_value": "0x085C9B2D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 16
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B8830",
+      "jp_original_text": "0x085C9B43",
+      "batch_source_symbol": "gText_PkmnAlreadySelected",
+      "patch_symbol": "Chs_gText_PkmnAlreadySelected",
+      "base_rom_value": "0x085C9B43",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 20
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B8794",
+      "jp_original_text": "0x085C9B59",
+      "batch_source_symbol": "gText_PkmnHasNoEnergy",
+      "patch_symbol": "Chs_gText_PkmnHasNoEnergy",
+      "base_rom_value": "0x085C9B59",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 24
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B8760",
+      "jp_original_text": "0x085C9B76",
+      "batch_source_symbol": "gText_CantSwitchWithAlly",
+      "patch_symbol": "Chs_gText_CantSwitchWithAlly",
+      "base_rom_value": "0x085C9B76",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 28
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B87FC",
+      "jp_original_text": "0x085C9B9D",
+      "batch_source_symbol": "gText_EggCantBattle",
+      "patch_symbol": "Chs_gText_EggCantBattle",
+      "base_rom_value": "0x085C9B9D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B871C",
+        "symbol": "TrySwitchInPokemon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 32
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B51B8",
+      "jp_original_text": "0x085C9BB7",
+      "batch_source_symbol": "gText_CantUseUntilNewBadge",
+      "patch_symbol": "Chs_gText_CantUseUntilNewBadge",
+      "base_rom_value": "0x085C9BB7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5110",
+        "symbol": "CursorCb_FieldMove"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4C1C",
+      "jp_original_text": "0x085C9BD5",
+      "batch_source_symbol": "gText_NoMoreThanVar1Pkmn",
+      "patch_symbol": "Chs_gText_NoMoreThanVar1Pkmn",
+      "base_rom_value": "0x085C9BD5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4B2C",
+        "symbol": "CursorCb_Enter"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4800",
+      "jp_original_text": "0x085C9BF1",
+      "batch_source_symbol": "gText_SendMailToPC",
+      "patch_symbol": "Chs_gText_SendMailToPC",
+      "base_rom_value": "0x085C9BF1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B47C0",
+        "symbol": "CursorCb_TakeMail"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B48A0",
+      "jp_original_text": "0x085C9C0A",
+      "batch_source_symbol": "gText_MailSentToPC",
+      "patch_symbol": "Chs_gText_MailSentToPC",
+      "base_rom_value": "0x085C9C0A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4840",
+        "symbol": "Task_HandleSendMailToPCYesNoInput"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B48C4",
+      "jp_original_text": "0x085C9C20",
+      "batch_source_symbol": "gText_PCMailboxFull",
+      "patch_symbol": "Chs_gText_PCMailboxFull",
+      "base_rom_value": "0x085C9C20",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4840",
+        "symbol": "Task_HandleSendMailToPCYesNoInput"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B48F4",
+      "jp_original_text": "0x085C9C39",
+      "batch_source_symbol": "gText_MailMessageWillBeLost",
+      "patch_symbol": "Chs_gText_MailMessageWillBeLost",
+      "base_rom_value": "0x085C9C39",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4840",
+        "symbol": "Task_HandleSendMailToPCYesNoInput"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B8084",
+      "jp_original_text": "0x085C9C5C",
+      "batch_source_symbol": "gText_RemoveMailBeforeItem",
+      "patch_symbol": "Chs_gText_RemoveMailBeforeItem",
+      "base_rom_value": "0x085C9C5C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B8058",
+        "symbol": "sub_081B8058_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 60
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B199C",
+      "jp_original_text": "0x085C9C76",
+      "batch_source_symbol": "gText_PkmnWasGivenItem",
+      "patch_symbol": "Chs_gText_PkmnWasGivenItem",
+      "base_rom_value": "0x085C9C76",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1954",
+        "symbol": "sub_081B1954_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B1A34",
+      "jp_original_text": "0x085C9C86",
+      "batch_source_symbol": "gText_PkmnAlreadyHoldingItemSwitch",
+      "patch_symbol": "Chs_gText_PkmnAlreadyHoldingItemSwitch",
+      "base_rom_value": "0x085C9C86",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B19EC",
+        "symbol": "sub_081B19EC_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B3354",
+      "jp_original_text": "0x085C9CAD",
+      "batch_source_symbol": "gText_PkmnNotHolding",
+      "patch_symbol": "Chs_gText_PkmnNotHolding",
+      "base_rom_value": "0x085C9CAD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B32A8",
+        "symbol": "CreateSelectionWindow"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B4448",
+      "jp_original_text": "0x085C9CAD",
+      "batch_source_symbol": "gText_PkmnNotHolding",
+      "patch_symbol": "Chs_gText_PkmnNotHolding",
+      "base_rom_value": "0x085C9CAD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B43C4",
+        "symbol": "CursorCb_TakeItem"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B44F8",
+      "jp_original_text": "0x085C9CAD",
+      "batch_source_symbol": "gText_PkmnNotHolding",
+      "patch_symbol": "Chs_gText_PkmnNotHolding",
+      "base_rom_value": "0x085C9CAD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4480",
+        "symbol": "CursorCb_Toss"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B19E8",
+      "jp_original_text": "0x085C9CC6",
+      "batch_source_symbol": "gText_ReceivedItemFromPkmn",
+      "patch_symbol": "Chs_gText_ReceivedItemFromPkmn",
+      "base_rom_value": "0x085C9CC6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B19A0",
+        "symbol": "sub_081B19A0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B49B8",
+      "jp_original_text": "0x085C9CDA",
+      "batch_source_symbol": "gText_MailTakenFromPkmn",
+      "patch_symbol": "Chs_gText_MailTakenFromPkmn",
+      "base_rom_value": "0x085C9CDA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4934",
+        "symbol": "Task_HandleLoseMailMessageYesNoInput"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B1A84",
+      "jp_original_text": "0x085C9CEF",
+      "batch_source_symbol": "gText_SwitchedPkmnItem",
+      "patch_symbol": "Chs_gText_SwitchedPkmnItem",
+      "base_rom_value": "0x085C9CEF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1A38",
+        "symbol": "DisplaySwitchedHeldItemMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B8178",
+      "jp_original_text": "0x085C9D0C",
+      "batch_source_symbol": "gText_PkmnHoldingItemCantHoldMail",
+      "patch_symbol": "Chs_gText_PkmnHoldingItemCantHoldMail",
+      "base_rom_value": "0x085C9D0C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B8114",
+        "symbol": "TryGiveMailToSelectedMon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 90
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B81AC",
+      "jp_original_text": "0x085C9D32",
+      "batch_source_symbol": "gText_MailTransferredFromMailbox",
+      "patch_symbol": "Chs_gText_MailTransferredFromMailbox",
+      "base_rom_value": "0x085C9D32",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B8114",
+        "symbol": "TryGiveMailToSelectedMon"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 94
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B1B2C",
+      "jp_original_text": "0x085C9D47",
+      "batch_source_symbol": "gText_BagFullCouldNotRemoveItem",
+      "patch_symbol": "Chs_gText_BagFullCouldNotRemoveItem",
+      "base_rom_value": "0x085C9D47",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1B18",
+        "symbol": "pokemon_item_not_removed"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6C04",
+      "jp_original_text": "0x085C9D68",
+      "batch_source_symbol": "gText_PkmnLearnedMove3",
+      "patch_symbol": "Chs_gText_PkmnLearnedMove3",
+      "base_rom_value": "0x085C9D68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6B68",
+        "symbol": "sub_081B6B68_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 100
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7638",
+      "jp_original_text": "0x085C9D68",
+      "batch_source_symbol": "gText_PkmnLearnedMove3",
+      "patch_symbol": "Chs_gText_PkmnLearnedMove3",
+      "base_rom_value": "0x085C9D68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B75B8",
+        "symbol": "party_menu.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 100
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6B28",
+      "jp_original_text": "0x085C9D7C",
+      "batch_source_symbol": "gText_PkmnCantLearnMove",
+      "patch_symbol": "Chs_gText_PkmnCantLearnMove",
+      "base_rom_value": "0x085C9D7C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6A7C",
+        "symbol": "sub_081B6A7C_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 104
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7B94",
+      "jp_original_text": "0x085C9D7C",
+      "batch_source_symbol": "gText_PkmnCantLearnMove",
+      "patch_symbol": "Chs_gText_PkmnCantLearnMove",
+      "base_rom_value": "0x085C9D7C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B7AF0",
+        "symbol": "sub_081B7AF0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 104
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6B5C",
+      "jp_original_text": "0x085C9DA1",
+      "batch_source_symbol": "gText_PkmnNeedsToReplaceMove",
+      "patch_symbol": "Chs_gText_PkmnNeedsToReplaceMove",
+      "base_rom_value": "0x085C9DA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6A7C",
+        "symbol": "sub_081B6A7C_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 109
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7084",
+      "jp_original_text": "0x085C9DA1",
+      "batch_source_symbol": "gText_PkmnNeedsToReplaceMove",
+      "patch_symbol": "Chs_gText_PkmnNeedsToReplaceMove",
+      "base_rom_value": "0x085C9DA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6F78",
+        "symbol": "sub_081B6F78_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 109
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B75AC",
+      "jp_original_text": "0x085C9DA1",
+      "batch_source_symbol": "gText_PkmnNeedsToReplaceMove",
+      "patch_symbol": "Chs_gText_PkmnNeedsToReplaceMove",
+      "base_rom_value": "0x085C9DA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B7528",
+        "symbol": "sub_081B7528_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 109
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7BC8",
+      "jp_original_text": "0x085C9DA1",
+      "batch_source_symbol": "gText_PkmnNeedsToReplaceMove",
+      "patch_symbol": "Chs_gText_PkmnNeedsToReplaceMove",
+      "base_rom_value": "0x085C9DA1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B7AF0",
+        "symbol": "sub_081B7AF0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 109
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6F38",
+      "jp_original_text": "0x085C9DF2",
+      "batch_source_symbol": "gText_StopLearningMove2",
+      "patch_symbol": "Chs_gText_StopLearningMove2",
+      "base_rom_value": "0x085C9DF2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6EE0",
+        "symbol": "sub_081B6EE0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 117
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7008",
+      "jp_original_text": "0x085C9E0D",
+      "batch_source_symbol": "gText_MoveNotLearned",
+      "patch_symbol": "Chs_gText_MoveNotLearned",
+      "base_rom_value": "0x085C9E0D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6F78",
+        "symbol": "sub_081B6F78_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 121
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6D18",
+      "jp_original_text": "0x085C9E23",
+      "batch_source_symbol": "gText_WhichMoveToForget",
+      "patch_symbol": "Chs_gText_WhichMoveToForget",
+      "base_rom_value": "0x085C9E23",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6CD8",
+        "symbol": "sub_081B6CD8_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 125
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6E78",
+      "jp_original_text": "0x085C9E35",
+      "batch_source_symbol": "gText_12PoofForgotMove",
+      "patch_symbol": "Chs_gText_12PoofForgotMove",
+      "base_rom_value": "0x085C9E35",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6E04",
+        "symbol": "sub_081B6E04_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 129
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6B38",
+      "jp_original_text": "0x085C9E79",
+      "batch_source_symbol": "gText_PkmnAlreadyKnows",
+      "patch_symbol": "Chs_gText_PkmnAlreadyKnows",
+      "base_rom_value": "0x085C9E79",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6A7C",
+        "symbol": "sub_081B6A7C_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 135
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B7BA4",
+      "jp_original_text": "0x085C9E79",
+      "batch_source_symbol": "gText_PkmnAlreadyKnows",
+      "patch_symbol": "Chs_gText_PkmnAlreadyKnows",
+      "base_rom_value": "0x085C9E79",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B7AF0",
+        "symbol": "sub_081B7AF0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 135
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x0816161C",
+      "jp_original_text": "0x085C9E8F",
+      "batch_source_symbol": "gText_PkmnHPRestoredByVar2",
+      "patch_symbol": "Chs_gText_PkmnHPRestoredByVar2",
+      "base_rom_value": "0x085C9E8F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081615C4",
+        "symbol": "Task_DisplayHPRestoredMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 139
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6428",
+      "jp_original_text": "0x085C9E8F",
+      "batch_source_symbol": "gText_PkmnHPRestoredByVar2",
+      "patch_symbol": "Chs_gText_PkmnHPRestoredByVar2",
+      "base_rom_value": "0x085C9E8F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B63CC",
+        "symbol": "Task_DisplayHPRestoredMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 139
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B790C",
+      "jp_original_text": "0x085C9E8F",
+      "batch_source_symbol": "gText_PkmnHPRestoredByVar2",
+      "patch_symbol": "Chs_gText_PkmnHPRestoredByVar2",
+      "base_rom_value": "0x085C9E8F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B78B4",
+        "symbol": "Task_SacredAshDisplayHPRestored"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 139
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6030",
+      "jp_original_text": "0x085C9EA6",
+      "batch_source_symbol": "gText_PkmnCuredOfPoison",
+      "patch_symbol": "Chs_gText_PkmnCuredOfPoison",
+      "base_rom_value": "0x085C9EA6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6080",
+      "jp_original_text": "0x085C9EC0",
+      "batch_source_symbol": "gText_PkmnCuredOfParalysis",
+      "patch_symbol": "Chs_gText_PkmnCuredOfParalysis",
+      "base_rom_value": "0x085C9EC0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6044",
+      "jp_original_text": "0x085C9ED4",
+      "batch_source_symbol": "gText_PkmnWokeUp2",
+      "patch_symbol": "Chs_gText_PkmnWokeUp2",
+      "base_rom_value": "0x085C9ED4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6058",
+      "jp_original_text": "0x085C9EE2",
+      "batch_source_symbol": "gText_PkmnBurnHealed",
+      "patch_symbol": "Chs_gText_PkmnBurnHealed",
+      "base_rom_value": "0x085C9EE2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B606C",
+      "jp_original_text": "0x085C9EF2",
+      "batch_source_symbol": "gText_PkmnThawedOut",
+      "patch_symbol": "Chs_gText_PkmnThawedOut",
+      "base_rom_value": "0x085C9EF2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6158",
+      "jp_original_text": "0x085C9F06",
+      "batch_source_symbol": "gText_PPWasRestored",
+      "patch_symbol": "Chs_gText_PPWasRestored",
+      "base_rom_value": "0x085C9F06",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B60BC",
+      "jp_original_text": "0x085C9F2B",
+      "batch_source_symbol": "gText_PkmnBecameHealthy",
+      "patch_symbol": "Chs_gText_PkmnBecameHealthy",
+      "base_rom_value": "0x085C9F2B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6144",
+      "jp_original_text": "0x085C9F3B",
+      "batch_source_symbol": "gText_MovesPPIncreased",
+      "patch_symbol": "Chs_gText_MovesPPIncreased",
+      "base_rom_value": "0x085C9F3B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B71EC",
+      "jp_original_text": "0x085C9F4E",
+      "batch_source_symbol": "gText_PkmnElevatedToLvVar2",
+      "patch_symbol": "Chs_gText_PkmnElevatedToLvVar2",
+      "base_rom_value": "0x085C9F4E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B70B0",
+        "symbol": "ItemUseCB_RareCandy"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts83.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6130",
+      "jp_original_text": "0x085C9F5F",
+      "batch_source_symbol": "gText_PkmnBaseVar2StatIncreased",
+      "patch_symbol": "Chs_gText_PkmnBaseVar2StatIncreased",
+      "base_rom_value": "0x085C9F5F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6560",
+      "jp_original_text": "0x085C9F78",
+      "batch_source_symbol": "gText_PkmnFriendlyBaseVar2Fell",
+      "patch_symbol": "Chs_gText_PkmnFriendlyBaseVar2Fell",
+      "base_rom_value": "0x085C9F78",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6468",
+        "symbol": "ItemUseCB_ReduceEV"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B65B4",
+      "jp_original_text": "0x085C9F9B",
+      "batch_source_symbol": "gText_PkmnAdoresBaseVar2Fell",
+      "patch_symbol": "Chs_gText_PkmnAdoresBaseVar2Fell",
+      "base_rom_value": "0x085C9F9B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6468",
+        "symbol": "ItemUseCB_ReduceEV"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6574",
+      "jp_original_text": "0x085C9FC1",
+      "batch_source_symbol": "gText_PkmnFriendlyBaseVar2CantFall",
+      "patch_symbol": "Chs_gText_PkmnFriendlyBaseVar2CantFall",
+      "base_rom_value": "0x085C9FC1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B6468",
+        "symbol": "ItemUseCB_ReduceEV"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B6094",
+      "jp_original_text": "0x085C9FE7",
+      "batch_source_symbol": "gText_PkmnSnappedOutOfConfusion",
+      "patch_symbol": "Chs_gText_PkmnSnappedOutOfConfusion",
+      "base_rom_value": "0x085C9FE7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B60A8",
+      "jp_original_text": "0x085C9FF7",
+      "batch_source_symbol": "gText_PkmnGotOverInfatuation",
+      "patch_symbol": "Chs_gText_PkmnGotOverInfatuation",
+      "base_rom_value": "0x085C9FF7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B453C",
+      "jp_original_text": "0x085CA007",
+      "batch_source_symbol": "gText_ThrowAwayItem",
+      "patch_symbol": "Chs_gText_ThrowAwayItem",
+      "base_rom_value": "0x085CA007",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B4480",
+        "symbol": "CursorCb_Toss"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B45F8",
+      "jp_original_text": "0x085CA018",
+      "batch_source_symbol": "gText_ItemThrownAway",
+      "patch_symbol": "Chs_gText_ItemThrownAway",
+      "base_rom_value": "0x085CA018",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B457C",
+        "symbol": "Task_HandleTossHeldItemYesNoInput"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B1ED4",
+      "jp_original_text": "0x085CA1FB",
+      "batch_source_symbol": "gText_PkmnCantParticipate",
+      "patch_symbol": "Chs_gText_PkmnCantParticipate",
+      "base_rom_value": "0x085CA1FB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1E7C",
+        "symbol": "TryEnterMonForMinigame"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B134C",
+      "jp_original_text": "0x085CA210",
+      "batch_source_symbol": "gText_CancelParticipation",
+      "patch_symbol": "Chs_gText_CancelParticipation",
+      "base_rom_value": "0x085CA210",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1330",
+        "symbol": "DisplayCancelChooseMonYesNo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B1F0C",
+      "jp_original_text": "0x085CA210",
+      "batch_source_symbol": "gText_CancelParticipation",
+      "patch_symbol": "Chs_gText_CancelParticipation",
+      "base_rom_value": "0x085CA210",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B1EE0",
+        "symbol": "sub_081B1EE0_jp"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B857C",
+      "jp_original_text": "0x085CA21C",
+      "batch_source_symbol": "gText_CancelBattle",
+      "patch_symbol": "Chs_gText_CancelBattle",
+      "base_rom_value": "0x085CA21C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B855C",
+        "symbol": "GetFacilityCancelString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts84.h",
+          "line": 4
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B8594",
+      "jp_original_text": "0x085CA229",
+      "batch_source_symbol": "gText_ReturnToWaitingRoom",
+      "patch_symbol": "Chs_gText_ReturnToWaitingRoom",
+      "base_rom_value": "0x085CA229",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B855C",
+        "symbol": "GetFacilityCancelString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts84.h",
+          "line": 6
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B85A0",
+      "jp_original_text": "0x085CA238",
+      "batch_source_symbol": "gText_CancelChallenge",
+      "patch_symbol": "Chs_gText_CancelChallenge",
+      "base_rom_value": "0x085CA238",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B855C",
+        "symbol": "GetFacilityCancelString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts84.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B52AC",
+      "jp_original_text": "0x085CA246",
+      "batch_source_symbol": "gText_EscapeFromHere",
+      "patch_symbol": "Chs_gText_EscapeFromHere",
+      "base_rom_value": "0x085CA246",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5110",
+        "symbol": "CursorCb_FieldMove"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B5254",
+      "jp_original_text": "0x085CA25C",
+      "batch_source_symbol": "gText_ReturnToHealingSpot",
+      "patch_symbol": "Chs_gText_ReturnToHealingSpot",
+      "base_rom_value": "0x085CA25C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5110",
+        "symbol": "CursorCb_FieldMove"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081B60CC",
+      "jp_original_text": "0x085C9AE7",
+      "batch_source_symbol": "gText_HP3",
+      "patch_symbol": "Chs_gText_HP3",
+      "base_rom_value": "0x085C9AE7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6674",
+      "jp_original_text": "0x085C9AE7",
+      "batch_source_symbol": "gText_HP3",
+      "patch_symbol": "Chs_gText_HP3",
+      "base_rom_value": "0x085C9AE7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B60DC",
+      "jp_original_text": "0x085CA36F",
+      "batch_source_symbol": "gText_Attack3",
+      "patch_symbol": "Chs_gText_Attack3",
+      "base_rom_value": "0x085CA36F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B667C",
+      "jp_original_text": "0x085CA36F",
+      "batch_source_symbol": "gText_Attack3",
+      "patch_symbol": "Chs_gText_Attack3",
+      "base_rom_value": "0x085CA36F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081C23A4",
+      "jp_original_text": "0x085CA36F",
+      "batch_source_symbol": "gText_Attack3",
+      "patch_symbol": "Chs_gText_Attack3",
+      "base_rom_value": "0x085CA36F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6751,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x7"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085E18E4",
+      "jp_original_text": "0x085CA36F",
+      "batch_source_symbol": "gText_Attack3",
+      "patch_symbol": "Chs_gText_Attack3",
+      "base_rom_value": "0x085CA36F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 1
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B60EC",
+      "jp_original_text": "0x085CA374",
+      "batch_source_symbol": "gText_Defense3",
+      "patch_symbol": "Chs_gText_Defense3",
+      "base_rom_value": "0x085CA374",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6684",
+      "jp_original_text": "0x085CA374",
+      "batch_source_symbol": "gText_Defense3",
+      "patch_symbol": "Chs_gText_Defense3",
+      "base_rom_value": "0x085CA374",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081C23A8",
+      "jp_original_text": "0x085CA374",
+      "batch_source_symbol": "gText_Defense3",
+      "patch_symbol": "Chs_gText_Defense3",
+      "base_rom_value": "0x085CA374",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6752,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0xC"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085E18E8",
+      "jp_original_text": "0x085CA374",
+      "batch_source_symbol": "gText_Defense3",
+      "patch_symbol": "Chs_gText_Defense3",
+      "base_rom_value": "0x085CA374",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B610C",
+      "jp_original_text": "0x085C9AED",
+      "batch_source_symbol": "gText_SpAtk3",
+      "patch_symbol": "Chs_gText_SpAtk3",
+      "base_rom_value": "0x085C9AED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B669C",
+      "jp_original_text": "0x085C9AED",
+      "batch_source_symbol": "gText_SpAtk3",
+      "patch_symbol": "Chs_gText_SpAtk3",
+      "base_rom_value": "0x085C9AED",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 2
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B6128",
+      "jp_original_text": "0x085C9AF2",
+      "batch_source_symbol": "gText_SpDef3",
+      "patch_symbol": "Chs_gText_SpDef3",
+      "base_rom_value": "0x085C9AF2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 4
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B66AC",
+      "jp_original_text": "0x085C9AF2",
+      "batch_source_symbol": "gText_SpDef3",
+      "patch_symbol": "Chs_gText_SpDef3",
+      "base_rom_value": "0x085C9AF2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts82.h",
+          "line": 4
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B60FC",
+      "jp_original_text": "0x085CA383",
+      "batch_source_symbol": "gText_Speed2",
+      "patch_symbol": "Chs_gText_Speed2",
+      "base_rom_value": "0x085CA383",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B5FB0",
+        "symbol": "GetMedicineItemEffectMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081B668C",
+      "jp_original_text": "0x085CA383",
+      "batch_source_symbol": "gText_Speed2",
+      "patch_symbol": "Chs_gText_Speed2",
+      "base_rom_value": "0x085CA383",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081B663C",
+        "symbol": "ItemEffectToStatString"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081C23B4",
+      "jp_original_text": "0x085CA383",
+      "batch_source_symbol": "gText_Speed2",
+      "patch_symbol": "Chs_gText_Speed2",
+      "base_rom_value": "0x085CA383",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6755,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x1B"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x085E18F4",
+      "jp_original_text": "0x085CA383",
+      "batch_source_symbol": "gText_Speed2",
+      "patch_symbol": "Chs_gText_Speed2",
+      "base_rom_value": "0x085CA383",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "src/data/text/region_texts85.h",
+          "line": 8
+        }
+      ],
+      "status": "verified_source_definition"
+    },
+    {
+      "jp_reference": "0x081C23A0",
+      "jp_original_text": "0x085CA388",
+      "batch_source_symbol": "gText_HP4",
+      "patch_symbol": "Chs_gText_HP4",
+      "base_rom_value": "0x085CA388",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6750,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x20"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x085E18E0",
+      "jp_original_text": "0x085CA388",
+      "batch_source_symbol": "gText_HP4",
+      "patch_symbol": "Chs_gText_HP4",
+      "base_rom_value": "0x085CA388",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081C23AC",
+      "jp_original_text": "0x085CA379",
+      "batch_source_symbol": "gText_SpAtk4",
+      "patch_symbol": "Chs_gText_SpAtk4",
+      "base_rom_value": "0x085CA379",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6753,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x11"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x085E18EC",
+      "jp_original_text": "0x085CA379",
+      "batch_source_symbol": "gText_SpAtk4",
+      "patch_symbol": "Chs_gText_SpAtk4",
+      "base_rom_value": "0x085CA379",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081C23B0",
+      "jp_original_text": "0x085CA37E",
+      "batch_source_symbol": "gText_SpDef4",
+      "patch_symbol": "Chs_gText_SpDef4",
+      "base_rom_value": "0x085CA37E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6754,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x16"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x085E18F0",
+      "jp_original_text": "0x085CA37E",
+      "batch_source_symbol": "gText_SpDef4",
+      "patch_symbol": "Chs_gText_SpDef4",
+      "base_rom_value": "0x085CA37E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x0829BD74",
+        "symbol": "libc.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "needs_review"
+    },
+    {
+      "jp_reference": "0x081C2374",
+      "jp_original_text": "0x085CA3E4",
+      "batch_source_symbol": "gText_PkmnInfo",
+      "patch_symbol": "Chs_gText_PkmnInfo",
+      "base_rom_value": "0x085CA3E4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6739,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0xB"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2378",
+      "jp_original_text": "0x085CA3EE",
+      "batch_source_symbol": "gText_PkmnSkills",
+      "patch_symbol": "Chs_gText_PkmnSkills",
+      "base_rom_value": "0x085CA3EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6740,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x15"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C237C",
+      "jp_original_text": "0x085CA3F8",
+      "batch_source_symbol": "gText_BattleMoves",
+      "patch_symbol": "Chs_gText_BattleMoves",
+      "base_rom_value": "0x085CA3F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6741,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x1F"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2380",
+      "jp_original_text": "0x085CA3FF",
+      "batch_source_symbol": "gText_ContestMoves",
+      "patch_symbol": "Chs_gText_ContestMoves",
+      "base_rom_value": "0x085CA3FF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6742,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x26"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2388",
+      "jp_original_text": "0x085CA407",
+      "batch_source_symbol": "gText_Info",
+      "patch_symbol": "Chs_gText_Info",
+      "base_rom_value": "0x085CA407",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6744,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x2E"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C238C",
+      "jp_original_text": "0x085CA3DF",
+      "batch_source_symbol": "gText_Switch",
+      "patch_symbol": "Chs_gText_Switch",
+      "base_rom_value": "0x085CA3DF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6745,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x6"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2390",
+      "jp_original_text": "0x085CA38E",
+      "batch_source_symbol": "gText_OTSlash",
+      "patch_symbol": "Chs_gText_OTSlash",
+      "base_rom_value": "0x085CA38E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6746,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x26"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2394",
+      "jp_original_text": "0x085CA392",
+      "batch_source_symbol": "gText_RentalPkmn",
+      "patch_symbol": "Chs_gText_RentalPkmn",
+      "base_rom_value": "0x085CA392",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6747,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x2A"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C239C",
+      "jp_original_text": "0x085CA39B",
+      "batch_source_symbol": "gText_TypeSlash",
+      "patch_symbol": "Chs_gText_TypeSlash",
+      "base_rom_value": "0x085CA39B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6749,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x33"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23C4",
+      "jp_original_text": "0x085CA3A0",
+      "batch_source_symbol": "gText_Power",
+      "patch_symbol": "Chs_gText_Power",
+      "base_rom_value": "0x085CA3A0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6759,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x38"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23C8",
+      "jp_original_text": "0x085CA3A5",
+      "batch_source_symbol": "gText_Accuracy2",
+      "patch_symbol": "Chs_gText_Accuracy2",
+      "base_rom_value": "0x085CA3A5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6760,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x3D"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23CC",
+      "jp_original_text": "0x085CA3AB",
+      "batch_source_symbol": "gText_Appeal",
+      "patch_symbol": "Chs_gText_Appeal",
+      "base_rom_value": "0x085CA3AB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6761,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x43"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23D0",
+      "jp_original_text": "0x085CA3B0",
+      "batch_source_symbol": "gText_Jam",
+      "patch_symbol": "Chs_gText_Jam",
+      "base_rom_value": "0x085CA3B0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6762,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x48"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23C0",
+      "jp_original_text": "0x085CA3B5",
+      "batch_source_symbol": "gText_Status",
+      "patch_symbol": "Chs_gText_Status",
+      "base_rom_value": "0x085CA3B5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6758,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x4D"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23B8",
+      "jp_original_text": "0x085CA3BB",
+      "batch_source_symbol": "gText_ExpPoints",
+      "patch_symbol": "Chs_gText_ExpPoints",
+      "base_rom_value": "0x085CA3BB",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6756,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x53"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C23BC",
+      "jp_original_text": "0x085CA3C6",
+      "batch_source_symbol": "gText_NextLv",
+      "patch_symbol": "Chs_gText_NextLv",
+      "base_rom_value": "0x085CA3C6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 6757,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x5E"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C21CC",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2F6C",
+      "jp_original_text": "0x085CA3CF",
+      "batch_source_symbol": "gText_RibbonsVar1",
+      "patch_symbol": "Chs_gText_RibbonsVar1",
+      "base_rom_value": "0x085CA3CF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8338,
+          "referenced_symbol": "gText_Register",
+          "referenced_offset": "0x67"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gText_Register"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2F08",
+        "symbol": "pokemon_summary_screen.s"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C39B0",
+      "jp_original_text": "0x085CA487",
+      "batch_source_symbol": "gText_HMMovesCantBeForgotten2",
+      "patch_symbol": "Chs_gText_HMMovesCantBeForgotten2",
+      "base_rom_value": "0x085CA487",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 9628,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0xAE"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C3978",
+        "symbol": "PrintHMMovesCantBeForgotten"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2CD0",
+      "jp_original_text": "0x085CA40C",
+      "batch_source_symbol": "gText_EggWillTakeALongTime",
+      "patch_symbol": "Chs_gText_EggWillTakeALongTime",
+      "base_rom_value": "0x085CA40C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7998,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x33"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2CB4",
+        "symbol": "PrintEggState"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D1C",
+      "jp_original_text": "0x085CA40C",
+      "batch_source_symbol": "gText_EggWillTakeALongTime",
+      "patch_symbol": "Chs_gText_EggWillTakeALongTime",
+      "base_rom_value": "0x085CA40C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8037,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x33"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2CB4",
+        "symbol": "PrintEggState"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D20",
+      "jp_original_text": "0x085CA425",
+      "batch_source_symbol": "gText_EggWillTakeSomeTime",
+      "patch_symbol": "Chs_gText_EggWillTakeSomeTime",
+      "base_rom_value": "0x085CA425",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8038,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x4C"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2CB4",
+        "symbol": "PrintEggState"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2CEC",
+      "jp_original_text": "0x085CA448",
+      "batch_source_symbol": "gText_EggWillHatchSoon",
+      "patch_symbol": "Chs_gText_EggWillHatchSoon",
+      "base_rom_value": "0x085CA448",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8013,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x6F"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2CB4",
+        "symbol": "PrintEggState"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2CE0",
+      "jp_original_text": "0x085CA46B",
+      "batch_source_symbol": "gText_EggAboutToHatch",
+      "patch_symbol": "Chs_gText_EggAboutToHatch",
+      "base_rom_value": "0x085CA46B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8006,
+          "referenced_symbol": "gUnknown_85CA3D9",
+          "referenced_offset": "0x92"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA3D9"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2CB4",
+        "symbol": "PrintEggState"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2DB4",
+      "jp_original_text": "0x085CA5B6",
+      "batch_source_symbol": "gText_OddEggFoundByCouple",
+      "patch_symbol": "Chs_gText_OddEggFoundByCouple",
+      "base_rom_value": "0x085CA5B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8115,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": "0x23"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2D28",
+        "symbol": "PrintEggMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D4C",
+      "jp_original_text": "0x085CA5D5",
+      "batch_source_symbol": "gText_PeculiarEggNicePlace",
+      "patch_symbol": "Chs_gText_PeculiarEggNicePlace",
+      "base_rom_value": "0x085CA5D5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8065,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": "0x42"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2D28",
+        "symbol": "PrintEggMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D68",
+      "jp_original_text": "0x085CA5F8",
+      "batch_source_symbol": "gText_PeculiarEggTrade",
+      "patch_symbol": "Chs_gText_PeculiarEggTrade",
+      "base_rom_value": "0x085CA5F8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8079,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": "0x65"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2D28",
+        "symbol": "PrintEggMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D88",
+      "jp_original_text": "0x085CA616",
+      "batch_source_symbol": "gText_EggFromHotSprings",
+      "patch_symbol": "Chs_gText_EggFromHotSprings",
+      "base_rom_value": "0x085CA616",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8094,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": "0x83"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2D28",
+        "symbol": "PrintEggMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2D84",
+      "jp_original_text": "0x085CA635",
+      "batch_source_symbol": "gText_EggFromTraveler",
+      "patch_symbol": "Chs_gText_EggFromTraveler",
+      "base_rom_value": "0x085CA635",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 8093,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": "0xA2"
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2D28",
+        "symbol": "PrintEggMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2994",
+      "jp_original_text": "0x085CA563",
+      "batch_source_symbol": "gText_XNature",
+      "patch_symbol": "Chs_gText_XNature",
+      "base_rom_value": "0x085CA563",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7527,
+          "referenced_symbol": "gUnknown_85CA563",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA563"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C29F8",
+      "jp_original_text": "0x085CA4A6",
+      "batch_source_symbol": "gText_XNatureMetAtYZ",
+      "patch_symbol": "Chs_gText_XNatureMetAtYZ",
+      "base_rom_value": "0x085CA4A6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7572,
+          "referenced_symbol": "gUnknown_85CA4A6",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA4A6"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C29E4",
+      "jp_original_text": "0x085CA4CC",
+      "batch_source_symbol": "gText_XNatureHatchedAtYZ",
+      "patch_symbol": "Chs_gText_XNatureHatchedAtYZ",
+      "base_rom_value": "0x085CA4CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7562,
+          "referenced_symbol": "gUnknown_85CA4CC",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA4CC"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2A44",
+      "jp_original_text": "0x085CA4F2",
+      "batch_source_symbol": "gText_XNatureObtainedInTrade",
+      "patch_symbol": "Chs_gText_XNatureObtainedInTrade",
+      "base_rom_value": "0x085CA4F2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7608,
+          "referenced_symbol": "gUnknown_85CA4F2",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA4F2"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2A0C",
+      "jp_original_text": "0x085CA512",
+      "batch_source_symbol": "gText_XNatureFatefulEncounter",
+      "patch_symbol": "Chs_gText_XNatureFatefulEncounter",
+      "base_rom_value": "0x085CA512",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7581,
+          "referenced_symbol": "gUnknown_85CA512",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA512"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C2A40",
+      "jp_original_text": "0x085CA53B",
+      "batch_source_symbol": "gText_XNatureProbablyMetAt",
+      "patch_symbol": "Chs_gText_XNatureProbablyMetAt",
+      "base_rom_value": "0x085CA53B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7607,
+          "referenced_symbol": "gUnknown_85CA53B",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA53B"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C29FC",
+      "jp_original_text": "0x085CA570",
+      "batch_source_symbol": "gText_XNatureMetSomewhereAt",
+      "patch_symbol": "Chs_gText_XNatureMetSomewhereAt",
+      "base_rom_value": "0x085CA570",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7573,
+          "referenced_symbol": "gUnknown_85CA570",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA570"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    },
+    {
+      "jp_reference": "0x081C29E8",
+      "jp_original_text": "0x085CA593",
+      "batch_source_symbol": "gText_XNatureHatchedSomewhereAt",
+      "patch_symbol": "Chs_gText_XNatureHatchedSomewhereAt",
+      "base_rom_value": "0x085CA593",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/pokemon_summary_screen.c",
+          "line": 7563,
+          "referenced_symbol": "gUnknown_85CA593",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_85CA593"
+      ],
+      "wokann_function_owner": {
+        "start": "0x081C2934",
+        "symbol": "BufferMonTrainerMemo"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    }
+  ]
+}

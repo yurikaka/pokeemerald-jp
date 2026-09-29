@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "batch": "420_union_room_1.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/union_room.h",
+  "selection": {
+    "symbol_offset": 110,
+    "symbol_limit": 110,
+    "auto_wrap": true
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "ambiguous_or_unreferenced_japanese_text": 22,
+    "dynamic_placeholder_needs_review": 8,
+    "mapped": 54,
+    "missing_or_ambiguous_wokann_symbol": 12,
+    "unsupported_source_encoding": 4
+  },
+  "mapped": [
+    {
+      "source_symbol": "sText_RandomChatFemale1",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x083896A4",
+      "japanese_text_address": "0x082C153C",
+      "japanese_references": [
+        "0x082C157C"
+      ]
+    },
+    {
+      "source_symbol": "sText_RandomChatFemale2",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x083896C8",
+      "japanese_text_address": "0x082C1550",
+      "japanese_references": [
+        "0x082C1580"
+      ]
+    },
+    {
+      "source_symbol": "sText_ShowedTrainerCardMale1",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x08389704",
+      "japanese_text_address": "0x082C1584",
+      "japanese_references": [
+        "0x082C15E8"
+      ]
+    },
+    {
+      "source_symbol": "sText_ShowedTrainerCardMale2",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x08389728",
+      "japanese_text_address": "0x082C15A4",
+      "japanese_references": [
+        "0x082C15EC"
+      ]
+    },
+    {
+      "source_symbol": "sText_ShowedTrainerCardFemale1",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x0838973C",
+      "japanese_text_address": "0x082C15B4",
+      "japanese_references": [
+        "0x082C15F0"
+      ]
+    },
+    {
+      "source_symbol": "sText_ShowedTrainerCardFemale2",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x08389760",
+      "japanese_text_address": "0x082C15D8",
+      "japanese_references": [
+        "0x082C15F4"
+      ]
+    },
+    {
+      "source_symbol": "sText_MaleTraded1",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x08389784",
+      "japanese_text_address": "0x082C15F8",
+      "japanese_references": [
+        "0x082C1668"
+      ]
+    },
+    {
+      "source_symbol": "sText_MaleTraded2",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x083897A4",
+      "japanese_text_address": "0x082C1610",
+      "japanese_references": [
+        "0x082C166C"
+      ]
+    },
+    {
+      "source_symbol": "sText_FemaleTraded1",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x083897CC",
+      "japanese_text_address": "0x082C1630",
+      "japanese_references": [
+        "0x082C1678"
+      ]
+    },
+    {
+      "source_symbol": "sText_FemaleTraded2",
+      "wokann_source": "src/data/union_room8d.h",
+      "us_text_address": "0x083897E8",
+      "japanese_text_address": "0x082C1648",
+      "japanese_references": [
+        "0x082C167C"
+      ]
+    },
+    {
+      "source_symbol": "sText_RegisterMonAtTradingBoard",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x0838983C",
+      "japanese_text_address": "0x082C169C",
+      "japanese_references": [
+        "0x08015F84"
+      ]
+    },
+    {
+      "source_symbol": "sText_TradingBoardInfo",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389884",
+      "japanese_text_address": "0x082C16E0",
+      "japanese_references": [
+        "0x08015FEC"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseRequestedMonType",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x083899C4",
+      "japanese_text_address": "0x082C17CC",
+      "japanese_references": [
+        "0x08015450"
+      ]
+    },
+    {
+      "source_symbol": "sText_WhichMonWillYouOffer",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x083899E8",
+      "japanese_text_address": "0x082C17E8",
+      "japanese_references": [
+        "0x08015FDC",
+        "0x080162E8"
+      ]
+    },
+    {
+      "source_symbol": "sText_RegistrationCanceled",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A0C",
+      "japanese_text_address": "0x082C1808",
+      "japanese_references": [
+        "0x08015430",
+        "0x0801608C"
+      ]
+    },
+    {
+      "source_symbol": "sText_RegistrationCompleted",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A1C",
+      "japanese_text_address": "0x082C181C",
+      "japanese_references": [
+        "0x080160B4"
+      ]
+    },
+    {
+      "source_symbol": "sText_TradeCanceled",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A28",
+      "japanese_text_address": "0x082C1830",
+      "japanese_references": [
+        "0x08015470"
+      ]
+    },
+    {
+      "source_symbol": "sText_CancelRegistrationOfEgg",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A58",
+      "japanese_text_address": "0x082C1864",
+      "japanese_references": [
+        "0x08015F10"
+      ]
+    },
+    {
+      "source_symbol": "sText_RegistrationCanceled2",
+      "wokann_source": "src/data/union_room8e.h",
+      "us_text_address": "0x08389A6C",
+      "japanese_text_address": "0x082C1880",
+      "japanese_references": [
+        "0x08016118"
+      ]
+    },
+    {
+      "source_symbol": "sText_TradeOfferRejected",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B7C",
+      "japanese_text_address": "0x082C1998",
+      "japanese_references": [
+        "0x080178A4"
+      ]
+    },
+    {
+      "source_symbol": "sText_EggTrade",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B94",
+      "japanese_text_address": "0x082C19AC",
+      "japanese_references": [
+        "0x08017644"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseJoinCancel",
+      "wokann_source": "src/data/union_room8f.h",
+      "us_text_address": "0x08389B9C",
+      "japanese_text_address": "0x082C19B8",
+      "japanese_references": [
+        "0x080131D0"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerSingleBattle",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389BC4",
+      "japanese_text_address": "0x082C19DC",
+      "japanese_references": [
+        "0x082C1BE4"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerDoubleBattle",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389BE4",
+      "japanese_text_address": "0x082C19F8",
+      "japanese_references": [
+        "0x082C1BE8"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderMultiBattle",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C04",
+      "japanese_text_address": "0x082C1A14",
+      "japanese_references": [
+        "0x082C1BEC"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerToTradeWith",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C20",
+      "japanese_text_address": "0x082C1A2C",
+      "japanese_references": [
+        "0x082C1BF0"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerToShareWonderCards",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C38",
+      "japanese_text_address": "0x082C1A4C",
+      "japanese_references": [
+        "0x082C1C00"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerToShareWonderNews",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C54",
+      "japanese_text_address": "0x082C1A6C",
+      "japanese_references": [
+        "0x082C1C04"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderPokemonJump",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C70",
+      "japanese_text_address": "0x082C1A8C",
+      "japanese_references": [
+        "0x082C1BF4"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBerryCrush",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389C8C",
+      "japanese_text_address": "0x082C1AA8",
+      "japanese_references": [
+        "0x082C1BF8"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBerryPicking",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389CA4",
+      "japanese_text_address": "0x082C1AC4",
+      "japanese_references": [
+        "0x082C1BFC"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBerryBlender",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389CC0",
+      "japanese_text_address": "0x082C1AE0",
+      "japanese_references": [
+        "0x082C1C18"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderRecordCorner",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389CD8",
+      "japanese_text_address": "0x082C1AFC",
+      "japanese_references": [
+        "0x082C1C14"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderCoolContest",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389CEC",
+      "japanese_text_address": "0x082C1B18",
+      "japanese_references": [
+        "0x082C1C20"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBeautyContest",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D08",
+      "japanese_text_address": "0x082C1B34",
+      "japanese_references": [
+        "0x082C1C24"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderCuteContest",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D24",
+      "japanese_text_address": "0x082C1B50",
+      "japanese_references": [
+        "0x082C1C28"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderSmartContest",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D40",
+      "japanese_text_address": "0x082C1B6C",
+      "japanese_references": [
+        "0x082C1C2C"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderToughContest",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D5C",
+      "japanese_text_address": "0x082C1B88",
+      "japanese_references": [
+        "0x082C1C30"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBattleTowerLv50",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D78",
+      "japanese_text_address": "0x082C1BA4",
+      "japanese_references": [
+        "0x082C1C34"
+      ]
+    },
+    {
+      "source_symbol": "sText_ChooseLeaderBattleTowerOpenLv",
+      "wokann_source": "src/data/union_room8g.h",
+      "us_text_address": "0x08389D94",
+      "japanese_text_address": "0x082C1BC4",
+      "japanese_references": [
+        "0x082C1C38"
+      ]
+    },
+    {
+      "source_symbol": "sText_SearchingForWirelessSystemWait",
+      "wokann_source": "src/data/union_room8h.h",
+      "us_text_address": "0x08389E08",
+      "japanese_text_address": "0x082C1C3C",
+      "japanese_references": [
+        "0x08014E9C"
+      ]
+    },
+    {
+      "source_symbol": "sText_AwaitingResponseFromWirelessSystem",
+      "wokann_source": "src/data/union_room8i.h",
+      "us_text_address": "0x08389E88",
+      "japanese_text_address": "0x082C1CB8",
+      "japanese_references": [
+        "0x08015004"
+      ]
+    },
+    {
+      "source_symbol": "sText_NoCardsSharedRightNow",
+      "wokann_source": "src/data/union_room8i.h",
+      "us_text_address": "0x08389ECC",
+      "japanese_text_address": "0x082C1CF0",
+      "japanese_references": [
+        "0x082C1D30"
+      ]
+    },
+    {
+      "source_symbol": "sText_NoNewsSharedRightNow",
+      "wokann_source": "src/data/union_room8i.h",
+      "us_text_address": "0x08389EE8",
+      "japanese_text_address": "0x082C1D10",
+      "japanese_references": [
+        "0x082C1D34"
+      ]
+    },
+    {
+      "source_symbol": "sText_PokemonTrades",
+      "wokann_source": "src/data/union_room8j.h",
+      "us_text_address": "0x08389F7C",
+      "japanese_text_address": "0x082C1D94",
+      "japanese_references": [
+        "0x082C1E68"
+      ]
+    },
+    {
+      "source_symbol": "sText_PokemonJump",
+      "wokann_source": "src/data/union_room8j.h",
+      "us_text_address": "0x08389FB0",
+      "japanese_text_address": "0x082C1DC0",
+      "japanese_references": [
+        "0x082C1E7C"
+      ]
+    },
+    {
+      "source_symbol": "sText_BerryPicking",
+      "wokann_source": "src/data/union_room8j.h",
+      "us_text_address": "0x08389FC8",
+      "japanese_text_address": "0x082C1DD8",
+      "japanese_references": [
+        "0x082C1E84"
+      ]
+    },
+    {
+      "source_symbol": "sText_Search",
+      "wokann_source": "src/data/union_room8j.h",
+      "us_text_address": "0x08389FD0",
+      "japanese_text_address": "0x082C1DE0",
+      "japanese_references": [
+        "0x082C1E88"
+      ]
+    },
+    {
+      "source_symbol": "sText_BerryBlender",
+      "wokann_source": "src/data/union_room8j.h",
+      "us_text_address": "0x08389FD8",
+      "japanese_text_address": "0x082C1DE4",
+      "japanese_references": [
+        "0x082C1E98"
+      ]
+    },
+    {
+      "source_symbol": "sText_ItsNormalCard",
+      "wokann_source": "src/data/union_room8k.h",
+      "us_text_address": "0x0838A05C",
+      "japanese_text_address": "0x082C1ECC",
+      "japanese_references": [
+        "0x082C1F08"
+      ]
+    },
+    {
+      "source_symbol": "sText_ItsBronzeCard",
+      "wokann_source": "src/data/union_room8k.h",
+      "us_text_address": "0x0838A068",
+      "japanese_text_address": "0x082C1ED8",
+      "japanese_references": [
+        "0x082C1F0C"
+      ]
+    },
+    {
+      "source_symbol": "sText_ItsCopperCard",
+      "wokann_source": "src/data/union_room8k.h",
+      "us_text_address": "0x0838A074",
+      "japanese_text_address": "0x082C1EE4",
+      "japanese_references": [
+        "0x082C1F10"
+      ]
+    },
+    {
+      "source_symbol": "sText_ItsSilverCard",
+      "wokann_source": "src/data/union_room8k.h",
+      "us_text_address": "0x0838A080",
+      "japanese_text_address": "0x082C1EF0",
+      "japanese_references": [
+        "0x082C1F14"
+      ]
+    },
+    {
+      "source_symbol": "sText_ItsGoldCard",
+      "wokann_source": "src/data/union_room8k.h",
+      "us_text_address": "0x0838A08C",
+      "japanese_text_address": "0x082C1EFC",
+      "japanese_references": [
+        "0x082C1F18"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "sText_XCheckedTradingBoard",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_ThankYouForRegistering",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_NobodyHasRegistered",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_CancelRegistrationOfMon",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_TradeTrainersWillBeListed",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_ChooseTrainerToTradeWith2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_AskTrainerToMakeTrade",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_AwaitingResponseFromTrainer2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_NotRegisteredAMonForTrade",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_DontHaveTypeTrainerWants",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_DontHaveEggTrainerWants",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerCantTradeForYourMon",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_CantTradeForPartnersMon",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_ChooseTrainer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_MustHaveTwoMonsForDoubleBattle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_AwaitingPlayersResponse",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "sText_PlayerHasBeenAskedToRegisterYouPleaseWait",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_PleaseWaitForOtherTrainersToGather",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Battle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Chat2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Greetings",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Exit",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Exit2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Info",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_NameWantedOfferLv",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_SingleBattle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_DoubleBattle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_MultiBattle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Chat",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_Cards",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_WonderCards",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_WonderNews",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_BerryCrush",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_RecordCorner",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_CoolContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_BeautyContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_CuteContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_SmartContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_ToughContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_BattleTowerLv50",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "sText_BattleTowerOpenLv",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_TrainerCardInfoPage1",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_TrainerCardInfoPage2",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "sText_GladToMeetYouMale",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_GladToMeetYouFemale",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "sText_FinishedCheckingPlayersTrainerCard",
+      "reason": "unsupported_source_encoding"
+    }
+  ]
+}

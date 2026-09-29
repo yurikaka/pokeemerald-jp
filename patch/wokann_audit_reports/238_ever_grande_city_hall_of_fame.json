@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "238_ever_grande_city_hall_of_fame.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: EverGrandeCity_HallOfFame",
+  "summary": {
+    "verified_text_label": 2
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x082112D0",
+      "jp_original_text": "0x08211369",
+      "batch_source_symbol": "EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions",
+      "patch_symbol": "Chs_EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions",
+      "base_rom_value": "0x08211369",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+          "line": 83,
+          "symbol": "EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+          "line": 83
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x082112FE",
+      "jp_original_text": "0x082113B4",
+      "batch_source_symbol": "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames",
+      "patch_symbol": "Chs_EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames",
+      "base_rom_value": "0x082113B4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+          "line": 90,
+          "symbol": "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/EverGrandeCity_HallOfFame/scripts.inc",
+          "line": 90
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

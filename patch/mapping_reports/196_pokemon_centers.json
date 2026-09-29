@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "batch": "196_pokemon_centers.json",
+  "source_commit": "fe570a7e5",
+  "status": "generated",
+  "component_reports": [
+    {
+      "report_file": "patch/mapping_reports/196_pokemon_centers.json",
+      "source_symbol_count": 36,
+      "unresolved_count": 0,
+      "mapping_policy": {
+        "us_text": "Read from the translated source symbol in the compiled US ROM/ELF.",
+        "control_codes": {
+          "normalization": "none",
+          "comparison": "raw bytes",
+          "conversion_stage": "patch/tools/build_texts.py"
+        },
+        "japanese_references": {
+          "source": "Wokann pokeemerald-jp dev decompilation.",
+          "commented_labels": "Use the exact address comment on the Japanese text label; scan the JP ROM for pointer words and require occurrence count to equal Wokann msgbox references.",
+          "battle_frontier": "Text labels lack address comments; resolve the four references with the US-JP map script context matcher and local regional delta, then verify all msgbox names and JP ROM pointer words against Wokann source."
+        }
+      }
+    },
+    {
+      "report_file": "patch/mapping_reports/197_pokemon_center_nurse.json",
+      "source_symbol_count": 10,
+      "unresolved_count": 0,
+      "mapping_policy": {
+        "us_text": "Localized bytes are read from the matching US ELF symbol in pokeemerald.gba.",
+        "control_codes": {
+          "normalization": "none",
+          "comparison": "raw bytes",
+          "conversion_stage": "patch/tools/build_texts.py"
+        },
+        "japanese_references": {
+          "source": "Wokann/pokeemerald-jp dev: data/scripts/pkmn_center_nurse.inc and data/text/pkmn_center_nurse.inc. Source-level nurse flow message references were counted per symbol and compared with US/Japanese ROM pointer occurrences.",
+          "matching": "Use exact-context matches where available and regional-delta fallback for remaining references in the shared nurse script block; every JP pointer word was checked to equal the reported original text address."
+        }
+      }
+    }
+  ],
+  "expected_reference_writes": [
+    {
+      "source_symbol": "BattleFrontier_PokemonCenter_1F_Text_GoingThroughEveryChallenge",
+      "address": "0x0823B165",
+      "original": "0x0823B1F8",
+      "count": 1
+    },
+    {
+      "source_symbol": "BattleFrontier_PokemonCenter_1F_Text_NeverSeenPokemon",
+      "address": "0x0823B153",
+      "original": "0x0823B17F",
+      "count": 1
+    },
+    {
+      "source_symbol": "BattleFrontier_PokemonCenter_1F_Text_NextStopBattleArena",
+      "address": "0x0823B15C",
+      "original": "0x0823B1C4",
+      "count": 1
+    },
+    {
+      "source_symbol": "BattleFrontier_PokemonCenter_1F_Text_Skitty",
+      "address": "0x0823B176",
+      "original": "0x0823B216",
+      "count": 1
+    },
+    {
+      "source_symbol": "DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM",
+      "address": "0x081F2CFC",
+      "original": "0x081F2D2B",
+      "count": 1
+    },
+    {
+      "source_symbol": "DewfordTown_PokemonCenter_1F_Text_StoneCavern",
+      "address": "0x081F2CF3",
+      "original": "0x081F2D03",
+      "count": 1
+    },
+    {
+      "source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon",
+      "address": "0x0821143A",
+      "original": "0x082114D6",
+      "count": 1
+    },
+    {
+      "source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+      "address": "0x08211431",
+      "original": "0x082114A2",
+      "count": 1
+    },
+    {
+      "source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou",
+      "address": "0x08211445",
+      "original": "0x08211531",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav",
+      "address": "0x08204C8E",
+      "original": "0x08204D21",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_PokemonCenter_1F_Text_GoToSafariZone",
+      "address": "0x08204C7C",
+      "original": "0x08204C95",
+      "count": 1
+    },
+    {
+      "source_symbol": "FortreeCity_PokemonCenter_1F_Text_RecordCornerIsNeat",
+      "address": "0x08204C85",
+      "original": "0x08204CCE",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate",
+      "address": "0x081F4FA9",
+      "original": "0x081F4FF9",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether",
+      "address": "0x081F4FB2",
+      "original": "0x081F4FC2",
+      "count": 1
+    },
+    {
+      "source_symbol": "LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo",
+      "address": "0x081F4FBB",
+      "original": "0x081F502B",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_ManOverThereSaysWeirdThings",
+      "address": "0x08200E01",
+      "original": "0x08200E1A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_MyDataUpdatedFromRecordCorner",
+      "address": "0x08200E0A",
+      "original": "0x08200E54",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun",
+      "address": "0x08200E13",
+      "original": "0x08200E8A",
+      "count": 1
+    },
+    {
+      "source_symbol": "MauvilleCity_PokemonCenter_2F_Text_Youngster",
+      "address": "0x08200EF8",
+      "original": "0x08200EFF",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves",
+      "address": "0x0820C4DA",
+      "original": "0x0820C517",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_PokemonCenter_1F_Text_GymLeaderDuoFormidable",
+      "address": "0x0820C4D1",
+      "original": "0x0820C4E1",
+      "count": 1
+    },
+    {
+      "source_symbol": "MossdeepCity_PokemonCenter_2F_Text_Woman5",
+      "address": "0x0820C573",
+      "original": "0x0820C57A",
+      "count": 1
+    },
+    {
+      "source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats",
+      "address": "0x081F785B",
+      "original": "0x081F78C3",
+      "count": 1
+    },
+    {
+      "source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_OnColonyOfCorsola",
+      "address": "0x081F7852",
+      "original": "0x081F7887",
+      "count": 1
+    },
+    {
+      "source_symbol": "PacifidlogTown_PokemonCenter_1F_Text_WhatColorTrainerCard",
+      "address": "0x081F7849",
+      "original": "0x081F7862",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor",
+      "address": "0x082034E9",
+      "original": "0x08203580",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_PokemonCenter_1F_Text_MaleAndFemalePokemon",
+      "address": "0x082034E0",
+      "original": "0x0820353E",
+      "count": 1
+    },
+    {
+      "source_symbol": "RustboroCity_PokemonCenter_1F_Text_PokemonHavePersonalities",
+      "address": "0x082034D7",
+      "original": "0x082034F0",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon",
+      "address": "0x081FE82D",
+      "original": "0x081FE83D",
+      "count": 1
+    },
+    {
+      "source_symbol": "SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend",
+      "address": "0x081FE836",
+      "original": "0x081FE89A",
+      "count": 1
+    },
+    {
+      "source_symbol": "SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon",
+      "address": "0x0820F03E",
+      "original": "0x0820F117",
+      "count": 1
+    },
+    {
+      "source_symbol": "SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends",
+      "address": "0x0820F034",
+      "original": "0x0820F15E",
+      "count": 1
+    },
+    {
+      "source_symbol": "SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge",
+      "address": "0x0820F00A",
+      "original": "0x0820F0D5",
+      "count": 1
+    },
+    {
+      "source_symbol": "SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn",
+      "address": "0x0820F014",
+      "original": "0x0820F046",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_PokemonCenter_1F_Text_FaithInYourPokemon",
+      "address": "0x081F7045",
+      "original": "0x081F7055",
+      "count": 1
+    },
+    {
+      "source_symbol": "VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent",
+      "address": "0x081F704E",
+      "original": "0x081F70A5",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_IllTakeYourPkmn",
+      "address": "0x08242A22",
+      "original": "0x08243786",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_IllTakeYourPkmn2",
+      "address": "0x08242A28",
+      "original": "0x082438D8",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_NoticesGoldCard",
+      "address": "0x08242B2F",
+      "original": "0x08243814",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_RestoredPkmnToFullHealth",
+      "address": "0x08242A88",
+      "original": "0x08243798",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_RestoredPkmnToFullHealth",
+      "address": "0x08242ABE",
+      "original": "0x08243798",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_ThankYouForWaiting",
+      "address": "0x08242A9E",
+      "original": "0x082438EC",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x082429EF",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x08242A98",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain",
+      "address": "0x08242AD8",
+      "original": "0x082437C1",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242AAE",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242B41",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WeHopeToSeeYouAgain2",
+      "address": "0x08242B5A",
+      "original": "0x082438FE",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WelcomeCutShort",
+      "address": "0x08242B10",
+      "original": "0x082437D5",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_WouldYouLikeToRestYourPkmn",
+      "address": "0x082429D1",
+      "original": "0x0824373C",
+      "count": 1
+    },
+    {
+      "source_symbol": "gText_YouWantTheUsual",
+      "address": "0x08242B48",
+      "original": "0x082438B9",
+      "count": 1
+    }
+  ]
+}
+

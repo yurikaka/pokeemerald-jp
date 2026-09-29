@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "batch": "412_ribbon_descriptions.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/text/ribbon_descriptions.h",
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "ambiguous_or_unreferenced_japanese_text": 7,
+    "mapped": 12
+  },
+  "mapped": [
+    {
+      "source_symbol": "gRibbonDescriptionPart1_Champion",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B299C",
+      "japanese_text_address": "0x085F5E58",
+      "japanese_references": [
+        "0x085F5F60"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Champion",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B29AB",
+      "japanese_text_address": "0x085F5E65",
+      "japanese_references": [
+        "0x085F5F64"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_NormalRank",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A18",
+      "japanese_text_address": "0x085F5EAB",
+      "japanese_references": [
+        "0x085F5F6C",
+        "0x085F5F8C",
+        "0x085F5FAC",
+        "0x085F5FCC",
+        "0x085F5FEC"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_SuperRank",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A26",
+      "japanese_text_address": "0x085F5EBA",
+      "japanese_references": [
+        "0x085F5F74",
+        "0x085F5F94",
+        "0x085F5FB4",
+        "0x085F5FD4",
+        "0x085F5FF4"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_HyperRank",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A34",
+      "japanese_text_address": "0x085F5EC9",
+      "japanese_references": [
+        "0x085F5F7C",
+        "0x085F5F9C",
+        "0x085F5FBC",
+        "0x085F5FDC",
+        "0x085F5FFC"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_MasterRank",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A42",
+      "japanese_text_address": "0x085F5ED8",
+      "japanese_references": [
+        "0x085F5F84",
+        "0x085F5FA4",
+        "0x085F5FC4",
+        "0x085F5FE4",
+        "0x085F6004"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_Winning",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A50",
+      "japanese_text_address": "0x085F5EE7",
+      "japanese_references": [
+        "0x085F6008"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_Victory",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A77",
+      "japanese_text_address": "0x085F5F03",
+      "japanese_references": [
+        "0x085F6010"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_Artist",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2A9E",
+      "japanese_text_address": "0x085F5F21",
+      "japanese_references": [
+        "0x085F6018"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Artist",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2AAF",
+      "japanese_text_address": "0x085F5F31",
+      "japanese_references": [
+        "0x085F601C"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_Effort",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2ABF",
+      "japanese_text_address": "0x085F5F3E",
+      "japanese_references": [
+        "0x085F6020"
+      ]
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Effort",
+      "wokann_source": "src/data/text/ribbon_descriptions.h",
+      "us_text_address": "0x086B2ACE",
+      "japanese_text_address": "0x085F5F4D",
+      "japanese_references": [
+        "0x085F6024"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "gRibbonDescriptionPart1_CoolContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_BeautyContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_CuteContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_SmartContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart1_ToughContest",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Winning",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gRibbonDescriptionPart2_Victory",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    }
+  ]
+}

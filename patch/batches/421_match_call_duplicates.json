@@ -1,0 +1,21 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "Match Call duplicate Japanese messages",
+  "texts": [
+    {"name": "Chs_gText_MatchCallBugManiac_Jeffrey_Strategy", "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Strategy", "us_encoded_hex": "091003af046d05843cff"},
+    {"name": "Chs_gText_MatchCallYoungster_Calvin_Pokemon", "source_symbol": "gText_MatchCallYoungster_Calvin_Pokemon", "us_encoded_hex": "0f7101d60d140c390e5f030b37ff"},
+    {"name": "Chs_gText_MatchCallPkmnRanger_Jackson_Strategy", "source_symbol": "gText_MatchCallPkmnRanger_Jackson_Strategy", "us_encoded_hex": "091003af046d058437ff"},
+    {"name": "Chs_gText_MatchCallPkmnRanger_Jackson_Pokemon", "source_symbol": "gText_MatchCallPkmnRanger_Jackson_Pokemon", "us_encoded_hex": "01d60d14030b0c390e5f37ff"}
+  ],
+  "reference_writes": [
+    {"address": "0x085F3B24", "original": "0x085F2DDC", "symbol": "Chs_gText_MatchCallBugManiac_Jeffrey_Strategy", "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Strategy"},
+    {"address": "0x085F3BD8", "original": "0x085F304E", "symbol": "Chs_gText_MatchCallYoungster_Calvin_Pokemon", "source_symbol": "gText_MatchCallYoungster_Calvin_Pokemon"},
+    {"address": "0x085F3D54", "original": "0x085F355D", "symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Strategy", "source_symbol": "gText_MatchCallPkmnRanger_Jackson_Strategy"},
+    {"address": "0x085F3D58", "original": "0x085F356D", "symbol": "Chs_gText_MatchCallPkmnRanger_Jackson_Pokemon", "source_symbol": "gText_MatchCallPkmnRanger_Jackson_Pokemon"}
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/421_match_call_duplicates.json",
+    "mapped_count": 4,
+    "unresolved_count": 0
+  }
+}

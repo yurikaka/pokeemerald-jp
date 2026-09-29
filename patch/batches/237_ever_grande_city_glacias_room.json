@@ -1,0 +1,52 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "dialogue: data/maps/EverGrandeCity_GlaciasRoom/scripts.inc",
+  "texts": [
+    {
+      "name": "Chs_EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
+      "us_encoded_hex": "05430f5b09f0370d98072201c309d33bfe0c0c0c670ced0d5d030b0f0b0fbd37fb0d980ac008640d000d000829030403e40fc1fe099b19510d98030b01b60c390e5f05a70ae237fb02e90c0c0d980fe61055039e05e60304030b07510c0c0e34fe0b7501d6074d03ea030b0e9e088a05bd04f3016307d7096637fb09f00f840b6704f409ce3dfb0ef10c0c09d20b430d980bf502780b2b08790f0209530d900ce33bfe09bd077d0cac0153089eb0b03cff"
+    },
+    {
+      "name": "Chs_EverGrandeCity_GlaciasRoom_Text_Defeat",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_Defeat",
+      "us_encoded_hex": "09f004f309f0030b016307d70966b0b0fe08bc05770b3c0bb3030b09bd094c026508a53cfb1055058f08a5030b0b48089203c503f309d20d340c0e0f0b0ae937fb09c7049e0d98030b01b60c390e5f05a70ae2fe09c404f401d6089e09f037ff"
+    },
+    {
+      "name": "Chs_EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech",
+      "us_encoded_hex": "0ac90d610de60f0b046003c205cf012837fb0fe609bd08643b09f0056e05e60bf20304016307d70966087d0963fe1059107007d70a1f030b0f0b097e37ff"
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x0821058B",
+      "original": "0x082105BD",
+      "symbol": "Chs_EverGrandeCity_GlaciasRoom_Text_IntroSpeech",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_IntroSpeech"
+    },
+    {
+      "address": "0x08210597",
+      "original": "0x0821064B",
+      "symbol": "Chs_EverGrandeCity_GlaciasRoom_Text_Defeat",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_Defeat"
+    },
+    {
+      "address": "0x082105A3",
+      "original": "0x08210691",
+      "symbol": "Chs_EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech"
+    },
+    {
+      "address": "0x082105B5",
+      "original": "0x08210691",
+      "symbol": "Chs_EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech",
+      "source_symbol": "EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech"
+    }
+  ],
+  "mapping_report": {
+    "report_file": "patch/mapping_reports/237_ever_grande_city_glacias_room.json",
+    "mapped_count": 3,
+    "unresolved_count": 0
+  }
+}

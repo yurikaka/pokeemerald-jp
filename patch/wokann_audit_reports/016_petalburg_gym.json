@@ -1,0 +1,2550 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "016_petalburg_gym.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: Petalburg Gym",
+  "summary": {
+    "verified_text_label": 77
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081F9187",
+      "jp_original_text": "0x081FA1A2",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_AlexiaDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_AlexiaDefeat",
+      "base_rom_value": "0x081FA1A2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1460,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1460,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1460
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9183",
+      "jp_original_text": "0x081FA17E",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_AlexiaIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_AlexiaIntro",
+      "base_rom_value": "0x081FA17E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1456,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1456,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1456
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F91B2",
+      "jp_original_text": "0x081FA20C",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_AlexiaPostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_AlexiaPostBadge",
+      "base_rom_value": "0x081FA20C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1471,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaPostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1471,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaPostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1471
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F919A",
+      "jp_original_text": "0x081FA1AE",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_AlexiaPostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_AlexiaPostBattle",
+      "base_rom_value": "0x081FA1AE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1463,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaPostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1463,
+          "symbol": "PetalburgCity_Gym_Text_AlexiaPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1463
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F910F",
+      "jp_original_text": "0x081F9FEF",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_BerkeDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_BerkeDefeat",
+      "base_rom_value": "0x081F9FEF",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1417,
+          "symbol": "PetalburgCity_Gym_Text_BerkeDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1417,
+          "symbol": "PetalburgCity_Gym_Text_BerkeDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1417
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F910B",
+      "jp_original_text": "0x081F9FB3",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_BerkeIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_BerkeIntro",
+      "base_rom_value": "0x081F9FB3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1411,
+          "symbol": "PetalburgCity_Gym_Text_BerkeIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1411,
+          "symbol": "PetalburgCity_Gym_Text_BerkeIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1411
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F913A",
+      "jp_original_text": "0x081FA072",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_BerkePostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_BerkePostBadge",
+      "base_rom_value": "0x081FA072",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1429,
+          "symbol": "PetalburgCity_Gym_Text_BerkePostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1429,
+          "symbol": "PetalburgCity_Gym_Text_BerkePostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1429
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9122",
+      "jp_original_text": "0x081FA001",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_BerkePostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_BerkePostBattle",
+      "base_rom_value": "0x081FA001",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1420,
+          "symbol": "PetalburgCity_Gym_Text_BerkePostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1420,
+          "symbol": "PetalburgCity_Gym_Text_BerkePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1420
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8676",
+      "jp_original_text": "0x081F9705",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadGoCollectBadges",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadGoCollectBadges",
+      "base_rom_value": "0x081F9705",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1211,
+          "symbol": "PetalburgCity_Gym_Text_DadGoCollectBadges"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1211,
+          "symbol": "PetalburgCity_Gym_Text_DadGoCollectBadges"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1211
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A3B",
+      "jp_original_text": "0x081F9B88",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadGoingToKeepTraining",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadGoingToKeepTraining",
+      "base_rom_value": "0x081F9B88",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1314,
+          "symbol": "PetalburgCity_Gym_Text_DadGoingToKeepTraining"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1314,
+          "symbol": "PetalburgCity_Gym_Text_DadGoingToKeepTraining"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1314
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8B2F",
+      "jp_original_text": "0x081F9AE6",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadHappyAndSad",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadHappyAndSad",
+      "base_rom_value": "0x081F9AE6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1297,
+          "symbol": "PetalburgCity_Gym_Text_DadHappyAndSad"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1297,
+          "symbol": "PetalburgCity_Gym_Text_DadHappyAndSad"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1297
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F878F",
+      "jp_original_text": "0x081F9572",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadHmISee",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadHmISee",
+      "base_rom_value": "0x081F9572",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1165,
+          "symbol": "PetalburgCity_Gym_Text_DadHmISee"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1165,
+          "symbol": "PetalburgCity_Gym_Text_DadHmISee"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1165
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8DC6",
+      "jp_original_text": "0x081F9BE0",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough",
+      "base_rom_value": "0x081F9BE0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1322,
+          "symbol": "PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1322,
+          "symbol": "PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1322
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F877F",
+      "jp_original_text": "0x081F94D9",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadOhYoureWallyRight",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadOhYoureWallyRight",
+      "base_rom_value": "0x081F94D9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1152,
+          "symbol": "PetalburgCity_Gym_Text_DadOhYoureWallyRight"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1152,
+          "symbol": "PetalburgCity_Gym_Text_DadOhYoureWallyRight"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1152
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F87C3",
+      "jp_original_text": "0x081F957F",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadPlayerGoWithWally",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadPlayerGoWithWally",
+      "base_rom_value": "0x081F957F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1168,
+          "symbol": "PetalburgCity_Gym_Text_DadPlayerGoWithWally"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1168,
+          "symbol": "PetalburgCity_Gym_Text_DadPlayerGoWithWally"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1168
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F863E",
+      "jp_original_text": "0x081F965A",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadSoDidItWorkOut",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadSoDidItWorkOut",
+      "base_rom_value": "0x081F965A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1196,
+          "symbol": "PetalburgCity_Gym_Text_DadSoDidItWorkOut"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1196,
+          "symbol": "PetalburgCity_Gym_Text_DadSoDidItWorkOut"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1196
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F86DE",
+      "jp_original_text": "0x081F9439",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon",
+      "base_rom_value": "0x081F9439",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1135,
+          "symbol": "PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1135,
+          "symbol": "PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1135
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8E16",
+      "jp_original_text": "0x081FA300",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_DoorAppearsLocked",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_DoorAppearsLocked",
+      "base_rom_value": "0x081FA300",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1495,
+          "symbol": "PetalburgCity_Gym_Text_DoorAppearsLocked"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1495,
+          "symbol": "PetalburgCity_Gym_Text_DoorAppearsLocked"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1495
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8E36",
+      "jp_original_text": "0x081FA360",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterAccuracyRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterAccuracyRoom",
+      "base_rom_value": "0x081FA360",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1508,
+          "symbol": "PetalburgCity_Gym_Text_EnterAccuracyRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1508,
+          "symbol": "PetalburgCity_Gym_Text_EnterAccuracyRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1508
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8E69",
+      "jp_original_text": "0x081FA385",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterConfusionRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterConfusionRoom",
+      "base_rom_value": "0x081FA385",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1513,
+          "symbol": "PetalburgCity_Gym_Text_EnterConfusionRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1513,
+          "symbol": "PetalburgCity_Gym_Text_EnterConfusionRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1513
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8E9C",
+      "jp_original_text": "0x081FA3A9",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterDefenseRoom",
+      "base_rom_value": "0x081FA3A9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518,
+          "symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518,
+          "symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8ECF",
+      "jp_original_text": "0x081FA3A9",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterDefenseRoom",
+      "base_rom_value": "0x081FA3A9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518,
+          "symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518,
+          "symbol": "PetalburgCity_Gym_Text_EnterDefenseRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1518
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9001",
+      "jp_original_text": "0x081FA437",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterGymLeadersRoom",
+      "base_rom_value": "0x081FA437",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538,
+          "symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538,
+          "symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9034",
+      "jp_original_text": "0x081FA437",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterGymLeadersRoom",
+      "base_rom_value": "0x081FA437",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538,
+          "symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538,
+          "symbol": "PetalburgCity_Gym_Text_EnterGymLeadersRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1538
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8F9B",
+      "jp_original_text": "0x081FA413",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterOHKORoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterOHKORoom",
+      "base_rom_value": "0x081FA413",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533,
+          "symbol": "PetalburgCity_Gym_Text_EnterOHKORoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533,
+          "symbol": "PetalburgCity_Gym_Text_EnterOHKORoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8FCE",
+      "jp_original_text": "0x081FA413",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterOHKORoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterOHKORoom",
+      "base_rom_value": "0x081FA413",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533,
+          "symbol": "PetalburgCity_Gym_Text_EnterOHKORoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533,
+          "symbol": "PetalburgCity_Gym_Text_EnterOHKORoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1533
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8F02",
+      "jp_original_text": "0x081FA3CC",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterRecoveryRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterRecoveryRoom",
+      "base_rom_value": "0x081FA3CC",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1523,
+          "symbol": "PetalburgCity_Gym_Text_EnterRecoveryRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1523,
+          "symbol": "PetalburgCity_Gym_Text_EnterRecoveryRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1523
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8DE6",
+      "jp_original_text": "0x081FA31E",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterSpeedRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterSpeedRoom",
+      "base_rom_value": "0x081FA31E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1499,
+          "symbol": "PetalburgCity_Gym_Text_EnterSpeedRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1499,
+          "symbol": "PetalburgCity_Gym_Text_EnterSpeedRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1499
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8F35",
+      "jp_original_text": "0x081FA3F0",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterStrengthRoom",
+      "base_rom_value": "0x081FA3F0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528,
+          "symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528,
+          "symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8F68",
+      "jp_original_text": "0x081FA3F0",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_EnterStrengthRoom",
+      "base_rom_value": "0x081FA3F0",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528,
+          "symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528,
+          "symbol": "PetalburgCity_Gym_Text_EnterStrengthRoom"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1528
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8AF1",
+      "jp_original_text": "0x081F9A1A",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis",
+      "base_rom_value": "0x081F9A1A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1280,
+          "symbol": "PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1280,
+          "symbol": "PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1280
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8B85",
+      "jp_original_text": "0x081F9A94",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ExplainFacade",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ExplainFacade",
+      "base_rom_value": "0x081F9A94",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1290,
+          "symbol": "PetalburgCity_Gym_Text_ExplainFacade"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1290,
+          "symbol": "PetalburgCity_Gym_Text_ExplainFacade"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1290
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90D3",
+      "jp_original_text": "0x081F9EFE",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GeorgeDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GeorgeDefeat",
+      "base_rom_value": "0x081F9EFE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1395,
+          "symbol": "PetalburgCity_Gym_Text_GeorgeDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1395,
+          "symbol": "PetalburgCity_Gym_Text_GeorgeDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1395
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90CF",
+      "jp_original_text": "0x081F9EB1",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GeorgeIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GeorgeIntro",
+      "base_rom_value": "0x081F9EB1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1389,
+          "symbol": "PetalburgCity_Gym_Text_GeorgeIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1389,
+          "symbol": "PetalburgCity_Gym_Text_GeorgeIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1389
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90FE",
+      "jp_original_text": "0x081F9F8B",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GeorgePostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GeorgePostBadge",
+      "base_rom_value": "0x081F9F8B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1407,
+          "symbol": "PetalburgCity_Gym_Text_GeorgePostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1407,
+          "symbol": "PetalburgCity_Gym_Text_GeorgePostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1407
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90E6",
+      "jp_original_text": "0x081F9F1D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GeorgePostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GeorgePostBattle",
+      "base_rom_value": "0x081F9F1D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1399,
+          "symbol": "PetalburgCity_Gym_Text_GeorgePostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1399,
+          "symbol": "PetalburgCity_Gym_Text_GeorgePostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1399
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8AA2",
+      "jp_original_text": "0x082637C2",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GiveEnigmaBerry",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GiveEnigmaBerry",
+      "base_rom_value": "0x082637C2",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 1010,
+          "symbol": "PetalburgCity_Gym_Text_GiveEnigmaBerry"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/text/berries.inc",
+          "line": 1
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F93F3",
+      "jp_original_text": "0x081F9C26",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GymGuideAdvice",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GymGuideAdvice",
+      "base_rom_value": "0x081F9C26",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1329,
+          "symbol": "PetalburgCity_Gym_Text_GymGuideAdvice"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1329,
+          "symbol": "PetalburgCity_Gym_Text_GymGuideAdvice"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1329
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F93FD",
+      "jp_original_text": "0x081F9D34",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GymGuidePostVictory",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GymGuidePostVictory",
+      "base_rom_value": "0x081F9D34",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1347,
+          "symbol": "PetalburgCity_Gym_Text_GymGuidePostVictory"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1347,
+          "symbol": "PetalburgCity_Gym_Text_GymGuidePostVictory"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1347
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9431",
+      "jp_original_text": "0x081FA47B",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GymStatue",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GymStatue",
+      "base_rom_value": "0x081FA47B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1545,
+          "symbol": "PetalburgCity_Gym_Text_GymStatue"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1545,
+          "symbol": "PetalburgCity_Gym_Text_GymStatue"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1545
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9427",
+      "jp_original_text": "0x081FA489",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_GymStatueCertified",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_GymStatueCertified",
+      "base_rom_value": "0x081FA489",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1548,
+          "symbol": "PetalburgCity_Gym_Text_GymStatueCertified"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1548,
+          "symbol": "PetalburgCity_Gym_Text_GymStatueCertified"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1548
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F87F7",
+      "jp_original_text": "0x081F95B6",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon",
+      "base_rom_value": "0x081F95B6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1174,
+          "symbol": "PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1174,
+          "symbol": "PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1174
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F91C3",
+      "jp_original_text": "0x081FA25D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_JodyDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_JodyDefeat",
+      "base_rom_value": "0x081FA25D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1480,
+          "symbol": "PetalburgCity_Gym_Text_JodyDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1480,
+          "symbol": "PetalburgCity_Gym_Text_JodyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1480
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F91BF",
+      "jp_original_text": "0x081FA21D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_JodyIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_JodyIntro",
+      "base_rom_value": "0x081FA21D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1474,
+          "symbol": "PetalburgCity_Gym_Text_JodyIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1474,
+          "symbol": "PetalburgCity_Gym_Text_JodyIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1474
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F91EE",
+      "jp_original_text": "0x081FA2BA",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_JodyPostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_JodyPostBadge",
+      "base_rom_value": "0x081FA2BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1489,
+          "symbol": "PetalburgCity_Gym_Text_JodyPostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1489,
+          "symbol": "PetalburgCity_Gym_Text_JodyPostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1489
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F91D6",
+      "jp_original_text": "0x081FA26D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_JodyPostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_JodyPostBattle",
+      "base_rom_value": "0x081FA26D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1483,
+          "symbol": "PetalburgCity_Gym_Text_JodyPostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1483,
+          "symbol": "PetalburgCity_Gym_Text_JodyPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1483
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8C1E",
+      "jp_original_text": "0x081F9B5D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_LetMeBorrowPlayer",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_LetMeBorrowPlayer",
+      "base_rom_value": "0x081F9B5D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1309,
+          "symbol": "PetalburgCity_Gym_Text_LetMeBorrowPlayer"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1309,
+          "symbol": "PetalburgCity_Gym_Text_LetMeBorrowPlayer"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1309
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F914B",
+      "jp_original_text": "0x081FA0D1",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_MaryDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_MaryDefeat",
+      "base_rom_value": "0x081FA0D1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1439,
+          "symbol": "PetalburgCity_Gym_Text_MaryDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1439,
+          "symbol": "PetalburgCity_Gym_Text_MaryDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1439
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9147",
+      "jp_original_text": "0x081FA09D",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_MaryIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_MaryIntro",
+      "base_rom_value": "0x081FA09D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1433,
+          "symbol": "PetalburgCity_Gym_Text_MaryIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1433,
+          "symbol": "PetalburgCity_Gym_Text_MaryIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1433
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9176",
+      "jp_original_text": "0x081FA13B",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_MaryPostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_MaryPostBadge",
+      "base_rom_value": "0x081FA13B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1450,
+          "symbol": "PetalburgCity_Gym_Text_MaryPostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1450,
+          "symbol": "PetalburgCity_Gym_Text_MaryPostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1450
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F915E",
+      "jp_original_text": "0x081FA0E6",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_MaryPostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_MaryPostBattle",
+      "base_rom_value": "0x081FA0E6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1442,
+          "symbol": "PetalburgCity_Gym_Text_MaryPostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1442,
+          "symbol": "PetalburgCity_Gym_Text_MaryPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1442
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8AE0",
+      "jp_original_text": "0x081F99C5",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanDefeat",
+      "base_rom_value": "0x081F99C5",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1268,
+          "symbol": "PetalburgCity_Gym_Text_NormanDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1268,
+          "symbol": "PetalburgCity_Gym_Text_NormanDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1268
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F89ED",
+      "jp_original_text": "0x081F987A",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanGoToDewford",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanGoToDewford",
+      "base_rom_value": "0x081F987A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1239,
+          "symbol": "PetalburgCity_Gym_Text_NormanGoToDewford"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1239,
+          "symbol": "PetalburgCity_Gym_Text_NormanGoToDewford"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1239
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F89E3",
+      "jp_original_text": "0x081F97E8",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanGoToRustboro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanGoToRustboro",
+      "base_rom_value": "0x081F97E8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1228,
+          "symbol": "PetalburgCity_Gym_Text_NormanGoToRustboro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1228,
+          "symbol": "PetalburgCity_Gym_Text_NormanGoToRustboro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1228
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8AD4",
+      "jp_original_text": "0x081F991A",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanIntro",
+      "base_rom_value": "0x081F991A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1253,
+          "symbol": "PetalburgCity_Gym_Text_NormanIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1253,
+          "symbol": "PetalburgCity_Gym_Text_NormanIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1253
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A5E",
+      "jp_original_text": "0x081FA550",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanPostRematch",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanPostRematch",
+      "base_rom_value": "0x081FA550",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1569,
+          "symbol": "PetalburgCity_Gym_Text_NormanPostRematch"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1569,
+          "symbol": "PetalburgCity_Gym_Text_NormanPostRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1569
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A50",
+      "jp_original_text": "0x081FA4AA",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanPreRematch",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanPreRematch",
+      "base_rom_value": "0x081FA4AA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1553,
+          "symbol": "PetalburgCity_Gym_Text_NormanPreRematch"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1553,
+          "symbol": "PetalburgCity_Gym_Text_NormanPreRematch"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1553
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A54",
+      "jp_original_text": "0x081FA535",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanRematchDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanRematchDefeat",
+      "base_rom_value": "0x081FA535",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1565,
+          "symbol": "PetalburgCity_Gym_Text_NormanRematchDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1565,
+          "symbol": "PetalburgCity_Gym_Text_NormanRematchDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1565
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A58",
+      "jp_original_text": "0x081FA586",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_NormanRematchNeedTwoMons",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_NormanRematchNeedTwoMons",
+      "base_rom_value": "0x081FA586",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1576,
+          "symbol": "PetalburgCity_Gym_Text_NormanRematchNeedTwoMons"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1576,
+          "symbol": "PetalburgCity_Gym_Text_NormanRematchNeedTwoMons"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1576
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9097",
+      "jp_original_text": "0x081F9E48",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ParkerDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ParkerDefeat",
+      "base_rom_value": "0x081F9E48",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1377,
+          "symbol": "PetalburgCity_Gym_Text_ParkerDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1377,
+          "symbol": "PetalburgCity_Gym_Text_ParkerDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1377
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9093",
+      "jp_original_text": "0x081F9E22",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ParkerIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ParkerIntro",
+      "base_rom_value": "0x081F9E22",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1372,
+          "symbol": "PetalburgCity_Gym_Text_ParkerIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1372,
+          "symbol": "PetalburgCity_Gym_Text_ParkerIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1372
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90C2",
+      "jp_original_text": "0x081F9E8A",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ParkerPostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ParkerPostBadge",
+      "base_rom_value": "0x081F9E8A",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1385,
+          "symbol": "PetalburgCity_Gym_Text_ParkerPostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1385,
+          "symbol": "PetalburgCity_Gym_Text_ParkerPostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1385
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F90AA",
+      "jp_original_text": "0x081F9E68",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ParkerPostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ParkerPostBattle",
+      "base_rom_value": "0x081F9E68",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1381,
+          "symbol": "PetalburgCity_Gym_Text_ParkerPostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1381,
+          "symbol": "PetalburgCity_Gym_Text_ParkerPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1381
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8BF1",
+      "jp_original_text": "0x081F9B2E",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_PleaseComeWithMe",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_PleaseComeWithMe",
+      "base_rom_value": "0x081F9B2E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1304,
+          "symbol": "PetalburgCity_Gym_Text_PleaseComeWithMe"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1304,
+          "symbol": "PetalburgCity_Gym_Text_PleaseComeWithMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1304
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F905B",
+      "jp_original_text": "0x081F9D95",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_RandallDefeat",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_RandallDefeat",
+      "base_rom_value": "0x081F9D95",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1357,
+          "symbol": "PetalburgCity_Gym_Text_RandallDefeat"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1357,
+          "symbol": "PetalburgCity_Gym_Text_RandallDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1357
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9057",
+      "jp_original_text": "0x081F9D63",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_RandallIntro",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_RandallIntro",
+      "base_rom_value": "0x081F9D63",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1352,
+          "symbol": "PetalburgCity_Gym_Text_RandallIntro"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1352,
+          "symbol": "PetalburgCity_Gym_Text_RandallIntro"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1352
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F9086",
+      "jp_original_text": "0x081F9DE9",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_RandallPostBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_RandallPostBadge",
+      "base_rom_value": "0x081F9DE9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1366,
+          "symbol": "PetalburgCity_Gym_Text_RandallPostBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1366,
+          "symbol": "PetalburgCity_Gym_Text_RandallPostBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1366
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F906E",
+      "jp_original_text": "0x081F9DA7",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_RandallPostBattle",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_RandallPostBattle",
+      "base_rom_value": "0x081F9DA7",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1360,
+          "symbol": "PetalburgCity_Gym_Text_RandallPostBattle"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1360,
+          "symbol": "PetalburgCity_Gym_Text_RandallPostBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1360
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8AE5",
+      "jp_original_text": "0x081F9A02",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_ReceivedBalanceBadge",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_ReceivedBalanceBadge",
+      "base_rom_value": "0x081F9A02",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1276,
+          "symbol": "PetalburgCity_Gym_Text_ReceivedBalanceBadge"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1276,
+          "symbol": "PetalburgCity_Gym_Text_ReceivedBalanceBadge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1276
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8777",
+      "jp_original_text": "0x081F94BD",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WallyIdLikeAPokemon",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WallyIdLikeAPokemon",
+      "base_rom_value": "0x081F94BD",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1148,
+          "symbol": "PetalburgCity_Gym_Text_WallyIdLikeAPokemon"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1148,
+          "symbol": "PetalburgCity_Gym_Text_WallyIdLikeAPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1148
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8787",
+      "jp_original_text": "0x081F94F6",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon",
+      "base_rom_value": "0x081F94F6",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1156,
+          "symbol": "PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1156,
+          "symbol": "PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1156
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8807",
+      "jp_original_text": "0x081F9630",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WallyOhWowThankYou",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WallyOhWowThankYou",
+      "base_rom_value": "0x081F9630",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1189,
+          "symbol": "PetalburgCity_Gym_Text_WallyOhWowThankYou"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1189,
+          "symbol": "PetalburgCity_Gym_Text_WallyOhWowThankYou"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1189
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F87FF",
+      "jp_original_text": "0x081F95E4",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall",
+      "base_rom_value": "0x081F95E4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1180,
+          "symbol": "PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1180,
+          "symbol": "PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1180
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8646",
+      "jp_original_text": "0x081F9668",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WallyThankYouBye",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WallyThankYouBye",
+      "base_rom_value": "0x081F9668",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1199,
+          "symbol": "PetalburgCity_Gym_Text_WallyThankYouBye"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1199,
+          "symbol": "PetalburgCity_Gym_Text_WallyThankYouBye"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1199
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8867",
+      "jp_original_text": "0x081F9640",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_WouldYouReallyComeWithMe",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_WouldYouReallyComeWithMe",
+      "base_rom_value": "0x081F9640",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1192,
+          "symbol": "PetalburgCity_Gym_Text_WouldYouReallyComeWithMe"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1192,
+          "symbol": "PetalburgCity_Gym_Text_WouldYouReallyComeWithMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1192
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F89F7",
+      "jp_original_text": "0x081F98EE",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_YouHaveGottenStronger",
+      "base_rom_value": "0x081F98EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248,
+          "symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248,
+          "symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081F8A01",
+      "jp_original_text": "0x081F98EE",
+      "batch_source_symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger",
+      "patch_symbol": "Chs_PetalburgCity_Gym_Text_YouHaveGottenStronger",
+      "base_rom_value": "0x081F98EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248,
+          "symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger"
+        },
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248,
+          "symbol": "PetalburgCity_Gym_Text_YouHaveGottenStronger"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/PetalburgCity_Gym/scripts.inc",
+          "line": 1248
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

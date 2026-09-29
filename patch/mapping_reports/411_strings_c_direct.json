@@ -1,0 +1,4581 @@
+{
+  "schema_version": 1,
+  "batch": "411_strings_c_direct.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/strings.c",
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "already_in_batch": 224,
+    "already_patched_reference": 4,
+    "ambiguous_or_unreferenced_japanese_text": 72,
+    "dynamic_placeholder_needs_review": 12,
+    "mapped": 148,
+    "missing_or_ambiguous_wokann_symbol": 466,
+    "unsupported_source_encoding": 13
+  },
+  "mapped": [
+    {
+      "source_symbol": "gText_TheField",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867B071",
+      "japanese_text_address": "0x085C96DB",
+      "japanese_references": [
+        "0x085C96F8",
+        "0x085C9708",
+        "0x085C970C",
+        "0x085C9714",
+        "0x085C9718",
+        "0x085C971C",
+        "0x085C9728",
+        "0x085C9734"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheBattle",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867B076",
+      "japanese_text_address": "0x085C96E1",
+      "japanese_references": [
+        "0x085C96FC",
+        "0x085C9720",
+        "0x085C972C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ThePokemonList",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867B07B",
+      "japanese_text_address": "0x085C96E6",
+      "japanese_references": [
+        "0x085C9700",
+        "0x085C9730"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheShop",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867B086",
+      "japanese_text_address": "0x085C96EE",
+      "japanese_references": [
+        "0x085C9704"
+      ]
+    },
+    {
+      "source_symbol": "gText_CantBeUsedOnPkmn",
+      "wokann_source": "src/data/text/region_texts82.h",
+      "us_text_address": "0x0867B4F3",
+      "japanese_text_address": "0x085C9B07",
+      "japanese_references": [
+        "0x081616EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_DelRegist",
+      "wokann_source": "src/data/text/region_texts87.h",
+      "us_text_address": "0x0867C161",
+      "japanese_text_address": "0x085CA69A",
+      "japanese_references": [
+        "0x08568AF4"
+      ]
+    },
+    {
+      "source_symbol": "gText_CantPlaceInRoom",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C2C3",
+      "japanese_text_address": "0x085CA7D9",
+      "japanese_references": [
+        "0x08127F78"
+      ]
+    },
+    {
+      "source_symbol": "gText_CantThrowAwayInUse",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C2E6",
+      "japanese_text_address": "0x085CA7F2",
+      "japanese_references": [
+        "0x0812A460"
+      ]
+    },
+    {
+      "source_symbol": "gText_DecorationThrownAway",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C31A",
+      "japanese_text_address": "0x085CA829",
+      "japanese_references": [
+        "0x0812A4E4"
+      ]
+    },
+    {
+      "source_symbol": "gText_StopPuttingAwayDecorations",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C330",
+      "japanese_text_address": "0x085CA835",
+      "japanese_references": [
+        "0x08129C5C",
+        "0x08129D24"
+      ]
+    },
+    {
+      "source_symbol": "gText_NoDecorationHere",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C342",
+      "japanese_text_address": "0x085CA842",
+      "japanese_references": [
+        "0x08129D4C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ReturnDecorationToPC",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C354",
+      "japanese_text_address": "0x085CA852",
+      "japanese_references": [
+        "0x08129C90"
+      ]
+    },
+    {
+      "source_symbol": "gText_DecorationReturnedToPC",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C36E",
+      "japanese_text_address": "0x085CA867",
+      "japanese_references": [
+        "0x08129990"
+      ]
+    },
+    {
+      "source_symbol": "gText_NoDecorationsInUse",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867C386",
+      "japanese_text_address": "0x085CA87A",
+      "japanese_references": [
+        "0x08126C98"
+      ]
+    },
+    {
+      "source_symbol": "gText_SomeonesPC",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8A2",
+      "japanese_text_address": "0x085CACEC",
+      "japanese_references": [
+        "0x080E18C0",
+        "0x080E1A00"
+      ]
+    },
+    {
+      "source_symbol": "gText_LanettesPC",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8AD",
+      "japanese_text_address": "0x085CACF5",
+      "japanese_references": [
+        "0x080E1998"
+      ]
+    },
+    {
+      "source_symbol": "gText_LogOff",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8CE",
+      "japanese_text_address": "0x085CAD0D",
+      "japanese_references": [
+        "0x080E192C",
+        "0x080E1990"
+      ]
+    },
+    {
+      "source_symbol": "gText_Opponent",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8D7",
+      "japanese_text_address": "0x085CAD15",
+      "japanese_references": [
+        "0x08563CD8",
+        "0x08563D08"
+      ]
+    },
+    {
+      "source_symbol": "gText_ReadyToStart",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C8E7",
+      "japanese_text_address": "0x085CAD28",
+      "japanese_references": [
+        "0x08563CE8",
+        "0x08563D18"
+      ]
+    },
+    {
+      "source_symbol": "gText_MultiLink",
+      "wokann_source": "src/data/text/region_texts93.h",
+      "us_text_address": "0x0867C91B",
+      "japanese_text_address": "0x085CAD60",
+      "japanese_references": [
+        "0x085645F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_Rooftop",
+      "wokann_source": "src/data/text/region_texts96.h",
+      "us_text_address": "0x0867CCB2",
+      "japanese_text_address": "0x085CB0B9",
+      "japanese_references": [
+        "0x0859264C"
+      ]
+    },
+    {
+      "source_symbol": "gText_ElevatorNowOn",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867CCB7",
+      "japanese_text_address": "0x085CB0BF",
+      "japanese_references": [
+        "0x08139C40"
+      ]
+    },
+    {
+      "source_symbol": "gText_TrainerCloseBy",
+      "wokann_source": "src/data/text/region_texts97.h",
+      "us_text_address": "0x0867D3DA",
+      "japanese_text_address": "0x085CB7A8",
+      "japanese_references": [
+        "0x081CB890"
+      ]
+    },
+    {
+      "source_symbol": "gText_InParty",
+      "wokann_source": "src/data/text/region_texts97.h",
+      "us_text_address": "0x0867D3F8",
+      "japanese_text_address": "0x085CB7C6",
+      "japanese_references": [
+        "0x081CD040",
+        "0x081D2558"
+      ]
+    },
+    {
+      "source_symbol": "gText_Unknown",
+      "wokann_source": "src/data/text/region_texts98.h",
+      "us_text_address": "0x0867D437",
+      "japanese_text_address": "0x085CB808",
+      "japanese_references": [
+        "0x081CB6A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_CombineFourWordsOrPhrases",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D48E",
+      "japanese_text_address": "0x085CB867",
+      "japanese_references": [
+        "0x0857313C",
+        "0x085731B4",
+        "0x0857331C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndMakeYourProfile",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D4A4",
+      "japanese_text_address": "0x085CB877",
+      "japanese_references": [
+        "0x08573140"
+      ]
+    },
+    {
+      "source_symbol": "gText_FindWordsThatDescribeYour",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D4D9",
+      "japanese_text_address": "0x085CB8B1",
+      "japanese_references": [
+        "0x085731E4",
+        "0x085732BC",
+        "0x085732D4",
+        "0x085732EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_FeelingsRightNow",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D4E8",
+      "japanese_text_address": "0x085CB8C1",
+      "japanese_references": [
+        "0x085731E8",
+        "0x085732C0",
+        "0x085732D8",
+        "0x085732F0"
+      ]
+    },
+    {
+      "source_symbol": "gText_CombineNineWordsOrPhrases",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D504",
+      "japanese_text_address": "0x085CB8D6",
+      "japanese_references": [
+        "0x0857319C",
+        "0x08573244"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndMakeAMessage2",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D518",
+      "japanese_text_address": "0x085CB8E6",
+      "japanese_references": [
+        "0x085731A0"
+      ]
+    },
+    {
+      "source_symbol": "gText_ChangeJustOneWordOrPhrase",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D528",
+      "japanese_text_address": "0x085CB8F3",
+      "japanese_references": [
+        "0x085731CC",
+        "0x08573274"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndImproveTheBardsSong",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D53A",
+      "japanese_text_address": "0x085CB903",
+      "japanese_references": [
+        "0x085731D0",
+        "0x08573278"
+      ]
+    },
+    {
+      "source_symbol": "gText_YourProfile",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D54C",
+      "japanese_text_address": "0x085CB916",
+      "japanese_references": [
+        "0x08573144"
+      ]
+    },
+    {
+      "source_symbol": "gText_YourFeelingAtTheBattlesStart",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D555",
+      "japanese_text_address": "0x085CB91E",
+      "japanese_references": [
+        "0x0857315C"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatYouSayIfYouWin",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D56A",
+      "japanese_text_address": "0x085CB931",
+      "japanese_references": [
+        "0x08573174"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatYouSayIfYouLose",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D57F",
+      "japanese_text_address": "0x085CB944",
+      "japanese_references": [
+        "0x0857318C"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheMailMessage",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D599",
+      "japanese_text_address": "0x085CB95C",
+      "japanese_references": [
+        "0x085731A4"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheBardsSong2",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D5AF",
+      "japanese_text_address": "0x085CB97B",
+      "japanese_references": [
+        "0x085731D4",
+        "0x0857327C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndMakeATrendySaying",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D5CA",
+      "japanese_text_address": "0x085CB995",
+      "japanese_references": [
+        "0x08573200"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheTrendySaying",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D5D6",
+      "japanese_text_address": "0x085CB9A7",
+      "japanese_references": [
+        "0x08573204"
+      ]
+    },
+    {
+      "source_symbol": "gText_IsAsShownOkay",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D5DD",
+      "japanese_text_address": "0x085CB9B3",
+      "japanese_references": [
+        "0x08573148",
+        "0x08573160",
+        "0x08573178",
+        "0x08573190",
+        "0x085731A8",
+        "0x085731C0",
+        "0x085731D8",
+        "0x085731F0",
+        "0x08573208",
+        "0x08573238",
+        "0x08573280",
+        "0x08573298",
+        "0x085732B0",
+        "0x085732C8",
+        "0x085732E0",
+        "0x085732F8",
+        "0x08573310",
+        "0x08573328"
+      ]
+    },
+    {
+      "source_symbol": "gText_ToTeachHerAGoodSaying",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D604",
+      "japanese_text_address": "0x085CB9CE",
+      "japanese_references": [
+        "0x085732A8"
+      ]
+    },
+    {
+      "source_symbol": "gText_FindWordsWhichFit",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D616",
+      "japanese_text_address": "0x085CB9E0",
+      "japanese_references": [
+        "0x0857328C",
+        "0x08573304"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheTrainersImage",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D625",
+      "japanese_text_address": "0x085CB9ED",
+      "japanese_references": [
+        "0x08573290",
+        "0x08573308"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheImage",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D637",
+      "japanese_text_address": "0x085CB9FF",
+      "japanese_references": [
+        "0x0857330C"
+      ]
+    },
+    {
+      "source_symbol": "gText_OutOfTheListedChoices",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D63D",
+      "japanese_text_address": "0x085CBA05",
+      "japanese_references": [
+        "0x0857322C"
+      ]
+    },
+    {
+      "source_symbol": "gText_SelectTheAnswerToTheQuiz",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D64D",
+      "japanese_text_address": "0x085CBA0F",
+      "japanese_references": [
+        "0x08573230"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndCreateAQuiz",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D65D",
+      "japanese_text_address": "0x085CBA1F",
+      "japanese_references": [
+        "0x08573248"
+      ]
+    },
+    {
+      "source_symbol": "gText_PickAWordOrPhraseAnd",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D66D",
+      "japanese_text_address": "0x085CBA2A",
+      "japanese_references": [
+        "0x0857325C"
+      ]
+    },
+    {
+      "source_symbol": "gText_SetTheQuizAnswer",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D681",
+      "japanese_text_address": "0x085CBA3E",
+      "japanese_references": [
+        "0x08573260"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticePhrase",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D69F",
+      "japanese_text_address": "0x085CBA58",
+      "japanese_references": [
+        "0x08573294"
+      ]
+    },
+    {
+      "source_symbol": "gText_QuitEditing",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D6A9",
+      "japanese_text_address": "0x085CBA63",
+      "japanese_references": [
+        "0x0811C388"
+      ]
+    },
+    {
+      "source_symbol": "gText_StopGivingPkmnMail",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D6B5",
+      "japanese_text_address": "0x085CBA71",
+      "japanese_references": [
+        "0x0811C35C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AndFillOutTheQuestionnaire",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D6CD",
+      "japanese_text_address": "0x085CBA84",
+      "japanese_references": [
+        "0x08573320"
+      ]
+    },
+    {
+      "source_symbol": "gText_LetsReplyToTheInterview",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D6D9",
+      "japanese_text_address": "0x085CBA98",
+      "japanese_references": [
+        "0x085731B8"
+      ]
+    },
+    {
+      "source_symbol": "gText_AllTextBeingEditedWill",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D6EB",
+      "japanese_text_address": "0x085CBAA7",
+      "japanese_references": [
+        "0x0811C398"
+      ]
+    },
+    {
+      "source_symbol": "gText_BeDeletedThatOkay",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D707",
+      "japanese_text_address": "0x085CBAB6",
+      "japanese_references": [
+        "0x0811C39C"
+      ]
+    },
+    {
+      "source_symbol": "gText_OnlyOnePhrase",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D76F",
+      "japanese_text_address": "0x085CBB1B",
+      "japanese_references": [
+        "0x0811DA68"
+      ]
+    },
+    {
+      "source_symbol": "gText_OriginalSongWillBeUsed",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D782",
+      "japanese_text_address": "0x085CBB2F",
+      "japanese_references": [
+        "0x0811DA6C"
+      ]
+    },
+    {
+      "source_symbol": "gText_CombineTwoWordsOrPhrases3",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D7A6",
+      "japanese_text_address": "0x085CBB4E",
+      "japanese_references": [
+        "0x0811DA84"
+      ]
+    },
+    {
+      "source_symbol": "gText_CreateAQuiz2",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D7E5",
+      "japanese_text_address": "0x085CBCD0",
+      "japanese_references": [
+        "0x0811DA50"
+      ]
+    },
+    {
+      "source_symbol": "gText_SetTheAnswer",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D7F5",
+      "japanese_text_address": "0x085CBCE0",
+      "japanese_references": [
+        "0x0811DA5C"
+      ]
+    },
+    {
+      "source_symbol": "gText_Profile",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D80F",
+      "japanese_text_address": "0x085CBBB7",
+      "japanese_references": [
+        "0x08573138"
+      ]
+    },
+    {
+      "source_symbol": "gText_AtTheBattlesStart",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D814",
+      "japanese_text_address": "0x085CBBBE",
+      "japanese_references": [
+        "0x08573150"
+      ]
+    },
+    {
+      "source_symbol": "gText_UponWinningABattle",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D822",
+      "japanese_text_address": "0x085CBBCB",
+      "japanese_references": [
+        "0x08573168"
+      ]
+    },
+    {
+      "source_symbol": "gText_UponLosingABattle",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D830",
+      "japanese_text_address": "0x085CBBD7",
+      "japanese_references": [
+        "0x08573180"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheBardsSong",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D83E",
+      "japanese_text_address": "0x085CBBE3",
+      "japanese_references": [
+        "0x085731C8",
+        "0x08573270"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatsHipAndHappening",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D847",
+      "japanese_text_address": "0x085CBBEA",
+      "japanese_references": [
+        "0x085731F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_Interview",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D857",
+      "japanese_text_address": "0x085CBBF6",
+      "japanese_references": [
+        "0x085731B0",
+        "0x085731E0",
+        "0x085732B8",
+        "0x085732D0",
+        "0x085732E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_GoodSaying",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D85C",
+      "japanese_text_address": "0x085CBBFD",
+      "japanese_references": [
+        "0x085732A0"
+      ]
+    },
+    {
+      "source_symbol": "gText_FansQuestion",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D865",
+      "japanese_text_address": "0x085CBC04",
+      "japanese_references": [
+        "0x08573300"
+      ]
+    },
+    {
+      "source_symbol": "gText_ApprenticesPhrase",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D87B",
+      "japanese_text_address": "0x085CBC18",
+      "japanese_references": [
+        "0x08573288"
+      ]
+    },
+    {
+      "source_symbol": "gText_Questionnaire",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D884",
+      "japanese_text_address": "0x085CBC22",
+      "japanese_references": [
+        "0x08573318"
+      ]
+    },
+    {
+      "source_symbol": "gText_YouCannotQuitHere",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D889",
+      "japanese_text_address": "0x085CBC62",
+      "japanese_references": [
+        "0x0811DADC"
+      ]
+    },
+    {
+      "source_symbol": "gText_SectionMustBeCompleted",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D897",
+      "japanese_text_address": "0x085CBC6D",
+      "japanese_references": [
+        "0x0811DAE0"
+      ]
+    },
+    {
+      "source_symbol": "gText_AfterYouHaveReadTheQuiz",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8B5",
+      "japanese_text_address": "0x085CBC89",
+      "japanese_references": [
+        "0x08573214"
+      ]
+    },
+    {
+      "source_symbol": "gText_QuestionPressTheAButton",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8C5",
+      "japanese_text_address": "0x085CBC94",
+      "japanese_references": [
+        "0x08573218"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheQuizAnswerIs",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8CE",
+      "japanese_text_address": "0x085CBCA0",
+      "japanese_references": [
+        "0x08573228",
+        "0x08573258"
+      ]
+    },
+    {
+      "source_symbol": "gText_LikeToQuitQuiz",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8DC",
+      "japanese_text_address": "0x085CBCAB",
+      "japanese_references": [
+        "0x0811C374"
+      ]
+    },
+    {
+      "source_symbol": "gText_ChallengeQuestionMark",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8E7",
+      "japanese_text_address": "0x085CBCB7",
+      "japanese_references": [
+        "0x0811C378"
+      ]
+    },
+    {
+      "source_symbol": "gText_IsThisQuizOK",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D8EF",
+      "japanese_text_address": "0x085CBCC0",
+      "japanese_references": [
+        "0x0857324C",
+        "0x08573264"
+      ]
+    },
+    {
+      "source_symbol": "gText_LyricsCantBeDeleted",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D91D",
+      "japanese_text_address": "0x085CBCEF",
+      "japanese_references": [
+        "0x0811DA78"
+      ]
+    },
+    {
+      "source_symbol": "gText_PokemonCenter",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867D93A",
+      "japanese_text_address": "0x085CBD09",
+      "japanese_references": [
+        "0x0857D7C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_BackupMemoryDamaged",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867D9CD",
+      "japanese_text_address": "0x085CBDB2",
+      "japanese_references": [
+        "0x081791D0",
+        "0x08179220"
+      ]
+    },
+    {
+      "source_symbol": "gText_CheckCompleted",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DA3A",
+      "japanese_text_address": "0x085CBE20",
+      "japanese_references": [
+        "0x081791C4"
+      ]
+    },
+    {
+      "source_symbol": "gText_Ferry",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DAB3",
+      "japanese_text_address": "0x085CBEBA",
+      "japanese_references": [
+        "0x08124600"
+      ]
+    },
+    {
+      "source_symbol": "gText_Hideout",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DAC1",
+      "japanese_text_address": "0x085CBEC7",
+      "japanese_references": [
+        "0x08124638"
+      ]
+    },
+    {
+      "source_symbol": "gText_ResetRTCConfirmCancel",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DAC6",
+      "japanese_text_address": "0x085CBECB",
+      "japanese_references": [
+        "0x0809EAB4"
+      ]
+    },
+    {
+      "source_symbol": "gText_PresentTime",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DAE5",
+      "japanese_text_address": "0x085CBEE9",
+      "japanese_references": [
+        "0x0809EAA4"
+      ]
+    },
+    {
+      "source_symbol": "gText_PreviousTime",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DAF6",
+      "japanese_text_address": "0x085CBEF9",
+      "japanese_references": [
+        "0x0809EAAC"
+      ]
+    },
+    {
+      "source_symbol": "gText_PleaseResetTime",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB07",
+      "japanese_text_address": "0x085CBF09",
+      "japanese_references": [
+        "0x0809EBD8"
+      ]
+    },
+    {
+      "source_symbol": "gText_ClockHasBeenReset",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB13",
+      "japanese_text_address": "0x085CBF1C",
+      "japanese_references": [
+        "0x0809EC6C"
+      ]
+    },
+    {
+      "source_symbol": "gText_SaveCompleted",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB3A",
+      "japanese_text_address": "0x085CBF43",
+      "japanese_references": [
+        "0x0809EC8C"
+      ]
+    },
+    {
+      "source_symbol": "gText_SaveFailed",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB48",
+      "japanese_text_address": "0x085CBF52",
+      "japanese_references": [
+        "0x0809ECE4"
+      ]
+    },
+    {
+      "source_symbol": "gText_NoSaveFileCantSetTime",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB57",
+      "japanese_text_address": "0x085CBF69",
+      "japanese_references": [
+        "0x0809EB70"
+      ]
+    },
+    {
+      "source_symbol": "gText_InGameClockUsable",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DB77",
+      "japanese_text_address": "0x085CBF86",
+      "japanese_references": [
+        "0x08153D78"
+      ]
+    },
+    {
+      "source_symbol": "gText_Dry2",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DBC3",
+      "japanese_text_address": "0x085CBFD6",
+      "japanese_references": [
+        "0x080F3CDC",
+        "0x080F3DD0"
+      ]
+    },
+    {
+      "source_symbol": "gText_Sweet2",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DBC6",
+      "japanese_text_address": "0x085CBFD9",
+      "japanese_references": [
+        "0x080F3CF0",
+        "0x080F3DE4"
+      ]
+    },
+    {
+      "source_symbol": "gText_Bitter2",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DBC9",
+      "japanese_text_address": "0x085CBFDC",
+      "japanese_references": [
+        "0x080F3D04",
+        "0x080F3DF8"
+      ]
+    },
+    {
+      "source_symbol": "gText_Sour2",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DBCC",
+      "japanese_text_address": "0x085CBFDF",
+      "japanese_references": [
+        "0x080F3D24",
+        "0x080F3E18"
+      ]
+    },
+    {
+      "source_symbol": "gText_Jackpot",
+      "wokann_source": "src/data/text/region_texts100.h",
+      "us_text_address": "0x0867DBD9",
+      "japanese_text_address": "0x085CBFEC",
+      "japanese_references": [
+        "0x080F4E64"
+      ]
+    },
+    {
+      "source_symbol": "gText_Marco",
+      "wokann_source": "src/data/text/region_texts101.h",
+      "us_text_address": "0x0867DF4B",
+      "japanese_text_address": "0x085CC31B",
+      "japanese_references": [
+        "0x080FA2D0"
+      ]
+    },
+    {
+      "source_symbol": "gText_Give",
+      "wokann_source": "src/data/text/region_texts103.h",
+      "us_text_address": "0x0867E10F",
+      "japanese_text_address": "0x085CC47F",
+      "japanese_references": [
+        "0x081A0528"
+      ]
+    },
+    {
+      "source_symbol": "gText_NoNeed",
+      "wokann_source": "src/data/text/region_texts103.h",
+      "us_text_address": "0x0867E114",
+      "japanese_text_address": "0x085CC486",
+      "japanese_references": [
+        "0x081A052C"
+      ]
+    },
+    {
+      "source_symbol": "gText_AnnouncingResults",
+      "wokann_source": "src/data/text/region_texts108.h",
+      "us_text_address": "0x0867E133",
+      "japanese_text_address": "0x085CC4A3",
+      "japanese_references": [
+        "0x080F67DC"
+      ]
+    },
+    {
+      "source_symbol": "gText_PreliminaryResults",
+      "wokann_source": "src/data/text/region_texts108.h",
+      "us_text_address": "0x0867E13D",
+      "japanese_text_address": "0x085CC4AE",
+      "japanese_references": [
+        "0x080F684C"
+      ]
+    },
+    {
+      "source_symbol": "gText_Round2Results",
+      "wokann_source": "src/data/text/region_texts108.h",
+      "us_text_address": "0x0867E148",
+      "japanese_text_address": "0x085CC4BA",
+      "japanese_references": [
+        "0x080F6974"
+      ]
+    },
+    {
+      "source_symbol": "gText_Powder",
+      "wokann_source": "src/data/text/region_texts106.h",
+      "us_text_address": "0x0867E8DC",
+      "japanese_text_address": "0x085CCCEE",
+      "japanese_references": [
+        "0x08024650"
+      ]
+    },
+    {
+      "source_symbol": "gText_BerryPickingResults",
+      "wokann_source": "src/data/text/region_texts107.h",
+      "us_text_address": "0x0867E922",
+      "japanese_text_address": "0x085CCD34",
+      "japanese_references": [
+        "0x080297DC"
+      ]
+    },
+    {
+      "source_symbol": "gText_AnnouncingRankings",
+      "wokann_source": "src/data/text/region_texts107.h",
+      "us_text_address": "0x0867E94D",
+      "japanese_text_address": "0x085CCD5A",
+      "japanese_references": [
+        "0x08029978"
+      ]
+    },
+    {
+      "source_symbol": "gText_AnnouncingPrizes",
+      "wokann_source": "src/data/text/region_texts107.h",
+      "us_text_address": "0x0867E957",
+      "japanese_text_address": "0x085CCD68",
+      "japanese_references": [
+        "0x08029BA4"
+      ]
+    },
+    {
+      "source_symbol": "gText_FilledStorageSpace",
+      "wokann_source": "src/data/text/region_texts109.h",
+      "us_text_address": "0x0867E996",
+      "japanese_text_address": "0x085CCDAB",
+      "japanese_references": [
+        "0x08029C08"
+      ]
+    },
+    {
+      "source_symbol": "gText_SomeoneDroppedOut",
+      "wokann_source": "src/data/text/region_texts109.h",
+      "us_text_address": "0x0867E9B4",
+      "japanese_text_address": "0x085CCDCB",
+      "japanese_references": [
+        "0x0802A344"
+      ]
+    },
+    {
+      "source_symbol": "gText_CommunicationStandby3",
+      "wokann_source": "src/data/text/region_texts109.h",
+      "us_text_address": "0x0867E9D1",
+      "japanese_text_address": "0x085CCDEA",
+      "japanese_references": [
+        "0x0802A1E0"
+      ]
+    },
+    {
+      "source_symbol": "gText_CommErrorCheckConnections",
+      "wokann_source": "src/data/text/comm_error_texts.h",
+      "us_text_address": "0x0867EEA5",
+      "japanese_text_address": "0x082BFE00",
+      "japanese_references": [
+        "0x0800AC78"
+      ]
+    },
+    {
+      "source_symbol": "gText_CommErrorEllipsis",
+      "wokann_source": "src/data/text/comm_error_texts.h",
+      "us_text_address": "0x0867EED4",
+      "japanese_text_address": "0x082BFE50",
+      "japanese_references": [
+        "0x0800AC0C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveCloserToLinkPartner",
+      "wokann_source": "src/data/text/comm_error_texts.h",
+      "us_text_address": "0x0867EEE3",
+      "japanese_text_address": "0x082BFE62",
+      "japanese_references": [
+        "0x0800AC10"
+      ]
+    },
+    {
+      "source_symbol": "gText_ABtnRegistrationCounter",
+      "wokann_source": "src/data/text/comm_error_texts.h",
+      "us_text_address": "0x0867EF0D",
+      "japanese_text_address": "0x082BFE8D",
+      "japanese_references": [
+        "0x0800AD74"
+      ]
+    },
+    {
+      "source_symbol": "gText_ABtnTitleScreen",
+      "wokann_source": "src/data/text/comm_error_texts.h",
+      "us_text_address": "0x0867EF1A",
+      "japanese_text_address": "0x082BFE9F",
+      "japanese_references": [
+        "0x0800AD1C"
+      ]
+    },
+    {
+      "source_symbol": "gText_LinkStandby2",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F0B0",
+      "japanese_text_address": "0x085CD0DC",
+      "japanese_references": [
+        "0x081789F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_PressAToLoadEvent",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F0C7",
+      "japanese_text_address": "0x085CD0FE",
+      "japanese_references": [
+        "0x08178A7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_LoadingEvent",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F0E4",
+      "japanese_text_address": "0x085CD123",
+      "japanese_references": [
+        "0x08178AEC"
+      ]
+    },
+    {
+      "source_symbol": "gText_DontRemoveCableTurnOff",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F0F1",
+      "japanese_text_address": "0x085CD133",
+      "japanese_references": [
+        "0x08178B80"
+      ]
+    },
+    {
+      "source_symbol": "gText_EventSafelyLoaded",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F116",
+      "japanese_text_address": "0x085CD159",
+      "japanese_references": [
+        "0x08178928"
+      ]
+    },
+    {
+      "source_symbol": "gText_LoadErrorEndingSession",
+      "wokann_source": "src/data/text/region_texts112.h",
+      "us_text_address": "0x0867F126",
+      "japanese_text_address": "0x085CD19F",
+      "japanese_references": [
+        "0x0817892C"
+      ]
+    },
+    {
+      "source_symbol": "gText_Hoenn",
+      "wokann_source": "src/field_region_map.c",
+      "us_text_address": "0x0867F1BB",
+      "japanese_text_address": "0x085C611C",
+      "japanese_references": [
+        "0x08170140"
+      ]
+    },
+    {
+      "source_symbol": "gText_MaxHP",
+      "wokann_source": "src/menu_specialized.c",
+      "us_text_address": "0x0867F2E0",
+      "japanese_text_address": "0x085FA9A4",
+      "japanese_references": [
+        "0x085FA9CC"
+      ]
+    },
+    {
+      "source_symbol": "gText_CallCantBeMadeHere",
+      "wokann_source": "src/pokenav_match_call_list.c",
+      "us_text_address": "0x0867F37A",
+      "japanese_text_address": "0x085F3E99",
+      "japanese_references": [
+        "0x081CA744"
+      ]
+    },
+    {
+      "source_symbol": "gText_RentalPkmn2",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F3F1",
+      "japanese_text_address": "0x085DBB98",
+      "japanese_references": [
+        "0x0819B684"
+      ]
+    },
+    {
+      "source_symbol": "gText_SelectFirstPkmn",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F3FC",
+      "japanese_text_address": "0x085DBBA1",
+      "japanese_references": [
+        "0x0819B728"
+      ]
+    },
+    {
+      "source_symbol": "gText_SelectSecondPkmn",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F40D",
+      "japanese_text_address": "0x085DBBB5",
+      "japanese_references": [
+        "0x0819B734"
+      ]
+    },
+    {
+      "source_symbol": "gText_SelectThirdPkmn",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F41E",
+      "japanese_text_address": "0x085DBBC9",
+      "japanese_references": [
+        "0x0819B768"
+      ]
+    },
+    {
+      "source_symbol": "gText_Rent",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F42F",
+      "japanese_text_address": "0x085DBBDD",
+      "japanese_references": [
+        "0x0819B840"
+      ]
+    },
+    {
+      "source_symbol": "gText_Deselect",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F446",
+      "japanese_text_address": "0x085DBBF2",
+      "japanese_references": [
+        "0x0819B800"
+      ]
+    },
+    {
+      "source_symbol": "gText_TheseThreePkmnOkay",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867F44F",
+      "japanese_text_address": "0x085DBBF6",
+      "japanese_references": [
+        "0x0819B764"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatToDoWithCards",
+      "wokann_source": "src/data/union_room8p.h",
+      "us_text_address": "0x0867F8F4",
+      "japanese_text_address": "0x082C2974",
+      "japanese_references": [
+        "0x080186E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_WhatToDoWithNews",
+      "wokann_source": "src/data/union_room8p.h",
+      "us_text_address": "0x0867F90C",
+      "japanese_text_address": "0x082C2984",
+      "japanese_references": [
+        "0x08018748"
+      ]
+    },
+    {
+      "source_symbol": "gText_MysteryGift",
+      "wokann_source": "src/data/union_room8p.h",
+      "us_text_address": "0x0867FAF8",
+      "japanese_text_address": "0x082C2B44",
+      "japanese_references": [
+        "0x080181CC"
+      ]
+    },
+    {
+      "source_symbol": "gDaycareText_GetAlongVeryWell",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867FC1C",
+      "japanese_text_address": "0x082FC084",
+      "japanese_references": [
+        "0x082FC0E8"
+      ]
+    },
+    {
+      "source_symbol": "gDaycareText_GetAlong",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867FC34",
+      "japanese_text_address": "0x082FC09A",
+      "japanese_references": [
+        "0x082FC0EC"
+      ]
+    },
+    {
+      "source_symbol": "gDaycareText_DontLikeOther",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867FC4E",
+      "japanese_text_address": "0x082FC0AE",
+      "japanese_references": [
+        "0x082FC0F0"
+      ]
+    },
+    {
+      "source_symbol": "gDaycareText_PlayOther",
+      "wokann_source": "src/strings.c",
+      "us_text_address": "0x0867FC68",
+      "japanese_text_address": "0x082FC0C4",
+      "japanese_references": [
+        "0x082FC0F4"
+      ]
+    },
+    {
+      "source_symbol": "gText_TimeBoard",
+      "wokann_source": "src/trainer_hill.c",
+      "us_text_address": "0x0867FC92",
+      "japanese_text_address": "0x085FB8E3",
+      "japanese_references": [
+        "0x081D5568"
+      ]
+    },
+    {
+      "source_symbol": "gText_TimeCleared",
+      "wokann_source": "src/trainer_hill.c",
+      "us_text_address": "0x0867FC99",
+      "japanese_text_address": "0x085FB8EA",
+      "japanese_references": [
+        "0x081D556C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerWhichMoveToForget",
+      "wokann_source": "src/data/text/region_texts71.h",
+      "us_text_address": "0x0867FD91",
+      "japanese_text_address": "0x085ADAC9",
+      "japanese_references": [
+        "0x08160A3C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPower",
+      "wokann_source": "src/menu_specialized.c",
+      "us_text_address": "0x0867FDC4",
+      "japanese_text_address": "0x085F7C68",
+      "japanese_references": [
+        "0x081D1FC0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerAccuracy",
+      "wokann_source": "src/menu_specialized.c",
+      "us_text_address": "0x0867FDCA",
+      "japanese_text_address": "0x085F7C6E",
+      "japanese_references": [
+        "0x081D1FC8"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Sapphire",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Ruby",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Emerald",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Aqua",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Magma",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Archie",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Maxie",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Kyogre",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Groudon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_Brendan",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpandedPlaceholder_May",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_EggNickname",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Pokemon",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SaveFileCorrupted",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SaveFileErased",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gJPText_No1MSubCircuit",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BatteryRunDry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Player",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Pokedex",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Time",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Badges",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AButton",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BButton",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RButton",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LButton",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ControlPad",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LButtonRButton",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Controls",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PickOk",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Next",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NextBack",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PickNextCancel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PickCancel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AButtonExit",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CryOf",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SizeComparedTo",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WelcomeToHOF",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HOFDexRating",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HOFDexSaving",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HOFCorrupted",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HOFNumber",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LeagueChamp",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Name",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BirchInTrouble",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ConfirmStarterChoice",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Pokemon4",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FlyToWhere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gMenuText_Use",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gMenuText_Toss",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gMenuText_Register",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gMenuText_Give",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gMenuText_Confirm",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Cancel",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Cancel2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_None",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_GoBackPrevMenu",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhatWouldYouLike",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Berry2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Coins",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_CloseBag",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1IsSelected",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantWriteMail",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MoveVar1Where",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1CantBeHeld",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TossHowManyVar1s",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThrewAwayVar2Var1s",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ConfirmTossItems",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DadsAdvice",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PlayerUsedVar2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RepelEffectsLingered",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BoxFull",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThePC",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_ReturnToVar1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ShopBuy",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ShopSell",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ShopQuit",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_InBagVar1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_QuitShopping",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1CertainlyHowMany",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1CertainlyHowMany2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1AndYouWantedVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1IsItThatllBeVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_YouWantedVar1ThatllBeVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_HereYouGoThankYou",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThankYouIllSendItHome",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThanksIllSendItHome",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_YouDontHaveMoney",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoMoreRoomForThis",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SpaceForVar1Full",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_AnythingElseICanHelp",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CanIHelpWithAnythingElse",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThrowInPremierBall",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantBuyKeyItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_HowManyToSell",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ICanPayVar1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TurnedOverVar1ForVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SpAtk3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SpDef3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WontHaveEffect",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCantSwitchOut",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnAlreadyInBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnAlreadySelected",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnHasNoEnergy",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantSwitchWithAlly",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggCantBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantUseUntilNewBadge",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoMoreThanVar1Pkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SendMailToPC",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MailSentToPC",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PCMailboxFull",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MailMessageWillBeLost",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_RemoveMailBeforeItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnWasGivenItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnAlreadyHoldingItemSwitch",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnNotHolding",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ReceivedItemFromPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MailTakenFromPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SwitchedPkmnItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnHoldingItemCantHoldMail",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MailTransferredFromMailbox",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BagFullCouldNotRemoveItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnLearnedMove3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCantLearnMove",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnNeedsToReplaceMove",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_StopLearningMove2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MoveNotLearned",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WhichMoveToForget",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_12PoofForgotMove",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnAlreadyKnows",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnHPRestoredByVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCuredOfPoison",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCuredOfParalysis",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnWokeUp2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnBurnHealed",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnThawedOut",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PPWasRestored",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnRegainhedHealth",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PkmnBecameHealthy",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MovesPPIncreased",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnElevatedToLvVar2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnBaseVar2StatIncreased",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnFriendlyBaseVar2Fell",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnAdoresBaseVar2Fell",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnFriendlyBaseVar2CantFall",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnSnappedOutOfConfusion",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnGotOverInfatuation",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThrowAwayItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ItemThrownAway",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TeachWhichPokemon2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ChoosePokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MoveToWhere",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TeachWhichPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_UseOnWhichPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_GiveToWhichPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DoWhatWithPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NothingToCut",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantSurfHere",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_AlreadySurfing",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantUseHere",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_RestoreWhichMove",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BoostPP",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DoWhatWithItem",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoPokemonForBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ChoosePokemon2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NotEnoughHp",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PokemonAreNeeded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PokemonCantBeSame",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoIdenticalHoldItems",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CurrentIsTooFast",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DoWhatWithMail",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ChoosePokemonCancel",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ChoosePokemonConfirm",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EnjoyCycling",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_InUseAlready_PM",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_AlreadyHoldingOne",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NoUse",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Able",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_First_PM",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Second_PM",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Third_PM",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Able2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NotAble",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Able3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NotAble2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Learned",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Have",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_DontHave",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Fourth",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCantParticipate",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CancelParticipation",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CancelBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ReturnToWaitingRoom",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CancelChallenge",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EscapeFromHere",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ReturnToHealingSpot",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_OnlyPkmnForBattle",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnCantBeTradedNow",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggCantBeTradedNow",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_OtherTrainersPkmnCantBeTraded",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_OtherTrainerCantAcceptPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_CantTradeWithTrainer",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NotPkmnOtherTrainerWants",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ThatIsntAnEgg",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Register",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Attack3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Defense3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SpAtk4",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SpDef4",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Speed2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_OTSlash",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_RentalPkmn",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TypeSlash",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Power",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Accuracy2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Appeal",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Jam",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Status",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ExpPoints",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_NextLv",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_RibbonsVar1",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Events",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Switch",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnInfo",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PkmnSkills",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BattleMoves",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ContestMoves",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Info",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggWillTakeALongTime",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggWillTakeSomeTime",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggWillHatchSoon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggAboutToHatch",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_HMMovesCantBeForgotten2",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureMetAtYZ",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureHatchedAtYZ",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureObtainedInTrade",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureFatefulEncounter",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureProbablyMetAt",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNature",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureMetSomewhereAt",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_XNatureHatchedSomewhereAt",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_OddEggFoundByCouple",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PeculiarEggNicePlace",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PeculiarEggTrade",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggFromHotSprings",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_EggFromTraveler",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_ApostropheSBase",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OkayToDeleteFromRegistry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RegisteredDataDeleted",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoRegistry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Decorate",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PutAway",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Toss2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PutOutSelectedDecorItem",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_StoreChosenDecorInPC",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThrowAwayUnwantedDecors",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoDecorations",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Desk",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Chair",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Plant",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Ornament",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Mat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Poster",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Doll",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Cushion",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Gold",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Silver",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PlaceItHere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CantBePlacedHere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CancelDecorating",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_InUseAlready",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoMoreDecorations",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoMoreDecorations2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MustBePlacedOnDesk",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DecorationWillBeDiscarded",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_NoItems",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoMailHere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhatToDoWithVar1sMail",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MessageWillBeLost",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BagIsFull",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MailToBagMessageErased",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Dad",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Mom",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Info2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CoolnessContest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BeautyContest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CutenessContest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SmartnessContest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ToughnessContest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Decoration2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PackUp",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Registry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Information",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Yes",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_No",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Lv50",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OpenLevel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RedShard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_YellowShard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BlueShard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_GreenShard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleFrontier",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Cool",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Beauty",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Cute",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Smart",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Tough",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Normal",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Super",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Hyper",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Master",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_PlayersPC",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_HallOfFame",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Tourney_Tree",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Single2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Double2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Multi",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MenuOptionPokedex",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionPokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionBag",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionPokenav",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionSave",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionOption",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuOptionExit",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SouthernIsland",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BirthIsland",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FarawayIsland",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NavelRock",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NormalTagMatch",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_VarietyTagMatch",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_UniqueTagMatch",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExpertTagMatch",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TradeCenter",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Colosseum",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordCorner",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BerryCrush3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleRules",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_JudgeMind",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_JudgeSkill",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_JudgeBody",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BasicRules",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SwapPartners",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SwapNumber",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SwapNotes",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleBasics",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokemonNature",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokemonMoves",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Underpowered",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhenInDanger",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleTrainers",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_GoOn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Record2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Rest",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Retire",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RankingHall",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExchangeService",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LilycoveCity",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SlateportCity",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Exit",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PkmnIsSelected",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_YourPartysFull",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gPCText_Give",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_JustOnePkmn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PartyFull",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Box",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoRibbonWinners",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NumberRegistered",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NumberOfBattles",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokenavMatchCall_Strategy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokenavMatchCall_TrainerPokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokenavMatchCall_SelfIntroduction",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RibbonsF700",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_CombineSixWordsOrPhrases",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AndMakeAMessage",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WithFourPhrases",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TheAnswer",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TheMailSalutation",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_CombineTwoWordsOrPhrases",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_CombineTwoWordsOrPhrases2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TheAnswerColon",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TheQuizColon",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_QuitEditing2",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "gText_EditedTextWillNotBeSaved",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_IsThatOkay",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_PleaseEnterPhraseOrWord",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_EntireTextCantBeDeleted",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_ThatsTrendyAlready",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_QuitGivingInfo",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_StopGivingPkmnMail2",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "gText_CancelSelection",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_F700sQuiz",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_Lady",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_CreateAQuiz",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "gText_SelectTheAnswer",
+      "reason": "already_patched_reference"
+    },
+    {
+      "source_symbol": "gText_PokemonLeague",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Coolness",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Beauty3",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Cuteness",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Smartness",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Toughness",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SaveFailedCheckingBackup",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_GamePlayCannotBeContinued",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_SaveCompleteGameCannotContinue",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_SaveCompletePressA",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_SecretBase",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Spicy2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Single",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Double",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_First",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Second",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Third",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TrainerCardName",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_TrainerCardMoney",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_TrainerCardPokedex",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Points",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TrainerCardTime",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Var1sTrainerCard",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_HallOfFameDebut",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_LinkBattles",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_LinkCableBattles",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WinsLosses",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_PokemonTrades",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_UnionTradesAndBattles",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BerryCrush",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WaitingTrainerFinishReading",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_PokeblocksWithFriends",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WonContestsWFriends",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BattlePtsWon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BattleTower",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WinsStraight",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_BattleTower2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleDome",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_BattlePalace",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_BattleFactory",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_BattleArena",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_BattlePike",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_BattlePyramid",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_FacilitySingle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_FacilityDouble",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_FacilityMulti",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_FacilityLink",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_ContestantsMonWon",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_CommunicationStandby",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Upper",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Lower",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Others",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Symbols",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Register2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Exit2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_QuitChatting",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RegisterTextWhere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RegisterTextHere",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_InputText",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F700JoinedChat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F700LeftChat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExitingChat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LeaderLeftEndingChat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RegisteredTextChangedOKToSave",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AlreadySavedFile_Chat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SavingDontTurnOff_Chat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PlayerSavedGame_Chat",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_IfLeaderLeavesChatEnds",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Hello",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Pokemon2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Trade",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Battle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Lets",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Ok",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Sorry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_YaySmileEmoji",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThankYou",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ByeBye",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallSteven_Strategy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallSteven_Pokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallBrendan_Strategy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallBrendan_Pokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallBrendan_Intro1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallBrendan_Intro2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallMay_Strategy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallMay_Pokemon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallMay_Intro1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MatchCallMay_Intro2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HatchedFromEgg",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NicknameHatchPrompt",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ReadyPickBerry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WaitForAllChooseBerry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_EndedWithXUnitsPowder",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordingGameResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PlayBerryCrushAgain",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_YouHaveNoBerries",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MemberDroppedOut",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimesUpNoGoodPowder",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationStandby2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SpaceTimes2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Var1Berry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimeColon",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PressingSpeed",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Silkiness",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SpaceMin",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SpaceSec",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimesPerSec",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PressesRankings",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CrushingResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NeatnessRankings",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CoopRankings",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PressingPowerRankings",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BerryCrush2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PressingSpeedRankings",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Var1Players",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SymbolsEarned",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleRecord",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePoints",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_UnusedCancel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CheckFrontierMap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CheckTrainerCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ViewRecordedBattle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PutAwayFrontierPass",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CurrentBattlePoints",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CollectedSymbols",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleTowerAbilitySymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleDomeTacticsSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePalaceSpiritsSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleArenaGutsSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleFactoryKnowledgeSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePikeLuckSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePyramidBraveSymbol",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThereIsNoBattleRecord",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleTower3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleDome2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePalace2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleArena2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleFactory2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePike2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePyramid2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleTowerDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleDomeDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePalaceDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleArenaDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleFactoryDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePikeDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePyramidDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BerryPickingRecords",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BerriesPicked",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BestScore",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BerriesInRowFivePlayers",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FirstPlacePrize",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_CantHoldAnyMore",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_WantToPlayAgain",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SpacePoints",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SpacePoints2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SpaceTimes3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PkmnJumpRecords",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_JumpsInARow",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BestScore2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ExcellentsInARow",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AwesomeWonF701F700",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FilledStorageSpace2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CantHoldMore",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WantToPlayAgain2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SomeoneDroppedOut2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationStandby4",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LinkContestResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_1st",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_2nd",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_3rd",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_4th",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Friend",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Pokemon3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SingleBattleRoomResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DoubleBattleRoomResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MultiBattleRoomResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_LinkMultiBattleRoomResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SingleBattleTourneyResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DoubleBattleTourneyResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SingleBattleHallResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DoubleBattleHallResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleChoiceResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SetKOTourneyResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleSwapSingleResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleSwapDoubleResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleQuestResults",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Lv502",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OpenLv",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WinStreak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Current",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Record",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Prev",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RentalSwap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Total",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ClearStreak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Championships",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RoomsCleared",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimesCleared",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_KOsInARow",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimesVar1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FloorsCleared",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordsLv50",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordsOpenLevel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FrontierFacilityWinStreak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FrontierFacilityClearStreak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FrontierFacilityRoomsCleared",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FrontierFacilityKOsStreak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_FrontierFacilityFloorsCleared",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_YesNo",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Peekaboo",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ButtonTypeNormal",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_ButtonTypeLEqualsA",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_NumPlayerLink",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BronzeCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CopperCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SilverCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_GoldCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Day",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Confirm2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Days",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TimeColon2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_GameTime",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RTCTime",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_UpdatedTime",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MenuPokedex",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuPokemon",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuBag",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuPokenav",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuSave",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuOption",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuExit",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuRetire",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MenuRest",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SafariBallStock",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattlePyramidFloor",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Peak",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gJPText_Player",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DexHoenn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DexNational",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokedexDiploma",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_XWillBeSentToY",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ByeByeVar1",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_XSentOverY",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_TakeGoodCareOfX",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Attack",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Defense",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Speed",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SpAtk",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_SpDef",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_FromSpace",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MixingRecords",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordMixingComplete",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Summary",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Others2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_Yes2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_No2",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_CantSelectSamePkmn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PkmnSwap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SelectPkmnToSwap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SelectPkmnToAccept",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Swap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Summary2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Rechoose",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_QuitSwapping",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Yes3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_No3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PkmnForSwap",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Cancel3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Swap2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Accept",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AcceptThisPkmn",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SamePkmnInPartyAlready",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SavingPlayer",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SavingBadges",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SavingPokedex",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_SavingTime",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_WirelessCommStatus",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PeopleTrading",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PeopleBattling",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PeopleInUnionRoom",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PeopleCommunicating",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F700Players",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F701Players",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F702Players",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_F703Players",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCards",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderNews",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WirelessCommunication",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Friend2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Exit3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Receive",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Send",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Toss",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_VarietyOfEventsImportedWireless",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCardsInPossession",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ReadNewsThatArrived",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ReturnToTitle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DontHaveCardNewOneInput",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DontHaveNewsNewOneInput",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhereShouldCardBeAccessed",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WhereShouldNewsBeAccessed",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationStandbyBButtonCancel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Communicating",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationCompleted",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationError",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommunicationCanceled",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ThrowAwayWonderCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HaventReceivedCardsGift",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCardReceivedFrom",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderNewsReceivedFrom",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCardReceived",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderNewsReceived",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NewStampReceived",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NewTrainerReceived",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AlreadyHadCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AlreadyHadNews",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_AlreadyHadStamp",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoMoreRoomForStamps",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RecordUploadedViaWireless",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CantAcceptCardFromTrainer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CantAcceptNewsFromTrainer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NothingSentOver",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SendingWonderCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SendingWonderNews",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCardSentTo",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderNewsSentTo",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_StampSentTo",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_GiftSentTo",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OtherTrainerHasCard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OtherTrainerHasNews",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OtherTrainerHasStamp",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OtherTrainerCanceled",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CantSendGiftToTrainer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_IfThrowAwayCardEventWontHappen",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_OkayToDiscardNews",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HaventReceivedGiftOkayToDiscard",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DataWillBeSaved",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_SaveCompletedPressA",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderCardThrownAway",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_WonderNewsThrownAway",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PickOKExit",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PickOKCancel",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PlayersBattleResults",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_TotalRecordWLD",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_WinLoseDraw",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_CommunicationStandby5",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Exit4",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_XMinYDotZSec",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_TeachWhichMoveToPkmn",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerTeachMoveConfirm",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPkmnLearnedMove",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPkmnTryingToLearnMove",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerStopTryingToTeachMove",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerAndPoof",
+      "reason": "unsupported_source_encoding"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerPkmnForgotMoveAndLearnedNew",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnedPkmnDidNotLearnMove",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerGiveUp",
+      "reason": "dynamic_placeholder_needs_review"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerBattleMoves",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerContestMovesTitle",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerType",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerAppeal",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    },
+    {
+      "source_symbol": "gText_MoveRelearnerJam",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ClearAllSaveData",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_ClearingData",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_IsThisTheCorrectTime",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Confirm3",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_Cancel4",
+      "reason": "already_in_batch"
+    },
+    {
+      "source_symbol": "gText_MayBrendanMatchCallDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_EliteFourMatchCallDesc",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_CommStandbyAwaitingOtherPlayer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_BattleWasRefused",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_RefusedBattle",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_NoWeather",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Sunny",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Sunny2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Rain",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Snow",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Lightning",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Fog",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_VolcanoAsh",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Sandstorm",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Fog2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Seafloor",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Cloudy",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Sunny3",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_HeavyRain",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Seafloor2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_DelAll",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Cancel5",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Ok2",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Quiz",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Answer",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_PokeBalls",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Berry",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    },
+    {
+      "source_symbol": "gText_Berries",
+      "reason": "missing_or_ambiguous_wokann_symbol"
+    }
+  ]
+}

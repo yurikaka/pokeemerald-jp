@@ -1,0 +1,922 @@
+{
+  "schema_version": 1,
+  "batch": "415_match_call_0.json",
+  "source_commit": "fe570a7e5",
+  "source": "src/data/text/match_call_messages.h",
+  "selection": {
+    "symbol_offset": 0,
+    "symbol_limit": 100,
+    "auto_wrap": true
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": "Same C symbol and exact source strings; US compiled bytes match commit source; Japanese source bytes are unique in the JP ROM and have pointers; no dynamic placeholders; preexisting patch references excluded.",
+  "summary": {
+    "ambiguous_or_unreferenced_japanese_text": 1,
+    "mapped": 99
+  },
+  "mapped": [
+    {
+      "source_symbol": "gText_MatchCallAromaLady_Rose_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFE88",
+      "japanese_text_address": "0x085F28F8",
+      "japanese_references": [
+        "0x085F39B4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallAromaLady_Rose_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFE98",
+      "japanese_text_address": "0x085F2907",
+      "japanese_references": [
+        "0x085F39B8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallAromaLady_Rose_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEAC",
+      "japanese_text_address": "0x085F2916",
+      "japanese_references": [
+        "0x085F39BC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallAromaLady_Rose_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEB8",
+      "japanese_text_address": "0x085F2923",
+      "japanese_references": [
+        "0x085F39C0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Andres_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEC8",
+      "japanese_text_address": "0x085F2933",
+      "japanese_references": [
+        "0x085F39C4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Andres_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEDA",
+      "japanese_text_address": "0x085F2940",
+      "japanese_references": [
+        "0x085F39C8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Andres_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEEA",
+      "japanese_text_address": "0x085F2950",
+      "japanese_references": [
+        "0x085F39CC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Andres_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFEF9",
+      "japanese_text_address": "0x085F2959",
+      "japanese_references": [
+        "0x085F39D0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Dusty_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF09",
+      "japanese_text_address": "0x085F2964",
+      "japanese_references": [
+        "0x085F39D4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Dusty_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF19",
+      "japanese_text_address": "0x085F2972",
+      "japanese_references": [
+        "0x085F39D8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Dusty_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF2B",
+      "japanese_text_address": "0x085F297F",
+      "japanese_references": [
+        "0x085F39DC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRuinManiac_Dusty_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF3E",
+      "japanese_text_address": "0x085F298E",
+      "japanese_references": [
+        "0x085F39E0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Lola_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF4A",
+      "japanese_text_address": "0x085F299E",
+      "japanese_references": [
+        "0x085F39E4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Lola_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF5A",
+      "japanese_text_address": "0x085F29A7",
+      "japanese_references": [
+        "0x085F39E8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Lola_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF6C",
+      "japanese_text_address": "0x085F29B7",
+      "japanese_references": [
+        "0x085F39EC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Lola_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF7B",
+      "japanese_text_address": "0x085F29C1",
+      "japanese_references": [
+        "0x085F39F0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Ricky_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF89",
+      "japanese_text_address": "0x085F29D0",
+      "japanese_references": [
+        "0x085F39F4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Ricky_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFF9D",
+      "japanese_text_address": "0x085F29E0",
+      "japanese_references": [
+        "0x085F39F8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Ricky_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFFB1",
+      "japanese_text_address": "0x085F29EE",
+      "japanese_references": [
+        "0x085F39FC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallTuber_Ricky_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFFC5",
+      "japanese_text_address": "0x085F29FE",
+      "japanese_references": [
+        "0x085F3A00"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSisAndBro_LilaAndRoy_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFFD7",
+      "japanese_text_address": "0x085F2A0C",
+      "japanese_references": [
+        "0x085F3A04"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSisAndBro_LilaAndRoy_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFFE7",
+      "japanese_text_address": "0x085F2A1B",
+      "japanese_references": [
+        "0x085F3A08"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSisAndBro_LilaAndRoy_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086AFFF9",
+      "japanese_text_address": "0x085F2A29",
+      "japanese_references": [
+        "0x085F3A0C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSisAndBro_LilaAndRoy_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B000E",
+      "japanese_text_address": "0x085F2A34",
+      "japanese_references": [
+        "0x085F3A10"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Cristin_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0022",
+      "japanese_text_address": "0x085F2A42",
+      "japanese_references": [
+        "0x085F3A14"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Cristin_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0036",
+      "japanese_text_address": "0x085F2A50",
+      "japanese_references": [
+        "0x085F3A18"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Cristin_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B004A",
+      "japanese_text_address": "0x085F2A60",
+      "japanese_references": [
+        "0x085F3A1C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Cristin_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0055",
+      "japanese_text_address": "0x085F2A6C",
+      "japanese_references": [
+        "0x085F3A20"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Brooke_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0063",
+      "japanese_text_address": "0x085F2A7B",
+      "japanese_references": [
+        "0x085F3A24"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Brooke_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0073",
+      "japanese_text_address": "0x085F2A8B",
+      "japanese_references": [
+        "0x085F3A28"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Brooke_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0083",
+      "japanese_text_address": "0x085F2A97",
+      "japanese_references": [
+        "0x085F3A2C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Brooke_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0092",
+      "japanese_text_address": "0x085F2AA7",
+      "japanese_references": [
+        "0x085F3A30"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Wilton_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00A2",
+      "japanese_text_address": "0x085F2AB1",
+      "japanese_references": [
+        "0x085F3A34"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Wilton_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00AC",
+      "japanese_text_address": "0x085F2AC0",
+      "japanese_references": [
+        "0x085F3A38"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Wilton_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00BA",
+      "japanese_text_address": "0x085F2AD0",
+      "japanese_references": [
+        "0x085F3A3C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCooltrainer_Wilton_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00CB",
+      "japanese_text_address": "0x085F2ADD",
+      "japanese_references": [
+        "0x085F3A40"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallHexManiac_Valerie_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00D5",
+      "japanese_text_address": "0x085F2AE9",
+      "japanese_references": [
+        "0x085F3A44"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallHexManiac_Valerie_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00E5",
+      "japanese_text_address": "0x085F2AF8",
+      "japanese_references": [
+        "0x085F3A48"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallHexManiac_Valerie_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B00F9",
+      "japanese_text_address": "0x085F2B07",
+      "japanese_references": [
+        "0x085F3A4C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallHexManiac_Valerie_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0108",
+      "japanese_text_address": "0x085F2B15",
+      "japanese_references": [
+        "0x085F3A50"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallLady_Cindy_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0118",
+      "japanese_text_address": "0x085F2B23",
+      "japanese_references": [
+        "0x085F3A54"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallLady_Cindy_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B012C",
+      "japanese_text_address": "0x085F2B30",
+      "japanese_references": [
+        "0x085F3A58"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallLady_Cindy_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0138",
+      "japanese_text_address": "0x085F2B3B",
+      "japanese_references": [
+        "0x085F3A5C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallLady_Cindy_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0149",
+      "japanese_text_address": "0x085F2B4A",
+      "japanese_references": [
+        "0x085F3A60"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Thalia_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B015B",
+      "japanese_text_address": "0x085F2B56",
+      "japanese_references": [
+        "0x085F3A64"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Thalia_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B016F",
+      "japanese_text_address": "0x085F2B62",
+      "japanese_references": [
+        "0x085F3A68"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Thalia_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0183",
+      "japanese_text_address": "0x085F2B6F",
+      "japanese_references": [
+        "0x085F3A6C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Thalia_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0196",
+      "japanese_text_address": "0x085F2B7A",
+      "japanese_references": [
+        "0x085F3A70"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Jessica_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01A2",
+      "japanese_text_address": "0x085F2B8A",
+      "japanese_references": [
+        "0x085F3A74"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Jessica_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01B4",
+      "japanese_text_address": "0x085F2B94",
+      "japanese_references": [
+        "0x085F3A78"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Jessica_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01C2",
+      "japanese_text_address": "0x085F2B9B",
+      "japanese_references": [
+        "0x085F3A7C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBeauty_Jessica_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01D2",
+      "japanese_text_address": "0x085F2BA9",
+      "japanese_references": [
+        "0x085F3A80"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRichBoy_Winston_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01E6",
+      "japanese_text_address": "0x085F2BB7",
+      "japanese_references": [
+        "0x085F3A84"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRichBoy_Winston_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B01F7",
+      "japanese_text_address": "0x085F2BC7",
+      "japanese_references": [
+        "0x085F3A88"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRichBoy_Winston_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B020B",
+      "japanese_text_address": "0x085F2BD7",
+      "japanese_references": [
+        "0x085F3A8C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallRichBoy_Winston_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B021F",
+      "japanese_text_address": "0x085F2BE4",
+      "japanese_references": [
+        "0x085F3A90"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPokeManiac_Steve_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0233",
+      "japanese_text_address": "0x085F2BF4",
+      "japanese_references": [
+        "0x085F3A94"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPokeManiac_Steve_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0241",
+      "japanese_text_address": "0x085F2C01",
+      "japanese_references": [
+        "0x085F3A98"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPokeManiac_Steve_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0253",
+      "japanese_text_address": "0x085F2C0F",
+      "japanese_references": [
+        "0x085F3A9C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPokeManiac_Steve_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B025F",
+      "japanese_text_address": "0x085F2C1B",
+      "japanese_references": [
+        "0x085F3AA0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSwimmer_Tony_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B026F",
+      "japanese_text_address": "0x085F2C28",
+      "japanese_references": [
+        "0x085F3AA4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSwimmer_Tony_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0279",
+      "japanese_text_address": "0x085F2C35",
+      "japanese_references": [
+        "0x085F3AA8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSwimmer_Tony_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0287",
+      "japanese_text_address": "0x085F2C40",
+      "japanese_references": [
+        "0x08347307",
+        "0x085F3AAC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallSwimmer_Tony_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B029B",
+      "japanese_text_address": "0x085F2C4B",
+      "japanese_references": [
+        "0x085F3AB0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Nob_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02AB",
+      "japanese_text_address": "0x085F2C57",
+      "japanese_references": [
+        "0x085F3AB4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Nob_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02B9",
+      "japanese_text_address": "0x085F2C64",
+      "japanese_references": [
+        "0x085F3AB8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Nob_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02C3",
+      "japanese_text_address": "0x085F2C6C",
+      "japanese_references": [
+        "0x085F3ABC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Nob_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02D3",
+      "japanese_text_address": "0x085F2C77",
+      "japanese_references": [
+        "0x085F3AC0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Koji_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02E1",
+      "japanese_text_address": "0x085F2C85",
+      "japanese_references": [
+        "0x085F3AC4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Koji_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B02F3",
+      "japanese_text_address": "0x085F2C95",
+      "japanese_references": [
+        "0x085F3AC8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Koji_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0305",
+      "japanese_text_address": "0x085F2CA4",
+      "japanese_references": [
+        "0x085F3ACC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBlackBelt_Koji_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B030C",
+      "japanese_text_address": "0x085F2CAD",
+      "japanese_references": [
+        "0x085F3AD0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Fernando_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0316",
+      "japanese_text_address": "0x085F2CBA",
+      "japanese_references": [
+        "0x085F3AD4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Fernando_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0326",
+      "japanese_text_address": "0x085F2CC8",
+      "japanese_references": [
+        "0x085F3AD8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Fernando_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0334",
+      "japanese_text_address": "0x085F2CD8",
+      "japanese_references": [
+        "0x085F3ADC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Fernando_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B033D",
+      "japanese_text_address": "0x085F2CE6",
+      "japanese_references": [
+        "0x085F3AE0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Dalton_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0349",
+      "japanese_text_address": "0x085F2CF1",
+      "japanese_references": [
+        "0x085F3AE4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Dalton_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0357",
+      "japanese_text_address": "0x085F2CFF",
+      "japanese_references": [
+        "0x085F3AE8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Dalton_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0367",
+      "japanese_text_address": "0x085F2D0F",
+      "japanese_references": [
+        "0x085F3AEC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallGuitarist_Dalton_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B037C",
+      "japanese_text_address": "0x085F2D1E",
+      "japanese_references": [
+        "0x085F3AF0"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallKindler_Bernie_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B038C",
+      "japanese_text_address": "0x085F2D2C",
+      "japanese_references": [
+        "0x085F3AF4"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallKindler_Bernie_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0396",
+      "japanese_text_address": "0x085F2D3C",
+      "japanese_references": [
+        "0x085F3AF8"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallKindler_Bernie_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03AA",
+      "japanese_text_address": "0x085F2D49",
+      "japanese_references": [
+        "0x085F3AFC"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallKindler_Bernie_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03B8",
+      "japanese_text_address": "0x085F2D58",
+      "japanese_references": [
+        "0x085F3B00"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCamper_Ethan_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03C8",
+      "japanese_text_address": "0x085F2D68",
+      "japanese_references": [
+        "0x085F3B04"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCamper_Ethan_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03D2",
+      "japanese_text_address": "0x085F2D77",
+      "japanese_references": [
+        "0x085F3B08"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCamper_Ethan_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03E6",
+      "japanese_text_address": "0x085F2D87",
+      "japanese_references": [
+        "0x085F3B0C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallCamper_Ethan_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B03F3",
+      "japanese_text_address": "0x085F2D95",
+      "japanese_references": [
+        "0x085F3B10"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallOldCouple_JohnAndJay_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0401",
+      "japanese_text_address": "0x085F2DA3",
+      "japanese_references": [
+        "0x085F3B14"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallOldCouple_JohnAndJay_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0413",
+      "japanese_text_address": "0x085F2DB1",
+      "japanese_references": [
+        "0x085F3B18"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallOldCouple_JohnAndJay_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0427",
+      "japanese_text_address": "0x085F2DC1",
+      "japanese_references": [
+        "0x085F3B1C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallOldCouple_JohnAndJay_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0439",
+      "japanese_text_address": "0x085F2DCD",
+      "japanese_references": [
+        "0x085F3B20"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0457",
+      "japanese_text_address": "0x085F2DEC",
+      "japanese_references": [
+        "0x085F3B28"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0469",
+      "japanese_text_address": "0x085F2DFC",
+      "japanese_references": [
+        "0x085F3B2C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B047A",
+      "japanese_text_address": "0x085F2E0C",
+      "japanese_references": [
+        "0x085F3B30"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPsychic_Cameron_Strategy",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B048A",
+      "japanese_text_address": "0x085F2E1B",
+      "japanese_references": [
+        "0x085F3B34"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPsychic_Cameron_Pokemon",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B0496",
+      "japanese_text_address": "0x085F2E29",
+      "japanese_references": [
+        "0x085F3B38"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPsychic_Cameron_Intro1",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B04AA",
+      "japanese_text_address": "0x085F2E39",
+      "japanese_references": [
+        "0x085F3B3C"
+      ]
+    },
+    {
+      "source_symbol": "gText_MatchCallPsychic_Cameron_Intro2",
+      "wokann_source": "src/data/text/match_call_messages.h",
+      "us_text_address": "0x086B04B3",
+      "japanese_text_address": "0x085F2E44",
+      "japanese_references": [
+        "0x085F3B40"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "source_symbol": "gText_MatchCallBugManiac_Jeffrey_Strategy",
+      "reason": "ambiguous_or_unreferenced_japanese_text"
+    }
+  ]
+}

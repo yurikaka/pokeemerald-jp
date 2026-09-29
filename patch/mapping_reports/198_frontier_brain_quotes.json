@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "batch": "198_frontier_brain_quotes.json",
+  "source_commit": "31154fc10",
+  "status": "generated",
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_file": "../pokeemerald_wokann_dev/data/text/frontier_brain.inc",
+    "wokann_commit": "dev"
+  },
+  "mapping_policy": {
+    "us_text": "Read exact EOS-terminated bytes from matching US ELF symbols in compiled ROM.",
+    "japanese_source": "Encode each Wokann dev frontier_brain.inc label with the Wokann Japanese charmap, locate exact bytes in Japanese ROM, then scan aligned pointer words; accept only a unique pointed-to occurrence.",
+    "control_codes": "Do not normalize; preserve US bytes and convert controls during build_texts.py."
+  },
+  "mapped_count": 28,
+  "unresolved_count": 0,
+  "mapped": [
+    {
+      "source_symbol": "gText_AnabelWonSilver",
+      "source_symbol_address": "0x08285C53",
+      "us_encoded_hex": "04e908c10b4b0be30d63b0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "3c2e182e004126b0b0ff",
+      "japanese_text_address": "0x08276D46",
+      "japanese_reference_address": "0x085DD578",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_AnabelDefeatSilver",
+      "source_symbol_address": "0x08285C60",
+      "us_encoded_hex": "04e9030b3b0d98107b0307089eb0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "15291e4518b0b0ff",
+      "japanese_text_address": "0x08276D50",
+      "japanese_reference_address": "0x085DD594",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_AnabelWonGold",
+      "source_symbol_address": "0x08285C70",
+      "us_encoded_hex": "0d981059030b050b01640ad1b0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "3b222e18b0b0ff",
+      "japanese_text_address": "0x08276D58",
+      "japanese_reference_address": "0x085DD5B0",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_AnabelDefeatGold",
+      "source_symbol_address": "0x08285C7F",
+      "us_encoded_hex": "0e460e4609d9b0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "0128371403b0b0ff",
+      "japanese_text_address": "0x08276D5F",
+      "japanese_reference_address": "0x085DD5CC",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_TuckerWonSilver",
+      "source_symbol_address": "0x08285C88",
+      "us_encoded_hex": "010004c604c63c09d901d613a613a5092a3dfe0c9c0f7e0b4b03610fe607c210f409ce3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "51a06aa06aa0abab001a3e060c080015021950abacfe202e1537002013292650ababff",
+      "japanese_text_address": "0x08276D67",
+      "japanese_reference_address": "0x085DD57C",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_TuckerDefeatSilver",
+      "source_symbol_address": "0x08285CAD",
+      "us_encoded_hex": "13f5b0b0fe100a094c0565b0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "58a0b0b000152e13000a14b0b0ff",
+      "japanese_text_address": "0x08276D8A",
+      "japanese_reference_address": "0x085DD598",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_TuckerWonGold",
+      "source_symbol_address": "0x08285CBB",
+      "us_encoded_hex": "0d98078e02ee022e05a1078e0e52fe07d701d60c0c0840030a0e7409933cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "95ae715dae9bae5d60ae19fe151f041a00063c283d3400150250ababff",
+      "japanese_text_address": "0x08276D98",
+      "japanese_reference_address": "0x085DD5B4",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_TuckerDefeatGold",
+      "source_symbol_address": "0x08285CDA",
+      "us_encoded_hex": "010004c604c63cfe09d904620d9802d80829089e08bc043a3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "51a06aa06aa0abab005d635750ababff",
+      "japanese_text_address": "0x08276DB5",
+      "japanese_reference_address": "0x085DD5D0",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_NolandWonSilver",
+      "source_symbol_address": "0x08285CF4",
+      "us_encoded_hex": "0433030a04e93cfe10550f020c0c01d602cd030b0f0b07dc3b037901283dff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "0512062a0b2eabfe525200492e07360316001550102bacff",
+      "japanese_text_address": "0x08276DC5",
+      "japanese_reference_address": "0x085DD588",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_NolandDefeatSilver",
+      "source_symbol_address": "0x08285D13",
+      "us_encoded_hex": "04e90ee2030b3cfe09d9107b0307110c05a50fe6112e0bee094c3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "52521832aeabfe052204002c06501329001832aeabff",
+      "japanese_text_address": "0x08276DDD",
+      "japanese_reference_address": "0x085DD5A4",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_NolandWonGold",
+      "source_symbol_address": "0x08285D2F",
+      "us_encoded_hex": "0d7f3b0d7f3b0d7f3cfe09d90f21075d07330c3d089e092a3dff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "050205020502aeaeababfe230300050c1f0206aeacff",
+      "japanese_text_address": "0x08276DF3",
+      "japanese_reference_address": "0x085DD5C0",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_NolandDefeatGold",
+      "source_symbol_address": "0x08285D49",
+      "us_encoded_hex": "1055086403a50bd8089e0bee094c3dff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "152e411433b0b0ff",
+      "japanese_text_address": "0x08276E09",
+      "japanese_reference_address": "0x085DD5DC",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_LucyWonSilver",
+      "source_symbol_address": "0x08285D59",
+      "us_encoded_hex": "050eb0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "6c7eb0b0ff",
+      "japanese_text_address": "0x08276E11",
+      "japanese_reference_address": "0x085DD58C",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_LucyDefeatSilver",
+      "source_symbol_address": "0x08285D5E",
+      "us_encoded_hex": "13f5b0b0ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "0850b0b0ff",
+      "japanese_text_address": "0x08276E16",
+      "japanese_reference_address": "0x085DD5A8",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_LucyWonGold",
+      "source_symbol_address": "0x08285D63",
+      "us_encoded_hex": "04c63cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "6aa0ababff",
+      "japanese_text_address": "0x08276E1B",
+      "japanese_reference_address": "0x085DD5C4",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_LucyDefeatGold",
+      "source_symbol_address": "0x08285D67",
+      "us_encoded_hex": "07d703963cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "11080c360533333350aeaeaeababff",
+      "japanese_text_address": "0x08276E20",
+      "japanese_reference_address": "0x085DD5E0",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_GretaWonSilver",
+      "source_symbol_address": "0x08285D6D",
+      "us_encoded_hex": "0d7f3b05be013007523cfe09d9030a112e030a046604e901e00e5b3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "11365014001136501433aeabfe23501400372e4650132618aeababff",
+      "japanese_text_address": "0x08276E2F",
+      "japanese_reference_address": "0x085DD584",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_GretaDefeatSilver",
+      "source_symbol_address": "0x08285D8A",
+      "us_encoded_hex": "09530e1803043cfe04e90ee2030b3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "03500fab0024293d342eaeababff",
+      "japanese_text_address": "0x08276E4B",
+      "japanese_reference_address": "0x085DD5A0",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_GretaWonGold",
+      "source_symbol_address": "0x08285D9A",
+      "us_encoded_hex": "0508050805083cfe09d90fe60a9502dd0bee094c3dff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "5380aea05dab0014033f2eababff",
+      "japanese_text_address": "0x08276E59",
+      "japanese_reference_address": "0x085DD5BC",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_GretaDefeatGold",
+      "source_symbol_address": "0x08285DB0",
+      "us_encoded_hex": "01003dfe09d90b4f1059030b3d3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "02ae50abac006f8d50abacff",
+      "japanese_text_address": "0x08276E67",
+      "japanese_reference_address": "0x085DD5D8",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_SpenserWonSilver",
+      "source_symbol_address": "0x08285DBF",
+      "us_encoded_hex": "09d9030b016307d70966107f0c9c0f240b750e2c3bfe0c0c0f420d7009d90c0c04600b750e2c030b0e9e088a05bd37ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "9f59737e3700152e3d34080015191afe647aae65ae3700152e3d34080041062741ababff",
+      "japanese_text_address": "0x08276E73",
+      "japanese_reference_address": "0x085DD580",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_SpenserDefeatSilver",
+      "source_symbol_address": "0x08285DEF",
+      "us_encoded_hex": "0100b0b0fe10550de607d701d60f0b0ee2089e37ff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "1e1e31b0b0fe0a2a1a000a2a1ab0b0ff",
+      "japanese_text_address": "0x08276E97",
+      "japanese_reference_address": "0x085DD59C",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_SpenserWonGold",
+      "source_symbol_address": "0x08285E04",
+      "us_encoded_hex": "142b04c604c604c63cfe03230e61095f3b0d98095f0da40c9c0d7d07953cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "392c1a501a501aababfe2c3700073603410219001f041600130700150cababff",
+      "japanese_text_address": "0x08276EA7",
+      "japanese_reference_address": "0x085DD5B8",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_SpenserDefeatGold",
+      "source_symbol_address": "0x08285E23",
+      "us_encoded_hex": "048601003cfe04c604c604c604c63cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "392caeaeae1a501a501aababff",
+      "japanese_text_address": "0x08276EC7",
+      "japanese_reference_address": "0x085DD5D4",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_BrandonWonSilver",
+      "source_symbol_address": "0x08285E33",
+      "us_encoded_hex": "05083c09d9100a094c089e3cfe0b430d9807c207c209d9030b0f3308793c10310aab08293cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "0502ab0015162d00245013292e41abfe1e2700372e462aab0010110137292e41ababff",
+      "japanese_text_address": "0x08276ED4",
+      "japanese_reference_address": "0x085DD590",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_BrandonDefeatSilver",
+      "source_symbol_address": "0x08285E59",
+      "us_encoded_hex": "077d0c0c10550ee23c112e030a050b01533cfe09d90f7e0d7002ab04e904e90a0908793cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "26050c50ab00372e465010abfe260800372e46501040ababff",
+      "japanese_text_address": "0x08276EF7",
+      "japanese_reference_address": "0x085DD5AC",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_BrandonWonGold",
+      "source_symbol_address": "0x08285E7E",
+      "us_encoded_hex": "05083c01d60ef103c80ab53cfe10310aab08293c01ad0379110c05a50b830be30e500e4f3cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "0502ab0001072722292e3d34001502abfe0b010010122e41ab00372e46292e41ababff",
+      "japanese_text_address": "0x08276F10",
+      "japanese_reference_address": "0x085DD5C8",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    },
+    {
+      "source_symbol": "gText_BrandonDefeatGold",
+      "source_symbol_address": "0x08285EA4",
+      "us_encoded_hex": "077d0c0c10550ee23c09d9112e0304089e3cfe09d90f7e0f0b108201d60e43031f0a0908793cff",
+      "wokann_source": "data/text/frontier_brain.inc",
+      "japanese_source_hex": "26050c50ab0026080024501040abfe372e465010ab00372e465010003d34150206ababff",
+      "japanese_text_address": "0x08276F33",
+      "japanese_reference_address": "0x085DD5E4",
+      "pointer_occurrences": 1,
+      "matching": "Wokann label bytes encoded through its JP charmap; unique JP ROM pointer occurrence verified"
+    }
+  ]
+}
+

@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "batch": "395_mauville_man.json",
+  "source_commit": "fe570a7e5",
+  "selection": {
+    "sources": [
+      "data/text/mauville_man.inc"
+    ],
+    "label_offset": 0,
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      5,
+      6
+    ]
+  },
+  "inputs": {
+    "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
+    "us_elf_sha1": "373b862fc8b30268d346ddad6197f8cac47131fb",
+    "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+    "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa"
+  },
+  "mapping_policy": {
+    "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
+    "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; the selected IDs are recorded above."
+  },
+  "mapped_count": 18,
+  "unresolved_count": 0,
+  "reference_count": 18,
+  "mapped": [
+    {
+      "source_symbol": "GiddyText_SoPretty",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 3,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08263490",
+      "japanese_text_address": "0x082593C5",
+      "japanese_references": [
+        "0x0857AC14"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoDarling",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 6,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826349B",
+      "japanese_text_address": "0x082593CF",
+      "japanese_references": [
+        "0x0857AC18"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoRelaxed",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 9,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634A6",
+      "japanese_text_address": "0x082593D9",
+      "japanese_references": [
+        "0x0857AC1C"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoSunny",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 12,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634B1",
+      "japanese_text_address": "0x082593E4",
+      "japanese_references": [
+        "0x0857AC20"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoDesirable",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 15,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634BC",
+      "japanese_text_address": "0x082593F0",
+      "japanese_references": [
+        "0x0857AC24"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoExciting",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 18,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634C9",
+      "japanese_text_address": "0x082593FB",
+      "japanese_references": [
+        "0x0857AC28"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoAmusing",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 21,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634D6",
+      "japanese_text_address": "0x08259407",
+      "japanese_references": [
+        "0x0857AC2C"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SoMagical",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 24,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634E3",
+      "japanese_text_address": "0x08259412",
+      "japanese_references": [
+        "0x0857AC30"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_Is",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 27,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634F0",
+      "japanese_text_address": "0x0825941C",
+      "japanese_references": [
+        "0x08120954"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_DontYouAgree",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 30,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634F4",
+      "japanese_text_address": "0x0825941F",
+      "japanese_references": [
+        "0x0812095C"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_ISoWantToGoOnAVacation",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 34,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082634FF",
+      "japanese_text_address": "0x0825942A",
+      "japanese_references": [
+        "0x0857AC34"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_IBoughtCrayonsWith120Colors",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 38,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08263521",
+      "japanese_text_address": "0x08259445",
+      "japanese_references": [
+        "0x0857AC38"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_WouldntItBeNiceIfWeCouldFloat",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 42,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08263548",
+      "japanese_text_address": "0x08259461",
+      "japanese_references": [
+        "0x0857AC3C"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_WhenYouWriteOnASandyBeach",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 46,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x0826356E",
+      "japanese_text_address": "0x0825947C",
+      "japanese_references": [
+        "0x0857AC40"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_WhatsTheBottomOfTheSeaLike",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 50,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08263599",
+      "japanese_text_address": "0x0825949E",
+      "japanese_references": [
+        "0x0857AC44"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_WhenYouSeeTheSettingSunDoesIt",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 54,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082635C2",
+      "japanese_text_address": "0x082594C5",
+      "japanese_references": [
+        "0x0857AC48"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_LyingBackInTheGreenGrass",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 58,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x082635E6",
+      "japanese_text_address": "0x082594DF",
+      "japanese_references": [
+        "0x0857AC4C"
+      ]
+    },
+    {
+      "source_symbol": "GiddyText_SecretBasesAreSoWonderful",
+      "source": "data/text/mauville_man.inc",
+      "wokann_source": "data/text/mauville_man.inc",
+      "wokann_label_line": 62,
+      "mapping_method": "wokann_address_comment",
+      "us_text_address": "0x08263607",
+      "japanese_text_address": "0x082594F8",
+      "japanese_references": [
+        "0x0857AC50"
+      ]
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,1238 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "policy": {
+    "verified_direct_symbol": "base ROM pointer and Wokann's direct source reference both name source_symbol",
+    "verified_text_label": "base ROM pointer's original text address has a Wokann label matching source_symbol",
+    "verified_source_definition": "base ROM pointer matches the batch original and Wokann defines the same source symbol, but its fixed-address label was not recovered",
+    "verified_fragment": "base ROM pointer has an exact Wokann source reference, but JP folds the US text into a differently named text block or offset",
+    "symbol_name_mismatch": "a named Wokann original-text label exists but differs from source_symbol",
+    "needs_review": "the pointer has no exact Wokann symbol match yet",
+    "rom_mismatch": "the supplied base ROM pointer differs from the batch original value"
+  },
+  "summary": {
+    "needs_review": 1131,
+    "verified_direct_symbol": 105,
+    "verified_fragment": 138,
+    "verified_source_definition": 2928,
+    "verified_text_label": 4250
+  },
+  "batches": {
+    "001_littleroot_town.json": {
+      "verified_text_label": 22
+    },
+    "002_inside_truck.json": {
+      "verified_source_definition": 1
+    },
+    "003_players_house_1f.json": {
+      "verified_text_label": 36
+    },
+    "004_players_house_2f.json": {
+      "verified_text_label": 5
+    },
+    "005_rivals_house_1f.json": {
+      "verified_text_label": 9
+    },
+    "006_rivals_house_2f.json": {
+      "verified_text_label": 16
+    },
+    "007_birchs_lab.json": {
+      "verified_text_label": 50
+    },
+    "008_route101.json": {
+      "verified_source_definition": 9
+    },
+    "009_oldale_town.json": {
+      "verified_source_definition": 11
+    },
+    "010_oldale_interiors.json": {
+      "verified_text_label": 10
+    },
+    "011_route102.json": {
+      "verified_text_label": 25
+    },
+    "012_route103.json": {
+      "verified_text_label": 58
+    },
+    "013_petalburg_city.json": {
+      "verified_text_label": 13
+    },
+    "014_petalburg_interiors.json": {
+      "verified_text_label": 13
+    },
+    "015_wallys_house.json": {
+      "verified_text_label": 8
+    },
+    "016_petalburg_gym.json": {
+      "verified_text_label": 77
+    },
+    "017_route104.json": {
+      "verified_text_label": 88
+    },
+    "018_mr_brineys_house.json": {
+      "verified_text_label": 9
+    },
+    "019_petalburg_woods.json": {
+      "verified_text_label": 36
+    },
+    "020_route105.json": {
+      "verified_text_label": 25
+    },
+    "021_route106.json": {
+      "verified_text_label": 17
+    },
+    "022_dewford_town.json": {
+      "verified_source_definition": 24,
+      "verified_text_label": 4
+    },
+    "023_dewford_gym.json": {
+      "verified_text_label": 34
+    },
+    "024_dewford_hall.json": {
+      "verified_text_label": 26
+    },
+    "025_dewford_house2.json": {
+      "verified_text_label": 4
+    },
+    "026_granite_cave.json": {
+      "verified_text_label": 3
+    },
+    "027_stevens_room.json": {
+      "verified_text_label": 6
+    },
+    "028_route116.json": {
+      "verified_text_label": 62
+    },
+    "029_rustborocity.json": {
+      "verified_text_label": 56
+    },
+    "030_rustborocity_cuttershouse.json": {
+      "verified_text_label": 3
+    },
+    "031_rustborocity_devoncorp_1f.json": {
+      "verified_text_label": 11
+    },
+    "032_rustborocity_devoncorp_2f.json": {
+      "verified_text_label": 20
+    },
+    "033_rustborocity_devoncorp_3f.json": {
+      "verified_text_label": 15
+    },
+    "034_rustborocity_flat1_2f.json": {
+      "verified_text_label": 15
+    },
+    "035_rustborocity_flat2_2f.json": {
+      "verified_text_label": 3
+    },
+    "036_rustborocity_gym.json": {
+      "verified_text_label": 25
+    },
+    "037_rustborocity_house1.json": {
+      "verified_text_label": 6
+    },
+    "038_rustborocity_pokemonschool.json": {
+      "verified_text_label": 20
+    },
+    "039_rusturftunnel.json": {
+      "verified_text_label": 16
+    },
+    "040_route109.json": {
+      "verified_text_label": 67
+    },
+    "041_route109_seashorehouse.json": {
+      "verified_source_definition": 17
+    },
+    "042_slateportcity.json": {
+      "verified_text_label": 80
+    },
+    "043_slateportcity_battletentlobby.json": {
+      "verified_text_label": 24
+    },
+    "044_slateportcity_harbor.json": {
+      "verified_text_label": 28
+    },
+    "045_slateportcity_nameratershouse.json": {
+      "verified_text_label": 9
+    },
+    "046_slateportcity_oceanicmuseum_1f.json": {
+      "verified_source_definition": 6,
+      "verified_text_label": 27
+    },
+    "047_slateportcity_oceanicmuseum_2f.json": {
+      "verified_text_label": 26
+    },
+    "048_slateportcity_pokemonfanclub.json": {
+      "verified_source_definition": 14,
+      "verified_text_label": 27
+    },
+    "049_slateportcity_sternsshipyard_1f.json": {
+      "verified_text_label": 8
+    },
+    "050_mauvillecity.json": {
+      "verified_text_label": 34
+    },
+    "051_mauvillecity_bikeshop.json": {
+      "verified_text_label": 23
+    },
+    "052_mauvillecity_gamecorner.json": {
+      "verified_text_label": 46
+    },
+    "053_mauvillecity_gym.json": {
+      "verified_text_label": 32
+    },
+    "054_mauvillecity_house1.json": {
+      "verified_text_label": 3
+    },
+    "055_mauvillecity_house2.json": {
+      "verified_text_label": 5
+    },
+    "056_mauvillecity_pokemoncenter_1f.json": {
+      "verified_source_definition": 37
+    },
+    "057_route110.json": {
+      "verified_text_label": 104
+    },
+    "058_route110_seasidecyclingroadnorthentrance.json": {
+      "verified_source_definition": 2
+    },
+    "059_route110_seasidecyclingroadsouthentrance.json": {
+      "verified_source_definition": 2
+    },
+    "060_route110_trickhouseend.json": {
+      "verified_source_definition": 29
+    },
+    "061_route110_trickhouseentrance.json": {
+      "verified_source_definition": 30
+    },
+    "062_route110_trickhousepuzzle.json": {
+      "verified_source_definition": 3
+    },
+    "063_route110_trickhousepuzzle1.json": {
+      "verified_source_definition": 10
+    },
+    "064_route110_trickhousepuzzle2.json": {
+      "verified_source_definition": 10
+    },
+    "065_route110_trickhousepuzzle3.json": {
+      "verified_source_definition": 10
+    },
+    "066_route110_trickhousepuzzle4.json": {
+      "verified_source_definition": 10
+    },
+    "067_route110_trickhousepuzzle5.json": {
+      "verified_source_definition": 25
+    },
+    "068_route110_trickhousepuzzle6.json": {
+      "verified_source_definition": 10
+    },
+    "069_route110_trickhousepuzzle7.json": {
+      "verified_source_definition": 19
+    },
+    "070_route110_trickhousepuzzle8.json": {
+      "verified_source_definition": 10
+    },
+    "071_route117.json": {
+      "verified_source_definition": 1,
+      "verified_text_label": 68
+    },
+    "072_route117_pokemondaycare.json": {
+      "verified_text_label": 25
+    },
+    "073_verdanturftown.json": {
+      "verified_source_definition": 10
+    },
+    "074_verdanturftown_battletentlobby.json": {
+      "verified_text_label": 25
+    },
+    "075_verdanturftown_friendshipratershouse.json": {
+      "verified_text_label": 8
+    },
+    "076_verdanturftown_wandashouse.json": {
+      "verified_text_label": 13
+    },
+    "077_jaggedpass.json": {
+      "verified_text_label": 27
+    },
+    "078_lavaridgetown.json": {
+      "verified_text_label": 19
+    },
+    "079_lavaridgetown_gym_1f.json": {
+      "verified_text_label": 28
+    },
+    "080_lavaridgetown_gym_b1f.json": {
+      "verified_text_label": 12
+    },
+    "081_lavaridgetown_herbshop.json": {
+      "verified_text_label": 3
+    },
+    "082_mtchimney.json": {
+      "verified_text_label": 60
+    },
+    "083_mtchimney_cablecarstation.json": {
+      "verified_text_label": 3
+    },
+    "084_route111.json": {
+      "verified_source_definition": 7,
+      "verified_text_label": 92
+    },
+    "085_route111_oldladysreststop.json": {
+      "verified_text_label": 4
+    },
+    "086_route111_winstratefamilyshouse.json": {
+      "verified_text_label": 6
+    },
+    "087_route112.json": {
+      "verified_text_label": 30
+    },
+    "088_route112_cablecarstation.json": {
+      "verified_text_label": 3
+    },
+    "089_fallarbortown.json": {
+      "verified_source_definition": 8
+    },
+    "090_fallarbortown_battletentlobby.json": {
+      "verified_text_label": 25
+    },
+    "091_fallarbortown_cozmoshouse.json": {
+      "verified_text_label": 9
+    },
+    "092_fallarbortown_mart.json": {
+      "verified_text_label": 3
+    },
+    "093_fallarbortown_moverelearnershouse.json": {
+      "verified_text_label": 8
+    },
+    "094_fallarbortown_pokemoncenter_1f.json": {
+      "verified_text_label": 3
+    },
+    "095_meteorfalls_1f_1r.json": {
+      "verified_text_label": 10
+    },
+    "096_meteorfalls_1f_2r.json": {
+      "verified_text_label": 25
+    },
+    "097_meteorfalls_stevenscave.json": {
+      "verified_source_definition": 4
+    },
+    "098_route113.json": {
+      "verified_text_label": 49
+    },
+    "099_route113_glassworkshop.json": {
+      "verified_source_definition": 23
+    },
+    "100_route114.json": {
+      "verified_text_label": 59
+    },
+    "101_route114_fossilmaniacshouse.json": {
+      "verified_text_label": 4
+    },
+    "102_route114_fossilmaniacstunnel.json": {
+      "verified_text_label": 4
+    },
+    "103_route114_lanetteshouse.json": {
+      "verified_text_label": 7
+    },
+    "104_fortreecity.json": {
+      "verified_text_label": 12
+    },
+    "106_fortreecity_gym.json": {
+      "verified_text_label": 34
+    },
+    "107_fortreecity_house1.json": {
+      "verified_text_label": 7
+    },
+    "108_fortreecity_house2.json": {
+      "verified_text_label": 8
+    },
+    "109_fortreecity_house4.json": {
+      "verified_text_label": 6
+    },
+    "110_route118.json": {
+      "verified_text_label": 38
+    },
+    "111_route119.json": {
+      "verified_text_label": 81
+    },
+    "112_route119_weatherinstitute_1f.json": {
+      "verified_source_definition": 12
+    },
+    "113_route119_weatherinstitute_2f.json": {
+      "verified_source_definition": 22
+    },
+    "114_route120.json": {
+      "verified_source_definition": 5,
+      "verified_text_label": 56
+    },
+    "115_route121.json": {
+      "verified_text_label": 51
+    },
+    "116_route121_safarizoneentrance.json": {
+      "verified_text_label": 14
+    },
+    "117_safarizone_north.json": {
+      "verified_source_definition": 2
+    },
+    "118_safarizone_northeast.json": {
+      "verified_source_definition": 3
+    },
+    "119_safarizone_northwest.json": {
+      "verified_source_definition": 1
+    },
+    "120_safarizone_resthouse.json": {
+      "verified_source_definition": 3
+    },
+    "121_safarizone_south.json": {
+      "verified_source_definition": 9
+    },
+    "122_safarizone_southeast.json": {
+      "verified_source_definition": 4
+    },
+    "123_safarizone_southwest.json": {
+      "verified_source_definition": 2
+    },
+    "124_lilycovecity.json": {
+      "verified_text_label": 62
+    },
+    "125_lilycovecity_contesthall.json": {
+      "verified_text_label": 36
+    },
+    "126_lilycovecity_contestlobby.json": {
+      "verified_source_definition": 24,
+      "verified_text_label": 56
+    },
+    "127_lilycovecity_covelilymotel_1f.json": {
+      "verified_text_label": 7
+    },
+    "128_lilycovecity_covelilymotel_2f.json": {
+      "verified_text_label": 9
+    },
+    "129_lilycovecity_departmentstorerooftop.json": {
+      "verified_text_label": 10
+    },
+    "130_lilycovecity_departmentstore_1f.json": {
+      "verified_text_label": 21
+    },
+    "131_lilycovecity_departmentstore_5f.json": {
+      "verified_text_label": 4
+    },
+    "132_lilycovecity_harbor.json": {
+      "verified_text_label": 16
+    },
+    "133_lilycovecity_house2.json": {
+      "verified_text_label": 3
+    },
+    "134_lilycovecity_house3.json": {
+      "verified_text_label": 8
+    },
+    "135_lilycovecity_lilycovemuseum.json": {
+      "verified_text_label": 1
+    },
+    "136_lilycovecity_lilycovemuseum_1f.json": {
+      "verified_text_label": 22
+    },
+    "137_lilycovecity_lilycovemuseum_2f.json": {
+      "verified_text_label": 23
+    },
+    "138_lilycovecity_pokemoncenter_1f.json": {
+      "verified_source_definition": 51,
+      "verified_text_label": 3
+    },
+    "139_lilycovecity_pokemontrainerfanclub.json": {
+      "verified_text_label": 46
+    },
+    "140_aquahideout_1f.json": {
+      "verified_text_label": 10
+    },
+    "141_aquahideout_b1f.json": {
+      "verified_text_label": 14
+    },
+    "142_aquahideout_b2f.json": {
+      "verified_text_label": 15
+    },
+    "143_mtpyre_1f.json": {
+      "verified_text_label": 4
+    },
+    "144_mtpyre_2f.json": {
+      "verified_text_label": 18
+    },
+    "145_mtpyre_3f.json": {
+      "verified_text_label": 13
+    },
+    "146_mtpyre_6f.json": {
+      "verified_text_label": 10
+    },
+    "147_mtpyre_summit.json": {
+      "verified_text_label": 24
+    },
+    "148_route123.json": {
+      "verified_text_label": 69
+    },
+    "149_route123_berrymastershouse.json": {
+      "verified_source_definition": 15
+    },
+    "150_mossdeepcity.json": {
+      "verified_text_label": 19
+    },
+    "151_mossdeepcity_gamecorner_1f.json": {
+      "verified_source_definition": 10
+    },
+    "152_mossdeepcity_gym.json": {
+      "verified_text_label": 53
+    },
+    "153_mossdeepcity_house2.json": {
+      "verified_text_label": 3
+    },
+    "154_mossdeepcity_house3.json": {
+      "verified_text_label": 5
+    },
+    "155_mossdeepcity_house4.json": {
+      "verified_text_label": 5
+    },
+    "156_mossdeepcity_spacecenter.json": {
+      "verified_text_label": 2
+    },
+    "157_mossdeepcity_spacecenter_1f.json": {
+      "verified_text_label": 30
+    },
+    "158_mossdeepcity_spacecenter_2f.json": {
+      "verified_text_label": 28
+    },
+    "159_mossdeepcity_stevenshouse.json": {
+      "verified_text_label": 8
+    },
+    "160_route124.json": {
+      "verified_text_label": 44
+    },
+    "161_route124_divingtreasurehuntershouse.json": {
+      "verified_source_definition": 11
+    },
+    "162_route125.json": {
+      "verified_text_label": 33
+    },
+    "163_route126.json": {
+      "verified_text_label": 28
+    },
+    "164_route127.json": {
+      "verified_text_label": 28
+    },
+    "165_route128.json": {
+      "verified_text_label": 37
+    },
+    "166_shoalcave_lowtideentranceroom.json": {
+      "verified_text_label": 7
+    },
+    "167_shoalcave_lowtidelowerroom.json": {
+      "verified_text_label": 2
+    },
+    "168_core_interfaces.json": {
+      "needs_review": 5,
+      "verified_direct_symbol": 14,
+      "verified_fragment": 1,
+      "verified_source_definition": 12
+    },
+    "169_battle_messages.json": {
+      "verified_fragment": 2,
+      "verified_source_definition": 22
+    },
+    "170_start_menu.json": {
+      "needs_review": 13
+    },
+    "171_pokedex.json": {
+      "verified_source_definition": 48
+    },
+    "172_party.json": {
+      "needs_review": 206,
+      "verified_direct_symbol": 1,
+      "verified_fragment": 42,
+      "verified_source_definition": 59
+    },
+    "173_bag.json": {
+      "needs_review": 26,
+      "verified_direct_symbol": 2,
+      "verified_fragment": 37
+    },
+    "174_trainer_card.json": {
+      "verified_direct_symbol": 18,
+      "verified_fragment": 3,
+      "verified_source_definition": 4
+    },
+    "175_summary_info.json": {
+      "needs_review": 286,
+      "verified_fragment": 2
+    },
+    "176_save_screen.json": {
+      "verified_direct_symbol": 4,
+      "verified_source_definition": 1
+    },
+    "177_shop.json": {
+      "verified_fragment": 18,
+      "verified_source_definition": 5,
+      "verified_text_label": 68
+    },
+    "178_battle_victory.json": {
+      "needs_review": 1,
+      "verified_fragment": 1,
+      "verified_source_definition": 17
+    },
+    "179_berry.json": {
+      "verified_source_definition": 19
+    },
+    "180_obtain_items.json": {
+      "needs_review": 5,
+      "verified_source_definition": 3,
+      "verified_text_label": 6
+    },
+    "181_battle_frontier_nature_girl.json": {
+      "verified_fragment": 1
+    },
+    "182_field_poison.json": {
+      "verified_source_definition": 1
+    },
+    "183_region_map_names.json": {
+      "verified_fragment": 3
+    },
+    "184_whiteout_message.json": {
+      "verified_source_definition": 1
+    },
+    "185_battle_effectiveness.json": {
+      "verified_source_definition": 5
+    },
+    "186_evolution_messages.json": {
+      "verified_direct_symbol": 4,
+      "verified_source_definition": 2
+    },
+    "187_battle_protection_and_stat_changes.json": {
+      "verified_source_definition": 4
+    },
+    "188_battle_damage_messages.json": {
+      "verified_source_definition": 7
+    },
+    "189_battle_status_and_core_results.json": {
+      "verified_source_definition": 53
+    },
+    "190_battle_move_effects.json": {
+      "verified_source_definition": 83
+    },
+    "191_battle_moves_abilities_results.json": {
+      "verified_source_definition": 48
+    },
+    "192_battle_weather_capture_obedience.json": {
+      "verified_source_definition": 54
+    },
+    "193_battle_safari_item_effects.json": {
+      "needs_review": 1,
+      "verified_source_definition": 58
+    },
+    "194_battle_ability_link_facility.json": {
+      "needs_review": 13,
+      "verified_source_definition": 26
+    },
+    "195_naming_screen.json": {
+      "needs_review": 6,
+      "verified_fragment": 1
+    },
+    "196_pokemon_centers.json": {
+      "verified_source_definition": 19,
+      "verified_text_label": 32
+    },
+    "197_abandoned_ship.json": {
+      "verified_text_label": 61
+    },
+    "198_frontier_brain_quotes.json": {
+      "verified_source_definition": 28
+    },
+    "199_battle_frontier_arena.json": {
+      "verified_source_definition": 59,
+      "verified_text_label": 10
+    },
+    "200_battle_frontier_battle_dome_battle_room.json": {
+      "verified_source_definition": 42
+    },
+    "201_battle_frontier_battle_dome_lobby.json": {
+      "verified_source_definition": 32
+    },
+    "202_battle_frontier_battle_dome_pre_battle_room.json": {
+      "verified_source_definition": 17
+    },
+    "203_battle_frontier_battle_factory_battle_room.json": {
+      "verified_text_label": 11
+    },
+    "204_battle_frontier_battle_factory_lobby.json": {
+      "verified_source_definition": 22,
+      "verified_text_label": 2
+    },
+    "205_battle_frontier_battle_factory_pre_battle_room.json": {
+      "verified_text_label": 59
+    },
+    "206_battle_frontier_battle_palace_battle_room.json": {
+      "verified_source_definition": 21,
+      "verified_text_label": 12
+    },
+    "207_battle_frontier_battle_palace_corridor.json": {
+      "verified_source_definition": 5
+    },
+    "208_battle_frontier_battle_palace_lobby.json": {
+      "verified_source_definition": 19,
+      "verified_text_label": 17
+    },
+    "210_battle_frontier_battle_pike_lobby.json": {
+      "verified_source_definition": 23
+    },
+    "211_battle_frontier_battle_pike_room_final.json": {
+      "verified_source_definition": 1
+    },
+    "212_battle_frontier_battle_pike_room_normal.json": {
+      "verified_source_definition": 35
+    },
+    "213_battle_frontier_battle_pike_three_path_room.json": {
+      "verified_source_definition": 26
+    },
+    "214_battle_frontier_battle_pyramid_lobby.json": {
+      "verified_source_definition": 55
+    },
+    "215_battle_frontier_battle_pyramid_top.json": {
+      "verified_source_definition": 16
+    },
+    "216_battle_frontier_battle_tower_battle_room.json": {
+      "verified_source_definition": 28
+    },
+    "217_battle_frontier_battle_tower_lobby.json": {
+      "verified_text_label": 61
+    },
+    "218_battle_frontier_battle_tower_multi_battle_room.json": {
+      "verified_source_definition": 12
+    },
+    "219_battle_frontier_battle_tower_multi_partner_room.json": {
+      "verified_source_definition": 3
+    },
+    "220_battle_frontier_exchange_service_corner.json": {
+      "verified_source_definition": 42
+    },
+    "221_battle_frontier_lounge1.json": {
+      "verified_source_definition": 20
+    },
+    "222_battle_frontier_lounge4.json": {
+      "verified_source_definition": 3
+    },
+    "223_battle_frontier_lounge6.json": {
+      "verified_source_definition": 2
+    },
+    "224_battle_frontier_lounge7.json": {
+      "verified_source_definition": 15
+    },
+    "225_battle_frontier_lounge8.json": {
+      "verified_source_definition": 3
+    },
+    "226_battle_frontier_mart.json": {
+      "verified_source_definition": 3
+    },
+    "227_battle_frontier_outside_east.json": {
+      "verified_source_definition": 33
+    },
+    "228_battle_frontier_outside_west.json": {
+      "verified_source_definition": 29
+    },
+    "229_battle_frontier_ranking_hall.json": {
+      "verified_source_definition": 8
+    },
+    "230_battle_frontier_reception_gate.json": {
+      "verified_source_definition": 33
+    },
+    "231_battle_frontier_scotts_house.json": {
+      "verified_source_definition": 14
+    },
+    "232_cave_of_origin_b1_f.json": {
+      "verified_text_label": 2
+    },
+    "233_dewford_town_house1.json": {
+      "verified_text_label": 3
+    },
+    "234_ever_grande_city.json": {
+      "verified_source_definition": 3
+    },
+    "235_ever_grande_city_champions_room.json": {
+      "verified_text_label": 6
+    },
+    "236_ever_grande_city_drakes_room.json": {
+      "verified_text_label": 4
+    },
+    "237_ever_grande_city_glacias_room.json": {
+      "verified_text_label": 4
+    },
+    "238_ever_grande_city_hall_of_fame.json": {
+      "verified_text_label": 2
+    },
+    "239_ever_grande_city_phoebes_room.json": {
+      "verified_text_label": 4
+    },
+    "240_ever_grande_city_pokemon_league_1_f.json": {
+      "verified_text_label": 4
+    },
+    "241_ever_grande_city_sidneys_room.json": {
+      "verified_text_label": 4
+    },
+    "243_fallarbor_town_cozmos_house.json": {
+      "verified_text_label": 2
+    },
+    "244_fortree_city_decoration_shop.json": {
+      "verified_text_label": 2
+    },
+    "245_fortree_city_house3.json": {
+      "verified_text_label": 2
+    },
+    "246_fortree_city_house5.json": {
+      "verified_text_label": 3
+    },
+    "247_fortree_city_mart.json": {
+      "verified_text_label": 3
+    },
+    "248_lavaridge_town_herb_shop.json": {
+      "verified_text_label": 1
+    },
+    "249_lavaridge_town_house.json": {
+      "verified_text_label": 2
+    },
+    "250_faraway_island_interior.json": {
+      "verified_source_definition": 1
+    },
+    "251_lavaridge_town_mart.json": {
+      "verified_text_label": 2
+    },
+    "253_lilycove_city_department_store_2_f.json": {
+      "verified_text_label": 3
+    },
+    "254_lilycove_city_department_store_3_f.json": {
+      "verified_text_label": 3
+    },
+    "255_lilycove_city_department_store_4_f.json": {
+      "verified_text_label": 3
+    },
+    "256_lilycove_city_house1.json": {
+      "verified_text_label": 2
+    },
+    "257_lilycove_city_house4.json": {
+      "verified_text_label": 2
+    },
+    "259_lilycove_city_move_deleters_house.json": {
+      "verified_text_label": 5
+    },
+    "260_littleroot_town_brendans_house_2_f.json": {
+      "verified_text_label": 2
+    },
+    "269_mauville_city_mart.json": {
+      "verified_text_label": 2
+    },
+    "271_mossdeep_city_game_corner_1_f.json": {
+      "verified_text_label": 1
+    },
+    "272_mossdeep_city_house1.json": {
+      "verified_text_label": 2
+    },
+    "273_mossdeep_city_mart.json": {
+      "verified_text_label": 3
+    },
+    "275_mt_pyre_2_f.json": {
+      "verified_text_label": 1
+    },
+    "276_mt_pyre_4_f.json": {
+      "verified_text_label": 3
+    },
+    "277_mt_pyre_5_f.json": {
+      "verified_text_label": 3
+    },
+    "278_new_mauville_entrance.json": {
+      "verified_text_label": 3
+    },
+    "279_new_mauville_inside.json": {
+      "verified_text_label": 3
+    },
+    "280_pacifidlog_town.json": {
+      "verified_source_definition": 4
+    },
+    "281_pacifidlog_town_house1.json": {
+      "verified_text_label": 2
+    },
+    "282_pacifidlog_town_house2.json": {
+      "verified_text_label": 12
+    },
+    "283_pacifidlog_town_house3.json": {
+      "verified_text_label": 3
+    },
+    "284_pacifidlog_town_house4.json": {
+      "verified_text_label": 5
+    },
+    "285_pacifidlog_town_house5.json": {
+      "verified_text_label": 3
+    },
+    "287_route110.json": {
+      "verified_text_label": 1
+    },
+    "288_route115.json": {
+      "verified_text_label": 3
+    },
+    "289_route116_tunnelers_rest_house.json": {
+      "verified_text_label": 4
+    },
+    "290_route119_house.json": {
+      "verified_source_definition": 2
+    },
+    "292_route120.json": {
+      "verified_text_label": 4
+    },
+    "293_rustboro_city_cutters_house.json": {
+      "verified_text_label": 1
+    },
+    "295_rustboro_city_flat1_1_f.json": {
+      "verified_text_label": 2
+    },
+    "296_rustboro_city_flat2_1_f.json": {
+      "verified_text_label": 2
+    },
+    "297_rustboro_city_flat2_3_f.json": {
+      "verified_text_label": 2
+    },
+    "298_rustboro_city_house2.json": {
+      "verified_text_label": 2
+    },
+    "299_rustboro_city_house3.json": {
+      "verified_text_label": 3
+    },
+    "300_rustboro_city_mart.json": {
+      "verified_text_label": 3
+    },
+    "301_sstidal_corridor.json": {
+      "verified_source_definition": 18
+    },
+    "302_sstidal_lower_deck.json": {
+      "verified_source_definition": 4
+    },
+    "303_sstidal_rooms.json": {
+      "verified_source_definition": 26
+    },
+    "304_seafloor_cavern_entrance.json": {
+      "verified_text_label": 2
+    },
+    "305_seafloor_cavern_room1.json": {
+      "verified_text_label": 6
+    },
+    "306_seafloor_cavern_room3.json": {
+      "verified_text_label": 6
+    },
+    "307_seafloor_cavern_room4.json": {
+      "verified_text_label": 6
+    },
+    "308_seafloor_cavern_room9.json": {
+      "verified_text_label": 15
+    },
+    "309_sky_pillar_outside.json": {
+      "verified_source_definition": 2
+    },
+    "312_slateport_city_house.json": {
+      "verified_text_label": 2
+    },
+    "313_slateport_city_mart.json": {
+      "verified_text_label": 2
+    },
+    "314_slateport_city_sterns_shipyard_1_f.json": {
+      "verified_text_label": 1
+    },
+    "315_slateport_city_sterns_shipyard_2_f.json": {
+      "verified_text_label": 2
+    },
+    "316_sootopolis_city.json": {
+      "verified_text_label": 44
+    },
+    "317_sootopolis_city_gym_1_f.json": {
+      "verified_text_label": 17
+    },
+    "318_sootopolis_city_gym_b1_f.json": {
+      "verified_text_label": 30
+    },
+    "319_sootopolis_city_house1.json": {
+      "verified_text_label": 4
+    },
+    "320_sootopolis_city_house2.json": {
+      "verified_text_label": 3
+    },
+    "321_sootopolis_city_house3.json": {
+      "verified_text_label": 4
+    },
+    "322_sootopolis_city_house4.json": {
+      "verified_text_label": 3
+    },
+    "323_sootopolis_city_house5.json": {
+      "verified_text_label": 2
+    },
+    "324_sootopolis_city_house6.json": {
+      "verified_text_label": 5
+    },
+    "325_sootopolis_city_house7.json": {
+      "verified_text_label": 2
+    },
+    "326_sootopolis_city_lotad_and_seedot_house.json": {
+      "verified_text_label": 8
+    },
+    "327_sootopolis_city_mart.json": {
+      "verified_text_label": 4
+    },
+    "328_sootopolis_city_mystery_events_house_1_f.json": {
+      "verified_text_label": 13
+    },
+    "329_trainer_hill_entrance.json": {
+      "verified_source_definition": 21
+    },
+    "330_underwater_seafloor_cavern.json": {
+      "verified_text_label": 1
+    },
+    "332_verdanturf_town_friendship_raters_house.json": {
+      "verified_text_label": 1
+    },
+    "333_verdanturf_town_house.json": {
+      "verified_text_label": 2
+    },
+    "334_verdanturf_town_mart.json": {
+      "verified_text_label": 3
+    },
+    "335_victory_road_1_f.json": {
+      "verified_text_label": 25
+    },
+    "336_victory_road_b1_f.json": {
+      "verified_text_label": 15
+    },
+    "337_victory_road_b2_f.json": {
+      "verified_text_label": 18
+    },
+    "338_pc.json": {
+      "verified_direct_symbol": 1,
+      "verified_source_definition": 5
+    },
+    "339_pokedex_rating.json": {
+      "verified_text_label": 43
+    },
+    "340_move_tutors.json": {
+      "verified_source_definition": 42
+    },
+    "341_berry_blender_scripts.json": {
+      "verified_source_definition": 42,
+      "verified_text_label": 2
+    },
+    "342_field_move_scripts_scripts.json": {
+      "verified_source_definition": 14
+    },
+    "343_match_call.json": {
+      "verified_source_definition": 67,
+      "verified_text_label": 1
+    },
+    "344_contest_hall_scripts.json": {
+      "verified_source_definition": 28
+    },
+    "345_day_care_scripts.json": {
+      "verified_text_label": 3
+    },
+    "354_safari_zone_scripts.json": {
+      "verified_source_definition": 4
+    },
+    "355_abnormal_weather.json": {
+      "verified_source_definition": 2
+    },
+    "356_battle_tent.json": {
+      "verified_text_label": 2
+    },
+    "357_berries.json": {
+      "verified_text_label": 15
+    },
+    "358_blend_master.json": {
+      "verified_source_definition": 8,
+      "verified_text_label": 7
+    },
+    "359_cable_club.json": {
+      "verified_source_definition": 84,
+      "verified_text_label": 3
+    },
+    "360_check_furniture.json": {
+      "verified_text_label": 7
+    },
+    "361_event_ticket_1.json": {
+      "verified_source_definition": 7,
+      "verified_text_label": 11
+    },
+    "362_event_ticket_2.json": {
+      "verified_source_definition": 5,
+      "verified_text_label": 5
+    },
+    "363_obtain_item.json": {
+      "verified_text_label": 10
+    },
+    "364_pc_transfer.json": {
+      "verified_source_definition": 1
+    },
+    "365_questionnaire.json": {
+      "verified_source_definition": 7
+    },
+    "366_record_mix.json": {
+      "verified_source_definition": 1
+    },
+    "367_shoal_cave.json": {
+      "verified_text_label": 4
+    },
+    "368_surf.json": {
+      "verified_source_definition": 1
+    },
+    "369_secret_base_scripts.json": {
+      "verified_source_definition": 17
+    },
+    "370_shared_secret_base_scripts.json": {
+      "verified_source_definition": 4
+    },
+    "372_trainer_quotes_01.json": {
+      "verified_text_label": 49
+    },
+    "374_trainer_quotes_03.json": {
+      "verified_text_label": 1
+    },
+    "375_trainer_quotes_04.json": {
+      "verified_text_label": 23
+    },
+    "376_trainer_quotes_05.json": {
+      "verified_text_label": 19
+    },
+    "381_trainer_quotes_10.json": {
+      "verified_text_label": 80
+    },
+    "382_trainer_quotes_11.json": {
+      "verified_text_label": 41
+    },
+    "383_apprentice_0.json": {
+      "verified_source_definition": 36
+    },
+    "384_apprentice_1.json": {
+      "verified_source_definition": 25
+    },
+    "385_apprentice_2.json": {
+      "verified_source_definition": 10
+    },
+    "386_tv_0.json": {
+      "verified_source_definition": 16
+    },
+    "387_tv_1.json": {
+      "verified_source_definition": 17
+    },
+    "388_tv_2.json": {
+      "verified_source_definition": 28
+    },
+    "389_tv_3.json": {
+      "verified_source_definition": 83
+    },
+    "391_secret_base_trainers.json": {
+      "verified_direct_symbol": 10,
+      "verified_source_definition": 50
+    },
+    "392_mauville_man_0.json": {
+      "verified_source_definition": 51
+    },
+    "393_mauville_man_1.json": {
+      "verified_source_definition": 24
+    },
+    "394_profile_man.json": {
+      "verified_source_definition": 12
+    },
+    "395_mauville_man.json": {
+      "verified_direct_symbol": 2,
+      "verified_text_label": 16
+    },
+    "397_test_signpost_scripts.json": {
+      "verified_source_definition": 1
+    },
+    "398_player_name_dialogue.json": {
+      "verified_source_definition": 7,
+      "verified_text_label": 16
+    },
+    "399_frontier_lounge5.json": {
+      "verified_source_definition": 8
+    },
+    "400_frontier_exchange.json": {
+      "verified_source_definition": 30
+    },
+    "401_roulette.json": {
+      "verified_direct_symbol": 11
+    },
+    "402_battle_dome.json": {
+      "verified_source_definition": 108
+    },
+    "403_contest_link.json": {
+      "verified_direct_symbol": 1,
+      "verified_source_definition": 1
+    },
+    "405_contest_strings.json": {
+      "verified_direct_symbol": 4
+    },
+    "406_trick_house_mechadolls.json": {
+      "verified_source_definition": 9
+    },
+    "408_pyramid_map_popup.json": {
+      "needs_review": 8
+    },
+    "409_mystery_event_messages.json": {
+      "verified_source_definition": 10
+    },
+    "410_mystery_gift_cancel.json": {
+      "needs_review": 1
+    },
+    "411_strings_c_direct.json": {
+      "needs_review": 107,
+      "verified_direct_symbol": 29,
+      "verified_fragment": 11,
+      "verified_source_definition": 60
+    },
+    "412_ribbon_descriptions.json": {
+      "verified_source_definition": 28
+    },
+    "413_gift_ribbon_descriptions.json": {
+      "verified_source_definition": 116
+    },
+    "414_battle_message_direct.json": {
+      "verified_direct_symbol": 4,
+      "verified_source_definition": 8
+    },
+    "415_match_call_0.json": {
+      "needs_review": 100
+    },
+    "416_match_call_1.json": {
+      "needs_review": 100
+    },
+    "417_match_call_2.json": {
+      "needs_review": 98
+    },
+    "418_match_call_3.json": {
+      "needs_review": 12
+    },
+    "419_union_room_0.json": {
+      "needs_review": 69,
+      "verified_source_definition": 22
+    },
+    "420_union_room_1.json": {
+      "needs_review": 56
+    },
+    "421_match_call_duplicates.json": {
+      "needs_review": 4
+    },
+    "422_ribbon_duplicate_text.json": {
+      "verified_source_definition": 22
+    },
+    "423_gift_ribbon_pokemon_league.json": {
+      "verified_source_definition": 4
+    },
+    "424_trade_direct.json": {
+      "verified_source_definition": 4
+    },
+    "425_union_room_pause.json": {
+      "needs_review": 14
+    },
+    "427_berry_blender_interface.json": {
+      "verified_fragment": 16,
+      "verified_source_definition": 2
+    }
+  }
+}

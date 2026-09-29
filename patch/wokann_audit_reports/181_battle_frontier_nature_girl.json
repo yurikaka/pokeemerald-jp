@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "181_battle_frontier_nature_girl.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "8a58666f0",
+  "category": "Battle Frontier nature girl messages",
+  "summary": {
+    "verified_fragment": 1
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0813A7F8",
+      "jp_original_text": "0x08592A9C",
+      "batch_source_symbol": null,
+      "patch_symbol": "ChsNatureGirlMessages",
+      "base_rom_value": "0x08592A9C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [
+        {
+          "file": "src/field_specials.c",
+          "line": 5152,
+          "referenced_symbol": "gUnknown_8592A9C",
+          "referenced_offset": null
+        }
+      ],
+      "wokann_referenced_symbols": [
+        "gUnknown_8592A9C"
+      ],
+      "wokann_function_owner": {
+        "start": "0x0813A7C0",
+        "symbol": "ShowNatureGirlMessage"
+      },
+      "wokann_original_text_labels": [],
+      "wokann_source_symbol_definitions": [],
+      "status": "verified_fragment"
+    }
+  ]
+}

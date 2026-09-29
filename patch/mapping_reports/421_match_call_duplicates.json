@@ -1,0 +1,15 @@
+{
+  "source_commit": "fe570a7e5",
+  "source_file": "src/data/text/match_call_messages.h",
+  "wokann_file": "src/data/text/match_call_messages.h",
+  "status": "mapped; emulator_not_tested",
+  "mapping_policy": "Two Japanese strings occur at multiple text addresses. The REMATCH_JEFFREY, REMATCH_CALVIN, and REMATCH_JACKSON MCFLAVOR rows determine the four pointer positions; their neighboring entries match the trainer's already mapped Pokémon/intro text. Each original ROM pointer value was checked against the encoded Wokann string at its target. Chinese bytes are read from the US ROM symbols.",
+  "mapped_count": 4,
+  "unresolved_count": 0,
+  "mappings": [
+    {"symbol": "gText_MatchCallBugManiac_Jeffrey_Strategy", "reference": "0x085F3B24", "original": "0x085F2DDC"},
+    {"symbol": "gText_MatchCallYoungster_Calvin_Pokemon", "reference": "0x085F3BD8", "original": "0x085F304E"},
+    {"symbol": "gText_MatchCallPkmnRanger_Jackson_Strategy", "reference": "0x085F3D54", "original": "0x085F355D"},
+    {"symbol": "gText_MatchCallPkmnRanger_Jackson_Pokemon", "reference": "0x085F3D58", "original": "0x085F356D"}
+  ]
+}

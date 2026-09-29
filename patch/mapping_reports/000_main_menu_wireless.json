@@ -1,0 +1,27 @@
+{
+  "source_commit": "3755ecd46",
+  "status": "mapped",
+  "us_source": "src/strings.c",
+  "jp_source": "pokeemerald_wokann_dev/src/data/text/region_texts75.h",
+  "matching_policy": "Wokann labels give the Japanese text addresses; each original pointer was verified in baserom_jp.gba and has exactly one ROM occurrence. The Chinese wording follows the US commit; no US-to-JP control-code equivalence was assumed.",
+  "mappings": [
+    {
+      "us_symbol": "gText_WirelessNotConnected",
+      "jp_text_address": "0x085C8CB1",
+      "jp_pointer_address": "0x0803034C",
+      "patch_symbol": "ChsWirelessNotConnected"
+    },
+    {
+      "us_symbol": "gText_MysteryGiftCantUse",
+      "jp_text_address": "0x085C8CC7",
+      "jp_pointer_address": "0x08030358",
+      "patch_symbol": "ChsMysteryGiftCantUse"
+    },
+    {
+      "us_symbol": "gText_MysteryEventsCantUse",
+      "jp_text_address": "0x085C8CEB",
+      "jp_pointer_address": "0x08030374",
+      "patch_symbol": "ChsMysteryEventsCantUse"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "271_mossdeep_city_game_corner_1_f.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "map dialogue: MossdeepCity_GameCorner_1F",
+  "summary": {
+    "verified_text_label": 1
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x0820E056",
+      "jp_original_text": "0x0820E0BA",
+      "batch_source_symbol": "RS_MysteryEventsHouse_Text_DoorIsLocked",
+      "patch_symbol": "Chs_RS_MysteryEventsHouse_Text_DoorIsLocked",
+      "base_rom_value": "0x0820E0BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+          "line": 42,
+          "symbol": "RS_MysteryEventsHouse_Text_DoorIsLocked"
+        },
+        {
+          "file": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+          "line": 42,
+          "symbol": "RS_MysteryEventsHouse_Text_DoorIsLocked"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MossdeepCity_GameCorner_1F/scripts.inc",
+          "line": 42
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}

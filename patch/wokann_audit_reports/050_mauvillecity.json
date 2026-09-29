@@ -1,0 +1,966 @@
+{
+  "schema_version": 1,
+  "audit": "wokann-jp-decompilation",
+  "wokann_revision": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "batch": "050_mauvillecity.json",
+  "jp_rom_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "source_commit": "fe570a7e5",
+  "category": "Mauville and Route 110 dialogue: MauvilleCity",
+  "summary": {
+    "verified_text_label": 34
+  },
+  "reference_writes": [
+    {
+      "jp_reference": "0x081DD9F7",
+      "jp_original_text": "0x081DE509",
+      "batch_source_symbol": "MauvilleCity_Text_AllSortsOfPeopleComeThrough",
+      "patch_symbol": "Chs_MauvilleCity_Text_AllSortsOfPeopleComeThrough",
+      "base_rom_value": "0x081DE509",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 620,
+          "symbol": "MauvilleCity_Text_AllSortsOfPeopleComeThrough"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 620
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA4E",
+      "jp_original_text": "0x081DE6DE",
+      "batch_source_symbol": "MauvilleCity_Text_BeenCheckingOutTV",
+      "patch_symbol": "Chs_MauvilleCity_Text_BeenCheckingOutTV",
+      "base_rom_value": "0x081DE6DE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 667,
+          "symbol": "MauvilleCity_Text_BeenCheckingOutTV"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 667
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA24",
+      "jp_original_text": "0x081DE5E4",
+      "batch_source_symbol": "MauvilleCity_Text_BikeShopSign",
+      "patch_symbol": "Chs_MauvilleCity_Text_BikeShopSign",
+      "base_rom_value": "0x081DE5E4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 644,
+          "symbol": "MauvilleCity_Text_BikeShopSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 644
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA12",
+      "jp_original_text": "0x081DE59B",
+      "batch_source_symbol": "MauvilleCity_Text_CitySign",
+      "patch_symbol": "Chs_MauvilleCity_Text_CitySign",
+      "base_rom_value": "0x081DE59B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 635,
+          "symbol": "MauvilleCity_Text_CitySign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 635
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA41",
+      "jp_original_text": "0x081DE62C",
+      "batch_source_symbol": "MauvilleCity_Text_ExplainTV",
+      "patch_symbol": "Chs_MauvilleCity_Text_ExplainTV",
+      "base_rom_value": "0x081DE62C",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 652,
+          "symbol": "MauvilleCity_Text_ExplainTV"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 652
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA2D",
+      "jp_original_text": "0x081DE608",
+      "batch_source_symbol": "MauvilleCity_Text_GameCornerSign",
+      "patch_symbol": "Chs_MauvilleCity_Text_GameCornerSign",
+      "base_rom_value": "0x081DE608",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 648,
+          "symbol": "MauvilleCity_Text_GameCornerSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 648
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA1B",
+      "jp_original_text": "0x081DE5BA",
+      "batch_source_symbol": "MauvilleCity_Text_GymSign",
+      "patch_symbol": "Chs_MauvilleCity_Text_GymSign",
+      "base_rom_value": "0x081DE5BA",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 639,
+          "symbol": "MauvilleCity_Text_GymSign"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 639
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DD9EE",
+      "jp_original_text": "0x081DE4C1",
+      "batch_source_symbol": "MauvilleCity_Text_NurseHurtMonBackToHealth",
+      "patch_symbol": "Chs_MauvilleCity_Text_NurseHurtMonBackToHealth",
+      "base_rom_value": "0x081DE4C1",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 614,
+          "symbol": "MauvilleCity_Text_NurseHurtMonBackToHealth"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 614
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA09",
+      "jp_original_text": "0x081DE578",
+      "batch_source_symbol": "MauvilleCity_Text_PokemonCanJumpYouOnBike",
+      "patch_symbol": "Chs_MauvilleCity_Text_PokemonCanJumpYouOnBike",
+      "base_rom_value": "0x081DE578",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 631,
+          "symbol": "MauvilleCity_Text_PokemonCanJumpYouOnBike"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 631
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDE02",
+      "jp_original_text": "0x081DE221",
+      "batch_source_symbol": "MauvilleCity_Text_RegisteredWally",
+      "patch_symbol": "Chs_MauvilleCity_Text_RegisteredWally",
+      "base_rom_value": "0x081DE221",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 2458,
+          "symbol": "MauvilleCity_Text_RegisteredWally"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 558
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA00",
+      "jp_original_text": "0x081DE53B",
+      "batch_source_symbol": "MauvilleCity_Text_RydelVeryGenerous",
+      "patch_symbol": "Chs_MauvilleCity_Text_RydelVeryGenerous",
+      "base_rom_value": "0x081DE53B",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 625,
+          "symbol": "MauvilleCity_Text_RydelVeryGenerous"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 625
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDC05",
+      "jp_original_text": "0x081DE235",
+      "batch_source_symbol": "MauvilleCity_Text_ScottYouDidntHoldBack",
+      "patch_symbol": "Chs_MauvilleCity_Text_ScottYouDidntHoldBack",
+      "base_rom_value": "0x081DE235",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 562,
+          "symbol": "MauvilleCity_Text_ScottYouDidntHoldBack"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 562
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDCA3",
+      "jp_original_text": "0x081DE09E",
+      "batch_source_symbol": "MauvilleCity_Text_ThankYouNotEnoughToBattle",
+      "patch_symbol": "Chs_MauvilleCity_Text_ThankYouNotEnoughToBattle",
+      "base_rom_value": "0x081DE09E",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 523,
+          "symbol": "MauvilleCity_Text_ThankYouNotEnoughToBattle"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 523
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA78",
+      "jp_original_text": "0x081DDFD3",
+      "batch_source_symbol": "MauvilleCity_Text_UncleCanYouBattleWally",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleCanYouBattleWally",
+      "base_rom_value": "0x081DDFD3",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 499,
+          "symbol": "MauvilleCity_Text_UncleCanYouBattleWally"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 499
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDA63",
+      "jp_original_text": "0x081DDE15",
+      "batch_source_symbol": "MauvilleCity_Text_UncleHesTooPeppy",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleHesTooPeppy",
+      "base_rom_value": "0x081DDE15",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 462,
+          "symbol": "MauvilleCity_Text_UncleHesTooPeppy"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 462
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDCB5",
+      "jp_original_text": "0x081DE0F4",
+      "batch_source_symbol": "MauvilleCity_Text_UncleNoNeedToBeDown",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleNoNeedToBeDown",
+      "base_rom_value": "0x081DE0F4",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 530,
+          "symbol": "MauvilleCity_Text_UncleNoNeedToBeDown"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 530
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDB51",
+      "jp_original_text": "0x081DE142",
+      "batch_source_symbol": "MauvilleCity_Text_UncleVisitUsSometime",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleVisitUsSometime",
+      "base_rom_value": "0x081DE142",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 538,
+          "symbol": "MauvilleCity_Text_UncleVisitUsSometime"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 538
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDBA7",
+      "jp_original_text": "0x081DE142",
+      "batch_source_symbol": "MauvilleCity_Text_UncleVisitUsSometime",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleVisitUsSometime",
+      "base_rom_value": "0x081DE142",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 538,
+          "symbol": "MauvilleCity_Text_UncleVisitUsSometime"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 538
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDAA9",
+      "jp_original_text": "0x081DDE96",
+      "batch_source_symbol": "MauvilleCity_Text_UncleYourePushingIt",
+      "patch_symbol": "Chs_MauvilleCity_Text_UncleYourePushingIt",
+      "base_rom_value": "0x081DDE96",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 472,
+          "symbol": "MauvilleCity_Text_UncleYourePushingIt"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 472
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDC81",
+      "jp_original_text": "0x081DE05D",
+      "batch_source_symbol": "MauvilleCity_Text_WallyDefeat",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyDefeat",
+      "base_rom_value": "0x081DE05D",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 514,
+          "symbol": "MauvilleCity_Text_WallyDefeat"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 514
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDC75",
+      "jp_original_text": "0x081DE040",
+      "batch_source_symbol": "MauvilleCity_Text_WallyHereICome",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyHereICome",
+      "base_rom_value": "0x081DE040",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 510,
+          "symbol": "MauvilleCity_Text_WallyHereICome"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 510
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDC91",
+      "jp_original_text": "0x081DE085",
+      "batch_source_symbol": "MauvilleCity_Text_WallyIllGoBackToVerdanturf",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyIllGoBackToVerdanturf",
+      "base_rom_value": "0x081DE085",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 519,
+          "symbol": "MauvilleCity_Text_WallyIllGoBackToVerdanturf"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 519
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDCC1",
+      "jp_original_text": "0x081DDF95",
+      "batch_source_symbol": "MauvilleCity_Text_WallyMyUncleWontKnowImStrong",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyMyUncleWontKnowImStrong",
+      "base_rom_value": "0x081DDF95",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 493,
+          "symbol": "MauvilleCity_Text_WallyMyUncleWontKnowImStrong"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 493
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDCD5",
+      "jp_original_text": "0x081DE01F",
+      "batch_source_symbol": "MauvilleCity_Text_WallyPleaseBattleMe",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyPleaseBattleMe",
+      "base_rom_value": "0x081DE01F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 506,
+          "symbol": "MauvilleCity_Text_WallyPleaseBattleMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 506
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDF5",
+      "jp_original_text": "0x081DE1A8",
+      "batch_source_symbol": "MauvilleCity_Text_WallyPokenavCall",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyPokenavCall",
+      "base_rom_value": "0x081DE1A8",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "tools/jp_emit_maps.py",
+          "line": 2457,
+          "symbol": "MauvilleCity_Text_WallyPokenavCall"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 547
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDAA1",
+      "jp_original_text": "0x081DDE51",
+      "batch_source_symbol": "MauvilleCity_Text_WallyWantToChallengeGym",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyWantToChallengeGym",
+      "base_rom_value": "0x081DDE51",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 466,
+          "symbol": "MauvilleCity_Text_WallyWantToChallengeGym"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 466
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDAB1",
+      "jp_original_text": "0x081DDF00",
+      "batch_source_symbol": "MauvilleCity_Text_WallyWeCanBeatAnyone",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyWeCanBeatAnyone",
+      "base_rom_value": "0x081DDF00",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 480,
+          "symbol": "MauvilleCity_Text_WallyWeCanBeatAnyone"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 480
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDADA",
+      "jp_original_text": "0x081DDF37",
+      "batch_source_symbol": "MauvilleCity_Text_WallyWillYouBattleMe",
+      "patch_symbol": "Chs_MauvilleCity_Text_WallyWillYouBattleMe",
+      "base_rom_value": "0x081DDF37",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 485,
+          "symbol": "MauvilleCity_Text_WallyWillYouBattleMe"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 485
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDD94",
+      "jp_original_text": "0x081DE2EE",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonNeedFavorTakeKey",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonNeedFavorTakeKey",
+      "base_rom_value": "0x081DE2EE",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 576,
+          "symbol": "MauvilleCity_Text_WattsonNeedFavorTakeKey"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 576
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDBF",
+      "jp_original_text": "0x081DE432",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonThanksTakeTM",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonThanksTakeTM",
+      "base_rom_value": "0x081DE432",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 601,
+          "symbol": "MauvilleCity_Text_WattsonThanksTakeTM"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 601
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDAB",
+      "jp_original_text": "0x081DE3C9",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonWontBeChallenge",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonWontBeChallenge",
+      "base_rom_value": "0x081DE3C9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 592,
+          "symbol": "MauvilleCity_Text_WattsonWontBeChallenge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 592
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDB5",
+      "jp_original_text": "0x081DE3C9",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonWontBeChallenge",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonWontBeChallenge",
+      "base_rom_value": "0x081DE3C9",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 592,
+          "symbol": "MauvilleCity_Text_WattsonWontBeChallenge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 592
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDE1",
+      "jp_original_text": "0x081DE48F",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonYoungTakeCharge",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonYoungTakeCharge",
+      "base_rom_value": "0x081DE48F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 609,
+          "symbol": "MauvilleCity_Text_WattsonYoungTakeCharge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 609
+        }
+      ],
+      "status": "verified_text_label"
+    },
+    {
+      "jp_reference": "0x081DDDEB",
+      "jp_original_text": "0x081DE48F",
+      "batch_source_symbol": "MauvilleCity_Text_WattsonYoungTakeCharge",
+      "patch_symbol": "Chs_MauvilleCity_Text_WattsonYoungTakeCharge",
+      "base_rom_value": "0x081DE48F",
+      "base_rom_matches_batch": true,
+      "wokann_reference_locations": [],
+      "wokann_referenced_symbols": [],
+      "wokann_function_owner": {
+        "start": "0x081DAB78",
+        "symbol": "unk_transition.s"
+      },
+      "wokann_original_text_labels": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 609,
+          "symbol": "MauvilleCity_Text_WattsonYoungTakeCharge"
+        }
+      ],
+      "wokann_source_symbol_definitions": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "line": 609
+        }
+      ],
+      "status": "verified_text_label"
+    }
+  ]
+}
