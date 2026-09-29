@@ -150,6 +150,20 @@ def main() -> None:
     parser.add_argument("--label-offset", type=int, default=0)
     parser.add_argument("--label-limit", type=int)
     parser.add_argument(
+        "--japanese-address",
+        action="append",
+        default=[],
+        metavar="SYMBOL=ADDRESS",
+        help="use a Wokann-verified Japanese text address for this symbol",
+    )
+    parser.add_argument(
+        "--reference",
+        action="append",
+        default=[],
+        metavar="SYMBOL=ADDRESS",
+        help="limit a manually addressed symbol to these verified JP pointer locations",
+    )
+    parser.add_argument(
         "--japanese-placeholder",
         action="append",
         type=int,
@@ -165,6 +179,20 @@ def main() -> None:
     )
     parser.add_argument("maps", nargs="*")
     args = parser.parse_args()
+
+    def parse_addresses(values: list[str]) -> dict[str, set[int]]:
+        result: dict[str, set[int]] = {}
+        for value in values:
+            try:
+                symbol, address = value.split("=", 1)
+                result.setdefault(symbol, set()).add(int(address, 0))
+            except ValueError as exc:
+                parser.error(f"invalid SYMBOL=ADDRESS value: {value}")
+                raise exc
+        return result
+
+    manual_addresses = parse_addresses(args.japanese_address)
+    reference_filters = parse_addresses(args.reference)
     if args.report_sources:
         report_path = ROOT / "patch/mapping_reports" / (args.name + ".json")
         report = json.loads(report_path.read_text(encoding="utf-8"))
@@ -249,8 +277,18 @@ def main() -> None:
                 unresolved.append({"symbol": symbol, "source": source, "reason": "no_japanese_text_label"})
                 continue
 
-            object_offset = wokann_symbols.get(symbol)
-            if object_offset is not None:
+            manual_address = manual_addresses.get(symbol)
+            if manual_address is not None:
+                if len(manual_address) != 1:
+                    parser.error(f"multiple Japanese addresses for {symbol}")
+                target = next(iter(manual_address))
+                encoded_japanese = encode_japanese(japanese_label.group(2), charmap)
+                if encoded_japanese is None or not jp_rom[target - ROM_BASE :].startswith(encoded_japanese):
+                    unresolved.append({"symbol": symbol, "source": source, "reason": "manual_japanese_address_mismatch"})
+                    continue
+                candidates = [target]
+                method = "wokann_verified_manual_address"
+            elif (object_offset := wokann_symbols.get(symbol)) is not None:
                 target = WOKANN_EVENT_SCRIPTS_ROM_START + object_offset
                 encoded_japanese = encode_japanese(japanese_label.group(2), charmap)
                 if encoded_japanese is None or not jp_rom[target - ROM_BASE :].startswith(encoded_japanese):
@@ -273,7 +311,9 @@ def main() -> None:
             for target in candidates:
                 if ROM_BASE <= target < ROM_BASE + len(jp_rom):
                     for reference in occurrences(jp_rom, struct.pack("<I", target)):
-                        linked.append((target, reference))
+                        allowed_references = reference_filters.get(symbol)
+                        if allowed_references is None or reference in allowed_references:
+                            linked.append((target, reference))
             targets = {target for target, _ in linked}
             if len(targets) != 1:
                 reason = "no_japanese_pointer" if not targets else "ambiguous_japanese_text"

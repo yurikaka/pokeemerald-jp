@@ -6,8 +6,18 @@
     "sources": [
       "data/text/contest_painting.inc"
     ],
+    "symbols": [],
     "label_offset": 0,
-    "label_limit": null
+    "label_limit": null,
+    "japanese_placeholders": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "chinese_placeholders": []
   },
   "inputs": {
     "us_rom_sha1": "5bf93745e845894ae80fd9a356951d656b520858",
@@ -18,198 +28,341 @@
   "mapping_policy": {
     "source": "Wokann dev text label address or exact encoded Japanese source string; every JP ROM pointer word is verified.",
     "us_text": "Exact EOS-terminated bytes from the translated US ROM at ELF symbol address.",
-    "placeholders": "Player name, honorific, and rival placeholders are auto-wrapped in Japanese mode; other placeholders require review."
+    "placeholders": "Only verified Japanese-mode runtime placeholders are auto-wrapped; compact-Chinese placeholders remain in the default Chinese mode. The selected IDs are recorded above."
   },
-  "mapped_count": 0,
-  "unresolved_count": 27,
-  "reference_count": 0,
-  "mapped": [],
-  "unresolved": [
+  "mapped_count": 27,
+  "unresolved_count": 0,
+  "reference_count": 27,
+  "mapped": [
     {
-      "symbol": "gContestHallPaintingCaption",
+      "source_symbol": "gContestHallPaintingCaption",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2,
-        3,
-        4
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 1,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550A4",
+      "japanese_text_address": "0x0824C1F5",
+      "japanese_references": [
+        "0x081301EC"
       ]
     },
     {
-      "symbol": "gContestPaintingContest",
+      "source_symbol": "gContestPaintingContest",
       "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestRankNormal",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestRankSuper",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestRankHyper",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestRankMaster",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestLink",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestCoolness",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestBeauty",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestCuteness",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestSmartness",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestToughness",
-      "source": "data/text/contest_painting.inc",
-      "reason": "ambiguous_japanese_text"
-    },
-    {
-      "symbol": "gContestPaintingCool1",
-      "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 7,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550AE",
+      "japanese_text_address": "0x0824C200",
+      "japanese_references": [
+        "0x081301D4"
       ]
     },
     {
-      "symbol": "gContestPaintingCool2",
+      "source_symbol": "gContestRankNormal",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 10,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550B3",
+      "japanese_text_address": "0x0824C206",
+      "japanese_references": [
+        "0x0858F5E4"
       ]
     },
     {
-      "symbol": "gContestPaintingCool3",
+      "source_symbol": "gContestRankSuper",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 13,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550BA",
+      "japanese_text_address": "0x0824C20E",
+      "japanese_references": [
+        "0x0858F5E8"
       ]
     },
     {
-      "symbol": "gContestPaintingBeauty1",
+      "source_symbol": "gContestRankHyper",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 16,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550C1",
+      "japanese_text_address": "0x0824C216",
+      "japanese_references": [
+        "0x0858F5EC"
       ]
     },
     {
-      "symbol": "gContestPaintingBeauty2",
+      "source_symbol": "gContestRankMaster",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 19,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550C8",
+      "japanese_text_address": "0x0824C21E",
+      "japanese_references": [
+        "0x0858F5F0"
       ]
     },
     {
-      "symbol": "gContestPaintingBeauty3",
+      "source_symbol": "gContestLink",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 22,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550CF",
+      "japanese_text_address": "0x0824C226",
+      "japanese_references": [
+        "0x0858F5F4"
       ]
     },
     {
-      "symbol": "gContestPaintingCute1",
+      "source_symbol": "gContestCoolness",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 25,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550D4",
+      "japanese_text_address": "0x0824C22B",
+      "japanese_references": [
+        "0x0858F5D0"
       ]
     },
     {
-      "symbol": "gContestPaintingCute2",
+      "source_symbol": "gContestBeauty",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 28,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550D9",
+      "japanese_text_address": "0x0824C231",
+      "japanese_references": [
+        "0x0858F5D4"
       ]
     },
     {
-      "symbol": "gContestPaintingCute3",
+      "source_symbol": "gContestCuteness",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 31,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550DE",
+      "japanese_text_address": "0x0824C237",
+      "japanese_references": [
+        "0x0858F5D8"
       ]
     },
     {
-      "symbol": "gContestPaintingSmart1",
+      "source_symbol": "gContestSmartness",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 34,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550E3",
+      "japanese_text_address": "0x0824C23C",
+      "japanese_references": [
+        "0x0858F5DC"
       ]
     },
     {
-      "symbol": "gContestPaintingSmart2",
+      "source_symbol": "gContestToughness",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 37,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550E8",
+      "japanese_text_address": "0x0824C241",
+      "japanese_references": [
+        "0x0858F5E0"
       ]
     },
     {
-      "symbol": "gContestPaintingSmart3",
+      "source_symbol": "gContestPaintingCool1",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 40,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082550ED",
+      "japanese_text_address": "0x0824C247",
+      "japanese_references": [
+        "0x0858F604"
       ]
     },
     {
-      "symbol": "gContestPaintingTough1",
+      "source_symbol": "gContestPaintingCool2",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 44,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255109",
+      "japanese_text_address": "0x0824C25A",
+      "japanese_references": [
+        "0x0858F608"
       ]
     },
     {
-      "symbol": "gContestPaintingTough2",
+      "source_symbol": "gContestPaintingCool3",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 47,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255126",
+      "japanese_text_address": "0x0824C26A",
+      "japanese_references": [
+        "0x0858F60C"
       ]
     },
     {
-      "symbol": "gContestPaintingTough3",
+      "source_symbol": "gContestPaintingBeauty1",
       "source": "data/text/contest_painting.inc",
-      "reason": "placeholder_review_required",
-      "placeholders": [
-        2
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 51,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255146",
+      "japanese_text_address": "0x0824C27E",
+      "japanese_references": [
+        "0x0858F610"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingBeauty2",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 55,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x0825515F",
+      "japanese_text_address": "0x0824C298",
+      "japanese_references": [
+        "0x0858F614"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingBeauty3",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 59,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255173",
+      "japanese_text_address": "0x0824C2AE",
+      "japanese_references": [
+        "0x0858F618"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingCute1",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 63,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255197",
+      "japanese_text_address": "0x0824C2C6",
+      "japanese_references": [
+        "0x0858F61C"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingCute2",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 66,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082551A0",
+      "japanese_text_address": "0x0824C2D8",
+      "japanese_references": [
+        "0x0858F620"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingCute3",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 70,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082551B4",
+      "japanese_text_address": "0x0824C2EE",
+      "japanese_references": [
+        "0x0858F624"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingSmart1",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 74,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082551D3",
+      "japanese_text_address": "0x0824C308",
+      "japanese_references": [
+        "0x0858F628"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingSmart2",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 78,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x082551F3",
+      "japanese_text_address": "0x0824C31F",
+      "japanese_references": [
+        "0x0858F62C"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingSmart3",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 82,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255217",
+      "japanese_text_address": "0x0824C33D",
+      "japanese_references": [
+        "0x0858F630"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingTough1",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 86,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x0825522B",
+      "japanese_text_address": "0x0824C353",
+      "japanese_references": [
+        "0x0858F634"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingTough2",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 90,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x08255239",
+      "japanese_text_address": "0x0824C365",
+      "japanese_references": [
+        "0x0858F638"
+      ]
+    },
+    {
+      "source_symbol": "gContestPaintingTough3",
+      "source": "data/text/contest_painting.inc",
+      "wokann_source": "data/text/contest_painting.inc",
+      "wokann_label_line": 94,
+      "mapping_method": "wokann_verified_manual_address",
+      "us_text_address": "0x0825524C",
+      "japanese_text_address": "0x0824C37D",
+      "japanese_references": [
+        "0x0858F63C"
       ]
     }
-  ]
+  ],
+  "unresolved": [],
+  "dynamic_placeholder_audit": {
+    "gContestHallPaintingCaption": "Placeholders 2, 3, and 4 are contest display buffers and are rendered in Japanese mode.",
+    "museum_captions": "Placeholder 2 is the contestant nickname and is rendered in Japanese mode.",
+    "persistence": "This batch redirects display text only; contest records and saved/link data are not modified."
+  }
 }
-
