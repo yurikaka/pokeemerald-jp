@@ -122,10 +122,16 @@ def encode_text(text: str, charmap: dict[str, bytes], styled: bool) -> bytes:
             if end < 0:
                 raise ValueError(f"unterminated control in {text!r}")
             name = text[index + 1:end]
-            try:
-                output.extend(CONTROLS[name])
-            except KeyError as exc:
-                raise ValueError(f"unknown control {{{name}}}") from exc
+            if name.startswith("PAUSE "):
+                duration = int(name[6:])
+                if not 0 <= duration <= 255:
+                    raise ValueError(f"invalid pause duration: {duration}")
+                output.extend((0xFC, 0x08, duration))
+            else:
+                try:
+                    output.extend(CONTROLS[name])
+                except KeyError as exc:
+                    raise ValueError(f"unknown control {{{name}}}") from exc
             index = end + 1
             continue
         output.extend(encode_char(text[index], charmap))
