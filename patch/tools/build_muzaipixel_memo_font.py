@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build 8x12 memo and summary-name glyph atlases from MuzaiPixel MZPXorig.ttf."""
+"""Build 8x12 compact glyph atlases from MuzaiPixel MZPXorig.ttf."""
 
 import argparse
 import json
@@ -64,6 +64,10 @@ def main() -> None:
     species_names = (ROOT / "../pokeemerald_us_chs/src/data/text/species_names.h").read_text(encoding="utf-8")
     species_names = species_names.split("const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {", 1)[1]
     chars.update("".join(re.findall(r'\[SPECIES_\w+\]\s*=\s*_\("([^"]*)"\)', species_names)))
+
+    pokedex_entries = json.loads((ROOT / "patch/pokedex_entries.json").read_text(encoding="utf-8"))["entries"]
+    chars.update("".join(entry["description"] for entry in pokedex_entries[1:]))
+    chars.discard("\n")
 
     cmap = TTFont(args.font).getBestCmap()
     missing = sorted(char for char in chars if ord(char) not in cmap)

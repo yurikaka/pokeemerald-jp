@@ -8,7 +8,7 @@ The derived font assets are distributed under the SIL Open Font License 1.1;
 see `muzaipixel_LICENSE.md`.
 
 The atlas includes characters used by the trainer memo's localized nature and
-map-section names, plus localized species names for long summary-screen
-nicknames. The original memo font remains in use when the first line is at most
-156 pixels wide. Wider first lines use this 8x12 font, then restore the original
-font before the existing newline.
+map-section names, localized species names for long summary-screen nicknames,
+and localized Pokédex descriptions. The original memo font remains in use when
+the first line is at most 156 pixels wide. Wider first lines use this 8x12 font,
+then restore the original font before the existing newline.

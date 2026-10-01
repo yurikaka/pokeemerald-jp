@@ -39,6 +39,7 @@ def main() -> None:
     parser.add_argument("--jp-rom", type=Path, required=True)
     parser.add_argument("--us-repo", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--existing-output", type=Path)
     args = parser.parse_args()
 
     entries_source = (args.us_repo / "src/data/pokemon/pokedex_entries.h").read_text(encoding="utf-8")
@@ -54,6 +55,12 @@ def main() -> None:
     if len(pairs) != ENTRY_COUNT:
         raise SystemExit(f"expected {ENTRY_COUNT} US entries, found {len(pairs)}")
 
+    existing_entries = None
+    if args.existing_output:
+        existing_entries = json.loads(args.existing_output.read_text(encoding="utf-8"))["entries"]
+        if len(existing_entries) != ENTRY_COUNT:
+            raise SystemExit(f"expected {ENTRY_COUNT} existing entries, found {len(existing_entries)}")
+
     rom = args.jp_rom.read_bytes()
     base = JP_TABLE - ROM_BASE
     entries = []
@@ -61,13 +68,16 @@ def main() -> None:
         raw = rom[base + index * JP_ENTRY_SIZE : base + (index + 1) * JP_ENTRY_SIZE]
         if desc_symbol not in descriptions:
             raise SystemExit(f"missing description text for {desc_symbol}")
+        description = descriptions[desc_symbol]
+        if index == 0 and existing_entries is not None:
+            description = existing_entries[0]["description"]
         entries.append(
             {
                 "category": unescape(category),
                 "jp_category": raw[0:6].hex(),
                 "stats": raw[6:12].hex(),
                 "tail": raw[16:28].hex(),
-                "description": descriptions[desc_symbol],
+                "description": description,
             }
         )
 

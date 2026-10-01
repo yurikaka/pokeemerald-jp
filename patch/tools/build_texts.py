@@ -54,6 +54,9 @@ SYNTHETIC_PUNCTUATION = {
 }
 
 DIALOGUE_LINE_WIDTH = 168
+POKEDEX_DESCRIPTION_LINE_WIDTH = 204
+POKEDEX_DESCRIPTION_MAX_LINES = 3
+POKEDEX_DESCRIPTION_X_OFFSET = 2
 PLACEHOLDER_WIDTHS = {
     0x01: 48,  # Player name: up to six Japanese glyphs.
     0x02: 96,  # String variables may contain long item or place names.
@@ -374,6 +377,42 @@ def wrap_dialogue(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, int]:
     return bytes(output), changed_pages
 
 
+def wrap_pokedex_description(data: bytes, charmap: dict[str, bytes]) -> bytes:
+    flowing = data[len(CONTROLS["ENG"]):-1].replace(b"\xFA", b"").replace(b"\xFE", b"")
+    tokens = tokenize_line(flowing)
+    lines = wrap_tokens(
+        tokens,
+        POKEDEX_DESCRIPTION_LINE_WIDTH,
+        encoded_chars(NO_LINE_START, charmap),
+        encoded_chars(NO_LINE_END, charmap),
+        set(),
+    )
+    use_narrow_font = len(lines) > POKEDEX_DESCRIPTION_MAX_LINES
+    if use_narrow_font:
+        lines = wrap_tokens(
+            [(token, 8 if width == 12 else width) for token, width in tokens],
+            POKEDEX_DESCRIPTION_LINE_WIDTH,
+            encoded_chars(NO_LINE_START, charmap),
+            encoded_chars(NO_LINE_END, charmap),
+            set(),
+        )
+    if len(lines) > POKEDEX_DESCRIPTION_MAX_LINES:
+        raise ValueError(f"Pokédex description exceeds {POKEDEX_DESCRIPTION_MAX_LINES} lines")
+
+    output = bytearray(CONTROLS["ENG"])
+    output.extend((0xFC, 0x0D, POKEDEX_DESCRIPTION_X_OFFSET))
+    if use_narrow_font:
+        output.extend((0xF5, 0xF3))
+    for index, line in enumerate(lines):
+        if index:
+            output.append(0xFE)
+            output.extend((0xFC, 0x0D, POKEDEX_DESCRIPTION_X_OFFSET))
+        for token, _ in line:
+            output.extend(token)
+    output.append(0xFF)
+    return bytes(output)
+
+
 def main() -> None:
     if len(sys.argv) < 4:
         raise SystemExit("usage: build_texts.py CHARMAP OUTPUT_INC TEXTS_JSON...")
@@ -621,6 +660,8 @@ def main() -> None:
                 encoded = encode_text(entry["category"], charmap, False)
                 lines.extend((".align 2", f"{category_label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
                 encoded = encode_text(entry["description"], charmap, False)
+                if index:
+                    encoded = wrap_pokedex_description(encoded, charmap)
                 lines.extend((".align 2", f"{description_label}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
             lines.extend((".align 2", f".global {name}", f"{name}:"))
             for index, entry in enumerate(table["entries"]):
