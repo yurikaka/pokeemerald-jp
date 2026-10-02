@@ -480,6 +480,11 @@ def main() -> None:
                     f"{source_path} contains {len(trainer_class_names)} trainer class names, "
                     f"expected {document['count']}"
                 )
+            for index, text in document.get("overrides", {}).items():
+                index = int(index)
+                if not 0 <= index < len(trainer_class_names):
+                    raise ValueError(f"invalid trainer class override index: {index}")
+                trainer_class_names[index] = text
             fixed_tables.append(
                 {
                     "kind": "string_pointer_table",

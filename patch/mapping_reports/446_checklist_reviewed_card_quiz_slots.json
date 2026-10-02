@@ -1,0 +1,196 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_F700sQuiz",
+      "document_line": 1189,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "text": "{DYNAMIC 0}さんの　クイズ"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0811C640",
+          "original": "0x085CBC7B",
+          "source": [
+            {
+              "file": "src/easy_chat.c",
+              "line": 5096,
+              "referenced_symbol": "gText_F700sQuiz",
+              "referenced_offset": null,
+              "resolved_target": "0x085CBC7B"
+            }
+          ]
+        }
+      ],
+      "final_text": "{DYNAMIC 0}的谜题"
+    },
+    {
+      "symbol": "sText_FinishedCheckingPlayersTrainerCard",
+      "document_line": 2558,
+      "jp_source": [
+        {
+          "file": "src/data/union_room8l.h",
+          "text": "{DYNAMIC 1}の　トレーナーカードを\nみおわった！{PAUSE 60}"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08017E84",
+          "original": "0x082C1FAC",
+          "object": "build/pokeemerald-jp/src/union_room.o",
+          "object_sha256": "69f0305b4152aef163d35e6c2abdce8321504ca04574b7285b6f4cdc87e1f31f",
+          "section": ".text.ViewURoomPartnerTrainerCard",
+          "section_base": "0x08017CDC",
+          "section_length": 480,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "sText_FinishedCheckingPlayersTrainerCard",
+          "section_offset": 424
+        }
+      ],
+      "final_text": "{DYNAMIC 1}的训练家卡\n确认完毕。{PAUSE 60}"
+    },
+    {
+      "symbol": "sText_TrainerCardInfoPage1",
+      "document_line": 2631,
+      "jp_source": [
+        {
+          "file": "src/data/union_room8l.h",
+          "text": "{DYNAMIC 0}の　{DYNAMIC 1}の\nトレーナーカードを　みせてもらった\\l{DYNAMIC 2}\\pポケモンずかん　{DYNAMIC 3}\nプレイ　じかん　{DYNAMIC 4}:{DYNAMIC 5}\\p"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08017E74",
+          "original": "0x082C1F1C",
+          "object": "build/pokeemerald-jp/src/union_room.o",
+          "object_sha256": "69f0305b4152aef163d35e6c2abdce8321504ca04574b7285b6f4cdc87e1f31f",
+          "section": ".text.ViewURoomPartnerTrainerCard",
+          "section_base": "0x08017CDC",
+          "section_length": 480,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "sText_TrainerCardInfoPage1",
+          "section_offset": 408
+        }
+      ],
+      "final_text": "这是{DYNAMIC 0} {DYNAMIC 1}的\n训练家卡……\\l{DYNAMIC 2}\\p图鉴：{DYNAMIC 3}\n时间：{DYNAMIC 4}：{DYNAMIC 5}\\p"
+    },
+    {
+      "symbol": "sText_TrainerCardInfoPage2",
+      "document_line": 2632,
+      "jp_source": [
+        {
+          "file": "src/data/union_room8l.h",
+          "text": "たいせん　かち{DYNAMIC 0}　まけ{DYNAMIC 2}\nこうかん　{DYNAMIC 3}かい\\p‘{DYNAMIC 4}　{DYNAMIC 5}\n　{DYNAMIC 6}　{DYNAMIC 7}\\p${DYNAMIC 1}‘これからも　よろしく！{PAUSE 60}$　　{DYNAMIC 1}‘これからも　よろしくね！{PAUSE 60}"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08017E80",
+          "original": "0x082C1F54",
+          "object": "build/pokeemerald-jp/src/union_room.o",
+          "object_sha256": "69f0305b4152aef163d35e6c2abdce8321504ca04574b7285b6f4cdc87e1f31f",
+          "section": ".text.ViewURoomPartnerTrainerCard",
+          "section_base": "0x08017CDC",
+          "section_length": 480,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "sText_TrainerCardInfoPage2",
+          "section_offset": 420
+        }
+      ],
+      "final_text": " 对战：胜：{DYNAMIC 0} 负：{DYNAMIC 2}\n交换次数：{DYNAMIC 3}\\p“{DYNAMIC 4} {DYNAMIC 5}\n{DYNAMIC 6} {DYNAMIC 7}”\\p"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0811C640",
+      "original": "0x085CBC7B",
+      "symbol": "Chs_ChecklistLiteral_446_gText_F700sQuiz",
+      "source_symbol": "gText_F700sQuiz"
+    },
+    {
+      "address": "0x08017E84",
+      "original": "0x082C1FAC",
+      "symbol": "Chs_ChecklistLiteral_446_sText_FinishedCheckingPlayersTrainerCard",
+      "source_symbol": "sText_FinishedCheckingPlayersTrainerCard"
+    },
+    {
+      "address": "0x08017E74",
+      "original": "0x082C1F1C",
+      "symbol": "Chs_ChecklistLiteral_446_sText_TrainerCardInfoPage1",
+      "source_symbol": "sText_TrainerCardInfoPage1"
+    },
+    {
+      "address": "0x08017E80",
+      "original": "0x082C1F54",
+      "symbol": "Chs_ChecklistLiteral_446_sText_TrainerCardInfoPage2",
+      "source_symbol": "sText_TrainerCardInfoPage2"
+    }
+  ],
+  "active_definition_count": 4,
+  "active_reference_count": 4,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_446_gText_F700sQuiz",
+      "source_symbol": "gText_F700sQuiz",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/easy_chat.c:5060: sub_0811C5F4 reads the quiz author at SaveBlock1+0x3B70 or gText_Lady into slot 0. Caller at 2006 expands into the 32-byte screen title region +0x14..+0x33; it does not modify the saved quiz author.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": []
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_446_sText_FinishedCheckingPlayersTrainerCard",
+      "source_symbol": "sText_FinishedCheckingPlayersTrainerCard",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room.c:4593: ViewURoomPartnerTrainerCard retains slot 1 as trainerCard->playerName, expands this final display sentence into trainerCardMsgStrBuffer[200], and appends it to gStringVar4; original received playerName is unmodified.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_446_sText_TrainerCardInfoPage1",
+      "source_symbol": "sText_TrainerCardInfoPage1",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room.c:4541: ViewURoomPartnerTrainerCard provides slots 0 class, 1 original playerName, 2 card color, 3 dex count, 4 hours, 5 minutes; expands into trainerCardMsgStrBuffer[200] then copies to gStringVar4. Received trainerCard fields are only read.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_446_sText_TrainerCardInfoPage2",
+      "source_symbol": "sText_TrainerCardInfoPage2",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room.c:4570: ViewURoomPartnerTrainerCard replaces slots 0 wins, 2 losses, 3 trades and 4..7 easy-chat words in temporary buffers, expands into trainerCardMsgStrBuffer[200], and appends the display text to gStringVar4. It never rewrites the trainer card profile or statistics.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    }
+  ]
+}

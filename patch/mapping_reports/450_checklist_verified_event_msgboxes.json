@@ -1,0 +1,48 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_PokemonCenterSign",
+      "document_line": 1465,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x08242F01",
+          "original": "0x082439F5",
+          "object": "build/pokeemerald-jp/data/event_scripts.o",
+          "object_sha256": "ebfe87c1fbc4ae926c407e9365c6131c4aee7956b891ecbe7aeeb946f57e147d",
+          "section": "script_data",
+          "section_base": "0x081DABAC",
+          "section_offset": 426837,
+          "relocation": "event_msgbox_word",
+          "referenced_symbol": "gText_PokemonCenterSign",
+          "proof": "Wokann asm/macros/event.inc:1988 msgbox emits loadword bank 0 (0F 00), an ABS32 text relocation, then callstd (09). Compiled field offset plus the established event-script base matches the native prefix, suffix and original pointer; script pointers need not be word-aligned."
+        }
+      ],
+      "final_text": "“让您疲劳的伙伴们恢复活力！”\n宝可梦中心",
+      "placeholder_contract": null,
+      "language_options": {}
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x08242F01",
+      "original": "0x082439F5",
+      "symbol": "Chs_ChecklistLiteral_450_gText_PokemonCenterSign",
+      "source_symbol": "gText_PokemonCenterSign"
+    }
+  ],
+  "active_definition_count": 1,
+  "active_reference_count": 1,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_450_gText_PokemonCenterSign",
+      "source_symbol": "gText_PokemonCenterSign",
+      "options": {
+        "auto_wrap": true
+      },
+      "placeholder_contract": null,
+      "remaining_verification": []
+    }
+  ]
+}

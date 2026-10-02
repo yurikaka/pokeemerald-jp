@@ -1,0 +1,3436 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleArena",
+      "document_line": 116,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルアリーナで　やってる\\lかちぬきチームバトルに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B24",
+          "original": "0x08237DEA",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 36
+        }
+      ],
+      "final_text": "我正在找想要参加\n对战竞技场三回合定胜负\\l锦标赛的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble",
+      "document_line": 117,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルドームで　やってる\\lダブル　バトルトーナメントに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B10",
+          "original": "0x08237C1B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战巨蛋双打对战\\l锦标赛的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle",
+      "document_line": 118,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルドームで　やってる\\lシングル　バトルトーナメントに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B0C",
+          "original": "0x08237BBB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 12
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战巨蛋单打对战\\l锦标赛的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble",
+      "document_line": 119,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルファクトリーで　やってる\\lバトルトレード　ダブルに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B18",
+          "original": "0x08237CDB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战工厂交换式对战\\l双打锦标赛的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle",
+      "document_line": 120,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルファクトリーで　やってる\\lバトルトレード　シングルに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B14",
+          "original": "0x08237C7A",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战工厂交换式对战\\l单打锦标赛的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble",
+      "document_line": 121,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルパレスの\\lダブル　バトルホールに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B20",
+          "original": "0x08237D93",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战宫殿双打对战\\l大厅的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle",
+      "document_line": 122,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルパレスの\\lシングル　バトルホールに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B1C",
+          "original": "0x08237D3B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 28
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战宫殿单打对战\\l大厅的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePike",
+      "document_line": 123,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルチューブで　やってる\\lバトルゲームに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B28",
+          "original": "0x08237E47",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "我正在找想要参加\n对战管道选择式对战\\l的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePyramid",
+      "document_line": 124,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルピラミッドで　やってる\\lバトルアドベンチャーに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B2C",
+          "original": "0x08237EA0",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 44
+        }
+      ],
+      "final_text": "我正在找想要参加\n对战金字塔探索式对战\\l的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble",
+      "document_line": 125,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルタワーの　ダブル　バトルルームに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B04",
+          "original": "0x08237B0D",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 4
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战塔双打对战间\\l的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti",
+      "document_line": 126,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルタワーの　マルチ　バトルルームに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B08",
+          "original": "0x08237B64",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 8
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战塔多人对战间\\l的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle",
+      "document_line": 127,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "ちょうど　いまは　よぉ\nバトルタワーの　シングル　バトルルームに\\lちょうせんする　トレーナーを\\lさがしてん　だけどよ⋯⋯\\pピンとくる　トレーナーが　いなくてなぁ⋯⋯\nなぁ⋯⋯$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B00",
+          "original": "0x08237AB5",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B00",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B00",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B00",
+          "section_offset": 0
+        }
+      ],
+      "final_text": "我正在找想要挑战\n对战塔单打对战间\\l的训练家，\\p但到现在我还没看到\n有能力胜出的训练家。"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleArena",
+      "document_line": 128,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルアリーナの\nかちぬきチームバトルに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B54",
+          "original": "0x082382E3",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 36
+        }
+      ],
+      "final_text": "马上就去对战竞技场的\n三回合定胜负锦标赛吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleDomeDouble",
+      "document_line": 129,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルドームの\nダブル　バトルトーナメントに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B40",
+          "original": "0x0823812D",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "马上就去对战巨蛋的\n双打对战锦标赛吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleDomeSingle",
+      "document_line": 130,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルドームの\nシングル　バトルトーナメントに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B3C",
+          "original": "0x082380D4",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 12
+        }
+      ],
+      "final_text": "马上就去对战巨蛋的\n单打对战锦标赛吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble",
+      "document_line": 131,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルファクトリーの\nバトルトレード　ダブルに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B48",
+          "original": "0x082381DF",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "马上就去对战工厂的\n交换式对战双打锦标赛吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleFactorySingle",
+      "document_line": 132,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルファクトリーの\nバトルトレード　シングルに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B44",
+          "original": "0x08238185",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "马上就去对战工厂的\n交换式对战单打锦标赛吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble",
+      "document_line": 133,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルパレスの\nダブル　バトルホールに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B50",
+          "original": "0x0823828E",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "马上就去对战宫殿的\n双打对战厅吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle",
+      "document_line": 134,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルパレスの\nシングル　バトルホールに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B4C",
+          "original": "0x08238238",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 28
+        }
+      ],
+      "final_text": "马上就去对战宫殿的\n单打对战厅吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattlePike",
+      "document_line": 135,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルチューブの\nバトルゲームに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B58",
+          "original": "0x08238339",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "马上就去对战管道的\n选择式对战吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattlePyramid",
+      "document_line": 136,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと　バトルピラミッドの\nバトルアドベンチャーに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B5C",
+          "original": "0x0823838B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 44
+        }
+      ],
+      "final_text": "马上就去对战金字塔的\n探索式对战吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerDouble",
+      "document_line": 137,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと\nバトルタワーの　ダブル　バトルルームに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B34",
+          "original": "0x0823802A",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 4
+        }
+      ],
+      "final_text": "马上就去对战塔的\n双打对战间吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerMulti",
+      "document_line": 138,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと\nバトルタワーの　マルチ　バトルルームに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B38",
+          "original": "0x0823807F",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 8
+        }
+      ],
+      "final_text": "马上就去对战塔的\n多人对战间吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerSingle",
+      "document_line": 139,
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+          "text": "サクサクッと\nバトルタワーの　シングル　バトルルームに\\lいってきて　ちょーだいっ！\\pがんばれ　よぉー！\nまちがえんな　よぉー！\\lおれと　あんたの　みらいの　ためだかんな！$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592B30",
+          "original": "0x08237FD4",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_8592B30",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x08592B30",
+          "section_length": 48,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_8592B30",
+          "section_offset": 0
+        }
+      ],
+      "final_text": "马上就去对战塔的\n单打对战间吧！\\p决不能输！\n别放过这个机会！\\l我们的未来就全靠你了！"
+    },
+    {
+      "symbol": "gText_BlastoiseDoll256BP",
+      "document_line": 1011,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "カメックスドール　256BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859285C",
+          "original": "0x085CC107",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 272
+        }
+      ],
+      "final_text": "水箭龟玩偶{CLEAR_TO 88}256BP"
+    },
+    {
+      "symbol": "gText_BodySlam48BP",
+      "document_line": 1020,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "のしかかり　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929A0",
+          "original": "0x085CC23D",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 596
+        }
+      ],
+      "final_text": "泰山压顶{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_BrightPowder64BP",
+      "document_line": 1026,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ひかりのこな　　　　64BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928DC",
+          "original": "0x085CC1AC",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 400
+        }
+      ],
+      "final_text": "光粉{CLEAR_TO 94}64BP"
+    },
+    {
+      "symbol": "gText_Calcium1000",
+      "document_line": 1036,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 99,
+          "encoded_hex": "527e9572605c7e00fc0600a2a1a1a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592924",
+          "original": "0x085CB12B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 472
+        }
+      ],
+      "final_text": "特攻增强剂{CLEAR_TO 99}{FONT_SMALL}1000"
+    },
+    {
+      "symbol": "gText_Calcium1BP",
+      "document_line": 1037,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "リゾチウム　　　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592890",
+          "original": "0x085CC125",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 324
+        }
+      ],
+      "final_text": "特攻增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "gText_Carbos1000",
+      "document_line": 1050,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 115,
+          "encoded_hex": "7890615371000000fc0600a2a1a1a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592928",
+          "original": "0x085CB13B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 476
+        }
+      ],
+      "final_text": "速度增强剂{CLEAR_TO 99}{FONT_SMALL}1000"
+    },
+    {
+      "symbol": "gText_Carbos1BP",
+      "document_line": 1051,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "インドメタシン　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859289C",
+          "original": "0x085CC152",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 336
+        }
+      ],
+      "final_text": "速度增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "gText_CharizardDoll256BP",
+      "document_line": 1058,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "リザードンドール　256BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592858",
+          "original": "0x085CC0F8",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 268
+        }
+      ],
+      "final_text": "喷火龙玩偶{CLEAR_TO 88}256BP"
+    },
+    {
+      "symbol": "gText_ChikoritaDoll80BP",
+      "document_line": 1065,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "チコリータドール　　80BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859282C",
+          "original": "0x085CC0AD",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 224
+        }
+      ],
+      "final_text": "菊草叶玩偶{CLEAR_TO 94}80BP"
+    },
+    {
+      "symbol": "gText_ChoiceBand64BP",
+      "document_line": 1066,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "こだわりハチマキ　　64BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928E0",
+          "original": "0x085CC1BB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 404
+        }
+      ],
+      "final_text": "讲究头带{CLEAR_TO 94}64BP"
+    },
+    {
+      "symbol": "gText_ClefairyDoll48BP",
+      "document_line": 1071,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ピッピドール　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592820",
+          "original": "0x085CC080",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 212
+        }
+      ],
+      "final_text": "皮皮玩偶{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_Counter48BP",
+      "document_line": 1111,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "カウンター　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929A8",
+          "original": "0x085CC259",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 604
+        }
+      ],
+      "final_text": "双倍奉还{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_CyndaquilDoll80BP",
+      "document_line": 1121,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ヒノアラシドール　　80BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592828",
+          "original": "0x085CC09E",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 220
+        }
+      ],
+      "final_text": "火球鼠玩偶{CLEAR_TO 94}80BP"
+    },
+    {
+      "symbol": "gText_DefenseCurl16BP",
+      "document_line": 1133,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "まるくなる　　　　16BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929CC",
+          "original": "0x085CC283",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 640
+        }
+      ],
+      "final_text": "变圆{CLEAR_TO 78}16BP"
+    },
+    {
+      "symbol": "gText_DittoDoll48BP",
+      "document_line": 1144,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "メタモンドール　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592824",
+          "original": "0x085CC08F",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 216
+        }
+      ],
+      "final_text": "百变怪{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_Draw",
+      "document_line": 1158,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x08035AB8",
+          "original": "0x085ABC8E",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Draw",
+          "section_offset": 1624
+        }
+      ],
+      "final_text": "{HIGHLIGHT TRANSPARENT}平"
+    },
+    {
+      "symbol": "gText_DreamEater24BP",
+      "document_line": 1159,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ゆめくい　　　　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592994",
+          "original": "0x085CC213",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 584
+        }
+      ],
+      "final_text": "食梦{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_Endure48BP",
+      "document_line": 1167,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "こらえる　　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929E0",
+          "original": "0x085CC2C9",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 660
+        }
+      ],
+      "final_text": "挺住{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_EnergyPowder50",
+      "document_line": 1168,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 3,
+          "encoded_hex": "110627190a150000fc06000000a6a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859290C",
+          "original": "0x085CB0CB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 448
+        }
+      ],
+      "final_text": "元气粉{CLEAR_TO 114}{FONT_SMALL}50"
+    },
+    {
+      "symbol": "gText_EnergyRoot80",
+      "document_line": 1169,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 19,
+          "encoded_hex": "1106271918500a00fc06000000a9a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592910",
+          "original": "0x085CB0DB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 452
+        }
+      ],
+      "final_text": "元气根{CLEAR_TO 114}{FONT_SMALL}80"
+    },
+    {
+      "symbol": "gText_FirePunch48BP",
+      "document_line": 1205,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ほのおのパンチ　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929F0",
+          "original": "0x085CC301",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 676
+        }
+      ],
+      "final_text": "火焰拳{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_FocusBand64BP",
+      "document_line": 1218,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "きあいのハチマキ　　64BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928E8",
+          "original": "0x085CC1D9",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 412
+        }
+      ],
+      "final_text": "气势头带{CLEAR_TO 94}64BP"
+    },
+    {
+      "symbol": "gText_GamePlayCannotBeContinued",
+      "document_line": 1232,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x0817928C",
+          "original": "0x085CBDF7",
+          "object": "build/pokeemerald-jp/src/save_failed_screen.o",
+          "object_sha256": "fe2eda490e34e8a78d1c7f10497dae86580ac9583ba692b0034d368dd3bb7179",
+          "section": ".text",
+          "section_base": "0x08178DFC",
+          "section_length": 1700,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_GamePlayCannotBeContinued",
+          "section_offset": 1168
+        }
+      ],
+      "final_text": "{COLOR RED}“游戏无法继续，\n正在返回标题画面……”"
+    },
+    {
+      "symbol": "gText_HPUp1000",
+      "document_line": 1251,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 147,
+          "encoded_hex": "6fa0585d51a09d00fc0600a2a1a1a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592930",
+          "original": "0x085CB15B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 484
+        }
+      ],
+      "final_text": "HP增强剂{CLEAR_TO 99}{FONT_SMALL}1000"
+    },
+    {
+      "symbol": "gText_HealPowder50",
+      "document_line": 1256,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 35,
+          "encoded_hex": "462e19033b150000fc06000000a6a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592914",
+          "original": "0x085CB0EB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 456
+        }
+      ],
+      "final_text": "万能粉{CLEAR_TO 114}{FONT_SMALL}50"
+    },
+    {
+      "symbol": "gText_HpUp1BP",
+      "document_line": 1262,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "マックスアップ　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928A0",
+          "original": "0x085CC161",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 340
+        }
+      ],
+      "final_text": "HP增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "gText_IcePunch48BP",
+      "document_line": 1269,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "れいとうパンチ　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929E8",
+          "original": "0x085CC2E5",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 668
+        }
+      ],
+      "final_text": "冰冻拳{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_IcyWind24BP",
+      "document_line": 1270,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "こごえるかぜ　　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929DC",
+          "original": "0x085CC2BB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 656
+        }
+      ],
+      "final_text": "冰冻之风{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_Iron1000",
+      "document_line": 1279,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB0C8",
+          "offset": 83,
+          "encoded_hex": "987b716d575c7e00fc0600a2a1a1a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592920",
+          "original": "0x085CB11B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 468
+        }
+      ],
+      "final_text": "防御增强剂{CLEAR_TO 99}{FONT_SMALL}1000"
+    },
+    {
+      "symbol": "gText_Iron1BP",
+      "document_line": 1280,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ブロムヘキシン　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592894",
+          "original": "0x085CC134",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 328
+        }
+      ],
+      "final_text": "防御增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "gText_KingsRock64BP",
+      "document_line": 1301,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "おうじゃのしるし　　64BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928E4",
+          "original": "0x085CC1CA",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 408
+        }
+      ],
+      "final_text": "王者之证{CLEAR_TO 94}64BP"
+    },
+    {
+      "symbol": "gText_KissCushion32BP",
+      "document_line": 1303,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "キッスクッション　　32BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592810",
+          "original": "0x085CC044",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 196
+        }
+      ],
+      "final_text": "亲吻坐垫{CLEAR_TO 94}32BP"
+    },
+    {
+      "symbol": "gText_KissPoster16BP",
+      "document_line": 1304,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "キッスポスター　　　16BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859280C",
+          "original": "0x085CC035",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 192
+        }
+      ],
+      "final_text": "飞吻海报{CLEAR_TO 94}16BP"
+    },
+    {
+      "symbol": "gText_LaprasDoll128BP",
+      "document_line": 1306,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ラプラスドール　　128BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859284C",
+          "original": "0x085CC0CB",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 256
+        }
+      ],
+      "final_text": "拉普拉斯玩偶{CLEAR_TO 88}128BP"
+    },
+    {
+      "symbol": "gText_Leftovers48BP",
+      "document_line": 1310,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "たべのこし　　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928CC",
+          "original": "0x085CC170",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 384
+        }
+      ],
+      "final_text": "吃剩的东西{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_Loss",
+      "document_line": 1318,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x08035B70",
+          "original": "0x085ABC88",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Loss",
+          "section_offset": 1808
+        },
+        {
+          "address": "0x08035BA8",
+          "original": "0x085ABC88",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Loss",
+          "section_offset": 1864
+        },
+        {
+          "address": "0x08035BC4",
+          "original": "0x085ABC88",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Loss",
+          "section_offset": 1892
+        }
+      ],
+      "final_text": "{HIGHLIGHT TRANSPARENT}负"
+    },
+    {
+      "symbol": "gText_MegaKick48BP",
+      "document_line": 1348,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "メガトンキック　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859299C",
+          "original": "0x085CC22F",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 592
+        }
+      ],
+      "final_text": "百万吨重踢{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_MegaPunch24BP",
+      "document_line": 1349,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "メガトンパンチ　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592998",
+          "original": "0x085CC221",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 588
+        }
+      ],
+      "final_text": "百万吨重拳{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_MentalHerb48BP",
+      "document_line": 1351,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "メンタルハーブ　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928D8",
+          "original": "0x085CC19D",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 396
+        }
+      ],
+      "final_text": "心灵香草{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_MeowthDoll48BP",
+      "document_line": 1359,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ニャースドール　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859281C",
+          "original": "0x085CC071",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 208
+        }
+      ],
+      "final_text": "喵喵玩偶{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_MoveRelearnerAndPoof",
+      "document_line": 1370,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts71.h",
+          "text": "{PAUSE}み1　{PAUSE}そ2の　{PAUSE}そ⋯{PAUSE}そ⋯{PAUSE}そ⋯　{PAUSE}そ{PLAY_SE}ぎ　ポカン！\\p"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08160D30",
+          "original": "0x085ADA42",
+          "object": "build/pokeemerald-jp/src/move_relearner.o",
+          "object_sha256": "1213d12dcfe6867b195a5b868a36152923af4dfee546deb09c03448ad7f587ed",
+          "section": ".text.DoMoveRelearnerMain",
+          "section_base": "0x081607A0",
+          "section_length": 1576,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_MoveRelearnerAndPoof",
+          "section_offset": 1424
+        }
+      ],
+      "final_text": "{PAUSE 32}1， {PAUSE 15}2， {PAUSE 15}……{PAUSE 15}……{PAUSE 15}……{PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}空！\\p"
+    },
+    {
+      "symbol": "gText_MudSlap24BP",
+      "document_line": 1383,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "どろかけ　　　　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929D4",
+          "original": "0x085CC29F",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 648
+        }
+      ],
+      "final_text": "掷泥{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_Protein1BP",
+      "document_line": 1500,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "タウリン　　　　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859288C",
+          "original": "0x085CC116",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 320
+        }
+      ],
+      "final_text": "攻击增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "gText_PsychUp48BP",
+      "document_line": 1502,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "じこあんじ　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929E4",
+          "original": "0x085CC2D7",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 664
+        }
+      ],
+      "final_text": "自我暗示{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_QuickClaw48BP",
+      "document_line": 1512,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "せんせいのツメ　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928D4",
+          "original": "0x085CC18E",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 392
+        }
+      ],
+      "final_text": "先制之爪{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_RockSlide48BP",
+      "document_line": 1555,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "いわなだれ　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929A4",
+          "original": "0x085CC24B",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 600
+        }
+      ],
+      "final_text": "岩崩{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_SafariZoneMenu",
+      "document_line": 1562,
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "ボール　　　ポロック\nちかづく　　にげる"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08159A28",
+          "original": "0x085ABB86",
+          "object": "build/pokeemerald-jp/src/battle_controller_safari.o",
+          "object_sha256": "e45f537992beb02b7c02278eef6464bd314c7dd73fa3b595d2dbf78a6ff477d0",
+          "section": ".text",
+          "section_base": "0x081592A4",
+          "section_length": 2952,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SafariZoneMenu",
+          "section_offset": 1924
+        }
+      ],
+      "final_text": "精灵球{CLEAR_TO 56}宝可方块\n靠近{CLEAR_TO 56}逃走"
+    },
+    {
+      "symbol": "gText_SaveCompleteGameCannotContinue",
+      "document_line": 1566,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x081791FC",
+          "original": "0x085CBE50",
+          "object": "build/pokeemerald-jp/src/save_failed_screen.o",
+          "object_sha256": "fe2eda490e34e8a78d1c7f10497dae86580ac9583ba692b0034d368dd3bb7179",
+          "section": ".text",
+          "section_base": "0x08178DFC",
+          "section_length": 1700,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SaveCompleteGameCannotContinue",
+          "section_offset": 1024
+        }
+      ],
+      "final_text": "保存记录完毕。\n{COLOR RED}“游戏无法继续，\n正在返回标题画面……”"
+    },
+    {
+      "symbol": "gText_SaveCompletePressA",
+      "document_line": 1567,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x08179240",
+          "original": "0x085CBE90",
+          "object": "build/pokeemerald-jp/src/save_failed_screen.o",
+          "object_sha256": "fe2eda490e34e8a78d1c7f10497dae86580ac9583ba692b0034d368dd3bb7179",
+          "section": ".text",
+          "section_base": "0x08178DFC",
+          "section_length": 1700,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SaveCompletePressA",
+          "section_offset": 1092
+        }
+      ],
+      "final_text": "保存记录完毕。\n{COLOR RED}“请按下A键。”"
+    },
+    {
+      "symbol": "gText_SaveFailedCheckingBackup",
+      "document_line": 1568,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x0817910C",
+          "original": "0x085CBD6B",
+          "object": "build/pokeemerald-jp/src/save_failed_screen.o",
+          "object_sha256": "fe2eda490e34e8a78d1c7f10497dae86580ac9583ba692b0034d368dd3bb7179",
+          "section": ".text",
+          "section_base": "0x08178DFC",
+          "section_length": 1700,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SaveFailedCheckingBackup",
+          "section_offset": 784
+        },
+        {
+          "address": "0x081791CC",
+          "original": "0x085CBD6B",
+          "object": "build/pokeemerald-jp/src/save_failed_screen.o",
+          "object_sha256": "fe2eda490e34e8a78d1c7f10497dae86580ac9583ba692b0034d368dd3bb7179",
+          "section": ".text",
+          "section_base": "0x08178DFC",
+          "section_length": 1700,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SaveFailedCheckingBackup",
+          "section_offset": 976
+        }
+      ],
+      "final_text": "记录失败。\n检查备份记录中……请稍等。\n{COLOR RED}“T所需时间：约1分钟”"
+    },
+    {
+      "symbol": "gText_ScopeLens64BP",
+      "document_line": 1572,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ピントレンズ　　　　64BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928EC",
+          "original": "0x085CC1E8",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 416
+        }
+      ],
+      "final_text": "焦点镜{CLEAR_TO 94}64BP"
+    },
+    {
+      "symbol": "gText_SeismicToss24BP",
+      "document_line": 1578,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ちきゅうなげ　　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592990",
+          "original": "0x085CC205",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 580
+        }
+      ],
+      "final_text": "地球上投{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_SmoochumDoll32BP",
+      "document_line": 1604,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ムチュールドール　　32BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592814",
+          "original": "0x085CC053",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 200
+        }
+      ],
+      "final_text": "迷唇娃玩偶{CLEAR_TO 94}32BP"
+    },
+    {
+      "symbol": "gText_Snore24BP",
+      "document_line": 1605,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "いびき　　　　　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929D0",
+          "original": "0x085CC291",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 644
+        }
+      ],
+      "final_text": "打鼾{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_SnorlaxDoll128BP",
+      "document_line": 1606,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "カビゴンドール　　128BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592850",
+          "original": "0x085CC0DA",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 260
+        }
+      ],
+      "final_text": "卡比兽玩偶{CLEAR_TO 88}128BP"
+    },
+    {
+      "symbol": "gText_Softboiled16BP",
+      "document_line": 1609,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "タマゴうみ　　　　16BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0859298C",
+          "original": "0x085CC1F7",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 576
+        }
+      ],
+      "final_text": "生蛋{CLEAR_TO 78}16BP"
+    },
+    {
+      "symbol": "gText_Swift24BP",
+      "document_line": 1644,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "スピードスター　　24BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929D8",
+          "original": "0x085CC2AD",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 652
+        }
+      ],
+      "final_text": "高速星星{CLEAR_TO 78}24BP"
+    },
+    {
+      "symbol": "gText_SwordsDance48BP",
+      "document_line": 1645,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "つるぎのまい　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929B0",
+          "original": "0x085CC275",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 612
+        }
+      ],
+      "final_text": "剑舞{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_ThunderPunch48BP",
+      "document_line": 1674,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "かみなりパンチ　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929EC",
+          "original": "0x085CC2F3",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 672
+        }
+      ],
+      "final_text": "雷电拳{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_ThunderWave48BP",
+      "document_line": 1675,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "でんじは　　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085929AC",
+          "original": "0x085CC267",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 608
+        }
+      ],
+      "final_text": "电磁波{CLEAR_TO 78}48BP"
+    },
+    {
+      "symbol": "gText_TogepiDoll48BP",
+      "document_line": 1679,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "トゲピードール　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592818",
+          "original": "0x085CC062",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 204
+        }
+      ],
+      "final_text": "波克比玩偶{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_TotodileDoll80BP",
+      "document_line": 1682,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "ワニノコドール　　　80BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592830",
+          "original": "0x085CC0BC",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 228
+        }
+      ],
+      "final_text": "小锯鳄玩偶{CLEAR_TO 94}80BP"
+    },
+    {
+      "symbol": "gText_VenusaurDoll256BP",
+      "document_line": 1705,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "フシギバナドール　256BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592854",
+          "original": "0x085CC0E9",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 264
+        }
+      ],
+      "final_text": "妙蛙花玩偶{CLEAR_TO 88}256BP"
+    },
+    {
+      "symbol": "gText_WhiteHerb48BP",
+      "document_line": 1725,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "しろいハーブ　　　　48BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085928D0",
+          "original": "0x085CC17F",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 388
+        }
+      ],
+      "final_text": "白色香草{CLEAR_TO 94}48BP"
+    },
+    {
+      "symbol": "gText_Win",
+      "document_line": 1727,
+      "jp_source": [],
+      "references": [
+        {
+          "address": "0x08035B6C",
+          "original": "0x085ABC82",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Win",
+          "section_offset": 1804
+        },
+        {
+          "address": "0x08035BA4",
+          "original": "0x085ABC82",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Win",
+          "section_offset": 1860
+        },
+        {
+          "address": "0x08035BC0",
+          "original": "0x085ABC82",
+          "object": "build/pokeemerald-jp/src/battle_bg.o",
+          "object_sha256": "3aeefa7bda33ca426b00f6962ecaf108efd9aabec2bd41b9defea94bddf8e705",
+          "section": ".text",
+          "section_base": "0x08035460",
+          "section_length": 4436,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_Win",
+          "section_offset": 1888
+        }
+      ],
+      "final_text": "{HIGHLIGHT TRANSPARENT}胜"
+    },
+    {
+      "symbol": "gText_WinLoseDraw",
+      "document_line": 1728,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts32.h",
+          "text": "かち　　　　まけ　　　ひきわけ"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813C578",
+          "original": "0x08593801",
+          "object": "build/pokeemerald-jp/src/battle_records.o",
+          "object_sha256": "0e9cf7732d89b7e917183c0c77ec5ebf9af511446d5928103124efd80dfb073d",
+          "section": ".text",
+          "section_base": "0x0813BFB8",
+          "section_length": 2680,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_WinLoseDraw",
+          "section_offset": 1472
+        }
+      ],
+      "final_text": "{CLEAR_TO 83}胜{CLEAR_TO 128}负{CLEAR_TO 176}平"
+    },
+    {
+      "symbol": "gText_Zinc1BP",
+      "document_line": 1761,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts100.h",
+          "text": "キトサン　　　　　　　1BP"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08592898",
+          "original": "0x085CC143",
+          "object": "src/field_specials.c",
+          "source": {
+            "symbol": "gUnknown_859274C",
+            "file": "src/field_specials.c",
+            "first_pointer_offset": 0,
+            "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0859274C",
+          "section_length": 832,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_859274C",
+          "section_offset": 332
+        }
+      ],
+      "final_text": "特防增强剂{CLEAR_TO 100}1BP"
+    },
+    {
+      "symbol": "sText_NameWantedOfferLv",
+      "document_line": 2584,
+      "jp_source": [
+        {
+          "file": "src/data/union_room8j.h",
+          "text": "なまえ　　　　ほしいタイプ　あげるポケモン　　レベル"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08016C74",
+          "original": "0x082C1D60",
+          "object": "build/pokeemerald-jp/src/union_room.o",
+          "object_sha256": "69f0305b4152aef163d35e6c2abdce8321504ca04574b7285b6f4cdc87e1f31f",
+          "section": ".text.CreateTradeBoardWindow",
+          "section_base": "0x08016C28",
+          "section_length": 80,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "sText_NameWantedOfferLv",
+          "section_offset": 76
+        }
+      ],
+      "final_text": "名字{CLEAR_TO 60}想要{CLEAR_TO 110}给出{CLEAR_TO 198}等级"
+    },
+    {
+      "symbol": "sText_OnlyPkmnForBattle",
+      "document_line": 2588,
+      "jp_source": [
+        {
+          "file": "src/data/trade.h",
+          "text": "{COLOR 0x02}{HIGHLIGHT 0x01}{SHADOW 0x03}そのポケモンを　こうかんすると\nせんとうできなくなっちゃうよ！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08300BE4",
+          "original": "0x08300B75",
+          "object": "build/pokeemerald-jp/src/data/trade.o",
+          "object_sha256": "dba84f1d3e53f5357aa13451e5880419588ba7f0cfce4d93864b082a1ae19c1a",
+          "section": ".rodata.trade_animation_resources",
+          "section_base": "0x08300AFC",
+          "section_length": 51012,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "",
+          "section_offset": 232
+        }
+      ],
+      "final_text": "最后1只同行的宝可梦\n不能用来交换。"
+    },
+    {
+      "symbol": "sText_TheTradeHasBeenCanceled",
+      "document_line": 2623,
+      "jp_source": [
+        {
+          "file": "src/data/trade.h",
+          "text": "{COLOR 0x02}{HIGHLIGHT 0x01}{SHADOW 0x03}こうかんは\nキャンセル　されました！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08300BE0",
+          "original": "0x08300B59",
+          "object": "build/pokeemerald-jp/src/data/trade.o",
+          "object_sha256": "dba84f1d3e53f5357aa13451e5880419588ba7f0cfce4d93864b082a1ae19c1a",
+          "section": ".rodata.trade_animation_resources",
+          "section_base": "0x08300AFC",
+          "section_length": 51012,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "",
+          "section_offset": 228
+        }
+      ],
+      "final_text": "{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}宝可梦交换\n已中止。"
+    },
+    {
+      "symbol": "sText_WaitingForYourFriend",
+      "document_line": 2637,
+      "jp_source": [
+        {
+          "file": "src/data/trade.h",
+          "text": "{COLOR 0x02}{HIGHLIGHT 0x01}{SHADOW 0x03}ともだちの　しゅうりょうを\nまっています⋯⋯"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08300BEC",
+          "original": "0x08300B9E",
+          "object": "build/pokeemerald-jp/src/data/trade.o",
+          "object_sha256": "dba84f1d3e53f5357aa13451e5880419588ba7f0cfce4d93864b082a1ae19c1a",
+          "section": ".rodata.trade_animation_resources",
+          "section_base": "0x08300AFC",
+          "section_length": 51012,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "",
+          "section_offset": 240
+        }
+      ],
+      "final_text": "{COLOR DARK_GRAY}{HIGHLIGHT WHITE}{SHADOW LIGHT_GRAY}正在等待对方的回复……\n请稍等片刻。"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x08592B24",
+      "original": "0x08237DEA",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleArena",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleArena"
+    },
+    {
+      "address": "0x08592B10",
+      "original": "0x08237C1B",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleDomeDouble"
+    },
+    {
+      "address": "0x08592B0C",
+      "original": "0x08237BBB",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleDomeSingle"
+    },
+    {
+      "address": "0x08592B18",
+      "original": "0x08237CDB",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleFactoryDouble"
+    },
+    {
+      "address": "0x08592B14",
+      "original": "0x08237C7A",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleFactorySingle"
+    },
+    {
+      "address": "0x08592B20",
+      "original": "0x08237D93",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceDouble"
+    },
+    {
+      "address": "0x08592B1C",
+      "original": "0x08237D3B",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePalaceSingle"
+    },
+    {
+      "address": "0x08592B28",
+      "original": "0x08237E47",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattlePike",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePike"
+    },
+    {
+      "address": "0x08592B2C",
+      "original": "0x08237EA0",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattlePyramid",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattlePyramid"
+    },
+    {
+      "address": "0x08592B04",
+      "original": "0x08237B0D",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerDouble"
+    },
+    {
+      "address": "0x08592B08",
+      "original": "0x08237B64",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerMulti"
+    },
+    {
+      "address": "0x08592B00",
+      "original": "0x08237AB5",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_ChallengeBattleTowerSingle"
+    },
+    {
+      "address": "0x08592B54",
+      "original": "0x082382E3",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleArena",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleArena"
+    },
+    {
+      "address": "0x08592B40",
+      "original": "0x0823812D",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleDomeDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleDomeDouble"
+    },
+    {
+      "address": "0x08592B3C",
+      "original": "0x082380D4",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleDomeSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleDomeSingle"
+    },
+    {
+      "address": "0x08592B48",
+      "original": "0x082381DF",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleFactoryDouble"
+    },
+    {
+      "address": "0x08592B44",
+      "original": "0x08238185",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleFactorySingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleFactorySingle"
+    },
+    {
+      "address": "0x08592B50",
+      "original": "0x0823828E",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattlePalaceDouble"
+    },
+    {
+      "address": "0x08592B4C",
+      "original": "0x08238238",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattlePalaceSingle"
+    },
+    {
+      "address": "0x08592B58",
+      "original": "0x08238339",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattlePike",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattlePike"
+    },
+    {
+      "address": "0x08592B5C",
+      "original": "0x0823838B",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattlePyramid",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattlePyramid"
+    },
+    {
+      "address": "0x08592B34",
+      "original": "0x0823802A",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleTowerDouble",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerDouble"
+    },
+    {
+      "address": "0x08592B38",
+      "original": "0x0823807F",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleTowerMulti",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerMulti"
+    },
+    {
+      "address": "0x08592B30",
+      "original": "0x08237FD4",
+      "symbol": "Chs_ChecklistLiteral_438_BattleFrontier_Lounge3_Text_GetToBattleTowerSingle",
+      "source_symbol": "BattleFrontier_Lounge3_Text_GetToBattleTowerSingle"
+    },
+    {
+      "address": "0x0859285C",
+      "original": "0x085CC107",
+      "symbol": "Chs_ChecklistLiteral_438_gText_BlastoiseDoll256BP",
+      "source_symbol": "gText_BlastoiseDoll256BP"
+    },
+    {
+      "address": "0x085929A0",
+      "original": "0x085CC23D",
+      "symbol": "Chs_ChecklistLiteral_438_gText_BodySlam48BP",
+      "source_symbol": "gText_BodySlam48BP"
+    },
+    {
+      "address": "0x085928DC",
+      "original": "0x085CC1AC",
+      "symbol": "Chs_ChecklistLiteral_438_gText_BrightPowder64BP",
+      "source_symbol": "gText_BrightPowder64BP"
+    },
+    {
+      "address": "0x08592924",
+      "original": "0x085CB12B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Calcium1000",
+      "source_symbol": "gText_Calcium1000"
+    },
+    {
+      "address": "0x08592890",
+      "original": "0x085CC125",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Calcium1BP",
+      "source_symbol": "gText_Calcium1BP"
+    },
+    {
+      "address": "0x08592928",
+      "original": "0x085CB13B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Carbos1000",
+      "source_symbol": "gText_Carbos1000"
+    },
+    {
+      "address": "0x0859289C",
+      "original": "0x085CC152",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Carbos1BP",
+      "source_symbol": "gText_Carbos1BP"
+    },
+    {
+      "address": "0x08592858",
+      "original": "0x085CC0F8",
+      "symbol": "Chs_ChecklistLiteral_438_gText_CharizardDoll256BP",
+      "source_symbol": "gText_CharizardDoll256BP"
+    },
+    {
+      "address": "0x0859282C",
+      "original": "0x085CC0AD",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ChikoritaDoll80BP",
+      "source_symbol": "gText_ChikoritaDoll80BP"
+    },
+    {
+      "address": "0x085928E0",
+      "original": "0x085CC1BB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ChoiceBand64BP",
+      "source_symbol": "gText_ChoiceBand64BP"
+    },
+    {
+      "address": "0x08592820",
+      "original": "0x085CC080",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ClefairyDoll48BP",
+      "source_symbol": "gText_ClefairyDoll48BP"
+    },
+    {
+      "address": "0x085929A8",
+      "original": "0x085CC259",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Counter48BP",
+      "source_symbol": "gText_Counter48BP"
+    },
+    {
+      "address": "0x08592828",
+      "original": "0x085CC09E",
+      "symbol": "Chs_ChecklistLiteral_438_gText_CyndaquilDoll80BP",
+      "source_symbol": "gText_CyndaquilDoll80BP"
+    },
+    {
+      "address": "0x085929CC",
+      "original": "0x085CC283",
+      "symbol": "Chs_ChecklistLiteral_438_gText_DefenseCurl16BP",
+      "source_symbol": "gText_DefenseCurl16BP"
+    },
+    {
+      "address": "0x08592824",
+      "original": "0x085CC08F",
+      "symbol": "Chs_ChecklistLiteral_438_gText_DittoDoll48BP",
+      "source_symbol": "gText_DittoDoll48BP"
+    },
+    {
+      "address": "0x08035AB8",
+      "original": "0x085ABC8E",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Draw",
+      "source_symbol": "gText_Draw"
+    },
+    {
+      "address": "0x08592994",
+      "original": "0x085CC213",
+      "symbol": "Chs_ChecklistLiteral_438_gText_DreamEater24BP",
+      "source_symbol": "gText_DreamEater24BP"
+    },
+    {
+      "address": "0x085929E0",
+      "original": "0x085CC2C9",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Endure48BP",
+      "source_symbol": "gText_Endure48BP"
+    },
+    {
+      "address": "0x0859290C",
+      "original": "0x085CB0CB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_EnergyPowder50",
+      "source_symbol": "gText_EnergyPowder50"
+    },
+    {
+      "address": "0x08592910",
+      "original": "0x085CB0DB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_EnergyRoot80",
+      "source_symbol": "gText_EnergyRoot80"
+    },
+    {
+      "address": "0x085929F0",
+      "original": "0x085CC301",
+      "symbol": "Chs_ChecklistLiteral_438_gText_FirePunch48BP",
+      "source_symbol": "gText_FirePunch48BP"
+    },
+    {
+      "address": "0x085928E8",
+      "original": "0x085CC1D9",
+      "symbol": "Chs_ChecklistLiteral_438_gText_FocusBand64BP",
+      "source_symbol": "gText_FocusBand64BP"
+    },
+    {
+      "address": "0x0817928C",
+      "original": "0x085CBDF7",
+      "symbol": "Chs_ChecklistLiteral_438_gText_GamePlayCannotBeContinued",
+      "source_symbol": "gText_GamePlayCannotBeContinued"
+    },
+    {
+      "address": "0x08592930",
+      "original": "0x085CB15B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_HPUp1000",
+      "source_symbol": "gText_HPUp1000"
+    },
+    {
+      "address": "0x08592914",
+      "original": "0x085CB0EB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_HealPowder50",
+      "source_symbol": "gText_HealPowder50"
+    },
+    {
+      "address": "0x085928A0",
+      "original": "0x085CC161",
+      "symbol": "Chs_ChecklistLiteral_438_gText_HpUp1BP",
+      "source_symbol": "gText_HpUp1BP"
+    },
+    {
+      "address": "0x085929E8",
+      "original": "0x085CC2E5",
+      "symbol": "Chs_ChecklistLiteral_438_gText_IcePunch48BP",
+      "source_symbol": "gText_IcePunch48BP"
+    },
+    {
+      "address": "0x085929DC",
+      "original": "0x085CC2BB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_IcyWind24BP",
+      "source_symbol": "gText_IcyWind24BP"
+    },
+    {
+      "address": "0x08592920",
+      "original": "0x085CB11B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Iron1000",
+      "source_symbol": "gText_Iron1000"
+    },
+    {
+      "address": "0x08592894",
+      "original": "0x085CC134",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Iron1BP",
+      "source_symbol": "gText_Iron1BP"
+    },
+    {
+      "address": "0x085928E4",
+      "original": "0x085CC1CA",
+      "symbol": "Chs_ChecklistLiteral_438_gText_KingsRock64BP",
+      "source_symbol": "gText_KingsRock64BP"
+    },
+    {
+      "address": "0x08592810",
+      "original": "0x085CC044",
+      "symbol": "Chs_ChecklistLiteral_438_gText_KissCushion32BP",
+      "source_symbol": "gText_KissCushion32BP"
+    },
+    {
+      "address": "0x0859280C",
+      "original": "0x085CC035",
+      "symbol": "Chs_ChecklistLiteral_438_gText_KissPoster16BP",
+      "source_symbol": "gText_KissPoster16BP"
+    },
+    {
+      "address": "0x0859284C",
+      "original": "0x085CC0CB",
+      "symbol": "Chs_ChecklistLiteral_438_gText_LaprasDoll128BP",
+      "source_symbol": "gText_LaprasDoll128BP"
+    },
+    {
+      "address": "0x085928CC",
+      "original": "0x085CC170",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Leftovers48BP",
+      "source_symbol": "gText_Leftovers48BP"
+    },
+    {
+      "address": "0x08035B70",
+      "original": "0x085ABC88",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Loss",
+      "source_symbol": "gText_Loss"
+    },
+    {
+      "address": "0x08035BA8",
+      "original": "0x085ABC88",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Loss",
+      "source_symbol": "gText_Loss"
+    },
+    {
+      "address": "0x08035BC4",
+      "original": "0x085ABC88",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Loss",
+      "source_symbol": "gText_Loss"
+    },
+    {
+      "address": "0x0859299C",
+      "original": "0x085CC22F",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MegaKick48BP",
+      "source_symbol": "gText_MegaKick48BP"
+    },
+    {
+      "address": "0x08592998",
+      "original": "0x085CC221",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MegaPunch24BP",
+      "source_symbol": "gText_MegaPunch24BP"
+    },
+    {
+      "address": "0x085928D8",
+      "original": "0x085CC19D",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MentalHerb48BP",
+      "source_symbol": "gText_MentalHerb48BP"
+    },
+    {
+      "address": "0x0859281C",
+      "original": "0x085CC071",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MeowthDoll48BP",
+      "source_symbol": "gText_MeowthDoll48BP"
+    },
+    {
+      "address": "0x08160D30",
+      "original": "0x085ADA42",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MoveRelearnerAndPoof",
+      "source_symbol": "gText_MoveRelearnerAndPoof"
+    },
+    {
+      "address": "0x085929D4",
+      "original": "0x085CC29F",
+      "symbol": "Chs_ChecklistLiteral_438_gText_MudSlap24BP",
+      "source_symbol": "gText_MudSlap24BP"
+    },
+    {
+      "address": "0x0859288C",
+      "original": "0x085CC116",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Protein1BP",
+      "source_symbol": "gText_Protein1BP"
+    },
+    {
+      "address": "0x085929E4",
+      "original": "0x085CC2D7",
+      "symbol": "Chs_ChecklistLiteral_438_gText_PsychUp48BP",
+      "source_symbol": "gText_PsychUp48BP"
+    },
+    {
+      "address": "0x085928D4",
+      "original": "0x085CC18E",
+      "symbol": "Chs_ChecklistLiteral_438_gText_QuickClaw48BP",
+      "source_symbol": "gText_QuickClaw48BP"
+    },
+    {
+      "address": "0x085929A4",
+      "original": "0x085CC24B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_RockSlide48BP",
+      "source_symbol": "gText_RockSlide48BP"
+    },
+    {
+      "address": "0x08159A28",
+      "original": "0x085ABB86",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SafariZoneMenu",
+      "source_symbol": "gText_SafariZoneMenu"
+    },
+    {
+      "address": "0x081791FC",
+      "original": "0x085CBE50",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SaveCompleteGameCannotContinue",
+      "source_symbol": "gText_SaveCompleteGameCannotContinue"
+    },
+    {
+      "address": "0x08179240",
+      "original": "0x085CBE90",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SaveCompletePressA",
+      "source_symbol": "gText_SaveCompletePressA"
+    },
+    {
+      "address": "0x0817910C",
+      "original": "0x085CBD6B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SaveFailedCheckingBackup",
+      "source_symbol": "gText_SaveFailedCheckingBackup"
+    },
+    {
+      "address": "0x081791CC",
+      "original": "0x085CBD6B",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SaveFailedCheckingBackup",
+      "source_symbol": "gText_SaveFailedCheckingBackup"
+    },
+    {
+      "address": "0x085928EC",
+      "original": "0x085CC1E8",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ScopeLens64BP",
+      "source_symbol": "gText_ScopeLens64BP"
+    },
+    {
+      "address": "0x08592990",
+      "original": "0x085CC205",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SeismicToss24BP",
+      "source_symbol": "gText_SeismicToss24BP"
+    },
+    {
+      "address": "0x08592814",
+      "original": "0x085CC053",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SmoochumDoll32BP",
+      "source_symbol": "gText_SmoochumDoll32BP"
+    },
+    {
+      "address": "0x085929D0",
+      "original": "0x085CC291",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Snore24BP",
+      "source_symbol": "gText_Snore24BP"
+    },
+    {
+      "address": "0x08592850",
+      "original": "0x085CC0DA",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SnorlaxDoll128BP",
+      "source_symbol": "gText_SnorlaxDoll128BP"
+    },
+    {
+      "address": "0x0859298C",
+      "original": "0x085CC1F7",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Softboiled16BP",
+      "source_symbol": "gText_Softboiled16BP"
+    },
+    {
+      "address": "0x085929D8",
+      "original": "0x085CC2AD",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Swift24BP",
+      "source_symbol": "gText_Swift24BP"
+    },
+    {
+      "address": "0x085929B0",
+      "original": "0x085CC275",
+      "symbol": "Chs_ChecklistLiteral_438_gText_SwordsDance48BP",
+      "source_symbol": "gText_SwordsDance48BP"
+    },
+    {
+      "address": "0x085929EC",
+      "original": "0x085CC2F3",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ThunderPunch48BP",
+      "source_symbol": "gText_ThunderPunch48BP"
+    },
+    {
+      "address": "0x085929AC",
+      "original": "0x085CC267",
+      "symbol": "Chs_ChecklistLiteral_438_gText_ThunderWave48BP",
+      "source_symbol": "gText_ThunderWave48BP"
+    },
+    {
+      "address": "0x08592818",
+      "original": "0x085CC062",
+      "symbol": "Chs_ChecklistLiteral_438_gText_TogepiDoll48BP",
+      "source_symbol": "gText_TogepiDoll48BP"
+    },
+    {
+      "address": "0x08592830",
+      "original": "0x085CC0BC",
+      "symbol": "Chs_ChecklistLiteral_438_gText_TotodileDoll80BP",
+      "source_symbol": "gText_TotodileDoll80BP"
+    },
+    {
+      "address": "0x08592854",
+      "original": "0x085CC0E9",
+      "symbol": "Chs_ChecklistLiteral_438_gText_VenusaurDoll256BP",
+      "source_symbol": "gText_VenusaurDoll256BP"
+    },
+    {
+      "address": "0x085928D0",
+      "original": "0x085CC17F",
+      "symbol": "Chs_ChecklistLiteral_438_gText_WhiteHerb48BP",
+      "source_symbol": "gText_WhiteHerb48BP"
+    },
+    {
+      "address": "0x08035B6C",
+      "original": "0x085ABC82",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Win",
+      "source_symbol": "gText_Win"
+    },
+    {
+      "address": "0x08035BA4",
+      "original": "0x085ABC82",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Win",
+      "source_symbol": "gText_Win"
+    },
+    {
+      "address": "0x08035BC0",
+      "original": "0x085ABC82",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Win",
+      "source_symbol": "gText_Win"
+    },
+    {
+      "address": "0x0813C578",
+      "original": "0x08593801",
+      "symbol": "Chs_ChecklistLiteral_438_gText_WinLoseDraw",
+      "source_symbol": "gText_WinLoseDraw"
+    },
+    {
+      "address": "0x08592898",
+      "original": "0x085CC143",
+      "symbol": "Chs_ChecklistLiteral_438_gText_Zinc1BP",
+      "source_symbol": "gText_Zinc1BP"
+    },
+    {
+      "address": "0x08016C74",
+      "original": "0x082C1D60",
+      "symbol": "Chs_ChecklistLiteral_438_sText_NameWantedOfferLv",
+      "source_symbol": "sText_NameWantedOfferLv"
+    },
+    {
+      "address": "0x08300BE4",
+      "original": "0x08300B75",
+      "symbol": "Chs_ChecklistLiteral_438_sText_OnlyPkmnForBattle",
+      "source_symbol": "sText_OnlyPkmnForBattle"
+    },
+    {
+      "address": "0x08300BE0",
+      "original": "0x08300B59",
+      "symbol": "Chs_ChecklistLiteral_438_sText_TheTradeHasBeenCanceled",
+      "source_symbol": "sText_TheTradeHasBeenCanceled"
+    },
+    {
+      "address": "0x08300BEC",
+      "original": "0x08300B9E",
+      "symbol": "Chs_ChecklistLiteral_438_sText_WaitingForYourFriend",
+      "source_symbol": "sText_WaitingForYourFriend"
+    }
+  ],
+  "active_definition_count": 95,
+  "active_reference_count": 100,
+  "language_rules": []
+}

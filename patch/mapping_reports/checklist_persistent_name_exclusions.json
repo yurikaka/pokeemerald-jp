@@ -1,0 +1,21 @@
+{
+  "excluded": [
+    {
+      "batch": "431_checklist_interface.json",
+      "address": "0x08070444",
+      "original": "0x085C8C62",
+      "symbol": "Chs_Checklist_gText_EggNickname",
+      "source_symbol": "gText_EggNickname",
+      "reason": "../pokeemerald_wokann_dev/src/daycare.c:2230: CreateEgg passes gText_EggNickname to SetMonData(MON_DATA_NICKNAME)."
+    },
+    {
+      "batch": "431_checklist_interface.json",
+      "address": "0x080704C8",
+      "original": "0x085C8C62",
+      "symbol": "Chs_Checklist_gText_EggNickname",
+      "source_symbol": "gText_EggNickname",
+      "reason": "../pokeemerald_wokann_dev/src/daycare.c:2313: SetInitialEggData passes gText_EggNickname to SetMonData(MON_DATA_NICKNAME)."
+    }
+  ],
+  "policy": "Only display consumers may use Chinese egg labels; both original egg nickname constructors retain JP text."
+}

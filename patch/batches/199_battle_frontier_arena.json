@@ -261,7 +261,7 @@
     {
       "name": "Chs_BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules",
       "source_symbol": "BattleFrontier_BattleArenaLobby_Text_ExplainSkillRules",
-      "us_encoded_hex": "0321a304600a2d034d10eb10070c0cb105a7b237fe105504600f420c7b0a7b05c6016307d70966030bfa10430c02099410a137fb0b6704c310430c02024b046e0bd80e323bfe05a7030b0a7b05c6077d056e0bad0bdb37fb0b6704c310430c020bf50f710be3013b3bfe05a7030b0a7b05c61007056e0de6070737fb03790f88046d058410430c023bfe0b6704c310430c02b10e3204c307a805bcb2030b053d3bfa05a7030b0a7b05c6077d056e0bad0bdb37fa0b6704c3b109530f7e0e3204c3b2030b053d3bfa05a7030b0a7b05c6077d056e0de6070737fb03790f880e1e0160053104f307c20289030b10430c023bfe05a7030b0a7b05c60c0c01d6056e0bad0bdb030b37fb0b6704c303790c1b0bf50f71089e01600531057f07c20289030f10430c023bfe059f0bf509f0030b016307d70966095309d2024b046e099410a13bfa05a7030b0a7b05c60f0201d6056e0de6070737ff"
+      "us_encoded_hex": "0321a304600a2d034d10eb10070c0cb105a7b237fe105504600f420c7b0a7b05c6016307d70966030bfa10430c02099410a137fb0b6704c310430c02024b046e0bd80e323bfe05a7030b0a7b05c6077d056e0bad0bdb37fb0b6704c310430c020bf50f710be3013b3bfe05a7030b0a7b05c61007056e0de6070737fb03790f88046d058410430c023bfe0b6704c310430c02b10e3204c307a805bcb2030b053d3bfa05a7030b0a7b05c6077d056e0bad0bdb37fa0b6704c3b10e3204c301d605bcb2030b053d3bfa05a7030b0a7b05c6077d056e0de6070737fb03790f880e1e0160053104f307c20289030b10430c023bfe05a7030b0a7b05c60c0c01d6056e0bad0bdb030b37fb0b6704c303790c1b0bf50f71089e01600531057f07c20289030f10430c023bfe059f0bf509f0030b016307d70966095309d2024b046e099410a13bfa05a7030b0a7b05c60f0201d6056e0de6070737ff"
     },
     {
       "name": "Chs_BattleFrontier_BattleArenaLobby_Text_ExplainBodyRules",
@@ -316,7 +316,7 @@
     {
       "name": "Chs_BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen",
       "source_symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLvOpen",
-      "us_encoded_hex": "11280764030b0cf5103010523cfb09f009d2048301e905be03791030030bfe016307d7096601d60934a4108c37fb09f00e730ef110eb0175a4108cfe01d60d1410a70855030b016307d709663bfb0aeb0b430c9f095f03d901ad0e3a02d801d60d140307078ffe01e007d701e905be0379103037fb02ab0d4a3b02eefd0237ff",
+      "us_encoded_hex": "11280764030b0cf5103010523cfb09f009d2048301e905be03791030030bfe016307d7096601d60934a4108c37fb09f00e730ef110eb0175a4108cfe01d60d1410a70855030b016307d709663bfb0aeb0b430c9f095f03d901ad0e3a02d801d60d140307078ffe01e007d701e905be0379103037fb02ab0d4a3b0de608a3016307d7096601d609d201e905be3efe02eefd0237fb10eb017504e905223bfe0b0d0fe50829012837ff",
       "japanese_placeholders": [
         2
       ]
@@ -324,10 +324,18 @@
     {
       "name": "Chs_BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
       "source_symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
-      "us_encoded_hex": "11280764030b0cf5103010523cfb09f009d2048301e905be03791030030bfe016307d7096601d60934a4108c37fb09f00e730ef110eb0175a4108c030f05a1a6a10f2409d0030bfe01d60d1410a70855030b016307d709663bfb0aeb0b430c9f095f03d901ad0e3a02d801d60d140307078ffe01e007d701e905be0379103037fb02ab0d4a3b02eefd0237ff",
+      "us_encoded_hex": "11280764030b0cf5103010523cfb09f009d2048301e905be03791030030bfe016307d7096601d60934a4108c37fb09f00e730ef110eb0175a4108c030f05a1a6a10f2409d0030bfe01d60d1410a70855030b016307d709663bfb0aeb0b430c9f095f03d901ad0e3a02d801d60d140307078ffe01e007d701e905be0379103037fb02ab0d4a3b0de608a3016307d7096601d609d201e905be3efe02eefd0237fb10eb017504e905223bfe0b0d0fe50829012837ff",
       "japanese_placeholders": [
         2
       ]
+    },
+    {
+      "name": "Chs_FrontierBannedListEndNewline",
+      "us_encoded_hex": "feff"
+    },
+    {
+      "name": "Chs_FrontierBannedListEndPrompt",
+      "us_encoded_hex": "faff"
     }
   ],
   "reference_writes": [
@@ -816,6 +824,16 @@
       "original": "0x0822F9F8",
       "symbol": "Chs_BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50",
       "source_symbol": "BattleFrontier_BattleArenaLobby_Text_NotEnoughValidMonsLv50"
+    },
+    {
+      "address": "0x081A3E58",
+      "original": "0x085ABC72",
+      "symbol": "Chs_FrontierBannedListEndNewline"
+    },
+    {
+      "address": "0x081A3E68",
+      "original": "0x085ABC75",
+      "symbol": "Chs_FrontierBannedListEndPrompt"
     }
   ],
   "mapping_report": {

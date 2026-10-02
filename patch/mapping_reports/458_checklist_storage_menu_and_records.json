@@ -1,0 +1,264 @@
+{
+  "policy": "Exact Wokann JP source bytes and literal/typed-object references; only explicitly reviewed placeholder producers are permitted; existing writes, persistent nickname constructors and computed Blender name blocks are excluded.",
+  "mapping": [
+    {
+      "symbol": "gText_DepositMonDescription",
+      "document_line": 1137,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 745,
+          "encoded_hex": "13231119009f59737e2d000000000000000000fe9aa0585d1600013e0929000a14370044071f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1F0",
+          "original": "0x085CB4A2",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 12
+        }
+      ],
+      "final_text": "可以将当前队伍中的宝可梦\n寄放到电脑中。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_DepositPokemon",
+      "document_line": 1138,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 668,
+          "encoded_hex": "9f59737e2d00013e092900ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1EC",
+          "original": "0x085CB455",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 8
+        }
+      ],
+      "final_text": "寄放宝可梦",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_MoveItems",
+      "document_line": 1366,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 692,
+          "encoded_hex": "4503390e0228ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1FC",
+          "original": "0x085CB46D",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "整理持有物",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_MoveItemsDescription",
+      "document_line": 1367,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 825,
+          "encoded_hex": "9f59737e37002350130229004503392dfe0e02280044071f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B200",
+          "original": "0x085CB4F2",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 28
+        }
+      ],
+      "final_text": "可以整理当前所有宝可梦\n的持有物。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_MoveMonDescription",
+      "document_line": 1368,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 785,
+          "encoded_hex": "9aa0585d1600013e09130229009f59737e2400fe13231119009f59737e2d000e02280044071f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1F8",
+          "original": "0x085CB4CA",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "可以整理当前队伍以及\n盒子中寄放的所有宝可梦。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_MovePokemon",
+      "document_line": 1369,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 680,
+          "encoded_hex": "9aa0585d2d000e02280d29ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1F4",
+          "original": "0x085CB461",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "整理宝可梦",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_SeeYa",
+      "document_line": 1577,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 699,
+          "encoded_hex": "0b26031527ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B204",
+          "original": "0x085CB474",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854B1E4",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B1E4",
+          "section_length": 40,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B1E4",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "再见！",
+      "placeholder_contract": null,
+      "language_options": {}
+    }
+  ]
+}

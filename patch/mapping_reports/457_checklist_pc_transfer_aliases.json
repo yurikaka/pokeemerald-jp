@@ -1,0 +1,60 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_PkmnTransferredLanettesPC",
+      "references": [
+        {
+          "address": "0x08244222",
+          "proof": "Wokann data/scripts/pc_transfer.inc:37 EventScript_TransferredLanettesPC msgbox; compiled event msgbox word verified by object relocation (checklist_object_references.json entry 55311). Script buffers STR_VAR_1 box name and STR_VAR_2 species before the msgbox, matching the payload japanese_placeholders [2,3]."
+        },
+        {
+          "address": "0x0856585C",
+          "proof": "Wokann src/naming_screen.c gUnknown_8565858 table entry 1 points at the same JP original 0x08243E2A. The printing path expands the selected template with StringExpandPlaceholders after filling gStringVar1..3 (_080E2B1A/_080E2B90); same template, same slots, only display."
+        }
+      ]
+    },
+    {
+      "symbol": "gText_PkmnTransferredLanettesPCBoxFull",
+      "references": [
+        {
+          "address": "0x08244234",
+          "proof": "Wokann data/scripts/pc_transfer.inc:43 EventScript_LanettesPCBoxFull msgbox; verified event msgbox word. Script buffers STR_VAR_3 with the full box name in addition to STR_VAR_1/2, matching payload japanese_placeholders [2,3,4]."
+        },
+        {
+          "address": "0x08565864",
+          "proof": "Wokann src/naming_screen.c gUnknown_8565858 table entry 3, selected by the _080E2B1A loop (r5=2/3) and expanded with StringExpandPlaceholders; the JP original 0x08243E80 and its placeholder slots are unchanged."
+        }
+      ]
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x08244222",
+      "original": "0x08243E2A",
+      "symbol": "Chs_gText_PkmnTransferredLanettesPC",
+      "source_symbol": "gText_PkmnTransferredLanettesPC"
+    },
+    {
+      "address": "0x08244234",
+      "original": "0x08243E80",
+      "symbol": "Chs_gText_PkmnTransferredLanettesPCBoxFull",
+      "source_symbol": "gText_PkmnTransferredLanettesPCBoxFull"
+    },
+    {
+      "address": "0x0856585C",
+      "original": "0x08243E2A",
+      "symbol": "Chs_gText_PkmnTransferredLanettesPC",
+      "source_symbol": "gText_PkmnTransferredLanettesPC"
+    },
+    {
+      "address": "0x08565864",
+      "original": "0x08243E80",
+      "symbol": "Chs_gText_PkmnTransferredLanettesPCBoxFull",
+      "source_symbol": "gText_PkmnTransferredLanettesPCBoxFull"
+    }
+  ],
+  "active_definition_count": 0,
+  "active_reference_count": 4,
+  "language_rules": []
+}

@@ -1,0 +1,116 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_AwesomeWonF701F700",
+      "document_line": 916,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE36",
+          "offset": 0,
+          "encoded_hex": "0e020e073700260650101944fef7002d00f7010a009d7a8f7e64abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE36",
+          "offset": 0,
+          "encoded_hex": "0e020e073700260650101944fef7002d00f7010a009d7a8f7e64abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802D56C",
+          "original": "0x085CCE36",
+          "object": "build/pokeemerald-jp/src/pokemon_jump.o",
+          "object_sha256": "fa74fc0386b568031cb2372445f44e93b782f437ecad5581b71d97ca280bf292",
+          "section": ".text.PrintPrizeMessage",
+          "section_base": "0x0802D4DC",
+          "section_length": 152,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_AwesomeWonF701F700",
+          "section_offset": 144
+        }
+      ],
+      "final_text": "了不起的得分！\n你赢得了{DYNAMIC 1} {DYNAMIC 0}！"
+    },
+    {
+      "symbol": "gText_FirstPlacePrize",
+      "document_line": 1207,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts109.h",
+          "text": "1ばんに　なった　ひとに\n{SE_M_HYPER_BEAM2}を　プレゼント！！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08029BB0",
+          "original": "0x085CCD86",
+          "object": "build/pokeemerald-jp/src/dodrio_berry_picking.o",
+          "object_sha256": "8840191e71514bb3fe962c0e74aadd30d4fddae0b3402caa9c8fa871b62dddbb",
+          "section": ".text.sub_080295A4",
+          "section_base": "0x080295A4",
+          "section_length": 1924,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_FirstPlacePrize",
+          "section_offset": 1548
+        }
+      ],
+      "final_text": "第1名将获得\n这个{DYNAMIC 0}！"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0802D56C",
+      "original": "0x085CCE36",
+      "symbol": "Chs_ChecklistLiteral_441_gText_AwesomeWonF701F700",
+      "source_symbol": "gText_AwesomeWonF701F700"
+    },
+    {
+      "address": "0x08029BB0",
+      "original": "0x085CCD86",
+      "symbol": "Chs_ChecklistLiteral_441_gText_FirstPlacePrize",
+      "source_symbol": "gText_FirstPlacePrize"
+    }
+  ],
+  "active_definition_count": 2,
+  "active_reference_count": 2,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_441_gText_AwesomeWonF701F700",
+      "source_symbol": "gText_AwesomeWonF701F700",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/pokemon_jump.c:2724: PrintPrizeMessage uses CopyItemName in slot 0 and ConvertIntToDecimalStringN in slot 1; itemName/itemQuantityStr are 64 bytes and prizeMsg is 256 bytes.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. ItemId_GetName is already redirected to ChsItemNames, whose strings carry ENG; numeric slot retains original JP digit encoding. This change only redirects the message template."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_441_gText_FirstPlacePrize",
+      "source_symbol": "gText_FirstPlacePrize",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/dodrio_berry_picking.c:4670: CopyItemName populates gStringVar1 and DynamicPlaceholderTextUtil_SetPlaceholderPtr slot 0 before message expansion; gStringVar4 is the output.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. ItemId_GetName is already redirected to ChsItemNames, whose strings carry ENG; numeric slot retains original JP digit encoding. This change only redirects the message template."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    }
+  ]
+}

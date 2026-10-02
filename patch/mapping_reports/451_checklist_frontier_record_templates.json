@@ -1,0 +1,250 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_BattleArena",
+      "document_line": 923,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルアリーナ"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4CC",
+          "original": "0x085CC442",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "对战竞技场",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleDome",
+      "document_line": 931,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルドーム"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4BC",
+          "original": "0x085CC42A",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "对战巨蛋",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleFactory",
+      "document_line": 935,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルファクトリー"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4D4",
+          "original": "0x085CC438",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 48
+        }
+      ],
+      "final_text": "对战工厂",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePalace",
+      "document_line": 941,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルパレス"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4C4",
+          "original": "0x085CC431",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "对战宫殿",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePike",
+      "document_line": 945,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルチューブ"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4DC",
+          "original": "0x085CC44A",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 56
+        }
+      ],
+      "final_text": "对战管道",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePyramid",
+      "document_line": 952,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts102.h",
+          "text": "バトルピラミッド"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085DD4E4",
+          "original": "0x085CC452",
+          "object": "src/frontier_util.c",
+          "source": {
+            "symbol": "gUnknown_85DD4A4",
+            "file": "src/frontier_util.c",
+            "first_pointer_offset": 0,
+            "pointer_end_offset": 80,
+            "pointer_stride": 4,
+            "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x085DD4A4",
+          "section_length": 96,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_85DD4A4",
+          "section_offset": 64
+        }
+      ],
+      "final_text": "对战金字塔",
+      "placeholder_contract": null,
+      "language_options": {}
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x085DD4CC",
+      "original": "0x085CC442",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattleArena",
+      "source_symbol": "gText_BattleArena"
+    },
+    {
+      "address": "0x085DD4BC",
+      "original": "0x085CC42A",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattleDome",
+      "source_symbol": "gText_BattleDome"
+    },
+    {
+      "address": "0x085DD4D4",
+      "original": "0x085CC438",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattleFactory",
+      "source_symbol": "gText_BattleFactory"
+    },
+    {
+      "address": "0x085DD4C4",
+      "original": "0x085CC431",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattlePalace",
+      "source_symbol": "gText_BattlePalace"
+    },
+    {
+      "address": "0x085DD4DC",
+      "original": "0x085CC44A",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattlePike",
+      "source_symbol": "gText_BattlePike"
+    },
+    {
+      "address": "0x085DD4E4",
+      "original": "0x085CC452",
+      "symbol": "Chs_ChecklistLiteral_451_gText_BattlePyramid",
+      "source_symbol": "gText_BattlePyramid"
+    }
+  ],
+  "active_definition_count": 6,
+  "active_reference_count": 6,
+  "language_rules": []
+}

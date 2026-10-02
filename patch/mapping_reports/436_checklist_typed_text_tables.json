@@ -1,0 +1,1476 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gPCText_Bag",
+      "document_line": 735,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 538,
+          "encoded_hex": "96a0891dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565BC",
+          "original": "0x085CB3D3",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 64
+        }
+      ],
+      "final_text": "放回包包",
+      "active_reference_addresses": [
+        "0x085565BC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Beach",
+      "document_line": 736,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 612,
+          "encoded_hex": "032049ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565F8",
+          "original": "0x085CB41D",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 124
+        }
+      ],
+      "final_text": "沙滩",
+      "active_reference_addresses": [
+        "0x085565F8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Cancel",
+      "document_line": 737,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 440,
+          "encoded_hex": "242229000000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0855657C",
+          "original": "0x085CB371",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 0
+        }
+      ],
+      "final_text": "取消",
+      "active_reference_addresses": [
+        "0x0855657C"
+      ]
+    },
+    {
+      "symbol": "gPCText_Cave",
+      "document_line": 738,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 607,
+          "encoded_hex": "45030812ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565F4",
+          "original": "0x085CB418",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 120
+        }
+      ],
+      "final_text": "洞窟",
+      "active_reference_addresses": [
+        "0x085565F4"
+      ]
+    },
+    {
+      "symbol": "gPCText_City",
+      "document_line": 739,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 580,
+          "encoded_hex": "5c6380ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565DC",
+          "original": "0x085CB3FD",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 96
+        }
+      ],
+      "final_text": "城市",
+      "active_reference_addresses": [
+        "0x085565DC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Crag",
+      "document_line": 740,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 593,
+          "encoded_hex": "022c241fff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565E8",
+          "original": "0x085CB40A",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 108
+        }
+      ],
+      "final_text": "石山",
+      "active_reference_addresses": [
+        "0x085565E8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Desert",
+      "document_line": 741,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 584,
+          "encoded_hex": "0b4608ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565E0",
+          "original": "0x085CB401",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 100
+        }
+      ],
+      "final_text": "沙漠",
+      "active_reference_addresses": [
+        "0x085565E0"
+      ]
+    },
+    {
+      "symbol": "gPCText_Etcetera",
+      "document_line": 742,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 566,
+          "encoded_hex": "54645e6477ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565D0",
+          "original": "0x085CB3EF",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 84
+        }
+      ],
+      "final_text": "其他",
+      "active_reference_addresses": [
+        "0x085565D0"
+      ]
+    },
+    {
+      "symbol": "gPCText_Forest",
+      "document_line": 743,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 577,
+          "encoded_hex": "2328ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565D8",
+          "original": "0x085CB3FA",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 92
+        }
+      ],
+      "final_text": "森林",
+      "active_reference_addresses": [
+        "0x085565D8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Friends",
+      "document_line": 744,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 572,
+          "encoded_hex": "41020d07ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565D4",
+          "original": "0x085CB3F5",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 88
+        }
+      ],
+      "final_text": "伙伴",
+      "active_reference_addresses": [
+        "0x085565D4"
+      ]
+    },
+    {
+      "symbol": "gPCText_Machine",
+      "document_line": 748,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 637,
+          "encoded_hex": "070602ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556610",
+          "original": "0x085CB436",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 148
+        }
+      ],
+      "final_text": "机器",
+      "active_reference_addresses": [
+        "0x08556610"
+      ]
+    },
+    {
+      "symbol": "gPCText_Mark",
+      "document_line": 749,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 496,
+          "encoded_hex": "6fae577e8900ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0855659C",
+          "original": "0x085CB3A9",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "标记",
+      "active_reference_addresses": [
+        "0x0855659C"
+      ]
+    },
+    {
+      "symbol": "gPCText_Move",
+      "document_line": 750,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 468,
+          "encoded_hex": "120621000000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556588",
+          "original": "0x085CB38D",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 12
+        }
+      ],
+      "final_text": "移动",
+      "active_reference_addresses": [
+        "0x08556588"
+      ]
+    },
+    {
+      "symbol": "gPCText_Name",
+      "document_line": 751,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 503,
+          "encoded_hex": "151f04000000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565A8",
+          "original": "0x085CB3B0",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 44
+        }
+      ],
+      "final_text": "名字",
+      "active_reference_addresses": [
+        "0x085565A8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Place",
+      "document_line": 752,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 475,
+          "encoded_hex": "0a0a16050800ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556590",
+          "original": "0x085CB394",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "放下",
+      "active_reference_addresses": [
+        "0x08556590"
+      ]
+    },
+    {
+      "symbol": "gPCText_Pokecenter",
+      "document_line": 753,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 632,
+          "encoded_hex": "9f595e7eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0855660C",
+          "original": "0x085CB431",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 144
+        }
+      ],
+      "final_text": "宝可梦中心",
+      "active_reference_addresses": [
+        "0x0855660C"
+      ]
+    },
+    {
+      "symbol": "gPCText_PolkaDot",
+      "document_line": 754,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 627,
+          "encoded_hex": "203e101fff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556608",
+          "original": "0x085CB42C",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 140
+        }
+      ],
+      "final_text": "圆点",
+      "active_reference_addresses": [
+        "0x08556608"
+      ]
+    },
+    {
+      "symbol": "gPCText_Release",
+      "document_line": 755,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 489,
+          "encoded_hex": "16370d000000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556598",
+          "original": "0x085CB3A2",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 28
+        }
+      ],
+      "final_text": "放生",
+      "active_reference_addresses": [
+        "0x08556598"
+      ]
+    },
+    {
+      "symbol": "gPCText_River",
+      "document_line": 756,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 621,
+          "encoded_hex": "062cff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556600",
+          "original": "0x085CB426",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 132
+        }
+      ],
+      "final_text": "河川",
+      "active_reference_addresses": [
+        "0x08556600"
+      ]
+    },
+    {
+      "symbol": "gPCText_Savanna",
+      "document_line": 757,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 588,
+          "encoded_hex": "5b967e65ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565E4",
+          "original": "0x085CB405",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 104
+        }
+      ],
+      "final_text": "热带草原",
+      "active_reference_addresses": [
+        "0x085565E4"
+      ]
+    },
+    {
+      "symbol": "gPCText_Scenery1",
+      "document_line": 758,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 548,
+          "encoded_hex": "1c030902a2ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565C4",
+          "original": "0x085CB3DD",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 72
+        }
+      ],
+      "final_text": "风景1",
+      "active_reference_addresses": [
+        "0x085565C4"
+      ]
+    },
+    {
+      "symbol": "gPCText_Scenery2",
+      "document_line": 759,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 554,
+          "encoded_hex": "1c030902a3ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565C8",
+          "original": "0x085CB3E3",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 76
+        }
+      ],
+      "final_text": "风景2",
+      "active_reference_addresses": [
+        "0x085565C8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Scenery3",
+      "document_line": 760,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 560,
+          "encoded_hex": "1c030902a4ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565CC",
+          "original": "0x085CB3E9",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 80
+        }
+      ],
+      "final_text": "风景3",
+      "active_reference_addresses": [
+        "0x085565CC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Seafloor",
+      "document_line": 761,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 616,
+          "encoded_hex": "06021302ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565FC",
+          "original": "0x085CB421",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 128
+        }
+      ],
+      "final_text": "海底",
+      "active_reference_addresses": [
+        "0x085565FC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Shift",
+      "document_line": 762,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 461,
+          "encoded_hex": "022a06042900ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0855658C",
+          "original": "0x085CB386",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "交换",
+      "active_reference_addresses": [
+        "0x0855658C"
+      ]
+    },
+    {
+      "symbol": "gPCText_Simple",
+      "document_line": 763,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 641,
+          "encoded_hex": "5c7e9d79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556614",
+          "original": "0x085CB43A",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 152
+        }
+      ],
+      "final_text": "朴素",
+      "active_reference_addresses": [
+        "0x08556614"
+      ]
+    },
+    {
+      "symbol": "gPCText_Sky",
+      "document_line": 764,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 624,
+          "encoded_hex": "0f27ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556604",
+          "original": "0x085CB429",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 136
+        }
+      ],
+      "final_text": "天空",
+      "active_reference_addresses": [
+        "0x08556604"
+      ]
+    },
+    {
+      "symbol": "gPCText_Snow",
+      "document_line": 765,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 602,
+          "encoded_hex": "2507241fff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565F0",
+          "original": "0x085CB413",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 116
+        }
+      ],
+      "final_text": "雪山",
+      "active_reference_addresses": [
+        "0x085565F0"
+      ]
+    },
+    {
+      "symbol": "gPCText_Store",
+      "document_line": 766,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 447,
+          "encoded_hex": "013e09290000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556580",
+          "original": "0x085CB378",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 4
+        }
+      ],
+      "final_text": "寄放",
+      "active_reference_addresses": [
+        "0x08556580"
+      ]
+    },
+    {
+      "symbol": "gPCText_Switch",
+      "document_line": 768,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 532,
+          "encoded_hex": "1428060429ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565B8",
+          "original": "0x085CB3CD",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 60
+        }
+      ],
+      "final_text": "移动",
+      "active_reference_addresses": [
+        "0x085565B8"
+      ]
+    },
+    {
+      "symbol": "gPCText_Take",
+      "document_line": 769,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 522,
+          "encoded_hex": "013e0629ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565AC",
+          "original": "0x085CB3C3",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 48
+        }
+      ],
+      "final_text": "取下",
+      "active_reference_addresses": [
+        "0x085565AC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Volcano",
+      "document_line": 770,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 598,
+          "encoded_hex": "063c2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565EC",
+          "original": "0x085CB40F",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 112
+        }
+      ],
+      "final_text": "火山",
+      "active_reference_addresses": [
+        "0x085565EC"
+      ]
+    },
+    {
+      "symbol": "gPCText_Wallpaper",
+      "document_line": 771,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 515,
+          "encoded_hex": "064937200000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x085565A4",
+          "original": "0x085CB3BC",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "壁纸",
+      "active_reference_addresses": [
+        "0x085565A4"
+      ]
+    },
+    {
+      "symbol": "gPCText_Withdraw",
+      "document_line": 772,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 454,
+          "encoded_hex": "122a13020800ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08556584",
+          "original": "0x085CB37F",
+          "object": "data/pokemon_storage/jp/0855657C.bin",
+          "source": "src/data/pokemon_storage_system.h",
+          "typed_table": {
+            "file": "src/pokemon_storage_system.c",
+            "line": 78,
+            "declaration": "extern const u8 *const gUnknown_855657C[];"
+          },
+          "binary_sha256": "013a7a08243fa43873de5babd0d875f5e97a5e970ccb75b4b90e5f339358ae00",
+          "section": "typed_text_pointer_resource",
+          "section_base": "0x0855657C",
+          "section_length": 156,
+          "relocation": "typed_u8_pointer_array",
+          "referenced_symbol": "gUnknown_855657C",
+          "section_offset": 8
+        }
+      ],
+      "final_text": "取出",
+      "active_reference_addresses": [
+        "0x08556584"
+      ]
+    }
+  ],
+  "current_batch_counts": {
+    "texts": 34,
+    "references": 34
+  },
+  "active_reference_writes": [
+    {
+      "address": "0x085565BC",
+      "original": "0x085CB3D3",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Bag",
+      "source_symbol": "gPCText_Bag"
+    },
+    {
+      "address": "0x085565F8",
+      "original": "0x085CB41D",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Beach",
+      "source_symbol": "gPCText_Beach"
+    },
+    {
+      "address": "0x0855657C",
+      "original": "0x085CB371",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Cancel",
+      "source_symbol": "gPCText_Cancel"
+    },
+    {
+      "address": "0x085565F4",
+      "original": "0x085CB418",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Cave",
+      "source_symbol": "gPCText_Cave"
+    },
+    {
+      "address": "0x085565DC",
+      "original": "0x085CB3FD",
+      "symbol": "Chs_ChecklistLiteral_gPCText_City",
+      "source_symbol": "gPCText_City"
+    },
+    {
+      "address": "0x085565E8",
+      "original": "0x085CB40A",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Crag",
+      "source_symbol": "gPCText_Crag"
+    },
+    {
+      "address": "0x085565E0",
+      "original": "0x085CB401",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Desert",
+      "source_symbol": "gPCText_Desert"
+    },
+    {
+      "address": "0x085565D0",
+      "original": "0x085CB3EF",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Etcetera",
+      "source_symbol": "gPCText_Etcetera"
+    },
+    {
+      "address": "0x085565D8",
+      "original": "0x085CB3FA",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Forest",
+      "source_symbol": "gPCText_Forest"
+    },
+    {
+      "address": "0x085565D4",
+      "original": "0x085CB3F5",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Friends",
+      "source_symbol": "gPCText_Friends"
+    },
+    {
+      "address": "0x08556610",
+      "original": "0x085CB436",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Machine",
+      "source_symbol": "gPCText_Machine"
+    },
+    {
+      "address": "0x0855659C",
+      "original": "0x085CB3A9",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Mark",
+      "source_symbol": "gPCText_Mark"
+    },
+    {
+      "address": "0x08556588",
+      "original": "0x085CB38D",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Move",
+      "source_symbol": "gPCText_Move"
+    },
+    {
+      "address": "0x085565A8",
+      "original": "0x085CB3B0",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Name",
+      "source_symbol": "gPCText_Name"
+    },
+    {
+      "address": "0x08556590",
+      "original": "0x085CB394",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Place",
+      "source_symbol": "gPCText_Place"
+    },
+    {
+      "address": "0x0855660C",
+      "original": "0x085CB431",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Pokecenter",
+      "source_symbol": "gPCText_Pokecenter"
+    },
+    {
+      "address": "0x08556608",
+      "original": "0x085CB42C",
+      "symbol": "Chs_ChecklistLiteral_gPCText_PolkaDot",
+      "source_symbol": "gPCText_PolkaDot"
+    },
+    {
+      "address": "0x08556598",
+      "original": "0x085CB3A2",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Release",
+      "source_symbol": "gPCText_Release"
+    },
+    {
+      "address": "0x08556600",
+      "original": "0x085CB426",
+      "symbol": "Chs_ChecklistLiteral_gPCText_River",
+      "source_symbol": "gPCText_River"
+    },
+    {
+      "address": "0x085565E4",
+      "original": "0x085CB405",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Savanna",
+      "source_symbol": "gPCText_Savanna"
+    },
+    {
+      "address": "0x085565C4",
+      "original": "0x085CB3DD",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Scenery1",
+      "source_symbol": "gPCText_Scenery1"
+    },
+    {
+      "address": "0x085565C8",
+      "original": "0x085CB3E3",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Scenery2",
+      "source_symbol": "gPCText_Scenery2"
+    },
+    {
+      "address": "0x085565CC",
+      "original": "0x085CB3E9",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Scenery3",
+      "source_symbol": "gPCText_Scenery3"
+    },
+    {
+      "address": "0x085565FC",
+      "original": "0x085CB421",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Seafloor",
+      "source_symbol": "gPCText_Seafloor"
+    },
+    {
+      "address": "0x0855658C",
+      "original": "0x085CB386",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Shift",
+      "source_symbol": "gPCText_Shift"
+    },
+    {
+      "address": "0x08556614",
+      "original": "0x085CB43A",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Simple",
+      "source_symbol": "gPCText_Simple"
+    },
+    {
+      "address": "0x08556604",
+      "original": "0x085CB429",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Sky",
+      "source_symbol": "gPCText_Sky"
+    },
+    {
+      "address": "0x085565F0",
+      "original": "0x085CB413",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Snow",
+      "source_symbol": "gPCText_Snow"
+    },
+    {
+      "address": "0x08556580",
+      "original": "0x085CB378",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Store",
+      "source_symbol": "gPCText_Store"
+    },
+    {
+      "address": "0x085565B8",
+      "original": "0x085CB3CD",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Switch",
+      "source_symbol": "gPCText_Switch"
+    },
+    {
+      "address": "0x085565AC",
+      "original": "0x085CB3C3",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Take",
+      "source_symbol": "gPCText_Take"
+    },
+    {
+      "address": "0x085565EC",
+      "original": "0x085CB40F",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Volcano",
+      "source_symbol": "gPCText_Volcano"
+    },
+    {
+      "address": "0x085565A4",
+      "original": "0x085CB3BC",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Wallpaper",
+      "source_symbol": "gPCText_Wallpaper"
+    },
+    {
+      "address": "0x08556584",
+      "original": "0x085CB37F",
+      "symbol": "Chs_ChecklistLiteral_gPCText_Withdraw",
+      "source_symbol": "gPCText_Withdraw"
+    }
+  ],
+  "active_definition_count": 34,
+  "active_reference_count": 34,
+  "language_rules": []
+}

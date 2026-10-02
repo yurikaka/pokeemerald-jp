@@ -1,0 +1,617 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "sText_InGamePartnerSentOutZGoN",
+      "document_line": 2564,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABE13",
+          "offset": 0,
+          "encoded_hex": "fd321900fd331afefd072d000828410c10abfa250950ab00fd05abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABE13",
+          "offset": 0,
+          "encoded_hex": "fd321900fd331afefd072d000828410c10abfa250950ab00fd05abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E380",
+          "original": "0x085ABE13",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABD3C",
+          "section_offset": 508
+        }
+      ],
+      "final_text": "{B_PARTNER_CLASS}{B_PARTNER_NAME}\n派出了{B_PLAYER_MON2_NAME}！\\l上吧！{B_PLAYER_MON1_NAME}！"
+    },
+    {
+      "symbol": "sText_LinkPartnerSentOutPkmnGoPkmn",
+      "document_line": 2567,
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "{B_LINK_PARTNER_NAME}は　{B_LINK_PLAYER_MON2_NAME}を　くりだした！\nゆけっ！　{B_LINK_PLAYER_MON1_NAME}！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E3AC",
+          "original": "0x085AAF8E",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85A9544",
+          "section_offset": 552
+        }
+      ],
+      "final_text": "{B_LINK_PARTNER_NAME}派出了{B_LINK_PLAYER_MON2_NAME}！\n上吧！{B_LINK_PLAYER_MON1_NAME}！"
+    },
+    {
+      "symbol": "sText_LinkTrainer2WithdrewPkmn",
+      "document_line": 2568,
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "{B_LINK_SCR_TRAINER_NAME}は\n{B_BUFF1}を　ひっこめた！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E4CC",
+          "original": "0x085AAFFA",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85A9544",
+          "section_offset": 840
+        }
+      ],
+      "final_text": "{B_LINK_SCR_TRAINER_NAME}换下了{B_BUFF1}！"
+    },
+    {
+      "symbol": "sText_PlayerBattledToDrawTrainer1",
+      "document_line": 2590,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0C6",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1dfe1419000c36034816001b072c0910abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0C6",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1dfe1419000c36034816001b072c0910abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E72C",
+          "original": "0x085AC0C6",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABE2F",
+          "section_offset": 1448
+        }
+      ],
+      "final_text": "和{B_TRAINER1_CLASS}{B_TRAINER1_NAME}打成了平局！"
+    },
+    {
+      "symbol": "sText_PlayerLostAgainstTrainer1",
+      "document_line": 2592,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0B1",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1dfe1419000c36034816001f0910abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0B1",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1dfe1419000c36034816001f0910abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E724",
+          "original": "0x085AC0B1",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABE2F",
+          "section_offset": 1440
+        }
+      ],
+      "final_text": "被{B_TRAINER1_CLASS}{B_TRAINER1_NAME}打败了！"
+    },
+    {
+      "symbol": "sText_Trainer2SentOutPkmn",
+      "document_line": 2629,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDE1",
+          "offset": 0,
+          "encoded_hex": "fd2e1900fd2f1afefd002d000828410c10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDE1",
+          "offset": 0,
+          "encoded_hex": "fd2e1900fd2f1afefd002d000828410c10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E59C",
+          "original": "0x085ABDE1",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABD3C",
+          "section_offset": 1048
+        }
+      ],
+      "final_text": "{B_TRAINER2_CLASS}{B_TRAINER2_NAME}\n派出了{B_BUFF1}！"
+    },
+    {
+      "symbol": "sText_TwoTrainersSentPkmn",
+      "document_line": 2633,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDBB",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1d1afefd062d000828410c10abfbfd2e1900fd2f1afefd082d000828410c10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDBB",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1d1afefd062d000828410c10abfbfd2e1900fd2f1afefd082d000828410c10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E3E0",
+          "original": "0x085ABDBB",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABD3C",
+          "section_offset": 604
+        }
+      ],
+      "final_text": "{B_TRAINER1_CLASS}{B_TRAINER1_NAME}\n派出了{B_OPPONENT_MON1_NAME}！\\p{B_TRAINER2_CLASS}{B_TRAINER2_NAME}\n派出了{B_OPPONENT_MON2_NAME}！"
+    },
+    {
+      "symbol": "sText_TwoTrainersWantToBattle",
+      "document_line": 2634,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDF4",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1d14fefd2e1900fd2f37fa0c3603482d000c0609130710abfbff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDF4",
+          "offset": 0,
+          "encoded_hex": "fd1c1900fd1d14fefd2e1900fd2f37fa0c3603482d000c0609130710abfbff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E310",
+          "original": "0x085ABDF4",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABD3C",
+          "section_offset": 396
+        }
+      ],
+      "final_text": "{B_TRAINER1_CLASS}{B_TRAINER1_NAME}和\n{B_TRAINER2_CLASS}{B_TRAINER2_NAME}\\l前来挑战了！\\p"
+    },
+    {
+      "symbol": "sText_TwoWildFled",
+      "document_line": 2635,
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME}と　{B_LINK_OPPONENT2_NAME}は\nにげだした！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E65C",
+          "original": "0x085AAA45",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85A9544",
+          "section_offset": 1240
+        }
+      ],
+      "final_text": "{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME}和\n{B_LINK_OPPONENT2_NAME}逃走了！"
+    },
+    {
+      "symbol": "sText_WildFled",
+      "document_line": 2638,
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME}は　にげだした！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0814E670",
+          "original": "0x085AAA36",
+          "object": "build/pokeemerald-jp/src/battle_message.o",
+          "object_sha256": "9f491919ba62f50a3c9860071eca1602066c921727ab804b1a5806988d79ddb2",
+          "section": ".text.battle_message_tail",
+          "section_base": "0x0814E184",
+          "section_length": 6028,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85A9544",
+          "section_offset": 1260
+        }
+      ],
+      "final_text": "{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME}逃走了！"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0814E380",
+      "original": "0x085ABE13",
+      "symbol": "Chs_ChecklistLiteral_447_sText_InGamePartnerSentOutZGoN",
+      "source_symbol": "sText_InGamePartnerSentOutZGoN"
+    },
+    {
+      "address": "0x0814E3AC",
+      "original": "0x085AAF8E",
+      "symbol": "Chs_ChecklistLiteral_447_sText_LinkPartnerSentOutPkmnGoPkmn",
+      "source_symbol": "sText_LinkPartnerSentOutPkmnGoPkmn"
+    },
+    {
+      "address": "0x0814E4CC",
+      "original": "0x085AAFFA",
+      "symbol": "Chs_ChecklistLiteral_447_sText_LinkTrainer2WithdrewPkmn",
+      "source_symbol": "sText_LinkTrainer2WithdrewPkmn"
+    },
+    {
+      "address": "0x0814E72C",
+      "original": "0x085AC0C6",
+      "symbol": "Chs_ChecklistLiteral_447_sText_PlayerBattledToDrawTrainer1",
+      "source_symbol": "sText_PlayerBattledToDrawTrainer1"
+    },
+    {
+      "address": "0x0814E724",
+      "original": "0x085AC0B1",
+      "symbol": "Chs_ChecklistLiteral_447_sText_PlayerLostAgainstTrainer1",
+      "source_symbol": "sText_PlayerLostAgainstTrainer1"
+    },
+    {
+      "address": "0x0814E59C",
+      "original": "0x085ABDE1",
+      "symbol": "Chs_ChecklistLiteral_447_sText_Trainer2SentOutPkmn",
+      "source_symbol": "sText_Trainer2SentOutPkmn"
+    },
+    {
+      "address": "0x0814E3E0",
+      "original": "0x085ABDBB",
+      "symbol": "Chs_ChecklistLiteral_447_sText_TwoTrainersSentPkmn",
+      "source_symbol": "sText_TwoTrainersSentPkmn"
+    },
+    {
+      "address": "0x0814E310",
+      "original": "0x085ABDF4",
+      "symbol": "Chs_ChecklistLiteral_447_sText_TwoTrainersWantToBattle",
+      "source_symbol": "sText_TwoTrainersWantToBattle"
+    },
+    {
+      "address": "0x0814E65C",
+      "original": "0x085AAA45",
+      "symbol": "Chs_ChecklistLiteral_447_sText_TwoWildFled",
+      "source_symbol": "sText_TwoWildFled"
+    },
+    {
+      "address": "0x0814E670",
+      "original": "0x085AAA36",
+      "symbol": "Chs_ChecklistLiteral_447_sText_WildFled",
+      "source_symbol": "sText_WildFled"
+    }
+  ],
+  "active_definition_count": 10,
+  "active_reference_count": 10,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_InGamePartnerSentOutZGoN",
+      "source_symbol": "sText_InGamePartnerSentOutZGoN",
+      "options": {
+        "japanese_placeholders": [
+          5,
+          7,
+          50,
+          51
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          5,
+          7,
+          50,
+          51
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_LinkPartnerSentOutPkmnGoPkmn",
+      "source_symbol": "sText_LinkPartnerSentOutPkmnGoPkmn",
+      "options": {
+        "japanese_placeholders": [
+          9,
+          11,
+          31
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          9,
+          11,
+          31
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_LinkTrainer2WithdrewPkmn",
+      "source_symbol": "sText_LinkTrainer2WithdrewPkmn",
+      "options": {
+        "japanese_placeholders": [
+          0,
+          34
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          0,
+          34
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_PlayerBattledToDrawTrainer1",
+      "source_symbol": "sText_PlayerBattledToDrawTrainer1",
+      "options": {
+        "japanese_placeholders": [
+          28,
+          29
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          28,
+          29
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_PlayerLostAgainstTrainer1",
+      "source_symbol": "sText_PlayerLostAgainstTrainer1",
+      "options": {
+        "japanese_placeholders": [
+          28,
+          29
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          28,
+          29
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_Trainer2SentOutPkmn",
+      "source_symbol": "sText_Trainer2SentOutPkmn",
+      "options": {
+        "japanese_placeholders": [
+          0,
+          46,
+          47
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          0,
+          46,
+          47
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_TwoTrainersSentPkmn",
+      "source_symbol": "sText_TwoTrainersSentPkmn",
+      "options": {
+        "japanese_placeholders": [
+          6,
+          8,
+          28,
+          29,
+          46,
+          47
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          6,
+          8,
+          28,
+          29,
+          46,
+          47
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_TwoTrainersWantToBattle",
+      "source_symbol": "sText_TwoTrainersWantToBattle",
+      "options": {
+        "japanese_placeholders": [
+          28,
+          29,
+          46,
+          47
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          28,
+          29,
+          46,
+          47
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_TwoWildFled",
+      "source_symbol": "sText_TwoWildFled",
+      "options": {
+        "japanese_placeholders": [
+          32,
+          33
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          32,
+          33
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": []
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_447_sText_WildFled",
+      "source_symbol": "sText_WildFled",
+      "options": {
+        "japanese_placeholders": [
+          32
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_message.c:3560: Native placeholder jump table at _0814E818; the US and exact JP template use identical slot IDs. Slots 5..11 read mon display names, 28/29 and 46/47 read trainer class/name, 31..34 read link player names, 50/51 read partner class/name; slot 0 expands the existing battle buffer. The template-selector path uses the independently verified literal/object reference listed below and passes it to TryGetStatusString at 3493.",
+        "ids": [
+          32
+        ],
+        "policy": "Each reviewed name/battle-buffer slot is wrapped in JPN and ENG is restored after expansion; already-translated names retain their own language prefix. Only the display template pointer changes; mon, save, link and battle-buffer producers remain unmodified."
+      },
+      "remaining_verification": []
+    }
+  ]
+}

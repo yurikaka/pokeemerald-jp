@@ -1,0 +1,410 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_BerriesInRowFivePlayers",
+      "document_line": 985,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 40,
+          "encoded_hex": "a6162e44000719202dfe124309131450100006020d03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 40,
+          "encoded_hex": "a6162e44000719202dfe124309131450100006020d03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082CB3C8",
+          "original": "0x085CCD1D",
+          "object": "build/pokeemerald-jp/src/data/dodrio1.o",
+          "object_sha256": "c66276a01051ee49a31dc3945fd05fa3fa0de4fb68a99d0fd99dc0ed1d1689b2",
+          "section": ".rodata",
+          "section_base": "0x082CB314",
+          "section_length": 872,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 180
+        }
+      ],
+      "final_text": "树果被5位玩家挑选\n放到一起：",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BerriesPicked",
+      "document_line": 986,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 17,
+          "encoded_hex": "0719202d1450100006020d03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 17,
+          "encoded_hex": "0719202d1450100006020d03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082CB3C0",
+          "original": "0x085CCD06",
+          "object": "build/pokeemerald-jp/src/data/dodrio1.o",
+          "object_sha256": "c66276a01051ee49a31dc3945fd05fa3fa0de4fb68a99d0fd99dc0ed1d1689b2",
+          "section": ".rodata",
+          "section_base": "0x082CB314",
+          "section_length": 872,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 172
+        }
+      ],
+      "final_text": "摘得树果：",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BestScore",
+      "document_line": 990,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 30,
+          "encoded_hex": "0b020a03001408132eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 30,
+          "encoded_hex": "0b020a03001408132eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082CB3C4",
+          "original": "0x085CCD13",
+          "object": "build/pokeemerald-jp/src/data/dodrio1.o",
+          "object_sha256": "c66276a01051ee49a31dc3945fd05fa3fa0de4fb68a99d0fd99dc0ed1d1689b2",
+          "section": ".rodata",
+          "section_base": "0x082CB314",
+          "section_length": 872,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 176
+        }
+      ],
+      "final_text": "最高得分：",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_CantHoldMore",
+      "document_line": 1048,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE65",
+          "offset": 0,
+          "encoded_hex": "f7001a0002504b02440db0ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE65",
+          "offset": 0,
+          "encoded_hex": "f7001a0002504b02440db0ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802D660",
+          "original": "0x085CCE65",
+          "object": "build/pokeemerald-jp/src/pokemon_jump.o",
+          "object_sha256": "fa74fc0386b568031cb2372445f44e93b782f437ecad5581b71d97ca280bf292",
+          "section": ".text.PrintNoRoomForPrizeMessage",
+          "section_base": "0x0802D5EC",
+          "section_length": 120,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_CantHoldMore",
+          "section_offset": 116
+        }
+      ],
+      "final_text": "你不能携带更多了！",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_CommunicationStandby4",
+      "document_line": 1086,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE99",
+          "offset": 0,
+          "encoded_hex": "12030c2e00100207113503ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE99",
+          "offset": 0,
+          "encoded_hex": "12030c2e00100207113503ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802D3D4",
+          "original": "0x085CCE99",
+          "object": "build/pokeemerald-jp/src/pokemon_jump.o",
+          "object_sha256": "fa74fc0386b568031cb2372445f44e93b782f437ecad5581b71d97ca280bf292",
+          "section": ".text.Msg_CommunicationStandby_PokeJump",
+          "section_base": "0x0802D37C",
+          "section_length": 164,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_CommunicationStandby4",
+          "section_offset": 88
+        }
+      ],
+      "final_text": "正在等待连接……",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_FilledStorageSpace2",
+      "document_line": 1199,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE52",
+          "offset": 0,
+          "encoded_hex": "f700370002504b0216fe1550130c1f5010abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE52",
+          "offset": 0,
+          "encoded_hex": "f700370002504b0216fe1550130c1f5010abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802D5E8",
+          "original": "0x085CCE52",
+          "object": "build/pokeemerald-jp/src/pokemon_jump.o",
+          "object_sha256": "fa74fc0386b568031cb2372445f44e93b782f437ecad5581b71d97ca280bf292",
+          "section": ".text.PrintPrizeFilledBagMessage",
+          "section_base": "0x0802D574",
+          "section_length": 120,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_FilledStorageSpace2",
+          "section_offset": 116
+        }
+      ],
+      "final_text": "存储空间已经满了。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_SomeoneDroppedOut2",
+      "document_line": 1610,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE7F",
+          "offset": 0,
+          "encoded_hex": "412a063717091f0c10fe12030c2e2d000c35032836030c1f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCE7F",
+          "offset": 0,
+          "encoded_hex": "412a063717091f0c10fe12030c2e2d000c35032836030c1f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802D330",
+          "original": "0x085CCE7F",
+          "object": "build/pokeemerald-jp/src/pokemon_jump.o",
+          "object_sha256": "fa74fc0386b568031cb2372445f44e93b782f437ecad5581b71d97ca280bf292",
+          "section": ".text.Msg_SomeoneDroppedOut_PokeJump",
+          "section_base": "0x0802D2D8",
+          "section_length": 164,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_SomeoneDroppedOut2",
+          "section_offset": 88
+        }
+      ],
+      "final_text": "有人退出了，\n连接会断开。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_YouDontHaveThreeCoins",
+      "document_line": 1757,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts38.h",
+          "text": "コインが　3まい　ありません！"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0812AD3C",
+          "original": "0x08588641",
+          "object": "build/pokeemerald-jp/src/slot_machine.o",
+          "object_sha256": "0115718dc60a3d68fd3c3cb0ffe78895e9c3d25b549d2e96bc3a9252beef1041",
+          "section": ".text.SlotTask_PrintMsg_Need3Coins",
+          "section_base": "0x0812AD04",
+          "section_length": 64,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_YouDontHaveThreeCoins",
+          "section_offset": 56
+        }
+      ],
+      "final_text": "代币不足3枚。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_YouveGot9999Coins",
+      "document_line": 1759,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts38.h",
+          "text": "コインが　9999まい\nたまって　います"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0812B25C",
+          "original": "0x08588612",
+          "object": "build/pokeemerald-jp/src/slot_machine.o",
+          "object_sha256": "0115718dc60a3d68fd3c3cb0ffe78895e9c3d25b549d2e96bc3a9252beef1041",
+          "section": ".text.SlotTask_PrintMsg_MaxCoins",
+          "section_base": "0x0812B224",
+          "section_length": 64,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_YouveGot9999Coins",
+          "section_offset": 56
+        }
+      ],
+      "final_text": "代币已经达到9999枚了。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_YouveRunOutOfCoins",
+      "document_line": 1760,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts38.h",
+          "text": "コインが　ありません\nゲームを　しゅうりょうします"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0812B2C8",
+          "original": "0x08588627",
+          "object": "build/pokeemerald-jp/src/slot_machine.o",
+          "object_sha256": "0115718dc60a3d68fd3c3cb0ffe78895e9c3d25b549d2e96bc3a9252beef1041",
+          "section": ".text.SlotTask_PrintMsg_NoMoreCoins",
+          "section_base": "0x0812B290",
+          "section_length": 64,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_YouveRunOutOfCoins",
+          "section_offset": 56
+        }
+      ],
+      "final_text": "代币用完了。\n游戏结束！",
+      "placeholder_contract": null,
+      "language_options": {}
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x082CB3C8",
+      "original": "0x085CCD1D",
+      "symbol": "Chs_ChecklistLiteral_449_gText_BerriesInRowFivePlayers",
+      "source_symbol": "gText_BerriesInRowFivePlayers"
+    },
+    {
+      "address": "0x082CB3C0",
+      "original": "0x085CCD06",
+      "symbol": "Chs_ChecklistLiteral_449_gText_BerriesPicked",
+      "source_symbol": "gText_BerriesPicked"
+    },
+    {
+      "address": "0x082CB3C4",
+      "original": "0x085CCD13",
+      "symbol": "Chs_ChecklistLiteral_449_gText_BestScore",
+      "source_symbol": "gText_BestScore"
+    },
+    {
+      "address": "0x0802D660",
+      "original": "0x085CCE65",
+      "symbol": "Chs_ChecklistLiteral_449_gText_CantHoldMore",
+      "source_symbol": "gText_CantHoldMore"
+    },
+    {
+      "address": "0x0802D3D4",
+      "original": "0x085CCE99",
+      "symbol": "Chs_ChecklistLiteral_449_gText_CommunicationStandby4",
+      "source_symbol": "gText_CommunicationStandby4"
+    },
+    {
+      "address": "0x0802D5E8",
+      "original": "0x085CCE52",
+      "symbol": "Chs_ChecklistLiteral_449_gText_FilledStorageSpace2",
+      "source_symbol": "gText_FilledStorageSpace2"
+    },
+    {
+      "address": "0x0802D330",
+      "original": "0x085CCE7F",
+      "symbol": "Chs_ChecklistLiteral_449_gText_SomeoneDroppedOut2",
+      "source_symbol": "gText_SomeoneDroppedOut2"
+    },
+    {
+      "address": "0x0812AD3C",
+      "original": "0x08588641",
+      "symbol": "Chs_ChecklistLiteral_449_gText_YouDontHaveThreeCoins",
+      "source_symbol": "gText_YouDontHaveThreeCoins"
+    },
+    {
+      "address": "0x0812B25C",
+      "original": "0x08588612",
+      "symbol": "Chs_ChecklistLiteral_449_gText_YouveGot9999Coins",
+      "source_symbol": "gText_YouveGot9999Coins"
+    },
+    {
+      "address": "0x0812B2C8",
+      "original": "0x08588627",
+      "symbol": "Chs_ChecklistLiteral_449_gText_YouveRunOutOfCoins",
+      "source_symbol": "gText_YouveRunOutOfCoins"
+    }
+  ],
+  "active_definition_count": 10,
+  "active_reference_count": 10,
+  "language_rules": []
+}

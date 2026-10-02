@@ -1,0 +1,21 @@
+{
+  "policy": "gText_BattleTower2/3 share the JP original 0x085CC423 and the US text 对战塔 with gText_BattleTower, whose payload already exists in 174_trainer_card.json. No new text definitions; redirect the remaining display consumers to the existing payload. Sibling entries of the same tables already point to Chinese payloads of the six other facilities.",
+  "mapping": [
+    {
+      "address": "0x085645FC",
+      "proof": "Wokann src/data/script_menu.h gStdStrings[STDSTRING_BATTLE_TOWER]=gText_BattleTower; consumed by ScrCmd_bufferstdstring StringCopy to script string vars (scrcmd.c:1623), display only."
+    },
+    {
+      "address": "0x0859294C",
+      "proof": "Wokann src/field_specials.c gUnknown_859274C list-menu text table entry; the same table drives ListMenuInit items and AddTextPrinterParameterized labels (_0813A424/_0813AEE0), display only."
+    },
+    {
+      "address": "0x085D7A84",
+      "proof": "Seven-entry facility name table; entries 0x085D7A88..0x085D7A9C for the six other facilities already redirect to Chinese payloads from 437/451, and the table is consumed through code literal 0x08196900. Tower entry redirected to the same-style payload."
+    },
+    {
+      "address": "0x085DD4A4/0x085DD4AC/0x085DD4B4/0x085DD4EC",
+      "proof": "Wokann src/frontier_util.c gUnknown_85DD4A4 Dome streak record pairs: the name pointer is copied into gStringVar1 and the paired template expanded into gStringVar4 for display. 451 redirected the six other facilities' name slots in this same table; these are the Tower slots."
+    }
+  ]
+}

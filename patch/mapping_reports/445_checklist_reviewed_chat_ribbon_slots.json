@@ -1,0 +1,196 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_F700JoinedChat",
+      "document_line": 1187,
+      "jp_source": [
+        {
+          "file": "data/data_b2d.s",
+          "symbol": "gUnknown_85CC663",
+          "offset": 0,
+          "encoded_hex": "f7000b2e37000b2e060c1f0c10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0801EE50",
+          "original": "0x085CC663",
+          "object": "build/pokeemerald-jp/src/union_room_chat.o",
+          "object_sha256": "f22063debfdd9d334bd6c0be115bd1babcd9b88dbd2d2a87a4be84ef1307309a",
+          "section": ".text.ProcessReceivedChatMessage",
+          "section_base": "0x0801EE08",
+          "section_length": 168,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CC663",
+          "section_offset": 72
+        }
+      ],
+      "final_text": "{DYNAMIC 0}参与聊天了！"
+    },
+    {
+      "symbol": "gText_F700LeftChat",
+      "document_line": 1188,
+      "jp_source": [
+        {
+          "file": "data/data_b2d.s",
+          "symbol": "gUnknown_85CC672",
+          "offset": 0,
+          "encoded_hex": "f7000b2e370017091f0c10ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0801EEA4",
+          "original": "0x085CC672",
+          "object": "build/pokeemerald-jp/src/union_room_chat.o",
+          "object_sha256": "f22063debfdd9d334bd6c0be115bd1babcd9b88dbd2d2a87a4be84ef1307309a",
+          "section": ".text.ProcessReceivedChatMessage",
+          "section_base": "0x0801EE08",
+          "section_length": 168,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CC672",
+          "section_offset": 156
+        }
+      ],
+      "final_text": "{DYNAMIC 0}退出聊天了。"
+    },
+    {
+      "symbol": "gText_LeaderLeftEndingChat",
+      "document_line": 1307,
+      "jp_source": [
+        {
+          "file": "data/data_b2d.s",
+          "symbol": "gUnknown_85CC672",
+          "offset": 64,
+          "encoded_hex": "78ae91ae1900f7000b2e37fe17091019440006020b2e0c1f0dabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082C5810",
+          "original": "0x085CC6B2",
+          "object": "build/pokeemerald-jp/src/data/union_room8x.o",
+          "object_sha256": "57ad957bf4ff150abe1e3dddbcf9ad705854551400f5c46be88eab4f5012d308",
+          "section": ".rodata",
+          "section_base": "0x082C55BC",
+          "section_length": 716,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CC663",
+          "section_offset": 596
+        }
+      ],
+      "final_text": "组长{DYNAMIC 0}已经离开，\n聊天结束。"
+    },
+    {
+      "symbol": "gText_RibbonsF700",
+      "document_line": 1552,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "text": "リボン　{DYNAMIC 0}こ"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081D05A8",
+          "original": "0x085CB821",
+          "object": "build/pokeemerald-jp/src/pokenav_ribbons_summary.o",
+          "object_sha256": "66c59a6b9f818ba23d77454053e82e01af9456429a706ae1e1397b23b866c92c",
+          "section": ".text",
+          "section_base": "0x081CFB00",
+          "section_length": 4496,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_RibbonsF700",
+          "section_offset": 2728
+        }
+      ],
+      "final_text": "奖章数： {DYNAMIC 0}"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0801EE50",
+      "original": "0x085CC663",
+      "symbol": "Chs_ChecklistLiteral_445_gText_F700JoinedChat",
+      "source_symbol": "gText_F700JoinedChat"
+    },
+    {
+      "address": "0x0801EEA4",
+      "original": "0x085CC672",
+      "symbol": "Chs_ChecklistLiteral_445_gText_F700LeftChat",
+      "source_symbol": "gText_F700LeftChat"
+    },
+    {
+      "address": "0x082C5810",
+      "original": "0x085CC6B2",
+      "symbol": "Chs_ChecklistLiteral_445_gText_LeaderLeftEndingChat",
+      "source_symbol": "gText_LeaderLeftEndingChat"
+    },
+    {
+      "address": "0x081D05A8",
+      "original": "0x085CB821",
+      "symbol": "Chs_ChecklistLiteral_445_gText_RibbonsF700",
+      "source_symbol": "gText_RibbonsF700"
+    }
+  ],
+  "active_definition_count": 4,
+  "active_reference_count": 4,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_445_gText_F700JoinedChat",
+      "source_symbol": "gText_F700JoinedChat",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room_chat.c:1406: ProcessReceivedChatMessage supplies the original received player name in slot 0, expands into receivedMessage[64] (caller at 1618); only the display template is redirected.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": []
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_445_gText_F700LeftChat",
+      "source_symbol": "gText_F700LeftChat",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room_chat.c:1423: ProcessReceivedChatMessage supplies the original received player name in slot 0, expands into receivedMessage[64]; hostName is copied before template expansion and remains unmodified.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": []
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_445_gText_LeaderLeftEndingChat",
+      "source_symbol": "gText_LeaderLeftEndingChat",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/union_room_chat.c:2174: GetChatHostName supplies slot 0; AddStdMessageWindow at 2371 expands into expandedPlaceholdersBuffer[0x106], without rewriting hostName or link player names.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": []
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_445_gText_RibbonsF700",
+      "source_symbol": "gText_RibbonsF700",
+      "options": {
+        "japanese_dynamic": true
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/pokenav_ribbons_summary.c:980: PrintCurrentMonRibbonCount converts the count into gStringVar1, assigns dynamic slot 0, expands into gStringVar4 and draws the count window; no ribbon/save field is written.",
+        "policy": "Wrap expanded F7 slots in JPN and restore ENG. Original names and numeric slots retain their JP encoding; translated item-name strings carry their own ENG prefix. Only the display template is redirected; producer buffers and persistent fields are unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    }
+  ]
+}

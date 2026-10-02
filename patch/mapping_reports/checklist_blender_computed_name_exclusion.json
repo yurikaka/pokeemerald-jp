@@ -1,0 +1,11 @@
+{
+  "excluded": [
+    {
+      "address": "0x0807F9A8",
+      "original": "0x0830F76C",
+      "symbol": "Chs_ChecklistLiteral_sText_Miss",
+      "source_symbol": "sText_Miss"
+    }
+  ],
+  "reason": "Wokann src/berry_blender.c:972-1015: sub_0807F888 loads the Miss block at 0x0807F9A8 and also copies names from that pointer minus 0x18 and minus 0x12. Redirecting only Miss makes both computed reads point outside the intended names. Keep the original contiguous JP block until display-only conversion and all computed consumers are verified."
+}

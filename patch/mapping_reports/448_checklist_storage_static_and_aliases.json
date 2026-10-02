@@ -1,0 +1,640 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_BagIsFull2",
+      "document_line": 920,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 369,
+          "encoded_hex": "96a089370002504b02440dabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CAEC",
+          "original": "0x085CB32A",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 208
+        }
+      ],
+      "final_text": "包包已经满了！"
+    },
+    {
+      "symbol": "gText_BoxIsFull2",
+      "document_line": 1023,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 125,
+          "encoded_hex": "0a199aa0585d1a0002504b0241abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA5C",
+          "original": "0x085CB236",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 64
+        }
+      ],
+      "final_text": "这个盒子已经满了！"
+    },
+    {
+      "symbol": "gText_ContinueBoxOperations",
+      "document_line": 1100,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 277,
+          "encoded_hex": "9aa0585d0f030b2d001243091f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CAAC",
+          "original": "0x085CB2CE",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 144
+        }
+      ],
+      "final_text": "要继续对盒子的操作吗？"
+    },
+    {
+      "symbol": "gText_DepositInWhichBox",
+      "document_line": 1135,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 97,
+          "encoded_hex": "4519009aa0585d1600013e091f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA4C",
+          "original": "0x085CB21A",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 48
+        }
+      ],
+      "final_text": "要寄放到哪个盒子中？"
+    },
+    {
+      "symbol": "gText_ExitFromBox",
+      "document_line": 1177,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 4,
+          "encoded_hex": "9aa0585d2d000c35032836030c1f0d06ac00ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA1C",
+          "original": "0x085CB1BD",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 0
+        }
+      ],
+      "final_text": "要停止对盒子的操作吗？"
+    },
+    {
+      "symbol": "gText_GiveToAPkmn",
+      "document_line": 1236,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 343,
+          "encoded_hex": "4503392d0023100e1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CADC",
+          "original": "0x085CB310",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 192
+        }
+      ],
+      "final_text": "要给宝可梦携带吗？"
+    },
+    {
+      "symbol": "gText_JumpToWhichBox",
+      "document_line": 1296,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 78,
+          "encoded_hex": "4519009aa0585d16008d847e9d0c1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA44",
+          "original": "0x085CB207",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "要跳转到哪个盒子？"
+    },
+    {
+      "symbol": "gText_MailCantBeStored",
+      "document_line": 1323,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 420,
+          "encoded_hex": "72ae792d00013e06290a141a0044071f0e2eabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CB0C",
+          "original": "0x085CB35D",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 240
+        }
+      ],
+      "final_text": "不能寄放邮件！"
+    },
+    {
+      "symbol": "gText_MarkYourPkmn",
+      "document_line": 1329,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 179,
+          "encoded_hex": "6fae577e890c1308410b02ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA7C",
+          "original": "0x085CB26C",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 96
+        }
+      ],
+      "final_text": "请选择标记。"
+    },
+    {
+      "symbol": "gText_PartyFull",
+      "document_line": 1433,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 210,
+          "encoded_hex": "132311370002504b02440dabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA8C",
+          "original": "0x085CB28B",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 112
+        }
+      ],
+      "final_text": "同行的宝可梦已经满了！"
+    },
+    {
+      "symbol": "gText_PickTheWallpaper",
+      "document_line": 1441,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 52,
+          "encoded_hex": "45190006493720160c1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA34",
+          "original": "0x085CB1ED",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "要选择哪一种壁纸？"
+    },
+    {
+      "symbol": "gText_PleasePickATheme",
+      "document_line": 1456,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 39,
+          "encoded_hex": "45190063ae6f160c1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA2C",
+          "original": "0x085CB1E0",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "要选择哪一种壁纸主题？"
+    },
+    {
+      "symbol": "gText_PleaseRemoveTheMail",
+      "document_line": 1457,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 327,
+          "encoded_hex": "72ae792d001a3e0c130008410b02abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CACC",
+          "original": "0x085CB300",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 176
+        }
+      ],
+      "final_text": "请取下携带的邮件！"
+    },
+    {
+      "symbol": "gText_PutItemInBag",
+      "document_line": 1507,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 382,
+          "encoded_hex": "4503392d0096a0891600022a1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CAF4",
+          "original": "0x085CB337",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 216
+        }
+      ],
+      "final_text": "要将道具放回包包吗？"
+    },
+    {
+      "symbol": "gText_ReleaseThisPokemon",
+      "document_line": 1546,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB1B9",
+          "offset": 140,
+          "encoded_hex": "1e2e1403160016370c1f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854CA64",
+          "original": "0x085CB245",
+          "object": "src/pokemon_storage_system.c",
+          "source": {
+            "symbol": "gUnknown_854CA1C",
+            "file": "src/pokemon_storage_system.c",
+            "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 8,
+            "display_buffer_size": 40,
+            "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854CA1C",
+          "section_length": 248,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854CA1C",
+          "section_offset": 72
+        }
+      ],
+      "final_text": "真的要放生吗？"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0854CAEC",
+      "original": "0x085CB32A",
+      "symbol": "Chs_ChecklistLiteral_448_gText_BagIsFull2",
+      "source_symbol": "gText_BagIsFull2"
+    },
+    {
+      "address": "0x0854CA5C",
+      "original": "0x085CB236",
+      "symbol": "Chs_ChecklistLiteral_448_gText_BoxIsFull2",
+      "source_symbol": "gText_BoxIsFull2"
+    },
+    {
+      "address": "0x0854CAAC",
+      "original": "0x085CB2CE",
+      "symbol": "Chs_ChecklistLiteral_448_gText_ContinueBoxOperations",
+      "source_symbol": "gText_ContinueBoxOperations"
+    },
+    {
+      "address": "0x0854CA4C",
+      "original": "0x085CB21A",
+      "symbol": "Chs_ChecklistLiteral_448_gText_DepositInWhichBox",
+      "source_symbol": "gText_DepositInWhichBox"
+    },
+    {
+      "address": "0x0854CA1C",
+      "original": "0x085CB1BD",
+      "symbol": "Chs_ChecklistLiteral_448_gText_ExitFromBox",
+      "source_symbol": "gText_ExitFromBox"
+    },
+    {
+      "address": "0x0854CADC",
+      "original": "0x085CB310",
+      "symbol": "Chs_ChecklistLiteral_448_gText_GiveToAPkmn",
+      "source_symbol": "gText_GiveToAPkmn"
+    },
+    {
+      "address": "0x0854CA44",
+      "original": "0x085CB207",
+      "symbol": "Chs_ChecklistLiteral_448_gText_JumpToWhichBox",
+      "source_symbol": "gText_JumpToWhichBox"
+    },
+    {
+      "address": "0x0854CB0C",
+      "original": "0x085CB35D",
+      "symbol": "Chs_ChecklistLiteral_448_gText_MailCantBeStored",
+      "source_symbol": "gText_MailCantBeStored"
+    },
+    {
+      "address": "0x0854CA7C",
+      "original": "0x085CB26C",
+      "symbol": "Chs_ChecklistLiteral_448_gText_MarkYourPkmn",
+      "source_symbol": "gText_MarkYourPkmn"
+    },
+    {
+      "address": "0x0854CA8C",
+      "original": "0x085CB28B",
+      "symbol": "Chs_ChecklistLiteral_448_gText_PartyFull",
+      "source_symbol": "gText_PartyFull"
+    },
+    {
+      "address": "0x0854CA34",
+      "original": "0x085CB1ED",
+      "symbol": "Chs_ChecklistLiteral_448_gText_PickTheWallpaper",
+      "source_symbol": "gText_PickTheWallpaper"
+    },
+    {
+      "address": "0x0854CA2C",
+      "original": "0x085CB1E0",
+      "symbol": "Chs_ChecklistLiteral_448_gText_PleasePickATheme",
+      "source_symbol": "gText_PleasePickATheme"
+    },
+    {
+      "address": "0x0854CACC",
+      "original": "0x085CB300",
+      "symbol": "Chs_ChecklistLiteral_448_gText_PleaseRemoveTheMail",
+      "source_symbol": "gText_PleaseRemoveTheMail"
+    },
+    {
+      "address": "0x0854CAF4",
+      "original": "0x085CB337",
+      "symbol": "Chs_ChecklistLiteral_448_gText_PutItemInBag",
+      "source_symbol": "gText_PutItemInBag"
+    },
+    {
+      "address": "0x0854CA64",
+      "original": "0x085CB245",
+      "symbol": "Chs_ChecklistLiteral_448_gText_ReleaseThisPokemon",
+      "source_symbol": "gText_ReleaseThisPokemon"
+    }
+  ],
+  "active_definition_count": 15,
+  "active_reference_count": 15,
+  "language_rules": []
+}

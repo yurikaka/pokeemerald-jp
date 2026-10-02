@@ -1,0 +1,78 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_IfLeaderLeavesChatEnds",
+      "document_line": 1271,
+      "jp_source": [
+        {
+          "file": "data/data_b2d.s",
+          "symbol": "gUnknown_85CC672",
+          "offset": 215,
+          "encoded_hex": "78ae91ae3700242229140006020b2efe1615281f0d3700262b0c02440d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082C584C",
+          "original": "0x085CC749",
+          "object": "build/pokeemerald-jp/src/data/union_room8x.o",
+          "object_sha256": "57ad957bf4ff150abe1e3dddbcf9ad705854551400f5c46be88eab4f5012d308",
+          "section": ".rodata",
+          "section_base": "0x082C55BC",
+          "section_length": 716,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CC663",
+          "section_offset": 656
+        }
+      ],
+      "final_text": "组长如果退出，\n聊天将会结束。确定要退出吗？"
+    },
+    {
+      "symbol": "gText_ExitingChat",
+      "document_line": 2898,
+      "jp_source": [
+        {
+          "file": "data/data_b2d.s",
+          "symbol": "gUnknown_85CC672",
+          "offset": 37,
+          "encoded_hex": "0b2e060c3437000215081550101944fe0c35032836030c1f0dabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082C5804",
+          "original": "0x085CC697",
+          "object": "build/pokeemerald-jp/src/data/union_room8x.o",
+          "object_sha256": "57ad957bf4ff150abe1e3dddbcf9ad705854551400f5c46be88eab4f5012d308",
+          "section": ".rodata",
+          "section_base": "0x082C55BC",
+          "section_length": 716,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CC663",
+          "section_offset": 584
+        }
+      ],
+      "final_text": "因为没有参加者，\n聊天将结束！"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x082C584C",
+      "original": "0x085CC749",
+      "symbol": "Chs_ChecklistLiteral_443_gText_IfLeaderLeavesChatEnds",
+      "source_symbol": "gText_IfLeaderLeavesChatEnds"
+    },
+    {
+      "address": "0x082C5804",
+      "original": "0x085CC697",
+      "symbol": "Chs_ChecklistLiteral_443_gText_ExitingChat",
+      "source_symbol": "gText_ExitingChat"
+    }
+  ],
+  "active_definition_count": 2,
+  "active_reference_count": 2,
+  "language_rules": []
+}

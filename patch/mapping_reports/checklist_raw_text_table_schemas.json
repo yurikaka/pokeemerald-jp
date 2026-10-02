@@ -1,0 +1,90 @@
+{
+  "tables": [
+    {
+      "symbol": "gUnknown_854B1E4",
+      "file": "src/pokemon_storage_system.c",
+      "binary_file": "data/pokemon_storage/jp/0854B1E4.bin",
+      "first_pointer_offset": 0,
+      "pointer_stride": 4,
+      "proof": "PokemonStorageMenuText at src/pokemon_storage_system.c:106 has two pointers, text and desc, with stride 8. Five text entries are passed directly to PrintTextArray at line 1124; desc is passed to AddTextPrinterParameterized2 at lines 1000,1024,1060,1070,1080. Both words in each of the five records are display pointers, not fixed text buffers. src/data/pokemon_storage_system.h:17 fixes the 0x28-byte original resource."
+    },
+    {
+      "symbol": "gUnknown_85DD53C",
+      "file": "src/frontier_util.c",
+      "first_pointer_offset": 0,
+      "pointer_stride": 4,
+      "proof": "src/frontier_util.c:5782 indexes gUnknown_85DD53C with index*4, expands the selected template into gStringVar4, then prints it. _081A42E8 identifies gStringVar2 as the decimal-count producer. FactoryPrintPrevOrCurrentStreak repeats this display path at _081A43F4. Complete 40-byte source array is at line 7502; table contains ten text pointers."
+    },
+    {
+      "symbol": "gUnknown_854B138",
+      "file": "src/frontier_pass.c",
+      "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+      "first_pointer_offset": 0,
+      "pointer_stride": 4,
+      "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+    },
+    {
+      "symbol": "gUnknown_854B174",
+      "file": "src/frontier_pass.c",
+      "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+      "first_pointer_offset": 0,
+      "pointer_stride": 16,
+      "proof": "PrintOnFrontierMap at src/frontier_pass.c:3410 loads the title pointer at each record+0 using index<<4 and passes it to AddTextPrinterParameterized3. Seven 16-byte records are declared by src/data/frontier_pass.h:70. Coordinate and other non-pointer words at +8/+12 are excluded."
+    },
+    {
+      "symbol": "gUnknown_854B174",
+      "file": "src/frontier_pass.c",
+      "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+      "first_pointer_offset": 4,
+      "pointer_stride": 16,
+      "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+    },
+    {
+      "symbol": "gUnknown_85DD4A4",
+      "file": "src/frontier_util.c",
+      "first_pointer_offset": 0,
+      "pointer_end_offset": 80,
+      "pointer_stride": 4,
+      "proof": "DomePrintPrevOrCurrentStreak at src/frontier_util.c:6182 reads a pair of pointers at index*8 from _081A4650. The first is copied into gStringVar1, the second expanded into gStringVar4 and printed by AddTextPrinterParameterized. The ten pairs occupy offsets 0..79; inline text beginning at offset 80 is excluded. The complete original byte array at line 7488 must equal the native ROM before any reference is accepted."
+    },
+    {
+      "symbol": "gUnknown_854CA1C",
+      "file": "src/pokemon_storage_system.c",
+      "binary_file": "data/pokemon_storage/jp/0854CA1C.bin",
+      "first_pointer_offset": 0,
+      "pointer_stride": 8,
+      "display_buffer_size": 40,
+      "proof": "StorageMessage at lines 233-239 has a text pointer at offset 0 and a format byte at offset 4, with 8-byte ARM alignment stride. PrintStorageActionText at 3673-3706 expands only that text field into messageText[40]. The fixed binary resource at src/data/pokemon_storage_system.h:76 is 0xF8 bytes; format fields must not be treated as pointers."
+    },
+    {
+      "symbol": "gUnknown_8592B00",
+      "file": "src/field_specials.c",
+      "first_pointer_offset": 0,
+      "proof": "ShowFrontierGamblerLookingMessage loads an indexed word from _0813A854 and passes it to ShowFieldMessage."
+    },
+    {
+      "symbol": "gUnknown_8592B30",
+      "file": "src/field_specials.c",
+      "first_pointer_offset": 0,
+      "proof": "ShowFrontierGamblerGoMessage loads an indexed word from _0813A878 and passes it to ShowFieldMessage."
+    },
+    {
+      "symbol": "gUnknown_85926AC",
+      "file": "src/field_specials.c",
+      "first_pointer_offset": 0,
+      "proof": "The indexed word loaded from this table is passed directly to ShowFieldMessage at _0813A09E; _0813A0B8 identifies the table."
+    },
+    {
+      "symbol": "gUnknown_859274C",
+      "file": "src/field_specials.c",
+      "first_pointer_offset": 0,
+      "proof": "_0813A424 supplies the source table for the ListMenuInit item list; _0813AEE0 supplies the same label table for AddTextPrinterParameterized. Only words targeting separately verified text definitions qualify."
+    },
+    {
+      "symbol": "gUnknown_85DF454",
+      "file": "src/battle_pyramid.c",
+      "first_pointer_offset": 100,
+      "proof": "ShowPostBattleHintText follows the three-level pointer table rooted at _081A938C (gUnknown_85DF6F8) and passes its final word to ShowFieldMessage. The first 100 bytes are trainer-class hint metadata and excluded. Only words targeting separately verified text definitions qualify."
+    }
+  ]
+}

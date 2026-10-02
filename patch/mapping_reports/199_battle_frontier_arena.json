@@ -794,5 +794,43 @@
       "source": "data/maps/BattleFrontier_BattleArenaLobby/scripts.inc",
       "reason": "no_japanese_pointer"
     }
+  ],
+  "manual_corrections": [
+    {
+      "issues": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "purpose": "Preserve dynamically generated excluded-species list; replace Japanese particle suffix with the original newline/prompt only.",
+      "references": [
+        {
+          "address": "0x081A3E58",
+          "original": "0x085ABC72",
+          "symbol": "Chs_FrontierBannedListEndNewline",
+          "wokann": "src/frontier_util.c:5197 gUnknown_85ABBD8 + 0x9A"
+        },
+        {
+          "address": "0x081A3E68",
+          "original": "0x085ABC75",
+          "symbol": "Chs_FrontierBannedListEndPrompt",
+          "wokann": "src/frontier_util.c:5205 gUnknown_85ABBD8 + 0x9D"
+        }
+      ],
+      "historical_mapping_preserved": true
+    }
   ]
 }

@@ -29,14 +29,8 @@
     },
     {
       "source_symbol": "gText_PkmnStoppedEvolving",
-      "address": "0x0813ECA8",
-      "original": "0x085ABB3E",
-      "count": 1
-    },
-    {
-      "source_symbol": "gText_PkmnStoppedEvolving",
-      "address": "0x0813F7FC",
-      "original": "0x085ABB3E",
+      "address": "0x0813ECD0",
+      "original": "0x085ABB28",
       "count": 1
     }
   ],
@@ -146,5 +140,19 @@
       }
     ],
     "mapped_only": []
-  }
+  },
+  "manual_corrections": [
+    {
+      "issue": 63,
+      "removed_references": [
+        "0x0813ECA8",
+        "0x0813F7FC"
+      ],
+      "removed_target_symbol": "gText_EllipsisQuestionMark",
+      "verified_reference": "0x0813ECD0",
+      "verified_target": "gText_PkmnStoppedEvolving",
+      "evidence": "Wokann dev src/evolution_scene.c _0813ECD0 and baserom pointer 0x085ABB28",
+      "note": "Historical automatic mapping retained below; corrected effective reference list above."
+    }
+  ]
 }

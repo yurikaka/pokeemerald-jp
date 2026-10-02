@@ -1,0 +1,2815 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gJPText_No1MSubCircuit",
+      "document_line": 673,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85C8D80",
+          "offset": 0,
+          "encoded_hex": "a2c75b9807462e37000b0b5013021f0e2eabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802F6BC",
+          "original": "0x085C8D80",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_MainMenuCheckSaveFile",
+          "section_base": "0x0802F53C",
+          "section_length": 476,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8D80",
+          "section_offset": 384
+        }
+      ],
+      "final_text": "1M的存档用电子基板未安装！",
+      "active_reference_addresses": [
+        "0x0802F6BC"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextBlendMaster_Ending",
+      "document_line": 781,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pすごい！　すごすぎます！！\\pきのみブレンダーが　ものすごい　スピードで\nまわっています！\\pブレンドめいじんは　やっぱり　すごいです！\\pめいじんの　ワザを　みていない　みなさん！\nもうすぐ　めいじんは　かえってしまいます！\\lいますぐ　ミナモシティに　いきましょう！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BEC",
+          "original": "0x08254CBA",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextBlendMaster_Ending",
+          "section_offset": 172
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p难以置信！\n太难以置信了！\\p树果混合器正在以令人头晕目眩\n的速度旋转着！\\p混合名人果然名不虚传！\\p混合名人很快就要\n离开水静市了。\\p如果你还没有来一睹大师风采，\n不要错过这个机会！\\l赶快到水静市来吧！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BEC"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextBlendMaster_Ongoing",
+      "document_line": 782,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pポロックを　つくっている　みなさんへ\nビッグニュースが　はいって　きました！\\pあの　でんせつの　ブレンドめいじんが\nついに　あらわれました！\\pミナモシティの　コンテストかいじょうで\\lきのみブレンダーを　まわしています！\\pすばらしい　ポロックを　つくりたい　かたや\nめいじんの　テクニックを　みたい　かたは\\lミナモシティへ　いきましょう！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BD8",
+          "original": "0x08254BE4",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextBlendMaster_Ongoing",
+          "section_offset": 152
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p为所有宝可方块的制作爱好者\n带来重大消息！\\p传说中的混合名人\n终于来了！\\p混合名人正在水静市华丽大赛会场\n展示惊人的树果混合技巧！\\p想要制作极品宝可方块的人，\n想要一睹大师风采的人，\\l快来水静市吧！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BD8"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextGameCorner_Ending",
+      "document_line": 784,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pついに　きた！\nきて　しまいました！\\pゲームコーナーの　サービスデーが\nきて　しまいました！！\\pきょうなら　スロットも　ルーレットも\nあなたに　ほほえんで　くれるかも！？\\pさあ！　おわりが　ちかく　なってきました\nはやく　キンセツシティに　いそぎましょう！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BE4",
+          "original": "0x08254876",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextGameCorner_Ending",
+          "section_offset": 164
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p来了！\n这一天终于到来了！\\p游戏城的特别服务日\n就在今天开始了！\\p你能在老虎机和轮盘赌中\n交上好运吗？\\p时间所剩不多，\n就在紫堇市！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BE4"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextGameCorner_Ongoing",
+      "document_line": 785,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pついに　きた！\nきて　しまいました！\\pゲームコーナーの　サービスデーが\nきて　しまいました！！\\pきょうなら　スロットも　ルーレットも\nあなたに　ほほえんで　くれるかも！？\\pさあ　はやく\nキンセツシティに　いそぎましょう！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BD0",
+          "original": "0x082547DA",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextGameCorner_Ongoing",
+          "section_offset": 144
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p来了！\n这一天终于到来了！\\p游戏城的特别服务日\n就在今天开始了！\\p你能在老虎机和轮盘赌中\n交上好运吗？\\p来吧，就在这里！\n就在紫堇市！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BD0"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextLilycove_Ending",
+      "document_line": 787,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pおまたせ　しました！\\pきょう　ついに　ミナモ　デパートで\nほりだしものいちが　かいさい　されました\\pあなたが　ゆめにまでみた\nあんなものや　こんなもの　との\\pうんめいの　であいが\nまってるかも　しれませんよ！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BE8",
+          "original": "0x08254A53",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextLilycove_Ending",
+          "section_offset": 168
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p我们一直期待着\n今天的到来！\\p水静百货的\n清仓甩卖终于开始了！\\p所有你梦寐以求的新奇商品，\n今天可能都会与你相遇哦！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BE8"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextLilycove_Ongoing",
+      "document_line": 788,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pおまたせ　しました！\\pきょう　ついに　ミナモ　デパートで\nほりだしものいちが　かいさい　されました\\pあなたが　ゆめにまでみた\nあんなものや　こんなもの　との\\pうんめいの　であいが\nまってるかも　しれませんよ！\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BD4",
+          "original": "0x082549BD",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextLilycove_Ongoing",
+          "section_offset": 148
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p我们一直期待着\n今天的到来！\\p水静百货的\n清仓甩卖终于开始了！\\p所有你梦寐以求的新奇商品，\n今天可能都会与你相遇哦！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BD4"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextSlateport_Ending",
+      "document_line": 790,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pおまたせ　しました！\\pカイナシティの　がんばりやさんが\nいちばで　ものすごく　がんばっています！\\pいまなら　タウリンや　リゾチウムが\nほかよりも　やすく　かえるそうです！\\pがんばりやさん　が　いうには　まだまだ\nしょうひんは　のこって　いるそうです！\\pあなたも　カイナシティで　かいものを\nたのしんでは　いかがで　しょうか？\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BE0",
+          "original": "0x08254689",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextSlateport_Ending",
+          "section_offset": 160
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p这是大家期待已久的新闻！\\p凯那市的努力家\n正在市场举行超级促销活动！\\p他承诺商店里的特攻增强剂和\n攻击增强剂优惠到难以置信！\\p努力家透露，\n商品库存还很充足哦！\\p快去凯那市享受\n愉快的购物时光吧！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BE0"
+      ]
+    },
+    {
+      "symbol": "gPokeNewsTextSlateport_Ongoing",
+      "document_line": 791,
+      "jp_source": [
+        {
+          "file": "data/text/tv/pokemon_news.inc",
+          "text": "こんにちは\n“ポケモン　ニュース”の　じかんです\\pおまたせ　しました！\\pカイナシティの　がんばりやさんが\nいちばで　ものすごく　がんばっています！\\pいまなら　タウリンや　リゾチウムが\nほかよりも　やすく　かえるそうです！\\pあなたも　カイナシティに　いって\nおもう　ぞんぶん　かいものを\\lたのしんで　みては　いかがで　しょうか？\\pいじょう\n“ポケモン　ニュース”でした$"
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08568BCC",
+          "original": "0x082545D1",
+          "object": "build/pokeemerald-jp/data/tv.o",
+          "object_sha256": "9cf37d568d7fed7528bbf4767a1c077e9fe3d7436c487cd2311ad8580bfa84fb",
+          "section": ".rodata.tv_text_groups",
+          "section_base": "0x08568B40",
+          "section_length": 1564,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gPokeNewsTextSlateport_Ongoing",
+          "section_offset": 140
+        }
+      ],
+      "final_text": "大家好！\n现在是宝可梦新闻时间。\\p这是大家期待已久的新闻！\\p凯那市的努力家\n正在市场举行超级促销活动！\\p他承诺商店里的特攻增强剂和\n攻击增强剂优惠到难以置信！\\p听上去值得到凯那市逛一逛啊。\n尽情购物享受消费乐趣吧！\\p以上就是宝可梦新闻的全部内容。",
+      "active_reference_addresses": [
+        "0x08568BCC"
+      ]
+    },
+    {
+      "symbol": "gText_1MinutePlus",
+      "document_line": 890,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts95.h",
+          "symbol": "gUnknown_85CB018",
+          "offset": 0,
+          "encoded_hex": "a24d2e00023d3603ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08137E78",
+          "original": "0x085CB018",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CADD0",
+          "section_offset": 340
+        }
+      ],
+      "final_text": "1分+",
+      "active_reference_addresses": [
+        "0x08137E78"
+      ]
+    },
+    {
+      "symbol": "gText_1st",
+      "document_line": 891,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCEB9",
+          "offset": 0,
+          "encoded_hex": "a202ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A2F64",
+          "original": "0x085CCEB9",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 6460
+        }
+      ],
+      "final_text": "第1",
+      "active_reference_addresses": [
+        "0x081A2F64"
+      ]
+    },
+    {
+      "symbol": "gText_2nd",
+      "document_line": 894,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCEBC",
+          "offset": 0,
+          "encoded_hex": "a302ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A2F68",
+          "original": "0x085CCEBC",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 6464
+        }
+      ],
+      "final_text": "第2",
+      "active_reference_addresses": [
+        "0x081A2F68"
+      ]
+    },
+    {
+      "symbol": "gText_3rd",
+      "document_line": 896,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCEBF",
+          "offset": 0,
+          "encoded_hex": "a402ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A2F6C",
+          "original": "0x085CCEBF",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 6468
+        }
+      ],
+      "final_text": "第3",
+      "active_reference_addresses": [
+        "0x081A2F6C"
+      ]
+    },
+    {
+      "symbol": "gText_4th",
+      "document_line": 898,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts110.h",
+          "symbol": "gUnknown_85CCEC2",
+          "offset": 0,
+          "encoded_hex": "a502ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A2F70",
+          "original": "0x085CCEC2",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 6472
+        }
+      ],
+      "final_text": "第4",
+      "active_reference_addresses": [
+        "0x081A2F70"
+      ]
+    },
+    {
+      "symbol": "gText_99TimesPlus",
+      "document_line": 906,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts95.h",
+          "symbol": "gUnknown_85CB00E",
+          "offset": 0,
+          "encoded_hex": "aaaa060200023d3603ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08137E50",
+          "original": "0x085CB00E",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CADD0",
+          "section_offset": 300
+        }
+      ],
+      "final_text": "99次+",
+      "active_reference_addresses": [
+        "0x08137E50"
+      ]
+    },
+    {
+      "symbol": "gText_BadEgg",
+      "document_line": 918,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts68.h",
+          "symbol": "gUnknown_85ABC78",
+          "offset": 0,
+          "encoded_hex": "9172606f8bff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0806A3C4",
+          "original": "0x085ABC78",
+          "object": "build/pokeemerald-jp/src/pokemon.o",
+          "object_sha256": "0eedddbd43c1465ad1ac6105e082c15499523b30f53b58e63bf546ee9d6ab5d2",
+          "section": ".text",
+          "section_base": "0x08067658",
+          "section_length": 31072,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABBD8",
+          "section_offset": 11628
+        }
+      ],
+      "final_text": "坏蛋",
+      "active_reference_addresses": [
+        "0x0806A3C4"
+      ]
+    },
+    {
+      "symbol": "gText_BatteryRunDry",
+      "document_line": 922,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85C8D93",
+          "offset": 0,
+          "encoded_hex": "442e11382a1900102216fe1409023700033b06150815281f0c10fb1409021600062e09020d290044073b141a0005071f0e2e37fe8aae712d001243091300010f480a141a0044071f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802F800",
+          "original": "0x085C8D93",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_MainMenuCheckBattery",
+          "section_base": "0x0802F76C",
+          "section_length": 160,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8D93",
+          "section_offset": 148
+        }
+      ],
+      "final_text": "因电池已经没电，\n所以时钟不会走动。\\p与时钟相关的所有事件不会发生，\n但游戏依然可以继续游玩。",
+      "active_reference_addresses": [
+        "0x0802F800"
+      ]
+    },
+    {
+      "symbol": "gText_BattleRecord",
+      "document_line": 959,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCA9E",
+          "offset": 0,
+          "encoded_hex": "10020e2e1900072b08ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080C57AC",
+          "original": "0x085CCA9E",
+          "object": "build/pokeemerald-jp/src/frontier_pass.o",
+          "object_sha256": "c96d69db340ae9803c477b84dd1d6bd8efe330dd3b136368a60945b63e1a42d1",
+          "section": ".text",
+          "section_base": "0x080C49CC",
+          "section_length": 7776,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 3552
+        }
+      ],
+      "final_text": "对战记录",
+      "active_reference_addresses": [
+        "0x080C57AC"
+      ]
+    },
+    {
+      "symbol": "gText_BattleWallyName",
+      "document_line": 977,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts68.h",
+          "symbol": "gUnknown_85ABC7E",
+          "offset": 0,
+          "encoded_hex": "706279ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0806E0B4",
+          "original": "0x085ABC7E",
+          "object": "build/pokeemerald-jp/src/pokemon.o",
+          "object_sha256": "0eedddbd43c1465ad1ac6105e082c15499523b30f53b58e63bf546ee9d6ab5d2",
+          "section": ".text",
+          "section_base": "0x08067658",
+          "section_length": 31072,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABBD8",
+          "section_offset": 27228
+        }
+      ],
+      "final_text": "满充",
+      "active_reference_addresses": [
+        "0x0806E0B4"
+      ]
+    },
+    {
+      "symbol": "gText_BerryPickingRecords",
+      "document_line": 988,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCF5",
+          "offset": 0,
+          "encoded_hex": "95ae9578551907192045281900072b08ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08027A34",
+          "original": "0x085CCCF5",
+          "object": "build/pokeemerald-jp/src/dodrio_berry_picking.o",
+          "object_sha256": "8840191e71514bb3fe962c0e74aadd30d4fddae0b3402caa9c8fa871b62dddbb",
+          "section": ".text.sub_0802792C",
+          "section_base": "0x0802792C",
+          "section_length": 288,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 264
+        }
+      ],
+      "final_text": "嘟嘟利摘树果纪录",
+      "active_reference_addresses": [
+        "0x08027A34"
+      ]
+    },
+    {
+      "symbol": "gText_BestScore2",
+      "document_line": 991,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts109.h",
+          "symbol": "gUnknown_85CCDFE",
+          "offset": 31,
+          "encoded_hex": "0b020a03001408132eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082D1B08",
+          "original": "0x085CCE1D",
+          "object": "build/pokeemerald-jp/src/data/pokejump4.o",
+          "object_sha256": "a66d0739b9d276734d7a8fa7b840db7ba4e4ba40bd0d3c1832c62573494a1b71",
+          "section": ".rodata",
+          "section_base": "0x082D1A88",
+          "section_length": 1228,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 128
+        }
+      ],
+      "final_text": "最高分：",
+      "active_reference_addresses": [
+        "0x082D1B08"
+      ]
+    },
+    {
+      "symbol": "gText_Bitter",
+      "document_line": 1007,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts79.h",
+          "symbol": "gUnknown_85C984A",
+          "offset": 0,
+          "encoded_hex": "163702ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08135E58",
+          "original": "0x085C984A",
+          "object": "build/pokeemerald-jp/src/pokeblock.o",
+          "object_sha256": "4c90cef0eff55fae8849875ce2120c0fc510aba1728a3a0168e6fcf4e3784382",
+          "section": ".text",
+          "section_base": "0x08135850",
+          "section_length": 6428,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C97BD",
+          "section_offset": 1544
+        }
+      ],
+      "final_text": "苦味",
+      "active_reference_addresses": [
+        "0x08135E58"
+      ]
+    },
+    {
+      "symbol": "gText_Body",
+      "document_line": 1019,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts69.h",
+          "symbol": "gUnknown_85ABDAA",
+          "offset": 0,
+          "encoded_hex": "062741ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A4F9C",
+          "original": "0x085ABDAA",
+          "object": "build/pokeemerald-jp/src/battle_arena.o",
+          "object_sha256": "8d0919e248785c63125db9ec2d0fa2abcbe5bb5dbdd0fc469e41b05e2c52385f",
+          "section": ".text",
+          "section_base": "0x081A4E28",
+          "section_length": 3556,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85ABD3C",
+          "section_offset": 372
+        }
+      ],
+      "final_text": "体",
+      "active_reference_addresses": [
+        "0x081A4F9C"
+      ]
+    },
+    {
+      "symbol": "gText_Box",
+      "document_line": 1021,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB584",
+          "offset": 0,
+          "encoded_hex": "9aa0585dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080C707C",
+          "original": "0x085CB584",
+          "object": "build/pokeemerald-jp/src/pokemon_storage_system.o",
+          "object_sha256": "e2225bc51d8948d98b9a29855efc6e7c56a327d1fb2abd23b3776387ccb87244",
+          "section": ".text.ResetPokemonStorageSystem",
+          "section_base": "0x080C7008",
+          "section_length": 120,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CB584",
+          "section_offset": 116
+        }
+      ],
+      "final_text": "BOX ",
+      "active_reference_addresses": [
+        "0x080C707C"
+      ]
+    },
+    {
+      "symbol": "gText_Brawly",
+      "document_line": 1024,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA9EC",
+          "offset": 0,
+          "encoded_hex": "645357ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813BEC8",
+          "original": "0x085CA9EC",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 16804
+        }
+      ],
+      "final_text": "藤树",
+      "active_reference_addresses": [
+        "0x0813BEC8"
+      ]
+    },
+    {
+      "symbol": "gText_CancelDecorating",
+      "document_line": 1041,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts88.h",
+          "symbol": "gUnknown_85CA75C",
+          "offset": 0,
+          "encoded_hex": "0508192d0024221f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08128454",
+          "original": "0x085CA75C",
+          "object": "build/pokeemerald-jp/src/decoration.o",
+          "object_sha256": "033b372828b5f2725ff2c1aa0dc6a823427e76a43f307ad44600aed08fd98043",
+          "section": ".text",
+          "section_base": "0x08126950",
+          "section_length": 15260,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA70B",
+          "section_offset": 6916
+        }
+      ],
+      "final_text": "要停止装饰吗？",
+      "active_reference_addresses": [
+        "0x08128454"
+      ]
+    },
+    {
+      "symbol": "gText_CantBePlacedHere",
+      "document_line": 1045,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts88.h",
+          "symbol": "gUnknown_85CA750",
+          "offset": 0,
+          "encoded_hex": "0a0a161a0005091f0e2eabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081289A4",
+          "original": "0x085CA750",
+          "object": "build/pokeemerald-jp/src/decoration.o",
+          "object_sha256": "033b372828b5f2725ff2c1aa0dc6a823427e76a43f307ad44600aed08fd98043",
+          "section": ".text",
+          "section_base": "0x08126950",
+          "section_length": 15260,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA70B",
+          "section_offset": 8276
+        }
+      ],
+      "final_text": "无法放在这里！",
+      "active_reference_addresses": [
+        "0x081289A4"
+      ]
+    },
+    {
+      "symbol": "gText_ContinueMenuBadges",
+      "document_line": 1101,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCE1",
+          "offset": 0,
+          "encoded_hex": "235013022996a08d00fd020aff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08031D94",
+          "original": "0x085CCCE1",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.MainMenu_FormatSavegameBadges",
+          "section_base": "0x08031D28",
+          "section_length": 116,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCCE1",
+          "section_offset": 108
+        }
+      ],
+      "final_text": "获得徽章",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_ContinueMenuPlayer",
+      "document_line": 1102,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCBD",
+          "offset": 0,
+          "encoded_hex": "0c353d2e0a0300fd02ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08031C44",
+          "original": "0x085CCCBD",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.MainMenu_FormatSavegamePlayer",
+          "section_base": "0x08031C00",
+          "section_length": 76,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCCBD",
+          "section_offset": 68
+        }
+      ],
+      "final_text": "主人公",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_ContinueMenuPokedex",
+      "document_line": 1103,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCD4",
+          "offset": 0,
+          "encoded_hex": "9f59737e3e062e00fd021b07ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08031D20",
+          "original": "0x085CCCD4",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.MainMenu_FormatSavegamePokedex",
+          "section_base": "0x08031CB0",
+          "section_length": 120,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCCD4",
+          "section_offset": 112
+        }
+      ],
+      "final_text": "宝可梦图鉴",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_ContinueMenuTime",
+      "document_line": 1104,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts106.h",
+          "symbol": "gUnknown_85CCCC7",
+          "offset": 0,
+          "encoded_hex": "9d7a523d062e00fd02f0fd03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08031CA8",
+          "original": "0x085CCCC7",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.MainMenu_FormatSavegameTime",
+          "section_base": "0x08031C4C",
+          "section_length": 100,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCCC7",
+          "section_offset": 92
+        }
+      ],
+      "final_text": "冒险时间",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_Current",
+      "document_line": 1114,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts115.h",
+          "symbol": "gUnknown_85DD425",
+          "offset": 0,
+          "encoded_hex": "3a2e3c02ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A1C7C",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 1620
+        },
+        {
+          "address": "0x081A1F04",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 2268
+        },
+        {
+          "address": "0x081A2230",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 3080
+        },
+        {
+          "address": "0x081A2468",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 3648
+        },
+        {
+          "address": "0x081A273C",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4372
+        },
+        {
+          "address": "0x081A2A50",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5160
+        },
+        {
+          "address": "0x081A2CE0",
+          "original": "0x085DD425",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5816
+        }
+      ],
+      "final_text": "当前",
+      "active_reference_addresses": [
+        "0x081A1C7C",
+        "0x081A1F04",
+        "0x081A2230",
+        "0x081A2468",
+        "0x081A273C",
+        "0x081A2A50",
+        "0x081A2CE0"
+      ]
+    },
+    {
+      "symbol": "gText_Day",
+      "document_line": 1126,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts25.h",
+          "symbol": "gUnknown_84E8A6C",
+          "offset": 0,
+          "encoded_hex": "1611ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0809E584",
+          "original": "0x084E8A6C",
+          "object": "build/pokeemerald-jp/src/reset_rtc_screen.o",
+          "object_sha256": "2f2a2698ed60d9f87f78516afc8fe88bfdaa03a00570e713161cb99b6f1d24f5",
+          "section": ".text.PrintTime",
+          "section_base": "0x0809E49C",
+          "section_length": 240,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_84E8A6C",
+          "section_offset": 232
+        },
+        {
+          "address": "0x0809E708",
+          "original": "0x084E8A6C",
+          "object": "build/pokeemerald-jp/src/reset_rtc_screen.o",
+          "object_sha256": "2f2a2698ed60d9f87f78516afc8fe88bfdaa03a00570e713161cb99b6f1d24f5",
+          "section": ".text.Task_ResetRtc_HandleInput",
+          "section_base": "0x0809E6C0",
+          "section_length": 280,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "sInputMap",
+          "section_offset": 72
+        }
+      ],
+      "final_text": "天",
+      "active_reference_addresses": [
+        "0x0809E584",
+        "0x0809E708"
+      ]
+    },
+    {
+      "symbol": "gText_FlyToWhere",
+      "document_line": 1217,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts77.h",
+          "symbol": "gUnknown_85C9398",
+          "offset": 0,
+          "encoded_hex": "450a1d0014471f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08124854",
+          "original": "0x085C9398",
+          "object": "build/pokeemerald-jp/src/region_map.o",
+          "object_sha256": "832e333f7582930950af58014ca6318cdcf3d09c1c868d389c8ee0d5e28ffe89",
+          "section": ".text",
+          "section_base": "0x08122CE8",
+          "section_length": 8460,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C934F",
+          "section_offset": 7020
+        }
+      ],
+      "final_text": "要飞到哪里？",
+      "active_reference_addresses": [
+        "0x08124854"
+      ]
+    },
+    {
+      "symbol": "gText_Glacia",
+      "document_line": 1237,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA9F7",
+          "offset": 0,
+          "encoded_hex": "9d7871ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813BF04",
+          "original": "0x085CA9F7",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 16864
+        }
+      ],
+      "final_text": "波妮",
+      "active_reference_addresses": [
+        "0x0813BF04"
+      ]
+    },
+    {
+      "symbol": "gText_Gold",
+      "document_line": 1242,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts88.h",
+          "symbol": "gUnknown_85CA73F",
+          "offset": 0,
+          "encoded_hex": "072eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080FB574",
+          "original": "0x085CA73F",
+          "object": "build/pokeemerald-jp/src/fldeff_misc.o",
+          "object_sha256": "a5acc5d4bb8fdffa44ad9e6e9176f9c359c576850fdf658b8bfe51c4234f6650",
+          "section": ".text",
+          "section_base": "0x080FA43C",
+          "section_length": 5348,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA70B",
+          "section_offset": 4408
+        }
+      ],
+      "final_text": "金",
+      "active_reference_addresses": [
+        "0x080FB574"
+      ]
+    },
+    {
+      "symbol": "gText_JumpsInARow",
+      "document_line": 1297,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts109.h",
+          "symbol": "gUnknown_85CCDFE",
+          "offset": 17,
+          "encoded_hex": "0b020a03008d847e9d06020d03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x082D1B04",
+          "original": "0x085CCE0F",
+          "object": "build/pokeemerald-jp/src/data/pokejump4.o",
+          "object_sha256": "a66d0739b9d276734d7a8fa7b840db7ba4e4ba40bd0d3c1832c62573494a1b71",
+          "section": ".rodata",
+          "section_base": "0x082D1A88",
+          "section_length": 1228,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CCA7C",
+          "section_offset": 124
+        }
+      ],
+      "final_text": "连续跳跃：",
+      "active_reference_addresses": [
+        "0x082D1B04"
+      ]
+    },
+    {
+      "symbol": "gText_JustOnePkmn",
+      "document_line": 1298,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85CB534",
+          "offset": 0,
+          "encoded_hex": "1323119f59737e3700a21b070c06021f0e2eabfe00000000000000000000000000000000000000ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080C6CE4",
+          "original": "0x085CB534",
+          "object": "build/pokeemerald-jp/src/pokemon_storage_system.o",
+          "object_sha256": "e2225bc51d8948d98b9a29855efc6e7c56a327d1fb2abd23b3776387ccb87244",
+          "section": ".text.Task_PokemonStorageSystemPC",
+          "section_base": "0x080C6AF4",
+          "section_length": 784,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CB534",
+          "section_offset": 496
+        }
+      ],
+      "final_text": "这样就没有可战斗的宝可梦了！",
+      "active_reference_addresses": [
+        "0x080C6CE4"
+      ]
+    },
+    {
+      "symbol": "gText_MainMenuMysteryEvents",
+      "document_line": 1326,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8CA7",
+          "offset": 0,
+          "encoded_hex": "1c0c38150044073b14ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802FB4C",
+          "original": "0x085C8CA7",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenu",
+          "section_base": "0x0802F860",
+          "section_length": 1360,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8CA7",
+          "section_offset": 748
+        },
+        {
+          "address": "0x0802FD8C",
+          "original": "0x085C8CA7",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenu",
+          "section_base": "0x0802F860",
+          "section_length": 1360,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8CA7",
+          "section_offset": 1324
+        }
+      ],
+      "final_text": "神秘事件",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_MainMenuMysteryGift",
+      "document_line": 1327,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8C91",
+          "offset": 0,
+          "encoded_hex": "1c0c3815000508282319ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802FB28",
+          "original": "0x085C8C91",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenu",
+          "section_base": "0x0802F860",
+          "section_length": 1360,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8C91",
+          "section_offset": 712
+        }
+      ],
+      "final_text": "神秘礼物",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_MainMenuMysteryGift2",
+      "document_line": 1328,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8C9C",
+          "offset": 0,
+          "encoded_hex": "1c0c3815002327022319ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802FBE8",
+          "original": "0x085C8C9C",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenu",
+          "section_base": "0x0802F860",
+          "section_length": 1360,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8C9C",
+          "section_offset": 904
+        },
+        {
+          "address": "0x0802FD88",
+          "original": "0x085C8C9C",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenu",
+          "section_base": "0x0802F860",
+          "section_length": 1360,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8C9C",
+          "section_offset": 1320
+        }
+      ],
+      "final_text": "神秘礼物",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_MenuOptionBag",
+      "document_line": 1352,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts94.h",
+          "symbol": "gUnknown_85CADB7",
+          "offset": 0,
+          "encoded_hex": "96a089ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080E21E0",
+          "original": "0x085CADB7",
+          "object": "build/pokeemerald-jp/src/script_menu.o",
+          "object_sha256": "2a9b01946a07ce2bf5749a796313ba63895f26a43632963cb9e503153a044852",
+          "section": ".text",
+          "section_base": "0x080E12C8",
+          "section_length": 3964,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CAB13",
+          "section_offset": 3864
+        }
+      ],
+      "final_text": "包包",
+      "active_reference_addresses": [
+        "0x080E21E0"
+      ]
+    },
+    {
+      "symbol": "gText_MenuOptionPokedex",
+      "document_line": 1355,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts94.h",
+          "symbol": "gUnknown_85CADAE",
+          "offset": 0,
+          "encoded_hex": "3e062eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080E21D8",
+          "original": "0x085CADAE",
+          "object": "build/pokeemerald-jp/src/script_menu.o",
+          "object_sha256": "2a9b01946a07ce2bf5749a796313ba63895f26a43632963cb9e503153a044852",
+          "section": ".text",
+          "section_base": "0x080E12C8",
+          "section_length": 3964,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CAB13",
+          "section_offset": 3856
+        }
+      ],
+      "final_text": "图鉴",
+      "active_reference_addresses": [
+        "0x080E21D8"
+      ]
+    },
+    {
+      "symbol": "gText_MenuOptionPokemon",
+      "document_line": 1356,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts94.h",
+          "symbol": "gUnknown_85CADB2",
+          "offset": 0,
+          "encoded_hex": "9f59737eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080E21DC",
+          "original": "0x085CADB2",
+          "object": "build/pokeemerald-jp/src/script_menu.o",
+          "object_sha256": "2a9b01946a07ce2bf5749a796313ba63895f26a43632963cb9e503153a044852",
+          "section": ".text",
+          "section_base": "0x080E12C8",
+          "section_length": 3964,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CAB13",
+          "section_offset": 3860
+        }
+      ],
+      "final_text": "宝可梦",
+      "active_reference_addresses": [
+        "0x080E21DC"
+      ]
+    },
+    {
+      "symbol": "gText_MenuOptionPokenav",
+      "document_line": 1357,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts94.h",
+          "symbol": "gUnknown_85CADBB",
+          "offset": 0,
+          "encoded_hex": "9f596597ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080E21E4",
+          "original": "0x085CADBB",
+          "object": "build/pokeemerald-jp/src/script_menu.o",
+          "object_sha256": "2a9b01946a07ce2bf5749a796313ba63895f26a43632963cb9e503153a044852",
+          "section": ".text",
+          "section_base": "0x080E12C8",
+          "section_length": 3964,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CAB13",
+          "section_offset": 3868
+        }
+      ],
+      "final_text": "宝可导航",
+      "active_reference_addresses": [
+        "0x080E21E4"
+      ]
+    },
+    {
+      "symbol": "gText_MessageWillBeLost",
+      "document_line": 1360,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA99A",
+          "offset": 0,
+          "encoded_hex": "150226031a000704130c1f021f0d37fe262b0c02440d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0816B7E8",
+          "original": "0x085CA99A",
+          "object": "build/pokeemerald-jp/src/player_pc.o",
+          "object_sha256": "6edcf2355cb48dcacb3177aa24b0fc8a854b1d71c98c0ff5d327839745c9ff70",
+          "section": ".text",
+          "section_base": "0x0816ABFC",
+          "section_length": 7676,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 3052
+        }
+      ],
+      "final_text": "邮件信息将会丢失。\n确定吗？",
+      "active_reference_addresses": [
+        "0x0816B7E8"
+      ]
+    },
+    {
+      "symbol": "gText_Name",
+      "document_line": 1390,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts77.h",
+          "symbol": "gUnknown_85C9359",
+          "offset": 0,
+          "encoded_hex": "151f04ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08174C0C",
+          "original": "0x085C9359",
+          "source": [
+            {
+              "file": "src/hall_of_fame.c",
+              "line": 3426,
+              "referenced_symbol": "gUnknown_85C934F",
+              "referenced_offset": "0xA",
+              "resolved_target": "0x085C9359"
+            }
+          ]
+        }
+      ],
+      "final_text": "名字",
+      "active_reference_addresses": [
+        "0x08174C0C"
+      ]
+    },
+    {
+      "symbol": "gText_PlaceItHere",
+      "document_line": 1447,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts88.h",
+          "symbol": "gUnknown_85CA745",
+          "offset": 0,
+          "encoded_hex": "0a0a160005071f0d06acff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08128978",
+          "original": "0x085CA745",
+          "object": "build/pokeemerald-jp/src/decoration.o",
+          "object_sha256": "033b372828b5f2725ff2c1aa0dc6a823427e76a43f307ad44600aed08fd98043",
+          "section": ".text",
+          "section_base": "0x08126950",
+          "section_length": 15260,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA70B",
+          "section_offset": 8232
+        }
+      ],
+      "final_text": "要放在这里吗？",
+      "active_reference_addresses": [
+        "0x08128978"
+      ]
+    },
+    {
+      "symbol": "gText_Record",
+      "document_line": 1523,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts115.h",
+          "symbol": "gUnknown_85DD42A",
+          "offset": 0,
+          "encoded_hex": "0b020a03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A1BC0",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 1432
+        },
+        {
+          "address": "0x081A20AC",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 2692
+        },
+        {
+          "address": "0x081A219C",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 2932
+        },
+        {
+          "address": "0x081A25D8",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4016
+        },
+        {
+          "address": "0x081A26CC",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4260
+        },
+        {
+          "address": "0x081A2970",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4936
+        },
+        {
+          "address": "0x081A2C6C",
+          "original": "0x085DD42A",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5700
+        }
+      ],
+      "final_text": "最高",
+      "active_reference_addresses": [
+        "0x081A1BC0",
+        "0x081A20AC",
+        "0x081A219C",
+        "0x081A25D8",
+        "0x081A26CC",
+        "0x081A2970",
+        "0x081A2C6C"
+      ]
+    },
+    {
+      "symbol": "gText_RecordMixingComplete",
+      "document_line": 1528,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts34.h",
+          "symbol": "gUnknown_8566CB1",
+          "offset": 0,
+          "encoded_hex": "0c3503283603000c1f0c10fe0512062a0b1f440c10ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x080E6A80",
+          "original": "0x08566CB1",
+          "object": "build/pokeemerald-jp/src/record_mixing.o",
+          "object_sha256": "49e336afacbd0b633ec282a6e438ed2e8e8724babf374714440bfc1ed13c2d44",
+          "section": ".text",
+          "section_base": "0x080E63C4",
+          "section_length": 7960,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gContestEffectFuncs",
+          "section_offset": 1724
+        }
+      ],
+      "final_text": "记录混合完成。\n感谢您的等待。",
+      "active_reference_addresses": [
+        "0x080E6A80"
+      ]
+    },
+    {
+      "symbol": "gText_RecordsLv50",
+      "document_line": 1531,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts115.h",
+          "symbol": "gUnknown_85DD40E",
+          "offset": 0,
+          "encoded_hex": "7a997900a6a1ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A1DD0",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 1960
+        },
+        {
+          "address": "0x081A20A0",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 2680
+        },
+        {
+          "address": "0x081A2354",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 3372
+        },
+        {
+          "address": "0x081A25CC",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4004
+        },
+        {
+          "address": "0x081A283C",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4628
+        },
+        {
+          "address": "0x081A2B8C",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5476
+        },
+        {
+          "address": "0x081A2DD8",
+          "original": "0x085DD40E",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 6064
+        }
+      ],
+      "final_text": "Lv. 50级",
+      "active_reference_addresses": [
+        "0x081A1DD0",
+        "0x081A20A0",
+        "0x081A2354",
+        "0x081A25CC",
+        "0x081A283C",
+        "0x081A2B8C",
+        "0x081A2DD8"
+      ]
+    },
+    {
+      "symbol": "gText_RecordsOpenLevel",
+      "document_line": 1532,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts115.h",
+          "symbol": "gUnknown_85DD415",
+          "offset": 0,
+          "encoded_hex": "55ae9d7e7a9979ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A1DD4",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 1964
+        },
+        {
+          "address": "0x081A20A4",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 2684
+        },
+        {
+          "address": "0x081A2358",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 3376
+        },
+        {
+          "address": "0x081A25D0",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4008
+        },
+        {
+          "address": "0x081A2840",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 4632
+        },
+        {
+          "address": "0x081A2B94",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5484
+        },
+        {
+          "address": "0x081A2DDC",
+          "original": "0x085DD415",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 6068
+        }
+      ],
+      "final_text": "自由等级",
+      "active_reference_addresses": [
+        "0x081A1DD4",
+        "0x081A20A4",
+        "0x081A2358",
+        "0x081A25D0",
+        "0x081A2840",
+        "0x081A2B94",
+        "0x081A2DDC"
+      ]
+    },
+    {
+      "symbol": "gText_RentalSwap",
+      "document_line": 1547,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts116.h",
+          "symbol": "gUnknown_85DD438",
+          "offset": 0,
+          "encoded_hex": "7a7e6079ba0a03062eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x081A2B90",
+          "original": "0x085DD438",
+          "object": "build/pokeemerald-jp/src/frontier_util.o",
+          "object_sha256": "9a116d95e4a9449226dd5d0b13b33dac26c6170b22ec7a54ebfd1c30ba066605",
+          "section": ".text",
+          "section_base": "0x081A1628",
+          "section_length": 14336,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85DD2E0",
+          "section_offset": 5480
+        }
+      ],
+      "final_text": "租用/交换",
+      "active_reference_addresses": [
+        "0x081A2B90"
+      ]
+    },
+    {
+      "symbol": "gText_SaveFileCorrupted",
+      "document_line": 1569,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85C8D44",
+          "offset": 0,
+          "encoded_hex": "7a9fae6437000e020608160006062a130215021944fe0f191f04197a9fae642d0026201f0dabff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802F664",
+          "original": "0x085C8D44",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_MainMenuCheckSaveFile",
+          "section_base": "0x0802F53C",
+          "section_length": 476,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8D44",
+          "section_offset": 296
+        }
+      ],
+      "final_text": "因为先前游戏中的记录没有正确保存，\n将读取在那之前保存的那一份记录！",
+      "active_reference_addresses": [
+        "0x0802F664"
+      ]
+    },
+    {
+      "symbol": "gText_SaveFileErased",
+      "document_line": 1570,
+      "jp_source": [
+        {
+          "file": "src/strings.c",
+          "symbol": "gUnknown_85C8D6B",
+          "offset": 0,
+          "encoded_hex": "7a9fae6419001502260337000704130c1f5010abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0802F624",
+          "original": "0x085C8D6B",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_MainMenuCheckSaveFile",
+          "section_base": "0x0802F53C",
+          "section_length": 476,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8D6B",
+          "section_offset": 232
+        }
+      ],
+      "final_text": "记录的内容消失了！",
+      "active_reference_addresses": [
+        "0x0802F624"
+      ]
+    },
+    {
+      "symbol": "gText_Spicy",
+      "document_line": 1625,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts79.h",
+          "symbol": "gUnknown_85C983E",
+          "offset": 0,
+          "encoded_hex": "062702ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08135E4C",
+          "original": "0x085C983E",
+          "object": "build/pokeemerald-jp/src/pokeblock.o",
+          "object_sha256": "4c90cef0eff55fae8849875ce2120c0fc510aba1728a3a0168e6fcf4e3784382",
+          "section": ".text",
+          "section_base": "0x08135850",
+          "section_length": 6428,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C97BD",
+          "section_offset": 1532
+        }
+      ],
+      "final_text": "辣味",
+      "active_reference_addresses": [
+        "0x08135E4C"
+      ]
+    },
+    {
+      "symbol": "gText_Steven",
+      "document_line": 1628,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA9E8",
+          "offset": 0,
+          "encoded_hex": "91528bff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813BEB4",
+          "original": "0x085CA9E8",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 16784
+        }
+      ],
+      "final_text": "大吾",
+      "active_reference_addresses": [
+        "0x0813BEB4"
+      ]
+    },
+    {
+      "symbol": "gText_StowCase",
+      "document_line": 1634,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts80.h",
+          "symbol": "gUnknown_85C985C",
+          "offset": 0,
+          "encoded_hex": "59ae5d2d0c1f03ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08135F20",
+          "original": "0x085C985C",
+          "object": "build/pokeemerald-jp/src/pokeblock.o",
+          "object_sha256": "4c90cef0eff55fae8849875ce2120c0fc510aba1728a3a0168e6fcf4e3784382",
+          "section": ".text",
+          "section_base": "0x08135850",
+          "section_length": 6428,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C97BD",
+          "section_offset": 1744
+        }
+      ],
+      "final_text": "收好盒子",
+      "active_reference_addresses": [
+        "0x08135F20"
+      ]
+    },
+    {
+      "symbol": "gText_Sweet",
+      "document_line": 1643,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts79.h",
+          "symbol": "gUnknown_85C9846",
+          "offset": 0,
+          "encoded_hex": "011f02ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08135E54",
+          "original": "0x085C9846",
+          "object": "build/pokeemerald-jp/src/pokeblock.o",
+          "object_sha256": "4c90cef0eff55fae8849875ce2120c0fc510aba1728a3a0168e6fcf4e3784382",
+          "section": ".text",
+          "section_base": "0x08135850",
+          "section_length": 6428,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C97BD",
+          "section_offset": 1540
+        }
+      ],
+      "final_text": "甜味",
+      "active_reference_addresses": [
+        "0x08135E54"
+      ]
+    },
+    {
+      "symbol": "gText_Wallace",
+      "document_line": 1709,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA9E4",
+          "offset": 0,
+          "encoded_hex": "705878ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813BF18",
+          "original": "0x085CA9E4",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 16884
+        }
+      ],
+      "final_text": "米可利",
+      "active_reference_addresses": [
+        "0x0813BF18"
+      ]
+    },
+    {
+      "symbol": "gText_Winona",
+      "document_line": 1732,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts91.h",
+          "symbol": "gUnknown_85CA9F0",
+          "offset": 0,
+          "encoded_hex": "6588ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0813BEDC",
+          "original": "0x085CA9F0",
+          "object": "build/pokeemerald-jp/src/field_specials.o",
+          "object_sha256": "bf4330de336d5eed87cec2bf4abb493ad927a83e3089d2474e96c093be90f8f0",
+          "section": ".text",
+          "section_base": "0x08137D24",
+          "section_length": 17044,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85CA8D1",
+          "section_offset": 16824
+        }
+      ],
+      "final_text": "娜琪",
+      "active_reference_addresses": [
+        "0x0813BEDC"
+      ]
+    },
+    {
+      "symbol": "gText_WirelessNotConnected",
+      "document_line": 1737,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8CB1",
+          "offset": 0,
+          "encoded_hex": "7c52747a5d51919d600037fe1215375013021f0e2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0803034C",
+          "original": "0x085C8CB1",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenuInvalidActionError",
+          "section_base": "0x080302E4",
+          "section_length": 244,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8CB1",
+          "section_offset": 104
+        }
+      ],
+      "final_text": "没有连接\n无线接收器！",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "sText_SpaceBerry",
+      "document_line": 2618,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts8.h",
+          "symbol": "gUnknown_830F82D",
+          "offset": 0,
+          "encoded_hex": "1920ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0808316C",
+          "original": "0x0830F82D",
+          "object": "build/pokeemerald-jp/src/berry_blender.o",
+          "object_sha256": "caed8081bfa228889e3896c18a2a3362107ada9b36130c9332aef9692d4df2bb",
+          "section": ".text",
+          "section_base": "0x0807F170",
+          "section_length": 18940,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_830F82D",
+          "section_offset": 16380
+        }
+      ],
+      "final_text": "果",
+      "active_reference_addresses": [
+        "0x0808316C"
+      ]
+    },
+    {
+      "symbol": "gText_MysteryEventsCantUse",
+      "document_line": 2901,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8CEB",
+          "offset": 0,
+          "encoded_hex": "7c52747a5d51919d60002d000b0c101f1ffe1c0c381544073b14001a0044071f0e2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08030374",
+          "original": "0x085C8CEB",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenuInvalidActionError",
+          "section_base": "0x080302E4",
+          "section_length": 244,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8CEB",
+          "section_offset": 144
+        }
+      ],
+      "final_text": "连接无线接收器时\n不能使用神秘事件功能！",
+      "active_reference_addresses": []
+    },
+    {
+      "symbol": "gText_MysteryGiftCantUse",
+      "document_line": 2902,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts75.h",
+          "symbol": "gUnknown_85C8CC7",
+          "offset": 0,
+          "encoded_hex": "7c52747a5d51919d60002d000b0c101f1ffe1c0c38152327022319001a0044071f0e2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x08030358",
+          "original": "0x085C8CC7",
+          "object": "build/pokeemerald-jp/src/main_menu.o",
+          "object_sha256": "0071b305353428463b266572928056f0fb7cb59627d6cc484bee42b40cb12d11",
+          "section": ".text.Task_DisplayMainMenuInvalidActionError",
+          "section_base": "0x080302E4",
+          "section_length": 244,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gUnknown_85C8CC7",
+          "section_offset": 116
+        }
+      ],
+      "final_text": "连接无线接收器时\n不能使用神秘礼物功能！",
+      "active_reference_addresses": []
+    }
+  ],
+  "current_batch_counts": {
+    "texts": 56,
+    "references": 81
+  },
+  "active_reference_writes": [
+    {
+      "address": "0x0802F6BC",
+      "original": "0x085C8D80",
+      "symbol": "Chs_ChecklistLiteral_gJPText_No1MSubCircuit",
+      "source_symbol": "gJPText_No1MSubCircuit"
+    },
+    {
+      "address": "0x08568BEC",
+      "original": "0x08254CBA",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextBlendMaster_Ending",
+      "source_symbol": "gPokeNewsTextBlendMaster_Ending"
+    },
+    {
+      "address": "0x08568BD8",
+      "original": "0x08254BE4",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextBlendMaster_Ongoing",
+      "source_symbol": "gPokeNewsTextBlendMaster_Ongoing"
+    },
+    {
+      "address": "0x08568BE4",
+      "original": "0x08254876",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextGameCorner_Ending",
+      "source_symbol": "gPokeNewsTextGameCorner_Ending"
+    },
+    {
+      "address": "0x08568BD0",
+      "original": "0x082547DA",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextGameCorner_Ongoing",
+      "source_symbol": "gPokeNewsTextGameCorner_Ongoing"
+    },
+    {
+      "address": "0x08568BE8",
+      "original": "0x08254A53",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextLilycove_Ending",
+      "source_symbol": "gPokeNewsTextLilycove_Ending"
+    },
+    {
+      "address": "0x08568BD4",
+      "original": "0x082549BD",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextLilycove_Ongoing",
+      "source_symbol": "gPokeNewsTextLilycove_Ongoing"
+    },
+    {
+      "address": "0x08568BE0",
+      "original": "0x08254689",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextSlateport_Ending",
+      "source_symbol": "gPokeNewsTextSlateport_Ending"
+    },
+    {
+      "address": "0x08568BCC",
+      "original": "0x082545D1",
+      "symbol": "Chs_ChecklistLiteral_gPokeNewsTextSlateport_Ongoing",
+      "source_symbol": "gPokeNewsTextSlateport_Ongoing"
+    },
+    {
+      "address": "0x08137E78",
+      "original": "0x085CB018",
+      "symbol": "Chs_ChecklistLiteral_gText_1MinutePlus",
+      "source_symbol": "gText_1MinutePlus"
+    },
+    {
+      "address": "0x081A2F64",
+      "original": "0x085CCEB9",
+      "symbol": "Chs_ChecklistLiteral_gText_1st",
+      "source_symbol": "gText_1st"
+    },
+    {
+      "address": "0x081A2F68",
+      "original": "0x085CCEBC",
+      "symbol": "Chs_ChecklistLiteral_gText_2nd",
+      "source_symbol": "gText_2nd"
+    },
+    {
+      "address": "0x081A2F6C",
+      "original": "0x085CCEBF",
+      "symbol": "Chs_ChecklistLiteral_gText_3rd",
+      "source_symbol": "gText_3rd"
+    },
+    {
+      "address": "0x081A2F70",
+      "original": "0x085CCEC2",
+      "symbol": "Chs_ChecklistLiteral_gText_4th",
+      "source_symbol": "gText_4th"
+    },
+    {
+      "address": "0x08137E50",
+      "original": "0x085CB00E",
+      "symbol": "Chs_ChecklistLiteral_gText_99TimesPlus",
+      "source_symbol": "gText_99TimesPlus"
+    },
+    {
+      "address": "0x0806A3C4",
+      "original": "0x085ABC78",
+      "symbol": "Chs_ChecklistLiteral_gText_BadEgg",
+      "source_symbol": "gText_BadEgg"
+    },
+    {
+      "address": "0x0802F800",
+      "original": "0x085C8D93",
+      "symbol": "Chs_ChecklistLiteral_gText_BatteryRunDry",
+      "source_symbol": "gText_BatteryRunDry"
+    },
+    {
+      "address": "0x080C57AC",
+      "original": "0x085CCA9E",
+      "symbol": "Chs_ChecklistLiteral_gText_BattleRecord",
+      "source_symbol": "gText_BattleRecord"
+    },
+    {
+      "address": "0x0806E0B4",
+      "original": "0x085ABC7E",
+      "symbol": "Chs_ChecklistLiteral_gText_BattleWallyName",
+      "source_symbol": "gText_BattleWallyName"
+    },
+    {
+      "address": "0x08027A34",
+      "original": "0x085CCCF5",
+      "symbol": "Chs_ChecklistLiteral_gText_BerryPickingRecords",
+      "source_symbol": "gText_BerryPickingRecords"
+    },
+    {
+      "address": "0x082D1B08",
+      "original": "0x085CCE1D",
+      "symbol": "Chs_ChecklistLiteral_gText_BestScore2",
+      "source_symbol": "gText_BestScore2"
+    },
+    {
+      "address": "0x08135E58",
+      "original": "0x085C984A",
+      "symbol": "Chs_ChecklistLiteral_gText_Bitter",
+      "source_symbol": "gText_Bitter"
+    },
+    {
+      "address": "0x081A4F9C",
+      "original": "0x085ABDAA",
+      "symbol": "Chs_ChecklistLiteral_gText_Body",
+      "source_symbol": "gText_Body"
+    },
+    {
+      "address": "0x080C707C",
+      "original": "0x085CB584",
+      "symbol": "Chs_ChecklistLiteral_gText_Box",
+      "source_symbol": "gText_Box"
+    },
+    {
+      "address": "0x0813BEC8",
+      "original": "0x085CA9EC",
+      "symbol": "Chs_ChecklistLiteral_gText_Brawly",
+      "source_symbol": "gText_Brawly"
+    },
+    {
+      "address": "0x08128454",
+      "original": "0x085CA75C",
+      "symbol": "Chs_ChecklistLiteral_gText_CancelDecorating",
+      "source_symbol": "gText_CancelDecorating"
+    },
+    {
+      "address": "0x081289A4",
+      "original": "0x085CA750",
+      "symbol": "Chs_ChecklistLiteral_gText_CantBePlacedHere",
+      "source_symbol": "gText_CantBePlacedHere"
+    },
+    {
+      "address": "0x081A1C7C",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A1F04",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A2230",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A2468",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A273C",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A2A50",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x081A2CE0",
+      "original": "0x085DD425",
+      "symbol": "Chs_ChecklistLiteral_gText_Current",
+      "source_symbol": "gText_Current"
+    },
+    {
+      "address": "0x0809E584",
+      "original": "0x084E8A6C",
+      "symbol": "Chs_ChecklistLiteral_gText_Day",
+      "source_symbol": "gText_Day"
+    },
+    {
+      "address": "0x0809E708",
+      "original": "0x084E8A6C",
+      "symbol": "Chs_ChecklistLiteral_gText_Day",
+      "source_symbol": "gText_Day"
+    },
+    {
+      "address": "0x08124854",
+      "original": "0x085C9398",
+      "symbol": "Chs_ChecklistLiteral_gText_FlyToWhere",
+      "source_symbol": "gText_FlyToWhere"
+    },
+    {
+      "address": "0x0813BF04",
+      "original": "0x085CA9F7",
+      "symbol": "Chs_ChecklistLiteral_gText_Glacia",
+      "source_symbol": "gText_Glacia"
+    },
+    {
+      "address": "0x080FB574",
+      "original": "0x085CA73F",
+      "symbol": "Chs_ChecklistLiteral_gText_Gold",
+      "source_symbol": "gText_Gold"
+    },
+    {
+      "address": "0x082D1B04",
+      "original": "0x085CCE0F",
+      "symbol": "Chs_ChecklistLiteral_gText_JumpsInARow",
+      "source_symbol": "gText_JumpsInARow"
+    },
+    {
+      "address": "0x080C6CE4",
+      "original": "0x085CB534",
+      "symbol": "Chs_ChecklistLiteral_gText_JustOnePkmn",
+      "source_symbol": "gText_JustOnePkmn"
+    },
+    {
+      "address": "0x080E21E0",
+      "original": "0x085CADB7",
+      "symbol": "Chs_ChecklistLiteral_gText_MenuOptionBag",
+      "source_symbol": "gText_MenuOptionBag"
+    },
+    {
+      "address": "0x080E21D8",
+      "original": "0x085CADAE",
+      "symbol": "Chs_ChecklistLiteral_gText_MenuOptionPokedex",
+      "source_symbol": "gText_MenuOptionPokedex"
+    },
+    {
+      "address": "0x080E21DC",
+      "original": "0x085CADB2",
+      "symbol": "Chs_ChecklistLiteral_gText_MenuOptionPokemon",
+      "source_symbol": "gText_MenuOptionPokemon"
+    },
+    {
+      "address": "0x080E21E4",
+      "original": "0x085CADBB",
+      "symbol": "Chs_ChecklistLiteral_gText_MenuOptionPokenav",
+      "source_symbol": "gText_MenuOptionPokenav"
+    },
+    {
+      "address": "0x0816B7E8",
+      "original": "0x085CA99A",
+      "symbol": "Chs_ChecklistLiteral_gText_MessageWillBeLost",
+      "source_symbol": "gText_MessageWillBeLost"
+    },
+    {
+      "address": "0x08174C0C",
+      "original": "0x085C9359",
+      "symbol": "Chs_ChecklistLiteral_gText_Name",
+      "source_symbol": "gText_Name"
+    },
+    {
+      "address": "0x08128978",
+      "original": "0x085CA745",
+      "symbol": "Chs_ChecklistLiteral_gText_PlaceItHere",
+      "source_symbol": "gText_PlaceItHere"
+    },
+    {
+      "address": "0x081A1BC0",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A20AC",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A219C",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A25D8",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A26CC",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A2970",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x081A2C6C",
+      "original": "0x085DD42A",
+      "symbol": "Chs_ChecklistLiteral_gText_Record",
+      "source_symbol": "gText_Record"
+    },
+    {
+      "address": "0x080E6A80",
+      "original": "0x08566CB1",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordMixingComplete",
+      "source_symbol": "gText_RecordMixingComplete"
+    },
+    {
+      "address": "0x081A1DD0",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A20A0",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A2354",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A25CC",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A283C",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A2B8C",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A2DD8",
+      "original": "0x085DD40E",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsLv50",
+      "source_symbol": "gText_RecordsLv50"
+    },
+    {
+      "address": "0x081A1DD4",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A20A4",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A2358",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A25D0",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A2840",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A2B94",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A2DDC",
+      "original": "0x085DD415",
+      "symbol": "Chs_ChecklistLiteral_gText_RecordsOpenLevel",
+      "source_symbol": "gText_RecordsOpenLevel"
+    },
+    {
+      "address": "0x081A2B90",
+      "original": "0x085DD438",
+      "symbol": "Chs_ChecklistLiteral_gText_RentalSwap",
+      "source_symbol": "gText_RentalSwap"
+    },
+    {
+      "address": "0x0802F664",
+      "original": "0x085C8D44",
+      "symbol": "Chs_ChecklistLiteral_gText_SaveFileCorrupted",
+      "source_symbol": "gText_SaveFileCorrupted"
+    },
+    {
+      "address": "0x0802F624",
+      "original": "0x085C8D6B",
+      "symbol": "Chs_ChecklistLiteral_gText_SaveFileErased",
+      "source_symbol": "gText_SaveFileErased"
+    },
+    {
+      "address": "0x08135E4C",
+      "original": "0x085C983E",
+      "symbol": "Chs_ChecklistLiteral_gText_Spicy",
+      "source_symbol": "gText_Spicy"
+    },
+    {
+      "address": "0x0813BEB4",
+      "original": "0x085CA9E8",
+      "symbol": "Chs_ChecklistLiteral_gText_Steven",
+      "source_symbol": "gText_Steven"
+    },
+    {
+      "address": "0x08135F20",
+      "original": "0x085C985C",
+      "symbol": "Chs_ChecklistLiteral_gText_StowCase",
+      "source_symbol": "gText_StowCase"
+    },
+    {
+      "address": "0x08135E54",
+      "original": "0x085C9846",
+      "symbol": "Chs_ChecklistLiteral_gText_Sweet",
+      "source_symbol": "gText_Sweet"
+    },
+    {
+      "address": "0x0813BF18",
+      "original": "0x085CA9E4",
+      "symbol": "Chs_ChecklistLiteral_gText_Wallace",
+      "source_symbol": "gText_Wallace"
+    },
+    {
+      "address": "0x0813BEDC",
+      "original": "0x085CA9F0",
+      "symbol": "Chs_ChecklistLiteral_gText_Winona",
+      "source_symbol": "gText_Winona"
+    },
+    {
+      "address": "0x0808316C",
+      "original": "0x0830F82D",
+      "symbol": "Chs_ChecklistLiteral_sText_SpaceBerry",
+      "source_symbol": "sText_SpaceBerry"
+    }
+  ],
+  "active_definition_count": 55,
+  "active_reference_count": 80,
+  "language_rules": []
+}

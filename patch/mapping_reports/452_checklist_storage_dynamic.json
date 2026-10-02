@@ -1,0 +1,299 @@
+{
+  "policy": "Only three typed StorageMessage.text pointer writes. Public ASM, manifest, persisted names, trackers and action plans are untouched. This is source/model verification, not an emitted-ROM or emulator claim.",
+  "wokann_branch": "dev",
+  "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "base_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "storage_table": {
+    "address": "0x0854CA1C",
+    "bytes": 248,
+    "stride": 8,
+    "text_offset": 0,
+    "format_offset": 4,
+    "action_window_pixels": [
+      144,
+      16
+    ]
+  },
+  "producer_contract": {
+    "nickname": "SetCursorMonData's two existing call patches route party/box getters to display-only nickname copies. Both truncate to five bytes before writing, or write a four-byte F5 F2 species token plus EOS. StringGet_Nickname then caps at five; sub_080CDACC copies only displayMonName to releaseMonName[11]. Memory proof also checks a conservative ten-byte payload. Persistent setters are not changed.",
+    "nickname_test_scope": "Empty, high-byte JP kana, Latin custom names and all EOS-safe compact species IDs. ID 255 is an unused old-Unown slot whose existing token embeds EOS; it is not claimed as a supported nickname hook case. Malformed save data is outside this patch's producer contract.",
+    "items": "SanitizeItemId maps out-of-range IDs to item 0; existing ChsItemIdGetName selects compact ChsItemNames[377][16]. F5 is counted, EOS is counted, maximum payload is 15. StringCopyPadded copies the entire source, padding to at least eight bytes, not truncating. Its maximum is 16 including EOS, below displayMonItemName[39] AND itemName[20] before trimming. Leading non-space F5 prevents trailing-space trim underflow. BOTH moving and displayed paths then trim bytes, not glyphs: item 25 loses the 00 in 块=6700. The template supplies exactly one 00 BEFORE FC16; all 377 repaired payloads equal the original name, optionally followed by a separator space. No producer or persisted data is modified.",
+    "item_count": 377,
+    "max_item_bytes_including_eos": 16,
+    "max_displayed_item_bytes_including_eos": 16,
+    "trimmed_glyph_repairs": [
+      {
+        "item_id": 25,
+        "text": "活力块",
+        "original_hex": "f5647b67796700ff",
+        "trimmed_hex": "f5647b677967ff"
+      }
+    ],
+    "max_chinese_species_glyphs": 5
+  },
+  "source_functions": {
+    "PrintStorageActionText": {
+      "file": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c",
+      "line": 3673,
+      "sha256": "e60b89756d2ccb0092ab9e08e8b87e49d4cac45bbe7d525232fc09c51c9dabd7"
+    },
+    "SetCursorMonData": {
+      "file": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c",
+      "line": 6052,
+      "sha256": "9d82d1d70a4b8195be9881b9f2b8c16915fe3abadfc80117943e593b7be92224"
+    },
+    "sub_080CDACC": {
+      "file": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c",
+      "line": 5665,
+      "sha256": "06b981dea10d9df9f5ce61101a951dabe1ba5e0fb6a55db9353efa521f2072dd"
+    },
+    "GetMovingItemName": {
+      "file": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c",
+      "line": 7890,
+      "sha256": "299d91cef67074bdca718896f2b91ca8e2a9059da9a29d18b61785bbb44bf825"
+    },
+    "StringCopy": {
+      "file": "../pokeemerald_wokann_dev/src/string_util.c",
+      "line": 67,
+      "sha256": "deee159da0fb18e6cb51691cd0e0ac551182258aa1a82aeb6e700068aa21567f"
+    },
+    "StringGet_Nickname": {
+      "file": "../pokeemerald_wokann_dev/src/string_util.c",
+      "line": 38,
+      "sha256": "e800f9fdff7991ba52da7a11358ceef33deb3fdd164ced4218894b3bd072a355"
+    },
+    "StringCopyPadded": {
+      "file": "../pokeemerald_wokann_dev/src/string_util.c",
+      "line": 520,
+      "sha256": "63711fea8273e2cb3d16f7ead5cdabcd5756d1f07e5c12ca31dbfa0c52b2dae5"
+    },
+    "DynamicPlaceholderTextUtil_ExpandPlaceholders": {
+      "file": "../pokeemerald_wokann_dev/src/dynamic_placeholder_text_util.c",
+      "line": 24,
+      "sha256": "8ea497dc367b05023aca036958da9f3bcacc5ec8c8c62308bd5d45539d1e8d41"
+    },
+    "SanitizeItemId": {
+      "file": "../pokeemerald_wokann_dev/src/item.c",
+      "line": 2144,
+      "sha256": "d30803a2a078f8725353f5ea09aed2fd8bf32cbd2630287348eaa25f46655296"
+    }
+  },
+  "existing_hook_evidence": [
+    {
+      "address": "0x080CE50E",
+      "original": "9bf7a3fd",
+      "replacement": "e3f081f9"
+    },
+    {
+      "address": "0x081B1814",
+      "original": "10b50c1c0221221cb8f61cfc201c57f6",
+      "symbol": "ChsGetMonNickname"
+    },
+    {
+      "address": "0x080CE606",
+      "original": "9bf7d5fd",
+      "replacement": "a0f763ff"
+    },
+    {
+      "address": "0x0806F4D0",
+      "original": "10b585b00c1c02216a46faf76bfe201c",
+      "symbol": "ChsGetMonNicknameFromBox"
+    },
+    {
+      "address": "0x080D6C8C",
+      "original": "00b50004000cfff7efff011c0904090c",
+      "symbol": "ChsItemIdGetName"
+    }
+  ],
+  "existing_asm_sections_sha256": {
+    "ChineseRenderHook:": {
+      "line": 244,
+      "sha256": "fad44af072f0f079d9f6ec302c3244ca42160fa9b1dd4080e8ac3ecfc62b9c02"
+    },
+    "ChsCopyMonNickname:": {
+      "line": 600,
+      "sha256": "6ee4e157b8971437560d9e7d1275ce66d0705ff3e5f77756443d1a3853d91080"
+    },
+    "ChsGetBoxMonNickname:": {
+      "line": 720,
+      "sha256": "a1470a7087e0d0d46605588967432abb964548451a28fd9102a879004e04a5b0"
+    },
+    "ChsGetMonNickname:": {
+      "line": 778,
+      "sha256": "cc679c5a8042d94a431bc77955b957a259909e070a31a183fa7c47843dda417a"
+    },
+    "ChsTradeNicknameRouter:": {
+      "line": 2489,
+      "sha256": "7fcb9665092c38f99d010987ecea077f95fd26f1d53ca4eb57c0e674520d7977"
+    },
+    ".Lbox_nickname_data_callers:": {
+      "line": 2737,
+      "sha256": "627a5eaf36f9795120fcdcd78484a629360302f8689177f147e97ee2b69b1866"
+    },
+    "ChsItemIdGetName:": {
+      "line": 1456,
+      "sha256": "2fe542e73deeb747735370901b7370e4226927f9c9ac8ddb9250806c7e0482e2"
+    },
+    "DecompressChineseGlyph:": {
+      "line": 3487,
+      "sha256": "009fe62353a8daf47b16370e7b169e807d6559308246ad71528e3155d70fbacf"
+    }
+  },
+  "mode_jump_table": [
+    {
+      "address": "0x080058F8",
+      "original": "0x080059B2",
+      "symbol": "SetJapaneseTextMode"
+    },
+    {
+      "address": "0x080058FC",
+      "original": "0x080059B2",
+      "symbol": "SetChineseTextMode"
+    }
+  ],
+  "mapping": [
+    {
+      "symbol": "gText_ByeByePkmn",
+      "final_text": "再见了！{DYNAMIC 0}！",
+      "decision": "verified_source_safe_pointer_patch",
+      "jp_source": {
+        "file": "../pokeemerald_wokann_dev/src/strings.c",
+        "symbol": "gUnknown_85CB1B9",
+        "offset": 170,
+        "encoded_hex": "4602460200f700abff"
+      },
+      "reference": {
+        "address": "0x0854CA74",
+        "original": "0x085CB263",
+        "symbol": "Chs_ChecklistLiteral_452_gText_ByeByePkmn",
+        "source_symbol": "gText_ByeByePkmn"
+      },
+      "message_id": 11,
+      "format_id": 6,
+      "encoded_hex": "fc166ee564e6679e7f3cfc15f700fc167f3cff",
+      "template_bytes_including_eos": 19,
+      "max_placeholder_bytes_excluding_eos": 10,
+      "worst_expanded_bytes_including_eos": 27,
+      "actual_producer_max_expanded_bytes": 22,
+      "message_buffer_bytes": 40,
+      "headroom_bytes": 13,
+      "producer_cases": 414,
+      "max_width_bound_px": 120,
+      "unmodified_full_translation_width_bound_px": 120,
+      "language_contract": "FC15 protects JP kana/custom nicknames. Existing display-only F5 F2 species tokens are rendered, not expanded into messageText; the renderer returns to JP, so FC16 restores Chinese before the suffix.",
+      "merge_update": {
+        "symbol": "gText_ByeByePkmn",
+        "batch": "452_checklist_storage_dynamic.json",
+        "status": "source_verified_patch_ready_not_runtime_verified",
+        "new_definition_count": 1,
+        "new_reference_count": 1
+      }
+    },
+    {
+      "symbol": "gText_ChangedToNewItem",
+      "final_text": "将{DYNAMIC 0}交换出来了！",
+      "decision": "verified_source_safe_pointer_patch",
+      "jp_source": {
+        "file": "../pokeemerald_wokann_dev/src/strings.c",
+        "symbol": "gUnknown_85CB1B9",
+        "offset": 409,
+        "encoded_hex": "f70014001428060410abff"
+      },
+      "reference": {
+        "address": "0x0854CB04",
+        "original": "0x085CB352",
+        "symbol": "Chs_ChecklistLiteral_452_gText_ChangedToNewItem",
+        "source_symbol": "gText_ChangedToNewItem"
+      },
+      "message_id": 29,
+      "format_id": 7,
+      "encoded_hex": "fc16f5f364f4fc15f70000fc16660d644861786729679e7f3cff",
+      "template_bytes_including_eos": 26,
+      "max_placeholder_bytes_excluding_eos": 15,
+      "worst_expanded_bytes_including_eos": 39,
+      "actual_producer_max_expanded_bytes": 39,
+      "message_buffer_bytes": 40,
+      "headroom_bytes": 1,
+      "producer_cases": 754,
+      "max_width_bound_px": 116,
+      "unmodified_full_translation_width_bound_px": 168,
+      "language_contract": "FC16 F5F3 enters narrow Chinese; explicit FC15 before F7 enters narrow-JP; item-leading F5 restores narrow Chinese. A literal 00 immediately after F7 rejoins a trimmed trailing glyph byte (item 25, 活力块) or adds a separator space for intact names. Only THEN FC16 restores/preserves Chinese mode. Automatic japanese_dynamic must stay false because it would insert FC16 before the repair byte. No original words are removed; no line wrapping.",
+      "merge_update": {
+        "symbol": "gText_ChangedToNewItem",
+        "batch": "452_checklist_storage_dynamic.json",
+        "status": "source_verified_patch_ready_not_runtime_verified",
+        "new_definition_count": 1,
+        "new_reference_count": 1
+      }
+    },
+    {
+      "symbol": "gText_ItemIsNowHeld",
+      "final_text": "让精灵携带了{DYNAMIC 0}。",
+      "decision": "verified_source_safe_pointer_patch",
+      "jp_source": {
+        "file": "../pokeemerald_wokann_dev/src/strings.c",
+        "symbol": "gUnknown_85CB1B9",
+        "offset": 399,
+        "encoded_hex": "f7002d0023100e10abff"
+      },
+      "reference": {
+        "address": "0x0854CAFC",
+        "original": "0x085CB348",
+        "symbol": "Chs_ChecklistLiteral_452_gText_ItemIsNowHeld",
+        "source_symbol": "gText_ItemIsNowHeld"
+      },
+      "message_id": 28,
+      "format_id": 7,
+      "encoded_hex": "fc16f5f36a43665b67bc6d3a61d8679efc15f70000fc167f37ff",
+      "template_bytes_including_eos": 26,
+      "max_placeholder_bytes_excluding_eos": 15,
+      "worst_expanded_bytes_including_eos": 39,
+      "actual_producer_max_expanded_bytes": 39,
+      "message_buffer_bytes": 40,
+      "headroom_bytes": 1,
+      "producer_cases": 754,
+      "max_width_bound_px": 116,
+      "unmodified_full_translation_width_bound_px": 168,
+      "language_contract": "FC16 F5F3 enters narrow Chinese; explicit FC15 before F7 enters narrow-JP; item-leading F5 restores narrow Chinese. A literal 00 immediately after F7 rejoins a trimmed trailing glyph byte (item 25, 活力块) or adds a separator space for intact names. Only THEN FC16 restores/preserves Chinese mode. Automatic japanese_dynamic must stay false because it would insert FC16 before the repair byte. No original words are removed; no line wrapping.",
+      "merge_update": {
+        "symbol": "gText_ItemIsNowHeld",
+        "batch": "452_checklist_storage_dynamic.json",
+        "status": "source_verified_patch_ready_not_runtime_verified",
+        "new_definition_count": 1,
+        "new_reference_count": 1
+      }
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0854CA74",
+      "original": "0x085CB263",
+      "symbol": "Chs_ChecklistLiteral_452_gText_ByeByePkmn",
+      "source_symbol": "gText_ByeByePkmn"
+    },
+    {
+      "address": "0x0854CB04",
+      "original": "0x085CB352",
+      "symbol": "Chs_ChecklistLiteral_452_gText_ChangedToNewItem",
+      "source_symbol": "gText_ChangedToNewItem"
+    },
+    {
+      "address": "0x0854CAFC",
+      "original": "0x085CB348",
+      "symbol": "Chs_ChecklistLiteral_452_gText_ItemIsNowHeld",
+      "source_symbol": "gText_ItemIsNowHeld"
+    }
+  ],
+  "active_definition_count": 3,
+  "active_reference_count": 3,
+  "validation": {
+    "method": "Local Wokann source/binary identity, Thumb call decoding, exact US text encoding, all 377 item names through both producer paths, canary expansion and mode-aware conservative width model.",
+    "full_build_run": false,
+    "emulator_run": false,
+    "remaining_runtime_checks": [
+      "Release a default-named and custom-named party/boxed mon; check Chinese suffix after nickname.",
+      "Give/swap longest available item names; check narrow-font readability and both moving/displayed branches."
+    ]
+  },
+  "integration": "Makefile already globs patch/batches/*.json for build_texts.py and apply_patch.py. The explicit user-requested batch452 filename needs no manifest edit; numeric-only checklist report refreshers may need to import this standalone report explicitly. No master tracker was written."
+}

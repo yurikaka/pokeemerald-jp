@@ -1,0 +1,73 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_BattleRecordedOnPass",
+      "document_line": 960,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0FB",
+          "offset": 0,
+          "encoded_hex": "fd2319001010060237fe6c7b7e6380519b5d1600072b08000b2a10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts70.h",
+          "symbol": "gUnknown_85AC0FB",
+          "offset": 0,
+          "encoded_hex": "fd2319001010060237fe6c7b7e6380519b5d1600072b08000b2a10abff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0803934C",
+          "original": "0x085AC0FB",
+          "object": "build/pokeemerald-jp/src/battle_main.o",
+          "object_sha256": "565f57d7de91793d20fcd92cf9be5a11851747380c7b9d86c686052e35784819",
+          "section": ".text.AskRecordBattle",
+          "section_base": "0x08039050",
+          "section_length": 976,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gText_BattleRecordedOnPass",
+          "section_offset": 764
+        }
+      ],
+      "final_text": "{B_PLAYER_NAME}本次的对战\n保存到了开拓通行证中！"
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0803934C",
+      "original": "0x085AC0FB",
+      "symbol": "Chs_ChecklistLiteral_444_gText_BattleRecordedOnPass",
+      "source_symbol": "gText_BattleRecordedOnPass"
+    }
+  ],
+  "active_definition_count": 1,
+  "active_reference_count": 1,
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_444_gText_BattleRecordedOnPass",
+      "source_symbol": "gText_BattleRecordedOnPass",
+      "options": {
+        "japanese_placeholders": [
+          35
+        ]
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/battle_main.c:1992 calls TryGetStatusString then draws gDisplayedStringBattle. battle_message.c:3507 expands the battle template; placeholder 0x23 selects _0814F2BC, reading the local save playerName or link player name into the display string without a persistent write.",
+        "ids": [
+          35
+        ],
+        "policy": "The reviewed battle player-name slot is wrapped in JPN and ENG is restored after expansion. Only the display template pointer changes; save/link name buffers remain unmodified."
+      },
+      "remaining_verification": [
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override.",
+        "Dynamic/control text: verify producer and JP layout before a new literal override."
+      ]
+    }
+  ]
+}

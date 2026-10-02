@@ -1,0 +1,960 @@
+{
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
+  "mapping": [
+    {
+      "symbol": "gText_BattleArenaDesc",
+      "document_line": 925,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 403,
+          "encoded_hex": "122602009f59737e190061ae7144000c3603280d29adfe14030c2d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 403,
+          "encoded_hex": "122602009f59737e190061ae7144000c3603280d29adfe14030c2d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1A8",
+          "original": "0x085CCC3B",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 52
+        }
+      ],
+      "final_text": "用组队宝可梦赢得胜利！\n这里将会考验您的毅力。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleArenaGutsSymbol",
+      "document_line": 926,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 166,
+          "encoded_hex": "9664795178ae650087a0625c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 166,
+          "encoded_hex": "9664795178ae650087a0625c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B160",
+          "original": "0x085CCB4E",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 40
+        }
+      ],
+      "final_text": "对战竞技场——毅力象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleDomeDesc",
+      "document_line": 933,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 344,
+          "encoded_hex": "64ae65727e642d0006111708adfe0e2e3d35122d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 344,
+          "encoded_hex": "64ae65727e642d0006111708adfe0e2e3d35122d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B188",
+          "original": "0x085CCC00",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "在锦标赛中连胜到底！\n这里将会考验您的战术。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleDomeTacticsSymbol",
+      "document_line": 934,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 131,
+          "encoded_hex": "96647995ae710060586380585d5c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 131,
+          "encoded_hex": "96647995ae710060586380585d5c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B158",
+          "original": "0x085CCB2B",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 32
+        }
+      ],
+      "final_text": "对战巨蛋——战术象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleFactoryDesc",
+      "document_line": 937,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 438,
+          "encoded_hex": "7a7e60799f59737e44000c3603280d29adfe110c072d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 438,
+          "encoded_hex": "7a7e60799f59737e44000c3603280d29adfe110c072d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1B8",
+          "original": "0x085CCC5E",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 68
+        }
+      ],
+      "final_text": "使用租借宝可梦夺取胜利！\n这里将会考验您的知识。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleFactoryKnowledgeSymbol",
+      "document_line": 938,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 182,
+          "encoded_hex": "9664796c7f586478ae0069537aa08d5c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 182,
+          "encoded_hex": "9664796c7f586478ae0069537aa08d5c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B164",
+          "original": "0x085CCB5E",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 44
+        }
+      ],
+      "final_text": "对战工厂——知识象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePalaceDesc",
+      "document_line": 943,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 372,
+          "encoded_hex": "0c3603482d00201f2329adfe9f59737e141900073e152d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 372,
+          "encoded_hex": "0c3603482d00201f2329adfe9f59737e141900073e152d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B198",
+          "original": "0x085CCC1C",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 36
+        }
+      ],
+      "final_text": "见证宝可梦自主战斗！\n这里将会考验您的精神。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePalaceSpiritsSymbol",
+      "document_line": 944,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 149,
+          "encoded_hex": "9664799b7a5d005d9c78a0645c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 149,
+          "encoded_hex": "9664799b7a5d005d9c78a0645c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B15C",
+          "original": "0x085CCB3D",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 36
+        }
+      ],
+      "final_text": "对战宫殿——精神象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePikeDesc",
+      "document_line": 947,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 468,
+          "encoded_hex": "a41219002011062700a2120427470006110d0d21adfe032e2d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 468,
+          "encoded_hex": "a41219002011062700a2120427470006110d0d21adfe032e2d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1C8",
+          "original": "0x085CCC7C",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 84
+        }
+      ],
+      "final_text": "选择3条道路中的1条战斗！\n这里将会考验您的运气。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePikeLuckSymbol",
+      "document_line": 948,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 202,
+          "encoded_hex": "9664796185ae980077a0585c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 202,
+          "encoded_hex": "9664796185ae980077a0585c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B168",
+          "original": "0x085CCB72",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 48
+        }
+      ],
+      "final_text": "对战管道——运气象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePyramidBraveSymbol",
+      "document_line": 954,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 218,
+          "encoded_hex": "9664799c7770a09500987a52985c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 218,
+          "encoded_hex": "9664799c7770a09500987a52985c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B16C",
+          "original": "0x085CCB82",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 52
+        }
+      ],
+      "final_text": "对战金字塔——英勇象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattlePyramidDesc",
+      "document_line": 956,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 501,
+          "encoded_hex": "1136033d36032d00223c0c004a03092e0d29adfe2503072d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 501,
+          "encoded_hex": "1136033d36032d00223c0c004a03092e0d29adfe2503072d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B1D8",
+          "original": "0x085CCC9D",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 100
+        }
+      ],
+      "final_text": "通过探索攀登顶峰！\n这里将会考验您的英勇。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleTowerAbilitySymbol",
+      "document_line": 974,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 114,
+          "encoded_hex": "966479607cae0051977863805c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 114,
+          "encoded_hex": "966479607cae0051977863805c7e9a79ff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B154",
+          "original": "0x085CCB1A",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 28
+        }
+      ],
+      "final_text": "对战塔——能力象征",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_BattleTowerDesc",
+      "document_line": 975,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 312,
+          "encoded_hex": "06111707001b100d270003042d00223c0dadfe0b0219032d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 312,
+          "encoded_hex": "06111707001b100d270003042d00223c0dadfe0b0219032d0010220b2a29adff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B178",
+          "original": "0x085CCBE0",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B174",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/map_landmarks.bin",
+            "first_pointer_offset": 4,
+            "pointer_stride": 16,
+            "proof": "PrintOnFrontierMap at src/frontier_pass.c:3480 reads the description pointer at record+4, index<<4, and prints it directly in window 2. The cursor update uses the same +4 field at line 3610. Only seven display pointers are selected; no coordinate words are treated as pointers."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B174",
+          "section_length": 112,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B174",
+          "section_offset": 4
+        }
+      ],
+      "final_text": "击败对手，勇攀巅峰！\n这里将会考验您的能力。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_CollectedSymbols",
+      "document_line": 1073,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 98,
+          "encoded_hex": "0a0a16005c7e9a792d000112221f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 98,
+          "encoded_hex": "0a0a16005c7e9a792d000112221f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B150",
+          "original": "0x085CCB0A",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 24
+        }
+      ],
+      "final_text": "已收集的象征。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_CurrentBattlePoints",
+      "document_line": 1115,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 78,
+          "encoded_hex": "021f00101f50130229009664799f527e64440dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 78,
+          "encoded_hex": "021f00101f50130229009664799f527e64440dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B14C",
+          "original": "0x085CCAF6",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 20
+        }
+      ],
+      "final_text": "当前的对战点数。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_PutAwayFrontierPass",
+      "document_line": 1505,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 63,
+          "encoded_hex": "6c7b7e6380519b5d2d00143d1f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 63,
+          "encoded_hex": "6c7b7e6380519b5d2d00143d1f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B148",
+          "original": "0x085CCAE7",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 16
+        }
+      ],
+      "final_text": "放好开拓通行证。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_ThereIsNoBattleRecord",
+      "document_line": 1669,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 236,
+          "encoded_hex": "3a2e3c020010020e2e072b081a0001281f0e2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 236,
+          "encoded_hex": "3a2e3c020010020e2e072b081a0001281f0e2eff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B138",
+          "original": "0x085CCB94",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 0
+        }
+      ],
+      "final_text": "没有对战记录。",
+      "placeholder_contract": null,
+      "language_options": {}
+    },
+    {
+      "symbol": "gText_ViewRecordedBattle",
+      "document_line": 1707,
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 47,
+          "encoded_hex": "072b080c100010020e2e2d00201f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        },
+        {
+          "file": "src/data/text/region_texts105.h",
+          "symbol": "gUnknown_85CCAA8",
+          "offset": 47,
+          "encoded_hex": "072b080c100010020e2e2d00201f0dff",
+          "proof": "Fixed-address text-source block matches ROM; offset starts after EOS or at block start."
+        }
+      ],
+      "references": [
+        {
+          "address": "0x0854B144",
+          "original": "0x085CCAD7",
+          "object": "src/frontier_pass.c",
+          "source": {
+            "symbol": "gUnknown_854B138",
+            "file": "src/frontier_pass.c",
+            "binary_file": "data/frontier_pass/jp/pass_area_descriptions.bin",
+            "first_pointer_offset": 0,
+            "pointer_stride": 4,
+            "proof": "PrintAreaDescription at src/frontier_pass.c:1783 indexes gUnknown_854B138 by area*4 and passes the word directly to AddTextPrinterParameterized3. src/data/frontier_pass.h:69 fixes the complete 0x3C-byte resource. These are display text pointers only."
+          },
+          "section": "reviewed_raw_text_table",
+          "section_base": "0x0854B138",
+          "section_length": 60,
+          "relocation": "reviewed_pointer_load_to_text_consumer",
+          "referenced_symbol": "gUnknown_854B138",
+          "section_offset": 12
+        }
+      ],
+      "final_text": "回放记录的对战。",
+      "placeholder_contract": null,
+      "language_options": {}
+    }
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0854B1A8",
+      "original": "0x085CCC3B",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleArenaDesc",
+      "source_symbol": "gText_BattleArenaDesc"
+    },
+    {
+      "address": "0x0854B160",
+      "original": "0x085CCB4E",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleArenaGutsSymbol",
+      "source_symbol": "gText_BattleArenaGutsSymbol"
+    },
+    {
+      "address": "0x0854B188",
+      "original": "0x085CCC00",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleDomeDesc",
+      "source_symbol": "gText_BattleDomeDesc"
+    },
+    {
+      "address": "0x0854B158",
+      "original": "0x085CCB2B",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleDomeTacticsSymbol",
+      "source_symbol": "gText_BattleDomeTacticsSymbol"
+    },
+    {
+      "address": "0x0854B1B8",
+      "original": "0x085CCC5E",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleFactoryDesc",
+      "source_symbol": "gText_BattleFactoryDesc"
+    },
+    {
+      "address": "0x0854B164",
+      "original": "0x085CCB5E",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleFactoryKnowledgeSymbol",
+      "source_symbol": "gText_BattleFactoryKnowledgeSymbol"
+    },
+    {
+      "address": "0x0854B198",
+      "original": "0x085CCC1C",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePalaceDesc",
+      "source_symbol": "gText_BattlePalaceDesc"
+    },
+    {
+      "address": "0x0854B15C",
+      "original": "0x085CCB3D",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePalaceSpiritsSymbol",
+      "source_symbol": "gText_BattlePalaceSpiritsSymbol"
+    },
+    {
+      "address": "0x0854B1C8",
+      "original": "0x085CCC7C",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePikeDesc",
+      "source_symbol": "gText_BattlePikeDesc"
+    },
+    {
+      "address": "0x0854B168",
+      "original": "0x085CCB72",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePikeLuckSymbol",
+      "source_symbol": "gText_BattlePikeLuckSymbol"
+    },
+    {
+      "address": "0x0854B16C",
+      "original": "0x085CCB82",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePyramidBraveSymbol",
+      "source_symbol": "gText_BattlePyramidBraveSymbol"
+    },
+    {
+      "address": "0x0854B1D8",
+      "original": "0x085CCC9D",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattlePyramidDesc",
+      "source_symbol": "gText_BattlePyramidDesc"
+    },
+    {
+      "address": "0x0854B154",
+      "original": "0x085CCB1A",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleTowerAbilitySymbol",
+      "source_symbol": "gText_BattleTowerAbilitySymbol"
+    },
+    {
+      "address": "0x0854B178",
+      "original": "0x085CCBE0",
+      "symbol": "Chs_ChecklistLiteral_456_gText_BattleTowerDesc",
+      "source_symbol": "gText_BattleTowerDesc"
+    },
+    {
+      "address": "0x0854B150",
+      "original": "0x085CCB0A",
+      "symbol": "Chs_ChecklistLiteral_456_gText_CollectedSymbols",
+      "source_symbol": "gText_CollectedSymbols"
+    },
+    {
+      "address": "0x0854B14C",
+      "original": "0x085CCAF6",
+      "symbol": "Chs_ChecklistLiteral_456_gText_CurrentBattlePoints",
+      "source_symbol": "gText_CurrentBattlePoints"
+    },
+    {
+      "address": "0x0854B148",
+      "original": "0x085CCAE7",
+      "symbol": "Chs_ChecklistLiteral_456_gText_PutAwayFrontierPass",
+      "source_symbol": "gText_PutAwayFrontierPass"
+    },
+    {
+      "address": "0x0854B138",
+      "original": "0x085CCB94",
+      "symbol": "Chs_ChecklistLiteral_456_gText_ThereIsNoBattleRecord",
+      "source_symbol": "gText_ThereIsNoBattleRecord"
+    },
+    {
+      "address": "0x0854B144",
+      "original": "0x085CCAD7",
+      "symbol": "Chs_ChecklistLiteral_456_gText_ViewRecordedBattle",
+      "source_symbol": "gText_ViewRecordedBattle"
+    }
+  ],
+  "active_definition_count": 19,
+  "active_reference_count": 19,
+  "language_rules": []
+}
