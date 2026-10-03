@@ -1,5 +1,5 @@
 {
-  "policy": "Only three typed StorageMessage.text pointer writes. Public ASM, manifest, persisted names, trackers and action plans are untouched. This is source/model verification, not an emitted-ROM or emulator claim.",
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
   "wokann_branch": "dev",
   "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
   "base_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
@@ -295,5 +295,52 @@
       "Give/swap longest available item names; check narrow-font readability and both moving/displayed branches."
     ]
   },
-  "integration": "Makefile already globs patch/batches/*.json for build_texts.py and apply_patch.py. The explicit user-requested batch452 filename needs no manifest edit; numeric-only checklist report refreshers may need to import this standalone report explicitly. No master tracker was written."
+  "integration": "Makefile already globs patch/batches/*.json for build_texts.py and apply_patch.py. The explicit user-requested batch452 filename needs no manifest edit; numeric-only checklist report refreshers may need to import this standalone report explicitly. No master tracker was written.",
+  "language_rules": [
+    {
+      "definition": "Chs_ChecklistLiteral_452_gText_ByeByePkmn",
+      "source_symbol": "gText_ByeByePkmn",
+      "options": {
+        "japanese_dynamic": true,
+        "auto_wrap": false
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c:3673 PrintStorageActionText expands F7 slot0 into messageText[40]; producers displayMonName/releaseMonName(11), itemName(20), displayMonItemName(39).",
+        "policy": "verify_checklist_storage_dynamic.py replays 414 nickname and 2x754 item producer cases with canaries and width model; only the table text pointer is redirected."
+      },
+      "remaining_verification": [
+        "Dynamic text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_452_gText_ChangedToNewItem",
+      "source_symbol": "gText_ChangedToNewItem",
+      "options": {
+        "japanese_dynamic": false,
+        "auto_wrap": false
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c:3673 PrintStorageActionText expands F7 slot0 into messageText[40]; producers displayMonName/releaseMonName(11), itemName(20), displayMonItemName(39).",
+        "policy": "verify_checklist_storage_dynamic.py replays 414 nickname and 2x754 item producer cases with canaries and width model; only the table text pointer is redirected."
+      },
+      "remaining_verification": [
+        "Dynamic text: verify producer and JP layout before a new literal override."
+      ]
+    },
+    {
+      "definition": "Chs_ChecklistLiteral_452_gText_ItemIsNowHeld",
+      "source_symbol": "gText_ItemIsNowHeld",
+      "options": {
+        "japanese_dynamic": false,
+        "auto_wrap": false
+      },
+      "placeholder_contract": {
+        "source": "../pokeemerald_wokann_dev/src/pokemon_storage_system.c:3673 PrintStorageActionText expands F7 slot0 into messageText[40]; producers displayMonName/releaseMonName(11), itemName(20), displayMonItemName(39).",
+        "policy": "verify_checklist_storage_dynamic.py replays 414 nickname and 2x754 item producer cases with canaries and width model; only the table text pointer is redirected."
+      },
+      "remaining_verification": [
+        "Dynamic text: verify producer and JP layout before a new literal override."
+      ]
+    }
+  ]
 }

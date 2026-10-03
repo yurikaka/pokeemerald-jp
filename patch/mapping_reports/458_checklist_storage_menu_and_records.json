@@ -1,5 +1,5 @@
 {
-  "policy": "Exact Wokann JP source bytes and literal/typed-object references; only explicitly reviewed placeholder producers are permitted; existing writes, persistent nickname constructors and computed Blender name blocks are excluded.",
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
   "mapping": [
     {
       "symbol": "gText_DepositMonDescription",
@@ -260,5 +260,52 @@
       "placeholder_contract": null,
       "language_options": {}
     }
-  ]
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x0854B1F0",
+      "original": "0x085CB4A2",
+      "symbol": "Chs_ChecklistLiteral_458_gText_DepositMonDescription",
+      "source_symbol": "gText_DepositMonDescription"
+    },
+    {
+      "address": "0x0854B1EC",
+      "original": "0x085CB455",
+      "symbol": "Chs_ChecklistLiteral_458_gText_DepositPokemon",
+      "source_symbol": "gText_DepositPokemon"
+    },
+    {
+      "address": "0x0854B1FC",
+      "original": "0x085CB46D",
+      "symbol": "Chs_ChecklistLiteral_458_gText_MoveItems",
+      "source_symbol": "gText_MoveItems"
+    },
+    {
+      "address": "0x0854B200",
+      "original": "0x085CB4F2",
+      "symbol": "Chs_ChecklistLiteral_458_gText_MoveItemsDescription",
+      "source_symbol": "gText_MoveItemsDescription"
+    },
+    {
+      "address": "0x0854B1F8",
+      "original": "0x085CB4CA",
+      "symbol": "Chs_ChecklistLiteral_458_gText_MoveMonDescription",
+      "source_symbol": "gText_MoveMonDescription"
+    },
+    {
+      "address": "0x0854B1F4",
+      "original": "0x085CB461",
+      "symbol": "Chs_ChecklistLiteral_458_gText_MovePokemon",
+      "source_symbol": "gText_MovePokemon"
+    },
+    {
+      "address": "0x0854B204",
+      "original": "0x085CB474",
+      "symbol": "Chs_ChecklistLiteral_458_gText_SeeYa",
+      "source_symbol": "gText_SeeYa"
+    }
+  ],
+  "active_definition_count": 7,
+  "active_reference_count": 7,
+  "language_rules": []
 }

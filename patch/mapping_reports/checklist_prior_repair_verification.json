@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-10-02T16:18:39.655337+00:00",
+  "generated_at_utc": "2026-10-03T02:04:34.521322+00:00",
   "scope": "121 kind=repair, decision=already_fixed records, independently checked against current resources and already-built artifacts",
   "policy": "Read only: no tracker/plan/game edits, no build, no commit/push. A historical status is an expectation, never proof.",
   "repositories": {
-    "jp_head": "98b3bc4f318282730df580b227e46a2fd451323a",
-    "us_head": "728c481bbeb2cb5a5625a64b211aaa364148bab6",
+    "jp_head": "27b398e27d0068e9b52095f15d6d0a9c3ce467cc",
+    "us_head": "3b284f3b92bb09e1fab8fbfd911ba56d74f40c10",
     "wokann_head": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
     "wokann_branch": "dev"
   },
   "summary": {
-    "verified_static": 117,
+    "verified_static": 119,
     "verification_gap": 1,
-    "repair_required": 3,
+    "repair_required": 1,
     "target_records": 121,
     "jp_main_payload_matches": 121,
     "us_primary_rom_matches": 121,
     "us_modern_rom_matches": 1,
-    "missing_consumer_references": 4,
+    "missing_consumer_references": 0,
     "inputs_changed_during_audit": []
   },
   "limits": [
@@ -38,19 +38,19 @@
       "mtime_ns": 1790008514386902843
     },
     "pokeemerald_jp_chs/build/patch/payload.bin": {
-      "sha256": "c5ffae6550176985c3517fca9b48913585d88cfe251495700dba8e540fd56a3d",
-      "size": 2217296,
-      "mtime_ns": 1790941655599219289
+      "sha256": "dbe4a77afdcef1b9136b908acf467482a341f243a722743a7fd99b016343daac",
+      "size": 2227800,
+      "mtime_ns": 1790992980741576761
     },
     "pokeemerald_jp_chs/build/patch/payload.elf": {
-      "sha256": "a9fc0c411eb0540a75b9f71d054fd7fc9740d760758299316e2d115efc664592",
-      "size": 2815184,
-      "mtime_ns": 1790941655595219290
+      "sha256": "ec28ff01d82b4955d6a03263a437dc9636670b2357bad93319b26977c80606e6",
+      "size": 2857600,
+      "mtime_ns": 1790992980741576761
     },
     "pokeemerald_jp_chs/build/patch/texts.inc": {
-      "sha256": "f52a62a5edec1e952101fa231cb253ad1e05ea5504320997ac024dca5c0ddc99",
-      "size": 5445874,
-      "mtime_ns": 1790941655519219316
+      "sha256": "5834de088f774d5727b905e6266f0d76ff9fdd6bfae2fc35cc972f23fd26cfbc",
+      "size": 5565426,
+      "mtime_ns": 1790992880161610828
     },
     "pokeemerald_jp_chs/patch/batches/001_littleroot_town.json": {
       "sha256": "ac6a06005a4fba6fe4929a1567f91dbaf36d1abc85041bb390b22f3b2729a424",
@@ -1913,9 +1913,9 @@
       "mtime_ns": 1790752104811881290
     },
     "pokeemerald_jp_chs/patch/batches/411_strings_c_direct.json": {
-      "sha256": "122a9114df473f2887ff268feb376e14ea06479ba2e2349ba94efd9239643be5",
-      "size": 64506,
-      "mtime_ns": 1790928165210074732
+      "sha256": "5fef8ee229228d926ebb4a15c11b320f0100da15bcf8e625f710d6ae47969d01",
+      "size": 64518,
+      "mtime_ns": 1790967420582362108
     },
     "pokeemerald_jp_chs/patch/batches/412_ribbon_descriptions.json": {
       "sha256": "cadf0472b9d3e62e9d8d3f33608e786a124b14f1a95dd2bbc8da8fb6020839c2",
@@ -1933,9 +1933,9 @@
       "mtime_ns": 1790752154199876965
     },
     "pokeemerald_jp_chs/patch/batches/415_match_call_0.json": {
-      "sha256": "fc498759c9ab5489642c8545774577f9fe74b1f154c2fea80fd69711140f95e6",
-      "size": 42388,
-      "mtime_ns": 1790928165226074727
+      "sha256": "0ddebac583441d9bb824d0f116c74932a20fd0e8a06a1cfa2db81ef2316bca40",
+      "size": 42194,
+      "mtime_ns": 1790988443291136258
     },
     "pokeemerald_jp_chs/patch/batches/416_match_call_1.json": {
       "sha256": "22e1a90f6deca448b996695935a87ad390b1879d555e6bba2825e53d5408c47e",
@@ -2028,14 +2028,14 @@
       "mtime_ns": 1790934081392041297
     },
     "pokeemerald_jp_chs/patch/batches/438_checklist_controls_and_gambler.json": {
-      "sha256": "1e0ae4bab50ccd4466d0c6229c0ae7516185f4b23c445b73959689ebdea4d3ac",
-      "size": 42554,
-      "mtime_ns": 1790934487195901724
+      "sha256": "845af536fcea1a02d4c6a59b54cfcce1d668d6ce0cf517f2ff7ef7b724d8451c",
+      "size": 39714,
+      "mtime_ns": 1790990988030263157
     },
     "pokeemerald_jp_chs/patch/batches/439_checklist_common_placeholders.json": {
-      "sha256": "4a4d063fcd8751a4a575c0d9b09ed9caea989acdd192337abf7cf68f746e9ed0",
-      "size": 65998,
-      "mtime_ns": 1790934644287847320
+      "sha256": "fd04b4400e09eff3f0526819c2daaa8911b81a5f7f0692822b376d1ba1224943",
+      "size": 65883,
+      "mtime_ns": 1790965823066909840
     },
     "pokeemerald_jp_chs/patch/batches/440_checklist_asm_text_blocks.json": {
       "sha256": "ca94ab87278598169a28f21262264d2c567647170a1287cefd9bbdc1ccbc1199",
@@ -2097,6 +2097,11 @@
       "size": 2126,
       "mtime_ns": 1790955872414331731
     },
+    "pokeemerald_jp_chs/patch/batches/452_checklist_storage_dynamic.json": {
+      "sha256": "d291705a0f1ad51d7f1608497e7b80fd91858e31f47eac1dd8a21a41007f73a0",
+      "size": 1337,
+      "mtime_ns": 1790957939153624790
+    },
     "pokeemerald_jp_chs/patch/batches/453_checklist_named_menu_sections.json": {
       "sha256": "fa4a3d291eecbb19674c3394afd21ebef624600f4ef95416ec8a6d7066f6751c",
       "size": 79146,
@@ -2107,10 +2112,145 @@
       "size": 7875,
       "mtime_ns": 1790957747049692478
     },
-    "pokeemerald_jp_chs/patch/batches/batch452_checklist_storage_dynamic.json": {
-      "sha256": "c722c6578e5f85ac3a608307bd049fbdd3cf08b734f9d1c44ed8d319acf979b2",
-      "size": 1315,
-      "mtime_ns": 1790957783085679109
+    "pokeemerald_jp_chs/patch/batches/457_checklist_pc_transfer_aliases.json": {
+      "sha256": "09005089c3800cc8c6cc3007112b7a5e24264986bb5a3509402adafa215c5b5e",
+      "size": 826,
+      "mtime_ns": 1790965865814897092
+    },
+    "pokeemerald_jp_chs/patch/batches/458_checklist_storage_menu_and_records.json": {
+      "sha256": "d1ad4d42d5e4d3b6578f99013be9e6131443e211f703e88c0395458e5ee25f45",
+      "size": 2719,
+      "mtime_ns": 1790966240934768125
+    },
+    "pokeemerald_jp_chs/patch/batches/459_checklist_battle_tower_aliases.json": {
+      "sha256": "bbb9a06ada61261528c4c0ad135af28b402c387cbf92dfe73cbb84fb2cf763db",
+      "size": 1166,
+      "mtime_ns": 1790966593910646608
+    },
+    "pokeemerald_jp_chs/patch/batches/461_checklist_reviewed_asm_refs.json": {
+      "sha256": "3c7fd88a3a7e16f6972ce57c60a0c6536857f9c48a6cb0f6423a52a1532c75ec",
+      "size": 1711,
+      "mtime_ns": 1790967480146341938
+    },
+    "pokeemerald_jp_chs/patch/batches/462_checklist_mystery_gift_messages.json": {
+      "sha256": "2f5c1986dd35d780d45a479e45cea9e9704420cb12586a771b02cbc3afd4d396",
+      "size": 17206,
+      "mtime_ns": 1790969124793776270
+    },
+    "pokeemerald_jp_chs/patch/batches/463_checklist_mystery_gift_ticket_scripts.json": {
+      "sha256": "4e01c50ac22743f1db6169bfa86af18ef6da24b693e35199fd441d38db99267f",
+      "size": 3972,
+      "mtime_ns": 1790969084137790420
+    },
+    "pokeemerald_jp_chs/patch/batches/464_checklist_match_call_headers.json": {
+      "sha256": "7a655a52ec6c34421b2d151c66a3f8737fc8a5b0d76b91fdbe1906bcb73fd078",
+      "size": 15861,
+      "mtime_ns": 1790969418101677154
+    },
+    "pokeemerald_jp_chs/patch/batches/465_checklist_battle_status_referee.json": {
+      "sha256": "8be825b6b9522fc2ed635943bf35d52cba6ede2b1e1bcaa026a98bda8987777b",
+      "size": 12525,
+      "mtime_ns": 1790970459225314310
+    },
+    "pokeemerald_jp_chs/patch/batches/466_checklist_decor_menu.json": {
+      "sha256": "edad8d1f512c6374afb95f2f6418b78b2fcf8ebe67d67d94af161c7575527647",
+      "size": 3691,
+      "mtime_ns": 1790970459229314310
+    },
+    "pokeemerald_jp_chs/patch/batches/467_checklist_birch_speech.json": {
+      "sha256": "f5be4c5c430c8d2833508d4fa2daaff6e43cbaa8fa3f32fdf4db3c5b1c080677",
+      "size": 1798,
+      "mtime_ns": 1790970459229314310
+    },
+    "pokeemerald_jp_chs/patch/batches/468_checklist_union_room.json": {
+      "sha256": "79297ebf6c7d17361bf3666f88c933f4c6970e2de144c5fc1964efa78f94d413",
+      "size": 9645,
+      "mtime_ns": 1790970531253292314
+    },
+    "pokeemerald_jp_chs/patch/batches/469_checklist_berry_crush.json": {
+      "sha256": "68959b96197d6a36ca76a8aebe998ee898c454cb92ae36529ca9d4e955eb01d8",
+      "size": 5691,
+      "mtime_ns": 1790970459229314310
+    },
+    "pokeemerald_jp_chs/patch/batches/470_checklist_frontier_records.json": {
+      "sha256": "3df8285a4bd3fafe71035eb395b8f7a064e71f59f47b7a92075173cc652cf7f4",
+      "size": 2923,
+      "mtime_ns": 1790970459229314310
+    },
+    "pokeemerald_jp_chs/patch/batches/471_checklist_mystery_gift_script_texts.json": {
+      "sha256": "6901b0df9d455736f15557a0ad60d9af05d6caf86d70c97a9661ca37c4f3c7be",
+      "size": 5539,
+      "mtime_ns": 1790970459229314310
+    },
+    "pokeemerald_jp_chs/patch/batches/472_checklist_pokedex_diploma.json": {
+      "sha256": "0b83a111f118a7034895351c99d395945d19c20c49467ad6ff931747ddadb99b",
+      "size": 1280,
+      "mtime_ns": 1790970459233314308
+    },
+    "pokeemerald_jp_chs/patch/batches/473_checklist_misc_menus.json": {
+      "sha256": "d5f53c43dd17ae97d404603a3d36ea51eb86f036500a1bbd606cd506f7e5a65d",
+      "size": 5080,
+      "mtime_ns": 1790970459233314308
+    },
+    "pokeemerald_jp_chs/patch/batches/474_checklist_storage_actions.json": {
+      "sha256": "6e8673f7740b2747fd88a6fb0c70a18448fc4791daf893010a0e26f2cfd87551",
+      "size": 5743,
+      "mtime_ns": 1790971727328881750
+    },
+    "pokeemerald_jp_chs/patch/batches/475_checklist_battle_factory_swap.json": {
+      "sha256": "f7faffcdd23af086826bc5397f23440bac2ac64253d13e06bd01a1ecd86941cd",
+      "size": 6899,
+      "mtime_ns": 1790972125796743804
+    },
+    "pokeemerald_jp_chs/patch/batches/476_checklist_pc_items_field_effects.json": {
+      "sha256": "39b582aab90424cd9690734d5208af0abcfe603ac758c0e19656967062c6db87",
+      "size": 4163,
+      "mtime_ns": 1790972380540658386
+    },
+    "pokeemerald_jp_chs/patch/batches/477_checklist_records_berry_crush.json": {
+      "sha256": "11ab2af8c86f6d7bcbeeccef9c7f6a399c5f43d8e78d4138337bbde1537d5a08",
+      "size": 6673,
+      "mtime_ns": 1790973024704436833
+    },
+    "pokeemerald_jp_chs/patch/batches/479_checklist_frontier_records2.json": {
+      "sha256": "0b1ab078548ce5663101b2cc50b99eb601492346a2535c4dcfb00b5fd8c8adb3",
+      "size": 3713,
+      "mtime_ns": 1790973662464215695
+    },
+    "pokeemerald_jp_chs/patch/batches/480_checklist_mg_hof_urchat.json": {
+      "sha256": "2a63a669502ba0d7123bbcdf5a7792acff6962d8aafe6c65d2977f1a63d27251",
+      "size": 4035,
+      "mtime_ns": 1790987428899484381
+    },
+    "pokeemerald_jp_chs/patch/batches/481_checklist_urchat_save.json": {
+      "sha256": "2f91ad6e9a0cd1d4d7c034343f7bc030f93f057e0ed1d87b848d1bf91e2f9c06",
+      "size": 1775,
+      "mtime_ns": 1790990178338539503
+    },
+    "pokeemerald_jp_chs/patch/batches/482_checklist_mg_toss_card.json": {
+      "sha256": "25333ba63b83dc04f4ed81fa2fc6ea096be43bc04d47f7de0e79730a3c14d610",
+      "size": 525,
+      "mtime_ns": 1790990660778374180
+    },
+    "pokeemerald_jp_chs/patch/batches/483_checklist_egg_hatch.json": {
+      "sha256": "ceeef1d8ed67b8f9186f624745f802b78dce414f9a7165422eb85e1276da5714",
+      "size": 539,
+      "mtime_ns": 1790990730578350543
+    },
+    "pokeemerald_jp_chs/patch/batches/484_checklist_powder_vendor.json": {
+      "sha256": "9adcc161a97ef4b5c5266279f333d1501820a5aa196b8a0daa9ec07ca00199e9",
+      "size": 1465,
+      "mtime_ns": 1790990988358263045
+    },
+    "pokeemerald_jp_chs/patch/batches/485_checklist_secret_base_decor.json": {
+      "sha256": "a65ae516df969c153f5de280ac8c38c36de730a6e70bb149986294d7cdc908c0",
+      "size": 2699,
+      "mtime_ns": 1790991642330035789
+    },
+    "pokeemerald_jp_chs/patch/batches/486_checklist_arena_jump_misc.json": {
+      "sha256": "5005e5772232008c28b367482b842b4356968680c5b29055c14d10c209839057",
+      "size": 3901,
+      "mtime_ns": 1790992610433704578
     },
     "pokeemerald_jp_chs/patch/charmap_chs.txt": {
       "sha256": "56f541aa382a68b657db58c02ac677cbcfea73c4720df78f382be13520bcca90",
@@ -2128,19 +2268,19 @@
       "mtime_ns": 1790929043585770968
     },
     "pokeemerald_jp_chs/patch/mapping_reports/checklists_action_plan_2026-10-02.json": {
-      "sha256": "bd9e90be094adc703509e705f6f0ebb1517dc583a8c590cd1b08b41709f1fd65",
-      "size": 10881702,
-      "mtime_ns": 1790957764145686640
+      "sha256": "8a46c993a3c3e4a7fd914a9cfe9977087fa7b090704cf3893ab27debffa4d4b7",
+      "size": 9961059,
+      "mtime_ns": 1790992673173682253
     },
     "pokeemerald_jp_chs/patch/texts.json": {
-      "sha256": "6440bc49f4d2017b63a369b062284bacd1ce9dafc57a5119a76e30fef906a3ef",
-      "size": 6043,
-      "mtime_ns": 1790931823492817631
+      "sha256": "9853ec3055d91e086741fc6e99714cd60038b926ed534876a8732e4a64713a62",
+      "size": 5175,
+      "mtime_ns": 1790988376851159857
     },
     "pokeemerald_jp_chs/pokeemerald_jp_chs.gba": {
-      "sha256": "d0038e51a61b6b06294a902e07622abeb37d5ab43138d78332635ca2c16f6d6a",
+      "sha256": "791a86fbc4af6dcf2edc4fd1fb0ac3e4e6ccdaa341a5e1a29e2d95b460fbcd63",
       "size": 33554432,
-      "mtime_ns": 1790941655935219171
+      "mtime_ns": 1790992981049576660
     },
     "pokeemerald_us_chs/charmap.txt": {
       "sha256": "56f541aa382a68b657db58c02ac677cbcfea73c4720df78f382be13520bcca90",
@@ -2632,11 +2772,6 @@
       "size": 40135,
       "mtime_ns": 1790447283203989332
     },
-    "pokeemerald_wokann_dev/data/scripts/pc_transfer.inc": {
-      "sha256": "beca1f338d219dae94b8695072c78734fe48c3dcc2a558d97eaa7b4249405541",
-      "size": 1488,
-      "mtime_ns": 1790447283203989332
-    },
     "pokeemerald_wokann_dev/data/scripts/roulette.inc": {
       "sha256": "ca977cfc8aab6b017e510d7a30597f25b355d8672631f63b1d606dd4bfb28605",
       "size": 2332,
@@ -2761,11 +2896,6 @@
       "sha256": "11c47115b5855eaa59e17cd68c0f8d15740e5d0114b985390c656e22b9440e59",
       "size": 109487,
       "mtime_ns": 1790447283959989262
-    },
-    "pokeemerald_wokann_dev/src/naming_screen.c": {
-      "sha256": "04147b596733e0d9ef4bd9b1197d06352f641c26d85a2e5a83f531174a1fc6ed",
-      "size": 182174,
-      "mtime_ns": 1790447283979989261
     },
     "pokeemerald_wokann_dev/src/region_map.c": {
       "sha256": "5baf20e1e60158bda9c83722bc685c78daff0566856c4e87ac8326ec8c6d2e5f",
@@ -10210,59 +10340,8 @@
         "jp_pointer_words": true,
         "wokann_original_text_bytes": true
       },
-      "findings": [
-        {
-          "severity": "repair_required",
-          "address": "0x08244222",
-          "original": "0x08243E2A",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_event_msgbox_override",
-          "wokann_event_relocation": {
-            "offset": 431734,
-            "type": 2,
-            "symbol": "gText_PkmnTransferredLanettesPC",
-            "section_base": "0x081DABAC",
-            "addend": 0,
-            "target_agrees": true,
-            "context_hex": "0f002a3e24080904"
-          },
-          "wokann_consumer": {
-            "file": "data/scripts/pc_transfer.inc",
-            "line": 34,
-            "found": true,
-            "text": "EventScript_TransferredLanettesPC::\n\tspecialvar VAR_RESULT, ShouldShowBoxWasFullMessage\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_LanettesPCBoxFull\n\tmsgbox gText_PkmnTransferredLanettesPC, MSGBOX_DEFAULT\n\treturn"
-          }
-        },
-        {
-          "severity": "repair_required",
-          "address": "0x0856585C",
-          "original": "0x08243E2A",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_naming_screen_text_table_override",
-          "table_index": 1,
-          "table_base": "0x08565858",
-          "base_table_pointer_matches": true,
-          "rom_table_pointer_unchanged": true,
-          "wokann_consumer": {
-            "file": "src/naming_screen.c",
-            "line": 1167,
-            "found": true,
-            "text": "        \"_080E2B1A:\\n\\t\"\n        \"\tldr r4, _080E2B8C\\n\\t\"\n        \"\tldr r1, _080E2B90\\n\\t\"\n        \"\tlsls r0, r5, #2\\n\\t\"\n        \"\tadds r0, r0, r1\\n\\t\"\n        \"\tldr r1, [r0]\\n\\t\"\n        \"\tadds r0, r4, #0\\n\\t\"\n        \"\tbl StringExpandPlaceholders\\n\\t\"\n        \"\tmovs r0, #0\\n\\t\"\n        \"\tmovs r1, #0\\n\\t\""
-          },
-          "wokann_table_reference": {
-            "file": "src/naming_screen.c",
-            "line": 1215,
-            "found": true,
-            "text": "        \"_080E2B90: .4byte gUnknown_8565858\\n\\t\""
-          }
-        }
-      ],
-      "remaining_verification": [
-        "Unpatched Wokann text consumer at 0x08244222; review context and placeholder ABI before proposing any patch.",
-        "Unpatched Wokann text consumer at 0x0856585C; review context and placeholder ABI before proposing any patch."
-      ],
+      "findings": [],
+      "remaining_verification": [],
       "expected_us_text": "已将{STR_VAR_2}传送到\n真由美的电脑上。\\p位于盒子\n“{STR_VAR_1}”里。",
       "regional_exception": null,
       "us": {
@@ -10361,55 +10440,9 @@
           "base_rom_matches": true
         }
       ],
-      "unredirected_original_byte_matches": [
-        {
-          "address": "0x08244222",
-          "original": "0x08243E2A",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_event_msgbox_override",
-          "wokann_event_relocation": {
-            "offset": 431734,
-            "type": 2,
-            "symbol": "gText_PkmnTransferredLanettesPC",
-            "section_base": "0x081DABAC",
-            "addend": 0,
-            "target_agrees": true,
-            "context_hex": "0f002a3e24080904"
-          },
-          "wokann_consumer": {
-            "file": "data/scripts/pc_transfer.inc",
-            "line": 34,
-            "found": true,
-            "text": "EventScript_TransferredLanettesPC::\n\tspecialvar VAR_RESULT, ShouldShowBoxWasFullMessage\n\tgoto_if_eq VAR_RESULT, TRUE, EventScript_LanettesPCBoxFull\n\tmsgbox gText_PkmnTransferredLanettesPC, MSGBOX_DEFAULT\n\treturn"
-          }
-        },
-        {
-          "address": "0x0856585C",
-          "original": "0x08243E2A",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_naming_screen_text_table_override",
-          "table_index": 1,
-          "table_base": "0x08565858",
-          "base_table_pointer_matches": true,
-          "rom_table_pointer_unchanged": true,
-          "wokann_consumer": {
-            "file": "src/naming_screen.c",
-            "line": 1167,
-            "found": true,
-            "text": "        \"_080E2B1A:\\n\\t\"\n        \"\tldr r4, _080E2B8C\\n\\t\"\n        \"\tldr r1, _080E2B90\\n\\t\"\n        \"\tlsls r0, r5, #2\\n\\t\"\n        \"\tadds r0, r0, r1\\n\\t\"\n        \"\tldr r1, [r0]\\n\\t\"\n        \"\tadds r0, r4, #0\\n\\t\"\n        \"\tbl StringExpandPlaceholders\\n\\t\"\n        \"\tmovs r0, #0\\n\\t\"\n        \"\tmovs r1, #0\\n\\t\""
-          },
-          "wokann_table_reference": {
-            "file": "src/naming_screen.c",
-            "line": 1215,
-            "found": true,
-            "text": "        \"_080E2B90: .4byte gUnknown_8565858\\n\\t\""
-          }
-        }
-      ],
+      "unredirected_original_byte_matches": [],
       "failed_checks": [],
-      "status": "repair_required"
+      "status": "verified_static"
     },
     {
       "tracker_idx": "4505",
@@ -10451,59 +10484,8 @@
         "jp_pointer_words": true,
         "wokann_original_text_bytes": true
       },
-      "findings": [
-        {
-          "severity": "repair_required",
-          "address": "0x08244234",
-          "original": "0x08243E80",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_event_msgbox_override",
-          "wokann_event_relocation": {
-            "offset": 431752,
-            "type": 2,
-            "symbol": "gText_PkmnTransferredLanettesPCBoxFull",
-            "section_base": "0x081DABAC",
-            "addend": 0,
-            "target_agrees": true,
-            "context_hex": "0f00803e24080904"
-          },
-          "wokann_consumer": {
-            "file": "data/scripts/pc_transfer.inc",
-            "line": 40,
-            "found": true,
-            "text": "EventScript_LanettesPCBoxFull::\n\tspecialvar VAR_RESULT, GetPCBoxToSendMon\n\tbufferboxname STR_VAR_3, VAR_RESULT\n\tmsgbox gText_PkmnTransferredLanettesPCBoxFull, MSGBOX_DEFAULT\n\treturn"
-          }
-        },
-        {
-          "severity": "repair_required",
-          "address": "0x08565864",
-          "original": "0x08243E80",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_naming_screen_text_table_override",
-          "table_index": 3,
-          "table_base": "0x08565858",
-          "base_table_pointer_matches": true,
-          "rom_table_pointer_unchanged": true,
-          "wokann_consumer": {
-            "file": "src/naming_screen.c",
-            "line": 1167,
-            "found": true,
-            "text": "        \"_080E2B1A:\\n\\t\"\n        \"\tldr r4, _080E2B8C\\n\\t\"\n        \"\tldr r1, _080E2B90\\n\\t\"\n        \"\tlsls r0, r5, #2\\n\\t\"\n        \"\tadds r0, r0, r1\\n\\t\"\n        \"\tldr r1, [r0]\\n\\t\"\n        \"\tadds r0, r4, #0\\n\\t\"\n        \"\tbl StringExpandPlaceholders\\n\\t\"\n        \"\tmovs r0, #0\\n\\t\"\n        \"\tmovs r1, #0\\n\\t\""
-          },
-          "wokann_table_reference": {
-            "file": "src/naming_screen.c",
-            "line": 1215,
-            "found": true,
-            "text": "        \"_080E2B90: .4byte gUnknown_8565858\\n\\t\""
-          }
-        }
-      ],
-      "remaining_verification": [
-        "Unpatched Wokann text consumer at 0x08244234; review context and placeholder ABI before proposing any patch.",
-        "Unpatched Wokann text consumer at 0x08565864; review context and placeholder ABI before proposing any patch."
-      ],
+      "findings": [],
+      "remaining_verification": [],
       "expected_us_text": "真由美的电脑上的盒子\n“{STR_VAR_3}”已满，\\p已将{STR_VAR_2}传送到\n盒子“{STR_VAR_1}”里。",
       "regional_exception": null,
       "us": {
@@ -10603,55 +10585,9 @@
           "base_rom_matches": true
         }
       ],
-      "unredirected_original_byte_matches": [
-        {
-          "address": "0x08244234",
-          "original": "0x08243E80",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_event_msgbox_override",
-          "wokann_event_relocation": {
-            "offset": 431752,
-            "type": 2,
-            "symbol": "gText_PkmnTransferredLanettesPCBoxFull",
-            "section_base": "0x081DABAC",
-            "addend": 0,
-            "target_agrees": true,
-            "context_hex": "0f00803e24080904"
-          },
-          "wokann_consumer": {
-            "file": "data/scripts/pc_transfer.inc",
-            "line": 40,
-            "found": true,
-            "text": "EventScript_LanettesPCBoxFull::\n\tspecialvar VAR_RESULT, GetPCBoxToSendMon\n\tbufferboxname STR_VAR_3, VAR_RESULT\n\tmsgbox gText_PkmnTransferredLanettesPCBoxFull, MSGBOX_DEFAULT\n\treturn"
-          }
-        },
-        {
-          "address": "0x08565864",
-          "original": "0x08243E80",
-          "still_original_in_rom": true,
-          "patch_writes": [],
-          "classification": "missing_naming_screen_text_table_override",
-          "table_index": 3,
-          "table_base": "0x08565858",
-          "base_table_pointer_matches": true,
-          "rom_table_pointer_unchanged": true,
-          "wokann_consumer": {
-            "file": "src/naming_screen.c",
-            "line": 1167,
-            "found": true,
-            "text": "        \"_080E2B1A:\\n\\t\"\n        \"\tldr r4, _080E2B8C\\n\\t\"\n        \"\tldr r1, _080E2B90\\n\\t\"\n        \"\tlsls r0, r5, #2\\n\\t\"\n        \"\tadds r0, r0, r1\\n\\t\"\n        \"\tldr r1, [r0]\\n\\t\"\n        \"\tadds r0, r4, #0\\n\\t\"\n        \"\tbl StringExpandPlaceholders\\n\\t\"\n        \"\tmovs r0, #0\\n\\t\"\n        \"\tmovs r1, #0\\n\\t\""
-          },
-          "wokann_table_reference": {
-            "file": "src/naming_screen.c",
-            "line": 1215,
-            "found": true,
-            "text": "        \"_080E2B90: .4byte gUnknown_8565858\\n\\t\""
-          }
-        }
-      ],
+      "unredirected_original_byte_matches": [],
       "failed_checks": [],
-      "status": "repair_required"
+      "status": "verified_static"
     },
     {
       "tracker_idx": "4693",

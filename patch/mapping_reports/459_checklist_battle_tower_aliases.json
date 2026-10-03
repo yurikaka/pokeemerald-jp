@@ -1,5 +1,5 @@
 {
-  "policy": "gText_BattleTower2/3 share the JP original 0x085CC423 and the US text 对战塔 with gText_BattleTower, whose payload already exists in 174_trainer_card.json. No new text definitions; redirect the remaining display consumers to the existing payload. Sibling entries of the same tables already point to Chinese payloads of the six other facilities.",
+  "policy": "Only current active writes listed here apply. Fixed JP source bytes and Wokann literal/typed-object layouts establish mapping evidence; dynamic controls require the per-definition producer contract. Existing overrides, persistent nickname constructors and computed Blender name blocks are preserved rather than blindly redirected.",
   "mapping": [
     {
       "address": "0x085645FC",
@@ -17,5 +17,52 @@
       "address": "0x085DD4A4/0x085DD4AC/0x085DD4B4/0x085DD4EC",
       "proof": "Wokann src/frontier_util.c gUnknown_85DD4A4 Dome streak record pairs: the name pointer is copied into gStringVar1 and the paired template expanded into gStringVar4 for display. 451 redirected the six other facilities' name slots in this same table; these are the Tower slots."
     }
-  ]
+  ],
+  "active_reference_writes": [
+    {
+      "address": "0x085645FC",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x0859294C",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x085D7A84",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x085DD4A4",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x085DD4AC",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x085DD4B4",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    },
+    {
+      "address": "0x085DD4EC",
+      "original": "0x085CC423",
+      "symbol": "Chs_gText_BattleTower",
+      "source_symbol": "gText_BattleTower"
+    }
+  ],
+  "active_definition_count": 0,
+  "active_reference_count": 7,
+  "language_rules": []
 }
