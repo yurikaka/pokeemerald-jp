@@ -89686,7 +89686,20 @@
       "source_candidates": [
         "gText_BattlePoints"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x80c57b0",
+              "original": "0x85ccaa8",
+              "symbol": "Chs_ChecklistLiteral_477_gText_BattlePoints",
+              "source_symbol": "gText_BattlePoints"
+            }
+          ],
+          "note": "tracker原claim的JP=ゲームポイント(0x085CC348)经Wokann region_texts101.h确认为\"// Unused\"残留串; 实际开拓区通行证BP标签为バトルポイント(0x085CCAA8), 引用0x080C57B0, 按此移植"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "ゲ-ムポイント",
@@ -89707,7 +89720,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -90207,6 +90222,10 @@
           "symbol": "gText_BattlePyramidConfirmRetire",
           "offset": 338915,
           "base": "0x081DABAC"
+        },
+        {
+          "batch": "473_checklist_misc_menus.json",
+          "note": "Chs_ChecklistLiteral_473_gText_BattlePyramidConfirmRetire 文本与 reference_writes 已写入"
         }
       ],
       "decision": "verify_script_relocations",
@@ -90236,13 +90255,14 @@
       ],
       "verified_code_references": [],
       "final_text": "您确定要退出\n金字塔的探索吗？",
-      "execution": "no_verified_reference",
+      "execution": "ported_verified_literal",
       "verified_object_references": [],
       "english_original": "Are you sure you want to quit your\nPYRAMID quest?$",
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "data/maps/BattleFrontier_BattlePyramidEmptySquare/scripts.inc"
-      }
+      },
+      "executed_batch": "473_checklist_misc_menus.json"
     },
     {
       "kind": "port",
@@ -95437,6 +95457,13 @@
           "symbol": "gText_Birch_BoyOrGirl",
           "offset": 640596,
           "base": "0x081DABAC"
+        },
+        {
+          "manifest_pointer_replacement": {
+            "old": "0x08277200",
+            "symbol": "ChsBirchBoyOrGirl",
+            "note": "patch/manifest.json pointer_replacements 已将日版脚本地址重定向到中文文本；运行时 build 验证 expected=1 命中"
+          }
         }
       ],
       "decision": "verify_script_relocations",
@@ -95466,7 +95493,7 @@
       ],
       "verified_code_references": [],
       "final_text": "男孩？\n还是女孩？",
-      "execution": "no_verified_reference",
+      "execution": "already_ported_manifest_pointer",
       "verified_object_references": [
         {
           "address": "0x08030B3C",
@@ -95543,6 +95570,13 @@
           "symbol": "gText_Birch_MainSpeech",
           "offset": 640342,
           "base": "0x081DABAC"
+        },
+        {
+          "manifest_pointer_replacement": {
+            "old": "0x08277102",
+            "symbol": "ChsBirchMainSpeech",
+            "note": "patch/manifest.json pointer_replacements 已将日版脚本地址重定向到中文文本；运行时 build 验证 expected=1 命中"
+          }
         }
       ],
       "decision": "verify_script_relocations",
@@ -95572,7 +95606,7 @@
       ],
       "verified_code_references": [],
       "final_text": "这个世界上叫做宝可梦的\n生物随处可见。\\p人们和宝可梦友好相处、共同生活，\n有时作为玩伴一起玩耍，\\l有时作为同伴协力工作。\\p也有时候，我们指挥宝可梦并肩而战，\n与其他人彼此对战切磋。\\p尽管如此亲密，\n我们仍未了解宝可梦的一切。\\p事实上，宝可梦身上的秘密\n依然数不胜数！\\p为了揭开宝可梦的秘密，\n我倾注了毕生心血进行研究。\\l这就是我一直在做的事。\\p",
-      "execution": "no_verified_reference",
+      "execution": "already_ported_manifest_pointer",
       "verified_object_references": [
         {
           "address": "0x080307A4",
@@ -95731,6 +95765,13 @@
           "symbol": "gText_Birch_SoItsPlayer",
           "offset": 640632,
           "base": "0x081DABAC"
+        },
+        {
+          "manifest_pointer_replacement": {
+            "old": "0x08277224",
+            "symbol": "ChsBirchSoItsPlayer",
+            "note": "patch/manifest.json pointer_replacements 已将日版脚本地址重定向到中文文本；运行时 build 验证 expected=1 命中"
+          }
         }
       ],
       "decision": "verify_script_relocations",
@@ -95760,7 +95801,7 @@
       ],
       "verified_code_references": [],
       "final_text": "是{PLAYER}{KUN}吗？",
-      "execution": "no_verified_reference",
+      "execution": "already_ported_manifest_pointer",
       "verified_object_references": [
         {
           "address": "0x08030E78",
@@ -96026,6 +96067,13 @@
           "symbol": "gText_Birch_WhatsYourName",
           "offset": 640615,
           "base": "0x081DABAC"
+        },
+        {
+          "manifest_pointer_replacement": {
+            "old": "0x08277213",
+            "symbol": "ChsBirchWhatsYourName",
+            "note": "patch/manifest.json pointer_replacements 已将日版脚本地址重定向到中文文本；运行时 build 验证 expected=1 命中"
+          }
         }
       ],
       "decision": "verify_script_relocations",
@@ -96055,7 +96103,7 @@
       ],
       "verified_code_references": [],
       "final_text": "好的。\n能告诉我你的名字吗？",
-      "execution": "no_verified_reference",
+      "execution": "already_ported_manifest_pointer",
       "verified_object_references": [
         {
           "address": "0x08030D48",
@@ -96132,6 +96180,13 @@
           "symbol": "gText_Birch_YourePlayer",
           "offset": 640641,
           "base": "0x081DABAC"
+        },
+        {
+          "manifest_pointer_replacement": {
+            "old": "0x0827722D",
+            "symbol": "ChsBirchYourePlayer",
+            "note": "patch/manifest.json pointer_replacements 已将日版脚本地址重定向到中文文本；运行时 build 验证 expected=1 命中"
+          }
         }
       ],
       "decision": "verify_script_relocations",
@@ -96161,7 +96216,7 @@
       ],
       "verified_code_references": [],
       "final_text": "……原来如此！\\p你就是即将搬到\n未白镇来的{PLAYER}{KUN}啊！\\l我知道了！\\p",
-      "execution": "no_verified_reference",
+      "execution": "already_ported_manifest_pointer",
       "verified_object_references": [
         {
           "address": "0x08031074",
@@ -99858,7 +99913,11 @@
       "source_candidates": [
         "gText_CancelSelection"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "note": "Wokann src/strings.c:247: gText_CancelSelection = もとにもどして　いいですか？ 标注 \"// Unused\"; tracker原地址0x085CBBA8实为バトルタワー(记录对战设施名, 已在477移植); 真 CancelSelection 字符串双区均无引用, 不移植"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "もとにもどして　いいですか?",
@@ -99884,7 +99943,8 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "是否取消选择？",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "dormant_unused_both_regions"
     },
     {
       "kind": "port",
@@ -100096,7 +100156,19 @@
       "source_candidates": [
         "gText_CantDismountBike"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x80fda48",
+              "original": "0x85c957f",
+              "symbol": "Chs_ChecklistLiteral_480_gText_CantDismountBike",
+              "source_symbol": "gText_CantDismountBike"
+            }
+          ]
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "おりられない!{BYTE_FC}け",
@@ -100117,7 +100189,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -114042,7 +114116,20 @@
       "source_candidates": [
         "gText_FacilityLink"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x85dd4f0",
+              "original": "0x85cc474",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilityLink",
+              "source_symbol": "gText_FacilityLink"
+            }
+          ],
+          "note": "排行大厅表(frontier_util.c RANKING_HALL)引用字符串+1偏移地址(跳过全角空格); 按精确引用地址覆盖"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　{PLACEHOLDER_02}　つうしん",
@@ -114068,7 +114155,9 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "{STR_VAR_1}多人连线",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -114083,7 +114172,20 @@
       "source_candidates": [
         "gText_FacilityMulti"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x85dd4b8",
+              "original": "0x85cc46c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilityMulti",
+              "source_symbol": "gText_FacilityMulti"
+            }
+          ],
+          "note": "排行大厅表(frontier_util.c RANKING_HALL)引用字符串+1偏移地址(跳过全角空格); 按精确引用地址覆盖"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　{PLACEHOLDER_02}　マルチ",
@@ -114109,7 +114211,9 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "{STR_VAR_1}多人",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -114124,7 +114228,38 @@
       "source_candidates": [
         "gText_FacilitySingle"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x85dd4a8",
+              "original": "0x85cc45c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilitySingle",
+              "source_symbol": "gText_FacilitySingle"
+            },
+            {
+              "address": "0x85dd4c0",
+              "original": "0x85cc45c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilitySingle",
+              "source_symbol": "gText_FacilitySingle"
+            },
+            {
+              "address": "0x85dd4c8",
+              "original": "0x85cc45c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilitySingle",
+              "source_symbol": "gText_FacilitySingle"
+            },
+            {
+              "address": "0x85dd4d8",
+              "original": "0x85cc45c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_FacilitySingle",
+              "source_symbol": "gText_FacilitySingle"
+            }
+          ],
+          "note": "排行大厅表(frontier_util.c RANKING_HALL)引用字符串+1偏移地址(跳过全角空格); 按精确引用地址覆盖"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　{PLACEHOLDER_02}　シングル",
@@ -114150,7 +114285,9 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "{STR_VAR_1}单打",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -136979,7 +137116,20 @@
       "source_candidates": [
         "gText_PkmnCameBack"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854cab4",
+              "original": "0x85cb2df",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PkmnCameBack",
+              "source_symbol": "gText_PkmnCameBack"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　は　かえってきた!",
@@ -137000,7 +137150,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -137128,7 +137280,20 @@
       "source_candidates": [
         "gText_PkmnWasDeposited"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca54",
+              "original": "0x85cb22b",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PkmnWasDeposited",
+              "source_symbol": "gText_PkmnWasDeposited"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　を　あずけました",
@@ -137149,7 +137314,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -137164,7 +137331,20 @@
       "source_candidates": [
         "gText_PkmnWasReleased"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca6c",
+              "original": "0x85cb253",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PkmnWasReleased",
+              "source_symbol": "gText_PkmnWasReleased"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　を　そとに　にがしてあげた",
@@ -137185,7 +137365,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -137313,7 +137495,20 @@
       "source_candidates": [
         "gText_PlacedItemInBag"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854cae4",
+              "original": "0x85cb31d",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PlacedItemInBag",
+              "source_symbol": "gText_PlacedItemInBag"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　を　バッグへいれた!",
@@ -137334,7 +137529,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -138107,7 +138304,11 @@
       "source_candidates": [
         "gText_Points"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "note": "Wokann src/data/text/region_texts101.h: gText_Points = てん 标注 \"// Unused\"; 美版 strings.c 同标注 Unused; 日版ROM全ROM无指针引用, 双区均不可见, 不移植"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "てん",
@@ -138133,7 +138334,8 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "点数",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "dormant_unused_both_regions"
     },
     {
       "kind": "port",
@@ -140998,7 +141200,19 @@
       "source_candidates": [
         "gText_PressingSpeedRankings"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x80221b8",
+              "original": "0x85cca7c",
+              "symbol": "Chs_ChecklistLiteral_477_gText_PressingSpeedRankings",
+              "source_symbol": "gText_PressingSpeedRankings"
+            }
+          ]
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　　　おすはやさ　ランキング!",
@@ -141019,7 +141233,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -149935,7 +150151,19 @@
       "source_candidates": [
         "gText_Silkiness"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8021dcc",
+              "original": "0x85cc9fc",
+              "symbol": "Chs_ChecklistLiteral_477_gText_Silkiness",
+              "source_symbol": "gText_Silkiness"
+            }
+          ]
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　　サラサラぐあい",
@@ -149956,7 +150184,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -155454,7 +155684,20 @@
       "source_candidates": [
         "gText_Summary2"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "note": "原\"shared_existing_override\"仅覆盖 trade.c 的 sText_Summary2(0x08300B14); 对战工厂块 0x085DC0ED 是独立副本, 引用 0x0819E9D8 已在475覆盖",
+          "reference_writes": [
+            {
+              "address": "0x819e9d8",
+              "original": "0x85dc0ed",
+              "symbol": "Chs_ChecklistLiteral_475_gText_Summary2",
+              "source_symbol": "gText_Summary2"
+            }
+          ]
+        }
+      ],
       "decision": "already_ported_verified_shared_text",
       "applied_references": [
         {
@@ -156384,7 +156627,19 @@
       "source_candidates": [
         "gText_SymbolsEarned"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x80c57a8",
+              "original": "0x85cca93",
+              "symbol": "Chs_ChecklistLiteral_477_gText_SymbolsEarned",
+              "source_symbol": "gText_SymbolsEarned"
+            }
+          ]
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "にいれた　シンボル",
@@ -156405,7 +156660,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -218887,7 +219144,20 @@
       "source_candidates": [
         "sText_BattleTowerLv50"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x82c1ec8",
+              "original": "0x82c1e38",
+              "symbol": "Chs_ChecklistLiteral_479_sText_BattleTowerLv50",
+              "source_symbol": "sText_BattleTowerLv50"
+            }
+          ],
+          "note": "Wokann src/data/union_room8k.h:57 [ACTIVITY_BATTLE_TOWER] = sText_BattleTowerLv50 + 1; 表项跳过前导空格, 引用0x082C1EC8指向0x082C1E38"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　バトルタワ-　レベル50",
@@ -218913,7 +219183,9 @@
       "rom_pointer_candidates": [],
       "verified_code_references": [],
       "final_text": "对战塔Lv. 50级",
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -218928,7 +219200,20 @@
       "source_candidates": [
         "sText_BattleTowerOpenLv"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x82c1e90",
+              "original": "0x82c1e48",
+              "symbol": "Chs_ChecklistLiteral_479_sText_BattleTowerOpenLv",
+              "source_symbol": "sText_BattleTowerOpenLv"
+            }
+          ],
+          "note": "Wokann src/data/union_room8k.h:43 [ACTIVITY_BATTLE_TOWER_OPEN] = sText_BattleTowerOpenLv + 3; 引用0x082C1E90指向0x082C1E48"
+        }
+      ],
       "decision": "unreferenced_original",
       "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
       "jp_rom_text": "　　　バトルタワ-　オ-プンレベル",
@@ -218944,7 +219229,9 @@
       "verified_code_references": [],
       "final_text": "对战塔自由等级",
       "exact_jp_source_match": [],
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -253096,8 +253383,13 @@
       "source_candidates": [
         "TrainerHill_Entrance_Text_CantWaitToTestTheWaters"
       ],
-      "evidence": [],
-      "decision": "needs_verified_port",
+      "evidence": [
+        {
+          "source": "../pokeemerald_wokann_dev/data/maps/TrainerHill_Entrance/scripts.inc",
+          "note": "日版绿宝石训练家之丘入口脚本中不存在该文本定义, 也没有对应 msgbox 引用; 这三条是国际版\"尚未开放\"流程新增文本, 日版入口男/女 NPC 使用 WhatSortOfTrainersAreAhead / FriendsTryingToReachTimeBoardTop。日版 ROM 无目标地址, 不可移植。"
+        }
+      ],
+      "decision": "rejected",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
         {
@@ -253109,7 +253401,8 @@
       "final_text": "听说各地的强大训练师\n都会来这座训练师之丘。\\p我已经等不及要试试身手了！\\p我会打倒所有\n挡路的家伙！$",
       "verified_code_references": [],
       "exact_jp_source_match": [],
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "regional_difference_not_in_jp"
     },
     {
       "kind": "port",
@@ -253124,8 +253417,13 @@
       "source_candidates": [
         "TrainerHill_Entrance_Text_DoYouKnowWhenTheyOpen"
       ],
-      "evidence": [],
-      "decision": "needs_verified_port",
+      "evidence": [
+        {
+          "source": "../pokeemerald_wokann_dev/data/maps/TrainerHill_Entrance/scripts.inc",
+          "note": "日版绿宝石训练家之丘入口脚本中不存在该文本定义, 也没有对应 msgbox 引用; 这三条是国际版\"尚未开放\"流程新增文本, 日版入口男/女 NPC 使用 WhatSortOfTrainersAreAhead / FriendsTryingToReachTimeBoardTop。日版 ROM 无目标地址, 不可移植。"
+        }
+      ],
+      "decision": "rejected",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
         {
@@ -253137,7 +253435,8 @@
       "final_text": "你知道这里什么时候\n正式开放吗？\\p我在这儿等着成为\n第一个挑战者呢！$",
       "verified_code_references": [],
       "exact_jp_source_match": [],
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "regional_difference_not_in_jp"
     },
     {
       "kind": "port",
@@ -253152,8 +253451,13 @@
       "source_candidates": [
         "TrainerHill_Entrance_Text_StillGettingReady"
       ],
-      "evidence": [],
-      "decision": "needs_verified_port",
+      "evidence": [
+        {
+          "source": "../pokeemerald_wokann_dev/data/maps/TrainerHill_Entrance/scripts.inc",
+          "note": "日版绿宝石训练家之丘入口脚本中不存在该文本定义, 也没有对应 msgbox 引用; 这三条是国际版\"尚未开放\"流程新增文本, 日版入口男/女 NPC 使用 WhatSortOfTrainersAreAhead / FriendsTryingToReachTimeBoardTop。日版 ROM 无目标地址, 不可移植。"
+        }
+      ],
+      "decision": "rejected",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
         {
@@ -253165,7 +253469,8 @@
       "final_text": "这里是训练家之丘，\n您可以在此享受与众多训练师的\\l双打战斗。\\p很抱歉，我们仍在准备中。\n请您下次再来！$",
       "verified_code_references": [],
       "exact_jp_source_match": [],
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "regional_difference_not_in_jp"
     },
     {
       "kind": "port",
@@ -253920,7 +254225,20 @@
       "source_candidates": [
         "gText_No3"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819ea3c",
+              "original": "0x85dc10f",
+              "symbol": "Chs_ChecklistLiteral_475_gText_No3",
+              "source_symbol": "gText_No3"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -253938,7 +254256,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -254368,7 +254688,19 @@
       "source_candidates": [
         "gText_PickCancel"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x81743a0",
+              "original": "0x85c8e7c",
+              "symbol": "Chs_ChecklistLiteral_480_gText_PickCancel",
+              "source_symbol": "gText_PickCancel"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254386,7 +254718,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -254401,7 +254735,19 @@
       "source_candidates": [
         "gText_PickNextCancel"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x81743d4",
+              "original": "0x85c8e68",
+              "symbol": "Chs_ChecklistLiteral_480_gText_PickNextCancel",
+              "source_symbol": "gText_PickNextCancel"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254419,7 +254765,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -254467,7 +254815,32 @@
       "source_candidates": [
         "gText_PkmnForSwap"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819eb10",
+              "original": "0x85dc113",
+              "symbol": "Chs_ChecklistLiteral_475_gText_PkmnForSwap",
+              "source_symbol": "gText_PkmnForSwap"
+            },
+            {
+              "address": "0x819eb78",
+              "original": "0x85dc113",
+              "symbol": "Chs_ChecklistLiteral_475_gText_PkmnForSwap",
+              "source_symbol": "gText_PkmnForSwap"
+            },
+            {
+              "address": "0x819ebbc",
+              "original": "0x85dc113",
+              "symbol": "Chs_ChecklistLiteral_475_gText_PkmnForSwap",
+              "source_symbol": "gText_PkmnForSwap"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254485,7 +254858,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -254500,7 +254875,26 @@
       "source_candidates": [
         "gText_PkmnIsSelected"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca3c",
+              "original": "0x85cb1fb",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PkmnIsSelected",
+              "source_symbol": "gText_PkmnIsSelected"
+            },
+            {
+              "address": "0x854cad4",
+              "original": "0x85cb1fb",
+              "symbol": "Chs_ChecklistLiteral_474_gText_PkmnIsSelected",
+              "source_symbol": "gText_PkmnIsSelected"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254518,7 +254912,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -254533,7 +254929,20 @@
       "source_candidates": [
         "gText_PkmnSwap"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819e894",
+              "original": "0x85dc0b4",
+              "symbol": "Chs_ChecklistLiteral_475_gText_PkmnSwap",
+              "source_symbol": "gText_PkmnSwap"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254551,7 +254960,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -254597,7 +255008,19 @@
       "source_candidates": [
         "gText_PlayerUsedVar2"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x80fe8f8",
+              "original": "0x85c9644",
+              "symbol": "Chs_ChecklistLiteral_476_gText_PlayerUsedVar2",
+              "source_symbol": "gText_PlayerUsedVar2"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254615,7 +255038,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -254663,7 +255088,19 @@
       "source_candidates": [
         "gText_PressingSpeed"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8021d18",
+              "original": "0x85cc9f4",
+              "symbol": "Chs_ChecklistLiteral_477_gText_PressingSpeed",
+              "source_symbol": "gText_PressingSpeed"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254681,7 +255118,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -254696,7 +255135,55 @@
       "source_candidates": [
         "gText_Prev"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x81a1c98",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a1f28",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a224c",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a2488",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a2754",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a2a74",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            },
+            {
+              "address": "0x81a2cf8",
+              "original": "0x85dd42f",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Prev",
+              "source_symbol": "gText_Prev"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254714,7 +255201,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -254729,7 +255218,20 @@
       "source_candidates": [
         "gText_QuitSwapping"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819c94c",
+              "original": "0x85dc0fb",
+              "symbol": "Chs_ChecklistLiteral_475_gText_QuitSwapping",
+              "source_symbol": "gText_QuitSwapping"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254747,7 +255249,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -254798,7 +255302,37 @@
       "source_candidates": [
         "gText_Receive"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x82c2594",
+              "original": "0x82c2584",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Receive",
+              "source_symbol": "gText_Receive"
+            },
+            {
+              "address": "0x82c25b4",
+              "original": "0x82c2584",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Receive",
+              "source_symbol": "gText_Receive"
+            },
+            {
+              "address": "0x82c25cc",
+              "original": "0x82c2584",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Receive",
+              "source_symbol": "gText_Receive"
+            },
+            {
+              "address": "0x82c25e4",
+              "original": "0x82c2584",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Receive",
+              "source_symbol": "gText_Receive"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254816,7 +255350,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -254831,7 +255367,20 @@
       "source_candidates": [
         "gText_Rechoose"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819e9e0",
+              "original": "0x85dc0f4",
+              "symbol": "Chs_ChecklistLiteral_475_gText_Rechoose",
+              "source_symbol": "gText_Rechoose"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254849,7 +255398,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -254928,7 +255479,25 @@
       "source_candidates": [
         "gText_RepelEffectsLingered"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x80fe954",
+              "original": "0x85c9654",
+              "symbol": "Chs_ChecklistLiteral_476_gText_RepelEffectsLingered",
+              "source_symbol": "gText_RepelEffectsLingered"
+            },
+            {
+              "address": "0x80fe96c",
+              "original": "0x85c9654",
+              "symbol": "Chs_ChecklistLiteral_476_gText_RepelEffectsLingered",
+              "source_symbol": "gText_RepelEffectsLingered"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -254946,7 +255515,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -255030,7 +255601,31 @@
       "source_candidates": [
         "gText_RoomsCleared"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x81a246c",
+              "original": "0x85dd458",
+              "symbol": "Chs_ChecklistLiteral_479_gText_RoomsCleared",
+              "source_symbol": "gText_RoomsCleared"
+            },
+            {
+              "address": "0x81a248c",
+              "original": "0x85dd458",
+              "symbol": "Chs_ChecklistLiteral_479_gText_RoomsCleared",
+              "source_symbol": "gText_RoomsCleared"
+            },
+            {
+              "address": "0x81a25dc",
+              "original": "0x85dd458",
+              "symbol": "Chs_ChecklistLiteral_479_gText_RoomsCleared",
+              "source_symbol": "gText_RoomsCleared"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255048,7 +255643,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -255096,7 +255693,20 @@
       "source_candidates": [
         "gText_SamePkmnInPartyAlready"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819f3dc",
+              "original": "0x85dc141",
+              "symbol": "Chs_ChecklistLiteral_475_gText_SamePkmnInPartyAlready",
+              "source_symbol": "gText_SamePkmnInPartyAlready"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255114,7 +255724,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -255267,7 +255879,20 @@
       "source_candidates": [
         "gText_SeeYaDescription"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854b208",
+              "original": "0x85cb50c",
+              "symbol": "Chs_ChecklistLiteral_474_gText_SeeYaDescription",
+              "source_symbol": "gText_SeeYaDescription"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255285,7 +255910,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -255300,7 +255927,26 @@
       "source_candidates": [
         "gText_SelectPkmnToAccept"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819d688",
+              "original": "0x85dc0d5",
+              "symbol": "Chs_ChecklistLiteral_475_gText_SelectPkmnToAccept",
+              "source_symbol": "gText_SelectPkmnToAccept"
+            },
+            {
+              "address": "0x819f44c",
+              "original": "0x85dc0d5",
+              "symbol": "Chs_ChecklistLiteral_475_gText_SelectPkmnToAccept",
+              "source_symbol": "gText_SelectPkmnToAccept"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255318,7 +255964,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -255333,7 +255981,26 @@
       "source_candidates": [
         "gText_SelectPkmnToSwap"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819d648",
+              "original": "0x85dc0c2",
+              "symbol": "Chs_ChecklistLiteral_475_gText_SelectPkmnToSwap",
+              "source_symbol": "gText_SelectPkmnToSwap"
+            },
+            {
+              "address": "0x819dc10",
+              "original": "0x85dc0c2",
+              "symbol": "Chs_ChecklistLiteral_475_gText_SelectPkmnToSwap",
+              "source_symbol": "gText_SelectPkmnToSwap"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255351,7 +256018,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -255366,7 +256035,25 @@
       "source_candidates": [
         "gText_Send"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x82c259c",
+              "original": "0x82c258c",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Send",
+              "source_symbol": "gText_Send"
+            },
+            {
+              "address": "0x82c25d4",
+              "original": "0x82c258c",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Send",
+              "source_symbol": "gText_Send"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255384,7 +256071,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -255535,7 +256224,19 @@
       "source_candidates": [
         "gText_SpaceMin"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8021d10",
+              "original": "0x85cca08",
+              "symbol": "Chs_ChecklistLiteral_477_gText_SpaceMin",
+              "source_symbol": "gText_SpaceMin"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255553,7 +256254,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -255568,7 +256271,19 @@
       "source_candidates": [
         "gText_SpaceSec"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8021cfc",
+              "original": "0x85cca14",
+              "symbol": "Chs_ChecklistLiteral_477_gText_SpaceSec",
+              "source_symbol": "gText_SpaceSec"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255586,7 +256301,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -255601,7 +256318,19 @@
       "source_candidates": [
         "gText_SpaceSeconds"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8137e5c",
+              "original": "0x85cb021",
+              "symbol": "Chs_ChecklistLiteral_477_gText_SpaceSeconds",
+              "source_symbol": "gText_SpaceSeconds"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255619,7 +256348,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -255634,7 +256365,19 @@
       "source_candidates": [
         "gText_SpaceTimes"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "477_checklist_records_berry_crush.json",
+          "reference_writes": [
+            {
+              "address": "0x8137df4",
+              "original": "0x85cb025",
+              "symbol": "Chs_ChecklistLiteral_477_gText_SpaceTimes",
+              "source_symbol": "gText_SpaceTimes"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255652,7 +256395,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "477_checklist_records_berry_crush.json"
     },
     {
       "kind": "port",
@@ -255667,7 +256412,20 @@
       "source_candidates": [
         "gText_Swap"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819e9dc",
+              "original": "0x85dc0e8",
+              "symbol": "Chs_ChecklistLiteral_475_gText_Swap",
+              "source_symbol": "gText_Swap"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255685,7 +256443,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -255700,7 +256460,19 @@
       "source_candidates": [
         "gText_Symbols"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x82c5870",
+              "original": "0x85cc61e",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Symbols",
+              "source_symbol": "gText_Symbols"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255718,7 +256490,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -255733,7 +256507,20 @@
       "source_candidates": [
         "gText_ThatsYourLastPkmn"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca84",
+              "original": "0x85cb278",
+              "symbol": "Chs_ChecklistLiteral_474_gText_ThatsYourLastPkmn",
+              "source_symbol": "gText_ThatsYourLastPkmn"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255751,7 +256538,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -255832,7 +256621,19 @@
       "source_candidates": [
         "gText_Time"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "480_checklist_mg_hof_urchat.json",
+          "reference_writes": [
+            {
+              "address": "0x8174dc4",
+              "original": "0x85c8dec",
+              "symbol": "Chs_ChecklistLiteral_480_gText_Time",
+              "source_symbol": "gText_Time"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255845,7 +256646,9 @@
       "final_text": "冒险时间",
       "verified_code_references": [],
       "exact_jp_source_match": [],
-      "verified_object_references": []
+      "verified_object_references": [],
+      "execution": "ported_verified_literal",
+      "executed_batch": "480_checklist_mg_hof_urchat.json"
     },
     {
       "kind": "port",
@@ -255860,7 +256663,11 @@
       "source_candidates": [
         "gText_TimesCleared"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "note": "JP串 {FD02}かい　クリア(0x085DD461)的引用0x081A25EC已由先前批次以 gText_FrontierFacilityClearStreak 覆盖(连续过关：{STR_VAR_1}), 同一JP原文不重复写入"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255878,7 +256685,8 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "already_ported_shared_override"
     },
     {
       "kind": "port",
@@ -255893,7 +256701,20 @@
       "source_candidates": [
         "gText_TimesVar1"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x81a2920",
+              "original": "0x85dd471",
+              "symbol": "Chs_ChecklistLiteral_479_gText_TimesVar1",
+              "source_symbol": "gText_TimesVar1"
+            }
+          ],
+          "note": "Wokann frontier_util.c FactoryPrintStreak 对应 US StringExpandPlaceholders(gText_TimesVar1); JP模板 {FD02}かい 引用0x081A2920"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255911,7 +256732,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -255926,7 +256749,19 @@
       "source_candidates": [
         "gText_TooImportantToToss"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x816c0e8",
+              "original": "0x85c9506",
+              "symbol": "Chs_ChecklistLiteral_476_gText_TooImportantToToss",
+              "source_symbol": "gText_TooImportantToToss"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255944,7 +256779,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -255959,7 +256796,25 @@
       "source_candidates": [
         "gText_Toss"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x82c25a4",
+              "original": "0x82c2590",
+              "symbol": "Chs_ChecklistLiteral_476_gText_Toss",
+              "source_symbol": "gText_Toss"
+            },
+            {
+              "address": "0x82c25bc",
+              "original": "0x82c2590",
+              "symbol": "Chs_ChecklistLiteral_476_gText_Toss",
+              "source_symbol": "gText_Toss"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -255977,7 +256832,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -255992,7 +256849,19 @@
       "source_candidates": [
         "gText_Toss2"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x8581a3c",
+              "original": "0x85ca6bd",
+              "symbol": "Chs_ChecklistLiteral_476_gText_Toss2",
+              "source_symbol": "gText_Toss2"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256010,7 +256879,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -256025,7 +256896,25 @@
       "source_candidates": [
         "gText_Total"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "479_checklist_frontier_records2.json",
+          "reference_writes": [
+            {
+              "address": "0x81a20bc",
+              "original": "0x85dd442",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Total",
+              "source_symbol": "gText_Total"
+            },
+            {
+              "address": "0x81a25e8",
+              "original": "0x85dd442",
+              "symbol": "Chs_ChecklistLiteral_479_gText_Total",
+              "source_symbol": "gText_Total"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256043,7 +256932,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "479_checklist_frontier_records2.json"
     },
     {
       "kind": "port",
@@ -256086,8 +256977,12 @@
       "source_candidates": [
         "gText_Upper"
       ],
-      "evidence": [],
-      "decision": "needs_verified_port",
+      "evidence": [
+        {
+          "note": "US union_room_chat.c:747 键盘页 UPPER(大写); 日版键盘页为 ひらがな/カタカナ/ABC/きごう/とうろく/とじる, 无大小写页概念, 无JP对应串; 日版键盘页已在480翻译(平假名/片假名/符号/关闭), 此符号不适用, 拒绝移植"
+        }
+      ],
+      "decision": "rejected",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
         {
@@ -256104,7 +256999,8 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "no_jp_counterpart"
     },
     {
       "kind": "port",
@@ -256119,7 +257015,19 @@
       "source_candidates": [
         "gText_UsedVar2WildLured"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x80feac4",
+              "original": "0x85c9675",
+              "symbol": "Chs_ChecklistLiteral_476_gText_UsedVar2WildLured",
+              "source_symbol": "gText_UsedVar2WildLured"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256137,7 +257045,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -256152,7 +257062,19 @@
       "source_candidates": [
         "gText_UsedVar2WildRepelled"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x80feb00",
+              "original": "0x85c9699",
+              "symbol": "Chs_ChecklistLiteral_476_gText_UsedVar2WildRepelled",
+              "source_symbol": "gText_UsedVar2WildRepelled"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256170,7 +257092,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -256246,7 +257170,20 @@
       "source_candidates": [
         "gText_WasItWorriedAboutYou"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854cabc",
+              "original": "0x85cb2eb",
+              "symbol": "Chs_ChecklistLiteral_474_gText_WasItWorriedAboutYou",
+              "source_symbol": "gText_WasItWorriedAboutYou"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256264,7 +257201,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256279,7 +257218,20 @@
       "source_candidates": [
         "gText_WhatDoYouWantToDo"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca24",
+              "original": "0x85cb1d0",
+              "symbol": "Chs_ChecklistLiteral_474_gText_WhatDoYouWantToDo",
+              "source_symbol": "gText_WhatDoYouWantToDo"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256297,7 +257249,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256382,7 +257336,20 @@
       "source_candidates": [
         "gText_WhichOneWillYouTake"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca9c",
+              "original": "0x85cb2a9",
+              "symbol": "Chs_ChecklistLiteral_474_gText_WhichOneWillYouTake",
+              "source_symbol": "gText_WhichOneWillYouTake"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256400,7 +257367,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256415,7 +257384,19 @@
       "source_candidates": [
         "gText_WithdrawHowManyItems"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x816c0c0",
+              "original": "0x85ca938",
+              "symbol": "Chs_ChecklistLiteral_476_gText_WithdrawHowManyItems",
+              "source_symbol": "gText_WithdrawHowManyItems"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256433,7 +257414,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -256448,7 +257431,20 @@
       "source_candidates": [
         "gText_WithdrawMonDescription"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854b1e8",
+              "original": "0x85cb47a",
+              "symbol": "Chs_ChecklistLiteral_474_gText_WithdrawMonDescription",
+              "source_symbol": "gText_WithdrawMonDescription"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256466,7 +257462,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256481,7 +257479,20 @@
       "source_candidates": [
         "gText_WithdrawPokemon"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854b1e4",
+              "original": "0x85cb449",
+              "symbol": "Chs_ChecklistLiteral_474_gText_WithdrawPokemon",
+              "source_symbol": "gText_WithdrawPokemon"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256499,7 +257510,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256514,7 +257527,19 @@
       "source_candidates": [
         "gText_WithdrawXItems"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "476_checklist_pc_items_field_effects.json",
+          "reference_writes": [
+            {
+              "address": "0x816c0c8",
+              "original": "0x85ca949",
+              "symbol": "Chs_ChecklistLiteral_476_gText_WithdrawXItems",
+              "source_symbol": "gText_WithdrawXItems"
+            }
+          ]
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256532,7 +257557,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "476_checklist_pc_items_field_effects.json"
     },
     {
       "kind": "port",
@@ -256695,7 +257722,20 @@
       "source_candidates": [
         "gText_Yes3"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "475_checklist_battle_factory_swap.json",
+          "reference_writes": [
+            {
+              "address": "0x819ea38",
+              "original": "0x85dc10c",
+              "symbol": "Chs_ChecklistLiteral_475_gText_Yes3",
+              "source_symbol": "gText_Yes3"
+            }
+          ],
+          "note": "Wokann src/data/text/region_texts114.h 对战工厂换人界面文本块; 指针引用位于 battle_factory_screen 代码区(0x0819xxxx), ROM已验证"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256713,7 +257753,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "475_checklist_battle_factory_swap.json"
     },
     {
       "kind": "port",
@@ -256728,7 +257770,20 @@
       "source_candidates": [
         "gText_YouCantReleaseAnEgg"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854caa4",
+              "original": "0x85cb2bb",
+              "symbol": "Chs_ChecklistLiteral_474_gText_YouCantReleaseAnEgg",
+              "source_symbol": "gText_YouCantReleaseAnEgg"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256746,7 +257801,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
@@ -256761,7 +257818,11 @@
       "source_candidates": [
         "gText_YourPartysFull"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "note": "JP原文 0x085CB28B 与 gText_PartyFull 共享同一字符串; 引用 0x0854CA8C 已由 448 的 Chs_ChecklistLiteral_448_gText_PartyFull 覆盖(同行的宝可梦已经满了！), 语义等价, 不重复写入"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256779,7 +257840,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "already_ported_shared_override",
+      "executed_batch": "448_checklist_storage_static_and_aliases.json"
     },
     {
       "kind": "port",
@@ -256794,7 +257857,20 @@
       "source_candidates": [
         "gText_YoureHoldingAPkmn"
       ],
-      "evidence": [],
+      "evidence": [
+        {
+          "batch": "474_checklist_storage_actions.json",
+          "reference_writes": [
+            {
+              "address": "0x854ca94",
+              "original": "0x85cb298",
+              "symbol": "Chs_ChecklistLiteral_474_gText_YoureHoldingAPkmn",
+              "source_symbol": "gText_YoureHoldingAPkmn"
+            }
+          ],
+          "note": "Wokann pokemon_storage_system.c:3678 PrintStorageActionText 消费 gUnknown_854CA1C 表(messageText[40],DynamicPlaceholderTextUtil展开); F7动态条目标记 japanese_dynamic; 菜单描述直接 AddTextPrinter 打印无40字节限制"
+        }
+      ],
       "decision": "needs_verified_port",
       "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
       "us_source": [
@@ -256812,7 +257888,9 @@
       "english_source_evidence": {
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
-      }
+      },
+      "execution": "ported_verified_literal",
+      "executed_batch": "474_checklist_storage_actions.json"
     },
     {
       "kind": "port",
