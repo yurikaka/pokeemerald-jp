@@ -1,0 +1,213 @@
+{
+  "scope": "Offline graphics-only proof; no emulator, shared source changes, or full build",
+  "base_sha1": "d7cf8f156ba9c455d164e1ea780a6bf1945465c2",
+  "chs_sha1": "ccfa159005e38341bca2e88a3b43d9e3f069804e",
+  "repaired_sha1": "ccfa159005e38341bca2e88a3b43d9e3f069804e",
+  "wokann_branch": "dev",
+  "wokann_commit": "88d22da09cc2d1154bfc76423aa8dbdd67b76bfa",
+  "resources": [
+    {
+      "source": "data/tilesets/primary/building/tiles.4bpp.lz",
+      "address": "0x08327FA4",
+      "size": 3384,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    },
+    {
+      "source": "data/tilesets/primary/building/metatiles.bin",
+      "address": "0x08387F9E",
+      "size": 128,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    },
+    {
+      "source": "data/tilesets/primary/building/metatile_attributes.bin",
+      "address": "0x0838801E",
+      "size": 16,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    },
+    {
+      "source": "data/tilesets/secondary/brendans_mays_house/tiles.4bpp.lz",
+      "address": "0x083464CC",
+      "size": 4300,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    },
+    {
+      "source": "data/tilesets/secondary/brendans_mays_house/metatiles.bin",
+      "address": "0x08397016",
+      "size": 3136,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    },
+    {
+      "source": "data/tilesets/secondary/brendans_mays_house/metatile_attributes.bin",
+      "address": "0x08397C56",
+      "size": 392,
+      "wokann_equals_base": true,
+      "changed_bytes": 0
+    }
+  ],
+  "rooms": [
+    {
+      "name": "LittlerootTown_BrendansHouse_1F_Layout",
+      "map_address": "0x083FEC24",
+      "layout_header": "0x083FECEC",
+      "map_border_header_unchanged": true,
+      "repaired_pixels_equal_original": true,
+      "affected_cells": []
+    },
+    {
+      "name": "LittlerootTown_BrendansHouse_2F_Layout",
+      "map_address": "0x083FED0C",
+      "layout_header": "0x083FED9C",
+      "map_border_header_unchanged": true,
+      "repaired_pixels_equal_original": true,
+      "affected_cells": []
+    },
+    {
+      "name": "LittlerootTown_MaysHouse_1F_Layout",
+      "map_address": "0x083FEDBC",
+      "layout_header": "0x083FEE84",
+      "map_border_header_unchanged": true,
+      "repaired_pixels_equal_original": true,
+      "affected_cells": []
+    },
+    {
+      "name": "LittlerootTown_MaysHouse_2F_Layout",
+      "map_address": "0x083FEEA4",
+      "layout_header": "0x083FEF34",
+      "map_border_header_unchanged": true,
+      "repaired_pixels_equal_original": true,
+      "affected_cells": []
+    }
+  ],
+  "overlapping_declared_writes": [],
+  "screenshot_comparison": {
+    "file": "chuang.png",
+    "sha1": "87796d9d70a55b651655e3deeeee3a942faf5b65",
+    "room_origin": [
+      64,
+      24
+    ],
+    "regions": [
+      {
+        "name": "computer",
+        "room_bounds": [
+          0,
+          0,
+          32,
+          48
+        ],
+        "pixels": 1536,
+        "rgb5_matching_pixels_original_broken_repaired": [
+          1408,
+          1408,
+          1408
+        ]
+      },
+      {
+        "name": "bed",
+        "room_bounds": [
+          0,
+          64,
+          48,
+          96
+        ],
+        "pixels": 1536,
+        "rgb5_matching_pixels_original_broken_repaired": [
+          1103,
+          1103,
+          1103
+        ]
+      }
+    ],
+    "note": "RGB normalized to 5-bit; visual reproduction, not an exact screenshot or emulator replay"
+  },
+  "repair": {
+    "address": "0x08347307",
+    "file_offset": "0x347307",
+    "before": "402c5f08",
+    "after": "402c5f08",
+    "changed_bytes": 0,
+    "all_other_rom_bytes_unchanged": true,
+    "legitimate_text_reference_preserved": "0x085F3AAC",
+    "rom_copy": null
+  },
+  "lz77": {
+    "start": "0x083464CC",
+    "allocated_size": 4300,
+    "original_consumed_bytes": 4300,
+    "broken_consumed_bytes": 4300,
+    "decoded_size": 15360,
+    "changed_decoded_bytes": 0,
+    "changed_global_tile_ids": [],
+    "original_tokens_at_overwrite": [
+      {
+        "address": "0x08347306",
+        "bytes": "1040",
+        "flag_address": "0x08347300",
+        "flag_bit": 4,
+        "output_offset": 12956,
+        "kind": "copy",
+        "distance": 65,
+        "length": 4
+      },
+      {
+        "address": "0x08347308",
+        "bytes": "2c5f",
+        "flag_address": "0x08347300",
+        "flag_bit": 3,
+        "output_offset": 12960,
+        "kind": "copy",
+        "distance": 3168,
+        "length": 5
+      },
+      {
+        "address": "0x0834730A",
+        "bytes": "083d",
+        "flag_address": "0x08347300",
+        "flag_bit": 2,
+        "output_offset": 12965,
+        "kind": "copy",
+        "distance": 2110,
+        "length": 3
+      }
+    ],
+    "broken_tokens_at_overwrite": [
+      {
+        "address": "0x08347306",
+        "bytes": "1040",
+        "flag_address": "0x08347300",
+        "flag_bit": 4,
+        "output_offset": 12956,
+        "kind": "copy",
+        "distance": 65,
+        "length": 4
+      },
+      {
+        "address": "0x08347308",
+        "bytes": "2c5f",
+        "flag_address": "0x08347300",
+        "flag_bit": 3,
+        "output_offset": 12960,
+        "kind": "copy",
+        "distance": 3168,
+        "length": 5
+      },
+      {
+        "address": "0x0834730A",
+        "bytes": "083d",
+        "flag_address": "0x08347300",
+        "flag_bit": 2,
+        "output_offset": 12965,
+        "kind": "copy",
+        "distance": 2110,
+        "length": 3
+      }
+    ],
+    "repaired_equals_original": true
+  },
+  "permanent_source_fix_pending_coordination": false
+}
