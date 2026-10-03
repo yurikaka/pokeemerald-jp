@@ -1562,6 +1562,23 @@ ChsBattleTrainerNameHook:
     bx r0
 
 .align 2
+.global ChsMatchCallPopulateTrainerName
+.type ChsMatchCallPopulateTrainerName, %function
+.thumb_func
+ChsMatchCallPopulateTrainerName:
+    adds r0, r4, #0
+    bl ChsTrainerNameFromId
+    adds r1, r0, #0
+    adds r0, r5, #0
+    ldr r3, =0x080088B9
+    bl .Lmatchcall_name_copy
+    pop {r4, r5, r6}
+    pop {r0}
+    bx r0
+.Lmatchcall_name_copy:
+    bx r3
+
+.align 2
 .global ChsBerryFirmness
 ChsBerryFirmness:
     .4byte ChsBerryFirmnessVerySoft
