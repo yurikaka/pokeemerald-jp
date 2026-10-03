@@ -7,8 +7,7 @@
   "source_commit": "fe570a7e5",
   "category": "evolution messages",
   "summary": {
-    "verified_direct_symbol": 4,
-    "verified_source_definition": 2
+    "verified_direct_symbol": 5
   },
   "reference_writes": [
     {
@@ -136,22 +135,22 @@
       "status": "verified_direct_symbol"
     },
     {
-      "jp_reference": "0x0813ECA8",
-      "jp_original_text": "0x085ABB3E",
+      "jp_reference": "0x0813ECD0",
+      "jp_original_text": "0x085ABB28",
       "batch_source_symbol": "gText_PkmnStoppedEvolving",
       "patch_symbol": "Chs_gText_PkmnStoppedEvolving",
-      "base_rom_value": "0x085ABB3E",
+      "base_rom_value": "0x085ABB28",
       "base_rom_matches_batch": true,
       "wokann_reference_locations": [
         {
           "file": "src/evolution_scene.c",
-          "line": 1190,
-          "referenced_symbol": "gText_EllipsisQuestionMark",
+          "line": 1209,
+          "referenced_symbol": "gText_PkmnStoppedEvolving",
           "referenced_offset": null
         }
       ],
       "wokann_referenced_symbols": [
-        "gText_EllipsisQuestionMark"
+        "gText_PkmnStoppedEvolving"
       ],
       "wokann_function_owner": {
         "start": "0x0813E638",
@@ -164,38 +163,7 @@
           "line": 66
         }
       ],
-      "status": "verified_source_definition"
-    },
-    {
-      "jp_reference": "0x0813F7FC",
-      "jp_original_text": "0x085ABB3E",
-      "batch_source_symbol": "gText_PkmnStoppedEvolving",
-      "patch_symbol": "Chs_gText_PkmnStoppedEvolving",
-      "base_rom_value": "0x085ABB3E",
-      "base_rom_matches_batch": true,
-      "wokann_reference_locations": [
-        {
-          "file": "src/evolution_scene.c",
-          "line": 2488,
-          "referenced_symbol": "gText_EllipsisQuestionMark",
-          "referenced_offset": null
-        }
-      ],
-      "wokann_referenced_symbols": [
-        "gText_EllipsisQuestionMark"
-      ],
-      "wokann_function_owner": {
-        "start": "0x0813F280",
-        "symbol": "evolution_scene.s"
-      },
-      "wokann_original_text_labels": [],
-      "wokann_source_symbol_definitions": [
-        {
-          "file": "src/battle_message.c",
-          "line": 66
-        }
-      ],
-      "status": "verified_source_definition"
+      "status": "verified_direct_symbol"
     }
   ]
 }
