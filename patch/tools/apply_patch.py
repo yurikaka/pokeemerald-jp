@@ -74,6 +74,22 @@ def main() -> None:
     rom.extend(b"\xFF" * (ROM_SIZE - len(rom)))
     rom[payload_offset:payload_offset + len(payload)] = payload
 
+    for entry in manifest.get("inline_table_writes", []):
+        table_address = parse_int(entry["table_address"])
+        stride = parse_int(entry["stride"])
+        field_size = parse_int(entry["field_size"])
+        count = parse_int(entry["count"])
+        blob = Path(entry["binary"]).read_bytes()
+        if len(blob) != count * field_size:
+            raise SystemExit(
+                f"inline table {entry['binary']}: expected {count * field_size} bytes, got {len(blob)}"
+            )
+        if field_size > stride:
+            raise SystemExit(f"inline table {entry['binary']}: field exceeds stride")
+        for index in range(count):
+            offset = rom_offset(table_address + index * stride)
+            rom[offset:offset + field_size] = blob[index * field_size:(index + 1) * field_size]
+
     for entry in manifest.get("code_patches", []):
         address = parse_int(entry["address"])
         offset = rom_offset(address)

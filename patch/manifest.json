@@ -183,7 +183,21 @@
       "symbol": "ChsCopyContestWinnerNicknameForDisplay"
     }
   ],
+  "inline_table_writes": [
+    {
+      "binary": "build/patch/trainer_names_inline.bin",
+      "table_address": "0x082E3840",
+      "stride": "32",
+      "field_size": "12",
+      "count": "855"
+    }
+  ],
   "code_patches": [
+    {
+      "address": "0x0806E0B4",
+      "original": "7ebc5a08",
+      "replacement": "408a2e08"
+    },
     {
       "address": "0x080BE416",
       "original": "0321",

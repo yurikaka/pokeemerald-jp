@@ -65,8 +65,8 @@ $(OBJFILE): %.o: %.s
 $(PATCH_BUILD):
 	mkdir -p $@
 
-$(PATCH_BUILD)/texts.inc: $(PATCH_TEXTS) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
-	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $@ $(PATCH_TEXTS)
+$(PATCH_BUILD)/texts.inc $(PATCH_BUILD)/trainer_names_inline.bin &: $(PATCH_TEXTS) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $(PATCH_BUILD)/texts.inc $(PATCH_TEXTS)
 
 $(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
@@ -123,7 +123,7 @@ $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld
 $(PATCH_BIN): $(PATCH_ELF)
 	$(PATCH_OBJCOPY) -O binary $< $@
 
-$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json $(PATCH_BATCHES) patch/tools/apply_patch.py
+$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json $(PATCH_BATCHES) patch/tools/apply_patch.py $(PATCH_BUILD)/trainer_names_inline.bin
 	$(PYTHON) patch/tools/apply_patch.py --rom $(ROM) --output $@ \
 		--payload-elf $(PATCH_ELF) --payload-bin $(PATCH_BIN) \
 		--manifest patch/manifest.json --nm $(PATCH_ARM_PREFIX)nm \

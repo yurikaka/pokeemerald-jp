@@ -461,6 +461,17 @@ def main() -> None:
                     f"{source_path} contains {len(trainer_names)} trainer names, "
                     f"expected {document['count']}"
                 )
+            inline = bytearray()
+            for index, name in enumerate(trainer_names):
+                encoded = encode_compact_chinese_text(name, charmap)
+                if len(encoded) > 12:
+                    raise ValueError(
+                        f"trainer name {index} does not fit the 12-byte inline field: {name!r}"
+                    )
+                inline.extend(encoded)
+                inline.extend(bytes(12 - len(encoded)))
+            inline_path = output_path.with_name("trainer_names_inline.bin")
+            inline_path.write_bytes(bytes(inline))
             fixed_tables.append(
                 {
                     "kind": "string_pointer_table",
