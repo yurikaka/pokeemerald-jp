@@ -1,0 +1,151 @@
+{
+  "source_commit": "v2-audit-2026-10-04",
+  "category": "v2 verified display consumers and regional placeholder mappings",
+  "texts": [
+    {
+      "name": "Chs_V2_EasyChatSevenCharacters",
+      "text": "每行最多只能放2个7字词语！",
+      "note": "JP-only second instruction: preserve the seven-character-word limit of the Japanese 3-by-2 input layout."
+    },
+    {
+      "name": "Chs_V2_gText_Judgment",
+      "source_symbol": "gText_Judgment",
+      "us_encoded_hex": "fd00fc110d0a2d034dfc110dfd01ff",
+      "japanese_placeholders": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "Chs_V2_gText_ByeByeVar1",
+      "source_symbol": "gText_ByeByeVar1",
+      "us_encoded_hex": "0fe505e63bfd033cff",
+      "japanese_placeholders": [
+        3
+      ]
+    },
+    {
+      "name": "Chs_V2_gText_CantSelectSamePkmn",
+      "source_symbol": "gText_CantSelectSamePkmn",
+      "us_encoded_hex": "01d609d20e8a10060e0d0d14030b016307d7096637ff"
+    },
+    {
+      "name": "Chs_V2_gText_BerryCrush2",
+      "source_symbol": "gText_BerryCrush2",
+      "us_encoded_hex": "0c3c04c303de0c8cff"
+    },
+    {
+      "name": "Chs_V2_gText_ApostropheSBase",
+      "source_symbol": "gText_ApostropheSBase",
+      "text": "的基地",
+      "compact_resource": true
+    },
+    {
+      "name": "Chs_V2_gText_NatureSlash",
+      "source_symbol": "gText_NatureSlash",
+      "text": "性格/",
+      "compact_resource": true
+    },
+    {
+      "name": "Chs_V2_gText_LinkContestResults",
+      "source_symbol": "gText_LinkContestResults",
+      "us_encoded_hex": "fd01030b087f07250537086b02d30b7c024b0593ff",
+      "japanese_placeholders": [
+        1
+      ]
+    },
+    {
+      "name": "Chs_V2_sText_PleaseWaitAWhile",
+      "source_symbol": "sText_PleaseWaitAWhile",
+      "us_encoded_hex": "0b0d0bb2030fb0b0fc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfefc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadfc080fadff"
+    },
+    {
+      "name": "Chs_V2_gText_MixingRecords",
+      "source_symbol": "gText_MixingRecords",
+      "us_encoded_hex": "057904f505b208ed10a1b0b0ff"
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x08573158",
+      "original": "0x085CB89B",
+      "symbol": "Chs_V2_EasyChatSevenCharacters"
+    },
+    {
+      "address": "0x08573170",
+      "original": "0x085CB89B",
+      "symbol": "Chs_V2_EasyChatSevenCharacters"
+    },
+    {
+      "address": "0x08573188",
+      "original": "0x085CB89B",
+      "symbol": "Chs_V2_EasyChatSevenCharacters"
+    },
+    {
+      "address": "0x081A4FA0",
+      "original": "0x085ABDAE",
+      "symbol": "Chs_V2_gText_Judgment",
+      "source_symbol": "gText_Judgment"
+    },
+    {
+      "address": "0x081A5078",
+      "original": "0x085ABDAE",
+      "symbol": "Chs_V2_gText_Judgment",
+      "source_symbol": "gText_Judgment"
+    },
+    {
+      "address": "0x0807BC10",
+      "original": "0x0830D24F",
+      "symbol": "Chs_V2_gText_ByeByeVar1",
+      "source_symbol": "gText_ByeByeVar1"
+    },
+    {
+      "address": "0x0807CFEC",
+      "original": "0x0830D24F",
+      "symbol": "Chs_V2_gText_ByeByeVar1",
+      "source_symbol": "gText_ByeByeVar1"
+    },
+    {
+      "address": "0x0819B79C",
+      "original": "0x085DBC11",
+      "symbol": "Chs_V2_gText_CantSelectSamePkmn",
+      "source_symbol": "gText_CantSelectSamePkmn"
+    },
+    {
+      "address": "0x080221B0",
+      "original": "0x085CCA70",
+      "symbol": "Chs_V2_gText_BerryCrush2",
+      "source_symbol": "gText_BerryCrush2"
+    },
+    {
+      "address": "0x080EA468",
+      "original": "0x085CA654",
+      "symbol": "Chs_V2_gText_ApostropheSBase",
+      "source_symbol": "gText_ApostropheSBase"
+    },
+    {
+      "address": "0x08167A80",
+      "original": "0x085CB7A2",
+      "symbol": "Chs_V2_gText_NatureSlash",
+      "source_symbol": "gText_NatureSlash"
+    },
+    {
+      "address": "0x081A2F60",
+      "original": "0x085CCEA5",
+      "symbol": "Chs_V2_gText_LinkContestResults",
+      "source_symbol": "gText_LinkContestResults"
+    },
+    {
+      "address": "0x082C0CE0",
+      "original": "0x082C0C68",
+      "symbol": "Chs_V2_sText_PleaseWaitAWhile",
+      "source_symbol": "sText_PleaseWaitAWhile"
+    },
+    {
+      "address": "0x080E6B74",
+      "original": "0x08566CA4",
+      "symbol": "Chs_V2_gText_MixingRecords",
+      "source_symbol": "gText_MixingRecords"
+    }
+  ]
+}
