@@ -98,6 +98,9 @@ patch/gfx/menu_info_tiles.4bpp: patch/tools/build_menu_info_gfx.py baserom_jp.gb
 patch/gfx/battle_status_tiles.4bpp: patch/tools/build_battle_status_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/interface/status_icons.png
 	$(PYTHON) patch/tools/build_battle_status_gfx.py
 
+patch/gfx/mon_markings_menu.4bpp: patch/tools/build_markings_menu_gfx.py baserom_jp.gba patch/fonts/chinese_normal.png
+	$(PYTHON) patch/tools/build_markings_menu_gfx.py
+
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
