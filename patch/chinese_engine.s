@@ -4050,6 +4050,11 @@ ChsMonMarkingsMenuGfx:
     .incbin "patch/gfx/mon_markings_menu.4bpp"
 
 .align 2
+.global ChsBagHMIconGfx
+ChsBagHMIconGfx:
+    .incbin "patch/gfx/bag_hm_icon.4bpp"
+
+.align 2
 .global ChsWallClockGfx
 ChsWallClockGfx:
     .incbin "build/patch/wallclock.lz"

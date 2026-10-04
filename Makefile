@@ -26,7 +26,7 @@ PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_MENU_INFO_US_GFX := $(PATCH_BUILD)/menu_info_us.4bpp
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp
-PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp
+PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin
 PATCH_TILEMAPS := $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin))
@@ -100,6 +100,9 @@ patch/gfx/battle_status_tiles.4bpp: patch/tools/build_battle_status_gfx.py baser
 
 patch/gfx/mon_markings_menu.4bpp: patch/tools/build_markings_menu_gfx.py baserom_jp.gba patch/fonts/chinese_normal.png
 	$(PYTHON) patch/tools/build_markings_menu_gfx.py
+
+patch/gfx/bag_hm_icon.4bpp: patch/tools/build_bag_hm_icon.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/bag/hm.png ../pokeemerald_wokann_dev/src/data/item_menu_data.c | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_bag_hm_icon.py
 
 patch/gfx/wallclock.4bpp: patch/tools/build_wallclock_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/wallclock/clock.png.4bpp.lz ../pokeemerald_wokann_dev/graphics/wallclock/clock_start.bin ../pokeemerald_wokann_dev/graphics/wallclock/clock_view.bin
 	$(PYTHON) patch/tools/build_wallclock_gfx.py

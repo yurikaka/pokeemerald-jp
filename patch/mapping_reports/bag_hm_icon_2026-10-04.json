@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-04",
+  "label": "HM",
+  "original_label": "Japanese HM marker",
+  "reference": "../pokeemerald_wokann_dev",
+  "data_symbol": "gUnknown_85DF99C",
+  "data_address": "0x085DF99C",
+  "data_size": 128,
+  "data_source": "src/data/item_menu_data.c",
+  "caller": "src/item_menu.c: PrintItemQuantityPlusGFX",
+  "pointer_address": "0x081AB370",
+  "object_reference": {
+    "object": "build/pokeemerald-jp/src/item_menu.o",
+    "section_offset": "0xA88",
+    "relocation": "R_ARM_ABS32",
+    "symbol": "gUnknown_85DF99C"
+  },
+  "layout": "Four tiled 4bpp tiles, 16 by 16 pixels; original BlitBitmapToWindow dimensions and coordinates unchanged",
+  "source_bitmap": "../pokeemerald_us_chs/graphics/bag/hm.png",
+  "font": "Prerendered US HM letters, six pixels high including shadow; no runtime font rendering",
+  "palette": "Preserve US bitmap indices 1, 10, 11 and 15; use original Japanese runtime palette without palette writes",
+  "scope": "Only replace the static HM marker pointer; retain original HM01-HM08 condition, coordinates, item numbering, quantities and list behavior",
+  "validation": "Generator requires exact Wokann data/base-ROM equality and verifies all 256 packed pixels match the US bitmap; gameplay not yet tested"
+}
