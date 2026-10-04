@@ -1579,6 +1579,135 @@ ChsMatchCallPopulateTrainerName:
     bx r3
 
 .align 2
+.global ChsBufferMatchCallNameAndDesc
+.type ChsBufferMatchCallNameAndDesc, %function
+.thumb_func
+ChsBufferMatchCallNameAndDesc:
+    @ Replaces BufferMatchCallNameAndDesc (0x081CA7F4). Builds the list row
+    @ as one compact muzai-mode string: class glyphs, FC 0D shift-right to
+    @ the original name column (80 px; FC 11-15 clear/skip codes are no-ops
+    @ in this engine), then name glyphs. Chinese text no longer fits the
+    @ original fixed 10/6-byte fields.
+    push {r4, r5, r6, lr}
+    sub sp, #8
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldrb r0, [r4]
+    cmp r0, #0
+    bne .Lmc_list_special
+    ldrh r0, [r4, #2]
+    ldr r3, =0x081D0CD9
+    bl .Lmc_list_call_r3
+    lsls r0, r0, #5
+    ldr r1, =0x082E383C
+    adds r0, r0, r1
+    ldrb r2, [r0, #1]
+    lsls r2, r2, #2
+    ldr r1, =ChsTrainerClassNames
+    ldr r2, [r1, r2]
+    str r2, [sp]
+    adds r0, #4
+    str r0, [sp, #4]
+    b .Lmc_list_have_pointers
+.Lmc_list_special:
+    ldrh r0, [r4, #2]
+    add r2, sp, #4
+    mov r1, sp
+    ldr r3, =0x081D1179
+    bl .Lmc_list_call_r3
+    ldr r1, [sp]
+    cmp r1, #0
+    beq .Lmc_list_have_pointers
+    ldr r2, =0x082E3564
+    cmp r1, r2
+    blo .Lmc_list_have_pointers
+    ldr r3, =0x082E383A
+    cmp r1, r3
+    bhs .Lmc_list_have_pointers
+    subs r1, r2
+    movs r0, #0
+.Lmc_list_div11:
+    cmp r1, #11
+    blo .Lmc_list_div11_done
+    subs r1, #11
+    adds r0, #1
+    b .Lmc_list_div11
+.Lmc_list_div11_done:
+    lsls r0, r0, #2
+    ldr r1, =ChsTrainerClassNames
+    ldr r1, [r1, r0]
+    str r1, [sp]
+.Lmc_list_have_pointers:
+    ldr r1, [sp]
+    cmp r1, #0
+    beq .Lmc_list_blank
+    ldr r1, [sp, #4]
+    cmp r1, #0
+    beq .Lmc_list_blank
+    movs r0, #0xF5
+    strb r0, [r5]
+    movs r0, #0xF3
+    strb r0, [r5, #1]
+    adds r5, #2
+    ldr r1, [sp]
+    bl ChsAppendChineseGlyphs
+    movs r0, #0xFC
+    strb r0, [r5]
+    movs r0, #0x0D
+    strb r0, [r5, #1]
+    movs r0, #80
+    strb r0, [r5, #2]
+    adds r5, #3
+    ldr r1, [sp, #4]
+    bl ChsAppendChineseGlyphs
+.Lmc_list_blank:
+    movs r0, #0xFF
+    strb r0, [r5]
+    add sp, #8
+    pop {r4, r5, r6}
+    pop {r0}
+    bx r0
+.Lmc_list_call_r3:
+    bx r3
+
+.align 2
+.type ChsAppendChineseGlyphs, %function
+.thumb_func
+ChsAppendChineseGlyphs:
+    @ r1 = Chinese string (FC16-prefixed or F5-compact), r5 = dest.
+    @ Appends the raw glyph bytes (no mode prefix) up to but not including
+    @ 0xFF. Returns r5 advanced past the written bytes.
+    ldrb r0, [r1]
+    cmp r0, #0xFC
+    bne .Lappend_glyphs_not_fc
+    ldrb r0, [r1, #1]
+    cmp r0, #0x16
+    bne .Lappend_glyphs_loop
+    adds r1, #2
+    b .Lappend_glyphs_loop
+.Lappend_glyphs_not_fc:
+    cmp r0, #0xF5
+    bne .Lappend_glyphs_loop
+    adds r1, #1
+    ldrb r0, [r1]
+    cmp r0, #0xF3
+    beq .Lappend_glyphs_skip_subcode
+    cmp r0, #0xF4
+    bne .Lappend_glyphs_loop
+.Lappend_glyphs_skip_subcode:
+    adds r1, #1
+.Lappend_glyphs_loop:
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lappend_glyphs_done
+    strb r0, [r5]
+    adds r1, #1
+    adds r5, #1
+    b .Lappend_glyphs_loop
+.Lappend_glyphs_done:
+    bx lr
+
+.align 2
 .global ChsBerryFirmness
 ChsBerryFirmness:
     .4byte ChsBerryFirmnessVerySoft
