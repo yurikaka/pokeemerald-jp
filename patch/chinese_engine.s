@@ -916,6 +916,13 @@ ChsUpdateNickInHealthbox:
     adds r0, #1
     cmp r1, #0xFF
     bne .Lhealthbox_nickname_narrow_copy
+    subs r0, #1
+    movs r1, #0xF5
+    strb r1, [r0]
+    movs r1, #0xF4
+    strb r1, [r0, #1]
+    movs r1, #0xFF
+    strb r1, [r0, #2]
 .Lhealthbox_append_nickname:
     ldr r0, =0x02022AE0
     mov r1, sp
