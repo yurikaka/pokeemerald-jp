@@ -1202,7 +1202,7 @@ ChsPokedexName:
     mov r4, r8
     mov r5, sb
     push {r4, r5}
-    sub sp, #0xC
+    sub sp, #0x10
     adds r4, r0, #0
     adds r5, r1, #0
     adds r6, r2, #0
@@ -1226,6 +1226,7 @@ ChsPokedexName:
     ldr r1, =ChsSpeciesNames
     ldr r0, [r1, r0]
     adds r0, #1
+    mov r8, r0
     movs r5, #0
 .Lpokedex_name_length:
     ldrb r1, [r0]
@@ -1235,6 +1236,8 @@ ChsPokedexName:
     adds r5, #1
     b .Lpokedex_name_length
 .Lpokedex_name_unknown:
+    movs r0, #0
+    mov r8, r0
     movs r5, #0
     mov r1, sp
     movs r2, #0xAE
@@ -1246,6 +1249,30 @@ ChsPokedexName:
     movs r2, #0xFF
     strb r2, [r1, #5]
 .Lpokedex_name_print:
+    cmp r5, #5
+    bne .Lpokedex_name_select_printer
+    cmp r6, #0x0B
+    bne .Lpokedex_name_select_printer
+    cmp r7, #4
+    bne .Lpokedex_name_select_printer
+    mov r0, r8
+    cmp r0, #0
+    beq .Lpokedex_name_select_printer
+    mov r1, sp
+    movs r0, #0xF5
+    strb r0, [r1]
+    movs r0, #0xF3
+    strb r0, [r1, #1]
+    adds r1, #2
+    mov r0, r8
+.Lpokedex_cry_narrow_copy:
+    ldrb r2, [r0]
+    strb r2, [r1]
+    adds r0, #1
+    adds r1, #1
+    cmp r2, #0xFF
+    bne .Lpokedex_cry_narrow_copy
+.Lpokedex_name_select_printer:
     ldr r0, =JP_POKEDEX_PRINT_TEXT
     mov ip, r0
     cmp r5, #5
@@ -1261,7 +1288,7 @@ ChsPokedexName:
     adds r3, r7, #0
     bl .Lpokedex_name_print_call
     adds r0, r5, #0
-    add sp, #0xC
+    add sp, #0x10
     pop {r3, r4}
     mov r8, r3
     mov sb, r4
