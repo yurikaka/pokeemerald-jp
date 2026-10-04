@@ -2395,46 +2395,18 @@ ChsStarterPokemonLabel:
     adds r1, #0x0C
     movs r0, #0xFF
     strb r0, [r1]
-    movs r3, #0
-    movs r5, #0
-    lsls r4, r7, #1
-    ldr r0, =0x082EA31C
-    mov r8, r0
     lsls r6, r6, #1
     mov ip, r6
-    adds r0, r4, r7
-    lsls r0, r0, #1
-    add r0, r8
-    ldrb r0, [r0]
-    cmp r0, #0xFF
-    beq .Lstarter_name_done
-.Lstarter_name_loop:
     mov r1, sl
-    adds r2, r1, r5
-    adds r1, r4, r7
-    lsls r1, r1, #1
-    adds r0, r3, r1
-    add r0, r8
-    ldrb r0, [r0]
-    strb r0, [r2]
-    adds r0, r3, #1
-    lsls r0, r0, #0x18
-    lsrs r3, r0, #0x18
-    adds r0, r5, #1
-    lsls r0, r0, #0x18
-    lsrs r5, r0, #0x18
-    adds r1, r3, r1
-    add r1, r8
-    ldrb r0, [r1]
-    cmp r0, #0xFF
-    beq .Lstarter_name_done
-    cmp r3, #9
-    bls .Lstarter_name_loop
-.Lstarter_name_done:
-    mov r2, sl
-    adds r1, r2, r5
-    movs r0, #0xFF
+    movs r0, #0xF5
     strb r0, [r1]
+    movs r0, #0xF2
+    strb r0, [r1, #1]
+    strb r7, [r1, #2]
+    lsrs r0, r7, #8
+    strb r0, [r1, #3]
+    movs r0, #0xFF
+    strb r0, [r1, #4]
     ldr r2, =0x08590BF4
     ldr r0, [r2]
     ldr r1, [r2, #4]
