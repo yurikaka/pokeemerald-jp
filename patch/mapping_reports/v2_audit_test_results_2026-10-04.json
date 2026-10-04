@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-04",
+  "jp_rom": "pokeemerald_jp_chs.gba",
+  "jp_rom_sha1": "e198672849b7e8e85792420ca1fef0aee212e0a7",
+  "jp_build": "make chs -j4: passed",
+  "us_build": "make -j4: passed",
+  "vanilla_compare": "make compare: passed",
+  "diff_check": "JP and US git diff --check: passed",
+  "resources": {
+    "footer_labels": {
+      "DelAll": "全部清除",
+      "Cancel5": "取消",
+      "Ok2": "好了",
+      "Answer": "回答",
+      "Quiz": "测验"
+    },
+    "original_tiles_preserved": true,
+    "unchanged_map_outside_text_slots": true,
+    "original_palettes_preserved": true,
+    "compact_suffix": {
+      "payload_symbol": "Chs_V2_gText_ApostropheSBase",
+      "file": "patch/batches/496_v2_verified_display_consumers.json",
+      "payload_address": "0x0908F954",
+      "payload_sha256": "7ef86a7b5776edddd0fd7c715c4a5eae00c34e681eb38b6ed3644c9aea45867b",
+      "rom_bytes_match": true,
+      "references": [
+        {
+          "address": "0x080EA468",
+          "original": "0x085CA654",
+          "target": "0x0908F954",
+          "batch": "patch/batches/496_v2_verified_display_consumers.json"
+        }
+      ]
+    },
+    "nature_buffer_max_bytes": 12,
+    "nature_buffer_capacity": 14,
+    "typed_new_text_references": 14,
+    "gameplay_test": "not run"
+  },
+  "display_regression": {
+    "scope": "ARM helper execution, not a full GBA emulator playthrough",
+    "tokens": {
+      "resources": 141,
+      "mixed_ascii": true,
+      "japanese_continuation": true,
+      "eos_reset": true,
+      "printer_neighbor_canary": true
+    },
+    "blender": {
+      "local_npc_names": 6,
+      "link_names_unchanged": true,
+      "player_slot_unchanged": true,
+      "name_record_canary": true
+    },
+    "contest": {
+      "opponents": 96,
+      "fields": 192,
+      "link_names_unchanged": true,
+      "player_names_unchanged": true,
+      "contest_record_canary": true,
+      "copy_buffer_canary": true
+    },
+    "mail": {
+      "signatures": 3,
+      "longest_japanese_sender": true,
+      "signature_buffer_unchanged": true,
+      "synchronous_render": true,
+      "stack_restored": true
+    },
+    "pokeblocks": {
+      "colors": 14,
+      "levels": [
+        0,
+        1,
+        99,
+        255
+      ],
+      "24_byte_entry_canary": true,
+      "pokeblock_data_unchanged": true
+    },
+    "blender_stubs": {
+      "printer_preserves_callee_saved_register": true,
+      "results_name_append": true,
+      "ranking_name_append": true,
+      "continuations": true
+    },
+    "fixed_tables": {
+      "decoration_records": 121,
+      "decoration_nontext_fields_preserved": true,
+      "interior_pointers": 11,
+      "card_colors": 4,
+      "card_stride": 5,
+      "original_card_data_preserved": true
+    },
+    "contest_winners": {
+      "saved_npc_winners": 96,
+      "nickname_and_trainer_display": true,
+      "saved_records_unchanged": true,
+      "custom_names_preserved": true,
+      "painting_continuation": true
+    },
+    "contest_script_buffers": {
+      "script_functions": 4,
+      "opponents_per_function": 96,
+      "string_variable_canaries": true,
+      "contest_records_preserved": true
+    }
+  },
+  "berry_graphics": {
+    "scenes": 6,
+    "compressed_rom_matches_preview": true,
+    "unchanged_pixels_outside_text_rectangles": true,
+    "tile_bounds": true,
+    "gameplay_test": "not run"
+  },
+  "gameplay_test": "not run; Unicorn helper execution is not an emulator playthrough"
+}

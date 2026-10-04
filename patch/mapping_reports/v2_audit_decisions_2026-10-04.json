@@ -1,0 +1,3867 @@
+{
+  "ERROR:0": {
+    "row_number": 519,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "180",
+    "old": "减少4PP该招式。",
+    "new": "减少该招式的PP。",
+    "reason": "第三世代怨恨源码随机减少2～5PP；原文未限定4PP。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sSpiteDescription",
+    "final_text": "怨恨对手最后用的招式，\n减少该招式的PP。",
+    "old_current_text": "怨恨对手最后用的招式，\n减少4PP该招式。",
+    "changed_files": [
+      "patch/move_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/move_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/move_descriptions.h",
+    "jp_source": []
+  },
+  "ERROR:1": {
+    "row_number": 613,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "227",
+    "reason": "67a5276 / 6ffae39ea 已修复再来一次说明。",
+    "action": "already_fixed"
+  },
+  "ERROR:2": {
+    "row_number": 817,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "329",
+    "old": "给对手一击昏厥。若冰属性\n以外宝可梦使用会难以打中。",
+    "new": "以绝对零度攻击对手。\n命中后会使对手一击昏厥。",
+    "reason": "移除第三世代不存在的使用者冰属性条件。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sSheerColdDescription",
+    "final_text": "以绝对零度攻击对手。\n命中后会使对手一击昏厥。",
+    "old_current_text": "给对手一击昏厥。若冰属性\n以外宝可梦使用会难以打中。",
+    "changed_files": [
+      "patch/move_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/move_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/move_descriptions.h",
+    "jp_source": []
+  },
+  "ERROR:3": {
+    "row_number": 1098,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "230",
+    "old": "巨大海浪",
+    "new": "巨大漩涡",
+    "reason": "うずしお / whirlpool 是漩涡，不是海浪。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gKingdraPokedexText",
+    "final_text": "在深沉的海底里静静地沉睡着。当它浮出水面的时候，会产生足以将船只吞没的巨大漩涡。",
+    "old_current_text": "在深沉的海底里静静地沉睡着。当它浮出水面的时候，会产生足以将船只吞没的巨大海浪。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "ふかい　かいていで　しずかに　ねむる。\nすいめんへ　あがってくるとき　ふねを　のみこむ\nほど　おおきな　うずしおが　はっせいする。"
+      }
+    ]
+  },
+  "ERROR:4": {
+    "row_number": 1168,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "300",
+    "old": "会拍动尾巴上的毛",
+    "new": "会竖起尾巴上的毛",
+    "reason": "けばだたせる / puff out 指尾毛竖起。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gSkittyPokedexText",
+    "final_text": "以其非常怜爱的动作大受欢迎。战斗的时候会竖起尾巴上的毛。\n能发出尖锐的叫声威吓敌人。",
+    "old_current_text": "以其非常怜爱的动作大受欢迎。战斗的时候会拍动尾巴上的毛。\n能发出尖锐的叫声威吓敌人。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "あいきょう　たっぷりの　しぐさで　だいにんき。\nたたかう　ときは　しっぽを　けばだたせる。\nするどい　うなりごえを　あげて　てきを　いかく。"
+      }
+    ]
+  },
+  "ERROR:5": {
+    "row_number": 1179,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "311",
+    "old": "可以将两手所散发出的电力发射出去，\n以做出火花的碰撞效果。",
+    "new": "可以让两手释放的电力短路，\n制成用于加油的火花花球。",
+    "reason": "ショート / shorting out 指短路；ボンボン / pom-poms 指花球。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gPluslePokedexText",
+    "final_text": "具有会为伙伴宝可梦加油的习性。可以让两手释放的电力短路，\n制成用于加油的火花花球。",
+    "old_current_text": "具有会为伙伴宝可梦加油的习性。可以将两手所散发出的电力发射出去，\n以做出火花的碰撞效果。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "なかまの　ポケモンを　おうえんする　しゅうせい。\nりょうてから　はっした　でんきを　ショートさせて\nひばなの　ボンボンを　つくる　ことが　できる。"
+      }
+    ]
+  },
+  "ERROR:6": {
+    "row_number": 1216,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "348",
+    "reason": "39e1ca1 / b08e5a919 已修复两条图鉴栖息地。",
+    "action": "already_fixed"
+  },
+  "ERROR:7": {
+    "row_number": 1218,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "350",
+    "reason": "39e1ca1 / b08e5a919 已修复两条图鉴栖息地。",
+    "action": "already_fixed"
+  },
+  "ERROR:8": {
+    "row_number": 1643,
+    "symbol": "Route104_Text_RouteSignPetalburg",
+    "domain": "ported_batch",
+    "idx": "388",
+    "reason": "e405b84 / 0b86060f1 已把1O4改为104。",
+    "action": "already_fixed"
+  },
+  "ERROR:9": {
+    "row_number": 4394,
+    "symbol": "MossdeepCity_Gym_Text_BlakePostBattle",
+    "domain": "ported_batch",
+    "idx": "3139",
+    "old": "我没吹牛！真的！",
+    "new": "我可没用嘴吹！真的！",
+    "reason": "原文否认吹气作弊，不是否认吹牛。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "要用精神力举起精灵球还是困难\n了点，但这么小的灰尘的话……\\p呜啊啊啊啊啊啊啊！\n…… …… ……\\p不不，我没骗人！\n我可没用嘴吹！真的！",
+    "old_current_text": "要用精神力举起精灵球还是困难\n了点，但这么小的灰尘的话……\\p呜啊啊啊啊啊啊啊！\n…… …… ……\\p不不，我没骗人！\n我没吹牛！真的！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/MossdeepCity_Gym/scripts.inc",
+      "patch/batches/152_mossdeepcity_gym.json"
+    ],
+    "us_source_file": "data/maps/MossdeepCity_Gym/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+        "text": "モンスターボールは　おおきすぎた\nこの　わたぼこり　なら　ぜったいに⋯⋯\\pふううううううっ⋯⋯！\\p⋯⋯　⋯⋯　⋯⋯\n⋯⋯　⋯⋯　⋯⋯\\pちがうぞ！\nはないきで　とばして　なんか　いないぞ！$"
+      }
+    ]
+  },
+  "ERROR:10": {
+    "row_number": 4397,
+    "symbol": "MossdeepCity_Gym_Text_CliffordPostBattle",
+    "domain": "ported_batch",
+    "idx": "3142",
+    "reason": "日美官方文本不同；当前中文准确跟随英文，不将日版剧情差异强加给美版。",
+    "action": "regional_difference"
+  },
+  "ERROR:11": {
+    "row_number": 4516,
+    "symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+    "domain": "ported_batch",
+    "idx": "3261",
+    "old": "已我决定",
+    "new": "我已决定",
+    "reason": "中文语序笔误。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "是一封信。\\p…… …… ……\\p致{PLAYER}{KUN}……\\p我已决定踏上自我\n探索与修行之旅。\\p短时间内不\n打算回家，\\p我想拜托你收下\n桌上的精灵球，\\p里面是我最喜欢的宝可梦——\n铁哑铃，\\p拜托你照顾好它。\\p愿你我终有相逢之日。\\p大吾·兹伏奇",
+    "old_current_text": "是一封信。\\p…… …… ……\\p致{PLAYER}{KUN}……\\p已我决定踏上自我\n探索与修行之旅。\\p短时间内不\n打算回家，\\p我想拜托你收下\n桌上的精灵球，\\p里面是我最喜欢的宝可梦——\n铁哑铃，\\p拜托你照顾好它。\\p愿你我终有相逢之日。\\p大吾·兹伏奇",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/MossdeepCity_StevensHouse/scripts.inc",
+      "patch/batches/159_mossdeepcity_stevenshouse.json"
+    ],
+    "us_source_file": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+        "text": "てがみが　ある！\\p⋯⋯　⋯⋯　⋯⋯\n⋯⋯　⋯⋯　⋯⋯\\p{PLAYER}{KUN}へ\\pボクは　おもうことが　あって\nしばらく　しゅぎょうを　つづける\\lとうぶん　いえに　かえらない\\pそこで　おねがいだ\\pつくえの　うえにある\nモンスターボールを　うけとって　ほしい\\pなかに　いるのは　ダンバルといって\nボクの　おきにいりの　ポケモンだから\\pよろしく　たのむよ\\pでは　また　いつか　あおう！\n　　　　　　ツワブキ　ダイゴより$"
+      }
+    ]
+  },
+  "ERROR:12": {
+    "row_number": 4712,
+    "symbol": "gText_Confirm3",
+    "domain": "ported_batch",
+    "idx": "3457",
+    "old": "确定",
+    "new": "返回",
+    "reason": "Wokann wallclock.c:94/794：实际返回按钮是もどる。",
+    "scope": "jp_only",
+    "action": "fix",
+    "final_text": "返回",
+    "old_current_text": "确定",
+    "changed_files": [
+      "patch/batches/168_core_interfaces.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": [
+      {
+        "file": "src/wallclock.c",
+        "text": "もどる　"
+      }
+    ]
+  },
+  "ERROR:13": {
+    "row_number": 4713,
+    "symbol": "gText_Cancel4",
+    "domain": "ported_batch",
+    "idx": "3458",
+    "old": "取消",
+    "new": "确定",
+    "reason": "Wokann wallclock.c:93/746：实际设置时钟按钮是けってい。",
+    "scope": "jp_only",
+    "action": "fix",
+    "final_text": "确定",
+    "old_current_text": "取消",
+    "changed_files": [
+      "patch/batches/168_core_interfaces.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": [
+      {
+        "file": "src/wallclock.c",
+        "text": "けってい"
+      }
+    ]
+  },
+  "ERROR:14": {
+    "row_number": 4763,
+    "symbol": "gText_SizeComparedTo",
+    "domain": "ported_batch",
+    "idx": "3509",
+    "old": "{STR_VAR_1}与{STR_VAR_2}的体型比较",
+    "new": "与",
+    "reason": "US调用StringCopy+StringAppend直接拼玩家名，不展开占位符；JP已用分段适配，仅修US并补后缀。",
+    "scope": "us_only",
+    "action": "fix",
+    "final_text": "与",
+    "old_current_text": "{STR_VAR_1}与{STR_VAR_2}的体型比较",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/strings.c"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": [
+      {
+        "file": "src/data/text/region_texts76.h",
+        "text": "の　おおきさくらべ"
+      }
+    ]
+  },
+  "ERROR:15": {
+    "row_number": 5261,
+    "symbol": "gText_UserMoreEasilyStartled",
+    "domain": "ported_batch",
+    "idx": "4008",
+    "old": "虽然能够演出很好的表演，\n但是之后会更容易受干扰。",
+    "new": "使用这个招式后，\n会更容易受到干扰。",
+    "reason": "报告引用理由串条，但实际说明多加了成功表演条件；按当前日英文说明修正。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "使用这个招式后，\n会更容易受到干扰。",
+    "old_current_text": "虽然能够演出很好的表演，\n但是之后会更容易受干扰。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/contest_strings.inc",
+      "patch/batches/175_summary_info.json"
+    ],
+    "us_source_file": "data/text/contest_strings.inc",
+    "jp_source": [
+      {
+        "file": "data/text/contest_strings.inc",
+        "text": "この　アピールの　あと\nびっくり　しやすく　なってしまう$"
+      }
+    ]
+  },
+  "ERROR:16": {
+    "row_number": 5324,
+    "symbol": "gText_Var1AndYouWantedVar2",
+    "domain": "ported_batch",
+    "idx": "4071",
+    "reason": "数字后显示円是用户要求且符合日版原文；不恢复美版前置金额符号。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:17": {
+    "row_number": 5325,
+    "symbol": "gText_Var1IsItThatllBeVar2",
+    "domain": "ported_batch",
+    "idx": "4072",
+    "reason": "数字后显示円是用户要求且符合日版原文；不恢复美版前置金额符号。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:18": {
+    "row_number": 5326,
+    "symbol": "gText_YouWantedVar1ThatllBeVar2",
+    "domain": "ported_batch",
+    "idx": "4073",
+    "reason": "数字后显示円是用户要求且符合日版原文；不恢复美版前置金额符号。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:20": {
+    "row_number": 5345,
+    "symbol": "sText_PlayerGotMoney",
+    "domain": "ported_batch",
+    "idx": "4092",
+    "reason": "数字后显示円是用户要求且符合日版原文；不恢复美版前置金额符号。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:21": {
+    "row_number": 5346,
+    "symbol": "sText_PlayerPickedUpMoney",
+    "domain": "ported_batch",
+    "idx": "4093",
+    "reason": "数字后显示円是用户要求且符合日版原文；不恢复美版前置金额符号。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:19": {
+    "row_number": 5336,
+    "symbol": "sText_PkmnGainedEXP",
+    "domain": "ported_batch",
+    "idx": "4083",
+    "reason": "日版经验值模板使用B_BUFF2，JP生产者/现有专用hook与此一致；不能套美版B_BUFF3。",
+    "action": "intentional_adaptation"
+  },
+  "ERROR:22": {
+    "row_number": 5355,
+    "symbol": "BerryTree_Text_BerryGrowthStage3",
+    "domain": "ported_batch",
+    "idx": "4102",
+    "old": "的幼苗长得很漂亮！",
+    "new": "的树干长高了！",
+    "reason": "报告理由串成华丽大赛；实际日文みきが大きくなってきた指树干长大。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{STR_VAR_1}的树干长高了！",
+    "old_current_text": "{STR_VAR_1}的幼苗长得很漂亮！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/berry_tree.inc",
+      "patch/batches/179_berry.json"
+    ],
+    "us_source_file": "data/scripts/berry_tree.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/berry_tree.inc",
+        "text": "{STR_VAR_1}の　みきが　おおきく　なってきた！$"
+      }
+    ]
+  },
+  "ERROR:23": {
+    "row_number": 5356,
+    "symbol": "BerryTree_Text_BerryGrowthStage4",
+    "domain": "ported_batch",
+    "idx": "4103",
+    "old": "{STR_VAR_1}开花了！",
+    "new": "{STR_VAR_1}的花\n{STR_VAR_2}盛开着！",
+    "reason": "实际原文花朵开放程度由STR_VAR_2提供；核验生产者后补回，不采用报告表演文本。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{STR_VAR_1}的花\n{STR_VAR_2}盛开着！",
+    "old_current_text": "{STR_VAR_1}开花了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/berry_tree.inc",
+      "patch/batches/179_berry.json"
+    ],
+    "us_source_file": "data/scripts/berry_tree.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/berry_tree.inc",
+        "text": "{STR_VAR_1}の　はなが　{STR_VAR_2}　さいてる！$"
+      }
+    ]
+  },
+  "ERROR:24": {
+    "row_number": 5422,
+    "symbol": "sText_PkmnHurtsWith",
+    "domain": "ported_batch",
+    "idx": "4170",
+    "old": null,
+    "new": "{B_ATK_NAME_WITH_PREFIX}因\n{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\\l而受到了伤害！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_ATK_NAME_WITH_PREFIX}因\n{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\\l而受到了伤害！",
+    "old_current_text": "{B_DEF_NAME_WITH_PREFIX}\n因{B_DEF_ABILITY}的{B_ATK_NAME_WITH_PREFIX}\\l而受到了伤害！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/188_battle_damage_messages.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}の　{B_DEF_ABILITY}で\n{B_ATK_NAME_WITH_PREFIX}は　きずついた！"
+      }
+    ]
+  },
+  "ERROR:25": {
+    "row_number": 5438,
+    "symbol": "sText_PkmnPoisonedBy",
+    "domain": "ported_batch",
+    "idx": "4186",
+    "old": null,
+    "new": "{B_EFF_NAME_WITH_PREFIX}因\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}的{B_SCR_ACTIVE_ABILITY}\\l而中毒了！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_EFF_NAME_WITH_PREFIX}因\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}的{B_SCR_ACTIVE_ABILITY}\\l而中毒了！",
+    "old_current_text": "因{B_EFF_NAME_WITH_PREFIX}的{B_SCR_ACTIVE_NAME_WITH_PREFIX}，\n{B_SCR_ACTIVE_ABILITY}中毒了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/189_battle_status_and_core_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}の　{B_SCR_ACTIVE_ABILITY}で\n{B_EFF_NAME_WITH_PREFIX}は　どくをあびた！"
+      }
+    ]
+  },
+  "ERROR:26": {
+    "row_number": 5465,
+    "symbol": "sText_PkmnInLove",
+    "domain": "ported_batch",
+    "idx": "4213",
+    "old": null,
+    "new": "{B_ATK_NAME_WITH_PREFIX}对\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}着迷了！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_ATK_NAME_WITH_PREFIX}对\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}着迷了！",
+    "old_current_text": "{B_ATK_NAME_WITH_PREFIX}让\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}着迷了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/189_battle_status_and_core_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_ATK_NAME_WITH_PREFIX}は\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}に　メロメロだ！"
+      }
+    ]
+  },
+  "ERROR:27": {
+    "row_number": 5488,
+    "symbol": "sText_PkmnClamped",
+    "domain": "ported_batch",
+    "idx": "4236",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}\n被{B_ATK_NAME_WITH_PREFIX}的贝壳夹住了！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}\n被{B_ATK_NAME_WITH_PREFIX}的贝壳夹住了！",
+    "old_current_text": "{B_ATK_NAME_WITH_PREFIX}\n被{B_DEF_NAME_WITH_PREFIX}的贝壳夹住了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/190_battle_move_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_ATK_NAME_WITH_PREFIX}の\nからに　はさまれた！"
+      }
+    ]
+  },
+  "ERROR:28": {
+    "row_number": 5512,
+    "symbol": "sText_PkmnStayedAwakeUsing",
+    "domain": "ported_batch",
+    "idx": "4260",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会睡着！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会睡着！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，\n{B_DEF_ABILITY}不会睡着！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/190_battle_move_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は\n{B_DEF_ABILITY}で　ねむらない！"
+      }
+    ]
+  },
+  "ERROR:29": {
+    "row_number": 5585,
+    "symbol": "sText_PkmnRaisedSpeed",
+    "domain": "ported_batch",
+    "idx": "4333",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n速度提高了！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n速度提高了！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}的\n速度提高了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\nすばやさが　あがった！"
+      }
+    ]
+  },
+  "ERROR:30": {
+    "row_number": 5588,
+    "symbol": "sText_PkmnRestoredHPUsing",
+    "domain": "ported_batch",
+    "idx": "4336",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n体力回复了！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n体力回复了！",
+    "old_current_text": "因{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}的\n体力回复了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nかいふくした！"
+      }
+    ]
+  },
+  "ERROR:31": {
+    "row_number": 5589,
+    "symbol": "sText_PkmnChangedTypeWith",
+    "domain": "ported_batch",
+    "idx": "4337",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n变成了{B_BUFF1}属性！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n变成了{B_BUFF1}属性！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n变成了{B_BUFF1}属性！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\n{B_BUFF1}タイプに　なった！"
+      }
+    ]
+  },
+  "ERROR:32": {
+    "row_number": 5590,
+    "symbol": "sText_PkmnPreventsParalysisWith",
+    "domain": "ported_batch",
+    "idx": "4338",
+    "old": null,
+    "new": "{B_EFF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会麻痹！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_EFF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会麻痹！",
+    "old_current_text": "因为{B_EFF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n不会麻痹！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_EFF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nまひしない！"
+      }
+    ]
+  },
+  "ERROR:33": {
+    "row_number": 5591,
+    "symbol": "sText_PkmnPreventsRomanceWith",
+    "domain": "ported_batch",
+    "idx": "4339",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会着迷！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会着迷！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n不会着迷！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nメロメロに　ならない！"
+      }
+    ]
+  },
+  "ERROR:34": {
+    "row_number": 5592,
+    "symbol": "sText_PkmnPreventsPoisoningWith",
+    "domain": "ported_batch",
+    "idx": "4340",
+    "old": null,
+    "new": "{B_EFF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会中毒！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_EFF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会中毒！",
+    "old_current_text": "因为{B_EFF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n不会中毒！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_EFF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nどくを　うけない！"
+      }
+    ]
+  },
+  "ERROR:35": {
+    "row_number": 5593,
+    "symbol": "sText_PkmnPreventsConfusionWith",
+    "domain": "ported_batch",
+    "idx": "4341",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会混乱！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会混乱！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n不会混乱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nこんらんしない！"
+      }
+    ]
+  },
+  "ERROR:36": {
+    "row_number": 5597,
+    "symbol": "sText_PkmnPreventsStatLossWith",
+    "domain": "ported_batch",
+    "idx": "4345",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n能力不会降低！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n能力不会降低！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}的\n能力不会降低！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/191_battle_moves_abilities_results.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\nのうりょくが　さがらない！"
+      }
+    ]
+  },
+  "ERROR:37": {
+    "row_number": 5686,
+    "symbol": "sText_PkmnsXPreventsBurns",
+    "domain": "ported_batch",
+    "idx": "4434",
+    "old": null,
+    "new": "{B_EFF_NAME_WITH_PREFIX}因{B_EFF_ABILITY}\n不会灼伤！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_EFF_NAME_WITH_PREFIX}因{B_EFF_ABILITY}\n不会灼伤！",
+    "old_current_text": "因为{B_EFF_NAME_WITH_PREFIX}，{B_EFF_ABILITY}\n不会灼伤！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_EFF_NAME_WITH_PREFIX}は　{B_EFF_ABILITY}で\nやけどしない！"
+      }
+    ]
+  },
+  "ERROR:38": {
+    "row_number": 5687,
+    "symbol": "sText_PkmnsXBlocksY",
+    "domain": "ported_batch",
+    "idx": "4435",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\n{B_CURRENT_MOVE}を　うけない！"
+      }
+    ]
+  },
+  "ERROR:39": {
+    "row_number": 5688,
+    "symbol": "sText_PkmnsXRestoredHPALittle2",
+    "domain": "ported_batch",
+    "idx": "4436",
+    "old": null,
+    "new": "{B_ATK_NAME_WITH_PREFIX}因{B_ATK_ABILITY}\n回复了少许HP。",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_ATK_NAME_WITH_PREFIX}因{B_ATK_ABILITY}\n回复了少许HP。",
+    "old_current_text": "因为{B_ATK_NAME_WITH_PREFIX}，{B_ATK_ABILITY}\n回复了少许HP。",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_ATK_NAME_WITH_PREFIX}は　{B_ATK_ABILITY}で\nすこし　かいふく"
+      }
+    ]
+  },
+  "ERROR:40": {
+    "row_number": 5690,
+    "symbol": "sText_PkmnsXPreventsYLoss",
+    "domain": "ported_batch",
+    "idx": "4438",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n{B_BUFF1}不会降低！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n{B_BUFF1}不会降低！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}的\n{B_BUFF1}不会降低！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\n{B_BUFF1}が　さがらない！"
+      }
+    ]
+  },
+  "ERROR:41": {
+    "row_number": 5693,
+    "symbol": "sText_PkmnsXCuredYProblem",
+    "domain": "ported_batch",
+    "idx": "4441",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n解除了{B_BUFF1}状态！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n解除了{B_BUFF1}状态！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}的\n{B_BUFF1}状态治愈了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\n{B_BUFF1}じょうたいが　なおった！"
+      }
+    ]
+  },
+  "ERROR:42": {
+    "row_number": 5705,
+    "symbol": "sText_UsingItemTheStatOfPkmnRose",
+    "domain": "ported_batch",
+    "idx": "4453",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}使用{B_LAST_ITEM}，\n{B_BUFF1}{B_BUFF2}",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}使用{B_LAST_ITEM}，\n{B_BUFF1}{B_BUFF2}",
+    "old_current_text": "因为{B_LAST_ITEM}，{B_BUFF1}的\n{B_SCR_ACTIVE_NAME_WITH_PREFIX}{B_BUFF2}",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_LAST_ITEM}で\n{B_BUFF1}が　{B_BUFF2}"
+      }
+    ]
+  },
+  "ERROR:43": {
+    "row_number": 5712,
+    "symbol": "sText_PkmnMakesGroundMiss",
+    "domain": "ported_batch",
+    "idx": "4460",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会被地面属性的招式击中！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}因{B_DEF_ABILITY}\n不会被地面属性的招式击中！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，地面属性的招式\n无法击中{B_DEF_ABILITY}！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nじめんタイプの　わざが　あたらない！"
+      }
+    ]
+  },
+  "ERROR:44": {
+    "row_number": 5714,
+    "symbol": "sText_PkmnsXTookAttack",
+    "domain": "ported_batch",
+    "idx": "4462",
+    "old": null,
+    "new": "{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\n吸引了攻击！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}\n吸引了攻击！",
+    "old_current_text": "因为{B_DEF_NAME_WITH_PREFIX}，{B_DEF_ABILITY}\n吸引了攻击！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/193_battle_safari_item_effects.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_DEF_NAME_WITH_PREFIX}は　{B_DEF_ABILITY}で\nこうげきを　うけた！"
+      }
+    ]
+  },
+  "ERROR:45": {
+    "row_number": 5727,
+    "symbol": "sText_PkmnsXPreventsFlinching",
+    "domain": "ported_batch",
+    "idx": "4475",
+    "old": null,
+    "new": "{B_EFF_NAME_WITH_PREFIX}因{B_EFF_ABILITY}\n不会畏缩！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_EFF_NAME_WITH_PREFIX}因{B_EFF_ABILITY}\n不会畏缩！",
+    "old_current_text": "因为{B_EFF_NAME_WITH_PREFIX}，{B_EFF_ABILITY}\n不会畏缩！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/194_battle_ability_link_facility.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_EFF_NAME_WITH_PREFIX}は　{B_EFF_ABILITY}で\nひるまない！"
+      }
+    ]
+  },
+  "ERROR:46": {
+    "row_number": 5730,
+    "symbol": "sText_PkmnsXBlocksY2",
+    "domain": "ported_batch",
+    "idx": "4478",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}的{B_SCR_ACTIVE_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}的{B_SCR_ACTIVE_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}\n抵御了{B_CURRENT_MOVE}！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/194_battle_ability_link_facility.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\n{B_CURRENT_MOVE}を　うけない！"
+      }
+    ]
+  },
+  "ERROR:47": {
+    "row_number": 5736,
+    "symbol": "sText_PkmnsXCuredItsYProblem",
+    "domain": "ported_batch",
+    "idx": "4484",
+    "old": null,
+    "new": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n解除了{B_BUFF1}状态！",
+    "reason": "核对Wokann battle_message.c对应原文及同名US模板；宝可梦为主体，特性/道具是原因；保留日版变量编码和原有标点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}因{B_SCR_ACTIVE_ABILITY}\n解除了{B_BUFF1}状态！",
+    "old_current_text": "因为{B_SCR_ACTIVE_NAME_WITH_PREFIX}，{B_SCR_ACTIVE_ABILITY}的\n{B_BUFF1}状态治愈了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/battle_message.c",
+      "patch/batches/194_battle_ability_link_facility.json"
+    ],
+    "us_source_file": "src/battle_message.c",
+    "jp_source": [
+      {
+        "file": "src/battle_message.c",
+        "text": "{B_SCR_ACTIVE_NAME_WITH_PREFIX}は　{B_SCR_ACTIVE_ABILITY}で\n{B_BUFF1}が　なおった！"
+      }
+    ]
+  },
+  "ERROR:48": {
+    "row_number": 5762,
+    "symbol": "gText_PkmnsNickname",
+    "domain": "ported_batch",
+    "idx": "4510",
+    "old": "的昵称?",
+    "new": "的昵称？",
+    "reason": "恢复中文全角问号；不改命名键盘。",
+    "scope": "jp_only",
+    "action": "fix",
+    "final_text": "{STR_VAR_1}的昵称？",
+    "old_current_text": "的昵称?",
+    "changed_files": [
+      "patch/batches/195_naming_screen.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": []
+  },
+  "ERROR:49": {
+    "row_number": 5772,
+    "symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+    "domain": "ported_batch",
+    "idx": "4520",
+    "old": "到底是什么让你坚持到现在？",
+    "new": "只能继续前进了！",
+    "reason": "原文只能继续前进，不是询问动机。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "穿过冠军之路，\n宝可梦联盟就在眼前。\\p已经走了这么远，\n只能继续前进了！",
+    "old_current_text": "穿过冠军之路，\n宝可梦联盟就在眼前。\\p已经走了这么远，\n到底是什么让你坚持到现在？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+      "patch/batches/196_pokemon_centers.json"
+    ],
+    "us_source_file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+        "text": "ポケモンリーグは\nチャンピオンロードを　ぬけると　すぐ！\\pここまで　きたら\nまえに　すすむしかないわ！$"
+      }
+    ]
+  },
+  "ERROR:50": {
+    "row_number": 5795,
+    "symbol": "SootopolisCity_PokemonCenter_1F_Text_AlwaysBeFriendsWithPokemon",
+    "domain": "ported_batch",
+    "idx": "4543",
+    "old": "我都会和宝可梦在一起。",
+    "new": "我都会和宝可梦做朋友。",
+    "reason": "原文明确说做朋友。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "无论何时，无论何地，\n无论发生什么，\\l我都会和宝可梦做朋友。\\p和宝可梦交朋友是我的乐趣！",
+    "old_current_text": "无论何时，无论何地，\n无论发生什么，\\l我都会和宝可梦在一起。\\p和宝可梦交朋友是我的乐趣！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+      "patch/batches/196_pokemon_centers.json"
+    ],
+    "us_source_file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/SootopolisCity_PokemonCenter_1F/scripts.inc",
+        "text": "どんな　ときでも\nどんな　ことが　あっても\\lあたし　ポケモンと　ともだちで　いるわ\\pだって　ポケモンと　いっしょだと\nすごく　たのしいもの！$"
+      }
+    ]
+  },
+  "ERROR:51": {
+    "row_number": 5803,
+    "symbol": "gText_NoticesGoldCard",
+    "domain": "ported_batch",
+    "idx": "4551",
+    "old": "那、那张卡！？\\p那个颜色！！\n那星星的数量！！",
+    "new": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！",
+    "reason": "恢复金卡、金色、四颗星的明确内容。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！",
+    "old_current_text": "那、那张卡！？\\p那个颜色！！\n那星星的数量！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/pkmn_center_nurse.inc",
+      "patch/batches/196_pokemon_centers.json"
+    ],
+    "us_source_file": "data/text/pkmn_center_nurse.inc",
+    "jp_source": [
+      {
+        "file": "data/text/pkmn_center_nurse.inc",
+        "text": "そ　それは⋯⋯\nひょっとして　ゴールドカード！？\\pああ⋯⋯　きんいろが　まぶしい！\n4つの　ほしが　かがやかしい！\\pわたしも　これまでに\nシルバーカードの　トレーナーさんなら\\lなんにんか　みてきましたが\\lゴールドカードを　おもちの　かたは\\l{PLAYER}さんが　はじめて　ですよ！\\pさあ　{PLAYER}さんの\nポケモンを　やすませて　あげましょう！$"
+      }
+    ]
+  },
+  "ERROR:52": {
+    "row_number": 5810,
+    "symbol": "gText_YouWantTheUsual",
+    "domain": "ported_batch",
+    "idx": "4558",
+    "old": "辛苦了！",
+    "new": "{PLAYER}，辛苦了！",
+    "reason": "原文称呼玩家；新占位符必须保留JP姓名语言包装。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{PLAYER}，辛苦了！\n要像往常一样吗？",
+    "old_current_text": "辛苦了！\n要像往常一样吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/pkmn_center_nurse.inc",
+      "patch/batches/196_pokemon_centers.json"
+    ],
+    "us_source_file": "data/text/pkmn_center_nurse.inc",
+    "jp_source": [
+      {
+        "file": "data/text/pkmn_center_nurse.inc",
+        "text": "{PLAYER}さん　おつかれさまです！\nいつもので　よろしい　ですね！$"
+      }
+    ]
+  },
+  "ERROR:53": {
+    "row_number": 5872,
+    "symbol": "gText_TuckerDefeatSilver",
+    "domain": "ported_batch",
+    "idx": "4620",
+    "old": "怎么回……",
+    "new": "怎么会……",
+    "reason": "回为会的笔误；保留省略语气。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "呃……\n怎么会……",
+    "old_current_text": "呃……\n怎么回……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/frontier_brain.inc",
+      "patch/batches/198_frontier_brain_quotes.json"
+    ],
+    "us_source_file": "data/text/frontier_brain.inc",
+    "jp_source": [
+      {
+        "file": "data/text/frontier_brain.inc",
+        "text": "クッ⋯⋯　なんて　こと⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:54": {
+    "row_number": 5913,
+    "symbol": "BattleFrontier_BattleArenaBattleRoom_Text_IsThatRight",
+    "domain": "ported_batch",
+    "idx": "4661",
+    "old": "没有搞错吗？",
+    "new": "是吗？",
+    "reason": "恢复沉吟语气，不表示质疑出错。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "是吗？哈……\n哈哈……",
+    "old_current_text": "没有搞错吗？哈……\n哈哈……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+      "patch/batches/199_battle_frontier_arena.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleArenaBattleRoom/scripts.inc",
+        "text": "ふーん⋯⋯　へーえ⋯⋯　へえぇぇ⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:55": {
+    "row_number": 5966,
+    "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+    "domain": "ported_batch",
+    "idx": "4714",
+    "old": "哪一位训练家进入\n冠军赛了呢？",
+    "new": "这位训练家能否\n一举夺冠呢？",
+    "reason": "原文问能否夺冠，不是问哪位进入决赛。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "这位训练家能否\n一举夺冠呢？\\p",
+    "old_current_text": "哪一位训练家进入\n冠军赛了呢？\\p",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "patch/batches/200_battle_frontier_battle_dome_battle_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+        "text": "いっきに　ゆうしょうまで\nのぼりつめて　しまうのでしょうか！？\\p$"
+      }
+    ]
+  },
+  "ERROR:56": {
+    "row_number": 5990,
+    "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_CanWinStreakBeStretched",
+    "domain": "ported_batch",
+    "idx": "4738",
+    "old": "让我们期待比赛的结果吧！",
+    "new": "真是信心十足！",
+    "reason": "原文后句描述信心，不是等待结果。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我们的冠军还会继续称霸吗？\n真是信心十足！",
+    "old_current_text": "我们的冠军还会继续称霸吗？\n让我们期待比赛的结果吧！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+      "patch/batches/200_battle_frontier_battle_dome_battle_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+        "text": "どこまで　かちつづける　つもり　なのか？\nかんろく　じゅうぶん！$"
+      }
+    ]
+  },
+  "ERROR:57": {
+    "row_number": 6024,
+    "symbol": "BattleFrontier_BattleDomeLobby_Text_TrashedInFirstRound",
+    "domain": "ported_batch",
+    "idx": "4772",
+    "old": "输掉也是预料之中……",
+    "new": "被打得落花流水……",
+    "reason": "原文被痛打，不只是预期会输。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "比赛的第一场我就碰上了\n一个夺冠热门的选手。\\p被打得落花流水……",
+    "old_current_text": "比赛的第一场我就碰上了\n一个夺冠热门的选手。\\p输掉也是预料之中……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+      "patch/batches/201_battle_frontier_battle_dome_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleDomeLobby/scripts.inc",
+        "text": "1かいせんで　いきなり\nゆうしょうこうほと　あたっちゃって\\lもう　ボコボコに　やられたよ⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:58": {
+    "row_number": 6092,
+    "symbol": "BattleFrontier_BattleFactoryLobby_Text_CantFigureOutStaffHints",
+    "domain": "ported_batch",
+    "idx": "4840",
+    "old": "一个经验丰富的人",
+    "new": "一个成年人",
+    "reason": "full-grown man / いいおとな 指成年人。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "你知道这的工作人员会给你\n一些关于你下个对手的提示吧？\\p好吧，虽然我是一个成年人，\n但我弄不懂他们的提示。",
+    "old_current_text": "你知道这的工作人员会给你\n一些关于你下个对手的提示吧？\\p好吧，虽然我是一个经验丰富的人，\n但我弄不懂他们的提示。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+      "patch/batches/204_battle_frontier_battle_factory_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleFactoryLobby/scripts.inc",
+        "text": "ここの　スタッフさぁ　たたかいの　まえに\nつぎに　たたかう　トレーナーのこと\\lちょっとだけ　おしえて　くれるだろー？\\pでも　オレ　いい　おとな　なのに\nあいつらの　せつめいの　いみが\\lぜんぜん　わからないんだ　よう$"
+      }
+    ]
+  },
+  "ERROR:59": {
+    "row_number": 6256,
+    "symbol": "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+    "domain": "ported_batch",
+    "idx": "5004",
+    "old": "无视警告胡乱攻击",
+    "new": "不听指挥胡乱攻击",
+    "reason": "JP命令を無視して指无视指挥，而非无视警告。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "一旦受到了惊吓就会\n不听指挥胡乱攻击……\\p您和您的宝可梦还好吗？",
+    "old_current_text": "一旦受到了惊吓就会\n无视警告胡乱攻击……\\p您和您的宝可梦还好吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+      "patch/batches/212_battle_frontier_battle_pike_room_normal.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+        "text": "きゅうに　ひとを　みると　おどろいて\nおそいかかって　しまうのだ⋯⋯\\pきみも　ポケモンも　だいじょうぶか？$"
+      }
+    ]
+  },
+  "ERROR:60": {
+    "row_number": 6295,
+    "symbol": "BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon",
+    "domain": "ported_batch",
+    "idx": "5043",
+    "old": "似乎有宝可梦在里面的感觉……",
+    "new": "似乎有宝可梦的气味飘来……",
+    "reason": "原文是气味飘来。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "似乎有宝可梦的气味飘来……",
+    "old_current_text": "似乎有宝可梦在里面的感觉……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+      "patch/batches/213_battle_frontier_battle_pike_three_path_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePikeThreePathRoom/scripts.inc",
+        "text": "ポケモンの　においが\nただよってくる　ような\\lきが　するの　ですが⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:61": {
+    "row_number": 6327,
+    "symbol": "BattleFrontier_BattlePyramidLobby_Text_HintBurn",
+    "domain": "ported_batch",
+    "idx": "5075",
+    "old": "闪亮的火焰",
+    "new": "赤红的火焰",
+    "reason": "bright red / まっかな 指颜色，不是闪亮。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我看到了赤红的火焰……\\p……你的宝可梦\n正在被烧灼着……",
+    "old_current_text": "我看到了闪亮的火焰……\\p……你的宝可梦\n正在被烧灼着……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+      "patch/batches/214_battle_frontier_battle_pyramid_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidLobby/scripts.inc",
+        "text": "まっかな　ほのおが　みえます⋯⋯\\p⋯⋯そして\nやけどを　おって　くるしむ\\lあなたの　ポケモンの　すがたも⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:62": {
+    "row_number": 6407,
+    "symbol": "BattleFrontier_BattleTowerLobby_Text_AboutToFace50thTrainer",
+    "domain": "ported_batch",
+    "idx": "5155",
+    "old": "奖章",
+    "new": "缎带",
+    "reason": "リボン / ribbon 对应缎带，统一奖励术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "下面您即将迎战的是\n第50位训练家了，\\p现在起，您每次连续打败7位训练家，\n我们将会把缎带送给您参战的宝可梦。\\p祝您好运！",
+    "old_current_text": "下面您即将迎战的是\n第50位训练家了，\\p现在起，您每次连续打败7位训练家，\n我们将会把奖章送给您参战的宝可梦。\\p祝您好运！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "patch/batches/217_battle_frontier_battle_tower_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+        "text": "いよいよ　つぎは　50にんめの\nトレーナー　ですね！\\pこれからは　7にんを　かちぬく　たびに\nあなたの　ポケモンに　きねんリボンが\\lおくられますので　がんばって　くださいね！$"
+      }
+    ]
+  },
+  "ERROR:63": {
+    "row_number": 6408,
+    "symbol": "BattleFrontier_BattleTowerLobby_Text_HereAreSomeRibbons",
+    "domain": "ported_batch",
+    "idx": "5156",
+    "old": "奖章",
+    "new": "缎带",
+    "reason": "リボン / ribbon 对应缎带，统一奖励术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "这是连续打败7位\n强大的训练家的奖励。\\p{PLAYER}得到缎带！",
+    "old_current_text": "这是连续打败7位\n强大的训练家的奖励。\\p{PLAYER}得到奖章！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "patch/batches/217_battle_frontier_battle_tower_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+        "text": "つよい　トレーナー　7にんを\nかちぬいた　きねんの　リボンを　どうぞ！\\p{PLAYER}は　リボンを　もらった！$"
+      }
+    ]
+  },
+  "ERROR:64": {
+    "row_number": 6409,
+    "symbol": "BattleFrontier_BattleTowerLobby_Text_PutRibbonOnMons",
+    "domain": "ported_batch",
+    "idx": "5157",
+    "old": "奖章",
+    "new": "缎带",
+    "reason": "リボン / ribbon 对应缎带，统一奖励术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{PLAYER}给挑战的宝可梦\n戴上了缎带。",
+    "old_current_text": "{PLAYER}给挑战的宝可梦\n戴上了奖章。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "patch/batches/217_battle_frontier_battle_tower_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+        "text": "{PLAYER}は　ポケモンに\nリボンを　つけて　あげた！$"
+      }
+    ]
+  },
+  "ERROR:65": {
+    "row_number": 6437,
+    "symbol": "BattleFrontier_BattleTowerLobby_Text_ExplainLinkMultisChallenge",
+    "domain": "ported_batch",
+    "idx": "5185",
+    "old": "携带2只宝可梦和朋友\n组队进行挑战。",
+    "new": "每人携带2只不同种类的\n宝可梦，和朋友组队挑战。",
+    "reason": "恢复每人2只不同种类的参赛条件。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "对战塔的多人对战间\n是和朋友一起进行\\l多人对战的设施。\\p您需要先使用无线适配器\n或GBA连接线与朋友连接，\\p每人携带2只不同种类的\n宝可梦，和朋友组队挑战。\\p对战塔内有很多\n多人对战间，\\p供团队对战使用。\n在多人对战间中，\\l会有7组训练家等待\\p您和您朋友的组队挑战。\n如果顺利战胜7组，\\p我们会向您呈上对战点数。\n请注意这里与其他房间不同，\\p您不能暂停挑战。一旦挑战开始，\n就需要不间断地进行7次多人对战。",
+    "old_current_text": "对战塔的多人对战间\n是和朋友一起进行\\l多人对战的设施。\\p您需要先使用无线适配器\n或GBA连接线与朋友连接，\\p携带2只宝可梦和朋友\n组队进行挑战。\\p对战塔内有很多\n多人对战间，\\p供团队对战使用。\n在多人对战间中，\\l会有7组训练家等待\\p您和您朋友的组队挑战。\n如果顺利战胜7组，\\p我们会向您呈上对战点数。\n请注意这里与其他房间不同，\\p您不能暂停挑战。一旦挑战开始，\n就需要不间断地进行7次多人对战。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+      "patch/batches/217_battle_frontier_battle_tower_lobby.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerLobby/scripts.inc",
+        "text": "つうしんマルチ　バトルルームは\nワイヤレスアダプタや　つうしんケーブルを\\lつないだ　ともだちと　ふたりで\\lちがう　しゅるいの　ポケモンを\\l2ひきずつ　もちより\\lマルチバトルで　たたかう　しせつです！\\pタワーないには　マルチ　バトルルームという\nたいせんの　ための　へやが\\lたくさん　ようい　されています！\\pそれぞれ　マルチ　バトルルームには\n7くみの　タッグ　トレーナーが　いて\\lあなたと　ともだちの　タッグでの\\lチャレンジを　まっています！\\pみごと　その　7くみを　たおせたら\nバトルポイントを　しんてい　いたします！\\pまた　ほかの　しせつと　ちがって\nここでは　とちゅうで　ちょうせんを\\lちゅうだん　できません！\\p7かい　れんぞくで　たたかうことに　なるので\nじゅうぶん　ちゅうい　してください！$"
+      }
+    ]
+  },
+  "ERROR:66": {
+    "row_number": 6493,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_Apprentice10Reject",
+    "domain": "ported_batch",
+    "idx": "5241",
+    "old": "斤斤计较的家伙",
+    "new": "冷酷的家伙",
+    "reason": "拒绝邀请时的クール是冷淡，不是吝啬。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "切！\n你真是个冷酷的家伙，{PLAYER}！",
+    "old_current_text": "切！\n你真是个斤斤计较的家伙，{PLAYER}！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "ぐわーっ！\n{PLAYER}さん　ってのは　クールだね！$"
+      }
+    ]
+  },
+  "ERROR:67": {
+    "row_number": 6553,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFReject",
+    "domain": "ported_batch",
+    "idx": "5301",
+    "old": "希望在我们下一次见面的时候\n你会回心转意。",
+    "new": "希望在我们下一次见面的时候\n能和你组队。",
+    "reason": "原文希望下次组队，不要求回心转意。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "希望在我们下一次见面的时候\n能和你组队。",
+    "old_current_text": "希望在我们下一次见面的时候\n你会回心转意。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "つぎに　あったときには\nタッグを　くみたいものですね⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:68": {
+    "row_number": 6564,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SailorAccept",
+    "domain": "ported_batch",
+    "idx": "5312",
+    "old": "这简直太出乎我的意料了！",
+    "new": "我就知道你会答应！",
+    "reason": "I did not expect any less / 当然 指果然如此，不是出乎意料。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我就知道你会答应！\n我现在就去登记。",
+    "old_current_text": "这简直太出乎我的意料了！\n我现在就去登记。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "とうぜん　だよな！\nいまから　とうろく　してくるぜ！$"
+      }
+    ]
+  },
+  "ERROR:69": {
+    "row_number": 6622,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_LassIntro",
+    "domain": "ported_batch",
+    "idx": "5370",
+    "old": "我是{STR_VAR_1}，一个迷你裙！",
+    "new": "我是短裙少女{STR_VAR_1}！",
+    "reason": "原文是训练家职业，而不是自称一件衣物。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我是短裙少女{STR_VAR_1}！",
+    "old_current_text": "我是{STR_VAR_1}，一个迷你裙！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "わたし\nミニスカート　{STR_VAR_1}！$"
+      }
+    ]
+  },
+  "ERROR:70": {
+    "row_number": 6660,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_HexManiacMon2Ask",
+    "domain": "ported_batch",
+    "idx": "5408",
+    "old": "我看好你……\n我们组队……",
+    "new": "拜托你……\n和我组队吧……",
+    "reason": "I beseech you 是请求，不是看好对方。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "使用{STR_VAR_1}的{STR_VAR_2}……\\p拜托你……\n和我组队吧……",
+    "old_current_text": "使用{STR_VAR_1}的{STR_VAR_2}……\\p我看好你……\n我们组队……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "{STR_VAR_1}を　もつ　{STR_VAR_2}を\nもっております⋯⋯\\pどうか　わたくしと\nタッグを　くんでいただけませんか？$"
+      }
+    ]
+  },
+  "ERROR:71": {
+    "row_number": 6692,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_ExpertFMon1",
+    "domain": "ported_batch",
+    "idx": "5440",
+    "old": "我十分的热爱宝可梦。",
+    "new": "我精心培育了宝可梦。",
+    "reason": "raised thoroughly / 鍛え上げた 指培育，而非热爱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我精心培育了宝可梦。\n一只掌握{STR_VAR_1}的{STR_VAR_2}和",
+    "old_current_text": "我十分的热爱宝可梦。\n一只掌握{STR_VAR_1}的{STR_VAR_2}和",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "わたしの　きたえあげた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:72": {
+    "row_number": 6717,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_PkmnRangerMMon2Ask",
+    "domain": "ported_batch",
+    "idx": "5465",
+    "old": "我们我们",
+    "new": "我们",
+    "reason": "重复字。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p你不认为我们能构成\n一支令人印象深刻的队伍吗？",
+    "old_current_text": "一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p你不认为我们我们能构成\n一支令人印象深刻的队伍吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "{STR_VAR_1}を　つかう　{STR_VAR_2}だ！\\pどうだい？\nぼくと　タッグを　くんでみない？$"
+      }
+    ]
+  },
+  "ERROR:73": {
+    "row_number": 6723,
+    "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_AromaLadyMon2Ask",
+    "domain": "ported_batch",
+    "idx": "5471",
+    "old": "的{STR_VAR_2}\n到处旅行。",
+    "new": "的{STR_VAR_2}。",
+    "reason": "这个模板只列出会某招式的宝可梦，原文没有到处旅行。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "一只学会{STR_VAR_1}的{STR_VAR_2}。\\p希望你会喜欢它们。\n你想成为我的搭档吗？",
+    "old_current_text": "一只学会{STR_VAR_1}的{STR_VAR_2}\n到处旅行。\\p希望你会喜欢它们。\n你想成为我的搭档吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+        "text": "{STR_VAR_1}を　つかう　{STR_VAR_2}です\\pどうでしょう？\nわたくしと　タッグを　くんでみませんか？$"
+      }
+    ]
+  },
+  "ERROR:74": {
+    "row_number": 6891,
+    "symbol": "BattleFrontier_Lounge7_Text_RockSlideDesc",
+    "domain": "ported_batch",
+    "idx": "5639",
+    "old": "恐惧",
+    "new": "畏缩",
+    "reason": "统一第三世代flinch状态术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "投出巨大的石块，\n可以使对手\n畏缩。",
+    "old_current_text": "投出巨大的石块，\n可以使对手\n恐惧。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_Lounge7/scripts.inc",
+      "patch/batches/224_battle_frontier_lounge7.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+        "text": "いわで　こうげき\nてきを　ひるませる\nことが　ある$"
+      }
+    ]
+  },
+  "ERROR:75": {
+    "row_number": 6916,
+    "symbol": "BattleFrontier_OutsideEast_Text_RankingHallSign",
+    "domain": "ported_batch",
+    "idx": "5664",
+    "old": "关注最新的纪录！",
+    "new": "向新纪录发起挑战！",
+    "reason": "Set your sights on new records 指挑战纪录，而非关注新闻。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "对战开拓区排名大厅\n向新纪录发起挑战！",
+    "old_current_text": "对战开拓区排名大厅\n关注最新的纪录！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "patch/batches/227_battle_frontier_outside_east.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+        "text": "バトルフロンティア　ランキングホール\nきざめ！　さいこうの　きろく！$"
+      }
+    ]
+  },
+  "ERROR:76": {
+    "row_number": 6921,
+    "symbol": "BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+    "domain": "ported_batch",
+    "idx": "5669",
+    "old": "我是在黑暗中长大的……",
+    "new": "我最喜欢黑暗……",
+    "reason": "JP大好き / EN thrive 不表示童年成长地点。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\n你是不是也会陷入完全的绝望？",
+    "old_current_text": "我是在黑暗中长大的……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\n你是不是也会陷入完全的绝望？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "patch/batches/227_battle_frontier_outside_east.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+        "text": "くらやみが　だいすきな　わたし⋯⋯\nそう⋯⋯　わたしに　ふさわしい　のは⋯⋯\\lやはり　この　バトルピラミッド⋯⋯\\pネ⋯⋯　あなたも　くらやみの　なかを\nひっしに　さまよって　みない⋯⋯？$"
+      }
+    ]
+  },
+  "ERROR:77": {
+    "row_number": 6933,
+    "symbol": "BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid",
+    "domain": "ported_batch",
+    "idx": "5681",
+    "old": "就会有一个人出现在人群中。",
+    "new": "就会有一位真正的男子汉出现。",
+    "reason": "man among men / 男の中の男 是男子汉，不是在人群出现。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "你听说过那个关于\n对战金字塔的传说吗？\\p当一位勇敢的训练家到达\n金光闪闪的顶峰之时，\\l就会有一位真正的男子汉出现。\\p你知道这个传说吗？\n哈哈，你当然不知道！\\l这是我刚刚编的！\\p至于这是什么意思，\n那是，呃，不告诉你！",
+    "old_current_text": "你听说过那个关于\n对战金字塔的传说吗？\\p当一位勇敢的训练家到达\n金光闪闪的顶峰之时，\\l就会有一个人出现在人群中。\\p你知道这个传说吗？\n哈哈，你当然不知道！\\l这是我刚刚编的！\\p至于这是什么意思，\n那是，呃，不告诉你！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "patch/batches/227_battle_frontier_outside_east.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+        "text": "きみは　しって　いるか！？\nバトルピラミッドの　でんせつを！！\\pみなぎる　ゆうきを　もつ　トレーナー\nきんじとうの　いただきを　めざすとき\\lおとこの　なかの　おとこ　あらわれる\\p⋯⋯どうだ？　しらないだろー！\nだって　これ　さっき　おれが\\lかんがえたんだ　もんな！\\pなに？　どういう　いみ　かって？\nチッチッ！！　それは　おしえられないな！$"
+      }
+    ]
+  },
+  "ERROR:78": {
+    "row_number": 6943,
+    "symbol": "BattleFrontier_OutsideEast_Text_StickyMonWithLongTail",
+    "domain": "ported_batch",
+    "idx": "5691",
+    "old": "是一只举着长长尾巴的\n小小的宝可梦！",
+    "new": "是一只长着长长尾巴的\n黏糊糊的宝可梦！",
+    "reason": "sticky / ベタベタ 的黏性不是体型小。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我……\n我看见了！\\p是一只长着长长尾巴的\n黏糊糊的宝可梦！\\p刚才它藏在一块大石头底下，\n还一直偷偷地盯着我看！",
+    "old_current_text": "我……\n我看见了！\\p是一只举着长长尾巴的\n小小的宝可梦！\\p刚才它藏在一块大石头底下，\n还一直偷偷地盯着我看！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "patch/batches/227_battle_frontier_outside_east.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+        "text": "ぼぼぼ　ぼく　みちゃったんだっ！！\\pこのさきの　いわ　から　しっぽが　ながくって\nなんか　ベタベタした　ポケモンが\\lぼくの　こと　じーっと　のぞいてたんだっ！\\pきっと　こわい　ポケモン　だよーっ！！$"
+      }
+    ]
+  },
+  "ERROR:79": {
+    "row_number": 7008,
+    "symbol": "BattleFrontier_ReceptionGate_Text_Level50Info",
+    "domain": "ported_batch",
+    "idx": "5756",
+    "old": "不会\n使用等级50以内的宝可梦。",
+    "new": "不会\n使用低于50级的宝可梦。",
+    "reason": "below 50 不包括50本身。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "Lv. 50级允许等级50级以内的\n宝可梦参加。\\p但是，您遇到的训练家不会\n使用低于50级的宝可梦。\\p这是对战开拓区的\n入门级对战，\\p我们建议您从这个模式\n开始挑战。",
+    "old_current_text": "Lv. 50级允许等级50级以内的\n宝可梦参加。\\p但是，您遇到的训练家不会\n使用等级50以内的宝可梦。\\p这是对战开拓区的\n入门级对战，\\p我们建议您从这个模式\n开始挑战。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "patch/batches/230_battle_frontier_reception_gate.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+        "text": "レベル50の　コースでは　なまえの　とおり\nレベル50までの　ポケモンを\\lちょうせん　させることが　できます\\pただし　レベル50より　ひくい　レベルの\nポケモンを　つれた　トレーナーが\\lとうじょう　することは　ありません\\lくれぐれも　ごちゅうい　ください\\pなお　このコースが　バトルフロンティアの\nたたかいの　きほんと　なって　いますので\\lぜひ　チャレンジして　みてください$"
+      }
+    ]
+  },
+  "ERROR:80": {
+    "row_number": 7009,
+    "symbol": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+    "domain": "ported_batch",
+    "idx": "5757",
+    "old": "使用等级60以内的宝可梦。",
+    "new": "使用低于60级的宝可梦。",
+    "reason": "报告所谓只允许最高等级不符合当前源码；实际发现60级边界译成以内，原文below60需改为低于60。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "自由等级对于参加的宝可梦\n没有等级限制。\\p对手的宝可梦等级会根据\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\n使用低于60级的宝可梦。",
+    "old_current_text": "自由等级对于参加的宝可梦\n没有等级限制。\\p对手的宝可梦等级会根据\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\n使用等级60以内的宝可梦。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "patch/batches/230_battle_frontier_reception_gate.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+        "text": "オープンレベルの　コースでは\nちょうせんに　さんかする　ポケモンの\\lレベルに　せいげんが　ありません\\pあなたの　ポケモンの　レベルに　あわせて\nたいせんする　トレーナーの　ポケモンの\\lレベルが　かわります\\pただし　レベル60より　ひくい　レベルの\nポケモンを　つれた　トレーナーが\\lとうじょう　することは　ありません$"
+      }
+    ]
+  },
+  "ERROR:81": {
+    "row_number": 7069,
+    "symbol": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+    "domain": "ported_batch",
+    "idx": "5817",
+    "old": "它们不止是强大，",
+    "new": "它们不止是稀有，",
+    "reason": "rare / 珍しい 指稀有。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "说到宝可梦图鉴，\n我想起来了，\\p我寻找稀有石头的时候\n遇到了那个叫大吾的训练家。\\p哈，他带着一些\n奇妙的宝可梦，\\p它们不止是稀有，\n还在训练中发挥到了极致！\\p他也许比这城镇的\n道馆馆主还要强……",
+    "old_current_text": "说到宝可梦图鉴，\n我想起来了，\\p我寻找稀有石头的时候\n遇到了那个叫大吾的训练家。\\p哈，他带着一些\n奇妙的宝可梦，\\p它们不止是强大，\n还在训练中发挥到了极致！\\p他也许比这城镇的\n道馆馆主还要强……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/FortreeCity_House3/scripts.inc",
+      "patch/batches/245_fortree_city_house3.json"
+    ],
+    "us_source_file": "data/maps/FortreeCity_House3/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/FortreeCity_House3/scripts.inc",
+        "text": "ポケモンずかんで\nおもいだした　ことが　あるよ\\pめずらしい　いしを　さがしてるとき\nダイゴって　トレーナーと　であったけど\\lあいつの　ポケモン　すごいね！\\pめずらしい　だけでなく\nおそろしいほど　きたえられてた！\\pもしかしたら　この　まちの\nジムリーダーよりも　つよいかも⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:82": {
+    "row_number": 7096,
+    "symbol": "LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove",
+    "domain": "ported_batch",
+    "idx": "5844",
+    "old": null,
+    "new": "那个……\n哦，对了！俺是遗忘爷爷哩！\\p俺能让宝可梦\n忘记招式。\\p你想让俺帮忙吗？$",
+    "reason": "删除无依据的失忆长段，恢复能让宝可梦忘记招式及询问。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "那个……\n哦，对了！俺是遗忘爷爷哩！\\p俺能让宝可梦\n忘记招式。\\p你想让俺帮忙吗？",
+    "old_current_text": "那个……\n俺是谁来着？\\p…… …… ……\n…… …… ……\\p哦哦，对了！\n俺是遗忘爷爷哩！\\p你是来让宝可梦\n忘记招式的呐？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+      "patch/batches/259_lilycove_city_move_deleters_house.json"
+    ],
+    "us_source_file": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/LilycoveCity_MoveDeletersHouse/scripts.inc",
+        "text": "えーと⋯⋯\nそうじゃ　わし　わすれじいさん\\pポケモンの　わざを\nわすれさせる　ことが　できるんじゃ！\\pわざを　わすれ　させるかね？$"
+      }
+    ]
+  },
+  "ERROR:83": {
+    "row_number": 7183,
+    "symbol": "RustboroCity_House3_Text_NamingPikachuPekachu",
+    "domain": "ported_batch",
+    "idx": "5931",
+    "reason": "PEKACHU是日美昵称双关；猫卡球是本地化昵称，并非写入存档的种族名错误；不强行音译。",
+    "action": "localization_choice"
+  },
+  "ERROR:84": {
+    "row_number": 7184,
+    "symbol": "RustboroCity_House3_Text_Pekachu",
+    "domain": "ported_batch",
+    "idx": "5932",
+    "reason": "与前条猫卡球昵称/叫声成套的本地化，不能单条按种族名修正。",
+    "action": "localization_choice"
+  },
+  "ERROR:85": {
+    "row_number": 7558,
+    "symbol": "MoveTutor_Text_SubstituteTeach",
+    "domain": "ported_batch",
+    "idx": "6306",
+    "old": "我在想如果这个世界如果",
+    "new": "我在想如果这个世界",
+    "reason": "重复如果。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p明白了！\n不如让你的宝可梦学习替身吧？",
+    "old_current_text": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界如果\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p明白了！\n不如让你的宝可梦学习替身吧？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/move_tutors.inc",
+      "patch/batches/340_move_tutors.json"
+    ],
+    "us_source_file": "data/text/move_tutors.inc",
+    "jp_source": [
+      {
+        "file": "data/text/move_tutors.inc",
+        "text": "ふう\nこうやって　おくじょうから\\lひろい　せかいを　みていると⋯⋯\\pなんにんもの　じぶんが　いて\nいくつもの　じんせいを　たのしめたらなー\\lって　おもうの！\\lムリな　はなしだけどね　うふふ\\pそうだわ　あなたの　ポケモンちゃん！\nみがわりの　わざ　おぼえてみない？$"
+      }
+    ]
+  },
+  "ERROR:86": {
+    "row_number": 8076,
+    "symbol": "CableClub_Text_UnionRoomInfo",
+    "domain": "ported_batch",
+    "idx": "6824",
+    "old": "2只等级30的\n宝可梦",
+    "new": "2只不超过30级的\n宝可梦",
+    "reason": "恢复up to限定且明确包含30级。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "联盟交谊厅的训练家都是在您周围\n并且也进入了联盟交谊厅的玩家。\\p你可以在这里做各种事情，\n比如互相问候。\\p您可以拿出2只不超过30级的\n宝可梦进行1对1的对战。\\p您也可以和2到5个人\n在这里进行聊天。\\p或者您也可以登记宝可梦\n进行交换。\\p要进入房间吗？",
+    "old_current_text": "联盟交谊厅的训练家都是在您周围\n并且也进入了联盟交谊厅的玩家。\\p你可以在这里做各种事情，\n比如互相问候。\\p您可以拿出2只等级30的\n宝可梦进行1对1的对战。\\p您也可以和2到5个人\n在这里进行聊天。\\p或者您也可以登记宝可梦\n进行交换。\\p要进入房间吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/cable_club.inc",
+      "patch/batches/359_cable_club.json"
+    ],
+    "us_source_file": "data/text/cable_club.inc",
+    "jp_source": [
+      {
+        "file": "data/text/cable_club.inc",
+        "text": "ユニオン　ルーム　は　あなたの\nちかくで　ユニオン　ルームに\\lはいっている　ひとが　あらわれます\\pかんたんな　あいさつをしたり\\pレベル30までの　ポケモン2ひきで\n1たい1の　たいせん\\p2にんから　5にんまで　どうじに\nおしゃべりが　できる　チャット\\pそして　とうろくしき\nポケモン　こうかんが　たのしめます\\pへやに　はいりますか？$"
+      }
+    ]
+  },
+  "ERROR:87": {
+    "row_number": 8199,
+    "symbol": "Route108_Text_MatthewPostBattle",
+    "domain": "ported_batch",
+    "idx": "6947",
+    "old": "有些人甚至走进了那个\n那艘废弃的船。",
+    "new": "有些人甚至会进入\n那艘废弃的船。",
+    "reason": "删除重复指示词。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "有些人甚至会进入\n那艘废弃的船。",
+    "old_current_text": "有些人甚至走进了那个\n那艘废弃的船。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/trainers.inc",
+      "patch/batches/372_trainer_quotes_01.json"
+    ],
+    "us_source_file": "data/text/trainers.inc",
+    "jp_source": [
+      {
+        "file": "data/text/trainers.inc",
+        "text": "すてられぶねの　なかに\nはいっていく　やつらが　いるんだよ！$"
+      }
+    ]
+  },
+  "ERROR:88": {
+    "row_number": 8613,
+    "symbol": "gText_ApprenticeWhichMove14",
+    "domain": "ported_batch",
+    "idx": "7361",
+    "old": "虽然这是我最后一次……\\p",
+    "new": "",
+    "reason": "报告理由用错感谢模板；实际咨询日英原文也无本句，删除跨条串入句子。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "呃……嗯……\n{PLAYER}{KUN}……？\\p拜托，别那样看着我。\\p我很紧张……\\p我……我再次需要你的建议。\\p真的很不好意思问，\\p对我的{STR_VAR_1}而言，\n{STR_VAR_2}和{STR_VAR_3}哪个更好？",
+    "old_current_text": "呃……嗯……\n{PLAYER}{KUN}……？\\p拜托，别那样看着我。\\p我很紧张……\\p我……我再次需要你的建议。\\p虽然这是我最后一次……\\p真的很不好意思问，\\p对我的{STR_VAR_1}而言，\n{STR_VAR_2}和{STR_VAR_3}哪个更好？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/apprentice.inc",
+      "patch/batches/383_apprentice_0.json"
+    ],
+    "us_source_file": "data/text/apprentice.inc",
+    "jp_source": [
+      {
+        "file": "data/text/apprentice.inc",
+        "text": "あ⋯⋯　あ⋯⋯\n{PLAYER}{KUN}　だよね？\\lそ　そんなに　みないで　くれよ！\\lてれるだろ\\lまた⋯⋯　そうだん　させて　くれよ\\pは　はずかしながらさ\nポケモンに　おしえる　わざがさ\\lきまんないんだ　アドバイス　くれよ！\\pポケモンは　{STR_VAR_1}なんだ\nだったら　どっちが　いい　かな⋯⋯？\n{STR_VAR_2}⋯⋯　{STR_VAR_3}⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:89": {
+    "row_number": 8626,
+    "symbol": "gText_ApprenticeWinSpeechThanks9",
+    "domain": "ported_batch",
+    "idx": "7374",
+    "old": "Si, bueno！嗯哼，\\l我会试着这么说，就像，火腿！",
+    "new": "好的，嗯哼！\\l我会爽快地试着这么说！",
+    "reason": "恢复JPババーっと爽快说出的语气，避免无意义食物直译。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "{STR_VAR_1}\\p嗯哼，这话真棒！\n好的，嗯哼！\\l我会爽快地试着这么说！\\p那么，是时候说再见了！\n感谢你为我做的一切！\\p改天和我对战一场，好吗？\n再见！",
+    "old_current_text": "{STR_VAR_1}\\p嗯哼，这话真棒！\nSi, bueno！嗯哼，\\l我会试着这么说，就像，火腿！\\p那么，是时候说再见了！\n感谢你为我做的一切！\\p改天和我对战一场，好吗？\n再见！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/apprentice.inc",
+      "patch/batches/383_apprentice_0.json"
+    ],
+    "us_source_file": "data/text/apprentice.inc",
+    "jp_source": [
+      {
+        "file": "data/text/apprentice.inc",
+        "text": "{STR_VAR_1}\\pあはぁ　それいいね\nオーケイ　オーケイ！\\lおじさん　ババーっと　いってみるよ！\\pそれじゃあ　おわかれだ！\nいままで　いろいろ　ありがとうね\\lいつか　しょうぶも　してくれよ！\\pアディオース！$"
+      }
+    ]
+  },
+  "ERROR:90": {
+    "row_number": 8793,
+    "symbol": "gTVPokemonNewsBattleFrontierText05",
+    "domain": "ported_batch",
+    "idx": "7541",
+    "old": "在\n在对战巨蛋",
+    "new": "在\n对战巨蛋",
+    "reason": "重复在。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "训练家{STR_VAR_1}在\n对战巨蛋单打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！",
+    "old_current_text": "训练家{STR_VAR_1}在\n在对战巨蛋单打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/tv.inc",
+      "patch/batches/386_tv_0.json"
+    ],
+    "us_source_file": "data/text/tv.inc",
+    "jp_source": [
+      {
+        "file": "data/text/tv/battle_frontier_news.inc",
+        "text": "バトルドーム\nシングル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+      }
+    ]
+  },
+  "ERROR:91": {
+    "row_number": 8794,
+    "symbol": "gTVPokemonNewsBattleFrontierText06",
+    "domain": "ported_batch",
+    "idx": "7542",
+    "old": "在\n在对战巨蛋",
+    "new": "在\n对战巨蛋",
+    "reason": "重复在。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "训练家{STR_VAR_1}在\n对战巨蛋双打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！",
+    "old_current_text": "训练家{STR_VAR_1}在\n在对战巨蛋双打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/tv.inc",
+      "patch/batches/386_tv_0.json"
+    ],
+    "us_source_file": "data/text/tv.inc",
+    "jp_source": [
+      {
+        "file": "data/text/tv/battle_frontier_news.inc",
+        "text": "バトルドーム\nダブル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+      }
+    ]
+  },
+  "ERROR:92": {
+    "row_number": 8988,
+    "symbol": "SecretBase_Text_Trainer6Intro",
+    "domain": "ported_batch",
+    "idx": "7736",
+    "old": "欢迎来到我的精灵研究所，\n我在调查秘密的对战。",
+    "new": "欢迎来到我的宝可梦研究所，\n我在暗中进行对战研究。",
+    "reason": "与同角色同原文的PreChampion模板统一；修复病句。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "欢迎来到我的宝可梦研究所，\n我在暗中进行对战研究。\\p想试试我有多么强吗？",
+    "old_current_text": "欢迎来到我的精灵研究所，\n我在调查秘密的对战。\\p想试试我有多么强吗？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/secret_base_trainers.inc",
+      "patch/batches/391_secret_base_trainers.json"
+    ],
+    "us_source_file": "data/text/secret_base_trainers.inc",
+    "jp_source": [
+      {
+        "file": "data/text/secret_base_trainers.inc",
+        "text": "わたしの　ポケモン　けんきゅうじょへ\nようこそ！\\pここで　ポケモン　しょうぶに　ついて\nこっそり　べんきょう　してるのよ\\pどう　わたしの　じつりょく　みてみる？$"
+      }
+    ]
+  },
+  "ERROR:93": {
+    "row_number": 9110,
+    "symbol": "MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory",
+    "domain": "ported_batch",
+    "idx": "7858",
+    "old": "他几经跳过\n{STR_VAR_1}次了！",
+    "new": "他已经跳下\n{STR_VAR_1}次岩礁了！",
+    "reason": "修复已经的笔误并恢复跳下岩礁的宾语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "关于{STR_VAR_3}是这样流传\n的。\\p他已经跳下\n{STR_VAR_1}次岩礁了！\\p如果有适合跳跃的岩礁，\n{STR_VAR_3}一定会去跳的！",
+    "old_current_text": "关于{STR_VAR_3}是这样流传\n的。\\p他几经跳过\n{STR_VAR_1}次了！\\p如果有适合跳跃的岩礁，\n{STR_VAR_3}一定会去跳的！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/mauville_man.inc",
+      "patch/batches/392_mauville_man_0.json"
+    ],
+    "us_source_file": "data/scripts/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/mauville_man.inc",
+        "text": "{STR_VAR_3}という\nトレーナーの　はなし　だが⋯⋯\\pなんと　{STR_VAR_1}かいも\nだんさを　とびおりた　らしい！\\p{STR_VAR_3}は　だんさを　みると\nとびおりずに　おれない　トレーナーだな！$"
+      }
+    ]
+  },
+  "ERROR:94": {
+    "row_number": 9114,
+    "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedDaycareStory",
+    "domain": "ported_batch",
+    "idx": "7862",
+    "old": "他在培育屋照顾的宝可梦\n有{STR_VAR_1}只！",
+    "new": "他曾把宝可梦寄存在培育屋\n{STR_VAR_1}次！",
+    "reason": "寄存次数，不是宝可梦只数。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "关于{STR_VAR_3}是这样流传\n的。\\p他曾把宝可梦寄存在培育屋\n{STR_VAR_1}次！\\p{STR_VAR_3}一定是一个培育\n宝可梦的老手了！",
+    "old_current_text": "关于{STR_VAR_3}是这样流传\n的。\\p他在培育屋照顾的宝可梦\n有{STR_VAR_1}只！\\p{STR_VAR_3}一定是一个培育\n宝可梦的老手了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/mauville_man.inc",
+      "patch/batches/392_mauville_man_0.json"
+    ],
+    "us_source_file": "data/scripts/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/mauville_man.inc",
+        "text": "{STR_VAR_3}という\nトレーナーの　はなし　だが⋯⋯\\pなんと　{STR_VAR_1}かいも\nそだてやに　あずけた　らしい！\\p{STR_VAR_3}は　とにかく　そだてまくる\nモーレツな　トレーナーに　ちがいない！$"
+      }
+    ]
+  },
+  "ERROR:95": {
+    "row_number": 9132,
+    "symbol": "MauvilleCity_PokemonCenter_1F_Text_UsedDaycareTitle",
+    "domain": "ported_batch",
+    "idx": "7880",
+    "old": "在培育屋工作的训练家",
+    "new": "善用培育屋的训练家",
+    "reason": "DAY CARE-Using不是在培育屋上班。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "善用培育屋的训练家",
+    "old_current_text": "在培育屋工作的训练家",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/mauville_man.inc",
+      "patch/batches/393_mauville_man_1.json"
+    ],
+    "us_source_file": "data/scripts/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/mauville_man.inc",
+        "text": "そだてやを　つかいこなす　トレーナー$"
+      }
+    ]
+  },
+  "ERROR:96": {
+    "row_number": 9156,
+    "symbol": "GiddyText_SoDesirable",
+    "domain": "ported_batch",
+    "idx": "7904",
+    "old": "太合意的了！",
+    "new": "太令人向往了！",
+    "reason": "あこがれる 指憧憬。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": " 太令人向往了！",
+    "old_current_text": " 太合意的了！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/mauville_man.inc",
+      "patch/batches/395_mauville_man.json"
+    ],
+    "us_source_file": "data/text/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/text/mauville_man.inc",
+        "text": "　あこがれる　よねー$"
+      }
+    ]
+  },
+  "ERROR:97": {
+    "row_number": 9174,
+    "symbol": "CaveOfOrigin_B1F_Text_WallaceStory",
+    "domain": "ported_batch",
+    "idx": "7922",
+    "old": "的的斗争",
+    "new": "的斗争",
+    "reason": "重复的。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "啊，你就是{PLAYER}{KUN}吗？\n你的活跃表现我早有耳闻。\\p我的名字是米可利。\\p曾经是琉璃市的道馆馆主，\n不过因为某些原因，\\p现在我把管理道馆的事情\n托付给我的老师亚当了。\\p…… …… ……\n…… …… ……\\p在这里肆虐的2只宝可梦——\n固拉多和盖欧卡，\\l被称为超古代宝可梦，\\p然而，超古代宝可梦\n并不止这2只……\\p在世界的某处\n还存在着第3只——\\p没错，那就是被称为烈空坐\n的超古代宝可梦。\\p传说在远古时期，\n正是烈空坐平息了\\l那2只宝可梦的斗争。\\p可就连我也不清楚它\n如今究竟身在何处……",
+    "old_current_text": "啊，你就是{PLAYER}{KUN}吗？\n你的活跃表现我早有耳闻。\\p我的名字是米可利。\\p曾经是琉璃市的道馆馆主，\n不过因为某些原因，\\p现在我把管理道馆的事情\n托付给我的老师亚当了。\\p…… …… ……\n…… …… ……\\p在这里肆虐的2只宝可梦——\n固拉多和盖欧卡，\\l被称为超古代宝可梦，\\p然而，超古代宝可梦\n并不止这2只……\\p在世界的某处\n还存在着第3只——\\p没错，那就是被称为烈空坐\n的超古代宝可梦。\\p传说在远古时期，\n正是烈空坐平息了\\l那2只宝可梦的的斗争。\\p可就连我也不清楚它\n如今究竟身在何处……",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/CaveOfOrigin_B1F/scripts.inc",
+      "patch/batches/398_player_name_dialogue.json"
+    ],
+    "us_source_file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/CaveOfOrigin_B1F/scripts.inc",
+        "text": "そうか　きみが　{PLAYER}{KUN}⋯⋯\nきみの　かつやくは　きいているよ\\pわたしの　なまえは　ミクリ\nルネの　ジムリーダーを　していたけれど\\lちょっと　わけが　あってね\\pいまは　ししょうの　アダンさんに\nジムのことは　おまかせして　いるのさ\\p⋯⋯　⋯⋯　⋯⋯\n⋯⋯　⋯⋯　⋯⋯\\pいま　このまちで　あばれている\nグラードンと　カイオーガは\\lちょうこだい　ポケモンと　いわれている\\pけれど　ちょうこだい　ポケモンは\nあの2ひき　だけじゃ　なかった⋯⋯\\lどこかに　もう1ひき\\pそう⋯⋯　レックウザと　よばれる\nちょうこだい　ポケモンが　いるんだよ\\pとおい　むかしに\nあの2ひきの　たたかいを　しずめたのも\\lレックウザ　だと　いわれている\\pだが　レックウザが　どこに　いるかは\nわたしにも　わからない⋯⋯$"
+      }
+    ]
+  },
+  "ERROR:98": {
+    "row_number": 9381,
+    "symbol": "gText_Contest_Shyness",
+    "domain": "ported_batch",
+    "idx": "8131",
+    "old": "扑通扑通",
+    "new": "扭扭捏捏",
+    "reason": "モジモジ / shyness 指扭捏，不是心跳声。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "扭扭捏捏",
+    "old_current_text": "扑通扑通",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/contest_strings.inc",
+      "patch/batches/405_contest_strings.json"
+    ],
+    "us_source_file": "data/text/contest_strings.inc",
+    "jp_source": [
+      {
+        "file": "data/text/contest_strings.inc",
+        "text": "モジモジ$"
+      }
+    ]
+  },
+  "ERROR:99": {
+    "row_number": 10075,
+    "symbol": "sText_MemberNoLongerAvailable",
+    "domain": "ported_batch",
+    "idx": "8825",
+    "old": "对方好像不方便……",
+    "new": "有成员不便进行……",
+    "reason": "原文指组内有成员不方便。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "有成员不便进行……\\p",
+    "old_current_text": "对方好像不方便……\\p",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/data/union_room.h",
+      "patch/batches/419_union_room_0.json"
+    ],
+    "us_source_file": "src/data/union_room.h",
+    "jp_source": [
+      {
+        "file": "src/data/union_room3.h",
+        "text": "つごうが　わるくなってしまった\nメンバーが　います\\p"
+      }
+    ]
+  },
+  "ERROR:100": {
+    "row_number": 10076,
+    "symbol": "sText_TrainerAppearsUnavailable",
+    "domain": "ported_batch",
+    "idx": "8826",
+    "old": "有成员不便进行……",
+    "new": "对方好像不方便……",
+    "reason": "原文指对方训练家不方便。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "对方好像不方便……\\p",
+    "old_current_text": "有成员不便进行……\\p",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/data/union_room.h",
+      "patch/batches/419_union_room_0.json"
+    ],
+    "us_source_file": "src/data/union_room.h",
+    "jp_source": [
+      {
+        "file": "src/data/union_room3.h",
+        "text": "つごうが　わるいみたい⋯\\p"
+      }
+    ]
+  },
+  "ERROR:101": {
+    "row_number": 10475,
+    "symbol": "",
+    "domain": "item",
+    "idx": "218",
+    "old": null,
+    "new": "不可思议的盒子。\n西尔佛公司制造",
+    "reason": "按JP/EN原文，仅修文本不改用途。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sUpGradeDesc",
+    "final_text": "不可思议的盒子。\n西尔佛公司制造",
+    "old_current_text": "内部储存了各种信\n息的透明机器。西\n尔佛公司制造",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "ふしぎな　はこ\nシルフ　カンパニーせい"
+      }
+    ]
+  },
+  "ERROR:102": {
+    "row_number": 12011,
+    "symbol": "BattlePyramid_Text_SevenTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有7位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有7位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　7にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:103": {
+    "row_number": 12012,
+    "symbol": "BattlePyramid_Text_SixTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有6位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有6位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　6にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:104": {
+    "row_number": 12013,
+    "symbol": "BattlePyramid_Text_FiveTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有5位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有5位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　5にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:105": {
+    "row_number": 12014,
+    "symbol": "BattlePyramid_Text_FourTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有4位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有4位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　4にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:106": {
+    "row_number": 12015,
+    "symbol": "BattlePyramid_Text_ThreeTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有3位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有3位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　3にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:107": {
+    "row_number": 12016,
+    "symbol": "BattlePyramid_Text_TwoTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他们中或许有人比你弱！",
+    "new": "他们中一定有人能打败你！",
+    "reason": "原文有人会打败玩家，不是比玩家弱。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有2位训练家！\n他们中一定有人能打败你！",
+    "old_current_text": "真不幸！\\p后面还有2位训练家！\n他们中或许有人比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　2にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:108": {
+    "row_number": 12017,
+    "symbol": "BattlePyramid_Text_OneTrainersRemaining2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "他或许比你弱！",
+    "new": "他一定会打败你！",
+    "reason": "同系列单人模板恢复原意。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "真不幸！\\p后面还有1位训练家！\n他一定会打败你！",
+    "old_current_text": "真不幸！\\p后面还有1位训练家！\n他或许比你弱！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+        "text": "くやしいー！\\pでも　あと　1にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+      }
+    ]
+  },
+  "ERROR:109": {
+    "row_number": 12178,
+    "symbol": "MagmaHideout_4F_Text_MaxieAwakenGroudon",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "展示的你全部的力量吧！",
+    "new": "展示你全部的力量吧！",
+    "reason": "多余的。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "赤焰松：固拉多……\\p无论怎样也不会\n从岩浆中苏醒的你……\\p一直在寻求的，\n是这个靛蓝色宝珠吧？\\p我已带来了靛蓝色宝珠。\n就让它的光芒唤醒你吧！\\p向我展示……\n展示你全部的力量吧！",
+    "old_current_text": "赤焰松：固拉多……\\p无论怎样也不会\n从岩浆中苏醒的你……\\p一直在寻求的，\n是这个靛蓝色宝珠吧？\\p我已带来了靛蓝色宝珠。\n就让它的光芒唤醒你吧！\\p向我展示……\n展示的你全部的力量吧！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/MagmaHideout_4F/scripts.inc",
+      "patch/batches/432_checklist_scripts.json"
+    ],
+    "us_source_file": "data/maps/MagmaHideout_4F/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/MagmaHideout_4F/scripts.inc",
+        "text": "マツブサ“マグマに　ねむる　グラードンよ\nなにをしても　めざめなかった　おまえが\\lもとめて　いたのは　あいいろのたま⋯⋯\\pそうなんだろう？\\pさあ　ここに　もってきて　やったぞ\nこの　かがやきで　めを　さませ！\\pそして　ほんとうの　ちからを\nわたしに　みせて　おくれ！$"
+      }
+    ]
+  },
+  "ERROR:110": {
+    "row_number": 12204,
+    "symbol": "sText_MysteryGiftVisitingTrainerArrived",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "系统您可以享受",
+    "new": "希望您可以享受",
+    "reason": "系统是希望的误写；日版缺此配信脚本，不新增猜测ROM覆盖。",
+    "scope": "us_only",
+    "action": "fix",
+    "final_text": "感谢使用\n神秘礼物系统。\\p一位训练家已经来到\n琉璃市寻找您。\\p希望您可以享受\n与训练家的对战。\\p您可以邀请其他训练家\n通过填写密码。\\p试着找寻其他\n有用的密码吧。",
+    "old_current_text": "感谢使用\n神秘礼物系统。\\p一位训练家已经来到\n琉璃市寻找您。\\p系统您可以享受\n与训练家的对战。\\p您可以邀请其他训练家\n通过填写密码。\\p试着找寻其他\n有用的密码吧。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/gift_trainer.inc"
+    ],
+    "us_source_file": "data/scripts/gift_trainer.inc",
+    "jp_source": []
+  },
+  "ERROR:111": {
+    "row_number": 12568,
+    "symbol": "gText_GlassChair",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "漂亮椅子",
+    "new": "玻璃椅子",
+    "reason": "Glass是玻璃；JP脚本菜单实有gText_GlassChair的已验证覆盖。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "玻璃椅子",
+    "old_current_text": "漂亮椅子",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/strings.c",
+      "patch/batches/453_checklist_named_menu_sections.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": []
+  },
+  "ERROR:112": {
+    "row_number": 12569,
+    "symbol": "gText_GlassDesk",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "漂亮桌子",
+    "new": "玻璃桌子",
+    "reason": "同上Glass Desk。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "玻璃桌子",
+    "old_current_text": "漂亮桌子",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/strings.c",
+      "patch/batches/453_checklist_named_menu_sections.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": []
+  },
+  "ERROR:113": {
+    "row_number": 13396,
+    "symbol": "gMoveNames[12]",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "命名属于既定中文本地化术语；报告把旧译名当作唯一官方译名，未给可验证出处，不凭逐词直译替换现有招式名。",
+    "action": "unsupported_terminology_claim"
+  },
+  "ERROR:114": {
+    "row_number": 13450,
+    "symbol": "gMoveNames[66]",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "命名属于既定中文本地化术语；报告把旧译名当作唯一官方译名，未给可验证出处，不凭逐词直译替换现有招式名。",
+    "action": "unsupported_terminology_claim"
+  },
+  "NEEDS_ATTENTION:0": {
+    "row_number": 77,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "37",
+    "reason": "描述符合第三世代实际机制；有用的准确说明不为逐字复刻模糊原文而删除。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:1": {
+    "row_number": 151,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "74",
+    "reason": "描述符合第三世代实际机制；有用的准确说明不为逐字复刻模糊原文而删除。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:2": {
+    "row_number": 725,
+    "symbol": "",
+    "domain": "ability_move",
+    "idx": "283",
+    "reason": "描述符合第三世代实际机制；有用的准确说明不为逐字复刻模糊原文而删除。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:3": {
+    "row_number": 1044,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "176",
+    "reason": "心灵纯洁的持有者并不排除宝可梦；增补不改变条目核心描述。",
+    "action": "localization_choice"
+  },
+  "NEEDS_ATTENTION:4": {
+    "row_number": 1099,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "231",
+    "old": "会啪嗒啪嗒扇动着前进",
+    "new": "会啪嗒啪嗒扇动耳朵纳凉",
+    "reason": "原文动作目的是纳凉，不是前进。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gPhanpyPokedexText",
+    "final_text": "小小象的巨大耳朵可以代替扇子，天气热的时候会啪嗒啪嗒扇动耳朵纳凉，\n即使是幼年时力气也非常大。",
+    "old_current_text": "小小象的巨大耳朵可以代替扇子，天气热的时候会啪嗒啪嗒扇动着前进，\n即使是幼年时力气也非常大。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "ゴマゾウの　おおきな　みみは　うちわの　かわり。\nあつくなると　ぱたぱた　あおいで　すずむ。\nこどもでも　ちからは　とても　つよい。"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:5": {
+    "row_number": 1160,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "292",
+    "old": "里面什么也没有",
+    "new": "里面一片漆黑",
+    "reason": "原文中空和黑暗是两个事实，恢复后者。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gShedinjaPokedexText",
+    "final_text": "没有拍动翅膀就可以飞在天上的相当特别的宝可梦，身体是中空的，\n里面一片漆黑。",
+    "old_current_text": "没有拍动翅膀就可以飞在天上的相当特别的宝可梦，身体是中空的，\n里面什么也没有。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "ハネを　まったく　うごかして　いないのに\nくうちゅうに　うかんでいる　ふしぎな　ポケモン。\nからだの　なかは　くうどうで　まっくら。"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:6": {
+    "row_number": 1215,
+    "symbol": "",
+    "domain": "pokedex",
+    "idx": "347",
+    "old": "羽毛",
+    "new": "翅膀",
+    "reason": "はね / wings 在太古羽虫条目是翅状肢。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "gAnorithPokedexText",
+    "final_text": "以科学的力量从化石中再度复活。会以摆动左右的8片翅膀的方式游动。\n居住在海里的时候脚变成了翅膀。",
+    "old_current_text": "以科学的力量从化石中再度复活。会以摆动左右的8片羽毛的方式游动。\n居住在海里的时候脚变成了羽毛。",
+    "changed_files": [
+      "patch/pokedex_entries.json",
+      "../pokeemerald_us_chs/src/data/pokemon/pokedex_text.h"
+    ],
+    "us_source_file": "src/data/pokemon/pokedex_text.h",
+    "jp_source": [
+      {
+        "file": "src/data/pokemon/pokedex_text.h",
+        "text": "かがくの　ちからで　かせきから　よみがえった。\nさゆう　8まいの　はねを　くねらせて　およぐ。\nうみで　くらすうちに　あしが　ハネに　かわった。"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:7": {
+    "row_number": 4798,
+    "symbol": "gText_DexSortAtoZDescription",
+    "domain": "ported_batch",
+    "idx": "3545",
+    "reason": "已获得必然也是已发现，两个集合并集不扩大排序范围；无必要改变提示。",
+    "action": "equivalent_wording"
+  },
+  "NEEDS_ATTENTION:8": {
+    "row_number": 5005,
+    "symbol": "gText_EmptyString6",
+    "domain": "ported_batch",
+    "idx": "3752",
+    "reason": "当前已有训练家卡计数词显示适配；报告按US空字符串判NOPATCH漏掉了该路径。",
+    "action": "mapping_artifact"
+  },
+  "NEEDS_ATTENTION:9": {
+    "row_number": 5133,
+    "symbol": "gRegionMapEntries[87].name",
+    "domain": "ported_batch",
+    "idx": "3880",
+    "reason": "动态地区槽的空名称是设计占位，不能汉化为空的名字。",
+    "action": "no_text"
+  },
+  "NEEDS_ATTENTION:10": {
+    "row_number": 5393,
+    "symbol": "BattleFrontier_Lounge5_Text_NatureGirlNaive",
+    "domain": "ported_batch",
+    "idx": "4140",
+    "reason": "报告引用不存在的独立符号；性格女孩实际由25项已重定向指针表提供，并含合并原文。",
+    "action": "mapping_artifact"
+  },
+  "NEEDS_ATTENTION:11": {
+    "row_number": 5396,
+    "symbol": "BattleFrontier_Lounge5_Text_NatureGirlQuiet",
+    "domain": "ported_batch",
+    "idx": "4143",
+    "reason": "报告引用不存在的独立符号；性格女孩实际由25项已重定向指针表提供，并含合并原文。",
+    "action": "mapping_artifact"
+  },
+  "NEEDS_ATTENTION:12": {
+    "row_number": 5709,
+    "symbol": "sText_EmptyString4",
+    "domain": "ported_batch",
+    "idx": "4457",
+    "reason": "空战斗字符串为占位；须按表槽和EOS识别，不能把相邻は片段当作文本内容。",
+    "action": "no_text"
+  },
+  "NEEDS_ATTENTION:13": {
+    "row_number": 7288,
+    "symbol": "SootopolisCity_Text_WonderWhatWorldIsLike",
+    "domain": "ported_batch",
+    "idx": "6036",
+    "old": "圆椭的天空",
+    "new": "圆形的天空",
+    "reason": "JPまあるい / EN round 指圆形；圆椭不成词。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我……我从未离开过这座城。\\p不知这圆形的天空的\n另一端会有什么呢？",
+    "old_current_text": "我……我从未离开过这座城。\\p不知这圆椭的天空的\n另一端会有什么呢？",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/SootopolisCity/scripts.inc",
+      "patch/batches/316_sootopolis_city.json"
+    ],
+    "us_source_file": "data/maps/SootopolisCity/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/SootopolisCity/scripts.inc",
+        "text": "ぼく⋯⋯　まだ　いちども　このまちから\nそとに　でたこと　ないんだ\\pあの　まあるい　そらの　むこうには\nどんな　せかいが　あるのかな？$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:14": {
+    "row_number": 7478,
+    "symbol": "VictoryRoad_B1F_Text_MitchellIntro",
+    "domain": "ported_batch",
+    "idx": "6226",
+    "old": "我的宝可梦的士气已经\n达到了顶点！",
+    "new": "我的宝可梦\n真是令人惊叹！",
+    "reason": "原文赞叹宝可梦本身，而非士气。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "我的宝可梦\n真是令人惊叹！",
+    "old_current_text": "我的宝可梦的士气已经\n达到了顶点！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/VictoryRoad_B1F/scripts.inc",
+      "patch/batches/336_victory_road_b1_f.json"
+    ],
+    "us_source_file": "data/maps/VictoryRoad_B1F/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/VictoryRoad_B1F/scripts.inc",
+        "text": "わたしの　ポケモンは　すばらしいですよ！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:15": {
+    "row_number": 7635,
+    "symbol": "Text_MonUsedStrength",
+    "domain": "ported_batch",
+    "idx": "6383",
+    "reason": "前句已提供宝可梦名，后句省略同一主语不丢失语义；无需重复占位符。",
+    "action": "equivalent_wording"
+  },
+  "NEEDS_ATTENTION:16": {
+    "row_number": 7886,
+    "symbol": "MatchCall_BattleFrontierStreakText3",
+    "domain": "ported_batch",
+    "idx": "6634",
+    "old": "这是个新纪录，对吧？",
+    "new": "这纪录很了不起，对吧？",
+    "reason": "big record不等于new record。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "喂你好，{PLAYER}！\n是我，{STR_VAR_1}。\\p我听说你在{STR_VAR_2}\n势不可挡！\\p一个漂亮的{STR_VAR_3}连胜……\n这纪录很了不起，对吧？\\p我也要努力了！\n以后联系！",
+    "old_current_text": "喂你好，{PLAYER}！\n是我，{STR_VAR_1}。\\p我听说你在{STR_VAR_2}\n势不可挡！\\p一个漂亮的{STR_VAR_3}连胜……\n这是个新纪录，对吧？\\p我也要努力了！\n以后联系！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/match_call.inc",
+      "patch/batches/343_match_call.json"
+    ],
+    "us_source_file": "data/text/match_call.inc",
+    "jp_source": [
+      {
+        "file": "data/text/match_call.inc",
+        "text": "おう！　{PLAYER}！\n{STR_VAR_1}だぞ！\\p{STR_VAR_2}　で\nおおあばれ　したらしいな！\\p{STR_VAR_3}れんしょう　って\nすごい　きろく　なんだろ？\\pおれも　まけられねーな！\nじゃ　またな！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:17": {
+    "row_number": 7900,
+    "symbol": "MatchCall_BattleFrontierRecordStreakText3",
+    "domain": "ported_batch",
+    "idx": "6648",
+    "old": "这是个新纪录，对吧？",
+    "new": "这纪录很了不起，对吧？",
+    "reason": "big record不等于new record。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "喂你好，{PLAYER}！\n是我，{STR_VAR_1}。\\p我听说你在{STR_VAR_2}\n势不可挡！\\p一个漂亮的{STR_VAR_3}连胜……\n这纪录很了不起，对吧？\\p我也要努力了！\n以后联系！",
+    "old_current_text": "喂你好，{PLAYER}！\n是我，{STR_VAR_1}。\\p我听说你在{STR_VAR_2}\n势不可挡！\\p一个漂亮的{STR_VAR_3}连胜……\n这是个新纪录，对吧？\\p我也要努力了！\n以后联系！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/match_call.inc",
+      "patch/batches/343_match_call.json"
+    ],
+    "us_source_file": "data/text/match_call.inc",
+    "jp_source": [
+      {
+        "file": "data/text/match_call.inc",
+        "text": "おう！　{PLAYER}！\n{STR_VAR_1}だぞ！\\p{STR_VAR_2}　で\nおおあばれ　したらしいな！\\p{STR_VAR_3}れんしょう　って\nすごい　きろく　なんだろ？\\pおれも　まけられねーな！\nじゃ　またな！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:18": {
+    "row_number": 9108,
+    "symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory",
+    "domain": "ported_batch",
+    "idx": "7856",
+    "old": "他校对宝可梦图鉴有",
+    "new": "他查看宝可梦图鉴有",
+    "reason": "checked不是校对文字。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "关于{STR_VAR_3}是这样流传\n的。\\p他查看宝可梦图鉴有\n{STR_VAR_1}次了！\\p{STR_VAR_3}喜欢在宝可梦图鉴中查看\n宝可梦的数据！",
+    "old_current_text": "关于{STR_VAR_3}是这样流传\n的。\\p他校对宝可梦图鉴有\n{STR_VAR_1}次了！\\p{STR_VAR_3}喜欢在宝可梦图鉴中查看\n宝可梦的数据！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/mauville_man.inc",
+      "patch/batches/392_mauville_man_0.json"
+    ],
+    "us_source_file": "data/scripts/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/mauville_man.inc",
+        "text": "{STR_VAR_3}という\nトレーナーの　はなし　だが⋯⋯\\pなんと　{STR_VAR_1}かいも\nずかんを　みた　そうだ！\\p{STR_VAR_3}は　ずかんで　ポケモンを\nしらべるのが　だいすきな　トレーナーだな！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:19": {
+    "row_number": 9121,
+    "symbol": "MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction",
+    "domain": "ported_batch",
+    "idx": "7869",
+    "old": "校对图鉴数据",
+    "new": "查看图鉴数据",
+    "reason": "同上查看图鉴。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "查看图鉴数据",
+    "old_current_text": "校对图鉴数据",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/mauville_man.inc",
+      "patch/batches/393_mauville_man_1.json"
+    ],
+    "us_source_file": "data/scripts/mauville_man.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/mauville_man.inc",
+        "text": "ずかんを　みた$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:20": {
+    "row_number": 9237,
+    "symbol": "Roulette_Text_YouveWonXCoins",
+    "domain": "ported_batch",
+    "idx": "7987",
+    "old": "枚硬币",
+    "new": "枚代币",
+    "reason": "与同一轮盘界面统一代币术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "恭喜中奖！\n获得了{STR_VAR_1}枚代币！",
+    "old_current_text": "恭喜中奖！\n获得了{STR_VAR_1}枚硬币！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/roulette.inc",
+      "patch/batches/401_roulette.json"
+    ],
+    "us_source_file": "data/scripts/roulette.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/roulette.inc",
+        "text": "おめでとう　ございます！\nコイン　{STR_VAR_1}まい　はいります！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:21": {
+    "row_number": 9589,
+    "symbol": "gText_TheQuizAnswerIs",
+    "domain": "ported_batch",
+    "idx": "8339",
+    "old": "谜题答案的是？",
+    "new": "谜题的答案是？",
+    "reason": "的语序错误。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "谜题的答案是？",
+    "old_current_text": "谜题答案的是？",
+    "changed_files": [
+      "../pokeemerald_us_chs/src/strings.c",
+      "patch/batches/411_strings_c_direct.json"
+    ],
+    "us_source_file": "src/strings.c",
+    "jp_source": [
+      {
+        "file": "src/strings.c",
+        "text": "クイズの　こたえは？"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:22": {
+    "row_number": 10264,
+    "symbol": "",
+    "domain": "item",
+    "idx": "7",
+    "old": "生活在\n水世界的宝可梦",
+    "new": "生活在\n海底的宝可梦",
+    "reason": "第三世代潜水球匹配海底遭遇场景，不是所有水环境。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sDiveBallDesc",
+    "final_text": "有点与众不同的球\n。容易捕捉生活在\n海底的宝可梦",
+    "old_current_text": "有点与众不同的球\n。容易捕捉生活在\n水世界的宝可梦",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "かいていに　いる\nポケモンが　つかまえ\nやすくなる　ボール"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:23": {
+    "row_number": 10293,
+    "symbol": "",
+    "domain": "item",
+    "idx": "36",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:24": {
+    "row_number": 10294,
+    "symbol": "",
+    "domain": "item",
+    "idx": "37",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:25": {
+    "row_number": 10325,
+    "symbol": "",
+    "domain": "item",
+    "idx": "68",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:26": {
+    "row_number": 10326,
+    "symbol": "",
+    "domain": "item",
+    "idx": "69",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:27": {
+    "row_number": 10363,
+    "symbol": "",
+    "domain": "item",
+    "idx": "106",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:28": {
+    "row_number": 10367,
+    "symbol": "",
+    "domain": "item",
+    "idx": "110",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:29": {
+    "row_number": 10383,
+    "symbol": "",
+    "domain": "item",
+    "idx": "126",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:31": {
+    "row_number": 10399,
+    "symbol": "",
+    "domain": "item",
+    "idx": "142",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:32": {
+    "row_number": 10400,
+    "symbol": "",
+    "domain": "item",
+    "idx": "143",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:33": {
+    "row_number": 10401,
+    "symbol": "",
+    "domain": "item",
+    "idx": "144",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:34": {
+    "row_number": 10402,
+    "symbol": "",
+    "domain": "item",
+    "idx": "145",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:35": {
+    "row_number": 10403,
+    "symbol": "",
+    "domain": "item",
+    "idx": "146",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:36": {
+    "row_number": 10404,
+    "symbol": "",
+    "domain": "item",
+    "idx": "147",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:37": {
+    "row_number": 10437,
+    "symbol": "",
+    "domain": "item",
+    "idx": "180",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:38": {
+    "row_number": 10442,
+    "symbol": "",
+    "domain": "item",
+    "idx": "185",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:39": {
+    "row_number": 10447,
+    "symbol": "",
+    "domain": "item",
+    "idx": "190",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:42": {
+    "row_number": 10520,
+    "symbol": "",
+    "domain": "item",
+    "idx": "263",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:43": {
+    "row_number": 10521,
+    "symbol": "",
+    "domain": "item",
+    "idx": "264",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:47": {
+    "row_number": 10555,
+    "symbol": "",
+    "domain": "item",
+    "idx": "298",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:52": {
+    "row_number": 10623,
+    "symbol": "",
+    "domain": "item",
+    "idx": "366",
+    "reason": "准确的机制说明或不影响功能理解的修饰；不为原文未逐字列出而删改。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:30": {
+    "row_number": 10389,
+    "symbol": "",
+    "domain": "item",
+    "idx": "132",
+    "old": "三种宝可梦",
+    "new": "三只宝可梦",
+    "reason": "ひき指个体计数，不是物种数量。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sRetroMailDesc",
+    "final_text": "印有三只宝可梦的\n信纸，可以让宝可\n梦携带",
+    "old_current_text": "印有三种宝可梦的\n信纸，可以让宝可\n梦携带",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "3ひきの　ポケモンが\nプリントされた　びんせん\nポケモンに　もたせる"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:40": {
+    "row_number": 10477,
+    "symbol": "",
+    "domain": "item",
+    "idx": "220",
+    "old": "水属性的\n招式会增强",
+    "new": "水属性的\n招式会稍微增强",
+    "reason": "恢复すこしだけ的程度限定。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sSeaIncenseDesc",
+    "final_text": "香气神奇的薰香。\n携带后，水属性的\n招式会稍微增强",
+    "old_current_text": "香气神奇的薰香。\n携带后，水属性的\n招式会增强",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "ポケモンに　もたせると\nすこしだけ　みずタイプの\nわざのいりょくが　あがる"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:41": {
+    "row_number": 10478,
+    "symbol": "",
+    "domain": "item",
+    "idx": "221",
+    "old": "对手招式\n会变得不容易命中",
+    "new": "对手招式\n会稍微变得难命中",
+    "reason": "恢复稍微；不写死百分比。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sLaxIncenseDesc",
+    "final_text": "携带后，对手招式\n会稍微变得难命中\n",
+    "old_current_text": "携带后，对手招式\n会变得不容易命中\n",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "ポケモンに　もたせると\nてきの　めいちゅうりつを\nすこしだけ　さげる"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:44": {
+    "row_number": 10533,
+    "symbol": "",
+    "domain": "item",
+    "idx": "276",
+    "old": "据说和丰缘\n传说渊源颇深",
+    "new": "据说蕴含着\n超古代的力量",
+    "reason": "原文明确说内含古代力量。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sRedOrbDesc",
+    "final_text": "散发着红色光辉的\n宝珠。据说蕴含着\n超古代的力量",
+    "old_current_text": "散发着红色光辉的\n宝珠。据说和丰缘\n传说渊源颇深",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "おおむかしの　ちからが\nこめられている　という\nあかく　かがやく　たま"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:45": {
+    "row_number": 10534,
+    "symbol": "",
+    "domain": "item",
+    "idx": "277",
+    "old": "据说和丰缘\n传说渊源颇深",
+    "new": "据说蕴含着\n超古代的力量",
+    "reason": "原文明确说内含古代力量。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sBlueOrbDesc",
+    "final_text": "散发着蓝色光辉的\n宝珠。据说蕴含着\n超古代的力量",
+    "old_current_text": "散发着蓝色光辉的\n宝珠。据说和丰缘\n传说渊源颇深",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "おおむかしの　ちからが\nこめられている　という\nあおく　かがやく　たま"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:46": {
+    "row_number": 10545,
+    "symbol": "",
+    "domain": "item",
+    "idx": "288",
+    "old": "起反应的得文特\n制产品",
+    "new": "起反应并发声的\n得文特制产品",
+    "reason": "恢复おとをだす发出声音的作用。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sDevonScopeDesc",
+    "final_text": "会对看不见的宝可\n梦起反应并发声的\n得文特制产品",
+    "old_current_text": "会对看不见的宝可\n梦起反应的得文特\n制产品",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "みえない　ポケモンに\nはんのうして　おとをだす\nデボンの　とくせいひん"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:48": {
+    "row_number": 10571,
+    "symbol": "",
+    "domain": "item",
+    "idx": "314",
+    "reason": "地震攻击范围说明符合机制；飞行免疫由战斗属性机制判定，非说明必须完整枚举的条件。",
+    "action": "accurate_clarification"
+  },
+  "NEEDS_ATTENTION:49": {
+    "row_number": 10609,
+    "symbol": "",
+    "domain": "item",
+    "idx": "352",
+    "old": "给华蓝市的奇迹自\n行车店就能交换得\n到自行车",
+    "new": "可在华蓝市的奇迹\n自行车店兑换折叠\n自行车的纸券",
+    "reason": "修复给店的病句，恢复券及折叠自行车。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sBikeVoucherDesc",
+    "final_text": "可在华蓝市的奇迹\n自行车店兑换折叠\n自行车的纸券",
+    "old_current_text": "给华蓝市的奇迹自\n行车店就能交换得\n到自行车",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "ミラクル·サイクルで\nおりたたみ　じてんしゃと\nこうかん　できる　かみ"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:50": {
+    "row_number": 10612,
+    "symbol": "",
+    "domain": "item",
+    "idx": "355",
+    "old": "用来打开的西尔佛\n公司总部大厦门锁\n的卡片式钥匙",
+    "new": "能打开西尔佛公司\n大厦门锁的卡片式\n钥匙",
+    "reason": "多余的导致病句。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sCardKeyDesc",
+    "final_text": "能打开西尔佛公司\n大厦门锁的卡片式\n钥匙",
+    "old_current_text": "用来打开的西尔佛\n公司总部大厦门锁\n的卡片式钥匙",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "カードで　できた　カギ\nシルフカンパニー　ビルの\nドアロックを　はずせる"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:51": {
+    "row_number": 10620,
+    "symbol": "",
+    "domain": "item",
+    "idx": "363",
+    "old": "有名人物的东\n西",
+    "new": "有名人物的信\n息",
+    "reason": "じょうほう是信息，不是东西。",
+    "scope": "both",
+    "action": "fix",
+    "resolved_symbol": "sFameCheckerDesc",
+    "final_text": "可以重复查看打听\n到的有名人物的信\n息",
+    "old_current_text": "可以重复查看打听\n到的有名人物的东\n西",
+    "changed_files": [
+      "patch/item_descriptions.json",
+      "../pokeemerald_us_chs/src/data/text/item_descriptions.h"
+    ],
+    "us_source_file": "src/data/text/item_descriptions.h",
+    "jp_source": [
+      {
+        "file": "src/data/text/item_descriptions.h",
+        "text": "ゆうめいな　じんぶつの\nじょうほうを　いつでも\nみなおすことが　できる"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:53": {
+    "row_number": 12056,
+    "symbol": "BattleFrontier_Lounge2_Text_SalonMaidenIsThere",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "开拓区大脑",
+    "new": "开拓之脑",
+    "reason": "统一同系列Frontier Brains术语。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "告诉你个秘密！\\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\\p那里就是由那个名叫对战塔大君的\n神秘的训练家所掌管的。",
+    "old_current_text": "告诉你个秘密！\\p被亚希达称作开拓区大脑\n的顶级训练家之一现在就在那里。\\p那里就是由那个名叫对战塔大君的\n神秘的训练家所掌管的。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/maps/BattleFrontier_Lounge2/scripts.inc",
+      "patch/batches/437_checklist_reviewed_indirect_tables.json"
+    ],
+    "us_source_file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+    "jp_source": [
+      {
+        "file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+        "text": "しってるかい？\\pあそこは　エニシダが\nフロンティアブレーンって　よんでる\\lトレーナーの　うちの　ひとり⋯⋯\\lタワータイクーンって　いう\\lなぞの　トレーナーが　おさめてるのさ！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:54": {
+    "row_number": 12203,
+    "symbol": "sText_MysteryGiftVisitingTrainerInstructions",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "您可以进行调查\\l友好商店。",
+    "new": "您可以在友好商店\\l参与调查。",
+    "reason": "恢复介词；US配信脚本，无JP对应不新增ROM覆盖。",
+    "scope": "us_only",
+    "action": "fix",
+    "final_text": "感谢使用\n神秘礼物系统。\\p由于拥有神秘卡片\n您可以在友好商店\\l参与调查。\\p通过调查您可以邀请\n训练家去琉璃市。\\p……让我给您一个\n调查的密码吧：\\p“GIVE ME\nAWESOME TRAINER”\\p把这个写在调查上并发送到\n无线连接系统。",
+    "old_current_text": "感谢使用\n神秘礼物系统。\\p由于拥有神秘卡片\n您可以进行调查\\l友好商店。\\p通过调查您可以邀请\n训练家去琉璃市。\\p……让我给您一个\n调查的密码吧：\\p“GIVE ME\nAWESOME TRAINER”\\p把这个写在调查上并发送到\n无线连接系统。",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/scripts/gift_trainer.inc"
+    ],
+    "us_source_file": "data/scripts/gift_trainer.inc",
+    "jp_source": []
+  },
+  "NEEDS_ATTENTION:55": {
+    "row_number": 12205,
+    "symbol": "Text_RepelWoreOff",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "实查当前batch432仍是FD02。US脚本填入STR_VAR_1，但Wokann repel.inc及UpdateRepelCounter不填入变量，JP须使用通用静态喷雾提示。",
+    "action": "fix",
+    "scope": "jp_only",
+    "old": null,
+    "new": "喷雾的效果消失了……$",
+    "final_text": "喷雾的效果消失了……",
+    "old_current_text": "{STR_VAR_1}的效果消失了……",
+    "changed_files": [
+      "patch/batches/432_checklist_scripts.json"
+    ],
+    "us_source_file": "data/scripts/repel.inc",
+    "jp_source": [
+      {
+        "file": "data/scripts/repel.inc",
+        "text": "スプレーのこうかが　きれた$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:56": {
+    "row_number": 12230,
+    "symbol": "BravoTrainerBattleTower_Text_ResponseUnsatisfied",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "old": "……除了{STR_VAR_1}”之外简直",
+    "new": "……除了“{STR_VAR_1}”之外简直",
+    "reason": "补回配对引号。",
+    "scope": "both",
+    "action": "fix",
+    "final_text": "“{STR_VAR_1}。”\n这也太贴切了吧？\\p最后和{STR_VAR_3}的那场对战\n……除了“{STR_VAR_1}”之外简直\\l找不到更合适的描述了！\\p{STR_VAR_2}的失落感\n简直扑面而来呢！",
+    "old_current_text": "“{STR_VAR_1}。”\n这也太贴切了吧？\\p最后和{STR_VAR_3}的那场对战\n……除了{STR_VAR_1}”之外简直\\l找不到更合适的描述了！\\p{STR_VAR_2}的失落感\n简直扑面而来呢！",
+    "changed_files": [
+      "../pokeemerald_us_chs/data/text/tv.inc",
+      "patch/batches/439_checklist_common_placeholders.json"
+    ],
+    "us_source_file": "data/text/tv.inc",
+    "jp_source": [
+      {
+        "file": "data/text/tv/battle_tower_broadcast.inc",
+        "text": "‘{B_COPY_VAR_1}！'\nなるほどねぇ\\pたしかに　{B_COPY_VAR_3}さんとの　たたかいは\n‘{B_COPY_VAR_1}'　としか　いいようがない\\lたたかい　でしたからねぇ\\p{B_COPY_VAR_2}さんの　くやしさが\nよく　つたわってくるよ！　くー！$"
+      }
+    ]
+  },
+  "NEEDS_ATTENTION:57": {
+    "row_number": 13242,
+    "symbol": "sText_Cancel",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:58": {
+    "row_number": 13243,
+    "symbol": "sText_ChooseAPkmn",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:59": {
+    "row_number": 13244,
+    "symbol": "sText_Summary",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:60": {
+    "row_number": 13245,
+    "symbol": "sText_Trade",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:61": {
+    "row_number": 13246,
+    "symbol": "sText_Trade2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:62": {
+    "row_number": 13247,
+    "symbol": "sText_TheTradeHasBeenCanceled",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:63": {
+    "row_number": 13248,
+    "symbol": "sText_OnlyPkmnForBattle",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:64": {
+    "row_number": 13249,
+    "symbol": "sText_WaitingForYourFriend",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:65": {
+    "row_number": 13250,
+    "symbol": "sText_AwaitingCommunication",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:66": {
+    "row_number": 13251,
+    "symbol": "sText_CancelModeWithTheseMembers",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:67": {
+    "row_number": 13252,
+    "symbol": "sText_OfferToTradeMon",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:68": {
+    "row_number": 13253,
+    "symbol": "sText_TrainerAppearsBusy",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:69": {
+    "row_number": 13254,
+    "symbol": "sText_ChooseTrainer",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:70": {
+    "row_number": 13255,
+    "symbol": "sText_PlayerHasBeenAskedToRegisterYouPleaseWait",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:71": {
+    "row_number": 13256,
+    "symbol": "sText_Battle",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:72": {
+    "row_number": 13257,
+    "symbol": "sText_Chat2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:73": {
+    "row_number": 13258,
+    "symbol": "sText_Greetings",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:74": {
+    "row_number": 13259,
+    "symbol": "sText_Exit",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:75": {
+    "row_number": 13260,
+    "symbol": "sText_Exit2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:76": {
+    "row_number": 13261,
+    "symbol": "sText_Info",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:77": {
+    "row_number": 13262,
+    "symbol": "sText_NameWantedOfferLv",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:78": {
+    "row_number": 13263,
+    "symbol": "sText_SingleBattle",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:79": {
+    "row_number": 13264,
+    "symbol": "sText_DoubleBattle",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:80": {
+    "row_number": 13265,
+    "symbol": "sText_MultiBattle",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:81": {
+    "row_number": 13266,
+    "symbol": "sText_Chat",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:82": {
+    "row_number": 13267,
+    "symbol": "sText_Cards",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:83": {
+    "row_number": 13268,
+    "symbol": "sText_WonderCards",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:84": {
+    "row_number": 13269,
+    "symbol": "sText_WonderNews",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:85": {
+    "row_number": 13270,
+    "symbol": "sText_BerryCrush",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:86": {
+    "row_number": 13271,
+    "symbol": "sText_RecordCorner",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:87": {
+    "row_number": 13272,
+    "symbol": "sText_CoolContest",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:88": {
+    "row_number": 13273,
+    "symbol": "sText_BeautyContest",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:89": {
+    "row_number": 13274,
+    "symbol": "sText_CuteContest",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:90": {
+    "row_number": 13275,
+    "symbol": "sText_SmartContest",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:91": {
+    "row_number": 13276,
+    "symbol": "sText_ToughContest",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:92": {
+    "row_number": 13277,
+    "symbol": "sText_BattleTowerLv50",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:93": {
+    "row_number": 13278,
+    "symbol": "sText_BattleTowerOpenLv",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:94": {
+    "row_number": 13279,
+    "symbol": "sText_TrainerCardInfoPage1",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:95": {
+    "row_number": 13280,
+    "symbol": "sText_TrainerCardInfoPage2",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:96": {
+    "row_number": 13281,
+    "symbol": "sText_GladToMeetYouMale",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:97": {
+    "row_number": 13282,
+    "symbol": "sText_GladToMeetYouFemale",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:98": {
+    "row_number": 13283,
+    "symbol": "sText_FinishedCheckingPlayersTrainerCard",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:99": {
+    "row_number": 13284,
+    "symbol": "gText_PokemartSign",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:100": {
+    "row_number": 13285,
+    "symbol": "gText_PokemonCenterSign",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:101": {
+    "row_number": 13286,
+    "symbol": "gText_MomOrDadMightLikeThisProgram",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:102": {
+    "row_number": 13287,
+    "symbol": "gText_WhichFloorWouldYouLike",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:103": {
+    "row_number": 13288,
+    "symbol": "gText_SandstormIsVicious",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:104": {
+    "row_number": 13289,
+    "symbol": "gText_SelectWithoutRegisteredItem",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:105": {
+    "row_number": 13290,
+    "symbol": "gText_PokemonTrainerSchoolEmail",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:106": {
+    "row_number": 13291,
+    "symbol": "gText_PlayerHouseBootPC",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:107": {
+    "row_number": 13292,
+    "symbol": "gText_PokeblockLinkCanceled",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:108": {
+    "row_number": 13293,
+    "symbol": "gText_PlayerWhitedOut",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:109": {
+    "row_number": 13294,
+    "symbol": "gText_RegisteredTrainerinPokeNav",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:110": {
+    "row_number": 13295,
+    "symbol": "gText_ComeBackWithSecretPower",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:111": {
+    "row_number": 13296,
+    "symbol": "gText_PokerusExplanation",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:112": {
+    "row_number": 13297,
+    "symbol": "gText_DoorOpenedFarAway",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:113": {
+    "row_number": 13298,
+    "symbol": "gText_BigHoleInTheWall",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:114": {
+    "row_number": 13299,
+    "symbol": "gText_SorryWirelessClubAdjustments",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:115": {
+    "row_number": 13300,
+    "symbol": "gText_UndergoingAdjustments",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:116": {
+    "row_number": 13301,
+    "symbol": "gText_PlayerHandedOverTheItem",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:117": {
+    "row_number": 13302,
+    "symbol": "gText_ThankYouForAccessingMysteryGift",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:118": {
+    "row_number": 13303,
+    "symbol": "gText_PlayerFoundOneTMHM",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:119": {
+    "row_number": 13304,
+    "symbol": "gText_Sudowoodo_Attacked",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  },
+  "NEEDS_ATTENTION:120": {
+    "row_number": 13305,
+    "symbol": "gText_LegendaryFlewAway",
+    "domain": "untransplanted_full",
+    "idx": "",
+    "reason": "必须按已验证对象/别名或现有覆盖核对，报告缺独立符号不等于缺中文；保留当前文字，记录实际覆盖证据。",
+    "action": "verify_mapping"
+  }
+}
