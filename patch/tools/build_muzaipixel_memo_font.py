@@ -69,6 +69,27 @@ def main() -> None:
     chars.update("".join(entry["description"] for entry in pokedex_entries[1:]))
     chars.discard("\n")
 
+    trainer_class_names = re.findall(
+        r'_\("([^"]*)"\)',
+        (ROOT / "../pokeemerald_us_chs/src/data/text/trainer_class_names.h").read_text(encoding="utf-8"),
+    )
+    trainer_class_names[50] = "宝可梦训练家"
+    chars.update("".join(trainer_class_names))
+
+    trainer_names = re.findall(
+        r'\.trainerName\s*=\s*_\("([^"]*)"\)',
+        (ROOT / "../pokeemerald_us_chs/src/data/trainers.h").read_text(encoding="utf-8"),
+    )
+    chars.update("".join(trainer_names))
+    chars.discard("\n")
+
+    strings_c = (ROOT / "../pokeemerald_us_chs/src/strings.c").read_text(encoding="utf-8")
+    chars.update("".join(re.findall(
+        r'gText_\w*MatchCall(?:Desc|Name)\w*\[\]\s*=\s*_\("([^"]*)"\)',
+        strings_c,
+    )))
+    chars.discard("\n")
+
     cmap = TTFont(args.font).getBestCmap()
     missing = sorted(char for char in chars if ord(char) not in cmap)
     if missing:
