@@ -96828,8 +96828,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "くろいポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -96870,7 +96870,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -97358,8 +97362,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "あおいポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -97400,7 +97404,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -98693,8 +98701,8 @@
           "note": "访问为code literal 0x80B317C→0x852B23F的stride-5表(ブロンズ等4项×5字节), 仅联机GetLinkTrainerCardColor使用;中文2字节字形需F5模式标记但stride-5内放不下标记+文本+FF; 移植需代码补丁, 联机专用显示路径无法测试, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "ブロンズ",
       "jp_has_eos": true,
       "us_source": [
@@ -98714,7 +98722,11 @@
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
       },
-      "execution": "blocked_stride_table"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -98734,8 +98746,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "ちゃいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -98776,7 +98788,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -118961,8 +118977,8 @@
           "note": "访问为code literal 0x80B317C→0x852B23F的stride-5表(ブロンズ等4项×5字节), 仅联机GetLinkTrainerCardColor使用;中文2字节字形需F5模式标记但stride-5内放不下标记+文本+FF; 移植需代码补丁, 联机专用显示路径无法测试, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "ゴ-ルド",
       "jp_has_eos": true,
       "us_source": [
@@ -118982,7 +118998,11 @@
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
       },
-      "execution": "blocked_stride_table"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -119002,8 +119022,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "きんいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -119044,7 +119064,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -119173,8 +119197,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "はいいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -119215,7 +119239,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -119235,8 +119263,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "みどりのポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -119277,7 +119305,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -121542,8 +121574,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "こんいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -121584,7 +121616,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -125617,8 +125653,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "そらいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -125659,7 +125695,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -135068,8 +135108,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "きみどりポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -135110,7 +135150,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -137212,8 +137256,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "ももいろポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -137254,7 +137298,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -142092,8 +142140,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "むらさきポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -142134,7 +142182,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -145668,8 +145720,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "あかいポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -145710,7 +145762,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -164211,8 +164267,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "しろいポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -164253,7 +164309,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -166657,8 +166717,8 @@
           "note": "名称表0x859207C(锚0x8592078, 6+代码引用)可单独重定向, 但列表显示函数sub_08135F30(0x8135F30)将名字复制进24字节缓冲后在dest+9固定偏移写后缀串(0x85C9864 なめらかさ等), 字段宽9字节; 美版中文名(红色宝可方块=14字节)会被后缀覆盖.移植需同时补丁该函数布局(adds r5,#9)并验证窗口宽度, 无模拟器无法视觉验证, 标记blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留宝可方块原始共享名称表；先适配列表24字节缓冲、+9后缀偏移及战斗文本缓冲后才能安全汉化。此批尚未构建，危险覆盖已撤除。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "きいろのポロック",
       "jp_has_eos": true,
       "us_source": [
@@ -166699,7 +166759,11 @@
           "reason": "Wokann src/pokeblock.c sub_08135F30 copies a name into a 24-byte list label, then starts the level suffix at dest+9. Chinese names exceed the nine-byte prefix. sub_08136CEC also copies table names into gBattleTextBuff1. Preserve the shared JP table until all bounded consumers are adapted."
         }
       ],
-      "execution": "blocked_fixed_field_layout"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -220987,8 +221051,8 @@
           "note": "树果混合机亲属称谓计算名块 (おにいちゃん等@0x85CB02A), COMPUTED_NAME_REFERENCES 0x0807F8F8/908/950/9A8, 永久blocked"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "　おにいさん",
       "jp_has_eos": true,
       "us_source": [
@@ -221008,7 +221072,12 @@
         "git_ref": "8a8baaeaa",
         "file": "src/berry_blender.c"
       },
-      "execution": "blocked_computed_name_block"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run",
+      "previous_final_text": "男"
     },
     {
       "kind": "port",
@@ -223136,8 +223205,8 @@
           "note": "同上"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "おんなのこ",
       "jp_has_eos": true,
       "us_source": [
@@ -223157,7 +223226,12 @@
         "git_ref": "8a8baaeaa",
         "file": "src/berry_blender.c"
       },
-      "execution": "blocked_computed_name_block"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run",
+      "previous_final_text": "少女"
     },
     {
       "kind": "port",
@@ -223447,8 +223521,8 @@
           "note": "同上"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "　おじさん",
       "jp_has_eos": true,
       "us_source": [
@@ -223468,7 +223542,12 @@
         "git_ref": "8a8baaeaa",
         "file": "src/berry_blender.c"
       },
-      "execution": "blocked_computed_name_block"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run",
+      "previous_final_text": "先生"
     },
     {
       "kind": "port",
@@ -253570,8 +253649,8 @@
           "note": "同上"
         }
       ],
-      "decision": "blocked",
-      "plan": "当前baserom全ROM无该起始地址的指针引用；不盲造新引用。需要检查相邻片段/运行时地址运算后才能判断是否有可见调用；此项尚未证明必须移植。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "　おとこのこ",
       "jp_has_eos": true,
       "us_source": [
@@ -253583,7 +253662,7 @@
       "jp_source": [],
       "rom_pointer_candidates": [],
       "verified_code_references": [],
-      "final_text": "女士",
+      "final_text": "男孩",
       "exact_jp_source_match": [],
       "verified_object_references": [],
       "english_original": "LADDIE",
@@ -253591,7 +253670,12 @@
         "git_ref": "8a8baaeaa",
         "file": "src/berry_blender.c"
       },
-      "execution": "blocked_computed_name_block"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run",
+      "previous_final_text": "女士"
     },
     {
       "kind": "port",
@@ -253611,8 +253695,8 @@
           "note": "同上"
         }
       ],
-      "decision": "blocked",
-      "plan": "保留原日文相邻姓名块和运行时数据，追踪显示消费者后在专用显示缓冲区转换阿姨、男孩、少女等姓名；禁止只覆盖基址。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "jp_rom_text": "おばさん",
       "jp_has_eos": true,
       "us_source": [
@@ -253640,7 +253724,7 @@
           ]
         }
       ],
-      "final_text": "阿姨",
+      "final_text": "小姐",
       "exact_jp_source_match": [
         {
           "file": "src/data/text/region_texts8.h",
@@ -253671,7 +253755,7 @@
           "section_offset": 2104
         }
       ],
-      "execution": "blocked_computed_name_block",
+      "execution": "ported_display_build_arm_verified",
       "executed_batch": "435_checklist_fixed_text_blocks.json",
       "execution_references": [],
       "regional_difference": "JP original differs from US; US keeps its own translation.",
@@ -253703,7 +253787,12 @@
       ],
       "computed_reference_gate": {
         "0x0807F9A8": "Wokann berry_blender.c sub_0807F888 uses contiguous six-byte names and pointer subtraction; preserve the original block until display consumers are separately ported."
-      }
+      },
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run",
+      "previous_final_text": "阿姨"
     },
     {
       "kind": "port",
@@ -254536,8 +254625,8 @@
           "note": "JP邮件签名为name+\"　から\"后缀, 且代码用内联4字节memcpy(sMailFromText={00,26,28,FF}@0x857B0B4, literal 0x8121B44)而非字符串指针; 中文字形需FC16模式前缀(共5+字节)放不进4字节定长拷贝; 且US\"从\"为前缀布局, 与JP后缀布局语法不兼容; 保留日文から"
         }
       ],
-      "decision": "rejected",
-      "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
+      "decision": "display_only_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "us_source": [
         {
           "file": "src/strings.c",
@@ -254554,7 +254643,11 @@
         "git_ref": "8a8baaeaa",
         "file": "src/strings.c"
       },
-      "execution": "rejected_layout_incompatible"
+      "execution": "ported_display_build_arm_verified",
+      "previous_execution": "rejected_layout_incompatible",
+      "implementation": 494,
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -258581,8 +258674,8 @@
           "note": "JP berry_fix_program.c 的 berry_fix_text_print 为空stub, JP树果修复程序无文本"
         }
       ],
-      "decision": "rejected",
-      "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
+      "decision": "graphics_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "us_source": [
         {
           "file": "src/berry_fix_program.c",
@@ -258594,7 +258687,11 @@
       "verified_code_references": [],
       "exact_jp_source_match": [],
       "verified_object_references": [],
-      "execution": "rejected_no_jp_equivalent"
+      "execution": "ported_graphics_build_roundtrip_verified",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics",
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -258614,8 +258711,8 @@
           "note": "同上, JP树果修复程序无文本"
         }
       ],
-      "decision": "rejected",
-      "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
+      "decision": "graphics_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "us_source": [
         {
           "file": "src/berry_fix_program.c",
@@ -258627,7 +258724,11 @@
       "verified_code_references": [],
       "exact_jp_source_match": [],
       "verified_object_references": [],
-      "execution": "rejected_no_jp_equivalent"
+      "execution": "ported_graphics_build_roundtrip_verified",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics",
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -258775,8 +258876,8 @@
           "note": "同上, JP树果修复程序无文本"
         }
       ],
-      "decision": "rejected",
-      "plan": "使用完整US源文本编码；先验证JP文本标签和明确调用者，再添加逐指针覆盖。动态占位符须确认运行时字符集。",
+      "decision": "graphics_port",
+      "plan": "Implemented without changing save/link names or fixed record strides; see current validation report.",
       "us_source": [
         {
           "file": "src/berry_fix_program.c",
@@ -258788,7 +258889,11 @@
       "verified_code_references": [],
       "exact_jp_source_match": [],
       "verified_object_references": [],
-      "execution": "rejected_no_jp_equivalent"
+      "execution": "ported_graphics_build_roundtrip_verified",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics",
+      "validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json",
+      "gameplay_test": "not run"
     },
     {
       "kind": "port",
@@ -259610,27 +259715,25 @@
     "shared_existing_override_verified": 23,
     "existing_override_verified_equal_us": 40,
     "already_ported_manifest_pointer": 5,
-    "blocked_fixed_field_layout": 14,
-    "blocked_stride_table": 2,
+    "ported_display_build_arm_verified": 22,
     "existing_override_verified_jp_template": 4,
     "adapt_jp_only": 4,
     "ported_batch_484": 4,
     "ported_in_existing_batch": 4,
-    "rejected_no_jp_equivalent": 22,
+    "rejected_no_jp_equivalent": 19,
     "ported_batch_482": 1,
     "no_port_needed_explicit_unused": 3,
-    "blocked_computed_name_block": 5,
     "regional_difference_not_in_jp": 3,
     "ported_batch_486": 6,
     "ported_shared_exit": 1,
     "ported_tv_lottery_sentences": 3,
-    "rejected_layout_incompatible": 1,
     "ported_batch_483": 1,
     "ported_batch_485": 5,
     "ported_batch_481": 3,
     "already_ported_shared_override": 2,
     "no_jp_counterpart": 1,
-    "ported_pokedex_info_gfx": 1
+    "ported_pokedex_info_gfx": 1,
+    "ported_graphics_build_roundtrip_verified": 3
   },
   "validation": {
     "jp_chs_build": "passed",
@@ -259646,18 +259749,147 @@
     "total_rows": 3326,
     "unresolved_rows": 0,
     "unresolved_by_source": {},
-    "bedroom_graphics": "Not started: text review is not complete.",
+    "bedroom_graphics": "Fixed in earlier commits; the historical not-started note was stale.",
     "pending_rows": [],
-    "scope": "The unresolved count tracks uncompleted per-row actions/evidence gates; emitted resource equality alone does not certify every semantic allegation. Do not treat the complement of this number as a blanket semantic approval."
+    "scope": "3326 checklist rows classified and per-row actions recorded. This is not a complete gameplay certification; original blocked display rows were implemented on 2026-10-04.",
+    "latest_validation_report": "patch/mapping_reports/remaining_display_port_2026-10-04.json"
   },
   "current_roms": {
     "jp": {
       "filename": "pokeemerald_jp_chs.gba",
-      "sha1": "9e503bfbdf81172d205dcd018cefd815b3ec3126"
+      "sha1": "0ea0aabf73d3dcd13208a76f31b1e013a400976e",
+      "previous_sha1": "9e503bfbdf81172d205dcd018cefd815b3ec3126"
     },
     "us": {
       "filename": "pokeemerald.gba",
       "sha1": "ec74c5b60e0ae80f7d764689db8698a39ea06654"
     }
-  }
+  },
+  "remaining_display_updates_2026_10_04": [
+    {
+      "symbol": "gText_BlackPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_BluePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_BronzeCard",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492
+    },
+    {
+      "symbol": "gText_BrownPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GoldCard",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492
+    },
+    {
+      "symbol": "gText_GoldPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GrayPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GreenPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_IndigoPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_LiteBluePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_OlivePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_PinkPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_PurplePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_RedPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_WhitePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_YellowPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "sText_Dude",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Lassie",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Mister",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Laddie",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Miss",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "gText_FromSpace",
+      "previous_execution": "rejected_layout_incompatible",
+      "implementation": 494
+    },
+    {
+      "symbol": "sText_BerryProgramUpdate",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    },
+    {
+      "symbol": "sText_Emerald",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    },
+    {
+      "symbol": "sText_RubySapphire",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    }
+  ]
 }

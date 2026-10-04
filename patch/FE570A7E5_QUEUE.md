@@ -1,5 +1,9 @@
 # `fe570a7e5` execution queue
 
+**Historical queue:** do not resume from the old `NEXT` rows below. The later
+3326-row review superseded this queue. See `REMAINING_PORT_2026-10-04.md` for
+the final structured-display implementations and outstanding gameplay tests.
+
 This file is the **resume point** for this US commit. Work only the first
 `NEXT` row. Move it to `DONE` or `PARKED` with evidence before starting the
 following row. `PARKED` means a direct ROM patch is unsafe; it is not work

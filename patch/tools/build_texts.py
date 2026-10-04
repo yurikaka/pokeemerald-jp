@@ -560,6 +560,14 @@ def main() -> None:
             document["descriptions"] = [
                 descriptions[name].replace("\\n", "\n") for name in description_names
             ]
+            decoration_names = re.findall(r'\.name\s*=\s*_\("([^"\n]*)"\)', header_source)
+            if len(decoration_names) != document["count"]:
+                raise ValueError(f"{header_path} has an unexpected decoration name count")
+            document["name_symbols"] = []
+            for index, decoration_name in enumerate(decoration_names):
+                symbol = f"{document['name']}_name_{index}"
+                document["name_symbols"].append(symbol)
+                definitions.append(({"name": symbol, "text": decoration_name, "compact_resource": True}, False))
             fixed_tables.append(document)
             continue
         if isinstance(document, dict) and document.get("kind") == "us_region_map_table":
@@ -582,6 +590,8 @@ def main() -> None:
             fixed_tables.append(document)
             continue
         document_wrap = isinstance(document, dict) and "dialogue" in document.get("category", "").lower()
+        if isinstance(document, dict):
+            fixed_tables.extend(document.get("compact_tables", []))
         for definition in document if isinstance(document, list) else document["texts"]:
             definitions.append((definition, definition.get("auto_wrap", document_wrap)))
 
@@ -589,6 +599,7 @@ def main() -> None:
     names = set()
     wrapped_strings = 0
     wrapped_pages = 0
+    compact_resources = []
     for definition, auto_wrap in definitions:
         name = definition["name"]
         if name in names:
@@ -607,8 +618,24 @@ def main() -> None:
             encoded, changed_pages = wrap_dialogue(encoded, charmap)
             wrapped_strings += int(changed_pages > 0)
             wrapped_pages += changed_pages
+        if definition.get("compact_resource"):
+            resource_index = len(compact_resources)
+            if resource_index >= 0xF0 or len(encoded) > 255 or not encoded.startswith(CONTROLS["ENG"]):
+                raise ValueError(f"invalid compact display resource: {name}")
+            compact_resources.append(name)
+            lines.extend((f".L{name}_display:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+            encoded = bytes((0xF5, 0xF1, resource_index, 0xFF))
         lines.extend((f".global {name}", f"{name}:", "    .byte " + ", ".join(f"0x{x:02X}" for x in encoded)))
+    lines.extend((".align 2", ".global ChsDisplayResourceNames", "ChsDisplayResourceNames:"))
+    for name in compact_resources:
+        lines.append(f"    .4byte .L{name}_display")
+    lines.extend((".global ChsDisplayResourceCount", f".equ ChsDisplayResourceCount, {len(compact_resources)}"))
     for table in fixed_tables:
+        if table["kind"] == "contest_display_names":
+            lines.extend((".align 2", f".global {table['name']}", f"{table['name']}:"))
+            for entry in table["entries"]:
+                lines.append(f"    .4byte {entry['nickname']}, {entry['trainer']}")
+            continue
         if table["kind"] == "us_region_map_table":
             base_offset = int(table["base_offset"], 0)
             stride = table["stride"]
@@ -640,7 +667,12 @@ def main() -> None:
             for index in range(table["count"]):
                 offset = base_offset + index * stride
                 label = f".L{table['name']}_description_{index}"
-                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset:X}, {description_offset}')
+                name_symbol = table["name_symbols"][index]
+                resource_index = compact_resources.index(name_symbol)
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset:X}, 1')
+                name_bytes = bytes((0xF5, 0xF1, resource_index, 0xFF)) + bytes((0xFF,)) * 7
+                lines.append("    .byte " + ", ".join(f"0x{value:02X}" for value in name_bytes))
+                lines.append(f'    .incbin "baserom_jp.gba", 0x{offset + 12:X}, {description_offset - 12}')
                 lines.append(f"    .4byte {label}")
                 suffix_offset = offset + description_offset + 4
                 suffix_size = stride - description_offset - 4
@@ -714,12 +746,16 @@ def main() -> None:
         lines.extend((".align 2", f".global {name}", f"{name}:"))
         for index, entry in enumerate(table["strings"]):
             if isinstance(entry, dict):
-                encoded = convert_us_encoded_text(
-                    bytes.fromhex(entry["us_encoded_hex"]),
-                    set(entry.get("japanese_placeholders", [])),
-                    entry.get("japanese_dynamic", False),
-                    entry.get("initial_japanese", False),
-                )
+                if "compact_resource" in entry:
+                    resource_index = compact_resources.index(entry["compact_resource"])
+                    encoded = bytes((0xF5, 0xF1, resource_index, 0xFF))
+                else:
+                    encoded = convert_us_encoded_text(
+                        bytes.fromhex(entry["us_encoded_hex"]),
+                        set(entry.get("japanese_placeholders", [])),
+                        entry.get("japanese_dynamic", False),
+                        entry.get("initial_japanese", False),
+                    )
             else:
                 if table.get("compact_chinese", False):
                     encoded = encode_compact_chinese_text(entry, charmap)

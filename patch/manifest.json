@@ -174,9 +174,54 @@
       "address": "0x081CA7F4",
       "original": "30b582b0041c0d1c281c00210f223ef6f1fa",
       "symbol": "ChsBufferMatchCallNameAndDesc"
+    },
+    {
+      "address": "0x08135F30",
+      "original": "70b54e46454660b4051c0c04240c0021",
+      "symbol": "ChsBuildPokeblockListName"
+    },
+    {
+      "address": "0x08083A5C",
+      "original": "f0b54f464646c0b486b089460e9c0006",
+      "symbol": "ChsBlenderTextPrinter"
+    },
+    {
+      "address": "0x08121C2C",
+      "original": "081cc03002900120012177f061ff0020",
+      "symbol": "ChsMailSignature"
+    },
+    {
+      "address": "0x080DA6A4",
+      "original": "30b588b0041c0d1c2406240e2d062d0e",
+      "symbol": "ChsPrintContestTrainerWithColor"
+    },
+    {
+      "address": "0x080F8AF4",
+      "original": "00b50548054909888901054a89180ff7",
+      "symbol": "ChsBufferContestTrainerName"
+    },
+    {
+      "address": "0x080F8BD4",
+      "original": "10b500210b4a10780b4c0c4b002808d0",
+      "symbol": "ChsBufferContestWinnerTrainerName"
+    },
+    {
+      "address": "0x080F8B18",
+      "original": "00b50548054909888901054a89180ff7",
+      "symbol": "ChsBufferContestNickname"
+    },
+    {
+      "address": "0x080F8C14",
+      "original": "10b500210b4a10780b4c0c4b002808d0",
+      "symbol": "ChsBufferContestWinnerNickname"
     }
   ],
   "veneer_hooks": [
+    {
+      "address": "0x08130194",
+      "original": "1631d8f68ffb1248",
+      "symbol": "ChsContestPaintingTrainerName"
+    },
     {
       "address": "0x080DA720",
       "original": "8018fff79fff0548",
@@ -201,6 +246,16 @@
       "address": "0x081CDE98",
       "original": "00b50904090c0122",
       "symbol": "ChsPrintSearchRankString"
+    },
+    {
+      "address": "0x08082F98",
+      "original": "85f79efc3868011c",
+      "symbol": "ChsBlenderResultsNameAppend"
+    },
+    {
+      "address": "0x08083690",
+      "original": "891885f721f93868",
+      "symbol": "ChsBlenderRankingNameAppend"
     }
   ],
   "inline_table_writes": [
@@ -276,8 +331,6 @@
     { "address": "0x080DCBD4", "original": "2bf770fe", "replacement": "fdf7a4fd" },
     { "address": "0x080F629E", "original": "12f70bfb", "replacement": "e4f73ffa" },
     { "address": "0x080F6BAC", "original": "11f784fe", "replacement": "e3f7b8fd" },
-    { "address": "0x080F8B26", "original": "0ff7c7fe", "replacement": "e1f7fbfd" },
-    { "address": "0x080F8C3C", "original": "0ff73cfe", "replacement": "e1f770fd" },
     { "address": "0x080F9306", "original": "0ff7d7fa", "replacement": "e1f70bfa" },
     { "address": "0x081301A0", "original": "d8f68afb", "replacement": "aaf7c2fa" },
     { "address": "0x081301F8", "original": "d8f65efb", "replacement": "aaf796fa" },
@@ -2593,7 +2646,13 @@
     {"address": "0x085BE514","original": "60665cffffffffff","replacement": "f563906b15ffffff"},
     {"address": "0x085BE548","original": "60566b5bffffffff","replacement": "f563bb6673ffffff"},
     {"address": "0x085BE57C","original": "58799053ffffffff","replacement": "f566d967e46b9aff"},
-    {"address": "0x085BE5B0","original": "567851ffffffffff","replacement": "f566b667676db0ff"}
+    {"address": "0x085BE5B0","original": "567851ffffffffff","replacement": "f566b667676db0ff"},
+    {
+      "address": "0x08592213",
+      "original": "41",
+      "replacement": "40",
+      "comment": "Pokeblock list uses small Chinese glyphs within the original 104-pixel window."
+    }
   ],
   "mode_jump_table": [
     {
@@ -2889,6 +2948,11 @@
       "old": "0x0854385C",
       "symbol": "ChsPokedexSearchGfx",
       "expected": 1
+    },
+    {
+      "old": "0x08580CD1",
+      "symbol": "ChsDecorationsNameBase",
+      "expected": 11
     }
   ],
   "pointer_writes": [
@@ -3563,6 +3627,11 @@
       "address": "0x08134938",
       "original": "0x0859130C",
       "symbol": "ChsWallClockGfx"
+    },
+    {
+      "address": "0x081BAA80",
+      "original": "0x085E72E4",
+      "symbol": "ChsBerryFixGraphics"
     }
   ]
 }

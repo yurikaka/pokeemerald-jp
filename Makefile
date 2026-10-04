@@ -25,7 +25,9 @@ PATCH_BUILD := build/patch
 PATCH_ELF := $(PATCH_BUILD)/payload.elf
 PATCH_BIN := $(PATCH_BUILD)/payload.bin
 PATCH_MENU_INFO_US_GFX := $(PATCH_BUILD)/menu_info_us.4bpp
-PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp
+PATCH_BERRY_FIX_GFX := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene)_tiles.4bpp patch/gfx/berry_fix_$(scene)_map.4bpp)
+PATCH_BERRY_FIX_PALS := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene).gbapal)
+PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp $(PATCH_BERRY_FIX_GFX)
 PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin
@@ -65,7 +67,7 @@ $(OBJFILE): %.o: %.s
 $(PATCH_BUILD):
 	mkdir -p $@
 
-$(PATCH_BUILD)/texts.inc $(PATCH_BUILD)/trainer_names_inline.bin &: $(PATCH_TEXTS) patch/charmap_chs.txt patch/tools/build_texts.py | $(PATCH_BUILD)
+$(PATCH_BUILD)/texts.inc $(PATCH_BUILD)/trainer_names_inline.bin &: $(PATCH_TEXTS) patch/charmap_chs.txt patch/tools/build_texts.py ../pokeemerald_us_chs/src/data/decoration/header.h ../pokeemerald_us_chs/src/data/decoration/description.h | $(PATCH_BUILD)
 	$(PYTHON) patch/tools/build_texts.py patch/charmap_chs.txt $(PATCH_BUILD)/texts.inc $(PATCH_TEXTS)
 
 $(PATCH_BUILD)/chinese_normal.latfont: patch/fonts/chinese_normal.png | $(PATCH_BUILD)
@@ -107,6 +109,9 @@ patch/gfx/bag_hm_icon.4bpp: patch/tools/build_bag_hm_icon.py patch/tools/build_b
 patch/gfx/wallclock.4bpp: patch/tools/build_wallclock_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/wallclock/clock.png.4bpp.lz ../pokeemerald_wokann_dev/graphics/wallclock/clock_start.bin ../pokeemerald_wokann_dev/graphics/wallclock/clock_view.bin
 	$(PYTHON) patch/tools/build_wallclock_gfx.py
 
+$(PATCH_BERRY_FIX_GFX) $(PATCH_BERRY_FIX_PALS) &: patch/tools/build_berry_fix_gfx.py patch/tools/build_berry_tag_gfx.py patch/tools/build_texts.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_us_chs/src/berry_fix_program.c ../pokeemerald_wokann_dev/src/berry_fix_graphics.c | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_berry_fix_gfx.py
+
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
@@ -123,7 +128,7 @@ $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
 		patch/gfx/title_logo.8bpp.lz patch/gfx/title_logo.bin.lz \
 		patch/gfx/title_palette.gbapal patch/gfx/title_emerald.8bpp.lz \
-		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX)
+		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX) $(PATCH_BERRY_FIX_PALS)
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 
 $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld

@@ -1,6 +1,16 @@
 # US-to-JP localization tracker
 
-## Dashboard
+## Current Status — 2026-10-04
+
+The dashboard below is historical, not the current resume queue. The completed
+3326-row review and the final seven active structured-display groups are tracked
+in `REMAINING_PORT_2026-10-04.md` and
+`mapping_reports/remaining_display_port_2026-10-04.json`.
+All seven groups now have implementations and automated validation; full GBA
+gameplay validation remains pending. Deliberate save/link/keyboard exclusions
+and dormant JP-only resources are not counted as untranslated active targets.
+
+## Historical Dashboard
 
 **Current target:** `fe570a7e5` — **IN PROGRESS; do not start a later US
 commit.** The exact resume point is `patch/FE570A7E5_QUEUE.md`; work only its

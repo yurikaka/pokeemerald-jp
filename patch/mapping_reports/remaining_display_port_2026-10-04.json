@@ -1,0 +1,1309 @@
+{
+  "date": "2026-10-04",
+  "scope": "Previously blocked fixed-layout display names",
+  "source": "../pokeemerald_us_chs",
+  "reference": "../pokeemerald_wokann_dev",
+  "runtime_testing": "ARM helper execution passed; full GBA gameplay not run",
+  "display_token": "F5 F1 index; EOS remains at the original fixed-field boundary",
+  "persistent_data": "No Pokemon, save or link record name writes changed",
+  "entries": [
+    {
+      "family": "decoration",
+      "count": 121,
+      "source": "src/data/decoration/header.h",
+      "jp_source": "src/decoration.c, src/scrcmd.c, src/shop.c, src/trader.c, src/tv.c",
+      "layout": "28-byte records; replace only the 11-byte name field in the relocated display table; retain id/permission/shape/category/price/tiles and existing localized descriptions",
+      "interior_references": [
+        {
+          "address": "0x0812742C",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/decoration.o",
+          "object_sha256": "033b372828b5f2725ff2c1aa0dc6a823427e76a43f307ad44600aed08fd98043",
+          "section": ".text",
+          "section_base": "0x08126950",
+          "section_length": 15260,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 2780
+        },
+        {
+          "address": "0x0812A430",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/decoration.o",
+          "object_sha256": "033b372828b5f2725ff2c1aa0dc6a823427e76a43f307ad44600aed08fd98043",
+          "section": ".text",
+          "section_base": "0x08126950",
+          "section_length": 15260,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 15072
+        },
+        {
+          "address": "0x0809AA5C",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/scrcmd.o",
+          "object_sha256": "eacaf1c29bc8572a6436763b5ee57ce919be7fc2d449875e9b134291bebfdea8",
+          "section": ".text",
+          "section_base": "0x08098C54",
+          "section_length": 11104,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 7688
+        },
+        {
+          "address": "0x080DF590",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/shop.o",
+          "object_sha256": "c5e792a275be99466c0ffdb366c1e130c2a19b5256147e2f528fec26a5934be4",
+          "section": ".text",
+          "section_base": "0x080DEFF0",
+          "section_length": 6212,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 1440
+        },
+        {
+          "address": "0x080E01B8",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/shop.o",
+          "object_sha256": "c5e792a275be99466c0ffdb366c1e130c2a19b5256147e2f528fec26a5934be4",
+          "section": ".text",
+          "section_base": "0x080DEFF0",
+          "section_length": 6212,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 4552
+        },
+        {
+          "address": "0x08133B94",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/trader.o",
+          "object_sha256": "45c56c0368e1889161c8ede21dc4af049f300a39fd89f5d74cd5b8eed18d83bc",
+          "section": ".text",
+          "section_base": "0x08133A2C",
+          "section_length": 1128,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 360
+        },
+        {
+          "address": "0x08133DB0",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/trader.o",
+          "object_sha256": "45c56c0368e1889161c8ede21dc4af049f300a39fd89f5d74cd5b8eed18d83bc",
+          "section": ".text",
+          "section_base": "0x08133A2C",
+          "section_length": 1128,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 900
+        },
+        {
+          "address": "0x080F4C90",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/tv.o",
+          "object_sha256": "14c19593ca35e479d4f9e68ab5c511992028ebf8becd96058fe797be3a1679cd",
+          "section": ".text.DoTVShowSecretBaseVisit",
+          "section_base": "0x080F4BBC",
+          "section_length": 592,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 212
+        },
+        {
+          "address": "0x080F4CCC",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/tv.o",
+          "object_sha256": "14c19593ca35e479d4f9e68ab5c511992028ebf8becd96058fe797be3a1679cd",
+          "section": ".text.DoTVShowSecretBaseVisit",
+          "section_base": "0x080F4BBC",
+          "section_length": 592,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 272
+        },
+        {
+          "address": "0x080F4D20",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/tv.o",
+          "object_sha256": "14c19593ca35e479d4f9e68ab5c511992028ebf8becd96058fe797be3a1679cd",
+          "section": ".text.DoTVShowSecretBaseVisit",
+          "section_base": "0x080F4BBC",
+          "section_length": 592,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 356
+        },
+        {
+          "address": "0x080F4D48",
+          "original": "0x08580CD1",
+          "object": "build/pokeemerald-jp/src/tv.o",
+          "object_sha256": "14c19593ca35e479d4f9e68ab5c511992028ebf8becd96058fe797be3a1679cd",
+          "section": ".text.DoTVShowSecretBaseVisit",
+          "section_base": "0x080F4BBC",
+          "section_length": 592,
+          "relocation": "R_ARM_ABS32",
+          "referenced_symbol": "gDecorations",
+          "section_offset": 396
+        }
+      ]
+    },
+    {
+      "family": "pokeblock",
+      "count": 14,
+      "source": "src/strings.c",
+      "jp_source": "src/pokeblock.c:124-155, sub_08135F30",
+      "references": [
+        {
+          "address": "0x0859207C",
+          "original": "0x085C97C4",
+          "symbol": "ChsRemaining_RedPokeblock",
+          "source_symbol": "gText_RedPokeblock"
+        },
+        {
+          "address": "0x08592080",
+          "original": "0x085C97CC",
+          "symbol": "ChsRemaining_BluePokeblock",
+          "source_symbol": "gText_BluePokeblock"
+        },
+        {
+          "address": "0x08592084",
+          "original": "0x085C97D4",
+          "symbol": "ChsRemaining_PinkPokeblock",
+          "source_symbol": "gText_PinkPokeblock"
+        },
+        {
+          "address": "0x08592088",
+          "original": "0x085C97DD",
+          "symbol": "ChsRemaining_GreenPokeblock",
+          "source_symbol": "gText_GreenPokeblock"
+        },
+        {
+          "address": "0x0859208C",
+          "original": "0x085C97E6",
+          "symbol": "ChsRemaining_YellowPokeblock",
+          "source_symbol": "gText_YellowPokeblock"
+        },
+        {
+          "address": "0x08592090",
+          "original": "0x085C97EF",
+          "symbol": "ChsRemaining_PurplePokeblock",
+          "source_symbol": "gText_PurplePokeblock"
+        },
+        {
+          "address": "0x08592094",
+          "original": "0x085C97F8",
+          "symbol": "ChsRemaining_IndigoPokeblock",
+          "source_symbol": "gText_IndigoPokeblock"
+        },
+        {
+          "address": "0x08592098",
+          "original": "0x085C9801",
+          "symbol": "ChsRemaining_BrownPokeblock",
+          "source_symbol": "gText_BrownPokeblock"
+        },
+        {
+          "address": "0x0859209C",
+          "original": "0x085C980A",
+          "symbol": "ChsRemaining_LiteBluePokeblock",
+          "source_symbol": "gText_LiteBluePokeblock"
+        },
+        {
+          "address": "0x085920A0",
+          "original": "0x085C9813",
+          "symbol": "ChsRemaining_OlivePokeblock",
+          "source_symbol": "gText_OlivePokeblock"
+        },
+        {
+          "address": "0x085920A4",
+          "original": "0x085C981C",
+          "symbol": "ChsRemaining_GrayPokeblock",
+          "source_symbol": "gText_GrayPokeblock"
+        },
+        {
+          "address": "0x085920A8",
+          "original": "0x085C9825",
+          "symbol": "ChsRemaining_BlackPokeblock",
+          "source_symbol": "gText_BlackPokeblock"
+        },
+        {
+          "address": "0x085920AC",
+          "original": "0x085C982D",
+          "symbol": "ChsRemaining_WhitePokeblock",
+          "source_symbol": "gText_WhitePokeblock"
+        },
+        {
+          "address": "0x085920B0",
+          "original": "0x085C9835",
+          "symbol": "ChsRemaining_GoldPokeblock",
+          "source_symbol": "gText_GoldPokeblock"
+        }
+      ],
+      "layout": "Short tokens fit within the original 9-byte name area of each 24-byte list entry. Keep suffix at +9 and use absolute column alignment."
+    },
+    {
+      "family": "link_card_colors",
+      "count": 4,
+      "source": "src/strings.c",
+      "jp_source": "src/cable_club.c:86-101, GetLinkTrainerCardColor",
+      "references": [
+        {
+          "address": "0x080B317C",
+          "original": "0x0852B23F",
+          "symbol": "ChsLinkCardColorNames"
+        }
+      ],
+      "layout": "Keep 5-byte stride and 1-based star indexing; no link player name or card data changes."
+    },
+    {
+      "family": "blender_opponent_names",
+      "count": 6,
+      "source": "src/berry_blender.c:268-282",
+      "jp_source": "src/berry_blender.c:Blender_SetPlayerNamesLocal, Blender_AddTextPrinter, Blender_PrintBlendingRanking, Blender_PrintBlendingResults",
+      "policy": "Only resolve the three local NPC name slots when gUnknown_3005AF8 is nonzero. Preserve player slot 0, all link sessions, gUnknown_20226A8, results records, and copied/saved names. Convert only inputs to the printer and appends into the display scratch buffer.",
+      "hooks": [
+        "0x08083A5C",
+        "0x08082F98",
+        "0x08083690"
+      ],
+      "original_name_block": "0x0830F74E..0x0830F770 unchanged"
+    },
+    {
+      "family": "mail_signature",
+      "count": 1,
+      "source": "src/strings.c:gText_FromSpace, src/mail.c:PrintMailText",
+      "jp_source": "src/mail.c:BufferMailText, PrintMailText; .text.PrintMailText+0xC8..+0xD8 verified against Wokann mail.o",
+      "layout": "Keep the original 12-byte playerName buffer and four-byte suffix unchanged. At the signature printer only, build a bounded 32-byte temporary string containing the US From prefix and the original sender name; strip the original Japanese suffix only on exact end-of-string match. Render synchronously before releasing the stack buffer.",
+      "hook": "0x08121C2C",
+      "persistence": "No mail or player name writes changed."
+    },
+    {
+      "family": "berry_fix_graphics",
+      "count": 6,
+      "source": "src/berry_fix_program.c:sBerryProgramTexts, sText_BerryProgramUpdate, sText_RubySapphire, sText_Emerald",
+      "jp_source": "src/berry_fix_graphics.c:LoadBerryFixGraphics, .rodata.berry_fix_graphics_data; LoadBerryFixGraphics+0x60 verified in Wokann object",
+      "reference": {
+        "address": "0x081BAA80",
+        "original": "0x085E72E4",
+        "symbol": "ChsBerryFixGraphics"
+      },
+      "layout": "Retain scene ordering, diagrams, border tiles, and first two original palette banks. Replace baked labels and messages using existing small font atlases. Deduplicate replacement tiles and bound character data to 32 KiB and palettes to 256 colors.",
+      "verification": "Generated six-screen preview inspected; binary round-trip pending."
+    },
+    {
+      "family": "contest_opponent_names",
+      "count": 192,
+      "source": "src/data/contest_opponents.h:gContestOpponents",
+      "jp_source": "src/data/contest_opponents.h, include/contest.h, src/contest.c, src/contest_util.c, src/contest_link.c, src/contest_link_util.c",
+      "verification": "All 96 species symbols have identical JP/US ordering; all 192 JP name strings match their original ROM fields at 0x08561028 + index * 64 + (2 or 13).",
+      "policy": "Skip link contests and the player slot. Require exact species, original nickname, and original trainer name matches. Translate only nickname display copies, colored trainer-name strings, and script display buffers. No writes to gContestMons, gContestOpponents, winner records, save data or link send buffers.",
+      "entries": [
+        {
+          "index": 0,
+          "species": "SPECIES_POOCHYENA",
+          "jp_nickname": "ぽち",
+          "jp_trainer": "ゲンキ",
+          "us_nickname": "琅琅",
+          "us_trainer": "元晖"
+        },
+        {
+          "index": 1,
+          "species": "SPECIES_ILLUMISE",
+          "jp_nickname": "イルミ",
+          "jp_trainer": "ミア",
+          "us_nickname": "萤光",
+          "us_trainer": "美雅"
+        },
+        {
+          "index": 2,
+          "species": "SPECIES_DUSTOX",
+          "jp_nickname": "ドックン",
+          "jp_trainer": "トキヤ",
+          "us_nickname": "小毒",
+          "us_trainer": "拓嘉"
+        },
+        {
+          "index": 3,
+          "species": "SPECIES_SEEDOT",
+          "jp_nickname": "グーチャン",
+          "jp_trainer": "ナヅナ",
+          "us_nickname": "果酱",
+          "us_trainer": "齐彩"
+        },
+        {
+          "index": 4,
+          "species": "SPECIES_TAILLOW",
+          "jp_nickname": "すばろう",
+          "jp_trainer": "エミカ",
+          "us_nickname": "燕乐",
+          "us_trainer": "映华"
+        },
+        {
+          "index": 5,
+          "species": "SPECIES_NINCADA",
+          "jp_nickname": "ツッチー",
+          "jp_trainer": "レン",
+          "us_nickname": "土居",
+          "us_trainer": "廉恩"
+        },
+        {
+          "index": 6,
+          "species": "SPECIES_SHROOMISH",
+          "jp_nickname": "ココ",
+          "jp_trainer": "カツト",
+          "us_nickname": "菇菇",
+          "us_trainer": "家勤"
+        },
+        {
+          "index": 7,
+          "species": "SPECIES_SPHEAL",
+          "jp_nickname": "タマちゃん",
+          "jp_trainer": "ユイカ",
+          "us_nickname": "小球",
+          "us_trainer": "瑜佳"
+        },
+        {
+          "index": 8,
+          "species": "SPECIES_SLAKOTH",
+          "jp_nickname": "ケロタロウ",
+          "jp_trainer": "ヒトキ",
+          "us_nickname": "獭哥",
+          "us_trainer": "仁辉"
+        },
+        {
+          "index": 9,
+          "species": "SPECIES_WHISMUR",
+          "jp_nickname": "ニョニョ",
+          "jp_trainer": "ミキヨ",
+          "us_nickname": "妞妞",
+          "us_trainer": "君瑶"
+        },
+        {
+          "index": 10,
+          "species": "SPECIES_MAKUHITA",
+          "jp_nickname": "プンプン",
+          "jp_trainer": "アキヒロ",
+          "us_nickname": "冲冲",
+          "us_trainer": "彰浩"
+        },
+        {
+          "index": 11,
+          "species": "SPECIES_ARON",
+          "jp_nickname": "ドラちゃん",
+          "jp_trainer": "アオバ",
+          "us_nickname": "小多拉",
+          "us_trainer": "碧波"
+        },
+        {
+          "index": 12,
+          "species": "SPECIES_CROBAT",
+          "jp_nickname": "クロきち",
+          "jp_trainer": "タツキ",
+          "us_nickname": "叉仔",
+          "us_trainer": "立树"
+        },
+        {
+          "index": 13,
+          "species": "SPECIES_GULPIN",
+          "jp_nickname": "ゴッくん",
+          "jp_trainer": "ユウナ",
+          "us_nickname": "小容",
+          "us_trainer": "郁娜"
+        },
+        {
+          "index": 14,
+          "species": "SPECIES_MANECTRIC",
+          "jp_nickname": "ライガン",
+          "jp_trainer": "ノブヒロ",
+          "us_nickname": "雷丸",
+          "us_trainer": "展宏"
+        },
+        {
+          "index": 15,
+          "species": "SPECIES_BULBASAUR",
+          "jp_nickname": "ダネダネ",
+          "jp_trainer": "ミホリ",
+          "us_nickname": "种种",
+          "us_trainer": "保莉"
+        },
+        {
+          "index": 16,
+          "species": "SPECIES_BUTTERFREE",
+          "jp_nickname": "バタちゃん",
+          "jp_trainer": "マヤコ",
+          "us_nickname": "巴小蝶",
+          "us_trainer": "玛雅"
+        },
+        {
+          "index": 17,
+          "species": "SPECIES_PIDGEOTTO",
+          "jp_nickname": "ピジョー",
+          "jp_trainer": "リホ",
+          "us_nickname": "袅袅",
+          "us_trainer": "丽荷"
+        },
+        {
+          "index": 18,
+          "species": "SPECIES_DIGLETT",
+          "jp_nickname": "ダグくん",
+          "jp_trainer": "ジュウゾウ",
+          "us_nickname": "小挖",
+          "us_trainer": "祖洲"
+        },
+        {
+          "index": 19,
+          "species": "SPECIES_POLIWAG",
+          "jp_nickname": "ニョロニョ",
+          "jp_trainer": "アヤノ",
+          "us_nickname": "蚊香香",
+          "us_trainer": "文乃"
+        },
+        {
+          "index": 20,
+          "species": "SPECIES_TOTODILE",
+          "jp_nickname": "ノコノコ",
+          "jp_trainer": "フミヤ",
+          "us_nickname": "锯锯",
+          "us_trainer": "文也"
+        },
+        {
+          "index": 21,
+          "species": "SPECIES_LEDYBA",
+          "jp_nickname": "ディバ",
+          "jp_trainer": "ルミコ",
+          "us_nickname": "芭蕾",
+          "us_trainer": "如蜜"
+        },
+        {
+          "index": 22,
+          "species": "SPECIES_DELIBIRD",
+          "jp_nickname": "デリデリ",
+          "jp_trainer": "ケンジロウ",
+          "us_nickname": "递利",
+          "us_trainer": "弦驰"
+        },
+        {
+          "index": 23,
+          "species": "SPECIES_LARVITAR",
+          "jp_nickname": "ギースケ",
+          "jp_trainer": "カツシゲ",
+          "us_nickname": "基思",
+          "us_trainer": "胜荣"
+        },
+        {
+          "index": 24,
+          "species": "SPECIES_ROSELIA",
+          "jp_nickname": "ラビビン",
+          "jp_trainer": "モモエ",
+          "us_nickname": "乐缤缤",
+          "us_trainer": "桃蕙"
+        },
+        {
+          "index": 25,
+          "species": "SPECIES_DODRIO",
+          "jp_nickname": "ドードン",
+          "jp_trainer": "ジンパチ",
+          "us_nickname": "嘟咚",
+          "us_trainer": "进发"
+        },
+        {
+          "index": 26,
+          "species": "SPECIES_TRAPINCH",
+          "jp_nickname": "クララ",
+          "jp_trainer": "コウメ",
+          "us_nickname": "小仪",
+          "us_trainer": "小梅"
+        },
+        {
+          "index": 27,
+          "species": "SPECIES_CACNEA",
+          "jp_nickname": "ボンチー",
+          "jp_trainer": "ノリオ",
+          "us_nickname": "仙人刺",
+          "us_trainer": "典育"
+        },
+        {
+          "index": 28,
+          "species": "SPECIES_SANDSLASH",
+          "jp_nickname": "サンちゃん",
+          "jp_trainer": "ワカバ",
+          "us_nickname": "小山",
+          "us_trainer": "若桦"
+        },
+        {
+          "index": 29,
+          "species": "SPECIES_BALTOY",
+          "jp_nickname": "ヤジロー",
+          "jp_trainer": "チカラ",
+          "us_nickname": "天秤翁",
+          "us_trainer": "力伟"
+        },
+        {
+          "index": 30,
+          "species": "SPECIES_MEDICHAM",
+          "jp_nickname": "レムりん",
+          "jp_trainer": "マオ",
+          "us_nickname": "雷玲",
+          "us_trainer": "真佩"
+        },
+        {
+          "index": 31,
+          "species": "SPECIES_SPINDA",
+          "jp_nickname": "パッチン",
+          "jp_trainer": "シュウジ",
+          "us_nickname": "晃悠",
+          "us_trainer": "修志"
+        },
+        {
+          "index": 32,
+          "species": "SPECIES_SWABLU",
+          "jp_nickname": "トットン",
+          "jp_trainer": "サワコ",
+          "us_nickname": "绵绵",
+          "us_trainer": "彩羽"
+        },
+        {
+          "index": 33,
+          "species": "SPECIES_SPOINK",
+          "jp_nickname": "ブーブー",
+          "jp_trainer": "ノブユキ",
+          "us_nickname": "噗噗",
+          "us_trainer": "顺享"
+        },
+        {
+          "index": 34,
+          "species": "SPECIES_KECLEON",
+          "jp_nickname": "レオン",
+          "jp_trainer": "キョウカ",
+          "us_nickname": "阿龙",
+          "us_trainer": "响枫"
+        },
+        {
+          "index": 35,
+          "species": "SPECIES_GOLDEEN",
+          "jp_nickname": "キンちゃん",
+          "jp_trainer": "サチオ",
+          "us_nickname": "小金",
+          "us_trainer": "祥勇"
+        },
+        {
+          "index": 36,
+          "species": "SPECIES_BARBOACH",
+          "jp_nickname": "ナマゾー",
+          "jp_trainer": "ミノリ",
+          "us_nickname": "鲶书",
+          "us_trainer": "幸穗"
+        },
+        {
+          "index": 37,
+          "species": "SPECIES_SKARMORY",
+          "jp_nickname": "ムドー",
+          "jp_trainer": "ジュンタ",
+          "us_nickname": "铁甲",
+          "us_trainer": "润田"
+        },
+        {
+          "index": 38,
+          "species": "SPECIES_LOTAD",
+          "jp_nickname": "ボーチャン",
+          "jp_trainer": "マイカ",
+          "us_nickname": "莲芽",
+          "us_trainer": "翩翎"
+        },
+        {
+          "index": 39,
+          "species": "SPECIES_SLOWBRO",
+          "jp_nickname": "ランラン",
+          "jp_trainer": "マサキチ",
+          "us_nickname": "呆呆",
+          "us_trainer": "应吉"
+        },
+        {
+          "index": 40,
+          "species": "SPECIES_FARFETCHD",
+          "jp_nickname": "カモネ",
+          "jp_trainer": "モモハル",
+          "us_nickname": "葱菁",
+          "us_trainer": "百春"
+        },
+        {
+          "index": 41,
+          "species": "SPECIES_SEEL",
+          "jp_nickname": "パウ",
+          "jp_trainer": "リチコ",
+          "us_nickname": "海宝",
+          "us_trainer": "瑞琦"
+        },
+        {
+          "index": 42,
+          "species": "SPECIES_DROWZEE",
+          "jp_nickname": "リープ",
+          "jp_trainer": "ミツトモ",
+          "us_nickname": "昏昏",
+          "us_trainer": "满元"
+        },
+        {
+          "index": 43,
+          "species": "SPECIES_HITMONCHAN",
+          "jp_nickname": "エビゾー",
+          "jp_trainer": "フクスイ",
+          "us_nickname": "铁拳",
+          "us_trainer": "福水"
+        },
+        {
+          "index": 44,
+          "species": "SPECIES_BLISSEY",
+          "jp_nickname": "ピナス",
+          "jp_trainer": "ミナコ",
+          "us_nickname": "杏福",
+          "us_trainer": "敏娜"
+        },
+        {
+          "index": 45,
+          "species": "SPECIES_ELEKID",
+          "jp_nickname": "キッド",
+          "jp_trainer": "マヤコ",
+          "us_nickname": "小击怪",
+          "us_trainer": "善慈"
+        },
+        {
+          "index": 46,
+          "species": "SPECIES_SNUBBULL",
+          "jp_nickname": "ブルブル",
+          "jp_trainer": "ハリー",
+          "us_nickname": "鲁鲁",
+          "us_trainer": "哈利"
+        },
+        {
+          "index": 47,
+          "species": "SPECIES_MISDREAVUS",
+          "jp_nickname": "ムウミン",
+          "jp_trainer": "カヅキ",
+          "us_nickname": "梦魅",
+          "us_trainer": "嘉月"
+        },
+        {
+          "index": 48,
+          "species": "SPECIES_LAIRON",
+          "jp_nickname": "ドラー",
+          "jp_trainer": "キミタカ",
+          "us_nickname": "多拉",
+          "us_trainer": "君毅"
+        },
+        {
+          "index": 49,
+          "species": "SPECIES_SHIFTRY",
+          "jp_nickname": "テンちん",
+          "jp_trainer": "ヒナコ",
+          "us_nickname": "小天",
+          "us_trainer": "曦兰"
+        },
+        {
+          "index": 50,
+          "species": "SPECIES_NINJASK",
+          "jp_nickname": "ニンニン",
+          "jp_trainer": "カンタロウ",
+          "us_nickname": "忍忍",
+          "us_trainer": "勘太郎"
+        },
+        {
+          "index": 51,
+          "species": "SPECIES_SWELLOW",
+          "jp_nickname": "バメコ",
+          "jp_trainer": "ハツミ",
+          "us_nickname": "燕儿",
+          "us_trainer": "初瑞"
+        },
+        {
+          "index": 52,
+          "species": "SPECIES_MIGHTYENA",
+          "jp_nickname": "グラスケ",
+          "jp_trainer": "ハルト",
+          "us_nickname": "天狼",
+          "us_trainer": "启翔"
+        },
+        {
+          "index": 53,
+          "species": "SPECIES_BEAUTIFLY",
+          "jp_nickname": "アゲハ",
+          "jp_trainer": "リリカ",
+          "us_nickname": "凤羽",
+          "us_trainer": "璇律"
+        },
+        {
+          "index": 54,
+          "species": "SPECIES_SEAKING",
+          "jp_nickname": "マオウくん",
+          "jp_trainer": "フミオ",
+          "us_nickname": "小魔王",
+          "us_trainer": "文雄"
+        },
+        {
+          "index": 55,
+          "species": "SPECIES_CASTFORM",
+          "jp_nickname": "ポー",
+          "jp_trainer": "サヤ",
+          "us_nickname": "泡儿",
+          "us_trainer": "飒雅"
+        },
+        {
+          "index": 56,
+          "species": "SPECIES_MACHOKE",
+          "jp_nickname": "リキヤ",
+          "jp_trainer": "キヨハル",
+          "us_nickname": "力士",
+          "us_trainer": "恭明"
+        },
+        {
+          "index": 57,
+          "species": "SPECIES_LOMBRE",
+          "jp_nickname": "ブレロタン",
+          "jp_trainer": "シズル",
+          "us_nickname": "帽童",
+          "us_trainer": "静茹"
+        },
+        {
+          "index": 58,
+          "species": "SPECIES_SEVIPER",
+          "jp_nickname": "スネーキー",
+          "jp_trainer": "ヨシナリ",
+          "us_nickname": "蛇蛇",
+          "us_trainer": "启成"
+        },
+        {
+          "index": 59,
+          "species": "SPECIES_WAILMER",
+          "jp_nickname": "ホエルコン",
+          "jp_trainer": "マサ",
+          "us_nickname": "吼鲸",
+          "us_trainer": "真莎"
+        },
+        {
+          "index": 60,
+          "species": "SPECIES_MAGIKARP",
+          "jp_nickname": "キング",
+          "jp_trainer": "リキ",
+          "us_nickname": "龙王",
+          "us_trainer": "力奇"
+        },
+        {
+          "index": 61,
+          "species": "SPECIES_LUNATONE",
+          "jp_nickname": "ミカリン",
+          "jp_trainer": "カナミ",
+          "us_nickname": "月石",
+          "us_trainer": "锦薇"
+        },
+        {
+          "index": 62,
+          "species": "SPECIES_ABSOL",
+          "jp_nickname": "アブソ",
+          "jp_trainer": "スエオ",
+          "us_nickname": "阿勃",
+          "us_trainer": "季鹏"
+        },
+        {
+          "index": 63,
+          "species": "SPECIES_EXEGGUTOR",
+          "jp_nickname": "ナッツン",
+          "jp_trainer": "ミオコ",
+          "us_nickname": "椰仔",
+          "us_trainer": "未央"
+        },
+        {
+          "index": 64,
+          "species": "SPECIES_CUBONE",
+          "jp_nickname": "カラッピ",
+          "jp_trainer": "ミツロウ",
+          "us_nickname": "卡拉哔",
+          "us_trainer": "满朗"
+        },
+        {
+          "index": 65,
+          "species": "SPECIES_HITMONLEE",
+          "jp_nickname": "ムラさん",
+          "jp_trainer": "チアサ",
+          "us_nickname": "月飞",
+          "us_trainer": "千晨"
+        },
+        {
+          "index": 66,
+          "species": "SPECIES_SQUIRTLE",
+          "jp_nickname": "ガメちゃん",
+          "jp_trainer": "サトハル",
+          "us_nickname": "小龟",
+          "us_trainer": "锐明"
+        },
+        {
+          "index": 67,
+          "species": "SPECIES_KANGASKHAN",
+          "jp_nickname": "ガルル",
+          "jp_trainer": "ヒヨリ",
+          "us_nickname": "悦儿",
+          "us_trainer": "日和"
+        },
+        {
+          "index": 68,
+          "species": "SPECIES_PINECO",
+          "jp_nickname": "ギダマ",
+          "jp_trainer": "ヨシミツ",
+          "us_nickname": "果球",
+          "us_trainer": "良光"
+        },
+        {
+          "index": 69,
+          "species": "SPECIES_DUNSPARCE",
+          "jp_nickname": "ノコノコ",
+          "jp_trainer": "ユミカ",
+          "us_nickname": "慢慢",
+          "us_trainer": "玉馨"
+        },
+        {
+          "index": 70,
+          "species": "SPECIES_HOUNDOOM",
+          "jp_nickname": "ヘルン",
+          "jp_trainer": "トーマス",
+          "us_nickname": "黑轮",
+          "us_trainer": "汤马士"
+        },
+        {
+          "index": 71,
+          "species": "SPECIES_MILTANK",
+          "jp_nickname": "ミルミル",
+          "jp_trainer": "ツネヨシ",
+          "us_nickname": "鲜奶",
+          "us_trainer": "恒义"
+        },
+        {
+          "index": 72,
+          "species": "SPECIES_GYARADOS",
+          "jp_nickname": "ギャーコ",
+          "jp_trainer": "リョウコ",
+          "us_nickname": "玲珑",
+          "us_trainer": "绫娟"
+        },
+        {
+          "index": 73,
+          "species": "SPECIES_LOUDRED",
+          "jp_nickname": "ごんきち",
+          "jp_trainer": "タツヒロ",
+          "us_nickname": "吼隆",
+          "us_trainer": "达宏"
+        },
+        {
+          "index": 74,
+          "species": "SPECIES_SKITTY",
+          "jp_nickname": "ニャーコ",
+          "jp_trainer": "アキナ",
+          "us_nickname": "喵可",
+          "us_trainer": "秋妍"
+        },
+        {
+          "index": 75,
+          "species": "SPECIES_SLAKING",
+          "jp_nickname": "ケッキン",
+          "jp_trainer": "イサミ",
+          "us_nickname": "勤架",
+          "us_trainer": "勇海"
+        },
+        {
+          "index": 76,
+          "species": "SPECIES_ALTARIA",
+          "jp_nickname": "アール",
+          "jp_trainer": "マスミ",
+          "us_nickname": "雅儿",
+          "us_trainer": "满泉"
+        },
+        {
+          "index": 77,
+          "species": "SPECIES_KIRLIA",
+          "jp_nickname": "キルキル",
+          "jp_trainer": "トラオ",
+          "us_nickname": "琦琦",
+          "us_trainer": "虎雄"
+        },
+        {
+          "index": 78,
+          "species": "SPECIES_BELLOSSOM",
+          "jp_nickname": "ハナハナ",
+          "jp_trainer": "ヒトネ",
+          "us_nickname": "花花",
+          "us_trainer": "仁宁"
+        },
+        {
+          "index": 79,
+          "species": "SPECIES_SABLEYE",
+          "jp_nickname": "ダーク",
+          "jp_trainer": "ハジメ",
+          "us_nickname": "小魄",
+          "us_trainer": "初创"
+        },
+        {
+          "index": 80,
+          "species": "SPECIES_NATU",
+          "jp_nickname": "ネイ",
+          "jp_trainer": "ミレイ",
+          "us_nickname": "天天",
+          "us_trainer": "美玲"
+        },
+        {
+          "index": 81,
+          "species": "SPECIES_SHARPEDO",
+          "jp_nickname": "サメハー",
+          "jp_trainer": "キョウスケ",
+          "us_nickname": "鲨米",
+          "us_trainer": "强杰"
+        },
+        {
+          "index": 82,
+          "species": "SPECIES_LUVDISC",
+          "jp_nickname": "ラブリン",
+          "jp_trainer": "マイミ",
+          "us_nickname": "爱玲",
+          "us_trainer": "翩翡"
+        },
+        {
+          "index": 83,
+          "species": "SPECIES_HERACROSS",
+          "jp_nickname": "ヘラスケ",
+          "jp_trainer": "アツシ",
+          "us_nickname": "赫拉斯哥",
+          "us_trainer": "亚敦"
+        },
+        {
+          "index": 84,
+          "species": "SPECIES_ELECTRODE",
+          "jp_nickname": "マイン",
+          "jp_trainer": "ナノハ",
+          "us_nickname": "地雷",
+          "us_trainer": "奈叶"
+        },
+        {
+          "index": 85,
+          "species": "SPECIES_PICHU",
+          "jp_nickname": "ピタロウ",
+          "jp_trainer": "シンタ",
+          "us_nickname": "皮太郎",
+          "us_trainer": "振泰"
+        },
+        {
+          "index": 86,
+          "species": "SPECIES_WOBBUFFET",
+          "jp_nickname": "ナンチッチ",
+          "jp_trainer": "ミクル",
+          "us_nickname": "然奇奇",
+          "us_trainer": "蔚来"
+        },
+        {
+          "index": 87,
+          "species": "SPECIES_GENGAR",
+          "jp_nickname": "ゲゲ",
+          "jp_trainer": "アヤミ",
+          "us_nickname": "咯咯",
+          "us_trainer": "绫媚"
+        },
+        {
+          "index": 88,
+          "species": "SPECIES_PORYGON",
+          "jp_nickname": "ポリン",
+          "jp_trainer": "タケヒコ",
+          "us_nickname": "折线",
+          "us_trainer": "建彦"
+        },
+        {
+          "index": 89,
+          "species": "SPECIES_DRAGONITE",
+          "jp_nickname": "リュータ",
+          "jp_trainer": "ユウマ",
+          "us_nickname": "太龙",
+          "us_trainer": "勇真"
+        },
+        {
+          "index": 90,
+          "species": "SPECIES_MEOWTH",
+          "jp_nickname": "ニャー",
+          "jp_trainer": "モモカ",
+          "us_nickname": "喵咪",
+          "us_trainer": "桃华"
+        },
+        {
+          "index": 91,
+          "species": "SPECIES_JYNX",
+          "jp_nickname": "ジュラコ",
+          "jp_trainer": "チサコ",
+          "us_nickname": "佳丽",
+          "us_trainer": "贤霞"
+        },
+        {
+          "index": 92,
+          "species": "SPECIES_TOGEPI",
+          "jp_nickname": "ピーチン",
+          "jp_trainer": "リリコ",
+          "us_nickname": "刺福",
+          "us_trainer": "律歌"
+        },
+        {
+          "index": 93,
+          "species": "SPECIES_ESPEON",
+          "jp_nickname": "フィフィ",
+          "jp_trainer": "ジンタ",
+          "us_nickname": "阳灵",
+          "us_trainer": "震泰"
+        },
+        {
+          "index": 94,
+          "species": "SPECIES_SLOWKING",
+          "jp_nickname": "キング",
+          "jp_trainer": "ユウゴ",
+          "us_nickname": "贤王",
+          "us_trainer": "雄濠"
+        },
+        {
+          "index": 95,
+          "species": "SPECIES_URSARING",
+          "jp_nickname": "グマゾウ",
+          "jp_trainer": "タダノリ",
+          "us_nickname": "熊藏",
+          "us_trainer": "忠德"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "clean_build": "passed",
+    "vanilla_compare": "passed",
+    "arm_execution": {
+      "scope": "ARM helper execution, not a full GBA emulator playthrough",
+      "tokens": {
+        "resources": 139,
+        "mixed_ascii": true,
+        "japanese_continuation": true,
+        "eos_reset": true,
+        "printer_neighbor_canary": true
+      },
+      "blender": {
+        "local_npc_names": 6,
+        "link_names_unchanged": true,
+        "player_slot_unchanged": true,
+        "name_record_canary": true
+      },
+      "contest": {
+        "opponents": 96,
+        "fields": 192,
+        "link_names_unchanged": true,
+        "player_names_unchanged": true,
+        "contest_record_canary": true,
+        "copy_buffer_canary": true
+      },
+      "mail": {
+        "signatures": 3,
+        "longest_japanese_sender": true,
+        "signature_buffer_unchanged": true,
+        "synchronous_render": true,
+        "stack_restored": true
+      },
+      "pokeblocks": {
+        "colors": 14,
+        "levels": [
+          0,
+          1,
+          99,
+          255
+        ],
+        "24_byte_entry_canary": true,
+        "pokeblock_data_unchanged": true
+      },
+      "blender_stubs": {
+        "printer_preserves_callee_saved_register": true,
+        "results_name_append": true,
+        "ranking_name_append": true,
+        "continuations": true
+      },
+      "fixed_tables": {
+        "decoration_records": 121,
+        "decoration_nontext_fields_preserved": true,
+        "interior_pointers": 11,
+        "card_colors": 4,
+        "card_stride": 5,
+        "original_card_data_preserved": true
+      },
+      "contest_winners": {
+        "saved_npc_winners": 96,
+        "nickname_and_trainer_display": true,
+        "saved_records_unchanged": true,
+        "custom_names_preserved": true,
+        "painting_continuation": true
+      },
+      "contest_script_buffers": {
+        "script_functions": 4,
+        "opponents_per_function": 96,
+        "string_variable_canaries": true,
+        "contest_records_preserved": true
+      }
+    },
+    "graphics_roundtrip": {
+      "scenes": 6,
+      "compressed_rom_matches_preview": true,
+      "unchanged_pixels_outside_text_rectangles": true,
+      "tile_bounds": true,
+      "gameplay_test": "not run"
+    },
+    "rom_sha1": "0ea0aabf73d3dcd13208a76f31b1e013a400976e"
+  },
+  "checklist_rows_updated": [
+    {
+      "symbol": "gText_BlackPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_BluePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_BronzeCard",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492
+    },
+    {
+      "symbol": "gText_BrownPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GoldCard",
+      "previous_execution": "blocked_stride_table",
+      "implementation": 492
+    },
+    {
+      "symbol": "gText_GoldPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GrayPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_GreenPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_IndigoPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_LiteBluePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_OlivePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_PinkPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_PurplePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_RedPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_WhitePokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "gText_YellowPokeblock",
+      "previous_execution": "blocked_fixed_field_layout",
+      "implementation": 491
+    },
+    {
+      "symbol": "sText_Dude",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Lassie",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Mister",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Laddie",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "sText_Miss",
+      "previous_execution": "blocked_computed_name_block",
+      "implementation": 493
+    },
+    {
+      "symbol": "gText_FromSpace",
+      "previous_execution": "rejected_layout_incompatible",
+      "implementation": 494
+    },
+    {
+      "symbol": "sText_BerryProgramUpdate",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    },
+    {
+      "symbol": "sText_Emerald",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    },
+    {
+      "symbol": "sText_RubySapphire",
+      "previous_execution": "rejected_no_jp_equivalent",
+      "implementation": "berry_fix_graphics"
+    }
+  ],
+  "additional_contest_consumers": {
+    "saved_winner_layout": {
+      "species": "0x08",
+      "nickname": "0x0B",
+      "trainer": "0x16"
+    },
+    "jp_reference": "Wokann include/global.h: struct ContestWinner; src/contest_painting.c: PrintContestPaintingCaption",
+    "trainer_veneer": "0x08130194, original 1631d8f68ffb1248, resume 0x0813019C",
+    "object_reference": "build/pokeemerald-jp/src/contest_painting.o: PrintContestPaintingCaption+0x52, R_ARM_THM_CALL StringCopy",
+    "nickname_calls": "Existing display-only calls at 0x081301A0 and 0x081301F8 use the extended ChsCopyContestWinnerNicknameForDisplay",
+    "matching": "Require exact original species, Japanese nickname and trainer together; unmatched user/default winners retain original strings",
+    "writes": "Only caller display buffers; no ContestWinner or save writes"
+  },
+  "superseded_calls_removed": [
+    "0x080F8B26",
+    "0x080F8C3C"
+  ],
+  "completion": {
+    "known_active_groups": 7,
+    "implemented_groups": 7,
+    "unimplemented_known_active_groups": 0,
+    "full_gameplay_validation": "pending; no full GBA emulator available",
+    "intentional_exclusions": [
+      "Easy Chat words/keyboard",
+      "trade OT and other persistent/link names",
+      "dormant Magma Hideout landmark",
+      "US-only or explicitly unused strings without a JP consumer"
+    ]
+  }
+}

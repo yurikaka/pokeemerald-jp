@@ -37,6 +37,7 @@
 .equ TEXT_MODE_COMPACT_SPECIES, 2
 .equ TEXT_MODE_MUZAIPIXEL,     3
 .equ TEXT_MODE_MUZAIPIXEL_JAPANESE, 4
+.equ TEXT_MODE_COMPACT_RESOURCE, 5
 .equ TEXT_SPECIES_ID_LO_OFFSET, 0x18
 .equ TEXT_SPECIES_ID_HI_OFFSET, 0x19
 .equ TEXT_SPECIES_CHAR_OFFSET,  0x1A
@@ -244,6 +245,10 @@ ChsUseMuzaiIfLong:
 ChineseRenderHook:
     strb r0, [r6, #0x1E]
     ldrb r1, [r6, #TEXT_MODE_OFFSET]
+    cmp r1, #TEXT_MODE_COMPACT_RESOURCE
+    bne .Lnot_compact_resource_entry
+    b .Lcompact_resource_entry
+.Lnot_compact_resource_entry:
     cmp r1, #TEXT_MODE_COMPACT_SPECIES
     bne .Lnot_compact_species_entry
     b .Lcompact_species_entry
@@ -321,6 +326,24 @@ ChineseRenderHook:
     beq .Lset_muzaipixel_mode
     cmp r2, #0xF4
     beq .Lrestore_normal_chinese_mode
+    cmp r2, #0xF1
+    bne .Lnot_compact_resource_token
+    ldrb r2, [r0, #1]
+    ldr r4, =ChsDisplayResourceCount
+    cmp r2, r4
+    bhs .Lset_compact_chinese_mode
+    strb r2, [r6, #TEXT_SPECIES_ID_LO_OFFSET]
+    movs r4, #2
+    strb r4, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    adds r0, #2
+    str r0, [r6]
+    movs r2, #TEXT_MODE_COMPACT_RESOURCE
+    strb r2, [r6, #TEXT_MODE_OFFSET]
+    pop {r2-r7}
+    pop {r1}
+    ldr r0, =JP_RENDER_TEXT_REPEAT
+    bx r0
+.Lnot_compact_resource_token:
     cmp r2, #0xF2
     bne .Lset_compact_chinese_mode
     ldrb r2, [r0, #1]
@@ -475,6 +498,593 @@ ChineseRenderHook:
     pop {r1}
     ldr r0, =JP_RENDER_TEXT_REPEAT
     bx r0
+
+.Lcompact_resource_entry:
+    push {r2-r7, lr}
+    ldrb r2, [r6, #TEXT_SPECIES_ID_LO_OFFSET]
+    lsls r2, r2, #2
+    ldr r5, =ChsDisplayResourceNames
+    ldr r5, [r5, r2]
+    ldrb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    adds r5, r5, r2
+    ldrb r3, [r5]
+    cmp r3, #0xFF
+    beq .Lcompact_species_done
+    adds r2, #1
+    strb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    str r3, [sp, #4]
+    cmp r3, #0x7F
+    beq .Lcompact_resource_pair
+    cmp r3, #0x60
+    blo .Lrender_original_glyph
+    cmp r3, #0x7D
+    bhi .Lrender_original_glyph
+    cmp r3, #0x65
+    beq .Lrender_original_glyph
+    cmp r3, #0x7A
+    beq .Lrender_original_glyph
+.Lcompact_resource_pair:
+    adds r2, #1
+    strb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
+    ldrb r2, [r5, #1]
+    cmp r3, #0x7F
+    beq .Lcompact_species_punctuation
+    subs r3, #0x5F
+    lsls r3, r3, #8
+    orrs r3, r2
+    b .Lload_glyph
+
+.ltorg
+
+.align 2
+.global ChsDecorationsNameBase
+.set ChsDecorationsNameBase, ChsDecorations + 1
+
+.global ChsPokeblockNames
+ChsPokeblockNames:
+    .word 0
+    .word ChsRemaining_RedPokeblock, ChsRemaining_BluePokeblock
+    .word ChsRemaining_PinkPokeblock, ChsRemaining_GreenPokeblock
+    .word ChsRemaining_YellowPokeblock, ChsRemaining_PurplePokeblock
+    .word ChsRemaining_IndigoPokeblock, ChsRemaining_BrownPokeblock
+    .word ChsRemaining_LiteBluePokeblock, ChsRemaining_OlivePokeblock
+    .word ChsRemaining_GrayPokeblock, ChsRemaining_BlackPokeblock
+    .word ChsRemaining_WhitePokeblock, ChsRemaining_GoldPokeblock
+
+.align 2
+.global ChsBuildPokeblockListName
+.type ChsBuildPokeblockListName, %function
+.thumb_func
+ChsBuildPokeblockListName:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    lsls r1, r1, #16
+    lsrs r1, r1, #13
+    ldr r2, =0x08135FA4
+    ldr r2, [r2]
+    ldr r2, [r2]
+    adds r5, r2, r1
+    ldr r1, =0x848
+    adds r5, r5, r1
+    ldrb r1, [r5]
+    lsls r1, r1, #2
+    ldr r2, =ChsPokeblockNames
+    ldr r1, [r2, r1]
+    ldr r3, =0x080088B9
+    bl .Lpokeblock_list_call
+    movs r1, #0xFC
+    strb r1, [r4, #3]
+    movs r1, #0x0D
+    strb r1, [r4, #4]
+    movs r1, #72
+    strb r1, [r4, #5]
+    movs r1, #0xFC
+    strb r1, [r4, #6]
+    movs r1, #7
+    strb r1, [r4, #7]
+    movs r1, #0
+    strb r1, [r4, #8]
+    adds r0, r5, #0
+    ldr r3, =0x08136F15
+    bl .Lpokeblock_list_call
+    lsls r1, r0, #24
+    lsrs r1, r1, #24
+    ldr r2, =0x08135FAC
+    ldr r0, [r2]
+    movs r2, #0
+    movs r3, #3
+    ldr r7, =0x080089D9
+    bl .Lpokeblock_list_call_r7
+    adds r0, r4, #0
+    adds r0, #9
+    ldr r2, =0x08135FB0
+    ldr r1, [r2]
+    ldr r3, =0x08008BCD
+    bl .Lpokeblock_list_call
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lpokeblock_list_call:
+    bx r3
+.Lpokeblock_list_call_r7:
+    bx r7
+
+.ltorg
+
+.align 2
+.global ChsBlenderTextPrinter
+.type ChsBlenderTextPrinter, %function
+.thumb_func
+ChsBlenderTextPrinter:
+    push {r0, r2, r3, lr}
+    adds r0, r1, #0
+    bl ChsResolveBlenderName
+    mov r12, r0
+    pop {r0, r2, r3}
+    pop {r1}
+    mov lr, r1
+    mov r1, r12
+    push {r4-r7, lr}
+    mov r7, sb
+    mov r6, r8
+    push {r6, r7}
+    sub sp, #0x18
+    mov sb, r1
+    ldr r4, [sp, #0x38]
+    lsls r0, r0, #24
+    ldr r1, =0x08083A6D
+    bx r1
+
+.align 2
+.global ChsBlenderResultsNameAppend
+.type ChsBlenderResultsNameAppend, %function
+.thumb_func
+ChsBlenderResultsNameAppend:
+    bl ChsAppendBlenderName
+    ldr r0, [r7]
+    adds r1, r0, #0
+    ldr r3, =0x08082FA1
+    bx r3
+
+.align 2
+.global ChsBlenderRankingNameAppend
+.type ChsBlenderRankingNameAppend, %function
+.thumb_func
+ChsBlenderRankingNameAppend:
+    adds r1, r1, r2
+    bl ChsAppendBlenderName
+    ldr r0, [r7]
+    ldr r3, =0x08083699
+    bx r3
+
+.type ChsAppendBlenderName, %function
+.thumb_func
+ChsAppendBlenderName:
+    push {r4, lr}
+    adds r4, r0, #0
+    adds r0, r1, #0
+    bl ChsResolveBlenderName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088D9
+    bl .Lblender_name_call
+    pop {r4}
+    pop {r1}
+    bx r1
+
+.type ChsResolveBlenderName, %function
+.thumb_func
+ChsResolveBlenderName:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    ldr r1, =0x03005AF8
+    ldrb r1, [r1]
+    cmp r1, #0
+    beq .Lblender_name_original
+    ldr r1, =0x020226C4
+    movs r2, #3
+.Lblender_name_slot:
+    cmp r4, r1
+    beq .Lblender_name_lookup
+    adds r1, #28
+    subs r2, #1
+    bne .Lblender_name_slot
+    b .Lblender_name_original
+.Lblender_name_lookup:
+    ldr r5, =.Lblender_name_pairs
+    movs r6, #6
+.Lblender_name_compare:
+    adds r0, r4, #0
+    ldr r1, [r5]
+    ldr r3, =0x0800895D
+    bl .Lblender_name_call
+    cmp r0, #0
+    beq .Lblender_name_found
+    adds r5, #8
+    subs r6, #1
+    bne .Lblender_name_compare
+.Lblender_name_original:
+    adds r0, r4, #0
+    b .Lblender_name_done
+.Lblender_name_found:
+    ldr r0, [r5, #4]
+.Lblender_name_done:
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lblender_name_call:
+    bx r3
+
+.align 2
+.Lblender_name_pairs:
+    .word 0x0830F74E, ChsRemaining_BlenderMister
+    .word 0x0830F754, ChsRemaining_BlenderLaddie
+    .word 0x0830F75A, ChsRemaining_BlenderLassie
+    .word 0x0830F760, ChsRemaining_BlenderMaster
+    .word 0x0830F766, ChsRemaining_BlenderDude
+    .word 0x0830F76C, ChsRemaining_BlenderMiss
+
+.ltorg
+
+.align 2
+.global ChsMailSignature
+.type ChsMailSignature, %function
+.thumb_func
+ChsMailSignature:
+    push {r4-r7, lr}
+    sub sp, #44
+    adds r4, r1, #0
+    adds r4, #0xC0
+    adds r5, r2, #0
+    adds r6, r3, #0
+    movs r7, #0
+.Lmail_signature_length:
+    cmp r7, #12
+    bhs .Lmail_signature_trim
+    ldrb r0, [r4, r7]
+    cmp r0, #0xFF
+    beq .Lmail_signature_trim
+    adds r7, #1
+    b .Lmail_signature_length
+.Lmail_signature_trim:
+    cmp r7, #3
+    blo .Lmail_signature_prefix
+    adds r0, r4, r7
+    subs r0, #3
+    ldrb r1, [r0]
+    cmp r1, #0
+    bne .Lmail_signature_prefix
+    ldrb r1, [r0, #1]
+    cmp r1, #0x26
+    bne .Lmail_signature_prefix
+    ldrb r1, [r0, #2]
+    cmp r1, #0x28
+    bne .Lmail_signature_prefix
+    subs r7, #3
+    adds r5, #12
+.Lmail_signature_prefix:
+    add r0, sp, #12
+    ldr r1, =ChsRemaining_MailFrom
+    ldr r3, =0x080088B9
+    bl .Lmail_signature_call
+    movs r2, #0
+.Lmail_signature_copy:
+    cmp r2, r7
+    bhs .Lmail_signature_print
+    ldrb r1, [r4, r2]
+    strb r1, [r0, r2]
+    adds r2, #1
+    b .Lmail_signature_copy
+.Lmail_signature_print:
+    movs r1, #0xFF
+    strb r1, [r0, r2]
+    ldr r0, [sp, #64]
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    add r0, sp, #12
+    str r0, [sp, #8]
+    movs r0, #1
+    movs r1, #1
+    adds r2, r5, #0
+    adds r3, r6, #0
+    ldr r7, =JP_ADD_TEXT_PRINTER_PARAM3
+    bl .Lmail_signature_call_r7
+    add sp, #44
+    pop {r4-r7}
+    pop {r0}
+    movs r0, #0
+    ldr r3, =0x08121C3D
+    bx r3
+.Lmail_signature_call:
+    bx r3
+.Lmail_signature_call_r7:
+    bx r7
+
+.ltorg
+
+.align 2
+.type ChsContestDisplayName, %function
+.thumb_func
+ChsContestDisplayName:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldr r0, =0x02039BCA
+    ldrb r0, [r0]
+    movs r1, #1
+    tst r0, r1
+    bne .Lcontest_name_original
+    ldr r0, =0x02039BC5
+    ldrb r0, [r0]
+    lsls r0, r0, #6
+    ldr r1, =0x02039AA0
+    adds r0, r0, r1
+    cmp r4, r0
+    beq .Lcontest_name_original
+    movs r2, #4
+.Lcontest_name_slot:
+    cmp r4, r1
+    beq .Lcontest_name_lookup
+    adds r1, #64
+    subs r2, #1
+    bne .Lcontest_name_slot
+    b .Lcontest_name_original
+.Lcontest_name_lookup:
+    ldrh r0, [r4]
+    adds r1, r4, #2
+    adds r2, r4, #0
+    adds r2, #13
+    bl ChsFindContestOpponentDisplayNames
+    cmp r0, #0
+    beq .Lcontest_name_original
+    lsls r1, r5, #2
+    ldr r0, [r0, r1]
+    b .Lcontest_name_done
+.Lcontest_name_original:
+    adds r0, r4, #2
+    cmp r5, #0
+    beq .Lcontest_name_done
+    adds r0, #11
+.Lcontest_name_done:
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+
+.align 2
+.type ChsFindContestOpponentDisplayNames, %function
+.thumb_func
+ChsFindContestOpponentDisplayNames:
+    push {r4-r7, lr}
+    sub sp, #4
+    str r0, [sp]
+    adds r4, r1, #0
+    adds r5, r2, #0
+    ldr r6, =0x08561028
+    movs r7, #0
+.Lcontest_name_compare:
+    ldr r0, [sp]
+    ldrh r1, [r6]
+    cmp r0, r1
+    bne .Lcontest_name_next
+    adds r0, r4, #0
+    adds r1, r6, #2
+    ldr r3, =0x0800895D
+    bl .Lcontest_display_call
+    cmp r0, #0
+    bne .Lcontest_name_next
+    adds r0, r5, #0
+    adds r1, r6, #0
+    adds r1, #13
+    ldr r3, =0x0800895D
+    bl .Lcontest_display_call
+    cmp r0, #0
+    beq .Lcontest_name_found
+.Lcontest_name_next:
+    adds r6, #64
+    adds r7, #1
+    cmp r7, #96
+    blo .Lcontest_name_compare
+    movs r0, #0
+    b .Lcontest_find_done
+.Lcontest_name_found:
+    lsls r0, r7, #3
+    ldr r1, =ChsContestOpponentDisplayNames
+    adds r0, r0, r1
+.Lcontest_find_done:
+    add sp, #4
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lcontest_display_call:
+    bx r3
+
+.align 2
+.type ChsContestWinnerDisplayName, %function
+.thumb_func
+ChsContestWinnerDisplayName:
+    push {r4, r5, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldrh r0, [r4, #8]
+    adds r1, r4, #0
+    adds r1, #11
+    adds r2, r4, #0
+    adds r2, #22
+    bl ChsFindContestOpponentDisplayNames
+    cmp r0, #0
+    beq .Lcontest_winner_original
+    lsls r1, r5, #2
+    ldr r0, [r0, r1]
+    b .Lcontest_winner_done
+.Lcontest_winner_original:
+    adds r0, r4, #0
+    adds r0, #11
+    cmp r5, #0
+    beq .Lcontest_winner_done
+    adds r0, #11
+.Lcontest_winner_done:
+    pop {r4, r5}
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsContestPaintingTrainerName
+.type ChsContestPaintingTrainerName, %function
+.thumb_func
+ChsContestPaintingTrainerName:
+    push {r4, lr}
+    adds r4, r0, #0
+    adds r0, r1, #0
+    movs r1, #1
+    bl ChsContestWinnerDisplayName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088B9
+    bl .Lcontest_display_call
+    pop {r4}
+    pop {r1}
+    mov lr, r1
+    ldr r0, =0x081301E4
+    ldr r0, [r0]
+    ldr r3, =0x0813019D
+    bx r3
+
+.align 2
+.global ChsBufferContestNickname
+.type ChsBufferContestNickname, %function
+.thumb_func
+ChsBufferContestNickname:
+    push {lr}
+    ldr r1, =0x080F8B34
+    ldr r1, [r1]
+    ldrh r1, [r1]
+    lsls r1, r1, #6
+    ldr r2, =0x02039AA2
+    adds r1, r1, r2
+    ldr r0, =0x080F8B30
+    ldr r0, [r0]
+    bl ChsCopyContestNicknameForDisplay
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsBufferContestWinnerNickname
+.type ChsBufferContestWinnerNickname, %function
+.thumb_func
+ChsBufferContestWinnerNickname:
+    push {lr}
+    ldr r2, =0x080F8C48
+    ldr r2, [r2]
+    movs r1, #0
+.Lcontest_winner_nickname_find:
+    ldrb r0, [r2, r1]
+    cmp r0, #0
+    beq .Lcontest_winner_nickname_buffer
+    adds r1, #1
+    cmp r1, #3
+    bls .Lcontest_winner_nickname_find
+.Lcontest_winner_nickname_buffer:
+    lsls r1, r1, #6
+    ldr r2, =0x02039AA2
+    adds r1, r1, r2
+    ldr r0, =0x080F8C4C
+    ldr r0, [r0]
+    bl ChsCopyContestNicknameForDisplay
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsPrintContestTrainerWithColor
+.type ChsPrintContestTrainerWithColor, %function
+.thumb_func
+ChsPrintContestTrainerWithColor:
+    push {r4, r5, lr}
+    sub sp, #32
+    lsls r4, r0, #24
+    lsrs r4, r4, #24
+    lsls r5, r1, #24
+    lsrs r5, r5, #24
+    ldr r1, =0x080DA6E8
+    ldr r1, [r1]
+    mov r0, sp
+    ldr r3, =0x080088B9
+    bl .Lcontest_display_call
+    lsls r0, r4, #6
+    ldr r1, =0x02039AA0
+    adds r0, r0, r1
+    movs r1, #1
+    bl ChsContestDisplayName
+    adds r1, r0, #0
+    mov r0, sp
+    ldr r3, =0x080088D9
+    bl .Lcontest_display_call
+    mov r0, sp
+    adds r1, r5, #0
+    ldr r3, =0x080DA665
+    bl .Lcontest_display_call
+    ldr r0, =0x02039BC6
+    ldrb r0, [r0, r4]
+    adds r0, #4
+    ldr r1, =0x02022AE0
+    ldr r3, =0x080DE2D5
+    bl .Lcontest_display_call
+    add sp, #32
+    pop {r4, r5}
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsBufferContestTrainerName
+.type ChsBufferContestTrainerName, %function
+.thumb_func
+ChsBufferContestTrainerName:
+    push {lr}
+    ldr r0, =0x080F8B10
+    ldr r0, [r0]
+    ldrh r0, [r0]
+    lsls r0, r0, #6
+    ldr r1, =0x02039AA0
+    adds r0, r0, r1
+    movs r1, #1
+    bl ChsContestDisplayName
+    adds r1, r0, #0
+    ldr r0, =0x080F8B0C
+    ldr r0, [r0]
+    ldr r3, =0x080088B9
+    bl .Lcontest_display_call
+    pop {r1}
+    bx r1
+
+.align 2
+.global ChsBufferContestWinnerTrainerName
+.type ChsBufferContestWinnerTrainerName, %function
+.thumb_func
+ChsBufferContestWinnerTrainerName:
+    push {lr}
+    ldr r2, =0x080F8C08
+    ldr r2, [r2]
+    movs r0, #0
+.Lcontest_winner_name_find:
+    ldrb r1, [r2, r0]
+    cmp r1, #0
+    beq .Lcontest_winner_name_buffer
+    adds r0, #1
+    cmp r0, #3
+    bls .Lcontest_winner_name_find
+.Lcontest_winner_name_buffer:
+    lsls r0, r0, #6
+    ldr r1, =0x02039AA0
+    adds r0, r0, r1
+    movs r1, #1
+    bl ChsContestDisplayName
+    adds r1, r0, #0
+    ldr r0, =0x080F8C0C
+    ldr r0, [r0]
+    ldr r3, =0x080088B9
+    bl .Lcontest_display_call
+    pop {r1}
+    bx r1
 
 .ltorg
 
@@ -3149,6 +3759,15 @@ ChsCopyFieldPoisonNickname:
 ChsCopyContestNicknameForDisplay:
     subs r3, r1, #2
     ldrh r2, [r3]
+    push {r0, r2, lr}
+    adds r0, r3, #0
+    movs r1, #0
+    bl ChsContestDisplayName
+    mov r12, r0
+    pop {r0, r2}
+    pop {r3}
+    mov lr, r3
+    mov r1, r12
     b ChsCopyNicknameStringForSpecies
 
 .align 2
@@ -3189,6 +3808,16 @@ ChsPrintContestantNicknameWithColor:
 ChsCopyContestWinnerNicknameForDisplay:
     subs r3, r1, #3
     ldrh r2, [r3]
+    push {r0, r2, lr}
+    adds r0, r1, #0
+    subs r0, #11
+    movs r1, #0
+    bl ChsContestWinnerDisplayName
+    mov r12, r0
+    pop {r0, r2}
+    pop {r3}
+    mov lr, r3
+    mov r1, r12
     b ChsCopyNicknameStringForSpecies
 .Lcontest_nickname_call_r3:
     bx r3
@@ -4058,6 +4687,88 @@ ChsBagHMIconGfx:
 .global ChsWallClockGfx
 ChsWallClockGfx:
     .incbin "build/patch/wallclock.lz"
+
+.align 2
+.global ChsBerryFixGraphics
+ChsBerryFixGraphics:
+    .word .Lberry_fix_0_tiles, .Lberry_fix_0_map, .Lberry_fix_0_palette
+    .word .Lberry_fix_1_tiles, .Lberry_fix_1_map, .Lberry_fix_1_palette
+    .word .Lberry_fix_2_tiles, .Lberry_fix_2_map, .Lberry_fix_2_palette
+    .word .Lberry_fix_3_tiles, .Lberry_fix_3_map, .Lberry_fix_3_palette
+    .word .Lberry_fix_4_tiles, .Lberry_fix_4_map, .Lberry_fix_4_palette
+    .word .Lberry_fix_5_tiles, .Lberry_fix_5_map, .Lberry_fix_5_palette
+
+.align 2
+.Lberry_fix_0_tiles:
+    .incbin "build/patch/berry_fix_0_tiles.lz"
+
+.align 2
+.Lberry_fix_0_map:
+    .incbin "build/patch/berry_fix_0_map.lz"
+
+.align 2
+.Lberry_fix_0_palette:
+    .incbin "patch/gfx/berry_fix_0.gbapal"
+
+.align 2
+.Lberry_fix_1_tiles:
+    .incbin "build/patch/berry_fix_1_tiles.lz"
+
+.align 2
+.Lberry_fix_1_map:
+    .incbin "build/patch/berry_fix_1_map.lz"
+
+.align 2
+.Lberry_fix_1_palette:
+    .incbin "patch/gfx/berry_fix_1.gbapal"
+
+.align 2
+.Lberry_fix_2_tiles:
+    .incbin "build/patch/berry_fix_2_tiles.lz"
+
+.align 2
+.Lberry_fix_2_map:
+    .incbin "build/patch/berry_fix_2_map.lz"
+
+.align 2
+.Lberry_fix_2_palette:
+    .incbin "patch/gfx/berry_fix_2.gbapal"
+
+.align 2
+.Lberry_fix_3_tiles:
+    .incbin "build/patch/berry_fix_3_tiles.lz"
+
+.align 2
+.Lberry_fix_3_map:
+    .incbin "build/patch/berry_fix_3_map.lz"
+
+.align 2
+.Lberry_fix_3_palette:
+    .incbin "patch/gfx/berry_fix_3.gbapal"
+
+.align 2
+.Lberry_fix_4_tiles:
+    .incbin "build/patch/berry_fix_4_tiles.lz"
+
+.align 2
+.Lberry_fix_4_map:
+    .incbin "build/patch/berry_fix_4_map.lz"
+
+.align 2
+.Lberry_fix_4_palette:
+    .incbin "patch/gfx/berry_fix_4.gbapal"
+
+.align 2
+.Lberry_fix_5_tiles:
+    .incbin "build/patch/berry_fix_5_tiles.lz"
+
+.align 2
+.Lberry_fix_5_map:
+    .incbin "build/patch/berry_fix_5_map.lz"
+
+.align 2
+.Lberry_fix_5_palette:
+    .incbin "patch/gfx/berry_fix_5.gbapal"
 
 .align 2
 .global ChsPokenavLeftHeaderHoennMapGfx

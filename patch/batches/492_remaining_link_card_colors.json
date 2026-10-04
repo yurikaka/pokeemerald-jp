@@ -1,0 +1,59 @@
+{
+  "source_commit": "fe570a7e5",
+  "category": "Fixed-layout link trainer card color names",
+  "texts": [
+    {
+      "name": "ChsRemaining_BronzeCard",
+      "source_symbol": "gText_BronzeCard",
+      "text": "青铜",
+      "compact_resource": true
+    },
+    {
+      "name": "ChsRemaining_CopperCard",
+      "source_symbol": "gText_CopperCard",
+      "text": "紫铜",
+      "compact_resource": true
+    },
+    {
+      "name": "ChsRemaining_SilverCard",
+      "source_symbol": "gText_SilverCard",
+      "text": "白银",
+      "compact_resource": true
+    },
+    {
+      "name": "ChsRemaining_GoldCard",
+      "source_symbol": "gText_GoldCard",
+      "text": "黄金",
+      "compact_resource": true
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x080B317C",
+      "original": "0x0852B23F",
+      "symbol": "ChsLinkCardColorNames"
+    }
+  ],
+  "compact_tables": [
+    {
+      "kind": "fixed_string_table",
+      "name": "ChsLinkCardColorNames",
+      "stride": 5,
+      "strings": [
+        "",
+        {
+          "compact_resource": "ChsRemaining_BronzeCard"
+        },
+        {
+          "compact_resource": "ChsRemaining_CopperCard"
+        },
+        {
+          "compact_resource": "ChsRemaining_SilverCard"
+        },
+        {
+          "compact_resource": "ChsRemaining_GoldCard"
+        }
+      ]
+    }
+  ]
+}
