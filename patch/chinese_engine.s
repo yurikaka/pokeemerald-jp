@@ -3732,6 +3732,44 @@ DecompressChineseGlyph:
     ldr r3, =JP_DECOMPRESS_GLYPH_TILE
     bx r3
 
+.align 2
+.global ChsRegionMapCityWindowFillA
+.type ChsRegionMapCityWindowFillA, %function
+.thumb_func
+ChsRegionMapCityWindowFillA:
+    @ UpdateMapSecInfoWindow (0x081CC260) city cases skip
+    @ FillWindowPixelBuffer, so replacing a longer Chinese mapsec name with a
+    @ shorter one leaves stray glyph pixels in the info window. Re-execute the
+    @ four instructions replaced by the veneer hook, with the missing fill.
+    ldrb r0, [r5, #8]
+    movs r1, #0x11
+    bl .Lregion_map_fill_window
+    ldrb r0, [r5, #8]
+    movs r4, #2
+    str r4, [sp, #0]
+    movs r1, #0
+    ldr r3, =0x081CC2A1
+    bx r3
+
+.align 2
+.global ChsRegionMapCityWindowFillB
+.type ChsRegionMapCityWindowFillB, %function
+.thumb_func
+ChsRegionMapCityWindowFillB:
+    ldrb r0, [r5, #8]
+    movs r1, #0x11
+    bl .Lregion_map_fill_window
+    ldrb r0, [r5, #8]
+    movs r4, #2
+    str r4, [sp, #0]
+    movs r1, #0
+    ldr r3, =0x081CC2DD
+    bx r3
+
+.Lregion_map_fill_window:
+    ldr r3, =JP_FILL_WINDOW_PIXEL_BUFFER
+    bx r3
+
 .ltorg
 
 .section .rodata
