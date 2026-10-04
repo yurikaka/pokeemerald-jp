@@ -1252,7 +1252,7 @@ ChsPokedexName:
     mov r4, r8
     mov r5, sb
     push {r4, r5}
-    sub sp, #0xC
+    sub sp, #0x14
     adds r4, r0, #0
     adds r5, r1, #0
     adds r6, r2, #0
@@ -1296,6 +1296,23 @@ ChsPokedexName:
     movs r2, #0xFF
     strb r2, [r1, #5]
 .Lpokedex_name_print:
+    cmp r5, #5
+    bne .Lpokedex_name_font_ready
+    cmp r6, #4
+    bne .Lpokedex_name_font_ready
+    cmp r7, #0x0F
+    bne .Lpokedex_name_font_ready
+    mov r1, sp
+    ldrb r0, [r1]
+    cmp r0, #0xF5
+    bne .Lpokedex_name_font_ready
+    ldrb r0, [r1, #2]
+    ldrb r2, [r1, #3]
+    lsls r2, r2, #8
+    orrs r0, r2
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+.Lpokedex_name_font_ready:
     ldr r0, =JP_POKEDEX_PRINT_TEXT
     mov ip, r0
     cmp r5, #5
@@ -1341,7 +1358,7 @@ ChsPokedexName:
     bl .Lpokedex_name_print_call
 .Lpokedex_name_return:
     adds r0, r5, #0
-    add sp, #0xC
+    add sp, #0x14
     pop {r3, r4}
     mov r8, r3
     mov sb, r4
