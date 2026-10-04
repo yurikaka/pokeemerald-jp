@@ -14,6 +14,7 @@ from build_texts import SYNTHETIC_PUNCTUATION, read_charmap
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 MEMO_TEXT = "的性格，好像在遇见了当时的它孵化了通过交换某个地方"
+START_MENU_TEXT = "宝可导航"
 
 
 def glyph_index(encoded: bytes) -> int:
@@ -56,7 +57,7 @@ def main() -> None:
     args = parser.parse_args()
 
     entries = json.loads((ROOT / "patch/batches/175_summary_info.json").read_text())["texts"]
-    chars = set(MEMO_TEXT)
+    chars = set(MEMO_TEXT + START_MENU_TEXT)
     for entry in entries:
         if entry["name"].startswith(("ChsNatureName", "ChsMapsecName")):
             chars.update(entry["text"])
