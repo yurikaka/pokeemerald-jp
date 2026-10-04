@@ -43,6 +43,63 @@
 .equ TEXT_SPECIES_CHAR_OFFSET,  0x1A
 
 .align 2
+.global ChsMapNamePopupPosition
+.type ChsMapNamePopupPosition, %function
+.thumb_func
+ChsMapNamePopupPosition:
+    add r1, sp, #0xC
+    adds r1, #3
+    ldrb r2, [r1]
+    cmp r2, #0xFC
+    bne .Lmap_popup_native_position
+    ldrb r2, [r1, #1]
+    cmp r2, #0x16
+    bne .Lmap_popup_native_position
+    adds r1, #2
+    movs r4, #0
+.Lmap_popup_measure:
+    ldrb r2, [r1]
+    cmp r2, #0xFF
+    beq .Lmap_popup_center
+    cmp r2, #0x7F
+    beq .Lmap_popup_pair
+    cmp r2, #0x60
+    blo .Lmap_popup_single
+    cmp r2, #0x7D
+    bhi .Lmap_popup_single
+    cmp r2, #0x65
+    beq .Lmap_popup_single
+    cmp r2, #0x7A
+    beq .Lmap_popup_single
+.Lmap_popup_pair:
+    adds r4, #12
+    adds r1, #2
+    b .Lmap_popup_measure
+.Lmap_popup_single:
+    adds r4, #8
+    adds r1, #1
+    b .Lmap_popup_measure
+.Lmap_popup_center:
+    cmp r4, #80
+    bhi .Lmap_popup_left_align
+    movs r0, #80
+    subs r4, r0, r4
+    lsrs r4, r4, #1
+    b .Lmap_popup_position_done
+.Lmap_popup_left_align:
+    movs r4, #0
+    b .Lmap_popup_position_done
+.Lmap_popup_native_position:
+    subs r4, r4, r0
+    lsls r4, r4, #26
+    lsrs r4, r4, #24
+.Lmap_popup_position_done:
+    add r1, sp, #0xC
+    ldr r3, =0x080D42B9
+    bx r3
+.ltorg
+
+.align 2
 .global ChsDisplayPartyPokemonBarDetail
 .type ChsDisplayPartyPokemonBarDetail, %function
 .thumb_func
