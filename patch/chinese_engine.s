@@ -2665,32 +2665,35 @@ ChsNicknameDisplayRouter:
     b .Lnickname_tail_copy_mon
 .Lnickname_partner_string_found:
     pop {r0-r3}
+    push {lr}
     bl ChsTruncateNickname
+    pop {r2}
+    mov lr, r2
     ldrh r0, [r7]
     adds r1, r4, #0
     b ChsConvertNicknameForSpecies
 .Lnickname_condition_string_found:
     pop {r0-r3}
+    push {lr}
     bl ChsTruncateNickname
     adds r0, r4, #0
     adds r1, r6, #0
     bl ChsResolveBoxOrPartyMon
-    adds r4, r0, #0
     cmp r2, #0
     beq .Lnickname_condition_party
-    adds r0, r4, #0
     movs r1, #0x0B
     movs r2, #0
     ldr r3, =0x0806A1B5
     bl .Lnickname_router_call_r3
     b .Lnickname_condition_convert
 .Lnickname_condition_party:
-    adds r0, r4, #0
     movs r1, #0x0B
     movs r2, #0
     ldr r3, =0x0806A059
     bl .Lnickname_router_call_r3
 .Lnickname_condition_convert:
+    pop {r2}
+    mov lr, r2
     adds r1, r5, #0
     b ChsConvertNicknameForSpecies
 .Lnickname_hof_width_found:
