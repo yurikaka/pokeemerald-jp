@@ -3848,6 +3848,66 @@ ChsPokedexSearchGfx:
     .incbin "build/patch/pokedex_search_tiles.lz"
 
 .align 2
+.global ChsPokenavLeftHeaderMainMenuGfx
+ChsPokenavLeftHeaderMainMenuGfx:
+    .incbin "build/patch/pokenav_left_header_main_menu.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderConditionGfx
+ChsPokenavLeftHeaderConditionGfx:
+    .incbin "build/patch/pokenav_left_header_condition.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderRibbonsGfx
+ChsPokenavLeftHeaderRibbonsGfx:
+    .incbin "build/patch/pokenav_left_header_ribbons.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderMatchCallGfx
+ChsPokenavLeftHeaderMatchCallGfx:
+    .incbin "build/patch/pokenav_left_header_match_call.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderHoennMapGfx
+ChsPokenavLeftHeaderHoennMapGfx:
+    .incbin "build/patch/pokenav_left_header_hoenn_map.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderPartyGfx
+ChsPokenavLeftHeaderPartyGfx:
+    .incbin "build/patch/pokenav_left_header_party.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderSearchGfx
+ChsPokenavLeftHeaderSearchGfx:
+    .incbin "build/patch/pokenav_left_header_search.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderCoolGfx
+ChsPokenavLeftHeaderCoolGfx:
+    .incbin "build/patch/pokenav_left_header_cool.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderBeautyGfx
+ChsPokenavLeftHeaderBeautyGfx:
+    .incbin "build/patch/pokenav_left_header_beauty.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderCuteGfx
+ChsPokenavLeftHeaderCuteGfx:
+    .incbin "build/patch/pokenav_left_header_cute.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderSmartGfx
+ChsPokenavLeftHeaderSmartGfx:
+    .incbin "build/patch/pokenav_left_header_smart.lz"
+
+.align 2
+.global ChsPokenavLeftHeaderToughGfx
+ChsPokenavLeftHeaderToughGfx:
+    .incbin "build/patch/pokenav_left_header_tough.lz"
+
+.align 2
 .global ChsStatusIconsGfx
 ChsStatusIconsGfx:
     .incbin "build/patch/status_icons.lz"
