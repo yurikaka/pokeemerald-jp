@@ -3772,6 +3772,47 @@ ChsRegionMapCityWindowFillB:
 
 .ltorg
 
+.align 2
+.global ChsPrintSearchRankString
+.type ChsPrintSearchRankString, %function
+.thumb_func
+ChsPrintSearchRankString:
+    @ Replaces UnusedPrintNumberString (0x081CDE98), which built the rank
+    @ label in the condition graph view as "<num>ばんめ" via gText_Number2.
+    @ Write "第<num>名" instead, entering Chinese mode for the two glyphs.
+    @ Digits and the right-align padding render unchanged in Chinese mode,
+    @ and the caller's text[16] buffer still fits exactly
+    @ (5 color ctrl + 2 mode + 2 glyph + 4 digits + 2 glyph + 1 EOS).
+    push {r4, lr}
+    movs r2, #0xFC
+    strb r2, [r0]
+    movs r2, #0x16
+    strb r2, [r0, #1]
+    movs r2, #0x62
+    strb r2, [r0, #2]
+    movs r2, #0x21
+    strb r2, [r0, #3]
+    adds r0, #4
+    lsls r1, r1, #16
+    lsrs r1, r1, #16
+    movs r2, #1
+    movs r3, #4
+    ldr r4, =0x080089D9
+    bl .Lrank_call_convert
+    movs r2, #0x68
+    strb r2, [r0]
+    movs r2, #0x93
+    strb r2, [r0, #1]
+    movs r2, #0xFF
+    strb r2, [r0, #2]
+    adds r0, #3
+    pop {r4, pc}
+
+.Lrank_call_convert:
+    bx r4
+
+.ltorg
+
 .section .rodata
 .align 2
 .include "build/patch/texts.inc"
