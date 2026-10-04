@@ -3916,6 +3916,11 @@ ChsPokenavLeftHeaderHoennMapGfx:
     .incbin "build/patch/pokenav_left_header_hoenn_map.lz"
 
 .align 2
+.global ChsPokenavCityZoomTextGfx
+ChsPokenavCityZoomTextGfx:
+    .incbin "build/patch/pokenav_city_zoom_text.lz"
+
+.align 2
 .global ChsPokenavLeftHeaderPartyGfx
 ChsPokenavLeftHeaderPartyGfx:
     .incbin "build/patch/pokenav_left_header_party.lz"
