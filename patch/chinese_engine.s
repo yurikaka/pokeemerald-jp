@@ -3956,6 +3956,16 @@ ChsPokenavLeftHeaderToughGfx:
     .incbin "build/patch/pokenav_left_header_tough.lz"
 
 .align 2
+.global ChsPokenavConditionGraphGfx
+ChsPokenavConditionGraphGfx:
+    .incbin "build/patch/pokenav_condition_graph.lz"
+
+.align 2
+.global ChsPokenavConditionGraphTilemap
+ChsPokenavConditionGraphTilemap:
+    .incbin "build/patch/pokenav_condition_graph_tilemap.lz"
+
+.align 2
 .global ChsStatusIconsGfx
 ChsStatusIconsGfx:
     .incbin "build/patch/status_icons.lz"
