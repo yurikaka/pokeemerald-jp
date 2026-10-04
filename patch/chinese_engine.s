@@ -857,6 +857,8 @@ ChsScrCmdBufferPartyMonNick:
 .Lscript_nick_call_r3:
     bx r3
 
+.ltorg
+
 .align 2
 .global ChsUpdateNickInHealthbox
 .type ChsUpdateNickInHealthbox, %function
@@ -874,6 +876,47 @@ ChsUpdateNickInHealthbox:
     adds r0, r5, #0
     mov r1, sp
     bl ChsCopyMonNickname
+    mov r0, sp
+    ldrb r1, [r0]
+    cmp r1, #0xF5
+    bne .Lhealthbox_append_nickname
+    ldrb r1, [r0, #1]
+    cmp r1, #0xF2
+    bne .Lhealthbox_append_nickname
+    ldrb r1, [r0, #2]
+    ldrb r2, [r0, #3]
+    lsls r2, r2, #8
+    orrs r1, r2
+    lsls r1, r1, #2
+    ldr r2, =ChsSpeciesNames
+    ldr r6, [r2, r1]
+    adds r6, #1
+    adds r0, r6, #0
+    movs r7, #0
+.Lhealthbox_nickname_length:
+    ldrb r1, [r0]
+    cmp r1, #0xFF
+    beq .Lhealthbox_nickname_font
+    adds r0, #2
+    adds r7, #1
+    b .Lhealthbox_nickname_length
+.Lhealthbox_nickname_font:
+    cmp r7, #5
+    bne .Lhealthbox_append_nickname
+    mov r0, sp
+    movs r1, #0xF5
+    strb r1, [r0]
+    movs r1, #0xF3
+    strb r1, [r0, #1]
+    adds r0, #2
+.Lhealthbox_nickname_narrow_copy:
+    ldrb r1, [r6]
+    strb r1, [r0]
+    adds r6, #1
+    adds r0, #1
+    cmp r1, #0xFF
+    bne .Lhealthbox_nickname_narrow_copy
+.Lhealthbox_append_nickname:
     ldr r0, =0x02022AE0
     mov r1, sp
     ldr r3, =0x080088D9
@@ -940,7 +983,7 @@ ChsUpdateNickInHealthbox:
     ldr r0, =0x02022AE0
     str r0, [sp, #0x10]
     adds r0, r6, #0
-    movs r1, #1
+    movs r1, #0
     movs r2, #0
     ldr r3, =JP_ADD_TEXT_PRINTER_PARAM4
     mov r12, r3
@@ -1041,10 +1084,10 @@ ChsTextIntoHealthboxObject:
     beq .Lhealthbox_copy_done
 .Lhealthbox_copy_column:
     adds r0, r5, #0
-    adds r0, #0x14
+    adds r0, #0x10
     adds r1, r4, #0
-    adds r1, #0x14
-    ldr r2, =0x04000003
+    adds r1, #0x10
+    ldr r2, =0x04000004
     ldr r3, =JP_CPU_SET
     bl .Lhealthbox_copy_call_r3
     adds r4, #0x20
