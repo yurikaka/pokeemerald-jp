@@ -4846,6 +4846,16 @@ ChsEasyChatButtonWindowGfx:
     .incbin "build/patch/easy_chat_button_window.lz"
 
 .align 2
+.global ChsEasyChatFooterTiles
+ChsEasyChatFooterTiles:
+    .incbin "build/patch/easy_chat_footer_tiles.lz"
+
+.align 2
+.global ChsEasyChatFooterMap
+ChsEasyChatFooterMap:
+    .incbin "build/patch/easy_chat_footer_map.lz"
+
+.align 2
 .global ChsEasyChatModeGfx
 ChsEasyChatModeGfx:
     .incbin "build/patch/easy_chat_mode.lz"

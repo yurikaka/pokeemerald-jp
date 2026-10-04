@@ -115,6 +115,15 @@ $(PATCH_BERRY_FIX_GFX) $(PATCH_BERRY_FIX_PALS) &: patch/tools/build_berry_fix_gf
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
+$(PATCH_BUILD)/easy_chat_footer_tiles.4bpp $(PATCH_BUILD)/easy_chat_footer_map.bin &: patch/tools/build_easy_chat_footer_gfx.py patch/tools/build_berry_fix_gfx.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_us_chs/src/strings.c | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_easy_chat_footer_gfx.py
+
+$(PATCH_BUILD)/easy_chat_footer_tiles.lz: $(PATCH_BUILD)/easy_chat_footer_tiles.4bpp
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/easy_chat_footer_map.lz: $(PATCH_BUILD)/easy_chat_footer_map.bin
+	$(GBAGFX) $< $@
+
 $(PATCH_TILEMAP_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.bin | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
@@ -128,7 +137,8 @@ $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/latin_normal.latfont $(PATCH_BUILD)/latin_small.latfont \
 		patch/gfx/title_logo.8bpp.lz patch/gfx/title_logo.bin.lz \
 		patch/gfx/title_palette.gbapal patch/gfx/title_emerald.8bpp.lz \
-		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX) $(PATCH_BERRY_FIX_PALS)
+		$(PATCH_RESOURCES_LZ) $(PATCH_RAW_TILEMAPS) $(PATCH_RAW_GFX) $(PATCH_NAMING_GFX) $(PATCH_BERRY_FIX_PALS) \
+		$(PATCH_BUILD)/easy_chat_footer_tiles.lz $(PATCH_BUILD)/easy_chat_footer_map.lz
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 
 $(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld
