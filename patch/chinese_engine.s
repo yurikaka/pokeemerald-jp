@@ -981,17 +981,30 @@ ChsUpdateNickInHealthbox:
     ldr r0, =0x06010400
 .Lhealthbox_player_copy_tail:
     adds r0, r0, r7
+    movs r1, #0x80
+    lsls r1, r1, #1
+    adds r1, r0, r1
+    str r1, [sp, #0x14]
     adds r1, r5, #0
     adds r1, #0xC0
     movs r2, #1
     bl ChsTextIntoHealthboxObject
-    b .Lhealthbox_remove_window
+    b .Lhealthbox_restore_lv
 .Lhealthbox_enemy:
     ldr r0, =0x06010020
     adds r0, r0, r7
+    ldr r1, =0x060101E0
+    adds r1, r1, r7
+    str r1, [sp, #0x14]
     adds r1, r5, #0
     movs r2, #7
     bl ChsTextIntoHealthboxObject
+.Lhealthbox_restore_lv:
+    ldr r0, =.Lhealthbox_lv_tile
+    ldr r1, [sp, #0x14]
+    ldr r2, =0x04000008
+    ldr r3, =JP_CPU_SET
+    bl .Lhealthbox_call_r3
 .Lhealthbox_remove_window:
     adds r0, r6, #0
     ldr r3, =JP_REMOVE_WINDOW
@@ -1049,6 +1062,13 @@ ChsTextIntoHealthboxObject:
 .Lhealthbox_window_template:
     .byte 0, 0, 0, 8, 2, 0
     .hword 0
+
+.align 2
+.Lhealthbox_lv_tile:
+    .byte 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22
+    .byte 0x12, 0x21, 0x22, 0x22, 0x12, 0x31, 0x22, 0x22
+    .byte 0x12, 0x31, 0x12, 0x12, 0x12, 0x31, 0x22, 0x31
+    .byte 0x12, 0x11, 0x21, 0x23, 0x22, 0x33, 0x33, 0x22
 
 .ltorg
 
