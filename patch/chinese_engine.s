@@ -4054,6 +4054,11 @@ ChsMonMarkingsMenuGfx:
     .incbin "patch/gfx/mon_markings_menu.4bpp"
 
 .align 2
+.global ChsWallClockGfx
+ChsWallClockGfx:
+    .incbin "build/patch/wallclock.lz"
+
+.align 2
 .global ChsPokenavLeftHeaderHoennMapGfx
 ChsPokenavLeftHeaderHoennMapGfx:
     .incbin "build/patch/pokenav_left_header_hoenn_map.lz"
