@@ -3868,6 +3868,11 @@ ChsPokenavLeftHeaderMatchCallGfx:
     .incbin "build/patch/pokenav_left_header_match_call.lz"
 
 .align 2
+.global ChsPokenavOptionsGfx
+ChsPokenavOptionsGfx:
+    .incbin "build/patch/pokenav_options.lz"
+
+.align 2
 .global ChsPokenavLeftHeaderHoennMapGfx
 ChsPokenavLeftHeaderHoennMapGfx:
     .incbin "build/patch/pokenav_left_header_hoenn_map.lz"
