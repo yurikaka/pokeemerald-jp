@@ -5,6 +5,233 @@
 .section .text
 .align 2
 
+.global ChsContestResultsNames
+.type ChsContestResultsNames, %function
+.thumb_func
+ChsContestResultsNames:
+    push {r4-r6, lr}
+    sub sp, #32
+    lsls r0, r0, #24
+    lsrs r4, r0, #24
+    mov r0, sp
+    adds r1, r4, #0
+    bl .Lcontest_results_prefix
+    adds r5, r0, #0
+    lsls r1, r4, #6
+    ldr r0, =0x02039AA2
+    adds r1, r1, r0
+    adds r0, r5, #0
+    bl ChsCopyContestNicknameForDisplay
+    adds r0, r4, #0
+    mov r1, sp
+    ldr r3, =0x080F8761
+    bl .Lcontest_results_call
+    mov r0, sp
+    adds r1, r4, #0
+    bl .Lcontest_results_prefix
+    ldr r1, =0x085C93FF
+    ldr r3, =0x080088B9
+    bl .Lcontest_results_call
+    adds r5, r0, #0
+    lsls r0, r4, #6
+    ldr r1, =0x02039AA0
+    adds r0, r0, r1
+    movs r1, #1
+    bl ChsContestDisplayName
+    adds r1, r0, #0
+    adds r0, r5, #0
+    ldr r3, =0x080088B9
+    bl .Lcontest_results_call
+    adds r0, r4, #4
+    mov r1, sp
+    ldr r3, =0x080F8761
+    bl .Lcontest_results_call
+    add sp, #32
+    pop {r4-r6}
+    pop {r0}
+    bx r0
+.Lcontest_results_call:
+    bx r3
+.Lcontest_results_prefix:
+    push {lr}
+    ldr r2, =0x02039BC5
+    ldrb r2, [r2]
+    cmp r1, r2
+    bne .Lcontest_results_prefix_done
+    ldr r1, =0x085CC4E0
+    ldr r3, =0x080088B9
+    bl .Lcontest_results_call
+.Lcontest_results_prefix_done:
+    pop {r1}
+    bx r1
+.ltorg
+
+.type ChsContestRasterText, %function
+.thumb_func
+ChsContestRasterText:
+    push {r4-r7, lr}
+    sub sp, #32
+    adds r4, r0, #0
+    adds r5, r1, #0
+    add r0, sp, #24
+    add r1, sp, #24
+    adds r1, #1
+    add r2, sp, #24
+    adds r2, #2
+    ldr r3, =0x08004799
+    bl .Lcontest_results_call
+    ldr r0, =.Lcontest_text_window
+    ldr r3, =0x08003251
+    bl .Lcontest_results_call
+    adds r6, r0, #0
+    movs r1, #0x11
+    ldr r3, =0x08003B19
+    bl .Lcontest_results_call
+    add r1, sp, #20
+    movs r0, #15
+    strb r0, [r1]
+    movs r0, #1
+    strb r0, [r1, #1]
+    movs r0, #14
+    strb r0, [r1, #2]
+    movs r0, #0
+    str r0, [sp]
+    str r0, [sp, #4]
+    str r1, [sp, #8]
+    mvns r0, r0
+    str r0, [sp, #12]
+    str r4, [sp, #16]
+    adds r0, r6, #0
+    movs r1, #1
+    movs r2, #0
+    movs r3, #1
+    ldr r4, =0x08199B85
+    bl .Lcontest_results_call_r4
+    ldr r0, =0x0202018C
+    ldrb r7, [r0, #8]
+    adds r7, #7
+    lsrs r7, r7, #3
+    cmp r5, #0
+    beq .Lcontest_raster_remove
+    adds r0, r6, #0
+    movs r1, #7
+    ldr r3, =0x0800401D
+    bl .Lcontest_results_call
+    adds r4, r0, #0
+    movs r2, #32
+    str r2, [sp, #20]
+.Lcontest_raster_copy:
+    adds r0, r4, #0
+    adds r1, r5, #0
+    ldr r2, =0x04000008
+    ldr r3, =0x082959BD
+    bl .Lcontest_results_call
+    movs r0, #1
+    lsls r0, r0, #10
+    adds r0, r4, r0
+    adds r1, r5, #0
+    adds r1, #32
+    ldr r2, =0x04000008
+    ldr r3, =0x082959BD
+    bl .Lcontest_results_call
+    adds r4, #32
+    adds r5, #64
+    ldr r0, [sp, #20]
+    subs r0, #1
+    str r0, [sp, #20]
+    bne .Lcontest_raster_copy
+.Lcontest_raster_remove:
+    adds r0, r6, #0
+    ldr r3, =0x08003445
+    bl .Lcontest_results_call
+    add r0, sp, #24
+    add r1, sp, #24
+    adds r1, #1
+    add r2, sp, #24
+    adds r2, #2
+    ldr r3, =0x080047B9
+    bl .Lcontest_results_call
+    adds r0, r7, #0
+    add sp, #32
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.Lcontest_results_call_r4:
+    bx r4
+.align 2
+.Lcontest_text_window:
+    .byte 0, 0, 0, 32, 2, 0
+    .hword 0
+.ltorg
+
+.global ChsContestResultsRender
+.type ChsContestResultsRender, %function
+.thumb_func
+ChsContestResultsRender:
+    adds r1, r0, #0
+    adds r0, r4, #0
+    bl ChsContestRasterText
+    ldr r3, =0x080F7439
+    bx r3
+
+.global ChsContestMoveListName
+.type ChsContestMoveListName, %function
+.thumb_func
+ChsContestMoveListName:
+    lsls r1, r4, #1
+    ldr r0, =ChsMoveNames
+    adds r1, r1, r0
+    adds r0, r6, #0
+    ldr r3, =0x080088B9
+    bl .Lcontest_results_call
+    ldr r3, =0x080D7DB5
+    bx r3
+
+.global ChsContestResultWinnerTrainer
+.type ChsContestResultWinnerTrainer, %function
+.thumb_func
+ChsContestResultWinnerTrainer:
+    push {r2}
+    adds r0, r1, #0
+    subs r0, #13
+    movs r1, #1
+    bl ChsContestDisplayName
+    adds r1, r0, #0
+    pop {r0}
+    ldr r3, =0x080088B9
+    bl .Lcontest_results_call
+    ldr r0, =0x080F6BF8
+    ldr r0, [r0]
+    ldr r3, =0x080F6BA5
+    bx r3
+
+.global ChsContestResultsColumns
+.type ChsContestResultsColumns, %function
+.thumb_func
+ChsContestResultsColumns:
+    adds r0, r5, #0
+    movs r1, #0
+    bl ChsContestRasterText
+    lsls r0, r0, #24
+    ldr r3, =0x080F7441
+    bx r3
+
+.global ChsContestResultsTextPosition
+.type ChsContestResultsTextPosition, %function
+.thumb_func
+ChsContestResultsTextPosition:
+    push {lr}
+    movs r1, #0
+    bl ChsContestRasterText
+    lsls r1, r0, #2
+    movs r0, #112
+    subs r0, r0, r1
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+    pop {r1}
+    bx r1
+.ltorg
+
 .equ JP_DECOMPRESS_GLYPH_TILE, 0x080047C9
 .equ JP_RENDER_TEXT_NORMAL,     0x0800582D
 .equ JP_RENDER_TEXT_COPY,       0x08005B33
@@ -5016,3 +5243,80 @@ LatinNormalFont:
 .align 2
 LatinSmallFont:
     .incbin "build/patch/latin_small.latfont"
+
+.section .rodata
+
+.align 2
+.global ChsContestInterfaceGfx
+ChsContestInterfaceGfx:
+    .incbin "build/patch/contest_interface.lz"
+
+.align 2
+.global ChsContestApplauseGfx
+ChsContestApplauseGfx:
+    .incbin "build/patch/contest_applause.lz"
+
+.align 2
+.global ChsContestNextTurnGfx
+ChsContestNextTurnGfx:
+    .incbin "build/patch/contest_next_turn.lz"
+
+.align 2
+.global ChsContestResultsGfx
+ChsContestResultsGfx:
+    .incbin "build/patch/contest_results.lz"
+
+.align 2
+.global ChsContestTitleNormal
+ChsContestTitleNormal:
+    .incbin "patch/gfx/contest_title_normal.bin"
+
+.align 2
+.global ChsContestTitleSuper
+ChsContestTitleSuper:
+    .incbin "patch/gfx/contest_title_super.bin"
+
+.align 2
+.global ChsContestTitleHyper
+ChsContestTitleHyper:
+    .incbin "patch/gfx/contest_title_hyper.bin"
+
+.align 2
+.global ChsContestTitleMaster
+ChsContestTitleMaster:
+    .incbin "patch/gfx/contest_title_master.bin"
+
+.align 2
+.global ChsContestTitleLink
+ChsContestTitleLink:
+    .incbin "patch/gfx/contest_title_link.bin"
+
+.align 2
+.global ChsContestTitleCool
+ChsContestTitleCool:
+    .incbin "patch/gfx/contest_title_cool.bin"
+
+.align 2
+.global ChsContestTitleBeauty
+ChsContestTitleBeauty:
+    .incbin "patch/gfx/contest_title_beauty.bin"
+
+.align 2
+.global ChsContestTitleCute
+ChsContestTitleCute:
+    .incbin "patch/gfx/contest_title_cute.bin"
+
+.align 2
+.global ChsContestTitleSmart
+ChsContestTitleSmart:
+    .incbin "patch/gfx/contest_title_smart.bin"
+
+.align 2
+.global ChsContestTitleTough
+ChsContestTitleTough:
+    .incbin "patch/gfx/contest_title_tough.bin"
+
+.align 2
+.global ChsContestTitleTitle
+ChsContestTitleTitle:
+    .incbin "patch/gfx/contest_title_title.bin"

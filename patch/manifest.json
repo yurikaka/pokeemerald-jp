@@ -5,6 +5,8 @@
   "render_hook_original": "b0773068037801303060",
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
+    {"address": "0x080F626C", "original": "70b50006060e0548007886420cd10448", "symbol": "ChsContestResultsNames"},
+    {"address": "0x080F76E8", "original": "00b511f727f9011c0906890d7820401a", "symbol": "ChsContestResultsTextPosition"},
     {
       "address": "0x081B26D8",
       "original": "30b583b00006000e1206120e1d785b78",
@@ -217,6 +219,10 @@
     }
   ],
   "veneer_hooks": [
+    { "address": "0x080F6B9C", "original": "101c11f78bfe1548", "symbol": "ChsContestResultWinnerTrainer" },
+    {"address": "0x080D7DAC", "original": "6118301c30f782fd", "symbol": "ChsContestMoveListName"},
+    {"address": "0x080F7430", "original": "0121221c0ef7a2fd", "symbol": "ChsContestResultsRender"},
+    {"address": "0x080F7438", "original": "281c11f77ffa0006", "symbol": "ChsContestResultsColumns"},
     {
       "address": "0x080D42B0",
       "original": "241aa406240e03a9",
@@ -273,6 +279,7 @@
     }
   ],
   "code_patches": [
+    { "address": "0x080DD810", "original": "40000106", "replacement": "80000106", "comment": "Place the dynamic next-turn number after the 32-pixel Chinese label" },
     {
       "address": "0x0806E0B4",
       "original": "7ebc5a08",
@@ -2961,6 +2968,25 @@
     }
   ],
   "pointer_writes": [
+    { "address": "0x08560A4C", "original": "0x08D8E920", "symbol": "ChsContestNextTurnGfx" },
+    { "address": "0x08560A54", "original": "0x08D8E920", "symbol": "ChsContestNextTurnGfx" },
+    { "address": "0x08560A5C", "original": "0x08D8E920", "symbol": "ChsContestNextTurnGfx" },
+    { "address": "0x08560A64", "original": "0x08D8E920", "symbol": "ChsContestNextTurnGfx" },
+    {"address": "0x080D6FAC", "original": "0x08C17AB8", "symbol": "ChsContestInterfaceGfx"},
+    {"address": "0x080D7700", "original": "0x08C17AB8", "symbol": "ChsContestInterfaceGfx"},
+    {"address": "0x08560B14", "original": "0x08D8EAAC", "symbol": "ChsContestApplauseGfx"},
+    {"address": "0x080F61CC", "original": "0x08C196CC", "symbol": "ChsContestResultsGfx"},
+    {"address": "0x080F7A80", "original": "0x08569334", "symbol": "ChsContestTitleNormal"},
+    {"address": "0x080F7A94", "original": "0x08569354", "symbol": "ChsContestTitleSuper"},
+    {"address": "0x080F7AB0", "original": "0x08569374", "symbol": "ChsContestTitleHyper"},
+    {"address": "0x080F7ADC", "original": "0x08569394", "symbol": "ChsContestTitleMaster"},
+    {"address": "0x080F7A64", "original": "0x085693B4", "symbol": "ChsContestTitleLink"},
+    {"address": "0x080F7AE4", "original": "0x085693D4", "symbol": "ChsContestTitleCool"},
+    {"address": "0x080F7AF4", "original": "0x085693E8", "symbol": "ChsContestTitleBeauty"},
+    {"address": "0x080F7B18", "original": "0x085693FC", "symbol": "ChsContestTitleCute"},
+    {"address": "0x080F7B3C", "original": "0x08569410", "symbol": "ChsContestTitleSmart"},
+    {"address": "0x080F7B94", "original": "0x08569424", "symbol": "ChsContestTitleTough"},
+    {"address": "0x080F7B98", "original": "0x08569438", "symbol": "ChsContestTitleTitle"},
     {
       "address": "0x081AB370",
       "original": "0x085DF99C",
