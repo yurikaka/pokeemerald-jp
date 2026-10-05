@@ -2483,6 +2483,35 @@ ChsBattleMoveNamePlaceholderHook:
 
 .align 2
 .global ChsBattleExpNamePlaceholderHook
+.global ChsBattleSpeciesBuffer
+.type ChsBattleSpeciesBuffer, %function
+.thumb_func
+ChsBattleSpeciesBuffer:
+    orrs r1, r0
+    ldr r0, =(412)
+    cmp r1, r0
+    bhs .Lbattle_species_original
+    movs r0, #0xF5
+    strb r0, [r6]
+    movs r0, #0xF2
+    strb r0, [r6, #1]
+    strb r1, [r6, #2]
+    lsrs r0, r1, #8
+    strb r0, [r6, #3]
+    movs r0, #0xFF
+    strb r0, [r6, #4]
+    ldr r3, =0x0814F7FD
+    bx r3
+.Lbattle_species_original:
+    adds r0, r6, #0
+    bl .Lbattle_species_original_call
+    ldr r3, =0x0814F7FD
+    bx r3
+.Lbattle_species_original_call:
+    ldr r3, =0x0806B3DD
+    bx r3
+
+.align 2
 .type ChsBattleExpNamePlaceholderHook, %function
 .thumb_func
 ChsBattleExpNamePlaceholderHook:
