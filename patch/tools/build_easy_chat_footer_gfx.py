@@ -15,6 +15,7 @@ from build_texts import read_charmap
 
 
 ROOT = Path(__file__).resolve().parents[2]
+FOOTER_TILE_START = 0x100
 LAYOUTS = (
     (10, ((4, 5, "DelAll"), (11, 3, "Cancel5"), (18, 4, "Ok2"))),
     (21, ((4, 5, "DelAll"), (11, 3, "Cancel5"), (16, 4, "Ok2"), (22, 3, "Answer"))),
@@ -35,6 +36,7 @@ def build():
     tilemap = bytearray(lzdec(base, 0x085740E4))
     if len(tiles) != 43 * 32 or len(tilemap) != 2048:
         raise ValueError("unexpected JP Easy Chat window resource layout")
+    tiles.extend(bytes(FOOTER_TILE_START * 32 - len(tiles)))
     charmap = read_charmap(ROOT / "patch/charmap_chs.txt")
     chinese = Image.open(ROOT / "patch/fonts/chinese_small.png")
     latin = Image.open(ROOT / "patch/fonts/latin_small.png")
@@ -67,8 +69,8 @@ def build():
                     offset = ((row + tile_row) * 32 + column + tile_column) * 2
                     original = struct.unpack_from("<H", tilemap, offset)[0]
                     struct.pack_into("<H", tilemap, offset, (original & 0xF000) | tile_index)
-    if len(tiles) > 0x8000:
-        raise ValueError("footer tiles exceed the BG character block")
+    if len(tiles) > 0x4000:
+        raise ValueError("footer tiles overlap the next BG character block")
     return bytes(tiles), bytes(tilemap), labels
 
 
