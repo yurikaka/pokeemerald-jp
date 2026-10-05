@@ -4856,8 +4856,42 @@ DecompressChineseGlyph:
     ldr r3, =JP_DECOMPRESS_GLYPH_TILE
     bx r3
 
+.ltorg
+
 .align 2
 .global ChsRegionMapCityWindowFillA
+.global ChsFlyMapNameFill
+.type ChsFlyMapNameFill, %function
+.thumb_func
+ChsFlyMapNameFill:
+    movs r0, #0
+    movs r1, #0x11
+    bl .Lregion_map_fill_window
+    ldr r0, =0x02039E14
+    ldr r2, [r0]
+    adds r2, #0x0C
+    movs r0, #2
+    str r0, [sp]
+    ldr r3, =0x081249F5
+    bx r3
+
+.align 2
+.global ChsFlyMapTallNameFill
+.type ChsFlyMapTallNameFill, %function
+.thumb_func
+ChsFlyMapTallNameFill:
+    movs r0, #1
+    movs r1, #0x11
+    bl .Lregion_map_fill_window
+    ldr r2, [r5]
+    adds r2, #0x0C
+    movs r0, #2
+    str r0, [sp]
+    str r6, [sp, #4]
+    ldr r3, =0x0812497D
+    bx r3
+
+.align 2
 .type ChsRegionMapCityWindowFillA, %function
 .thumb_func
 ChsRegionMapCityWindowFillA:
