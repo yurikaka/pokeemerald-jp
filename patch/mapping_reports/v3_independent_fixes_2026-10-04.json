@@ -1,0 +1,623 @@
+{
+  "jp_head": "5604922996cc2a53ec7d7dc99253de5e3fb5e950",
+  "us_head": "1cbb305f7ebd2038f0d0ebcba039b20fe18f21e3",
+  "changes": [
+    {
+      "number": 3,
+      "symbol": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+      "jp_file": "patch/batches/197_abandoned_ship.json",
+      "jp_before": "我们的船现在搁浅了。\\p如果有会潜水的宝可梦的话，\n或许能帮上什么忙……",
+      "jp_after": "船底已经沉到水里了。\\p如果有会潜水的宝可梦，\n也许就能继续前进了……",
+      "native_originals": [
+        {
+          "address": "0x0821ACD0",
+          "text": "ふなぞこが　みずの　なかに\\nしずんで　いるんだよ\\pポケモンが　みずに　もぐれる　わざを\\nつかえたら　さきに　すすめるんだがな……"
+        }
+      ],
+      "us_file": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+      "us_before": "我们的船现在搁浅了。\\p如果有会潜水的宝可梦的话，\n或许能帮上什么忙……$",
+      "us_after": "船底已经沉到水里了。\\p如果有会潜水的宝可梦，\n也许就能继续前进了……$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 4,
+      "symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+      "jp_file": "patch/batches/141_aquahideout_b1f.json",
+      "jp_before": "燃料供给完成！\n巡航系统正常！\\p一切正常，除了一个\n找麻烦的人！",
+      "jp_after": "燃料补给完毕！\n零食补给完毕！\\p接下来只要打倒\n捣乱的家伙就行了！",
+      "native_originals": [
+        {
+          "address": "0x08217E76",
+          "text": "ねんりょうの　ほきゅう　オッケイ!\\nおやつも　ほきゅう　オッケイ!\\pあとは　ジャマものを　ぶっとばす　だけ!"
+        }
+      ],
+      "us_file": "data/maps/AquaHideout_B1F/scripts.inc",
+      "us_before": "燃料供给完成！\n巡航系统正常！\\p一切正常，除了一个\n找麻烦的人！$",
+      "us_after": "燃料补给完毕！\n零食补给完毕！\\p接下来只要打倒\n捣乱的家伙就行了！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 6,
+      "symbol": "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+      "jp_file": "patch/batches/212_battle_frontier_battle_pike_room_normal.json",
+      "jp_before": "一旦受到了惊吓就会\n不听指挥胡乱攻击……\\p您和您的宝可梦还好吗？",
+      "jp_after": "突然看见人时会受惊，\n然后扑过来攻击……\\p您和您的宝可梦还好吗？",
+      "native_originals": [
+        {
+          "address": "0x08234E0C",
+          "text": "きゅうに　ひとを　みると　おどろいて\\nおそいかかって　しまうのだ……\\pきみも　ポケモンも　だいじょうぶか?"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+      "us_before": "一旦受到了惊吓就会\n不听指挥胡乱攻击……\\p您和您的宝可梦还好吗？$",
+      "us_after": "突然看见人时会受惊，\n然后扑过来攻击……\\p您和您的宝可梦还好吗？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 7,
+      "symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+      "jp_file": "patch/batches/126_lilycovecity_contestlobby.json",
+      "jp_before": "哇，观看华丽大赛\n简直是场视觉盛宴！\\p你看过那些\n画里的宝可梦吗？",
+      "jp_after": "来到华丽大赛会场，\n到处都是值得画下来的\\l宝可梦呢！",
+      "native_originals": [
+        {
+          "address": "0x082076BA",
+          "text": "いやあ　コンテストかいじょうに　くると\\nかきがいの　ある　ポケモンが\\lいっぱい　だね!"
+        }
+      ],
+      "us_file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+      "us_before": "哇，观看华丽大赛\n简直是场视觉盛宴！\\p你看过那些\n画里的宝可梦吗？$",
+      "us_after": "哇，观看华丽大赛\n简直是场视觉盛宴！\\p看看这些让人\n忍不住想画下来的宝可梦！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 8,
+      "symbol": "MauvilleCity_Text_UncleNoNeedToBeDown",
+      "jp_file": "patch/batches/050_mauvillecity.json",
+      "jp_before": "叔叔：满充，\n别这么沮丧。\\p想想是什么激励着你\n要变得越来越强的？\\p好了，我们回家吧，\n大家都在等你呢。",
+      "jp_after": "叔叔：满充，\n别这么沮丧。\\p今后继续努力，\n变得越来越强就好啦！\\p好了，我们回家吧，\n大家都在等你呢。",
+      "native_originals": [
+        {
+          "address": "0x081DE0F4",
+          "text": "おじさん“ミツルくん\\nそんなに　しょげることは　ないよ\\pこれから　もっともっと\\nつよくなれば　いいじゃないか!\\pさあ　うちに　かえろう\\nみんな　まってるよ"
+        }
+      ],
+      "us_file": "data/maps/MauvilleCity/scripts.inc",
+      "us_before": "叔叔：满充，\n别这么沮丧。\\p想想是什么激励着你\n要变得越来越强的？\\p好了，我们回家吧，\n大家都在等你呢。$",
+      "us_after": "叔叔：满充，\n别这么沮丧。\\p今后继续努力，\n变得越来越强就好啦！\\p好了，我们回家吧，\n大家都在等你呢。$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 9,
+      "symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+      "jp_file": "patch/batches/151_mossdeepcity_gamecorner_1f.json",
+      "jp_before": "如果您想玩游戏，\n就告诉我后面的老人。",
+      "jp_after": "如果您想玩游戏，\n就告诉我旁边的老人。",
+      "native_originals": [
+        {
+          "address": "0x08248314",
+          "text": "ゲ-ムを　するなら\\nおとなりの　おじいさんに　いってね"
+        }
+      ],
+      "us_file": "data/text/cable_club.inc",
+      "us_before": "如果您想玩游戏，\n就告诉我后面的老人。$",
+      "us_after": "如果您想玩游戏，\n就告诉我旁边的老人。$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 11,
+      "symbol": "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent",
+      "jp_file": "patch/batches/157_mossdeepcity_spacecenter_1f.json",
+      "jp_before": "我知道现在一切有些混乱，\n但是……\\p火箭发射程序不会停止！",
+      "jp_after": "我知道现在一切有些混乱，\n但是……\\p火箭马上就要发射了！",
+      "native_originals": [
+        {
+          "address": "0x0820D0FD",
+          "text": "こんな　さわぎの　とちゅう　だけど……\\pもうすぐ　ロケットが　はっしゃ　するぞ!"
+        }
+      ],
+      "us_file": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+      "us_before": "我知道现在一切有些混乱，\n但是……\\p火箭发射程序不会停止！$",
+      "us_after": "我知道现在一切有些混乱，\n但是……\\p火箭马上就要发射了！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 12,
+      "symbol": "MoveTutor_Text_SubstituteTeach",
+      "jp_file": "patch/batches/340_move_tutors.json",
+      "jp_before": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p明白了！\n不如让你的宝可梦学习替身吧？",
+      "jp_after": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p对了！\n不如让你的宝可梦学习替身吧？",
+      "native_originals": [
+        {
+          "address": "0x08276436",
+          "text": "ふう\\nこうやって　おくじょうから\\lひろい　せかいを　みていると……\\pなんにんもの　じぶんが　いて\\nいくつもの　じんせいを　たのしめたらな-\\lって　おもうの!\\lムリな　はなしだけどね　うふふ\\pそうだわ　あなたの　ポケモンちゃん!\\nみがわりの　わざ　おぼえてみない?"
+        }
+      ],
+      "us_file": "data/text/move_tutors.inc",
+      "us_before": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p明白了！\n不如让你的宝可梦学习替身吧？$",
+      "us_after": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p对了！\n不如让你的宝可梦学习替身吧？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 13,
+      "symbol": "Route116_Text_JoeyIntro",
+      "jp_file": "patch/batches/028_route116.json",
+      "jp_before": "我的宝可梦运用！\n你就好好瞧瞧吧！",
+      "jp_after": "我的宝可梦很厉害！\n你就好好瞧瞧吧！",
+      "native_originals": [
+        {
+          "address": "0x0825D643",
+          "text": "おれの　ポケモン　つえ-ぞ!\\nちょっと　みてみろよ!"
+        }
+      ],
+      "us_file": "data/text/trainers.inc",
+      "us_before": "我的宝可梦运用！\n你就好好瞧瞧吧！$",
+      "us_after": "我的宝可梦很厉害！\n你就好好瞧瞧吧！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 14,
+      "symbol": "Route123_Text_BraxtonPostBattle",
+      "jp_file": "patch/batches/148_route123.json",
+      "jp_before": "在那样的对战中获得徽章\n是你的骄傲。",
+      "jp_after": "这场战斗真是\n无愧于你的道馆徽章！",
+      "native_originals": [
+        {
+          "address": "0x0825FA26",
+          "text": "ジムバッジに　はじない\\nたたかい　だったよ!"
+        }
+      ],
+      "us_file": "data/text/trainers.inc",
+      "us_before": "在那样的对战中获得徽章\n是你的骄傲。$",
+      "us_after": "这场战斗真是\n无愧于你的道馆徽章！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 15,
+      "symbol": "SecretBase_Text_Trainer1PreChampion",
+      "jp_file": "patch/batches/391_secret_base_trainers.json",
+      "jp_before": "这个地方非常受欢迎，\n经常会有人来这里。\\p我一直在等它打开，\n我一定要得到它！",
+      "jp_after": "这个地方很受欢迎，\n总是有人占着。\\p我等了很久，\n终于轮到我使用了！",
+      "native_originals": [
+        {
+          "address": "0x082453A7",
+          "text": "この　ばしょは　にんきが　あるから\\nいつも　うまって　いるんだよ-\\pぼくは　ずっと　まっていて\\nやっと　つかえる　ように　なったんだ!"
+        }
+      ],
+      "us_file": "data/text/secret_base_trainers.inc",
+      "us_before": "这个地方非常受欢迎，\n经常会有人来这里。\\p我一直在等它打开，\n我一定要得到它！$",
+      "us_after": "这个地方很受欢迎，\n总是有人占着。\\p我等了很久，\n终于轮到我使用了！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 16,
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+      "jp_file": "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json",
+      "jp_before": "我有一对高贵的宝可梦。\n一只掌握{FD_02}的{FD_03}和",
+      "jp_after": "我培育的宝可梦是……\n一只掌握{FD_02}的{FD_03}和",
+      "native_originals": [
+        {
+          "address": "0x08226286",
+          "text": "オレの　そだてた　ポケモンは\\n{PLACEHOLDER_02}を　つかう　{PLACEHOLDER_03}と……"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "us_before": "我有一对高贵的宝可梦。\n一只掌握{STR_VAR_1}的{STR_VAR_2}和$",
+      "us_after": "我有两只不错的宝可梦。\n一只掌握{STR_VAR_1}的{STR_VAR_2}和$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 17,
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+      "jp_file": "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json",
+      "jp_before": "一只掌握{FD_02}的{FD_03}！\\p如果我们组队，那是多高雅的\n一件事呀，你觉得呢？",
+      "jp_after": "一只掌握{FD_02}的{FD_03}！\\p如果我们一起组队\n一定很不错，你觉得呢？",
+      "native_originals": [
+        {
+          "address": "0x082262A3",
+          "text": "{PLACEHOLDER_02}を　つかう　{PLACEHOLDER_03}　だよ\\pどう?\\nオレと　タッグを　くんでみない?"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "us_before": "一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p如果我们组队，那是多高雅的\n一件事呀，你觉得呢？$",
+      "us_after": "一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p如果我们一起组队\n一定很不错，你觉得呢？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 18,
+      "symbol": "BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon",
+      "jp_file": "patch/batches/399_frontier_lounge5.json",
+      "jp_before": "好像魔法一样啊！\n那边那位小女孩说她能\\l懂得宝可梦在说什么！",
+      "jp_after": "真有意思！\n那位小女孩说她能\\l懂得宝可梦的心情！",
+      "native_originals": [
+        {
+          "address": "0x08239538",
+          "text": "ポケモンの　きもちが　わかるとは\\nあの　おじょうちゃん　なかなか\\lシャレた　ことを　もうしますな!"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+      "us_before": "好像魔法一样啊！\n那边那位小女孩说她能\\l懂得宝可梦在说什么！$",
+      "us_after": "真有意思！\n那位小女孩说她能\\l懂得宝可梦的心情！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 19,
+      "symbol": "BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+      "jp_file": "patch/batches/227_battle_frontier_outside_east.json",
+      "jp_before": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\n你是不是也会陷入完全的绝望？",
+      "jp_after": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p你也要不要在黑暗中\n拼命探索一番……？",
+      "native_originals": [
+        {
+          "address": "0x08222D54",
+          "text": "くらやみが　だいすきな　わたし……\\nそう……　わたしに　ふさわしい　のは……\\lやはり　この　バトルピラミッド……\\pネ……　あなたも　くらやみの　なかを\\nひっしに　さまよって　みない……?"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+      "us_before": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\n你是不是也会陷入完全的绝望？$",
+      "us_after": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p你也要不要在黑暗与\n彻底的绝望中探索一番？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 20,
+      "symbol": "DewfordTown_Gym_Text_BrendenIntro",
+      "jp_file": "patch/batches/023_dewford_gym.json",
+      "jp_before": "让你看看\n水手的智慧！",
+      "jp_after": "让你看看\n海之男儿的骨气！",
+      "native_originals": [
+        {
+          "address": "0x081F3395",
+          "text": "うみの　おとこの　いじを\\nみせつけて　やるぜぃ!"
+        }
+      ],
+      "us_file": "data/maps/DewfordTown_Gym/scripts.inc",
+      "us_before": "让你看看\n水手的智慧！$",
+      "us_after": "让你看看\n海之男儿的骨气！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 22,
+      "symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+      "jp_file": "patch/batches/107_fortreecity_house1.json",
+      "jp_before": "从现在开始，我要把甜甜萤\n养得壮壮的！\\p你也要善待正电拍拍啊！",
+      "jp_after": "从现在开始，我要把甜甜萤\n养得壮壮的！\\p你也要把正电拍拍\n培养得更强啊！",
+      "native_originals": [
+        {
+          "address": "0x08204334",
+          "text": "よし　いまから\\nバルビ-トを　つよく　するぞ-!\\lプラスルも　つよく　してやってよ!"
+        }
+      ],
+      "us_file": "data/maps/FortreeCity_House1/scripts.inc",
+      "us_before": "从现在开始，我要把甜甜萤\n养得壮壮的！\\p你也要善待正电拍拍啊！$",
+      "us_after": "从现在开始，我要把甜甜萤\n养得壮壮的！\\p你也要把正电拍拍\n培养得更强啊！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 31,
+      "symbol": "LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin",
+      "jp_file": "patch/batches/139_lilycovecity_pokemontrainerfanclub.json",
+      "jp_before": "嗨，{FD_01}！\n我们一直想要胜过你！",
+      "jp_after": "嗨，{FD_01}！\n我们希望你能获胜！",
+      "native_originals": [
+        {
+          "address": "0x08208BEC",
+          "text": "おう　{PLACEHOLDER_01}!!\\nおうえん　してるぞ!!"
+        }
+      ],
+      "us_file": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+      "us_before": "嗨，{PLAYER}！\n我们一直想要胜过你！$",
+      "us_after": "嗨，{PLAYER}！\n我们希望你能获胜！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 32,
+      "symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+      "jp_file": "patch/batches/027_stevens_room.json",
+      "jp_before": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\n所有经常四处旅行。\\p哦？\n有给我的信？",
+      "jp_after": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\n所以经常四处旅行。\\p哦？\n有给我的信？",
+      "native_originals": [
+        {
+          "address": "0x08214107",
+          "text": "ボクの　なまえは　ダイゴ\\pめずらしい　いしに　きょうみが　あって\\nあちこち　たび　してるんだよ\\pえっ?\\nボクに　てがみ……?"
+        }
+      ],
+      "us_file": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+      "us_before": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\n所有经常四处旅行。\\p哦？\n有给我的信？$",
+      "us_after": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\n所以经常四处旅行。\\p哦？\n有给我的信？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 36,
+      "symbol": "gTVPokemonNewsBattleFrontierText11",
+      "jp_file": "patch/batches/386_tv_0.json",
+      "jp_before": "训练家{FD_02}在\n在对战宫殿单打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+      "jp_after": "训练家{FD_02}在\n对战宫殿单打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+      "native_originals": [
+        {
+          "address": "0x0825145F",
+          "text": "バトルパレス\\nシングル　バトルホ-ルに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんしょうで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+        }
+      ],
+      "us_file": "data/text/tv.inc",
+      "us_before": "训练家{STR_VAR_1}在\n在对战宫殿单打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$",
+      "us_after": "训练家{STR_VAR_1}在\n对战宫殿单打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 37,
+      "symbol": "gTVPokemonNewsBattleFrontierText12",
+      "jp_file": "patch/batches/386_tv_0.json",
+      "jp_before": "训练家{FD_02}在\n在对战宫殿双打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+      "jp_after": "训练家{FD_02}在\n对战宫殿双打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+      "native_originals": [
+        {
+          "address": "0x082514A3",
+          "text": "バトルパレス\\nダブル　バトルホ-ルに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんしょうで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+        }
+      ],
+      "us_file": "data/text/tv.inc",
+      "us_before": "训练家{STR_VAR_1}在\n在对战宫殿双打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$",
+      "us_after": "训练家{STR_VAR_1}在\n对战宫殿双打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 40,
+      "symbol": "CableClub_Text_ExplainWirelessClub",
+      "jp_file": "patch/batches/359_cable_club.json",
+      "jp_before": "让我给您介绍一下\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。",
+      "jp_after": "让我给您介绍一下\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果在联盟交谊厅或\n直接连接室找不到朋友，\\p请试着靠近朋友一些。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。",
+      "native_originals": [
+        {
+          "address": "0x08248951",
+          "text": "ポケモン　ワイヤレス　クラブでの\\nあそびかたを　せつめい　します!\\pこちら　2かいには\\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\\nユニオン　ル-ム!\\pあなたの　ちかくで\\nユニオン　ル-ムに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケ-ションが\\lたのしめます!\\pふたつめは　みぎがわの　おへや\\nダイレクト　コ-ナ-!\\pあなたの　しっている　おともだちと\\nポケモンの　こうかんや\\lたいせん　などを\\lたのしむ　ことが　できます!\\pもし　ユニオン　ル-ムや\\nダイレクト　コ-ナ-で\\lおともだちが　みつからない　ときは\\pもうすこし　おともだちと\\nちかづいて　みて　ください\\pまた　ワイヤレスアダプタが\\nつながって　いない　ばあいでも\\pみぎがわの　おへやで\\nケ-ブル　つうしんが　たのしめます\\pそれでは\\pワイヤレス　つうしんを\\nたのしんで　くださいね!"
+        }
+      ],
+      "us_file": "data/text/cable_club.inc",
+      "us_before": "让我给您介绍一下\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。$",
+      "us_after": "让我给您介绍一下\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果在联盟交谊厅或\n直接连接室找不到朋友，\\p请试着靠近朋友一些。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 42,
+      "symbol": "LavaridgeTown_Gym_1F_Text_GeraldIntro",
+      "jp_file": "patch/batches/079_lavaridgetown_gym_1f.json",
+      "jp_before": "你的宝可梦能抵挡\n392度的高温吗？",
+      "jp_after": "你的宝可梦能抵挡\n200摄氏度的高温吗？",
+      "native_originals": [
+        {
+          "address": "0x081F4780",
+          "text": "おまえの　ポケモン\\n200どの　あつさに　たえられるかよ!?"
+        }
+      ],
+      "us_file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "us_before": "你的宝可梦能抵挡\n392度的高温吗？$",
+      "us_after": "你的宝可梦能抵挡\n392华氏度的高温吗？$",
+      "status": "fixed_and_built",
+      "implementation_note": "℃ and ℉ are not mapped in the existing character set. Use 200摄氏度 in JP and 392华氏度 in US; no charmap/font modifications."
+    },
+    {
+      "number": 43,
+      "symbol": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+      "jp_file": "patch/batches/079_lavaridgetown_gym_1f.json",
+      "jp_before": "岩浆的温度\n是392度。\\p你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。",
+      "jp_after": "岩浆的温度\n是200摄氏度。\\p你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。",
+      "native_originals": [
+        {
+          "address": "0x081F47AF",
+          "text": "200どの　あつさ　ってのは\\nようがんの　おんど!\\pおまえの　ポケモン　おれに　かてたんだから\\nようがんの　なかでも　へいき　だろうな!"
+        }
+      ],
+      "us_file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+      "us_before": "岩浆的温度\n是392度。\\p你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。$",
+      "us_after": "岩浆的温度\n是392华氏度。\\p你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。$",
+      "status": "fixed_and_built",
+      "implementation_note": "℃ and ℉ are not mapped in the existing character set. Use 200摄氏度 in JP and 392华氏度 in US; no charmap/font modifications."
+    },
+    {
+      "number": 44,
+      "symbol": "gText_BecameMoreConsciousOfOtherMons",
+      "jp_file": "patch/batches/405_contest_strings.json",
+      "jp_before": "它变得比平时\n更加担心其他宝可梦了！{FC_08 0f}{FC_08 0f}{FC_08 0f}{FC_08 0f}",
+      "jp_after": "它变得比平时\n更加在意其他宝可梦了！{FC_08 0f}{FC_08 0f}{FC_08 0f}{FC_08 0f}",
+      "native_originals": [
+        {
+          "address": "0x0824B70C",
+          "text": "ほかの　ポケモンが　いつもより\\nきに　なって　きた!{BYTE_FC}くそ{BYTE_FC}くそ{BYTE_FC}くそ{BYTE_FC}くそ"
+        }
+      ],
+      "us_file": "data/text/contest_strings.inc",
+      "us_before": "它变得比平时\n更加担心其他宝可梦了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$",
+      "us_after": "它变得比平时\n更加在意其他宝可梦了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 46,
+      "symbol": "sWaterfallDescription",
+      "jp_file": "patch/move_descriptions.json",
+      "jp_before": "以惊人的气势扑向对手。\n有时会使对手畏缩。",
+      "jp_after": "以惊人的气势扑向对手。",
+      "native_originals": [],
+      "us_file": "src/data/text/move_descriptions.h",
+      "us_before": "以惊人的气势扑向对手。\n有时会使对手畏缩。",
+      "us_after": "以惊人的气势扑向对手。",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 52,
+      "symbol": "BattleFrontier_Lounge2_Text_AmazingPowersOfObservation",
+      "jp_file": "patch/batches/432_checklist_scripts.json",
+      "jp_before": "调查资料好厉害！\n老师果然非同一般！",
+      "jp_after": "好厉害的观察力！\n前辈果然非同一般！",
+      "native_originals": [
+        {
+          "address": "0x0823769E",
+          "text": "すっげえ　かんさつりょく-!!\\nやっぱ　センパイは　ちがうっすわ-"
+        }
+      ],
+      "us_file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+      "us_before": "调查资料好厉害！\n老师果然非同一般！$",
+      "us_after": "好厉害的观察力！\n前辈果然非同一般！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 54,
+      "symbol": "LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals",
+      "jp_file": "patch/batches/125_lilycovecity_contesthall.json",
+      "jp_before": "评委：啊，如此迷人，\n如此可爱！\\p哎，天啊！那水之游\n多么完美，多么可爱！",
+      "jp_after": "评委：啊，如此迷人，\n如此可爱！\\p哎，天啊！那玩水\n多么完美，多么可爱！",
+      "native_originals": [
+        {
+          "address": "0x0820804C",
+          "text": "しんさいん“おお\\nみんな　かわいい　アピ-ルだなあ!\\pおおっ　なんて　かわいい\\nみずあそびの　アピ-ルなんだろう!"
+        }
+      ],
+      "us_file": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+      "us_before": "评委：啊，如此迷人，\n如此可爱！\\p哎，天啊！那水之游\n多么完美，多么可爱！$",
+      "us_after": "评委：啊，如此迷人，\n如此可爱！\\p哎，天啊！那玩水\n多么完美，多么可爱！$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 55,
+      "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+      "jp_file": "patch/batches/127_lilycovecity_covelilymotel_1f.json",
+      "jp_before": "啊，抱歉，抱歉！\n我看电视看入迷了！\\p我听说有人到捣毁了\n海洋队的基地，\\p多亏如此，我们刚刚\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\n游戏什么的……",
+      "jp_after": "啊，抱歉，抱歉！\n我看电视看入迷了！\\p我听说有人捣毁了\n海洋队的基地，\\p多亏如此，我们刚刚\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\n游戏什么的……",
+      "native_originals": [
+        {
+          "address": "0x0820571C",
+          "text": "あ　ごめん　ごめん!\\nテレビに　むちゅう　だったもんで!\\pそういえば　だれかが　アクアだんの\\nアジトを　かいめつ　させた　らしいね!\\pおかげで　さっき　だんたいさん　からの\\nしゅくはく　よやくが　はいったよ!\\pたしか……　ゲ-ムなんとか　っていう\\nかいしゃ　だったかな……"
+        }
+      ],
+      "us_file": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+      "us_before": "啊，抱歉，抱歉！\n我看电视看入迷了！\\p我听说有人到捣毁了\n海洋队的基地，\\p多亏如此，我们刚刚\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\n游戏什么的……$",
+      "us_after": "啊，抱歉，抱歉！\n我看电视看入迷了！\\p我听说有人捣毁了\n海洋队的基地，\\p多亏如此，我们刚刚\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\n游戏什么的……$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 57,
+      "symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+      "jp_file": "patch/batches/151_mossdeepcity_gamecorner_1f.json",
+      "jp_before": "需要的话，\n我可以向您解说对战规则。\\p需要解说哪一项？",
+      "jp_after": "需要的话，\n我可以向您解说游戏规则。\\p需要解说哪一项？",
+      "native_originals": [
+        {
+          "address": "0x082481AB",
+          "text": "ぼくは　ゲ-ムの　せつめいを\\nしますよ!\\lどの　せつめいを　ききますか?"
+        }
+      ],
+      "us_file": "data/text/cable_club.inc",
+      "us_before": "需要的话，\n我可以向您解说对战规则。\\p需要解说哪一项？$",
+      "us_after": "需要的话，\n我可以向您解说游戏规则。\\p需要解说哪一项？$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 58,
+      "symbol": "gText_NoticesGoldCard",
+      "jp_file": "patch/batches/196_pokemon_centers.json",
+      "jp_before": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！",
+      "jp_after": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有金卡的训练家，\n{FD_01}您还是第一位！\\p那么，请让我为{FD_01}的\n宝可梦休息一下吧！",
+      "native_originals": [
+        {
+          "address": "0x08243814",
+          "text": "そ　それは……\\nひょっとして　ゴ-ルドカ-ド!?\\pああ……　きんいろが　まぶしい!\\n4つの　ほしが　かがやかしい!\\pわたしも　これまでに\\nシルバ-カ-ドの　トレ-ナ-さんなら\\lなんにんか　みてきましたが\\lゴ-ルドカ-ドを　おもちの　かたは\\l{PLACEHOLDER_01}さんが　はじめて　ですよ!\\pさあ　{PLACEHOLDER_01}さんの\\nポケモンを　やすませて　あげましょう!"
+        }
+      ],
+      "us_file": "data/text/pkmn_center_nurse.inc",
+      "us_before": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！$",
+      "us_after": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有金卡的训练家，\n{PLAYER}您还是第一位！\\p那么，请让我为{PLAYER}的\n宝可梦休息一下吧！$",
+      "status": "fixed_and_built",
+      "implementation_note": "Add japanese_placeholders:[1] so restored PLAYER substitutions use the existing Japanese-name display path."
+    },
+    {
+      "number": 59,
+      "symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+      "jp_file": "patch/batches/031_rustborocity_devoncorp_1f.json",
+      "jp_before": "说什么傻话，\n谁会抢我们的东西？",
+      "jp_after": "包裹居然被抢走了，\n我们也太不小心了……",
+      "native_originals": [
+        {
+          "address": "0x08201249",
+          "text": "どろぼうに　にもつを　うばわれるなんて\\nなんて　ドジなんだろう……"
+        }
+      ],
+      "us_file": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+      "us_before": "说什么傻话，\n谁会抢我们的东西？$",
+      "us_after": "包裹居然被抢走了，\n我们也太不小心了……$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 60,
+      "symbol": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+      "jp_file": "patch/batches/038_rustborocity_pokemonschool.json",
+      "jp_before": "宝可梦中毒后，\n会慢慢损失体力，\\p此效果在战斗后\n依然残留。\\p在探险中，中毒的宝可梦的体力P\n也会不断减少。\\p使用解毒药可解毒。",
+      "jp_after": "宝可梦中毒后，\n会慢慢损失体力，\\p此效果在战斗后\n依然残留。\\p在探险中，中毒的宝可梦的HP\n也会不断减少。\\p使用解毒药可解毒。",
+      "native_originals": [
+        {
+          "address": "0x08202E63",
+          "text": "どくを　うけると\\nたいりょくが　へっていきます\\pせんとうのあとも　どくは　のこるので\\nあるくたびに　たいりょくが　へります\\lどくけしで　なおしましょう"
+        }
+      ],
+      "us_file": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+      "us_before": "宝可梦中毒后，\n会慢慢损失体力，\\p此效果在战斗后\n依然残留。\\p在探险中，中毒的宝可梦的体力P\n也会不断减少。\\p使用解毒药可解毒。$",
+      "us_after": "宝可梦中毒后，\n会慢慢损失体力，\\p此效果在战斗后\n依然残留。\\p在探险中，中毒的宝可梦的HP\n也会不断减少。\\p使用解毒药可解毒。$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 61,
+      "symbol": "gTVBravoTrainerText00",
+      "jp_file": "patch/batches/386_tv_0.json",
+      "jp_before": "太好了！\n现在是BRAVO训练家时间！\\p今天我们所要介绍的\n主角就是{FD_02}。\\p现在，这只宝可梦在{FD_03}\n比赛中荣获{FD_04}优胜。",
+      "jp_after": "太好了！\n现在是BRAVO训练家时间！\\p今天我们要介绍的，\n是{FD_02}的宝可梦！\\p这只宝可梦在{FD_03}\n比赛中达到了{FD_04}级别。",
+      "native_originals": [
+        {
+          "address": "0x0824C754",
+          "text": "イヤ-!\\n“ブラボ-　トレ-ナ-”の　じかんだ!\\pきょうは　{PLACEHOLDER_04}クラスの\\n{PLACEHOLDER_03}を　ほこる\\l{PLACEHOLDER_02}さんの　ポケモン!"
+        }
+      ],
+      "us_file": "data/text/tv.inc",
+      "us_before": "太好了！\n现在是BRAVO训练家时间！\\p今天我们所要介绍的\n主角就是{STR_VAR_1}。\\p现在，这只宝可梦在{STR_VAR_2}\n比赛中荣获{STR_VAR_3}优胜。$",
+      "us_after": "太好了！\n现在是BRAVO训练家时间！\\p今天我们要介绍的，\n是{STR_VAR_1}的宝可梦！\\p这只宝可梦在{STR_VAR_2}\n比赛中达到了{STR_VAR_3}级别。$",
+      "status": "fixed_and_built"
+    },
+    {
+      "number": 63,
+      "symbol": "sText_MysteryGiftVisitingTrainerArrived",
+      "jp_file": "patch/batches/471_checklist_mystery_gift_script_texts.json",
+      "jp_before": "感谢使用\n神秘礼物系统。\\p一位训练家已经来到\n琉璃市寻找您。\\p系统您可以享受\n与训练家的对战。\\p您可以邀请其他训练家\n通过填写密码。\\p试着找寻其他\n有用的密码吧。",
+      "jp_after": "感谢使用\n神秘礼物系统。\\p一位训练家已经来到\n琉璃市寻找您。\\p希望您可以享受\n与训练家的对战。\\p您可以邀请其他训练家\n通过填写密码。\\p试着找寻其他\n有用的密码吧。",
+      "native_originals": [
+        {
+          "address": "0x85fce8b",
+          "text": "ふしぎなおくりもの　を　ごりよう\\nいただき　ありがとう　ございます\\pルネシティに　トレ-ナ-が\\nきている　ようですよ\\pぜひ　たいせんを\\nたのしんで　くださいませ!\\pほかの　あいことば　でも\\nべつの　トレ-ナ-が　よべますので\\pあいことばを　いろいろと\\nさがして　みて　ください"
+        }
+      ],
+      "us_action": "Already fixed; unchanged.",
+      "status": "fixed_and_built",
+      "implementation_note": "US already fixed; change JP only. Do not alter Mystery Gift passwords/protocol logic."
+    }
+  ],
+  "scope": "35 required v3 suggestions from the independent review; not the additional v2-only proposals.",
+  "jp_resources_fixed": 35,
+  "us_resources_fixed": 34,
+  "validation": {
+    "jp_make_chs": "PASS",
+    "jp_make_compare": "PASS: pokeemerald_jp.gba matches rom_jp.sha1",
+    "us_make": "PASS (non-modern pokeemerald.gba)",
+    "git_diff_check_both_repositories": "PASS",
+    "unselected_v3_resources_unchanged": "PASS; suggestion62 aliases fixed58",
+    "placeholder_and_extended_control_check": "PASS; only two required PLAYER placeholders added in gold-card text; all four PAUSE15 preserved",
+    "all_original_addresses_and_reference_writes_unchanged": "PASS",
+    "jp_rom_linked_payload_check": "PASS: 34 batch payloads match generated ASM; description127 updated in the fixed table",
+    "us_rom_linked_payload_check": "PASS: all34 changed resources match encoded text at linked symbols",
+    "emulator": "NOT RUN; visual layout and interactive scenes still require emulator testing"
+  },
+  "roms": [
+    {
+      "file": "pokeemerald_jp_chs.gba",
+      "sha1": "0d03b76d6e042c9ab66302561dbbc11f2c6d889e"
+    },
+    {
+      "file": "../pokeemerald_us_chs/pokeemerald.gba",
+      "sha1": "67c52710cd3afe6d64678f7bc3bdafa67a3cad28"
+    }
+  ]
+}

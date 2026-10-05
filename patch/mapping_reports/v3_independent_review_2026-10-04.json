@@ -1,0 +1,3035 @@
+{
+  "version": "v3",
+  "primary_only": true,
+  "prior_review_decisions_read": false,
+  "input_sha256": "3426e2aef29b4ca2d9b675e6788d7f4e8e3b6c210001c3f5d6e4c20a0ab75886",
+  "jp_head": "5604922996cc2a53ec7d7dc99253de5e3fb5e950",
+  "us_head": "1cbb305f7ebd2038f0d0ebcba039b20fe18f21e3",
+  "records": [
+    {
+      "number": 1,
+      "symbol": "gText_XNatureObtainedInTrade",
+      "report_block": "- 补丁中文：{DYNAMIC_0}{DYNAMIC_2}{DYNAMIC_1}{DYNAMIC_5}的性格，通过交换遇见了它。$\n- 理由：JP原0x085CA4F2: {D0}{D2}{D1}{D5}せいかく、\\nつうしんこうかんによってであった（有换行）；P无换行 / U有换行。补丁丢了日文原有的换行。\n- 修改建议：{DYNAMIC_0}{DYNAMIC_2}{DYNAMIC_1}{DYNAMIC_5}的性格，\\n通过交换遇见了它。",
+      "resolved_symbol": "gText_XNatureObtainedInTrade",
+      "jp_current": [
+        {
+          "file": "patch/batches/172_party.json",
+          "definition": {
+            "name": "Chs_gText_XNatureObtainedInTrade",
+            "source_symbol": "gText_XNatureObtainedInTrade",
+            "us_encoded_hex": "f700f702f701f705030b0e5f045b3b0d1004c5070d05480fa405e6089e0c9f37ff",
+            "japanese_dynamic": true
+          },
+          "text": "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}的性格，通过交换遇见了它。",
+          "originals": [
+            {
+              "address": "0x085CA4F2",
+              "text": "{BYTE_F7}　{BYTE_F7}い{BYTE_F7}あ{BYTE_F7}おせいかく\\nつうしんこうかんに　よって　であった"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/strings.c",
+          "text": "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5}的性格，\n通过交换遇见了它。"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "src/strings.c",
+          "revision": "fe570a7e5^",
+          "text": "{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature,\nobtained in a trade."
+        }
+      ],
+      "decision": {
+        "status": "有意保留",
+        "reason": "训练家笔记取消换行是既定布局需求，f6e6cb9 可追溯；不能仅凭原作有换行恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 2,
+      "symbol": "sText_PlayerGotMoney",
+      "report_block": "- 补丁中文：作为奖金，\\n{FD_23}获得了{B_BUFF1}{FC_JPN}¥{FC_ENG}！\\p$\n- 理由：补丁丢了\\p换页符。P: {FD_23}获得了{B_BUFF1}{FC_JPN}¥{FC_ENG}！\\p$ / U: {B_PLAYER_NAME}获得了¥{B_BUFF1}！\\p$。¥后置不判错，但\\p缺失需补回。\n- 修改建议：补回末尾的\\p。\n\n## 二、美版汉化继承的错误\n\n### 语义误译（13 条）",
+      "resolved_symbol": "sText_PlayerGotMoney",
+      "jp_current": [
+        {
+          "file": "patch/batches/178_battle_victory.json",
+          "definition": {
+            "name": "Chs_sText_PlayerGotMoney",
+            "source_symbol": "sText_PlayerGotMoney",
+            "us_encoded_hex": "112f0d70070307423bfefd23057e030a089efd00fc15b7fc163cfbff",
+            "japanese_placeholders": [
+              0,
+              35
+            ]
+          },
+          "text": "作为奖金，\\n{FD_23}获得了{FD_00}{JPN}¥{ENG}！\\p",
+          "originals": [
+            {
+              "address": "0x085A97B2",
+              "text": "{PLACEHOLDER_23}は　しょうきんとして\\n{PLACEHOLDER_00}¥　てにいれた!\\p"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/battle_message.c",
+          "text": "作为奖金，\n{B_PLAYER_NAME}获得了¥{B_BUFF1}！\\p"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "src/battle_message.c",
+          "text": "{B_PLAYER_NAME}は　しょうきんとして\n{B_BUFF1}¥　てにいれた！\\p"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/battle_message.c",
+          "revision": "fe570a7e5^",
+          "text": "{B_PLAYER_NAME} got ¥{B_BUFF1}\nfor winning!\\p"
+        }
+      ],
+      "decision": {
+        "status": "报告错误",
+        "reason": "当前结尾明确有 \\p，报告展示文本自身也含它。円后置有意。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 3,
+      "symbol": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+      "report_block": "- JP：ふなぞこが　みずの　なかに\nしずんで　いるんだよ\\pポケモンが　みずに　もぐれる　わざを\nつかえたら　さきに　すすめるんだがな……\n- EN：The ship's bottom has sunk into the\\ndepths.\\pIf a POKéMON knew how to go underwater,\\nwe might make some progress…$\n- 中文：我们的船现在搁浅了。\\p如果有会潜水的宝可梦的话，\\n或许能帮上什么忙……$\n- 理由：JP「ふなぞこが みずの なかに しずんでいる」(船底沉入水中)/EN「The ship's bottom has sunk into the depths」均指沉没，而CHS写成「我们的船现在搁浅了」——「搁浅」意为船只在浅滩受阻，与「沉入水中」语义矛盾。\n- 修改建议：我们的船的船底现在沉到水里了。",
+      "resolved_symbol": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+      "jp_current": [
+        {
+          "file": "patch/batches/197_abandoned_ship.json",
+          "definition": {
+            "name": "Chs_AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+            "source_symbol": "AbandonedShip_Corridors_B1F_Text_DuncanPostBattle",
+            "us_encoded_hex": "0d98095f030b028c0e030fe604530acc089e37fb0b6704c30f7e056e0aca0c51030b016307d70966030b053d3bfe057f0e7809d2014e0bad0bee094c093eb0b0ff"
+          },
+          "text": "我们的船现在搁浅了。\\p如果有会潜水的宝可梦的话，\\n或许能帮上什么忙……",
+          "originals": [
+            {
+              "address": "0x0821ACD0",
+              "text": "ふなぞこが　みずの　なかに\\nしずんで　いるんだよ\\pポケモンが　みずに　もぐれる　わざを\\nつかえたら　さきに　すすめるんだがな……"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+          "text": "我们的船现在搁浅了。\\p如果有会潜水的宝可梦的话，\n或许能帮上什么忙……$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+          "text": "ふなぞこが　みずの　なかに\nしずんで　いるんだよ\\pポケモンが　みずに　もぐれる　わざを\nつかえたら　さきに　すすめるんだがな⋯⋯$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/AbandonedShip_Corridors_B1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "The ship's bottom has sunk into the\ndepths.\\pIf a POKéMON knew how to go underwater,\nwe might make some progress…$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "船底沉入水中，不是船搁浅。",
+        "plan": "船底已经沉到水里了。\\p如果有会潜水的宝可梦，\\n也许就能继续前进了……"
+      }
+    },
+    {
+      "number": 4,
+      "symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+      "report_block": "- JP：ねんりょうの　ほきゅう　オッケイ!\nおやつも　ほきゅう　オッケイ!\\pあとは　ジャマものを　ぶっとばす　だけ!\n- EN：Fuel supply loaded A-OK!\\nIn-cruise snacks loaded A-OK!\\pNothing left to do but KO a pesky\\nmeddler!$\n- 中文：燃料供给完成！\\n巡航系统正常！\\p一切正常，除了一个\\n找麻烦的人！$\n- 理由：JP「おやつも ほきゅう オッケイ」/EN「In-cruise snacks loaded A-OK」中「おやつ」是零食，CHS误作「巡航系统正常」；且JP「あとは ジャマものを ぶっとばす だけ」(剩下就是干掉捣乱者)/EN「Nothing left to do but KO a pesky meddler」被CHS写成「一切正常，除了一个找麻烦的人」，丢失了「打飞捣乱者」的动作含义。\n- 修改建议：燃料补给完毕！\\n零食补给完毕！\\p接下来只要干掉\\n捣乱的家伙就行了！",
+      "resolved_symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+      "jp_current": [
+        {
+          "file": "patch/batches/141_aquahideout_b1f.json",
+          "definition": {
+            "name": "Chs_AquaHideout_B1F_Text_Grunt3Intro",
+            "source_symbol": "AquaHideout_B1F_Text_Grunt3Intro",
+            "us_encoded_hex": "0b3c08a2047104620d52024b3cfe0e9b04e30dd90d1b107002253cfb0f0b0ae9107002253b027f089e0f0b0460fe1045092303b6030b0b4b3cff"
+          },
+          "text": "燃料供给完成！\\n巡航系统正常！\\p一切正常，除了一个\\n找麻烦的人！",
+          "originals": [
+            {
+              "address": "0x08217E76",
+              "text": "ねんりょうの　ほきゅう　オッケイ!\\nおやつも　ほきゅう　オッケイ!\\pあとは　ジャマものを　ぶっとばす　だけ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/AquaHideout_B1F/scripts.inc",
+          "text": "燃料供给完成！\n巡航系统正常！\\p一切正常，除了一个\n找麻烦的人！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/AquaHideout_B1F/scripts.inc",
+          "text": "ねんりょうの　ほきゅう　オッケイ！\nおやつも　ほきゅう　オッケイ！\\pあとは　ジャマものを　ぶっとばす　だけ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/AquaHideout_B1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Fuel supply loaded A-OK!\nIn-cruise snacks loaded A-OK!\\pNothing left to do but KO a pesky\nmeddler!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "おやつ / snacks 是零食；还遗漏打倒捣乱者的动作。",
+        "plan": "燃料补给完毕！\\n零食补给完毕！\\p接下来只要打倒\\n捣乱的家伙就行了！"
+      }
+    },
+    {
+      "number": 5,
+      "symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+      "report_block": "- JP：いっきに　ゆうしょうまで\\nのぼりつめて　しまうのでしょうか！？\\p$\n- EN：Will this TRAINER race to\\nthe championship?\\p$\n- 中文：哪一位训练家进入\\n冠军赛了呢？\\p$\n- 理由：JP「いっきに ゆうしょうまで のぼりつめて しまうのでしょうか」/EN「Will this TRAINER race to the championship?」问的是「这位训练家能否一举登顶」，CHS作「哪一位训练家进入冠军赛了呢」——将「这位(this)」误作「哪一位(which)」，疑问对象完全改变。\n- 修改建议：这位训练家会一举登上冠军宝座吗？",
+      "resolved_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+      "jp_current": [
+        {
+          "file": "patch/batches/200_battle_frontier_battle_dome_battle_room.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+            "source_symbol": "BattleFrontier_BattleDomeBattleRoom_Text_WillTheyRaceToChampionship",
+            "us_encoded_hex": "10550d810e9e088a05bd09d203f4fe0f0b0789038604a209ce3dfbff"
+          },
+          "text": "这位训练家能否\\n一举夺冠呢？\\p",
+          "originals": [
+            {
+              "address": "0x082296B5",
+              "text": "いっきに　ゆうしょうまで\\nのぼりつめて　しまうのでしょうか!?\\p"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+          "text": "这位训练家能否\n一举夺冠呢？\\p$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+          "text": "いっきに　ゆうしょうまで\nのぼりつめて　しまうのでしょうか！？\\p$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleDomeBattleRoom/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Will this TRAINER race to\nthe championship?\\p$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "已改为该训练家能否一举夺冠。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 6,
+      "symbol": "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+      "report_block": "- JP：きゅうに　ひとを　みると　おどろいて\\nおそいかかって　しまうのだ⋯⋯\\pきみも　ポケモンも　だいじょうぶか？$\n- EN：It attacks without warning if it is\\nstartled by another person…\\pAre you and your POKéMON all right?$\n- 中文：一旦受到了惊吓就会\\n无视警告胡乱攻击……\\p您和您的宝可梦还好吗？$\n- 理由：JP「きゅうに ひとを みると おどろいて おそいかかって しまう」/EN「It attacks without warning if it is startled by another person」中「without warning」指「毫无征兆地」，CHS作「无视警告胡乱攻击」——将「without warning」误读为「无视警告」，且「おそいかかる(猛扑)」被写成「胡乱攻击」，语义错误。\n- 修改建议：它一旦突然看到人受了惊吓，就会猛扑过来攻击……",
+      "resolved_symbol": "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+      "jp_current": [
+        {
+          "file": "patch/batches/212_battle_frontier_battle_pike_room_normal.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+            "source_symbol": "BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled",
+            "us_encoded_hex": "0f0b02e70c210304089e075a0de9077d056efe01d60d07108905600529090c046d0584b0b0fb09f004f309f0030b016307d70966054604e9092a3dff"
+          },
+          "text": "一旦受到了惊吓就会\\n不听指挥胡乱攻击……\\p您和您的宝可梦还好吗？",
+          "originals": [
+            {
+              "address": "0x08234E0C",
+              "text": "きゅうに　ひとを　みると　おどろいて\\nおそいかかって　しまうのだ……\\pきみも　ポケモンも　だいじょうぶか?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+          "text": "一旦受到了惊吓就会\n不听指挥胡乱攻击……\\p您和您的宝可梦还好吗？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+          "text": "きゅうに　ひとを　みると　おどろいて\nおそいかかって　しまうのだ⋯⋯\\pきみも　ポケモンも　だいじょうぶか？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "It attacks without warning if it is\nstartled by another person…\\pAre you and your POKéMON all right?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "受惊后突然袭击，不是违抗命令。",
+        "plan": "突然看见人时会受惊，\\n然后扑过来攻击……\\p您和您的宝可梦还好吗？"
+      }
+    },
+    {
+      "number": 7,
+      "symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+      "report_block": "- JP：いやあ　コンテストかいじょうに　くると\nかきがいの　ある　ポケモンが\\lいっぱい　だね!\n- EN：Wow, coming out to a CONTEST is\\na feast for these eyes!\\pWould you look at all the POKéMON\\nthat just scream to be pain\n- 中文：哇，观看华丽大赛\\n简直是场视觉盛宴！\\p你看过那些\\n画里的宝可梦吗？$\n- 理由：JP「かきがいのあるポケモンがいっぱいだね」/EN“POKéMON that just scream to be painted”意为“值得入画的宝可梦”，中文“你看过那些画里的宝可梦吗？”把“值得被画下来”误作“画里面的宝可梦”，关系颠倒。\n- 修改建议：哇，观看华丽大赛\\n简直是场视觉盛宴！\\p快看那些值得入画的\\n宝可梦！",
+      "resolved_symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+      "jp_current": [
+        {
+          "file": "patch/batches/126_lilycovecity_contestlobby.json",
+          "definition": {
+            "name": "Chs_LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+            "source_symbol": "LilycoveCity_ContestLobby_Text_ContestFeastForEyes",
+            "us_encoded_hex": "0d433b04a307c20537086b02d30b7cfe05dd10820c0c02230c1807a50bde0ed03cfb09d907c204c509bd0e34fe053a0864030b016307d70966092a3dff"
+          },
+          "text": "哇，观看华丽大赛\\n简直是场视觉盛宴！\\p你看过那些\\n画里的宝可梦吗？",
+          "originals": [
+            {
+              "address": "0x082076BA",
+              "text": "いやあ　コンテストかいじょうに　くると\\nかきがいの　ある　ポケモンが\\lいっぱい　だね!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "text": "哇，观看华丽大赛\n简直是场视觉盛宴！\\p你看过那些\n画里的宝可梦吗？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "text": "いやあ　コンテストかいじょうに　くると\nかきがいの　ある　ポケモンが\\lいっぱい　だね！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LilycoveCity_ContestLobby/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Wow, coming out to a CONTEST is\na feast for these eyes!\\pWould you look at all the POKéMON\nthat just scream to be painted?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "值得画成画的宝可梦，不是已经在画里的宝可梦。",
+        "plan": "日版：来到华丽大赛会场，\\n到处都是值得画下来的\\l宝可梦呢！；美版保留视觉盛宴开头，后面改“看看这些让人\\n忍不住想画下来的宝可梦！”"
+      }
+    },
+    {
+      "number": 8,
+      "symbol": "MauvilleCity_Text_UncleNoNeedToBeDown",
+      "report_block": "- JP：おじさん“ミツルくん\\nそんなに　しょげることは　ないよ\\pこれから　もっともっと\\nつよくなれば　いいじゃないか！\\pさあ　うちに　かえろう\\nみんな　まってるよ$\n- EN：UNCLE: WALLY, there's no need to be so\\ndown on yourself.\\pWhy, what's keeping you from becoming\\nstronger and stronger?\n- 中文：叔叔：满充，\\n别这么沮丧。\\p想想是什么激励着你\\n要变得越来越强的？\\p好了，我们回家吧，\\n大家都在等你呢。$\n- 理由：JP「これからもっともっとつよくなればいいじゃないか（以后继续变得越来越强不就好了吗）」/EN「what's keeping you from becoming stronger and stronger?（有什么能阻止你继续变强呢）」均为鼓励继续变强，补丁/美版中文误作「想想是什么激励着你要变得越来越强的」，把EN「what's keeping you from（什么在阻碍你）」误读为「激励」，语义错误。\n- 修改建议：以后继续变得越来越强不就好了吗！",
+      "resolved_symbol": "MauvilleCity_Text_UncleNoNeedToBeDown",
+      "jp_current": [
+        {
+          "file": "patch/batches/050_mauvillecity.json",
+          "definition": {
+            "name": "Chs_MauvilleCity_Text_UncleNoNeedToBeDown",
+            "source_symbol": "MauvilleCity_Text_UncleNoNeedToBeDown",
+            "us_encoded_hex": "0c2a0c2a3e093402663bfe01ad1055094c078a0b8337fb0e180e180c0c0bee094c058f086d10f409d9fe0ef101a1030a0fc908290fc90ad8030b3dfb04e9089e3b0d98095f056505bd01283bfe02d305bd03610fe6030f09d909ce37ff"
+          },
+          "text": "叔叔：满充，\\n别这么沮丧。\\p想想是什么激励着你\\n要变得越来越强的？\\p好了，我们回家吧，\\n大家都在等你呢。",
+          "originals": [
+            {
+              "address": "0x081DE0F4",
+              "text": "おじさん“ミツルくん\\nそんなに　しょげることは　ないよ\\pこれから　もっともっと\\nつよくなれば　いいじゃないか!\\pさあ　うちに　かえろう\\nみんな　まってるよ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "text": "叔叔：满充，\n别这么沮丧。\\p想想是什么激励着你\n要变得越来越强的？\\p好了，我们回家吧，\n大家都在等你呢。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "text": "おじさん“ミツルくん\nそんなに　しょげることは　ないよ\\pこれから　もっともっと\nつよくなれば　いいじゃないか！\\pさあ　うちに　かえろう\nみんな　まってるよ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "UNCLE: WALLY, there's no need to be so\ndown on yourself.\\pWhy, what's keeping you from becoming\nstronger and stronger?\\pCome on, let's go home.\nEveryone's waiting for you.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "日文是鼓励以后变强；英文反问有什么阻止变强。不是追问增强的动机。",
+        "plan": "中段改为“今后继续努力，\\n变得越来越强就好啦！”；其他叔叔对话不变。"
+      }
+    },
+    {
+      "number": 9,
+      "symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+      "report_block": "- JP：ゲームを　するなら\\nおとなりの　おじいさんに　いってね$\n- EN：If you want to play a game,\\nplease tell the old man beside me.$\n- 中文：如果您想玩游戏，\\n就告诉我后面的老人。$\n- 理由：JP「おとなりのおじいさん（旁边的老爷爷）」/EN「the old man beside me（我旁边的老人）」明确方位为「旁边」，补丁/美版中文误作「我后面的老人」，方位错误。\n- 修改建议：就告诉我旁边的老人。",
+      "resolved_symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+      "jp_current": [
+        {
+          "file": "patch/batches/151_mossdeepcity_gamecorner_1f.json",
+          "definition": {
+            "name": "Chs_MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+            "source_symbol": "MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay",
+            "us_encoded_hex": "0b6704c309f00e180d4e0f7c0ddb3bfe077d04500c820d980522097e030b08440b4b37ff"
+          },
+          "text": "如果您想玩游戏，\\n就告诉我后面的老人。",
+          "originals": [
+            {
+              "address": "0x08248314",
+              "text": "ゲ-ムを　するなら\\nおとなりの　おじいさんに　いってね"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "如果您想玩游戏，\n就告诉我后面的老人。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "ゲームを　するなら\nおとなりの　おじいさんに　いってね$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "revision": "fe570a7e5^",
+          "text": "If you want to play a game,\nplease tell the old man beside me.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "beside / おとなり 是旁边，不是后面。",
+        "plan": "仅将“我后面的老人”改为“我旁边的老人”。"
+      }
+    },
+    {
+      "number": 10,
+      "symbol": "MossdeepCity_Gym_Text_BlakePostBattle",
+      "report_block": "- JP：モンスタ-ボ-ルは　おおきすぎた\nこの　わたぼこり　なら　ぜったいに……\\pふううううううっ……!\\p……　……　……\n……　……　……\\pちがうぞ!\nはないきで　とばして　なんか　いないぞ!\n- EN：A POKé BALL was too heavy to lift\\npsychically. But this dust bunny…\\pWhoooooooooooooooh!\\n… … … … … …\\pNo, I'm not chea\n- 中文：要用精神力举起精灵球还是困难\\n了点，但这么小的灰尘的话……\\p呜啊啊啊啊啊啊啊！\\n…… …… ……\\p不不，我没骗人！\\n我没吹牛！真的！$\n- 理由：JP「ちがうぞ！はないきでとばしてなんかいないぞ（不对！我才没有用嘴吹它！）」/EN「I didn't blow on it!（我没对它吹气！）」中「吹」指用嘴吹气，补丁/美版中文误作「我没吹牛」，「吹气」误译为「吹牛（说大话）」，语义错误。\n- 修改建议：我没用嘴吹！真的！",
+      "resolved_symbol": "MossdeepCity_Gym_Text_BlakePostBattle",
+      "jp_current": [
+        {
+          "file": "patch/batches/152_mossdeepcity_gym.json",
+          "definition": {
+            "name": "Chs_MossdeepCity_Gym_Text_BlakePostBattle",
+            "source_symbol": "MossdeepCity_Gym_Text_BlakePostBattle",
+            "us_encoded_hex": "0ef10f71075b0bcf087907890aab075b08bc0b1405460c0c081c09c7fe089e032a3b02e91055094c0e2c030b055f0240030b053db0b0fb0d9e01000100010001000100010001003cfeb0b000b0b000b0b0fb01d601d63b0d9809530a680b4b3cfe0d9807d709530f71112402953c1059030b3cff"
+          },
+          "text": "要用精神力举起精灵球还是困难\\n了点，但这么小的灰尘的话……\\p呜啊啊啊啊啊啊啊！\\n…… …… ……\\p不不，我没骗人！\\n我可没用嘴吹！真的！",
+          "originals": [
+            {
+              "address": "0x0820BA3C",
+              "text": "モンスタ-ボ-ルは　おおきすぎた\\nこの　わたぼこり　なら　ぜったいに……\\pふううううううっ……!\\p……　……　……\\n……　……　……\\pちがうぞ!\\nはないきで　とばして　なんか　いないぞ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "text": "要用精神力举起精灵球还是困难\n了点，但这么小的灰尘的话……\\p呜啊啊啊啊啊啊啊！\n…… …… ……\\p不不，我没骗人！\n我可没用嘴吹！真的！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "text": "モンスターボールは　おおきすぎた\nこの　わたぼこり　なら　ぜったいに⋯⋯\\pふううううううっ⋯⋯！\\p⋯⋯　⋯⋯　⋯⋯\n⋯⋯　⋯⋯　⋯⋯\\pちがうぞ！\nはないきで　とばして　なんか　いないぞ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "A POKé BALL was too heavy to lift\npsychically. But this dust bunny…\\pWhoooooooooooooooh!\n… … … … … …\\pNo, I'm not cheating!\nI didn't blow on it! Honestly!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "尘埃和否认吹气的语义已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 11,
+      "symbol": "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent",
+      "report_block": "- JP：こんな　さわぎの　とちゅう　だけど……\\pもうすぐ　ロケットが　はっしゃ　するぞ!\n- EN：I know that things are a little\\nhaywire right now, but…\\pThe rocket's launch is imminent!$\n- 中文：我知道现在一切有些混乱，\\n但是……\\p火箭发射程序不会停止！$\n- 理由：JP「もうすぐロケットがはっしゃするぞ（火箭马上就要发射了）」/EN「The rocket's launch is imminent（火箭发射在即）」明确指发射即将发生，补丁/美版中文误作「火箭发射程序不会停止」，「在即」误译为「不会停止」，语义错误。\n- 修改建议：火箭马上就要发射了！",
+      "resolved_symbol": "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent",
+      "jp_current": [
+        {
+          "file": "patch/batches/157_mossdeepcity_spacecenter_1f.json",
+          "definition": {
+            "name": "Chs_MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent",
+            "source_symbol": "MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent",
+            "us_encoded_hex": "0d98107b03070e030fe60f0b0ae90f7e0e340579090c3bfe02e90c0cb0b0fb057d05e803a50bc2024e0e7d01d6056e0d0b108a3cff"
+          },
+          "text": "我知道现在一切有些混乱，\\n但是……\\p火箭发射程序不会停止！",
+          "originals": [
+            {
+              "address": "0x0820D0FD",
+              "text": "こんな　さわぎの　とちゅう　だけど……\\pもうすぐ　ロケットが　はっしゃ　するぞ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+          "text": "我知道现在一切有些混乱，\n但是……\\p火箭发射程序不会停止！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+          "text": "こんな　さわぎの　とちゅう　だけど⋯⋯\\pもうすぐ　ロケットが　はっしゃ　するぞ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MossdeepCity_SpaceCenter_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "I know that things are a little\nhaywire right now, but…\\pThe rocket's launch is imminent!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "imminent / もうすぐ 是即将发射，不是不停止程序。",
+        "plan": "火箭马上就要发射了！"
+      }
+    },
+    {
+      "number": 12,
+      "symbol": "MoveTutor_Text_SubstituteTeach",
+      "report_block": "- JP：ふう\\nこうやって　おくじょうから\\lひろい　せかいを　みていると⋯⋯\\pなんにんもの　じぶんが　いて\\nいくつもの　じんせいを　たのしめたらなー\\lって　おもうの！\\lムリな　はなしだけどね　うふふ\\pそうだわ　あなたの　ポケモンちゃん！\n- EN：When I see the wide world from up\\nhere on the roof…\\pI think about how nice it would be\\nif there were more than just o\n- 中文：当我在屋顶上看着\\n这广阔的世界时……\\p我在想如果这个世界如果\\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\\n嘿嘿……\\p明白了！\\n不如让你的宝可梦学习替身吧？$\n- 理由：JP「そうだわ（对了/我有主意了）」是想出主意的感叹，补丁/美版中文误作「明白了」，语义错误；且「我在想如果这个世界如果有不止一个自己」中「如果」重复，属衍字；其余「なんにんものじぶんがいていくつものじんせいをたのしめたらなー」与「有不止一个自己该多有趣…体验各种各样的人生」语义一致。\n- 修改建议：当我在屋顶上看着这广阔的世界时……我在想如果这个世界有不止一个自己该多有趣啊，那样我就能体验各种各样的人生了。当然这是不可能的。嘿嘿……对了！不如让你的宝可梦学习替身吧？",
+      "resolved_symbol": "MoveTutor_Text_SubstituteTeach",
+      "jp_current": [
+        {
+          "file": "patch/batches/340_move_tutors.json",
+          "definition": {
+            "name": "Chs_MoveTutor_Text_SubstituteTeach",
+            "source_symbol": "MoveTutor_Text_SubstituteTeach",
+            "us_encoded_hex": "02ef0d980fe60da3034a0bad07c210f4fe105504ab0820030b0c0507390bedb0b0fb0d980fe60e180b6704c3105504600c050739fe0f7e01d6108a0f0b0460110c05a5042d03850f7e0b2401003bfa09bd0ee20d98077d09d20ce60ed2046110a704610ee2030b0b4b0bd8089e37fb02ef0b3b10550c0c01d607d709d2030b37fe05080508b0b0fb098f0136089e3cfe01d60b670b4309d9030b016307d709660e900dd40ce70bcb01283dff"
+          },
+          "text": "当我在屋顶上看着\\n这广阔的世界时……\\p我在想如果这个世界\\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\\n嘿嘿……\\p明白了！\\n不如让你的宝可梦学习替身吧？",
+          "originals": [
+            {
+              "address": "0x08276436",
+              "text": "ふう\\nこうやって　おくじょうから\\lひろい　せかいを　みていると……\\pなんにんもの　じぶんが　いて\\nいくつもの　じんせいを　たのしめたらな-\\lって　おもうの!\\lムリな　はなしだけどね　うふふ\\pそうだわ　あなたの　ポケモンちゃん!\\nみがわりの　わざ　おぼえてみない?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "text": "当我在屋顶上看着\n这广阔的世界时……\\p我在想如果这个世界\n有不止一个自己该多有趣啊，\\l那样我就能体验各种各样的人生了。\\p当然这是不可能的。\n嘿嘿……\\p明白了！\n不如让你的宝可梦学习替身吧？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "text": "ふう\nこうやって　おくじょうから\\lひろい　せかいを　みていると⋯⋯\\pなんにんもの　じぶんが　いて\nいくつもの　じんせいを　たのしめたらなー\\lって　おもうの！\\lムリな　はなしだけどね　うふふ\\pそうだわ　あなたの　ポケモンちゃん！\nみがわりの　わざ　おぼえてみない？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/move_tutors.inc",
+          "revision": "fe570a7e5^",
+          "text": "When I see the wide world from up\nhere on the roof…\\pI think about how nice it would be\nif there were more than just one me\\lso I could enjoy all sorts of lives.\\pOf course it's not possible.\nGiggle…\\pI know! Would you be interested in\nhaving a POKéMON learn SUBSTITUTE?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "突然想到一个主意，不是理解了。",
+        "plan": "“明白了！”改“对了！”。"
+      }
+    },
+    {
+      "number": 13,
+      "symbol": "Route116_Text_JoeyIntro",
+      "report_block": "- JP：おれの　ポケモン　つえーぞ！\\nちょっと　みてみろよ！$\n- EN：My POKéMON rule!\\nCheck them out!$\n- 中文：我的宝可梦运用！\\n你就好好瞧瞧吧！$\n- 理由：JP「おれの ポケモン つえーぞ」(我的宝可梦很强)/EN\"My POKéMON rule!\"→CHS「我的宝可梦运用!」,“运用”意为使用/应用,语义不通\n- 修改建议：我的宝可梦很强！",
+      "resolved_symbol": "Route116_Text_JoeyIntro",
+      "jp_current": [
+        {
+          "file": "patch/batches/028_route116.json",
+          "definition": {
+            "name": "Chs_Route116_Text_JoeyIntro",
+            "source_symbol": "Route116_Text_JoeyIntro",
+            "us_encoded_hex": "0d98030b016307d709660fd70f713cfe09d9077d04e904e90adf0adf01283cff"
+          },
+          "text": "我的宝可梦运用！\\n你就好好瞧瞧吧！",
+          "originals": [
+            {
+              "address": "0x0825D643",
+              "text": "おれの　ポケモン　つえ-ぞ!\\nちょっと　みてみろよ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/trainers.inc",
+          "text": "我的宝可梦运用！\n你就好好瞧瞧吧！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/trainers.inc",
+          "text": "おれの　ポケモン　つえーぞ！\nちょっと　みてみろよ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/trainers.inc",
+          "revision": "fe570a7e5^",
+          "text": "My POKéMON rule!\nCheck them out!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "rule / つえー 是厉害，不是运用。",
+        "plan": "我的宝可梦很厉害！\\n你就好好瞧瞧吧！"
+      }
+    },
+    {
+      "number": 14,
+      "symbol": "Route123_Text_BraxtonPostBattle",
+      "report_block": "- JP：ジムバッジに　はじない\\nたたかい　だったよ！$\n- EN：You did your BADGES proud in that\\nmatch!$\n- 中文：在那样的对战中获得徽章\\n是你的骄傲。$\n- 理由：JP「ジムバッジに はじない たたかい だったよ」(那场对战无愧于徽章)/EN\"You did your BADGES proud\"→CHS「在那样的对战中获得徽章是你的骄傲」,把\"无愧于徽章\"误作\"获得徽章是骄傲\",主谓关系颠倒\n- 修改建议：那场对战无愧于你的道馆徽章！",
+      "resolved_symbol": "Route123_Text_BraxtonPostBattle",
+      "jp_current": [
+        {
+          "file": "patch/batches/148_route123.json",
+          "definition": {
+            "name": "Chs_Route123_Text_BraxtonPostBattle",
+            "source_symbol": "Route123_Text_BraxtonPostBattle",
+            "us_encoded_hex": "0fe609bd0ee2030b0379103010a1057e030a05621035fe0c0c09d9030b0710012037ff"
+          },
+          "text": "在那样的对战中获得徽章\\n是你的骄傲。",
+          "originals": [
+            {
+              "address": "0x0825FA26",
+              "text": "ジムバッジに　はじない\\nたたかい　だったよ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/trainers.inc",
+          "text": "在那样的对战中获得徽章\n是你的骄傲。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/trainers.inc",
+          "text": "ジムバッジに　はじない\nたたかい　だったよ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/trainers.inc",
+          "revision": "fe570a7e5^",
+          "text": "You did your BADGES proud in that\nmatch!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "战斗不辱徽章，而非在此次战斗中获得徽章。",
+        "plan": "这场战斗真是\\n无愧于你的道馆徽章！"
+      }
+    },
+    {
+      "number": 15,
+      "symbol": "SecretBase_Text_Trainer1PreChampion",
+      "report_block": "- JP：この　ばしょは　にんきが　あるから\\nいつも　うまって　いるんだよー\\pぼくは　ずっと　まっていて\\nやっと　つかえる　ように　なったんだ！$\n- EN：This is a popular spot.\\nIt's always taken.\\pI waited a long time for it to open.\\nI finally got to use it!$\n- 中文：这个地方非常受欢迎，\\n经常会有人来这里。\\p我一直在等它打开，\\n我一定要得到它！$\n- 理由：JP“やっと つかえる ように なったんだ”(终于能用上这里了)/EN“I finally got to use it!”；中文“我一定要得到它”与原文“终于得以使用”语义相反方向，为误译。\n- 修改建议：我一直在等它空出来，终于能用上这里了！\n\n### 语义偏差（8 条）",
+      "resolved_symbol": "SecretBase_Text_Trainer1PreChampion",
+      "jp_current": [
+        {
+          "file": "patch/batches/391_secret_base_trainers.json",
+          "definition": {
+            "name": "Chs_SecretBase_Text_Trainer1PreChampion",
+            "source_symbol": "SecretBase_Text_Trainer1PreChampion",
+            "us_encoded_hex": "10550460031f03c003ca02250c2105430f5b3bfe075d0225056e0f7e0b4b08291055086437fb0d980f0b10820fe6030f0c9f02d207b83bfe0d980f0b034d0ef1030a03040c9f3cff"
+          },
+          "text": "这个地方非常受欢迎，\\n经常会有人来这里。\\p我一直在等它打开，\\n我一定要得到它！",
+          "originals": [
+            {
+              "address": "0x082453A7",
+              "text": "この　ばしょは　にんきが　あるから\\nいつも　うまって　いるんだよ-\\pぼくは　ずっと　まっていて\\nやっと　つかえる　ように　なったんだ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/secret_base_trainers.inc",
+          "text": "这个地方非常受欢迎，\n经常会有人来这里。\\p我一直在等它打开，\n我一定要得到它！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/secret_base_trainers.inc",
+          "text": "この　ばしょは　にんきが　あるから\nいつも　うまって　いるんだよー\\pぼくは　ずっと　まっていて\nやっと　つかえる　ように　なったんだ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/secret_base_trainers.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is a popular spot.\nIt's always taken.\\pI waited a long time for it to open.\nI finally got to use it!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "已经终于获得使用机会，不是仍等着开放。",
+        "plan": "这个地方很受欢迎，\\n总是有人占着。\\p我等了很久，\\n终于轮到我使用了！"
+      }
+    },
+    {
+      "number": 16,
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+      "report_block": "- JP：オレの　そだてた　ポケモンは\\n{STR_VAR_1}を　つかう　{STR_VAR_2}と⋯⋯$\n- EN：I got a couple decent POKéMON.\\nOne {STR_VAR_2} with {STR_VAR_1} and$\n- 中文：我有一对高贵的宝可梦。\\n一只掌握{STR_VAR_1}的{STR_VAR_2}和$\n- 理由：EN「a couple decent POKéMON」意为「几只不错的宝可梦」，JP「そだてた ポケモン」仅为「培育的宝可梦」；补丁中文「高贵的宝可梦」将decent误作「高贵」，语义偏差。\n- 修改建议：我有一对不错的宝可梦。\\n一只掌握{STR_VAR_1}的{STR_VAR_2}和$",
+      "resolved_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+      "jp_current": [
+        {
+          "file": "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+            "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon1",
+            "us_encoded_hex": "0d980f7e0f0b0379044904bb030b016307d7096637fe0f0b108c10390d9bfd02030bfd0304f3ff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "我有一对高贵的宝可梦。\\n一只掌握{FD_02}的{FD_03}和",
+          "originals": [
+            {
+              "address": "0x08226286",
+              "text": "オレの　そだてた　ポケモンは\\n{PLACEHOLDER_02}を　つかう　{PLACEHOLDER_03}と……"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "text": "我有一对高贵的宝可梦。\n一只掌握{STR_VAR_1}的{STR_VAR_2}和$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "text": "オレの　そだてた　ポケモンは\n{STR_VAR_1}を　つかう　{STR_VAR_2}と⋯⋯$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "I got a couple decent POKéMON.\nOne {STR_VAR_2} with {STR_VAR_1} and$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "decent 是不错；日文说自己培育的。高贵/一对不合适。",
+        "plan": "日版开头“我培育的宝可梦是……”；美版开头“我有两只不错的宝可梦。”；后半招式、物种变量不变。"
+      }
+    },
+    {
+      "number": 17,
+      "symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+      "report_block": "- JP：{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\\pどう？\\nオレと　タッグを　くんでみない？$\n- EN：one {STR_VAR_2} with {STR_VAR_1}!\\pIt'd be neat if we made a tag team\\ntogether, so how about it?$\n- 中文：一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p如果我们组队，那是多高雅的\\n一件事呀，你觉得呢？$\n- 理由：EN「It'd be neat if we made a tag team」意为「组队会很不错」；补丁中文「那是多高雅的一件事呀」将neat(很棒)误作「高雅」，语义偏差。\n- 修改建议：一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p如果我们组队，那就太棒了，\\n你觉得呢？$",
+      "resolved_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+      "jp_current": [
+        {
+          "file": "patch/batches/219_battle_frontier_battle_tower_multi_partner_room.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+            "source_symbol": "BattleFrontier_BattleTowerMultiPartnerRoom_Text_SwimmingTriathleteMMon2Ask",
+            "us_encoded_hex": "0f0b108c10390d9bfd02030bfd033cfb0b6704c30d98095f112103783b09bd0c0c038504490eae030bfe0f0b05e90c070ea63b09d907a5030a09ce3dff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "一只掌握{FD_02}的{FD_03}！\\p如果我们组队，那是多高雅的\\n一件事呀，你觉得呢？",
+          "originals": [
+            {
+              "address": "0x082262A3",
+              "text": "{PLACEHOLDER_02}を　つかう　{PLACEHOLDER_03}　だよ\\pどう?\\nオレと　タッグを　くんでみない?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "text": "一只掌握{STR_VAR_1}的{STR_VAR_2}！\\p如果我们组队，那是多高雅的\n一件事呀，你觉得呢？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "text": "{STR_VAR_1}を　つかう　{STR_VAR_2}　だよ\\pどう？\nオレと　タッグを　くんでみない？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "one {STR_VAR_2} with {STR_VAR_1}!\\pIt'd be neat if we made a tag team\ntogether, so how about it?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "neat 在此是组队不错，不是高雅。",
+        "plan": "如果我们一起组队\\n一定很不错，你觉得呢？；前半的招式、物种变量保留。"
+      }
+    },
+    {
+      "number": 18,
+      "symbol": "BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon",
+      "report_block": "- JP：ポケモンの　きもちが　わかるとは\\nあの　おじょうちゃん　なかなか\\lシャレた　ことを　もうしますな！$\n- EN：How charming!\\nThat little lady claims she can\\lunderstand POKéMON!$\n- 中文：好像魔法一样啊！\\n那边那位小女孩说她能\\l懂得宝可梦在说什么！$\n- 理由：JP「なかなか シャレた ことを もうしますな(真会说俏皮话)」与EN「How charming!」均为赞赏机灵，补丁中文「好像魔法一样啊」将「シャレた(机灵/俏皮)」误作「魔法」，语义错误。\n- 修改建议：真有意思！\\n那边那位小女孩说她能\\l懂得宝可梦的心情！$",
+      "resolved_symbol": "BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon",
+      "jp_current": [
+        {
+          "file": "patch/batches/399_frontier_lounge5.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon",
+            "source_symbol": "BattleFrontier_Lounge5_Text_LadyClaimsSheUnderstandsPokemon",
+            "us_encoded_hex": "04e90e1e099d03ab0f0b0ee201003cfe09bd019c09bd0d810e2c0a0b04c80c580ca009d2fa0353030a016307d709660fe60c580bee094c3cff"
+          },
+          "text": "好像魔法一样啊！\\n那边那位小女孩说她能\\l懂得宝可梦在说什么！",
+          "originals": [
+            {
+              "address": "0x08239538",
+              "text": "ポケモンの　きもちが　わかるとは\\nあの　おじょうちゃん　なかなか\\lシャレた　ことを　もうしますな!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+          "text": "好像魔法一样啊！\n那边那位小女孩说她能\\l懂得宝可梦在说什么！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+          "text": "ポケモンの　きもちが　わかるとは\nあの　おじょうちゃん　なかなか\\lシャレた　ことを　もうしますな！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge5/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "How charming!\nThat little lady claims she can\\lunderstand POKéMON!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "charming / シャレた 是有趣俏皮，不是魔法。",
+        "plan": "真有意思！\\n那位小女孩说她能\\l懂得宝可梦的心情！"
+      }
+    },
+    {
+      "number": 19,
+      "symbol": "BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+      "report_block": "- JP：くらやみが　だいすきな　わたし⋯⋯\\nそう⋯⋯　わたしに　ふさわしい　のは⋯⋯\\lやはり　この　バトルピラミッド⋯⋯\\pネ⋯⋯　あなたも　くらやみの　なかを\\nひっしに　さまよって　みない⋯⋯？$\n- EN：I thrive in darkness…\\nYes… What is worthy of me?\\lNone other than the BATTLE PYRAMID…\\pWhat say you to wandering in dar\n- 中文：我是在黑暗中长大的……\\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\\n你是不是也会陷入完全的绝望？$\n- 理由：JP「くらやみが だいすきな わたし(我最喜欢黑暗)」与EN「I thrive in darkness」均为喜爱/沉浸于黑暗，补丁中文「我是在黑暗中长大的」将「だいすき(喜爱)」误作「长大」，语义错误。\n- 修改建议：我最喜欢黑暗了……\\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\\n你是不是也会陷入完全的绝望？$",
+      "resolved_symbol": "BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+      "jp_current": [
+        {
+          "file": "patch/batches/227_battle_frontier_outside_east.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+            "source_symbol": "BattleFrontier_OutsideEast_Text_ThriveInDarkness",
+            "us_encoded_hex": "0d9811260dd6054305090114b0b0fe0c0c030bb0b009ba086411260c0f04f50d983dfa01950b3b0c0c037910300742110e0ca1b0b0fb0fe60509011410a10cbe0c9a030b0bed0521fe09d90c0c01d60c0c0f02056e0e0a0b6b0d520b2b030b07a80d633dff"
+          },
+          "text": "我最喜欢黑暗……\\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\\n你是不是也会陷入完全的绝望？",
+          "originals": [
+            {
+              "address": "0x08222D54",
+              "text": "くらやみが　だいすきな　わたし……\\nそう……　わたしに　ふさわしい　のは……\\lやはり　この　バトルピラミッド……\\pネ……　あなたも　くらやみの　なかを\\nひっしに　さまよって　みない……?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+          "text": "我最喜欢黑暗……\n是的……哪里最适合我？\\l必然是对战金字塔……\\p在黑暗中探索的时候\n你是不是也会陷入完全的绝望？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+          "text": "くらやみが　だいすきな　わたし⋯⋯\nそう⋯⋯　わたしに　ふさわしい　のは⋯⋯\\lやはり　この　バトルピラミッド⋯⋯\\pネ⋯⋯　あなたも　くらやみの　なかを\nひっしに　さまよって　みない⋯⋯？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_OutsideEast/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "I thrive in darkness…\nYes… What is worthy of me?\\lNone other than the BATTLE PYRAMID…\\pWhat say you to wandering in darkness\nand in utter and total desperation?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "开头已修，邀请探索的结尾仍误译；日英区域差异应保留。",
+        "plan": "日版邀请在黑暗中拼命探索；美版邀请在黑暗与彻底绝望中探索，不再询问“你是不是也会陷入”。"
+      }
+    },
+    {
+      "number": 20,
+      "symbol": "DewfordTown_Gym_Text_BrendenIntro",
+      "report_block": "- JP：うみの　おとこの　いじを\nみせつけて　やるぜぃ!\n- EN：I'll show you the gumption of\\na sailing man!$\n- 中文：让你看看\\n水手的智慧！$\n- 理由：JP「うみの おとこの いじ(海之男儿的骨气/意气)」与EN「the gumption of a sailing man」均指骨气胆识，补丁中文「水手的智慧」将「いじ(意气)」误作「智慧」，语义错误。\n- 修改建议：让你看看\\n海之男儿的骨气！$",
+      "resolved_symbol": "DewfordTown_Gym_Text_BrendenIntro",
+      "jp_current": [
+        {
+          "file": "patch/batches/023_dewford_gym.json",
+          "definition": {
+            "name": "Chs_DewfordTown_Gym_Text_BrendenIntro",
+            "source_symbol": "DewfordTown_Gym_Text_BrendenIntro",
+            "us_encoded_hex": "0b4309d907c207c2fe0c510c1b030b109805683cff"
+          },
+          "text": "让你看看\\n水手的智慧！",
+          "originals": [
+            {
+              "address": "0x081F3395",
+              "text": "うみの　おとこの　いじを\\nみせつけて　やるぜぃ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/DewfordTown_Gym/scripts.inc",
+          "text": "让你看看\n水手的智慧！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/DewfordTown_Gym/scripts.inc",
+          "text": "うみの　おとこの　いじを\nみせつけて　やるぜぃ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/DewfordTown_Gym/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "I'll show you the gumption of\na sailing man!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "いじ / gumption 是骨气胆识，不是智慧。",
+        "plan": "让你看看\\n海之男儿的骨气！"
+      }
+    },
+    {
+      "number": 21,
+      "symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+      "report_block": "- JP：ポケモンリ-グは\nチャンピオンロ-ドを　ぬけると　すぐ!\\pここまで　きたら\nまえに　すすむしかないわ!\n- EN：The POKéMON LEAGUE is only a short\\ndistance after the VICTORY ROAD.\\pIf you've come this far, what choice\\ndo you have \n- 中文：穿过冠军之路，\\n宝可梦联盟就在眼前。\\p已经走了这么远，\\n到底是什么让你坚持到现在？$\n- 理由：JP「ここまで きたら まえに すすむしかないわ(走到这一步，除了继续前进别无选择)」与EN「what choice do you have but to keep going」均为敦促继续前进的反问；补丁中文「到底是什么让你坚持到现在？」将反问改作追问坚持的原因，语义错误。\n- 修改建议：穿过冠军之路，\\n宝可梦联盟就在眼前。\\p已经走了这么远，\\n除了继续前进别无选择！$",
+      "resolved_symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+      "jp_current": [
+        {
+          "file": "patch/batches/196_pokemon_centers.json",
+          "definition": {
+            "name": "Chs_EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+            "source_symbol": "EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad",
+            "us_encoded_hex": "028904c504a207ac107f08e83bfe016307d70966087d0963077d0fe60ec40ac937fb0f21075d1117089e1055094c0fc23bfe108c09d205b70e830ac9074a089e3cff"
+          },
+          "text": "穿过冠军之路，\\n宝可梦联盟就在眼前。\\p已经走了这么远，\\n只能继续前进了！",
+          "originals": [
+            {
+              "address": "0x082114A2",
+              "text": "ポケモンリ-グは\\nチャンピオンロ-ドを　ぬけると　すぐ!\\pここまで　きたら\\nまえに　すすむしかないわ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "text": "穿过冠军之路，\n宝可梦联盟就在眼前。\\p已经走了这么远，\n只能继续前进了！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "text": "ポケモンリーグは\nチャンピオンロードを　ぬけると　すぐ！\\pここまで　きたら\nまえに　すすむしかないわ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/EverGrandeCity_PokemonCenter_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "The POKéMON LEAGUE is only a short\ndistance after the VICTORY ROAD.\\pIf you've come this far, what choice\ndo you have but to keep going?$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "现在明确只能继续前进。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 22,
+      "symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+      "report_block": "- JP：よし　いまから\nバルビ-トを　つよく　するぞ-!\\lプラスルも　つよく　してやってよ!\n- EN：I'm going to make VOLBEAT super\\nstrong from this moment on!\\pI hope you do the same with PLUSLE!$\n- 中文：从现在开始，我要把甜甜萤\\n养得壮壮的！\\p你也要善待正电拍拍啊！$\n- 理由：JP「バルビ-トを つよく するぞ-! プラスルも つよく してやってよ(也要把正电拍拍变强)」与EN「I hope you do the same with PLUSLE!(同样把PLUSLE变强)」均为「变强」；补丁中文与美版中文均为「你也要善待正电拍拍啊」，将「变强」误作「善待」，语义错误。\n- 修改建议：从现在开始，我要把甜甜萤\\n养得壮壮的！\\p你也要把正电拍拍养得壮壮的啊！",
+      "resolved_symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+      "jp_current": [
+        {
+          "file": "patch/batches/107_fortreecity_house1.json",
+          "definition": {
+            "name": "Chs_FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+            "source_symbol": "FortreeCity_House1_Text_GoingToMakeVolbeatStrong",
+            "us_encoded_hex": "02b30e030fe607b80c013b0d980ef101300cf10cf10f57fe0ee1030a10e210e2030b3cfb09d90f020ef10ba402dd1070032e0a210a2101003cff"
+          },
+          "text": "从现在开始，我要把甜甜萤\\n养得壮壮的！\\p你也要善待正电拍拍啊！",
+          "originals": [
+            {
+              "address": "0x08204334",
+              "text": "よし　いまから\\nバルビ-トを　つよく　するぞ-!\\lプラスルも　つよく　してやってよ!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/FortreeCity_House1/scripts.inc",
+          "text": "从现在开始，我要把甜甜萤\n养得壮壮的！\\p你也要善待正电拍拍啊！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/FortreeCity_House1/scripts.inc",
+          "text": "よし　いまから\nバルビートを　つよく　するぞー！\\lプラスルも　つよく　してやってよ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/FortreeCity_House1/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "I'm going to make VOLBEAT super\nstrong from this moment on!\\pI hope you do the same with PLUSLE!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "要求同样把正电拍拍培养强大，不是泛泛善待。",
+        "plan": "末句改为“你也要把正电拍拍\\n培养得更强啊！”"
+      }
+    },
+    {
+      "number": 23,
+      "symbol": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+      "report_block": "- JP：ポケモンずかんで\nおもいだした　ことが　あるよ\\pめずらしい　いしを　さがしてるとき\nダイゴって　トレ-ナ-と　であったけど\\lあいつの　ポケモン　すごいね!\\pめずらしい　だけでなく\nおそろしいほど　きたえられてた!\\pもしかしたら　この\n- EN：While speaking about POKéDEXES,\\nI remembered something.\\pI met this TRAINER, STEVEN, when\\nI was searching for rare sto\n- 中文：说到宝可梦图鉴，\\n我想起来了，\\p我寻找稀有石头的时候\\n遇到了那个叫大吾的训练家。\\p哈，他带着一些\\n奇妙的宝可梦，\\p它们不止是强大，\\n还在训练中发挥到了极致！\\p他也许比这城镇的\\n道馆馆主还要强……$\n- 理由：JP「めずらしい だけでなく おそろしいほど きたえられてた(不只是稀有，还被锻炼到了可怕的地步)」与EN「They weren't just rare, they were trained to terrifying extremes」关键形容词是「稀有」；补丁中文与美版中文均为「它们不止是强大，还在训练中发挥到了极致」，将「稀有」误作「强大」，语义错误。\n- 修改建议：它们不只是稀有，\\n还被锻炼到了可怕的地步！\n\n### 语义反转（8 条）",
+      "resolved_symbol": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+      "jp_current": [
+        {
+          "file": "patch/batches/245_fortree_city_house3.json",
+          "definition": {
+            "name": "Chs_FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+            "source_symbol": "FortreeCity_House3_Text_MetStevenHadAmazingPokemon",
+            "us_encoded_hex": "0c580304016307d709660d2405e33bfe0d980e180aab0829089e3bfb0d980e9910450dc50f7e0beb0d1f030b0bed0521fe0fa40304089e09bd0460072202d30da7030b0e9e088a05bd37fb04c63b0c9e02d810f40f0b0e34fe0aa10986030b016307d709663bfb0c9f095f01d6108a0c0c0dc50f7e3bfe05460fe60e9e088a10a103a505600304089e059610933cfb0c9e0f020e780185105502491065030bfe030704a504a510c805460ef10ad8b0b0ff"
+          },
+          "text": "说到宝可梦图鉴，\\n我想起来了，\\p我寻找稀有石头的时候\\n遇到了那个叫大吾的训练家。\\p哈，他带着一些\\n奇妙的宝可梦，\\p它们不止是稀有，\\n还在训练中发挥到了极致！\\p他也许比这城镇的\\n道馆馆主还要强……",
+          "originals": [
+            {
+              "address": "0x082050E3",
+              "text": "ポケモンずかんで\\nおもいだした　ことが　あるよ\\pめずらしい　いしを　さがしてるとき\\nダイゴって　トレ-ナ-と　であったけど\\lあいつの　ポケモン　すごいね!\\pめずらしい　だけでなく\\nおそろしいほど　きたえられてた!\\pもしかしたら　この　まちの\\nジムリ-ダ-よりも　つよいかも……"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/FortreeCity_House3/scripts.inc",
+          "text": "说到宝可梦图鉴，\n我想起来了，\\p我寻找稀有石头的时候\n遇到了那个叫大吾的训练家。\\p哈，他带着一些\n奇妙的宝可梦，\\p它们不止是稀有，\n还在训练中发挥到了极致！\\p他也许比这城镇的\n道馆馆主还要强……$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/FortreeCity_House3/scripts.inc",
+          "text": "ポケモンずかんで\nおもいだした　ことが　あるよ\\pめずらしい　いしを　さがしてるとき\nダイゴって　トレーナーと　であったけど\\lあいつの　ポケモン　すごいね！\\pめずらしい　だけでなく\nおそろしいほど　きたえられてた！\\pもしかしたら　この　まちの\nジムリーダーよりも　つよいかも⋯⋯$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/FortreeCity_House3/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "While speaking about POKéDEXES,\nI remembered something.\\pI met this TRAINER, STEVEN, when\nI was searching for rare stones.\\pHoo, boy, he had some amazing POKéMON\nwith him.\\pThey weren't just rare, they were\ntrained to terrifying extremes!\\pHe might even be stronger than the\nGYM LEADER in this town…$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "现在明确不止是稀有。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 24,
+      "symbol": "BattlePyramid_Text_FiveTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　5にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are five TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有5位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 5にん いる トレーナーが きっと たおしてくれるわ(剩下的5个训练家一定会打败你)」与EN「Someone will humble you!(有人会让你吃瘪)」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有5位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_FiveTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_FiveTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_FiveTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea60d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有5位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E429",
+              "text": "くやしい-!\\pでも　あと　5にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有5位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　5にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are five TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "现在说五位训练家中有人会击败玩家。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 25,
+      "symbol": "BattlePyramid_Text_FourTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　4にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are four TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有4位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 4にん いる トレーナーが きっと たおしてくれるわ(剩下的4个训练家一定会打败你)」与EN「Someone will humble you!」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有4位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_FourTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_FourTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_FourTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea50d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有4位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E451",
+              "text": "くやしい-!\\pでも　あと　4にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有4位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　4にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are four TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "四位训练家的获胜对象已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 26,
+      "symbol": "BattlePyramid_Text_OneTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　1にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there's one TRAINER left!\\nI'm sure you will be humbled!$\n- 中文：真不幸！\\p后面还有1位训练家！\\n他或许比你弱！$\n- 理由：JP「あと 1にん いる トレーナーが きっと たおしてくれるわ(剩下的1个训练家一定会打败你)」与EN「I'm sure you will be humbled!」均为对手将获胜；补丁中文「他或许比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有1位训练家！\\n他一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_OneTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_OneTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_OneTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea20d810e9e088a05bd3cfe0c9e0f0b034d056e02d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有1位训练家！\\n他一定会打败你！",
+          "originals": [
+            {
+              "address": "0x0822E4C9",
+              "text": "くやしい-!\\pでも　あと　1にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有1位训练家！\n他一定会打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　1にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there's one TRAINER left!\nI'm sure you will be humbled!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "最后一位会击败玩家。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 27,
+      "symbol": "BattlePyramid_Text_SevenTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　7にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are seven TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有7位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 7にん いる トレーナーが きっと たおしてくれるわ(剩下的7个训练家一定会打败你)」与EN「Someone will humble you!」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有7位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_SevenTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_SevenTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_SevenTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea80d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有7位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E3D9",
+              "text": "くやしい-!\\pでも　あと　7にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有7位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　7にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are seven TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "七位训练家的获胜对象已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 28,
+      "symbol": "BattlePyramid_Text_SixTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　6にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are six TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有6位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 6にん いる トレーナーが きっと たおしてくれるわ(剩下的6个训练家一定会打败你)」与EN「Someone will humble you!」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有6位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_SixTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_SixTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_SixTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea70d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有6位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E401",
+              "text": "くやしい-!\\pでも　あと　6にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有6位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　6にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are six TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "六位训练家的获胜对象已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 29,
+      "symbol": "BattlePyramid_Text_ThreeTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　3にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are three TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有3位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 3にん いる トレーナーが きっと たおしてくれるわ(剩下的3个训练家一定会打败你)」与EN「Someone will humble you!」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有3位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_ThreeTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_ThreeTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_ThreeTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea40d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有3位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E479",
+              "text": "くやしい-!\\pでも　あと　3にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有3位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　3にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are three TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "三位训练家的获胜对象已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 30,
+      "symbol": "BattlePyramid_Text_TwoTrainersRemaining2",
+      "report_block": "- JP：くやしいー！\\pでも　あと　2にん　いる　トレーナーが\\nきっと　たおしてくれるわ$\n- EN：This is so upsetting!\\pBut there are two TRAINERS left!\\nSomeone will humble you!$\n- 中文：真不幸！\\p后面还有2位训练家！\\n他们中或许有人比你弱！$\n- 理由：JP「あと 2にん いる トレーナーが きっと たおしてくれるわ(剩下的2个训练家一定会打败你)」与EN「Someone will humble you!」均为对手将获胜；补丁中文「他们中或许有人比你弱」将「对手打败你」反转为「对手比你弱」，语义完全反转。\n- 修改建议：真不幸！\\p后面还有2位训练家！\\n他们一定会打败你的！$",
+      "resolved_symbol": "BattlePyramid_Text_TwoTrainersRemaining2",
+      "jp_current": [
+        {
+          "file": "patch/batches/437_checklist_reviewed_indirect_tables.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_BattlePyramid_Text_TwoTrainersRemaining2",
+            "source_symbol": "BattlePyramid_Text_TwoTrainersRemaining2",
+            "us_encoded_hex": "105901d60e5d3cfb0522097e05460f7ea30d810e9e088a05bd3cfe0c9e095f10a10f0b034d0f7e0b4b09d202d2013b09d93cff"
+          },
+          "text": "真不幸！\\p后面还有2位训练家！\\n他们中一定有人能打败你！",
+          "originals": [
+            {
+              "address": "0x0822E4A1",
+              "text": "くやしい-!\\pでも　あと　2にん　いる　トレ-ナ-が\\nきっと　たおしてくれるわ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "真不幸！\\p后面还有2位训练家！\n他们中一定有人能打败你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "text": "くやしいー！\\pでも　あと　2にん　いる　トレーナーが\nきっと　たおしてくれるわ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_BattlePyramidFloor/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is so upsetting!\\pBut there are two TRAINERS left!\nSomeone will humble you!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "两位训练家的获胜对象已恢复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 31,
+      "symbol": "LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin",
+      "report_block": "- JP：おう　{FD:01}!!\nおうえん　してるぞ!!\n- EN：Yo, {PLAYER}!\\nYou're the one we want to win!$\n- 中文：嗨，{PLAYER}！\\n我们一直想要胜过你！$\n- 理由：JP「おう{FD:01}！！おうえんしてるぞ」/EN“You're the one we want to win!”意为“我们希望你赢、为你加油”，中文“我们一直想要胜过你！”把“希望你获胜”反转为“想要打败你”，语义完全颠倒。\n- 修改建议：嗨，{PLAYER}！\\n我们希望你能获胜！\n\n### 错字（6 条）",
+      "resolved_symbol": "LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin",
+      "jp_current": [
+        {
+          "file": "patch/batches/139_lilycovecity_pokemontrainerfanclub.json",
+          "definition": {
+            "name": "Chs_LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin",
+            "source_symbol": "LilycoveCity_PokemonTrainerFanClub_Text_YoureOneWeWantToWin",
+            "us_encoded_hex": "14673bfd013cfe0d98095f0f0b10820e180ef10be004c509d93cff",
+            "japanese_placeholders": [
+              1
+            ]
+          },
+          "text": "嗨，{FD_01}！\\n我们一直想要胜过你！",
+          "originals": [
+            {
+              "address": "0x08208BEC",
+              "text": "おう　{PLACEHOLDER_01}!!\\nおうえん　してるぞ!!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+          "text": "嗨，{PLAYER}！\n我们一直想要胜过你！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+          "text": "おう　{PLAYER}！！\nおうえん　してるぞ！！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LilycoveCity_PokemonTrainerFanClub/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Yo, {PLAYER}!\nYou're the one we want to win!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "为玩家加油，不是想打败玩家，主客体反转。",
+        "plan": "嗨，{PLAYER}！\\n我们希望你能获胜！；日版仍用 FD_01。"
+      }
+    },
+    {
+      "number": 32,
+      "symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+      "report_block": "- JP：ボクの　なまえは　ダイゴ\\pめずらしい　いしに　きょうみが　あって\nあちこち　たび　してるんだよ\\pえっ?\nボクに　てがみ……?\n- EN：My name is STEVEN.\\pI'm interested in rare stones,\\nso I travel here and there.\\pOh?\\nA LETTER for me?$\n- 中文：我的名字是大吾。\\p我对稀有的石头很有兴趣，\\n所有经常四处旅行。\\p哦？\\n有给我的信？$\n- 理由：JP「めずらしいいしにきょうみがあってあちこちたびしてるんだよ」/EN“I'm interested in rare stones, so I travel”意为“对稀有石头感兴趣，所以经常四处旅行”，中文“所有经常四处旅行”中“所有”系“所以”之误，美版中文同样错写。\n- 修改建议：我的名字是大吾。\\p我对稀有的石头很有兴趣，\\n所以经常四处旅行。\\p哦？\\n有给我的信？",
+      "resolved_symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+      "jp_current": [
+        {
+          "file": "patch/batches/027_stevens_room.json",
+          "definition": {
+            "name": "Chs_GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+            "source_symbol": "GraniteCave_StevensRoom_Text_ImStevenLetterForMe",
+            "us_encoded_hex": "0d98030b0993110e0c0c02d30da737fb0d9803790dc50f7e030b0beb0d1f050b0f7e0e560b243bfe0c9c0f7e075d02250c67028608f40e5b37fb0a133dfe0f7e04620d98030b0e503dff"
+          },
+          "text": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\\n所有经常四处旅行。\\p哦？\\n有给我的信？",
+          "originals": [
+            {
+              "address": "0x08214107",
+              "text": "ボクの　なまえは　ダイゴ\\pめずらしい　いしに　きょうみが　あって\\nあちこち　たび　してるんだよ\\pえっ?\\nボクに　てがみ……?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+          "text": "我的名字是大吾。\\p我对稀有的石头很有兴趣，\n所有经常四处旅行。\\p哦？\n有给我的信？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+          "text": "ボクの　なまえは　ダイゴ\\pめずらしい　いしに　きょうみが　あって\nあちこち　たび　してるんだよ\\pえっ？\nボクに　てがみ⋯⋯？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/GraniteCave_StevensRoom/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "My name is STEVEN.\\pI'm interested in rare stones,\nso I travel here and there.\\pOh?\nA LETTER for me?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "所有经常是笔误。",
+        "plan": "“所有经常”改“所以经常”。"
+      }
+    },
+    {
+      "number": 33,
+      "symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+      "report_block": "- JP：てがみが　ある!\\p……　……　……\n……　……　……\\p{FD:01}{FD:05}へ\\pボクは　おもうことが　あって\nしばらく　しゅぎょうを　つづける\\lとうぶん　いえに　かえらない\\pそこで　おねがいだ\\pつくえの　うえにある\nモンス\n- EN：It's a letter.\\p… … … … … …\\pTo {PLAYER}{KUN}…\\pI've decided to do a little soul-\\nsearching and train on the road.\\pI d\n- 中文：是一封信。\\p…… …… ……\\p致{PLAYER}{KUN}……\\p已我决定踏上自我\\n探索与修行之旅。\\p短时间内不\\n打算回家，\\p我想拜托你收下\\n桌上的精灵球，\\p里面是我最喜欢的宝可梦——\\n铁哑铃，\\p拜托你照顾好它。\\p愿你\n- 理由：JP「ボクはおもうことがあってしばらくしゅぎょうをつづける（我有些想法，要继续修行一阵子）」/EN「I've decided to do a little soul-searching and train on the road」中「我已决定」被补丁/美版中文误作「已我决定」，「我」「已」二字顺序颠倒，属错字；其余「短时间内不打算回家」「收下桌上的精灵球」「里面是我最喜欢的宝可梦——铁哑铃」「愿你我终有相逢之日」语义一致。\n- 修改建议：我已决定踏上自我探索与修行之旅。",
+      "resolved_symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+      "jp_current": [
+        {
+          "file": "patch/batches/159_mossdeepcity_stevenshouse.json",
+          "definition": {
+            "name": "Chs_MossdeepCity_StevensHouse_Text_LetterFromSteven",
+            "source_symbol": "MossdeepCity_StevensHouse_Text_LetterFromSteven",
+            "us_encoded_hex": "0c0c0f0b03e50e5037fbb0b000b0b000b0b0fb1093fd01fd05b0b0fb0d980f2107a6034d0ca50bad110c0d98fe0cbe0c9a0f990e690e5b107f08f437fb03710bed05cf09d001d6fe02d20c86056505bd3bfb0d980e18013c0d3809d90c1a0de6fe10ef0bad030b075b08bc0b143bfb0864097e0c0c0d9811260dd60543030b016307d709663f3ffe0d040eaf08b83bfb013c0d3809d91048049304e90c9f37fb0fc409d90d9810a60f7e0e0d03ed107f0b5537fb02d30da7af110004080aa1ff",
+            "japanese_placeholders": [
+              1,
+              5
+            ]
+          },
+          "text": "是一封信。\\p…… …… ……\\p致{FD_01}{FD_05}……\\p我已决定踏上自我\\n探索与修行之旅。\\p短时间内不\\n打算回家，\\p我想拜托你收下\\n桌上的精灵球，\\p里面是我最喜欢的宝可梦——\\n铁哑铃，\\p拜托你照顾好它。\\p愿你我终有相逢之日。\\p大吾·兹伏奇",
+          "originals": [
+            {
+              "address": "0x0820CB77",
+              "text": "てがみが　ある!\\p……　……　……\\n……　……　……\\p{PLACEHOLDER_01}{PLACEHOLDER_05}へ\\pボクは　おもうことが　あって\\nしばらく　しゅぎょうを　つづける\\lとうぶん　いえに　かえらない\\pそこで　おねがいだ\\pつくえの　うえにある\\nモンスタ-ボ-ルを　うけとって　ほしい\\pなかに　いるのは　ダンバルといって\\nボクの　おきにいりの　ポケモンだから\\pよろしく　たのむよ\\pでは　また　いつか　あおう!\\n　　　　　　ツワブキ　ダイゴより"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+          "text": "是一封信。\\p…… …… ……\\p致{PLAYER}{KUN}……\\p我已决定踏上自我\n探索与修行之旅。\\p短时间内不\n打算回家，\\p我想拜托你收下\n桌上的精灵球，\\p里面是我最喜欢的宝可梦——\n铁哑铃，\\p拜托你照顾好它。\\p愿你我终有相逢之日。\\p大吾·兹伏奇$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+          "text": "てがみが　ある！\\p⋯⋯　⋯⋯　⋯⋯\n⋯⋯　⋯⋯　⋯⋯\\p{PLAYER}{KUN}へ\\pボクは　おもうことが　あって\nしばらく　しゅぎょうを　つづける\\lとうぶん　いえに　かえらない\\pそこで　おねがいだ\\pつくえの　うえにある\nモンスターボールを　うけとって　ほしい\\pなかに　いるのは　ダンバルといって\nボクの　おきにいりの　ポケモンだから\\pよろしく　たのむよ\\pでは　また　いつか　あおう！\n　　　　　　ツワブキ　ダイゴより$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MossdeepCity_StevensHouse/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "It's a letter.\\p… … … … … …\\pTo {PLAYER}{KUN}…\\pI've decided to do a little soul-\nsearching and train on the road.\\pI don't plan to return home for some\ntime.\\pI have a favor to ask of you.\\pI want you to take the POKé BALL on\nthe desk.\\pInside it is a BELDUM, my favorite\nPOKéMON.\\pI'm counting on you.\\pMay our paths cross someday.\\pSTEVEN STONE$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "锻炼/探索旅程以及铁哑铃含义已修复。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 34,
+      "symbol": "gTVPokemonNewsBattleFrontierText05",
+      "report_block": "- JP：バトルドーム\\nシングル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$\n- EN：The TRAINER {STR_VAR_1} set a new\\n{STR_VAR_2}-championship-streak record\\lcompeting in the BATTLE DOME's\\lSINGLE BATTLE\n- 中文：训练家{STR_VAR_1}在\\n在对战巨蛋单打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！$\n- 理由：JP“バトルドーム シングル バトルトーナメントに ちょうせんした”/EN“competing in the BATTLE DOME's SINGLE BATTLE Tournaments”，中文“训练家{STR_VAR_1}在 在对战巨蛋单打对战锦标赛中”出现“在 在”重复。\n- 修改建议：训练家{STR_VAR_1}在对战巨蛋单打对战锦标赛中创造了{STR_VAR_2}连冠的新纪录。让我们为{STR_VAR_1}欢呼！",
+      "resolved_symbol": "gTVPokemonNewsBattleFrontierText05",
+      "jp_current": [
+        {
+          "file": "patch/batches/386_tv_0.json",
+          "definition": {
+            "name": "Chs_gTVPokemonNewsBattleFrontierText05",
+            "source_symbol": "gTVPokemonNewsBattleFrontierText05",
+            "us_encoded_hex": "0e9e088a05bdfd020fe6fe03791030078e02ee02e302d203791030074701a70b7c10a1fa02941001089efd03087f04a2030b0e4d05b808ed37fb0b430d98095f0d70fd02054305233cff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "训练家{FD_02}在\\n对战巨蛋单打对战锦标赛中\\l创造了{FD_03}连冠的新纪录。\\p让我们为{FD_02}欢呼！",
+          "originals": [
+            {
+              "address": "0x082512C1",
+              "text": "バトルド-ム\\nシングル　バトルト-ナメントに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんぱで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/tv.inc",
+          "text": "训练家{STR_VAR_1}在\n对战巨蛋单打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/tv/battle_frontier_news.inc",
+          "text": "バトルドーム\nシングル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/tv.inc",
+          "revision": "fe570a7e5^",
+          "text": "The TRAINER {STR_VAR_1} set a new\n{STR_VAR_2}-championship-streak record\\lcompeting in the BATTLE DOME's\\lSINGLE BATTLE Tournaments.\\pHere's to {STR_VAR_1}!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "对战巨蛋单打文本已删除重复在。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 35,
+      "symbol": "gTVPokemonNewsBattleFrontierText06",
+      "report_block": "- JP：バトルドーム\\nダブル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$\n- EN：The TRAINER {STR_VAR_1} set a new\\n{STR_VAR_2}-championship-streak record\\lcompeting in the BATTLE DOME's\\lDOUBLE BATTLE\n- 中文：训练家{STR_VAR_1}在\\n在对战巨蛋双打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！$\n- 理由：同[120]，“训练家{STR_VAR_1}在 在对战巨蛋双打对战锦标赛中”出现“在 在”重复。\n- 修改建议：训练家{STR_VAR_1}在对战巨蛋双打对战锦标赛中创造了{STR_VAR_2}连冠的新纪录。让我们为{STR_VAR_1}欢呼！",
+      "resolved_symbol": "gTVPokemonNewsBattleFrontierText06",
+      "jp_current": [
+        {
+          "file": "patch/batches/386_tv_0.json",
+          "definition": {
+            "name": "Chs_gTVPokemonNewsBattleFrontierText06",
+            "source_symbol": "gTVPokemonNewsBattleFrontierText06",
+            "us_encoded_hex": "0e9e088a05bdfd020fe6fe03791030078e02ee0c4e02d203791030074701a70b7c10a1fa02941001089efd03087f04a2030b0e4d05b808ed37fb0b430d98095f0d70fd02054305233cff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "训练家{FD_02}在\\n对战巨蛋双打对战锦标赛中\\l创造了{FD_03}连冠的新纪录。\\p让我们为{FD_02}欢呼！",
+          "originals": [
+            {
+              "address": "0x08251306",
+              "text": "バトルド-ム\\nダブル　バトルト-ナメントに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんぱで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/tv.inc",
+          "text": "训练家{STR_VAR_1}在\n对战巨蛋双打对战锦标赛中\\l创造了{STR_VAR_2}连冠的新纪录。\\p让我们为{STR_VAR_1}欢呼！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/tv/battle_frontier_news.inc",
+          "text": "バトルドーム\nダブル　バトルトーナメントに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんぱで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/tv.inc",
+          "revision": "fe570a7e5^",
+          "text": "The TRAINER {STR_VAR_1} set a new\n{STR_VAR_2}-championship-streak record\\lcompeting in the BATTLE DOME's\\lDOUBLE BATTLE Tournaments.\\pHere's to {STR_VAR_1}!$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "对战巨蛋双打文本已删除重复在。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 36,
+      "symbol": "gTVPokemonNewsBattleFrontierText11",
+      "report_block": "- JP：バトルパレス\\nシングル　バトルホールに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんしょうで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$\n- EN：The TRAINER {STR_VAR_1} set a new\\n{STR_VAR_2}-win-streak record while on\\lthe BATTLE PALACE's SINGLE BATTLE\\lHALL chall\n- 中文：训练家{STR_VAR_1}在\\n在对战宫殿单打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$\n- 理由：JP“バトルパレス シングル バトルホールに ちょうせんした”/EN“on the BATTLE PALACE's SINGLE BATTLE HALL challenge”，中文“训练家{STR_VAR_1}在 在对战宫殿单打对战厅中”出现“在 在”重复。\n- 修改建议：训练家{STR_VAR_1}在对战宫殿单打对战厅中创造了{STR_VAR_2}连胜的新纪录。让我们为{STR_VAR_1}欢呼！",
+      "resolved_symbol": "gTVPokemonNewsBattleFrontierText11",
+      "jp_current": [
+        {
+          "file": "patch/batches/386_tv_0.json",
+          "definition": {
+            "name": "Chs_gTVPokemonNewsBattleFrontierText11",
+            "source_symbol": "gTVPokemonNewsBattleFrontierText11",
+            "us_encoded_hex": "0e9e088a05bdfd020fe6fe0fe6037910300474033502e302d2037910300d0610a1fa02941001089efd03087f0be0030b0e4d05b808ed37fb0b430d98095f0d70fd02054305233cff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "训练家{FD_02}在\\n在对战宫殿单打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+          "originals": [
+            {
+              "address": "0x0825145F",
+              "text": "バトルパレス\\nシングル　バトルホ-ルに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんしょうで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/tv.inc",
+          "text": "训练家{STR_VAR_1}在\n在对战宫殿单打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/tv/battle_frontier_news.inc",
+          "text": "バトルパレス\nシングル　バトルホールに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんしょうで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/tv.inc",
+          "revision": "fe570a7e5^",
+          "text": "The TRAINER {STR_VAR_1} set a new\n{STR_VAR_2}-win-streak record while on\\lthe BATTLE PALACE's SINGLE BATTLE\\lHALL challenge.\\pHere's to {STR_VAR_1}!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "两个“在”重复，当前仍存在。",
+        "plan": "删除第二行开头多余的“在”，保留其余文字与变量。"
+      }
+    },
+    {
+      "number": 37,
+      "symbol": "gTVPokemonNewsBattleFrontierText12",
+      "report_block": "- JP：バトルパレス\\nダブル　バトルホールに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんしょうで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$\n- EN：The TRAINER {STR_VAR_1} set a new\\n{STR_VAR_2}-win-streak record while on\\lthe BATTLE PALACE's DOUBLE BATTLE\\lHALL chall\n- 中文：训练家{STR_VAR_1}在\\n在对战宫殿双打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$\n- 理由：同[126]，“训练家{STR_VAR_1}在 在对战宫殿双打对战厅中”出现“在 在”重复。\n- 修改建议：训练家{STR_VAR_1}在对战宫殿双打对战厅中创造了{STR_VAR_2}连胜的新纪录。让我们为{STR_VAR_1}欢呼！\n\n### 数字范围错误（2 条）",
+      "resolved_symbol": "gTVPokemonNewsBattleFrontierText12",
+      "jp_current": [
+        {
+          "file": "patch/batches/386_tv_0.json",
+          "definition": {
+            "name": "Chs_gTVPokemonNewsBattleFrontierText12",
+            "source_symbol": "gTVPokemonNewsBattleFrontierText12",
+            "us_encoded_hex": "0e9e088a05bdfd020fe6fe0fe603791030047403350c4e02d2037910300d0610a1fa02941001089efd03087f0be0030b0e4d05b808ed37fb0b430d98095f0d70fd02054305233cff",
+            "japanese_placeholders": [
+              2,
+              3
+            ]
+          },
+          "text": "训练家{FD_02}在\\n在对战宫殿双打对战厅中\\l创造了{FD_03}连胜的新纪录。\\p让我们为{FD_02}欢呼！",
+          "originals": [
+            {
+              "address": "0x082514A3",
+              "text": "バトルパレス\\nダブル　バトルホ-ルに\\lちょうせんした　{PLACEHOLDER_02}さんが\\l{PLACEHOLDER_03}　れんしょうで\\lきろくを　こうしん　しました!\\p……{PLACEHOLDER_02}さん!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/tv.inc",
+          "text": "训练家{STR_VAR_1}在\n在对战宫殿双打对战厅中\\l创造了{STR_VAR_2}连胜的新纪录。\\p让我们为{STR_VAR_1}欢呼！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/tv/battle_frontier_news.inc",
+          "text": "バトルパレス\nダブル　バトルホールに\\lちょうせんした　{STR_VAR_1}さんが\\l{STR_VAR_2}　れんしょうで\\lきろくを　こうしん　しました！\\p⋯⋯{STR_VAR_1}さん！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/tv.inc",
+          "revision": "fe570a7e5^",
+          "text": "The TRAINER {STR_VAR_1} set a new\n{STR_VAR_2}-win-streak record while on\\lthe BATTLE PALACE's DOUBLE BATTLE\\lHALL challenge.\\pHere's to {STR_VAR_1}!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "两个“在”重复，当前仍存在。",
+        "plan": "删除第二行开头多余的“在”。"
+      }
+    },
+    {
+      "number": 38,
+      "symbol": "BattleFrontier_ReceptionGate_Text_Level50Info",
+      "report_block": "- JP：レベル50の　コースでは　なまえの　とおり\\nレベル50までの　ポケモンを\\lちょうせん　させることが　できます\\pただし　レベル50より　ひくい　レベルの\\nポケモンを　つれた　トレーナーが\\lとうじょう　することは　ありません\\lくれぐ\n- EN：The Level 50 course is open to POKéMON\\nup to and including Level 50.\\pPlease keep in mind, however, that\\nno TRAINER yo\n- 中文：Lv. 50级允许等级50级以内的\\n宝可梦参加。\\p但是，您遇到的训练家不会\\n使用等级50以内的宝可梦。\\p这是对战开拓区的\\n入门级对战，\\p我们建议您从这个模式\\n开始挑战。$\n- 理由：JP「レベル50より ひくい レベルの ポケモンを つれた トレーナーが とうじょう することは ありません」与EN「no TRAINER you face will have any POKéMON below Level 50」均指对手宝可梦不低于50级（实为50级）；补丁中文「不会使用等级50以内的宝可梦」将「低于50级」误作「50级以内」，按中文惯例含50级本身，反而排除了50级，与原文矛盾。\n- 修改建议：Lv. 50级允许等级50级以内的\\n宝可梦参加。\\p但是，您遇到的训练家不会\\n使用低于50级的宝可梦。\\p这是对战开拓区的\\n入门级对战，\\p我们建议您从这个模式\\n开始挑战。$",
+      "resolved_symbol": "BattleFrontier_ReceptionGate_Text_Level50Info",
+      "jp_current": [
+        {
+          "file": "patch/batches/230_battle_frontier_reception_gate.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_ReceptionGate_Text_Level50Info",
+            "source_symbol": "BattleFrontier_ReceptionGate_Text_Level50Info",
+            "us_encoded_hex": "c6eaad00a6a105a10fd60e78030f05a1a6a105a10f2409d0030bfe016307d7096601e905be37fb02e90c0c3b09f00fa40304030b0e9e088a05bd01d6056efe0bf50f7103140f88a6a105a1030b016307d7096637fb10550c0c0379103007b80d400b1a030bfe0b6b095d05a1037910303bfb0d98095f05f10f3909f002b31055046009990c02fe07b80c010cf5103037ff"
+          },
+          "text": "Lv. 50级允许等级50级以内的\\n宝可梦参加。\\p但是，您遇到的训练家不会\\n使用低于50级的宝可梦。\\p这是对战开拓区的\\n入门级对战，\\p我们建议您从这个模式\\n开始挑战。",
+          "originals": [
+            {
+              "address": "0x0823ABB0",
+              "text": "レベル50の　コ-スでは　なまえの　とおり\\nレベル50までの　ポケモンを\\lちょうせん　させることが　できます\\pただし　レベル50より　ひくい　レベルの\\nポケモンを　つれた　トレ-ナ-が\\lとうじょう　することは　ありません\\lくれぐれも　ごちゅうい　ください\\pなお　このコ-スが　バトルフロンティアの\\nたたかいの　きほんと　なって　いますので\\lぜひ　チャレンジして　みてください"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "text": "Lv. 50级允许等级50级以内的\n宝可梦参加。\\p但是，您遇到的训练家不会\n使用低于50级的宝可梦。\\p这是对战开拓区的\n入门级对战，\\p我们建议您从这个模式\n开始挑战。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "text": "レベル50の　コースでは　なまえの　とおり\nレベル50までの　ポケモンを\\lちょうせん　させることが　できます\\pただし　レベル50より　ひくい　レベルの\nポケモンを　つれた　トレーナーが\\lとうじょう　することは　ありません\\lくれぐれも　ごちゅうい　ください\\pなお　このコースが　バトルフロンティアの\nたたかいの　きほんと　なって　いますので\\lぜひ　チャレンジして　みてください$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "The Level 50 course is open to POKéMON\nup to and including Level 50.\\pPlease keep in mind, however, that\nno TRAINER you face will have any\\lPOKéMON below Level 50.\\pThis course is the entry level for\nbattles at the BATTLE FRONTIER.\\pTo begin, we hope you will challenge\nthis course.$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "现在明确不会低于50级。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 39,
+      "symbol": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+      "report_block": "- JP：オープンレベルの　コースでは\\nちょうせんに　さんかする　ポケモンの\\lレベルに　せいげんが　ありません\\pあなたの　ポケモンの　レベルに　あわせて\\nたいせんする　トレーナーの　ポケモンの\\lレベルが　かわります\\pただし　レベル60より\n- EN：The Open Level course places no limit\\non the levels of POKéMON entering\\lchallenges.\\pThe levels of your opponents will\n- 中文：自由等级对于参加的宝可梦\\n没有等级限制。\\p对手的宝可梦等级会根据\\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\\n使用等级60以内的宝可梦。$\n- 理由：JP「レベル60より ひくい レベルの ポケモンを つれた トレーナーが とうじょう することは ありません」与EN「no TRAINER you face will have any POKéMON below Level 60」均指对手宝可梦不低于60级；补丁中文「不会使用等级60以内的宝可梦」将「低于60级」误作「60级以内」，按中文惯例含60级本身，与原文矛盾。\n- 修改建议：自由等级对于参加的宝可梦\\n没有等级限制。\\p对手的宝可梦等级会根据\\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\\n使用低于60级的宝可梦。$\n\n### 内容遗漏（2 条）",
+      "resolved_symbol": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+      "jp_current": [
+        {
+          "file": "patch/batches/230_battle_frontier_reception_gate.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+            "source_symbol": "BattleFrontier_ReceptionGate_Text_OpenLevelInfo",
+            "us_encoded_hex": "110c0f77030f05a103790f8801e905be030b016307d70966fe09530f7e030f05a10e0b109737fb03790c1b030b016307d70966030f05a1056e0463078dfe09f0030b016307d70966030f05a1074a0e5b033e106e37fb02e90c0c3b09f00fa40304030b0e9e088a05bd01d6056efe0bf50f7103140f88a7a105a1030b016307d7096637ff"
+          },
+          "text": "自由等级对于参加的宝可梦\\n没有等级限制。\\p对手的宝可梦等级会根据\\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\\n使用低于60级的宝可梦。",
+          "originals": [
+            {
+              "address": "0x0823AC6C",
+              "text": "オ-プンレベルの　コ-スでは\\nちょうせんに　さんかする　ポケモンの\\lレベルに　せいげんが　ありません\\pあなたの　ポケモンの　レベルに　あわせて\\nたいせんする　トレ-ナ-の　ポケモンの\\lレベルが　かわります\\pただし　レベル60より　ひくい　レベルの\\nポケモンを　つれた　トレ-ナ-が\\lとうじょう　することは　ありません"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "text": "自由等级对于参加的宝可梦\n没有等级限制。\\p对手的宝可梦等级会根据\n您的宝可梦等级进行调整。\\p但是，您遇到的训练家不会\n使用低于60级的宝可梦。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "text": "オープンレベルの　コースでは\nちょうせんに　さんかする　ポケモンの\\lレベルに　せいげんが　ありません\\pあなたの　ポケモンの　レベルに　あわせて\nたいせんする　トレーナーの　ポケモンの\\lレベルが　かわります\\pただし　レベル60より　ひくい　レベルの\nポケモンを　つれた　トレーナーが\\lとうじょう　することは　ありません$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "The Open Level course places no limit\non the levels of POKéMON entering\\lchallenges.\\pThe levels of your opponents will\nbe adjusted to match the levels of\\lyour POKéMON.\\pHowever, no TRAINER you face will\nhave any POKéMON below Level 60.$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "现在明确不会低于60级。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 40,
+      "symbol": "CableClub_Text_ExplainWirelessClub",
+      "report_block": "- JP：ポケモン　ワイヤレス　クラブでの\\nあそびかたを　せつめい　します！\\pこちら　2かいには\\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\\nユニオン　ルーム！\\pあなたの　ちかくで\\nユニオン　ルームに　はいっている\n- EN：Let me explain how the POKéMON\\nWIRELESS CLUB works.\\pOn this, the top floor, there are\\ntwo rooms.\\pFirst, the room on \n- 中文：让我给您介绍一下\\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接\n- 理由：JP「もし ユニオン ルームや ダイレクト コーナーで おともだちが みつからない ときは もうすこし おともだちと ちかづいて みて ください(若在联盟交谊厅或直接连接室找不到朋友，请靠近朋友一些)」与EN「In that case, please move closer to your friends」整段在补丁中文中被遗漏，补丁中文从「交换或对战」直接跳到「如果无线适配器没有连接」，缺失一段提示。\n- 修改建议：让我给您介绍一下\\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接连接室。\\p您可以和他们进行\\n交换或对战。\\p如果在联盟交谊厅或直接连接室\\n找不到朋友的话，\\p请试着靠近朋友一些。\\p如果无线适配器没有连接，\\n您仍然可",
+      "resolved_symbol": "CableClub_Text_ExplainWirelessClub",
+      "jp_current": [
+        {
+          "file": "patch/batches/359_cable_club.json",
+          "definition": {
+            "name": "Chs_CableClub_Text_ExplainWirelessClub",
+            "source_symbol": "CableClub_Text_ExplainWirelessClub",
+            "us_encoded_hex": "0b430d98046209f0073b0bba0f0b0de6fe0da40e0c0793084b01da012837fb0fe6105502070f7ea3046003c205cf37fb0c1c0dec0c0c112b019c030b03c205cf3bfe10550c0c087d0963070d0f3a0d0637fb09f009d2048304f309bd0e340fe609f010ad0d6d01bd0aeb0f02074a0b6bfe042d03c205cf030b0e9e088a05bd074a0e5b087f072537fb09f007d70f2404f30c9e095f0f0b0aab074a0e5bfe08970ced3a03791030057f070d054837fb0a9f02ae0c0c0f80019c030b03c205cf3bfe0722112e10820725087f07250c1737fb09f007d70f2404f30c9e095f074a0e5bfe070d0548057f0379103037fb0b6704c30da40e0c0c0f0a410ab209530f7e087f07253bfe09f00b540b3b07d70f240bf50f71c1bcbb087f07250e0c074a0e5b087f072537fb105510a70b0b080d0de63bfe09f0077d0e730ef1074a0b6b10820725087f07250c1737fb0dc70d6309f009d20e1a0c210da40e0c087f07250dd90d1bfe030b084b0b2437ff"
+          },
+          "text": "让我给您介绍一下\\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接连接室。\\p您可以和他们进行\\n交换或对战。\\p如果无线适配器没有连接，\\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\\n的乐趣。",
+          "originals": [
+            {
+              "address": "0x08248951",
+              "text": "ポケモン　ワイヤレス　クラブでの\\nあそびかたを　せつめい　します!\\pこちら　2かいには\\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\\nユニオン　ル-ム!\\pあなたの　ちかくで\\nユニオン　ル-ムに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケ-ションが\\lたのしめます!\\pふたつめは　みぎがわの　おへや\\nダイレクト　コ-ナ-!\\pあなたの　しっている　おともだちと\\nポケモンの　こうかんや\\lたいせん　などを\\lたのしむ　ことが　できます!\\pもし　ユニオン　ル-ムや\\nダイレクト　コ-ナ-で\\lおともだちが　みつからない　ときは\\pもうすこし　おともだちと\\nちかづいて　みて　ください\\pまた　ワイヤレスアダプタが\\nつながって　いない　ばあいでも\\pみぎがわの　おへやで\\nケ-ブル　つうしんが　たのしめます\\pそれでは\\pワイヤレス　つうしんを\\nたのしんで　くださいね!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "让我给您介绍一下\n无线俱乐部吧。\\p在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "ポケモン　ワイヤレス　クラブでの\nあそびかたを　せつめい　します！\\pこちら　2かいには\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\nユニオン　ルーム！\\pあなたの　ちかくで\nユニオン　ルームに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケーションが\\lたのしめます！\\pふたつめは　みぎがわの　おへや\nダイレクト　コーナー！\\pあなたの　しっている　おともだちと\nポケモンの　こうかんや\\lたいせん　などを\\lたのしむ　ことが　できます！\\pもし　ユニオン　ルームや\nダイレクト　コーナーで\\lおともだちが　みつからない　ときは\\pもうすこし　おともだちと\nちかづいて　みて　ください\\pまた　ワイヤレスアダプタが\nつながって　いない　ばあいでも\\pみぎがわの　おへやで\nケーブル　つうしんが　たのしめます\\pそれでは\\pワイヤレス　つうしんを\nたのしんで　くださいね！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "revision": "fe570a7e5^",
+          "text": "Let me explain how the POKéMON\nWIRELESS CLUB works.\\pOn this, the top floor, there are\ntwo rooms.\\pFirst, the room on the left.\nIt's the UNION ROOM.\\pYou may link up with TRAINERS\naround you who have also entered\\lthe UNION ROOM.\\pWith them, you may do things like\nchat, battle, and trade.\\pSecond, the room on the right is\nthe DIRECT CORNER.\\pYou may trade or battle POKéMON\nwith your friends in this room.\\pSometimes, you may not be able to\nfind your friends in the UNION ROOM\\lor the DIRECT CORNER.\\pIn that case, please move closer\nto your friends.\\pIf the Wireless Adapter isn't\nconnected, you may still link up\\lusing a GBA Game Link cable.\\pIf that is the case, you must go\nto the DIRECT CORNER.\\pI hope you enjoy the Wireless \nCommunication System.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "非首次说明的完整日英原文均有找不到朋友时靠近的提示，当前遗漏。",
+        "plan": "在适配器未连接的说明之前补“如果在联盟交谊厅或直接连接室\\n找不到朋友，\\p请试着靠近朋友一些。”；不要顺手向首次说明复制此段。"
+      }
+    },
+    {
+      "number": 41,
+      "symbol": "CableClub_Text_ExplainWirelessClubFirstTime",
+      "report_block": "- JP：こちら　2かいには\\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\\nユニオン　ルーム！\\pあなたの　ちかくで\\nユニオン　ルームに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケーションが\\lたのし\n- EN：On the top floor, there are two\\nrooms.\\pFirst, the room on the left.\\nIt's the UNION ROOM.\\pYou may link up with TRAINE\n- 中文：在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接连接室。\\p您可以和他们进行\\n交换或\n- 理由：与[661]同一说明文本的另一版本：JP「もし ユニオン ルームや ダイレクト コーナーで おともだちが みつからない ときは もうすこし おともだちと ちかづいて みて ください」与EN「please move closer to your friends」整段在补丁中文中同样被遗漏。\n- 修改建议：在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接连接室。\\p您可以和他们进行\\n交换或对战。\\p如果在联盟交谊厅或直接连接室\\n找不到朋友的话，\\p请试着靠近朋友一些。\\p如果无线适配器没有连接，\\n您仍然可以使用GBA连接线进行连接。\\p这种情\n\n### 数字错误（单位换算）（2 条）",
+      "resolved_symbol": "CableClub_Text_ExplainWirelessClubFirstTime",
+      "jp_current": [
+        {
+          "file": "patch/batches/359_cable_club.json",
+          "definition": {
+            "name": "Chs_CableClub_Text_ExplainWirelessClubFirstTime",
+            "source_symbol": "CableClub_Text_ExplainWirelessClubFirstTime",
+            "us_encoded_hex": "0fe6105502070f7ea3046003c205cf37fb0c1c0dec0c0c112b019c030b03c205cf3bfe10550c0c087d0963070d0f3a0d0637fb09f009d2048304f309bd0e340fe609f010ad0d6d01bd0aeb0f02074a0b6bfe042d03c205cf030b0e9e088a05bd074a0e5b087f072537fb09f007d70f2404f30c9e095f0f0b0aab074a0e5bfe08970ced3a03791030057f070d054837fb0a9f02ae0c0c0f80019c030b03c205cf3bfe0722112e10820725087f07250c1737fb09f007d70f2404f30c9e095f074a0e5bfe070d0548057f0379103037fb0b6704c30da40e0c0c0f0a410ab209530f7e087f07253bfe09f00b540b3b07d70f240bf50f71c1bcbb087f07250e0c074a0e5b087f072537fb105510a70b0b080d0de63bfe09f0077d0e730ef1074a0b6b10820725087f07250c1737fb0dc70d6309f009d20e1a0c210da40e0c087f07250dd90d1bfe030b084b0b2437ff"
+          },
+          "text": "在这层有2个房间。\\p首先是左边的房间，\\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\\n该房间的训练家进行连接。\\p您可以和他们一起进行\\n聊天、对战或交换。\\p其次是右边的房间，\\n叫做直接连接室。\\p您可以和他们进行\\n交换或对战。\\p如果无线适配器没有连接，\\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\\n的乐趣。",
+          "originals": [
+            {
+              "address": "0x082487F6",
+              "text": "こちら　2かいには\\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\\nユニオン　ル-ム!\\pあなたの　ちかくで\\nユニオン　ル-ムに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケ-ションが\\lたのしめます!\\pふたつめは　みぎがわの　おへや\\nダイレクト　コ-ナ-!\\pあなたの　しっている　おともだちと\\nポケモンの　こうかんや\\lたいせん　などを\\lたのしむ　ことが　できます!\\pもし　ワイヤレスアダプタが\\nつながって　いない　ばあいでも\\pみぎがわの　おへやで\\nケ-ブル　つうしんが　たのしめます\\pそれでは\\pワイヤレス　つうしんを\\nたのしんで　くださいね!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "在这层有2个房间。\\p首先是左边的房间，\n这是联盟交谊厅。\\p您能够和那些在您周围并且也进入\n该房间的训练家进行连接。\\p您可以和他们一起进行\n聊天、对战或交换。\\p其次是右边的房间，\n叫做直接连接室。\\p您可以和他们进行\n交换或对战。\\p如果无线适配器没有连接，\n您仍然可以使用GBA连接线进行连接。\\p这种情况下，\n您就需要进入直接连接室。\\p希望您能享受无线连接系统\n的乐趣。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "こちら　2かいには\nふたつの　おへやが　ございます\\pひとつめは　ひだりがわの　おへや\nユニオン　ルーム！\\pあなたの　ちかくで\nユニオン　ルームに　はいっている\\lみしらぬ　おともだちと\\lいろいろな　コミュニケーションが\\lたのしめます！\\pふたつめは　みぎがわの　おへや\nダイレクト　コーナー！\\pあなたの　しっている　おともだちと\nポケモンの　こうかんや\\lたいせん　などを\\lたのしむ　ことが　できます！\\pもし　ワイヤレスアダプタが\nつながって　いない　ばあいでも\\pみぎがわの　おへやで\nケーブル　つうしんが　たのしめます\\pそれでは\\pワイヤレス　つうしんを\nたのしんで　くださいね！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "revision": "fe570a7e5^",
+          "text": "On the top floor, there are two\nrooms.\\pFirst, the room on the left.\nIt's the UNION ROOM.\\pYou may link up with TRAINERS\naround you who have also entered\\lthe UNION ROOM.\\pWith them, you may do things like\nchat, battle, and trade.\\pSecond, the room on the right is\nthe DIRECT CORNER.\\pYou may trade or battle POKéMON\nwith your friends in this room.\\pIf the Wireless Adapter isn't\nconnected, you may still link up\\lusing a GBA Game Link cable.\\pIf that is the case, you must go\nto the DIRECT CORNER.\\pI hope you enjoy the Wireless \nCommunication System.$"
+        }
+      ],
+      "decision": {
+        "status": "报告错误",
+        "reason": "首次说明的实际日英全文都没有“靠近朋友”这段。不得从非首次说明补入。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 42,
+      "symbol": "LavaridgeTown_Gym_1F_Text_GeraldIntro",
+      "report_block": "- JP：おまえの　ポケモン\n200どの　あつさに　たえられるかよ!?\n- EN：Can your POKéMON withstand\\n392-degree heat?$\n- 中文：你的宝可梦能抵挡\\n392度的高温吗？$\n- 理由：JP「200どのあつさにたえられるか」为200摄氏度，EN“392-degree heat”为392华氏度（200°C=392°F），中文“392度的高温”直接沿用华氏度数值，在中文语境下会被理解为392摄氏度，与日文200度不符。\n- 修改建议：你的宝可梦能抵挡\\n200度的高温吗？",
+      "resolved_symbol": "LavaridgeTown_Gym_1F_Text_GeraldIntro",
+      "jp_current": [
+        {
+          "file": "patch/batches/079_lavaridgetown_gym_1f.json",
+          "definition": {
+            "name": "Chs_LavaridgeTown_Gym_1F_Text_GeraldIntro",
+            "source_symbol": "LavaridgeTown_Gym_1F_Text_GeraldIntro",
+            "us_encoded_hex": "09d9030b016307d7096609d2031d02f0fea4aaa3036d030b04490d88092a3dff"
+          },
+          "text": "你的宝可梦能抵挡\\n392度的高温吗？",
+          "originals": [
+            {
+              "address": "0x081F4780",
+              "text": "おまえの　ポケモン\\n200どの　あつさに　たえられるかよ!?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "text": "你的宝可梦能抵挡\n392度的高温吗？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "text": "おまえの　ポケモン\n200どの　あつさに　たえられるかよ！？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Can your POKéMON withstand\n392-degree heat?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP；US澄清单位",
+        "reason": "日文200度与英文392度是摄氏/华氏区域换算，不是同一数字。“392度”没有单位会误导。",
+        "plan": "日版200℃；美版392℉。不因现实岩浆温度去修改原作数字。"
+      }
+    },
+    {
+      "number": 43,
+      "symbol": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+      "report_block": "- JP：200どの　あつさ　ってのは\nようがんの　おんど!\\pおまえの　ポケモン　おれに　かてたんだから\nようがんの　なかでも　へいき　だろうな!\n- EN：The temperature of magma is\\n392 degrees.\\pYour POKéMON beat me, so they should\\neasily survive in magma.$\n- 中文：岩浆的温度\\n是392度。\\p你的宝可梦打败了我，那么在岩浆中\\n也应该能比较容易生存下来。$\n- 理由：JP「200どのあつさってのはようがんのおんど」为200摄氏度，EN“The temperature of magma is 392 degrees”为392华氏度（=200°C），中文“岩浆的温度是392度”沿用华氏度数值，中文读者会理解为392摄氏度，与日文200度不符。\n- 修改建议：岩浆的温度\\n是200度。\\p你的宝可梦打败了我，那么在岩浆中\\n也应该能比较容易生存下来。\n\n### 误译（2 条）",
+      "resolved_symbol": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+      "jp_current": [
+        {
+          "file": "patch/batches/079_lavaridgetown_gym_1f.json",
+          "definition": {
+            "name": "Chs_LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+            "source_symbol": "LavaridgeTown_Gym_1F_Text_GeraldPostBattle",
+            "us_encoded_hex": "0ebb05f5030b0d88036dfe0c0ca4aaa3036d37fb09d9030b016307d7096602d2013b089e0d983b09bd094c0fe60ebb05f510a1fe0f020f54042d09d2018507210b5d0f270bd802c60de6082937ff"
+          },
+          "text": "岩浆的温度\\n是392度。\\p你的宝可梦打败了我，那么在岩浆中\\n也应该能比较容易生存下来。",
+          "originals": [
+            {
+              "address": "0x081F47AF",
+              "text": "200どの　あつさ　ってのは\\nようがんの　おんど!\\pおまえの　ポケモン　おれに　かてたんだから\\nようがんの　なかでも　へいき　だろうな!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "text": "岩浆的温度\n是392度。\\p你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "text": "200どの　あつさ　ってのは\nようがんの　おんど！\\pおまえの　ポケモン　おれに　かてたんだから\nようがんの　なかでも　へいき　だろうな！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LavaridgeTown_Gym_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "The temperature of magma is\n392 degrees.\\pYour POKéMON beat me, so they should\neasily survive in magma.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP；US澄清单位",
+        "reason": "同上一条，原作设定数值是200℃ / 392℉。",
+        "plan": "日版温度200℃，美版392℉；保留后续击败我所以能承受的夸张说法。"
+      }
+    },
+    {
+      "number": 44,
+      "symbol": "gText_BecameMoreConsciousOfOtherMons",
+      "report_block": "- JP：ほかの　ポケモンが　いつもより\\nきに　なって　きた！{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$\n- EN：It became more conscious\\nof the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$\n- 中文：它变得比平时\\n更加担心其他宝可梦了！{PAUSE_15}{PAUSE_15}{PAUSE_15}{PAUSE_15}$\n- 理由：JP“ほかの ポケモンが いつもより きに なって きた！”/EN“It became more conscious of the other POKéMON.”——“きになる”此处意为“在意/留意”，中文译成“更加担心其他宝可梦”加入了“担忧”含义；且姊妹文本[677]“变得不那么关注”[679]“完全不关注”均用“关注”，本条用词不一致。\n- 修改建议：它变得比平时更加在意其他宝可梦了！",
+      "resolved_symbol": "gText_BecameMoreConsciousOfOtherMons",
+      "jp_current": [
+        {
+          "file": "patch/batches/405_contest_strings.json",
+          "definition": {
+            "name": "Chs_gText_BecameMoreConsciousOfOtherMons",
+            "source_symbol": "gText_BecameMoreConsciousOfOtherMons",
+            "us_encoded_hex": "0c9f01a1030a01850a780bedfe046605be02e10e4f0a9f0c9e016307d70966089e3cfc080ffc080ffc080ffc080fff"
+          },
+          "text": "它变得比平时\\n更加担心其他宝可梦了！{FC_08 0f}{FC_08 0f}{FC_08 0f}{FC_08 0f}",
+          "originals": [
+            {
+              "address": "0x0824B70C",
+              "text": "ほかの　ポケモンが　いつもより\\nきに　なって　きた!{BYTE_FC}くそ{BYTE_FC}くそ{BYTE_FC}くそ{BYTE_FC}くそ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "text": "它变得比平时\n更加担心其他宝可梦了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "text": "ほかの　ポケモンが　いつもより\nきに　なって　きた！{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "revision": "fe570a7e5^",
+          "text": "It became more conscious\nof the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "conscious / きになる 是更加在意，不是担心。",
+        "plan": "“更加担心其他宝可梦”改为“更加在意其他宝可梦”，四个 PAUSE 15 不变。"
+      }
+    },
+    {
+      "number": 45,
+      "symbol": "gText_Contest_Shyness",
+      "report_block": "- JP：モジモジ$\n- EN：shyness$\n- 中文：扑通扑通$\n- 理由：JP“モジモジ”/EN“shyness”（华丽大赛害羞状态，扭捏不安貌），中文译成“扑通扑通”——“扑通扑通”是心跳声，对应的是ドキドキ，与モジモジ的“扭捏”语义不符（[841]ドキドキ/anxiety已另译“慌慌张张”，此处系拟声词错配）。\n- 修改建议：扭扭捏捏\n\n### 跨世代机制污染（2 条）",
+      "resolved_symbol": "gText_Contest_Shyness",
+      "jp_current": [
+        {
+          "file": "patch/batches/405_contest_strings.json",
+          "definition": {
+            "name": "Chs_gText_Contest_Shyness",
+            "source_symbol": "gText_Contest_Shyness",
+            "us_encoded_hex": "0a010a0109e909e9ff"
+          },
+          "text": "扭扭捏捏",
+          "originals": [
+            {
+              "address": "0x0824C0D2",
+              "text": "モジモジ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "text": "扭扭捏捏$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "text": "モジモジ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/contest_strings.inc",
+          "revision": "fe570a7e5^",
+          "text": "shyness$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前已为扭扭捏捏。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 46,
+      "symbol": "[127]",
+      "report_block": "- JP：たきを　さかのぼるような　いきおいで\nてきに　とっしんする\n- EN：Charges the foe with speed\nto climb waterfalls.\n- 中文：以惊人的气势扑向对手。\n有时会使对手畏缩。\n- 理由：JP「たきを さかのぼるような いきおいで てきに とっしんする」/EN「Charges the foe with speed to climb waterfalls.」均未提及畏缩；JP baserom 招式数据 WATERFALL effect=EFFECT_HIT, secondaryEffectChance=0，第三世代攀瀑无追加效果，20%畏缩是第四世代才加入的机制。\n- 修改建议：删除「有时会使对手畏缩。」一句，改为：以惊人的气势扑向对手。",
+      "resolved_symbol": "sWaterfallDescription",
+      "jp_current": [
+        {
+          "file": "patch/move_descriptions.json",
+          "index": 127,
+          "part": null,
+          "text": "以惊人的气势扑向对手。\n有时会使对手畏缩。"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "text": "以惊人的气势扑向对手。\n有时会使对手畏缩。"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "Charges the foe with speed\nto climb waterfalls."
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "第三世代攀瀑是 EFFECT_HIT，secondaryEffectChance=0，没有招式自带畏缩效果。不能混入第四世代效果。",
+        "plan": "以惊人的气势扑向对手。；删除畏缩句；字体和换行根据现有描述框重新排，不改招式参数。"
+      }
+    },
+    {
+      "number": 47,
+      "symbol": "[329]",
+      "report_block": "- JP：ぜったいれいどで　てきを　おそう\nきまると　せんとうふのうになる\n- EN：A chilling attack that\ncauses fainting if it hits.\n- 中文：给对手一击昏厥。若冰属性\n以外宝可梦使用会难以打中。\n- 理由：JP「ぜったいれいどで てきを おそう きまると せんとうふのうになる」/EN「A chilling attack that causes fainting if it hits.」均未提及属性相关命中；第三世代绝对零度命中公式与使用者属性无关，「非冰属性使用难以打中/冰属性免疫」是第七世代起的机制（Bulbapedia: Gen VII onwards, Ice-type immune, non-Ice base 20%）。\n- 修改建议：删除「若冰属性以外宝可梦使用会难以打中。」一句。\n\n### 数值错误（2 条）",
+      "resolved_symbol": "sSheerColdDescription",
+      "jp_current": [
+        {
+          "file": "patch/move_descriptions.json",
+          "index": 329,
+          "part": null,
+          "text": "以绝对零度攻击对手。\n命中后会使对手一击昏厥。"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "text": "以绝对零度攻击对手。\n命中后会使对手一击昏厥。"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "A chilling attack that\ncauses fainting if it hits."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "已删除后世代等级限制/命中细节。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 48,
+      "symbol": "[180]",
+      "report_block": "- JP：あいてが　だした　わざを　うらんで\nその　わざポイントを　へらしてしまう\n- EN：Spitefully cuts the PP\nof the foe's last move.\n- 中文：怨恨对手最后用的招式，\n减少4PP该招式。\n- 理由：JP「わざポイントを へらしてしまう」/EN「Spitefully cuts the PP of the foe's last move.」未写固定数值；第三世代游戏代码 Cmd_tryspiteppreduce 中 ppToDeduct = (Random() & 3) + 2，即2～5随机扣除，固定扣4是第四世代起的机制。中文「减少4PP」与第三世代实际不符。\n- 修改建议：改为：怨恨对手最后用的招式，减少该招式2～5点PP。",
+      "resolved_symbol": "sSpiteDescription",
+      "jp_current": [
+        {
+          "file": "patch/move_descriptions.json",
+          "index": 180,
+          "part": null,
+          "text": "怨恨对手最后用的招式，\n减少该招式的PP。"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "text": "怨恨对手最后用的招式，\n减少该招式的PP。"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "Spitefully cuts the PP\nof the foe's last move."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前只说减少PP，已删除不符合本作的固定数值。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 49,
+      "symbol": "[227]",
+      "report_block": "- JP：てきが　さいごに　つかった　わざを\n2ー6かい　れんぞくで　ださせる\n- EN：Makes the foe repeat its\nlast move over 2 to 6 turns.\n- 中文：让对手接受再来一次，\n在3～6回合内重复最后的招式。\n- 理由：JP「2ー6かい れんぞくで ださせる」/EN「Makes the foe repeat its last move over 2 to 6 turns.」均为2～6，中文写成「3～6回合」。\n- 修改建议：改为：在2～6回合内重复最后的招式。\n\n### 关键信息替换（2 条）",
+      "resolved_symbol": "sEncoreDescription",
+      "jp_current": [
+        {
+          "file": "patch/move_descriptions.json",
+          "index": 227,
+          "part": null,
+          "text": "让对手接受再来一次，\n在2～6回合内重复最后的招式。"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "text": "让对手接受再来一次，\n在2～6回合内重复最后的招式。"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "src/data/text/move_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "Makes the foe repeat its\nlast move over 2 to 6 turns."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前明确2～6回合。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 50,
+      "symbol": "[276]",
+      "report_block": "- JP：おおむかしの ちからが\nこめられている という\nあかく かがやく たま\n- EN：A red, glowing orb\nsaid to contain an\nancient power.\n- 中文：散发着红色光辉的\n宝珠。据说和丰缘\n传说渊源颇深\n- 理由：JP原文「おおむかしの ちからが こめられている」(据说蕴含着古老的力量）、EN\"said to contain an ancient power\"；中文改为\"据说和丰缘传说渊源颇深\"，删除了\"蕴含古老力量\"这一关键信息，替换为原文没有的传说关联。\n- 修改建议：改为\"散发着红色光辉的宝珠，据说其中蕴含着古老的力量\"。",
+      "resolved_symbol": "sRedOrbDesc",
+      "jp_current": [
+        {
+          "file": "patch/item_descriptions.json",
+          "index": 276,
+          "part": null,
+          "text": "散发着红色光辉的\n宝珠。据说蕴含着\n超古代的力量"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "散发着红色光辉的\n宝珠。据说蕴含着\n超古代的力量"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "おおむかしの　ちからが\nこめられている　という\nあかく　かがやく　たま"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "A red, glowing orb\nsaid to contain an\nancient power."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前为红色光辉，非晶莹剔透。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 51,
+      "symbol": "[277]",
+      "report_block": "- JP：おおむかしの ちからが\nこめられている という\nあおく かがやく たま\n- EN：A blue, glowing orb\nsaid to contain an\nancient power.\n- 中文：散发着蓝色光辉的\n宝珠。据说和丰缘\n传说渊源颇深\n- 理由：JP原文「おおむかしの ちからが こめられている」(据说蕴含着古老的力量）、EN\"said to contain an ancient power\"；中文改为\"据说和丰缘传说渊源颇深\"，删除了\"蕴含古老力量\"这一关键信息，替换为原文没有的传说关联。\n- 修改建议：改为\"散发着蓝色光辉的宝珠，据说其中蕴含着古老的力量\"。\n\n### 语义错误（1 条）",
+      "resolved_symbol": "sBlueOrbDesc",
+      "jp_current": [
+        {
+          "file": "patch/item_descriptions.json",
+          "index": 277,
+          "part": null,
+          "text": "散发着蓝色光辉的\n宝珠。据说蕴含着\n超古代的力量"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "散发着蓝色光辉的\n宝珠。据说蕴含着\n超古代的力量"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "おおむかしの　ちからが\nこめられている　という\nあおく　かがやく　たま"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "A blue, glowing orb\nsaid to contain an\nancient power."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前为蓝色光辉，非晶莹剔透。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 52,
+      "symbol": "BattleFrontier_Lounge2_Text_AmazingPowersOfObservation",
+      "report_block": "- JP：すっげえ　かんさつりょくー！！\\nやっぱ　センパイは　ちがうっすわー$\n- EN：What amazing powers of observation!\\nMy mentor's like none other!$\n- 中文：调查资料好厉害！\\n老师果然非同一般！$\n- 理由：JP「かんさつりょく」即「观察力」，EN「What amazing powers of observation!」亦为观察力；补丁中文「调查资料好厉害」将观察力误译为「调查资料」，与三方原文不符。\n- 修改建议：观察力好厉害！\\n老师果然非同一般！$\n\n### 术语错误（1 条）",
+      "resolved_symbol": "BattleFrontier_Lounge2_Text_AmazingPowersOfObservation",
+      "jp_current": [
+        {
+          "file": "patch/batches/432_checklist_scripts.json",
+          "definition": {
+            "name": "Chs_Checklist_BattleFrontier_Lounge2_Text_AmazingPowersOfObservation",
+            "source_symbol": "BattleFrontier_Lounge2_Text_AmazingPowersOfObservation",
+            "us_encoded_hex": "033e020d110208a204e9086c04cc3cfe08440be204c30b3b03ca0d140f0b01423cff"
+          },
+          "text": "调查资料好厉害！\\n老师果然非同一般！",
+          "originals": [
+            {
+              "address": "0x0823769E",
+              "text": "すっげえ　かんさつりょく-!!\\nやっぱ　センパイは　ちがうっすわ-"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+          "text": "调查资料好厉害！\n老师果然非同一般！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+          "text": "すっげえ　かんさつりょくー！！\nやっぱ　センパイは　ちがうっすわー$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "What amazing powers of observation!\nMy mentor's like none other!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "かんさつりょく / powers of observation 是观察力。センパイ是前辈，不应机械修成老师。",
+        "plan": "好厉害的观察力！\\n前辈果然非同一般！"
+      }
+    },
+    {
+      "number": 53,
+      "symbol": "BattleFrontier_Lounge7_Text_RockSlideDesc",
+      "report_block": "- JP：いわで　こうげき\\nてきを　ひるませる\\nことが　ある$\n- EN：Large boulders\\nare hurled. May\\ncause flinching.$\n- 中文：投出巨大的石块，\\n可以使对手\\n恐惧。$\n- 理由：JP「てきを ひるませる」即「使对手畏缩(flinch)」，EN「May cause flinching」亦为畏缩；补丁中文「可以使对手恐惧」将ひるむ/ flinch误作「恐惧」，且与同文件[121]王者之证描述「使对手畏缩」术语不一致。\n- 修改建议：投出巨大的石块，\\n可以使对手\\n畏缩。$\n\n### 招式名误译（1 条）",
+      "resolved_symbol": "BattleFrontier_Lounge7_Text_RockSlideDesc",
+      "jp_current": [
+        {
+          "file": "patch/batches/224_battle_frontier_lounge7.json",
+          "definition": {
+            "name": "Chs_BattleFrontier_Lounge7_Text_RockSlideDesc",
+            "source_symbol": "BattleFrontier_Lounge7_Text_RockSlideDesc",
+            "us_encoded_hex": "0d1e0278078e02d3030b0beb08003bfe07d70f240bf503790c1bfe0d7d0c9837ff"
+          },
+          "text": "投出巨大的石块，\\n可以使对手\\n畏缩。",
+          "originals": [
+            {
+              "address": "0x0823A0BF",
+              "text": "いわで　こうげき\\nてきを　ひるませる\\nことが　ある"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+          "text": "投出巨大的石块，\n可以使对手\n畏缩。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+          "text": "いわで　こうげき\nてきを　ひるませる\nことが　ある$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Large boulders\nare hurled. May\ncause flinching.$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "恐惧已改畏缩。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 54,
+      "symbol": "LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals",
+      "report_block": "- JP：しんさいん“おお\nみんな　かわいい　アピ-ルだなあ!\\pおおっ　なんて　かわいい\nみずあそびの　アピ-ルなんだろう!\n- EN：JUDGE: Oh, such charming and cute\\nappeals!\\pOh, my goodness! What a perfectly\\nadorable WATER SPORT appeal!$\n- 中文：评委：啊，如此迷人，\\n如此可爱！\\p哎，天啊！那水之游\\n多么完美，多么可爱！$\n- 理由：JP「なんてかわいいみずあそびのアピールなんだろう」/EN“What an adorable WATER SPORT appeal”中的招式みずあそび（WATER SPORT）官方中文名为“玩水”，中文“那水之游多么完美”误作“水之游”，招式名错误。\n- 修改建议：评委：啊，如此迷人，\\n如此可爱！\\p哎，天啊！那玩水\\n多么完美，多么可爱！\n\n### 衍字（1 条）",
+      "resolved_symbol": "LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals",
+      "jp_current": [
+        {
+          "file": "patch/batches/125_lilycovecity_contesthall.json",
+          "definition": {
+            "name": "Chs_LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals",
+            "source_symbol": "LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals",
+            "us_encoded_hex": "0a7b0d753e01003b0b6702ab096c0b4b3bfe0b6702ab07d7010d3cfb01043b0ced01003c09bd0c51107f0f7cfe0385094c0d5209583b0385094c07d7010d3cff"
+          },
+          "text": "评委：啊，如此迷人，\\n如此可爱！\\p哎，天啊！那水之游\\n多么完美，多么可爱！",
+          "originals": [
+            {
+              "address": "0x0820804C",
+              "text": "しんさいん“おお\\nみんな　かわいい　アピ-ルだなあ!\\pおおっ　なんて　かわいい\\nみずあそびの　アピ-ルなんだろう!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+          "text": "评委：啊，如此迷人，\n如此可爱！\\p哎，天啊！那水之游\n多么完美，多么可爱！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+          "text": "しんさいん“おお\nみんな　かわいい　アピールだなあ！\\pおおっ　なんて　かわいい\nみずあそびの　アピールなんだろう！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LilycoveCity_ContestHall/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "JUDGE: Oh, such charming and cute\nappeals!\\pOh, my goodness! What a perfectly\nadorable WATER SPORT appeal!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "みずあそび / WATER SPORT 是招式玩水；“水之游”不是该招式名。",
+        "plan": "仅将“水之游”改为“玩水”，其他评委感叹及表演措辞保留。"
+      }
+    },
+    {
+      "number": 55,
+      "symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+      "report_block": "- JP：あ　ごめん　ごめん!\nテレビに　むちゅう　だったもんで!\\pそういえば　だれかが　アクアだんの\nアジトを　かいめつ　させた　らしいね!\\pおかげで　さっき　だんたいさん　からの\nしゅくはく　よやくが　はいったよ!\\pたしか……　ゲ-ムなんと\n- EN：Oh, sorry, sorry!\\nI was too involved in watching TV!\\pI heard that someone busted\\nthe TEAM AQUA HIDEOUT.\\pThanks to th\n- 中文：啊，抱歉，抱歉！\\n我看电视看入迷了！\\p我听说有人到捣毁了\\n海洋队的基地，\\p多亏如此，我们刚刚\\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\\n游戏什么的……$\n- 理由：JP「だれかがアクアだんのアジトをかいめつさせたらしいね」/EN“someone busted the TEAM AQUA HIDEOUT”意为“有人捣毁了海洋队基地”，中文“我听说有人到捣毁了海洋队的基地”中“到”为衍字，文理不通，美版中文同样误写。\n- 修改建议：啊，抱歉，抱歉！\\n我看电视看入迷了！\\p我听说有人捣毁了\\n海洋队的基地，\\p多亏如此，我们刚刚\\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\\n游戏什么的……\n\n### 漏字（1 条）",
+      "resolved_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+      "jp_current": [
+        {
+          "file": "patch/batches/127_lilycovecity_covelilymotel_1f.json",
+          "definition": {
+            "name": "Chs_LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+            "source_symbol": "LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted",
+            "us_encoded_hex": "01003b01640ad13b01640ad13cfe0d9807c2032e0c1807c20b6b096c089e3cfb0d980d070c580f7e0b4b030402f50566089efe04c90edc0378030b0586031f3bfb0385080e0b6702ab3b0d98095f043f043ffe07250304089e0f0b046002d30d2d0ce6034e03c20fb00fc83bfb0c0c0f0b046004730c613b0722112eb0b013f5b0b0fe0f7c0ddb0bee094c030bb0b0ff"
+          },
+          "text": "啊，抱歉，抱歉！\\n我看电视看入迷了！\\p我听说有人到捣毁了\\n海洋队的基地，\\p多亏如此，我们刚刚\\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\\n游戏什么的……",
+          "originals": [
+            {
+              "address": "0x0820571C",
+              "text": "あ　ごめん　ごめん!\\nテレビに　むちゅう　だったもんで!\\pそういえば　だれかが　アクアだんの\\nアジトを　かいめつ　させた　らしいね!\\pおかげで　さっき　だんたいさん　からの\\nしゅくはく　よやくが　はいったよ!\\pたしか……　ゲ-ムなんとか　っていう\\nかいしゃ　だったかな……"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+          "text": "啊，抱歉，抱歉！\n我看电视看入迷了！\\p我听说有人到捣毁了\n海洋队的基地，\\p多亏如此，我们刚刚\n接到了一个大团体订房预约，\\p是一个公司，叫做……呃……\n游戏什么的……$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+          "text": "あ　ごめん　ごめん！\nテレビに　むちゅう　だったもんで！\\pそういえば　だれかが　アクアだんの\nアジトを　かいめつ　させた　らしいね！\\pおかげで　さっき　だんたいさん　からの\nしゅくはく　よやくが　はいったよ！\\pたしか⋯⋯　ゲームなんとか　っていう\nかいしゃ　だったかな⋯⋯$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/LilycoveCity_CoveLilyMotel_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "Oh, sorry, sorry!\nI was too involved in watching TV!\\pI heard that someone busted\nthe TEAM AQUA HIDEOUT.\\pThanks to that, we just booked\na reservation from a big group.\\pIt was a company called… Uh…\nGAME something…$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "有人到捣毁了，混入多余“到”。",
+        "plan": "“有人到捣毁了”改为“有人捣毁了”。"
+      }
+    },
+    {
+      "number": 56,
+      "symbol": "MauvilleCity_Text_UncleCanYouBattleWally",
+      "report_block": "- JP：おじさん“{PLAYER}{KUN}とやら\\nわるいけど　ミツルくんと\\lしょうぶ　してあげて　くれないかな？\\pこのままだと　なにを　いっても\\nきいて　もらえそうに　ないよ$\n- EN：UNCLE: {PLAYER}{KUN}, was it?\\nOn WALLY's behalf, can I ask you to\\lbattle with him just this once?\\pI don't think he's \n- 中文：叔叔：你是{PLAYER}{KUN}吧？\\n为了满充，\\l能请你和来一场对战吗？\\p我想他现在这样\\n是没法听得进劝的。$\n- 理由：JP「ミツルくんとしょうぶしてあげてくれないかな（能和满充对战一下吗）」/EN「can I ask you to battle with him just this once?」中对战对象明确，补丁/美版中文「能请你和来一场对战吗」的「和」后缺宾语（应为「和他」），句子不完整。\n- 修改建议：能请你和他来一场对战吗？\n\n### 术语误译（1 条）",
+      "resolved_symbol": "MauvilleCity_Text_UncleCanYouBattleWally",
+      "jp_current": [
+        {
+          "file": "patch/batches/050_mauvillecity.json",
+          "definition": {
+            "name": "Chs_MauvilleCity_Text_UncleCanYouBattleWally",
+            "source_symbol": "MauvilleCity_Text_UncleCanYouBattleWally",
+            "us_encoded_hex": "0c2a0c2a3e09d90c0cfd01fd0501283dfe0d70089e093402663bfa09d20b0d09d904f30934026608290f0b022303791030092a3dfb0d980e180c9e0e030fe610550ee2fe0c0c095303ab0d07030a074a0b30030b37ff",
+            "japanese_placeholders": [
+              1,
+              5
+            ]
+          },
+          "text": "叔叔：你是{FD_01}{FD_05}吧？\\n为了满充，\\l能请你和满充来一场对战吗？\\p我想他现在这样\\n是没法听得进劝的。",
+          "originals": [
+            {
+              "address": "0x081DDFD3",
+              "text": "おじさん“{PLACEHOLDER_01}{PLACEHOLDER_05}とやら\\nわるいけど　ミツルくんと\\lしょうぶ　してあげて　くれないかな?\\pこのままだと　なにを　いっても\\nきいて　もらえそうに　ないよ"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "text": "叔叔：你是{PLAYER}{KUN}吧？\n为了满充，\\l能请你和满充来一场对战吗？\\p我想他现在这样\n是没法听得进劝的。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "text": "おじさん“{PLAYER}{KUN}とやら\nわるいけど　ミツルくんと\\lしょうぶ　してあげて　くれないかな？\\pこのままだと　なにを　いっても\nきいて　もらえそうに　ないよ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MauvilleCity/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "UNCLE: {PLAYER}{KUN}, was it?\nOn WALLY's behalf, can I ask you to\\lbattle with him just this once?\\pI don't think he's going to listen to\nany reason the way he is now.$"
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前已为满充，不是满冲。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 57,
+      "symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+      "report_block": "- JP：ぼくは　ゲームの　せつめいを\\nしますよ！\\lどの　せつめいを　ききますか？$\n- EN：I can explain game rules to you,\\nif you'd like.\\pWhich game should I describe?$\n- 中文：需要的话，\\n我可以向您解说对战规则。\\p需要解说哪一项？$\n- 理由：JP「ゲームのせつめいをしますよ（我来说明游戏规则）」/EN「I can explain game rules to you」中的「ゲーム（游戏）」指嘟嘟利摘树果、宝可梦跳绳等小游戏，补丁/美版中文误作「对战规则」，「游戏」误译为「对战」，术语错误。\n- 修改建议：需要的话，我可以向您解说游戏规则。需要解说哪一项？\n\n### 语义缺失（1 条）",
+      "resolved_symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+      "jp_current": [
+        {
+          "file": "patch/batches/151_mossdeepcity_gamecorner_1f.json",
+          "definition": {
+            "name": "Chs_MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+            "source_symbol": "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+            "us_encoded_hex": "0e730ef1030b053d3bfe0d9807d70f240e1f09f007340c580379103004ae100737fb0e730ef107340c5809ba0f0b0e1b3dff"
+          },
+          "text": "需要的话，\\n我可以向您解说对战规则。\\p需要解说哪一项？",
+          "originals": [
+            {
+              "address": "0x082481AB",
+              "text": "ぼくは　ゲ-ムの　せつめいを\\nしますよ!\\lどの　せつめいを　ききますか?"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "需要的话，\n我可以向您解说对战规则。\\p需要解说哪一项？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "text": "ぼくは　ゲームの　せつめいを\nしますよ！\\lどの　せつめいを　ききますか？$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/cable_club.inc",
+          "revision": "fe570a7e5^",
+          "text": "I can explain game rules to you,\nif you'd like.\\pWhich game should I describe?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "游戏规则不是宝可梦对战规则。",
+        "plan": "将“对战规则”改为“游戏规则”，按现有分页保留其他句子。"
+      }
+    },
+    {
+      "number": 58,
+      "symbol": "gText_NoticesGoldCard",
+      "report_block": "- JP：そ　それは⋯⋯\\nひょっとして　ゴールドカード！？\\pああ⋯⋯　きんいろが　まぶしい！\\n4つの　ほしが　かがやかしい！\\pわたしも　これまでに\\nシルバーカードの　トレーナーさんなら\\lなんにんか　みてきましたが\\lゴールドカードを　おも\n- EN：Th-that card…\\nCould it be… The GOLD CARD?!\\pOh, the gold color is brilliant!\\nThe four stars seem to sparkle!\\pI've see\n- 中文：那、那张卡！？\\p那个颜色！！\\n那星星的数量！！\\p至今为止我也见过几位\\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！$\n- 理由：JP「ひょっとして ゴールドカード」「きんいろが まぶしい」「4つの ほしが かがやかしい」/EN「The GOLD CARD」「the gold color is brilliant」「The four stars seem to sparkle」中的关键名词（金卡/金色/四颗星星/闪耀）被补丁中文与美版中文一并丢弃（「那张卡」「那个颜色」「星星的数量」），关键语义缺失\n- 修改建议：那、那张卡……\\p难道是金卡！？\\p啊……金色真是耀眼！\\n四颗星星闪闪发光！\\p至今为止我也见过几位\\n拥有白银卡的训练家。\\p但拥有金卡的训练家，\\l{PLAYER}您还是第一位！\\p那么，请让我为{PLAYER}的\\n宝可梦休息一下吧！$\n\n### 语义反转/误译（1 条）",
+      "resolved_symbol": "gText_NoticesGoldCard",
+      "jp_current": [
+        {
+          "file": "patch/batches/196_pokemon_centers.json",
+          "definition": {
+            "name": "Chs_gText_NoticesGoldCard",
+            "source_symbol": "gText_NoticesGoldCard",
+            "us_encoded_hex": "09bd3a09bd103807b63c3dfb09c703070c0c074207b63c3dfb07420b8910590ef20ec43c3cfe0c6707d30e520fe60b9f0ef23c3cfb109207430d70108a0d980f0205e604c505a30d81fe0f630f7e01360f4807b6030b0e9e088a05bd37fb02e90c0c0f630f7e018510550466086c04cc030bfe0e9e088a05bd07b6030b07db0b4b3bfa09f005460c0c03210f0b0d813cfb0dec0b4309f0030b016307d709660e680dc60f0b0de601283cff"
+          },
+          "text": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\\n四颗星在闪耀！！\\p至今为止我也见过几位\\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！",
+          "originals": [
+            {
+              "address": "0x08243814",
+              "text": "そ　それは……\\nひょっとして　ゴ-ルドカ-ド!?\\pああ……　きんいろが　まぶしい!\\n4つの　ほしが　かがやかしい!\\pわたしも　これまでに\\nシルバ-カ-ドの　トレ-ナ-さんなら\\lなんにんか　みてきましたが\\lゴ-ルドカ-ドを　おもちの　かたは\\l{PLACEHOLDER_01}さんが　はじめて　ですよ!\\pさあ　{PLACEHOLDER_01}さんの\\nポケモンを　やすませて　あげましょう!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "text": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "text": "そ　それは⋯⋯\nひょっとして　ゴールドカード！？\\pああ⋯⋯　きんいろが　まぶしい！\n4つの　ほしが　かがやかしい！\\pわたしも　これまでに\nシルバーカードの　トレーナーさんなら\\lなんにんか　みてきましたが\\lゴールドカードを　おもちの　かたは\\l{PLAYER}さんが　はじめて　ですよ！\\pさあ　{PLAYER}さんの\nポケモンを　やすませて　あげましょう！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "revision": "fe570a7e5^",
+          "text": "Th-that card…\nCould it be… The GOLD CARD?!\\pOh, the gold color is brilliant!\nThe four stars seem to sparkle!\\pI've seen several TRAINERS with\na SILVER CARD before, but, {PLAYER},\\lyou're the first TRAINER I've ever\\lseen with a GOLD CARD!\\pOkay, {PLAYER}, please allow me\nthe honor of resting your POKéMON!$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "当前已恢复金卡/金色/四星，但未恢复金卡持有者的限定和两次玩家名。",
+        "plan": "后半明确“拥有金卡的训练家”，恢复两处 PLAYER；日版使用 FD_01。"
+      }
+    },
+    {
+      "number": 59,
+      "symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+      "report_block": "- JP：どろぼうに　にもつを　うばわれるなんて\\nなんて　ドジなんだろう⋯⋯$\n- EN：It's beyond stupid.\\nHow could we get robbed?$\n- 中文：说什么傻话，\\n谁会抢我们的东西？$\n- 理由：JP「どろぼうに にもつを うばわれるなんて なんて ドジなんだろう」(包裹被抢,我们真不小心)/EN\"It's beyond stupid. How could we get robbed?\"→CHS「说什么傻话,谁会抢我们的东西?」,把自责\"我们真蠢\"误作否认\"谁会抢\",语义反转\n- 修改建议：包裹居然被强盗抢走了，我们也太不小心了……\n\n### 未翻译残留/错字（1 条）",
+      "resolved_symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+      "jp_current": [
+        {
+          "file": "patch/batches/031_rustborocity_devoncorp_1f.json",
+          "definition": {
+            "name": "Chs_RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+            "source_symbol": "RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed",
+            "us_encoded_hex": "0c580bee094c0b93053d3bfe0c50056e0ad90d98095f030b03500dbd3dff"
+          },
+          "text": "说什么傻话，\\n谁会抢我们的东西？",
+          "originals": [
+            {
+              "address": "0x08201249",
+              "text": "どろぼうに　にもつを　うばわれるなんて\\nなんて　ドジなんだろう……"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+          "text": "说什么傻话，\n谁会抢我们的东西？$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+          "text": "どろぼうに　にもつを　うばわれるなんて\nなんて　ドジなんだろう⋯⋯$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/RustboroCity_DevonCorp_1F/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "It's beyond stupid.\nHow could we get robbed?$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "对已经被抢的事情自责，不能否认“谁会抢”。",
+        "plan": "包裹居然被抢走了，\\n我们也太不小心了……"
+      }
+    },
+    {
+      "number": 60,
+      "symbol": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+      "report_block": "- JP：どくを　うけると\\nたいりょくが　へっていきます\\pせんとうのあとも　どくは　のこるので\\nあるくたびに　たいりょくが　へります\\lどくけしで　なおしましょう$\n- EN：If a POKéMON is poisoned, it will\\nsteadily lose HP.\\pThe effects of poison remain after\\na battle.\\pA poisoned POKéMON'\n- 中文：宝可梦中毒后，\\n会慢慢损失体力，\\p此效果在战斗后\\n依然残留。\\p在探险中，中毒的宝可梦的体力P\\n也会不断减少。\\p使用解毒药可解毒。$\n- 理由：JP「あるくたびに たいりょくが へります」(每走一步体力减少)/EN\"A poisoned POKéMON's HP will drop while it is traveling\"→CHS「中毒的宝可梦的体力P也会不断减少」,\"体力P\"中多余的\"P\"为HP残留字符\n- 修改建议：在探险中，中毒的宝可梦的体力也会不断减少。\n\n### 误译；未翻译残留（1 条）",
+      "resolved_symbol": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+      "jp_current": [
+        {
+          "file": "patch/batches/038_rustborocity_pokemonschool.json",
+          "definition": {
+            "name": "Chs_RustboroCity_PokemonSchool_Text_ExplainPoison",
+            "source_symbol": "RustboroCity_PokemonSchool_Text_ExplainPoison",
+            "us_encoded_hex": "016307d7096610a1036305223bfe056e093709370c930be30ce608793bfb02ab0e3204c30fe61030035c0522fe0f100b3b01eb08c737fb0fe60cbe0e0210a13b10a10363030b016307d70966030b0ce60879cafe0f02056e01d6037405e00bb737fb0bf50f71073403630ef007d70734036337ff"
+          },
+          "text": "宝可梦中毒后，\\n会慢慢损失体力，\\p此效果在战斗后\\n依然残留。\\p在探险中，中毒的宝可梦的体力P\\n也会不断减少。\\p使用解毒药可解毒。",
+          "originals": [
+            {
+              "address": "0x08202E63",
+              "text": "どくを　うけると\\nたいりょくが　へっていきます\\pせんとうのあとも　どくは　のこるので\\nあるくたびに　たいりょくが　へります\\lどくけしで　なおしましょう"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+          "text": "宝可梦中毒后，\n会慢慢损失体力，\\p此效果在战斗后\n依然残留。\\p在探险中，中毒的宝可梦的体力P\n也会不断减少。\\p使用解毒药可解毒。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+          "text": "どくを　うけると\nたいりょくが　へっていきます\\pせんとうのあとも　どくは　のこるので\nあるくたびに　たいりょくが　へります\\lどくけしで　なおしましょう$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/RustboroCity_PokemonSchool/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "If a POKéMON is poisoned, it will\nsteadily lose HP.\\pThe effects of poison remain after\na battle.\\pA poisoned POKéMON's HP will drop\nwhile it is traveling.\\pHeal a poisoning using an ANTIDOTE.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "体力P是残留字母，不成词；这里应表示HP。",
+        "plan": "“体力P”改为“HP”，HP保持连续，不跨行拆开。"
+      }
+    },
+    {
+      "number": 61,
+      "symbol": "gTVBravoTrainerText00",
+      "report_block": "- JP：イヤー！\\n“ブラボー　トレーナー”の　じかんだ！\\pきょうは　{B_COPY_VAR_3}クラスの\\n{B_COPY_VAR_2}を　ほこる\\l{B_COPY_VAR_1}さんの　ポケモン！$\n- EN：Yeah!\\nIt's BRAVO TRAINER time!\\pToday, we're going to profile a POKéMON\\nbelonging to {STR_VAR_1}.\\pNow, this POKéMON b\n- 中文：太好了！\\n现在是BRAVO训练家时间！\\p今天我们所要介绍的\\n主角就是{STR_VAR_1}。\\p现在，这只宝可梦在{STR_VAR_2}\\n比赛中荣获{STR_VAR_3}优胜。$\n- 理由：JP“ブラボー トレーナー”/EN“BRAVO TRAINER”节目名在中文中直接保留拉丁字母“BRAVO”；EN“boasts a {STR_VAR_3} Rank in the {STR_VAR_2} Category”（JP“{STR_VAR_3}クラスの{STR_VAR_2}をほこる”）意为“拥有某级别头衔”，中文译成“荣获{STR_VAR_3}优胜”把“级别/Rank”误作“夺冠”。\n- 修改建议：太好了！现在是喝彩训练家时间！今天我们所要介绍的主角就是{STR_VAR_1}。现在，这只宝可梦在{STR_VAR_2}比赛中达到了{STR_VAR_3}级别。\n\n### 误译/语义缺失（专名丢失、数字丢失、占位符丢失）（1 条）",
+      "resolved_symbol": "gTVBravoTrainerText00",
+      "jp_current": [
+        {
+          "file": "patch/batches/386_tv_0.json",
+          "definition": {
+            "name": "Chs_gTVBravoTrainerText00",
+            "source_symbol": "gTVBravoTrainerText00",
+            "us_encoded_hex": "0cac04e9089e3cfe0e030fe60c0cbcccbbd0c90e9e088a05bd0bed05cf3cfb07430ced0d98095f0c9c0ef1073b0bba030bfe10c80719077d0c0cfd0237fb0e030fe63b1055108c016307d709660fe6fd03fe01850b7c10a10b59057efd040f730be037ff",
+            "japanese_placeholders": [
+              2,
+              3,
+              4
+            ]
+          },
+          "text": "太好了！\\n现在是BRAVO训练家时间！\\p今天我们所要介绍的\\n主角就是{FD_02}。\\p现在，这只宝可梦在{FD_03}\\n比赛中荣获{FD_04}优胜。",
+          "originals": [
+            {
+              "address": "0x0824C754",
+              "text": "イヤ-!\\n“ブラボ-　トレ-ナ-”の　じかんだ!\\pきょうは　{PLACEHOLDER_04}クラスの\\n{PLACEHOLDER_03}を　ほこる\\l{PLACEHOLDER_02}さんの　ポケモン!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/tv.inc",
+          "text": "太好了！\n现在是BRAVO训练家时间！\\p今天我们所要介绍的\n主角就是{STR_VAR_1}。\\p现在，这只宝可梦在{STR_VAR_2}\n比赛中荣获{STR_VAR_3}优胜。$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/tv/contest_interview.inc",
+          "text": "イヤー！\n“ブラボー　トレーナー”の　じかんだ！\\pきょうは　{B_COPY_VAR_3}クラスの\n{B_COPY_VAR_2}を　ほこる\\l{B_COPY_VAR_1}さんの　ポケモン！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/tv.inc",
+          "revision": "fe570a7e5^",
+          "text": "Yeah!\nIt's BRAVO TRAINER time!\\pToday, we're going to profile a POKéMON\nbelonging to {STR_VAR_1}.\\pNow, this POKéMON boasts a {STR_VAR_3}\nRank in the {STR_VAR_2} Category.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP+US",
+        "reason": "STR_VAR_1 是训练家，节目介绍的是其宝可梦；Rank 是比赛级别，非取得优胜。保留节目名原英文不必单独认定错误。",
+        "plan": "“今天我们要介绍的，\\n是{STR_VAR_1}的宝可梦！\\p这只宝可梦在{STR_VAR_2}\\n比赛中达到了{STR_VAR_3}级别。”；日版 FD_02/03/04 保留，控制符按本地模板。"
+      }
+    },
+    {
+      "number": 62,
+      "symbol": "gText_NoticesGoldCard",
+      "report_block": "- JP：そ　それは⋯⋯\\nひょっとして　ゴールドカード！？\\pああ⋯⋯　きんいろが　まぶしい！\\n4つの　ほしが　かがやかしい！\\pわたしも　これまでに\\nシルバーカードの　トレーナーさんなら\\lなんにんか　みてきましたが\\lゴールドカードを　おも\n- EN：Th-that card…\\nCould it be… The GOLD CARD?!\\pOh, the gold color is brilliant!\\nThe four stars seem to sparkle!\\pI've see\n- 中文：那、那张卡！？\\p那个颜色！！\\n那星星的数量！！\\p至今为止我也见过几位\\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！$\n- 理由：JP：ひょっとしてゴールドカード！？（\"难道是黄金卡！？\"）、ああ……きんいろがまぶしい！4つのほしがかがやかしい！（\"啊……金色耀眼！四颗星星闪闪发光！\"）、{PLAYER}さんははじめてですよ；EN：Could it be… The GOLD CARD?! / Oh, the gold color is brilliant! The four stars seem to sparkle! / {PLAYER}×2；日版补丁中文与美版中文均为\"那、那张卡！？\"\"那星星的数量！！\"（丢失\"金卡\"专名与数字\"4\"及\"闪耀\"语义）、\"比这更厉害的训练家卡\"（以模糊表述替代\"黄金卡\"），并删除了{P\n- 修改建议：那、那张卡……！？\\p难道是黄金卡！？\\p啊……金色的光辉真耀眼！\\n四颗星星闪闪发光！\\p至今为止我也见过几位\\n拥有白银卡的训练家，\\l但拥有黄金卡的客人，\\l{PLAYER}您还是第一位！\\p先让您的宝可梦休息一下吧！\n\n### 翻译错误（1 条）",
+      "resolved_symbol": "gText_NoticesGoldCard",
+      "jp_current": [
+        {
+          "file": "patch/batches/196_pokemon_centers.json",
+          "definition": {
+            "name": "Chs_gText_NoticesGoldCard",
+            "source_symbol": "gText_NoticesGoldCard",
+            "us_encoded_hex": "09bd3a09bd103807b63c3dfb09c703070c0c074207b63c3dfb07420b8910590ef20ec43c3cfe0c6707d30e520fe60b9f0ef23c3cfb109207430d70108a0d980f0205e604c505a30d81fe0f630f7e01360f4807b6030b0e9e088a05bd37fb02e90c0c0f630f7e018510550466086c04cc030bfe0e9e088a05bd07b6030b07db0b4b3bfa09f005460c0c03210f0b0d813cfb0dec0b4309f0030b016307d709660e680dc60f0b0de601283cff"
+          },
+          "text": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\\n四颗星在闪耀！！\\p至今为止我也见过几位\\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！",
+          "originals": [
+            {
+              "address": "0x08243814",
+              "text": "そ　それは……\\nひょっとして　ゴ-ルドカ-ド!?\\pああ……　きんいろが　まぶしい!\\n4つの　ほしが　かがやかしい!\\pわたしも　これまでに\\nシルバ-カ-ドの　トレ-ナ-さんなら\\lなんにんか　みてきましたが\\lゴ-ルドカ-ドを　おもちの　かたは\\l{PLACEHOLDER_01}さんが　はじめて　ですよ!\\pさあ　{PLACEHOLDER_01}さんの\\nポケモンを　やすませて　あげましょう!"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "text": "那、那张卡！？\\p难道是金卡！？\\p金色真耀眼！！\n四颗星在闪耀！！\\p至今为止我也见过几位\n拥有白银卡的训练家。\\p但是拥有比这更厉害的\n训练家卡的客人，\\l您还是第一位！\\p先让您的宝可梦休息一下吧！$"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "text": "そ　それは⋯⋯\nひょっとして　ゴールドカード！？\\pああ⋯⋯　きんいろが　まぶしい！\n4つの　ほしが　かがやかしい！\\pわたしも　これまでに\nシルバーカードの　トレーナーさんなら\\lなんにんか　みてきましたが\\lゴールドカードを　おもちの　かたは\\l{PLAYER}さんが　はじめて　ですよ！\\pさあ　{PLAYER}さんの\nポケモンを　やすませて　あげましょう！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/text/pkmn_center_nurse.inc",
+          "revision": "fe570a7e5^",
+          "text": "Th-that card…\nCould it be… The GOLD CARD?!\\pOh, the gold color is brilliant!\nThe four stars seem to sparkle!\\pI've seen several TRAINERS with\na SILVER CARD before, but, {PLAYER},\\lyou're the first TRAINER I've ever\\lseen with a GOLD CARD!\\pOkay, {PLAYER}, please allow me\nthe honor of resting your POKéMON!$"
+        }
+      ],
+      "decision": {
+        "status": "重复",
+        "reason": "与58同一 gText_NoticesGoldCard，只修一个资源，两编号都关联同一任务。",
+        "plan": "不修改；重复项合并至58。"
+      }
+    },
+    {
+      "number": 63,
+      "symbol": "sText_MysteryGiftVisitingTrainerArrived",
+      "report_block": "- EN：Thank you for using the MYSTERY\\nGIFT System.\\pA TRAINER has arrived in\\nSOOTOPOLIS CITY looking for you.\\pWe hope you w\n- 中文：感谢使用\\n神秘礼物系统。\\p一位训练家已经来到\\n琉璃市寻找您。\\p系统您可以享受\\n与训练家的对战。\\p您可以邀请其他训练家\\n通过填写密码。\\p试着找寻其他\\n有用的密码吧。$\n- 理由：美版独有文本（日版无对应）。EN \"We hope you will enjoy battling the visiting TRAINER.\" 被译为\"系统您可以享受与训练家的对战\"，\"We hope\"误作\"系统\"，语义错误；补丁忠实复制美版中文（字节一致），错误继承自美版汉化。\n- 修改建议：希望您会喜欢\\n与这位训练家的对战。\n\n### 凭空捏造（跨世代文本混入）（1 条）",
+      "resolved_symbol": "sText_MysteryGiftVisitingTrainerArrived",
+      "jp_current": [
+        {
+          "file": "patch/batches/471_checklist_mystery_gift_script_texts.json",
+          "definition": {
+            "name": "Chs_ChecklistLiteral_471_sText_MysteryGiftVisitingTrainerArrived",
+            "source_symbol": "sText_MysteryGiftVisitingTrainerArrived",
+            "us_encoded_hex": "043a0e460bf50f71fe0bcf097008660db50dd90d1b37fb0f0b0d810e9e088a05bd0f21075d08290304fe08c3087a0c150e99104509f037fb0dd90d1b09f007d70f240e1a0c21fe0f990e9e088a05bd030b0379103037fb09f007d70f240ee40b0d0a9f0c9e0e9e088a05bdfe0d1004c50cef0e3f0974092537fb0c1910f410450e990a9f0c9efe0f7e0f71030b09740925012837ff"
+          },
+          "text": "感谢使用\\n神秘礼物系统。\\p一位训练家已经来到\\n琉璃市寻找您。\\p系统您可以享受\\n与训练家的对战。\\p您可以邀请其他训练家\\n通过填写密码。\\p试着找寻其他\\n有用的密码吧。",
+          "originals": [
+            {
+              "address": "0x85fce8b",
+              "text": "ふしぎなおくりもの　を　ごりよう\\nいただき　ありがとう　ございます\\pルネシティに　トレ-ナ-が\\nきている　ようですよ\\pぜひ　たいせんを\\nたのしんで　くださいませ!\\pほかの　あいことば　でも\\nべつの　トレ-ナ-が　よべますので\\pあいことばを　いろいろと\\nさがして　みて　ください"
+            }
+          ]
+        }
+      ],
+      "us_current": [
+        {
+          "file": "data/scripts/gift_trainer.inc",
+          "text": "感谢使用\n神秘礼物系统。\\p一位训练家已经来到\n琉璃市寻找您。\\p希望您可以享受\n与训练家的对战。\\p您可以邀请其他训练家\n通过填写密码。\\p试着找寻其他\n有用的密码吧。$"
+        }
+      ],
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "data/scripts/gift_trainer.inc",
+          "revision": "fe570a7e5^",
+          "text": "Thank you for using the MYSTERY\nGIFT System.\\pA TRAINER has arrived in\nSOOTOPOLIS CITY looking for you.\\pWe hope you will enjoy\nbattling the visiting TRAINER.\\pYou may invite other TRAINERS by\nentering other passwords.\\pTry looking for other passwords\nthat may work.$"
+        }
+      ],
+      "decision": {
+        "status": "需修复",
+        "scope": "JP",
+        "reason": "美版已改希望，日版仍是系统。报告“日版无对应”不成立，ROM有0x085FCE8B。",
+        "plan": "“系统您可以享受”改为“希望您可以享受”。"
+      }
+    },
+    {
+      "number": 64,
+      "symbol": "[218]",
+      "report_block": "- JP：ふしぎな はこ\nシルフ カンパニーせい\n- EN：A peculiar box made\nby SILPH CO.\n- 中文：内部储存了各种信\n息的透明机器。西\n尔佛公司制造\n- 理由：JP原文「ふしぎな はこ」(神秘的盒子）、EN原文\"A peculiar box made by SILPH CO.\"；中文写成\"内部储存了各种信息的透明机器\"。\"透明机器/储存各种信息\"是第四世代英文版对升级数据的描述（A transparent device filled with all sorts of data），并非本作日文原文内容，属跨世代文本混入、凭空捏造原文没有的形态描述。\n- 修改建议：改为\"神奇的盒子。西尔佛公司制造\"（忠实于ふしぎなはこ/シルフカンパニーせい）。\n\n### 未翻译（1 条）",
+      "resolved_symbol": "sUpGradeDesc",
+      "jp_current": [
+        {
+          "file": "patch/item_descriptions.json",
+          "index": 218,
+          "part": null,
+          "text": "不可思议的盒子。\n西尔佛公司制造"
+        }
+      ],
+      "us_current": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "不可思议的盒子。\n西尔佛公司制造"
+        }
+      ],
+      "jp_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "ふしぎな　はこ\nシルフ　カンパニーせい"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "A peculiar box made\nby SILPH CO."
+        }
+      ],
+      "decision": {
+        "status": "已修复",
+        "reason": "当前已为不可思议的盒子，不是第四世代透明机器描述。",
+        "plan": "不修改。"
+      }
+    },
+    {
+      "number": 65,
+      "symbol": "[76]",
+      "report_block": "- JP：そうおん\n- EN：CACOPHONY\n- 中文：CACOPHONY\n- 理由：JP原文「そうおん」（噪音），EN原文「CACOPHONY」，但JP补丁中文与美版中文均为英文原文「CACOPHONY」，从未翻译。\n- 修改建议：噪音\n\n## 三、待移植（484 条）\n详见 `audit_v3_us_only.csv`。",
+      "resolved_symbol": "gAbilityNames[76]",
+      "jp_current": [
+        {
+          "file": "patch/ability_names.json",
+          "index": 76,
+          "part": null,
+          "text": "CACOPHONY"
+        }
+      ],
+      "us_current": [],
+      "jp_source": [],
+      "english_source": [],
+      "decision": {
+        "status": "可选，不列必修",
+        "reason": "CACOPHONY为未使用特性槽。可翻为噪音，但不能作为已知正常游戏可见漏译，需另有可见调用证据。",
+        "plan": "不修改。"
+      }
+    }
+  ],
+  "decision_counts": {
+    "有意保留": 1,
+    "报告错误": 2,
+    "需修复": 35,
+    "已修复": 25,
+    "重复": 1,
+    "可选，不列必修": 1
+  }
+}

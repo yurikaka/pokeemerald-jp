@@ -1,0 +1,362 @@
+{
+  "jp_head": "5604922996cc2a53ec7d7dc99253de5e3fb5e950",
+  "us_head": "1cbb305f7ebd2038f0d0ebcba039b20fe18f21e3",
+  "changes": [
+    {
+      "row_number": 4397,
+      "symbol": "MossdeepCity_Gym_Text_CliffordPostBattle",
+      "jp_file": "patch/batches/152_mossdeepcity_gym.json",
+      "jp_before": "看来我无法胜过\n你的活力。",
+      "jp_after": "这里的道馆馆主也一样！\n年轻又充满活力！",
+      "native_originals": [
+        {
+          "address": "0x0820BD63",
+          "text": "この　ジムの　リ-ダ-も　そりゃもう!\\nわかくて　げんき　はつらつ　ですぞ"
+        }
+      ],
+      "us_action": "Correct for the US regional original; unchanged.",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "text": "この　ジムの　リーダーも　そりゃもう！\nわかくて　げんき　はつらつ　ですぞ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/MossdeepCity_Gym/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "It seems that I could not overcome\nyour youthful energy.$"
+        }
+      ]
+    },
+    {
+      "row_number": 4798,
+      "symbol": "gText_DexSortAtoZDescription",
+      "jp_file": "patch/batches/171_pokedex.json",
+      "jp_before": "按字母的顺序来排列已发现\n和已获得的宝可梦。",
+      "jp_after": "按名称顺序排列\n已发现的宝可梦。",
+      "native_originals": [
+        {
+          "address": "0x085C91E2",
+          "text": "みつけたポケモンの　なまえを\\nごじゅうおんじゅんで　ひょうじ　します"
+        }
+      ],
+      "us_action": "Correct for the US regional original; unchanged.",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "src/data/text/region_texts76.h",
+          "text": "みつけたポケモンの　なまえを\nごじゅうおんじゅんで　ひょうじ　します"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/strings.c",
+          "revision": "fe570a7e5^",
+          "text": "Spotted and owned POKéMON are listed\nalphabetically."
+        }
+      ]
+    },
+    {
+      "row_number": 7183,
+      "symbol": "RustboroCity_House3_Text_NamingPikachuPekachu",
+      "jp_file": "patch/batches/299_rustboro_city_house3.json",
+      "jp_before": "但叫皮卡丘为\n猫卡球？这没什么意义。\\p我想最好起个容易\n让人理解的名字，但是……",
+      "jp_after": "但给皮卡丘起名叫\n“佩卡丘”，几乎没什么\\l区别吧……\\p我想最好起个容易\n让人理解的名字，但是……",
+      "native_originals": [
+        {
+          "address": "0x0820416F",
+          "text": "だからって　ピカチュウに\\n‘ペカチュウ’って　つけても\\lほとんど　かわって　ないでしょうに……\\pまあ　わかりやすいのも\\nニックネ-ムには　だいじ　ですけどねぇ"
+        }
+      ],
+      "us_file": "data/maps/RustboroCity_House3/scripts.inc",
+      "us_before": "但叫皮卡丘为\n猫卡球？这没什么意义。\\p我想最好起个容易\n让人理解的名字，但是……$",
+      "us_after": "但给皮卡丘起名叫\n“佩卡丘”？这没什么意义。\\p我想最好起个容易\n让人理解的名字，但是……$",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "text": "だからって　ピカチュウに\n‘ペカチュウ’って　つけても\\lほとんど　かわって　ないでしょうに⋯⋯\\pまあ　わかりやすいのも\nニックネームには　だいじ　ですけどねぇ$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "But giving the name PEKACHU to\na PIKACHU? It seems pointless.\\pI suppose it is good to use a name\nthat's easy to understand, but…$"
+        }
+      ]
+    },
+    {
+      "row_number": 7184,
+      "symbol": "RustboroCity_House3_Text_Pekachu",
+      "jp_file": "patch/batches/299_rustboro_city_house3.json",
+      "jp_before": "猫卡球：猫球！",
+      "jp_after": "佩卡丘：佩卡！",
+      "native_originals": [
+        {
+          "address": "0x082041BF",
+          "text": "ペカチュウ“ぺか-!"
+        }
+      ],
+      "us_file": "data/maps/RustboroCity_House3/scripts.inc",
+      "us_before": "猫卡球：猫球！$",
+      "us_after": "佩卡丘：佩卡！$",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "text": "ペカチュウ“ぺかー！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/maps/RustboroCity_House3/scripts.inc",
+          "revision": "fe570a7e5^",
+          "text": "PEKACHU: Peka!$"
+        }
+      ]
+    },
+    {
+      "row_number": 9110,
+      "symbol": "MauvilleCity_PokemonCenter_1F_Text_LedgesJumpedStory",
+      "jp_file": "patch/batches/392_mauville_man_0.json",
+      "jp_before": "关于{FD_04}是这样流传\n的。\\p他已经跳下\n{FD_02}次岩礁了！\\p如果有适合跳跃的岩礁，\n{FD_04}一定会去跳的！",
+      "jp_after": "关于{FD_04}是这样流传\n的。\\p他已经跳下\n{FD_02}次台阶了！\\p如果有适合跳跃的台阶，\n{FD_04}一定会去跳的！",
+      "native_originals": [
+        {
+          "address": "0x08255F9B",
+          "text": "{PLACEHOLDER_04}という\\nトレ-ナ-の　はなし　だが……\\pなんと　{PLACEHOLDER_02}かいも\\nだんさを　とびおりた　らしい!\\p{PLACEHOLDER_04}は　だんさを　みると\\nとびおりずに　おれない　トレ-ナ-だな!"
+        }
+      ],
+      "us_file": "data/scripts/mauville_man.inc",
+      "us_before": "关于{STR_VAR_3}是这样流传\n的。\\p他已经跳下\n{STR_VAR_1}次岩礁了！\\p如果有适合跳跃的岩礁，\n{STR_VAR_3}一定会去跳的！$",
+      "us_after": "关于{STR_VAR_3}是这样流传\n的。\\p他已经跳下\n{STR_VAR_1}次台阶了！\\p如果有适合跳跃的台阶，\n{STR_VAR_3}一定会去跳的！$",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/scripts/mauville_man.inc",
+          "text": "{STR_VAR_3}という\nトレーナーの　はなし　だが⋯⋯\\pなんと　{STR_VAR_1}かいも\nだんさを　とびおりた　らしい！\\p{STR_VAR_3}は　だんさを　みると\nとびおりずに　おれない　トレーナーだな！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/scripts/mauville_man.inc",
+          "revision": "fe570a7e5^",
+          "text": "This is a tale of a TRAINER\nnamed {STR_VAR_3}.\\pThis TRAINER jumped down ledges\n{STR_VAR_1} times!\\pIf there's a ledge to be jumped,\n{STR_VAR_3} can't ignore it!$"
+        }
+      ]
+    },
+    {
+      "row_number": 10293,
+      "symbol": "sElixirDesc",
+      "jp_file": "patch/item_descriptions.json",
+      "jp_before": "能让宝可梦学会的\n4个招式各回复1\n0PP",
+      "jp_after": "能让宝可梦学会的\n4个招式各回复\n10PP",
+      "native_originals": [],
+      "us_file": "src/data/text/item_descriptions.h",
+      "us_before": "能让宝可梦学会的\n4个招式各回复1\n0PP。",
+      "us_after": "能让宝可梦学会的\n4个招式各回复\n10PP。",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "すべての　わざの\nわざポイントを\n10　かいふくする"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "Restores the PP\nof all moves by 10."
+        }
+      ]
+    },
+    {
+      "row_number": 10399,
+      "symbol": "sSitrusBerryDesc",
+      "jp_file": "patch/item_descriptions.json",
+      "jp_before": "携带后，可以回复\n少量HP",
+      "jp_after": "携带后，可以回复\n30HP",
+      "native_originals": [],
+      "us_file": "src/data/text/item_descriptions.h",
+      "us_before": "携带后，可以回复\n少量HP。",
+      "us_after": "携带后，可以回复\n30HP。",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "text": "もたせると　じぶんで\nたいりょくを\n30　かいふくする"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/text/item_descriptions.h",
+          "revision": "fe570a7e5^",
+          "text": "A hold item that\nrestores 30 HP in\nbattle."
+        }
+      ]
+    },
+    {
+      "row_number": 12203,
+      "symbol": "sText_MysteryGiftVisitingTrainerInstructions",
+      "jp_file": "patch/batches/471_checklist_mystery_gift_script_texts.json",
+      "jp_before": "感谢使用\n神秘礼物系统。\\p由于拥有神秘卡片\n您可以进行调查\\l友好商店。\\p通过调查您可以邀请\n训练家去琉璃市。\\p……让我给您一个\n调查的密码吧：\\p“GIVE ME\nAWESOME TRAINER”\\p把这个写在调查上并发送到\n无线连接系统。",
+      "jp_after": "感谢使用\n神秘礼物系统。\\p拥有这张神秘卡片后，\n您可以在友好商店参与调查。\\p通过调查，您可以邀请\n各种训练家来到琉璃市。\\p……让我悄悄告诉您\n一个调查用的密码吧：\\p“{JPN}すごい　トレーナー\n　くれ　くれ{ENG}”\\p请把这个密码填在调查中，\n再与Joy Spot进行通信。",
+      "native_originals": [
+        {
+          "address": "0x85fcdbc",
+          "text": "ふしぎなおくりもの　を　ごりよう\\nいただき　ありがとう　ございます\\pこの　ふしぎなカ-ドを　もっていると\\nフレンドリ-ショップの　アンケ-トで\\pいろいろな　トレ-ナ-を　ルネシティに\\nよぶことが　できますよ!\\p……ないしょで　ひとつ　アンケ-トの\\nあいことばを　おしえて　あげましょう\\p‘すごい　トレ-ナ-\\n　くれ　くれ’\\pこのことばを　アンケ-トに　かいて\\nぜひ　ジョイスポットと\\lつうしんして　みてください!"
+        }
+      ],
+      "us_action": "Correct for the US regional original; unchanged.",
+      "status": "fixed_and_built",
+      "jp_source": [],
+      "english_source": [
+        {
+          "file": "data/scripts/gift_trainer.inc",
+          "revision": "fe570a7e5^",
+          "text": "Thank you for using the MYSTERY\nGIFT System.\\pBy holding this WONDER CARD, you\nmay take part in a survey at a\\lPOKéMON MART.\\pUse these surveys to invite\nTRAINERS to SOOTOPOLIS CITY.\\p…Let me give you a secret\npassword for a survey:\\p“GIVE ME\nAWESOME TRAINER”\\pWrite that in on a survey and send\nit to the WIRELESS\\lCOMMUNICATION SYSTEM.$"
+        }
+      ]
+    },
+    {
+      "row_number": 13248,
+      "symbol": "sText_OnlyPkmnForBattle",
+      "jp_file": "patch/batches/438_checklist_controls_and_gambler.json",
+      "jp_before": "最后1只同行的宝可梦\n不能用来交换。",
+      "jp_after": "{COLOR 2}{HIGHLIGHT 1}{SHADOW 3}交换这只宝可梦后，\n就没有能战斗的宝可梦了。",
+      "native_originals": [
+        {
+          "address": "0x08300B75",
+          "text": "{BYTE_FC}あい{BYTE_FC}いあ{BYTE_FC}ううそのポケモンを　こうかんすると\\nせんとうできなくなっちゃうよ!"
+        }
+      ],
+      "us_file": "src/data/trade.h",
+      "us_before": "最后1只同行的宝可梦\n不能用来交换。",
+      "us_after": "交换这只宝可梦后，\n就没有能战斗的宝可梦了。",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "src/data/trade.h",
+          "text": "{COLOR 0x02}{HIGHLIGHT 0x01}{SHADOW 0x03}そのポケモンを　こうかんすると\nせんとうできなくなっちゃうよ！"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "src/data/trade.h",
+          "revision": "fe570a7e5^",
+          "text": "That's your only\nPOKéMON for battle."
+        }
+      ]
+    },
+    {
+      "row_number": 13286,
+      "symbol": "gText_MomOrDadMightLikeThisProgram",
+      "jp_file": "patch/batches/432_checklist_scripts.json",
+      "jp_before": "也许是{FD_02}喜欢的游戏\n…… …… …… …… …… …… …… ……\\p该走了！",
+      "jp_after": "也许是{FD_02}喜欢的节目\n…… …… …… …… …… …… …… ……\\p该走了！",
+      "native_originals": [
+        {
+          "address": "0x08243A12",
+          "text": "{PLACEHOLDER_02}が　すきそうな　ばんぐみをやってる!\\n…………………………………………………\\pさきを　いそがなきゃ!"
+        }
+      ],
+      "us_file": "data/event_scripts.s",
+      "us_before": "也许是{STR_VAR_1}喜欢的游戏\n…… …… …… …… …… …… …… ……\\p该走了！$",
+      "us_after": "也许是{STR_VAR_1}喜欢的节目\n…… …… …… …… …… …… …… ……\\p该走了！$",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/event_scripts.s",
+          "text": "{STR_VAR_1}が　すきそうな　ばんぐみをやってる！\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\\pさきを　いそがなきゃ！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/event_scripts.s",
+          "revision": "fe570a7e5^",
+          "text": "{STR_VAR_1} might like this program.\n… … … … … … … … … … … … … … … …\\pBetter get going!$"
+        }
+      ]
+    },
+    {
+      "row_number": 13293,
+      "symbol": "gText_PlayerWhitedOut",
+      "jp_file": "patch/batches/432_checklist_scripts.json",
+      "jp_before": "{FD_01}没有可以\n战斗的宝可梦\\p！{FD_01}昏迷了！",
+      "jp_after": "{FD_01}没有可以\n战斗的宝可梦！\\p{FD_01}昏迷了！",
+      "native_originals": [
+        {
+          "address": "0x08243B4E",
+          "text": "{PLACEHOLDER_01}の　てもとには\\nたたかえるポケモンが　もういない!\\p{PLACEHOLDER_01}は\\nめのまえが　まっくらに　なった!"
+        }
+      ],
+      "us_file": "data/event_scripts.s",
+      "us_before": "{PLAYER}没有可以\n战斗的宝可梦\\p！{PLAYER}昏迷了！$",
+      "us_after": "{PLAYER}没有可以\n战斗的宝可梦！\\p{PLAYER}昏迷了！$",
+      "status": "fixed_and_built",
+      "jp_source": [
+        {
+          "file": "data/event_scripts.s",
+          "text": "{PLAYER}の　てもとには\nたたかえるポケモンが　もういない！\\p{PLAYER}は\nめのまえが　まっくらに　なった！$"
+        }
+      ],
+      "english_source": [
+        {
+          "file": "data/event_scripts.s",
+          "revision": "fe570a7e5^",
+          "text": "{PLAYER} is out of usable\nPOKéMON!\\p{PLAYER} whited out!$"
+        }
+      ]
+    }
+  ],
+  "scope": "11 v2-only required resources; prior35 v3 fixes preserved.",
+  "jp_resources_fixed": 11,
+  "us_resources_fixed": 8,
+  "combined_unique_jp_repairs_completed": 46,
+  "combined_us_repairs_completed": 42,
+  "remaining_required_repairs": 0,
+  "validation": {
+    "jp_make_chs": "PASS",
+    "jp_make_compare": "PASS: original JP SHA1 unchanged",
+    "us_make": "PASS: pokeemerald.gba",
+    "all46_jp_and42_us_resources_in_rom": "PASS: definitions and linked batch/fixed/pointer-table payloads checked",
+    "previous_v3_fixes_preserved": "PASS",
+    "no_address_reference_or_data_logic_changes": "PASS",
+    "native_japanese_gift_password": "PASS: exact original bytes, FC15/FC16 brackets; longest instruction line156px <=168px",
+    "trade_message_colors": "PASS: original JP FC0102 FC0201 FC0303 restored",
+    "git_diff_check": "PASS in both repositories",
+    "emulator": "NOT RUN; interactive/visual verification pending"
+  },
+  "password_verification": {
+    "display_phrase": "すごい　トレーナー\n　くれ　くれ",
+    "native_encoding_hex": "0d3b0200647aae65aefe00082a00082a",
+    "native_text_address": "0x085FCDBC",
+    "word_ids": [
+      5153,
+      523,
+      4103,
+      4103
+    ],
+    "evidence": [
+      "../pokeemerald_wokann_dev/src/easy_chat.c:1700 GetQuestionnaireWordsPtr passes saved word buffer to Easy Chat",
+      "../pokeemerald_wokann_dev/src/easy_chat.c:4818 comparison uses ldrh word IDs",
+      "../pokeemerald_wokann_dev/src/mystery_gift.c:406 MysteryGift_DoesQuestionnaireMatch compares numeric questionnaireWords",
+      "../pokeemerald_wokann_dev/include/constants/easy_chat.h:1116 EC_MASK_BITS=9; Much/Trainer/Gimme definitions and native word tables",
+      "No raw Easy Chat word-table, phrase-comparison, questionnaire save, or link-protocol modifications in this patch"
+    ],
+    "encoding_choice": "This one entry uses existing text:{JPN}...{ENG} support instead of US encoded-byte conversion, to avoid converting Japanese kana bytes as Chinese pairs. No encoder/ASM changes."
+  },
+  "roms": [
+    {
+      "file": "pokeemerald_jp_chs.gba",
+      "sha1": "e5b359af6ec53d9588b6eb092770dde0ce3d267c"
+    },
+    {
+      "file": "../pokeemerald_us_chs/pokeemerald.gba",
+      "sha1": "99d17de8d6b09c519baeb3ea5d03619b512f5f99"
+    }
+  ]
+}
