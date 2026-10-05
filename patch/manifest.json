@@ -291,6 +291,7 @@
     }
   ],
   "code_patches": [
+    {"address": "0x085DFA74", "original": "01110f0c040ff70101110d0c060ff701", "replacement": "010f0f0e040ff701010f0d0e060ff701", "comment": "Widen two-column bag action windows leftward for full Chinese labels"},
     { "address": "0x080DD810", "original": "40000106", "replacement": "80000106", "comment": "Place the dynamic next-turn number after the 32-pixel Chinese label" },
     {
       "address": "0x0806E0B4",
