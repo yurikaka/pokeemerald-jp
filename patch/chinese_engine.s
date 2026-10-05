@@ -897,6 +897,54 @@ ChsBuildPokeblockListName:
 
 .align 2
 .global ChsBlenderTextPrinter
+.global ChsStorageTitleInitial
+.type ChsStorageTitleInitial, %function
+.thumb_func
+ChsStorageTitleInitial:
+    bl ChsStorageTitleDraw
+    ldr r0, [sp, #0x2C]
+    ldr r3, =0x080CC4D5
+    bx r3
+
+.align 2
+.global ChsStorageTitleSwitch
+.type ChsStorageTitleSwitch, %function
+.thumb_func
+ChsStorageTitleSwitch:
+    movs r2, #0
+    bl ChsStorageTitleDraw
+    ldr r3, =0x080CC669
+    bx r3
+
+.type ChsStorageTitleDraw, %function
+.thumb_func
+ChsStorageTitleDraw:
+    push {r4, lr}
+    sub sp, #8
+    ldr r4, [sp, #16]
+    str r4, [sp]
+    ldrb r4, [r0]
+    cmp r4, #0xFC
+    bne .Lstorage_title_draw
+    ldrb r4, [r0, #1]
+    cmp r4, #0x15
+    beq .Lstorage_title_skip_mode
+    cmp r4, #0x16
+    bne .Lstorage_title_draw
+.Lstorage_title_skip_mode:
+    adds r0, #2
+.Lstorage_title_draw:
+    movs r3, #0
+    ldr r4, =0x080C66A5
+    bl .Lstorage_title_call
+    add sp, #8
+    pop {r4}
+    pop {r3}
+    bx r3
+.Lstorage_title_call:
+    bx r4
+
+.align 2
 .type ChsBlenderTextPrinter, %function
 .thumb_func
 ChsBlenderTextPrinter:
@@ -5291,6 +5339,16 @@ LatinSmallFont:
 .global ChsContestInterfaceGfx
 ChsContestInterfaceGfx:
     .incbin "build/patch/contest_interface.lz"
+
+.align 2
+.global ChsStorageMenuGfx
+ChsStorageMenuGfx:
+    .incbin "build/patch/storage_menu.lz"
+
+.align 2
+.global ChsStoragePartyMap
+ChsStoragePartyMap:
+    .incbin "build/patch/storage_party.lz"
 
 .align 2
 .global ChsContestApplauseGfx

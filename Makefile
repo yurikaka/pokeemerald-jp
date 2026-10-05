@@ -29,6 +29,7 @@ PATCH_BERRY_FIX_GFX := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene)_
 PATCH_BERRY_FIX_PALS := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene).gbapal)
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp $(PATCH_BERRY_FIX_GFX) patch/gfx/contest_interface.4bpp patch/gfx/contest_applause.4bpp patch/gfx/contest_results.4bpp patch/gfx/contest_next_turn.4bpp
 PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
+PATCH_GENERATED_GFX += patch/gfx/storage_menu.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_CONTEST_TITLES := $(addprefix patch/gfx/contest_title_,$(addsuffix .bin,normal super hyper master link cool beauty cute smart tough title))
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin $(PATCH_CONTEST_TITLES)
@@ -118,6 +119,14 @@ $(PATCH_BERRY_FIX_GFX) $(PATCH_BERRY_FIX_PALS) &: patch/tools/build_berry_fix_gf
 
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
+
+patch/gfx/storage_menu.4bpp: patch/tools/build_storage_menu_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/pokemon_storage/menu.png ../pokeemerald_us_chs/graphics/pokemon_storage/display_menu.bin ../pokeemerald_wokann_dev/data/pokemon_storage/jp/0854BF9C.bin
+	$(PYTHON) patch/tools/build_storage_menu_gfx.py
+
+$(PATCH_BUILD)/storage_party.lz: ../pokeemerald_us_chs/graphics/pokemon_storage/party_menu.bin | $(PATCH_BUILD)
+	$(GBAGFX) $< $@
+
+$(PATCH_BUILD)/payload.o: $(PATCH_BUILD)/storage_party.lz
 
 $(PATCH_BUILD)/easy_chat_footer_tiles.4bpp $(PATCH_BUILD)/easy_chat_footer_map.bin &: patch/tools/build_easy_chat_footer_gfx.py patch/tools/build_berry_fix_gfx.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_us_chs/src/strings.c | $(PATCH_BUILD)
 	$(PYTHON) patch/tools/build_easy_chat_footer_gfx.py
