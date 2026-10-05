@@ -5297,14 +5297,6 @@ ChsEasyChatModeGfx:
     .incbin "build/patch/easy_chat_mode.lz"
 
 .align 2
-.global ChsEasyChatModePal
-ChsEasyChatModePal:
-    .2byte 0x7FFF, 0x6F5B, 0x5AF6, 0x39CE
-    .2byte 0x0000, 0x0000, 0x0000, 0x0000
-    .2byte 0x0000, 0x0000, 0x0000, 0x0000
-    .2byte 0x0000, 0x0000, 0x0000, 0x0000
-
-.align 2
 .global ChsNamingScreenBackButtonGfx
 ChsNamingScreenBackButtonGfx:
     .incbin "build/patch/naming_screen_back_button.4bpp"
