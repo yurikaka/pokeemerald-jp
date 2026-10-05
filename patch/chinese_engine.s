@@ -1815,11 +1815,11 @@ ChsScrCmdBufferPartyMonNick:
     ldrb r4, [r1]
     adds r1, #1
     str r1, [r0, #8]
-    ldr r3, =0x0809A81D
+    ldr r3, =0x08098795
     bl .Lscript_nick_call_r3
     lsls r0, r0, #0x10
     lsrs r0, r0, #0x10
-    ldr r3, =0x0806E569
+    ldr r3, =0x0809CF6D
     bl .Lscript_nick_call_r3
     lsls r0, r0, #0x10
     lsrs r0, r0, #0x10
