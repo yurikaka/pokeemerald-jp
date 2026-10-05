@@ -920,6 +920,47 @@ ChsBlenderTextPrinter:
     bx r1
 
 .align 2
+.global ChsBlenderPlayerNameCopy
+.type ChsBlenderPlayerNameCopy, %function
+.thumb_func
+ChsBlenderPlayerNameCopy:
+    add r1, sl
+    add r0, sp, #8
+    push {r4, lr}
+    adds r4, r0, #0
+    adds r0, r1, #0
+    bl ChsResolveBlenderName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088B9
+    bl .Lblender_name_call
+    pop {r4}
+    pop {r3}
+    mov lr, r3
+    ldr r3, =0x08080259
+    bx r3
+
+.align 2
+.global ChsBlenderResultsBerryCopy
+.type ChsBlenderResultsBerryCopy, %function
+.thumb_func
+ChsBlenderResultsBerryCopy:
+    push {r5, lr}
+    adds r5, r0, #0
+    subs r0, r4, #2
+    ldrh r0, [r0]
+    bl ChsItemIdGetName
+    adds r1, r0, #0
+    adds r0, r5, #0
+    ldr r3, =0x080088B9
+    bl .Lblender_name_call
+    pop {r5}
+    pop {r3}
+    mov lr, r3
+    ldr r3, =0x08082FED
+    bx r3
+
+.align 2
 .global ChsBlenderResultsNameAppend
 .type ChsBlenderResultsNameAppend, %function
 .thumb_func
