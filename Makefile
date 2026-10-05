@@ -143,7 +143,11 @@ $(PATCH_TILEMAP_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.bin | $(PATCH_BUILD)
 $(PATCH_BUILD)/naming_screen_%.4bpp: ../pokeemerald_us_chs/graphics/naming_screen/%.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
+$(PATCH_BUILD)/trade_label_Cancel.4bpp $(PATCH_BUILD)/trade_label_ChooseAPkmn.4bpp $(PATCH_BUILD)/trade_label_CancelTrade.4bpp $(PATCH_BUILD)/trade_label_PressBToQuit.4bpp $(PATCH_BUILD)/trade_label_IsThisTradeOkay.4bpp &: patch/tools/build_trade_menu_text.py patch/tools/build_berry_fix_gfx.py patch/fonts/chinese_normal.png patch/fonts/latin_normal.png patch/charmap_chs.txt ../pokeemerald_us_chs/src/data/trade.h | $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_trade_menu_text.py
+
 $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
+		$(PATCH_BUILD)/trade_label_Cancel.4bpp $(PATCH_BUILD)/trade_label_ChooseAPkmn.4bpp $(PATCH_BUILD)/trade_label_CancelTrade.4bpp $(PATCH_BUILD)/trade_label_PressBToQuit.4bpp $(PATCH_BUILD)/trade_label_IsThisTradeOkay.4bpp \
 		$(PATCH_BUILD)/chinese_normal.latfont $(PATCH_BUILD)/chinese_small.latfont \
 		$(PATCH_BUILD)/muzaipixel_chinese.latfont $(PATCH_BUILD)/muzaipixel_latin.latfont \
 		patch/fonts/muzaipixel_latin_widths.bin \

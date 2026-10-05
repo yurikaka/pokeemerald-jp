@@ -5,6 +5,8 @@
   "render_hook_original": "b0773068037801303060",
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
+    {"address": "0x08078120", "original": "70b58db0214d28683530007864246043", "symbol": "ChsTradeConfirmPrompt"},
+    {"address": "0x08079644", "original": "10b583b00c1c0006000e410009184900", "symbol": "ChsTradePartyNickname"},
     {"address": "0x080F626C", "original": "70b50006060e0548007886420cd10448", "symbol": "ChsContestResultsNames"},
     {"address": "0x080F76E8", "original": "00b511f727f9011c0906890d7820401a", "symbol": "ChsContestResultsTextPosition"},
     {
@@ -219,6 +221,11 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x080794A8", "original": "281c69468ff7bcf9", "symbol": "ChsTradeDetailNicknameCopy"},
+    {"address": "0x08079398", "original": "20f1b0fb6a462832", "symbol": "ChsTradeDetailNicknamePrint"},
+    {"address": "0x08077280", "original": "4ff010fa6068f169", "symbol": "ChsTradeCancelInitial"},
+    {"address": "0x08077818", "original": "4ef044ff6068f169", "symbol": "ChsTradeCancelReconnect"},
+    {"address": "0x08079D3C", "original": "70b589b0051c0e1c", "symbol": "ChsTradeBottomText"},
     {"address": "0x081249EC", "original": "02680c3202200090", "symbol": "ChsFlyMapNameFill"},
     {"address": "0x08124974", "original": "0c32022000900196", "symbol": "ChsFlyMapTallNameFill"},
     {"address": "0x0814F7F4", "original": "0143301c1bf7f0fd", "symbol": "ChsBattleSpeciesBuffer"},

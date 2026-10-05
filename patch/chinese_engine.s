@@ -5277,6 +5277,216 @@ ChsShopMoneyGfx:
     .incbin "build/patch/shop_money.lz"
 
 .align 2
+.global ChsTradeCancelInitial
+.type ChsTradeCancelInitial, %function
+.thumb_func
+ChsTradeCancelInitial:
+    bl ChsTradeCancelDraw
+    ldr r0, [r4, #4]
+    ldr r1, [r6, #0x1C]
+    ldr r3, =0x08077289
+    bx r3
+
+.align 2
+.global ChsTradeCancelReconnect
+.type ChsTradeCancelReconnect, %function
+.thumb_func
+ChsTradeCancelReconnect:
+    bl ChsTradeCancelDraw
+    ldr r0, [r4, #4]
+    ldr r1, [r6, #0x1C]
+    ldr r3, =0x08077821
+    bx r3
+
+.type ChsTradeCancelDraw, %function
+.thumb_func
+ChsTradeCancelDraw:
+    push {lr}
+    ldr r0, =ChsTradeCancelTiles
+    movs r2, #0x80
+    ldr r3, =0x082959BD
+    bl .Ltrade_display_call
+    pop {r0}
+    bx r0
+
+.align 2
+.global ChsTradeBottomText
+.type ChsTradeBottomText, %function
+.thumb_func
+ChsTradeBottomText:
+    ldr r3, =Chs_sText_IsThisTradeOkay
+    cmp r0, r3
+    beq .Ltrade_bottom_confirm
+    ldr r3, =Chs_ChecklistLiteral_sText_ChooseAPkmn
+    cmp r0, r3
+    beq .Ltrade_bottom_choose
+    ldr r3, =Chs_sText_CancelTrade
+    cmp r0, r3
+    beq .Ltrade_bottom_cancel
+    ldr r3, =Chs_TradeMenuPressBToQuit
+    cmp r0, r3
+    beq .Ltrade_bottom_quit
+    push {r4-r6, lr}
+    sub sp, #0x24
+    adds r5, r0, #0
+    adds r6, r1, #0
+    ldr r3, =0x08079D45
+    bx r3
+.Ltrade_bottom_choose:
+    ldr r0, =ChsTradeChooseTiles
+    b .Ltrade_bottom_copy
+.Ltrade_bottom_cancel:
+    ldr r0, =ChsTradeCancelTradeTiles
+    b .Ltrade_bottom_copy
+.Ltrade_bottom_quit:
+    ldr r0, =ChsTradeQuitTiles
+    b .Ltrade_bottom_copy
+.Ltrade_bottom_confirm:
+    ldr r0, =ChsTradeConfirmTiles
+.Ltrade_bottom_copy:
+    movs r2, #0xC0
+    lsls r2, r2, #2
+    ldr r3, =0x082959BD
+    bx r3
+.Ltrade_display_call:
+    bx r3
+
+.align 2
+.global ChsTradeConfirmPrompt
+.type ChsTradeConfirmPrompt, %function
+.thumb_func
+ChsTradeConfirmPrompt:
+    ldr r0, =0x02031F3C
+    ldr r0, [r0]
+    adds r0, #0x72
+    ldrh r1, [r0]
+    lsls r1, r1, #5
+    ldr r0, =0x06010000
+    adds r1, r1, r0
+    ldr r0, =Chs_sText_IsThisTradeOkay
+    movs r2, #0x18
+    b ChsTradeBottomText
+
+.align 2
+.global ChsTradeDetailNicknameCopy
+.type ChsTradeDetailNicknameCopy, %function
+.thumb_func
+ChsTradeDetailNicknameCopy:
+    adds r0, r4, #0
+    adds r1, r5, #0
+    bl ChsCopyMonNickname
+    ldr r3, =0x080794B1
+    bx r3
+
+.align 2
+.global ChsTradeDetailNicknamePrint
+.type ChsTradeDetailNicknamePrint, %function
+.thumb_func
+ChsTradeDetailNicknamePrint:
+    ldr r1, [sp, #8]
+    bl ChsTradePrintNickname
+    mov r2, sp
+    adds r2, #0x28
+    ldr r3, =0x080793A1
+    bx r3
+
+.align 2
+.global ChsTradePartyNickname
+.type ChsTradePartyNickname, %function
+.thumb_func
+ChsTradePartyNickname:
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    lsls r1, r1, #24
+    asrs r1, r1, #24
+    movs r3, #6
+    muls r0, r3, r0
+    adds r0, r0, r1
+    adds r0, #2
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    adds r1, r2, #0
+    b ChsTradePrintNickname
+
+.type ChsTradePrintNickname, %function
+.thumb_func
+ChsTradePrintNickname:
+    push {r4-r7, lr}
+    sub sp, #0x50
+    adds r4, r0, #0
+    adds r5, r1, #0
+    add r6, sp, #0x10
+    adds r0, r6, #0
+    adds r1, r5, #0
+    ldr r3, =0x080088B9
+    bl .Ltrade_display_call
+    ldrb r0, [r5]
+    cmp r0, #0xF5
+    bne .Ltrade_nickname_print
+    ldrb r0, [r5, #1]
+    cmp r0, #0xF2
+    bne .Ltrade_nickname_print
+    ldrb r0, [r5, #2]
+    ldrb r1, [r5, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    ldr r1, =412
+    cmp r0, r1
+    bhs .Ltrade_nickname_print
+    adds r1, r6, #0
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+    cmp r0, #0
+    beq .Ltrade_nickname_print
+    adds r0, r6, #0
+    adds r1, r5, #4
+    ldr r3, =0x080088D9
+    bl .Ltrade_display_call
+.Ltrade_nickname_print:
+    ldr r0, =0x08300C00
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r6, [sp, #8]
+    adds r0, r4, #0
+    movs r1, #1
+    movs r2, #0
+    movs r3, #0
+    ldr r7, =JP_ADD_TEXT_PRINTER_PARAM3
+    bl .Ltrade_nickname_call_r7
+    adds r0, r4, #0
+    ldr r3, =0x0800365D
+    bl .Ltrade_display_call
+    adds r0, r4, #0
+    movs r1, #3
+    ldr r3, =0x08003529
+    bl .Ltrade_display_call
+    add sp, #0x50
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.Ltrade_nickname_call_r7:
+    bx r7
+
+.ltorg
+
+.align 2
+ChsTradeCancelTiles:
+    .incbin "build/patch/trade_label_Cancel.4bpp"
+.align 2
+ChsTradeChooseTiles:
+    .incbin "build/patch/trade_label_ChooseAPkmn.4bpp"
+.align 2
+ChsTradeCancelTradeTiles:
+    .incbin "build/patch/trade_label_CancelTrade.4bpp"
+.align 2
+ChsTradeQuitTiles:
+    .incbin "build/patch/trade_label_PressBToQuit.4bpp"
+.align 2
+ChsTradeConfirmTiles:
+    .incbin "build/patch/trade_label_IsThisTradeOkay.4bpp"
+
+.align 2
 .global ChsEasyChatButtonWindowGfx
 ChsEasyChatButtonWindowGfx:
     .incbin "build/patch/easy_chat_button_window.lz"

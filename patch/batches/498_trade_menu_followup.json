@@ -1,0 +1,50 @@
+{
+  "category": "Trade menu connection standby and move label",
+  "texts": [
+    {
+      "name": "Chs_TradeMenuCannotTradeNow",
+      "source_symbol": "gText_PkmnCantBeTradedNow",
+      "text": "这只宝可梦暂时\n不能交换！",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_TradeMenuCommunicationStandby",
+      "source_symbol": "sText_CommunicationStandby",
+      "us_encoded_hex": "fc0102fc0201fc030310700fe6030f02dd087f0725b0b0fe0b0d0bb2030f0a6707da37ff"
+    },
+    {
+      "name": "Chs_TradeMenuMovesLabel",
+      "source_symbol": "gUnknown_8300A9B",
+      "us_encoded_hex": "f5f310430c02ff",
+      "auto_wrap": false
+    },
+    {
+      "name": "Chs_TradeMenuPressBToQuit",
+      "source_symbol": "sJPText_PressBButtonToQuit",
+      "text": "B键：返回",
+      "auto_wrap": false
+    }
+  ],
+  "reference_writes": [
+    {
+      "address": "0x08300BF4",
+      "original": "0x085CA2B4",
+      "symbol": "Chs_TradeMenuCannotTradeNow"
+    },
+    {
+      "address": "0x08300BDC",
+      "original": "0x08300B38",
+      "symbol": "Chs_TradeMenuCommunicationStandby"
+    },
+    {
+      "address": "0x08079418",
+      "original": "0x08300A9B",
+      "symbol": "Chs_TradeMenuMovesLabel"
+    },
+    {
+      "address": "0x08300B10",
+      "original": "0x08300AEE",
+      "symbol": "Chs_TradeMenuPressBToQuit"
+    }
+  ]
+}
