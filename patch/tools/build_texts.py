@@ -19,6 +19,10 @@ CONTROLS = {
     "STR_VAR_2": bytes((0xFD, 0x03)),
     "JPN": bytes((0xFC, 0x15)),
     "ENG": bytes((0xFC, 0x16)),
+    "UP_ARROW": bytes((0xFC, 0x0C, 0x00)),
+    "DOWN_ARROW": bytes((0xFC, 0x0C, 0x01)),
+    "LEFT_ARROW": bytes((0xFC, 0x0C, 0x02)),
+    "RIGHT_ARROW": bytes((0xFC, 0x0C, 0x03)),
 }
 
 EXT_CTRL_ARG_LENGTHS = {
@@ -216,6 +220,10 @@ def convert_us_encoded_text(
             output.extend(data[index:index + 2])
             index += 2
             continue
+        if not mode_is_japanese and 0x79 <= char <= 0x7C:
+            output.extend((0xFC, 0x0C, char - 0x79))
+            index += 1
+            continue
         if char == 0x30 or 0x36 <= char <= 0x3F and char != 0x38:
             output.extend((0x7F, char))
             index += 1
@@ -244,7 +252,7 @@ def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
         except KeyError as exc:
             raise ValueError(f"unknown extended control code while wrapping: 0x{code:02X}") from exc
         end = index + 2 + arg_length
-        return data[index:end], 0, end
+        return data[index:end], 8 if code == 0x0C else 0, end
     if char == 0xFD:
         if index + 1 >= len(data):
             raise ValueError("truncated placeholder while wrapping")
