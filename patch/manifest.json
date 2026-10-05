@@ -292,6 +292,9 @@
     }
   ],
   "code_patches": [
+    {"address": "0x080DF490", "original": "0b21", "replacement": "1021", "comment": "Allocate 16 bytes per Chinese shop item name instead of 11"},
+    {"address": "0x080DF4B0", "original": "0b22", "replacement": "1022", "comment": "Use the enlarged shop item-name stride when populating entries"},
+    {"address": "0x080DF4CC", "original": "0b20", "replacement": "1020", "comment": "Use the enlarged shop item-name stride for the exit entry"},
     {"address": "0x085DFA74", "original": "01110f0c040ff70101110d0c060ff701", "replacement": "010f0f0e040ff701010f0d0e060ff701", "comment": "Widen two-column bag action windows leftward for full Chinese labels"},
     { "address": "0x080DD810", "original": "40000106", "replacement": "80000106", "comment": "Place the dynamic next-turn number after the 32-pixel Chinese label" },
     {
