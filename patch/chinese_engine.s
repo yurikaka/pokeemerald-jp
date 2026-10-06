@@ -4892,6 +4892,24 @@ ChsFlyMapTallNameFill:
     bx r3
 
 .align 2
+.global ChsWallMapNameFill
+.type ChsWallMapNameFill, %function
+.thumb_func
+ChsWallMapNameFill:
+    movs r0, #0
+    movs r1, #0x11
+    bl .Lregion_map_fill_window
+    ldr r0, =0x0203B99C
+    ldr r2, [r0]
+    adds r2, #0x0C
+    movs r0, #2
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    ldr r3, =0x0817022D
+    bx r3
+
+.align 2
 .type ChsRegionMapCityWindowFillA, %function
 .thumb_func
 ChsRegionMapCityWindowFillA:
