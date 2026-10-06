@@ -28,6 +28,9 @@ not the window pixel buffer, and are not cleared. Other Pokenav lists keep
 their original behavior. Register values and LR are restored before replaying
 the original four instructions.
 
+The later jz1 repair additionally selects the new ribbon-list formatter for
+the same row clearing; see `ribbons_list_display.md`. Other lists remain excluded.
+
 No name, title, saved trainer data, comparison or string-matching rule changes.
 Runtime acceptance requires scrolling long titles/names out and short ones in,
 including the rival description and Winston's name. This environment has not

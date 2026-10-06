@@ -2848,7 +2848,11 @@ ChsMatchCallClearListRow:
     ldr r0, [r4, #0x34]
     ldr r1, =0x081CA7F5
     cmp r0, r1
+    beq .Lmc_row_clear
+    ldr r1, =ChsBufferRibbonMonInfoText + 1
+    cmp r0, r1
     bne .Lmc_row_native_setup
+.Lmc_row_clear:
     push {r4-r7, lr}
     sub sp, #0x0C
     ldrb r0, [r4, #4]
@@ -2875,6 +2879,135 @@ ChsMatchCallClearListRow:
     bx r3
 .Lmc_row_call_r4:
     bx r4
+
+.ltorg
+
+.align 2
+.global ChsBufferRibbonMonInfoText
+.type ChsBufferRibbonMonInfoText, %function
+.thumb_func
+ChsBufferRibbonMonInfoText:
+    push {r4-r7, lr}
+    sub sp, #0x2C
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldrb r0, [r4]
+    cmp r0, #14
+    bne .Lribbon_box_mon
+    ldrb r0, [r4, #1]
+    movs r1, #100
+    muls r0, r1
+    ldr r1, =0x02024190
+    adds r6, r0, r1
+    movs r7, #0
+    b .Lribbon_mon_ready
+.Lribbon_box_mon:
+    ldrb r1, [r4, #1]
+    ldr r3, =0x080D1935
+    bl .Lribbon_call_r3
+    adds r6, r0, #0
+    movs r7, #1
+.Lribbon_mon_ready:
+    adds r0, r6, #0
+    ldr r3, =0x08069AF5
+    cmp r7, #0
+    beq .Lribbon_get_gender
+    ldr r3, =0x08069B05
+.Lribbon_get_gender:
+    bl .Lribbon_call_r3
+    str r0, [sp]
+    adds r0, r6, #0
+    ldr r3, =0x08068B95
+    cmp r7, #0
+    beq .Lribbon_get_level
+    ldr r3, =0x08068C01
+.Lribbon_get_level:
+    bl .Lribbon_call_r3
+    str r0, [sp, #4]
+    adds r0, r6, #0
+    add r1, sp, #0x10
+    cmp r7, #0
+    bne .Lribbon_box_nickname
+    bl ChsCopyMonNickname
+    b .Lribbon_nickname_ready
+.Lribbon_box_nickname:
+    bl ChsCopyBoxMonNickname
+.Lribbon_nickname_ready:
+    add r6, sp, #0x10
+    ldrb r0, [r6]
+    cmp r0, #0xF5
+    bne .Lribbon_copy_nickname
+    ldrb r0, [r6, #1]
+    cmp r0, #0xF2
+    bne .Lribbon_copy_nickname
+    ldrb r0, [r6, #2]
+    ldrb r1, [r6, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    adds r1, r6, #0
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+.Lribbon_copy_nickname:
+    adds r0, r5, #0
+    adds r1, r6, #0
+    ldr r3, =0x080088B9
+    bl .Lribbon_call_r3
+    adds r5, r0, #0
+    ldr r0, [sp]
+    ldr r1, =.Lribbon_gender_unknown
+    cmp r0, #0
+    bne .Lribbon_check_female
+    ldr r1, =.Lribbon_gender_male
+    b .Lribbon_copy_gender
+.Lribbon_check_female:
+    cmp r0, #0xFE
+    bne .Lribbon_copy_gender
+    ldr r1, =.Lribbon_gender_female
+.Lribbon_copy_gender:
+    adds r0, r5, #0
+    ldr r3, =0x080088B9
+    bl .Lribbon_call_r3
+    ldr r1, [sp, #4]
+    movs r2, #0
+    movs r3, #3
+    ldr r6, =0x080089D9
+    bl .Lribbon_call_r6
+    movs r1, #0xFC
+    strb r1, [r0]
+    movs r1, #0x0D
+    strb r1, [r0, #1]
+    movs r1, #100
+    strb r1, [r0, #2]
+    adds r0, #3
+    ldrh r1, [r4, #2]
+    movs r2, #1
+    movs r3, #2
+    bl .Lribbon_call_r6
+    ldr r1, =.Lribbon_count_unit
+    ldr r3, =0x080088B9
+    bl .Lribbon_call_r3
+    add sp, #0x2C
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.Lribbon_call_r3:
+    bx r3
+.Lribbon_call_r6:
+    bx r6
+
+.align 2
+.Lribbon_gender_male:
+    .byte 0xFC, 0x0D, 50, 0xFC, 0x04, 5, 1, 6, 0xB5
+    .byte 0xFC, 0x04, 2, 1, 3, 0xBA, 0xF9, 0x05, 0xFF
+.Lribbon_gender_female:
+    .byte 0xFC, 0x0D, 50, 0xFC, 0x04, 7, 1, 8, 0xB6
+    .byte 0xFC, 0x04, 2, 1, 3, 0xBA, 0xF9, 0x05, 0xFF
+.Lribbon_gender_unknown:
+    .byte 0xFC, 0x0D, 50, 0x00, 0xBA, 0xF9, 0x05, 0xFF
+.Lribbon_count_unit:
+    .byte 0xF5, 0x63, 0x60, 0xFF
+
+.ltorg
 
 .align 2
 .global ChsBerryFirmness
