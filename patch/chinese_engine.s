@@ -3932,7 +3932,7 @@ ChsNicknameDisplayRouter:
     b ChsConvertNicknameForSpecies
 .Lnickname_hof_width_found:
     pop {r0-r3}
-    push {r0-r2}
+    push {r0-r2, lr}
     ldrh r0, [r7, #8]
     movs r3, #0x80
     lsls r3, r3, #2
@@ -3940,6 +3940,8 @@ ChsNicknameDisplayRouter:
     ands r0, r3
     bl ChsConvertNicknameForSpecies
     pop {r0-r2}
+    pop {r3}
+    mov lr, r3
     ldr r3, =0x08005DAD
     bx r3
 .Lnickname_router_call_r3:
