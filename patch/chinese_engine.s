@@ -2841,6 +2841,42 @@ ChsAppendChineseGlyphs:
     bx lr
 
 .align 2
+.global ChsMatchCallClearListRow
+.type ChsMatchCallClearListRow, %function
+.thumb_func
+ChsMatchCallClearListRow:
+    ldr r0, [r4, #0x34]
+    ldr r1, =0x081CA7F5
+    cmp r0, r1
+    bne .Lmc_row_native_setup
+    push {r4-r7, lr}
+    sub sp, #0x0C
+    ldrb r0, [r4, #4]
+    lsls r0, r0, #3
+    str r0, [sp]
+    movs r0, #16
+    str r0, [sp, #4]
+    ldrb r0, [r4, #8]
+    movs r1, #0x11
+    movs r2, #0
+    lsls r3, r5, #4
+    ldr r4, =0x08003A35
+    bl .Lmc_row_call_r4
+    add sp, #0x0C
+    pop {r4-r7}
+    pop {r0}
+    mov lr, r0
+.Lmc_row_native_setup:
+    ldrb r0, [r4, #8]
+    lsls r1, r5, #4
+    movs r2, #2
+    orrs r1, r2
+    ldr r3, =0x081C7BE5
+    bx r3
+.Lmc_row_call_r4:
+    bx r4
+
+.align 2
 .global ChsBerryFirmness
 ChsBerryFirmness:
     .4byte ChsBerryFirmnessVerySoft
