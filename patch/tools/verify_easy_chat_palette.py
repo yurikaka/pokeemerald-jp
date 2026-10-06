@@ -5,7 +5,8 @@ import struct
 from pathlib import Path
 
 from build_easy_chat_footer_gfx import FOOTER_TILE_START, LAYOUTS, build
-from build_berry_tag_gfx import lzdec
+from build_easy_chat_mode_gfx import LABELS, build as build_mode
+from build_berry_tag_gfx import get_px, lzdec
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -46,6 +47,23 @@ def main():
     for pointer, expected in ((0x0811C944, tiles), (0x0811C948, tilemap)):
         target = struct.unpack_from("<I", rom, pointer - 0x08000000)[0]
         assert lzdec(rom, target) == expected
+    target = struct.unpack_from("<I", rom, 0x57442C)[0]
+    mode = lzdec(rom, target)
+    assert mode == build_mode()
+    original_mode = lzdec(base, 0x085737F4)
+    assert ".paletteTag = PALTAG_MISC_UI" in reference.split(
+        "sSpriteTemplate_ModeWindow", 1)[1].split("};", 1)[0]
+    for vertical in range(128):
+        for horizontal in range(64):
+            tile = vertical // 8 * 8 + horizontal // 8
+            current = get_px(mode, tile, horizontal % 8, vertical % 8)
+            original = get_px(original_mode, tile, horizontal % 8, vertical % 8)
+            edited = any(frame_y + 14 <= vertical < frame_y + 29 and left <= horizontal < 57
+                         for frame_y, left, _ in LABELS)
+            if edited:
+                assert current == original or current in (12, 14, 15)
+            else:
+                assert current == original
     print("Original BG palette, localized footer resources and disjoint window tile ranges passed")
 
 

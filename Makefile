@@ -120,6 +120,9 @@ $(PATCH_BERRY_FIX_GFX) $(PATCH_BERRY_FIX_PALS) &: patch/tools/build_berry_fix_gf
 $(PATCH_GFX_LZ): $(PATCH_BUILD)/%.lz: patch/gfx/%.4bpp | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
+patch/gfx/easy_chat_mode.4bpp: patch/tools/build_easy_chat_mode_gfx.py patch/tools/build_berry_fix_gfx.py patch/tools/build_berry_tag_gfx.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_wokann_dev/graphics/easy_chat/mode.png.4bpp.lz
+	$(PYTHON) patch/tools/build_easy_chat_mode_gfx.py
+
 patch/gfx/storage_menu.4bpp: patch/tools/build_storage_menu_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/pokemon_storage/menu.png ../pokeemerald_us_chs/graphics/pokemon_storage/display_menu.bin ../pokeemerald_wokann_dev/data/pokemon_storage/jp/0854BF9C.bin
 	$(PYTHON) patch/tools/build_storage_menu_gfx.py
 
