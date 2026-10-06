@@ -1,0 +1,13 @@
+{
+  "category": "Verdanturf Battle Tent scrollable rules headings",
+  "verification": "Wokann dev src/field_specials.c: sub_0813A318 indexes gUnknown_859274C with gSpecialVar_0x8004 * 64; SCROLL_MULTI_BATTLE_TENT_RULES is 12, so the row begins at 0x08592A4C. Original row bytes match the Japanese ROM. Reuse the reviewed Chinese headings from batch 453.",
+  "texts": [],
+  "reference_writes": [
+    {"address": "0x08592A4C", "original": "0x085CAFEF", "symbol": "Chs_ChecklistLiteral_453_gText_BattleTrainers", "source_symbol": "gText_BattleTrainers"},
+    {"address": "0x08592A50", "original": "0x085CAF6C", "symbol": "Chs_ChecklistLiteral_453_gText_BattleBasics", "source_symbol": "gText_BattleBasics"},
+    {"address": "0x08592A54", "original": "0x085CAF75", "symbol": "Chs_ChecklistLiteral_453_gText_PokemonNature", "source_symbol": "gText_PokemonNature"},
+    {"address": "0x08592A58", "original": "0x085CAF7F", "symbol": "Chs_ChecklistLiteral_453_gText_PokemonMoves", "source_symbol": "gText_PokemonMoves"},
+    {"address": "0x08592A5C", "original": "0x085CAF87", "symbol": "Chs_ChecklistLiteral_453_gText_Underpowered", "source_symbol": "gText_Underpowered"},
+    {"address": "0x08592A60", "original": "0x085CAF93", "symbol": "Chs_ChecklistLiteral_453_gText_WhenInDanger", "source_symbol": "gText_WhenInDanger"}
+  ]
+}
