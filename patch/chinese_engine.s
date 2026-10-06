@@ -5684,3 +5684,8 @@ ChsContestTitleTough:
 .global ChsContestTitleTitle
 ChsContestTitleTitle:
     .incbin "patch/gfx/contest_title_title.bin"
+
+.align 2
+.global ChsFrontierPassGfx
+ChsFrontierPassGfx:
+    .incbin "build/patch/frontier_pass.lz"

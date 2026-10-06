@@ -30,6 +30,7 @@ PATCH_BERRY_FIX_PALS := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene)
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp $(PATCH_BERRY_FIX_GFX) patch/gfx/contest_interface.4bpp patch/gfx/contest_applause.4bpp patch/gfx/contest_results.4bpp patch/gfx/contest_next_turn.4bpp
 PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
 PATCH_GENERATED_GFX += patch/gfx/storage_menu.4bpp
+PATCH_GENERATED_GFX += patch/gfx/frontier_pass.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_CONTEST_TITLES := $(addprefix patch/gfx/contest_title_,$(addsuffix .bin,normal super hyper master link cool beauty cute smart tough title))
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin $(PATCH_CONTEST_TITLES)
@@ -110,6 +111,9 @@ patch/gfx/bag_hm_icon.4bpp: patch/tools/build_bag_hm_icon.py patch/tools/build_b
 
 patch/gfx/wallclock.4bpp: patch/tools/build_wallclock_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/wallclock/clock.png.4bpp.lz ../pokeemerald_wokann_dev/graphics/wallclock/clock_start.bin ../pokeemerald_wokann_dev/graphics/wallclock/clock_view.bin
 	$(PYTHON) patch/tools/build_wallclock_gfx.py
+
+patch/gfx/frontier_pass.4bpp: patch/tools/build_frontier_pass_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/frontier_pass/bg.4bpp.lz ../pokeemerald_wokann_dev/graphics/frontier_pass/cancel.bin ../pokeemerald_wokann_dev/graphics/frontier_pass/cancel_highlighted.bin ../pokeemerald_us_chs/graphics/frontier_pass/bg.png ../pokeemerald_us_chs/graphics/frontier_pass/cancel.bin ../pokeemerald_us_chs/graphics/frontier_pass/cancel_highlighted.bin
+	$(PYTHON) patch/tools/build_frontier_pass_gfx.py
 
 patch/gfx/contest_interface.4bpp patch/gfx/contest_applause.4bpp patch/gfx/contest_results.4bpp patch/gfx/contest_next_turn.4bpp $(PATCH_CONTEST_TITLES) &: patch/tools/build_contest_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/contest/interface.png ../pokeemerald_us_chs/graphics/contest/applause.png ../pokeemerald_us_chs/graphics/contest/nextturn.png ../pokeemerald_us_chs/graphics/contest/results_screen/tiles.png $(wildcard ../pokeemerald_us_chs/graphics/contest/results_screen/title*.bin) $(wildcard ../pokeemerald_wokann_dev/graphics/contest/results_screen/*.lz) ../pokeemerald_wokann_dev/graphics/contest/interface.png.4bpp.lz ../pokeemerald_wokann_dev/graphics/contest/applause.4bpp.lz ../pokeemerald_wokann_dev/graphics/contest/nextturn.4bpp.lz
 	$(PYTHON) patch/tools/build_contest_gfx.py
