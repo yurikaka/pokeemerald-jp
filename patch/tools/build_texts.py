@@ -752,6 +752,8 @@ def main() -> None:
             continue
         stride = table["stride"]
         lines.extend((".align 2", f".global {name}", f"{name}:"))
+        display_variant = table.get("display_variant")
+        display_entries = []
         for index, entry in enumerate(table["strings"]):
             if isinstance(entry, dict):
                 if "compact_resource" in entry:
@@ -773,8 +775,22 @@ def main() -> None:
                 raise ValueError(
                     f"{name}[{index}] exceeds its {stride}-byte stride: {entry!r}"
                 )
+            if display_variant is not None:
+                display_encoded = encoded
+                if (isinstance(entry, str) and len(entry) == display_variant["narrow_length"]
+                        and all(len(charmap[char]) == 2 for char in entry)):
+                    display_encoded = (bytes((0xF5, 0xF3))
+                                       + encode_compact_chinese_text(entry, charmap)[1:-1]
+                                       + bytes((0xF5, 0xF4, 0xFF)))
+                if len(display_encoded) > stride:
+                    raise ValueError(f"{display_variant['name']}[{index}] exceeds its {stride}-byte stride")
+                display_entries.append(display_encoded + bytes((0xFF,)) * (stride - len(display_encoded)))
             encoded += bytes((0xFF,)) * (stride - len(encoded))
             lines.append("    .byte " + ", ".join(f"0x{x:02X}" for x in encoded))
+        if display_variant is not None:
+            display_name = display_variant["name"]
+            lines.extend((".align 2", f".global {display_name}", f"{display_name}:"))
+            lines.extend("    .byte " + ", ".join(f"0x{x:02X}" for x in encoded) for encoded in display_entries)
     output_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"auto-wrapped {wrapped_pages} overlong pages in {wrapped_strings} dialogue strings")
 

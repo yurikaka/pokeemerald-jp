@@ -66,6 +66,9 @@ def main() -> None:
     species_names = species_names.split("const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {", 1)[1]
     chars.update("".join(re.findall(r'\[SPECIES_\w+\]\s*=\s*_\("([^"]*)"\)', species_names)))
 
+    move_names = json.loads((ROOT / "patch/move_names.json").read_text(encoding="utf-8"))["strings"]
+    chars.update(char for name in move_names for char in name if not char.isascii())
+
     pokedex_entries = json.loads((ROOT / "patch/pokedex_entries.json").read_text(encoding="utf-8"))["entries"]
     chars.update("".join(entry["description"] for entry in pokedex_entries[1:]))
     chars.discard("\n")
