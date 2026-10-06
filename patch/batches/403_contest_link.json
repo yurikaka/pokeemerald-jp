@@ -3,23 +3,12 @@
   "category": "dialogue: data/text/contest_link.inc",
   "texts": [
     {
-      "name": "Chs_gTest_MissedTurn",
-      "source_symbol": "gTest_MissedTurn",
-      "us_encoded_hex": "02cd04c5056504f5ff"
-    },
-    {
       "name": "Chs_gText_LinkStandby4",
       "source_symbol": "gText_LinkStandby4",
       "us_encoded_hex": "10700fe6030f02dd087f07253cff"
     }
   ],
   "reference_writes": [
-    {
-      "address": "0x08577C04",
-      "original": "0x085779A0",
-      "symbol": "Chs_gTest_MissedTurn",
-      "source_symbol": "gTest_MissedTurn"
-    },
     {
       "address": "0x080DB6F0",
       "original": "0x0824C140",
@@ -29,8 +18,8 @@
   ],
   "mapping_report": {
     "report_file": "patch/mapping_reports/403_contest_link.json",
-    "mapped_count": 2,
-    "unresolved_count": 9
+    "mapped_count": 1,
+    "unresolved_count": 10,
+    "correction": "0x08577C04 is EC_WORD_HOLIDAY in gEasyChatGroup_Hobbies, not the unused contest gTest_MissedTurn. Keep the original Japanese Easy Chat word."
   }
 }
-
