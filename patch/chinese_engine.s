@@ -3932,23 +3932,145 @@ ChsNicknameDisplayRouter:
     b ChsConvertNicknameForSpecies
 .Lnickname_hof_width_found:
     pop {r0-r3}
-    push {r0-r2, lr}
+    b ChsHallOfFameNicknameWidth
+.Lnickname_router_call_r3:
+    bx r3
+.Lnickname_tail_copy_mon:
+    ldr r3, =ChsCopyMonNickname + 1
+    bx r3
+
+.ltorg
+
+.align 2
+.type ChsHallOfFameNicknameWidth, %function
+.thumb_func
+ChsHallOfFameNicknameWidth:
+    push {r4-r6, lr}
+    adds r4, r1, #0
+    adds r5, r0, #0
+    adds r6, r2, #0
     ldrh r0, [r7, #8]
     movs r3, #0x80
     lsls r3, r3, #2
     subs r3, #1
     ands r0, r3
     bl ChsConvertNicknameForSpecies
-    pop {r0-r2}
-    pop {r3}
-    mov lr, r3
+    ldrb r0, [r4]
+    cmp r0, #0xF5
+    bne .Lhof_nickname_native_width
+    ldrb r0, [r4, #1]
+    cmp r0, #0xF2
+    bne .Lhof_nickname_native_width
+    ldrb r0, [r4, #2]
+    ldrb r1, [r4, #3]
+    lsls r1, r1, #8
+    orrs r0, r1
+    adds r5, r0, #0
+    lsls r0, r0, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r1, [r1, r0]
+    adds r1, #1
+    movs r6, #0
+    movs r2, #0
+.Lhof_nickname_measure:
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lhof_nickname_measured
+    cmp r0, #0x7F
+    beq .Lhof_nickname_measure_pair
+    cmp r0, #0x60
+    blo .Lhof_nickname_measure_single
+    cmp r0, #0x7D
+    bhi .Lhof_nickname_measure_single
+    cmp r0, #0x65
+    beq .Lhof_nickname_measure_single
+    cmp r0, #0x7A
+    beq .Lhof_nickname_measure_single
+.Lhof_nickname_measure_pair:
+    adds r1, #2
+    adds r6, #12
+    b .Lhof_nickname_measure_next
+.Lhof_nickname_measure_single:
+    adds r1, #1
+    adds r6, #8
+.Lhof_nickname_measure_next:
+    adds r2, #1
+    b .Lhof_nickname_measure
+.Lhof_nickname_measured:
+    cmp r2, #5
+    bne .Lhof_nickname_normal_width
+    adds r0, r5, #0
+    adds r1, r4, #0
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+    movs r6, #40
+.Lhof_nickname_normal_width:
+    adds r0, r6, #0
+    b .Lhof_nickname_width_done
+.Lhof_nickname_native_width:
+    adds r0, r5, #0
+    adds r1, r4, #0
+    adds r2, r6, #0
     ldr r3, =0x08005DAD
+    bl .Lhof_display_call_r3
+.Lhof_nickname_width_done:
+    pop {r4-r6}
+    pop {r1}
+    bx r1
+.Lhof_display_call_r3:
     bx r3
-.Lnickname_router_call_r3:
-    bx r3
-.Lnickname_tail_copy_mon:
-    ldr r3, =ChsCopyMonNickname + 1
-    bx r3
+
+.align 2
+.global ChsHallOfFameSpeciesPrint
+.type ChsHallOfFameSpeciesPrint, %function
+.thumb_func
+ChsHallOfFameSpeciesPrint:
+    mov r0, sp
+    adds r0, #0x0C
+    push {r4-r7, lr}
+    sub sp, #0x2C
+    adds r4, r0, #0
+    ldrb r5, [r4, #5]
+    ldrh r0, [r7, #8]
+    lsls r0, r0, #23
+    lsrs r0, r0, #23
+    add r1, sp, #0x10
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+    cmp r0, #0
+    beq .Lhof_species_print
+    add r4, sp, #0x0C
+    adds r4, #3
+    movs r0, #0xBA
+    strb r0, [r4]
+    adds r1, r4, #1
+.Lhof_species_find_end:
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lhof_species_append_gender
+    adds r1, #1
+    b .Lhof_species_find_end
+.Lhof_species_append_gender:
+    strb r5, [r1]
+    movs r0, #0xFF
+    strb r0, [r1, #1]
+.Lhof_species_print:
+    str r6, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    str r4, [sp, #8]
+    movs r1, #1
+    movs r2, #0x7A
+    movs r3, #1
+    ldr r4, =JP_ADD_TEXT_PRINTER_PARAM3
+    bl .Lhof_species_call_r4
+    add sp, #0x2C
+    pop {r4-r7}
+    pop {r0}
+    ldr r0, =0x08174AD5
+    bx r0
+.Lhof_species_call_r4:
+    bx r4
 
 .align 2
 .type ChsTruncateNickname, %function
