@@ -165,8 +165,15 @@ $(PATCH_BUILD)/payload.o: patch/chinese_engine.s $(PATCH_BUILD)/texts.inc \
 		$(PATCH_BUILD)/easy_chat_footer_tiles.lz $(PATCH_BUILD)/easy_chat_footer_map.lz
 	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
 
-$(PATCH_ELF): $(PATCH_BUILD)/payload.o patch/payload.ld
-	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $<
+$(PATCH_BUILD)/npc_names.h: patch/tools/build_npc_name_display.py baserom_jp.gba patch/charmap_chs.txt ../pokeemerald_us_chs/src/data/trainers.h ../pokeemerald_us_chs/src/data/battle_frontier/battle_frontier_trainers.h ../pokeemerald_us_chs/src/data/battle_frontier/battle_tent.h ../pokeemerald_wokann_dev/include/constants/opponents.h ../pokeemerald_wokann_dev/src/data/battle_frontier/battle_frontier_trainers.h ../pokeemerald_wokann_dev/src/data/battle_frontier/battle_tent.h
+	mkdir -p $(PATCH_BUILD)
+	$(PYTHON) patch/tools/build_npc_name_display.py
+
+$(PATCH_BUILD)/npc_name_display.o: patch/npc_name_display.c $(PATCH_BUILD)/npc_names.h
+	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -I$(PATCH_BUILD) -c $< -o $@
+
+$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o patch/payload.ld
+	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o
 
 $(PATCH_BIN): $(PATCH_ELF)
 	$(PATCH_OBJCOPY) -O binary $< $@

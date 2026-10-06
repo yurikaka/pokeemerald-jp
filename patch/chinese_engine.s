@@ -5,6 +5,57 @@
 .section .text
 .align 2
 
+@ Reproduce all 16 overwritten bytes, not just the first eight. These
+@ trampolines retain the original JP getter for save/link callers.
+.global ChsOriginalFrontierName
+.type ChsOriginalFrontierName, %function
+.thumb_func
+ChsOriginalFrontierName:
+    push {r4-r7, lr}
+    adds r6, r0, #0
+    lsls r1, r1, #16
+    lsrs r5, r1, #16
+    movs r4, #0
+    ldr r3, =0x08165A4D
+    bl .Lnpc_call_r3
+    movs r0, #0xFA
+    ldr r3, =0x08162D35
+    bx r3
+
+.global ChsOriginalBrainName
+.type ChsOriginalBrainName, %function
+.thumb_func
+ChsOriginalBrainName:
+    push {r4, lr}
+    adds r4, r0, #0
+    ldr r0, =0x02022C90
+    ldr r0, [r0]
+    movs r1, #0x80
+    lsls r1, r1, #17
+    ands r0, r1
+    cmp r0, #0
+    ldr r3, =0x081A4955
+    bx r3
+
+.global ChsOriginalDomeName
+.type ChsOriginalDomeName, %function
+.thumb_func
+ChsOriginalDomeName:
+    push {r4-r6, lr}
+    adds r6, r0, #0
+    lsls r1, r1, #16
+    lsrs r5, r1, #16
+    movs r4, #0
+    ldr r3, =0x08165A4D
+    bl .Lnpc_call_r3
+    ldr r0, =0x3FE
+    ldr r3, =0x081954A9
+    bx r3
+.Lnpc_call_r3:
+    bx r3
+.ltorg
+.align 2
+
 .global ChsContestResultsNames
 .type ChsContestResultsNames, %function
 .thumb_func
@@ -2771,6 +2822,11 @@ ChsBufferMatchCallNameAndDesc:
     ldr r1, [r1, r0]
     str r1, [sp]
 .Lmc_list_have_pointers:
+    @ Names in the original table are now JP for persistence; resolve only
+    @ this display pointer, including special match-call entries.
+    ldr r0, [sp, #4]
+    bl ChsResolveTrainerDisplayName
+    str r0, [sp, #4]
     ldr r1, [sp]
     cmp r1, #0
     beq .Lmc_list_blank
