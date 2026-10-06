@@ -1,6 +1,6 @@
 # Strict batch text-reference audit
 
-{"confirmed_text_and_reference": 10489, "reference_located_target_unproven": 330, "unproven": 298, "text_confirmed_reference_unproven": 653}
+{"confirmed_text_and_reference": 10489, "reference_located_target_unproven": 331, "unproven": 298, "text_confirmed_reference_unproven": 653}
 
 Unproven means insufficient evidence, not necessarily a bug. Existing source-definition-only audits are not accepted.
 
@@ -1021,10 +1021,11 @@ Unproven means insufficient evidence, not necessarily a bug. Existing source-def
 | 439_checklist_common_placeholders.json | 67 | 0x08569020 | 0x0825167C | gTVWhatsNo1InHoennTodayText01 | reference_located_target_unproven |
 | 439_checklist_common_placeholders.json | 92 | 0x080B1CF4 | 0x0852B230 | gText_NumPlayerLink | reference_located_target_unproven |
 | 439_checklist_common_placeholders.json | 93 | 0x08242D28 | 0x08243DB3 | gText_PlayerFoundOneTMHM | reference_located_target_unproven |
-| 439_checklist_common_placeholders.json | 115 | 0x080121D0 | 0x082C069C | sText_AwaitingCommunication | reference_located_target_unproven |
-| 439_checklist_common_placeholders.json | 116 | 0x0801252C | 0x082C069C | sText_AwaitingCommunication | reference_located_target_unproven |
-| 439_checklist_common_placeholders.json | 117 | 0x08012910 | 0x082C092C | sText_CancelModeWithTheseMembers | reference_located_target_unproven |
-| 439_checklist_common_placeholders.json | 118 | 0x08569024 | 0x082516E4 | gTVWhatsNo1InHoennTodayText02 | reference_located_target_unproven |
+| 439_checklist_common_placeholders.json | 94 | 0x08242DA3 | 0x08243DB3 | gText_PlayerFoundOneTMHM | reference_located_target_unproven |
+| 439_checklist_common_placeholders.json | 116 | 0x080121D0 | 0x082C069C | sText_AwaitingCommunication | reference_located_target_unproven |
+| 439_checklist_common_placeholders.json | 117 | 0x0801252C | 0x082C069C | sText_AwaitingCommunication | reference_located_target_unproven |
+| 439_checklist_common_placeholders.json | 118 | 0x08012910 | 0x082C092C | sText_CancelModeWithTheseMembers | reference_located_target_unproven |
+| 439_checklist_common_placeholders.json | 119 | 0x08569024 | 0x082516E4 | gTVWhatsNo1InHoennTodayText02 | reference_located_target_unproven |
 | 442_checklist_resolved_pointer_tables.json | 3 | 0x0856462C | 0x085CAE0B | gText_NavelRock | reference_located_target_unproven |
 | 450_checklist_verified_event_msgboxes.json | 0 | 0x08242F01 | 0x082439F5 | gText_PokemonCenterSign | reference_located_target_unproven |
 | 453_checklist_named_menu_sections.json | 6 | 0x08564058 | 0x085CAF40 | gText_BasicRules | reference_located_target_unproven |

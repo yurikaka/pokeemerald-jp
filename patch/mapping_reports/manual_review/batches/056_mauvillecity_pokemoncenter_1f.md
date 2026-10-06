@@ -1,0 +1,43 @@
+# Manual review: 056_mauvillecity_pokemoncenter_1f.json
+
+verdicts: {'ok': 37}
+
+| # | address | original | symbol | JP | CN | verdict | notes |
+|---|---|---|---|---|---|---|---|
+| 0 | 0x08254DF1 | 0x08256479 | MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues1 | そう⋯⋯\nわし　ざんねん⋯⋯ | 哎⋯⋯\n你真是给我泼了一盆冷水⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 1 | 0x08254E64 | 0x082564DC | MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues2 | そう⋯⋯\nわし　ざんねん⋯⋯ | 哎⋯⋯\n你真是给我泼了一盆冷水⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 2 | 0x082550F3 | 0x0825502A | MauvilleCity_PokemonCenter_1F_Text_CantTradeThatOne | ああ！　ごめん！\nそれ　とっても　レアな　グッズ　だから{FA}こうかん　できないんだ！{FB}ほかに　ほしい　グッズ　ある？ | 啊！抱歉！\n这件装饰物品太珍贵了。{FA}不能交换这个！\n有其他想要的吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 3 | 0x082562F2 | 0x0825525F | MauvilleCity_PokemonCenter_1F_Text_CouldThereBeOtherLegends | これより　もっとすごい\nでんせつを　もってる　トレーナー{FA}どこかに　いない　かなあ⋯ | 我开始想，是否还有其他\n训练家有着更感人的故事{FA}等待着人们的发现呢？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 4 | 0x08256317 | 0x0825528A | MauvilleCity_PokemonCenter_1F_Text_HaveYouAnyLegendaryTales | ⋯⋯きみ　トレーナー？{FB}だったら　なにか　でんせつっぽい　はなし\nきかせてよ | 你是训练家吗？{FB}那么告诉我吧，\n你听说过更遥远的传说吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 5 | 0x08254EAB | 0x08256597 | MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfWord | きみ　{STR_VAR_1}って\nことば　しってる？{FB}いみ？　それはね⋯⋯\nおとうさんか　おかあさんに　きいてみて | 嘿，你听过\n“{STR_VAR_1}”吗？{FB}那是什么意思？好的⋯⋯\n去问你的爸爸妈妈，明白吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 6 | 0x082563C8 | 0x08256362 | MauvilleCity_PokemonCenter_1F_Text_HearMyStory | わし　メルヘンおやじ\nとても　いい　はなし　するよ{FB}わしの　ハナシ　ききたい？ | 我是格蒂！\n我给你准备了一个非常炫的故事！{FB}想听听吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 7 | 0x08254E89 | 0x08256549 | MauvilleCity_PokemonCenter_1F_Text_IAlreadyTaughtYou | でも　きみには　このまえ　おしえたよね{FB}こんどは　ほかの　ひとに　おしえたいなぁ | 但是，嘿，我已经教了你很多\n潮流的东西了。{FB}我还想和别人分享这么\n美妙的话语。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 8 | 0x0825630F | 0x082551E6 | MauvilleCity_PokemonCenter_1F_Text_IKnowNoTales | でも　わし⋯⋯\nでんせつの　トレーナーの　はなし{FA}なにも　しらない{FB}どこかに　でんせつに　のこる\nトレーナーは　いないかなあ | 不过，我不知道什么传说中的训练家。\n所以，也就不知道有什么故事。{FB}这世上存在能称为\n传说中的训练家的人吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 9 | 0x08256358 | 0x082552ED | MauvilleCity_PokemonCenter_1F_Text_IWishMorePeopleWereInterested | もっと　たくさんの　ひとに\nでんせつの　トレーナーの　はなし{FA}きいて　ほしいなあ | 真希望能有更多的人来听\n我这些关于传说中的训练家们{FA}的史诗般的故事。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 10 | 0x08254E5A | 0x0825650E | MauvilleCity_PokemonCenter_1F_Text_IllSingThisSongForAWhile | よし　わかった！\nしばらく　このうたを　うたって　みるよ！ | 好极了！就是这样。\n我马上就唱这首歌。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 11 | 0x08254EA1 | 0x08256572 | MauvilleCity_PokemonCenter_1F_Text_IveGotNothingNewToTeach | でも　きみ　ことば　たくさん　しってるね\nおしえること　ぜんぜん　ないよ | 但是，嘿，你已经能抓住\n最新潮流的去向了。{FB}我没什么新东西可以交给你了！ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 12 | 0x08254E31 | 0x082564EB | MauvilleCity_PokemonCenter_1F_Text_LetMeSingItForYou | ありがとう！\nじゃあ　うたって　みるぞ！ | 太感谢你了！\n让我为你尽情的唱吧。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 13 | 0x0825633A | 0x082552C5 | MauvilleCity_PokemonCenter_1F_Text_NotWorthyOfLegend | ⋯⋯うーん　ものたりない　なあ{FB}もっと　すごい　はなしを\nきかせて　ほしいなあ | 嗯⋯⋯\n我不满意啊⋯⋯{FB}希望你能让我听到\n值得成为传说的故事啊。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 14 | 0x082550C3 | 0x08254F3B | MauvilleCity_PokemonCenter_1F_Text_OnceBelongedToPlayerDoYouWantIt | それは　{STR_VAR_1}さんが\nつかってた　グッズ　だよ{FB}これに　するかい？ | 这个可是{STR_VAR_1}\n用过的装饰物品。{FB}要交换吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 15 | 0x08255088 | 0x08254F01 | MauvilleCity_PokemonCenter_1F_Text_PickADecorItem | これ　わしが　もってる　グッズ\nなにか　ほしいの　あったら　いってね | 如果你看到我这里有什么\n你想要的装饰物品，就直说吧。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 16 | 0x082550FF | 0x08254F01 | MauvilleCity_PokemonCenter_1F_Text_PickADecorItem | これ　わしが　もってる　グッズ\nなにか　ほしいの　あったら　いってね | 如果你看到我这里有什么\n你想要的装饰物品，就直说吧。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 17 | 0x08255116 | 0x08254F78 | MauvilleCity_PokemonCenter_1F_Text_PickTheDecorToTrade | じゃあ　こうかんに　だしてくれる\nグッズを　えらんで！ | 那么，选择你要用来\n跟我交换的装饰物品吧。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 18 | 0x0825515C | 0x08255009 | MauvilleCity_PokemonCenter_1F_Text_SendDecorToYourPC | じゃあ　こうかん！{FA}きみの　パソコンに\nグッズを　おくっておくよ | 那么开始交换！\n我把我的装饰物品发送到你的电脑。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 19 | 0x08255146 | 0x08254FC3 | MauvilleCity_PokemonCenter_1F_Text_SoWellTradeTheseDecor | じゃあ　わしの　{STR_VAR_3}と\nきみの　{STR_VAR_2}を　こうかんするよ？ | 那么，开始用我的{STR_VAR_3}\n和你的{STR_VAR_2}交换吧？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 20 | 0x0825634E | 0x082551B4 | MauvilleCity_PokemonCenter_1F_Text_StorytellerFeelingTheBlues | そう⋯⋯\nわし　ざんねん⋯⋯ | 这样啊⋯⋯\n真遗憾⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 21 | 0x08254E73 | 0x0825652C | MauvilleCity_PokemonCenter_1F_Text_TeachWhatsHipAndHappening | わし　ナウイおやじ\nいまどきの　ナウイことば　おしえるよ | 嘿，你！别人都叫我时髦青年。\n我会教给你如何走在时代的最前端。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 22 | 0x08255170 | 0x08254FE0 | MauvilleCity_PokemonCenter_1F_Text_ThatDecorIsInUse | きみ　いま　そのグッズ　かざってるね\nかざってる　グッズは　こうかん　できないよ | 这件装饰物品在使用中。\n不能交换。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 23 | 0x08254E44 | 0x08256500 | MauvilleCity_PokemonCenter_1F_Text_ThatHowYouWantedSongToGo | こんな　かんじで　いいの？ | 这就是你想让你的歌达到的\n效果吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 24 | 0x08255095 | 0x08254ED6 | MauvilleCity_PokemonCenter_1F_Text_TraderFeelingTheBlues | そう⋯⋯\nわし　ざんねん⋯⋯ | 是吗⋯⋯\n真是遗憾啊⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 25 | 0x08255068 | 0x08254EB6 | MauvilleCity_PokemonCenter_1F_Text_WantToTradeDecor | わし　グッズこうかんオヤジ\nわしと　グッズの　こうかん　する？ | 我是装饰物品交换大叔。\n要跟我交换装饰物品吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 26 | 0x0825509F | 0x08254EE5 | MauvilleCity_PokemonCenter_1F_Text_WeveAlreadyTraded | でも　きみとは　このまえ\nグッズの　こうかん　したよね | 不过，我们之前\n有交换过装饰物品哦。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 27 | 0x082562B7 | 0x082551C3 | MauvilleCity_PokemonCenter_1F_Text_WhichTaleToTell | わしが　しってる　でんせつは　これだけ\nどの　でんせつが　ききたい？ | 我知道这些传说。\n你想听哪个？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 28 | 0x08256295 | 0x08255186 | MauvilleCity_PokemonCenter_1F_Text_WillYouHearMyTale | わし　でんせつおやじ\nでんせつの　トレーナーの　はなし　するよ{FB}わしの　ハナシ　ききたい？ | 我是吟游诗人。\n我可以告诉你传说中的{FA}训练家的故事。{FB}想听我的故事吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 29 | 0x08254DE7 | 0x08256488 | MauvilleCity_PokemonCenter_1F_Text_WishICouldPlaySongForOthers | あぁ　いい　うた　だなぁ\nほかの　ひとにも　きかせて　みたいなあ | 啊，多么动感的音乐⋯⋯\n我真希望能演奏给别人听⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 30 | 0x08254DAF | 0x0825645C | MauvilleCity_PokemonCenter_1F_Text_WouldYouLikeToHearMySong | わし　シンガーソングおやじ\nわしの　うた　きいてくれる？ | 嘿，我是巴德。\n想听听我的歌吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 31 | 0x08254DFB | 0x082564A9 | MauvilleCity_PokemonCenter_1F_Text_WouldYouLikeToWriteSomeLyrics | どう？　わしの　うた？{FB}でも　ちょっと　かしが　きにいらない{FB}だから　きみ　ちょっと　かえてくれる？ | 是这样吗？\n你有多喜欢我的歌？{FB}但是我对歌词\n一点都不满意。{FB}能为我写一篇新\n歌词吗？ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 32 | 0x08256344 | 0x08255225 | MauvilleCity_PokemonCenter_1F_Text_YouDidStatXTimes | ⋯⋯え！！！{FB}きみ　{STR_VAR_1}かい　も\n{STR_VAR_2}　の！？{FB}⋯⋯ううむ　それは　すごい！\nあたらしい　でんせつの　はじまりだ！ | 啊？！\n你⋯⋯你⋯⋯{FB}{STR_VAR_2}\n{STR_VAR_1}次？！{FB}太强了！\n这是新传说的诞生啊！ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 33 | 0x0825510C | 0x08254F5C | MauvilleCity_PokemonCenter_1F_Text_YouDontHaveAnyDecor | ⋯⋯って　きみ　グッズ\nひとつも　もってない　じゃん！ | 嗯⋯⋯等一下，你这家伙，\n一件装饰物品也没有嘛！ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 34 | 0x082550EA | 0x08254F24 | MauvilleCity_PokemonCenter_1F_Text_YouDontWantAnything | ほしい　グッズ　ないの？\nわし　ざんねん⋯⋯ | 没有想要的吗？\n真遗憾⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 35 | 0x08255166 | 0x08254F94 | MauvilleCity_PokemonCenter_1F_Text_YouDontWantToTrade | こうかん　して　くれないの？\nわし　ざんねん⋯⋯ | 你不想跟我换？\n真遗憾⋯⋯ | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |
+| 36 | 0x0825517E | 0x08254FAD | MauvilleCity_PokemonCenter_1F_Text_YouveNoRoomForThis | きみ　{STR_VAR_2}が　いっぱいで\nもう　もてないよ | 你有太多{STR_VAR_2}了。\n已经放不下了。 | ok | msgbox words; CN faithful (US汉化 names like 格蒂/巴德 inherited) |

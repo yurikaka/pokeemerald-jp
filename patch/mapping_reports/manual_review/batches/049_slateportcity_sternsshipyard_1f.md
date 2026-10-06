@@ -1,0 +1,14 @@
+# Manual review: 049_slateportcity_sternsshipyard_1f.json
+
+verdicts: {'ok': 8}
+
+| # | address | original | symbol | JP | CN | verdict | notes |
+|---|---|---|---|---|---|---|---|
+| 0 | 0x081FAB9B | 0x081FAD7D | SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs | ツガ“やあ！　ハギろうじんが　ここで\nてつだって　くれるように　なったよ！{FB}でんせつの　ふなのりに　てつだってもらえて\nれんらくせんは　ちゃくちゃくと{FA}かんせいに　むかっているよ！ | 津贺：嗨！哈奇老人\n也来帮我们的忙了。{FB}多亏了这位资深老水手，\n渡轮的组装正在顺利进行中。 | ok | script msgbox words; CN faithful |
+| 1 | 0x081FABCE | 0x081FAD21 | SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran | ツガ“ふねをつくる　っていうのは\nつくえの　うえでの　けいさん　だけでは{FA}わからないことも　おおくてね{FB}やっぱり　うみのことを　しりつくした\nベテランの　ちえが　ほしいところだよ⋯⋯ | 津贺：造船是一门艺术。{FB}很多东西并不是\n只靠计算就能够知道的。{FB}真希望能向哪位熟悉大海的\n资深老水手请教一下⋯⋯ | ok | script msgbox words; CN faithful |
+| 2 | 0x081FABAF | 0x081FACDE | SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern | ツガ“クスノキかんちょう\nどこに　いっちゃったのかな？{FB}わるいけど　きみ　クスノキかんちょう\nさがして　にもつを　わたしてあげてよ！ | 津贺：楠木馆长\n去哪儿了呢？{FB}可以请你帮忙找找楠木馆长，\n把包裹交给他吗？ | ok | script msgbox words; CN faithful |
+| 3 | 0x081FABEA | 0x081FAE4A | SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock | ハギ“おお！　{PLAYER}{KUN}！\nひさしぶり　じゃのう！{FB}いやあ　きみと　であってから\nふなのりの　ちが　さわいでな⋯⋯{FB}ツガくんに　きょうりょく　して\nれんらくせんを　つくりたく　なったんじゃ！{FB}れんらくせんが　できると　おおくの\nひとを　はこべるように　なるからのう{FB}しかし⋯⋯　ふむう⋯⋯\nツガくんは　すごいのう⋯⋯{FB}かれの　ぎじゅつと　わしの　けいけんを\nがったい　させれば　かならずや{FA}すごい　ふねが　できるに　ちがいない！ | 哈奇：啊，{PLAYER}{KUN}！\n好久不见！{FB}自从我遇见了你，\n我这个老水手又焕发青春啦！{FB}所以我决定来\n帮津贺造渡轮。{FB}毕竟你看，\n渡轮上可以载很多人呢。{FB}那个津贺\n也真不简单。{FB}有他的技术和我的经验，\n我敢肯定我们一定{FA}能造出一了不起的船！ | ok | script msgbox words; CN faithful |
+| 4 | 0x081FAB87 | 0x081FADD8 | SlateportCity_SternsShipyard_1F_Text_FerryIsReady | ツガ“ついに　ふねは　かんせいしたよ！{FB}できた　れんらくせん　タイドリップごうは\nまさに　さいこう　けっさく！{FB}だけど　もっと　いいものが　できそうな⋯⋯\nそんな　きも　するんだよ{FB}そう⋯⋯\nものづくりに　おわりは　ないのさ！ | 津贺：渡轮终于造好了！{FB}这崭新的破浪号是\n工业技术的奇迹！{FB}但我觉得我们\n甚至还能做得更好。{FB}要知道，技术的进步\n永无止境。 | ok | script msgbox words; CN faithful |
+| 5 | 0x081FABE1 | 0x081FAF7A | SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily | ぼくは　すぐに　ふなよい　するのよね\nだから　ここで　おてつだい　してるのよね | 我很容易晕船，\n所以我只能到这儿来帮忙。 | ok | script msgbox words; CN faithful |
+| 6 | 0x081FAB62 | 0x081FAC36 | SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern | ⋯⋯ん？{FB}ぼくは　クスノキかんちょう　から\nれんらくせんの　せっけいを　まかされた{FA}ツガという　ものだけど⋯⋯{FB}あっ！？\nそれは　デボンのにもつ！{FB}うーん⋯⋯\nこまったな⋯⋯{FB}クスノキかんちょう\nほかにも　しごとが　あるからって{FA}どこかに　いっちゃったんだ{FB}わるいけど　きみ　クスノキかんちょう\nさがして　にもつを　わたしてあげてよ！ | 嗯？\n你好，我是津贺。{FB}楠木馆长雇我来\n设计一艘渡轮。{FB}啊！那个⋯⋯\n那是得文的物品吗？{FB}但是，呃⋯⋯\n这样不行⋯⋯{FB}楠木馆长出去了，\n他说有些事要处理。{FB}可以请你帮忙找找楠木馆长，\n把包裹交给他吗？ | ok | script msgbox words; CN faithful |
+| 7 | 0x081FABD8 | 0x081FAF20 | SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing | きせつや　てんきや　つきのいち　など\nさまざまな　じょうけん　によって{FA}うみは　つねに　すがたを　かえていきます{FB}そう！　うみ　というのは\nいきもの　のような　もの　なんですよ！ | 季节，天气，\n月亮在天空中的位置⋯⋯{FB}这些，还有其他很多东西\n都会对大海产生影响。{FB}是的！\n大海就好像生物一样！ | ok | script msgbox words; CN faithful |

@@ -1,0 +1,14 @@
+# Manual review: 015_wallys_house.json
+
+verdicts: {'ok': 7, 'ok-intentional': 1}
+
+| # | address | original | symbol | JP | CN | verdict | notes |
+|---|---|---|---|---|---|---|---|
+| 0 | 0x081F8136 | 0x081F82AE | PetalburgCity_WallysHouse_Text_PleaseExcuseUs | {PLAYER}{KUN}！\nむりに　よびだして　すまなかったね！{FB}ミツルは　シダケタウンに　いってから\nすっかり　げんきを　とりもどしたよ！{FB}それも　みんな　きみの　おかげさ！{FB}なにしろ　このまちを　でるときに\nミツルが　ポケモンを　つかまえるのを{FA}てつだって　くれただろう？{FB}あのときの　ことが　ミツルは　とっても\nうれしかった　らしいんだ！{FB}いや　ミツル　だけじゃない\nちちおやの　わたしも　うれしいよ！{FB}あのこに　きみの　ような\nやさしい　ともだちが　できたことが　ね！{FB}そのおれい　という　わけでは　ないけど\nこれを　うけとって　くれないか！ | {PLAYER}{KUN}！原谅我们\n这样拉你过来，{FB}但是，自从我家满充去了\n绿茵镇之后，他的身体好多了。{FB}我们都欠你的情！{FB}满充离开镇子前，\n是你陪他捕捉了一只宝可梦对吗？{FB}我想那让满充\n非常开心。{FB}实际上，不只是满充，\n作为父亲的我也很开心，{FB}很开心他能交上\n你这样的好朋友。{FB}这点礼物虽然不算什么\n但还是请你收下。 | ok | script msgbox words; CN faithful |
+| 1 | 0x081F814D | 0x081F83BA | PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces | なみのりを　つかえるように　なれば\nいろんな　ばしょに　いけるように　なるよ！ | 如果你的宝可梦会冲浪，\n你就可以去很多地方了。 | ok | script msgbox words; CN faithful |
+| 2 | 0x081F8179 | 0x081F81C1 | PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally | きみは⋯⋯\nそうか　{PLAYER}{KUN}　だね？{FB}さっきは　ミツルの　あいてを　してくれて\nありがとう⋯⋯{FB}あのこは　うまれた　ときから\nからだが　じょうぶでは　なくてね{FB}それで　すこしの　あいだ　シダケタウンの\nわたしの　しんせきの　うちで{FA}あずかってもらう　ことに　したんだよ{FB}あそこは　ここよりも　ずっと\nくうきが　きれいな　ところ　だからね！{FB}⋯⋯で　ミツルかい？　ミツルなら\nもう　しゅっぱつ　していったよ{FB}いまごろは　どの　あたりかなあ⋯⋯ | 你是⋯⋯\n啊，你一定就是{PLAYER}{KUN}吧？{FB}谢谢你刚才能\n和满充一起玩。{FB}他从小就体弱多病。{FB}我们打算送他到\n绿茵镇的亲戚家去，{FB}那里的空气\n比这儿洁净。{FB}什么？满充在哪儿？\n我们家满充已经出发了。{FB}不知道现在\n该到哪儿了呢？ | ok | script msgbox words; CN faithful |
+| 3 | 0x081F8186 | 0x081F83E2 | PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon | もうすぐ　ミツルが　かえってくるぞ！\nたのしみだなあ⋯⋯！ | 满充很快就会回家了，\n真想快点见到他。 | ok | script msgbox words; CN faithful |
+| 4 | 0x081F81B9 | 0x081F849F | PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling | うちの　しゅじんには　ないしょ　だけど{FB}じつは　ミツルったら　シダケタウンを\nかってに　でて　いっちゃった　らしいの⋯⋯{FB}あのこ　からだは　よわかったけど\nあんがい　しっかりした　せいかく　だから{FA}かならず　ぶじで　かえってくると{FA}わたしは　しんじてるわ！ | 有件事你一定要\n对我丈夫保密⋯⋯{FB}我们的满充没跟任何人说\n就离开了绿茵镇。{FB}你知道，尽管满充身体很弱，\n但他的意志很坚强。{FB}我知道他总有一天\n会平安无事地回家的！ | ok | script msgbox words; CN faithful |
+| 5 | 0x081F81AF | 0x081F8465 | PetalburgCity_WallysHouse_Text_WallyWasReallyHappy | ミツルが　ポケモンを　つかまえた　って\nすごく　うれしそうに　はなしていたの{FB}あのこの　あんな　えがお　ひさしぶり | 满充非常兴奋地告诉我们\n他捕捉到了一只宝可梦。{FB}已经有很多年没看到过\n他那快乐的笑容了。 | ok | script msgbox words; CN faithful |
+| 6 | 0x081F819A | 0x081F829E | PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing | ミツルは　どうしてるかなあ⋯⋯ | 不知道我家满充在做什么？ | ok | script msgbox words; CN faithful |
+| 7 | 0x081F8190 | 0x081F8400 | PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity | ええっ！？　サイユウシティで\nミツルと　であった　だって⋯⋯？{FB}んもう　{PLAYER}{KUN}ってばー{FB}いくら　あのこが　げんきに　なったからって\nそんな　とおくの　まち　まで{FA}ひとりで　いけるわけ　ないよねえ⋯⋯ | 哦？你在彩悠市\n遇到了满充？{FB}哎，{PLAYER}{KUN}，别闹了。{FB}他可能健康多了，\n但它不可能一个人{FA}到那么远的地方去。 | ok-intentional | US汉化 typo 它->他 for Wally; recorded in FINDINGS.md |

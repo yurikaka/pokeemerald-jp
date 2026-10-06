@@ -1,0 +1,34 @@
+# Manual review: 079_lavaridgetown_gym_1f.json
+
+verdicts: {'ok': 28}
+
+| # | address | original | symbol | JP | CN | verdict | notes |
+|---|---|---|---|---|---|---|---|
+| 0 | 0x081F448C | 0x081F46A9 | LavaridgeTown_Gym_1F_Text_AxleDefeat | アスナさんに　まけてしまえーっ！ | 我想看到你被亚莎的火焰燃烧！ | ok | trainerbattle+msgbox; CN faithful |
+| 1 | 0x081F4488 | 0x081F4685 | LavaridgeTown_Gym_1F_Text_AxleIntro | ストレスを　かいしょう　する\nおれの　ひとときを　ジャマ　するなーっ！ | 我在想办法减轻压力，\n别过来再给我施压！ | ok | trainerbattle+msgbox; CN faithful |
+| 2 | 0x081F4496 | 0x081F46BA | LavaridgeTown_Gym_1F_Text_AxlePostBattle | はあ　ふう⋯⋯{FB}すなブロに　ながく　はいっていると\nけっこう　つかれちゃう　もんだよ⋯⋯ | 哈啊⋯⋯呼⋯⋯{FB}埋在热沙子里太久，\n都没力气了⋯⋯ | ok | trainerbattle+msgbox; CN faithful |
+| 3 | 0x081F445C | 0x081F4650 | LavaridgeTown_Gym_1F_Text_ColeDefeat | あせが　めに　しみるぜ⋯⋯ | 汗水把眼睛都遮住了⋯⋯ | ok | trainerbattle+msgbox; CN faithful |
+| 4 | 0x081F4458 | 0x081F4638 | LavaridgeTown_Gym_1F_Text_ColeIntro | あちちちちちっ！\nぷはーっ！　あつかったーっ！ | 啊啊啊啊！\n呀，好烫！ | ok | trainerbattle+msgbox; CN faithful |
+| 5 | 0x081F4466 | 0x081F465E | LavaridgeTown_Gym_1F_Text_ColePostBattle | すなブロは　けっこうが　よくなって\nかんせつの　いたみに　こうかてき　だぜ！ | 埋在热沙子里可以促进\n血液循环，{FB}对治疗关节疼痛\n有好处。 | ok | trainerbattle+msgbox; CN faithful |
+| 6 | 0x081F44C2 | 0x081F480E | LavaridgeTown_Gym_1F_Text_DanielleDefeat | なんて　つよいの！？ | 呀，你太强了。 | ok | trainerbattle+msgbox; CN faithful |
+| 7 | 0x081F44BE | 0x081F47F4 | LavaridgeTown_Gym_1F_Text_DanielleIntro | えーっと！\nじゃあ　しょうぶの　あいて　しますね！ | 呃⋯⋯\n好吧，我就和你对战吧。 | ok | trainerbattle+msgbox; CN faithful |
+| 8 | 0x081F44CC | 0x081F4819 | LavaridgeTown_Gym_1F_Text_DaniellePostBattle | あたしも　アスナさんと　いっしょに\nきれいで　つよい　トレーナーに　なるんだ！ | 我要成为亚莎那样\n漂亮又强大的训练家。 | ok | trainerbattle+msgbox; CN faithful |
+| 9 | 0x081F43A1 | 0x081F4AB5 | LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis | ヒートバッジが　あれば\nレベル50　までなら{FA}ひとから　もらった　ポケモンでも{FA}いうことを　きいて　くれるんだ！{FB}それに　ひでんわざの　かいりき　が\nつかえるようにも　なるよ！{FB}これは　かんしゃの　きもち\nえんりょ　せずに　もらって！ | 有了烈焰徽章，\n所有等级50以内的宝可梦，{FA}即使是从别人那儿交换得来的{FA}也会完全听你的。{FB}另外，宝可梦也能在对战外\n使用秘传招式怪力了。{FB}这是我的小小谢礼，\n请别客气，收下吧！ | ok | trainerbattle+msgbox; CN faithful |
+| 10 | 0x081F4409 | 0x081F4B2B | LavaridgeTown_Gym_1F_Text_ExplainOverheat | わざマシン50　には\nオーバーヒートが　はいってるよ！{FB}その　わざは　あいてに\nおおきな　ダメージを　あたえるんだ！{FB}だけど　とくこうが\nがくっと　さがっちゃう　から{FA}ながい　しょうぶには　むかないかも{FB}⋯⋯　⋯⋯　⋯⋯ | 那个招式学习器50里\n装着的是过热，{FB}能对对手造成\n巨大的伤害。{FB}但同时，使用它的宝可梦\n特攻会急剧下降。{FA}这个招式不太适合持久战。 | ok | trainerbattle+msgbox; CN faithful |
+| 11 | 0x081F442D | 0x081F4B2B | LavaridgeTown_Gym_1F_Text_ExplainOverheat | わざマシン50　には\nオーバーヒートが　はいってるよ！{FB}その　わざは　あいてに\nおおきな　ダメージを　あたえるんだ！{FB}だけど　とくこうが\nがくっと　さがっちゃう　から{FA}ながい　しょうぶには　むかないかも{FB}⋯⋯　⋯⋯　⋯⋯ | 那个招式学习器50里\n装着的是过热，{FB}能对对手造成\n巨大的伤害。{FB}但同时，使用它的宝可梦\n特攻会急剧下降。{FA}这个招式不太适合持久战。 | ok | trainerbattle+msgbox; CN faithful |
+| 12 | 0x081F4369 | 0x081F4A13 | LavaridgeTown_Gym_1F_Text_FlanneryDefeat | くう⋯⋯\nかたに　ちから　はいっちゃって⋯⋯{FB}あたし⋯⋯\nジムリーダーに　なりたて　だからって{FA}ちょっと　むり　していたのかな⋯⋯{FB}やっぱ　じぶんらしく　でないと\nいっしょに　たたかってくれる{FA}ポケモンも　こまっちゃうよね！{FB}それを　おしえてくれた\nあなたに　これ　あげる！ | 哦⋯⋯\n也许我做得太过了⋯⋯{FB}我⋯⋯\n我最近才刚成为道馆馆主，{FA}我试着要装出道馆馆主的样子。{FB}我的宝可梦一定都被我搞糊涂了吧。\n也许我只要按自己的想法做就好。{FB}谢谢你让我明白这点，\n你配得上这枚徽章。 | ok | trainerbattle+msgbox; CN faithful |
+| 13 | 0x081F4365 | 0x081F4961 | LavaridgeTown_Gym_1F_Text_FlanneryIntro | ようこそ　⋯⋯じゃなくて{FB}よくぞ　ここまで　きた　ものだな！{FB}わたしは　ここの　ジムリーダーを\nつとめさせて　いただく　⋯⋯じゃなくて{FB}ジムリーダーを　まかされた　アスナだ！{FB}くう⋯⋯\nジムリーダーに　なりたて　だからって{FA}ゆだん　など　しないことだ！{FB}おじいちゃん　ゆずりの　さいのうと\nこのとちで　みがきあげた　ホットな　わざ{FA}あなたに　みせてやる！ | 欢迎⋯⋯\n哦不，{FB}微不足道的挑战者啊，\n真高兴能看见你坚持到这里！{FB}爷爷托付我⋯⋯\n我是说，{FB}我是亚莎，\n是这个道馆的馆主！{FB}那个⋯⋯\n虽然我不久前才刚上任，{FA}但你可别小看我！{FB}我有爷爷传授给我的技巧，\n我会，那个⋯⋯让你见识一下我们{FA}在这片土地上磨砺而出的火辣招式！ | ok | trainerbattle+msgbox; CN faithful |
+| 14 | 0x081F438C | 0x081F4BB5 | LavaridgeTown_Gym_1F_Text_FlanneryPostBattle | あなたの　つよさ\nだれかを　おもいださせるの　よね⋯⋯{FB}そうだ！　トウカシティの　ジムリーダー\nセンリさんに　にているんだ！ | 你的实力让我想起了某个人⋯⋯{FB}哦！对了！\n你的战斗方式很像橙华道馆的{FA}道馆馆主千里。 | ok | trainerbattle+msgbox; CN faithful |
+| 15 | 0x081F444B | 0x081F4CAF | LavaridgeTown_Gym_1F_Text_FlanneryPostRematch | アスナ“しょうぶには　まけたけど\nこんなに　ヒートする　たたかいが　できて{FA}あたしは　まんぞくよ！{FB}そのうち　また　しょうぶ　しましょうね！ | 亚莎：我输了，\n但是我很满足。{FB}像这样激烈的对战\n可不是每天都有的。{FB}有空的话\n再来一场吧！ | ok | trainerbattle+msgbox; CN faithful |
+| 16 | 0x081F443D | 0x081F4C23 | LavaridgeTown_Gym_1F_Text_FlanneryPreRematch | アスナ“しょうぶに　まけた　ぐらいで\nあたしは　へこたれたり　しない！{FB}なぜなら　あたしは　ポケモンが　すきで\nしょうぶを　するのが　すきで{FA}それに⋯⋯　このジムが　すきだから！{FB}さあ　もういちど　いっしょに\nホットな　わざを　ぶつけあいましょう！ | 亚莎：打输一次不会\n让我泄气。{FB}我爱宝可梦，\n我爱对战，{FA}而且⋯⋯我爱这间道馆！{FB}让我们用炙热的招式\n开战吧！ | ok | trainerbattle+msgbox; CN faithful |
+| 17 | 0x081F4441 | 0x081F4CA0 | LavaridgeTown_Gym_1F_Text_FlanneryRematchDefeat | ふぅ！　ばくはつ　すんぜん！ | 呼！\n快要爆发了！ | ok | trainerbattle+msgbox; CN faithful |
+| 18 | 0x081F4445 | 0x081F4CF6 | LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons | アスナ“しょうぶに　まけた　ぐらいで\nあたしは　へこたれたり　しない！{FB}なぜなら　あたしは　ポケモンが　すきで\nしょうぶを　するのが　すきで{FA}それに⋯⋯　このジムが　すきだから！{FB}さあ　もういちど　いっしょに\nホットな　わざを　ぶつけあいましょう！{FB}⋯⋯あら？　たたかえる　ポケモンを\n1ひきしか　もって　いないんですね{FB}すみませんけど　2ひき　いじょうの\nポケモンを　もって　きてください | 亚莎：打输一次不会\n让我泄气。{FB}我爱宝可梦，\n我爱对战，{FA}而且⋯⋯我爱这间道馆！{FB}让我们用炙热的招式\n开战吧！{FB}啊，慢着，你只带了1只\n可以对战的宝可梦？{FB}你来找我时至少得\n带2只宝可梦吧。 | ok | trainerbattle+msgbox; CN faithful |
+| 19 | 0x081F44DD | 0x081F479F | LavaridgeTown_Gym_1F_Text_GeraldDefeat | もえかたが　たりなかったか⋯⋯ | 火还不够热⋯⋯ | ok | trainerbattle+msgbox; CN faithful |
+| 20 | 0x081F44D9 | 0x081F4780 | LavaridgeTown_Gym_1F_Text_GeraldIntro | おまえの　ポケモン\n200どの　あつさに　たえられるかよ！？ | 你的宝可梦能抵挡\n200摄氏度的高温吗？ | ok | trainerbattle+msgbox; CN faithful |
+| 21 | 0x081F44E7 | 0x081F47AF | LavaridgeTown_Gym_1F_Text_GeraldPostBattle | 200どの　あつさ　ってのは\nようがんの　おんど！{FB}おまえの　ポケモン　おれに　かてたんだから\nようがんの　なかでも　へいき　だろうな！ | 岩浆的温度\n是200摄氏度。{FB}你的宝可梦打败了我，那么在岩浆中\n也应该能比较容易生存下来。 | ok | trainerbattle+msgbox; CN faithful |
+| 22 | 0x081F454C | 0x081F4592 | LavaridgeTown_Gym_1F_Text_GymGuideAdvice | げんき　しとぉや！！\nチャンピオンを　めざす　{PLAYER}！！{FB}フエンタウン　ジムの　リーダー　アスナは\nほのおタイプ　ポケモンの　つかいてだ！{FB}ポケモンに　たいする　じょうねつは\nかざん　よりも　はげしく　あちィ！{FB}うっかり　ちかづくと　やけど　するから\nみずで　ひやしながら{FA}きばってこー　な！！ | 嗨，怎么样，向冠军目标\n冲刺的{PLAYER}？{FB}釜炎镇的道馆馆主亚莎\n使用火属性宝可梦，{FB}她对宝可梦的激情\n比火山还要炙热。{FB}别太接近她——你会被烧焦的！\n用水浇灭她的火焰，{FA}加油吧！ | ok | trainerbattle+msgbox; CN faithful |
+| 23 | 0x081F4556 | 0x081F4625 | LavaridgeTown_Gym_1F_Text_GymGuidePostVictory | いやあー　あちィ　たたかい　だった！ | 异常火热的对战啊！ | ok | trainerbattle+msgbox; CN faithful |
+| 24 | 0x081F458A | 0x081F4BF4 | LavaridgeTown_Gym_1F_Text_GymStatue | フエンタウン　ポケモンジム | 釜炎镇宝可梦道馆 | ok | trainerbattle+msgbox; CN faithful |
+| 25 | 0x081F4580 | 0x081F4C02 | LavaridgeTown_Gym_1F_Text_GymStatueCertified | フエンタウン　ポケモンジム{FB}アスナ　にんてい　トレーナー！\n{PLAYER} | 釜炎镇宝可梦道馆{FB}亚莎认可的训练家：\n{PLAYER} | ok | trainerbattle+msgbox; CN faithful |
+| 26 | 0x081F4395 | 0x081F4A9D | LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge | {PLAYER}は　アスナから\nヒートバッジを　もらった！ | {PLAYER}从亚莎那里\n得到了烈焰徽章。 | ok | trainerbattle+msgbox; CN faithful |
+| 27 | 0x081F43E0 | 0x081F4B9A | LavaridgeTown_Gym_1F_Text_RegisteredFlannery | ジムリーダー　アスナを\nポケナビに　とうろく　した！ | 把道馆馆主亚莎\n登记到宝可导航里了。 | ok | trainerbattle+msgbox; CN faithful |
