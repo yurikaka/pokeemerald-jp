@@ -2688,6 +2688,12 @@
       "original": "41",
       "replacement": "40",
       "comment": "Pokeblock list uses small Chinese glyphs within the original 104-pixel window."
+    },
+    {
+      "address": "0x0808C4F6",
+      "original": "03aa",
+      "replacement": "064a",
+      "comment": "Fishing_GotBite: load gText_OhABite pointer directly instead of using the 12-byte stack copy that truncated the Chinese string"
     }
   ],
   "mode_jump_table": [
