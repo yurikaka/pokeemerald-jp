@@ -15,12 +15,12 @@
     {
       "name": "Chs_gText_Confirm3",
       "source_symbol": "gText_Confirm3",
-      "us_encoded_hex": "03b80565ff"
+      "us_encoded_hex": "0b37034dff"
     },
     {
       "name": "Chs_gText_Cancel4",
       "source_symbol": "gText_Cancel4",
-      "us_encoded_hex": "0b37034dff"
+      "us_encoded_hex": "03b80565ff"
     },
     {
       "name": "Chs_gText_BirchInTrouble",
@@ -54,7 +54,9 @@
       "name": "Chs_gText_PlayerSavedGame",
       "source_symbol": "gText_PlayerSavedGame",
       "us_encoded_hex": "fd01fe0d5204e9031f0e3f0de6089e05b208ed3cff",
-      "japanese_placeholders": [1],
+      "japanese_placeholders": [
+        1
+      ],
       "auto_wrap": true
     },
     {
@@ -79,7 +81,9 @@
       "name": "Chs_gText_WhatWillPkmnDo",
       "source_symbol": "gText_WhatWillPkmnDo",
       "us_encoded_hex": "fd12fe0ef1112e0bee094c09ce3dff",
-      "japanese_placeholders": [18]
+      "japanese_placeholders": [
+        18
+      ]
     },
     {
       "name": "Chs_gText_WhatWillWallyDo",
@@ -109,40 +113,197 @@
     }
   ],
   "reference_writes": [
-    {"address": "0x08198D40", "original": "0x085D7B40", "symbol": "Chs_gText_YesNo", "source_symbol": "gText_YesNo"},
-
-    {"address": "0x08134E74", "original": "0x08591C04", "symbol": "Chs_gText_IsThisTheCorrectTime", "source_symbol": "gText_IsThisTheCorrectTime"},
-    {"address": "0x08134B88", "original": "0x08591C15", "symbol": "Chs_gText_Confirm3", "source_symbol": "gText_Confirm3"},
-    {"address": "0x08134CE4", "original": "0x08591C1A", "symbol": "Chs_gText_Cancel4", "source_symbol": "gText_Cancel4"},
-    {"address": "0x0813420C", "original": "0x085C9363", "symbol": "Chs_gText_BirchInTrouble", "source_symbol": "gText_BirchInTrouble"},
-    {"address": "0x081343AC", "original": "0x085C9386", "symbol": "Chs_gText_ConfirmStarterChoice", "source_symbol": "gText_ConfirmStarterChoice"},
-
-    {"address": "0x0809F9BC", "original": "0x08276F58", "symbol": "Chs_gText_ConfirmSave", "source_symbol": "gText_ConfirmSave"},
-    {"address": "0x0809FA84", "original": "0x08276F77", "symbol": "Chs_gText_AlreadySavedFile", "source_symbol": "gText_AlreadySavedFile"},
-    {"address": "0x0809FB1C", "original": "0x08276F97", "symbol": "Chs_gText_SavingDontTurnOff", "source_symbol": "gText_SavingDontTurnOff"},
-    {"address": "0x0809FB64", "original": "0x08276FBB", "symbol": "Chs_gText_PlayerSavedGame", "source_symbol": "gText_PlayerSavedGame"},
-    {"address": "0x0809FA6C", "original": "0x08276FD3", "symbol": "Chs_gText_DifferentSaveFile", "source_symbol": "gText_DifferentSaveFile"},
-    {"address": "0x0809FB80", "original": "0x08277048", "symbol": "Chs_gText_SaveError", "source_symbol": "gText_SaveError"},
-    {"address": "0x08023FB0", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0802A0C8", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0802D240", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0807E7F4", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0807EF80", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0809FEEC", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-    {"address": "0x0817379C", "original": "0x08277071", "symbol": "Chs_gText_SavingDontTurnOffPower", "source_symbol": "gText_SavingDontTurnOffPower"},
-
-    {"address": "0x0805BCC4", "original": "0x085ABB43", "symbol": "Chs_gText_WhatWillPkmnDo", "source_symbol": "gText_WhatWillPkmnDo"},
-    {"address": "0x0816A2D8", "original": "0x085ABB57", "symbol": "Chs_gText_WhatWillWallyDo", "source_symbol": "gText_WhatWillWallyDo"},
-    {"address": "0x0805BCBC", "original": "0x085ABB72", "symbol": "Chs_gText_BattleMenu", "source_symbol": "gText_BattleMenu"},
-    {"address": "0x0816A2D0", "original": "0x085ABB72", "symbol": "Chs_gText_BattleMenu", "source_symbol": "gText_BattleMenu"},
-    {"address": "0x08059768", "original": "0x085ABBA1", "symbol": "Chs_gText_MoveInterfaceType", "source_symbol": "gText_MoveInterfaceType"},
-    {"address": "0x08039184", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x0804DCE0", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x0804E038", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x0804E818", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x08056868", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x0805BD14", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x0813EEF4", "original": "0x085ABBC9", "symbol": "Chs_gText_BattleYesNoChoice", "source_symbol": "gText_BattleYesNoChoice"},
-    {"address": "0x08057BBC", "original": "0x085ABBD8", "symbol": "Chs_gText_BattleSwitchWhich", "source_symbol": "gText_BattleSwitchWhich"}
+    {
+      "address": "0x08198D40",
+      "original": "0x085D7B40",
+      "symbol": "Chs_gText_YesNo",
+      "source_symbol": "gText_YesNo"
+    },
+    {
+      "address": "0x08134E74",
+      "original": "0x08591C04",
+      "symbol": "Chs_gText_IsThisTheCorrectTime",
+      "source_symbol": "gText_IsThisTheCorrectTime"
+    },
+    {
+      "address": "0x08134B88",
+      "original": "0x08591C15",
+      "symbol": "Chs_gText_Confirm3",
+      "source_symbol": "gText_Confirm3"
+    },
+    {
+      "address": "0x08134CE4",
+      "original": "0x08591C1A",
+      "symbol": "Chs_gText_Cancel4",
+      "source_symbol": "gText_Cancel4"
+    },
+    {
+      "address": "0x0813420C",
+      "original": "0x085C9363",
+      "symbol": "Chs_gText_BirchInTrouble",
+      "source_symbol": "gText_BirchInTrouble"
+    },
+    {
+      "address": "0x081343AC",
+      "original": "0x085C9386",
+      "symbol": "Chs_gText_ConfirmStarterChoice",
+      "source_symbol": "gText_ConfirmStarterChoice"
+    },
+    {
+      "address": "0x0809F9BC",
+      "original": "0x08276F58",
+      "symbol": "Chs_gText_ConfirmSave",
+      "source_symbol": "gText_ConfirmSave"
+    },
+    {
+      "address": "0x0809FA84",
+      "original": "0x08276F77",
+      "symbol": "Chs_gText_AlreadySavedFile",
+      "source_symbol": "gText_AlreadySavedFile"
+    },
+    {
+      "address": "0x0809FB1C",
+      "original": "0x08276F97",
+      "symbol": "Chs_gText_SavingDontTurnOff",
+      "source_symbol": "gText_SavingDontTurnOff"
+    },
+    {
+      "address": "0x0809FB64",
+      "original": "0x08276FBB",
+      "symbol": "Chs_gText_PlayerSavedGame",
+      "source_symbol": "gText_PlayerSavedGame"
+    },
+    {
+      "address": "0x0809FA6C",
+      "original": "0x08276FD3",
+      "symbol": "Chs_gText_DifferentSaveFile",
+      "source_symbol": "gText_DifferentSaveFile"
+    },
+    {
+      "address": "0x0809FB80",
+      "original": "0x08277048",
+      "symbol": "Chs_gText_SaveError",
+      "source_symbol": "gText_SaveError"
+    },
+    {
+      "address": "0x08023FB0",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0802A0C8",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0802D240",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0807E7F4",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0807EF80",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0809FEEC",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0817379C",
+      "original": "0x08277071",
+      "symbol": "Chs_gText_SavingDontTurnOffPower",
+      "source_symbol": "gText_SavingDontTurnOffPower"
+    },
+    {
+      "address": "0x0805BCC4",
+      "original": "0x085ABB43",
+      "symbol": "Chs_gText_WhatWillPkmnDo",
+      "source_symbol": "gText_WhatWillPkmnDo"
+    },
+    {
+      "address": "0x0816A2D8",
+      "original": "0x085ABB57",
+      "symbol": "Chs_gText_WhatWillWallyDo",
+      "source_symbol": "gText_WhatWillWallyDo"
+    },
+    {
+      "address": "0x0805BCBC",
+      "original": "0x085ABB72",
+      "symbol": "Chs_gText_BattleMenu",
+      "source_symbol": "gText_BattleMenu"
+    },
+    {
+      "address": "0x0816A2D0",
+      "original": "0x085ABB72",
+      "symbol": "Chs_gText_BattleMenu",
+      "source_symbol": "gText_BattleMenu"
+    },
+    {
+      "address": "0x08059768",
+      "original": "0x085ABBA1",
+      "symbol": "Chs_gText_MoveInterfaceType",
+      "source_symbol": "gText_MoveInterfaceType"
+    },
+    {
+      "address": "0x08039184",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x0804DCE0",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x0804E038",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x0804E818",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x08056868",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x0805BD14",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x0813EEF4",
+      "original": "0x085ABBC9",
+      "symbol": "Chs_gText_BattleYesNoChoice",
+      "source_symbol": "gText_BattleYesNoChoice"
+    },
+    {
+      "address": "0x08057BBC",
+      "original": "0x085ABBD8",
+      "symbol": "Chs_gText_BattleSwitchWhich",
+      "source_symbol": "gText_BattleSwitchWhich"
+    }
   ]
 }
