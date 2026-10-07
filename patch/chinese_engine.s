@@ -6069,3 +6069,72 @@ ChsContestTitleTitle:
 ChsFrontierPassGfx:
     .incbin "build/patch/frontier_pass.lz"
 
+.align 2
+.global ChsCaughtMonPcNicknameDisplay
+.type ChsCaughtMonPcNicknameDisplay, %function
+.thumb_func
+ChsCaughtMonPcNicknameDisplay:
+    push {lr}
+    ldr r1, =0x02021C54
+    bl ChsCopyMonNickname
+    pop {r3}
+    ldr r3, =0x0805638F
+    bx r3
+.ltorg
+.align 2
+.global ChsCaughtMonFullPcNicknameDisplay
+.type ChsCaughtMonFullPcNicknameDisplay, %function
+.thumb_func
+ChsCaughtMonFullPcNicknameDisplay:
+    push {lr}
+    ldr r1, =0x02021C54
+    bl ChsCopyMonNickname
+    pop {r3}
+    ldr r4, =0x02021C68
+    ldr r3, =0x08056375
+    bx r3
+.ltorg
+.align 2
+.global ChsNamingPcNicknameNormal
+.type ChsNamingPcNicknameNormal, %function
+.thumb_func
+ChsNamingPcNicknameNormal:
+    bl ChsNamingPcNicknameDisplay
+    ldr r3, =0x080E2AB1
+    bx r3
+.ltorg
+.align 2
+.global ChsNamingPcNicknameFull
+.type ChsNamingPcNicknameFull, %function
+.thumb_func
+ChsNamingPcNicknameFull:
+    bl ChsNamingPcNicknameDisplay
+    ldr r3, =0x080E2AF1
+    bx r3
+.ltorg
+.align 2
+
+.global ChsNamingPcNicknameDisplay
+.type ChsNamingPcNicknameDisplay, %function
+.thumb_func
+ChsNamingPcNicknameDisplay:
+    push {r4, lr}
+    adds r4, r0, #0
+    adds r1, r1, r2
+    ldr r1, [r1]
+    ldr r3, =0x080088B9
+    bl .Lnaming_pc_call_r3
+    ldr r0, =0x02039C34
+    ldr r0, [r0]
+    ldr r1, =0x1E34
+    adds r0, r0, r1
+    ldrh r0, [r0]
+    adds r1, r4, #0
+    bl ChsConvertNicknameForSpecies
+    pop {r4}
+    pop {r1}
+    bx r1
+.Lnaming_pc_call_r3:
+    bx r3
+.ltorg
+.align 2
