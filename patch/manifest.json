@@ -295,6 +295,11 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x081C22B4", "original": "0022", "replacement": "0422", "comment": "Center Attack within the 32-pixel summary stat-label window"},
+    {"address": "0x081C22C4", "original": "0022", "replacement": "0422", "comment": "Center Defense within the 32-pixel summary stat-label window"},
+    {"address": "0x081C22D4", "original": "0022", "replacement": "0422", "comment": "Center Special Attack within the 32-pixel summary stat-label window"},
+    {"address": "0x081C22E4", "original": "0022", "replacement": "0422", "comment": "Center Special Defense within the 32-pixel summary stat-label window"},
+    {"address": "0x081C22F4", "original": "0022", "replacement": "0422", "comment": "Center Speed within the 32-pixel summary stat-label window"},
     {"address": "0x0814F172", "original": "24e2", "replacement": "23e2", "comment": "Route trainer A class expansion to the start of the eight-byte veneer"},
     {"address": "0x0814F4CE", "original": "76e0", "replacement": "75e0", "comment": "Route trainer B class expansion to the start of the eight-byte veneer"},
     {"address": "0x08170114", "original": "0023", "replacement": "0423", "comment": "Center the 48-pixel Chinese Hoenn region title in the 56-pixel wall map title window"},
