@@ -1894,6 +1894,18 @@ ChsScrCmdBufferPartyMonNick:
 .ltorg
 
 .align 2
+.global ChsInterviewNicknameDisplay
+.type ChsInterviewNicknameDisplay, %function
+.thumb_func
+ChsInterviewNicknameDisplay:
+    adds r1, r4, #0
+    bl ChsCopyMonNickname
+    ldr r3, =0x080F025F
+    bx r3
+
+.ltorg
+
+.align 2
 .global ChsUpdateNickInHealthbox
 .type ChsUpdateNickInHealthbox, %function
 .thumb_func
@@ -6056,3 +6068,4 @@ ChsContestTitleTitle:
 .global ChsFrontierPassGfx
 ChsFrontierPassGfx:
     .incbin "build/patch/frontier_pass.lz"
+
