@@ -138,6 +138,8 @@ def main() -> None:
 
     for entry in manifest.get("veneer_hooks", []):
         address = parse_int(entry["address"])
+        if address & 3:
+            raise SystemExit(f"veneer hook 0x{address:08X}: eight-byte literal jump requires four-byte alignment")
         offset = rom_offset(address)
         expected = bytes.fromhex(entry["original"])
         if len(expected) != 8:
