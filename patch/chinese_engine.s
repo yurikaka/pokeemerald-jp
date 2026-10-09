@@ -6111,6 +6111,39 @@ ChsFrontierPassGfx:
 
 .align 2
 .global ChsCaughtMonPcNicknameDisplay
+.global ChsVendingMenuWindow
+.type ChsVendingMenuWindow, %function
+.thumb_func
+ChsVendingMenuWindow:
+    @ Wokann script_menu.c DrawMultichoiceMenu: sb holds multichoice ID.
+    @ Only MULTI_VENDING_MACHINE (42): 14 tiles at x=15, plus borders.
+    @ Keeps the money window separate and fits the 72px price column.
+    adds r0, r4, #0
+    adds r1, r5, #0
+    @ The veneer clobbers r3; reconstruct height from native row count r6.
+    adds r3, r6, #0
+    lsls r3, r3, #1
+    mov r12, r3
+    mov r3, sb
+    cmp r3, #42
+    bne .Lvending_window_original
+    movs r0, #14
+    movs r2, #14
+.Lvending_window_original:
+    mov r3, r12
+    push {r4, lr}
+    ldr r4, =0x080E1F11
+    bl .Lvending_window_call
+    pop {r4}
+    pop {r3}
+    adds r4, r0, #0
+    ldr r3, =0x080E1461
+    bx r3
+.Lvending_window_call:
+    bx r4
+.ltorg
+.align 2
+
 .type ChsCaughtMonPcNicknameDisplay, %function
 .thumb_func
 ChsCaughtMonPcNicknameDisplay:
