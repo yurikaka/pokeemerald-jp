@@ -1643,6 +1643,26 @@ ChsCopyMonNickname:
     mov r0, sp
     ldr r3, =0x0800885D
     bl .Lnick_call_r3
+    @ Only display helpers: keep egg creation and storage nickname getters JP.
+    adds r0, r4, #0
+    movs r1, #0x2D
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lnick_call_r3
+    cmp r0, #0
+    beq .Lnick_species_display
+    mov r0, sp
+    ldr r1, =0x085C8C62
+    ldr r3, =0x0800895D
+    bl .Lnick_call_r3
+    cmp r0, #0
+    bne .Lnick_copy_original
+    adds r0, r5, #0
+    ldr r1, =Chs_ChecklistLiteral_gText_EggNickname
+    ldr r3, =0x080088B9
+    bl .Lnick_call_r3
+    b .Lnick_done
+.Lnick_species_display:
     adds r0, r4, #0
     movs r1, #0x0B
     movs r2, #0
@@ -1703,6 +1723,25 @@ ChsCopyBoxMonNickname:
     mov r0, sp
     ldr r3, =0x0800885D
     bl .Lbox_nick_call_r3
+    adds r0, r4, #0
+    movs r1, #0x2D
+    movs r2, #0
+    ldr r3, =0x0806A1B5
+    bl .Lbox_nick_call_r3
+    cmp r0, #0
+    beq .Lbox_nick_species_display
+    mov r0, sp
+    ldr r1, =0x085C8C62
+    ldr r3, =0x0800895D
+    bl .Lbox_nick_call_r3
+    cmp r0, #0
+    bne .Lbox_nick_copy_original
+    adds r0, r5, #0
+    ldr r1, =Chs_ChecklistLiteral_gText_EggNickname
+    ldr r3, =0x080088B9
+    bl .Lbox_nick_call_r3
+    b .Lbox_nick_done
+.Lbox_nick_species_display:
     adds r0, r4, #0
     movs r1, #0x0B
     movs r2, #0
@@ -2594,7 +2633,8 @@ ChsBattleExpNamePlaceholderHook:
 .Lbattle_nickname_caller_found:
     pop {r0-r3}
     adds r1, r2, #0
-    b ChsCopyMonNickname
+    ldr r3, =ChsCopyMonNickname + 1
+    bx r3
 .Lbattle_exp_name_original_entry:
     ldr r0, =Chs_sText_PkmnGainedEXP + 4
     cmp r0, r9
