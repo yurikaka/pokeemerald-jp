@@ -6112,6 +6112,73 @@ ChsFrontierPassGfx:
 .align 2
 .global ChsCaughtMonPcNicknameDisplay
 .global ChsVendingMenuWindow
+.global ChsShopTmNameCopy
+.type ChsShopTmNameCopy, %function
+.thumb_func
+ChsShopTmNameCopy:
+    @ Wokann shop.c BuyMenuSetListEntry: r4=item, r5=18-byte display slot.
+    adds r0, r4, #0
+    adds r1, r5, #0
+    bl ChsShopTmNameCopyImpl
+    ldr r3, =0x080DF585
+    bx r3
+.type ChsShopTmNameCopyImpl, %function
+.thumb_func
+ChsShopTmNameCopyImpl:
+    push {r4-r6, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    ldr r3, =0x080D5EC9
+    bl .Lshop_tm_call
+    ldr r0, =289
+    cmp r4, r0
+    blo .Lshop_tm_done
+    ldr r0, =338
+    cmp r4, r0
+    bhi .Lshop_tm_done
+    ldrb r0, [r5]
+    cmp r0, #0xF5
+    bne .Lshop_tm_done
+    movs r6, #1
+.Lshop_tm_length:
+    cmp r6, #15
+    bhs .Lshop_tm_done
+    ldrb r0, [r5, r6]
+    cmp r0, #0xFF
+    beq .Lshop_tm_validate_length
+    adds r6, #1
+    b .Lshop_tm_length
+.Lshop_tm_validate_length:
+    cmp r6, #13
+    bne .Lshop_tm_done
+.Lshop_tm_shift:
+    ldrb r0, [r5, r6]
+    adds r1, r6, #1
+    strb r0, [r5, r1]
+    subs r6, #1
+    cmp r6, #0
+    bne .Lshop_tm_shift
+    movs r0, #0xF3
+    strb r0, [r5, #1]
+    @ F5 F3 + five double-byte glyphs, then restore normal font for digits.
+    ldrb r0, [r5, #14]
+    strb r0, [r5, #16]
+    ldrb r0, [r5, #13]
+    strb r0, [r5, #15]
+    ldrb r0, [r5, #12]
+    strb r0, [r5, #14]
+    movs r0, #0xF5
+    strb r0, [r5, #12]
+    movs r0, #0xF4
+    strb r0, [r5, #13]
+.Lshop_tm_done:
+    pop {r4-r6}
+    pop {r0}
+    bx r0
+.Lshop_tm_call:
+    bx r3
+.ltorg
+.align 2
 .type ChsVendingMenuWindow, %function
 .thumb_func
 ChsVendingMenuWindow:

@@ -218,6 +218,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x080DF568", "original": "291cf6f7adfc09e0", "symbol": "ChsShopTmNameCopy"},
     {"address": "0x080E1458", "original": "291c00f059fd041c", "symbol": "ChsVendingMenuWindow"},
     {"address": "0x08056320", "original": "022113f099fe32e0", "symbol": "ChsCaughtMonPcNicknameDisplay"},
     {"address": "0x0805636C", "original": "022113f073fe334c", "symbol": "ChsCaughtMonFullPcNicknameDisplay"},
@@ -309,9 +310,9 @@
     {"address": "0x0814F172", "original": "24e2", "replacement": "23e2", "comment": "Route trainer A class expansion to the start of the eight-byte veneer"},
     {"address": "0x0814F4CE", "original": "76e0", "replacement": "75e0", "comment": "Route trainer B class expansion to the start of the eight-byte veneer"},
     {"address": "0x08170114", "original": "0023", "replacement": "0423", "comment": "Center the 48-pixel Chinese Hoenn region title in the 56-pixel wall map title window"},
-    {"address": "0x080DF490", "original": "0b21", "replacement": "1021", "comment": "Allocate 16 bytes per Chinese shop item name instead of 11"},
-    {"address": "0x080DF4B0", "original": "0b22", "replacement": "1022", "comment": "Use the enlarged shop item-name stride when populating entries"},
-    {"address": "0x080DF4CC", "original": "0b20", "replacement": "1020", "comment": "Use the enlarged shop item-name stride for the exit entry"},
+    {"address": "0x080DF490", "original": "0b21", "replacement": "1221", "comment": "Allocate 18-byte shop display slots for mixed-font TM names; ROM item table remains 16-byte stride"},
+    {"address": "0x080DF4B0", "original": "0b22", "replacement": "1222", "comment": "Use the 18-byte shop display stride when populating entries"},
+    {"address": "0x080DF4CC", "original": "0b20", "replacement": "1220", "comment": "Use the 18-byte shop display stride for the exit entry"},
     {"address": "0x085DFA74", "original": "01110f0c040ff70101110d0c060ff701", "replacement": "010f0f0e040ff701010f0d0e060ff701", "comment": "Widen two-column bag action windows leftward for full Chinese labels"},
     { "address": "0x080DD810", "original": "40000106", "replacement": "80000106", "comment": "Place the dynamic next-turn number after the 32-pixel Chinese label" },
     {
