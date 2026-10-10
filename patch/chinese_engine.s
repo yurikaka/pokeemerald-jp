@@ -5206,7 +5206,14 @@ DecompressChineseGlyph:
     strb r0, [r7]
     b .Lhave_index
 .Lnot_muzaipixel_latin:
-    cmp r0, #10
+    @ ASCII period has a two-pixel bitmap; use a compact advance for Lv.50.
+    cmp r3, #0xAD
+    bne .Lpunctuation_default_width
+    movs r0, #4
+    strb r0, [r7]
+.Lpunctuation_default_width:
+    ldrb r0, [r7, #1]
+    cmp r0, #13
     bne .Lhave_index
     ldr r6, =LatinSmallFont
     b .Lhave_index

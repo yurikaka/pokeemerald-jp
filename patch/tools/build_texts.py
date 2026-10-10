@@ -54,7 +54,7 @@ EXT_CTRL_ARG_LENGTHS = {
 }
 
 SYNTHETIC_PUNCTUATION = {
-    "；", "。", "～", "、", "，", "！", "？", "：", "—", "…"
+    "；", "。", "～", "、", "，", "！", "？", "：", "—", "…", "."
 }
 
 DIALOGUE_LINE_WIDTH = 168
@@ -224,7 +224,8 @@ def convert_us_encoded_text(
             output.extend((0xFC, 0x0C, char - 0x79))
             index += 1
             continue
-        if char == 0x30 or 0x36 <= char <= 0x3F and char != 0x38:
+        if (char == 0x30 or 0x36 <= char <= 0x3F and char != 0x38
+                or not mode_is_japanese and char == 0xAD):
             output.extend((0x7F, char))
             index += 1
             continue
@@ -265,7 +266,7 @@ def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
         if index + 1 >= len(data):
             raise ValueError("truncated Chinese glyph while wrapping")
         end = index + 2
-        return data[index:end], 12, end
+        return data[index:end], 4 if char == 0x7F and data[index + 1] == 0xAD else 12, end
     return data[index:index + 1], 8, index + 1
 
 
