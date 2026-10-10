@@ -303,10 +303,13 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x085E11E0", "original": "02011112020f5f02", "replacement": "02011111020f5f02", "comment": "Shorten the Pokemon action prompt by one tile so its frame does not overlap the widened party action menu"},
     {"address": "0x082EB8C0", "original": "001939040205b002", "replacement": "001839050205b002", "comment": "Move standard battle type-name start left one tile, preserving the right edge and expanding the drawing area to prevent clipping"},
     {"address": "0x082EB8C8", "original": "0013370a0405b802", "replacement": "0013370a0405ba02", "comment": "Move the standard battle switch-prompt tiles after the expanded type window"},
     {"address": "0x082EB988", "original": "001939040205b002", "replacement": "001839050205b002", "comment": "Move Arena battle type-name start left one tile, preserving the right edge and expanding the drawing area to prevent clipping"},
     {"address": "0x082EB990", "original": "0013370a0405b802", "replacement": "0013370a0405ba02", "comment": "Move the Arena battle switch-prompt tiles after the expanded type window"},
+    {"address": "0x081B2E66", "original": "0820", "replacement": "0920", "comment": "Widen party action menus by one tile for the full Chinese switch-Pokemon label"},
+    {"address": "0x081B2E7E", "original": "1522", "replacement": "1422", "comment": "Move widened party action menus left one tile while preserving the right edge"},
     {"address": "0x08174842", "original": "91f6b3fa", "replacement": "6020c046", "comment": "Center the Hall of Fame welcome text using its actual 96px Chinese glyph width"},
     {"address": "0x08592C7C", "original": "0001070a060f2000", "replacement": "0001070c060f0401", "comment": "Use a 12-tile tutor description window with 92px text wrapping; move its tiles after the tutor list to prevent overlap"},
     {"address": "0x0813AD8A", "original": "5021", "replacement": "6021", "comment": "Clear all 96 pixels of the tutor description background when changing selection"},
