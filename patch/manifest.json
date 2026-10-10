@@ -302,6 +302,10 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x081977F0", "original": "1721", "replacement": "1621", "comment": "Move the START menu left one tile while preserving its right edge"},
+    {"address": "0x081977F4", "original": "0623", "replacement": "0723", "comment": "Widen the START menu to seven tiles for standard-font Chinese PokeNav"},
+    {"address": "0x080E20CC", "original": "1620", "replacement": "1520", "comment": "Move the PokeNav tutorial START menu left one tile"},
+    {"address": "0x080E20D0", "original": "0622", "replacement": "0722", "comment": "Match the PokeNav tutorial START menu width to the regular menu"},
     {"address": "0x081C22B4", "original": "0022", "replacement": "0422", "comment": "Center Attack within the 32-pixel summary stat-label window"},
     {"address": "0x081C22C4", "original": "0022", "replacement": "0422", "comment": "Center Defense within the 32-pixel summary stat-label window"},
     {"address": "0x081C22D4", "original": "0022", "replacement": "0422", "comment": "Center Special Attack within the 32-pixel summary stat-label window"},
