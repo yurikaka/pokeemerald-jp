@@ -241,7 +241,7 @@ def convert_us_encoded_text(
     return bytes(output)
 
 
-def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
+def text_token(data: bytes, index: int, placeholder_widths: dict[int, int] | None = None) -> tuple[bytes, int, int]:
     """Return one encoded token, its pixel width, and the next byte index."""
     char = data[index]
     if char == 0xFC:
@@ -258,7 +258,8 @@ def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
         if index + 1 >= len(data):
             raise ValueError("truncated placeholder while wrapping")
         end = index + 2
-        return data[index:end], PLACEHOLDER_WIDTHS.get(data[index + 1], 48), end
+        widths = PLACEHOLDER_WIDTHS if placeholder_widths is None else PLACEHOLDER_WIDTHS | placeholder_widths
+        return data[index:end], widths.get(data[index + 1], 48), end
     if char in (0xF7, 0xF8, 0xF9):
         end = min(index + 2, len(data))
         return data[index:end], 0, end
@@ -270,17 +271,17 @@ def text_token(data: bytes, index: int) -> tuple[bytes, int, int]:
     return data[index:index + 1], 8, index + 1
 
 
-def tokenize_line(data: bytes) -> list[tuple[bytes, int]]:
+def tokenize_line(data: bytes, placeholder_widths: dict[int, int] | None = None) -> list[tuple[bytes, int]]:
     tokens = []
     index = 0
     while index < len(data):
-        token, width, index = text_token(data, index)
+        token, width, index = text_token(data, index, placeholder_widths)
         tokens.append((token, width))
     return tokens
 
 
-def line_width(data: bytes) -> int:
-    return sum(width for _, width in tokenize_line(data))
+def line_width(data: bytes, placeholder_widths: dict[int, int] | None = None) -> int:
+    return sum(width for _, width in tokenize_line(data, placeholder_widths))
 
 
 def encoded_chars(chars: str, charmap: dict[str, bytes]) -> set[bytes]:
@@ -345,13 +346,13 @@ def wrap_tokens(
     return lines
 
 
-def wrap_dialogue_page(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, bool]:
+def wrap_dialogue_page(data: bytes, charmap: dict[str, bytes], placeholder_widths: dict[int, int] | None = None) -> tuple[bytes, bool]:
     source_lines = re.split(b"[\\xFA\\xFE]", data)
-    if all(line_width(line) <= DIALOGUE_LINE_WIDTH for line in source_lines):
+    if all(line_width(line, placeholder_widths) <= DIALOGUE_LINE_WIDTH for line in source_lines):
         return data, False
 
     flowing = data.replace(b"\xFA", b"").replace(b"\xFE", b"")
-    tokens = tokenize_line(flowing)
+    tokens = tokenize_line(flowing, placeholder_widths)
     lines = wrap_tokens(
         tokens,
         DIALOGUE_LINE_WIDTH,
@@ -368,7 +369,7 @@ def wrap_dialogue_page(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, b
     return bytes(output), True
 
 
-def wrap_dialogue(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, int]:
+def wrap_dialogue(data: bytes, charmap: dict[str, bytes], placeholder_widths: dict[int, int] | None = None) -> tuple[bytes, int]:
     """Reflow overlong pages for the original 22-tile Japanese text window."""
     output = bytearray()
     changed_pages = 0
@@ -376,7 +377,7 @@ def wrap_dialogue(data: bytes, charmap: dict[str, bytes]) -> tuple[bytes, int]:
     for index, char in enumerate(data):
         if char not in (0xFB, 0xFF):
             continue
-        page, changed = wrap_dialogue_page(data[page_start:index], charmap)
+        page, changed = wrap_dialogue_page(data[page_start:index], charmap, placeholder_widths)
         output.extend(page)
         output.append(char)
         changed_pages += int(changed)
@@ -623,10 +624,18 @@ def main() -> None:
             )
         else:
             encoded = encode_text(definition["text"], charmap, definition.get("styled", False))
+        placeholder_widths = {int(key): value for key, value in definition.get("placeholder_widths", {}).items()}
         if auto_wrap:
-            encoded, changed_pages = wrap_dialogue(encoded, charmap)
+            encoded, changed_pages = wrap_dialogue(encoded, charmap, placeholder_widths)
             wrapped_strings += int(changed_pages > 0)
             wrapped_pages += changed_pages
+        if definition.get("no_manual_prompt"):
+            tokens = tokenize_line(encoded, placeholder_widths)
+            if any(token in (b"\xFA", b"\xFB") for token, _ in tokens):
+                raise ValueError(f"automatic message requires button input: {name}")
+            visible_lines = encoded[:-1].split(b"\xFE")
+            if len(visible_lines) > 2 or any(line_width(line, placeholder_widths) > DIALOGUE_LINE_WIDTH for line in visible_lines):
+                raise ValueError(f"automatic message does not fit two lines: {name}")
         if definition.get("compact_resource"):
             resource_index = len(compact_resources)
             if resource_index >= 0xF0 or len(encoded) > 255 or not encoded.startswith(CONTROLS["ENG"]):
