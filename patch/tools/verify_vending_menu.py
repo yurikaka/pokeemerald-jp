@@ -1,4 +1,4 @@
-"""Execute the vending-only window adapter; not an in-game screenshot test."""
+"""Execute multichoice bounds and vending layout; not a screenshot test."""
 import argparse
 from pathlib import Path
 from unicorn import UC_HOOK_CODE
@@ -28,7 +28,7 @@ def main():
             cpu.reg_write(UC_ARM_REG_PC, cpu.reg_read(UC_ARM_REG_LR))
 
     cpu.hook_add(UC_HOOK_CODE, capture)
-    # Every other menu must retain its original position, width and height.
+    # Overflowing menus move left; width, top and height remain unchanged.
     for menu in range(256):
         cpu.reg_write(UC_ARM_REG_R4, 16)
         cpu.reg_write(UC_ARM_REG_R5, 0)
@@ -36,11 +36,38 @@ def main():
         cpu.reg_write(UC_ARM_REG_R9, menu)
         result = m.call('NativeVendingWindowHook', (16, 0, 18, 8),
                         stop_addresses=(0x080E1460,))
-        expected = (14, 0, 14, 8) if menu == 42 else (16, 0, 18, 8)
+        expected = (14, 0, 14, 8) if menu == 42 else (10, 0, 18, 8)
         assert captured[-1] == expected, (menu, captured[-1])
         assert result == 7
         assert cpu.reg_read(UC_ARM_REG_R4) == 7
         assert cpu.reg_read(UC_ARM_REG_SP) == 0x03007800
+
+    for width in range(1, 29):
+        for left in range(29):
+            cpu.reg_write(UC_ARM_REG_R4, left)
+            cpu.reg_write(UC_ARM_REG_R5, 4)
+            cpu.reg_write(UC_ARM_REG_R6, 4)
+            cpu.reg_write(UC_ARM_REG_R9, 109)
+            m.call('NativeVendingWindowHook', (left, 4, width, 8),
+                   stop_addresses=(0x080E1460,))
+            assert captured[-1] == (min(left, 28 - width), 4, width, 8)
+
+    # kt1.png: the Battle Tower reporter uses (16, 4), menu 109.
+    m.call('NativeDrawMultichoiceMenu', (16, 4, 109, 0),
+           stop_addresses=(0x080E1460,))
+    assert captured[-1] == (13, 4, 15, 8), captured[-1]
+
+    # Native menus can expand the player's saved name while measuring width.
+    save_pointer = m.word(0x080E13A0)
+    cpu.mem_write(save_pointer, (0x02028000).to_bytes(4, 'little'))
+    cpu.mem_write(0x02028000, b'\x01\x02\x03\x04\x05\xff')
+    # The table ends at menu 112; 113 has no native table entry.
+    for menu in range(113):
+        m.call('NativeDrawMultichoiceMenu', (16, 0, menu, 0),
+               stop_addresses=(0x080E1460,))
+        left, top, width, height = captured[-1]
+        assert 0 < width <= 28, (menu, captured[-1])
+        assert left + width + 1 <= 29, (menu, captured[-1])
 
     # Start at the real menu function: original width calculation, table
     # lookup, native hook bytes and adapter all execute. Stop before rendering.
@@ -65,7 +92,7 @@ def main():
     # the choice command itself rather than its surrounding messages.
     assert base[0x20AEF2:0x20AEF8] == rom[0x20AEF2:0x20AEF8]
     assert base[0x20AF51:0x20AF7B] == rom[0x20AF51:0x20AF7B]
-    print('PASS: real elevator/vending menu entry paths and hook bytes; vending bounds, money-window separation, original arguments for 255 other menus, stack/register preservation')
+    print('PASS: real reporter/elevator/vending entry paths; multichoice frame bounds, unchanged fitting positions and dimensions, vending money-window separation, stack/register preservation')
 
 
 if __name__ == '__main__':

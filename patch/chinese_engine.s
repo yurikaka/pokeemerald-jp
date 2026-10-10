@@ -6111,7 +6111,7 @@ ChsFrontierPassGfx:
 
 .align 2
 .global ChsCaughtMonPcNicknameDisplay
-.global ChsVendingMenuWindow
+.global ChsMultichoiceMenuWindow
 .global ChsShopTmNameCopy
 .type ChsShopTmNameCopy, %function
 .thumb_func
@@ -6179,9 +6179,9 @@ ChsShopTmNameCopyImpl:
     bx r3
 .ltorg
 .align 2
-.type ChsVendingMenuWindow, %function
+.type ChsMultichoiceMenuWindow, %function
 .thumb_func
-ChsVendingMenuWindow:
+ChsMultichoiceMenuWindow:
     @ Wokann script_menu.c DrawMultichoiceMenu: sb holds multichoice ID.
     @ Only MULTI_VENDING_MACHINE (42): 14 tiles at x=15, plus borders.
     @ Keeps the money window separate and fits the 72px price column.
@@ -6193,9 +6193,18 @@ ChsVendingMenuWindow:
     mov r12, r3
     mov r3, sb
     cmp r3, #42
-    bne .Lvending_window_original
+    bne .Lmultichoice_window_bounds
     movs r0, #14
     movs r2, #14
+    b .Lvending_window_original
+.Lmultichoice_window_bounds:
+    @ CreateWindowFromRect adds one tile to x. Reserve both frame edges
+    @ within the 30-column screen: x + width + 1 must be at most 29.
+    movs r3, #28
+    subs r3, r3, r2
+    cmp r0, r3
+    bls .Lvending_window_original
+    adds r0, r3, #0
 .Lvending_window_original:
     mov r3, r12
     push {r4, lr}
