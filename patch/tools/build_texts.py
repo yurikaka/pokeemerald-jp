@@ -54,7 +54,7 @@ EXT_CTRL_ARG_LENGTHS = {
 }
 
 SYNTHETIC_PUNCTUATION = {
-    "；", "。", "～", "、", "，", "！", "？", "：", "—", "“", "”", "…"
+    "；", "。", "～", "、", "，", "！", "？", "：", "—", "…"
 }
 
 DIALOGUE_LINE_WIDTH = 168
