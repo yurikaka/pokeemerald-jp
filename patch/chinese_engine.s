@@ -6190,8 +6190,8 @@ ChsShopTmNameCopyImpl:
 .thumb_func
 ChsMultichoiceMenuWindow:
     @ Wokann script_menu.c DrawMultichoiceMenu: sb holds multichoice ID.
-    @ Only MULTI_VENDING_MACHINE (42): 14 tiles at x=15, plus borders.
-    @ Keeps the money window separate and fits the 72px price column.
+    @ MULTI_VENDING_MACHINE (42) and MULTI_FRONTIER_RULES (95):
+    @ 14 tiles at x=15, plus borders. Rules need 96px text + cursor/padding.
     adds r0, r4, #0
     adds r1, r5, #0
     @ The veneer clobbers r3; reconstruct height from native row count r6.
@@ -6200,7 +6200,10 @@ ChsMultichoiceMenuWindow:
     mov r12, r3
     mov r3, sb
     cmp r3, #42
+    beq .Lmultichoice_fixed_width
+    cmp r3, #95
     bne .Lmultichoice_window_bounds
+.Lmultichoice_fixed_width:
     movs r0, #14
     movs r2, #14
     b .Lvending_window_original

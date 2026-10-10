@@ -8,6 +8,7 @@ from unicorn.arm_const import (
     UC_ARM_REG_R6, UC_ARM_REG_R9, UC_ARM_REG_SP,
 )
 from verify_remaining_display_port import Machine, symbols
+from build_texts import line_width
 
 
 def main():
@@ -36,7 +37,7 @@ def main():
         cpu.reg_write(UC_ARM_REG_R9, menu)
         result = m.call('NativeVendingWindowHook', (16, 0, 18, 8),
                         stop_addresses=(0x080E1460,))
-        expected = (14, 0, 14, 8) if menu == 42 else (10, 0, 18, 8)
+        expected = (14, 0, 14, 8) if menu in (42, 95) else (10, 0, 18, 8)
         assert captured[-1] == expected, (menu, captured[-1])
         assert result == 7
         assert cpu.reg_read(UC_ARM_REG_R4) == 7
@@ -79,6 +80,15 @@ def main():
     m.call('NativeDrawMultichoiceMenu', (16, 0, 42, 0),
            stop_addresses=(0x080E1460,))
     assert captured[-1] == (14, 0, 14, 8), captured[-1]
+
+    # kt7.png: six Frontier rule options, longest label is 96px in Chinese.
+    m.call('NativeDrawMultichoiceMenu', (15, 0, 95, 0),
+           stop_addresses=(0x080E1460,))
+    assert captured[-1] == (14, 0, 14, 12), captured[-1]
+    widths = [line_width(m.string(m.word(0x08563F98 + index * 8))[:-1])
+              for index in range(6)]
+    assert max(widths) == 96, widths
+    assert all(8 + width + 8 <= 14 * 8 for width in widths), widths
 
     # Actual window adds one tile to x/y. Frame occupies columns 14..29,
     # within the 30 visible columns; money window frame ends at column 13.

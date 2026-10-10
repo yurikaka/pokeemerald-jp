@@ -26,3 +26,12 @@ paths, all 113 native menu table entries (0 through 112), and a matrix of
 window positions and widths. It also checks stack/register preservation.
 This validates native ARM execution and geometry; it is not an emulator
 screenshot comparison.
+
+`kt7.png`: `MULTI_FRONTIER_RULES` (95), confirmed in Wokann
+`include/constants/script_menu.h`, `MultichoiceList_FrontierRules` in
+`src/data/script_menu.h`, and the reception gate's `multichoice 15, 0` event.
+The native width calculation overestimates Chinese glyph widths and produces
+19 tiles (152px). This menu now uses (14, 0, 14, 12): 112px of content width,
+96px for the longest label 宝可梦种类和数量, and 8px on each side for the
+cursor/text inset and padding. The right frame stays at column 29. The
+validator executes its real menu entry and checks all six option widths.
