@@ -75,6 +75,54 @@ def main():
     assert checked == set(prices) and len(checked) == 50
     print('PASS: all 50 BP prices in 6 native menus; complete prices, aligned right edges, no name overlap, native SHIFT_TEXT origin')
 
+    # Keep the description tiles after the 14x12 tutor list (base 0x5c).
+    template = bytes(m.cpu.mem_read(0x08592C7C, 8))
+    assert template == bytes.fromhex('0001070c060f0401')
+    description_base = struct.unpack_from('<H', template, 6)[0]
+    assert description_base == 0x5c + 14 * 12
+    assert description_base + template[3] * template[4] <= 0x1a8
+    assert rom[0x13AD8A:0x13AD8C] == bytes.fromhex('6021')
+    assert rom[0x13AD6C:0x13AD8A] == base[0x13AD6C:0x13AD8A]
+    assert rom[0x13AD8C:0x13AE18] == base[0x13AD8C:0x13AE18]
+    descriptions = json.loads((ROOT / 'patch/batches/224_battle_frontier_lounge7.json').read_text())
+    descriptions = [t for t in descriptions['texts'] if t['name'].endswith('Desc')]
+    assert len(descriptions) == 20
+    widest = 0
+    for entry in descriptions:
+        pointer = m.names[entry['name']]
+        data = m.string(pointer)
+        assert data.startswith(b'\xfc\x16') and b'\xf5\xf3' not in data, entry['name']
+        m.cpu.mem_write(0x02023000, bytes(32))
+        m.cpu.mem_write(0x02023000, struct.pack('<I', pointer + 2))
+        m.cpu.mem_write(0x02023014, b'\x01')
+        m.cpu.mem_write(0x02023017, b'\x01')
+        widths = [0]
+        for _ in range(100):
+            m.cpu.reg_write(UC_ARM_REG_R4, 0x02023014)
+            m.cpu.reg_write(UC_ARM_REG_R6, 0x02023000)
+            m.call('ChineseRenderHook', (0,), (0x080059B2, 0x08005B32, 0x0800582C))
+            pc = m.cpu.reg_read(UC_ARM_REG_PC)
+            if pc == 0x08005B32:
+                widths[-1] += m.cpu.mem_read(0x030030B0, 1)[0]
+                assert m.cpu.mem_read(0x030030B1, 1)[0] == 15
+            elif pc == 0x0800582C:
+                char = m.cpu.reg_read(UC_ARM_REG_R3)
+                if char == 255:
+                    break
+                if char == 254:
+                    widths.append(0)
+                else:
+                    m.cpu.mem_write(0x02025000, b'\xfc\x16' + bytes([char, 255]))
+                    widths[-1] += m.call('Width', (1, 0x02025000, 0))
+        else:
+            raise AssertionError(entry['name'] + ': no EOS')
+        limit = 96 if entry['name'].endswith('DreamEaterDesc') else 92
+        assert max(widths) <= limit and len(widths) <= 3, (entry['name'], widths)
+        if limit == 96:
+            assert widths == [84, 84, 96]
+        widest = max(widest, max(widths))
+    print(f'PASS: standard-font tutor descriptions use at most 3 lines; Dream Eater intentionally uses 96px for its final period (max {widest}px); other descriptions stay within 92px; no tile overlap')
+
 
 if __name__ == '__main__':
     main()
