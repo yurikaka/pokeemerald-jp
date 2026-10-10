@@ -6120,6 +6120,100 @@ ChsFrontierPassGfx:
 .global ChsCaughtMonPcNicknameDisplay
 .global ChsMultichoiceMenuWindow
 .global ChsShopTmNameCopy
+.align 2
+.global ChsPcItemNameCopy
+.type ChsPcItemNameCopy, %function
+.thumb_func
+ChsPcItemNameCopy:
+    @ Wokann player_pc.c: PC name slots are 24 bytes, beginning at offset 0x198.
+    @ Keep standard Chinese glyphs; use MuzaiPixel only for P and decimal digits.
+    push {r4, lr}
+    sub sp, #16
+    adds r4, r0, #0
+    lsls r0, r1, #16
+    lsrs r0, r0, #16
+    mov r1, sp
+    ldr r3, =0x080D5EC9
+    bl .Lpc_item_name_call
+    adds r0, r4, #0
+    mov r1, sp
+    bl ChsPcNarrowLatinString
+    add sp, #16
+    pop {r4}
+    pop {r1}
+    bx r1
+.Lpc_item_name_call:
+    bx r3
+
+.align 2
+.type ChsPcNarrowLatinString, %function
+.thumb_func
+ChsPcNarrowLatinString:
+    push {r4-r7, lr}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    movs r6, #0
+.Lpc_item_name_next:
+    ldrb r7, [r5]
+    cmp r7, #0xFF
+    beq .Lpc_item_name_done
+    cmp r7, #0xCA
+    beq .Lpc_item_name_narrow
+    cmp r7, #0xA1
+    blo .Lpc_item_name_normal
+    cmp r7, #0xAA
+    bls .Lpc_item_name_narrow
+.Lpc_item_name_normal:
+    cmp r6, #0
+    beq .Lpc_item_name_copy_normal
+    movs r0, #0xF5
+    strb r0, [r4]
+    movs r0, #0xF4
+    strb r0, [r4, #1]
+    adds r4, #2
+    movs r6, #0
+.Lpc_item_name_copy_normal:
+    strb r7, [r4]
+    adds r4, #1
+    adds r5, #1
+    cmp r7, #0x7F
+    beq .Lpc_item_name_copy_second
+    cmp r7, #0x60
+    blo .Lpc_item_name_next
+    cmp r7, #0x7D
+    bhi .Lpc_item_name_next
+    cmp r7, #0x65
+    beq .Lpc_item_name_next
+    cmp r7, #0x7A
+    beq .Lpc_item_name_next
+.Lpc_item_name_copy_second:
+    ldrb r0, [r5]
+    strb r0, [r4]
+    adds r4, #1
+    adds r5, #1
+    b .Lpc_item_name_next
+.Lpc_item_name_narrow:
+    cmp r6, #0
+    bne .Lpc_item_name_copy_narrow
+    movs r0, #0xF5
+    strb r0, [r4]
+    movs r0, #0xF3
+    strb r0, [r4, #1]
+    adds r4, #2
+    movs r6, #1
+.Lpc_item_name_copy_narrow:
+    strb r7, [r4]
+    adds r4, #1
+    adds r5, #1
+    b .Lpc_item_name_next
+.Lpc_item_name_done:
+    strb r7, [r4]
+    adds r0, r4, #0
+    pop {r4-r7}
+    pop {r1}
+    bx r1
+.ltorg
+
 .type ChsShopTmNameCopy, %function
 .thumb_func
 ChsShopTmNameCopy:

@@ -11,6 +11,8 @@ The atlas includes characters used by the trainer memo's localized nature and
 map-section names, localized species names for long summary-screen nicknames,
 localized Pokédex descriptions, and all localized move names (including the
 five-character names shown with the narrow font in Summary and battle menus).
+The Latin atlas also includes P and digits for narrow PP prefixes and numbers
+in PC item names; their Chinese text continues to use the standard font.
 The original memo font remains in use when
 the first line is at most 156 pixels wide. Wider first lines use this 8x12 font,
 then restore the original font before the existing newline.

@@ -58,6 +58,7 @@ def main() -> None:
 
     entries = json.loads((ROOT / "patch/batches/175_summary_info.json").read_text())["texts"]
     chars = set(MEMO_TEXT + START_MENU_TEXT)
+    chars.add("P")  # PC item lists render PP prefixes with narrow Latin glyphs.
     for entry in entries:
         if entry["name"].startswith(("ChsNatureName", "ChsMapsecName")):
             chars.update(entry["text"])
