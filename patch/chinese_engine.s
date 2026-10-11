@@ -6120,6 +6120,33 @@ ChsFrontierPassGfx:
 .global ChsCaughtMonPcNicknameDisplay
 .global ChsMultichoiceMenuWindow
 .global ChsShopTmNameCopy
+.global ChsHofHeaderHintWidth
+.type ChsHofHeaderHintWidth, %function
+.thumb_func
+ChsHofHeaderHintWidth:
+    @ Wokann menu.c sub_081982E8 estimates header hints as byte count * 8.
+    @ HOF prints these two hints in font 0: Chinese glyphs are 10px,
+    @ keypad icons and spaces are 8px. Preserve the original right edge.
+    ldr r1, =Chs_ChecklistLiteral_480_gText_PickCancel
+    cmp r6, r1
+    beq .Lhof_header_short_hint
+    ldr r1, =Chs_ChecklistLiteral_480_gText_PickNextCancel
+    cmp r6, r1
+    bne .Lhof_header_original_width
+    movs r5, #100
+    b .Lhof_header_width_done
+.Lhof_header_short_hint:
+    movs r5, #72
+    b .Lhof_header_width_done
+.Lhof_header_original_width:
+    lsrs r5, r0, #16
+.Lhof_header_width_done:
+    ldr r4, =0x0203CA6C
+    ldrb r0, [r4]
+    movs r1, #1
+    ldr r3, =0x08198379
+    bx r3
+.ltorg
 .align 2
 .global ChsPcItemNameCopy
 .type ChsPcItemNameCopy, %function
