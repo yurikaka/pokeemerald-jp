@@ -218,6 +218,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x0800885C", "original": "10b5031c05240022", "symbol": "ChsBadEggNicknameLimit"},
     {"address": "0x08198370", "original": "050c194c20780121", "symbol": "ChsHofHeaderHintWidth"},
     {"address": "0x0816BC08", "original": "00b5021c0804000c", "symbol": "ChsPcItemNameCopy"},
     {"address": "0x080DF568", "original": "291cf6f7adfc09e0", "symbol": "ChsShopTmNameCopy"},
@@ -304,6 +305,7 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x0806A3BE", "original": "042c", "replacement": "052c", "comment": "Copy all six bytes of the fixed Chinese Bad Egg name, including its language control, before appending EOS"},
     {"address": "0x085E11E0", "original": "02011112020f5f02", "replacement": "02011111020f5f02", "comment": "Shorten the Pokemon action prompt by one tile so its frame does not overlap the widened party action menu"},
     {"address": "0x082EB8C0", "original": "001939040205b002", "replacement": "001839050205b002", "comment": "Move standard battle type-name start left one tile, preserving the right edge and expanding the drawing area to prevent clipping"},
     {"address": "0x082EB8C8", "original": "0013370a0405b802", "replacement": "0013370a0405ba02", "comment": "Move the standard battle switch-prompt tiles after the expanded type window"},

@@ -1629,6 +1629,35 @@ ChsNamingScreenSpeciesTitle:
 
 .align 2
 .global ChsCopyMonNickname
+.global ChsBadEggNicknameLimit
+.type ChsBadEggNicknameLimit, %function
+.thumb_func
+ChsBadEggNicknameLimit:
+    @ Wokann string_util.c StringGet_Nickname normally truncates at 5 bytes.
+    @ Only the fixed translated Bad Egg label needs 6 bytes before EOS.
+    push {r4, lr}
+    adds r3, r0, #0
+    ldr r1, =Chs_ChecklistLiteral_gText_BadEgg
+    movs r2, #0
+.Lbad_egg_nickname_compare:
+    ldrb r0, [r3, r2]
+    ldrb r4, [r1, r2]
+    cmp r0, r4
+    bne .Lbad_egg_nickname_normal_limit
+    cmp r0, #0xFF
+    beq .Lbad_egg_nickname_full_limit
+    adds r2, #1
+    b .Lbad_egg_nickname_compare
+.Lbad_egg_nickname_full_limit:
+    movs r4, #6
+    b .Lbad_egg_nickname_limit_ready
+.Lbad_egg_nickname_normal_limit:
+    movs r4, #5
+.Lbad_egg_nickname_limit_ready:
+    movs r2, #0
+    ldr r0, =0x08008865
+    bx r0
+.ltorg
 .type ChsCopyMonNickname, %function
 .thumb_func
 ChsCopyMonNickname:
