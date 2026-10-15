@@ -5519,6 +5519,16 @@ ChsPokedexInfoTilemap:
     .incbin "build/patch/pokedex_info_tilemap.lz"
 
 .align 2
+.global ChsPokedexStartMenuMain
+ChsPokedexStartMenuMain:
+    .incbin "build/patch/pokedex_start_menu_main.lz"
+
+.align 2
+.global ChsPokedexStartMenuSearchResults
+ChsPokedexStartMenuSearchResults:
+    .incbin "build/patch/pokedex_start_menu_search_results.lz"
+
+.align 2
 .global ChsPokedexInterfaceGfx
 ChsPokedexInterfaceGfx:
     .incbin "build/patch/pokedex_interface.lz"

@@ -12,8 +12,11 @@ info-screen tilemap (0x08537A10), then:
      宝可梦图鉴 tiles from patch/gfx/pokedex_list_title.4bpp (ported from the
      US Chinese build's graphics/pokedex/menu.png; same tile IDs and palette
      roles in both versions).
+  4. Reuses 36 START-menu-only tiles for six shared Chinese word blocks and
+     generates the main-list and search-results START-menu tilemaps.
 """
 import struct
+import re
 from pathlib import Path
 
 from PIL import Image
@@ -49,6 +52,53 @@ TAB_AA = 13      # kana glyph anti-alias / Chinese glyph anti-alias
 INFO_BG = 1
 INFO_GLYPH = 15
 INFO_AA = 3
+
+
+def localize_start_menus(rom: bytes, tileset: bytearray, font: Image.Image):
+    """Reuse only START-menu text tiles, keeping the original 256-tile budget.
+
+    Wokann dev src/pokedex.c loads these maps at _080BBD78/_080BBDA4.
+    Six shared two-character blocks fit both four- and five-option menus.
+    Frames, cursor columns, palettes and all other Pokédex screens stay intact.
+    """
+    maps = [bytearray(lzdec(rom, addr)) for addr in (0x08537660, 0x08537730)]
+    labels = [
+        ("返回列表", "列表开头", "列表末尾", "关闭图鉴"),
+        ("返回列表", "列表开头", "列表末尾", "返回图鉴", "关闭图鉴"),
+    ]
+    text_tiles = set()
+    for tilemap, rows in zip(maps, labels):
+        for y in range(1, 1 + len(rows) * 2):
+            for x in range(19, 28):
+                text_tiles.add(struct.unpack_from("<H", tilemap, (y * 32 + x) * 2)[0] & 0x3FF)
+    text_tiles.discard(0xB5)  # blank menu background
+    pool = sorted(text_tiles)
+    assert len(pool) >= 36
+    # The original glyphs use 5=white, 9=shadow, 13=blue in palette 2.
+    codes = {ch: int(code, 16) for ch, code in re.findall(
+        r"^'(.)'\s*=\s*([0-9A-Fa-f]{4})\s*$",
+        (ROOT / "patch/charmap_chs.txt").read_text(), re.MULTILINE)}
+    blocks = {}
+    for i, word in enumerate(("返回", "列表", "开头", "末尾", "关闭", "图鉴")):
+        ids = pool[i * 6:i * 6 + 6]
+        for tile in ids:
+            tileset[tile * 32:(tile + 1) * 32] = bytes([0xDD]) * 32
+        for j, ch in enumerate(word):
+            draw_char(tileset, ids[:3], ids[3:], j * 12,
+                      glyph_pixels(font, codes[ch]), 13, 5, 9, yoff=1)
+        blocks[word] = ids
+    for tilemap, rows in zip(maps, labels):
+        for row, label in enumerate(rows):
+            for dy in range(2):
+                for x in range(19, 28):
+                    struct.pack_into("<H", tilemap, ((row * 2 + 1 + dy) * 32 + x) * 2, 0x20B5)
+                for word_index in range(2):
+                    ids = blocks[label[word_index * 2:word_index * 2 + 2]]
+                    for dx in range(3):
+                        struct.pack_into("<H", tilemap,
+                                         ((row * 2 + 1 + dy) * 32 + 19 + word_index * 3 + dx) * 2,
+                                         0x2000 | ids[dy * 3 + dx])
+    return maps
 
 
 def lzdec(data: bytes, addr: int) -> bytes:
@@ -166,6 +216,10 @@ def main() -> None:
     title = (ROOT / "patch/gfx/pokedex_list_title.4bpp").read_bytes()
     assert len(title) == 15 * 32
     tileset[0x10 * 32 : 0x1F * 32] = title
+
+    start_maps = localize_start_menus(rom, tileset, font)
+    for name, data in zip(("main", "search_results"), start_maps):
+        (ROOT / f"patch/gfx/pokedex_start_menu_{name}.bin").write_bytes(data)
 
     (ROOT / "patch/gfx/pokedex_info_tiles.4bpp").write_bytes(bytes(tileset))
     (ROOT / "patch/gfx/pokedex_info_tilemap.bin").write_bytes(bytes(tilemap))

@@ -53,3 +53,12 @@ make chs \
   PATCH_ARM_PREFIX=/path/to/arm-none-eabi- \
   GBAGFX=/path/to/gbagfx
 ```
+
+The Pokédex START menus use baked-in graphics rather than text strings.
+`build_pokedex_info_gfx.py` generates both menu tilemaps and reuses 36 tiles
+exclusive to their labels in the shared Japanese background tileset. This
+keeps the original 8 KiB menu graphics load, frame, cursor and palette layout.
+The two map references are confirmed in Wokann `dev`'s `src/pokedex.c`
+at `_080BBD78` and `_080BBDA4`. After building, run
+`python3 patch/tools/verify_pokedex_start_menu.py` to check the installed ROM
+resources and ensure the reused tiles do not overlap other Pokédex screens.
