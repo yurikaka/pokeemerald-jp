@@ -807,21 +807,9 @@ ChineseRenderHook:
     lsls r2, r2, #2
     ldr r5, =ChsSpeciesNames
     ldr r5, [r5, r2]
-    ldrb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
-    adds r5, r5, r2
-    ldrb r3, [r5]
-    cmp r3, #0xFF
-    beq .Lcompact_species_done
-    ldrb r2, [r5, #1]
-    ldrb r5, [r6, #TEXT_SPECIES_CHAR_OFFSET]
-    adds r5, #2
-    strb r5, [r6, #TEXT_SPECIES_CHAR_OFFSET]
-    cmp r3, #0x7F
-    beq .Lcompact_species_punctuation
-    subs r3, #0x5F
-    lsls r3, r3, #8
-    orrs r3, r2
-    b .Lload_glyph
+    @ Species names can mix Chinese pairs and single-byte digits (Porygon2).
+    @ Share the mixed-width decoder with fixed-layout display resources.
+    b .Lcompact_display_read
 .Lcompact_species_punctuation:
     lsls r3, r3, #8
     orrs r3, r2
@@ -840,6 +828,7 @@ ChineseRenderHook:
     lsls r2, r2, #2
     ldr r5, =ChsDisplayResourceNames
     ldr r5, [r5, r2]
+.Lcompact_display_read:
     ldrb r2, [r6, #TEXT_SPECIES_CHAR_OFFSET]
     adds r5, r5, r2
     ldrb r3, [r5]
@@ -2011,7 +2000,20 @@ ChsUpdateNickInHealthbox:
     ldrb r1, [r0]
     cmp r1, #0xFF
     beq .Lhealthbox_nickname_font
-    adds r0, #2
+    cmp r1, #0x7F
+    beq .Lhealthbox_nickname_pair
+    cmp r1, #0x60
+    blo .Lhealthbox_nickname_single
+    cmp r1, #0x7D
+    bhi .Lhealthbox_nickname_single
+    cmp r1, #0x65
+    beq .Lhealthbox_nickname_single
+    cmp r1, #0x7A
+    beq .Lhealthbox_nickname_single
+.Lhealthbox_nickname_pair:
+    adds r0, #1
+.Lhealthbox_nickname_single:
+    adds r0, #1
     adds r7, #1
     b .Lhealthbox_nickname_length
 .Lhealthbox_nickname_font:
@@ -2395,7 +2397,20 @@ ChsPokedexName:
     ldrb r1, [r0]
     cmp r1, #0xFF
     beq .Lpokedex_name_print
-    adds r0, #2
+    cmp r1, #0x7F
+    beq .Lpokedex_name_pair
+    cmp r1, #0x60
+    blo .Lpokedex_name_single
+    cmp r1, #0x7D
+    bhi .Lpokedex_name_single
+    cmp r1, #0x65
+    beq .Lpokedex_name_single
+    cmp r1, #0x7A
+    beq .Lpokedex_name_single
+.Lpokedex_name_pair:
+    adds r0, #1
+.Lpokedex_name_single:
+    adds r0, #1
     adds r5, #1
     b .Lpokedex_name_length
 .Lpokedex_name_unknown:
