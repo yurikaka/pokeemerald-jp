@@ -5,6 +5,7 @@
   "render_hook_original": "b0773068037801303060",
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
+    {"address": "0x0819B688", "original": "30b583b01a4d2868c47801200021", "symbol": "ChsFactorySelectPrintMonSpecies"},
     {"address": "0x080D1970", "original": "00b50006020e0d2a01d9002006e00448", "symbol": "ChsBoxNameForDisplay"},
     {"address": "0x080088B8", "original": "00b5031c02e01a70013301310a78101c", "symbol": "ChsTvNameStringCopy"},
     {"address": "0x08008888", "original": "30b5041c05250023e218c81800781070", "symbol": "ChsVsNameCopy"},
@@ -305,6 +306,7 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x085DBC44", "original": "00180208020e1100", "replacement": "00160208020e1100", "comment": "Wokann battle_factory_screen.c gUnknown_85DBC3C window 1: move the rental species-name window left 16px so its full 64px width fits onscreen"},
     {"address": "0x0806A3BE", "original": "042c", "replacement": "052c", "comment": "Copy all six bytes of the fixed Chinese Bad Egg name, including its language control, before appending EOS"},
     {"address": "0x085E11E0", "original": "02011112020f5f02", "replacement": "02011111020f5f02", "comment": "Shorten the Pokemon action prompt by one tile so its frame does not overlap the widened party action menu"},
     {"address": "0x082EB8C0", "original": "001939040205b002", "replacement": "001839050205b002", "comment": "Move standard battle type-name start left one tile, preserving the right edge and expanding the drawing area to prevent clipping"},

@@ -3897,6 +3897,110 @@ ChsAppendCategorySuffix:
 .Lcategory_append_done:
     bx lr
 
+.global ChsFactorySelectPrintMonSpecies
+.type ChsFactorySelectPrintMonSpecies, %function
+.thumb_func
+ChsFactorySelectPrintMonSpecies:
+    @ Wokann Select_PrintMonSpecies, 0819B688. Right-align within the
+    @ shifted 64px window, reserving four pixels at the screen edge.
+    push {r4-r6, lr}
+    sub sp, #12
+    ldr r5, =0x03001278
+    movs r0, #1
+    movs r1, #0
+    ldr r3, =0x08003B19
+    bl .Lfactory_species_call_r3
+    ldr r0, [r5]
+    ldrb r1, [r0, #3]
+    movs r2, #0x6C
+    muls r1, r2
+    adds r0, r0, r1
+    adds r0, #0x14
+    movs r1, #11
+    movs r2, #0
+    ldr r3, =0x0806A059
+    bl .Lfactory_species_call_r3
+    lsls r4, r0, #16
+    lsrs r4, r4, #16
+    lsls r1, r4, #1
+    adds r1, r1, r4
+    lsls r1, r1, #1
+    ldr r0, =ChsSpeciesNameTokens
+    adds r1, r1, r0
+    ldr r0, =0x02021C7C
+    ldr r3, =0x080088B9
+    bl .Lfactory_species_call_r3
+    lsls r0, r4, #2
+    ldr r1, =ChsSpeciesNames
+    ldr r1, [r1, r0]
+    adds r1, #1  @ Skip compact Chinese mode prefix.
+    movs r6, #0
+    movs r5, #0
+.Lfactory_species_width:
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lfactory_species_width_done
+    cmp r0, #0x7F
+    beq .Lfactory_species_pair
+    cmp r0, #0x60
+    blo .Lfactory_species_single
+    cmp r0, #0x7D
+    bhi .Lfactory_species_single
+    cmp r0, #0x65
+    beq .Lfactory_species_single
+    cmp r0, #0x7A
+    beq .Lfactory_species_single
+.Lfactory_species_pair:
+    adds r1, #2
+    adds r6, #12
+    b .Lfactory_species_count_next
+.Lfactory_species_single:
+    adds r1, #1
+    adds r6, #8
+.Lfactory_species_count_next:
+    adds r5, #1
+    b .Lfactory_species_width
+.Lfactory_species_width_done:
+    @ The decorative diagonal leaves only 48px clear at this text row.
+    @ Reuse the existing 8px species-name font for five-character names.
+    cmp r5, #5
+    blo .Lfactory_species_position
+    adds r0, r4, #0
+    ldr r1, =0x02021C7C
+    movs r2, #5
+    bl ChsWriteNarrowSpeciesName
+    lsls r6, r5, #3
+.Lfactory_species_position:
+    movs r2, #60
+    subs r2, r2, r6
+    bpl .Lfactory_species_print
+    movs r2, #0
+.Lfactory_species_print:
+    ldr r0, =0x085DBC81
+    str r0, [sp]
+    movs r0, #0
+    str r0, [sp, #4]
+    ldr r0, =0x02021C7C
+    str r0, [sp, #8]
+    movs r0, #1
+    movs r1, #1
+    movs r3, #2
+    ldr r4, =0x08199AFD
+    bl .Lfactory_species_call_r4
+    movs r0, #1
+    movs r1, #2
+    ldr r3, =0x08003529
+    bl .Lfactory_species_call_r3
+    add sp, #12
+    pop {r4-r6}
+    pop {r0}
+    bx r0
+.Lfactory_species_call_r3:
+    bx r3
+.Lfactory_species_call_r4:
+    bx r4
+.ltorg
+
 .global ChsFactorySelectPrintMonCategory
 .type ChsFactorySelectPrintMonCategory, %function
 .thumb_func
