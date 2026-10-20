@@ -3897,6 +3897,24 @@ ChsAppendCategorySuffix:
 .Lcategory_append_done:
     bx lr
 
+@ r0 = EOS, r1 = start of the Chinese category + 宝可梦 string.
+@ Its two-byte mode prefix plus seven Chinese pairs occupy 16 bytes.
+ChsFactoryFitCategory:
+    subs r2, r0, r1
+    cmp r2, #16
+    blo .Lfactory_category_fit_done
+    movs r2, #0xF5
+    strb r2, [r1]
+    strb r2, [r0]
+    movs r2, #0xF3
+    strb r2, [r1, #1]
+    movs r2, #0xF4
+    strb r2, [r0, #1]
+    movs r2, #0xFF
+    strb r2, [r0, #2]
+.Lfactory_category_fit_done:
+    bx lr
+
 .global ChsFactorySelectPrintMonSpecies
 .type ChsFactorySelectPrintMonSpecies, %function
 .thumb_func
@@ -4041,6 +4059,8 @@ ChsFactorySelectPrintMonCategory:
     ldr r1, [r1, r0]
     add r0, sp, #0x0C
     bl ChsAppendCategorySuffix
+    add r1, sp, #0x0C
+    bl ChsFactoryFitCategory
     movs r0, #2
     str r0, [sp]
     movs r0, #0
@@ -4128,6 +4148,8 @@ ChsFactorySwapPrintMonCategory:
     ldr r1, [r1, r0]
     add r0, sp, #0x0C
     bl ChsAppendCategorySuffix
+    add r1, sp, #0x0C
+    bl ChsFactoryFitCategory
     movs r0, #2
     str r0, [sp]
     movs r0, #0
