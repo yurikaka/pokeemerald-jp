@@ -6581,6 +6581,8 @@ ChsMultichoiceMenuWindow:
     beq .Lgame_corner_prize_window
     cmp r3, #55
     beq .Lgame_corner_prize_window
+    cmp r3, #49
+    beq .Lgame_corner_purchase_window
     cmp r3, #42
     beq .Lmultichoice_fixed_width
     cmp r3, #95
@@ -6592,6 +6594,14 @@ ChsMultichoiceMenuWindow:
 .Lgame_corner_prize_window:
     movs r0, #11
     movs r2, #17
+    b .Lvending_window_original
+.Lgame_corner_purchase_window:
+    @ Unchanged 50/500-coin labels need 120px including the cursor inset.
+    @ The 11-tile money window frame ends at column 12; keep this
+    @ menu beside it at the original top row, without changing text spacing.
+    movs r0, #13
+    movs r1, #0
+    movs r2, #15
     b .Lvending_window_original
 .Lmultichoice_window_bounds:
     @ CreateWindowFromRect adds one tile to x. Reserve both frame edges

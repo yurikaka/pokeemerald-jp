@@ -308,6 +308,8 @@
   "inline_table_writes": [],
   "code_patches": [
     {"address": "0x0808312E", "original": "4822", "replacement": "6022", "comment": "Wokann dev berry_blender.c Blender_PrintBlendingResults: shift only the formatted time from window x=72 to x=96. Its 56px Chinese text then ends at x=152, matching the existing maximum-speed line; leave maximum speed unchanged."},
+    {"address": "0x080E4AEA", "original": "0c20", "replacement": "0b20", "comment": "Wokann dev money.c DrawMoneyBox: shrink the shared field money window from 12 to 11 tiles; its frame ends at column 12, before the Game Corner purchase menu at column 13."},
+    {"address": "0x080E49F8", "original": "2821", "replacement": "2021", "comment": "Wokann dev money.c PrintMoneyAmountInMoneyBox: move the six-digit amount and yen suffix left 8px (x=40 to 32), preserving font and spacing. 999999 yen ends at x=88, fitting the 11-tile window without touching the label sprite."},
     {
       "address": "0x081D061E",
       "original": "20d0",
