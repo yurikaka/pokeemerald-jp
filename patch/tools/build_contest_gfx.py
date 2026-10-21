@@ -73,13 +73,18 @@ def main():
     if results[0x10 * 32:0x11 * 32] != bytes([0x88]) * 32:
         raise ValueError("Unexpected Japanese title background color")
     source_tiles = pack(Image.open(SOURCE / "results_screen/tiles.png"))
-    slots = list(range(1, 16)) + list(range(17, 64)) + list(range(178, 256))
+    # These stars are inserted by code, so they do not appear in the static
+    # tilemaps checked below (JP contest_util.c: sub_080F6114/sub_080F8310).
+    score_star_tiles = (0xB2, 0xB3, 0xB4)
+    original_stars = {tile: bytes(results[tile * 32:(tile + 1) * 32]) for tile in score_star_tiles}
+    slots = list(range(1, 16)) + list(range(17, 64)) + list(range(0xB5, 256))
     for filename in ("bg.bin.lz", "interface.bin.lz", "winner_banner.bin.lz"):
         tilemap = lzdec((REFERENCE / "results_screen" / filename).read_bytes(), 0x08000000)
         used = {entry & 0x3FF for entry in struct.unpack(f"<{len(tilemap) // 2}H", tilemap)}
         if used.intersection(slots):
             raise ValueError(f"Title tiles overlap the results interface: {filename}")
     available = iter(slots)
+    title_tiles = {}
     labels = (("normal", 8, 0x08569334), ("super", 8, 0x08569354),
               ("hyper", 8, 0x08569374), ("master", 8, 0x08569394),
               ("link", 8, 0x085693B4), ("cool", 5, 0x085693D4),
@@ -93,24 +98,30 @@ def main():
         target_entries = []
         for row in range(2):
             for column in range(columns):
-                target = next(available)
                 if name == "title":
                     source_column = column + 4
                 else:
                     source_column = column
                 if source_column < source_columns:
                     source_tile = entries[row * source_columns + source_column] & 0x3FF
-                    results[target * 32:(target + 1) * 32] = source_tiles[source_tile * 32:(source_tile + 1) * 32]
+                    tile_data = source_tiles[source_tile * 32:(source_tile + 1) * 32]
                 else:
-                    results[target * 32:(target + 1) * 32] = bytes(32)
-                results[target * 32:(target + 1) * 32] = opaque_title_tile(results[target * 32:(target + 1) * 32])
+                    tile_data = bytes(32)
+                tile_data = bytearray(opaque_title_tile(tile_data))
+                if name == "title" and column == 0:
+                    for vertical in range(8):
+                        tile_data[vertical * 4] = 0x88
+                tile_data = bytes(tile_data)
+                if tile_data not in title_tiles:
+                    target = next(available)
+                    title_tiles[tile_data] = target
+                    results[target * 32:(target + 1) * 32] = tile_data
+                target = title_tiles[tile_data]
                 target_entries.append(target)
-        if name == "title":
-            for row in range(2):
-                for vertical in range(8):
-                    for horizontal in range(2):
-                        set_px(results, target_entries[row * columns], horizontal, vertical, 8)
         (ROOT / f"patch/gfx/contest_title_{name}.bin").write_bytes(struct.pack(f"<{len(target_entries)}H", *target_entries))
+    for tile, original_star in original_stars.items():
+        if results[tile * 32:(tile + 1) * 32] != original_star:
+            raise ValueError(f"Title tiles overwrite the dynamic score star: {tile:#x}")
     (ROOT / "patch/gfx/contest_results.4bpp").write_bytes(results)
 
 
