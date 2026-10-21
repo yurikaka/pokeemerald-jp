@@ -102,6 +102,9 @@ $(PATCH_BUILD)/latin_small.latfont: patch/fonts/latin_small.png | $(PATCH_BUILD)
 patch/gfx/berry_tag_tiles.4bpp: patch/tools/build_berry_tag_gfx.py baserom_jp.gba
 	$(PYTHON) patch/tools/build_berry_tag_gfx.py
 
+patch/gfx/move_types.4bpp: patch/tools/build_move_types_gfx.py patch/tools/build_berry_fix_gfx.py patch/tools/build_berry_tag_gfx.py patch/tools/build_texts.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_wokann_dev/graphics/types/move_types.4bpp.lz
+	$(PYTHON) patch/tools/build_move_types_gfx.py
+
 $(PATCH_MENU_INFO_US_GFX): ../pokeemerald_us_chs/graphics/interface/menu_info.png | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
 
