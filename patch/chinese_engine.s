@@ -2791,7 +2791,6 @@ ChsCopyItemName:
 .Lcopy_item_call:
     bx r3
 
-
 .align 2
 .global ChsGetBerryNameByType
 .type ChsGetBerryNameByType, %function
@@ -6266,12 +6265,30 @@ ChsStorageMenuGfx:
 ChsPokeblockCaseGfx:
     .incbin "build/patch/pokeblock_case.lz"
 
-
 .align 2
 .global ChsBerryBlenderStartGfx
 ChsBerryBlenderStartGfx:
     .incbin "patch/gfx/berry_blender_start.4bpp"
 
+.align 2
+.global ChsUsePokeblockTitleGfx
+ChsUsePokeblockTitleGfx:
+    .incbin "build/patch/use_pokeblock_title.lz"
+
+.align 2
+.global ChsUsePokeblockGraphGfx
+ChsUsePokeblockGraphGfx:
+    .incbin "build/patch/use_pokeblock_graph.lz"
+
+.align 2
+.global ChsUsePokeblockGraphTilemap
+ChsUsePokeblockGraphTilemap:
+    .incbin "build/patch/use_pokeblock_graph_tilemap.lz"
+
+.align 2
+.global ChsConditionCancelGfx
+ChsConditionCancelGfx:
+    .incbin "patch/gfx/condition_cancel.4bpp"
 
 .align 2
 .global ChsStoragePartyMap

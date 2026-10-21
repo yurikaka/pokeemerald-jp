@@ -30,13 +30,15 @@ PATCH_BERRY_FIX_PALS := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene)
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp $(PATCH_BERRY_FIX_GFX) patch/gfx/contest_interface.4bpp patch/gfx/contest_applause.4bpp patch/gfx/contest_results.4bpp patch/gfx/contest_next_turn.4bpp
 PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
 PATCH_RAW_GFX += patch/gfx/berry_blender_start.4bpp
+PATCH_RAW_GFX += patch/gfx/condition_cancel.4bpp
 PATCH_GENERATED_GFX += patch/gfx/storage_menu.4bpp
 PATCH_GENERATED_GFX += patch/gfx/pokeblock_case.4bpp
+PATCH_GENERATED_GFX += patch/gfx/use_pokeblock_title.4bpp patch/gfx/use_pokeblock_graph.4bpp
 PATCH_GENERATED_GFX += patch/gfx/frontier_pass.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_CONTEST_TITLES := $(addprefix patch/gfx/contest_title_,$(addsuffix .bin,normal super hyper master link cool beauty cute smart tough title))
 PATCH_RAW_TILEMAPS := patch/gfx/summary_effect_battle.bin patch/gfx/summary_effect_contest.bin $(PATCH_CONTEST_TITLES)
-PATCH_TILEMAPS := $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin))
+PATCH_TILEMAPS := $(sort $(filter-out $(PATCH_RAW_TILEMAPS),$(wildcard patch/gfx/*.bin)) patch/gfx/use_pokeblock_graph_tilemap.bin)
 PATCH_GFX_LZ := $(patsubst patch/gfx/%.4bpp,$(PATCH_BUILD)/%.lz,$(PATCH_GFX))
 PATCH_TILEMAP_LZ := $(patsubst patch/gfx/%.bin,$(PATCH_BUILD)/%.lz,$(PATCH_TILEMAPS))
 PATCH_RESOURCES_LZ := $(PATCH_GFX_LZ) $(PATCH_TILEMAP_LZ)
@@ -141,6 +143,9 @@ patch/gfx/pokeblock_case.4bpp: patch/tools/build_pokeblock_case_gfx.py patch/too
 
 patch/gfx/berry_blender_start.4bpp: patch/tools/build_blender_start_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/berry_blender/jp/830d794.bin ../pokeemerald_us_chs/graphics/berry_blender/start.png
 	$(PYTHON) patch/tools/build_blender_start_gfx.py
+
+patch/gfx/use_pokeblock_title.4bpp patch/gfx/use_pokeblock_graph.4bpp patch/gfx/use_pokeblock_graph_tilemap.bin patch/gfx/condition_cancel.4bpp &: patch/tools/build_use_pokeblock_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/baserom_jp.gba ../pokeemerald_wokann_dev/graphics/pokenav/condition/cancel.4bpp ../pokeemerald_wokann_dev/graphics/pokenav/condition/cancel.gbapal ../pokeemerald_us_chs/graphics/pokeblock/use_screen/condition.png ../pokeemerald_us_chs/graphics/pokeblock/use_screen/graph.png ../pokeemerald_us_chs/graphics/pokeblock/use_screen/graph.bin ../pokeemerald_us_chs/graphics/pokenav/condition/cancel.png
+	$(PYTHON) patch/tools/build_use_pokeblock_gfx.py
 
 $(PATCH_BUILD)/storage_party.lz: ../pokeemerald_us_chs/graphics/pokemon_storage/party_menu.bin | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
