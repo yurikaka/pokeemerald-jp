@@ -307,6 +307,7 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x0808312E", "original": "4822", "replacement": "6022", "comment": "Wokann dev berry_blender.c Blender_PrintBlendingResults: shift only the formatted time from window x=72 to x=96. Its 56px Chinese text then ends at x=152, matching the existing maximum-speed line; leave maximum speed unchanged."},
     {
       "address": "0x081D061E",
       "original": "20d0",
