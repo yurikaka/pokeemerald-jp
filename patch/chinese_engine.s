@@ -6574,6 +6574,13 @@ ChsMultichoiceMenuWindow:
     lsls r3, r3, #1
     mov r12, r3
     mov r3, sb
+    @ Wokann MauvilleCity_GameCorner scripts: preserve the original prize
+    @ text spacing. Seventeen tiles fit the unchanged labels, not the
+    @ byte-counted 22; x=11 leaves the coin frame at columns 0..9.
+    cmp r3, #48
+    beq .Lgame_corner_prize_window
+    cmp r3, #55
+    beq .Lgame_corner_prize_window
     cmp r3, #42
     beq .Lmultichoice_fixed_width
     cmp r3, #95
@@ -6581,6 +6588,10 @@ ChsMultichoiceMenuWindow:
 .Lmultichoice_fixed_width:
     movs r0, #14
     movs r2, #14
+    b .Lvending_window_original
+.Lgame_corner_prize_window:
+    movs r0, #11
+    movs r2, #17
     b .Lvending_window_original
 .Lmultichoice_window_bounds:
     @ CreateWindowFromRect adds one tile to x. Reserve both frame edges

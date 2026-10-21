@@ -37,7 +37,12 @@ def main():
         cpu.reg_write(UC_ARM_REG_R9, menu)
         result = m.call('NativeVendingWindowHook', (16, 0, 18, 8),
                         stop_addresses=(0x080E1460,))
-        expected = (14, 0, 14, 8) if menu in (42, 95) else (10, 0, 18, 8)
+        if menu in (42, 95):
+            expected = (14, 0, 14, 8)
+        elif menu in (48, 55):
+            expected = (11, 0, 17, 8)
+        else:
+            expected = (10, 0, 18, 8)
         assert captured[-1] == expected, (menu, captured[-1])
         assert result == 7
         assert cpu.reg_read(UC_ARM_REG_R4) == 7
