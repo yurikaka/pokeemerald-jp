@@ -6217,6 +6217,18 @@ ChsStorageMenuGfx:
     .incbin "build/patch/storage_menu.lz"
 
 .align 2
+.global ChsPokeblockCaseGfx
+ChsPokeblockCaseGfx:
+    .incbin "build/patch/pokeblock_case.lz"
+
+
+.align 2
+.global ChsBerryBlenderStartGfx
+ChsBerryBlenderStartGfx:
+    .incbin "patch/gfx/berry_blender_start.4bpp"
+
+
+.align 2
 .global ChsStoragePartyMap
 ChsStoragePartyMap:
     .incbin "build/patch/storage_party.lz"

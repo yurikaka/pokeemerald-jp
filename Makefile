@@ -29,7 +29,9 @@ PATCH_BERRY_FIX_GFX := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene)_
 PATCH_BERRY_FIX_PALS := $(foreach scene,0 1 2 3 4 5,patch/gfx/berry_fix_$(scene).gbapal)
 PATCH_GENERATED_GFX := patch/gfx/berry_tag_tiles.4bpp $(PATCH_BERRY_FIX_GFX) patch/gfx/contest_interface.4bpp patch/gfx/contest_applause.4bpp patch/gfx/contest_results.4bpp patch/gfx/contest_next_turn.4bpp
 PATCH_RAW_GFX := patch/gfx/menu_info_tiles.4bpp patch/gfx/battle_status_tiles.4bpp patch/gfx/mon_markings_menu.4bpp patch/gfx/bag_hm_icon.4bpp
+PATCH_RAW_GFX += patch/gfx/berry_blender_start.4bpp
 PATCH_GENERATED_GFX += patch/gfx/storage_menu.4bpp
+PATCH_GENERATED_GFX += patch/gfx/pokeblock_case.4bpp
 PATCH_GENERATED_GFX += patch/gfx/frontier_pass.4bpp
 PATCH_GFX := $(filter-out $(PATCH_GENERATED_GFX) $(PATCH_RAW_GFX),$(wildcard patch/gfx/*.4bpp)) $(PATCH_GENERATED_GFX)
 PATCH_CONTEST_TITLES := $(addprefix patch/gfx/contest_title_,$(addsuffix .bin,normal super hyper master link cool beauty cute smart tough title))
@@ -133,6 +135,12 @@ patch/gfx/easy_chat_mode.4bpp: patch/tools/build_easy_chat_mode_gfx.py patch/too
 
 patch/gfx/storage_menu.4bpp: patch/tools/build_storage_menu_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_us_chs/graphics/pokemon_storage/menu.png ../pokeemerald_us_chs/graphics/pokemon_storage/display_menu.bin ../pokeemerald_wokann_dev/data/pokemon_storage/jp/0854BF9C.bin
 	$(PYTHON) patch/tools/build_storage_menu_gfx.py
+
+patch/gfx/pokeblock_case.4bpp: patch/tools/build_pokeblock_case_gfx.py patch/tools/build_berry_fix_gfx.py patch/tools/build_berry_tag_gfx.py patch/fonts/chinese_small.png patch/fonts/latin_small.png patch/charmap_chs.txt baserom_jp.gba ../pokeemerald_wokann_dev/graphics/pokeblock/menu.png.4bpp.lz
+	$(PYTHON) patch/tools/build_pokeblock_case_gfx.py
+
+patch/gfx/berry_blender_start.4bpp: patch/tools/build_blender_start_gfx.py patch/tools/build_berry_tag_gfx.py baserom_jp.gba ../pokeemerald_wokann_dev/graphics/berry_blender/jp/830d794.bin ../pokeemerald_us_chs/graphics/berry_blender/start.png
+	$(PYTHON) patch/tools/build_blender_start_gfx.py
 
 $(PATCH_BUILD)/storage_party.lz: ../pokeemerald_us_chs/graphics/pokemon_storage/party_menu.bin | $(PATCH_BUILD)
 	$(GBAGFX) $< $@
