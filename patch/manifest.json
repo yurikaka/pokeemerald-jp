@@ -307,6 +307,11 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {
+      "address": "0x081CA108",
+      "original": "37f67af8",
+      "replacement": "37f61cf8"
+    },
     {"address": "0x085DBC44", "original": "00180208020e1100", "replacement": "00160208020e1100", "comment": "Wokann battle_factory_screen.c gUnknown_85DBC3C window 1: move the rental species-name window left 16px so its full 64px width fits onscreen"},
     {"address": "0x0806A3BE", "original": "042c", "replacement": "052c", "comment": "Copy all six bytes of the fixed Chinese Bad Egg name, including its language control, before appending EOS"},
     {"address": "0x085E11E0", "original": "02011112020f5f02", "replacement": "02011111020f5f02", "comment": "Shorten the Pokemon action prompt by one tile so its frame does not overlap the widened party action menu"},
