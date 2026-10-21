@@ -2748,6 +2748,51 @@ ChsItemIdGetName:
     bx r3
 
 .align 2
+.global ChsCopyItemName
+.type ChsCopyItemName, %function
+.thumb_func
+ChsCopyItemName:
+    push {r4, lr}
+    adds r4, r1, #0
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+    cmp r0, #0xAF
+    bne .Lcopy_item_chinese
+    ldr r3, =0x080E0B79
+    bl .Lcopy_item_call
+    cmp r0, #0
+    beq .Lcopy_item_default_enigma
+    @ Preserve valid external berry names and the native Japanese suffix.
+    @ Wokann item.c CopyItemName: GetBerryInfo(43), copy, append suffix.
+    movs r0, #0x2B
+    ldr r3, =0x080E0BC9
+    bl .Lcopy_item_call
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088B9
+    bl .Lcopy_item_call
+    ldr r1, =0x085C9440
+    adds r0, r4, #0
+    ldr r3, =0x080088D9
+    bl .Lcopy_item_call
+    b .Lcopy_item_return
+.Lcopy_item_default_enigma:
+    movs r0, #0xAF
+.Lcopy_item_chinese:
+    bl ChsItemIdGetName
+    adds r1, r0, #0
+    adds r0, r4, #0
+    ldr r3, =0x080088B9
+    bl .Lcopy_item_call
+.Lcopy_item_return:
+    pop {r4}
+    pop {r1}
+    bx r1
+.Lcopy_item_call:
+    bx r3
+
+
+.align 2
 .global ChsGetBerryNameByType
 .type ChsGetBerryNameByType, %function
 .thumb_func
