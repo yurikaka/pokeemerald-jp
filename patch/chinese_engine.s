@@ -6730,3 +6730,33 @@ ChsNamingPcNicknameDisplay:
     bx r3
 .ltorg
 .align 2
+
+
+@ Wokann dev battle_bg.c: replay window init + printer reset at 08035510.
+.align 2
+.global ChsSafariInitWindowsHook
+.thumb_func
+ChsSafariInitWindowsHook:
+    bl ChsSafariInitWindows
+    ldr r3, =0x08004481
+    bl .Lsafari_layout_call
+    ldr r3, =0x08035519
+    bx r3
+
+@ Replay the full map load/VRAM upload pair, including the trailing BL half.
+.global ChsSafariTextboxInitialHook
+.thumb_func
+ChsSafariTextboxInitialHook:
+    bl ChsSafariLoadTextboxMap
+    ldr r3, =0x08035919
+    bx r3
+
+.global ChsSafariTextboxReturnHook
+.thumb_func
+ChsSafariTextboxReturnHook:
+    bl ChsSafariLoadTextboxMap
+    ldr r3, =0x0803627D
+    bx r3
+.Lsafari_layout_call:
+    bx r3
+.ltorg

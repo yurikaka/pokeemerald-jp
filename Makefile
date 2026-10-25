@@ -196,8 +196,12 @@ $(PATCH_BUILD)/box_name_display.o: patch/box_name_display.c
 	mkdir -p $(PATCH_BUILD)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -c $< -o $@
 
-$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o patch/payload.ld
-	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o
+$(PATCH_BUILD)/safari_display.o: patch/safari_display.c
+	mkdir -p $(PATCH_BUILD)
+	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -c $< -o $@
+
+$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o patch/payload.ld
+	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o
 
 $(PATCH_BIN): $(PATCH_ELF)
 	$(PATCH_OBJCOPY) -O binary $< $@
