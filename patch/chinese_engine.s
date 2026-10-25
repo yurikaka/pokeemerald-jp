@@ -3079,6 +3079,43 @@ ChsMatchCallClearListRow:
 .ltorg
 
 .align 2
+.global ChsMatchCallClearInfoRow
+.type ChsMatchCallClearInfoRow, %function
+.thumb_func
+ChsMatchCallClearInfoRow:
+    @ PrintMatchCallFlavorText: r5 = list, r7 = circular row, r4 = text.
+    @ StringCopyPadded counts bytes, so it cannot erase a Chinese text row.
+    push {r4-r7, lr}
+    sub sp, #0x0C
+    ldrb r0, [r5, #4]
+    lsls r0, r0, #3
+    str r0, [sp]
+    movs r0, #16
+    str r0, [sp, #4]
+    ldrb r0, [r5, #8]
+    movs r1, #0x11
+    movs r2, #0
+    lsls r3, r7, #4
+    ldr r4, =0x08003A35
+    bl .Lmc_info_call_r4
+    add sp, #0x0C
+    pop {r4-r7}
+    pop {r0}
+    mov lr, r0
+    @ Replay the displaced printer setup.
+    ldrb r0, [r5, #8]
+    lsls r1, r7, #4
+    movs r2, #2
+    orrs r1, r2
+    str r1, [sp]
+    ldr r3, =0x081C8651
+    bx r3
+.Lmc_info_call_r4:
+    bx r4
+
+.ltorg
+
+.align 2
 .global ChsBufferRibbonMonInfoText
 .type ChsBufferRibbonMonInfoText, %function
 .thumb_func
