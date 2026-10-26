@@ -5598,7 +5598,8 @@ ChsRegionMapCityWindowFillB:
     movs r4, #2
     str r4, [sp, #0]
     movs r1, #0
-    ldr r3, =0x081CC2DD
+    @ Resume after all eight overwritten bytes, including the veneer literal.
+    ldr r3, =0x081CC2E1
     bx r3
 
 .Lregion_map_fill_window:
