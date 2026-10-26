@@ -2890,16 +2890,14 @@ ChsBattleTrainerNameHook:
 .type ChsMatchCallPopulateTrainerName, %function
 .thumb_func
 ChsMatchCallPopulateTrainerName:
+    @ An eight-byte veneer is required here: the multi-trainer branch jumps
+    @ to the shared native epilogue at 0x0819668C. Do not overwrite it.
     adds r0, r4, #0
     bl ChsTrainerNameFromId
     adds r1, r0, #0
     adds r0, r5, #0
-    ldr r3, =0x080088B9
-    bl .Lmatchcall_name_copy
-    pop {r4, r5, r6}
-    pop {r0}
-    bx r0
-.Lmatchcall_name_copy:
+    @ Let the native StringCopy call and shared epilogue finish both paths.
+    ldr r3, =0x08196689
     bx r3
 
 .align 2
