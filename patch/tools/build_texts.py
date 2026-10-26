@@ -54,7 +54,8 @@ EXT_CTRL_ARG_LENGTHS = {
 }
 
 SYNTHETIC_PUNCTUATION = {
-    "；", "。", "～", "、", "，", "！", "？", "：", "—", "…", ".", "&", "%"
+    "；", "。", "～", "、", "，", "！", "？", "：", "—", "…", ".", "&", "%", "+",
+    "=", ";", "¿", "¡", "(", ")", "<", ">", "~", "・", "-"
 }
 
 DIALOGUE_LINE_WIDTH = 168
@@ -225,7 +226,8 @@ def convert_us_encoded_text(
             index += 1
             continue
         if (char == 0x30 or 0x36 <= char <= 0x3F and char != 0x38
-                or not mode_is_japanese and char in (0x2D, 0x5B, 0xAD)):
+                or not mode_is_japanese and char in
+                (0x2D, 0x2E, 0x35, 0x51, 0x52, 0x5B, 0x5C, 0x5D, 0x85, 0x86, 0xAD, 0xAE)):
             output.extend((0x7F, char))
             index += 1
             continue
