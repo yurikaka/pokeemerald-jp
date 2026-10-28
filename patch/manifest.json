@@ -5,6 +5,8 @@
   "render_hook_original": "b0773068037801303060",
   "render_hook_symbol": "ChineseRenderHook",
   "function_hooks": [
+    {"address": "0x0802FDB0", "original": "10b50006000e084984002418e4006418", "symbol": "RemoteMenuHighlight"},
+    {"address": "0x0829005C", "original": "f0b5a0b00d1c161c1f1c03041c0c0f4a", "symbol": "RemoteHookReadFlash"},
     {"address": "0x080598C8", "original": "10b584b0031c1b061b0e03a801240480", "symbol": "ChsSafariShowActionCursor"},
     {"address": "0x08059910", "original": "00b584b0031c1b061b0e03a80e490180", "symbol": "ChsSafariHideActionCursor"},
     {"address": "0x080741E0", "original": "f0b557464e464546e0b40006050e1949", "symbol": "ChsSafariHealthboxTitle"},
@@ -224,6 +226,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x08290258", "original": "70b50d1c0004040c", "symbol": "RemoteHookProgramSectorAndVerify"},
     {"address": "0x08035510", "original": "cdf7befdcef7b4ff", "symbol": "ChsSafariInitWindowsHook"},
     {"address": "0x0803590C", "original": "0023ccf75dfc0020", "symbol": "ChsSafariTextboxInitialHook"},
     {"address": "0x08036270", "original": "0023cbf7abff0020", "symbol": "ChsSafariTextboxReturnHook"},

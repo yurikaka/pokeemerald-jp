@@ -47,11 +47,20 @@ PATCH_POKEDEX_INFO := patch/gfx/pokedex_info_tiles.4bpp patch/gfx/pokedex_info_t
 PATCH_BATCHES := $(wildcard patch/batches/*.json)
 PATCH_TEXTS := patch/texts.json $(wildcard patch/bag_return_locations*.json patch/item_names.json patch/item_descriptions.json patch/move_names.json patch/type_names.json patch/pocket_names.json patch/move_descriptions.json patch/ability_names.json patch/ability_descriptions.json patch/berry_info.json patch/battle_stat_names.json patch/level_up_stat_names.json patch/decoration_info.json patch/pokedex_entries.json patch/region_map_names.json patch/species_names.json patch/trainer_names.json patch/trainer_class_names.json) $(PATCH_BATCHES)
 
-.PHONY: all chs patch-payload compare clean
+.PHONY: all chs chs-receiver patch-payload compare clean
 
 all: $(ROM)
 
-chs: $(CHS_ROM)
+BOX_IMAGE ?= ../pokemon-box-jp-analysis/agbbin.bin
+BOX_BASE_ROM := build/remote_save/box-test-base.gba
+BOX_TEST_SHA256 := 48af1f0554e69a5546801866f0af9466b2d02bd0669ab827340a27cdabde80c1
+
+# The current branch's default is the byte-verified Box sender experiment.
+chs:
+	$(MAKE) chs-receiver CHS_ROM=$(BOX_BASE_ROM)
+	$(PYTHON) patch/remote_save/build_box_test.py $(BOX_BASE_ROM) $(BOX_IMAGE) $(CHS_ROM) --nm $(PATCH_ARM_PREFIX)nm --elf $(PATCH_ELF) --keep-screen --expected-sha256 $(BOX_TEST_SHA256)
+
+chs-receiver: $(CHS_ROM)
 
 patch-payload: $(PATCH_BIN)
 
@@ -200,8 +209,23 @@ $(PATCH_BUILD)/safari_display.o: patch/safari_display.c
 	mkdir -p $(PATCH_BUILD)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -c $< -o $@
 
-$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o patch/payload.ld
-	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o
+REMOTE_SAVE_MODULES := protocol link client game gba_link jp_bindings jp_save jp_connect jp_menu multiboot
+REMOTE_SAVE_OBJECTS := $(addprefix $(PATCH_BUILD)/remote_,$(addsuffix .o,$(REMOTE_SAVE_MODULES)))
+
+build/remote_save/receiver.gba: $(wildcard patch/remote_save/*.c patch/remote_save/*.h) patch/remote_save/receiver_start.s patch/remote_save/receiver.ld patch/remote_save/build_receiver.sh baserom_jp.gba
+	REMOTE_ARM_PREFIX="$(PATCH_ARM_PREFIX)" bash patch/remote_save/build_receiver.sh
+
+$(PATCH_BUILD)/remote_hooks.o: patch/remote_save/jp_hooks.s patch/remote_save/jp_official_sender.s build/remote_save/receiver.gba
+	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
+
+$(PATCH_BUILD)/remote_link.o: patch/remote_save/link.c $(wildcard patch/remote_save/*.h)
+	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -DREMOTE_LINK_MASTER_ONLY -c $< -o $@
+
+$(PATCH_BUILD)/remote_%.o: patch/remote_save/%.c $(wildcard patch/remote_save/*.h)
+	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -c $< -o $@
+
+$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o $(PATCH_BUILD)/remote_hooks.o $(REMOTE_SAVE_OBJECTS) patch/payload.ld
+	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o $(PATCH_BUILD)/remote_hooks.o $(REMOTE_SAVE_OBJECTS)
 
 $(PATCH_BIN): $(PATCH_ELF)
 	$(PATCH_OBJCOPY) -O binary $< $@
