@@ -12,6 +12,7 @@ from unicorn.arm_const import UC_ARM_REG_LR, UC_ARM_REG_PC
 from unicorn.arm_const import UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_R3
 from unicorn.arm_const import UC_ARM_REG_SP
 from verify_remaining_display_port import Machine, ROOT, symbols
+from build_texts import encode_text, read_charmap
 
 
 def render_right(names, text, width, height, x=8):
@@ -51,6 +52,7 @@ def main():
     parser.add_argument('--nm', default='arm-none-eabi-nm')
     args = parser.parse_args()
     names = symbols(args.nm)
+    charmap = read_charmap(ROOT / 'patch/charmap_chs.txt')
     m = Machine(names)
     m.names['NativeDrawMultichoiceMenu'] = 0x080E13FC
     captured = []
@@ -63,26 +65,38 @@ def main():
             cpu.reg_write(UC_ARM_REG_PC, cpu.reg_read(UC_ARM_REG_LR))
 
     m.cpu.hook_add(UC_HOOK_CODE, capture)
-    for menu, left, width, rows in ((48, 12, 17, 4), (55, 12, 17, 6), (49, 15, 15, 3)):
+    for menu, left, width, rows in ((48, 12, 19, 4), (55, 12, 19, 6), (49, 15, 15, 3)):
         m.call('NativeDrawMultichoiceMenu', (left, 0, menu, 0),
                stop_addresses=(0x080E1460,))
         actual = captured[-1]
         assert actual == ((13, 0, width, rows * 2) if menu == 49
-                          else (11, 0, width, rows * 2)), actual
+                          else (9, 0, width, rows * 2)), actual
         # Removal clears menu interior and frame only. No overlap means it
-        # cannot erase the native coin box (frame columns 0..9).
-        assert actual[0] > 9
+        # cannot erase the narrowed coin box (frame columns 0..8).
+        assert actual[0] > 8
         if menu == 49:
             assert actual[0] > 12  # 11-tile money frame spans columns 0..12
             assert actual[1] == 0  # original top alignment
         assert actual[0] + 1 + width <= 29
         # CreateWindowFromRect uses baseBlock 0x5c. Its tiles must not
-        # overwrite the original coin window's 16 tiles at 0x136.
-        assert 0x5C + width * rows * 2 <= 0x136
+        # overwrite the relocated coin window's 14 tiles at 0x140.
+        assert 0x5C + width * rows * 2 <= 0x140
         actions = m.word(0x08564218 + menu * 8)
+        if menu == 48:
+            for index in range(3):
+                label = m.string(m.word(actions + index * 8))
+                assert b'\xfc\x0d\x58' in label  # same price column as TMs
+        if menu == 55:
+            for index, number in enumerate((32, 29, 35, 24, 13)):
+                label = m.string(m.word(actions + index * 8))
+                assert label.startswith(encode_text(f'招式学习器{number}', charmap, False)[:-1])
+                assert b'\xfc\x0d\x58' in label  # price begins at initial x+88
+                assert b'\xf5\xf3' not in label  # no narrow-font marker
         extents = [render_right(names, m.string(m.word(actions + i * 8)), width, rows * 2)
                    for i in range(rows)]
         assert max(extents) <= width * 8, (menu, extents)
+        if menu in (48, 55):
+            assert all(edge == 152 for edge in extents[:-1]), (menu, extents)
         print(f'menu {menu}: rect {actual}, text right edges {extents}, coin frame and VRAM separate')
 
     coin_text = m.string(m.word(0x08145C64))
@@ -92,12 +106,26 @@ def main():
         digits = m.string(0x02024000)
         assert len(digits) == 5
         assert digits[:-1] == b'\x00' * (4 - len(str(balance))) + bytes(0xA1 + int(c) for c in str(balance))
-        render_right(names, coin_text.replace(b'\xfd\x02', digits[:-1]), 8, 2)
+        render_right(names, coin_text.replace(b'\xfd\x02', digits[:-1]), 7, 2, x=0)
     base = (ROOT / 'baserom_jp.gba').read_bytes()
     rom = (ROOT / 'pokeemerald_jp_chs.gba').read_bytes()
-    assert rom[0x145C6C:0x145CF0] == base[0x145C6C:0x145CF0]
-    assert rom[0x145C20:0x145C64] == base[0x145C20:0x145C64]
-    print('PASS: text fits, four-digit right alignment and native coin window sizing/inset/allocation/removal preserved')
+    expected = bytearray(base[0x145C20:0x145CF0])
+    for address, value in ((0x145C4C, b'\x00\x23'),
+                           (0x145C7E, b'\x07\x20'),
+                           (0x145C8A, b'\xa0\x20')):
+        expected[address - 0x145C20:address - 0x145C20 + 2] = value
+    assert rom[0x145C20:0x145C64] == expected[:0x44]
+    assert rom[0x145C68:0x145CF0] == expected[0x48:]
+    m.names['NativeShowCoinsWindow'] = 0x08145C6C
+    m.call('NativeShowCoinsWindow', (9999, 1, 1), stop_addresses=(0x08198B34,))
+    stack = m.cpu.reg_read(UC_ARM_REG_SP)
+    assert tuple(m.word(stack + i * 4) for i in range(4)) == (7, 2, 15, 0x140)
+    assert m.cpu.reg_read(UC_ARM_REG_R2) == 1
+    assert m.cpu.reg_read(UC_ARM_REG_R3) == 1
+    m.names['NativePrintCoinsString'] = 0x08145C20
+    m.call('NativePrintCoinsString', (9999,), stop_addresses=(0x0800449C,))
+    assert m.cpu.reg_read(UC_ARM_REG_R3) == 0
+    print('PASS: seven-tile coin window, x=0, baseBlock=0x140; four-digit right alignment and removal preserved')
 
     m.names['NativeDrawMoneyBox'] = 0x080E4AC8
     m.names['NativeMoneyAmount'] = 0x080E49E8

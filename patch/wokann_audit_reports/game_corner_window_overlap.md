@@ -18,13 +18,25 @@ and moved left to 10. Dolls therefore covered the coin window, and removing
 that menu erased the covered coin-window map area, explaining both screenshots.
 
 Preserve prize labels and their spacing. Actual native printing
-confirms doll labels end at x=132, TM labels at x=136. Use 17 tiles at
-(11, 0), rather than 22 at (6, 0): frame columns 11..29 stay onscreen.
+confirms doll labels end at x=132. Use 17 tiles at (11, 0), rather than
+22 at (6, 0): frame columns 11..29 stay onscreen.
+At the user's subsequent request, replace the five `TMnn` prize labels
+with normal-font `招式学习器nn`. Subsequently widen this menu by one more
+tile to increase the name/price gap: the name ends at x=84 and price begins
+at x=96 (SHIFT_RIGHT 88), leaving 12px instead of 4px. Four price digits
+and two Chinese unit glyphs end at x=152, so this menu uses 19 tiles at
+(9, 0). Its frame starts after the narrowed coin frame ending at column 8.
+Its tile data ends at 0x140; relocate coin tiles from 0x136 to 0x140 to
+avoid a VRAM overlap. At the user's subsequent request, dolls also use
+19 tiles at (9, 0), matching the TM menu's edges. Subsequently replace
+the single space after each doll name with SHIFT_RIGHT 88, matching the
+TM price column at x=96. All three 1000-coin prices now end at x=152,
+right-aligned with the TM prices; names and fonts remain unchanged.
 At the user's subsequent request, standardize the balance label from
 `枚代币` to `代币`, matching the prize prices (`Chs_gText_Coins`). This
-shorter label fits the native 8-tile coin window with its original x=8
-inset. Keep the native allocation at 0x136 and its frame at columns 0..9.
-The largest prize menu ends at tile 0x128, so allocations do not overlap.
+shorter label needs 56px at most, so reduce the coin window from 8 tiles
+to 7 and remove the original x=8 inset (now x=0). Its frame spans columns
+0..8. The 14 coin tiles start at 0x140, after the largest prize menu.
 The native number formatter still right-aligns the numeric portion in a
 four-character field; the whole string is not right-aligned to the window.
 
@@ -40,9 +52,9 @@ No text, font, letter spacing, numeric right alignment or saved data changes.
 
 No script, save, coin value, prize, payment or removal routine changes.
 Only multichoice window width/position, field money window width/amount
-inset, and the coin unit wording change.
-Native coin sizing, text inset, number conversion and tile base are restored
-byte-for-byte (the earlier widened coin window is no longer necessary).
+inset, coin window width/text inset/tile base, coin unit wording, and TM
+prize labels/price alignment change. Coin number conversion, four-digit
+right alignment and the window removal routine remain native.
 
 Verification:
 
@@ -53,7 +65,8 @@ Verification:
   and CopyGlyphToWindow for every menu label and several four-digit balances,
   checks actual glyph extents and a sentinel after the window pixel buffer,
   verifies native four-digit right alignment for 0/9/50/500/6789/9999,
-  and verifies the native coin printing/allocation/removal instructions.
+  and verifies native coin window construction (7x2 tiles at base 0x140),
+  printing inset (x=0), and unchanged removal instructions.
   It also executes native money-window template construction and amount
   inset setup, renders 0/9/1000/10000/999999 in the 88px window, and checks
   the label sprite and top-aligned purchase menu remain separate.

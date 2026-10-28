@@ -6612,13 +6612,12 @@ ChsMultichoiceMenuWindow:
     lsls r3, r3, #1
     mov r12, r3
     mov r3, sb
-    @ Wokann MauvilleCity_GameCorner scripts: preserve the original prize
-    @ text spacing. Seventeen tiles fit the unchanged labels, not the
-    @ byte-counted 22; x=11 leaves the coin frame at columns 0..9.
+    @ Wokann MauvilleCity_GameCorner scripts: both prize menus share a
+    @ 19-tile window at x=9, clear of the seven-tile coin window frame.
     cmp r3, #48
     beq .Lgame_corner_prize_window
     cmp r3, #55
-    beq .Lgame_corner_prize_window
+    beq .Lgame_corner_tm_window
     cmp r3, #49
     beq .Lgame_corner_purchase_window
     cmp r3, #42
@@ -6630,8 +6629,15 @@ ChsMultichoiceMenuWindow:
     movs r2, #14
     b .Lvending_window_original
 .Lgame_corner_prize_window:
-    movs r0, #11
-    movs r2, #17
+    movs r0, #9
+    movs r2, #19
+    b .Lvending_window_original
+.Lgame_corner_tm_window:
+    @ Full normal-font 招式学习器NN ends at x=84; price starts at x=96.
+    @ Nineteen tiles end at x=152; coin frame ends at column 8.
+    @ Tile data ends at 0x140, where the relocated coin allocation starts.
+    movs r0, #9
+    movs r2, #19
     b .Lvending_window_original
 .Lgame_corner_purchase_window:
     @ Unchanged 50/500-coin labels need 120px including the cursor inset.

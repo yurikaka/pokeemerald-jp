@@ -39,8 +39,10 @@ def main():
                         stop_addresses=(0x080E1460,))
         if menu in (42, 95):
             expected = (14, 0, 14, 8)
-        elif menu in (48, 55):
-            expected = (11, 0, 17, 8)
+        elif menu == 48:
+            expected = (9, 0, 19, 8)
+        elif menu == 55:
+            expected = (9, 0, 19, 8)
         elif menu == 49:
             expected = (13, 0, 15, 8)
         else:
