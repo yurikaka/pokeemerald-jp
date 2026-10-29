@@ -7,7 +7,7 @@ out=build/remote_save
 mkdir -p "$out"
 "${prefix}gcc" -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -c patch/remote_save/box_connection.c -o "$out/box_connection.o"
 "${prefix}gcc" -mcpu=arm7tdmi -mthumb -c patch/remote_save/box_hook.s -o "$out/box_hook.o"
-for name in protocol stream link bulk slot_select slot_stream flash gba_flash; do
+for name in protocol server stream link bulk slot_select slot_stream flash gba_flash; do
     "${prefix}gcc" -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -c "patch/remote_save/$name.c" -o "$out/box_$name.o"
 done
 "${prefix}gcc" -mcpu=arm7tdmi -mthumb -nostdlib -Wl,-T,patch/remote_save/box_connection.ld -Wl,-Map,"$out/box_connection.map" -o "$out/box_connection.elf" "$out/box_connection.o" "$out/box_hook.o" "$out/box_protocol.o" "$out/box_server.o" "$out/box_stream.o" "$out/box_link.o" "$out/box_bulk.o" "$out/box_slot_select.o" "$out/box_slot_stream.o" "$out/box_flash.o" "$out/box_gba_flash.o" -lgcc
