@@ -1,6 +1,7 @@
 /* Standalone Multiboot receiver. Its entire image is linked into EWRAM. */
 #include "gba_flash.h"
 #include "link.h"
+#include "connection_display.h"
 #define IO16(a) (*(volatile uint16_t *)(a))
 #define REG_SIOMULTI0 IO16(0x04000120u)
 #define REG_SIOCNT IO16(0x04000128u)
@@ -11,8 +12,10 @@
 #define REG_IME IO16(0x04000208u)
 #define SERIAL_IRQ 0x0080u
 static struct RemoteFlash flash;
+#ifndef REMOTE_CONNECTION_TEST
 static struct RemoteSaveServer server;
 static struct RemoteLinkSlave link;
+#endif
 /* The JP game's Multiboot sender performs a post-BIOS startup handshake before
  * reporting completion. Each slave reply must be loaded before the next clock. */
 static int startup_exchange(uint16_t *word)
@@ -64,6 +67,26 @@ void RemoteReceiverMain(void)
     uint16_t in;
     REG_IME = 0; REG_IE = 0; REG_IF = 0xffffu;
     startup_handshake();
+#ifdef REMOTE_CONNECTION_TEST
+    (void)backend;
+    REG_RCNT &= (uint16_t)~0x8000u;
+    REG_SIOCNT = 0x6003u;
+    REG_SIOMLT_SEND = LINK_READY;
+    REG_IF = SERIAL_IRQ;
+    { int confirmed = 0;
+    for (;;) {
+        while (!(REG_IF & SERIAL_IRQ)) {}
+        REG_IF = SERIAL_IRQ;
+        in = REG_SIOMULTI0;
+        if (!confirmed && in == LINK_PROBE) { confirmed = 1; REG_SIOMLT_SEND = LINK_ACK; }
+        else if (confirmed == 1 && in == LINK_CONFIRM) {
+            confirmed = 2;
+            REG_SIOMLT_SEND = LINK_DONE;
+            RemoteDebugShow("GUEST LINK OK");
+        }
+    }
+    }
+#else
     if (!RemoteGbaFlashOpen(&flash)) {
         /* No Flash commands will be served when identification fails. */
         for (;;) {}
@@ -99,4 +122,5 @@ void RemoteReceiverMain(void)
         REG_IF = SERIAL_IRQ;
         REG_SIOMLT_SEND = in;
     }
+#endif
 }

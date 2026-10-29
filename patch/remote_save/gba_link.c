@@ -10,14 +10,14 @@ void RemoteGbaLinkMasterInit(void)
     REG_SIOCNT = 0x2003u;
     REG_SIOMLT_SEND = 0;
 }
-int RemoteGbaLinkTransfer(void *unused, uint16_t tx, uint16_t *rx)
+static int transfer(void *unused, uint16_t tx, uint16_t *rx, int reject_ff)
 {
     volatile uint32_t delay;
     uint32_t timeout;
     (void)unused;
     if (!rx) return 0;
     /* Give the receiver time to load its next response word. */
-    for (delay = 0; delay < 2000u; ++delay) {}
+    for (delay = 0; delay < 256u; ++delay) {}
     for (timeout = 0; timeout < 100000u; ++timeout)
         if ((REG_SIOCNT & 0x000cu) == 0x0008u) break; /* ready, master */
     if (timeout == 100000u) return 0;
@@ -27,5 +27,10 @@ int RemoteGbaLinkTransfer(void *unused, uint16_t tx, uint16_t *rx)
         if (!(REG_SIOCNT & 0x0080u)) break;
     if (timeout == 100000u || (REG_SIOCNT & 0x0040u)) return 0;
     *rx = REG_SIOMULTI1;
-    return *rx != 0xffffu;
+    return !reject_ff || *rx != 0xffffu;
 }
+
+int RemoteGbaLinkTransfer(void *context, uint16_t tx, uint16_t *rx)
+{ return transfer(context, tx, rx, 1); }
+int RemoteGbaLinkTransferRaw(void *context, uint16_t tx, uint16_t *rx)
+{ return transfer(context, tx, rx, 0); }

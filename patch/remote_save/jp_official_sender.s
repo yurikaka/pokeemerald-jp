@@ -34,7 +34,7 @@ _081BF0EC: @ jump table
 	.4byte _081BF118 @ case 0
 	.4byte _081BF122 @ case 1
 	.4byte _081BF140 @ case 2
-	.4byte _081BF272 @ case 3
+	.4byte _RemoteReadSave @ case 3
 	.4byte _081BF15C @ case 4
 	.4byte _081BF194 @ case 5
 	.4byte _081BF200 @ case 6
@@ -78,6 +78,7 @@ _081BF14E:
 	.align 2, 0
 _081BF158: .4byte 0x03002360
 _081BF15C:
+    bl RemoteDebugSending
 	ldr r0, _081BF180
 	ldr r1, _081BF184
 	str r1, [r0]
@@ -153,16 +154,20 @@ _081BF1F0:
 _081BF1FC: .4byte 0x03006074
 _081BF200:
 	ldr r4, _081BF220
+    ldrb r0, [r4, #0x18]
+    strh r0, [r5, #4]
 	adds r0, r4, #0
 	bl RemoteStub_sub_081BA3A8
 	ldr r1, _081BF224
 	str r0, [r1]
-	adds r0, r4, #0
-	bl RemoteStub_sub_081BA8CC
-	cmp r0, #0
-	beq _081BF228
-	movs r0, #3
-	@ Keep the existing screen during connection.
+    @ A successful BIOS MultiBoot call advances probe_count to 0xE0.
+    @ Stop here: the diagnostic guest speaks our direct-link protocol.
+    ldrb r0, [r4, #0x18]
+    cmp r0, #0xe0
+    blo _081BF228
+	bl RemoteDebugBootComplete
+    movs r0, #0
+    strh r0, [r5, #2]
 	movs r0, #7
 	b _081BF270
 	.align 2, 0
@@ -177,8 +182,18 @@ _081BF228:
 	movs r0, #9
 	b _081BF270
 _081BF236:
-	movs r0, #8
-	b _081BF270
+    adds r0, r5, #2
+    bl RemoteConnectionTick
+    cmp r0, #0
+    beq _081BF272
+    movs r0, #3
+    b _081BF270
+_RemoteReadSave:
+    bl RemoteLoadTemporarySave
+    cmp r0, #0
+    bne _081BF272
+    movs r0, #10
+    b _081BF270
 _081BF23A:
 	ldr r0, _081BF254
 	ldrh r1, [r0, #0x2e]
@@ -193,6 +208,8 @@ _081BF23A:
 	.align 2, 0
 _081BF254: .4byte 0x03002360
 _081BF258:
+    adds r0, r5, #0
+    bl RemoteDebugBootFailed
 	movs r0, #4
 	@ Keep the existing screen during connection.
 	movs r0, #0xa

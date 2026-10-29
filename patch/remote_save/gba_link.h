@@ -4,4 +4,5 @@
 /* Initialise multiplayer mode after Multiboot has completed. */
 void RemoteGbaLinkMasterInit(void);
 int RemoteGbaLinkTransfer(void *, uint16_t, uint16_t *);
+int RemoteGbaLinkTransferRaw(void *, uint16_t, uint16_t *);
 #endif

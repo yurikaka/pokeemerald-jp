@@ -209,7 +209,7 @@ $(PATCH_BUILD)/safari_display.o: patch/safari_display.c
 	mkdir -p $(PATCH_BUILD)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -c $< -o $@
 
-REMOTE_SAVE_MODULES := protocol link client game gba_link jp_bindings jp_save jp_connect jp_menu multiboot
+REMOTE_SAVE_MODULES := protocol link client game bulk slot_select slot_stream gba_link jp_bindings jp_save jp_connect jp_menu multiboot
 REMOTE_SAVE_OBJECTS := $(addprefix $(PATCH_BUILD)/remote_,$(addsuffix .o,$(REMOTE_SAVE_MODULES)))
 
 build/remote_save/receiver.gba: $(wildcard patch/remote_save/*.c patch/remote_save/*.h) patch/remote_save/receiver_start.s patch/remote_save/receiver.ld patch/remote_save/build_receiver.sh baserom_jp.gba
@@ -220,6 +220,9 @@ $(PATCH_BUILD)/remote_hooks.o: patch/remote_save/jp_hooks.s patch/remote_save/jp
 
 $(PATCH_BUILD)/remote_link.o: patch/remote_save/link.c $(wildcard patch/remote_save/*.h)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -DREMOTE_LINK_MASTER_ONLY -c $< -o $@
+
+$(PATCH_BUILD)/remote_slot_stream.o: patch/remote_save/slot_stream.c $(wildcard patch/remote_save/*.h)
+	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -DSLOT_STREAM_MASTER_ONLY -c $< -o $@
 
 $(PATCH_BUILD)/remote_%.o: patch/remote_save/%.c $(wildcard patch/remote_save/*.h)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -fno-asynchronous-unwind-tables -Wall -Wextra -Werror -c $< -o $@

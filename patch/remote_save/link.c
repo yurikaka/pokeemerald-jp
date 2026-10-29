@@ -19,7 +19,9 @@ uint16_t RemoteLinkSlaveReceive(struct RemoteLinkSlave *s, uint16_t token)
             s->response_length = RemoteSaveServerHandle(s->server, request, len,
                                                          s->response, sizeof(s->response));
             s->response_pos = 0;
-            if (s->response_length) s->output = REMOTE_LINK_RESPONSE | s->response[s->response_pos++];
+            /* Keep READY until a subsequent poll: a poll may already be in
+             * flight while the guest computes a long Flash response. */
+            s->output = REMOTE_LINK_READY;
         }
     } else if (token == REMOTE_LINK_POLL) {
         if (s->response_pos < s->response_length)
@@ -46,7 +48,11 @@ size_t RemoteLinkExchange(void *context, const uint8_t *in, size_t n, uint8_t *o
         if (!m->transfer(m->context, REMOTE_LINK_BYTE | in[i], &rx)) return 0;
     for (tries = 0; tries < m->poll_limit; ++tries) {
         if (!m->transfer(m->context, REMOTE_LINK_POLL, &rx)) return 0;
-        if ((rx & 0xff00u) != REMOTE_LINK_RESPONSE) continue;
+        if ((rx & 0xff00u) != REMOTE_LINK_RESPONSE) {
+            if (used && rx == REMOTE_LINK_READY) return 0; /* truncated reply */
+            continue;
+        }
+        if (used == 0 && (uint8_t)rx != 0x52u) return 0; /* missed frame start */
         if (used >= cap) return 0;
         out[used++] = (uint8_t)rx;
         if (used == REMOTE_SAVE_HEADER_SIZE) {

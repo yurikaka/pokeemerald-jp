@@ -79,6 +79,24 @@ RemoteOriginalProgramSectorAndVerify:
     bx r3
 .ltorg
 
+.align 2
+.global RemoteOriginalTrySavingData
+.type RemoteOriginalTrySavingData, %function
+.thumb_func
+RemoteOriginalTrySavingData:
+    push {r4, r5, lr}
+    lsls r0, r0, #24
+    lsrs r5, r0, #24
+    ldr r0, =0x03005ae8
+    ldr r4, [r0]
+    cmp r4, #1
+    bne 1f
+    ldr r3, =0x08153285
+    bx r3
+1:  ldr r3, =0x08153297
+    bx r3
+.ltorg
+
 .section .rodata.remote_receiver, "a", %progbits
 .align 2
 .global RemoteReceiverImageStart

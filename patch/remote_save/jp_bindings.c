@@ -15,7 +15,7 @@ void RemoteJpLinkInit(struct RemoteLinkMaster *master)
     master->context = 0;
     master->transfer = RemoteGbaLinkTransfer;
     /* Allow time for Flash erase, but bound a missing or unresponsive peer. */
-    master->poll_limit = 6000u;
+    master->poll_limit = 512u;
 }
 int RemoteJpBootStart(struct RemoteBoot *boot)
 {
