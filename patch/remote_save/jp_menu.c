@@ -40,6 +40,8 @@ extern void RemoteOfficialSenderCopy(uint8_t);
 extern const uint8_t ChsRemoteMenuConnect[];
 static void RemoteMenuInput(uint8_t);
 int RemoteConnectionTick(volatile int16_t *phase);
+int RemoteRecoveryActive(void);
+void RemoteRecoveryStatus(unsigned stage);
 static void print_window(uint8_t id, const uint8_t *text)
 {
     FILL_WINDOW(id, 0xaa);
@@ -107,12 +109,12 @@ static void RemoteMenuInput(uint8_t id)
 int RemoteConnectionTick(volatile int16_t *phase)
 {
     uint16_t rx;
-    if (*phase == 0) { RemoteDebugShow("HOST WAIT PROBE"); RemoteGbaLinkMasterInit(); *phase = 1; return 0; }
+    if (*phase == 0) { if (RemoteRecoveryActive()) RemoteRecoveryStatus(4); else RemoteDebugShow("HOST WAIT PROBE"); RemoteGbaLinkMasterInit(); *phase = 1; return 0; }
     if (*phase == 1) {
-        if (RemoteGbaLinkTransfer(0, LINK_PROBE, &rx) && (rx == LINK_READY || rx == LINK_ACK)) { *phase = 2; RemoteDebugShow("HOST WAIT CONFIRM"); }
+        if (RemoteGbaLinkTransfer(0, LINK_PROBE, &rx) && (rx == LINK_READY || rx == LINK_ACK)) { *phase = 2; if (RemoteRecoveryActive()) RemoteRecoveryStatus(5); else RemoteDebugShow("HOST WAIT CONFIRM"); }
     } else if (*phase == 2) {
         if (RemoteGbaLinkTransfer(0, LINK_CONFIRM, &rx) && rx == LINK_DONE) {
-            RemoteDebugShow("HOST LINK OK");
+            if (RemoteRecoveryActive()) RemoteRecoveryStatus(6); else RemoteDebugShow("HOST LINK OK");
             *phase = 3;
             return 1;
         }
@@ -120,8 +122,9 @@ int RemoteConnectionTick(volatile int16_t *phase)
     return 0;
 }
 
-void RemoteDebugSending(void) { RemoteDebugShow("HOST SENDING"); }
-void RemoteDebugBootComplete(void) { RemoteDebugShow("HOST BOOT OK"); }
+void RemoteDebugSending(void) { if (RemoteRecoveryActive()) RemoteRecoveryStatus(1); else RemoteDebugShow("HOST SENDING"); }
+void RemoteDebugTransfer(void) { if (RemoteRecoveryActive()) RemoteRecoveryStatus(2); }
+void RemoteDebugBootComplete(void) { if (RemoteRecoveryActive()) RemoteRecoveryStatus(3); else RemoteDebugShow("HOST BOOT OK"); }
 void RemoteDebugBootFailed(const volatile int16_t *data)
 {
     static const char hex[]="0123456789ABCDEF";
@@ -134,6 +137,72 @@ void RemoteDebugBootFailed(const volatile int16_t *data)
     text[5]=hex[(code>>4)&15]; text[6]=hex[code&15];
     text[14]=hex[(phase>>4)&15]; text[15]=hex[phase&15];
     RemoteDebugShow((const char *)text);
+}
+
+/* Remote recovery temporarily borrows WaitForFlashWrite. Flash writes are
+ * redirected in remote mode, so the local Flash driver cannot use it. */
+#define RECOVERY_WORD (*(volatile uint32_t *)0x030075e8u)
+#define RECOVERY_MAGIC 0x52454356u
+extern uint8_t RemoteOriginalTrySavingData(uint8_t);
+int RemoteRecoveryActive(void) { return RECOVERY_WORD == RECOVERY_MAGIC; }
+/* Marks are completed phases, not byte progress; the BIOS transfer is blocking. */
+void RemoteRecoveryStatus(unsigned stage)
+{
+    static const char *const labels[]={"HOST PREPARE", "HOST WAIT GUEST", "HOST SENDING", "HOST BOOT OK", "HOST WAIT PROBE", "HOST CONFIRM", "HOST LINK OK"};
+    unsigned i;
+    if (!RemoteRecoveryActive() || stage>6u) return;
+    RemoteDebugShow(labels[stage]);
+    for(i=0;i<stage;i++) RemoteDebugSectorProgress(i);
+}
+
+static void RemoteRecoveryStart(void)
+{
+    volatile uint16_t *vram=(volatile uint16_t *)0x06000000u;
+    volatile uint16_t *palette=(volatile uint16_t *)0x05000000u;
+    unsigned i; uint8_t id;
+    /* Preserve live party and object state in the save blocks before tasks and
+     * graphics are discarded. No whole-EWRAM reset is safe here. */
+    ((void (*)(void))0x080768b5u)(); /* CopyPartyAndObjectsToSave */
+    DISABLE_IRQ(0xffffu); ENABLE_IRQ(1);
+    SOUND_OFF(); SET_VBLANK(0); STOP_SCANLINE();
+    *(volatile uint16_t *)0x04000000u=0x0080u;
+    for(i=0;i<0x18000u/2u;i++) vram[i]=0;
+    for(i=0;i<0x400u/2u;i++) palette[i]=0;
+    ((void (*)(void))0x0800668du)(); /* ResetSpriteData */
+    RESET_TASKS();
+    /* The save blocks and live party are outside the heap. Reinitialize only
+     * this scratch region; other EWRAM globals include save and audio state. */
+    for(i=0;i<0x1c000u/2u;i++) ((volatile uint16_t *)0x02000000u)[i]=0;
+    ((void (*)(void *, uint32_t))0x08000badu)((void *)0x02000000u,0x1c000u);
+    ((void (*)(uint32_t))0x081baa21u)(5); /* original Berry Fix introduction */
+    RemoteRecoveryStatus(0);
+    id=CREATE_TASK(RemoteOfficialSenderCopy,0);
+    TASKS[id].data[0]=1; /* wait for A, then the original preparation screen */
+    SET_CALLBACK((void (*)(void))0x081bf0b1u);
+}
+void RemoteScheduleSaveRecovery(void)
+{
+    RECOVERY_WORD=RECOVERY_MAGIC;
+    SET_CALLBACK(RemoteRecoveryStart);
+}
+int RemoteRecoveryWriteSave(void)
+{
+    uint8_t status;
+    RemoteDebugShow("HOST RECONNECT");
+    if (!RemoteJpSaveBegin()) { RemoteDebugShow("HOST LINK FAIL"); return 0; }
+    RemoteDebugShow("HOST WRITE SAVE");
+    *(volatile uint16_t *)0x050003e2u=0x001fu; /* host save progress: red */
+    status=RemoteOriginalTrySavingData(0);
+    if (status!=1 || RemoteJpSaveFailed()) {
+        RemoteDebugShow("HOST SAVE FAIL");
+        SET_CALLBACK((void (*)(void))0x081bf0b1u);
+        return 0;
+    }
+    RemoteDebugShow("HOST SAVE OK");
+    RECOVERY_WORD=0;
+    ENABLE_SOUND_VCOUNT(); SOUND_ON(); RESET_TASKS();
+    SET_CALLBACK((void (*)(void))0x08085b99u); /* main menu Continue action */
+    return 1;
 }
 
 int RemoteLoadTemporarySave(void)

@@ -2,8 +2,11 @@ from unicorn import Uc,UC_ARCH_ARM,UC_MODE_THUMB,UC_HOOK_CODE
 from unicorn.arm_const import UC_ARM_REG_PC,UC_ARM_REG_SP,UC_ARM_REG_LR,UC_ARM_REG_R0
 from pathlib import Path
 import struct
+import subprocess
 import sys
 rom=Path(sys.argv[1]).read_bytes()
+prefix=sys.argv[2]
+syms={p[2]:int(p[0],16) for l in subprocess.check_output([prefix+'nm','build/patch/payload.elf'],text=True).splitlines() if len(p:=l.split())==3}
 for active,flash,damaged in [(1,1,0),(1,1,1),(1,0,0),(0,1,0)]:
  u=Uc(UC_ARCH_ARM,UC_MODE_THUMB);u.mem_map(0x08000000,0x2000000);u.mem_write(0x08000000,rom);u.mem_map(0x03000000,0x8000);u.mem_map(0x04000000,0x10000)
  def w(a,v):u.mem_write(a,struct.pack('<I',v))
@@ -12,6 +15,8 @@ for active,flash,damaged in [(1,1,0),(1,1,1),(1,0,0),(0,1,0)]:
  def hook(u,a,size,z):
   if a in (0x0828ecec,0x0828ed68):
    v=struct.unpack('<I',u.mem_read(0x03006120,4))[0];events.append('off' if a==0x0828ecec else 'on');w(0x03006120,v+(10 if a==0x0828ecec else -10));u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))
+  elif a==syms['RemoteJpSaveCheck']:
+   u.reg_write(UC_ARM_REG_R0,1);u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))
   elif a==0x08153154:
    l,h=struct.unpack('<HH',u.mem_read(0x04000080,4));assert (l,h)==((0x0077,0x880f) if active else (0xff77,0xbb0f)),(hex(l),hex(h));events.append('save');u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))
   elif a==0x08178e48: events.append('failure');u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))

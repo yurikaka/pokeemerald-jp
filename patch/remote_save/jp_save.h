@@ -2,6 +2,7 @@
 #define REMOTE_SAVE_JP_SAVE_H
 #include "game.h"
 int RemoteJpSaveBegin(void);
+int RemoteJpSaveCheck(void);
 int RemoteJpSaveActive(void);
 int RemoteJpSaveFailed(void);
 int RemoteJpSaveRestoreLocal(uint32_t original_flash_present);

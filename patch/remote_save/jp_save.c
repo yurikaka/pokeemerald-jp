@@ -164,6 +164,7 @@ static void SaveOverlayEnd(struct SaveOverlayBackup *b)
     io[0]=(uint16_t)((io[0] & ~0x1080u) | (b->display & 0x1080u));
     ((void (*)(void *))0x08000bf1u)(b); /* Free */
 }
+extern int RemoteRecoveryActive(void);
 /* Only whole sectors of the ordinary save slots may be written remotely. */
 uint16_t RemoteJpErase(uint16_t sector)
 { (void)sector; return 0x80ffu; }
@@ -188,15 +189,32 @@ uint16_t RemoteJpProgramSector(uint16_t sector, const uint8_t *data)
     finish(&client,ok);
     if (overlay && ok) RemoteDebugSectorProgress(id);
     SaveOverlayEnd(overlay);
+    /* In recovery, the full-screen status stays visible between sectors. */
+    if (ok && id<14u && RemoteRecoveryActive()) RemoteDebugSectorProgress(id);
     REG_IME=ime;
     return ok ? 0 : 0x80ffu;
 }
 
+int RemoteJpSaveCheck(void)
+{
+    struct RemoteSaveClient client; struct RemoteLinkMaster link; int ok;
+    if (!RemoteJpSaveActive()) return 0;
+    prepare(&client,&link);
+    ok=RemoteSaveClientStatus(&client);
+    finish(&client,ok);
+    return ok;
+}
+extern void RemoteScheduleSaveRecovery(void);
 extern uint8_t RemoteOriginalTrySavingData(uint8_t);
 uint8_t RemoteTrySavingData(uint8_t type)
 {
     volatile uint32_t *sound=*(volatile uint32_t **)0x03007ff0u;
     uint16_t ime, sound_l=0, sound_h=0; int muted=0, routed=0; uint8_t result;
+    /* Check before the original routine changes counters or writes any sector. */
+    if (type==0 && RemoteJpSaveActive() && !RemoteJpSaveCheck()) {
+        RemoteScheduleSaveRecovery();
+        return 0xffu;
+    }
     if (RemoteJpSaveActive()) {
         ime=REG_IME; REG_IME=0;
         sound_l=*(volatile uint16_t *)0x04000080u;
@@ -213,6 +231,10 @@ uint8_t RemoteTrySavingData(uint8_t type)
         REG_IME=ime; muted=1;
     }
     result=RemoteOriginalTrySavingData(type);
+    /* A peer may also disappear after the preflight, while saving. The
+     * original routine restores counters before returning on failure. */
+    if (type==0 && result!=1 && RemoteJpSaveFailed())
+        RemoteScheduleSaveRecovery();
     if (muted) {
         ime=REG_IME; REG_IME=0;
         ((void (*)(void))0x0828ed69u)();

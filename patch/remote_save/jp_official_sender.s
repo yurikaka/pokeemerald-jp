@@ -43,6 +43,14 @@ _081BF0EC: @ jump table
 	.4byte _081BF258 @ case 9
 	.4byte _081BF262 @ case 10
 _081BF118:
+    bl RemoteRecoveryActive
+    cmp r0, #0
+    beq 1f
+    movs r0, #5
+    bl RemoteStub_sub_081BAA20
+    movs r0, #0
+    bl RemoteRecoveryStatus
+1:
 	movs r0, #5
 	@ Keep the existing screen during connection.
 	movs r0, #1
@@ -56,6 +64,14 @@ _081BF122:
 	bne _081BF130
 	b _081BF272
 _081BF130:
+    bl RemoteRecoveryActive
+    cmp r0, #0
+    beq 1f
+    movs r0, #0
+    bl RemoteStub_sub_081BAA20
+    movs r0, #0
+    bl RemoteRecoveryStatus
+1:
 	movs r0, #0
 	@ Keep the existing screen during connection.
 	movs r0, #2
@@ -71,6 +87,14 @@ _081BF140:
 	bne _081BF14E
 	b _081BF272
 _081BF14E:
+    bl RemoteRecoveryActive
+    cmp r0, #0
+    beq 1f
+    movs r0, #1
+    bl RemoteStub_sub_081BAA20
+    movs r0, #0
+    bl RemoteRecoveryStatus
+1:
 	movs r0, #1
 	@ Keep the existing screen during connection.
 	movs r0, #4
@@ -122,6 +146,7 @@ _081BF194:
 	ble _081BF1F0
 	movs r0, #2
 	@ Keep the existing screen during connection.
+    bl RemoteDebugTransfer
 	ldr r0, _081BF1E4
 	ldr r1, [r0]
 	adds r1, #0xc0
@@ -189,7 +214,13 @@ _081BF236:
     movs r0, #3
     b _081BF270
 _RemoteReadSave:
-    bl RemoteLoadTemporarySave
+    bl RemoteRecoveryActive
+    cmp r0, #0
+    beq 1f
+    bl RemoteRecoveryWriteSave
+    b 2f
+1:  bl RemoteLoadTemporarySave
+2:
     cmp r0, #0
     bne _081BF272
     movs r0, #10
