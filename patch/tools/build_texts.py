@@ -14,6 +14,9 @@ from pathlib import Path
 CHARMAP_RE = re.compile(r"^('(?:[^'\\]|\\.)*')\s*=\s*((?:[0-9A-Fa-f]{2}\s*)+)(?:@.*)?$")
 
 CONTROLS = {
+    "A_BUTTON": bytes((0xF8, 0x00)),
+    "B_BUTTON": bytes((0xF8, 0x01)),
+    "PLUS": bytes((0xF9, 0x04)),
     "PLAYER": bytes((0xFD, 0x01)),
     "STR_VAR_1": bytes((0xFD, 0x02)),
     "STR_VAR_2": bytes((0xFD, 0x03)),
