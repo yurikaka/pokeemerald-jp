@@ -88,12 +88,12 @@ size_t RemoteSaveServerHandle(struct RemoteSaveServer *s, const uint8_t *wire, s
         if (!req.length || req.offset >= REMOTE_SAVE_FLASH_SIZE ||
             req.length > REMOTE_SAVE_FLASH_SIZE - req.offset ||
             req.length > REMOTE_SAVE_SECTOR_SIZE - (req.offset % REMOTE_SAVE_SECTOR_SIZE)) break;
-        status = s->backend.program && s->backend.program(s->backend.context, req.offset, req.payload, req.length)
+        status = RemoteSaveValidatePeer() && s->backend.program && s->backend.program(s->backend.context, req.offset, req.payload, req.length)
                  ? REMOTE_STATUS_OK : REMOTE_STATUS_IO_ERROR;
         break;
     case REMOTE_SAVE_ERASE_SECTOR:
         if (req.length || req.offset >= REMOTE_SAVE_FLASH_SIZE || req.offset % REMOTE_SAVE_SECTOR_SIZE) break;
-        status = s->backend.erase && s->backend.erase(s->backend.context, req.offset)
+        status = RemoteSaveValidatePeer() && s->backend.erase && s->backend.erase(s->backend.context, req.offset)
                  ? REMOTE_STATUS_OK : REMOTE_STATUS_IO_ERROR;
         break;
     default: break;
