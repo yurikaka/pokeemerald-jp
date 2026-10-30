@@ -15,7 +15,7 @@ for active,flash,damaged in [(1,1,0),(1,1,1),(1,0,0),(0,1,0)]:
  def hook(u,a,size,z):
   if a in (0x0828ecec,0x0828ed68):
    v=struct.unpack('<I',u.mem_read(0x03006120,4))[0];events.append('off' if a==0x0828ecec else 'on');w(0x03006120,v+(10 if a==0x0828ecec else -10));u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))
-  elif a==syms['RemoteJpSaveCheck']:
+  elif a in (syms['RemoteJpSaveCheck'],syms['RemoteJpSaveCommit']):
    u.reg_write(UC_ARM_REG_R0,1);u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))
   elif a==0x08153154:
    l,h=struct.unpack('<HH',u.mem_read(0x04000080,4));assert (l,h)==((0x0077,0x880f) if active else (0xff77,0xbb0f)),(hex(l),hex(h));events.append('save');u.reg_write(UC_ARM_REG_PC,u.reg_read(UC_ARM_REG_LR))

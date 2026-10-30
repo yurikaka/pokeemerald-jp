@@ -137,6 +137,7 @@ void RemoteDebugBootFailed(const volatile int16_t *data)
     text[5]=hex[(code>>4)&15]; text[6]=hex[code&15];
     text[14]=hex[(phase>>4)&15]; text[15]=hex[phase&15];
     RemoteDebugShow((const char *)text);
+    if (RemoteRecoveryActive()) *(volatile uint16_t *)0x050003e2u=0x001fu;
 }
 
 /* Remote recovery temporarily borrows WaitForFlashWrite. Flash writes are
@@ -152,6 +153,7 @@ void RemoteRecoveryStatus(unsigned stage)
     unsigned i;
     if (!RemoteRecoveryActive() || stage>6u) return;
     RemoteDebugShow(labels[stage]);
+    *(volatile uint16_t *)0x050003e2u=0x001fu;
     for(i=0;i<stage;i++) RemoteDebugSectorProgress(i);
 }
 
@@ -159,12 +161,17 @@ static void RemoteRecoveryStart(void)
 {
     volatile uint16_t *vram=(volatile uint16_t *)0x06000000u;
     volatile uint16_t *palette=(volatile uint16_t *)0x05000000u;
-    unsigned i; uint8_t id;
+    unsigned i; uint8_t id; uint16_t soundL, soundH;
     /* Preserve live party and object state in the save blocks before tasks and
      * graphics are discarded. No whole-EWRAM reset is safe here. */
     ((void (*)(void))0x080768b5u)(); /* CopyPartyAndObjectsToSave */
     DISABLE_IRQ(0xffffu); ENABLE_IRQ(1);
-    SOUND_OFF(); SET_VBLANK(0); STOP_SCANLINE();
+    SOUND_OFF();
+    soundL=*(volatile uint16_t *)0x04000080u;
+    soundH=*(volatile uint16_t *)0x04000082u;
+    *(volatile uint16_t *)0x04000080u=(uint16_t)(soundL & 0x00ffu);
+    *(volatile uint16_t *)0x04000082u=(uint16_t)(soundH & ~0x3300u);
+    SET_VBLANK(0); STOP_SCANLINE();
     *(volatile uint16_t *)0x04000000u=0x0080u;
     for(i=0;i<0x18000u/2u;i++) vram[i]=0;
     for(i=0;i<0x400u/2u;i++) palette[i]=0;
@@ -178,6 +185,8 @@ static void RemoteRecoveryStart(void)
     RemoteRecoveryStatus(0);
     id=CREATE_TASK(RemoteOfficialSenderCopy,0);
     TASKS[id].data[0]=1; /* wait for A, then the original preparation screen */
+    TASKS[id].data[14]=(int16_t)soundL;
+    TASKS[id].data[15]=(int16_t)soundH;
     SET_CALLBACK((void (*)(void))0x081bf0b1u);
 }
 void RemoteScheduleSaveRecovery(void)
@@ -187,12 +196,13 @@ void RemoteScheduleSaveRecovery(void)
 }
 int RemoteRecoveryWriteSave(void)
 {
-    uint8_t status;
+    uint8_t status; unsigned i;
     RemoteDebugShow("HOST RECONNECT");
     if (!RemoteJpSaveBegin()) { RemoteDebugShow("HOST LINK FAIL"); return 0; }
     RemoteDebugShow("HOST WRITE SAVE");
     *(volatile uint16_t *)0x050003e2u=0x001fu; /* host save progress: red */
     status=RemoteOriginalTrySavingData(0);
+    if (status==1 && !RemoteJpSaveCommit()) status=0xffu;
     if (status!=1 || RemoteJpSaveFailed()) {
         RemoteDebugShow("HOST SAVE FAIL");
         SET_CALLBACK((void (*)(void))0x081bf0b1u);
@@ -200,6 +210,11 @@ int RemoteRecoveryWriteSave(void)
     }
     RemoteDebugShow("HOST SAVE OK");
     RECOVERY_WORD=0;
+    for (i=0;i<16u;i++) if (TASKS[i].active && TASKS[i].func==RemoteOfficialSenderCopy) {
+        *(volatile uint16_t *)0x04000080u=(uint16_t)TASKS[i].data[14];
+        *(volatile uint16_t *)0x04000082u=(uint16_t)TASKS[i].data[15];
+        break;
+    }
     ENABLE_SOUND_VCOUNT(); SOUND_ON(); RESET_TASKS();
     SET_CALLBACK((void (*)(void))0x08085b99u); /* main menu Continue action */
     return 1;

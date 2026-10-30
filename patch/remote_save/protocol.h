@@ -18,7 +18,8 @@ enum RemoteSaveCommand {
     REMOTE_SAVE_PROGRAM = 3,
     REMOTE_SAVE_ERASE_SECTOR = 4,
     REMOTE_SAVE_STATUS = 5,
-    REMOTE_SAVE_DISCONNECT = 6
+    REMOTE_SAVE_DISCONNECT = 6,
+    REMOTE_SAVE_COMMIT = 7
 };
 
 struct RemoteSaveFrame {

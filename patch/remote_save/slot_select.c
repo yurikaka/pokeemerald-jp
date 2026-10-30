@@ -14,6 +14,7 @@ int RemoteSlotValidate(const uint8_t *slot, unsigned slot_number, uint32_t *coun
         if (read32(s+0xff8)!=0x08012025u || id>=14) return 0;
         for (j=0;j<sizes[id];j+=4) sum+=read32(s+j);
         if ((uint16_t)((sum>>16)+sum)!=read16(s+0xff6)) return 0;
+        if (i && last!=read32(s+0xffc)) return 0;
         last=read32(s+0xffc);
         flags |= 1u<<id;
     }

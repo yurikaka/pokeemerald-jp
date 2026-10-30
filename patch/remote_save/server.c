@@ -2,6 +2,7 @@
 
 /* The receiver overrides this to recheck its cartridge before each operation. */
 __attribute__((weak)) int RemoteSaveValidatePeer(void) { return 1; }
+__attribute__((weak)) int RemoteSavePrepareCommit(void) { return 0; }
 static int equal_bytes(const uint8_t *a, const uint8_t *b, size_t n)
 {
     size_t i;
@@ -73,6 +74,10 @@ size_t RemoteSaveServerHandle(struct RemoteSaveServer *s, const uint8_t *wire, s
         break;
     case REMOTE_SAVE_DISCONNECT:
         if (req.length == 0 && req.offset == 0) status = REMOTE_STATUS_OK;
+        break;
+    case REMOTE_SAVE_COMMIT:
+        if (!req.length && !req.offset)
+            status = RemoteSaveValidatePeer() && RemoteSavePrepareCommit() ? REMOTE_STATUS_OK : REMOTE_STATUS_IO_ERROR;
         break;
     case REMOTE_SAVE_READ:
         if (req.length != 2) break;

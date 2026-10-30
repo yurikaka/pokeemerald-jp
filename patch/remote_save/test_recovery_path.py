@@ -36,7 +36,7 @@ u,seen=run(recovery,functions,initial)
 assert r32(u,0x020246f0)==0x98765432 and r32(u,0x02000000)==0
 assert (0x081baa20,5) in seen and callbacks[-1]==0x081bf0b1
 callbacks.clear()
-functions={begin:1,orig:1,syms['RemoteJpSaveFailed']:0,0x08000594:0,0x0828ed68:0,0x080a8818:0,setter:cb}
+functions={begin:1,orig:1,syms['RemoteJpSaveCommit']:1,syms['RemoteJpSaveFailed']:0,0x08000594:0,0x0828ed68:0,0x080a8818:0,setter:cb}
 u,seen=run(finish,functions,lambda u:w32(u,0x030075e8,0x52454356))
 assert r32(u,0x030075e8)==0 and callbacks[-1]==0x08085b99
 assert u.reg_read(UC_ARM_REG_R0)==1

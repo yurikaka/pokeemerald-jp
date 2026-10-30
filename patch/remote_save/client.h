@@ -18,4 +18,5 @@ int RemoteSaveClientStatus(struct RemoteSaveClient *);
 int RemoteSaveClientRead(struct RemoteSaveClient *, uint32_t, uint8_t *, uint32_t);
 int RemoteSaveClientProgram(struct RemoteSaveClient *, uint32_t, const uint8_t *, uint32_t);
 int RemoteSaveClientErase(struct RemoteSaveClient *, uint32_t);
+int RemoteSaveClientCommit(struct RemoteSaveClient *);
 #endif

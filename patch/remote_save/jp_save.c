@@ -204,6 +204,14 @@ int RemoteJpSaveCheck(void)
     finish(&client,ok);
     return ok;
 }
+int RemoteJpSaveCommit(void)
+{
+    struct RemoteSaveClient client; struct RemoteLinkMaster link; int ok;
+    prepare(&client,&link);
+    ok=RemoteSaveClientCommit(&client);
+    finish(&client,ok);
+    return ok;
+}
 extern void RemoteScheduleSaveRecovery(void);
 extern uint8_t RemoteOriginalTrySavingData(uint8_t);
 uint8_t RemoteTrySavingData(uint8_t type)
@@ -231,6 +239,7 @@ uint8_t RemoteTrySavingData(uint8_t type)
         REG_IME=ime; muted=1;
     }
     result=RemoteOriginalTrySavingData(type);
+    if (type==0 && result==1 && RemoteJpSaveActive() && !RemoteJpSaveCommit()) result=0xffu;
     /* A peer may also disappear after the preflight, while saving. The
      * original routine restores counters before returning on failure. */
     if (type==0 && result!=1 && RemoteJpSaveFailed())

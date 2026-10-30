@@ -83,3 +83,9 @@ int RemoteSaveClientErase(struct RemoteSaveClient *c, uint32_t off)
     if (!request(c, &q, &r) || r.length != 1) { c->failed = 1; return 0; }
     return 1;
 }
+int RemoteSaveClientCommit(struct RemoteSaveClient *c)
+{
+    struct RemoteSaveFrame q, r;
+    q.command=REMOTE_SAVE_COMMIT; q.offset=0; q.length=0;
+    return request(c,&q,&r) && r.length==1;
+}

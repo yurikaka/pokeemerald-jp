@@ -23,24 +23,57 @@ static struct RemoteSlotStream slot_stream;
 static uint8_t slots[2][14u * REMOTE_SAVE_SECTOR_SIZE];
 static struct RemoteSaveBackend flash_backend;
 static int selected_slot;
+static uint32_t staged_mask;
+static int staged_slot=-1, commit_pending;
 int RemoteSaveValidatePeer(void);
-/* Normal save slots only. Update the snapshot only after real Flash succeeds. */
+/* Writes are staged in RAM until a complete slot is validated and committed. */
 static int snapshot_program(void *context, uint32_t offset, const uint8_t *data, uint16_t length)
 {
     uint32_t i; (void)context;
     if (offset >= sizeof(slots) || length > sizeof(slots)-offset ||
-        !RemoteSaveValidatePeer() || !flash_backend.program ||
-        !flash_backend.program(flash_backend.context,offset,data,length)) return 0;
+        !RemoteSaveValidatePeer() || staged_slot != (int)(offset / sizeof(slots[0]))) return 0;
     for (i=0;i<length;i++) ((uint8_t *)slots)[offset+i]=data[i];
+    if ((offset % REMOTE_SAVE_SECTOR_SIZE) + length == REMOTE_SAVE_SECTOR_SIZE)
+        staged_mask |= 1u << ((offset / REMOTE_SAVE_SECTOR_SIZE) % 14u);
     return 1;
 }
 static int snapshot_erase(void *context, uint32_t offset)
 {
     uint32_t i; (void)context;
     if (offset >= sizeof(slots) || offset % REMOTE_SAVE_SECTOR_SIZE ||
-        !RemoteSaveValidatePeer() || !flash_backend.erase ||
-        !flash_backend.erase(flash_backend.context,offset)) return 0;
+        !RemoteSaveValidatePeer()) return 0;
+    if (staged_slot != (int)(offset / sizeof(slots[0]))) {
+        staged_slot=(int)(offset / sizeof(slots[0])); staged_mask=0;
+    }
+    staged_mask &= ~(1u << ((offset / REMOTE_SAVE_SECTOR_SIZE) % 14u));
     for (i=0;i<REMOTE_SAVE_SECTOR_SIZE;i++) ((uint8_t *)slots)[offset+i]=0xffu;
+    return 1;
+}
+int RemoteSavePrepareCommit(void)
+{
+    uint32_t counter;
+    if (staged_slot<0 || staged_mask!=0x3fffu ||
+        !RemoteSlotValidate(slots[staged_slot],(unsigned)staged_slot,&counter)) return 0;
+    commit_pending=1;
+    return 1;
+}
+static int CommitStagedSlot(void)
+{
+    uint8_t verify[256]; unsigned sector, part, i;
+    uint32_t base=(uint32_t)staged_slot * sizeof(slots[0]);
+    RemoteDebugShow("GUEST WRITE SAVE");
+    for (sector=0;sector<14u;sector++) {
+        uint32_t off=base+sector*REMOTE_SAVE_SECTOR_SIZE;
+        if (!RemoteSaveValidatePeer() || !flash_backend.erase(flash_backend.context,off)) return 0;
+        for (part=0;part<REMOTE_SAVE_SECTOR_SIZE;part+=sizeof(verify)) {
+            const uint8_t *src=slots[staged_slot]+sector*REMOTE_SAVE_SECTOR_SIZE+part;
+            if (!flash_backend.program(flash_backend.context,off+part,src,sizeof(verify)) ||
+                !flash_backend.read(flash_backend.context,off+part,verify,sizeof(verify))) return 0;
+            for (i=0;i<sizeof(verify);i++) if (verify[i]!=src[i]) return 0;
+        }
+        RemoteDebugSectorProgress(sector);
+    }
+    selected_slot=staged_slot; staged_slot=-1; staged_mask=0;
     return 1;
 }
 static int snapshot_read(void *context, uint32_t offset, uint8_t *dest, uint16_t length)
@@ -71,6 +104,7 @@ void __attribute__((noreturn)) BoxDebugMain(void)
     int have_progress_seq=0;
     IME=0;
     for(p=__box_bss_start;p<__box_bss_end;p++) *p=0;
+    staged_slot=-1;
     RemoteDebugShow("GUEST CHECK FLASH");
     if(!RemoteGbaFlashOpen(&flash)) {
         RemoteDebugShow("GUEST FLASH FAIL");
@@ -124,13 +158,23 @@ void __attribute__((noreturn)) BoxDebugMain(void)
             }
             uint16_t output=RemoteLinkSlaveReceive(&link,word);
             SEND=output;
+            /* The poll after queuing the last response byte delivers that byte
+             * to the host. Only then can Flash work block serial servicing. */
+            if (commit_pending && link.frame.command==REMOTE_SAVE_COMMIT &&
+                word==REMOTE_LINK_POLL && before==link.response_length &&
+                link.response_length && link.response[REMOTE_SAVE_HEADER_SIZE]==REMOTE_STATUS_OK) {
+                commit_pending=0;
+                if (CommitStagedSlot()) RemoteDebugShow("GUEST SAVE OK");
+                else RemoteDebugShow("GUEST SAVE FAIL");
+                continue;
+            }
             if (server.has_last && (!had_last || server.last_sequence!=previous_seq) &&
                 link.response_length > REMOTE_SAVE_HEADER_SIZE &&
                 (link.frame.command == REMOTE_SAVE_ERASE_SECTOR || link.frame.command == REMOTE_SAVE_PROGRAM)) {
                 if (link.response[REMOTE_SAVE_HEADER_SIZE] != REMOTE_STATUS_OK) {
                     RemoteDebugShow("GUEST SAVE FAIL"); writing=0;
                 } else if (link.frame.command == REMOTE_SAVE_ERASE_SECTOR && !writing) {
-                    RemoteDebugShow("GUEST WRITE SAVE"); writing=1; written_sectors=0;
+                    RemoteDebugShow("GUEST RECEIVE SAVE"); writing=1; written_sectors=0;
                 } else if (link.frame.command == REMOTE_SAVE_PROGRAM && writing &&
                            (link.frame.offset & 4095u) == 3840u && link.frame.length == 256u) {
                     RemoteDebugSectorProgress(written_sectors++);

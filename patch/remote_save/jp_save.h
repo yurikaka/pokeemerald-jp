@@ -3,6 +3,7 @@
 #include "game.h"
 int RemoteJpSaveBegin(void);
 int RemoteJpSaveCheck(void);
+int RemoteJpSaveCommit(void);
 int RemoteJpSaveActive(void);
 int RemoteJpSaveFailed(void);
 int RemoteJpSaveRestoreLocal(uint32_t original_flash_present);
