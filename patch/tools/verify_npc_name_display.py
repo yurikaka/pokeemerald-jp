@@ -153,6 +153,8 @@ def main():
         call(entry, 0x0203F001, 400, apprentice)
     # Linked Tower VS screen: two NPC slots display compact CHS without
     # modifying their Japanese link records or exceeding its 8-byte buffer.
+    assert bl_target(base, 0x08035C16) == 0x08008888
+    assert bl_target(rom, 0x08035C16) == 0x08008898
     cpu.mem_write(0x02022C90, struct.pack('<I', 0x00800143))
     for id, (jp, chs) in enumerate(pairs[:300]):
         for opponent, src in enumerate((0x020226E0, 0x020226FC)):
@@ -161,14 +163,16 @@ def main():
             cpu.mem_write(0x0203886A + opponent * 2, struct.pack('<H', id))
             expected = b'\xf5' + m.string(chs)[2:-3] + b'\xff'
             assert len(expected) <= 8
-            assert call(0x08008888, 0x08035C1B, src, expected) == DEST + len(expected) - 1
+            assert call(0x08008898, 0x08035C1B, src, expected) == DEST + len(expected) - 1
+            assert call(0x08008898, 0x0203F001, src, expected) == DEST + len(expected) - 1
             assert m.string(src) == original
             native = original[:5].split(b'\xff')[0] + b'\xff'
             call(0x08008888, 0x0203F001, src, native)
+            call(0x08008888, 0x08035C1B, src, native)
             assert m.string(src) == original
     cpu.mem_write(0x02022C90, bytes(4))
     cpu.mem_write(0x020226A8, b'\x01\x02\x03\xff')
-    call(0x08008888, 0x08035C1B, 0x020226A8, b'\x01\x02\x03\xff')
+    call(0x08008898, 0x08035C1B, 0x020226A8, b'\x01\x02\x03\xff')
     # The actual interview save destination receives JP only.
     call(0x08162D24, 0x08164D03, 0x3FE, m.string(0x082E3840 + (805 + facility[0]) * 32), SAVE2 + 0xBD8)
     cpu.mem_write(0x02037280, bytes(2))

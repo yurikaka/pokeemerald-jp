@@ -84,13 +84,20 @@ void ChsDomeNameDisplay(u8 *dest, u16 id)
     }
 }
 
+u8 *ChsStringCopy7Original(u8 *dest, const u8 *src)
+{
+    unsigned i;
+    for (i = 0; i < 5 && src[i] != 255; i++) dest[i] = src[i];
+    dest[i] = 255;
+    return dest + i;
+}
+
 u8 *ChsVsNameCopy(u8 *dest, const u8 *src)
 {
-    u32 caller = (u32)__builtin_return_address(0);
     /* battle_bg.c InitLinkBattleVsScreen, only Tower's two simulated NPC
      * slots. Real players and all other StringCopy7 callers retain JP's
      * original five-byte limit. No link record is rewritten. */
-    if (caller == 0x08035C1B && (*(u32 *)0x02022C90 & 0x00800000)) {
+    if (*(u32 *)0x02022C90 & 0x00800000) {
         unsigned opponent = src == (const u8 *)0x020226E0 ? 0 :
                             src == (const u8 *)0x020226FC ? 1 : 2;
         if (opponent < 2) {
@@ -99,10 +106,7 @@ u8 *ChsVsNameCopy(u8 *dest, const u8 *src)
                 return copy(dest, npc_compact_names[id]);
         }
     }
-    unsigned i;
-    for (i = 0; i < 5 && src[i] != 255; i++) dest[i] = src[i];
-    dest[i] = 255;
-    return dest + i;
+    return ChsStringCopy7Original(dest, src);
 }
 
 /* TV has no NPC identity flag. User-selected policy: assume an NPC when
