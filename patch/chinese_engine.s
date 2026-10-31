@@ -4386,6 +4386,30 @@ ChsFactorySwapPrintMonCategory:
 .ltorg
 
 .align 2
+.global ChsOriginalGetStringWidth
+.type ChsOriginalGetStringWidth, %function
+.thumb_func
+ChsOriginalGetStringWidth:
+    push {r4-r7, lr}
+    mov r7, r10
+    mov r6, r9
+    mov r5, r8
+    push {r5-r7}
+    adds r4, r1, #0
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    adds r7, r0, #0
+    lsls r2, r2, #16
+    lsrs r5, r2, #16
+    ldr r3, =0x08005D7D
+    bl .Loriginal_width_call
+    ldr r3, =0x08005DC7
+    bx r3
+.Loriginal_width_call:
+    bx r3
+.ltorg
+
+.align 2
 .type ChsNicknameDisplayRouter, %function
 .thumb_func
 ChsNicknameDisplayRouter:
@@ -4431,15 +4455,6 @@ ChsNicknameDisplayRouter:
     adds r1, #4
     subs r2, #1
     bne .Lnickname_condition_string_loop
-    ldr r1, =.Lnickname_hof_width_callers
-    movs r2, #2
-.Lnickname_hof_width_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_hof_width_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_hof_width_loop
     pop {r0-r3}
     b .Lnickname_tail_copy_mon
 .Lnickname_tv_r4_species2_found:
@@ -4487,9 +4502,6 @@ ChsNicknameDisplayRouter:
     mov lr, r2
     adds r1, r5, #0
     b ChsConvertNicknameForSpecies
-.Lnickname_hof_width_found:
-    pop {r0-r3}
-    b ChsHallOfFameNicknameWidth
 .Lnickname_router_call_r3:
     bx r3
 .Lnickname_tail_copy_mon:
@@ -4499,6 +4511,7 @@ ChsNicknameDisplayRouter:
 .ltorg
 
 .align 2
+.global ChsHallOfFameNicknameWidth
 .type ChsHallOfFameNicknameWidth, %function
 .thumb_func
 ChsHallOfFameNicknameWidth:
@@ -4673,8 +4686,6 @@ ChsResolveBoxOrPartyMon:
     .word 0x081B0A25
 .Lnickname_condition_string_callers:
     .word 0x081CCDE3, 0x081D2347
-.Lnickname_hof_width_callers:
-    .word 0x0817499B, 0x081749DD
 .Lnickname_tv_r4_species2_callers:
     .word 0x080F1FB9, 0x080F30EF
 .Lnickname_tv_r5_species2_callers:

@@ -6,6 +6,7 @@
   "render_hook_symbol": "ChineseRenderHook",
   "fixed_code_sections": [{"address": "0x08162D3C", "capacity": "0x154", "original_sha256": "6e8a185e3fefdc76490323d1a43bfd978ba242ca242a423393bbe6e8ee868df3", "binary": "build/patch/battle_nickname.bin"}],
   "function_hooks": [
+    {"address": "0x08005DAC", "original": "f0b557464e464546e0b40c1c0006000e", "symbol": "ChsOriginalGetStringWidth"},
 
     {"address": "0x080598C8", "original": "10b584b0031c1b061b0e03a801240480", "symbol": "ChsSafariShowActionCursor"},
     {"address": "0x08059910", "original": "00b584b0031c1b061b0e03a80e490180", "symbol": "ChsSafariHideActionCursor"},
@@ -221,6 +222,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x08005DBC", "original": "071c1204150cfff7", "symbol": "ChsHallOfFameNicknameWidth", "comment": "Explicit Hall of Fame nickname width"},
     {"address": "0x0806F4E0", "original": "694699f7a1f905b0", "symbol": "ChsCopyBoxMonNicknameOriginal", "comment": "Explicit original box nickname"},
     {"address": "0x0806F4C0", "original": "694699f7b1f905b0", "symbol": "ChsCopyMonNicknameOriginal", "comment": "Explicit original party nickname"},
 
@@ -530,8 +532,8 @@
     { "address": "0x080F2AE6", "original": "15f79ffe", "replacement": "bef095fe" },
     { "address": "0x080F2B16", "original": "15f787fe", "replacement": "bef07dfe" },
     { "address": "0x080F30EA", "original": "15f79dfb", "replacement": "bef093fb" },
-    { "address": "0x08174996", "original": "91f609fa", "replacement": "3cf03dff" },
-    { "address": "0x081749D8", "original": "91f6e8f9", "replacement": "3cf01cff" },
+    { "address": "0x08174996", "original": "91f609fa", "replacement": "91f611fa" },
+    { "address": "0x081749D8", "original": "91f6e8f9", "replacement": "91f6f0f9" },
     { "address": "0x081B0A20", "original": "57f61cff", "replacement": "00f0f8fe" },
     { "address": "0x081CCDDE", "original": "3bf63dfd", "replacement": "e4f719fd" },
     { "address": "0x081D2342", "original": "36f68bfa", "replacement": "dff767fa" },
