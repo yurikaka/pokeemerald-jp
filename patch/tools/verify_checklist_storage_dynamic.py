@@ -146,14 +146,14 @@ def verify():
     assembly = (ROOT / "patch/chinese_engine.s").read_text()
     hooks = []
     for address, original_target, patched_target, symbol in (
-        (0x080CE50E, 0x0806A058, 0x081B1814, "ChsGetMonNickname"),
+        (0x080CE50E, 0x0806A058, 0x08162D3C, "ChsBattleGetMonNickname"),
         (0x080CE606, 0x0806A1B4, 0x08162DF8, "ChsGetBoxMonNicknameFromData"),
     ):
         patch = next(entry for entry in manifest["code_patches"] if int(entry["address"], 0) == address)
         require(bytes.fromhex(patch["original"]) == base[address - ROM_BASE:address - ROM_BASE + 4], "nickname call original mismatch")
         require(thumb_bl_target(address, bytes.fromhex(patch["original"])) == original_target, "unexpected nickname producer")
         require(thumb_bl_target(address, bytes.fromhex(patch["replacement"])) == patched_target, "nickname hook route changed")
-        if symbol == "ChsGetBoxMonNicknameFromData":
+        if symbol in ("ChsGetBoxMonNicknameFromData", "ChsBattleGetMonNickname"):
             require(f"{symbol}:" in (ROOT / "patch/battle_nickname.s").read_text(), "box display helper missing")
             hooks.append(patch)
         else:
@@ -169,7 +169,7 @@ def verify():
         original = bytes.fromhex(entry["original"])
         require(base[address - ROM_BASE:address - ROM_BASE + len(original)] == original, "hook original mismatch")
     assembly_evidence = {}
-    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsNicknameDisplayRouter:", ".type ChsTruncateNickname"), (".Lmon_nickname_data_callers:", ".type ChsCopyStoredNicknameForSpecies"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
+    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsNicknameDisplayRouter:", ".type ChsTruncateNickname"), (".Lnickname_partner_string_caller:", ".type ChsCopyStoredNicknameForSpecies"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
         begin = assembly.index(start)
         finish = assembly.index(end, begin)
         assembly_evidence[start] = {"line": assembly[:begin].count("\n") + 1, "sha256": hashlib.sha256(assembly[begin:finish].encode()).hexdigest()}

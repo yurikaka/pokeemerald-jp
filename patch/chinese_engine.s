@@ -4418,15 +4418,6 @@ ChsNicknameDisplayRouter:
     adds r1, #4
     subs r2, #1
     bne .Lnickname_tv_r5_species16_loop
-    ldr r1, =.Lnickname_direct_data_callers
-    movs r2, #1
-.Lnickname_direct_data_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_direct_data_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_direct_data_loop
     ldr r1, =.Lnickname_partner_string_caller
     ldr r1, [r1]
     cmp r0, r1
@@ -4449,20 +4440,7 @@ ChsNicknameDisplayRouter:
     adds r1, #4
     subs r2, #1
     bne .Lnickname_hof_width_loop
-    ldr r1, =.Lmon_nickname_data_callers
-    movs r2, #11
-.Lnickname_original_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_original_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_original_caller_loop
     pop {r0-r3}
-    b .Lnickname_tail_copy_mon
-.Lnickname_original_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
     b .Lnickname_tail_copy_mon
 .Lnickname_tv_r4_species2_found:
     pop {r0-r3}
@@ -4476,10 +4454,6 @@ ChsNicknameDisplayRouter:
     pop {r0-r3}
     ldrh r2, [r5, #0x10]
     b ChsCopyStoredNicknameForSpecies
-.Lnickname_direct_data_found:
-    pop {r0-r3}
-    adds r1, r2, #0
-    b .Lnickname_tail_copy_mon
 .Lnickname_partner_string_found:
     pop {r0-r3}
     push {lr}
@@ -4695,12 +4669,6 @@ ChsResolveBoxOrPartyMon:
     bx r3
 
 .align 2
-.Lmon_nickname_data_callers:
-    .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
-    .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
-    .word 0x081CEFDF, 0x08166B77, 0x081775A7
-.Lnickname_direct_data_callers:
-    .word 0x080F0A51
 .Lnickname_partner_string_caller:
     .word 0x081B0A25
 .Lnickname_condition_string_callers:

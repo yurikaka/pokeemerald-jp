@@ -16,6 +16,9 @@ SITES = (0x0814E960, 0x0814E994, 0x0814E9C8, 0x0814E9FC,
          0x0814F77A, 0x0814F7BC, 0x0814F81A, 0x0814F832)
 TRADE_SITES = (0x08078138, 0x08078160, 0x080794A4, 0x080796D6,
                0x0807B55A, 0x0807B572, 0x0807B5D0, 0x0807E1E6)
+OTHER_SITES = (0x080F0A4C, 0x0813DC6E, 0x0813E2FC, 0x0813EB38,
+               0x0813F67E, 0x08161212, 0x080CE50E, 0x081CFA34,
+               0x081CFDC4, 0x081CEFDA, 0x08166B72, 0x081775A2)
 
 
 def bl_target(rom, address):
@@ -37,7 +40,7 @@ def main():
     rom = (ROOT / 'pokeemerald_jp_chs.gba').read_bytes()
     assert names['ChsBattleGetMonNickname'] == 0x08162D3C
     assert rom[0x06A058:0x06A1B4] == base[0x06A058:0x06A1B4], 'GetMonData3 changed'
-    for site in SITES + TRADE_SITES:
+    for site in SITES + TRADE_SITES + OTHER_SITES:
         assert bl_target(base, site) == 0x0806A058
         assert bl_target(rom, site) == names['ChsBattleGetMonNickname']
     m.names['NativeSetMonData'] = 0x0806A774
@@ -58,7 +61,7 @@ def main():
         cpu.mem_write(dest, b'\xa5' * 64)
         expected_return = m.call('ChsCopyMonNickname', (mon, dest))
         expected = bytes(cpu.mem_read(dest, 64))
-        for site in SITES + TRADE_SITES:
+        for site in SITES + TRADE_SITES + OTHER_SITES:
             cpu.mem_write(dest, b'\xa5' * 64)
             m.stop_addresses = {site + 4}
             cpu.reg_write(UC_ARM_REG_SP, 0x03007800)
@@ -92,7 +95,7 @@ def main():
             assert cpu.reg_read(UC_ARM_REG_R4) == (0x02021C40 if encoded else 0x02022C0C)
             assert bool(calls) == encoded
             assert bytes(cpu.mem_read(0x02022C0C, 6)) == (data[:4] + b'\xff' + data[5:] if exp_text and encoded else data)
-    print('PASS: 28 battle and 8 trade direct call sites; native GetMonData3 unchanged; default, custom and egg names match existing helper')
+    print('PASS: 48 direct call sites; native GetMonData3 unchanged; default, custom and egg names match existing helper')
 
 
 if __name__ == '__main__':

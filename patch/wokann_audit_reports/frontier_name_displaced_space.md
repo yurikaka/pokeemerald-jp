@@ -9,7 +9,7 @@ starts at `0x08162E90`. Its logic is reproduced in full by
 | --- | ---: | --- |
 | `0x08162D24–0x08162D33` | 16 | Entry trampoline to `ChsOriginalFrontierName`. |
 | `0x08162D34–0x08162D3B` | 8 | Veneer to `ChsFrontierNameDisplay`, used by eight explicit display call sites. |
-| `0x08162D3C–0x08162DF7` | 188 | Direct nickname helper and its literal pool, used by 28 battle and 8 trade call sites. |
+| `0x08162D3C–0x08162DF7` | 188 | Direct nickname helper and its literal pool, used by 48 `GetMonData3` call sites. |
 | `0x08162DF8–0x08162E03` | 12 | Box nickname parameter adapter and target literal, used by five `GetBoxMonData` display call sites. |
 | `0x08162E04–0x08162E8F` | 140 | Displaced original instructions and literal pools; candidate space. |
 
