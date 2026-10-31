@@ -5347,17 +5347,18 @@ ChsCopyOtSlashTail:
 .Lot_call_r4:
     bx r4
 
+.ltorg
 .align 2
-.global ChsSearchPrintHook
-.type ChsSearchPrintHook, %function
+@ Two explicit entry points preserve the original coordinates or draw one
+@ pixel higher. The caller chooses; neither examines the return address.
+.macro CHS_SEARCH_PRINT name, y_offset
+.align 2
+.global \name
+.type \name, %function
 .thumb_func
-ChsSearchPrintHook:
-    @ Replaces the Pokedex search-menu window print wrapper (0x080C07CC).
-    @ Identical to the original except the search-option value prints
-    @ (call sites 0x080C1790-0x080C1816) are drawn 1 pixel higher.
+\name:
     push {r4, r5, lr}
     sub sp, #24
-    ldr r4, [sp, #32]
     adds r5, r1, #0
     adds r3, r2, #0
     lsls r3, r3, #24
@@ -5379,30 +5380,24 @@ ChsSearchPrintHook:
     lsls r5, r5, #27
     lsrs r5, r5, #24
     lsrs r3, r3, #21
-    movs r2, #2
-    ldr r1, =0x080C1795
-    cmp r4, r1
-    blo .Lsearch_y_ready
-    ldr r1, =0x080C181D
-    cmp r4, r1
-    bhi .Lsearch_y_ready
-    movs r2, #1
-.Lsearch_y_ready:
-    adds r3, r3, r2
+    adds r3, #\y_offset
     lsls r3, r3, #24
     lsrs r3, r3, #24
     movs r0, #0
     movs r1, #1
     adds r2, r5, #0
     ldr r4, =JP_ADD_TEXT_PRINTER_4
-    bl .Lsearch_call_r4
+    bl .Lsearch_call_r4_\@
     add sp, #24
     pop {r4, r5}
     pop {r0}
     bx r0
-.align 2
-.Lsearch_call_r4:
+.Lsearch_call_r4_\@:
     bx r4
+.endm
+
+CHS_SEARCH_PRINT ChsSearchPrintOriginal, 2
+CHS_SEARCH_PRINT ChsSearchPrintRaised, 1
 
 .align 2
 .type DecompressChineseGlyph, %function
