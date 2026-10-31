@@ -4395,20 +4395,7 @@ ChsBoxNicknameDisplayRouter:
     ldr r1, [r1]
     cmp r0, r1
     beq .Lbox_nickname_storage_found
-    ldr r1, =.Lbox_nickname_data_callers
-    movs r2, #4
-.Lbox_nickname_data_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lbox_nickname_data_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lbox_nickname_data_caller_loop
     pop {r0-r3}
-    b .Lnickname_tail_copy_box
-.Lbox_nickname_data_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
     b .Lnickname_tail_copy_box
 .Lbox_nickname_storage_found:
     pop {r0-r3}
@@ -4727,8 +4714,6 @@ ChsResolveBoxOrPartyMon:
     bx r3
 
 .align 2
-.Lbox_nickname_data_callers:
-    .word 0x080CE60B, 0x081CFA6B, 0x081CFE03, 0x081775F5
 .Lbox_nickname_storage_caller:
     .word 0x08070FBB
 .Lmon_nickname_data_callers:

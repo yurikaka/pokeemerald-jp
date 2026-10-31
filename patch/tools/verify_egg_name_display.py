@@ -1,7 +1,7 @@
 """Execute native Pokemon setters and display getters without changing saved data."""
 import argparse
 import struct
-from unicorn.arm_const import UC_ARM_REG_LR, UC_ARM_REG_SP, UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_PC
+from unicorn.arm_const import UC_ARM_REG_LR, UC_ARM_REG_SP, UC_ARM_REG_R0, UC_ARM_REG_R1, UC_ARM_REG_R2, UC_ARM_REG_PC
 from verify_remaining_display_port import Machine, symbols, ROOT
 
 
@@ -58,6 +58,20 @@ def main():
             check('OriginalTradeNickname', nickname, caller)
             check('DisplayTradeNickname', expected, caller)
         check('NativeBoxNickname', nickname, 0x08070FBB)
+        for site in (0x080CE606, 0x081CFA66, 0x081CFDFE, 0x081775F0):
+            cpu = m.cpu
+            cpu.mem_write(dest - 8, b'\xa5' * 40)
+            before = bytes(cpu.mem_read(mon, 100))
+            m.stop_addresses = {site + 4}
+            cpu.reg_write(UC_ARM_REG_SP, 0x03007800)
+            cpu.reg_write(UC_ARM_REG_LR, 0x0203F001)
+            cpu.reg_write(UC_ARM_REG_R0, mon)
+            cpu.reg_write(UC_ARM_REG_R1, 2)
+            cpu.reg_write(UC_ARM_REG_R2, dest)
+            cpu.emu_start(site | 1, 0, count=200000)
+            assert cpu.reg_read(UC_ARM_REG_PC) == site + 4, hex(site)
+            assert m.string(dest) == expected, (hex(site), m.string(dest), expected)
+            assert bytes(cpu.mem_read(mon, 100)) == before
         for site, result in ((0x0806F5DE, nickname), (0x08071760, nickname),
                              (0x08070F3A, expected), (0x08071636, expected),
                              (0x080716B6, expected)):

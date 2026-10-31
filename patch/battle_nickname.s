@@ -85,3 +85,13 @@ ChsBattleGetMonNickname:
     bx r3
 
 .ltorg
+
+.align 2
+.global ChsGetBoxMonNicknameFromData
+.type ChsGetBoxMonNicknameFromData, %function
+.thumb_func
+ChsGetBoxMonNicknameFromData:
+    adds r1, r2, #0
+    ldr r3, =ChsCopyBoxMonNickname + 1
+    bx r3
+.ltorg

@@ -147,16 +147,20 @@ def verify():
     hooks = []
     for address, original_target, patched_target, symbol in (
         (0x080CE50E, 0x0806A058, 0x081B1814, "ChsGetMonNickname"),
-        (0x080CE606, 0x0806A1B4, 0x0806F4D0, "ChsGetMonNicknameFromBox"),
+        (0x080CE606, 0x0806A1B4, 0x08162DF8, "ChsGetBoxMonNicknameFromData"),
     ):
         patch = next(entry for entry in manifest["code_patches"] if int(entry["address"], 0) == address)
         require(bytes.fromhex(patch["original"]) == base[address - ROM_BASE:address - ROM_BASE + 4], "nickname call original mismatch")
         require(thumb_bl_target(address, bytes.fromhex(patch["original"])) == original_target, "unexpected nickname producer")
         require(thumb_bl_target(address, bytes.fromhex(patch["replacement"])) == patched_target, "nickname hook route changed")
-        hook = next(entry for entry in manifest["function_hooks"] if int(entry["address"], 0) == patched_target)
-        require(hook["symbol"] == symbol, "nickname hook symbol changed")
-        require(f"0x{address + 5:08X}" in assembly, "storage caller missing in display router")
-        hooks.extend((patch, hook))
+        if symbol == "ChsGetBoxMonNicknameFromData":
+            require(f"{symbol}:" in (ROOT / "patch/battle_nickname.s").read_text(), "box display helper missing")
+            hooks.append(patch)
+        else:
+            hook = next(entry for entry in manifest["function_hooks"] if int(entry["address"], 0) == patched_target)
+            require(hook["symbol"] == symbol, "nickname hook symbol changed")
+            require(f"0x{address + 5:08X}" in assembly, "storage caller missing in display router")
+            hooks.extend((patch, hook))
     item_hook = next(entry for entry in manifest["function_hooks"] if entry["symbol"] == "ChsItemIdGetName")
     require(item_hook["address"] == "0x080D6C8C", "item getter hook moved")
     hooks.append(item_hook)
@@ -165,7 +169,7 @@ def verify():
         original = bytes.fromhex(entry["original"])
         require(base[address - ROM_BASE:address - ROM_BASE + len(original)] == original, "hook original mismatch")
     assembly_evidence = {}
-    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsBoxNicknameDisplayRouter:", ".type ChsTruncateNickname"), (".Lbox_nickname_data_callers:", ".type ChsCopyStoredNicknameForSpecies"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
+    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsBoxNicknameDisplayRouter:", ".type ChsTruncateNickname"), (".Lbox_nickname_storage_caller:", ".type ChsCopyStoredNicknameForSpecies"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
         begin = assembly.index(start)
         finish = assembly.index(end, begin)
         assembly_evidence[start] = {"line": assembly[:begin].count("\n") + 1, "sha256": hashlib.sha256(assembly[begin:finish].encode()).hexdigest()}
