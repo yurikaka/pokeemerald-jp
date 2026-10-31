@@ -9,11 +9,15 @@ starts at `0x08162E90`. Its logic is reproduced in full by
 | --- | ---: | --- |
 | `0x08162D24–0x08162D33` | 16 | Entry trampoline to `ChsOriginalFrontierName`. |
 | `0x08162D34–0x08162D3B` | 8 | Veneer to `ChsFrontierNameDisplay`, used by eight explicit display call sites. |
-| `0x08162D3C–0x08162E8F` | 340 | Displaced original instructions, alignment and literal pools; candidate space, not yet reused. |
+| `0x08162D3C–0x08162DF7` | 188 | Direct battle nickname helper and its literal pool. |
+| `0x08162DF8–0x08162E8F` | 152 | Displaced original instructions and literal pools; candidate space. |
 
-The current helper does not jump back into the displaced function body. The
-candidate range has not been proven free of every external entry, literal-pool
-reference, or other data reference. Before reuse, verify the particular range
-against the Japanese ROM and Wokann `dev`, check all active patch ranges, and
-validate Thumb alignment and branch reach. Reassess this record if either
-entry trampoline or the full original-behavior helper changes.
+The original-behavior helper does not jump back into the displaced body. A scan
+found no external Thumb BL into the body. One aligned ROM word whose value falls
+inside it occurs at `0x0868C108` within the original shakuhachi sample
+`sound/direct_sound_samples/DirectSoundWaveData_sd90_classical_shakuhachi.bin`;
+it is sample data, rather than a known code pointer. The remaining range has not
+been proven free of every indirect reference. Before reuse, verify the specific
+range against the Japanese ROM and Wokann `dev`, check active patch ranges, and
+validate Thumb alignment and branch reach. The linker enforces the entire
+340-byte capacity; reassess the remaining space if the helper changes size.

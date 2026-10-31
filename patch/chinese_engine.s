@@ -2828,25 +2828,6 @@ ChsBattleSpeciesBuffer:
 .type ChsBattleExpNamePlaceholderHook, %function
 .thumb_func
 ChsBattleExpNamePlaceholderHook:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lbattle_nickname_callers
-    movs r2, #28
-.Lbattle_nickname_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lbattle_nickname_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lbattle_nickname_caller_loop
-    pop {r0-r3}
-    b .Lbattle_exp_name_original_entry
-.Lbattle_nickname_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
-    ldr r3, =ChsCopyMonNickname + 1
-    bx r3
-.Lbattle_exp_name_original_entry:
     ldr r0, =Chs_sText_PkmnGainedEXP + 4
     cmp r0, r9
     beq .Lbattle_exp_name_from_buffer
@@ -2884,16 +2865,6 @@ ChsBattleExpNamePlaceholderHook:
     bx r0
 .Lbattle_exp_name_expand_raw:
     bx r3
-
-.align 2
-.Lbattle_nickname_callers:
-    .word 0x0814E965, 0x0814E999, 0x0814E9CD, 0x0814EA01
-    .word 0x0814EA39, 0x0814EA79, 0x0814EAB9, 0x0814EAF9
-    .word 0x0814EB81, 0x0814EBB7, 0x0814EC03, 0x0814EC3D
-    .word 0x0814ECA7, 0x0814ECDB, 0x0814ED43, 0x0814ED77
-    .word 0x0814EDDF, 0x0814EE13, 0x0814EE7B, 0x0814EEAF
-    .word 0x0814EF17, 0x0814EF4B, 0x0814F3A7, 0x0814F3D9
-    .word 0x0814F77F, 0x0814F7C1, 0x0814F81F, 0x0814F837
 
 .ltorg
 

@@ -74,6 +74,18 @@ def main() -> None:
     rom.extend(b"\xFF" * (ROM_SIZE - len(rom)))
     rom[payload_offset:payload_offset + len(payload)] = payload
 
+    for entry in manifest.get("fixed_code_sections", []):
+        address = parse_int(entry["address"])
+        offset = rom_offset(address)
+        capacity = parse_int(entry["capacity"])
+        original = source[offset:offset + capacity]
+        if len(original) != capacity or hashlib.sha256(original).hexdigest() != entry["original_sha256"]:
+            raise SystemExit(f"fixed code section 0x{address:08X}: original bytes changed")
+        section = Path(entry["binary"]).read_bytes()
+        if not section or len(section) > capacity:
+            raise SystemExit(f"fixed code section 0x{address:08X}: invalid size {len(section)}")
+        rom[offset:offset + len(section)] = section
+
     for entry in manifest.get("inline_table_writes", []):
         table_address = parse_int(entry["table_address"])
         stride = parse_int(entry["stride"])

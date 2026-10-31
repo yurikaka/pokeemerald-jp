@@ -45,7 +45,9 @@ def main():
         if displacement & 0x400:
             displacement -= 0x800
         assert address + 4 + displacement * 2 == 0x0814F5BC
-    for address, length in ((0x0814F51C, 8), (0x0814F5C4, 24)):
+    # The Frontier name call at 0x0814F5D6 is intentionally redirected to
+    # the explicit display veneer; check its two surrounding shared regions.
+    for address, length in ((0x0814F51C, 8), (0x0814F5C4, 18), (0x0814F5DA, 2)):
         offset = address - ROM_BASE
         assert rom[offset:offset + length] == base[offset:offset + length]
     print("Trainer A/B class branches enter the veneer start; trainer B and Frontier literals remain intact")

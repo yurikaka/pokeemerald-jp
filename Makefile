@@ -200,13 +200,19 @@ $(PATCH_BUILD)/safari_display.o: patch/safari_display.c
 	mkdir -p $(PATCH_BUILD)
 	$(PATCH_ARM_PREFIX)gcc -mcpu=arm7tdmi -mthumb -Os -ffreestanding -fno-builtin -fno-unwind-tables -Wall -Wextra -Werror -c $< -o $@
 
-$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o patch/payload.ld
-	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o
+$(PATCH_BUILD)/battle_nickname.o: patch/battle_nickname.s | $(PATCH_BUILD)
+	$(PATCH_AS) -mcpu=arm7tdmi -mthumb -o $@ $<
+
+$(PATCH_ELF): $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/battle_nickname.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o patch/payload.ld
+	$(PATCH_LD) -T patch/payload.ld -Map $(PATCH_BUILD)/payload.map -o $@ $(PATCH_BUILD)/payload.o $(PATCH_BUILD)/battle_nickname.o $(PATCH_BUILD)/npc_name_display.o $(PATCH_BUILD)/box_name_display.o $(PATCH_BUILD)/safari_display.o
 
 $(PATCH_BIN): $(PATCH_ELF)
-	$(PATCH_OBJCOPY) -O binary $< $@
+	$(PATCH_OBJCOPY) -O binary -j .text -j .rodata $< $@
 
-$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) patch/manifest.json $(PATCH_BATCHES) patch/tools/apply_patch.py $(PATCH_BUILD)/trainer_names_inline.bin
+$(PATCH_BUILD)/battle_nickname.bin: $(PATCH_ELF)
+	$(PATCH_OBJCOPY) -O binary -j .battle_nickname $< $@
+
+$(CHS_ROM): $(ROM) $(PATCH_ELF) $(PATCH_BIN) $(PATCH_BUILD)/battle_nickname.bin patch/manifest.json $(PATCH_BATCHES) patch/tools/apply_patch.py $(PATCH_BUILD)/trainer_names_inline.bin
 	$(PYTHON) patch/tools/apply_patch.py --rom $(ROM) --output $@ \
 		--payload-elf $(PATCH_ELF) --payload-bin $(PATCH_BIN) \
 		--manifest patch/manifest.json --nm $(PATCH_ARM_PREFIX)nm \
