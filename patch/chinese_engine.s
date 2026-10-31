@@ -5,8 +5,8 @@
 .section .text
 .align 2
 
-@ Reproduce all 16 overwritten bytes, not just the first eight. These
-@ trampolines retain the original JP getter for save/link callers.
+@ Full copy of the Wokann dev GetFrontierTrainerName. The original entry
+@ and its following eight bytes are used for the JP and display veneers.
 .global ChsOriginalFrontierName
 .type ChsOriginalFrontierName, %function
 .thumb_func
@@ -18,9 +18,142 @@ ChsOriginalFrontierName:
     movs r4, #0
     ldr r3, =0x08165A4D
     bl .Lnpc_call_r3
-    movs r0, #0xFA
-    ldr r3, =0x08162D35
-    bx r3
+    ldr r0, =500
+    cmp r5, r0
+    bne .Lfrontier_copy_brain_test
+    ldr r0, =0x03005AF0
+    ldr r0, [r0]
+    ldr r1, =0x00000BF0
+    adds r2, r0, r1
+.Lfrontier_copy_direct:
+    adds r0, r6, r4
+    adds r1, r2, r4
+    ldrb r1, [r1]
+    strb r1, [r0]
+    adds r4, #1
+    cmp r4, #6
+    ble .Lfrontier_copy_direct
+    b .Lfrontier_copy_end
+.Lfrontier_copy_brain_test:
+    ldr r0, =0x03FE
+    cmp r5, r0
+    bne .Lfrontier_copy_special_test
+    adds r0, r6, #0
+    bl ChsOriginalBrainName
+    b .Lfrontier_copy_return
+.Lfrontier_copy_special_test:
+    ldr r0, =0x0C03
+    cmp r5, r0
+    bne .Lfrontier_copy_npc_test
+    ldr r2, =0x082E9CC0
+    b .Lfrontier_copy_direct
+.Lfrontier_copy_npc_test:
+    ldr r0, =299
+    cmp r5, r0
+    bhi .Lfrontier_copy_record_test
+    ldr r0, =0x0203B954
+    ldr r1, [r0]
+    movs r0, #52
+    muls r0, r5
+    adds r0, r0, r1
+    adds r2, r0, #4
+    b .Lfrontier_copy_direct
+.Lfrontier_copy_record_test:
+    ldr r0, =399
+    cmp r5, r0
+    bhi .Lfrontier_copy_apprentice
+    ldr r0, =0x02022C90
+    ldr r0, [r0]
+    movs r1, #0x80
+    lsls r1, r1, #17
+    ands r0, r1
+    cmp r0, #0
+    beq .Lfrontier_copy_save_record
+    adds r0, r6, #0
+    ldr r3, =0x081861C1
+    bl .Lnpc_call_r3
+    b .Lfrontier_copy_return
+.Lfrontier_copy_save_record:
+    ldr r0, =0x03005AF0
+    ldr r1, [r0]
+    ldr r0, =0xFFFFFED4
+    adds r2, r5, r0
+    movs r0, #0xEC
+    muls r0, r2
+    ldr r2, =0x073C
+    adds r1, r1, r2
+    adds r2, r0, r1
+.Lfrontier_copy_record_loop:
+    adds r1, r6, r4
+    ldrb r0, [r2]
+    strb r0, [r1]
+    adds r2, #1
+    adds r4, #1
+    cmp r4, #6
+    ble .Lfrontier_copy_record_loop
+    b .Lfrontier_copy_end
+.Lfrontier_copy_apprentice:
+    ldr r0, =0x02022C90
+    ldr r0, [r0]
+    movs r1, #0x80
+    lsls r1, r1, #17
+    ands r0, r1
+    cmp r0, #0
+    beq .Lfrontier_copy_saved_apprentice
+    ldr r5, =0x085DC21C
+.Lfrontier_copy_recorded_apprentice:
+    ldr r3, =0x081861ED
+    bl .Lnpc_call_r3
+    adds r2, r6, r4
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    lsls r1, r0, #1
+    adds r1, r1, r0
+    lsls r1, r1, #4
+    adds r1, r4, r1
+    adds r1, r1, r5
+    ldrb r0, [r1]
+    strb r0, [r2]
+    adds r4, #1
+    cmp r4, #6
+    ble .Lfrontier_copy_recorded_apprentice
+    b .Lfrontier_copy_end
+.Lfrontier_copy_saved_apprentice:
+    ldr r7, =0x085DC21C
+    ldr r0, =0x03005AF0
+    ldr r2, [r0]
+    ldr r0, =0xFFFFFE70
+    adds r1, r5, r0
+    lsls r0, r1, #4
+    adds r0, r0, r1
+    lsls r0, r0, #2
+    adds r2, r2, r0
+    adds r3, r2, #0
+    adds r3, #0xDC
+.Lfrontier_copy_apprentice_loop:
+    adds r2, r6, r4
+    ldrb r1, [r3]
+    lsls r1, r1, #27
+    lsrs r1, r1, #27
+    lsls r0, r1, #1
+    adds r0, r0, r1
+    lsls r0, r0, #4
+    adds r0, r4, r0
+    adds r0, r0, r7
+    ldrb r0, [r0]
+    strb r0, [r2]
+    adds r4, #1
+    cmp r4, #6
+    ble .Lfrontier_copy_apprentice_loop
+.Lfrontier_copy_end:
+    adds r1, r6, r4
+    movs r0, #0xFF
+    strb r0, [r1]
+.Lfrontier_copy_return:
+    pop {r4-r7}
+    pop {r0}
+    bx r0
+.ltorg
 
 .global ChsOriginalBrainName
 .type ChsOriginalBrainName, %function

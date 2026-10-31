@@ -101,6 +101,9 @@ def main():
 
     display_callers = (0x0806E6BF, 0x0814F5DB, 0x081647DB, 0x0816484D,
                        0x081A40E7, 0x081A40FB, 0x081A57DD, 0x081B999D)
+    for caller in display_callers:
+        assert bl_target(base, caller - 5) == 0x08162D24
+        assert bl_target(rom, caller - 5) == 0x08162D34
     # All 390 ordinary/tent identities in battle, plus default/save/link paths.
     for jp, chs in pairs[:390]:
         table = next(table for table in (0x085B4A10, slateport, 0x085BD554, 0x085BDFC8)
@@ -109,7 +112,8 @@ def main():
         trainer = (jp - table - 4) // 52
         cpu.mem_write(0x0203B954, struct.pack('<I', table))
         for caller in display_callers:
-            call(0x08162D24, caller, trainer, m.string(chs))
+            call(0x08162D34, caller, trainer, m.string(chs))
+        call(0x08162D34, 0x0203F001, trainer, m.string(chs))
         for caller in (0x08164D03, 0x0803736F, 0x0803737B, 0x0203F001):
             call(0x08162D24, caller, trainer, m.string(jp))
         call(0x08195498, 0x0818F65F, trainer, m.string(chs))
@@ -117,7 +121,7 @@ def main():
     for i in range(7):
         facility[0] = i
         jp = 0x082E3840 + (805 + i) * 32
-        call(0x08162D24, 0x0814F5DB, 0x3FE, m.string(mapping[jp]))
+        call(0x08162D34, 0x0814F5DB, 0x3FE, m.string(mapping[jp]))
         call(0x08162D24, 0x08164D03, 0x3FE, m.string(jp))
         call(0x081A4944, 0x0814F201, expected=m.string(mapping[jp]))
         call(0x081A4944, 0x0203F001, expected=m.string(jp))
@@ -129,8 +133,20 @@ def main():
     call(0x08195538, 0x0819246F, expected=m.string(mapping[0x082E9D00]))
     call(0x08195498, 0x0818F65F, 0x3FE, m.string(mapping[0x082E9D00]))
     call(0x08195498, 0x0818F65F, 0x3FF, m.string(SAVE2))
-    call(0x08162D24, 0x0806E6BF, 0xC03, m.string(mapping[0x082E9CC0]))
+    call(0x08162D34, 0x0806E6BF, 0xC03, m.string(mapping[0x082E9CC0]))
     call(0x08162D24, 0x08164D03, 0xC03, m.string(0x082E9CC0))
+    cpu.mem_write(SAVE2 + 0xBF0, b'PLAYER!')
+    call(0x08162D24, 0x0203F001, 500, b'PLAYER!\xff')
+    call(0x08162D34, 0x0203F001, 500, b'PLAYER!\xff')
+    # The native getter also reads mixed records and saved apprentices. These
+    # values must remain untouched even through the explicit display entry.
+    cpu.mem_write(SAVE2 + 0x73C, b'RECORD!')
+    for entry in (0x08162D24, 0x08162D34):
+        call(entry, 0x0203F001, 300, b'RECORD!\xff')
+    cpu.mem_write(SAVE2 + 0xDC, b'\x03')
+    apprentice = bytes(cpu.mem_read(0x085DC21C + 3 * 48, 7)).split(b'\xff')[0] + b'\xff'
+    for entry in (0x08162D24, 0x08162D34):
+        call(entry, 0x0203F001, 400, apprentice)
     # Linked Tower VS screen: two NPC slots display compact CHS without
     # modifying their Japanese link records or exceeding its 8-byte buffer.
     cpu.mem_write(0x02022C90, struct.pack('<I', 0x00800143))

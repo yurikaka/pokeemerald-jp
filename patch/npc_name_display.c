@@ -53,17 +53,8 @@ static const u8 *lookup_brain(const u8 *name)
 
 void ChsFrontierNameDisplay(u8 *dest, u16 id)
 {
-    u32 caller = (u32)__builtin_return_address(0);
     ChsOriginalFrontierName(dest, id);
-    /* Wokann-backed display callers only. Save writer 08164D03 and link
-     * data producers 0803736F/7B deliberately remain Japanese. */
-    switch (caller) {
-    case 0x0806E6BF: case 0x0814F5DB: case 0x081647DB:
-    case 0x0816484D: case 0x081A40E7: case 0x081A40FB:
-    case 0x081A57DD: /* battle_arena.c BufferArenaOpponentName */
-    case 0x081B999D: break;
-    default: return;
-    }
+    /* Only explicit display call sites enter this helper. */
     const u8 *jp = 0;
     if (id == 0x3FE) {
         const u8 *chs = lookup_brain(dest);
