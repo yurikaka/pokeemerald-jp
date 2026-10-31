@@ -221,6 +221,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x0806F4E0", "original": "694699f7a1f905b0", "symbol": "ChsCopyBoxMonNicknameOriginal", "comment": "Explicit original box nickname"},
     {"address": "0x0806F4C0", "original": "694699f7b1f905b0", "symbol": "ChsCopyMonNicknameOriginal", "comment": "Explicit original party nickname"},
 
     {"address": "0x080088C8", "original": "ff28f8d1ff201870", "symbol": "ChsTvTowerNameCopy", "comment": "Explicit TV Tower name copy"},
@@ -323,6 +324,7 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x08070FB6", "original": "fef78bfa", "replacement": "fef793fa", "comment": "Explicit original box nickname"},
     {"address": "0x0806F5DE", "original": "fff767ff", "replacement": "fff76fff", "comment": "Explicit original party nickname"},
     {"address": "0x08071760", "original": "fdf7a6fe", "replacement": "fdf7aefe", "comment": "Explicit original party nickname"},
     {"address": "0x080F21F0", "original": "16f762fb", "replacement": "16f76afb", "comment": "TV Tower explicit name copy"},

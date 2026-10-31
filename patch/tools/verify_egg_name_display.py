@@ -11,7 +11,7 @@ def main():
     args = parser.parse_args()
     m = Machine(symbols(args.nm))
     m.names.update(NativeSetMonData=0x0806A774, NativeGetMonData=0x0806A058,
-                   NativePartyNickname=0x081B1814, NativeBoxNickname=0x0806F4D0,
+                   NativePartyNickname=0x081B1814, NativeBoxNickname=0x0806F4D0, OriginalBoxNickname=0x0806F4E0,
                    DisplayTradeNickname=0x0806F4B0, OriginalTradeNickname=0x0806F4C0,
                    NativeSummaryEggInfo=0x081C20D8)
     mon, dest, value = 0x02020000, 0x02021008, 0x02022000
@@ -57,7 +57,22 @@ def main():
         for caller in (0x0806F5E3, 0x08071765):
             check('OriginalTradeNickname', nickname, caller)
             check('DisplayTradeNickname', expected, caller)
-        check('NativeBoxNickname', nickname, 0x08070FBB)
+        check('NativeBoxNickname', expected, 0x08070FBB)
+        check('OriginalBoxNickname', nickname, 0x08070FBB)
+        for site in (0x0806F758, 0x0806F8CA, 0x0806F8F2, 0x08070640,
+                     0x08070668, 0x08070694, 0x08070A0A, 0x08070B50, 0x08070FB6):
+            cpu = m.cpu
+            cpu.mem_write(dest - 8, b'\xa5' * 40)
+            before = bytes(cpu.mem_read(mon, 100))
+            m.stop_addresses = {site + 4}
+            cpu.reg_write(UC_ARM_REG_SP, 0x03007800)
+            cpu.reg_write(UC_ARM_REG_LR, 0x0203F001)
+            cpu.reg_write(UC_ARM_REG_R0, mon)
+            cpu.reg_write(UC_ARM_REG_R1, dest)
+            cpu.emu_start(site | 1, 0, count=200000)
+            assert cpu.reg_read(UC_ARM_REG_PC) == site + 4, hex(site)
+            assert m.string(dest) == (nickname if site == 0x08070FB6 else expected), hex(site)
+            assert bytes(cpu.mem_read(mon, 100)) == before
         for site in (0x080CE606, 0x081CFA66, 0x081CFDFE, 0x081775F0):
             cpu = m.cpu
             cpu.mem_write(dest - 8, b'\xa5' * 40)

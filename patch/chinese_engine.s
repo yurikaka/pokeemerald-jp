@@ -1976,11 +1976,11 @@ ChsCopyBoxMonNickname:
 .type ChsGetMonNicknameFromBox, %function
 .thumb_func
 ChsGetMonNicknameFromBox:
-    ldr r3, .Lbox_nickname_router_target
+    ldr r3, .Lbox_nickname_display_target
     bx r3
     .space 24
-.Lbox_nickname_router_target:
-    .word ChsBoxNicknameDisplayRouter + 1
+.Lbox_nickname_display_target:
+    .word ChsCopyBoxMonNickname + 1
 
 .align 2
 .global ChsGetBoxMonNickAt
@@ -4386,25 +4386,6 @@ ChsFactorySwapPrintMonCategory:
 .ltorg
 
 .align 2
-.type ChsBoxNicknameDisplayRouter, %function
-.thumb_func
-ChsBoxNicknameDisplayRouter:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lbox_nickname_storage_caller
-    ldr r1, [r1]
-    cmp r0, r1
-    beq .Lbox_nickname_storage_found
-    pop {r0-r3}
-    b .Lnickname_tail_copy_box
-.Lbox_nickname_storage_found:
-    pop {r0-r3}
-    b ChsCopyBoxMonNicknameOriginal
-.Lnickname_tail_copy_box:
-    ldr r3, =ChsCopyBoxMonNickname + 1
-    bx r3
-
-.align 2
 .type ChsNicknameDisplayRouter, %function
 .thumb_func
 ChsNicknameDisplayRouter:
@@ -4714,8 +4695,6 @@ ChsResolveBoxOrPartyMon:
     bx r3
 
 .align 2
-.Lbox_nickname_storage_caller:
-    .word 0x08070FBB
 .Lmon_nickname_data_callers:
     .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
     .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
@@ -4777,6 +4756,7 @@ ChsCopyMonNicknameOriginal:
     bx r1
 
 .align 2
+.global ChsCopyBoxMonNicknameOriginal
 .type ChsCopyBoxMonNicknameOriginal, %function
 .thumb_func
 ChsCopyBoxMonNicknameOriginal:
