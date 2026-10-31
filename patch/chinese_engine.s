@@ -4415,33 +4415,6 @@ ChsOriginalGetStringWidth:
 ChsNicknameDisplayRouter:
     push {r0-r3}
     mov r0, lr
-    ldr r1, =.Lnickname_tv_r4_species2_callers
-    movs r2, #2
-.Lnickname_tv_r4_species2_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_tv_r4_species2_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_tv_r4_species2_loop
-    ldr r1, =.Lnickname_tv_r5_species2_callers
-    movs r2, #3
-.Lnickname_tv_r5_species2_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_tv_r5_species2_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_tv_r5_species2_loop
-    ldr r1, =.Lnickname_tv_r5_species16_callers
-    movs r2, #5
-.Lnickname_tv_r5_species16_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_tv_r5_species16_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_tv_r5_species16_loop
     ldr r1, =.Lnickname_partner_string_caller
     ldr r1, [r1]
     cmp r0, r1
@@ -4457,16 +4430,23 @@ ChsNicknameDisplayRouter:
     bne .Lnickname_condition_string_loop
     pop {r0-r3}
     b .Lnickname_tail_copy_mon
-.Lnickname_tv_r4_species2_found:
-    pop {r0-r3}
+.align 2
+.global ChsTvNicknameR4Species2
+.type ChsTvNicknameR4Species2, %function
+.thumb_func
+ChsTvNicknameR4Species2:
     ldrh r2, [r4, #2]
     b ChsCopyStoredNicknameForSpecies
-.Lnickname_tv_r5_species2_found:
-    pop {r0-r3}
+.global ChsTvNicknameR5Species2
+.type ChsTvNicknameR5Species2, %function
+.thumb_func
+ChsTvNicknameR5Species2:
     ldrh r2, [r5, #2]
     b ChsCopyStoredNicknameForSpecies
-.Lnickname_tv_r5_species16_found:
-    pop {r0-r3}
+.global ChsTvNicknameR5Species16
+.type ChsTvNicknameR5Species16, %function
+.thumb_func
+ChsTvNicknameR5Species16:
     ldrh r2, [r5, #0x10]
     b ChsCopyStoredNicknameForSpecies
 .Lnickname_partner_string_found:
@@ -4686,13 +4666,6 @@ ChsResolveBoxOrPartyMon:
     .word 0x081B0A25
 .Lnickname_condition_string_callers:
     .word 0x081CCDE3, 0x081D2347
-.Lnickname_tv_r4_species2_callers:
-    .word 0x080F1FB9, 0x080F30EF
-.Lnickname_tv_r5_species2_callers:
-    .word 0x080F26DD, 0x080F2771, 0x080F28DD
-.Lnickname_tv_r5_species16_callers:
-    .word 0x080F299D, 0x080F2A31, 0x080F2AA5, 0x080F2AEB
-    .word 0x080F2B1B
 .align 2
 .type ChsCopyStoredNicknameForSpecies, %function
 .thumb_func
