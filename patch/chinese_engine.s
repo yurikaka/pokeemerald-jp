@@ -4413,20 +4413,7 @@ ChsTradeNicknameRouter:
     adds r1, #4
     subs r2, #1
     bne .Lparty_nickname_storage_caller_loop
-    ldr r1, =.Ltrade_nickname_data_callers
-    movs r2, #8
-.Ltrade_nickname_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Ltrade_nickname_caller_found
-    adds r1, #4
-    subs r2, #1
-    bne .Ltrade_nickname_caller_loop
     pop {r0-r3}
-    b .Lnickname_tail_copy_mon
-.Ltrade_nickname_caller_found:
-    pop {r0-r3}
-    adds r1, r2, #0
     b .Lnickname_tail_copy_mon
 .Lparty_nickname_storage_found:
     pop {r0-r3}
@@ -4786,9 +4773,6 @@ ChsResolveBoxOrPartyMon:
     .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
     .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
     .word 0x081CEFDF, 0x081CF00F, 0x08166B77, 0x081775A7
-.Ltrade_nickname_data_callers:
-    .word 0x0807813D, 0x08078165, 0x080794A9, 0x080796DB
-    .word 0x0807B55F, 0x0807B577, 0x0807B5D5, 0x0807E1EB
 .Lnickname_direct_data_callers:
     .word 0x080F0A51
 .Lnickname_partner_string_caller:
