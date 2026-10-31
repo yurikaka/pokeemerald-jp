@@ -73,7 +73,7 @@ def main():
             assert cpu.reg_read(UC_ARM_REG_PC) == site + 4, hex(site)
             assert m.string(dest) == (nickname if site == 0x08070FB6 else expected), hex(site)
             assert bytes(cpu.mem_read(mon, 100)) == before
-        for site in (0x080CE606, 0x081CFA66, 0x081CFDFE, 0x081775F0):
+        for site in (0x080CE606, 0x081CFA66, 0x081CFDFE, 0x081775F0, 0x081CF00A):
             cpu = m.cpu
             cpu.mem_write(dest - 8, b'\xa5' * 40)
             before = bytes(cpu.mem_read(mon, 100))

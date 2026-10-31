@@ -4450,7 +4450,7 @@ ChsNicknameDisplayRouter:
     subs r2, #1
     bne .Lnickname_hof_width_loop
     ldr r1, =.Lmon_nickname_data_callers
-    movs r2, #12
+    movs r2, #11
 .Lnickname_original_caller_loop:
     ldr r3, [r1]
     cmp r0, r3
@@ -4698,7 +4698,7 @@ ChsResolveBoxOrPartyMon:
 .Lmon_nickname_data_callers:
     .word 0x0813DC73, 0x0813E301, 0x0813EB3D, 0x0813F683
     .word 0x08161217, 0x080CE513, 0x081CFA39, 0x081CFDC9
-    .word 0x081CEFDF, 0x081CF00F, 0x08166B77, 0x081775A7
+    .word 0x081CEFDF, 0x08166B77, 0x081775A7
 .Lnickname_direct_data_callers:
     .word 0x080F0A51
 .Lnickname_partner_string_caller:
