@@ -31,6 +31,13 @@ def main():
     cpu = m.cpu
     rom = (ROOT / 'pokeemerald_jp_chs.gba').read_bytes()
     base = (ROOT / 'baserom_jp.gba').read_bytes()
+    for caller in DISPLAY_CALLERS:
+        address = caller - 5
+        hi, lo = struct.unpack_from('<HH', rom, address - 0x08000000)
+        displacement = ((hi & 2047) << 12) | ((lo & 2047) << 1)
+        if displacement & (1 << 22): displacement -= 1 << 23
+        expected_target = 0x080D1988 if caller in (0x080CC4DF, 0x080CC68B) else 0x080D1980
+        assert address + 4 + displacement == expected_target
     assert rom[0xC707C:0xC7080] == base[0xC707C:0xC7080] == struct.pack('<I', 0x085CB584)
     assert rom[0x5CB584:0x5CB589] == base[0x5CB584:0x5CB589]
     cpu.mem_write(0x03005AF4, struct.pack('<I', STORAGE))
@@ -46,13 +53,16 @@ def main():
     for i, expected in enumerate(defaults):
         assert m.string(BOXES + i * 9) == expected, (i, m.string(BOXES + i * 9), expected)
 
-    def get(box, caller):
+    def get(box, caller, entry=None):
         before = bytes(cpu.mem_read(STORAGE, 0x83E0))
         m.stop_addresses = {caller & ~1}
         cpu.reg_write(UC_ARM_REG_SP, 0x03007800)
         cpu.reg_write(UC_ARM_REG_LR, caller)
         cpu.reg_write(UC_ARM_REG_R0, box)
-        cpu.emu_start(0x080D1971, 0, count=10000)
+        if entry is None:
+            entry = (0x080D1988 if caller in (0x080CC4DF, 0x080CC68B)
+                     else 0x080D1980 if caller in DISPLAY_CALLERS else 0x080D1970)
+        cpu.emu_start(entry | 1, 0, count=10000)
         assert cpu.reg_read(UC_ARM_REG_PC) == caller & ~1
         assert bytes(cpu.mem_read(STORAGE, 0x83E0)) == before, 'display changed storage'
         return cpu.reg_read(UC_ARM_REG_R0)
@@ -71,6 +81,8 @@ def main():
             assert bytes(cpu.mem_read(dest + 9, 7)) == b'\xa5' * 7
         for caller in (0x080C703F, 0x080C97A1, 0x0203F001):
             assert get(i, caller) == BOXES + i * 9
+        assert get(i, DISPLAY_CALLERS[0], 0x080D1970) == BOXES + i * 9
+        assert m.string(get(i, 0x0203F001, 0x080D1980)) == expected
         # Exact per-box comparison: custom names, partial defaults and a
         # different box's default name must not be translated.
         for custom in (b'\x01\x02\x03\xff', defaults[(i + 1) % 14],
