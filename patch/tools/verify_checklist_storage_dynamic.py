@@ -169,7 +169,7 @@ def verify():
         original = bytes.fromhex(entry["original"])
         require(base[address - ROM_BASE:address - ROM_BASE + len(original)] == original, "hook original mismatch")
     assembly_evidence = {}
-    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsNicknameDisplayRouter:", ".type ChsTruncateNickname"), (".Lnickname_partner_string_caller:", ".type ChsCopyStoredNicknameForSpecies"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
+    for start, end in (("ChineseRenderHook:", ".global ChsNamingScreenSpeciesTitle"), ("ChsCopyMonNickname:", ".global ChsGetMonNicknameFromBox"), ("ChsGetMonNicknameFromBox:", ".global ChsGetBoxMonNickAt"), ("ChsGetMonNickname:", ".global ChsFaintFromFieldPoison"), ("ChsPartnerNicknameEnd:", ".type ChsTruncateNickname"), ("ChsItemIdGetName:", ".global ChsGetBerryNameByType"), ("DecompressChineseGlyph:", ".Lset_dimensions:")):
         begin = assembly.index(start)
         finish = assembly.index(end, begin)
         assembly_evidence[start] = {"line": assembly[:begin].count("\n") + 1, "sha256": hashlib.sha256(assembly[begin:finish].encode()).hexdigest()}

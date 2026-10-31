@@ -1811,8 +1811,26 @@ ChsBadEggNicknameLimit:
     movs r4, #5
 .Lbad_egg_nickname_limit_ready:
     movs r2, #0
-    ldr r0, =0x08008865
-    bx r0
+.Lbad_egg_scan:
+    adds r1, r3, r2
+    ldrb r0, [r1]
+    cmp r0, #0xFF
+    beq .Lbad_egg_done
+    adds r0, r2, #1
+    lsls r0, r0, #24
+    lsrs r2, r0, #24
+    cmp r2, r4
+    blo .Lbad_egg_scan
+    adds r0, r3, r2
+    movs r1, #0xFF
+    strb r1, [r0]
+    b .Lbad_egg_return
+.Lbad_egg_done:
+    adds r0, r1, #0
+.Lbad_egg_return:
+    pop {r4}
+    pop {r1}
+    bx r1
 .ltorg
 .type ChsCopyMonNickname, %function
 .thumb_func
@@ -2026,11 +2044,11 @@ ChsGetBoxMonNickAt:
 .type ChsGetMonNickname, %function
 .thumb_func
 ChsGetMonNickname:
-    ldr r3, .Lnickname_router_target
+    ldr r3, .Lnickname_display_target
     bx r3
     .space 80
-.Lnickname_router_target:
-    .word ChsNicknameDisplayRouter + 1
+.Lnickname_display_target:
+    .word ChsCopyMonNickname + 1
 
 .align 2
 .global ChsFaintFromFieldPoison
@@ -4410,27 +4428,6 @@ ChsOriginalGetStringWidth:
 .ltorg
 
 .align 2
-.type ChsNicknameDisplayRouter, %function
-.thumb_func
-ChsNicknameDisplayRouter:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lnickname_partner_string_caller
-    ldr r1, [r1]
-    cmp r0, r1
-    beq .Lnickname_partner_string_found
-    ldr r1, =.Lnickname_condition_string_callers
-    movs r2, #2
-.Lnickname_condition_string_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lnickname_condition_string_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lnickname_condition_string_loop
-    pop {r0-r3}
-    b .Lnickname_tail_copy_mon
-.align 2
 .global ChsTvNicknameR4Species2
 .type ChsTvNicknameR4Species2, %function
 .thumb_func
@@ -4449,8 +4446,10 @@ ChsTvNicknameR5Species2:
 ChsTvNicknameR5Species16:
     ldrh r2, [r5, #0x10]
     b ChsCopyStoredNicknameForSpecies
-.Lnickname_partner_string_found:
-    pop {r0-r3}
+.global ChsPartnerNicknameEnd
+.type ChsPartnerNicknameEnd, %function
+.thumb_func
+ChsPartnerNicknameEnd:
     push {lr}
     bl ChsTruncateNickname
     pop {r2}
@@ -4458,8 +4457,10 @@ ChsTvNicknameR5Species16:
     ldrh r0, [r7]
     adds r1, r4, #0
     b ChsConvertNicknameForSpecies
-.Lnickname_condition_string_found:
-    pop {r0-r3}
+.global ChsConditionNicknameEnd
+.type ChsConditionNicknameEnd, %function
+.thumb_func
+ChsConditionNicknameEnd:
     push {lr}
     bl ChsTruncateNickname
     adds r0, r4, #0
@@ -4483,9 +4484,6 @@ ChsTvNicknameR5Species16:
     adds r1, r5, #0
     b ChsConvertNicknameForSpecies
 .Lnickname_router_call_r3:
-    bx r3
-.Lnickname_tail_copy_mon:
-    ldr r3, =ChsCopyMonNickname + 1
     bx r3
 
 .ltorg
@@ -4662,10 +4660,6 @@ ChsResolveBoxOrPartyMon:
     bx r3
 
 .align 2
-.Lnickname_partner_string_caller:
-    .word 0x081B0A25
-.Lnickname_condition_string_callers:
-    .word 0x081CCDE3, 0x081D2347
 .align 2
 .type ChsCopyStoredNicknameForSpecies, %function
 .thumb_func

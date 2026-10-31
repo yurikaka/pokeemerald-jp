@@ -6,6 +6,7 @@
   "render_hook_symbol": "ChineseRenderHook",
   "fixed_code_sections": [{"address": "0x08162D3C", "capacity": "0x154", "original_sha256": "6e8a185e3fefdc76490323d1a43bfd978ba242ca242a423393bbe6e8ee868df3", "binary": "build/patch/battle_nickname.bin"}],
   "function_hooks": [
+    {"address": "0x0800885C", "original": "10b5031c0524002299180878ff2801d1", "symbol": "ChsBadEggNicknameLimit"},
     {"address": "0x08008828", "original": "30b5041c05250023e218c81800781070", "symbol": "ChsStringCopy7Original"},
     {"address": "0x08005DAC", "original": "f0b557464e464546e0b40c1c0006000e", "symbol": "ChsOriginalGetStringWidth"},
 
@@ -223,6 +224,8 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x0800886C", "original": "081c07e0501c0006", "symbol": "ChsPartnerNicknameEnd", "comment": "Explicit partner nickname end"},
+    {"address": "0x08008874", "original": "020ea242f4d39818", "symbol": "ChsConditionNicknameEnd", "comment": "Explicit condition nickname end"},
     {"address": "0x08008838", "original": "0006000eff2801d1", "symbol": "ChsTvNicknameR4Species2", "comment": "Explicit TV nickname display"},
     {"address": "0x08008840", "original": "101c07e0581c0006", "symbol": "ChsTvNicknameR5Species2", "comment": "Explicit TV nickname display"},
     {"address": "0x08008848", "original": "030eab42f0d3e018", "symbol": "ChsTvNicknameR5Species16", "comment": "Explicit TV nickname display"},
@@ -241,7 +244,7 @@
     {"address": "0x08035510", "original": "cdf7befdcef7b4ff", "symbol": "ChsSafariInitWindowsHook"},
     {"address": "0x0803590C", "original": "0023ccf75dfc0020", "symbol": "ChsSafariTextboxInitialHook"},
     {"address": "0x08036270", "original": "0023cbf7abff0020", "symbol": "ChsSafariTextboxReturnHook"},
-    {"address": "0x0800885C", "original": "10b5031c05240022", "symbol": "ChsBadEggNicknameLimit"},
+
     {"address": "0x08198370", "original": "050c194c20780121", "symbol": "ChsHofHeaderHintWidth"},
     {"address": "0x0816BC08", "original": "00b5021c0804000c", "symbol": "ChsPcItemNameCopy"},
     {"address": "0x080DF568", "original": "291cf6f7adfc09e0", "symbol": "ChsShopTmNameCopy"},
@@ -538,9 +541,9 @@
     { "address": "0x080F30EA", "original": "15f79dfb", "replacement": "15f7a5fb" },
     { "address": "0x08174996", "original": "91f609fa", "replacement": "91f611fa" },
     { "address": "0x081749D8", "original": "91f6e8f9", "replacement": "91f6f0f9" },
-    { "address": "0x081B0A20", "original": "57f61cff", "replacement": "00f0f8fe" },
-    { "address": "0x081CCDDE", "original": "3bf63dfd", "replacement": "e4f719fd" },
-    { "address": "0x081D2342", "original": "36f68bfa", "replacement": "dff767fa" },
+    { "address": "0x081B0A20", "original": "57f61cff", "replacement": "57f624ff" },
+    { "address": "0x081CCDDE", "original": "3bf63dfd", "replacement": "3bf649fd" },
+    { "address": "0x081D2342", "original": "36f68bfa", "replacement": "36f697fa" },
     { "address": "0x081775A2", "original": "f2f659fd", "replacement": "ebf7cbfb" },
     { "address": "0x081775F0", "original": "f2f6e0fd", "replacement": "ebf702fc" },
     { "address": "0x0813DC6E", "original": "2cf7f3f9", "replacement": "25f065f8" },
