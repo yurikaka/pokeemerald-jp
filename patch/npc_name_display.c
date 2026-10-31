@@ -113,36 +113,46 @@ u8 *ChsVsNameCopy(u8 *dest, const u8 *src)
  * the show's existing fields uniquely match its scene's NPC mapping.
  * A same-name player may therefore display as that NPC; persistence is JP.
  */
-u8 *ChsTvNameStringCopy(u8 *dest, const u8 *src)
+u8 *ChsStringCopyOriginal(u8 *dest, const u8 *src)
 {
-    u32 caller = (u32)__builtin_return_address(0);
+    return copy(dest, src);
+}
+
+static const u8 *tv_show(unsigned expected_kind)
+{
+    unsigned slot = *(u16 *)0x02037280;
+    if (slot >= 25) return 0;
+    const u8 *show = *(const u8 **)0x03005AEC + 0x27CC + slot * 36;
+    return show[0] == expected_kind ? show : 0;
+}
+
+u8 *ChsTvTowerNameCopy(u8 *dest, const u8 *src)
+{
     const u8 *translated = 0;
-    if ((caller >= 0x080F2164 && caller < 0x080F23EC)
-        || (caller >= 0x080F31E8 && caller < 0x080F39D0)) {
-        unsigned slot = *(u16 *)0x02037280;
-        if (slot < 25) {
-            const u8 *show = *(const u8 **)0x03005AEC + 0x27CC + slot * 36;
-            if (caller < 0x080F23EC && show[0] == 7 && src == show + 12) {
-                /* Tower NPC names are unique within its pool. Do not mix
-                 * Tent names or other facility brains into this mapping. */
-                for (unsigned i = 0; i < 398; i++) {
-                    if (i >= 300 && npc_names[i].jp != (const u8 *)0x082E9CE0) continue;
-                    if (!equal(src, npc_names[i].jp)) continue;
-                    if (translated && !equal(translated, npc_names[i].chs)) return copy(dest, src);
-                    translated = npc_names[i].chs;
-                }
-            } else if (caller >= 0x080F31E8 && show[0] == 8 && src == show + 4) {
-                /* Contest winner at +20 is always a player: never replace.
-                 * Losing name + species disambiguates the two マヤコ NPCs. */
-                u16 species = *(const u16 *)(show + 2);
-                for (unsigned i = 0; i < 96; i++) {
-                    const u8 *record = (const u8 *)0x08561028 + i * 64;
-                    if (*(const u16 *)record != species || !equal(src, record + 13)) continue;
-                    const u8 *name = ChsContestOpponentDisplayNames[i][1];
-                    if (translated && !equal(translated, name)) return copy(dest, src);
-                    translated = name;
-                }
-            }
+    const u8 *show = tv_show(7);
+    if (show && src == show + 12) {
+        for (unsigned i = 0; i < 398; i++) {
+            if (i >= 300 && npc_names[i].jp != (const u8 *)0x082E9CE0) continue;
+            if (!equal(src, npc_names[i].jp)) continue;
+            if (translated && !equal(translated, npc_names[i].chs)) return copy(dest, src);
+            translated = npc_names[i].chs;
+        }
+    }
+    return copy(dest, translated ? translated : src);
+}
+
+u8 *ChsTvContestNameCopy(u8 *dest, const u8 *src)
+{
+    const u8 *translated = 0;
+    const u8 *show = tv_show(8);
+    if (show && src == show + 4) {
+        u16 species = *(const u16 *)(show + 2);
+        for (unsigned i = 0; i < 96; i++) {
+            const u8 *record = (const u8 *)0x08561028 + i * 64;
+            if (*(const u16 *)record != species || !equal(src, record + 13)) continue;
+            const u8 *name = ChsContestOpponentDisplayNames[i][1];
+            if (translated && !equal(translated, name)) return copy(dest, src);
+            translated = name;
         }
     }
     return copy(dest, translated ? translated : src);

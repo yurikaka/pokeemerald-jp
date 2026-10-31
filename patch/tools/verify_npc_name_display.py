@@ -6,6 +6,7 @@ name getters, hook veneers, mapping and copying are the real compiled code.
 This does not replace an in-game battle/TV smoke test.
 """
 import argparse
+import json
 import struct
 from pathlib import Path
 from unicorn import UC_HOOK_CODE
@@ -36,6 +37,13 @@ def main():
     cpu = m.cpu
     base = (ROOT / 'baserom_jp.gba').read_bytes()
     rom = (ROOT / 'pokeemerald_jp_chs.gba').read_bytes()
+    patches = json.loads((ROOT / 'patch/manifest.json').read_text())['code_patches']
+    for kind, target, expected_count in (('Tower', 0x080088C8, 14), ('Contest', 0x080088D0, 29)):
+        sites = [int(p['address'], 0) for p in patches if p.get('comment') == f'TV {kind} explicit name copy']
+        assert len(sites) == expected_count
+        for site in sites:
+            assert bl_target(base, site) == 0x080088B8
+            assert bl_target(rom, site) == target
     # Entire original records, not just the EOS-delimited names.
     for offset, length in ((0x2E383C, 855 * 32), (0x561028, 96 * 64),
                            (0x30D114, 4 * 60), (0x5B4A10, 300 * 52),
@@ -184,12 +192,14 @@ def main():
         expected = next(iter(candidates)) if len(candidates) == 1 else original
         cpu.mem_write(show + 2, b'\x01\x02\x03\xff')
         cpu.mem_write(show + 12, original)
-        end = call(0x080088B8, 0x080F233B, show + 12, expected)
+        end = call(0x080088C8, 0x080F233B, show + 12, expected)
         assert end == DEST + len(expected) - 1, 'StringCopy return pointer'
+        call(0x080088C8, 0x0203F001, show + 12, expected)
         call(0x080088B8, 0x0203F001, show + 12, original)
+        call(0x080088B8, 0x080F233B, show + 12, original)
         # The show's player field is never translated at the same call PC.
         cpu.mem_write(show + 2, original)
-        call(0x080088B8, 0x080F233B, show + 2, original)
+        call(0x080088C8, 0x080F233B, show + 2, original)
     # Explicit policy: matches translate even if a player has the same name.
     jp = pairs[0][0]
     original = m.string(jp)
@@ -198,16 +208,16 @@ def main():
     for player in (SAVE2, 0x020226A8):
         link_count[0] = int(player != SAVE2)
         cpu.mem_write(player, original)
-        call(0x080088B8, 0x080F233B, show + 12, m.string(pairs[0][1]))
+        call(0x080088C8, 0x080F233B, show + 12, m.string(pairs[0][1]))
         cpu.mem_write(player, b'\x01\x02\x03\xff')
     link_count[0] = 0
     # A different program scene must not use the Tower name pool.
     cpu.mem_write(show, b'\x08')
-    call(0x080088B8, 0x080F233B, show + 12, original)
+    call(0x080088C8, 0x080F233B, show + 12, original)
     cpu.mem_write(show, b'\x07')
     # Invalid TV slots are never dereferenced or translated.
     cpu.mem_write(0x02037280, struct.pack('<H', 25))
-    call(0x080088B8, 0x080F233B, show + 12, original)
+    call(0x080088C8, 0x080F233B, show + 12, original)
     cpu.mem_write(0x02037280, bytes(2))
     cpu.mem_write(show, b'\x08')
     # Losers match by name + species; winner is always a player and stays JP.
@@ -219,11 +229,11 @@ def main():
         for name_offset, species_offset in ((4, 2), (20, 18)):
             cpu.mem_write(show + species_offset, species)
             cpu.mem_write(show + name_offset, original)
-            call(0x080088B8, 0x080F3301, show + name_offset, expected if name_offset == 4 else original)
+            call(0x080088D0, 0x080F3301, show + name_offset, expected if name_offset == 4 else original)
         cpu.mem_write(SAVE2, original)
-        call(0x080088B8, 0x080F3301, show + 4, expected)
+        call(0x080088D0, 0x080F3301, show + 4, expected)
         cpu.mem_write(show + 2, b'\x00\x00')
-        call(0x080088B8, 0x080F3301, show + 4, original)
+        call(0x080088D0, 0x080F3301, show + 4, original)
         cpu.mem_write(SAVE2, b'\x01\x02\x03\xff')
     print(f'PASS: 855 original trainer records; 398 JP/CHS identities; native save/link getters; '
           '7 brains + recordings; Dome/Steven; 300 linked Tower VS names; TV scene/name/species matching; '
