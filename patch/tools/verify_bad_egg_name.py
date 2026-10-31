@@ -27,8 +27,9 @@ def main():
             m.call('Set', (mon, 45, value))
             m.cpu.mem_write(value, bytes((bad,)))
             m.call('Set', (mon, 4, value))
-            wanted = expected if bad else nickname[:nickname.index(255) + 1]
             for route in ('Box', 'Mon', 'Party', 'BoxNick'):
+                wanted = (expected[:5] + b'\xff' if bad and route in ('Party', 'BoxNick')
+                          else expected if bad else nickname[:nickname.index(255) + 1])
                 before = bytes(m.cpu.mem_read(mon, 100))
                 m.cpu.mem_write(dest - 8, b'\xa5' * 40)
                 args = (mon, 2, dest) if route in ('Box', 'Mon') else (mon, dest)
@@ -43,11 +44,11 @@ def main():
     for text in (b'\xff', b'\xa2\xa3\xff', b'\xca' * 10 + b'\xff',
                  expected, expected[:5] + b'\xff', expected[:5] + b'\xa1\xff'):
         m.cpu.mem_write(dest, text + b'\xa5' * 16)
-        limit = 6 if text == expected else 5
+        limit = 5
         end = min(text.index(255), limit)
         assert m.call('Limit', (dest,)) == dest + end
         assert m.string(dest) == text[:end] + b'\xff'
-    print('PASS: complete Chinese Bad Egg name through native party/box getters and display routes; normal nicknames unchanged; stored Pokemon bytes and output boundaries preserved')
+    print('PASS: native getters return the fixed Chinese Bad Egg name; five-byte display truncation and saved data boundaries verified')
 
 
 if __name__ == '__main__':

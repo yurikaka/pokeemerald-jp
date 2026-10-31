@@ -6,7 +6,7 @@
   "render_hook_symbol": "ChineseRenderHook",
   "fixed_code_sections": [{"address": "0x08162D3C", "capacity": "0x154", "original_sha256": "6e8a185e3fefdc76490323d1a43bfd978ba242ca242a423393bbe6e8ee868df3", "binary": "build/patch/battle_nickname.bin"}],
   "function_hooks": [
-    {"address": "0x0800885C", "original": "10b5031c0524002299180878ff2801d1", "symbol": "ChsBadEggNicknameLimit"},
+    {"address": "0x0800885C", "original": "10b5031c0524002299180878ff2801d1", "symbol": "ChsOriginalStringGetEnd10"},
     {"address": "0x08008828", "original": "30b5041c05250023e218c81800781070", "symbol": "ChsStringCopy7Original"},
     {"address": "0x08005DAC", "original": "f0b557464e464546e0b40c1c0006000e", "symbol": "ChsOriginalGetStringWidth"},
 

@@ -1785,49 +1785,32 @@ ChsNamingScreenSpeciesTitle:
 
 .align 2
 .global ChsCopyMonNickname
-.global ChsBadEggNicknameLimit
-.type ChsBadEggNicknameLimit, %function
+.global ChsOriginalStringGetEnd10
+.type ChsOriginalStringGetEnd10, %function
 .thumb_func
-ChsBadEggNicknameLimit:
-    @ Wokann string_util.c StringGet_Nickname normally truncates at 5 bytes.
-    @ Only the fixed translated Bad Egg label needs 6 bytes before EOS.
+ChsOriginalStringGetEnd10:
+    @ Reproduce the Japanese StringGet_Nickname implementation.
     push {r4, lr}
     adds r3, r0, #0
-    ldr r1, =Chs_ChecklistLiteral_gText_BadEgg
-    movs r2, #0
-.Lbad_egg_nickname_compare:
-    ldrb r0, [r3, r2]
-    ldrb r4, [r1, r2]
-    cmp r0, r4
-    bne .Lbad_egg_nickname_normal_limit
-    cmp r0, #0xFF
-    beq .Lbad_egg_nickname_full_limit
-    adds r2, #1
-    b .Lbad_egg_nickname_compare
-.Lbad_egg_nickname_full_limit:
-    movs r4, #6
-    b .Lbad_egg_nickname_limit_ready
-.Lbad_egg_nickname_normal_limit:
     movs r4, #5
-.Lbad_egg_nickname_limit_ready:
     movs r2, #0
-.Lbad_egg_scan:
+.Loriginal_nickname_scan:
     adds r1, r3, r2
     ldrb r0, [r1]
     cmp r0, #0xFF
-    beq .Lbad_egg_done
+    bne .Loriginal_nickname_next
+    adds r0, r1, #0
+    b .Loriginal_nickname_return
+.Loriginal_nickname_next:
     adds r0, r2, #1
     lsls r0, r0, #24
     lsrs r2, r0, #24
     cmp r2, r4
-    blo .Lbad_egg_scan
+    blo .Loriginal_nickname_scan
     adds r0, r3, r2
     movs r1, #0xFF
     strb r1, [r0]
-    b .Lbad_egg_return
-.Lbad_egg_done:
-    adds r0, r1, #0
-.Lbad_egg_return:
+.Loriginal_nickname_return:
     pop {r4}
     pop {r1}
     bx r1
