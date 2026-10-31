@@ -1972,14 +1972,6 @@ ChsCopyBoxMonNickname:
     bx r3
 
 .align 2
-.global ChsGetBoxMonNickname
-.type ChsGetBoxMonNickname, %function
-.thumb_func
-ChsGetBoxMonNickname:
-    b ChsTradeNicknameNearRouter
-    nop
-
-.align 2
 .global ChsGetMonNicknameFromBox
 .type ChsGetMonNicknameFromBox, %function
 .thumb_func
@@ -2036,14 +2028,9 @@ ChsGetBoxMonNickAt:
 ChsGetMonNickname:
     ldr r3, .Lnickname_router_target
     bx r3
-ChsTradeNicknameNearRouter:
-    ldr r3, .Ltrade_router_target
-    bx r3
     .space 80
 .Lnickname_router_target:
     .word ChsNicknameDisplayRouter + 1
-.Ltrade_router_target:
-    .word ChsTradeNicknameRouter + 1
 
 .align 2
 .global ChsFaintFromFieldPoison
@@ -4399,29 +4386,6 @@ ChsFactorySwapPrintMonCategory:
 .ltorg
 
 .align 2
-.type ChsTradeNicknameRouter, %function
-.thumb_func
-ChsTradeNicknameRouter:
-    push {r0-r3}
-    mov r0, lr
-    ldr r1, =.Lparty_nickname_storage_callers
-    movs r2, #2
-.Lparty_nickname_storage_caller_loop:
-    ldr r3, [r1]
-    cmp r0, r3
-    beq .Lparty_nickname_storage_found
-    adds r1, #4
-    subs r2, #1
-    bne .Lparty_nickname_storage_caller_loop
-    pop {r0-r3}
-    b .Lnickname_tail_copy_mon
-.Lparty_nickname_storage_found:
-    pop {r0-r3}
-    b ChsCopyMonNicknameOriginal
-
-.ltorg
-
-.align 2
 .type ChsBoxNicknameDisplayRouter, %function
 .thumb_func
 ChsBoxNicknameDisplayRouter:
@@ -4765,8 +4729,6 @@ ChsResolveBoxOrPartyMon:
 .align 2
 .Lbox_nickname_data_callers:
     .word 0x080CE60B, 0x081CFA6B, 0x081CFE03, 0x081775F5
-.Lparty_nickname_storage_callers:
-    .word 0x0806F5E3, 0x08071765
 .Lbox_nickname_storage_caller:
     .word 0x08070FBB
 .Lmon_nickname_data_callers:
@@ -4809,6 +4771,7 @@ ChsCopyStoredNicknameForSpecies:
     bx r3
 
 .align 2
+.global ChsCopyMonNicknameOriginal
 .type ChsCopyMonNicknameOriginal, %function
 .thumb_func
 ChsCopyMonNicknameOriginal:

@@ -12,7 +12,8 @@ def main():
     m = Machine(symbols(args.nm))
     m.names.update(NativeSetMonData=0x0806A774, NativeGetMonData=0x0806A058,
                    NativePartyNickname=0x081B1814, NativeBoxNickname=0x0806F4D0,
-                   NativeTradeNickname=0x0806F4B0, NativeSummaryEggInfo=0x081C20D8)
+                   DisplayTradeNickname=0x0806F4B0, OriginalTradeNickname=0x0806F4C0,
+                   NativeSummaryEggInfo=0x081C20D8)
     mon, dest, value = 0x02020000, 0x02021008, 0x02022000
     jp_egg = m.string(0x085C8C62)
     chs_egg = m.string(m.names['Chs_ChecklistLiteral_gText_EggNickname'])
@@ -50,11 +51,28 @@ def main():
         set_data(45, bytes((egg,)))
         assert m.call('NativeGetMonData', (mon, 45, 0)) == egg
         for name in ('ChsCopyMonNickname', 'ChsCopyBoxMonNickname',
-                     'NativePartyNickname', 'NativeBoxNickname', 'NativeTradeNickname'):
+                     'NativePartyNickname', 'NativeBoxNickname', 'DisplayTradeNickname'):
             check(name, expected)
+        check('OriginalTradeNickname', nickname)
         for caller in (0x0806F5E3, 0x08071765):
-            check('NativeTradeNickname', nickname, caller)
+            check('OriginalTradeNickname', nickname, caller)
+            check('DisplayTradeNickname', expected, caller)
         check('NativeBoxNickname', nickname, 0x08070FBB)
+        for site, result in ((0x0806F5DE, nickname), (0x08071760, nickname),
+                             (0x08070F3A, expected), (0x08071636, expected),
+                             (0x080716B6, expected)):
+            cpu = m.cpu
+            cpu.mem_write(dest - 8, b'\xa5' * 40)
+            before = bytes(cpu.mem_read(mon, 100))
+            m.stop_addresses = {site + 4}
+            cpu.reg_write(UC_ARM_REG_SP, 0x03007800)
+            cpu.reg_write(UC_ARM_REG_LR, 0x0203F001)
+            cpu.reg_write(UC_ARM_REG_R0, mon)
+            cpu.reg_write(UC_ARM_REG_R1, dest)
+            cpu.emu_start(site | 1, 0, count=200000)
+            assert cpu.reg_read(UC_ARM_REG_PC) == site + 4, hex(site)
+            assert m.string(dest) == result, (hex(site), m.string(dest), result)
+            assert bytes(cpu.mem_read(mon, 100)) == before
 
     # Run the real egg summary entry up to its print call, not just our helper.
     set_data(2, jp_egg)
