@@ -54,6 +54,8 @@ def main():
     recorded_facility = [0]
     link_count = [0]
     recorded_getter = bl_target(base, 0x081A4956)
+    assert bl_target(base, 0x0814F1FC) == 0x081A4944
+    assert bl_target(rom, 0x0814F1FC) == 0x081A4954
 
     def stub(cpu, address, size, unused):
         if address in (0x08165A4C, 0x0809CF6C, recorded_getter, 0x08009B64, 0x081D0CD8):
@@ -123,12 +125,14 @@ def main():
         jp = 0x082E3840 + (805 + i) * 32
         call(0x08162D34, 0x0814F5DB, 0x3FE, m.string(mapping[jp]))
         call(0x08162D24, 0x08164D03, 0x3FE, m.string(jp))
-        call(0x081A4944, 0x0814F201, expected=m.string(mapping[jp]))
+        call(0x081A4954, 0x0814F201, expected=m.string(mapping[jp]))
+        call(0x081A4954, 0x0203F001, expected=m.string(mapping[jp]))
+        call(0x081A4944, 0x0814F201, expected=m.string(jp))
         call(0x081A4944, 0x0203F001, expected=m.string(jp))
         recorded_facility[0] = (i + 1) % 7
         cpu.mem_write(0x02022C90, struct.pack('<I', 0x1000000))
         recorded_jp = 0x082E3840 + (805 + recorded_facility[0]) * 32
-        call(0x081A4944, 0x0814F201, expected=m.string(mapping[recorded_jp]))
+        call(0x081A4954, 0x0814F201, expected=m.string(mapping[recorded_jp]))
         cpu.mem_write(0x02022C90, bytes(4))
     call(0x08195538, 0x0819246F, expected=m.string(mapping[0x082E9D00]))
     call(0x08195498, 0x0818F65F, 0x3FE, m.string(mapping[0x082E9D00]))

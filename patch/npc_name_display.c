@@ -67,12 +67,9 @@ void ChsFrontierNameDisplay(u8 *dest, u16 id)
 }
 void ChsBrainNameDisplay(u8 *dest)
 {
-    u32 caller = (u32)__builtin_return_address(0);
     ChsOriginalBrainName(dest);
-    if (caller == 0x0814F201) {
-        const u8 *chs = lookup_brain(dest);
-        if (chs) copy(dest, chs);
-    }
+    const u8 *chs = lookup_brain(dest);
+    if (chs) copy(dest, chs);
 }
 void ChsDomeBrainNameDisplay(u8 *dest)
 {

@@ -15,7 +15,7 @@
     {"address": "0x080088B8", "original": "00b5031c02e01a70013301310a78101c", "symbol": "ChsTvNameStringCopy"},
     {"address": "0x08008888", "original": "30b5041c05250023e218c81800781070", "symbol": "ChsVsNameCopy"},
     {"address": "0x08162D24", "original": "f0b5061c09040d0c002402f08dfefa20", "symbol": "ChsOriginalFrontierName"},
-    {"address": "0x081A4944", "original": "10b5041c054800688021490408400028", "symbol": "ChsBrainNameDisplay"},
+    {"address": "0x081A4944", "original": "10b5041c054800688021490408400028", "symbol": "ChsOriginalBrainName"},
     {"address": "0x08195498", "original": "70b5061c09040d0c0024d0f7d3fa0348", "symbol": "ChsDomeNameDisplay"},
     {"address": "0x08195538", "original": "10b5031c0022074c9818111909780170", "symbol": "ChsDomeBrainNameDisplay"},
     {"address": "0x08078120", "original": "70b58db0214d28683530007864246043", "symbol": "ChsTradeConfirmPrompt"},
@@ -219,6 +219,7 @@
     }
   ],
   "veneer_hooks": [
+    {"address": "0x081A4954", "original": "06d0e1f74ff90006", "symbol": "ChsBrainNameDisplay", "comment": "Explicit Chinese Frontier Brain display"},
     {"address": "0x08162D34", "original": "400085420ed10648", "symbol": "ChsFrontierNameDisplay", "comment": "Explicit display entry; original prologue is reproduced in ChsOriginalFrontierName"},
     {"address": "0x080C07DC", "original": "0a1c0f2151700221", "symbol": "ChsSearchPrintRaised", "comment": "Reuse the displaced body after the original-coordinate entry hook"},
     {"address": "0x08035510", "original": "cdf7befdcef7b4ff", "symbol": "ChsSafariInitWindowsHook"},
@@ -313,6 +314,7 @@
   ],
   "inline_table_writes": [],
   "code_patches": [
+    {"address": "0x0814F1FC", "original": "55f0a2fb", "replacement": "55f0aafb", "comment": "Battle text explicitly selects Chinese Frontier Brain name"},
     {"address": "0x0806E6BA", "original": "f4f033fb", "replacement": "f4f03bfb", "comment": "Use explicit Chinese Frontier trainer display"},
     {"address": "0x0814F5D6", "original": "13f0a5fb", "replacement": "13f0adfb", "comment": "Use explicit Chinese Frontier trainer display"},
     {"address": "0x081647D6", "original": "fef7a5fa", "replacement": "fef7adfa", "comment": "Use explicit Chinese Frontier trainer display"},

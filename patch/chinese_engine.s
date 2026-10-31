@@ -167,8 +167,42 @@ ChsOriginalBrainName:
     lsls r1, r1, #17
     ands r0, r1
     cmp r0, #0
-    ldr r3, =0x081A4955
-    bx r3
+    beq .Lbrain_name_facility
+    ldr r3, =0x08185BF9
+    bl .Lnpc_call_r3
+    lsls r0, r0, #24
+    lsrs r0, r0, #24
+    b .Lbrain_name_select
+.Lbrain_name_facility:
+    ldr r0, =0x40CF
+    ldr r3, =0x0809CF6D
+    bl .Lnpc_call_r3
+    lsls r0, r0, #16
+    lsrs r0, r0, #16
+.Lbrain_name_select:
+    movs r3, #0
+    lsls r0, r0, #1
+    ldr r2, =0x082E383C
+    ldr r1, =0x085DD56A
+    adds r0, r0, r1
+    ldrh r0, [r0]
+    lsls r0, r0, #5
+    adds r2, #4
+    adds r2, r0, r2
+.Lbrain_name_copy:
+    adds r1, r4, r3
+    ldrb r0, [r2]
+    strb r0, [r1]
+    adds r2, #1
+    adds r3, #1
+    cmp r3, #6
+    ble .Lbrain_name_copy
+    adds r1, r4, r3
+    movs r0, #0xFF
+    strb r0, [r1]
+    pop {r4}
+    pop {r0}
+    bx r0
 
 .global ChsOriginalDomeName
 .type ChsOriginalDomeName, %function
